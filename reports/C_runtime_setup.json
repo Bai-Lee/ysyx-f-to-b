@@ -1,0 +1,32 @@
+{
+  "status": "PASS_SOURCE_SETUP_NOT_NEW_FUNCTIONAL_VERDICT",
+  "D_source_archive_sha256": "cf8ffd43dce321971521153d5d0cc2d1381d3c5098c431e811229b2616a5dc09",
+  "C_workbench": "/home/USER/c-stage/workbench",
+  "adjusted_paths": [
+    {
+      "path": "/home/USER/c-stage/workbench/Makefile",
+      "before": "e08c4da6722a413792f2d2e04f0fd800e1d28d2804645f2b8f2a0b35830dad72",
+      "after": "443c0afc20a0c0505588f7eef60c66fedd661ec16f183dc98ca3bbc96c9f3003"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/npc/Makefile",
+      "before": "4a333e97561772191c6f030e260c34be5a3902042274566156d9d799429d09ae",
+      "after": "2ebc3d575e81ae673739e74c191019d56ded7334c15b37015ed141f42909f936"
+    }
+  ],
+  "reused_libraries": [
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+      "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+    },
+    {
+      "path": "/home/USER/c-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/tools/spike-diff/build/riscv32-spike-so",
+      "sha256": "5ab7fa7909535008a57d2a9662a83700a3eeae40a72121ddf13925c0459e927d"
+    }
+  ],
+  "scope": "Independent source copies; D directories and frozen archives were not edited. Final D prebuilt libraries are bootstrap inputs, later C changes require new builds and acceptance."
+}

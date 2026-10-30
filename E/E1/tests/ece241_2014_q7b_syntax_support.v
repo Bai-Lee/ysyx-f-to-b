@@ -1,0 +1,1 @@
+module bcdcount(input clk,reset,enable,output reg[3:0]Q);always @(posedge clk)if(reset)Q<=0;else if(enable)Q<=Q==9?0:Q+1'b1;endmodule

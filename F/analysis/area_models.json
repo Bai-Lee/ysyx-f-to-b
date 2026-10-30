@@ -1,0 +1,178 @@
+{
+  "unit": "equivalent minimum transistor area units under the lesson equal-drive model; not square micrometres",
+  "values": {
+    "not": 2,
+    "nand2": 6,
+    "and2": 8,
+    "nor2": 6,
+    "or2": 8,
+    "transmission_gate": 2,
+    "xor_4nand_implementation": 24,
+    "xor_cell_assumed_in_lesson": 6,
+    "half_adder_cell_model": 14,
+    "full_adder_cell_model": 36,
+    "ordinary_encoder4to2_two_outputs": 16,
+    "priority_encoder4to2_two_outputs": 26
+  },
+  "nand_N_formulas": [
+    {
+      "N": 2,
+      "transistor_level_area": 6,
+      "specified_gate_chain_area": 6
+    },
+    {
+      "N": 3,
+      "transistor_level_area": 12,
+      "specified_gate_chain_area": 14
+    },
+    {
+      "N": 4,
+      "transistor_level_area": 20,
+      "specified_gate_chain_area": 22
+    },
+    {
+      "N": 5,
+      "transistor_level_area": 30,
+      "specified_gate_chain_area": 30
+    },
+    {
+      "N": 6,
+      "transistor_level_area": 42,
+      "specified_gate_chain_area": 38
+    },
+    {
+      "N": 7,
+      "transistor_level_area": 56,
+      "specified_gate_chain_area": 46
+    },
+    {
+      "N": 8,
+      "transistor_level_area": 72,
+      "specified_gate_chain_area": 54
+    },
+    {
+      "N": 9,
+      "transistor_level_area": 90,
+      "specified_gate_chain_area": 62
+    },
+    {
+      "N": 10,
+      "transistor_level_area": 110,
+      "specified_gate_chain_area": 70
+    },
+    {
+      "N": 11,
+      "transistor_level_area": 132,
+      "specified_gate_chain_area": 78
+    },
+    {
+      "N": 12,
+      "transistor_level_area": 156,
+      "specified_gate_chain_area": 86
+    },
+    {
+      "N": 13,
+      "transistor_level_area": 182,
+      "specified_gate_chain_area": 94
+    },
+    {
+      "N": 14,
+      "transistor_level_area": 210,
+      "specified_gate_chain_area": 102
+    },
+    {
+      "N": 15,
+      "transistor_level_area": 240,
+      "specified_gate_chain_area": 110
+    },
+    {
+      "N": 16,
+      "transistor_level_area": 272,
+      "specified_gate_chain_area": 118
+    },
+    {
+      "N": 17,
+      "transistor_level_area": 306,
+      "specified_gate_chain_area": 126
+    },
+    {
+      "N": 18,
+      "transistor_level_area": 342,
+      "specified_gate_chain_area": 134
+    },
+    {
+      "N": 19,
+      "transistor_level_area": 380,
+      "specified_gate_chain_area": 142
+    },
+    {
+      "N": 20,
+      "transistor_level_area": 420,
+      "specified_gate_chain_area": 150
+    },
+    {
+      "N": 21,
+      "transistor_level_area": 462,
+      "specified_gate_chain_area": 158
+    },
+    {
+      "N": 22,
+      "transistor_level_area": 506,
+      "specified_gate_chain_area": 166
+    },
+    {
+      "N": 23,
+      "transistor_level_area": 552,
+      "specified_gate_chain_area": 174
+    },
+    {
+      "N": 24,
+      "transistor_level_area": 600,
+      "specified_gate_chain_area": 182
+    },
+    {
+      "N": 25,
+      "transistor_level_area": 650,
+      "specified_gate_chain_area": 190
+    },
+    {
+      "N": 26,
+      "transistor_level_area": 702,
+      "specified_gate_chain_area": 198
+    },
+    {
+      "N": 27,
+      "transistor_level_area": 756,
+      "specified_gate_chain_area": 206
+    },
+    {
+      "N": 28,
+      "transistor_level_area": 812,
+      "specified_gate_chain_area": 214
+    },
+    {
+      "N": 29,
+      "transistor_level_area": 870,
+      "specified_gate_chain_area": 222
+    },
+    {
+      "N": 30,
+      "transistor_level_area": 930,
+      "specified_gate_chain_area": 230
+    },
+    {
+      "N": 31,
+      "transistor_level_area": 992,
+      "specified_gate_chain_area": 238
+    },
+    {
+      "N": 32,
+      "transistor_level_area": 1056,
+      "specified_gate_chain_area": 246
+    }
+  ],
+  "physical_OR_MOS_devices": 6,
+  "OR_equal_drive_area_units": 8,
+  "full_adder_logic": "Two XOR macros, two AND gates and one OR: 2*6+2*8+8=36. F3-M003 is a different four-NAND XOR implementation costing24; do not substitute its cost while claiming36.",
+  "encoder_scope": "VALID optional output excluded from both area comparisons; native priority circuit has additional validity logic."
+}

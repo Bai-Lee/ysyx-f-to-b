@@ -1,0 +1,344 @@
+{
+  "status": "PASS",
+  "task": "LCT-04-X03",
+  "source_provenance": {
+    "repository": "vim/vim",
+    "retrieval": "GitHub plugin, default branch, locked individual blob SHAs",
+    "files": [
+      {
+        "file": "xxd.c",
+        "git_blob_sha": "9b1ca6ea5555df413546e48126d75ab91e1c8393",
+        "url": "https://github.com/vim/vim/blob/master/src/xxd/xxd.c",
+        "encoding": "utf-8",
+        "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+      },
+      {
+        "file": "Makefile",
+        "git_blob_sha": "1a6ca5fb28edf2a836010bcb722bb9fb9f1d164b",
+        "url": "https://github.com/vim/vim/blob/master/src/xxd/Makefile",
+        "encoding": "utf-8",
+        "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+      }
+    ]
+  },
+  "version": "xxd 2026-06-16 by Juergen Weigert et al.",
+  "binary_sha256": "2e43f091259a5da6f2ec40cfab832d080f48331f622a309a51dc1043584de061",
+  "roundtrip_bytes": 262,
+  "roundtrip_sha256": "84e3cac7f6e4b1d214c76106ce374441f8db24309f98b760e7ee5ace501fbe83",
+  "runs": [
+    {
+      "name": "E3/xxd/existing_tool",
+      "timestamp": "2026-10-24T16:52:26.367417+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "xxd",
+        "-p",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/xxd/payload.bin"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.156,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\payload.bin",
+          "sha256": "84e3cac7f6e4b1d214c76106ce374441f8db24309f98b760e7ee5ace501fbe83"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\payload.bin",
+          "sha256": "84e3cac7f6e4b1d214c76106ce374441f8db24309f98b760e7ee5ace501fbe83"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "dc0b3a59ddc881d8a56bec64a527354fb3ae8ebe97a82639ce54b01e642938ce",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/xxd/build",
+      "timestamp": "2026-10-24T16:52:26.850004+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "make",
+        "-C",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/xxd/build",
+        "-j1",
+        "CC=gcc",
+        "CFLAGS=-O0 -g -Wall",
+        "xxd"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.453,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "938ffc88d3a2c35c98d472f7a98ee67eabf717372fcc2520bab3c28057702a93",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/xxd/version",
+      "timestamp": "2026-10-24T16:52:26.992224+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/xxd/build/xxd",
+        "-v"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.109,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd",
+          "sha256": "2e43f091259a5da6f2ec40cfab832d080f48331f622a309a51dc1043584de061"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd",
+          "sha256": "2e43f091259a5da6f2ec40cfab832d080f48331f622a309a51dc1043584de061"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "1d21bfaa07a368303c3e490e116122572ab4c7160cfda50d0ea4c1f5d6239d06"
+    },
+    {
+      "name": "E3/xxd/dump",
+      "timestamp": "2026-10-24T16:52:27.112494+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/xxd/build/xxd",
+        "-p",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/xxd/payload.bin"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.109,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd",
+          "sha256": "2e43f091259a5da6f2ec40cfab832d080f48331f622a309a51dc1043584de061"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\payload.bin",
+          "sha256": "84e3cac7f6e4b1d214c76106ce374441f8db24309f98b760e7ee5ace501fbe83"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd",
+          "sha256": "2e43f091259a5da6f2ec40cfab832d080f48331f622a309a51dc1043584de061"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\payload.bin",
+          "sha256": "84e3cac7f6e4b1d214c76106ce374441f8db24309f98b760e7ee5ace501fbe83"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "dc0b3a59ddc881d8a56bec64a527354fb3ae8ebe97a82639ce54b01e642938ce",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/xxd/reverse",
+      "timestamp": "2026-10-24T16:52:27.245650+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/xxd/build/xxd",
+        "-r",
+        "-p",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/xxd/dump/stdout.log",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/xxd/roundtrip.bin"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.109,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd",
+          "sha256": "2e43f091259a5da6f2ec40cfab832d080f48331f622a309a51dc1043584de061"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\dump\\stdout.log",
+          "sha256": "dc0b3a59ddc881d8a56bec64a527354fb3ae8ebe97a82639ce54b01e642938ce"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd.c",
+          "sha256": "f4f9812f9b83651e30040c83bd722651cc4656eb95b86a852edd1cd60e9b2fcd"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\Makefile",
+          "sha256": "2be20961500f9d9e8d44e91cc6c773f197e479222bfd1bf83e010acd9467daa1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\xxd-source\\provenance.json",
+          "sha256": "b39fcbd2dbd3bcacc4c1fdb19229725ee9311fb78ca5ee255812040dd23a1bca"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\build\\xxd",
+          "sha256": "2e43f091259a5da6f2ec40cfab832d080f48331f622a309a51dc1043584de061"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\xxd\\dump\\stdout.log",
+          "sha256": "dc0b3a59ddc881d8a56bec64a527354fb3ae8ebe97a82639ce54b01e642938ce"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scope": "Small single-source official xxd utility; compiled manually with native Linux make/gcc -j1. Does not substitute for the deferred full Valgrind source build."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_PORTABLE_EXTRACTION",
+  "packages": [
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-xkb1_1.14-3ubuntu3_amd64.deb",
+      "filename": "libxcb-xkb1_1.14-3ubuntu3_amd64.deb",
+      "bytes": 32836,
+      "official_sha512": "1f039707a6bfa58dda08cb2dd404132f8381d2375143464b67415978d7fbefa88f299e9006cf7c925878db8b8e23c897d7adfd37643ce71c8654122e9f1bd5d2",
+      "local_sha256": "4cf69af3ff6a60b63f9f6ea6e7d27471114c6bcbcf3f981f7b88f361029e5eb8"
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_1.4.0-1_amd64.deb",
+      "filename": "libxkbcommon-x11-0_1.4.0-1_amd64.deb",
+      "bytes": 14368,
+      "official_sha512": "261a19f56439f496a19106f01022ce0319e368018f2eb91382830e52892830b9a2e5aed6936e74e58afbeabdc97b26e5e47a0e1f35ea416456b35d8e8cdb4e2c",
+      "local_sha256": "e29c40fab6e0f055218aee4c7e60cd61ea82283229d7ac7ac02e226e92a5b0d5"
+    }
+  ],
+  "root": "/home/USER/tools/e-stage/gui-libs",
+  "scope": "OfficialUbuntupackagebytesverifiedagainstAPTindexSHA512; unpackedunderprojecttools, notinstalledintothesystem. LD_LIBRARY_PATHappliestothisGUIprocessonly."
+}

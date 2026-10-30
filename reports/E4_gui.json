@@ -1,0 +1,3010 @@
+{
+  "status": "PASS",
+  "display": "isolated Xvfb1600x1200, real GTKWave and upstream SDL NVBoard",
+  "screens": [
+    {
+      "name": "official_before",
+      "path": "artifacts/E4/gui/official_before.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": null,
+      "sha256": "bbcd7ee833ee53bc9218566823cbad4c65bba654d645b7c2e80a2977c7bb7e08"
+    },
+    {
+      "name": "official_after_switch",
+      "path": "artifacts/E4/gui/official_after_switch.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": null,
+      "sha256": "a9bb12526786463f98f57bfec6bc40740d570d9b12c9d6e5a98debd33d2e5e96",
+      "interaction": "Physical SDL switch toggled through X11 mouse event"
+    },
+    {
+      "name": "dual_0",
+      "path": "artifacts/E4/gui/dual_0.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 0,
+      "sha256": "c8bfab2f7fbf6b8d8f8485d4dcf2c4292ed41286f468709b5caedd062ac141ae"
+    },
+    {
+      "name": "dual_1",
+      "path": "artifacts/E4/gui/dual_1.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 1,
+      "sha256": "d08efd2580bda0f28cecd78d8e789bf1100394ce648975094bd34d0f47f8e8de"
+    },
+    {
+      "name": "dual_3",
+      "path": "artifacts/E4/gui/dual_3.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 0,
+      "sha256": "d329711e3b7dff2b40eda7e1c959544c4b1ced4dc6efe14bb43d289462491f39"
+    },
+    {
+      "name": "dual_2",
+      "path": "artifacts/E4/gui/dual_2.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 1,
+      "sha256": "e8ebb0578959fb80dea11792de7400fbf383eaca95a016cd8bdba00a2bfa95f8"
+    },
+    {
+      "name": "encoder_256",
+      "path": "artifacts/E4/gui/encoder_256.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 0,
+      "sha256": "f60f436c1bbdb1a5795053417552de19379ec8b927c46cfee7f93adbc97c525d"
+    },
+    {
+      "name": "encoder_270",
+      "path": "artifacts/E4/gui/encoder_270.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 19,
+      "sha256": "10184fc7475c34ecc25a3fbb6509b25de279a05ff89fb282203eb03b3b75c528"
+    },
+    {
+      "name": "encoder_384",
+      "path": "artifacts/E4/gui/encoder_384.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 23,
+      "sha256": "486235ddfdac63757506a266433c62e80893079ae7a473b85a7b7bec63a95297"
+    },
+    {
+      "name": "alu_23",
+      "path": "artifacts/E4/gui/alu_23.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 40,
+      "sha256": "02f7aeb4f4af8a666b7ceaa5facf863326a7cd86caa21893e7ecfe5e7204ddab"
+    },
+    {
+      "name": "alu_376",
+      "path": "artifacts/E4/gui/alu_376.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 49,
+      "sha256": "e20f33f9bf129665daa0d737e136644e32134a9a74387d81e6cb4c47d4526903"
+    },
+    {
+      "name": "alu_1656",
+      "path": "artifacts/E4/gui/alu_1656.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 129,
+      "sha256": "57929c229ebcccf9a6641f99d4b84e95dda792e9e2eb217e7f49a174d1ef024e"
+    },
+    {
+      "name": "alu_1928",
+      "path": "artifacts/E4/gui/alu_1928.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 1,
+      "sha256": "a03b9ee4752bf20440dca877503ad2e9571bc8798d9b483206cb9ee1ff591766"
+    },
+    {
+      "name": "lfsr",
+      "path": "artifacts/E4/gui/lfsr.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 136,
+      "sha256": "c83fbb120be6a912d8931a1a3342fe7f68936682b4d34ff0d956a041b22aeb6a"
+    },
+    {
+      "name": "shift",
+      "path": "artifacts/E4/gui/shift.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 192,
+      "sha256": "9beeb8ca866e484a4a932df4a9af465380adfa3fb8b3d9abd879aed7f7a92d19"
+    },
+    {
+      "name": "fsm_four_zeros",
+      "path": "artifacts/E4/gui/fsm_four_zeros.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 65,
+      "sha256": "aca4195ab2e30afa1fc306557dc29587f0b05eb16d476486ad686fca40e2387a"
+    },
+    {
+      "name": "fsm_four_ones",
+      "path": "artifacts/E4/gui/fsm_four_ones.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 129,
+      "sha256": "f42a93f3a147085f82c81009dcb1db546c10ac10c1e4de63407499d5e02d1e2b"
+    },
+    {
+      "name": "keyboard_a",
+      "path": "artifacts/E4/gui/keyboard_a.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 0,
+      "sha256": "8ab186bec4b5136b3512e007ffdf6414536eb9e0d40a261822b18e4484c0271d",
+      "key": 28,
+      "ascii": 97,
+      "count": 1,
+      "active": 1
+    },
+    {
+      "name": "keyboard_release",
+      "path": "artifacts/E4/gui/keyboard_release.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 0,
+      "sha256": "88201aae3a68d6743dff1e7e4962e35acb0a82df7b872b751a9d7d4821612c1a",
+      "active": 0
+    },
+    {
+      "name": "keyboard_shift_w",
+      "path": "artifacts/E4/gui/keyboard_shift_w.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 1,
+      "sha256": "964e71ff608bc7534c8352a8a43ee40595b0e8722e936c28758f7c014bf1859f",
+      "ascii": 87,
+      "count": 2
+    },
+    {
+      "name": "keyboard_ctrl",
+      "path": "artifacts/E4/gui/keyboard_ctrl.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 2,
+      "sha256": "3cfdb0cd45189394bcebe4c179134567aaa9cd88bc0c2e8cd8c9c9a0cf35c9bd"
+    },
+    {
+      "name": "vga_static",
+      "path": "artifacts/E4/gui/vga_static.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 0,
+      "sha256": "f1f55c217ff93304baafcb850b5097b83c952ca71b8164f52e5d62c7f2424265",
+      "vga_pattern": true
+    },
+    {
+      "name": "vga_moving_1",
+      "path": "artifacts/E4/gui/vga_moving_1.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 0,
+      "sha256": "72b9c8072465a8c34e87bf8c242ded128665f051f5659a3ebb0191008ea3a2be",
+      "motion_state": {
+        "cycles": 2100000,
+        "mode": 8,
+        "sw": 0,
+        "led": 0,
+        "key": 0,
+        "ascii": 0,
+        "active": 0,
+        "count": 0,
+        "mods": 0,
+        "pc": 11,
+        "x": 15,
+        "y": 10,
+        "dx": 1,
+        "dy": 1
+      }
+    },
+    {
+      "name": "vga_moving_2",
+      "path": "artifacts/E4/gui/vga_moving_2.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 0,
+      "sha256": "b976622470c05e6b11f3e240e8b839ec2ca47dd17e3daa59ff4adebcda776208",
+      "motion_state": {
+        "cycles": 7560000,
+        "mode": 8,
+        "sw": 0,
+        "led": 0,
+        "key": 0,
+        "ascii": 0,
+        "active": 0,
+        "count": 0,
+        "mods": 0,
+        "pc": 11,
+        "x": 54,
+        "y": 36,
+        "dx": 1,
+        "dy": 1
+      }
+    },
+    {
+      "name": "cpu_sum55",
+      "path": "artifacts/E4/gui/cpu_sum55.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": 55,
+      "sha256": "a1f927fa44da8ac46ba34f48f415fb73e09f21dbd4728f71e70a1310ac377398"
+    },
+    {
+      "name": "running_light",
+      "path": "artifacts/E4/gui/running_light.png",
+      "geometry": {
+        "X": 224,
+        "Y": 168,
+        "WIDTH": 1152,
+        "HEIGHT": 864
+      },
+      "led_expected": null,
+      "sha256": "b4d367ea3a510d87b628b66808de55cce64a35eef26c5597d265a9c243414a09",
+      "observed_sequence": [
+        2,
+        4,
+        8,
+        16,
+        32
+      ]
+    },
+    {
+      "name": "gtkwave_vcd",
+      "path": "artifacts/E4/gui/gtkwave_vcd.png",
+      "geometry": {
+        "X": 0,
+        "Y": 0,
+        "WIDTH": 1000,
+        "HEIGHT": 600
+      },
+      "led_expected": null,
+      "sha256": "a67428e8db2d562d2a4f0667892a85d2e538ba7674fa59b4beadc796c3ab75a3"
+    },
+    {
+      "name": "gtkwave_fst",
+      "path": "artifacts/E4/gui/gtkwave_fst.png",
+      "geometry": {
+        "X": 0,
+        "Y": 0,
+        "WIDTH": 1000,
+        "HEIGHT": 600
+      },
+      "led_expected": null,
+      "sha256": "3c0100f1247e58c03441fedcf50755aa72ad10d00add5ca6c47ca2ad475e6c05"
+    }
+  ],
+  "sessions": [
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/ysyx-workbench/nvboard/example/build/top"
+      ],
+      "cwd": "/home/USER/ysyx-workbench/nvboard/example",
+      "exit_code": 0,
+      "expected_exit": [
+        0,
+        -15
+      ],
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "806064a99696c13b28f9c4dce3a98e456251c5cddcf7b3698b5541fda9d59191",
+      "elapsed_seconds": 2.232,
+      "bounded_stop": "Original infinite example sent SIGTERM after display/interaction; SDL_QUIT may yield normal exit0",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "0",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "0db6b4d3f55ded2a4a22e63435b21c9e2ff029cb3ce78a20b129b9b7934857eb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 2.021,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "1",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "bd5ec200e0bd66a834aac7945ce5c7c4142fb3fcfc9bd464fab2226682b22596",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 2.344,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "2",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "4dcc2ee40a9cec86aa4717c0dd0933335bdcdb18a1c112760d0e861ca0cf45f1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 3.656,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "3",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "1e1fc6624f6c7fc5f32c2f314c511802f6342eb436f9062d10f80a02e433bece",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 1.257,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "4",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "89a19c1eca250d07a454738fb29cbebc3d530f3b7c0ef7b86f9fcfd96a7d1046",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 1.646,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "5",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "fed28d56efa3508716060f0182a17db14ef9211c44cd63f3621b092e97a67dd5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 2.193,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "6",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "fc6f6e2bb567c7ca974067564f1e4466bfb84295be7d6c621c4e50727220d36b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 2.645,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "7",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "b177090a6553cce6201e9423f94d15b8ae0b9bcc777b3611c6eb516af8881be4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 1.249,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "8",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "9c3b0cddd7c7b1aa86c2a598638d98eb2aa265e719915898af8e7ace7f435a5a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 2.079,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "9",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "44fb6258cd2c338d3dce4b972d27589a3a1fe611d47236370913e0e4b6836498",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 0.751,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    },
+    {
+      "status": "PASS",
+      "command": [
+        "/home/USER/e4-lab/build/lab_board/lab_board",
+        "10",
+        "/workspace/projects/ysyx_f_to_b/E/E4/data/f6_output.hex"
+      ],
+      "cwd": "/home/USER/e4-lab",
+      "exit_code": 0,
+      "expected_exit": [
+        0
+      ],
+      "stdout_sha256": "893a6b47f0038e3d2149ed234d59fd0b1fa7577fa97277c6717c50eebe0988d6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+      "elapsed_seconds": 4.382,
+      "bounded_stop": "Own harness normal exit via stdin q",
+      "display": ":99"
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "692",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "692",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "665",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "692",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "476",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "665",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "638",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "611",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "665",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "638",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "611",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "503",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "692",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "665",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "638",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "584",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "692",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "665",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "638",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "611",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "557",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "530",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "476",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "476",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "449",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "422",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "584",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "557",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "530",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "503",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "476",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "692",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "503",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "476",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "692",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "503",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "476",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "422",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "692",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "665",
+        "546"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "706",
+        "406"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keydown",
+        "a"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keyup",
+        "a"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keydown",
+        "Shift_L"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keydown",
+        "w"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keyup",
+        "w"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keyup",
+        "Shift_L"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keydown",
+        "Control_L"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keyup",
+        "Control_L"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291459"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291459\nX=0\nY=0\nWIDTH=1000\nHEIGHT=600\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291459"
+      ],
+      "exit_code": 0,
+      "stdout": "WINDOW=6291459\nX=0\nY=0\nWIDTH=1000\nHEIGHT=600\nSCREEN=0\n",
+      "stderr": ""
+    }
+  ],
+  "gui_portability": "Virtual X display, not physical FPGA or WSLg/Windows desktop automation."
+}

@@ -1,0 +1,83 @@
+{
+  "status": "DOWNLOADED_NOT_BUILT",
+  "source_directory": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\valgrind-source",
+  "source_files": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\valgrind-source\\valgrind_3.18.1-1ubuntu2.debian.tar.xz",
+      "sha256": "e9cb2c197b9155d3d5f805d05f69ac9350f4dac72c738b515ce5083f87575b8c",
+      "bytes": 35864
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\valgrind-source\\valgrind_3.18.1-1ubuntu2.dsc",
+      "sha256": "ec46d8188ae9fb0b8324a2c44d3adafecaa28b4893477abe56e6d5cba106c17e",
+      "bytes": 2520
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\valgrind-source\\valgrind_3.18.1.orig.tar.bz2",
+      "sha256": "00859aa13a772eddf7822225f4b46ee0d39afbe071d32778da4d99984081f7f5",
+      "bytes": 16149159
+    }
+  ],
+  "enable_source_indexes": {
+    "name": "E3/valgrind_source/enable_sources",
+    "timestamp": "2026-10-24T15:43:02.447699+00:00",
+    "command": [
+      "wsl.exe",
+      "-d",
+      "YSYX-Linux",
+      "-u",
+      "root",
+      "--exec",
+      "bash",
+      "/workspace/projects/ysyx_f_to_b/E/E3/enable_source_repositories.sh"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "status": "PASS",
+    "elapsed_seconds": 98.015,
+    "timeout_seconds": 360,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\enable_source_repositories.sh",
+        "sha256": "9f7bfeb1653da2472c69c90c63001894716aa8986f59039e1eb764ead4b685bb"
+      }
+    ],
+    "inputs_after": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\enable_source_repositories.sh",
+        "sha256": "9f7bfeb1653da2472c69c90c63001894716aa8986f59039e1eb764ead4b685bb"
+      }
+    ],
+    "inputs_unchanged": true,
+    "stdout_sha256": "4f02d14063c7e899586a95e14bfcfebe0c4f80f64ad4a3ebb3f2a87fab68d583",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "download": {
+    "name": "E3/valgrind_source/download",
+    "timestamp": "2026-10-24T15:43:13.217159+00:00",
+    "command": [
+      "wsl.exe",
+      "-d",
+      "YSYX-Linux",
+      "-u",
+      "ysyx",
+      "--exec",
+      "bash",
+      "-lc",
+      "set -eu\ncd /workspace/downloads/ysyx_e3/valgrind-source\ntask_source_version=$(dpkg-query -W -f='${Version}' valgrind)\napt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=20 source --download-only --only-source \"valgrind=$task_source_version\"\n"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "status": "PASS",
+    "elapsed_seconds": 10.735,
+    "timeout_seconds": 240,
+    "inputs": [],
+    "inputs_after": [],
+    "inputs_unchanged": true,
+    "stdout_sha256": "8087af82d1067a9215cec39a7e1557837d3af8379e0f3c6196c7f5c37c9c4710",
+    "stderr_sha256": "2af096bc11b03e30374916f0a7dad5c6199eb59ef2236181d617c8b2b9ab1e18"
+  },
+  "scope": "APT authenticated source indexes; download only, no Valgrind compilation under current low-memory authorization."
+}

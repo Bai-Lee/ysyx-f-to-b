@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "packages": [
+    {
+      "package": "clang-15",
+      "version": "1:15.0.7-0ubuntu0.22.04.3",
+      "file": "/workspace/downloads/ysyx_d_stage/clang/clang-15_1%3a15.0.7-0ubuntu0.22.04.3_amd64.deb",
+      "sha256": "2e29983cd32edf0657574f85291a1f236ae8969ee6b5eedc4d1040f7eb2afc33",
+      "official_apt_digest_match": true,
+      "uri_record": "artifacts/D/dependencies/clang-15/uri/stdout.log"
+    },
+    {
+      "package": "libclang-cpp15",
+      "version": "1:15.0.7-0ubuntu0.22.04.3",
+      "file": "/workspace/downloads/ysyx_d_stage/clang/libclang-cpp15_1%3a15.0.7-0ubuntu0.22.04.3_amd64.deb",
+      "sha256": "e9bbe3180e2969fdf28603718bfc2c928bba637f2995ad304bc0dd9c6d90b93b",
+      "official_apt_digest_match": true,
+      "uri_record": "artifacts/D/dependencies/libclang-cpp15/uri/stdout.log"
+    },
+    {
+      "package": "libclang-common-15-dev",
+      "version": "1:15.0.7-0ubuntu0.22.04.3",
+      "file": "/workspace/downloads/ysyx_d_stage/clang/libclang-common-15-dev_1%3a15.0.7-0ubuntu0.22.04.3_amd64.deb",
+      "sha256": "4e8bee56deed58a1c3da8354c6cb352b9b82a8bf9cfe44bfae5cc0ba34eade60",
+      "official_apt_digest_match": true,
+      "uri_record": "artifacts/D/dependencies/libclang-common-15-dev/uri/stdout.log"
+    }
+  ],
+  "compiler": "/home/USER/tools/d-stage/clang15/usr/bin/clang-15",
+  "env": {
+    "LD_LIBRARY_PATH": "/home/USER/tools/d-stage/clang15/usr/lib/x86_64-linux-gnu"
+  },
+  "system_installation": false,
+  "evidence": "artifacts/D/dependencies",
+  "existing_libLLVM15_sha256": "de2e35a4f9b3f6a06d2a8a3342b3f62a3842b1923b8dfc2a6ce48e0cc2d1e85d"
+}

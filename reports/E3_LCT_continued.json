@@ -1,0 +1,1423 @@
+{
+  "status": "AUDITED_WITH_DECLARED_EXCEPTIONS",
+  "records": [
+    {
+      "id": "LCT-10-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex10_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode."
+    },
+    {
+      "id": "LCT-10-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex10_many",
+        "ex10_python",
+        "ex10_exec_limit.json",
+        "ex10_bad_count",
+        "ex11_uninitialized",
+        "ex11_bounded_nontermination",
+        "ex11_nontermination_note.json"
+      ],
+      "details": "Real failures/observations retained; oversized argv is OS E2BIG. Nontermination has static invariant explanation and separately labeled timeout."
+    },
+    {
+      "id": "LCT-10-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-10-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-10-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-10-X04",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-11-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex11_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode."
+    },
+    {
+      "id": "LCT-11-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex10_many",
+        "ex10_python",
+        "ex10_exec_limit.json",
+        "ex10_bad_count",
+        "ex11_uninitialized",
+        "ex11_bounded_nontermination",
+        "ex11_nontermination_note.json"
+      ],
+      "details": "Real failures/observations retained; oversized argv is OS E2BIG. Nontermination has static invariant explanation and separately labeled timeout."
+    },
+    {
+      "id": "LCT-11-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-11-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-11-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-11-X04",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-12-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex12_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode."
+    },
+    {
+      "id": "LCT-12-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex12_or_fault",
+        "ex12_missing_else",
+        "ex12_correct_message"
+      ],
+      "details": "Argument-count boundaries tested; wrong branch coverage is a logic error even without a crash; corrected argv0 wording."
+    },
+    {
+      "id": "LCT-12-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-12-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex12_or_fault",
+        "ex12_missing_else",
+        "ex12_correct_message"
+      ],
+      "details": "Argument-count boundaries tested; wrong branch coverage is a logic error even without a crash; corrected argv0 wording."
+    },
+    {
+      "id": "LCT-12-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-12-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex12_or_fault",
+        "ex12_missing_else",
+        "ex12_correct_message"
+      ],
+      "details": "Argument-count boundaries tested; wrong branch coverage is a logic error even without a crash; corrected argv0 wording."
+    },
+    {
+      "id": "LCT-13-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex13_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode."
+    },
+    {
+      "id": "LCT-13-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex13_no_break",
+        "ex13_y_original",
+        "ex13_y_changed"
+      ],
+      "details": "Actual fall-through experiments including Y with break inside/outside if."
+    },
+    {
+      "id": "LCT-13-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-13-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-13-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-13-X04",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-13-X05",
+      "status": "PASS",
+      "evidence": [
+        "ex13_no_break",
+        "ex13_y_original",
+        "ex13_y_changed"
+      ],
+      "details": "Actual fall-through experiments including Y with break inside/outside if."
+    },
+    {
+      "id": "LCT-14-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex14_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode."
+    },
+    {
+      "id": "LCT-14-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex14_no_declarations",
+        "ex14_overrun_argv"
+      ],
+      "details": "Removed prototypes diagnosed by compiler; argv[argc] is NULL and argc+1 eventually dereferences it."
+    },
+    {
+      "id": "LCT-14-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-14-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-14-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json",
+        "manual/isalpha",
+        "manual/isblank",
+        "manual/isdigit"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-14-X04",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md"
+      ],
+      "details": "Compared primary GNU/Linux style documentation; distinguishes old K&R parameter definitions from brace style."
+    },
+    {
+      "id": "LCT-15-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex15_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode."
+    },
+    {
+      "id": "LCT-15-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex15_wrong_type",
+        "ex15_wrong_bounds"
+      ],
+      "details": "Wrong object type changes values; one-past-end dereference caught by ASan. Reverse traversal is separately implemented without forming before-begin pointers."
+    },
+    {
+      "id": "LCT-15-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-15-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-15-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-15-X04",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-15-X05",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-15-X06",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-15-X07",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-15-X08",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-16-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex16_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode."
+    },
+    {
+      "id": "LCT-16-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex16_null_destroy",
+        "ex16_no_destroy",
+        "ex16_name_leak",
+        "ex16_null_print"
+      ],
+      "details": "Real assert failure, whole-object leaks, name-only leaks and invalid read. -g is not the assertion-enable switch; NDEBUG controls assertions."
+    },
+    {
+      "id": "LCT-16-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-16-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-16-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope."
+    },
+    {
+      "id": "LCT-17-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex17_create",
+        "ex17_get",
+        "ex17_long_get",
+        "ex17_classic_get",
+        "ex17_negative_id",
+        "ex17_corrupt_short"
+      ],
+      "details": "Original CRUD/size verified; long strncpy fields reproduce concatenation defect; copied correction terminates; negative IDs and corrupted file tested. Allocation limit has a separate bounded probe."
+    },
+    {
+      "id": "LCT-17-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex17_create",
+        "ex17_get",
+        "ex17_long_get",
+        "ex17_classic_get",
+        "ex17_negative_id",
+        "ex17_corrupt_short"
+      ],
+      "details": "Original CRUD/size verified; long strncpy fields reproduce concatenation defect; copied correction terminates; negative IDs and corrupted file tested. Allocation limit has a separate bounded probe."
+    },
+    {
+      "id": "LCT-17-X01",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding."
+    },
+    {
+      "id": "LCT-17-X02",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding."
+    },
+    {
+      "id": "LCT-17-X03",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding."
+    },
+    {
+      "id": "LCT-17-X04",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding."
+    },
+    {
+      "id": "LCT-17-X05",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding."
+    },
+    {
+      "id": "LCT-17-X06",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding."
+    },
+    {
+      "id": "LCT-17-X07",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding."
+    },
+    {
+      "id": "LCT-17-X08",
+      "status": "PASS",
+      "evidence": [
+        "stack"
+      ],
+      "details": "Independent Python and C capacity8 stacks agree on2000 operations including full and empty; data-structure stack is distinct from call-stack memory."
+    },
+    {
+      "id": "LCT-18-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex18_original"
+      ],
+      "details": "All three printed rows match the archived worked example. strange_order is not a general strict ordering; it is not described as a valid universal comparator."
+    },
+    {
+      "id": "LCT-18-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow."
+    },
+    {
+      "id": "LCT-18-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow."
+    },
+    {
+      "id": "LCT-18-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow."
+    },
+    {
+      "id": "LCT-18-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow."
+    },
+    {
+      "id": "LCT-18-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow."
+    },
+    {
+      "id": "LCT-18-X05",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow."
+    },
+    {
+      "id": "LCT-19-BASE",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "game_original"
+      ],
+      "details": "Original program truly ran; its graph is never destroyed and Memcheck reports leaks. Derived versions add explicit ownership and cleanup rather than reporting original as memory-clean."
+    },
+    {
+      "id": "LCT-19-X01",
+      "status": "PASS",
+      "evidence": [
+        "games/build",
+        "games/test",
+        "games/clean",
+        "games/rebuild"
+      ],
+      "details": "Expanded to6 rooms/3 monsters; shared object.o/actors.o reused by second Map/main. make test drives five scenarios under Memcheck; make clean includes object.o. Graph owns rooms once; directional edges are borrowed, preventing recursive double-free."
+    },
+    {
+      "id": "LCT-19-X02",
+      "status": "PASS",
+      "evidence": [
+        "games/build",
+        "games/test",
+        "games/clean",
+        "games/rebuild"
+      ],
+      "details": "Expanded to6 rooms/3 monsters; shared object.o/actors.o reused by second Map/main. make test drives five scenarios under Memcheck; make clean includes object.o. Graph owns rooms once; directional edges are borrowed, preventing recursive double-free."
+    },
+    {
+      "id": "LCT-19-X03",
+      "status": "PASS",
+      "evidence": [
+        "games/build",
+        "games/test",
+        "games/clean",
+        "games/rebuild"
+      ],
+      "details": "Expanded to6 rooms/3 monsters; shared object.o/actors.o reused by second Map/main. make test drives five scenarios under Memcheck; make clean includes object.o. Graph owns rooms once; directional edges are borrowed, preventing recursive double-free."
+    },
+    {
+      "id": "LCT-19-X04",
+      "status": "PASS",
+      "evidence": [
+        "games/build",
+        "games/test",
+        "games/clean",
+        "games/rebuild"
+      ],
+      "details": "Expanded to6 rooms/3 monsters; shared object.o/actors.o reused by second Map/main. make test drives five scenarios under Memcheck; make clean includes object.o. Graph owns rooms once; directional edges are borrowed, preventing recursive double-free."
+    },
+    {
+      "id": "LCT-20-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex20/run",
+        "ex20_top_ndebug/run",
+        "ex20_flag_ndebug/run",
+        "ex20_functions/run"
+      ],
+      "details": "Original macro error paths and cleanup tested; NDEBUG removes debug output but does not remove check/goto behavior; function/file/line included in derived macros."
+    },
+    {
+      "id": "LCT-20-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex20/run",
+        "ex20_top_ndebug/run",
+        "ex20_flag_ndebug/run",
+        "ex20_functions/run"
+      ],
+      "details": "Original macro error paths and cleanup tested; NDEBUG removes debug output but does not remove check/goto behavior; function/file/line included in derived macros."
+    },
+    {
+      "id": "LCT-20-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex20/run",
+        "ex20_top_ndebug/run",
+        "ex20_flag_ndebug/run",
+        "ex20_functions/run"
+      ],
+      "details": "Original macro error paths and cleanup tested; NDEBUG removes debug output but does not remove check/goto behavior; function/file/line included in derived macros."
+    },
+    {
+      "id": "LCT-20-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex20/run",
+        "ex20_top_ndebug/run",
+        "ex20_flag_ndebug/run",
+        "ex20_functions/run"
+      ],
+      "details": "Original macro error paths and cleanup tested; NDEBUG removes debug output but does not remove check/goto behavior; function/file/line included in derived macros."
+    },
+    {
+      "id": "LCT-21-BASE",
+      "status": "PASS",
+      "evidence": [
+        "types",
+        "stdint_macros",
+        "types_table.json"
+      ],
+      "details": "All listed type families/limits measured, representative qualifiers/operators/control verified. Volatile does not disable all optimization or provide synchronization; register is not a physical allocation guarantee."
+    },
+    {
+      "id": "LCT-21-X01",
+      "status": "PASS",
+      "evidence": [
+        "types",
+        "stdint_macros",
+        "types_table.json"
+      ],
+      "details": "All listed type families/limits measured, representative qualifiers/operators/control verified. Volatile does not disable all optimization or provide synchronization; register is not a physical allocation guarantee."
+    },
+    {
+      "id": "LCT-21-X02",
+      "status": "PASS",
+      "evidence": [
+        "types",
+        "stdint_macros",
+        "types_table.json"
+      ],
+      "details": "All listed type families/limits measured, representative qualifiers/operators/control verified. Volatile does not disable all optimization or provide synchronization; register is not a physical allocation guarantee."
+    },
+    {
+      "id": "LCT-21-X03",
+      "status": "MATERIAL_PREPARED_HUMAN_DURATION",
+      "evidence": [
+        "E/E3/lcthw/notes/21-flashcards.md",
+        "types"
+      ],
+      "details": "Actual flashcards provided; no claim of elapsed daily human practice."
+    },
+    {
+      "id": "LCT-21-X04",
+      "status": "PASS",
+      "evidence": [
+        "types",
+        "stdint_macros",
+        "types_table.json"
+      ],
+      "details": "All listed type families/limits measured, representative qualifiers/operators/control verified. Volatile does not disable all optimization or provide synchronization; register is not a physical allocation guarantee."
+    },
+    {
+      "id": "LCT-22-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex22_make",
+        "ex22/run"
+      ],
+      "details": "Real separate object compilation/linking; static lifetime retains ratio, file-static age exposed only by accessors, local shadowing leaves caller count4."
+    },
+    {
+      "id": "LCT-22-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed."
+    },
+    {
+      "id": "LCT-22-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed."
+    },
+    {
+      "id": "LCT-22-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed."
+    },
+    {
+      "id": "LCT-22-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed."
+    },
+    {
+      "id": "LCT-22-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed."
+    },
+    {
+      "id": "LCT-22-X05",
+      "status": "PASS",
+      "evidence": [
+        "ex22_make",
+        "ex22/run"
+      ],
+      "details": "Real separate object compilation/linking; static lifetime retains ratio, file-static age exposed only by accessors, local shadowing leaves caller count4."
+    },
+    {
+      "id": "LCT-24-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer."
+    },
+    {
+      "id": "LCT-24-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer."
+    },
+    {
+      "id": "LCT-24-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer."
+    },
+    {
+      "id": "LCT-24-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer."
+    },
+    {
+      "id": "LCT-24-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer."
+    },
+    {
+      "id": "LCT-24-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer."
+    },
+    {
+      "id": "LCT-25-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax."
+    },
+    {
+      "id": "LCT-25-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax."
+    },
+    {
+      "id": "LCT-25-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax."
+    },
+    {
+      "id": "LCT-25-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax."
+    },
+    {
+      "id": "LCT-25-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax."
+    },
+    {
+      "id": "LCT-27-BASE",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ex27_verbatim",
+        "ex27_book",
+        "ex27_overflow",
+        "ex27_gap",
+        "defensive_copy"
+      ],
+      "details": "Original missing# repaired in copy; reviewed numeric overflow before validation and uninitialized output gap. Defined preconditions, overlap behavior, immediate terminator and automated boundary/negative tests. Raw original remains unchanged."
+    },
+    {
+      "id": "LCT-27-X01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ex27_verbatim",
+        "ex27_book",
+        "ex27_overflow",
+        "ex27_gap",
+        "defensive_copy"
+      ],
+      "details": "Original missing# repaired in copy; reviewed numeric overflow before validation and uninitialized output gap. Defined preconditions, overlap behavior, immediate terminator and automated boundary/negative tests. Raw original remains unchanged."
+    },
+    {
+      "id": "LCT-27-X02",
+      "status": "PASS_REVIEW_NO_CONFIRMED_BUG",
+      "evidence": [
+        "review/xxd_bound",
+        "review/xxd_slice",
+        "review/xxd_missing",
+        "reports/E3_xxd_build.json"
+      ],
+      "details": "Reviewed pinned official xxd argument-size checks, input/output error paths and Makefile; exercised invalid columns, bounded slice and missing file. No confirmed new upstream bug in reviewed scope, so conditional patch-submission requirement did not arise."
+    },
+    {
+      "id": "LCT-28-BASE",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "library/build",
+        "library/badfuncs",
+        "library/negative_harness"
+      ],
+      "details": "Real static/shared libraries and nonempty positive/negative tests. Book recipe spaces restored to TAB; link libraries moved after source/object arguments for modern linker ordering. BADFUNCS is a textual warning heuristic, not a proof of vulnerability or safety."
+    },
+    {
+      "id": "LCT-28-X01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "library/build",
+        "library/badfuncs",
+        "library/negative_harness"
+      ],
+      "details": "Real static/shared libraries and nonempty positive/negative tests. Book recipe spaces restored to TAB; link libraries moved after source/object arguments for modern linker ordering. BADFUNCS is a textual warning heuristic, not a proof of vulnerability or safety."
+    },
+    {
+      "id": "LCT-28-X02",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "library/build",
+        "library/badfuncs",
+        "library/negative_harness"
+      ],
+      "details": "Real static/shared libraries and nonempty positive/negative tests. Book recipe spaces restored to TAB; link libraries moved after source/object arguments for modern linker ordering. BADFUNCS is a textual warning heuristic, not a proof of vulnerability or safety."
+    },
+    {
+      "id": "LCT-28-X03",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "library/build",
+        "library/badfuncs",
+        "library/negative_harness"
+      ],
+      "details": "Real static/shared libraries and nonempty positive/negative tests. Book recipe spaces restored to TAB; link libraries moved after source/object arguments for modern linker ordering. BADFUNCS is a textual warning heuristic, not a proof of vulnerability or safety."
+    },
+    {
+      "id": "LCT-29-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals."
+    },
+    {
+      "id": "LCT-29-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals."
+    },
+    {
+      "id": "LCT-29-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals."
+    },
+    {
+      "id": "LCT-29-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals."
+    },
+    {
+      "id": "LCT-29-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals."
+    },
+    {
+      "id": "LCT-29-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals."
+    },
+    {
+      "id": "LCT-30-BASE",
+      "status": "PASS",
+      "evidence": [
+        "library/tests",
+        "library/negative_harness",
+        "skeleton/build",
+        "c_runner/fail"
+      ],
+      "details": "Original minunit actual four tests populated and executed; clean skeleton copied/built without ex29; C fork/exec runner tested with success and failure, not just an empty suite."
+    },
+    {
+      "id": "LCT-30-X01",
+      "status": "PASS",
+      "evidence": [
+        "library/tests",
+        "library/negative_harness",
+        "skeleton/build",
+        "c_runner/fail"
+      ],
+      "details": "Original minunit actual four tests populated and executed; clean skeleton copied/built without ex29; C fork/exec runner tested with success and failure, not just an empty suite."
+    },
+    {
+      "id": "LCT-30-X02",
+      "status": "PASS",
+      "evidence": [
+        "library/tests",
+        "library/negative_harness",
+        "skeleton/build",
+        "c_runner/fail"
+      ],
+      "details": "Original minunit actual four tests populated and executed; clean skeleton copied/built without ex29; C fork/exec runner tested with success and failure, not just an empty suite."
+    },
+    {
+      "id": "LCT-31-BASE",
+      "status": "PASS",
+      "evidence": [
+        "debugger/launched"
+      ],
+      "details": "Original nonprogress loop observed twice in actual GDB; setting i200 causes normal exit. Source is not incorrectly called a normally terminating program."
+    },
+    {
+      "id": "LCT-31-X01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "debugger/attached"
+      ],
+      "details": "Actual attach to an already-running target; no global ptrace changes. Current kernel lacks Yama, so ordinary same-user permission applies; portable test supports per-debugger opt-in when present."
+    },
+    {
+      "id": "LCT-31-X02",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "debugger"
+      ],
+      "details": "Official VS Code C/C++ documentation comparison, CLI GDB executed; GUI not runtime-tested."
+    },
+    {
+      "id": "LCT-31-X03",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "debugger/core_generate",
+        "debugger/core_analyze"
+      ],
+      "details": "Actual crash at iteration5, real ELF core generated from stopped inferior and analyzed separately. Debugger-generated core avoids changing global core_pattern; inferior environment cleared of unrelated credentials."
+    },
+    {
+      "id": "LCT-32-BASE",
+      "status": "PASS",
+      "evidence": [
+        "list_original",
+        "list_properties"
+      ],
+      "details": "Original six tests plus3000 model-backed operations; node-copy/transfer-concat/split ownership is explicit; head/tail/prev/next/count checked in both directions."
+    },
+    {
+      "id": "LCT-32-X01",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "list_properties"
+      ],
+      "details": "Explained singly/doubly linked list time/space/cache tradeoffs, required predecessor, ownership and sorting constraints; connected to actual invariant and model tests."
+    },
+    {
+      "id": "LCT-32-X02",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "list_properties"
+      ],
+      "details": "Explained singly/doubly linked list time/space/cache tradeoffs, required predecessor, ownership and sorting constraints; connected to actual invariant and model tests."
+    },
+    {
+      "id": "LCT-32-X03",
+      "status": "PASS",
+      "evidence": [
+        "list_original",
+        "list_properties"
+      ],
+      "details": "Original six tests plus3000 model-backed operations; node-copy/transfer-concat/split ownership is explicit; head/tail/prev/next/count checked in both directions."
+    },
+    {
+      "id": "LCT-33-BASE",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "list_inline_original",
+        "list_merge_leak",
+        "list_algos_fixed",
+        "list_properties"
+      ],
+      "details": "Original inline linkage error reproduced; linkable original passes weak sortedness tests but leaks. Corrected copy-returning merge and iterative in-place bottom-up merge satisfy260 stable-sort cases including0/1 and duplicates. Sorted insertion preserves equal-key order."
+    },
+    {
+      "id": "LCT-33-X01",
+      "status": "PASS",
+      "evidence": [
+        "list_man_time",
+        "reports/E3_list_benchmark.json"
+      ],
+      "details": "16 actual timed batches, four input lengths and four methods, at least3seconds each. No physical-chip performance inference."
+    },
+    {
+      "id": "LCT-33-X02",
+      "status": "PASS",
+      "evidence": [
+        "list_man_time",
+        "reports/E3_list_benchmark.json"
+      ],
+      "details": "16 actual timed batches, four input lengths and four methods, at least3seconds each. No physical-chip performance inference."
+    },
+    {
+      "id": "LCT-33-X03",
+      "status": "PASS",
+      "evidence": [
+        "reports/E3_list_benchmark.json",
+        "E/E3/lcthw/figures/list_benchmark.png",
+        "E/E3/lcthw/figures/list_benchmark.svg",
+        "E/E3/lcthw/figures/list_benchmark.csv"
+      ],
+      "details": "Measured fixed-seed random lists at four lengths; generated and visually inspected plot, explained asymptotics and allocation costs, no confidence interval or global optimum claim."
+    },
+    {
+      "id": "LCT-33-X04",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "list_properties"
+      ],
+      "details": "Explained singly/doubly linked list time/space/cache tradeoffs, required predecessor, ownership and sorting constraints; connected to actual invariant and model tests."
+    },
+    {
+      "id": "LCT-33-X05",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "list_inline_original",
+        "list_merge_leak",
+        "list_algos_fixed",
+        "list_properties"
+      ],
+      "details": "Original inline linkage error reproduced; linkable original passes weak sortedness tests but leaks. Corrected copy-returning merge and iterative in-place bottom-up merge satisfy260 stable-sort cases including0/1 and duplicates. Sorted insertion preserves equal-key order."
+    },
+    {
+      "id": "LCT-33-X06",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "list_inline_original",
+        "list_merge_leak",
+        "list_algos_fixed",
+        "list_properties"
+      ],
+      "details": "Original inline linkage error reproduced; linkable original passes weak sortedness tests but leaks. Corrected copy-returning merge and iterative in-place bottom-up merge satisfy260 stable-sort cases including0/1 and duplicates. Sorted insertion preserves equal-key order."
+    }
+  ]
+}

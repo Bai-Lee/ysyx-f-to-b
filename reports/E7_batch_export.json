@@ -1,0 +1,788 @@
+{
+  "status": "PASS",
+  "archive": "E/E7/batch/objects-and-dispatch.tar.gz",
+  "sha256": "f52fdf18db1a916f57637d5e2e5c58cbe479e408306e04e1ebb292c650a274e7",
+  "members": [
+    {
+      "path": "original/cpu_add.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/add.o",
+      "sha256": "9f91f01bfacee4b4921a8f52a290065187c02388a2dd8f6625314189a789463e"
+    },
+    {
+      "path": "namespaced/cpu_add.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_add.o",
+      "sha256": "db03ec3380eb2e2408952c8a1c3cd943e3ba843b25b66a26689f1cbe70d77396"
+    },
+    {
+      "path": "original/cpu_add-longlong.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/add-longlong.o",
+      "sha256": "27e2375ffcef950c038f6cbfffc2d8339db6ea56dec981d3bcf42be8e58e8b6b"
+    },
+    {
+      "path": "namespaced/cpu_add-longlong.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_add_longlong.o",
+      "sha256": "4e39b0fba453c43b85536b8f852554cd7eb04cd472c51a91adbfc0e2e92bd9f8"
+    },
+    {
+      "path": "original/cpu_bit.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/bit.o",
+      "sha256": "031a1c84126abed5ce569fa5bdbe7551a35be25bd6389843d5222afde5e3978e"
+    },
+    {
+      "path": "namespaced/cpu_bit.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_bit.o",
+      "sha256": "2df75733c24b21dc69a44b3214defdd0e46195f6497e081a6dc4a987ec9c4f86"
+    },
+    {
+      "path": "original/cpu_bubble-sort.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/bubble-sort.o",
+      "sha256": "63183bf9f58dd7c303f096e9b548c94e26bb6a4b52a33978ec8577e13174295b"
+    },
+    {
+      "path": "namespaced/cpu_bubble-sort.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_bubble_sort.o",
+      "sha256": "aca35affdbcdc4aafe462a27267bb8b493f9dbdc02066c00e9e54dea974c0fec"
+    },
+    {
+      "path": "original/cpu_crc32.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/crc32.o",
+      "sha256": "b668b18576a83b0e3abfb741f825f279817770a4b943c3a7ef83bd5e74e89105"
+    },
+    {
+      "path": "namespaced/cpu_crc32.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_crc32.o",
+      "sha256": "9df363c82957cecab164f32f193176c03a04e557004bab683c180603c8d5843c"
+    },
+    {
+      "path": "original/cpu_div.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/div.o",
+      "sha256": "413b53b3d4b167cd05ec76d8fb779b6a4192fe2b1336b2b197511a04313f69d3"
+    },
+    {
+      "path": "namespaced/cpu_div.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_div.o",
+      "sha256": "53ac4a184a71559a7f506412cf844ae45faa9366c5f4a6d033dc9b4b3447c293"
+    },
+    {
+      "path": "original/cpu_dummy.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/dummy.o",
+      "sha256": "6c4907fdbca98b7dfb32b0c2c7afa0b0929ba4db5439c8440470eb8096669222"
+    },
+    {
+      "path": "namespaced/cpu_dummy.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_dummy.o",
+      "sha256": "9928dc832583699744ef744a3580d57768f094cdef4dab251378b4c177a4cc46"
+    },
+    {
+      "path": "original/cpu_fact.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/fact.o",
+      "sha256": "4ff9986345b275c982e723de837ac881189a2bb31b50e04792b2986a0ef94d6c"
+    },
+    {
+      "path": "namespaced/cpu_fact.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_fact.o",
+      "sha256": "cb3db39e53ecd62b64dc130d23e348f925f6c1bc16fd01cee0187c0c0222748c"
+    },
+    {
+      "path": "original/cpu_fib.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/fib.o",
+      "sha256": "eba6448500afd75088699f348a7874d866b34685d526a4bbefc35662ee5b2267"
+    },
+    {
+      "path": "namespaced/cpu_fib.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_fib.o",
+      "sha256": "79e9dddd9ce1f8f0fada5959145c719785bf0b17baf7ecfd4de38be15acaf66b"
+    },
+    {
+      "path": "original/cpu_goldbach.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/goldbach.o",
+      "sha256": "099af1a9b35146f12e98d6655291d1aa7c03848c97a4c4d696a01148882e8b70"
+    },
+    {
+      "path": "namespaced/cpu_goldbach.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_goldbach.o",
+      "sha256": "36f82387e4a701f53a1e5d16bcd0de60709dbe8583cb92d24183bacba46388c8"
+    },
+    {
+      "path": "original/cpu_hello-str.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/hello-str.o",
+      "sha256": "5492b4eacb5be74370393eac8066f1000b7e493baaeb38386c478aed2b88b2fc"
+    },
+    {
+      "path": "namespaced/cpu_hello-str.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_hello_str.o",
+      "sha256": "0b73344d6a2d2a32cc48c2f5f6ac19e2abdeb21672314988ac42f5aba5ae4aa8"
+    },
+    {
+      "path": "original/cpu_if-else.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/if-else.o",
+      "sha256": "e74c1637e69887e47bc2250179f5d113640fba21892057c8f56aae14a902855a"
+    },
+    {
+      "path": "namespaced/cpu_if-else.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_if_else.o",
+      "sha256": "10dc04aa5f9ea157155bdd06e3273fe7c8ef710cfc78e9ad2778297a499f2c92"
+    },
+    {
+      "path": "original/cpu_leap-year.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/leap-year.o",
+      "sha256": "12ad4054205ca22737437544bed544a38aacd85273f46a1e0c66c18e7e2f393a"
+    },
+    {
+      "path": "namespaced/cpu_leap-year.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_leap_year.o",
+      "sha256": "f51c79f7e81fe97fd27aea46e953c4b85dd844d612746592e3e12a467b7f2ed3"
+    },
+    {
+      "path": "original/cpu_load-store.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/load-store.o",
+      "sha256": "193eb7a4dba544f5e1f18ff7f8971fd9c79d4cd377cf66302970ad4046b29aae"
+    },
+    {
+      "path": "namespaced/cpu_load-store.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_load_store.o",
+      "sha256": "2b439e36c266835b3f05f3811882ecc2785741ceead15db6d61b98d235f90048"
+    },
+    {
+      "path": "original/cpu_matrix-mul.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/matrix-mul.o",
+      "sha256": "d73bae9e15a9df236243018fc29f31747c73780d9a91ef80f0fda4e90d8ab9cf"
+    },
+    {
+      "path": "namespaced/cpu_matrix-mul.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_matrix_mul.o",
+      "sha256": "365704e0e2528aa08e45a7d1f64d98423ed5bfdc2552318f9917d3f445e189ee"
+    },
+    {
+      "path": "original/cpu_max.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/max.o",
+      "sha256": "af4127351144a1601445e6193df8c707ba8cf3142714016de85d6b00859025a8"
+    },
+    {
+      "path": "namespaced/cpu_max.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_max.o",
+      "sha256": "d3bf6867cfc449a15cd1356d7d8178ba70f3246493648ec9f646ce9eb00a96e9"
+    },
+    {
+      "path": "original/cpu_mersenne.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/mersenne.o",
+      "sha256": "a315bff4a54ea093c3ce0d5ccf3435676e5d9436e19e05f60659f8b95aadc60c"
+    },
+    {
+      "path": "namespaced/cpu_mersenne.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_mersenne.o",
+      "sha256": "946381952f09ea822793b48eab387d889c86345c32bc7a240a4edcdd041f2ded"
+    },
+    {
+      "path": "original/cpu_min3.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/min3.o",
+      "sha256": "673e6a41e67add2a49046e3509f221ed9f88448cffed3ba061410984203a75f2"
+    },
+    {
+      "path": "namespaced/cpu_min3.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_min3.o",
+      "sha256": "5dff4dd53460fb3dba6c69ba848b3ba3283724f4039da278c507d4a2509fc267"
+    },
+    {
+      "path": "original/cpu_mov-c.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/mov-c.o",
+      "sha256": "1db13479d764fb21bca75c338a99352c44a3b8de2d18d4da9b9c97ab9fcd6938"
+    },
+    {
+      "path": "namespaced/cpu_mov-c.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_mov_c.o",
+      "sha256": "ffd3112744e4c5317de8617a7109d81858780d7b338c8c6e38c7b275a631d9d0"
+    },
+    {
+      "path": "original/cpu_movsx.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/movsx.o",
+      "sha256": "051779d974659e4384df469d103c40d732cb8fe4431c66ef3678259875782570"
+    },
+    {
+      "path": "namespaced/cpu_movsx.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_movsx.o",
+      "sha256": "575621641c114665c31c0d616cd11b18710f13bb8432123f27f31a2d1b9d149f"
+    },
+    {
+      "path": "original/cpu_mul-longlong.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/mul-longlong.o",
+      "sha256": "b08764cf1cf3cd68f60a1f07047107523def6868bec94c4d4a92363e7afb69c4"
+    },
+    {
+      "path": "namespaced/cpu_mul-longlong.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_mul_longlong.o",
+      "sha256": "4695a2ef9011b5b65db9f6b16d2ab8bd815f900a8b7b6a0ec1fbcd1608210af7"
+    },
+    {
+      "path": "original/cpu_narcissistic.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/narcissistic.o",
+      "sha256": "074366f8fa495b26b74f49518eea3a4d65bc7fbce5700f7935975a16a1ccc847"
+    },
+    {
+      "path": "namespaced/cpu_narcissistic.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_narcissistic.o",
+      "sha256": "bf677ba40fd78f8b379cb09af2d777f6454b2b8b90df5c928b26f67a1ee6f9b7"
+    },
+    {
+      "path": "original/cpu_pascal.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/pascal.o",
+      "sha256": "94ff2fbd0df37d5b289aa93fd9993163574e252938bfb67c3db35aec84e238a9"
+    },
+    {
+      "path": "namespaced/cpu_pascal.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_pascal.o",
+      "sha256": "1b824117122c7be376f4c4d33d31926e4862df14f28cf85246af5ec057c8d5f1"
+    },
+    {
+      "path": "original/cpu_prime.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/prime.o",
+      "sha256": "5ed7c9874eb613e305eb2cabe9970940569be1a39690beb424beb06eeb7fa0d8"
+    },
+    {
+      "path": "namespaced/cpu_prime.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_prime.o",
+      "sha256": "55ca215dc253e49ed05750f53fc2089817bae41cd67a681c971990c918a6022f"
+    },
+    {
+      "path": "original/cpu_quick-sort.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/quick-sort.o",
+      "sha256": "4689f0750e2e4c7cd41a86ed4c6caac067434a8f8ca34e4ccaf53d762291163a"
+    },
+    {
+      "path": "namespaced/cpu_quick-sort.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_quick_sort.o",
+      "sha256": "693ca7f96530b836b23422de173714dc7dacb59e241a671f766b12c35de47462"
+    },
+    {
+      "path": "original/cpu_recursion.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/recursion.o",
+      "sha256": "91527a6a61c0669fae32485260bd59c21a8feee76abc94c0c00b0ae01923ccd1"
+    },
+    {
+      "path": "namespaced/cpu_recursion.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_recursion.o",
+      "sha256": "a73e47e071ee1336e333bd32808396f6b36bf41a7bdc4f2fabc0b1725d992bf4"
+    },
+    {
+      "path": "original/cpu_select-sort.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/select-sort.o",
+      "sha256": "b185c7819b190fd1821a7b95dff1bcf690d4d30d1a44102f383d2e8a55d4b153"
+    },
+    {
+      "path": "namespaced/cpu_select-sort.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_select_sort.o",
+      "sha256": "ad0cd0a75cdd6ee60ff9908caa236a00e01785e2412082071240cfe43fabf5d1"
+    },
+    {
+      "path": "original/cpu_shift.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/shift.o",
+      "sha256": "8a589f97adb5bbae7e5137a4be28af88a6c6ae8627a0046744885aaa5329f882"
+    },
+    {
+      "path": "namespaced/cpu_shift.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_shift.o",
+      "sha256": "c8a9cc9eb1adab903487e787ef8535e64adc0c68b2d4ecd4b11810a66fd36ee5"
+    },
+    {
+      "path": "original/cpu_string.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/string.o",
+      "sha256": "74ebfcd185c920f24cd74706a3fcc84226439b5002f79de213667b696d743b53"
+    },
+    {
+      "path": "namespaced/cpu_string.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_string.o",
+      "sha256": "4103b12e6c79b1bdd55e8885fbcc348248f2fc9c024a3d94fb0038af9930bafb"
+    },
+    {
+      "path": "original/cpu_sub-longlong.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/sub-longlong.o",
+      "sha256": "50fff6f30f63ff33dce0a61ed3074c5d2c614fbe6a3c9e968c5e6f0fd031ddee"
+    },
+    {
+      "path": "namespaced/cpu_sub-longlong.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_sub_longlong.o",
+      "sha256": "81b228dc807ae20a820178d00ffe2557e444df1fbaea7fa8d8f5cd7d9c3ec3b9"
+    },
+    {
+      "path": "original/cpu_sum.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/sum.o",
+      "sha256": "8257033addcddf7f9eeeb738c539dbc65cbcb8822640e27d12299f51976a4386"
+    },
+    {
+      "path": "namespaced/cpu_sum.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_sum.o",
+      "sha256": "5adabed29d0d59523d5f3b0991b0b15a18d551ffa29fd43048f8c0565ff5d0d0"
+    },
+    {
+      "path": "original/cpu_switch.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/switch.o",
+      "sha256": "a3a38b624bdf3d3caabb5e64a85bca08393af5b2c4eff6fc2b258f72c036df8a"
+    },
+    {
+      "path": "namespaced/cpu_switch.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_switch.o",
+      "sha256": "f0b76dc9302eddea4896573217270f07e08212f32f99b21b14974e013071f034"
+    },
+    {
+      "path": "original/cpu_to-lower-case.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/to-lower-case.o",
+      "sha256": "d28ad4d9684670dcd7eab80df221de2779f0b981b1f07c27d3792c0fa675ac8c"
+    },
+    {
+      "path": "namespaced/cpu_to-lower-case.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_to_lower_case.o",
+      "sha256": "b8e554b1e67ea1397de8dde9d1c0bd8a3baa0f847865618194c34b8c9589c628"
+    },
+    {
+      "path": "original/cpu_unalign.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/unalign.o",
+      "sha256": "4a32ec1f04ddfa09da0f4d60ee3c43c40587ef664aac1eaad95376c58319f429"
+    },
+    {
+      "path": "namespaced/cpu_unalign.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_unalign.o",
+      "sha256": "627ebaabf367b4cff36b3fe0f95337097998ced29782ff0c6bcbd6ff6b29c7d6"
+    },
+    {
+      "path": "original/cpu_wanshu.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/wanshu.o",
+      "sha256": "71ea6935ccedc1b00adf0822737b9c63192c59f6632c9cdf7d30c3d67046d949"
+    },
+    {
+      "path": "namespaced/cpu_wanshu.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_wanshu.o",
+      "sha256": "59990085fe49fd9271434eec165c162e3b975e42f54e9cfc480741b919e495f2"
+    },
+    {
+      "path": "original/isa_add.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/add.o",
+      "sha256": "18397c691027ee48902d64f32900470fd31bb7115c7b5c5a21514953c56a2c68"
+    },
+    {
+      "path": "namespaced/isa_add.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_add.o",
+      "sha256": "00009087ec56bb750fce96ad7d5aa023f917d1c13fe8e5f6bca212c5f1b93ea2"
+    },
+    {
+      "path": "original/isa_addi.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/addi.o",
+      "sha256": "00ef3255f1b6c4fa14d4e4da097835ef5505f28be02f8801937c6d0d3892080d"
+    },
+    {
+      "path": "namespaced/isa_addi.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_addi.o",
+      "sha256": "0b7a72249806b604a0178ad28a7ae197460b29949afee7a05f62f94e232893b1"
+    },
+    {
+      "path": "original/isa_and.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/and.o",
+      "sha256": "f1ef644c8760efe45eda415f4e9471f159fe0a6bd930803324fa339a0f415b5d"
+    },
+    {
+      "path": "namespaced/isa_and.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_and.o",
+      "sha256": "e4ec5265be577eb792e7a9478aefa0324d6d4bc96789191fc5d715e30f184055"
+    },
+    {
+      "path": "original/isa_andi.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/andi.o",
+      "sha256": "1960637e837cc29b929665f4cc278a309f565df15528d896d915bbc3f1c74ebf"
+    },
+    {
+      "path": "namespaced/isa_andi.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_andi.o",
+      "sha256": "30ac32b52cddd0695a02d5aaaf2db08463b13606d8c339656be080c36584b92a"
+    },
+    {
+      "path": "original/isa_auipc.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/auipc.o",
+      "sha256": "edadf58e4ec9c94a2d8ced6cde591ad55b4c6827a12a3775e906c3df736e34a2"
+    },
+    {
+      "path": "namespaced/isa_auipc.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_auipc.o",
+      "sha256": "e36fc2e41ec2270186d7dd059b8d575788a7d4b4965f8957cd2cf21a6b65c508"
+    },
+    {
+      "path": "original/isa_beq.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/beq.o",
+      "sha256": "7d8de1c37caa92c2a083cb7525c1014f2a4b1cfcac25f5ba5383a432d63d3756"
+    },
+    {
+      "path": "namespaced/isa_beq.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_beq.o",
+      "sha256": "fc7c26b03660be5971cdfa4de97a5ed1b6d89dee5af37801215aae028bfc214f"
+    },
+    {
+      "path": "original/isa_bge.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/bge.o",
+      "sha256": "ac84a2d270465cc12f0f6ff719d7cca1b228d90c760cee745662ac78e887a33a"
+    },
+    {
+      "path": "namespaced/isa_bge.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_bge.o",
+      "sha256": "c37e5b2cbe6b967afa7ef55157b839076f5e2e27167f093120f4e46ad64fc77c"
+    },
+    {
+      "path": "original/isa_bgeu.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/bgeu.o",
+      "sha256": "7009c373e16fac2361aa3df200d3c3eb6a44ffd11bcc469a48cc4cbdd5e293f6"
+    },
+    {
+      "path": "namespaced/isa_bgeu.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_bgeu.o",
+      "sha256": "159c463a422a125133d2797a29baa8984a874116723a770fcd1c15dd1b622aa8"
+    },
+    {
+      "path": "original/isa_blt.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/blt.o",
+      "sha256": "2786d233ceba22ea27b4c811dabfbea2717a8395662122b453425a7e11eb7215"
+    },
+    {
+      "path": "namespaced/isa_blt.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_blt.o",
+      "sha256": "1f1766c84f589e7f2bd6ff20483854cce6342bb6b96c0285c324308f73c2f83a"
+    },
+    {
+      "path": "original/isa_bltu.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/bltu.o",
+      "sha256": "8b64d94e622d4e886de6d09292ebf51f39401a4b29b6c2fa6a397f7d7c973f0d"
+    },
+    {
+      "path": "namespaced/isa_bltu.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_bltu.o",
+      "sha256": "eb066adbad0d4f94849dd4f6cd020015d5bc0cfcc3a824a4f6da3d48e8716abd"
+    },
+    {
+      "path": "original/isa_bne.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/bne.o",
+      "sha256": "56da9d53659baf2ae5c0677012b12e11bd8470a6b5c435d41cb8232b5b32f4fa"
+    },
+    {
+      "path": "namespaced/isa_bne.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_bne.o",
+      "sha256": "94a17cf3cb039ec7beecc0226bab31736d8e723e55b04bf43eb68cd1df9444c5"
+    },
+    {
+      "path": "original/isa_jal.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/jal.o",
+      "sha256": "a358d072b3d566e137b3765546c019c83b010b48309e5f5dfb6e8401d060fa78"
+    },
+    {
+      "path": "namespaced/isa_jal.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_jal.o",
+      "sha256": "fb022a713274afa3ddc55121e1f0db6f6862addeca9b86dfdae8c1ae85d6af97"
+    },
+    {
+      "path": "original/isa_jalr.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/jalr.o",
+      "sha256": "2ed863d69867e47e885c168840b7731da5ade28037fdf2507f1b80688c0cf9d6"
+    },
+    {
+      "path": "namespaced/isa_jalr.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_jalr.o",
+      "sha256": "be11bb10143dcc083b1ace2d630c3a650934d103ceb81502137d0fa634535ada"
+    },
+    {
+      "path": "original/isa_lb.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lb.o",
+      "sha256": "24b673c87e2238c171afd5d46431d35f9eb2bb4a2a57323d01d4f4ac3b9d9cec"
+    },
+    {
+      "path": "namespaced/isa_lb.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_lb.o",
+      "sha256": "a024bcab1628b0e62b8d0a80601a76768720b207fea5af05029cc33acde723db"
+    },
+    {
+      "path": "original/isa_lbu.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lbu.o",
+      "sha256": "7e19cc04356ce5f4bff754a6e888236a185d4ea3524e49904610d131887f295f"
+    },
+    {
+      "path": "namespaced/isa_lbu.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_lbu.o",
+      "sha256": "77e75be47fa3162b105c9849a1aa8b27d0dae8bd88366f77cd229855c31faf66"
+    },
+    {
+      "path": "original/isa_lh.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lh.o",
+      "sha256": "34fb59c49b259fc409452ea5ddec9d3247d69fed275917639c222d4431ea1499"
+    },
+    {
+      "path": "namespaced/isa_lh.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_lh.o",
+      "sha256": "96c82d1bd4278edeaa0e858054e30eb478b501fae55634fdddd6cd517d085c1d"
+    },
+    {
+      "path": "original/isa_lhu.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lhu.o",
+      "sha256": "652de3bdd0d8aa95289c64b906ad54d5ddc5844a203d791b028b5d67bce2a2f6"
+    },
+    {
+      "path": "namespaced/isa_lhu.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_lhu.o",
+      "sha256": "004655022565b0713f147815fb19d2052c5c4b24c95db4ca3a9597cacb80b9f0"
+    },
+    {
+      "path": "original/isa_lui.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lui.o",
+      "sha256": "8c6b459af9090a0e9d6a6da014dfdf38213e0f58dcb274cf0c9c3f1783bd494e"
+    },
+    {
+      "path": "namespaced/isa_lui.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_lui.o",
+      "sha256": "2986e8d9c3ed00d63f5459fbbf292048ba6e396dd69c9cda7498fd3ba249994d"
+    },
+    {
+      "path": "original/isa_lw.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lw.o",
+      "sha256": "ae28d8b95a7854f5fbd5d0a0d27fe3ce7b14fa6a65bbda454e9ffc301f749cc3"
+    },
+    {
+      "path": "namespaced/isa_lw.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_lw.o",
+      "sha256": "ff74acdba127fde4c81694974b2ff962126f270c76bd3506d7a8d6c669904e38"
+    },
+    {
+      "path": "original/isa_or.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/or.o",
+      "sha256": "36c54281837de3e9ba3401f0d6aab2bf313fb74fe07315ffaca1488ef7bae579"
+    },
+    {
+      "path": "namespaced/isa_or.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_or.o",
+      "sha256": "9b9ba5124bf8b651299af8c8733ac3ca989296894a6c434c86e2819fc1f5bdc2"
+    },
+    {
+      "path": "original/isa_ori.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/ori.o",
+      "sha256": "1f4aa941fa80ea1618eab23261c7151f4b4126a1a80716c00d198edb3b490e3f"
+    },
+    {
+      "path": "namespaced/isa_ori.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_ori.o",
+      "sha256": "6739e730e3e90acf9f8b139e8c7b97ac62cd1943a20983496f87f9f55efcfe34"
+    },
+    {
+      "path": "original/isa_sb.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sb.o",
+      "sha256": "e55eae075fce26917cf9bc982e6015ecbba32fec0ab86801527693f958c92bca"
+    },
+    {
+      "path": "namespaced/isa_sb.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_sb.o",
+      "sha256": "259504840bcffe4a882477449210bdc014a3495a4215199a7b35c4863a8770be"
+    },
+    {
+      "path": "original/isa_sh.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sh.o",
+      "sha256": "23c685c0d051590e5954d10a644970a3d2465d5d748eae41e1986e06ccab4e7f"
+    },
+    {
+      "path": "namespaced/isa_sh.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_sh.o",
+      "sha256": "35ca600610088693492a3d2fdbe5e452d51933a5d77517ac2bc4c71337116804"
+    },
+    {
+      "path": "original/isa_simple.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/simple.o",
+      "sha256": "43283633f4511167acc2a319c507af7fe2a25386901a619955889028071f1ca2"
+    },
+    {
+      "path": "namespaced/isa_simple.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_simple.o",
+      "sha256": "8c4223ff54bfdce5fed82332f3483b7aeecf699aaee3aff09a02ad6c25c31787"
+    },
+    {
+      "path": "original/isa_sll.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sll.o",
+      "sha256": "46879a7596452e809e774092a6a163455bfb5899d28075795eb852afec819926"
+    },
+    {
+      "path": "namespaced/isa_sll.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_sll.o",
+      "sha256": "dbad48d362418287a3024d92591dea66d8ec62b49ba37769e466344158951800"
+    },
+    {
+      "path": "original/isa_slli.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/slli.o",
+      "sha256": "86354d453e49ed39b818900acf4309eca32e0b0a2ed7c3691484fa04ddeec6f5"
+    },
+    {
+      "path": "namespaced/isa_slli.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_slli.o",
+      "sha256": "fadbc7f5b0cd09f29fdf7014e9a6a33497ce1be27e51de35d6d5e745c24f2f16"
+    },
+    {
+      "path": "original/isa_slt.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/slt.o",
+      "sha256": "ab6a4bd8e094f3cf1094a3a0345a5e470fd251ae470844427cc17023208bf552"
+    },
+    {
+      "path": "namespaced/isa_slt.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_slt.o",
+      "sha256": "6af5e8d847d96163197eb0c5885199175868037a01d6aa82a57b7daab8b22175"
+    },
+    {
+      "path": "original/isa_slti.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/slti.o",
+      "sha256": "33a20519aca631bea3e0c7b0505bd273e8954c963073dd238928447990aeeab5"
+    },
+    {
+      "path": "namespaced/isa_slti.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_slti.o",
+      "sha256": "756df884d86892cb8b3cd16fc5f326b5a8a0a5d7fcd39c6d608bd31b5b1049f4"
+    },
+    {
+      "path": "original/isa_sltiu.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sltiu.o",
+      "sha256": "d9bd8fdefff69c3025699999facdfdb9e34fefa79c8b73dd190fbe622192560d"
+    },
+    {
+      "path": "namespaced/isa_sltiu.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_sltiu.o",
+      "sha256": "e058eaf5f70f505e12fe62e43c97fea5177499db90a83e42c73b9be18c1bdf42"
+    },
+    {
+      "path": "original/isa_sltu.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sltu.o",
+      "sha256": "c1f11e3e142aaf34cc37b8c6f60ee0c1a08b54cedefed721dfaed3339712e42e"
+    },
+    {
+      "path": "namespaced/isa_sltu.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_sltu.o",
+      "sha256": "bbe87a2f160c2a31da666b5247ca4b31c3e3e00e3dd5893acb5882427dee123a"
+    },
+    {
+      "path": "original/isa_sra.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sra.o",
+      "sha256": "f6ca9e9770354e75af97ac189689e1cfd7f286c5f5a260562bf20e2d8e3c5fe4"
+    },
+    {
+      "path": "namespaced/isa_sra.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_sra.o",
+      "sha256": "7034378019c8a4937e4d5f2e4039eea5a6723c53991cb24a4033c6f1bef79328"
+    },
+    {
+      "path": "original/isa_srai.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/srai.o",
+      "sha256": "77a728b1c5b3dbfc0093f7bf8c2c9ab36c0b629536d0ec27b33d832297a9b694"
+    },
+    {
+      "path": "namespaced/isa_srai.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_srai.o",
+      "sha256": "f017e2335ada8ca94583a14cae13b8ad13b267615d0735b632162ca5d63f1b10"
+    },
+    {
+      "path": "original/isa_srl.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/srl.o",
+      "sha256": "0935d9288a749e7f4d55fdfc7e165468a59db47f2380ccd9313cd0780a36ed70"
+    },
+    {
+      "path": "namespaced/isa_srl.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_srl.o",
+      "sha256": "4f9911f94ae7cf86426f318a3bdca59c426ebc461b1fa8d673a7a3c51506be27"
+    },
+    {
+      "path": "original/isa_srli.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/srli.o",
+      "sha256": "df3913e5fc1c80a7150f1589b90768c42fd147417a08277a208fd3b66df4dc72"
+    },
+    {
+      "path": "namespaced/isa_srli.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_srli.o",
+      "sha256": "74acef5eb42667506e5dd72d605a64145e78eaa733d3656588c477a22cfad0fe"
+    },
+    {
+      "path": "original/isa_sub.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sub.o",
+      "sha256": "660dd65e63bfe9bb61dda90b9d26fa6bfdf8bc278976c995645010847d7a2253"
+    },
+    {
+      "path": "namespaced/isa_sub.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_sub.o",
+      "sha256": "c5259b01e70411925055293da4f49b0daaf2a0c45df4de088f2a8358d7067059"
+    },
+    {
+      "path": "original/isa_sw.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sw.o",
+      "sha256": "ae3d9bf3cd835bcf7e1cee0c52266e952442501bf1982406138db5451b4ff1e3"
+    },
+    {
+      "path": "namespaced/isa_sw.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_sw.o",
+      "sha256": "124b786bfa629626bf479991341cfe2b38b36fb55d663e313c9aebba63aebe1a"
+    },
+    {
+      "path": "original/isa_xor.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/xor.o",
+      "sha256": "eb4de9f0c405a6a0ecd4ac4572ee20d44c05219f535972130fc9ce6d0e8c3d74"
+    },
+    {
+      "path": "namespaced/isa_xor.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_xor.o",
+      "sha256": "0ea3e66d0fae9e45f1f77be5039372f6001759ffdad295b890243afc999405f7"
+    },
+    {
+      "path": "original/isa_xori.o",
+      "source": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/xori.o",
+      "sha256": "79222ebbfbdeff1697c59d636de846314691f47f4214c8f9658a79648476dab2"
+    },
+    {
+      "path": "namespaced/isa_xori.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/isa_xori.o",
+      "sha256": "32994f9f7dbd7abf855128bbb7fb7b5ca984fe0edefc68d17a52882c78ce2b3f"
+    },
+    {
+      "path": "original/cpu_wrong.o",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/wrong.o",
+      "sha256": "dda48584194c156c75a5cc222a58ee67aba995d9d137da0f423bbad12ffe1fb7"
+    },
+    {
+      "path": "namespaced/cpu_wrong.o",
+      "source": "/home/USER/e-stage/software-soc/batch/objects/cpu_wrong.o",
+      "sha256": "1c495963598be2e39a21bfe152e66f6a4c7a2a24f932c371cfbcbc34f068a0fb"
+    },
+    {
+      "path": "dispatch/all/Makefile",
+      "source": "/home/USER/e-stage/software-soc/batch/all/Makefile",
+      "sha256": "310f666cbb0359e05173aadaa36f802e511edb7750f6215d93ff646a1e4fecf4"
+    },
+    {
+      "path": "dispatch/all/batch_bridge.S",
+      "source": "/home/USER/e-stage/software-soc/batch/all/batch_bridge.S",
+      "sha256": "04f305e7bfe39bf38d92a1bc6393748e22608b58a4573379d8d0fc4f6cb8f07d"
+    },
+    {
+      "path": "dispatch/all/main.c",
+      "source": "/home/USER/e-stage/software-soc/batch/all/main.c",
+      "sha256": "839e5bbef40899379c5bdbd7ed65d99f8982333a8b5662dcd8bd4ea798327ad3"
+    },
+    {
+      "path": "dispatch/wrong/Makefile",
+      "source": "/home/USER/e-stage/software-soc/batch/wrong/Makefile",
+      "sha256": "1f5829345b59bbd797f70fa4eae3f23850b3b3132fca9c25fd23fe4a4eb58cc4"
+    },
+    {
+      "path": "dispatch/wrong/batch_bridge.S",
+      "source": "/home/USER/e-stage/software-soc/batch/wrong/batch_bridge.S",
+      "sha256": "04f305e7bfe39bf38d92a1bc6393748e22608b58a4573379d8d0fc4f6cb8f07d"
+    },
+    {
+      "path": "dispatch/wrong/main.c",
+      "source": "/home/USER/e-stage/software-soc/batch/wrong/main.c",
+      "sha256": "f0cc97433941d7731edc6ed30ef9a61532b60d9da8a2669955263c08dd44e7e5"
+    },
+    {
+      "path": "integrity.json",
+      "source": "/workspace/projects/ysyx_f_to_b/reports/E7_batch_integrity.json",
+      "sha256": "569ebc462e21bb23ece0e75f2c323e9768038ef72e22af4cf227984b6ac4b4de"
+    },
+    {
+      "path": "batch_bridge.S",
+      "source": "/workspace/projects/ysyx_f_to_b/E/E7/batch_bridge.S",
+      "sha256": "04f305e7bfe39bf38d92a1bc6393748e22608b58a4573379d8d0fc4f6cb8f07d"
+    }
+  ],
+  "scope": "BothunchangedoriginalandnamespacedELFobjects, exactsymbolmappings/sectiondigests, anddispatchsource. Archiveverifiedmember-by-memberwithoutoverwritinglivefiles."
+}

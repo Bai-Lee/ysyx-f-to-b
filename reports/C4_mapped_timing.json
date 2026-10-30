@@ -1,0 +1,143 @@
+{
+  "status": "PASS_SELECTED_VARIANTS",
+  "variants": [
+    {
+      "name": "single",
+      "status": "PASS_MAPPED_STRUCTURE_AND_STA",
+      "top": "single_with_memories",
+      "rtl_sha256": "b3eb142c27de5867a92c5923a0332195ffbf1542d1b1ce563bd52fac842d514b",
+      "netlist_sha256": "c87b41d5ad0dd5b04a8d09d0b2cb9ef2aaed8a2e320c1ee4eadf8b105ae59593",
+      "cell_area_um2": 203481.88,
+      "mapped_cells": 63706,
+      "DFF_count": 16900,
+      "memory_DFF_origin_counts": {
+        "imem": 8192,
+        "dmem": 8192
+      },
+      "clock_constraint_mhz": 100,
+      "setup_wns_ns": 7.454574,
+      "hold_min_slack_ns": 0.114163,
+      "setup_frequency_estimate_mhz": 392.8615485187941,
+      "timing_met_at_100MHz": true,
+      "sdc_sha256": "639ff4575f405b4ad25052e79f0f3201e3504ccf001732ccdd326b41f75acb99",
+      "libraries": [
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib",
+          "sha256": "e6733a87b3a015c2234172625abf0ee366a35f2725e640c88e149ee073fc13be"
+        },
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib",
+          "sha256": "a5fb35bea1c7e8f06d2e93089d48986125731f8e744580adaa4d320283e23988"
+        }
+      ],
+      "opensta_binary_sha256": "9630070fdbcfd2a92a9d0dc6b6e5480f7be8e216b720f1fb32f447fb4cedc2ff",
+      "budget": {
+        "status": "PASS",
+        "exit_code": 0,
+        "elapsed_seconds": 7.027024209999999,
+        "peak_group_rss_bytes": 377761792,
+        "peak_group_pss_bytes": 376471552,
+        "metric": "pss",
+        "memory_limit_bytes": 2936012800,
+        "minimum_system_available_bytes": 6296039424,
+        "timeline": [
+          {
+            "elapsed_seconds": 0.0009656489999994022,
+            "rss_bytes": 991232,
+            "pss_bytes": 562176,
+            "available_bytes": 6668075008
+          },
+          {
+            "elapsed_seconds": 5.018530288999999,
+            "rss_bytes": 364290048,
+            "pss_bytes": 362926080,
+            "available_bytes": 6309715968
+          }
+        ],
+        "command": [
+          "taskset",
+          "-c",
+          "0,1",
+          "/home/USER/tools/c-stage/opensta/usr/bin/sta",
+          "-exit",
+          "/workspace/projects/ysyx_f_to_b/C/C4/synthesis/single/analysis.tcl"
+        ]
+      },
+      "evidence": "artifacts/C4/opensta/single",
+      "scope": "Same unchanged ECC/Yosys mapped netlist; independent OpenSTA after ECC integrated STA exceeded PSS budget. Explicit IO model: input max1/min0.1ns, output max1/min0ns,100ps transitions,5fF load; no routed parasitics. Frequency is setup-based estimate under this model, not a newly qualified clock or silicon signoff."
+    },
+    {
+      "name": "axi",
+      "status": "PASS_MAPPED_STRUCTURE_AND_STA",
+      "top": "c4_axi_core",
+      "rtl_sha256": "e2831a5cfe6d10e23957e1f68f5c24cbfe28daf09165369ca9c8a9d2747863ab",
+      "netlist_sha256": "5c408390769f0f5046d254729d716c51ececdc4d5a688c2786814c1ac25729d2",
+      "cell_area_um2": 16109.52,
+      "mapped_cells": 7117,
+      "DFF_count": 763,
+      "memory_DFF_origin_counts": {},
+      "clock_constraint_mhz": 100,
+      "setup_wns_ns": 6.382618,
+      "hold_min_slack_ns": 0.125279,
+      "setup_frequency_estimate_mhz": 276.44301873564916,
+      "timing_met_at_100MHz": true,
+      "sdc_sha256": "639ff4575f405b4ad25052e79f0f3201e3504ccf001732ccdd326b41f75acb99",
+      "libraries": [
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib",
+          "sha256": "e6733a87b3a015c2234172625abf0ee366a35f2725e640c88e149ee073fc13be"
+        },
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib",
+          "sha256": "a5fb35bea1c7e8f06d2e93089d48986125731f8e744580adaa4d320283e23988"
+        }
+      ],
+      "opensta_binary_sha256": "9630070fdbcfd2a92a9d0dc6b6e5480f7be8e216b720f1fb32f447fb4cedc2ff",
+      "budget": {
+        "status": "PASS",
+        "reason": null,
+        "error": null,
+        "exit_code": 0,
+        "elapsed_seconds": 4.57786114999999,
+        "peak_group_rss_bytes": 284725248,
+        "peak_group_pss_bytes": 283438080,
+        "metric": "pss",
+        "memory_limit_bytes": 6442450944,
+        "minimum_system_available_bytes": 6377500672,
+        "minimum_windows_available_bytes": 3453894656,
+        "policy": {
+          "source": "/workspace/config/toolchain.lock.json",
+          "revision": "2026-10-28-user-expanded",
+          "heavy_jobs": 1,
+          "compile_jobs": 1,
+          "process_group_limit_mib": 6144,
+          "windows_start_available_mib": 2048,
+          "windows_running_available_mib": 1024,
+          "linux_running_available_mib": 512,
+          "jvm_heap_mib": 4096
+        },
+        "policy_sha256": "9dded49cf48d3e89c12746ea729984a94f189cc82f60bdb2429423131391f1bc",
+        "timeline": [
+          {
+            "elapsed_seconds": 0.566395166999996,
+            "rss_bytes": 4096,
+            "pss_bytes": 4096,
+            "available_bytes": 6655561728,
+            "windows_available_bytes": 3453894656
+          }
+        ],
+        "command": [
+          "taskset",
+          "-c",
+          "0,1",
+          "/home/USER/tools/c-stage/opensta/usr/bin/sta",
+          "-exit",
+          "/workspace/projects/ysyx_f_to_b/C/C4/synthesis/axi/analysis.tcl"
+        ],
+        "sampling": "Group every 0.5s, Windows every 5s; sampled soft limit, no OS hard cap."
+      },
+      "evidence": "artifacts/C4/opensta/axi",
+      "scope": "Same unchanged ECC/Yosys mapped netlist; independent OpenSTA after ECC integrated STA exceeded PSS budget. Explicit IO model: input max1/min0.1ns, output max1/min0ns,100ps transitions,5fF load; no routed parasitics. Frequency is setup-based estimate under this model, not a newly qualified clock or silicon signoff."
+    }
+  ]
+}

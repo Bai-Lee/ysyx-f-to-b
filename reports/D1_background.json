@@ -1,0 +1,12 @@
+{
+  "status": "PASS_BACKGROUND_REVIEW",
+  "limits_output": "CHAR_BIT=8 INT_MIN=-2147483648 INT_MAX=2147483647 UINT_MAX=4294967295 LLONG_MAX=9223372036854775807",
+  "visibility_symbols": "0000000000000010 T caller\n0000000000000000 T public_add",
+  "highlighter": "Comments, strings, identifiers, keywords and numbers receive distinct ANSI colors; stripping ANSI restores the exact fixture bytes. A small lexical exercise, not a complete C lexer or editor.",
+  "evidence": [
+    "artifacts/D1/extras",
+    "artifacts/D1/clang_tokens",
+    "D/D1/NOTES.md"
+  ],
+  "scope": "Small implementations, observations and source-based answers; no claim of a complete syntax-highlighting editor or complete compiler implementation."
+}

@@ -1,0 +1,223 @@
+{
+  "status": "PASS_SELECTED",
+  "selected": [
+    "204.hypergraph"
+  ],
+  "mode": "train",
+  "runs": 1,
+  "rows": [
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "204.hypergraph",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/Makefile",
+          "sha256": "8a155048c8a8de8e7c23739cf1c1df9c6e03e7446a3996bfd9608da35ab2100d"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_bucketio.c",
+          "sha256": "f20237efbe72116a3181faec58cbaeb4bdca3cc1f1ae5d644ffb9bc242bb7174"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_fileio.c",
+          "sha256": "8cf98c2cbb92fd54c857fed996bec0f708f13874e4422607454b42b1c598e303"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_fms.c",
+          "sha256": "d6e53482c42d721b9b61c0aebf73d001fb195aa30297f921e9c0d9e483a2d57c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_lib.c",
+          "sha256": "65209abad43c9e81f8f4c82893cc276834916acdb3a6427233bb6d0b90472249"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_lib_fms.c",
+          "sha256": "e29c417c642608db4e60cb3e4410c208d2f3148a865cfc90048c08b8eaf32a7f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_partition.c",
+          "sha256": "feb14c84e1b65a8e903d0fed9a7e95f12c74eaadc7a0a4d5986c3259b7655f46"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_print.c",
+          "sha256": "1e0204f8aad56a83c9fcc9aa5fb657410e8ca3c4428d48a885a8f1b321419a42"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_random.c",
+          "sha256": "3efe6bef35c70be99c30790a0a9d7f8eb20049e0b6205c676156b2c37d7e406a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_readinput.c",
+          "sha256": "986e3d2e75653af3c75b416cf1bbc10beae80b5d928bd0b5fffb5bb980eb79a0"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_bucketio.h",
+          "sha256": "0c0b2a049ea847ac16e289b3cdb12801fa2ea0be11505662a6d63151b02d0485"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_defs.h",
+          "sha256": "b0ce0b2f1e4035b88451402e0a1f7780248224d9fd457a8bacd7c5d3ee05e5fa"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_fileio.h",
+          "sha256": "70a6a92a4ae6174e1791a6feb1d5002f4d574f293a3c741c2dc2edacf905d245"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_lib.h",
+          "sha256": "8929eaeb7dde9537380e1f8b1fb0fc4f70dbaed6e1939ef24933f98940b9b33f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_lib_fms.h",
+          "sha256": "38e58982430a565d280a0520a4a9b4cee525a6f8b75c4a7672c86ddc9fead235"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_partition.h",
+          "sha256": "af20afeb1ad88f553aaa8a88459c30c920f33a78679e03b040a385a7991a6118"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_print.h",
+          "sha256": "2e7e9b94087fbd57ba9464f822da94b79b7e6069d87e136eadff04b38c0d16bb"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_random.h",
+          "sha256": "c24c1aa8e7b849cc7217981442ab028685c1bf52bf711aaab46abe30f480430c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_readinput.h",
+          "sha256": "329957c6798d969449dfc64a50c232f118b072b885ce9ec841d901120adbca43"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 47.352,
+      "evidence": "D8/apps/train/archbench/204.hypergraph_riscv32e-npc",
+      "stdout_sha256": "7f1570a8d276caacbb5831be7277763b61107319cb296b3d8246f6ca75d67959",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/204.hypergraph_riscv32e-npc/hypergraph-riscv32e-npc.bin.npc.json",
+          "sha256": "b98eeb5d6a16e77d91e91686e3b73e93f8d70dae0d2e3451bd9fea89eee5477d"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/204.hypergraph_riscv32e-npc/hypergraph-riscv32e-npc.elf",
+          "sha256": "e5d7fecc0c37f20a0725384aaff80059e94c2f3f96874a2a00556ad94419a6e9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/204.hypergraph_riscv32e-npc/hypergraph-riscv32e-npc.bin",
+          "sha256": "eefa143c618430bcaed9db0984e4dfd306e6fcac66b52bcc2f0c4d5dfa375459"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147496212,
+        "a0": 0,
+        "cycles": 86817657,
+        "instructions": 86817653,
+        "diff_enabled": true,
+        "diff_checked": 86814229,
+        "device_sync_checked": 3424,
+        "ebreak_calls": 1,
+        "memory_writes": 7372242,
+        "load_commits": 15672291,
+        "uart_bytes": 375,
+        "uart_polls": 3041,
+        "uart_not_ready": 2666,
+        "frequency_hz": 100000000,
+        "wall_seconds": 46.124833244,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147496200,
+          2147606516,
+          0,
+          0,
+          2147569708,
+          2147606412,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          28,
+          2147606444,
+          2147550180,
+          0
+        ]
+      },
+      "score": 5845,
+      "min_time_us": 298025
+    }
+  ],
+  "scope": "Earlier standalone E6 application workloads recompiled for RV32E; --only is a selected diagnostic run, not whole-suite acceptance. Native baselines in test mode. Dhrystone/CoreMark retain prior course-permitted two-iteration configuration; train archbench workloads and validators unchanged. 100MHz is an assumed model frequency, not a silicon qualification.",
+  "arithmetic_mean": 5845.0,
+  "geometric_mean": 5845.000000000004
+}

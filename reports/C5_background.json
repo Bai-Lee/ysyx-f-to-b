@@ -1,0 +1,161 @@
+{
+  "status": "SOURCE_SCOPE_RECONCILED",
+  "records": [
+    {
+      "id": "C5-O001",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "PASS",
+      "details": "Actual C4 UART/CLINT runtime evidence reused for the C5 bus prerequisite.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C4_AUDIT.json"
+      ]
+    },
+    {
+      "id": "C5-R001",
+      "classification": "技术约束/方法提醒",
+      "status": "REFERENCE_ONLY",
+      "details": "Devicewindows andphysicalcapacities scoped to the pinnedcompleteSoC; futuretapeoutallocation not asserted.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_source_lock.json"
+      ]
+    },
+    {
+      "id": "C5-O002",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "PASS",
+      "details": "Originalfib writesROM andfails; SRAMdata/BSSplacement andpoisonedcopy/zero controls retained.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_ram.json"
+      ]
+    },
+    {
+      "id": "C5-O003",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "REFERENCE_ONLY",
+      "details": "ReturnedAXIerrors causeexplicitNPCfaultstop. Fullarchitecturalaccess-fault traps/allunmappedresponses are not implemented or asserted.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_xip.json"
+      ]
+    },
+    {
+      "id": "C5-O004",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "PASS",
+      "details": "ActualELFsymbols:printfabsentfromfullPSRAMmemtest,presentinloaderpayload; archiveextraction/sectionGC/KEEP explained.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_psram_sweep.json",
+        "reports/C5_loader.json",
+        "C/C5/am/ysyxsoc.mk"
+      ]
+    },
+    {
+      "id": "C5-O005",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "REFERENCE_ONLY",
+      "details": "Eightwidth/patternpasses do not establish allfaultmodels,retention,electricalrefreshorMBISTcoverage. Noextra memorytesttoolclaim.",
+      "evidence": [
+        "C/C5/NOTES.md"
+      ]
+    },
+    {
+      "id": "C5-O006",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "PASS",
+      "details": "OnefunctionalCoreMarkiteration retainsalgorithms/CRC; not aqualifiedCoreMarkscore. Memoryplacementimprovementmeasuredseparately.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_flash_boot.json",
+        "reports/C5_psram_apps.json"
+      ]
+    },
+    {
+      "id": "C5-O007",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "PASS",
+      "details": "ActualXIP/manualSPIsharing conflict reproducedaswrongSPIcommand00h withmodelassertion; SRAMrelocationpasses.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_spi_shared.json"
+      ]
+    },
+    {
+      "id": "C5-O008",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "OPTIONAL_NOT_IMPLEMENTED",
+      "details": "SPIinterruptcompletion-queryvariant is optional andnot implemented. CurrentXIPusespolling; noenergysavingclaim.",
+      "evidence": [
+        "C/C5/NOTES.md"
+      ]
+    },
+    {
+      "id": "C5-O009",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "REFERENCE_ONLY",
+      "details": "Logicalbank/row/column modeling; internalDRAMsubarraysandpaperperformance notmodeled.",
+      "evidence": [
+        "C/C5/NOTES.md"
+      ]
+    },
+    {
+      "id": "C5-R002",
+      "classification": "技术约束/方法提醒",
+      "status": "PASS",
+      "details": "LockedNVBoard1.0code actuallytransmits/receivesUART; nofloatinggitpull duringacceptance.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_nvboard_setup.json",
+        "reports/C5_gui_gpio.json",
+        "reports/C5_gui_keyboard.json"
+      ]
+    },
+    {
+      "id": "C5-R003",
+      "classification": "技术约束/方法提醒",
+      "status": "PASS",
+      "details": "Updatedam-tests uses(char)-1 sentinel; actualUARTandPS2input includingEscape/PageUp passed.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_gui_keyboard.json"
+      ]
+    },
+    {
+      "id": "C5-R004",
+      "classification": "技术约束/方法提醒",
+      "status": "PASS",
+      "details": "PrivateRTconfiguration regenerated; pollingUARTinput, invalidcommand recovery andsubsequentcommands actuallyverified.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_rtthread_interactive_setup.json",
+        "reports/C5_gui_rtthread.json"
+      ]
+    },
+    {
+      "id": "C5-O010",
+      "classification": "原选做/扩展或背景阅读",
+      "status": "REFERENCE_ONLY",
+      "details": "Frame1,228,800B;60Hz73.728MB/s;50MHzquadPSRAMraw25MB/s. VGAneedsDMA/arbiter/FIFOandbandwidthbudget to useexternalmemory; notimplemented.",
+      "evidence": [
+        "C/C5/NOTES.md"
+      ]
+    },
+    {
+      "id": "C5-R005",
+      "classification": "技术约束/方法提醒",
+      "status": "PASS",
+      "details": "ActualRTAMapp integration andreturn-to-shell/relaunch; typedFCEUX,Helloandall10MicroBenchsubtests withheapownership/guardcontrols.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_gui_rtthread.json",
+        "reports/C5_gui_rtbench.json",
+        "reports/C5_gui_rtguard.json"
+      ]
+    }
+  ],
+  "notes_sha256": "c1dbb4278e20e4ae97e280235e6662013c7bc1d542a04d42428ae337f7e562cc",
+  "scope": "All15 C5 optional/background/reminder records explicitly addressed. Reference-only andunimplementedoptionalstates are not counted asruntimepasses. Mandatoryengineering taskstatus remains separate."
+}

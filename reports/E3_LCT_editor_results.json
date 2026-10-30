@@ -1,0 +1,228 @@
+{
+  "status": "PASS",
+  "scope": "Actual Vim binary/text editing; no GUI or user editor configuration changes. Good sources preserved.",
+  "runs": [
+    {
+      "name": "E3/lcthw/editor/binary_edit",
+      "timestamp": "2026-10-24T16:52:13.738919+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "vim",
+        "-u",
+        "NONE",
+        "-U",
+        "NONE",
+        "-i",
+        "NONE",
+        "-n",
+        "-es",
+        "-b",
+        "-c",
+        "set noeol",
+        "-c",
+        "normal! gg0rX",
+        "-c",
+        "wq",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/editor/ex1_vim_corrupted.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.234,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex1_more_lines.elf",
+          "sha256": "6b2f8edc073ea054865080a7abf3f2fbeaa972f38d2687324b0d7ec31431a5f5"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex1_more_lines.elf",
+          "sha256": "6b2f8edc073ea054865080a7abf3f2fbeaa972f38d2687324b0d7ec31431a5f5"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/lcthw/editor/corrupted_execute",
+      "timestamp": "2026-10-24T16:52:13.858750+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-c",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/editor/ex1_vim_corrupted.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 126,
+      "expected_exit": 126,
+      "status": "PASS",
+      "elapsed_seconds": 0.109,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\editor\\ex1_vim_corrupted.elf",
+          "sha256": "5e9cd0ae111b3996cc847abb7da5fb501c7ea9b75596072e2ab1c8769808ae01"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\editor\\ex1_vim_corrupted.elf",
+          "sha256": "5e9cd0ae111b3996cc847abb7da5fb501c7ea9b75596072e2ab1c8769808ae01"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "19583f765d25557259e665a297bf800b152b9f9964df0c6f309aff19c70250fc"
+    },
+    {
+      "name": "E3/lcthw/editor/source_edit",
+      "timestamp": "2026-10-24T16:52:14.076673+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "vim",
+        "-u",
+        "NONE",
+        "-U",
+        "NONE",
+        "-i",
+        "NONE",
+        "-n",
+        "-es",
+        "-c",
+        "normal! ggI#",
+        "-c",
+        "wq",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/editor/ex6_vim_fixed.c"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.187,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\original\\ex06\\block_00.c",
+          "sha256": "e664f70e20905907f1ecc281ca0b8b2482804d0a25cacc6594c307b414d69d47"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\original\\ex06\\block_00.c",
+          "sha256": "e664f70e20905907f1ecc281ca0b8b2482804d0a25cacc6594c307b414d69d47"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/lcthw/editor/compile",
+      "timestamp": "2026-10-24T16:52:14.710564+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "gcc",
+        "-std=c17",
+        "-Wall",
+        "-Werror",
+        "-g",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/editor/ex6_vim_fixed.c",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/editor/ex6_vim.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.594,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\editor\\ex6_vim_fixed.c",
+          "sha256": "bac7506794043411a3f7388b5b2684f570ac6d0dd651759a35888b58f0644093"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\editor\\ex6_vim_fixed.c",
+          "sha256": "bac7506794043411a3f7388b5b2684f570ac6d0dd651759a35888b58f0644093"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/lcthw/editor/valgrind",
+      "timestamp": "2026-10-24T16:52:15.268073+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "valgrind",
+        "--error-exitcode=99",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/editor/ex6_vim.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.532,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\editor\\ex6_vim_fixed.c",
+          "sha256": "bac7506794043411a3f7388b5b2684f570ac6d0dd651759a35888b58f0644093"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\editor\\ex6_vim.elf",
+          "sha256": "cbf30cb948405623346b14dba89cba2e3183f6bfb1e32aefe3ff7893b6bd69a1"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\editor\\ex6_vim_fixed.c",
+          "sha256": "bac7506794043411a3f7388b5b2684f570ac6d0dd651759a35888b58f0644093"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\editor\\ex6_vim.elf",
+          "sha256": "cbf30cb948405623346b14dba89cba2e3183f6bfb1e32aefe3ff7893b6bd69a1"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "cd6c481d0c57d028ce82d974d09e6ed89e753888c47c057ce1fe0a793686cea6",
+      "stderr_sha256": "2d7e178c9bd643387f2e09eb001645b56957b6622cd9a981b6813de0e2a9f12b"
+    }
+  ],
+  "binary_changed_positions": [
+    0
+  ],
+  "vim_repair_matches_previously_validated_source": true
+}

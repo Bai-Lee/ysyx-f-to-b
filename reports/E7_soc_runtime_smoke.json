@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "programs": [
+    {
+      "program": "dummy",
+      "make_exit": 0,
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 3555191,
+        "instructions": 17204,
+        "ipc": 0.00483912116114,
+        "application_cycles": 2290,
+        "application_instructions": 29,
+        "application_ipc": 0.0126637554585,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 18787,
+        "lsu_requests": 9525,
+        "lsu_responses": 9525,
+        "uart_bytes": 50,
+        "serial_bytes": 50,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 1.291042403,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "program": "wrong",
+      "make_exit": 2,
+      "result": {
+        "result": "BAD_TRAP",
+        "exit_code": 1,
+        "cycles": 3555191,
+        "instructions": 17204,
+        "ipc": 0.00483912116114,
+        "application_cycles": 2290,
+        "application_instructions": 29,
+        "application_ipc": 0.0126637554585,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 18787,
+        "lsu_requests": 9525,
+        "lsu_responses": 9525,
+        "uart_bytes": 50,
+        "serial_bytes": 50,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 1.297071436,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    }
+  ],
+  "scope": "ActualAM-builtSoCdummyandwrong; bothloaderandapplicationUARTinitializationobserved; normal/failurestatuspropagatedthroughmake."
+}

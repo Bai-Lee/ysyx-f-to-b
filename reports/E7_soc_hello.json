@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "scenario": "default",
+      "ratio": 1,
+      "frequency_hz": 25000000,
+      "divisor": 13,
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 155478293,
+        "instructions": 746482,
+        "ipc": 0.00480119755367,
+        "application_cycles": 868279,
+        "application_instructions": 7787,
+        "application_ipc": 0.00896831548385,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 825358,
+        "lsu_requests": 449506,
+        "lsu_responses": 449506,
+        "uart_bytes": 145,
+        "serial_bytes": 145,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 58.998306341,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "clock_wave": {
+        "signals": {
+          "clock": "TOP.clock",
+          "cpuClock": "TOP.cpuClock"
+        },
+        "rising_edges": {
+          "clock": 10000,
+          "cpuClock": 10000
+        },
+        "mean_period_ticks": {
+          "clock": 40000.0,
+          "cpuClock": 40000.0
+        },
+        "cpu_to_soc_frequency_ratio": 1.0
+      },
+      "image_sha256": "bdd576505ff3e10e6c188cf949d77f13438d07f2e6f8b5bf80bfc0bcd7d25ea9"
+    },
+    {
+      "scenario": "ratio3",
+      "ratio": 3,
+      "frequency_hz": 75000000,
+      "divisor": 13,
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 464313928,
+        "instructions": 746836,
+        "ipc": 0.00160847210252,
+        "application_cycles": 2699945,
+        "application_instructions": 8141,
+        "application_ipc": 0.00301524660688,
+        "cpu_soc_ratio": 3,
+        "assumed_cpu_frequency_hz": 75000000,
+        "flash_reads": 825358,
+        "lsu_requests": 449701,
+        "lsu_responses": 449701,
+        "uart_bytes": 148,
+        "serial_bytes": 148,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 102.025542763,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "clock_wave": {
+        "signals": {
+          "clock": "TOP.clock",
+          "cpuClock": "TOP.cpuClock"
+        },
+        "rising_edges": {
+          "clock": 3333,
+          "cpuClock": 10000
+        },
+        "mean_period_ticks": {
+          "clock": 40000.0,
+          "cpuClock": 13333.333333333334
+        },
+        "cpu_to_soc_frequency_ratio": 3.0
+      },
+      "image_sha256": "321212d0041bed0d9fe00682304d5471e1bafbff739c426a941c37de8c1120be"
+    },
+    {
+      "scenario": "baud57600",
+      "ratio": 1,
+      "frequency_hz": 25000000,
+      "divisor": 27,
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 155504855,
+        "instructions": 746718,
+        "ipc": 0.00480189509196,
+        "application_cycles": 894841,
+        "application_instructions": 8023,
+        "application_ipc": 0.00896583862384,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 825358,
+        "lsu_requests": 449636,
+        "lsu_responses": 449636,
+        "uart_bytes": 147,
+        "serial_bytes": 147,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 61.285436194,
+        "uart_divisors": [
+          13,
+          27
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "clock_wave": {
+        "signals": {
+          "clock": "TOP.clock",
+          "cpuClock": "TOP.cpuClock"
+        },
+        "rising_edges": {
+          "clock": 10000,
+          "cpuClock": 10000
+        },
+        "mean_period_ticks": {
+          "clock": 40000.0,
+          "cpuClock": 40000.0
+        },
+        "cpu_to_soc_frequency_ratio": 1.0
+      },
+      "image_sha256": "e49c25fcc9c0bd1861260e9272e6af34b2b92010401c3701b7b0b3fd19cff5f2"
+    }
+  ],
+  "scope": "CompiledSoCAMhello, actualloaderandUART16550, physicalTXdecoding, correctmainargs;1x/3xclockratios and25MHzdivisor13/27transmissions. Theseare digitalfunctionaltests, notanalogmetastability/realwiretoleranceproof."
+}

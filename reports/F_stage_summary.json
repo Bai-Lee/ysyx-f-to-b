@@ -1,0 +1,71 @@
+{
+  "status": "F_COMPLETE",
+  "required_technical_tasks": 64,
+  "source_yellow_boxes": 67,
+  "excluded_source_boxes": {
+    "F1-M001": "LEGEND",
+    "F1-M002": "USER_EXCLUDED_PERSONAL",
+    "F1-M004": "USER_EXCLUDED_PERSONAL"
+  },
+  "courses": {
+    "F1": {
+      "EXCLUDED_SCOPE": 3,
+      "PASS": 3
+    },
+    "F2": {
+      "PASS": 3,
+      "PASS_ADAPTED": 2
+    },
+    "F3": {
+      "PASS": 37
+    },
+    "F4": {
+      "PASS": 5,
+      "PASS_ADAPTED": 2
+    },
+    "F5": {
+      "PASS_ADAPTED": 7
+    },
+    "F6": {
+      "PASS_ADAPTED": 5
+    }
+  },
+  "selected_optional_completed": [
+    "F3-O011",
+    "F3-O012",
+    "F3-O013",
+    "F3-O014",
+    "F3-O017",
+    "F3-O015",
+    "F5-O001",
+    "F6-O001",
+    "F6-O002",
+    "F6-O003"
+  ],
+  "not_selected_optional": [
+    "F3-O003",
+    "F3-O004",
+    "F3-O006",
+    "F3-O007",
+    "F3-O018",
+    "F3-O019"
+  ],
+  "next_stage": "E1, only after user changes model/authorizes continuation",
+  "E_to_B_started": false,
+  "adaptations": [
+    "No further computer-use Logisim operations after user instruction",
+    "F5/F6 synthesizable RTL, independent reference and real Icarus/Yosys checks",
+    "Compiler Explorer API executes and supplies source mapping instead of manual web clicks"
+  ],
+  "evidence_reports": [
+    "F_circuit_results.json",
+    "F_cpu_results.json",
+    "F4_results.json",
+    "F_theory_results.json",
+    "F2_results.json",
+    "F_optional_results.json",
+    "F_assembler_results.json"
+  ],
+  "final_audit": "reports/F_final_audit.json",
+  "completed_utc": "2026-10-24T11:17:06.465433+00:00"
+}

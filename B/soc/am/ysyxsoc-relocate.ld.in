@@ -1,0 +1,38 @@
+ENTRY(_start)
+MEMORY {
+  flash (rx) : ORIGIN  =  0x30000000, LENGTH  =  16M
+  sram (rwx) : ORIGIN  =  0x0f000000, LENGTH  =  8K
+  psram (rwx) : ORIGIN  =  0x80000000, LENGTH  =  4M
+  sdram (rwx) : ORIGIN  =  0xa0000000, LENGTH  =  @SDRAM_MB@M
+}
+PHDRS { boot PT_LOAD FLAGS(5); ssbl PT_LOAD FLAGS(5); text PT_LOAD FLAGS(5); data PT_LOAD FLAGS(6); }
+SECTIONS {
+  .entry : ALIGN(4) { KEEP(*(entry)) } > flash :boot
+  .ssbl : ALIGN(8) { __ssbl_start = .; KEEP(*(.ssbl)) . = ALIGN(8); __ssbl_end = .; } > sram AT> flash :ssbl
+  __ssbl_load = LOADADDR(.ssbl);
+  .text : ALIGN(8) { __text_start = .; *(.text*) *(__am_apps.text*) . = ALIGN(8); __text_end = .; } > @TARGET@ AT> flash :text
+  __text_load = LOADADDR(.text);
+  .rodata : ALIGN(8) { __rodata_start = .; *(.rodata*) *(.srodata*) *(__am_apps.rodata*) *(__am_apps.srodata*) . = ALIGN(8); __rodata_end = .; } > @TARGET@ AT> flash :text
+  __rodata_load = LOADADDR(.rodata);
+  .data : ALIGN(8) {
+    __data_start = .; *(.data*) *(.sdata*) . = ALIGN(8);
+    __fsymtab_start = .; KEEP(*(FSymTab)) __fsymtab_end = .; . = ALIGN(8);
+    __vsymtab_start = .; KEEP(*(VSymTab)) __vsymtab_end = .; . = ALIGN(8);
+    __rt_init_start = .; KEEP(*(SORT(.rti_fn*))) __rt_init_end = .; . = ALIGN(8);
+    __rt_utest_tc_tab_start = .; KEEP(*(UtestTcTab)) __rt_utest_tc_tab_end = .; . = ALIGN(8);
+    __am_apps_data_start = .; *(__am_apps.data*) *(__am_apps.sdata*) __am_apps_data_end = .;
+    . = ALIGN(8); __data_end = .;
+  } > @TARGET@ AT> flash :data
+  __data_load = LOADADDR(.data);
+  .bss (NOLOAD) : ALIGN(8) { __bss_start = .; *(.bss*) *(.sbss*) *(COMMON) . = ALIGN(8);
+    __am_apps_bss_start = .; *(__am_apps.bss*) *(__am_apps.sbss*) *(__am_apps.scommon*) __am_apps_bss_end = .;
+    . = ALIGN(8); __bss_end = .;
+  } > @TARGET@ :data
+  __global_pointer$ = __data_start+0x800;
+  _heap_start = @HEAP_START@;_heap_end = @HEAP_END@;
+  _stack_pointer = ORIGIN(sram)+LENGTH(sram);
+  ASSERT(__bss_end<=@TARGET_LIMIT@,"Relocated image exceeds memory or overlaps stack")
+  ASSERT(SIZEOF(.ssbl)<=2048,"SSBL exceeds reserved SRAM2KiB")
+  ASSERT(__data_load+SIZEOF(.data)<=ORIGIN(flash)+LENGTH(flash),"Flash image exceeds16MiB")
+  /DISCARD/ : { *(.eh_frame*) *(.comment*) *(.riscv.attributes) }
+}

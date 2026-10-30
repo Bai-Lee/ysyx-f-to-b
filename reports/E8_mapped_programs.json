@@ -1,0 +1,74 @@
+{
+  "status": "SUPERSEDED_BY_FINAL_CANDIDATE",
+  "records": [
+    {
+      "variant": "baseline",
+      "engine": "verilator",
+      "program": "hello",
+      "status": "PASS",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "executable_sha256": "2eb01419ec35535a3669ace7f4242835ab3b9a43c4656f4437b1883a8859b005",
+      "image_sha256": "24cfe6f0c3ccac9694c28f39510fcb112cd18f7b34f4f1f9bd6f945570ab8a9f",
+      "stdout_sha256": "5bd2fda841bc70d0f12b65679010d41cff032bb029bec8b69284e4a36a16601f",
+      "elapsed_seconds": 0.182,
+      "evidence": "artifacts/E8/mapped_programs/baseline/verilator/hello"
+    },
+    {
+      "variant": "baseline",
+      "engine": "verilator",
+      "program": "microbench",
+      "status": "PASS",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 22129163,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 515,
+        "uart_polls": 4240,
+        "uart_not_ready": 3725,
+        "memory_writes": 1984000
+      },
+      "executable_sha256": "2eb01419ec35535a3669ace7f4242835ab3b9a43c4656f4437b1883a8859b005",
+      "image_sha256": "9d492500b1679ef9ef8a7dd1a2acf885175f3e747c7d7e78939c0202ac000edd",
+      "stdout_sha256": "6f718640d322b1490eb9b377c46f537f09dfc9c3ff6c9486349660ff67f12e2f",
+      "elapsed_seconds": 34.652,
+      "evidence": "artifacts/E8/mapped_programs/baseline/verilator/microbench"
+    },
+    {
+      "variant": "baseline",
+      "engine": "iverilog",
+      "program": "hello",
+      "status": "PASS",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "executable_sha256": "64327f4702443f08d1124638c4b3a87eea17916d4dfab90b339cbd604b524324",
+      "image_sha256": "24cfe6f0c3ccac9694c28f39510fcb112cd18f7b34f4f1f9bd6f945570ab8a9f",
+      "stdout_sha256": "5bd2fda841bc70d0f12b65679010d41cff032bb029bec8b69284e4a36a16601f",
+      "elapsed_seconds": 15.084,
+      "evidence": "artifacts/E8/mapped_programs/baseline/iverilog/hello"
+    }
+  ],
+  "replacement": "reports/E8_final_mapped.json",
+  "area_followup": "reports/E8_area_functional.json",
+  "note": "Initial Icarus11 run reached CPU limit; final baseline candidate fully verified in both engines. AREA additionally passed complete Verilator programs; no full AREA Icarus claim."
+}

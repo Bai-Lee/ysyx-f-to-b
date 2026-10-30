@@ -1,0 +1,8 @@
+{
+  "status": "PASS_NEGATIVE_CONTROL",
+  "address": "0xa10752fe",
+  "length": 4,
+  "device_high": "0xa10752ff",
+  "exit_code": -6,
+  "scope": "Actual RV32IM load whose first byte is mapped but complete span is not; NEMU rejects before host access. No independent REF comparison needed for an intentional invalid MMIO access."
+}

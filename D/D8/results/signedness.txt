@@ -1,0 +1,21 @@
+
+/workspace/projects/ysyx_f_to_b/D/D8/results/signedness.o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <signed_add>:
+   0:	00b50533          	add	a0,a0,a1
+   4:	00008067          	jalr	zero,0(ra)
+
+00000008 <unsigned_add>:
+   8:	00b50533          	add	a0,a0,a1
+   c:	00008067          	jalr	zero,0(ra)
+
+00000010 <signed_less>:
+  10:	00b52533          	slt	a0,a0,a1
+  14:	00008067          	jalr	zero,0(ra)
+
+00000018 <unsigned_less>:
+  18:	00b53533          	sltu	a0,a0,a1
+  1c:	00008067          	jalr	zero,0(ra)

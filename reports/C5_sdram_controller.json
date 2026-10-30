@@ -1,0 +1,56 @@
+{
+  "status": "PASS_SMALL_FOUR_STATE_CONTROLLER_AND_RANK_TESTS",
+  "runs": [
+    {
+      "name": "16x1",
+      "width": 16,
+      "ranks": 1,
+      "status": "PASS",
+      "expected_exit": 0,
+      "stdout": "SDRAM_CONTROLLER_PASS width=16 ranks=1 checks=40 commands=64 access_cycles=20626\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/sdram_controller_tb.sv:64: $finish called at 226280000 (1ps)\n",
+      "evidence": "artifacts/C5/sdram-controller/16x1",
+      "implementation_sha256": "f00dc7ebad448fbf2f77d872d9a7eea1b4733cec06daa2e44d7f2e5288eca174"
+    },
+    {
+      "name": "32x1",
+      "width": 32,
+      "ranks": 1,
+      "status": "PASS",
+      "expected_exit": 0,
+      "stdout": "SDRAM_CONTROLLER_PASS width=32 ranks=1 checks=40 commands=64 access_cycles=20308\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/sdram_controller_tb.sv:64: $finish called at 223100000 (1ps)\n",
+      "evidence": "artifacts/C5/sdram-controller/32x1",
+      "implementation_sha256": "f00dc7ebad448fbf2f77d872d9a7eea1b4733cec06daa2e44d7f2e5288eca174"
+    },
+    {
+      "name": "32x2",
+      "width": 32,
+      "ranks": 2,
+      "status": "PASS",
+      "expected_exit": 0,
+      "stdout": "SDRAM_CONTROLLER_PASS width=32 ranks=2 checks=80 commands=128 access_cycles=20576\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/sdram_controller_tb.sv:64: $finish called at 227700000 (1ps)\n",
+      "evidence": "artifacts/C5/sdram-controller/32x2",
+      "implementation_sha256": "f00dc7ebad448fbf2f77d872d9a7eea1b4733cec06daa2e44d7f2e5288eca174"
+    },
+    {
+      "name": "bad-mask",
+      "width": 32,
+      "ranks": 2,
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/sdram_controller_tb.sv:44: SDRAM_CONTROLLER_READ address=a0000000 got=0000aa00 expected=8142aa75\n       Time: 102700000  Scope: sdram_controller_tb.check_read\n",
+      "evidence": "artifacts/C5/sdram-controller/bad-mask",
+      "implementation_sha256": "4d9cb51f5edbb23868f3cffb5f668c51cb69e62787339e48d0f460cde1d64dc1"
+    },
+    {
+      "name": "bad-rank",
+      "width": 32,
+      "ranks": 2,
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/sdram_controller_tb.sv:44: SDRAM_CONTROLLER_READ address=a000fffc got=8e5c4e49 expected=864c7669\n       Time: 102440000  Scope: sdram_controller_tb.check_read\n",
+      "evidence": "artifacts/C5/sdram-controller/bad-rank",
+      "implementation_sha256": "c8776a9548f4d01a5c6ff6346ec952870872e4cfeb0cc03911b83a193b6ba659"
+    }
+  ],
+  "scope": "Original16-bit core unchanged; parallel32-bit one/two-rank controller uses2/4 independentx16 chip models. APB byte/halfword masks, column/bank/row/rank boundaries, refresh and warmreset retention. Small8row models only; actual32/64/128MiB CPU tests separate. Broken byte mask and rank-select mutants rejected. No real-board electrical timing claim."
+}

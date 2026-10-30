@@ -1,0 +1,951 @@
+{
+  "status": "PASS",
+  "archive_sha256": "8fe4bc769d5b1e7ff7e1ec9e29e4b90c5efedf7c63b82cbef5a6ea5116290532",
+  "members": [
+    {
+      "path": ".config",
+      "sha256": "116aa64c6e34d861b51f197fc261666f7273b3d113c1c19ee4c1f47ee8723dde",
+      "bytes": 1463
+    },
+    {
+      "path": ".config.old",
+      "sha256": "93fc468f102fe53a2e77e80749c5e25a45e9ac6068b4e43a6b3efac2d78d6f99",
+      "bytes": 1442
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "96c4139c5493bcd02034ddf4b5f3ace74af2c1c3e057fb31185a67852652cadd",
+      "bytes": 106
+    },
+    {
+      "path": "Kconfig",
+      "sha256": "0151dc1d4a4d199838c6338df8aa0ee8d9bd453e401e509577f62240f2d1488c",
+      "bytes": 4167
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "8336c6e78ad4aa4bfa9c806629ff13e0bebd11ae5b529f72dcfdbb75b0bf5d41",
+      "bytes": 9540
+    },
+    {
+      "path": "Makefile",
+      "sha256": "1c26f60df9ccc8779c9a6cf84486f240ec971737788e1f5db6498ad6d1edd78f",
+      "bytes": 2459
+    },
+    {
+      "path": "README.md",
+      "sha256": "6f008026b7a224edb34761bff627d3035470071c06d061401451c111085814cc",
+      "bytes": 1138
+    },
+    {
+      "path": "build/riscv32-nemu-interpreter",
+      "sha256": "7544c465cfcfdd1df26a98456896c099bcb94dfc0fa25b4f98e5ed0019e0dde1",
+      "bytes": 413768
+    },
+    {
+      "path": "configs/.gitignore",
+      "sha256": "aa380653d3681ac6de553b330a71a6706b48f9954144a7d25ed75ea6055e5461",
+      "bytes": 13
+    },
+    {
+      "path": "configs/dstage_pa1_defconfig",
+      "sha256": "18d1b897e52cb7b587f9444476cbffa6f14d637552491df5b8eb2f1c59be0bf4",
+      "bytes": 261
+    },
+    {
+      "path": "configs/mips32-am_defconfig",
+      "sha256": "b374b28d07f19ec22f568c0c30deb4eb8480e1f507675325377a10e4aa40735e",
+      "bytes": 104
+    },
+    {
+      "path": "configs/riscv32-am_defconfig",
+      "sha256": "041b263ac7a2d527bcbac9a879a5dc61ad3e8757241feeaaec1c03d1685f20de",
+      "bytes": 84
+    },
+    {
+      "path": "configs/riscv64-am_defconfig",
+      "sha256": "debfc38d0809157ec8cb4ab983cded450042134639d43d37ca9a011e6bcaa3a9",
+      "bytes": 98
+    },
+    {
+      "path": "include/common.h",
+      "sha256": "70d3c092b3196d786dc6936d58f06f7c6d470c7bb1e4af4373f9199084cb63d2",
+      "bytes": 1439
+    },
+    {
+      "path": "include/config/auto.conf",
+      "sha256": "362aff636c64cea5ea7dbc8e0c247991f39c9a42211a2a56d37ba6c367ccc087",
+      "bytes": 646
+    },
+    {
+      "path": "include/config/auto.conf.cmd",
+      "sha256": "3833b980d3826dd425148aeb6fb71f21f951fb4c69848320a6964195b5238a16",
+      "bytes": 196
+    },
+    {
+      "path": "include/config/cc/asan.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/cc/debug.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/cc/gcc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/cc/o2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/cc/opt.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/cc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/difftest/ref/name.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/difftest/ref/path.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/engine/interpreter.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/engine.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/isa/riscv.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/isa.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/itrace/cond.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/itrace.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/mbase.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/mode/system.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/msize.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/pc/reset/offset.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/pmem/garray.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/rt/check.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/target/native/elf.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/timer/gettimeofday.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/trace/end.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/trace/start.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/trace.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/config/watchpoint.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "include/cpu/cpu.h",
+      "sha256": "099b787e7636882a2f93ca284244df25549d4e6ed44e363df8e52c071677a3ff",
+      "bytes": 1015
+    },
+    {
+      "path": "include/cpu/decode.h",
+      "sha256": "8621fd5ea1610981415cecc217ac2ba600d58156caa5bbcb998f9c6432efe7de",
+      "bytes": 3295
+    },
+    {
+      "path": "include/cpu/difftest.h",
+      "sha256": "c8b036168373ffbaecc082473d5a71ce55197675dbd15bc0228394414fb526bb",
+      "bytes": 1992
+    },
+    {
+      "path": "include/cpu/ifetch.h",
+      "sha256": "32a7eba8da91bdb59167ff97983d4c5c999f5339cbfd8ef1cdd820f828dbcba2",
+      "bytes": 902
+    },
+    {
+      "path": "include/debug.h",
+      "sha256": "b8f59be7e4d17c05ada8a87bbaf2a00810dead83a39811dcf3f38ab9a3a46bdf",
+      "bytes": 1506
+    },
+    {
+      "path": "include/debug_core.h",
+      "sha256": "4b4fc366635cdbe55fd21e19aab9ffd38a3a24f8cb80002c9f9fabf1713b18a8",
+      "bytes": 973
+    },
+    {
+      "path": "include/device/alarm.h",
+      "sha256": "d0470e340127ca856e867645e498a391001a2e930d82675df9d896039e646ae4",
+      "bytes": 870
+    },
+    {
+      "path": "include/device/map.h",
+      "sha256": "8f48d8327d7741206174f332ce35f94d617c92f7bcd5be99e6cb1c6384cde74e",
+      "bytes": 1706
+    },
+    {
+      "path": "include/device/mmio.h",
+      "sha256": "9ab4322b228d1356ba4902ea1925fabb9284bb68692b4ff12299602bba6ac6d7",
+      "bytes": 884
+    },
+    {
+      "path": "include/difftest-def.h",
+      "sha256": "e3083bdc9d4b635219cb25331b8df98bd92d5c3930a6aec54cbb984172eb02c7",
+      "bytes": 1539
+    },
+    {
+      "path": "include/generated/autoconf.h",
+      "sha256": "636a0b5123cc97e330e5eadadf8f21c7d5b3836053022357b5d43998044a7e2f",
+      "bytes": 867
+    },
+    {
+      "path": "include/isa.h",
+      "sha256": "10bb90b6cbc378ceed981892550707fe2690414d11ee8c3283cded76d21c84ad",
+      "bytes": 1819
+    },
+    {
+      "path": "include/macro.h",
+      "sha256": "359bf1fb336228861e0376af41d8a14b74ca387b11dae1c32a2055debbd37569",
+      "bytes": 4298
+    },
+    {
+      "path": "include/memory/host.h",
+      "sha256": "26939250fc14611c65c845a88768d5417e9b429134a03b0a63b2ff885bc2a3eb",
+      "bytes": 1442
+    },
+    {
+      "path": "include/memory/paddr.h",
+      "sha256": "4ed6905a1ca1c782fea77c644f97b99ca24483a11f1feb2c74d5dac32599ee34",
+      "bytes": 1410
+    },
+    {
+      "path": "include/memory/vaddr.h",
+      "sha256": "36ecf28e4ab52ca1931a6a2c4a1b205505e3711e3395495771b2b4d098657b69",
+      "bytes": 1050
+    },
+    {
+      "path": "include/utils.h",
+      "sha256": "9badd7bf81abc0a415333cbc8dcbc6e4ab6ddb435a926df79f286dfdecc4fe71",
+      "bytes": 2097
+    },
+    {
+      "path": "resource/debian/README.md",
+      "sha256": "c45a0fb3c63c3a26c0524bac27871ca56cb9f71f8305be3cadcd4eb0bda1f5d5",
+      "bytes": 5375
+    },
+    {
+      "path": "resource/mips-elf/README.md",
+      "sha256": "bab12c75bb74d3f1bfff77820df342650919e404617b5f7b7898363bd22ddf62",
+      "bytes": 62
+    },
+    {
+      "path": "resource/sdcard/README.md",
+      "sha256": "605727c74d9b650313e8b8d1e61db05415b3ad5692dc3ae400246e0bd63a26c9",
+      "bytes": 1738
+    },
+    {
+      "path": "resource/sdcard/nemu.c",
+      "sha256": "15a5107cd47efdef0f1461bd55e44d7d7e8d68d64fd17e9897d91b1008929b45",
+      "bytes": 12517
+    },
+    {
+      "path": "scripts/build.mk",
+      "sha256": "a50e1043cf910f8ddb307cbd177c9d99e017b180f4a67cba115e3bd7990aebf4",
+      "bytes": 1143
+    },
+    {
+      "path": "scripts/config.mk",
+      "sha256": "dc0c4950680b56e9b13fcbb570f719a177ee71c951b97ba2dd06ff3dcf5cde2b",
+      "bytes": 2205
+    },
+    {
+      "path": "scripts/native.mk",
+      "sha256": "a3eb054521b461c6fb705ece140fded9b6b8fef005fa799fb9513c3064d56b4b",
+      "bytes": 1506
+    },
+    {
+      "path": "src/am-bin.S",
+      "sha256": "6b1f16470edf26718ba04e3e6fd50e4c838c2611e8865774634ad69195e217a5",
+      "bytes": 811
+    },
+    {
+      "path": "src/cpu/cpu-exec.c",
+      "sha256": "41f3a3dcd94b30d822270acbdb8b6ab65d0716ab0bda333487447d588dc7a91e",
+      "bytes": 4286
+    },
+    {
+      "path": "src/cpu/difftest/dut.c",
+      "sha256": "c78962160cbf48304927cb7579965e2103bbaa1675b8664cfa82ecc6c9fad8c7",
+      "bytes": 4367
+    },
+    {
+      "path": "src/cpu/difftest/ref.c",
+      "sha256": "d47393f3ac254ad07aa54c01809abb3f570b6c0eeaca5dba4ee5c1e925cb3021",
+      "bytes": 1229
+    },
+    {
+      "path": "src/device/Kconfig",
+      "sha256": "4586565f7b2291d38fd3a20bfadf492abd726db4482d4a0b2ddbbd64f92ad002",
+      "bytes": 2774
+    },
+    {
+      "path": "src/device/alarm.c",
+      "sha256": "4fe9e5cee05690ef4fbe3516f5ddefbbcbd3e5ddab6ec3bb7b3fb8cc91fba085",
+      "bytes": 1518
+    },
+    {
+      "path": "src/device/audio.c",
+      "sha256": "b2006cdf7472eaa39b6c663dedc16cf6614b66c9f45303b9105cecc3e052c1e5",
+      "bytes": 1485
+    },
+    {
+      "path": "src/device/device.c",
+      "sha256": "39a30a130f2d544e8f49d1345d024abd2c0e99ef640d4976968fd5ea161112d0",
+      "bytes": 2273
+    },
+    {
+      "path": "src/device/disk.c",
+      "sha256": "6e09afd54d23d8e1b44c239703d4c68164041e7c6b030f614cdd051feca9977d",
+      "bytes": 754
+    },
+    {
+      "path": "src/device/filelist.mk",
+      "sha256": "7b4b30566c982a2f27525487186f1215661b40f3bb3d9920f754b33b6e3edba1",
+      "bytes": 1298
+    },
+    {
+      "path": "src/device/intr.c",
+      "sha256": "9bc973eb2453f454416db2e408ebe1f15a6f6a3f88337a4a1f90d387c4d50111",
+      "bytes": 752
+    },
+    {
+      "path": "src/device/io/map.c",
+      "sha256": "848a92bce9fe96220871fb60e13e516f2781f781c1e29978690d0bc929e28b65",
+      "bytes": 2299
+    },
+    {
+      "path": "src/device/io/mmio.c",
+      "sha256": "18dbbf2c5386744c6bd99ad156b189560fe566752890ba993fd81a1ebe61ba53",
+      "bytes": 2266
+    },
+    {
+      "path": "src/device/io/port-io.c",
+      "sha256": "3c992dc470c64b6af9f8fa234107a93c0dbdecabe13c60e7bc228ca60cee8527",
+      "bytes": 1760
+    },
+    {
+      "path": "src/device/keyboard.c",
+      "sha256": "2b527bdaa3a873cb32e037ce5ecc412ec8af7d0894aa500345b94ea5cc7dda98",
+      "bytes": 3322
+    },
+    {
+      "path": "src/device/mmc.h",
+      "sha256": "74e709ebeef0750cd95355ac984cd995d98bd5ef9ff2d7f5c001265f4433bd32",
+      "bytes": 17095
+    },
+    {
+      "path": "src/device/sdcard.c",
+      "sha256": "4d36c1013e7f79bbcf4179b6aba93fc03f1f99e8b7ccceb0a2d31897f9929b17",
+      "bytes": 4456
+    },
+    {
+      "path": "src/device/serial.c",
+      "sha256": "5534e9a7937673dc7792b966f9b2b27f99b1fe76f5506106b22b7505cb95639e",
+      "bytes": 1640
+    },
+    {
+      "path": "src/device/timer.c",
+      "sha256": "1176778deb709db7586ae009078afd58154ac8d638d044845866b46996443fea",
+      "bytes": 1542
+    },
+    {
+      "path": "src/device/vga.c",
+      "sha256": "dc4b70173e6f717bb7afbb2ae72d525ce32e6ce6478af6b4325f69e6614afd1a",
+      "bytes": 2999
+    },
+    {
+      "path": "src/engine/filelist.mk",
+      "sha256": "e65555cf57294d2d919f6c94e927f08662ee2a47696e0195c30f491847b9f974",
+      "bytes": 785
+    },
+    {
+      "path": "src/engine/interpreter/hostcall.c",
+      "sha256": "1e447640f5fafe662b8d1fbf479a2f6bfd11dc3574345f8d23fbbe7c8f930836",
+      "bytes": 2005
+    },
+    {
+      "path": "src/engine/interpreter/init.c",
+      "sha256": "96f9d7d39914389157160a3ce0f7fbea8a8d23f35707082ccacf3f55707773e1",
+      "bytes": 883
+    },
+    {
+      "path": "src/filelist.mk",
+      "sha256": "56352ae07521b9d9c2812c01a699d91fe01498a24791e89705d85d8dd3f17a5e",
+      "bytes": 1097
+    },
+    {
+      "path": "src/isa/filelist.mk",
+      "sha256": "b7d0ea1690647d060e31e657d68581a792fefe782d4a8b485c549ff4ecc4cd34",
+      "bytes": 793
+    },
+    {
+      "path": "src/isa/loongarch32r/difftest/dut.c",
+      "sha256": "13a13f8e072654dba15998e888de128d3297e105c9b17bad57a445fbd277b507",
+      "bytes": 896
+    },
+    {
+      "path": "src/isa/loongarch32r/include/isa-def.h",
+      "sha256": "461f5241c5ce4bcf7bde4b49e95ad9283fc2a3aba5cbc5a113251628f2f5ce7f",
+      "bytes": 1004
+    },
+    {
+      "path": "src/isa/loongarch32r/init.c",
+      "sha256": "c8c27a87450eb171377f0c3d0a549e6931567e09e4003e7824f04fa28b93b0a9",
+      "bytes": 1384
+    },
+    {
+      "path": "src/isa/loongarch32r/inst.c",
+      "sha256": "b87885969a7cc8c3debe93df1015fd0043e979ea79f24329b9749d298520430f",
+      "bytes": 2471
+    },
+    {
+      "path": "src/isa/loongarch32r/local-include/reg.h",
+      "sha256": "5b75548e5991dc007dbbabacaaa9b02bcb4d2d3952eca693216327fae50d5d63",
+      "bytes": 1074
+    },
+    {
+      "path": "src/isa/loongarch32r/logo.c",
+      "sha256": "418991297f04c868801e89196934bc51a23ce5d1ca0891d23eded86ff99ce39b",
+      "bytes": 758
+    },
+    {
+      "path": "src/isa/loongarch32r/reg.c",
+      "sha256": "0ceb8dc73bad240c44013890fea13e804581043fd0dacdc38a530111682330b3",
+      "bytes": 1080
+    },
+    {
+      "path": "src/isa/loongarch32r/system/intr.c",
+      "sha256": "6225fe680746ba71f7e167ec744f43d87306711d73ce9735e101026c5aeaeb67",
+      "bytes": 964
+    },
+    {
+      "path": "src/isa/loongarch32r/system/mmu.c",
+      "sha256": "74c510faf7b8afbfba4a45ef17f375a42e533d1986b9c8292d4b4331c97ed914",
+      "bytes": 865
+    },
+    {
+      "path": "src/isa/mips32/difftest/dut.c",
+      "sha256": "13a13f8e072654dba15998e888de128d3297e105c9b17bad57a445fbd277b507",
+      "bytes": 896
+    },
+    {
+      "path": "src/isa/mips32/include/isa-def.h",
+      "sha256": "ebff57f686a70dc88f5459a5ee4ca7228b754865a2c417c05c3c0dbb51e4e42f",
+      "bytes": 997
+    },
+    {
+      "path": "src/isa/mips32/init.c",
+      "sha256": "c9c8814798bbe94f393e8677fea123c65fe8210d60e0a8b97a6fe08bfa5ade32",
+      "bytes": 1348
+    },
+    {
+      "path": "src/isa/mips32/inst.c",
+      "sha256": "ec0307cce2dc68cbd9d5bc67f06668e8ea355044186a1cc6a70ae42154dade42",
+      "bytes": 2508
+    },
+    {
+      "path": "src/isa/mips32/local-include/reg.h",
+      "sha256": "4a38216f3aee61ea6ec5f9153a62682cfbddb3fab76ae7cd81088d163c1f8d55",
+      "bytes": 1062
+    },
+    {
+      "path": "src/isa/mips32/logo.c",
+      "sha256": "7d5e88f5aafe8b8a7bdd36b0a4594daa963f38da75cc42b41c81f999e14f20e2",
+      "bytes": 4856
+    },
+    {
+      "path": "src/isa/mips32/reg.c",
+      "sha256": "c3ec68b4adb0fd9a404f842a6830023a7b2a582ad2cff8f2408dc5e66282ef6e",
+      "bytes": 1080
+    },
+    {
+      "path": "src/isa/mips32/system/intr.c",
+      "sha256": "6225fe680746ba71f7e167ec744f43d87306711d73ce9735e101026c5aeaeb67",
+      "bytes": 964
+    },
+    {
+      "path": "src/isa/mips32/system/mmu.c",
+      "sha256": "74c510faf7b8afbfba4a45ef17f375a42e533d1986b9c8292d4b4331c97ed914",
+      "bytes": 865
+    },
+    {
+      "path": "src/isa/riscv32/Kconfig",
+      "sha256": "659e40d634e435e9792da0bfef8ecaf0d474d6e6aa984b1e8d09f43be4d8aeee",
+      "bytes": 157
+    },
+    {
+      "path": "src/isa/riscv32/difftest/dut.c",
+      "sha256": "13a13f8e072654dba15998e888de128d3297e105c9b17bad57a445fbd277b507",
+      "bytes": 896
+    },
+    {
+      "path": "src/isa/riscv32/include/isa-def.h",
+      "sha256": "eb19c652837e66359e2079d87f68d7a9031279e87e6e314dbddae14a55d9ccfd",
+      "bytes": 1088
+    },
+    {
+      "path": "src/isa/riscv32/init.c",
+      "sha256": "bd9543a0882f8539a589f6d0c7f87f7f6b74c128bc2ccbdb8f764266de3b298a",
+      "bytes": 1374
+    },
+    {
+      "path": "src/isa/riscv32/inst.c",
+      "sha256": "14760ac23cdb5b489b313f01b5af27ebc803a988340d41c71b0a0ac825fcfe39",
+      "bytes": 2662
+    },
+    {
+      "path": "src/isa/riscv32/local-include/reg.h",
+      "sha256": "75d6eaf39e0a293feaf886e5116832b78ae0d3a6ade7ed6af34bbb619dd5a1ef",
+      "bytes": 1086
+    },
+    {
+      "path": "src/isa/riscv32/logo.c",
+      "sha256": "e9c62cb61357ce8e4a5c0c6ca61b150cc2583f3421cf4df8b3876e159b4fb5a4",
+      "bytes": 3771
+    },
+    {
+      "path": "src/isa/riscv32/reg.c",
+      "sha256": "562740cb439bfb6d14978cf4f8835551d0f0d6744b093e21a0c2e11f6531d66d",
+      "bytes": 1604
+    },
+    {
+      "path": "src/isa/riscv32/system/intr.c",
+      "sha256": "6225fe680746ba71f7e167ec744f43d87306711d73ce9735e101026c5aeaeb67",
+      "bytes": 964
+    },
+    {
+      "path": "src/isa/riscv32/system/mmu.c",
+      "sha256": "8f8cc85f225bf6a67d68439426c8a84f9aff5ccdbd019bf35b783589b6299d5c",
+      "bytes": 865
+    },
+    {
+      "path": "src/isa/x86/difftest/dut.c",
+      "sha256": "13a13f8e072654dba15998e888de128d3297e105c9b17bad57a445fbd277b507",
+      "bytes": 896
+    },
+    {
+      "path": "src/isa/x86/include/isa-def.h",
+      "sha256": "94b2d3538263f930d2a6b3994d301ab421e07c0dd3ec8ecc383e557564989295",
+      "bytes": 1695
+    },
+    {
+      "path": "src/isa/x86/init.c",
+      "sha256": "ba8ed19127199bdbdf7b747c8cc2950c0beb1cfe2ff1a7051ab6e1156b091cb1",
+      "bytes": 2041
+    },
+    {
+      "path": "src/isa/x86/inst.c",
+      "sha256": "aad0abb8a3a99da0c4cfe7f6f2b15ea0b91caec87f3280d07ee588520d8b08b0",
+      "bytes": 6650
+    },
+    {
+      "path": "src/isa/x86/local-include/reg.h",
+      "sha256": "2ae6b6705775eadb0f3d199984e4d052d8aa9c575df13ec6b343e91d900026ef",
+      "bytes": 1684
+    },
+    {
+      "path": "src/isa/x86/logo.c",
+      "sha256": "fc0d2e2e6358a1122377b23b817b27fd533401c43394d303124e1b2df75ee351",
+      "bytes": 3306
+    },
+    {
+      "path": "src/isa/x86/reg.c",
+      "sha256": "4bc43981a9ccee69ae97a3dcf134ed1dce803e84fa8eec93e961cf01bfd4e843",
+      "bytes": 2061
+    },
+    {
+      "path": "src/isa/x86/system/intr.c",
+      "sha256": "5f6ea07cc20768c50abf29f9ec3afdb670367b1e314296e7820155816b9b0379",
+      "bytes": 947
+    },
+    {
+      "path": "src/isa/x86/system/mmu.c",
+      "sha256": "74c510faf7b8afbfba4a45ef17f375a42e533d1986b9c8292d4b4331c97ed914",
+      "bytes": 865
+    },
+    {
+      "path": "src/memory/Kconfig",
+      "sha256": "8ed30c98c606cfc5d78795b25ea309bf00cb1b9c1982a3fe29c3ae573868cd7b",
+      "bytes": 694
+    },
+    {
+      "path": "src/memory/paddr.c",
+      "sha256": "9f41996bc2ce83fccf9940f943ef338d5b6ef3855dbe1072cc600e8cf1933e13",
+      "bytes": 2190
+    },
+    {
+      "path": "src/memory/vaddr.c",
+      "sha256": "b67ebf83b4550c8e4f38ff6d84d9ebf786dfe6b0ac330ef202a9a9933fe650a0",
+      "bytes": 999
+    },
+    {
+      "path": "src/monitor/monitor.c",
+      "sha256": "645d56a7efbc6fc6722c07c713e34c9ca46004047ec8e9d0ca49df1639cf2ebc",
+      "bytes": 4538
+    },
+    {
+      "path": "src/monitor/sdb/debug_core.c",
+      "sha256": "4e7b9d923a6631f3937352f71fea9626a1215d257206b17cd0ac341cc66d6551",
+      "bytes": 7087
+    },
+    {
+      "path": "src/monitor/sdb/expr.c",
+      "sha256": "4d70a57c5f4a26aa1e56a46320233f16b4714ff2f17bb88b97fee08281204ad9",
+      "bytes": 1614
+    },
+    {
+      "path": "src/monitor/sdb/sdb.c",
+      "sha256": "22ab97743c964ad67ee28fb52807d24530c154a8484e637961dd6fb4b3799adc",
+      "bytes": 3359
+    },
+    {
+      "path": "src/monitor/sdb/sdb.h",
+      "sha256": "c727dd74a58670249e7e5e069ca8939946d23f8cc0e6ac198cecc54c1acf4f79",
+      "bytes": 1031
+    },
+    {
+      "path": "src/monitor/sdb/watchpoint.c",
+      "sha256": "bf75275a7f0731b74dada887c4b4e8d37e5ac3e14488caca63fd2bc0e8e7dc16",
+      "bytes": 1408
+    },
+    {
+      "path": "src/nemu-main.c",
+      "sha256": "600af9b38121681b030087a1402989fcb269db2519c5ba37ca08a66cb96be2c7",
+      "bytes": 1063
+    },
+    {
+      "path": "src/utils/disasm.c",
+      "sha256": "e8fd12ac760f5c0a1e7deafd1a7f499d0cea8fb88757ba9d44d2a00580eee603",
+      "bytes": 2849
+    },
+    {
+      "path": "src/utils/filelist.mk",
+      "sha256": "af2e42ce28c5c557c895307e3aa852d81becfd6a1657550597ecd33646c552cb",
+      "bytes": 969
+    },
+    {
+      "path": "src/utils/log.c",
+      "sha256": "12045f85eb9878b1ec8473ed7d9b83ecf716c9eaa844486c603f0e8d0d0e2c06",
+      "bytes": 1222
+    },
+    {
+      "path": "src/utils/state.c",
+      "sha256": "63aae58db474f7c9637276e862344a78038dd0c3a52b651744fd60b0b77b4fc2",
+      "bytes": 933
+    },
+    {
+      "path": "src/utils/timer.c",
+      "sha256": "1d25a7ec9365b007f29abea40d98067a4adc4cf9c8ef1e5a0fcc9494247129a0",
+      "bytes": 1648
+    },
+    {
+      "path": "tools/capstone/.gitignore",
+      "sha256": "f3aa3baec01055665300eb8dd4dfe1423fd24f5758e31aa999e8ba30e050b087",
+      "bytes": 6
+    },
+    {
+      "path": "tools/capstone/Makefile",
+      "sha256": "344d53572f1788a40acf5d0b50f33a1501eb5cb49b6dde5b222c8132b1ea3642",
+      "bytes": 1269
+    },
+    {
+      "path": "tools/capstone/repo/libcapstone.so.5",
+      "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350",
+      "bytes": 150680
+    },
+    {
+      "path": "tools/difftest.mk",
+      "sha256": "a7e37797fa219eb8bfea74f71135f450d466fb687c5a093134d3fc5427a8149a",
+      "bytes": 1132
+    },
+    {
+      "path": "tools/fixdep/Makefile",
+      "sha256": "f0cadd3f34b44df72925a1180b32b62729e90a187a45f49f3d1360314a50dbce",
+      "bytes": 68
+    },
+    {
+      "path": "tools/fixdep/fixdep.c",
+      "sha256": "b7138f39b82855a5014b25b0ab0d0291cc0196f32097082649f8207519c2273b",
+      "bytes": 9844
+    },
+    {
+      "path": "tools/gen-expr/.gitignore",
+      "sha256": "41bfa4e9b768a9dad090dbff6d085cce6e00ee41ea151ef3c180a2319b5dddda",
+      "bytes": 8
+    },
+    {
+      "path": "tools/gen-expr/Makefile",
+      "sha256": "0b5c83a57461510f419c4908d401c460a98cf0c5303f56ef1f6a9faa19f82c1d",
+      "bytes": 780
+    },
+    {
+      "path": "tools/gen-expr/gen-expr.c",
+      "sha256": "fe37e13712ccafdc4ea761712703464a9fdef721df18549916b14162f8ce8f38",
+      "bytes": 2640
+    },
+    {
+      "path": "tools/kconfig/.gitignore",
+      "sha256": "377fae5beb15ad67ab848fdd6821722804881b2a5d1ce62bc94517e490fa38ba",
+      "bytes": 26
+    },
+    {
+      "path": "tools/kconfig/Makefile",
+      "sha256": "e210b1a519191f45a18d98a4b678035bbc3aae20d3b36b5b3e95737dae58baec",
+      "bytes": 845
+    },
+    {
+      "path": "tools/kconfig/conf.c",
+      "sha256": "561b14fd17551926554c202ba0f9e38b0667190005455528b3978f07eaf0c585",
+      "bytes": 16112
+    },
+    {
+      "path": "tools/kconfig/confdata.c",
+      "sha256": "bc141e8ec5b73298fd7bc78fa678703f1fefaeaa146fb6ad479f90c15e8a49b9",
+      "bytes": 27837
+    },
+    {
+      "path": "tools/kconfig/expr.c",
+      "sha256": "250da210808c8bee3698fb77402343e5fde4e35c43f09fe713a15001716555e8",
+      "bytes": 30726
+    },
+    {
+      "path": "tools/kconfig/expr.h",
+      "sha256": "c08024c21a18d64638762960d2af34d4e9eb0315a16516c1f9eb06949758b9a6",
+      "bytes": 9873
+    },
+    {
+      "path": "tools/kconfig/lexer.l",
+      "sha256": "e7d66611f24df6266beb9d1637abb2341f7c7d37e05a4c294f1123b2828536f5",
+      "bytes": 9320
+    },
+    {
+      "path": "tools/kconfig/list.h",
+      "sha256": "fc686618be614e481ef6bfdce9d33f97dde4e94682ec57af1138122c48a2df3b",
+      "bytes": 3749
+    },
+    {
+      "path": "tools/kconfig/lkc.h",
+      "sha256": "01937064b98c3f7527b4b33435d353eeb93fc4eeb82dc94bb94ce5e9304bc830",
+      "bytes": 4413
+    },
+    {
+      "path": "tools/kconfig/lkc_proto.h",
+      "sha256": "4dacca90bc95cedc9717c461027c85d85f41a3d26345132ec4eb0d24b903b9a9",
+      "bytes": 1929
+    },
+    {
+      "path": "tools/kconfig/lxdialog/checklist.c",
+      "sha256": "986fde26478c42117f9ae1b4d24c146eb050416745eaf9bc8e6ba6bd9b3d89a4",
+      "bytes": 7746
+    },
+    {
+      "path": "tools/kconfig/lxdialog/dialog.h",
+      "sha256": "818eb2d9621b5366506f76b32cfe84615b63a02f1977a104380b8ad1d6a4d696",
+      "bytes": 6854
+    },
+    {
+      "path": "tools/kconfig/lxdialog/inputbox.c",
+      "sha256": "0a025a35e44e693852e98f1784d62b98b8ab99f9c15fe090e99c624984e40736",
+      "bytes": 6507
+    },
+    {
+      "path": "tools/kconfig/lxdialog/menubox.c",
+      "sha256": "f74cf92839ff656ae396be05aeeaa4a69088f2127694e520ad23d61cbf5520f2",
+      "bytes": 10522
+    },
+    {
+      "path": "tools/kconfig/lxdialog/textbox.c",
+      "sha256": "5511d33704a7f9a3b31eb158d7110592cdf9a1f2c26be9f03adc10701e93a638",
+      "bytes": 8523
+    },
+    {
+      "path": "tools/kconfig/lxdialog/util.c",
+      "sha256": "e3a736573bbec59bb71818d1958a550f8aac83a428f52818f61d61dc96b18fd2",
+      "bytes": 17647
+    },
+    {
+      "path": "tools/kconfig/lxdialog/yesno.c",
+      "sha256": "e12cfa9f2c56a83771b38acd2914094dd62f1453e0362bea80d510abf0619984",
+      "bytes": 2262
+    },
+    {
+      "path": "tools/kconfig/mconf.c",
+      "sha256": "f1d0e82725a64e64bab7abfc40c325a78f2d64e5594c38306b6c72b3e8bf71a2",
+      "bytes": 28006
+    },
+    {
+      "path": "tools/kconfig/menu.c",
+      "sha256": "b2f695b6546daba8641ec941cef3373d9d829a852aaef772cd4294f5d1798111",
+      "bytes": 22753
+    },
+    {
+      "path": "tools/kconfig/parser.y",
+      "sha256": "1d0dd3b905a05c628e1af09a98e2d7db44d6ff2c067bb1852a40350614ba54d5",
+      "bytes": 15694
+    },
+    {
+      "path": "tools/kconfig/preprocess.c",
+      "sha256": "bd3f6da09acd819130a977993a3c4d190febc314819bde14b79daf26c07d9279",
+      "bytes": 11254
+    },
+    {
+      "path": "tools/kconfig/symbol.c",
+      "sha256": "3d1c4ca6cd4b9ed6ec2015adbd4ca1d1fab89383494e3eaf1bb8799f288ad01b",
+      "bytes": 29322
+    },
+    {
+      "path": "tools/kconfig/util.c",
+      "sha256": "9b7bd15ea7ca395c4d23595a40b43e4544c7ae4fa5f04d817c9b5c78bb87147b",
+      "bytes": 2210
+    },
+    {
+      "path": "tools/kvm-diff/Makefile",
+      "sha256": "83563db62065486fca8b586c359b45fa4e07184197ba22454c244f82f18cec2d",
+      "bytes": 895
+    },
+    {
+      "path": "tools/kvm-diff/include/paddr.h",
+      "sha256": "ae06d833315681b44575e7722042637e33c417333f670c4f348aa3fed051dce9",
+      "bytes": 756
+    },
+    {
+      "path": "tools/kvm-diff/src/kvm.c",
+      "sha256": "fa026a0de83064ebb02c1e29e8c6d2f1eae4de4d59e1bf562d2d15d52ebd95d9",
+      "bytes": 11672
+    },
+    {
+      "path": "tools/qemu-diff/Makefile",
+      "sha256": "d3b8c0b900f195b623fb8f7cac5ea2ec6a824eccb26e851e338a7b9b1d8da7ce",
+      "bytes": 921
+    },
+    {
+      "path": "tools/qemu-diff/include/common.h",
+      "sha256": "502c8127982e7037b6360bbad9207ffce7f8acffaf9c68b98c6e81d0de43f174",
+      "bytes": 966
+    },
+    {
+      "path": "tools/qemu-diff/include/isa.h",
+      "sha256": "ee6acd4a0454042dec91964d74059f047ca2c4c3ec2feccaeb610529dd1b5049",
+      "bytes": 2065
+    },
+    {
+      "path": "tools/qemu-diff/include/protocol.h",
+      "sha256": "a101a286479a3352a24bf3ee35e05d5ddb04b04fea3ce92c381fff5421ecb746",
+      "bytes": 1242
+    },
+    {
+      "path": "tools/qemu-diff/src/diff-test.c",
+      "sha256": "5b54e86fc2d4a053b8bf357be3d53ccf09c2533ed5a865961fb38fef6b9ba7b8",
+      "bytes": 2574
+    },
+    {
+      "path": "tools/qemu-diff/src/gdb-host.c",
+      "sha256": "66e0ab813f39ba6b3676614b856aa9b3881acb36dca775ebb4db5a2a2e6f591c",
+      "bytes": 2952
+    },
+    {
+      "path": "tools/qemu-diff/src/isa.c",
+      "sha256": "5dc84a9844384ccb0e93072d9103dc1adbe96f033a51490add9e00dc06cefa6f",
+      "bytes": 2468
+    },
+    {
+      "path": "tools/qemu-diff/src/protocol.c",
+      "sha256": "bca900422bc966c4ed40ba25c7d241d4ae844dbcba87a8877e31fc9258ea4d0a",
+      "bytes": 7491
+    },
+    {
+      "path": "tools/spike-diff/.gitignore",
+      "sha256": "15ff08c47642af01dee5cd0f76cd4b31f578a250c7bc9ce958e3838fca24f03a",
+      "bytes": 19
+    },
+    {
+      "path": "tools/spike-diff/Makefile",
+      "sha256": "a4c5c5fa6c26b2d41a37530618ee0160aefd3af1fb7616b2bff2b0f9f15c985f",
+      "bytes": 1893
+    },
+    {
+      "path": "tools/spike-diff/difftest.cc",
+      "sha256": "f0ed5d53fed569b9de399ec20d330bce28657fce6ded98fe47db65a3cabf0415",
+      "bytes": 3866
+    }
+  ]
+}

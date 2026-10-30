@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "sources": [
+    {
+      "stage": "E5",
+      "original_matches": true,
+      "copy_matches": true
+    },
+    {
+      "stage": "E6",
+      "original_matches": true,
+      "copy_matches": true
+    },
+    {
+      "stage": "E7",
+      "original_matches": true,
+      "copy_matches": true
+    },
+    {
+      "stage": "E8",
+      "original_matches": true,
+      "copy_matches": true
+    },
+    {
+      "stage": "E9",
+      "original_matches": true,
+      "copy_matches": true
+    }
+  ]
+}

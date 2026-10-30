@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "vcd_fst_same_samples": 16,
+  "end_ns": 150,
+  "vcd_bytes": 473,
+  "fst_bytes": 546,
+  "actual_bad_trace_rejected": "('XOR waveform mismatch', 30, {'a': 1, 'b': 1, 'f': 1})",
+  "scope": "16 bounded samples; size ratio is measured, not asserted to be always1/50."
+}

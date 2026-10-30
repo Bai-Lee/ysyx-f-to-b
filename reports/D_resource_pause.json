@@ -1,0 +1,23 @@
+{
+  "status": "RESUMED_AFTER_USER_MEMORY_READY",
+  "driver": [
+    [
+      9,
+      [
+        "python3",
+        "/workspace/projects/ysyx_f_to_b/D/D8/run_apps.py",
+        "--mode",
+        "train"
+      ]
+    ]
+  ],
+  "host_available_kib": 2563964,
+  "current_child_policy": "Let already dispatched child finish; SIGSTOP applies only to the owned dispatcher.",
+  "time": 1793016128.7687352,
+  "previous_status": "DISPATCH_PAUSED_LOW_HOST_MEMORY",
+  "resumed_pids": [
+    9
+  ],
+  "host_available_kib_on_resume": 7117340,
+  "resumed_time": 1793016679.9360259
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "programs": [
+    {
+      "program": "hello",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "elapsed_seconds": 0.129,
+      "image_sha256": "24cfe6f0c3ccac9694c28f39510fcb112cd18f7b34f4f1f9bd6f945570ab8a9f",
+      "simulator_sha256": "6d09b4811594e3b360c1f2e0c24a8f213e7c5c1ac4186a7d96db1496f8ac63eb"
+    },
+    {
+      "program": "microbench",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 22129163,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 515,
+        "uart_polls": 4240,
+        "uart_not_ready": 3725,
+        "memory_writes": 1984000
+      },
+      "elapsed_seconds": 33.719,
+      "image_sha256": "9d492500b1679ef9ef8a7dd1a2acf885175f3e747c7d7e78939c0202ac000edd",
+      "simulator_sha256": "6d09b4811594e3b360c1f2e0c24a8f213e7c5c1ac4186a7d96db1496f8ac63eb"
+    }
+  ],
+  "scope": "AREA0mappednetlistalsocompletesfullhello/microbench inVerilator. FinalphysicalcandidateisBALANCEbaseline,whichadditionallypassedcompleteIcarus4stateandphysicalsignoff."
+}

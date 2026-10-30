@@ -1,0 +1,13 @@
+w $t0
+info w
+c
+p $pc
+d 0
+w *0x80000010
+c
+p $pc
+x 1 0x80000010
+d 0
+info w
+c
+q

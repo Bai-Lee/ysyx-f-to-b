@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "negative": false,
+      "status": "PASS",
+      "output": "SDRAM_AXI_PASS writes=768 reads=128 beats=672 distinct_words=256 max_address=a7fffffc cycles=7447",
+      "wave_sha256": "e17d02089371ff48d07d63ab2cf006a36fa4439607787725345d8eb07cd59e88",
+      "evidence": "artifacts/B3/unit/sdram-axi"
+    },
+    {
+      "negative": true,
+      "status": "PASS_CORRUPT_READ_REJECTED",
+      "output": "",
+      "wave_sha256": "c5cc8df085fee82846a5f1a87adc381643e43307d23cad787777abc644e0f41e",
+      "evidence": "artifacts/B3/unit/sdram-axi-bad-read"
+    }
+  ],
+  "seed": "0x2607b318",
+  "scope": "Real fourx16 SDRAM pin models,128MiB address layout; selected boundary words in both ranks/all banks/first and last rows/first and last burst windows. Independent byte-mask model, random AW/W order and response backpressure,1/4/8 beat reads. This boundary suite is not a full-address sweep; full-range CPU patterns remain separate."
+}

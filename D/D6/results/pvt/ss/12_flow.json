@@ -1,0 +1,12 @@
+{
+    "steps": [
+        {
+            "name": "Synthesis",
+            "tool": "yosys",
+            "state": "Success",
+            "runtime": "0:0:17",
+            "peak memory (mb)": 1164.84,
+            "info": {}
+        }
+    ]
+}

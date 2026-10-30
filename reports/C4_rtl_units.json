@@ -1,0 +1,290 @@
+{
+  "status": "PASS_DEVICE_UNITS",
+  "rows": [
+    {
+      "name": "devices",
+      "expected_exit": 0,
+      "run": {
+        "status": "PASS",
+        "name": "C4/rtl_unit/devices/run",
+        "command": [
+          "/home/USER/tools/e-stage/oss-20261022/oss-cad-suite/bin/vvp",
+          "/home/USER/c-stage/c4-rtl-unit/devices.vvp"
+        ],
+        "cwd": "/home/USER/c-stage",
+        "timestamp": "2026-10-28T12:48:21.355950+00:00",
+        "elapsed_seconds": 0.042,
+        "exit_code": 0,
+        "expected_exit": [
+          0
+        ],
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "/home/USER/c-stage/c4-rtl-unit/devices.vvp",
+            "sha256": "67a67955eb503f03f9b31f76b9a9a2ee9b1c274da891bf92cba2cdb54513fcd6"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/c-stage/c4-rtl-unit/devices.vvp",
+            "sha256": "67a67955eb503f03f9b31f76b9a9a2ee9b1c274da891bf92cba2cdb54513fcd6"
+          }
+        ],
+        "stdout_sha256": "a9cca52b4ab553d19ac2f5b0443e3c09cc4c4323350a556761b39f4e3d44a391",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "Actual Linux memory/swap and per-process limits are recorded below. Compile j1; one heavy task, with task-specific PSS limits where applicable. VM capacity is re-observed at resume; historical configuration is not assumed current. No system settings changed.",
+        "resource_limits": {
+          "active_policy": {
+            "source": "/workspace/config/toolchain.lock.json",
+            "revision": "2026-10-28-user-expanded",
+            "heavy_jobs": 1,
+            "compile_jobs": 1,
+            "process_group_limit_mib": 6144,
+            "windows_start_available_mib": 2048,
+            "windows_running_available_mib": 1024,
+            "linux_running_available_mib": 512,
+            "jvm_heap_mib": 4096
+          },
+          "linux_memory_before": {
+            "MemTotal_KiB": 6953452,
+            "MemAvailable_KiB": 6213712,
+            "SwapTotal_KiB": 2097152,
+            "SwapFree_KiB": 2097152
+          },
+          "address_space_limit_bytes": [
+            -1,
+            -1
+          ],
+          "cpu_time_limit_seconds": [
+            -1,
+            -1
+          ],
+          "makeflags": "-j1",
+          "omp_threads": "1"
+        },
+        "child_resource_usage": {
+          "user_seconds": 0.0015150000000000025,
+          "system_seconds": 0.009438999999999996,
+          "maxrss_kib_upper_bound_including_prior_children": 16320
+        },
+        "task_environment": {
+          "AM_HOME": "/home/USER/c-stage/workbench/abstract-machine",
+          "NPC_HOME": "/home/USER/c-stage/workbench/npc",
+          "VERILATOR_ROOT": "/home/USER/tools/verilator-stable-src",
+          "LC_ALL": "C",
+          "SHELL": "/bin/bash",
+          "MAKEFLAGS": "-j1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "stdin_file": null,
+        "outputs": []
+      },
+      "stdout": "UART_CLINT_PASS tx=11 ticks=239 AWfirst Wfirst simultaneous WSTRB stalled_responses reset rollover\n/workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/uart_clint_tb.sv:92: $finish called at 782000 (1ps)\n"
+    },
+    {
+      "name": "uart-repeat-mutant",
+      "expected_exit": 1,
+      "run": {
+        "status": "PASS",
+        "name": "C4/rtl_unit/uart-repeat-mutant/run",
+        "command": [
+          "/home/USER/tools/e-stage/oss-20261022/oss-cad-suite/bin/vvp",
+          "/home/USER/c-stage/c4-rtl-unit/uart-repeat-mutant.vvp"
+        ],
+        "cwd": "/home/USER/c-stage",
+        "timestamp": "2026-10-28T12:48:22.268871+00:00",
+        "elapsed_seconds": 0.02,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "/home/USER/c-stage/c4-rtl-unit/uart-repeat-mutant.vvp",
+            "sha256": "ecea7ff6cb3810a7cb09a213c84398dd4b5aef9fd7cd17998bb4b9b798f1e88f"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/c-stage/c4-rtl-unit/uart-repeat-mutant.vvp",
+            "sha256": "ecea7ff6cb3810a7cb09a213c84398dd4b5aef9fd7cd17998bb4b9b798f1e88f"
+          }
+        ],
+        "stdout_sha256": "ac35371eab37f0b02030c8d838e4caea9e53b7bde00c900fa88a4429579fbb8f",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "Actual Linux memory/swap and per-process limits are recorded below. Compile j1; one heavy task, with task-specific PSS limits where applicable. VM capacity is re-observed at resume; historical configuration is not assumed current. No system settings changed.",
+        "resource_limits": {
+          "active_policy": {
+            "source": "/workspace/config/toolchain.lock.json",
+            "revision": "2026-10-28-user-expanded",
+            "heavy_jobs": 1,
+            "compile_jobs": 1,
+            "process_group_limit_mib": 6144,
+            "windows_start_available_mib": 2048,
+            "windows_running_available_mib": 1024,
+            "linux_running_available_mib": 512,
+            "jvm_heap_mib": 4096
+          },
+          "linux_memory_before": {
+            "MemTotal_KiB": 6953452,
+            "MemAvailable_KiB": 6210820,
+            "SwapTotal_KiB": 2097152,
+            "SwapFree_KiB": 2097152
+          },
+          "address_space_limit_bytes": [
+            -1,
+            -1
+          ],
+          "cpu_time_limit_seconds": [
+            -1,
+            -1
+          ],
+          "makeflags": "-j1",
+          "omp_threads": "1"
+        },
+        "child_resource_usage": {
+          "user_seconds": 0.009066999999999999,
+          "system_seconds": 0.0,
+          "maxrss_kib_upper_bound_including_prior_children": 16320
+        },
+        "task_environment": {
+          "AM_HOME": "/home/USER/c-stage/workbench/abstract-machine",
+          "NPC_HOME": "/home/USER/c-stage/workbench/npc",
+          "VERILATOR_ROOT": "/home/USER/tools/verilator-stable-src",
+          "LC_ALL": "C",
+          "SHELL": "/bin/bash",
+          "MAKEFLAGS": "-j1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "stdin_file": null,
+        "outputs": []
+      },
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/uart_clint_tb.sv:48: TX_DUPLICATE_OR_LOST got=6 expected=1\n       Time: 100000  Scope: uart_clint_tb.write_uart\n"
+    },
+    {
+      "name": "clint-tear-mutant",
+      "expected_exit": 1,
+      "run": {
+        "status": "PASS",
+        "name": "C4/rtl_unit/clint-tear-mutant/run",
+        "command": [
+          "/home/USER/tools/e-stage/oss-20261022/oss-cad-suite/bin/vvp",
+          "/home/USER/c-stage/c4-rtl-unit/clint-tear-mutant.vvp"
+        ],
+        "cwd": "/home/USER/c-stage",
+        "timestamp": "2026-10-28T12:48:23.238528+00:00",
+        "elapsed_seconds": 0.062,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "/home/USER/c-stage/c4-rtl-unit/clint-tear-mutant.vvp",
+            "sha256": "fcdda812ae60b84a32eebf21a18847db059825df424127fd5b3455c5ea6e77f7"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/c-stage/c4-rtl-unit/clint-tear-mutant.vvp",
+            "sha256": "fcdda812ae60b84a32eebf21a18847db059825df424127fd5b3455c5ea6e77f7"
+          }
+        ],
+        "stdout_sha256": "99b763b99461c5cd3ee15de96b186afc33f549cca05757ca2615c3d62d11fa21",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "Actual Linux memory/swap and per-process limits are recorded below. Compile j1; one heavy task, with task-specific PSS limits where applicable. VM capacity is re-observed at resume; historical configuration is not assumed current. No system settings changed.",
+        "resource_limits": {
+          "active_policy": {
+            "source": "/workspace/config/toolchain.lock.json",
+            "revision": "2026-10-28-user-expanded",
+            "heavy_jobs": 1,
+            "compile_jobs": 1,
+            "process_group_limit_mib": 6144,
+            "windows_start_available_mib": 2048,
+            "windows_running_available_mib": 1024,
+            "linux_running_available_mib": 512,
+            "jvm_heap_mib": 4096
+          },
+          "linux_memory_before": {
+            "MemTotal_KiB": 6953452,
+            "MemAvailable_KiB": 6210252,
+            "SwapTotal_KiB": 2097152,
+            "SwapFree_KiB": 2097152
+          },
+          "address_space_limit_bytes": [
+            -1,
+            -1
+          ],
+          "cpu_time_limit_seconds": [
+            -1,
+            -1
+          ],
+          "makeflags": "-j1",
+          "omp_threads": "1"
+        },
+        "child_resource_usage": {
+          "user_seconds": 0.007440000000000002,
+          "system_seconds": 0.0047830000000000025,
+          "maxrss_kib_upper_bound_including_prior_children": 16320
+        },
+        "task_environment": {
+          "AM_HOME": "/home/USER/c-stage/workbench/abstract-machine",
+          "NPC_HOME": "/home/USER/c-stage/workbench/npc",
+          "VERILATOR_ROOT": "/home/USER/tools/verilator-stable-src",
+          "LC_ALL": "C",
+          "SHELL": "/bin/bash",
+          "MAKEFLAGS": "-j1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "stdin_file": null,
+        "outputs": []
+      },
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/uart_clint_tb.sv:76: CLINT_TORN_READ got=00000001fffffffc expected=00000000fffffffc\n       Time: 52000  Scope: uart_clint_tb\n"
+    }
+  ],
+  "rtl_fingerprints": [
+    {
+      "path": "C/C4/rtl/axil_arbiter2.sv",
+      "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+    },
+    {
+      "path": "C/C4/rtl/axil_clint.sv",
+      "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+    },
+    {
+      "path": "C/C4/rtl/axil_reg_frontend.sv",
+      "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+    },
+    {
+      "path": "C/C4/rtl/axil_uart.sv",
+      "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+    },
+    {
+      "path": "C/C4/rtl/axil_xbar3.sv",
+      "sha256": "5f4c7a6fdefa836c53263a6aec8c52e5beeb8ba9f0658736df8fa2b726920769"
+    },
+    {
+      "path": "C/C4/rtl/c4_axi_core.sv",
+      "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+    },
+    {
+      "path": "C/C4/rtl/c4_axi_soc.sv",
+      "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+    },
+    {
+      "path": "C/C4/rtl/c4_simple_core.sv",
+      "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+    },
+    {
+      "path": "C/C4/rtl/rv32e_execute.sv",
+      "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+    },
+    {
+      "path": "C/C4/rtl/simple_to_axil.sv",
+      "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+    }
+  ]
+}

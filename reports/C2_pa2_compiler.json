@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "variants": [
+    {
+      "name": "baseline",
+      "optimization": 2,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_COMPILED",
+      "header_hashes": {
+        "cpu/ifetch.h": "32a7eba8da91bdb59167ff97983d4c5c999f5339cbfd8ef1cdd820f828dbcba2",
+        "common.h": "70d3c092b3196d786dc6936d58f06f7c6d470c7bb1e4af4373f9199084cb63d2",
+        "debug.h": "b8f59be7e4d17c05ada8a87bbaf2a00810dead83a39811dcf3f38ab9a3a46bdf"
+      },
+      "dummy_entities": 0,
+      "dummy_symbols": [],
+      "inst_fetch_symbols": [],
+      "executable_sha256": "be9660972ebaf4740ff3417b8323857ca0b7a55373557e6770ef34ba9c8591cf"
+    },
+    {
+      "name": "no_static",
+      "optimization": 2,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_COMPILED",
+      "header_hashes": {
+        "cpu/ifetch.h": "e3fac8e65c016d445fb57933e821a4247e17a9f4199e597980cc1a67082b4bd3",
+        "common.h": "70d3c092b3196d786dc6936d58f06f7c6d470c7bb1e4af4373f9199084cb63d2",
+        "debug.h": "b8f59be7e4d17c05ada8a87bbaf2a00810dead83a39811dcf3f38ab9a3a46bdf"
+      },
+      "dummy_entities": 0,
+      "dummy_symbols": [],
+      "inst_fetch_symbols": [],
+      "executable_sha256": "4a92ba91404a5793a0a28d7a22fd9f7b2b4f34115f6825dfdfe74e92c3cceff2"
+    },
+    {
+      "name": "no_inline",
+      "optimization": 2,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_COMPILED",
+      "header_hashes": {
+        "cpu/ifetch.h": "a18666be90e90985d70afe9fb87ad8d9e122e8bff0019357ca6595b7cb003aa7",
+        "common.h": "70d3c092b3196d786dc6936d58f06f7c6d470c7bb1e4af4373f9199084cb63d2",
+        "debug.h": "b8f59be7e4d17c05ada8a87bbaf2a00810dead83a39811dcf3f38ab9a3a46bdf"
+      },
+      "dummy_entities": 0,
+      "dummy_symbols": [],
+      "inst_fetch_symbols": [],
+      "executable_sha256": "00ae70c1d3fd661dce5481d9092ae48b1336b0aa88aee94d0276b92ab4e28843"
+    },
+    {
+      "name": "neither",
+      "optimization": 2,
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "status": "PASS_REJECTED",
+      "header_hashes": {
+        "cpu/ifetch.h": "22de166907ecb6e642c897fcf5aa43b6f92838afd45a8ef48f5770dfbc5d1542",
+        "common.h": "70d3c092b3196d786dc6936d58f06f7c6d470c7bb1e4af4373f9199084cb63d2",
+        "debug.h": "b8f59be7e4d17c05ada8a87bbaf2a00810dead83a39811dcf3f38ab9a3a46bdf"
+      }
+    },
+    {
+      "name": "inline_O0",
+      "optimization": 0,
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "status": "PASS_REJECTED",
+      "header_hashes": {
+        "cpu/ifetch.h": "e3fac8e65c016d445fb57933e821a4247e17a9f4199e597980cc1a67082b4bd3",
+        "common.h": "70d3c092b3196d786dc6936d58f06f7c6d470c7bb1e4af4373f9199084cb63d2",
+        "debug.h": "b8f59be7e4d17c05ada8a87bbaf2a00810dead83a39811dcf3f38ab9a3a46bdf"
+      }
+    },
+    {
+      "name": "dummy_common",
+      "optimization": 2,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_COMPILED",
+      "header_hashes": {
+        "cpu/ifetch.h": "32a7eba8da91bdb59167ff97983d4c5c999f5339cbfd8ef1cdd820f828dbcba2",
+        "common.h": "c6179af88a89de16c5106e8984ddc8e300323df806430af1c3a470ea7d481df9",
+        "debug.h": "b8f59be7e4d17c05ada8a87bbaf2a00810dead83a39811dcf3f38ab9a3a46bdf"
+      },
+      "dummy_entities": 30,
+      "dummy_symbols": [
+        "000000000000e0e4 0000000000000004 b dummy",
+        "000000000000e058 0000000000000004 b dummy",
+        "000000000000e0c0 0000000000000004 b dummy",
+        "000000000000e0c4 0000000000000004 b dummy",
+        "000000000000e0d0 0000000000000004 b dummy",
+        "000000000000e0e0 0000000000000004 b dummy",
+        "000000000000e320 0000000000000004 b dummy",
+        "000000000000e338 0000000000000004 b dummy",
+        "000000000000e560 0000000000000004 b dummy",
+        "000000000000e564 0000000000000004 b dummy",
+        "000000000000e568 0000000000000004 b dummy",
+        "000000000000e56c 0000000000000004 b dummy",
+        "000000000000e570 0000000000000004 b dummy",
+        "000000000000e574 0000000000000004 b dummy",
+        "000000000000e578 0000000000000004 b dummy",
+        "000000000000e57c 0000000000000004 b dummy",
+        "000000000000e580 0000000000000004 b dummy",
+        "000000000000e584 0000000000000004 b dummy",
+        "000000000000e5c0 0000000000000004 b dummy",
+        "000000000000e690 0000000000000004 b dummy",
+        "000000000000e6b8 0000000000000004 b dummy",
+        "000000000000e6c4 0000000000000004 b dummy",
+        "000000000000e6c8 0000000000000004 b dummy",
+        "0000000000016868 0000000000000004 b dummy",
+        "0000000000016878 0000000000000004 b dummy",
+        "000000000001687c 0000000000000004 b dummy",
+        "0000000000016888 0000000000000004 b dummy",
+        "000000000001688c 0000000000000004 b dummy",
+        "0000000000016890 0000000000000004 b dummy",
+        "0000000008017000 0000000000000004 b dummy"
+      ],
+      "inst_fetch_symbols": [],
+      "executable_sha256": "2f90275d9e1b103d988bd81997fd620d8c090997258d4221ed82e165dcd8c517"
+    },
+    {
+      "name": "dummy_both",
+      "optimization": 2,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_COMPILED",
+      "header_hashes": {
+        "cpu/ifetch.h": "32a7eba8da91bdb59167ff97983d4c5c999f5339cbfd8ef1cdd820f828dbcba2",
+        "common.h": "c6179af88a89de16c5106e8984ddc8e300323df806430af1c3a470ea7d481df9",
+        "debug.h": "6f3a7cb574de99419ea101f2bb841dd37b13113e4249df6dbfa588fff73258e4"
+      },
+      "dummy_entities": 30,
+      "dummy_symbols": [
+        "000000000000e0e4 0000000000000004 b dummy",
+        "000000000000e058 0000000000000004 b dummy",
+        "000000000000e0c0 0000000000000004 b dummy",
+        "000000000000e0c4 0000000000000004 b dummy",
+        "000000000000e0d0 0000000000000004 b dummy",
+        "000000000000e0e0 0000000000000004 b dummy",
+        "000000000000e320 0000000000000004 b dummy",
+        "000000000000e338 0000000000000004 b dummy",
+        "000000000000e560 0000000000000004 b dummy",
+        "000000000000e564 0000000000000004 b dummy",
+        "000000000000e568 0000000000000004 b dummy",
+        "000000000000e56c 0000000000000004 b dummy",
+        "000000000000e570 0000000000000004 b dummy",
+        "000000000000e574 0000000000000004 b dummy",
+        "000000000000e578 0000000000000004 b dummy",
+        "000000000000e57c 0000000000000004 b dummy",
+        "000000000000e580 0000000000000004 b dummy",
+        "000000000000e584 0000000000000004 b dummy",
+        "000000000000e5c0 0000000000000004 b dummy",
+        "000000000000e690 0000000000000004 b dummy",
+        "000000000000e6b8 0000000000000004 b dummy",
+        "000000000000e6c4 0000000000000004 b dummy",
+        "000000000000e6c8 0000000000000004 b dummy",
+        "0000000000016868 0000000000000004 b dummy",
+        "0000000000016878 0000000000000004 b dummy",
+        "000000000001687c 0000000000000004 b dummy",
+        "0000000000016888 0000000000000004 b dummy",
+        "000000000001688c 0000000000000004 b dummy",
+        "0000000000016890 0000000000000004 b dummy",
+        "0000000008017000 0000000000000004 b dummy"
+      ],
+      "inst_fetch_symbols": [],
+      "executable_sha256": "fa464817133027100adbbaf1c5c0d76ed09570ea77fd7b786479df48e7062ff5"
+    },
+    {
+      "name": "dummy_initialized",
+      "optimization": 2,
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "status": "PASS_REJECTED",
+      "header_hashes": {
+        "cpu/ifetch.h": "32a7eba8da91bdb59167ff97983d4c5c999f5339cbfd8ef1cdd820f828dbcba2",
+        "common.h": "6aa37d4d1c01aef36f0fc0e731767aa242ba369c6eda7a9697252cea4b12213a",
+        "debug.h": "0a72cd9387e7ad7f1908c6eced2185482ffdfd87fd40bf66c88bc03a00a96396"
+      }
+    }
+  ],
+  "dummy_common_entities": 30,
+  "dummy_both_entities": 30,
+  "scope": "Actual isolated NEMU translation units and linker, using the recorded RV32IM performance configuration. Entity counts depend on configuration/compiler; not a universal fixed count. Original active C NEMU headers never changed. make -n -B displays the real AM build graph without claiming compilation."
+}

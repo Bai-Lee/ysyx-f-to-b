@@ -1,0 +1,2 @@
+read_json /workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/single/mapped.json
+write_verilog -noattr -noexpr -simple-lhs /workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/single/sta-netlist.v

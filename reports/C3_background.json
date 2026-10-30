@@ -1,0 +1,37 @@
+{
+  "status": "PASS_BACKGROUND_REVIEW",
+  "course_record": "C3-O001",
+  "core_tasks": 0,
+  "scope_records": 1,
+  "source_records": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\C3\\sources\\C3.md",
+      "sha256": "4e5eb27dc07795a0171dce6b22ce3e3a1c87744d1f067f2efb9f2e6b57604c79",
+      "role": "frozen_original_chapter"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\slides\\markdown\\2306\\1dbf54f914088a36.md",
+      "sha256": "87fcb44719ab053c7b63f9508d6d6a57cb6cb89bfc4d84382cfda74c379801dd",
+      "role": "fixed_v23_06_slide_text",
+      "read_content_lines": [
+        1,
+        719
+      ]
+    }
+  ],
+  "notes": {
+    "path": "C/C3/NOTES.md",
+    "sha256": "10ad53a6ed5222835e55c5c9f85238c809c111f2e71ab440336729a8f33c4bde"
+  },
+  "experiment": {
+    "path": "reports/C3_experiment.json",
+    "sha256": "c52ebe6b06f471ef4864d31ae4a4e75b75b38558e74ba02e7a2113bbe676b86d"
+  },
+  "local_markdown_targets_checked": 6,
+  "scope": "Fixed slide text reviewed with an authored bounded demonstration; no new core assignment, no all-video completion or official learner-mastery claim.",
+  "not_claimed": [
+    "Every linked video or external article viewed",
+    "Every slide code example rerun",
+    "Formal correctness of all programs or CPU states"
+  ]
+}

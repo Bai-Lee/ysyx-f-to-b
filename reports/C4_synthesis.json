@@ -1,0 +1,454 @@
+{
+  "status": "IN_PROGRESS_ADDITIONAL_IO_STA_PENDING",
+  "variants": [
+    {
+      "name": "axi",
+      "top": "c4_axi_core",
+      "project": "/home/USER/c-stage/c4/synthesis/axi",
+      "config": "/home/USER/c-stage/c4/synthesis/axi/ecc.toml",
+      "source": "/home/USER/c-stage/c4/synthesis/axi/rtl/cpu.sv",
+      "source_sha256": "e2831a5cfe6d10e23957e1f68f5c24cbfe28daf09165369ca9c8a9d2747863ab",
+      "source_files": [
+        {
+          "path": "C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "C/C4/rtl/axil_xbar3.sv",
+          "sha256": "ec0dddc7f11c7153bd87dfade0d078fcb36253c62a2245789ba7792b50233784"
+        },
+        {
+          "path": "C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        }
+      ],
+      "status": "PASS_ECC_SYNTHESIS_STA",
+      "qor": {
+        "path_groups": [
+          {
+            "name": "clock",
+            "setup": {
+              "wns": 8.278,
+              "tns": 0.0,
+              "nvp": 0,
+              "frequency_mhz": 581
+            },
+            "hold": {
+              "wns": 0.115,
+              "tns": 0.0,
+              "nvp": 0
+            }
+          }
+        ],
+        "summary": {
+          "setup": {
+            "wns": 8.278,
+            "tns": 0.0,
+            "nvp": 0,
+            "frequency_mhz": 581
+          },
+          "hold": {
+            "wns": 0.115,
+            "tns": 0.0,
+            "nvp": 0
+          }
+        },
+        "design_statistics": {
+          "cap": 0,
+          "fanout": 0,
+          "tran": 0,
+          "tdrc": 0,
+          "cella": 16109,
+          "bufs": null,
+          "leafs_k": 7,
+          "tnets_k": null,
+          "ctbuf": null,
+          "regs": null
+        }
+      },
+      "metrics": {
+        "schema_version": 3,
+        "analysis_revision": "quality-gates-v4",
+        "tool": "yosys",
+        "step": "Synthesis",
+        "design": "c4_axi",
+        "status": "success",
+        "metrics": [
+          {
+            "id": "peak_memory_mb",
+            "display_name": "Peak Memory",
+            "value": 1228.547,
+            "unit": "MB",
+            "category": "runtime",
+            "direction": "lower_is_better",
+            "scope": "synthesis_execution",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "secondary",
+            "analysis_group": "runtime",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/run/peak_memory_mb"
+            }
+          },
+          {
+            "id": "runtime_seconds",
+            "display_name": "Step Runtime",
+            "value": 60.007,
+            "unit": "s",
+            "category": "runtime",
+            "direction": "lower_is_better",
+            "scope": "synthesis_execution",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "secondary",
+            "analysis_group": "runtime",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/run/runtime_seconds"
+            }
+          },
+          {
+            "id": "synthesis_cell_area",
+            "display_name": "Synthesis Cell Area",
+            "value": 16109.52,
+            "unit": "um^2",
+            "category": "area_cost",
+            "direction": "lower_is_better",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": true,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/area"
+            }
+          },
+          {
+            "id": "synthesis_cell_count",
+            "display_name": "Synthesis Cell Count",
+            "value": 7117,
+            "unit": "count",
+            "category": "area_cost",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_cells"
+            }
+          },
+          {
+            "id": "synthesis_port_count",
+            "display_name": "Synthesis Port Count",
+            "value": 1006,
+            "unit": "count",
+            "category": "routability_physical",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_port_bits"
+            }
+          },
+          {
+            "id": "synthesis_power_dynamic_uw",
+            "display_name": "Synthesis Dynamic Power",
+            "value": 874.5219,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/dynamic_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_internal_uw",
+            "display_name": "Synthesis Internal Power",
+            "value": 862.9179,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/internal_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_leakage_uw",
+            "display_name": "Synthesis Leakage Power",
+            "value": 2.3889,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/leakage_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_switching_uw",
+            "display_name": "Synthesis Switching Power",
+            "value": 11.6039,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/switching_uw"
+            }
+          },
+          {
+            "id": "synthesis_wire_count",
+            "display_name": "Synthesis Wire Count",
+            "value": 7297,
+            "unit": "count",
+            "category": "routability_physical",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_wires"
+            }
+          }
+        ],
+        "details": [],
+        "sources": [
+          {
+            "kind": "feature",
+            "path": "feature/Synthesis.step.json"
+          },
+          {
+            "kind": "feature",
+            "path": "feature/Synthesis_stat.json"
+          },
+          {
+            "kind": "feature",
+            "path": "feature/post_synthesis/power_summary.json"
+          }
+        ],
+        "integrity": {
+          "status": "pass",
+          "invalid_metric_source_ids": [],
+          "invalid_detail_ids": []
+        },
+        "context": {
+          "timing_constraints": {
+            "sdc_sha256": "5d84aa9bb79fd0458d282e337af15bae4e9f40edac449e4bb68e2b549fa7a11e",
+            "sdc_size_bytes": 257,
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/constraints/sdc"
+            }
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "C/C4/synthesis/axi/00_ecc.toml",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/ecc.toml",
+          "sha256": "281242f2f1afb36fe9f65d1af98e34d4abdb619270d729391f2a1d51d7a7df58"
+        },
+        {
+          "path": "C/C4/synthesis/axi/01_cpu.sv",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/rtl/cpu.sv",
+          "sha256": "e2831a5cfe6d10e23957e1f68f5c24cbfe28daf09165369ca9c8a9d2747863ab"
+        },
+        {
+          "path": "C/C4/synthesis/axi/02_c4_axi_Synthesis.v.gz",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/output/c4_axi_Synthesis.v.gz",
+          "sha256": "5c408390769f0f5046d254729d716c51ececdc4d5a688c2786814c1ac25729d2"
+        },
+        {
+          "path": "C/C4/synthesis/axi/03_qor_metrics.json",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/analysis/qor_metrics.json",
+          "sha256": "6c724aa886a57b30e982aeb9f820938a629abecd547d22511a92e46b2d4b3df4"
+        },
+        {
+          "path": "C/C4/synthesis/axi/04_qor_summary.json",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/feature/post_synthesis/qor_summary.json",
+          "sha256": "9e7fa02e3b966736987c4013be2fa97741bbd836463f9dbc9c065687d450ab5f"
+        },
+        {
+          "path": "C/C4/synthesis/axi/05_c4_axi.sdc",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/origin/c4_axi.sdc",
+          "sha256": "5d84aa9bb79fd0458d282e337af15bae4e9f40edac449e4bb68e2b549fa7a11e"
+        },
+        {
+          "path": "C/C4/synthesis/axi/06_Synthesis.log",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/log/Synthesis.log",
+          "sha256": "4b9ca35df335c533472ec5b4b6be1d24148a10653ed6f3cd570e8163b2133531"
+        },
+        {
+          "path": "C/C4/synthesis/axi/07_budget.json",
+          "original": "/workspace/projects/ysyx_f_to_b/artifacts/C4/synthesis/axi/budget.json",
+          "sha256": "90ce03af4c075612e02cceb3360bbe290098c4474253685c825574a74ed7ff35"
+        },
+        {
+          "path": "C/C4/synthesis/axi/08_yosys_synthesis.tcl",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/script/yosys_synthesis.tcl",
+          "sha256": "224f6331af06e2232b40faea4e494ea1ccb9a5f773081536a7e9857b92c9dcd4"
+        },
+        {
+          "path": "C/C4/synthesis/axi/09_init_tech.tcl",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/script/init_tech.tcl",
+          "sha256": "536755095d017ae9233a82e45024387739b4cf5dfdb34625d26f3201274026ee"
+        },
+        {
+          "path": "C/C4/synthesis/axi/10_Synthesis_check.rpt",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/report/Synthesis_check.rpt",
+          "sha256": "8f6c0e9dd36e0180d13fdf59bed933b22b75698fa2ff70c5f84d35f095b011b9"
+        },
+        {
+          "path": "C/C4/synthesis/axi/11_power.rpt",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/report/post_synthesis/power.rpt",
+          "sha256": "07d3824ea255123299fa7ac2ed82a15ffb5c9683d7fb8f9a1dd44fd2c1ec9811"
+        },
+        {
+          "path": "C/C4/synthesis/axi/12_timing_max.rpt",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/report/post_synthesis/timing_max.rpt",
+          "sha256": "0444f577349c456d4a8a502a18ead2bd87534e65ba0d386c3a9f99ef3932d09a"
+        },
+        {
+          "path": "C/C4/synthesis/axi/13_qor_summary.rpt",
+          "original": "/home/USER/c-stage/c4/synthesis/axi/runs/baseline/Synthesis_yosys/report/post_synthesis/qor_summary.rpt",
+          "sha256": "b5f2af601621afbf83afa01485caeb89c4a233cad7bd3c225aacbb283dc28e1f"
+        }
+      ],
+      "netlist_sha256": "5c408390769f0f5046d254729d716c51ececdc4d5a688c2786814c1ac25729d2"
+    }
+  ],
+  "limits": "ECC clock constraint100MHz,TT library,ZeroWireload. Explicit external IO constraints and structural audit follow separately."
+}

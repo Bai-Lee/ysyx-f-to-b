@@ -1,0 +1,38 @@
+{
+  "status": "RESOURCE_LIMIT_PILOT_ONLY",
+  "simulation": {
+    "result": "CYCLE_LIMIT",
+    "exit_code": 124,
+    "cycles": 9999886,
+    "instructions": 47948,
+    "ipc": 0.00479485466134,
+    "application_cycles": 0,
+    "application_instructions": 0,
+    "application_ipc": 0,
+    "cpu_soc_ratio": 1,
+    "assumed_cpu_frequency_hz": 25000000,
+    "flash_reads": 53217,
+    "lsu_requests": 28134,
+    "lsu_responses": 28133,
+    "uart_bytes": 50,
+    "serial_bytes": 50,
+    "serial_matches": true,
+    "serial_framing_errors": 0,
+    "wall_seconds": 3.645325938,
+    "uart_divisors": [
+      13
+    ],
+    "led_sequence": [],
+    "segments": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "note": "10M-cycle bounded pilot. A CYCLE_LIMIT result measures throughput/progress only and does not accept the official loader/hello task."
+}

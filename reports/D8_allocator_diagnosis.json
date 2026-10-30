@@ -1,0 +1,13 @@
+{
+  "status": "PASS_PHYSICAL_BLOCK_LIST",
+  "pc": 2147496668,
+  "blocks": 11518,
+  "free_blocks": 242,
+  "heap_begin": 2147602432,
+  "heap_end": 2281701376,
+  "errors": [],
+  "scope": "Read-only GDB snapshot of owned NEMU reference memory during the slow train run; no program state modified.",
+  "guest_function": "malloc\n??:?",
+  "stopped_group": 2101,
+  "stop_reason": "Diagnosed allocator full-list sweep overhead; stop the owned attempt before implementing local-neighbor coalescing. This attempt is not a successful benchmark."
+}

@@ -1,0 +1,305 @@
+{
+  "status": "PASS_REQUIRED_ENGINEERING_WITH_DECLARED_LIMITS",
+  "stage_complete": true,
+  "scope_records": 24,
+  "core_tasks": 12,
+  "records": [
+    {
+      "id": "C4-O001",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O002",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O003",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O004",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O005",
+      "status": "PASS",
+      "details": "Commit-only DiffTest or executable-region protection implemented and independently exercised; finite scope documented.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_regression.json",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-O006",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O007",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-R001",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-R002",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-R003",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-R004",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O008",
+      "status": "PASS",
+      "details": "Commit-only DiffTest or executable-region protection implemented and independently exercised; finite scope documented.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_regression.json",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-M001",
+      "status": "PASS_EVALUATION_WITH_DECLARED_LIMITS",
+      "details": "Real train cycles and two256x32 flop-memory synthesis. Separate fixed Nangate45 mapping/STA analyzed; transition violations explicitly prevent a qualified frequency claim.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_performance.json",
+        "reports/C4_nangate.json"
+      ]
+    },
+    {
+      "id": "C4-M002",
+      "status": "PASS",
+      "details": "One-cycle IFU backend, two clocks per instruction, four-state cycle controls and full program regressions.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_cpu_cycles.json",
+        "reports/C4_front.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M003",
+      "status": "PASS",
+      "details": "Synchronous LSU, two ordinary/three memory cycles, stable state while waiting and independent memory/ISA checks.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_cpu_cycles.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M004",
+      "status": "PASS",
+      "details": "VALID request/response ownership and independent transaction counts; no retirement before completion.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_front.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M005",
+      "status": "PASS",
+      "details": "Fixed5/10/20 latency plus recorded LFSR seeds and independent request delay controls.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_front.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M006",
+      "status": "PASS",
+      "details": "READY/VALID payload stability under request and response backpressure; waveform and actual failure controls.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_front.json",
+        "reports/C4_fabric.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M007",
+      "status": "PASS",
+      "details": "Arm IHI0022H A3 handshake/dependency rules checked; Xbar READY dependency fixed with registered AR buffering and dedicated rejecting mutant.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-M008",
+      "status": "PASS",
+      "details": "Five-channel Lite adapters, independent AW/W, stalled responses, read-only IFU; RT-Thread is a separate prerequisite-dependent C5 integration.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_regression.json",
+        "reports/C4_rtl_units.json",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-M009",
+      "status": "PASS",
+      "details": "Owner locked to response completion;64 contended grants in sustained two-master demand, wrong-route/data/fixed-priority mutants rejected.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-M010",
+      "status": "PASS_EVALUATION_WITH_DECLARED_LIMITS",
+      "details": "CPU+adapters+arbiter synthesis and complete train cycles; external DPI RAM excluded from area. Explicit IO STA and unqualified Nangate transition results retained.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_performance.json",
+        "reports/C4_nangate.json",
+        "reports/C4_mapped_timing.json"
+      ]
+    },
+    {
+      "id": "C4-M011",
+      "status": "PASS",
+      "details": "RTL UART prints exactly once per accepted strobed write; Xbar boundaries, errors, reset and concurrent AR/AW/W tested.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_rtl_units.json",
+        "reports/C4_fabric.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M012",
+      "status": "PASS",
+      "details": "RTL64-bit mtime low-read high-latch rollover tested; actual AM conversion, measured calibration and default-driver1/2/3-second output.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_rtl_units.json",
+        "reports/C4_clock_calibration.json"
+      ]
+    }
+  ],
+  "checks": {
+    "C4_front": "8ae4124152177ff1c53b8a387bb113f678d33e1059256194f648b4f20c25239a",
+    "C4_regression": "a1332aee746abccf5167369f7965b703b4bc49ab53a5ce37f6f433b775660cf6",
+    "C4_negative_sdb": "ba02d9dfcf686324782c0ed73a6d16abce0f58336cb165b8d36f511a799369d8",
+    "C4_cpu_cycles": "bc018752c8d9d4f22844b668dab1747db4411e6b4b41e346c28039c9a6ab2e90",
+    "C4_rtl_units": "36fcd8704042c16720a0aa912a4212a09cb599abb7fc7ed49edff5332e32b521",
+    "C4_fabric": "142d460faab5da7b0c05d7a4c17bd57561f665fa8548905d269af9cfbaff2e69",
+    "C4_performance": "7aeb9a0c87bd5ae90ab0728f39e1bb5639de8cc476bf3d63614e078ebdc0cb38",
+    "C4_clock_calibration": "3e33c8eff4543b5f43fb7c88ffeeee587b299d12b6e5265f7fe8df2f91571a42",
+    "C4_mapped_timing": "aefb333ba61ac25e9ec172f86d6773918425da61282f58e48d67712deaebad9a",
+    "C4_nangate": "d2c6a9ed2ab480d06a995d0ec4347c906e29ffd5ae94928582a4b3b869c49c86"
+  },
+  "rtl": [
+    {
+      "path": "C\\C4\\rtl\\axil_arbiter2.sv",
+      "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+    },
+    {
+      "path": "C\\C4\\rtl\\axil_clint.sv",
+      "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+    },
+    {
+      "path": "C\\C4\\rtl\\axil_reg_frontend.sv",
+      "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+    },
+    {
+      "path": "C\\C4\\rtl\\axil_uart.sv",
+      "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+    },
+    {
+      "path": "C\\C4\\rtl\\axil_xbar3.sv",
+      "sha256": "5f4c7a6fdefa836c53263a6aec8c52e5beeb8ba9f0658736df8fa2b726920769"
+    },
+    {
+      "path": "C\\C4\\rtl\\c4_axi_core.sv",
+      "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+    },
+    {
+      "path": "C\\C4\\rtl\\c4_axi_soc.sv",
+      "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+    },
+    {
+      "path": "C\\C4\\rtl\\c4_simple_core.sv",
+      "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+    },
+    {
+      "path": "C\\C4\\rtl\\rv32e_execute.sv",
+      "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+    },
+    {
+      "path": "C\\C4\\rtl\\simple_to_axil.sv",
+      "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+    }
+  ],
+  "limits": [
+    "Finite functional simulation, not arbitrary-input or unbounded proof.",
+    "Icarus fabric attempt TIMEOUT retained; successful fabric tests are timed Verilator. Stage1/2 CPU and device tests are separate four-state Icarus evidence.",
+    "Nangate45 default-ABC baseline has max-transition violations; no qualified maximum frequency or reliable performance speedup claim. Assessment task completed with the failures reported.",
+    "Nangate45/OpenSTA is a declared alternative flow, not a claim of exact legacy yosys-sta/iSTA/DELAY4 reproduction.",
+    "Single2KiB synthesized memories cannot hold train; cycles measured in128MiB simulator. External DPI memory excluded from AXI CPU area.",
+    "Train disables DiffTest/trace, keeping original validators; test scale and ISA regressions use independent NEMU.",
+    "CLINT wall calibration depends on host load and workload; no physical clock measurement.",
+    "C5 full-SoC/RT-Thread and all B work are not covered."
+  ]
+}

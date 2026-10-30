@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "control": {
+    "display": ":99",
+    "api": "XAutoRepeatOff after SDL window initialization",
+    "before": 1,
+    "after": 0,
+    "scope": "Only this test-owned Xvfb server; user display is not accessed."
+  },
+  "session": {
+    "status": "PASS",
+    "command": [
+      "stdbuf",
+      "-oL",
+      "python3",
+      "/workspace/projects/ysyx_f_to_b/C/runtime/budget_exec.py",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui-input-control/session/resources.json",
+      "--",
+      "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui-ps2log/sim",
+      "--gui",
+      "--flash",
+      "/home/USER/c-stage/c5/app-images/gpio-demo/sdram32/empty/image.bin",
+      "--ref",
+      "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui-input-control/session/simulation.json",
+      "--max-cycles",
+      "100000000"
+    ],
+    "mainargs": "",
+    "display": ":99",
+    "exit_code": 0,
+    "elapsed_seconds": 4.806563444000001,
+    "commands": [
+      {
+        "command": [
+          "xdotool",
+          "windowfocus",
+          "--sync",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keydown",
+          "j"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keyup",
+          "j"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+  },
+  "pin_scan_codes": [
+    59,
+    240,
+    59
+  ],
+  "ps2_queue": {
+    "accepted": 3,
+    "dropped": 0,
+    "invalid": 0,
+    "popped": 0,
+    "maximum_occupancy": 3
+  },
+  "evidence": "artifacts/C5/gui-input-control",
+  "scope": "ActualNVBoard,2secondheldJ, exactonePS2makeandonebreak, noFIFOloss. NativeXvfbkeyboardrepeatquerieddisabledafterSDLinitialization; no userdisplaysettingchanged."
+}

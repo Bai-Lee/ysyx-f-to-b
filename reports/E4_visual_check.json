@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "name": "official_before",
+      "led_mask": 512,
+      "digits_checked": 0,
+      "image_sha256": "bbcd7ee833ee53bc9218566823cbad4c65bba654d645b7c2e80a2977c7bb7e08"
+    },
+    {
+      "name": "official_after_switch",
+      "led_mask": 1025,
+      "digits_checked": 0,
+      "image_sha256": "a9bb12526786463f98f57bfec6bc40740d570d9b12c9d6e5a98debd33d2e5e96"
+    },
+    {
+      "name": "dual_0",
+      "led_mask": 0,
+      "digits_checked": 0,
+      "image_sha256": "c8bfab2f7fbf6b8d8f8485d4dcf2c4292ed41286f468709b5caedd062ac141ae"
+    },
+    {
+      "name": "dual_1",
+      "led_mask": 1,
+      "digits_checked": 0,
+      "image_sha256": "d08efd2580bda0f28cecd78d8e789bf1100394ce648975094bd34d0f47f8e8de"
+    },
+    {
+      "name": "dual_3",
+      "led_mask": 0,
+      "digits_checked": 0,
+      "image_sha256": "d329711e3b7dff2b40eda7e1c959544c4b1ced4dc6efe14bb43d289462491f39"
+    },
+    {
+      "name": "dual_2",
+      "led_mask": 1,
+      "digits_checked": 0,
+      "image_sha256": "e8ebb0578959fb80dea11792de7400fbf383eaca95a016cd8bdba00a2bfa95f8"
+    },
+    {
+      "name": "encoder_256",
+      "led_mask": 0,
+      "digits_checked": 1,
+      "image_sha256": "f60f436c1bbdb1a5795053417552de19379ec8b927c46cfee7f93adbc97c525d"
+    },
+    {
+      "name": "encoder_270",
+      "led_mask": 19,
+      "digits_checked": 1,
+      "image_sha256": "10184fc7475c34ecc25a3fbb6509b25de279a05ff89fb282203eb03b3b75c528"
+    },
+    {
+      "name": "encoder_384",
+      "led_mask": 23,
+      "digits_checked": 1,
+      "image_sha256": "486235ddfdac63757506a266433c62e80893079ae7a473b85a7b7bec63a95297"
+    },
+    {
+      "name": "alu_23",
+      "led_mask": 40,
+      "digits_checked": 1,
+      "image_sha256": "02f7aeb4f4af8a666b7ceaa5facf863326a7cd86caa21893e7ecfe5e7204ddab"
+    },
+    {
+      "name": "alu_376",
+      "led_mask": 49,
+      "digits_checked": 1,
+      "image_sha256": "e20f33f9bf129665daa0d737e136644e32134a9a74387d81e6cb4c47d4526903"
+    },
+    {
+      "name": "alu_1656",
+      "led_mask": 129,
+      "digits_checked": 1,
+      "image_sha256": "57929c229ebcccf9a6641f99d4b84e95dda792e9e2eb217e7f49a174d1ef024e"
+    },
+    {
+      "name": "alu_1928",
+      "led_mask": 1,
+      "digits_checked": 1,
+      "image_sha256": "a03b9ee4752bf20440dca877503ad2e9571bc8798d9b483206cb9ee1ff591766"
+    },
+    {
+      "name": "lfsr",
+      "led_mask": 136,
+      "digits_checked": 2,
+      "image_sha256": "c83fbb120be6a912d8931a1a3342fe7f68936682b4d34ff0d956a041b22aeb6a"
+    },
+    {
+      "name": "shift",
+      "led_mask": 192,
+      "digits_checked": 2,
+      "image_sha256": "9beeb8ca866e484a4a932df4a9af465380adfa3fb8b3d9abd879aed7f7a92d19"
+    },
+    {
+      "name": "fsm_four_zeros",
+      "led_mask": 65,
+      "digits_checked": 0,
+      "image_sha256": "aca4195ab2e30afa1fc306557dc29587f0b05eb16d476486ad686fca40e2387a"
+    },
+    {
+      "name": "fsm_four_ones",
+      "led_mask": 129,
+      "digits_checked": 0,
+      "image_sha256": "f42a93f3a147085f82c81009dcb1db546c10ac10c1e4de63407499d5e02d1e2b"
+    },
+    {
+      "name": "keyboard_a",
+      "led_mask": 0,
+      "digits_checked": 6,
+      "image_sha256": "8ab186bec4b5136b3512e007ffdf6414536eb9e0d40a261822b18e4484c0271d"
+    },
+    {
+      "name": "keyboard_release",
+      "led_mask": 0,
+      "digits_checked": 6,
+      "image_sha256": "88201aae3a68d6743dff1e7e4962e35acb0a82df7b872b751a9d7d4821612c1a"
+    },
+    {
+      "name": "keyboard_shift_w",
+      "led_mask": 1,
+      "digits_checked": 6,
+      "image_sha256": "964e71ff608bc7534c8352a8a43ee40595b0e8722e936c28758f7c014bf1859f"
+    },
+    {
+      "name": "keyboard_ctrl",
+      "led_mask": 2,
+      "digits_checked": 0,
+      "image_sha256": "3cfdb0cd45189394bcebe4c179134567aaa9cd88bc0c2e8cd8c9c9a0cf35c9bd"
+    },
+    {
+      "name": "vga_static",
+      "led_mask": 0,
+      "digits_checked": 0,
+      "image_sha256": "f1f55c217ff93304baafcb850b5097b83c952ca71b8164f52e5d62c7f2424265"
+    },
+    {
+      "name": "vga_moving_1",
+      "led_mask": 0,
+      "digits_checked": 0,
+      "image_sha256": "72b9c8072465a8c34e87bf8c242ded128665f051f5659a3ebb0191008ea3a2be"
+    },
+    {
+      "name": "vga_moving_2",
+      "led_mask": 0,
+      "digits_checked": 0,
+      "image_sha256": "b976622470c05e6b11f3e240e8b839ec2ca47dd17e3daa59ff4adebcda776208"
+    },
+    {
+      "name": "cpu_sum55",
+      "led_mask": 55,
+      "digits_checked": 4,
+      "image_sha256": "a1f927fa44da8ac46ba34f48f415fb73e09f21dbd4728f71e70a1310ac377398"
+    },
+    {
+      "name": "running_light",
+      "led_mask": 32,
+      "digits_checked": 0,
+      "image_sha256": "b4d367ea3a510d87b628b66808de55cce64a35eef26c5597d265a9c243414a09"
+    }
+  ],
+  "negative_control": "The real dual_1 image rejects the false expected LED mask0",
+  "vga_pixel_samples": 30,
+  "manual_review": "Actual official NVBoard, keyboard ASCII display, VGA test pattern and GTKWave FST traces visually inspected; remaining signals checked from rendered pixels.",
+  "scope": "Pixels and physical pin binding in the virtual SDL board; not physical FPGA electrical verification."
+}

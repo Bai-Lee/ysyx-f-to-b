@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "repositories": [
+    {
+      "name": "capstone",
+      "repository": "https://github.com/capstone-engine/capstone.git",
+      "ref": "refs/tags/5.0.6",
+      "commit": "accf4df62f1fba6f92cae692985d27063552601c",
+      "download_url": "https://codeload.github.com/capstone-engine/capstone/tar.gz/accf4df62f1fba6f92cae692985d27063552601c",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_d_stage\\sources\\capstone-accf4df62f1fba6f92cae692985d27063552601c.tar.gz",
+      "bytes": 7661950,
+      "sha256": "ef6950c8276293a407fe374e99c95aa95faf25d022cc65974a52a01b79f5b4b3",
+      "elapsed_seconds": 7.3900000000001,
+      "provenance": "Official project HTTPS source archive at resolved commit; local SHA-256 is recorded. No separate published upstream digest was available."
+    },
+    {
+      "name": "spike",
+      "repository": "https://github.com/NJU-ProjectN/riscv-isa-sim.git",
+      "ref": "HEAD",
+      "commit": "b3cb1ef52ba0cb1bce84135febef1c4941c5455b",
+      "download_url": "https://codeload.github.com/NJU-ProjectN/riscv-isa-sim/tar.gz/b3cb1ef52ba0cb1bce84135febef1c4941c5455b",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_d_stage\\sources\\spike-b3cb1ef52ba0cb1bce84135febef1c4941c5455b.tar.gz",
+      "bytes": 493615,
+      "sha256": "90a6b452dd559c74fcc355ea478ff3cf8334aea9bfa27251dd2d93444a70f5ba",
+      "elapsed_seconds": 4.061999999999898,
+      "provenance": "Official project HTTPS source archive at resolved commit; local SHA-256 is recorded. No separate published upstream digest was available."
+    }
+  ]
+}

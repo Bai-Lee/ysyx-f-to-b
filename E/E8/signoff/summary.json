@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "design": "cpu_baseline",
+  "top_module": "ysyx_00000000",
+  "pdk": "ics55",
+  "required_steps": {
+    "Harden": "Success",
+    "RCX": "Success",
+    "sta": "Success",
+    "drc": "Success",
+    "lvs": "Success",
+    "filler": "Success",
+    "route": "Success"
+  },
+  "checks": {
+    "flow": "passed",
+    "home_checklist": {
+      "passed": 31,
+      "blocked": 0,
+      "attention": 1,
+      "unavailable": 0
+    },
+    "qor_analysis_issue_count": 0
+  },
+  "initial": {
+    "verilog": "initial/cpu_baseline.v.gz",
+    "sdc": "initial/cpu_baseline.sdc",
+    "parameters": "initial/parameters.json"
+  },
+  "config": "config/",
+  "harden": {
+    "gds": "harden/cpu_baseline.gds",
+    "lef": "harden/cpu_baseline.lef",
+    "lib": "harden/cpu_baseline.lib"
+  },
+  "final": {
+    "verilog": "final/design/cpu_baseline.v.gz",
+    "def": "final/design/cpu_baseline.def.gz",
+    "gds": "final/design/cpu_baseline.gds",
+    "image": "final/design/cpu_baseline.png"
+  },
+  "qor_metrics": {
+    "schema_version": 3,
+    "analysis_revision": "quality-gates-v4",
+    "tool": "ecc",
+    "step": "drc",
+    "design": "cpu_baseline",
+    "status": "success",
+    "metrics": [
+      {
+        "id": "core_area",
+        "display_name": "Core Area",
+        "value": 33124,
+        "unit": "um^2",
+        "category": "area_cost",
+        "direction": "lower_is_better",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "final",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": false,
+          "score": true,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.db.json",
+          "selector": "/Design Layout/core_area"
+        }
+      },
+      {
+        "id": "core_utilization",
+        "display_name": "Core Utilization",
+        "value": 0.32,
+        "unit": "ratio",
+        "category": "area_cost",
+        "direction": "target_range",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "final",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": false,
+          "score": true,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.db.json",
+          "selector": "/Design Layout/core_usage"
+        }
+      },
+      {
+        "id": "die_area",
+        "display_name": "Die Area",
+        "value": 34596,
+        "unit": "um^2",
+        "category": "area_cost",
+        "direction": "lower_is_better",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "final",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": false,
+          "score": true,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.db.json",
+          "selector": "/Design Layout/die_area"
+        }
+      },
+      {
+        "id": "die_height",
+        "display_name": "Die Height",
+        "value": 186,
+        "unit": "um",
+        "category": "area_cost",
+        "direction": "trend_only",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "final",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": false,
+          "score": false,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.db.json",
+          "selector": "/Design Layout/die_bounding_height"
+        }
+      },
+      {
+        "id": "die_utilization",
+        "display_name": "Die Utilization",
+        "value": 0.31,
+        "unit": "ratio",
+        "category": "area_cost",
+        "direction": "target_range",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "final",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": false,
+          "score": true,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.db.json",
+          "selector": "/Design Layout/die_usage"
+        }
+      },
+      {
+        "id": "die_width",
+        "display_name": "Die Width",
+        "value": 186,
+        "unit": "um",
+        "category": "area_cost",
+        "direction": "trend_only",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "final",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": false,
+          "score": false,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.db.json",
+          "selector": "/Design Layout/die_bounding_width"
+        }
+      },
+      {
+        "id": "drc_count",
+        "display_name": "DRC Count",
+        "value": 0,
+        "unit": "count",
+        "category": "clock_robustness_dfm",
+        "direction": "lower_is_better",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "gate",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": true,
+          "score": true,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.step.json",
+          "selector": "/drc/number"
+        }
+      },
+      {
+        "id": "instance_count",
+        "display_name": "Instance Count",
+        "value": 4842,
+        "unit": "count",
+        "category": "area_cost",
+        "direction": "trend_only",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "final",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": false,
+          "score": false,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.db.json",
+          "selector": "/Design Statis/num_instances"
+        }
+      },
+      {
+        "id": "io_pin_count",
+        "display_name": "IO Pin Count",
+        "value": 173,
+        "unit": "count",
+        "category": "routability_physical",
+        "direction": "trend_only",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "final",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": false,
+          "score": false,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.db.json",
+          "selector": "/Design Statis/num_iopins"
+        }
+      },
+      {
+        "id": "net_count",
+        "display_name": "Net Count",
+        "value": 4082,
+        "unit": "count",
+        "category": "routability_physical",
+        "direction": "trend_only",
+        "scope": "final_drc",
+        "corner": null,
+        "project_role": "final",
+        "step_role": "primary",
+        "analysis_group": "drc_metrics",
+        "rating": {
+          "gate": false,
+          "score": false,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.db.json",
+          "selector": "/Design Statis/num_nets"
+        }
+      },
+      {
+        "id": "peak_memory_mb",
+        "display_name": "Peak Memory",
+        "value": 522.312,
+        "unit": "MB",
+        "category": "runtime",
+        "direction": "lower_is_better",
+        "scope": "drc_execution",
+        "corner": null,
+        "project_role": "trend",
+        "step_role": "secondary",
+        "analysis_group": "runtime",
+        "rating": {
+          "gate": false,
+          "score": false,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.step.json",
+          "selector": "/run/peak_memory_mb"
+        }
+      },
+      {
+        "id": "runtime_seconds",
+        "display_name": "Step Runtime",
+        "value": 6.414,
+        "unit": "s",
+        "category": "runtime",
+        "direction": "lower_is_better",
+        "scope": "drc_execution",
+        "corner": null,
+        "project_role": "trend",
+        "step_role": "secondary",
+        "analysis_group": "runtime",
+        "rating": {
+          "gate": false,
+          "score": false,
+          "trend": true
+        },
+        "confidence": "high",
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.step.json",
+          "selector": "/run/runtime_seconds"
+        }
+      }
+    ],
+    "details": [
+      {
+        "id": "drc_rule_layer_summary",
+        "presentation": "rule_layer_table",
+        "summary": {
+          "top_violations": []
+        },
+        "feature_source": {
+          "kind": "feature",
+          "path": "feature/drc.step.json",
+          "selector": "/drc/distribution"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "kind": "feature",
+        "path": "feature/drc.db.json"
+      },
+      {
+        "kind": "feature",
+        "path": "feature/drc.step.json"
+      }
+    ],
+    "integrity": {
+      "status": "pass",
+      "invalid_metric_source_ids": [],
+      "invalid_detail_ids": []
+    },
+    "context": {
+      "timing_constraints": {
+        "sdc_sha256": "550154a17cc8b663c69d2d1840cf15973786b9b996fc353bc0832a81a90583c5",
+        "sdc_size_bytes": 254,
+        "source": {
+          "kind": "feature",
+          "path": "feature/drc.step.json",
+          "selector": "/constraints/sdc"
+        }
+      }
+    }
+  },
+  "sta_matrix": [
+    {
+      "lib_corner": "MAX",
+      "temperature": 125,
+      "rcx_corner": "Cworst",
+      "report": "final/timing/sta/MAX_125/Cworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MAX_125/Cworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MAX_125/Cworst/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "MAX",
+      "temperature": 125,
+      "rcx_corner": "RCworst",
+      "report": "final/timing/sta/MAX_125/RCworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MAX_125/RCworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MAX_125/RCworst/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "WCL",
+      "temperature": -40,
+      "rcx_corner": "Cworst",
+      "report": "final/timing/sta/WCL_m40/Cworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/WCL_m40/Cworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/WCL_m40/Cworst/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "WCL",
+      "temperature": -40,
+      "rcx_corner": "RCworst",
+      "report": "final/timing/sta/WCL_m40/RCworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/WCL_m40/RCworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/WCL_m40/RCworst/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "TYP",
+      "temperature": 25,
+      "rcx_corner": "TYPICAL",
+      "report": "final/timing/sta/TYP_25/TYPICAL/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/TYP_25/TYPICAL/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/TYP_25/TYPICAL/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "MIN",
+      "temperature": -40,
+      "rcx_corner": "Cworst",
+      "report": "final/timing/sta/MIN_m40/Cworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MIN_m40/Cworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MIN_m40/Cworst/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "MIN",
+      "temperature": -40,
+      "rcx_corner": "RCworst",
+      "report": "final/timing/sta/MIN_m40/RCworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MIN_m40/RCworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MIN_m40/RCworst/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "MIN",
+      "temperature": -40,
+      "rcx_corner": "Cbest",
+      "report": "final/timing/sta/MIN_m40/Cbest/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MIN_m40/Cbest/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MIN_m40/Cbest/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "MIN",
+      "temperature": -40,
+      "rcx_corner": "RCbest",
+      "report": "final/timing/sta/MIN_m40/RCbest/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MIN_m40/RCbest/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MIN_m40/RCbest/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "ML",
+      "temperature": 125,
+      "rcx_corner": "Cworst",
+      "report": "final/timing/sta/ML_125/Cworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/ML_125/Cworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/ML_125/Cworst/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "ML",
+      "temperature": 125,
+      "rcx_corner": "RCworst",
+      "report": "final/timing/sta/ML_125/RCworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/ML_125/RCworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/ML_125/RCworst/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "ML",
+      "temperature": 125,
+      "rcx_corner": "Cbest",
+      "report": "final/timing/sta/ML_125/Cbest/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/ML_125/Cbest/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/ML_125/Cbest/feature/timing_paths.json"
+    },
+    {
+      "lib_corner": "ML",
+      "temperature": 125,
+      "rcx_corner": "RCbest",
+      "report": "final/timing/sta/ML_125/RCbest/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/ML_125/RCbest/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/ML_125/RCbest/feature/timing_paths.json"
+    }
+  ],
+  "missing_required": [],
+  "missing_optional": [
+    "package.config.macro.locations.txt"
+  ],
+  "warnings": [
+    "home checklist requires attention; see final/reports/checklist.json"
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "stage": "B",
+  "timestamp": "2026-10-30T06:27:05.625816+00:00",
+  "core_tasks": 56,
+  "adapted_tasks": 2,
+  "scope_records": 110,
+  "stop_after": "B",
+  "verification": {
+    "status": "PASS",
+    "pending": [],
+    "checks": {
+      "functional": {
+        "status": "PASS",
+        "checks": {
+          "B1_native": "bbf92b0158f9a58e3961f35e62b6bce87fdf7e02fe2bad682c10d020a13bb1a1",
+          "B1_npc": "1a06d0b3ce4d623bbfb5be6e7f0b554d958723824246e53f59e4c4a73ed9acb1",
+          "B1_AUDIT": "1dfde09b6183ecb9c11fea58de3f967776268e88907a5b1661c2f101f2defd0b",
+          "B2_AUDIT": "a0df476cd82ed5256d2dc990220a8a129c5e74e5b9df3194955270f4f988f12d",
+          "B3_apb_unit": "41d4a8a7c2fa15157f6ba85801ec9417dc52e8b88de60d966a4f3667f5b30403",
+          "B3_axi_delay_unit": "2fd7fb1fed572ec4c5f58e7a4c5ef7696a891b63bf880bd186465baa08f5e427",
+          "B3_axi_generation": "ee2c25104be2e4723cdd41ec8c0db6d6b1e637eecec327739e35f80834e8ce30",
+          "B3_icache_unit": "18d7864af59ec18725e01955b905923a2f507a32a266573a134f44b43f10a94b",
+          "B3_sdram_axi_unit": "170d930e82857b7d0b958c1f3636177b60c25f9b46ca680e45addd79a80aaced",
+          "B3_smc": "d26db109a72e5570595d6e0945c66636a62d17ce498c7924909260bde765fd90",
+          "B3_loader_fence": "b43566bbf6cc363806511139c281c1810f424a41549bce0c6363cd278f061761",
+          "B3_trace_controls": "16c6ae08b766b302801f187fa8eed047f312f0ae280a33a54e9fb45e34e545ec",
+          "B4_functional_release": "69bdf792a5b15e0ae599a6a30ae5a66307f191268c056e60d3d637af43d8c34b",
+          "B_standalone_release": "a5f4857cb4c87d03dae9a057f9dcab112b0cb0c9f1a8761200cece48f604ff85",
+          "B4_release_soc": "84f48dee4fbe5bda71a6dd339dfab9997db024367f4c0a15d020d022755f0383",
+          "B4_branchsim_b5-stream-325": "66f5585be9b216aabf0a1d9cb687c970ad2cb5ff22f5e11b8de0eef848e4f94e",
+          "B4_branchsim_b5-release": "368f071fa9f568a1d3012e35bf70ed20f7de93692cf11d93f18b55ab06e829e5",
+          "B_resource_aggregate": "2ca8403ee8b07dfc7ad7fd5b13cdfab1941a51a4e7f36d0c8199db2e8bbecb42",
+          "B_history_preservation": "f42e2337eaf4ccc102daf44276bb91024d75aeff49af9b0457ffe37a89a4085f",
+          "B_final_regressions": "10884d66a4b9239d780c56bd8d0e216074420cb60e85a5e98bd5e1be58ff8843",
+          "B4_final_cpu": "7e5eb7d814fdfff16a3886892a6983873d3a2e40dbcdb53a07926f9269402496",
+          "B4_controlled_evaluation": "772a2a9795aee5585b9ee11e40485137feb46d28eff13adf394a8ce673dc9afa",
+          "B_performance_analysis": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+          "B_cpu_corpus": "bcd95514c20a5d9199872865280dc45da1af1a31a36d6bd586dae39b57ef3d60"
+        },
+        "final_train_cycles": 1575356367,
+        "final_train_instructions": 288830071
+      },
+      "B5": {
+        "status": "PASS",
+        "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+        "exported_rtl_sha256": "0c56b8296b8d03f359cedc07028e2a40eaafd7785979714ebd74c7291f17aed8",
+        "area_um2": 24878.182,
+        "model_frequency_mhz": 325,
+        "programs": {
+          "rtl": {
+            "report_sha256": "1245d23d51eca8efadf863c005c95a523d3ab0d1da82e0dee3ad10cf4c24be02",
+            "programs": [
+              "fence-prefetch",
+              "hazards",
+              "hello",
+              "microbench",
+              "rtthread"
+            ]
+          },
+          "netlist": {
+            "report_sha256": "c15cf769788114a50da80bc26283a602eed7cb88a3814732d9e2bdfd214fe33a",
+            "programs": [
+              "fence-prefetch",
+              "hazards",
+              "hello",
+              "microbench",
+              "rtthread"
+            ]
+          }
+        },
+        "checks": {
+          "B5_final_timing": "c00192f34923ffdff99dba01ac769b7b51d62a7f7e288fc4f7c23ce64f5594ce",
+          "B5_structure": "07de3c2331683ecd0bd4c3e86181aa9130038161b5488cbca348ded3d94f1e92",
+          "B5_cell_models": "371bdefdf3774f8ca8c7a4784b7e52a3c7ef6a6a61f1df3227b57ec1baf48040",
+          "B5_export": "dc63a960847aded8d4e75505b5682d4c57ad6c18f37e135deb739b3fb4cb6ea9",
+          "B5_export_equivalence": "18d100fe515ad3a89fc8050edd964e7d153d079bc73974d1ce232319e870efdf",
+          "B5_public_entrypoints": "c2cada40def0c4bd878a722d96f9866843df4ebdfdf5ea8ca1a60c7ce3b70c78",
+          "B5_rtl-bad-reset": "f8be86e50df0031a57be35e06a8f285893cb058274e6a7a914b11e495296d711"
+        },
+        "scope": "Final configured DUT, four-state test programs, exact functionally mapped netlist and declared pre-layout timing model. No official CI, hidden tests, full CPU proof or physical signoff."
+      },
+      "full_memory": {
+        "status": "PASS_FULL_CAPACITY_PARALLEL_PATTERNS",
+        "variant": "b5-release",
+        "patterns": 8,
+        "bytes_per_pattern": 134217728,
+        "total_cycles": 28850962770,
+        "total_instructions": 2936031090,
+        "executable_sha256": "5e4e95778a9c9f9c36716c53c6365a6c50b9cbe5c1c4089588914449d04b44fc",
+        "reference_sha256": "d90693e60e982420b6cc64a14d1f71fffc2f122d1ec44becb447b1869522d880",
+        "summary_sha256": "bde2854eac784eebfbdbd953573bc46fc2282d0a7ae6e6083d419e2589dbb56a",
+        "resumed_patterns": 4,
+        "resource_bindings": [
+          {
+            "phase": 0,
+            "resumed": false,
+            "run_sha256": "ec844319d06da61271abcc604266e3d2fc3583206083f00b1de9d21b7e90f254",
+            "resource": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/resources.json",
+              "sha256": "80ecb729e9e48542cbb181cee984fe47e7dc4628baa74f7d6201738b911ebac4"
+            },
+            "original_batch_status": "PASS"
+          },
+          {
+            "phase": 1,
+            "resumed": false,
+            "run_sha256": "a6a522a91dbfa1f806ab790482656887a38be250fd1b90825d201de2c1a4cc52",
+            "resource": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/resources.json",
+              "sha256": "80ecb729e9e48542cbb181cee984fe47e7dc4628baa74f7d6201738b911ebac4"
+            },
+            "original_batch_status": "PASS"
+          },
+          {
+            "phase": 2,
+            "resumed": true,
+            "run_sha256": "24c299407bf96524142457ff71ab2959b91855947583df6c94eed9c14421c44b",
+            "resource": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/resources.json",
+              "sha256": "cfc18c7619112afce13329acd1433956bf75bc2b5beaf3e81283fc5b4d024d7a"
+            },
+            "original_driver": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-run.json",
+              "sha256": "ae78f9c09085ba23fc750a462540835a1ba5874f5ec5c6bac6bf977328d85094"
+            },
+            "original_started": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-started.json",
+              "sha256": "8647f129cef6254f9a014dc13c4b87f49585a4934b04ed2dfb360fe35085aed1"
+            },
+            "original_batch_status": "RESOURCE_LIMIT",
+            "phase_completion_elapsed_seconds": 4967.16961,
+            "original_batch_end_seconds": 7386.687629354,
+            "minimum_sampled_windows_bytes_through_completion": 1633890304,
+            "scope": "Phase completed with valid sampled headroom before the later batch resource stop. Its original immutable budget copy is used; the current retry budget does not retroactively cover it."
+          },
+          {
+            "phase": 3,
+            "resumed": true,
+            "run_sha256": "5d93742c873f2ef82a450d8ba2150ec306142378e06c7ecd294c1fb1070236d5",
+            "resource": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/resources.json",
+              "sha256": "cfc18c7619112afce13329acd1433956bf75bc2b5beaf3e81283fc5b4d024d7a"
+            },
+            "original_driver": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-run.json",
+              "sha256": "ae78f9c09085ba23fc750a462540835a1ba5874f5ec5c6bac6bf977328d85094"
+            },
+            "original_started": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-started.json",
+              "sha256": "8647f129cef6254f9a014dc13c4b87f49585a4934b04ed2dfb360fe35085aed1"
+            },
+            "original_batch_status": "RESOURCE_LIMIT",
+            "phase_completion_elapsed_seconds": 4976.409272,
+            "original_batch_end_seconds": 7386.687629354,
+            "minimum_sampled_windows_bytes_through_completion": 1633890304,
+            "scope": "Phase completed with valid sampled headroom before the later batch resource stop. Its original immutable budget copy is used; the current retry budget does not retroactively cover it."
+          },
+          {
+            "phase": 4,
+            "resumed": true,
+            "run_sha256": "3aee7030c15b0d89961b2abcbf445dc5dd6ef146b41f974d819f43b805221f59",
+            "resource": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/resources.json",
+              "sha256": "cfc18c7619112afce13329acd1433956bf75bc2b5beaf3e81283fc5b4d024d7a"
+            },
+            "original_driver": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-run.json",
+              "sha256": "ae78f9c09085ba23fc750a462540835a1ba5874f5ec5c6bac6bf977328d85094"
+            },
+            "original_started": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-started.json",
+              "sha256": "8647f129cef6254f9a014dc13c4b87f49585a4934b04ed2dfb360fe35085aed1"
+            },
+            "original_batch_status": "RESOURCE_LIMIT",
+            "phase_completion_elapsed_seconds": 7358.82714,
+            "original_batch_end_seconds": 7386.687629354,
+            "minimum_sampled_windows_bytes_through_completion": 1628508160,
+            "scope": "Phase completed with valid sampled headroom before the later batch resource stop. Its original immutable budget copy is used; the current retry budget does not retroactively cover it."
+          },
+          {
+            "phase": 5,
+            "resumed": true,
+            "run_sha256": "c5e539d456d7d350d6ff1428aab4ba079c99c87fadf0a9b070d9ac10ec907ae7",
+            "resource": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/resources.json",
+              "sha256": "cfc18c7619112afce13329acd1433956bf75bc2b5beaf3e81283fc5b4d024d7a"
+            },
+            "original_driver": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-run.json",
+              "sha256": "ae78f9c09085ba23fc750a462540835a1ba5874f5ec5c6bac6bf977328d85094"
+            },
+            "original_started": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-started.json",
+              "sha256": "8647f129cef6254f9a014dc13c4b87f49585a4934b04ed2dfb360fe35085aed1"
+            },
+            "original_batch_status": "RESOURCE_LIMIT",
+            "phase_completion_elapsed_seconds": 7368.509419,
+            "original_batch_end_seconds": 7386.687629354,
+            "minimum_sampled_windows_bytes_through_completion": 1628508160,
+            "scope": "Phase completed with valid sampled headroom before the later batch resource stop. Its original immutable budget copy is used; the current retry budget does not retroactively cover it."
+          },
+          {
+            "phase": 6,
+            "resumed": false,
+            "run_sha256": "23fb74a726c6cf86f06c3336bbe4a17d4288ad882544ccd486dbc91906c897b5",
+            "resource": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/resources.json",
+              "sha256": "80ecb729e9e48542cbb181cee984fe47e7dc4628baa74f7d6201738b911ebac4"
+            },
+            "original_batch_status": "PASS"
+          },
+          {
+            "phase": 7,
+            "resumed": false,
+            "run_sha256": "937b4b54efa98575267fcfac74bdc00cf79d1048efdaa099a76227d7ee7d4b1e",
+            "resource": {
+              "path": "artifacts/B4/parallel-sdram/release-full128/resources.json",
+              "sha256": "80ecb729e9e48542cbb181cee984fe47e7dc4628baa74f7d6201738b911ebac4"
+            },
+            "original_batch_status": "PASS"
+          }
+        ],
+        "resume_registry_sha256": "44dd69831fdda074cc5696f80cff51e1d5868a5bc1dc9194f811bcfaaaed90d0",
+        "scope": "Each independently reset pattern traverses all128MiB. No address partitioning. Full logical width/address/inverse counts and four physical chips checked. AXI BL8 model has an extra discarded beat on single-word reads; total pin read payload is32N across8patterns, writes8N."
+      }
+    },
+    "commands": {
+      "counts": {
+        "current:PASS": 573,
+        "history:FAIL": 19,
+        "history:PASS": 150,
+        "history:RESOURCE_LIMIT": 3,
+        "current:TIMEOUT": 1
+      },
+      "current_records": 574,
+      "negative_exit_controls": 36,
+      "snapshot_archives_verified": 950,
+      "snapshot_archives_reused_after_byte_hash_check": 938,
+      "diagnostics": [
+        {
+          "path": "artifacts/B4/formal/interlock/run/run.json",
+          "status": "TIMEOUT",
+          "exit_code": null,
+          "resolution": "Optional three-instruction arithmetic miter reached600s. No proof/counterexample; assertions retained. Not required functional acceptance."
+        }
+      ],
+      "pending": []
+    },
+    "checker_controls": {
+      "valid_archive_accepted": true,
+      "corrupt_digest_rejected": true,
+      "traversal_name_rejected": true
+    },
+    "scope": {
+      "core_tasks": 56,
+      "adapted_tasks": 2,
+      "B_source_records": 110,
+      "nested_PA_source_records": 37,
+      "stop_after": "B"
+    },
+    "frozen": {
+      "runtime_members": 4977,
+      "runtime_sha256": "bdbfe29cfc2a0f18442d1d465efcde6689c6d9193f2bf5c030c17ae6fbdc2789",
+      "offline_replay_cases": 6
+    },
+    "authored_document_links_checked": 371,
+    "final_report_bindings": {
+      "B_results": "d3f790976dfe84205f9e6f0a0f228a732ab9c4688b5f18e256406c29e4dfaf0b",
+      "B1_AUDIT": "1dfde09b6183ecb9c11fea58de3f967776268e88907a5b1661c2f101f2defd0b",
+      "B1_coverage": "57b122ff6e5b211b9cdf67cd658d7bc6361b4945cea48a601f2d3a0cf4f5ff9d",
+      "B2_AUDIT": "a0df476cd82ed5256d2dc990220a8a129c5e74e5b9df3194955270f4f988f12d",
+      "B3_AUDIT": "7c5bf3561d0f0e76dc6ecb8a3b6861ec28bd2cd8a52003e9b06d392cc36f0e4f",
+      "B4_AUDIT": "6c05dc926f4f513bfb339649b75a5f667357c7aacfa91ba1312e229d6cb5ace2",
+      "B5_AUDIT": "137d069e49733fdd97a239c6e8c408a7101adf5bed4a787b4554d5ba2316a737",
+      "B5_ACCEPTANCE": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+      "B4_full128": "a08daadf6dcc8923226b40b6e1b84fc80e980bc1424a03995717721d1fa3a07d",
+      "B_final_selection": "e8719f316b941c7612025b75c002a4d53e3b58f08238ff9d8cd4ca24632a259b",
+      "B_final_bindings": "224f2638a11483df36d2c66e5d1426491fb8a41ed13645bfbf2e496be74b5893",
+      "B_toolchain_final": "4c01ab49162e1e5be248a11332fceed9f13ab37125cab405ad29549a90031444",
+      "B_runtime_export": "85c733ee500c8fc3d655db47105300bbaed69abf54f34200abd28b7d389b7d8b",
+      "B_offline_replay": "7489a10c06c2b71adf48b7026809d5f675e8f494f2a11d8b90c05efe4e1ebeae",
+      "B_host_memory_monitor": "705f73aa5d46ea8244fe6c344108de1ccd057507715d49d239b96853e4f2a84e",
+      "B_scope_preservation": "0c156e6874d06c21ffae7381ff42c0d1836ddc656bbe940d518933fa02ff88f1",
+      "B_history_preservation": "f42e2337eaf4ccc102daf44276bb91024d75aeff49af9b0457ffe37a89a4085f",
+      "B_delivery_metadata": "97a038950a47d272067b59130fa2991ae72e2caa0c3d2869bacc1caa5444c2c5",
+      "B_performance_analysis": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088"
+    }
+  },
+  "archive_checker_controls": {
+    "valid_accepted": true,
+    "bad_digest_rejected": true,
+    "extra_rejected": true,
+    "unsafe_rejected": true
+  },
+  "declared_limits": [
+    "B2 frozen source under construction; B5 is v23.06 actually linked from the v26.07 index.",
+    "Only public local engineering; personal identity, whitelist, application, official CI and exam excluded.",
+    "Nangate45 ideal-wire325MHz/24878.182um2 model; no placement/routing/parasitic/multicorner/power signoff. Maximum capacitance reporting not qualified.",
+    "Finite functional tests and independently reset full128MiB patterns; no universal CPU/ISA theorem or one uninterrupted8pattern state sequence.",
+    "Optional three-instruction pipeline miter TIMEOUT600s; no proof or counterexample. Other optional features explicitly NOT_RUN.",
+    "Chosen among measured325MHz configurations, not global performance optimum; cross-frequency cache-only/pipe tradeoff retained.",
+    "MMIO independently checked then synchronized to reference; no independent duplicate device simulation. Cooperative machine-mode RT-Thread only.",
+    "Frozen replay uses installed Linux loader/libraries and locked tools; not a dependency-free blank-machine toolchain rebuild.",
+    "F/E/D/C original sources and evidence preserved; old E physical results do not qualify B. Stop before A."
+  ],
+  "delivery": "YSYX_B_DELIVERY.zip; package_B.py next performs a complete CRC/SHA/current-file verification."
+}

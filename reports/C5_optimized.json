@@ -1,0 +1,33 @@
+{
+  "status": "PASS_IDENTICAL_PSRAM_PILOT_OBSERVATIONS",
+  "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt",
+  "image_sha256": "623a465b39b5279058c4c8540c727eb96d76cd20ff403692c39ce84aa84e3173",
+  "baseline_evidence": "artifacts/C5/psram-sweep/psram-sweep-65536",
+  "evidence": "artifacts/C5/optimized/pilot",
+  "equal_fields": [
+    "result",
+    "exit_code",
+    "pc",
+    "next_pc",
+    "instruction",
+    "a0",
+    "fault",
+    "cycles",
+    "instructions",
+    "mrom_dpi_calls",
+    "flash_dpi_calls",
+    "memory_operations",
+    "diff_checked",
+    "device_sync_checked",
+    "axi_channels",
+    "gpr",
+    "coverage",
+    "uart",
+    "retired_by_region",
+    "psram"
+  ],
+  "old_wall_seconds": 29.4704,
+  "new_wall_seconds": 33.441,
+  "wall_speed_ratio": 0.8812655123949642,
+  "scope": "Same64KiB firmware, exact cycles/instructions/GPR/memory coverage/PSRAM/UART comparisons against retained earlier run. Explicit GNU C++OPT_FAST/OPT_SLOW/OPT_GLOBAL=-O3; includes newly implemented but unused SDRAM/GPIO/PS2/VGA. All per-instruction reference checks preserved. Full peripheral acceptance is separate."
+}

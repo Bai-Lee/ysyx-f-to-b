@@ -1,0 +1,203 @@
+{
+  "status": "PREPARED_NOT_INTEGRATION_PASS",
+  "inputs": [
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/.gitignore",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/.gitignore",
+      "source_sha256": "007421446828cdc274d86df8fd7cc98e9d95efe0df1290be88d91752c4e71871"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/amba/apb_delayer.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/amba/apb_delayer.v",
+      "source_sha256": "8e7e8590000d70cda7761ee483fbd02c6ca68abb593312fbe9024914f82e17f1"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/amba/axi4_delayer.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/amba/axi4_delayer.v",
+      "source_sha256": "c9aead74838479b37c77c335d85f8df6d2a5b546998cc69e809736a77d1dcdc4"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/bitrev/bitrev.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/bitrev/bitrev.v",
+      "source_sha256": "46a6a0e52770cc9692d8ea9bd2089a948217a050f5125d849bbb8d4f346f7e88"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/flash/flash.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/flash/flash.v",
+      "source_sha256": "02a2262b290fe95357551e5a6858295cee763da5040071b851169e4501ab39d3"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/gpio/gpio_top_apb.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/gpio/gpio_top_apb.v",
+      "source_sha256": "e4ec2ade811852f271af7dbd69e55eb35afe99b81d9ee9e44e539d010dd95a32"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/ps2/ps2_top_apb.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/ps2/ps2_top_apb.v",
+      "source_sha256": "06c06825ecf184218cf9fe28befbfa602b398c4ef805214af0b0f2cd804213af"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/psram/efabless/EF_PSRAM_CTRL.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/psram/efabless/EF_PSRAM_CTRL.v",
+      "source_sha256": "90f38ab834ce91b4cdcdc7a39ea0b738e9e22aec5e0fdaa4ab0cc3433e060d62"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/psram/efabless/EF_PSRAM_CTRL_wb.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/psram/efabless/EF_PSRAM_CTRL_wb.v",
+      "source_sha256": "68c5afd8424700338934a52bb9ac759a2d1985995e88f37910205bcf2593d204"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/psram/efabless/LICENSE",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/psram/efabless/LICENSE",
+      "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/psram/psram.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/psram/psram.v",
+      "source_sha256": "7a86cc3bdd2270ac282a71a62c64d38d6fbd5af567e4852f21715c997f888a2f"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/psram/psram_top_apb.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/psram/psram_top_apb.v",
+      "source_sha256": "e2b727a9057849b49116efc31dde58b52fc9e2eaa94c976ca60c53a3f940c625"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/sdram/core_sdram_axi4/LICENSE",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/core_sdram_axi4/LICENSE",
+      "source_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/sdram/core_sdram_axi4/README.md",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/core_sdram_axi4/README.md",
+      "source_sha256": "71a884cdcb645565ce2acd724bfa5c128d1aeafdb18e7451c263255458b6b3fe"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/sdram/core_sdram_axi4/sdram_axi.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/core_sdram_axi4/sdram_axi.v",
+      "source_sha256": "a3d9dede294ab2880f9bf9ae6bdb6850874bc387429fdbdc338dc7a179f0e07e"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/sdram/core_sdram_axi4/sdram_axi_core.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/core_sdram_axi4/sdram_axi_core.v",
+      "source_sha256": "167c8591c7e5da6c2554c91bb40d6c997cfc1fe7bef2d8fd9b2e42569a9f5fce"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/sdram/core_sdram_axi4/sdram_axi_pmem.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/core_sdram_axi4/sdram_axi_pmem.v",
+      "source_sha256": "7eccfb37b4a91451f2da4e3932b4fcca9287db1126a7ed6fd0a31c9442d5d23a"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/sdram/sdram.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/sdram.v",
+      "source_sha256": "74addc5c41645e1e56d2e10de085dfdcd0c6c979193e794f9bf51240766e72ca"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/sdram/sdram_top_apb.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/sdram_top_apb.v",
+      "source_sha256": "528925de530260ee0a6a4b9509dd6ca215469715eb88c4651f5b789f597977d6"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/sdram/sdram_top_axi.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/sdram_top_axi.v",
+      "source_sha256": "8e11be9b87e179ad951c2be06f97d3d5876d1162a014720c169216713d57d282"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/spi/doc/spi.pdf",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/spi/doc/spi.pdf",
+      "source_sha256": "f4bca505bead405ef3c3f9b2fb62c98cf0055bc9a69597b4d660f673d4b56ac8"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/spi/rtl/spi_clgen.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/spi/rtl/spi_clgen.v",
+      "source_sha256": "1102570f0fd72585bc346db4d45eee50126c340e56a7460fc563dedef4dcac21"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/spi/rtl/spi_defines.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/spi/rtl/spi_defines.v",
+      "source_sha256": "cc8927463596a0465d9ee60261d041d4317d0362f44aafa7fed792f899bc1bea"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/spi/rtl/spi_shift.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/spi/rtl/spi_shift.v",
+      "source_sha256": "72d3d23573c40eff781a4e24d01a595756b4a32293e51f818fe3fe60304fc4b6"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/spi/rtl/spi_top.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/spi/rtl/spi_top.v",
+      "source_sha256": "b5f64ecbc87e87f56d10507e3472217c1b6076b8fa456d66c3f752bc4c200d42"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/spi/rtl/spi_top_apb.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/spi/rtl/spi_top_apb.v",
+      "source_sha256": "09d111cffd9f87c8b81e15477754f23a06a505fda5358fd37d22cdbadf2c8c9c"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/doc/UART_spec.pdf",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/doc/UART_spec.pdf",
+      "source_sha256": "be7687fff45395458ac7b4d5519c3a7b7cc4fa6acf799ee4da580bcb1d2bf035"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/rtl/raminfr.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/rtl/raminfr.v",
+      "source_sha256": "81720eb4e55256f815e8f7430d3b20076e4fdf900b855313d4e8da9ad8bcbc61"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/rtl/uart_defines.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/rtl/uart_defines.v",
+      "source_sha256": "0cdb9f10a4b932b172fa5f653b4bf28ffd196fcf257b280a393514637b05f91f"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/rtl/uart_receiver.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/rtl/uart_receiver.v",
+      "source_sha256": "c3120ca172f75120cee11869ffd7925b69729d3a64493c83c03d7e559c84fed3"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/rtl/uart_regs.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/rtl/uart_regs.v",
+      "source_sha256": "f986457a1c64543705e5e2c344c093be0813f9b0af9d0a18083b809cbb73bb2a"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/rtl/uart_rfifo.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/rtl/uart_rfifo.v",
+      "source_sha256": "a6fbf97b1d0cccc3b1590a7d80f3f1447d2788eff1d250dbaaef210e1324b9f4"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/rtl/uart_sync_flops.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/rtl/uart_sync_flops.v",
+      "source_sha256": "73b64f79472dabe34cad11adf4313fecfaa51e8708626a931cf756aea58836aa"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/rtl/uart_tfifo.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/rtl/uart_tfifo.v",
+      "source_sha256": "62b499b3dc928eb93424b893f5da107c96897f6476b31918576c8bdd9b62b69d"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/rtl/uart_top_apb.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/rtl/uart_top_apb.v",
+      "source_sha256": "1c2ff4cae5e7f4773d2ccadf433094f7f38fc05aef8d704c4113325f3775b566"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/uart16550/rtl/uart_transmitter.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/uart16550/rtl/uart_transmitter.v",
+      "source_sha256": "1a89e65ba290f8e605297d8f8a7784d3799a6a0bc9d1617af39b304f0d06f712"
+    },
+    {
+      "source": "/home/USER/c-stage/soc-generation/ysyxSoC/perip/vga/vga_top_apb.v",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/perip/vga/vga_top_apb.v",
+      "source_sha256": "f4efd70b25999fcbbdc25e8ca6567daffa3795a39fd2be64239c1feab9389dfc"
+    },
+    {
+      "source": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/rtl/ysyx_00000000_execute.sv",
+      "source_sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+    },
+    {
+      "source": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv",
+      "destination": "/workspace/projects/ysyx_f_to_b/C/C5/rtl/ysyx_00000000_core.sv",
+      "source_sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+    }
+  ],
+  "generated_soc": "/workspace/projects/ysyx_f_to_b/C/C5/generation/ysyxSoCFull.v",
+  "generated_sha256": "0aef5395eb4bcfcdc676de3178c6e3faff00dad409b95d091c437a024d47438f",
+  "scope": "Independent C5-prefixed CPU copies retain logical byte address and AXI size; C4 and pristine SoC generation inputs untouched. Peripheral stubs remain unimplemented until their own tasks."
+}

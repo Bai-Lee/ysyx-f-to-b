@@ -1,0 +1,35 @@
+{
+  "name": "E/environment/cross_dependencies",
+  "timestamp": "2026-10-24T22:01:16.001103+00:00",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "YSYX-Linux",
+    "-u",
+    "root",
+    "--exec",
+    "bash",
+    "/workspace/projects/ysyx_f_to_b/E/runtime/bootstrap.sh"
+  ],
+  "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+  "exit_code": 0,
+  "expected_exit": 0,
+  "status": "PASS",
+  "elapsed_seconds": 204.641,
+  "timeout_seconds": 600,
+  "inputs": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\runtime\\bootstrap.sh",
+      "sha256": "7dd32ec15946268587403cd2d78bcd8506c03a36e0474760dd7c10244e340dc5"
+    }
+  ],
+  "inputs_after": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\runtime\\bootstrap.sh",
+      "sha256": "7dd32ec15946268587403cd2d78bcd8506c03a36e0474760dd7c10244e340dc5"
+    }
+  ],
+  "inputs_unchanged": true,
+  "stdout_sha256": "023bef2ae7c07b04f1ef4c10225c46e1ac08118624f7ab57298da574737d6908",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "GENERATED_NOT_VALIDATED",
+  "source": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\B\\soc\\rtl\\ysyx_00000000_execute.sv",
+  "source_sha256": "dabba1fb0185fdc7935042c9c8968a5d6ff5718e1a5548e74d183ed73182795c",
+  "output": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\B\\B4\\rtl\\ysyx_00000000_alu.sv",
+  "sha256": "8d5c21c89b900f9077a84be87ef1bf0c160ccd1fa416256c8f87cfbec7d144d5",
+  "scope": "Only the combinational switch is reused. Pipeline state, hazards and retirement are new and require independent tests."
+}

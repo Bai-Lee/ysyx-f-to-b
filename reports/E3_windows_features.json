@@ -1,0 +1,20 @@
+{
+    "automatic_reboot":  false,
+    "timestamp":  "2026-10-24T14:22:41.5338874Z",
+    "features":  [
+                     {
+                         "changed":  false,
+                         "after":  "Enabled",
+                         "before":  "Enabled",
+                         "restart_needed":  false,
+                         "feature":  "Microsoft-Windows-Subsystem-Linux"
+                     },
+                     {
+                         "changed":  false,
+                         "after":  "Enabled",
+                         "before":  "Enabled",
+                         "restart_needed":  false,
+                         "feature":  "VirtualMachinePlatform"
+                     }
+                 ]
+}

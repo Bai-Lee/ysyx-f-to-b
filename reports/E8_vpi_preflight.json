@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "correct",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      },
+      "stdout": "GOOD_TRAP gate memory/VPI, tohost success and ebreak fetch followed by quiet bus\n"
+    },
+    {
+      "case": "bad_exit",
+      "result": {
+        "result": "FAIL",
+        "exit_code": 1,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 1,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      },
+      "stdout": "BAD_TRAP or missing tohost value, status=2\nFATAL: /workspace/projects/ysyx_f_to_b/E/E8/iverilog_top.sv:16: FOUR_STATE_VALIDATION_FAILED\n       Time: 70 Scope: iverilog_top\n"
+    },
+    {
+      "case": "unreset_state",
+      "result": {
+        "result": "FAIL",
+        "exit_code": 1,
+        "cycles": 1,
+        "exit_writes": 0,
+        "tohost_value": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      },
+      "stdout": "UNKNOWN_BUS_CONTROL cycle=0\nFATAL: /workspace/projects/ysyx_f_to_b/E/E8/iverilog_top.sv:16: FOUR_STATE_VALIDATION_FAILED\n       Time: 12 Scope: iverilog_top\n"
+    }
+  ],
+  "scope": "Official VPI hello and missing-plugin negative; real CPU four-state RTL/VPI memory, valid/invalid tohost, unreset FSM X control rejected. Mapped netlist and microbench remain pending."
+}

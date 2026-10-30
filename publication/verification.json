@@ -1,0 +1,47 @@
+{
+  "scope": "New portable entrypoint, unchanged frozen final B RTL/testbench; small finite four-state mailbox smoke tests. No full SoC/NEMU/OS claim.",
+  "limits": {
+    "rss_mib": 1024,
+    "windows_available_mib": 1024,
+    "timeout_seconds": 210
+  },
+  "runs": [
+    {
+      "case": "rtl-positive",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 4.422,
+      "peak_tree_rss_mib": 102.68,
+      "minimum_windows_available_mib": 2434.89
+    },
+    {
+      "case": "rtl-negative",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.516,
+      "peak_tree_rss_mib": 102.38,
+      "minimum_windows_available_mib": 2441.07
+    },
+    {
+      "case": "gate-positive",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 3.422,
+      "peak_tree_rss_mib": 199.03,
+      "minimum_windows_available_mib": 2374.84
+    }
+  ],
+  "tools": {
+    "python": "3.12.10",
+    "iverilog": "14.0 devel s20260301-638-ge072b3334-dirty",
+    "platform": "Windows x86-64",
+    "process_scope": "process-tree RSS sampled during all three cases"
+  },
+  "inputs": {
+    "B/soc/build/ysyx_00000000.sv": "0c56b8296b8d03f359cedc07028e2a40eaafd7785979714ebd74c7291f17aed8",
+    "B/B5/cpu_four_state_tb.sv": "521df03584aa9477a27b69b13929ddde23d1d49ea2be03c202c8f9f770ed9a76",
+    "B/B5/netlist/ysyx_00000000.v": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+    "B/models/nangate45/sim/cells.v": "9430fe45ddf1d60b3c74851c7df759bf4c0f5a78fbff80b65e6cd619cdfd6b69",
+    "tools/run_demo.py": "8e000bac2216958b34be0159d733323856328d6d57a85e17704abade11c701fa"
+  }
+}

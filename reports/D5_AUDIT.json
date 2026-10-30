@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "core_tasks": 1,
+  "scope_records": 2,
+  "records": [
+    {
+      "id": "D5-O001",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D5/NOTES.md",
+        "D/D5/sources/D5.md"
+      ]
+    },
+    {
+      "id": "D5-M001",
+      "status": "PASS",
+      "details": "PA2 runtime/AM/klib: 21199 host comparisons, 10000 allocator operations + 512-fragment stress, 5007 checks on each of native/native-klib/RV32IM; sanitizer and wrong-result controls.",
+      "evidence": [
+        "D/D5/NOTES.md",
+        "reports/D5_host_klib.json",
+        "reports/D5_allocator.json",
+        "reports/D5_portable.json"
+      ]
+    }
+  ],
+  "report": "D/D5/NOTES.md",
+  "qualification": "Public local engineering requirements only; reference-only background is not claimed completed learning."
+}

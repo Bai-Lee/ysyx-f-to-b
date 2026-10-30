@@ -1,0 +1,12 @@
+{
+  "status": "AUTHORIZED",
+  "temporary_memory_gib": 1,
+  "cpu_limit": 4,
+  "compile_parallelism": 1,
+  "heavy_jobs": 0,
+  "authorization_file": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_authorization.json",
+  "config": "C:\\Users\\USER\\.wslconfig",
+  "config_sha256": "8a258f03032344dccf774fdd41c7adee673e46a63b74e0fce3190f7e44a756bf",
+  "backup": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\history\\20261024T142551884477",
+  "abort_new_work_if_host_available_mib_below": 768
+}

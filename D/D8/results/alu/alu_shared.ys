@@ -1,0 +1,7 @@
+read_verilog /workspace/projects/ysyx_f_to_b/D/D8/alu_study.v
+hierarchy -top alu_shared
+proc; opt
+write_json /workspace/projects/ysyx_f_to_b/D/D8/results/alu/alu_shared-coarse.json
+show -format svg -prefix /workspace/projects/ysyx_f_to_b/D/D8/results/alu/alu_shared alu_shared
+techmap; opt; abc -g simple; clean
+write_json /workspace/projects/ysyx_f_to_b/D/D8/results/alu/alu_shared-gates.json

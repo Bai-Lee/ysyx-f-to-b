@@ -1,0 +1,25 @@
+read_verilog /workspace/projects/ysyx_f_to_b/D/D6/counter.v; hierarchy -check -top counter
+write_rtlil /workspace/projects/ysyx_f_to_b/D/D6/results/read.il
+show -format svg -prefix /workspace/projects/ysyx_f_to_b/D/D6/results/read counter
+proc
+write_rtlil /workspace/projects/ysyx_f_to_b/D/D6/results/proc.il
+show -format svg -prefix /workspace/projects/ysyx_f_to_b/D/D6/results/proc counter
+write_json /workspace/projects/ysyx_f_to_b/D/D6/results/proc.json
+opt
+write_rtlil /workspace/projects/ysyx_f_to_b/D/D6/results/opt.il
+show -format svg -prefix /workspace/projects/ysyx_f_to_b/D/D6/results/opt counter
+write_json /workspace/projects/ysyx_f_to_b/D/D6/results/opt.json
+techmap; splitnets -ports; opt -full
+write_rtlil /workspace/projects/ysyx_f_to_b/D/D6/results/techmap.il
+show -format svg -prefix /workspace/projects/ysyx_f_to_b/D/D6/results/techmap counter
+write_json /workspace/projects/ysyx_f_to_b/D/D6/results/techmap.json
+dfflibmap -liberty /workspace/projects/ysyx_f_to_b/D/D6/cell.lib; read_liberty -lib /workspace/projects/ysyx_f_to_b/D/D6/cell.lib
+write_rtlil /workspace/projects/ysyx_f_to_b/D/D6/results/dfflibmap.il
+show -format svg -prefix /workspace/projects/ysyx_f_to_b/D/D6/results/dfflibmap counter
+write_json /workspace/projects/ysyx_f_to_b/D/D6/results/dfflibmap.json
+abc -liberty /workspace/projects/ysyx_f_to_b/D/D6/cell.lib; clean
+write_rtlil /workspace/projects/ysyx_f_to_b/D/D6/results/abc.il
+show -format svg -prefix /workspace/projects/ysyx_f_to_b/D/D6/results/abc counter
+write_json /workspace/projects/ysyx_f_to_b/D/D6/results/abc.json
+rename counter counter_mapped
+write_verilog -noattr /workspace/projects/ysyx_f_to_b/D/D6/results/mapped.v

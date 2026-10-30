@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "stage": "E5",
+      "path": "E/E5/runtime_snapshot/ref.c",
+      "matches": true
+    },
+    {
+      "stage": "E5",
+      "path": "E/E5/runtime_snapshot/ref.h",
+      "matches": true
+    },
+    {
+      "stage": "E5",
+      "path": "E/E5/runtime_snapshot/emu_main.c",
+      "matches": true
+    },
+    {
+      "stage": "E5",
+      "path": "E/E5/runtime_snapshot/runner.cpp",
+      "matches": true
+    },
+    {
+      "stage": "E5",
+      "path": "E/E5/runtime_snapshot/memory.hpp",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/runner.cpp",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/memory.hpp",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/ref.c",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/ref.h",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/minirv_decode.sv",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/minirv_regfile.sv",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/minirv_single.sv",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/npc_sim.sv",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/NPC.Makefile",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/trm.c",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/timer.c",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/npc.mk",
+      "matches": true
+    },
+    {
+      "stage": "E6",
+      "path": "E/E6/runtime_snapshot/riscv.mk",
+      "matches": true
+    }
+  ],
+  "scope": "Both existing snapshot schemas checked explicitly; no missing-schema skip."
+}

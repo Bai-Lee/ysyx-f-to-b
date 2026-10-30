@@ -1,0 +1,5 @@
+[wsl2]
+memory=2GB
+processors=4
+swap=2GB
+swapFile=C:\\YSYX_WORKSPACE\\temp\\wsl-swap.vhdx

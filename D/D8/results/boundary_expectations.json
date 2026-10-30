@@ -1,0 +1,7037 @@
+{
+  "seed": "0x2607d8",
+  "cases": [
+    {
+      "description": "add 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "add 0x0,0x1",
+      "expected": 1
+    },
+    {
+      "description": "add 0x0,0x2",
+      "expected": 2
+    },
+    {
+      "description": "add 0x0,0x1f",
+      "expected": 31
+    },
+    {
+      "description": "add 0x0,0x20",
+      "expected": 32
+    },
+    {
+      "description": "add 0x0,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "add 0x0,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "add 0x0,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "add 0x0,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "add 0x1,0x0",
+      "expected": 1
+    },
+    {
+      "description": "add 0x1,0x1",
+      "expected": 2
+    },
+    {
+      "description": "add 0x1,0x2",
+      "expected": 3
+    },
+    {
+      "description": "add 0x1,0x1f",
+      "expected": 32
+    },
+    {
+      "description": "add 0x1,0x20",
+      "expected": 33
+    },
+    {
+      "description": "add 0x1,0x7fffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "add 0x1,0x80000000",
+      "expected": 2147483649
+    },
+    {
+      "description": "add 0x1,0xfffffffe",
+      "expected": 4294967295
+    },
+    {
+      "description": "add 0x1,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "add 0x2,0x0",
+      "expected": 2
+    },
+    {
+      "description": "add 0x2,0x1",
+      "expected": 3
+    },
+    {
+      "description": "add 0x2,0x2",
+      "expected": 4
+    },
+    {
+      "description": "add 0x2,0x1f",
+      "expected": 33
+    },
+    {
+      "description": "add 0x2,0x20",
+      "expected": 34
+    },
+    {
+      "description": "add 0x2,0x7fffffff",
+      "expected": 2147483649
+    },
+    {
+      "description": "add 0x2,0x80000000",
+      "expected": 2147483650
+    },
+    {
+      "description": "add 0x2,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "add 0x2,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "add 0x1f,0x0",
+      "expected": 31
+    },
+    {
+      "description": "add 0x1f,0x1",
+      "expected": 32
+    },
+    {
+      "description": "add 0x1f,0x2",
+      "expected": 33
+    },
+    {
+      "description": "add 0x1f,0x1f",
+      "expected": 62
+    },
+    {
+      "description": "add 0x1f,0x20",
+      "expected": 63
+    },
+    {
+      "description": "add 0x1f,0x7fffffff",
+      "expected": 2147483678
+    },
+    {
+      "description": "add 0x1f,0x80000000",
+      "expected": 2147483679
+    },
+    {
+      "description": "add 0x1f,0xfffffffe",
+      "expected": 29
+    },
+    {
+      "description": "add 0x1f,0xffffffff",
+      "expected": 30
+    },
+    {
+      "description": "add 0x20,0x0",
+      "expected": 32
+    },
+    {
+      "description": "add 0x20,0x1",
+      "expected": 33
+    },
+    {
+      "description": "add 0x20,0x2",
+      "expected": 34
+    },
+    {
+      "description": "add 0x20,0x1f",
+      "expected": 63
+    },
+    {
+      "description": "add 0x20,0x20",
+      "expected": 64
+    },
+    {
+      "description": "add 0x20,0x7fffffff",
+      "expected": 2147483679
+    },
+    {
+      "description": "add 0x20,0x80000000",
+      "expected": 2147483680
+    },
+    {
+      "description": "add 0x20,0xfffffffe",
+      "expected": 30
+    },
+    {
+      "description": "add 0x20,0xffffffff",
+      "expected": 31
+    },
+    {
+      "description": "add 0x7fffffff,0x0",
+      "expected": 2147483647
+    },
+    {
+      "description": "add 0x7fffffff,0x1",
+      "expected": 2147483648
+    },
+    {
+      "description": "add 0x7fffffff,0x2",
+      "expected": 2147483649
+    },
+    {
+      "description": "add 0x7fffffff,0x1f",
+      "expected": 2147483678
+    },
+    {
+      "description": "add 0x7fffffff,0x20",
+      "expected": 2147483679
+    },
+    {
+      "description": "add 0x7fffffff,0x7fffffff",
+      "expected": 4294967294
+    },
+    {
+      "description": "add 0x7fffffff,0x80000000",
+      "expected": 4294967295
+    },
+    {
+      "description": "add 0x7fffffff,0xfffffffe",
+      "expected": 2147483645
+    },
+    {
+      "description": "add 0x7fffffff,0xffffffff",
+      "expected": 2147483646
+    },
+    {
+      "description": "add 0x80000000,0x0",
+      "expected": 2147483648
+    },
+    {
+      "description": "add 0x80000000,0x1",
+      "expected": 2147483649
+    },
+    {
+      "description": "add 0x80000000,0x2",
+      "expected": 2147483650
+    },
+    {
+      "description": "add 0x80000000,0x1f",
+      "expected": 2147483679
+    },
+    {
+      "description": "add 0x80000000,0x20",
+      "expected": 2147483680
+    },
+    {
+      "description": "add 0x80000000,0x7fffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "add 0x80000000,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "add 0x80000000,0xfffffffe",
+      "expected": 2147483646
+    },
+    {
+      "description": "add 0x80000000,0xffffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "add 0xfffffffe,0x0",
+      "expected": 4294967294
+    },
+    {
+      "description": "add 0xfffffffe,0x1",
+      "expected": 4294967295
+    },
+    {
+      "description": "add 0xfffffffe,0x2",
+      "expected": 0
+    },
+    {
+      "description": "add 0xfffffffe,0x1f",
+      "expected": 29
+    },
+    {
+      "description": "add 0xfffffffe,0x20",
+      "expected": 30
+    },
+    {
+      "description": "add 0xfffffffe,0x7fffffff",
+      "expected": 2147483645
+    },
+    {
+      "description": "add 0xfffffffe,0x80000000",
+      "expected": 2147483646
+    },
+    {
+      "description": "add 0xfffffffe,0xfffffffe",
+      "expected": 4294967292
+    },
+    {
+      "description": "add 0xfffffffe,0xffffffff",
+      "expected": 4294967293
+    },
+    {
+      "description": "add 0xffffffff,0x0",
+      "expected": 4294967295
+    },
+    {
+      "description": "add 0xffffffff,0x1",
+      "expected": 0
+    },
+    {
+      "description": "add 0xffffffff,0x2",
+      "expected": 1
+    },
+    {
+      "description": "add 0xffffffff,0x1f",
+      "expected": 30
+    },
+    {
+      "description": "add 0xffffffff,0x20",
+      "expected": 31
+    },
+    {
+      "description": "add 0xffffffff,0x7fffffff",
+      "expected": 2147483646
+    },
+    {
+      "description": "add 0xffffffff,0x80000000",
+      "expected": 2147483647
+    },
+    {
+      "description": "add 0xffffffff,0xfffffffe",
+      "expected": 4294967293
+    },
+    {
+      "description": "add 0xffffffff,0xffffffff",
+      "expected": 4294967294
+    },
+    {
+      "description": "sub 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sub 0x0,0x1",
+      "expected": 4294967295
+    },
+    {
+      "description": "sub 0x0,0x2",
+      "expected": 4294967294
+    },
+    {
+      "description": "sub 0x0,0x1f",
+      "expected": 4294967265
+    },
+    {
+      "description": "sub 0x0,0x20",
+      "expected": 4294967264
+    },
+    {
+      "description": "sub 0x0,0x7fffffff",
+      "expected": 2147483649
+    },
+    {
+      "description": "sub 0x0,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "sub 0x0,0xfffffffe",
+      "expected": 2
+    },
+    {
+      "description": "sub 0x0,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sub 0x1,0x0",
+      "expected": 1
+    },
+    {
+      "description": "sub 0x1,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sub 0x1,0x2",
+      "expected": 4294967295
+    },
+    {
+      "description": "sub 0x1,0x1f",
+      "expected": 4294967266
+    },
+    {
+      "description": "sub 0x1,0x20",
+      "expected": 4294967265
+    },
+    {
+      "description": "sub 0x1,0x7fffffff",
+      "expected": 2147483650
+    },
+    {
+      "description": "sub 0x1,0x80000000",
+      "expected": 2147483649
+    },
+    {
+      "description": "sub 0x1,0xfffffffe",
+      "expected": 3
+    },
+    {
+      "description": "sub 0x1,0xffffffff",
+      "expected": 2
+    },
+    {
+      "description": "sub 0x2,0x0",
+      "expected": 2
+    },
+    {
+      "description": "sub 0x2,0x1",
+      "expected": 1
+    },
+    {
+      "description": "sub 0x2,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sub 0x2,0x1f",
+      "expected": 4294967267
+    },
+    {
+      "description": "sub 0x2,0x20",
+      "expected": 4294967266
+    },
+    {
+      "description": "sub 0x2,0x7fffffff",
+      "expected": 2147483651
+    },
+    {
+      "description": "sub 0x2,0x80000000",
+      "expected": 2147483650
+    },
+    {
+      "description": "sub 0x2,0xfffffffe",
+      "expected": 4
+    },
+    {
+      "description": "sub 0x2,0xffffffff",
+      "expected": 3
+    },
+    {
+      "description": "sub 0x1f,0x0",
+      "expected": 31
+    },
+    {
+      "description": "sub 0x1f,0x1",
+      "expected": 30
+    },
+    {
+      "description": "sub 0x1f,0x2",
+      "expected": 29
+    },
+    {
+      "description": "sub 0x1f,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sub 0x1f,0x20",
+      "expected": 4294967295
+    },
+    {
+      "description": "sub 0x1f,0x7fffffff",
+      "expected": 2147483680
+    },
+    {
+      "description": "sub 0x1f,0x80000000",
+      "expected": 2147483679
+    },
+    {
+      "description": "sub 0x1f,0xfffffffe",
+      "expected": 33
+    },
+    {
+      "description": "sub 0x1f,0xffffffff",
+      "expected": 32
+    },
+    {
+      "description": "sub 0x20,0x0",
+      "expected": 32
+    },
+    {
+      "description": "sub 0x20,0x1",
+      "expected": 31
+    },
+    {
+      "description": "sub 0x20,0x2",
+      "expected": 30
+    },
+    {
+      "description": "sub 0x20,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "sub 0x20,0x20",
+      "expected": 0
+    },
+    {
+      "description": "sub 0x20,0x7fffffff",
+      "expected": 2147483681
+    },
+    {
+      "description": "sub 0x20,0x80000000",
+      "expected": 2147483680
+    },
+    {
+      "description": "sub 0x20,0xfffffffe",
+      "expected": 34
+    },
+    {
+      "description": "sub 0x20,0xffffffff",
+      "expected": 33
+    },
+    {
+      "description": "sub 0x7fffffff,0x0",
+      "expected": 2147483647
+    },
+    {
+      "description": "sub 0x7fffffff,0x1",
+      "expected": 2147483646
+    },
+    {
+      "description": "sub 0x7fffffff,0x2",
+      "expected": 2147483645
+    },
+    {
+      "description": "sub 0x7fffffff,0x1f",
+      "expected": 2147483616
+    },
+    {
+      "description": "sub 0x7fffffff,0x20",
+      "expected": 2147483615
+    },
+    {
+      "description": "sub 0x7fffffff,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sub 0x7fffffff,0x80000000",
+      "expected": 4294967295
+    },
+    {
+      "description": "sub 0x7fffffff,0xfffffffe",
+      "expected": 2147483649
+    },
+    {
+      "description": "sub 0x7fffffff,0xffffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "sub 0x80000000,0x0",
+      "expected": 2147483648
+    },
+    {
+      "description": "sub 0x80000000,0x1",
+      "expected": 2147483647
+    },
+    {
+      "description": "sub 0x80000000,0x2",
+      "expected": 2147483646
+    },
+    {
+      "description": "sub 0x80000000,0x1f",
+      "expected": 2147483617
+    },
+    {
+      "description": "sub 0x80000000,0x20",
+      "expected": 2147483616
+    },
+    {
+      "description": "sub 0x80000000,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "sub 0x80000000,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "sub 0x80000000,0xfffffffe",
+      "expected": 2147483650
+    },
+    {
+      "description": "sub 0x80000000,0xffffffff",
+      "expected": 2147483649
+    },
+    {
+      "description": "sub 0xfffffffe,0x0",
+      "expected": 4294967294
+    },
+    {
+      "description": "sub 0xfffffffe,0x1",
+      "expected": 4294967293
+    },
+    {
+      "description": "sub 0xfffffffe,0x2",
+      "expected": 4294967292
+    },
+    {
+      "description": "sub 0xfffffffe,0x1f",
+      "expected": 4294967263
+    },
+    {
+      "description": "sub 0xfffffffe,0x20",
+      "expected": 4294967262
+    },
+    {
+      "description": "sub 0xfffffffe,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "sub 0xfffffffe,0x80000000",
+      "expected": 2147483646
+    },
+    {
+      "description": "sub 0xfffffffe,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sub 0xfffffffe,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "sub 0xffffffff,0x0",
+      "expected": 4294967295
+    },
+    {
+      "description": "sub 0xffffffff,0x1",
+      "expected": 4294967294
+    },
+    {
+      "description": "sub 0xffffffff,0x2",
+      "expected": 4294967293
+    },
+    {
+      "description": "sub 0xffffffff,0x1f",
+      "expected": 4294967264
+    },
+    {
+      "description": "sub 0xffffffff,0x20",
+      "expected": 4294967263
+    },
+    {
+      "description": "sub 0xffffffff,0x7fffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "sub 0xffffffff,0x80000000",
+      "expected": 2147483647
+    },
+    {
+      "description": "sub 0xffffffff,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "sub 0xffffffff,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x0,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x0,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x0,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x0,0x20",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x0,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x0,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x0,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x0,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x1,0x0",
+      "expected": 1
+    },
+    {
+      "description": "sll 0x1,0x1",
+      "expected": 2
+    },
+    {
+      "description": "sll 0x1,0x2",
+      "expected": 4
+    },
+    {
+      "description": "sll 0x1,0x1f",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x1,0x20",
+      "expected": 1
+    },
+    {
+      "description": "sll 0x1,0x7fffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x1,0x80000000",
+      "expected": 1
+    },
+    {
+      "description": "sll 0x1,0xfffffffe",
+      "expected": 1073741824
+    },
+    {
+      "description": "sll 0x1,0xffffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x2,0x0",
+      "expected": 2
+    },
+    {
+      "description": "sll 0x2,0x1",
+      "expected": 4
+    },
+    {
+      "description": "sll 0x2,0x2",
+      "expected": 8
+    },
+    {
+      "description": "sll 0x2,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x2,0x20",
+      "expected": 2
+    },
+    {
+      "description": "sll 0x2,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x2,0x80000000",
+      "expected": 2
+    },
+    {
+      "description": "sll 0x2,0xfffffffe",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x2,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x1f,0x0",
+      "expected": 31
+    },
+    {
+      "description": "sll 0x1f,0x1",
+      "expected": 62
+    },
+    {
+      "description": "sll 0x1f,0x2",
+      "expected": 124
+    },
+    {
+      "description": "sll 0x1f,0x1f",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x1f,0x20",
+      "expected": 31
+    },
+    {
+      "description": "sll 0x1f,0x7fffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x1f,0x80000000",
+      "expected": 31
+    },
+    {
+      "description": "sll 0x1f,0xfffffffe",
+      "expected": 3221225472
+    },
+    {
+      "description": "sll 0x1f,0xffffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x20,0x0",
+      "expected": 32
+    },
+    {
+      "description": "sll 0x20,0x1",
+      "expected": 64
+    },
+    {
+      "description": "sll 0x20,0x2",
+      "expected": 128
+    },
+    {
+      "description": "sll 0x20,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x20,0x20",
+      "expected": 32
+    },
+    {
+      "description": "sll 0x20,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x20,0x80000000",
+      "expected": 32
+    },
+    {
+      "description": "sll 0x20,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x20,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x7fffffff,0x0",
+      "expected": 2147483647
+    },
+    {
+      "description": "sll 0x7fffffff,0x1",
+      "expected": 4294967294
+    },
+    {
+      "description": "sll 0x7fffffff,0x2",
+      "expected": 4294967292
+    },
+    {
+      "description": "sll 0x7fffffff,0x1f",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x7fffffff,0x20",
+      "expected": 2147483647
+    },
+    {
+      "description": "sll 0x7fffffff,0x7fffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x7fffffff,0x80000000",
+      "expected": 2147483647
+    },
+    {
+      "description": "sll 0x7fffffff,0xfffffffe",
+      "expected": 3221225472
+    },
+    {
+      "description": "sll 0x7fffffff,0xffffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x80000000,0x0",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x80000000,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x80000000,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x80000000,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x80000000,0x20",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x80000000,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x80000000,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0x80000000,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sll 0x80000000,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0xfffffffe,0x0",
+      "expected": 4294967294
+    },
+    {
+      "description": "sll 0xfffffffe,0x1",
+      "expected": 4294967292
+    },
+    {
+      "description": "sll 0xfffffffe,0x2",
+      "expected": 4294967288
+    },
+    {
+      "description": "sll 0xfffffffe,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sll 0xfffffffe,0x20",
+      "expected": 4294967294
+    },
+    {
+      "description": "sll 0xfffffffe,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0xfffffffe,0x80000000",
+      "expected": 4294967294
+    },
+    {
+      "description": "sll 0xfffffffe,0xfffffffe",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0xfffffffe,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sll 0xffffffff,0x0",
+      "expected": 4294967295
+    },
+    {
+      "description": "sll 0xffffffff,0x1",
+      "expected": 4294967294
+    },
+    {
+      "description": "sll 0xffffffff,0x2",
+      "expected": 4294967292
+    },
+    {
+      "description": "sll 0xffffffff,0x1f",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0xffffffff,0x20",
+      "expected": 4294967295
+    },
+    {
+      "description": "sll 0xffffffff,0x7fffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "sll 0xffffffff,0x80000000",
+      "expected": 4294967295
+    },
+    {
+      "description": "sll 0xffffffff,0xfffffffe",
+      "expected": 3221225472
+    },
+    {
+      "description": "sll 0xffffffff,0xffffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "srl 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x0,0x1",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x0,0x2",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x0,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x0,0x20",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x0,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x0,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x0,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x0,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1,0x0",
+      "expected": 1
+    },
+    {
+      "description": "srl 0x1,0x1",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1,0x2",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1,0x20",
+      "expected": 1
+    },
+    {
+      "description": "srl 0x1,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1,0x80000000",
+      "expected": 1
+    },
+    {
+      "description": "srl 0x1,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x2,0x0",
+      "expected": 2
+    },
+    {
+      "description": "srl 0x2,0x1",
+      "expected": 1
+    },
+    {
+      "description": "srl 0x2,0x2",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x2,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x2,0x20",
+      "expected": 2
+    },
+    {
+      "description": "srl 0x2,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x2,0x80000000",
+      "expected": 2
+    },
+    {
+      "description": "srl 0x2,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x2,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1f,0x0",
+      "expected": 31
+    },
+    {
+      "description": "srl 0x1f,0x1",
+      "expected": 15
+    },
+    {
+      "description": "srl 0x1f,0x2",
+      "expected": 7
+    },
+    {
+      "description": "srl 0x1f,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1f,0x20",
+      "expected": 31
+    },
+    {
+      "description": "srl 0x1f,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1f,0x80000000",
+      "expected": 31
+    },
+    {
+      "description": "srl 0x1f,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x1f,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x20,0x0",
+      "expected": 32
+    },
+    {
+      "description": "srl 0x20,0x1",
+      "expected": 16
+    },
+    {
+      "description": "srl 0x20,0x2",
+      "expected": 8
+    },
+    {
+      "description": "srl 0x20,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x20,0x20",
+      "expected": 32
+    },
+    {
+      "description": "srl 0x20,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x20,0x80000000",
+      "expected": 32
+    },
+    {
+      "description": "srl 0x20,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x20,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x7fffffff,0x0",
+      "expected": 2147483647
+    },
+    {
+      "description": "srl 0x7fffffff,0x1",
+      "expected": 1073741823
+    },
+    {
+      "description": "srl 0x7fffffff,0x2",
+      "expected": 536870911
+    },
+    {
+      "description": "srl 0x7fffffff,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x7fffffff,0x20",
+      "expected": 2147483647
+    },
+    {
+      "description": "srl 0x7fffffff,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x7fffffff,0x80000000",
+      "expected": 2147483647
+    },
+    {
+      "description": "srl 0x7fffffff,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "srl 0x7fffffff,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "srl 0x80000000,0x0",
+      "expected": 2147483648
+    },
+    {
+      "description": "srl 0x80000000,0x1",
+      "expected": 1073741824
+    },
+    {
+      "description": "srl 0x80000000,0x2",
+      "expected": 536870912
+    },
+    {
+      "description": "srl 0x80000000,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "srl 0x80000000,0x20",
+      "expected": 2147483648
+    },
+    {
+      "description": "srl 0x80000000,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "srl 0x80000000,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "srl 0x80000000,0xfffffffe",
+      "expected": 2
+    },
+    {
+      "description": "srl 0x80000000,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "srl 0xfffffffe,0x0",
+      "expected": 4294967294
+    },
+    {
+      "description": "srl 0xfffffffe,0x1",
+      "expected": 2147483647
+    },
+    {
+      "description": "srl 0xfffffffe,0x2",
+      "expected": 1073741823
+    },
+    {
+      "description": "srl 0xfffffffe,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "srl 0xfffffffe,0x20",
+      "expected": 4294967294
+    },
+    {
+      "description": "srl 0xfffffffe,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "srl 0xfffffffe,0x80000000",
+      "expected": 4294967294
+    },
+    {
+      "description": "srl 0xfffffffe,0xfffffffe",
+      "expected": 3
+    },
+    {
+      "description": "srl 0xfffffffe,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "srl 0xffffffff,0x0",
+      "expected": 4294967295
+    },
+    {
+      "description": "srl 0xffffffff,0x1",
+      "expected": 2147483647
+    },
+    {
+      "description": "srl 0xffffffff,0x2",
+      "expected": 1073741823
+    },
+    {
+      "description": "srl 0xffffffff,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "srl 0xffffffff,0x20",
+      "expected": 4294967295
+    },
+    {
+      "description": "srl 0xffffffff,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "srl 0xffffffff,0x80000000",
+      "expected": 4294967295
+    },
+    {
+      "description": "srl 0xffffffff,0xfffffffe",
+      "expected": 3
+    },
+    {
+      "description": "srl 0xffffffff,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sra 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x0,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x0,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x0,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x0,0x20",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x0,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x0,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x0,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x0,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1,0x0",
+      "expected": 1
+    },
+    {
+      "description": "sra 0x1,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1,0x20",
+      "expected": 1
+    },
+    {
+      "description": "sra 0x1,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1,0x80000000",
+      "expected": 1
+    },
+    {
+      "description": "sra 0x1,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x2,0x0",
+      "expected": 2
+    },
+    {
+      "description": "sra 0x2,0x1",
+      "expected": 1
+    },
+    {
+      "description": "sra 0x2,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x2,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x2,0x20",
+      "expected": 2
+    },
+    {
+      "description": "sra 0x2,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x2,0x80000000",
+      "expected": 2
+    },
+    {
+      "description": "sra 0x2,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x2,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1f,0x0",
+      "expected": 31
+    },
+    {
+      "description": "sra 0x1f,0x1",
+      "expected": 15
+    },
+    {
+      "description": "sra 0x1f,0x2",
+      "expected": 7
+    },
+    {
+      "description": "sra 0x1f,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1f,0x20",
+      "expected": 31
+    },
+    {
+      "description": "sra 0x1f,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1f,0x80000000",
+      "expected": 31
+    },
+    {
+      "description": "sra 0x1f,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x1f,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x20,0x0",
+      "expected": 32
+    },
+    {
+      "description": "sra 0x20,0x1",
+      "expected": 16
+    },
+    {
+      "description": "sra 0x20,0x2",
+      "expected": 8
+    },
+    {
+      "description": "sra 0x20,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x20,0x20",
+      "expected": 32
+    },
+    {
+      "description": "sra 0x20,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x20,0x80000000",
+      "expected": 32
+    },
+    {
+      "description": "sra 0x20,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x20,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x7fffffff,0x0",
+      "expected": 2147483647
+    },
+    {
+      "description": "sra 0x7fffffff,0x1",
+      "expected": 1073741823
+    },
+    {
+      "description": "sra 0x7fffffff,0x2",
+      "expected": 536870911
+    },
+    {
+      "description": "sra 0x7fffffff,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x7fffffff,0x20",
+      "expected": 2147483647
+    },
+    {
+      "description": "sra 0x7fffffff,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x7fffffff,0x80000000",
+      "expected": 2147483647
+    },
+    {
+      "description": "sra 0x7fffffff,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "sra 0x7fffffff,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sra 0x80000000,0x0",
+      "expected": 2147483648
+    },
+    {
+      "description": "sra 0x80000000,0x1",
+      "expected": 3221225472
+    },
+    {
+      "description": "sra 0x80000000,0x2",
+      "expected": 3758096384
+    },
+    {
+      "description": "sra 0x80000000,0x1f",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0x80000000,0x20",
+      "expected": 2147483648
+    },
+    {
+      "description": "sra 0x80000000,0x7fffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0x80000000,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "sra 0x80000000,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "sra 0x80000000,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xfffffffe,0x0",
+      "expected": 4294967294
+    },
+    {
+      "description": "sra 0xfffffffe,0x1",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xfffffffe,0x2",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xfffffffe,0x1f",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xfffffffe,0x20",
+      "expected": 4294967294
+    },
+    {
+      "description": "sra 0xfffffffe,0x7fffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xfffffffe,0x80000000",
+      "expected": 4294967294
+    },
+    {
+      "description": "sra 0xfffffffe,0xfffffffe",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xfffffffe,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xffffffff,0x0",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xffffffff,0x1",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xffffffff,0x2",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xffffffff,0x1f",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xffffffff,0x20",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xffffffff,0x7fffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xffffffff,0x80000000",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xffffffff,0xfffffffe",
+      "expected": 4294967295
+    },
+    {
+      "description": "sra 0xffffffff,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "slt 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x0,0x1",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x0,0x2",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x0,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x0,0x20",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x0,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x0,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x0,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x0,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1,0x0",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1,0x1",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1,0x2",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x1,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x1,0x20",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x1,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x1,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x2,0x0",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x2,0x1",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x2,0x2",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x2,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x2,0x20",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x2,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x2,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x2,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x2,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1f,0x0",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1f,0x1",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1f,0x2",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1f,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1f,0x20",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x1f,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x1f,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1f,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x1f,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x20,0x0",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x20,0x1",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x20,0x2",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x20,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x20,0x20",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x20,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x20,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x20,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x20,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x7fffffff,0x0",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x7fffffff,0x1",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x7fffffff,0x2",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x7fffffff,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x7fffffff,0x20",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x7fffffff,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x7fffffff,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x7fffffff,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x7fffffff,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x80000000,0x0",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x80000000,0x1",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x80000000,0x2",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x80000000,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x80000000,0x20",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x80000000,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x80000000,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "slt 0x80000000,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "slt 0x80000000,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xfffffffe,0x0",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xfffffffe,0x1",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xfffffffe,0x2",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xfffffffe,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xfffffffe,0x20",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xfffffffe,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xfffffffe,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "slt 0xfffffffe,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "slt 0xfffffffe,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xffffffff,0x0",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xffffffff,0x1",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xffffffff,0x2",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xffffffff,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xffffffff,0x20",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xffffffff,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "slt 0xffffffff,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "slt 0xffffffff,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "slt 0xffffffff,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x0,0x1",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x0,0x2",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x0,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x0,0x20",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x0,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x0,0x80000000",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x0,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x0,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x1,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x1,0x2",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1,0x20",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1,0x80000000",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x2,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x2,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x2,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x2,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x2,0x20",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x2,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x2,0x80000000",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x2,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x2,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1f,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x1f,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x1f,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x1f,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x1f,0x20",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1f,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1f,0x80000000",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1f,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x1f,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x20,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x20,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x20,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x20,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x20,0x20",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x20,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x20,0x80000000",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x20,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x20,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x7fffffff,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x7fffffff,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x7fffffff,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x7fffffff,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x7fffffff,0x20",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x7fffffff,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x7fffffff,0x80000000",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x7fffffff,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x7fffffff,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x80000000,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x80000000,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x80000000,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x80000000,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x80000000,0x20",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x80000000,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x80000000,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0x80000000,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0x80000000,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0xfffffffe,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xfffffffe,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xfffffffe,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xfffffffe,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xfffffffe,0x20",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xfffffffe,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xfffffffe,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xfffffffe,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xfffffffe,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "sltu 0xffffffff,0x0",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xffffffff,0x1",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xffffffff,0x2",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xffffffff,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xffffffff,0x20",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xffffffff,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xffffffff,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xffffffff,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "sltu 0xffffffff,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "xor 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "xor 0x0,0x1",
+      "expected": 1
+    },
+    {
+      "description": "xor 0x0,0x2",
+      "expected": 2
+    },
+    {
+      "description": "xor 0x0,0x1f",
+      "expected": 31
+    },
+    {
+      "description": "xor 0x0,0x20",
+      "expected": 32
+    },
+    {
+      "description": "xor 0x0,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "xor 0x0,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "xor 0x0,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "xor 0x0,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "xor 0x1,0x0",
+      "expected": 1
+    },
+    {
+      "description": "xor 0x1,0x1",
+      "expected": 0
+    },
+    {
+      "description": "xor 0x1,0x2",
+      "expected": 3
+    },
+    {
+      "description": "xor 0x1,0x1f",
+      "expected": 30
+    },
+    {
+      "description": "xor 0x1,0x20",
+      "expected": 33
+    },
+    {
+      "description": "xor 0x1,0x7fffffff",
+      "expected": 2147483646
+    },
+    {
+      "description": "xor 0x1,0x80000000",
+      "expected": 2147483649
+    },
+    {
+      "description": "xor 0x1,0xfffffffe",
+      "expected": 4294967295
+    },
+    {
+      "description": "xor 0x1,0xffffffff",
+      "expected": 4294967294
+    },
+    {
+      "description": "xor 0x2,0x0",
+      "expected": 2
+    },
+    {
+      "description": "xor 0x2,0x1",
+      "expected": 3
+    },
+    {
+      "description": "xor 0x2,0x2",
+      "expected": 0
+    },
+    {
+      "description": "xor 0x2,0x1f",
+      "expected": 29
+    },
+    {
+      "description": "xor 0x2,0x20",
+      "expected": 34
+    },
+    {
+      "description": "xor 0x2,0x7fffffff",
+      "expected": 2147483645
+    },
+    {
+      "description": "xor 0x2,0x80000000",
+      "expected": 2147483650
+    },
+    {
+      "description": "xor 0x2,0xfffffffe",
+      "expected": 4294967292
+    },
+    {
+      "description": "xor 0x2,0xffffffff",
+      "expected": 4294967293
+    },
+    {
+      "description": "xor 0x1f,0x0",
+      "expected": 31
+    },
+    {
+      "description": "xor 0x1f,0x1",
+      "expected": 30
+    },
+    {
+      "description": "xor 0x1f,0x2",
+      "expected": 29
+    },
+    {
+      "description": "xor 0x1f,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "xor 0x1f,0x20",
+      "expected": 63
+    },
+    {
+      "description": "xor 0x1f,0x7fffffff",
+      "expected": 2147483616
+    },
+    {
+      "description": "xor 0x1f,0x80000000",
+      "expected": 2147483679
+    },
+    {
+      "description": "xor 0x1f,0xfffffffe",
+      "expected": 4294967265
+    },
+    {
+      "description": "xor 0x1f,0xffffffff",
+      "expected": 4294967264
+    },
+    {
+      "description": "xor 0x20,0x0",
+      "expected": 32
+    },
+    {
+      "description": "xor 0x20,0x1",
+      "expected": 33
+    },
+    {
+      "description": "xor 0x20,0x2",
+      "expected": 34
+    },
+    {
+      "description": "xor 0x20,0x1f",
+      "expected": 63
+    },
+    {
+      "description": "xor 0x20,0x20",
+      "expected": 0
+    },
+    {
+      "description": "xor 0x20,0x7fffffff",
+      "expected": 2147483615
+    },
+    {
+      "description": "xor 0x20,0x80000000",
+      "expected": 2147483680
+    },
+    {
+      "description": "xor 0x20,0xfffffffe",
+      "expected": 4294967262
+    },
+    {
+      "description": "xor 0x20,0xffffffff",
+      "expected": 4294967263
+    },
+    {
+      "description": "xor 0x7fffffff,0x0",
+      "expected": 2147483647
+    },
+    {
+      "description": "xor 0x7fffffff,0x1",
+      "expected": 2147483646
+    },
+    {
+      "description": "xor 0x7fffffff,0x2",
+      "expected": 2147483645
+    },
+    {
+      "description": "xor 0x7fffffff,0x1f",
+      "expected": 2147483616
+    },
+    {
+      "description": "xor 0x7fffffff,0x20",
+      "expected": 2147483615
+    },
+    {
+      "description": "xor 0x7fffffff,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "xor 0x7fffffff,0x80000000",
+      "expected": 4294967295
+    },
+    {
+      "description": "xor 0x7fffffff,0xfffffffe",
+      "expected": 2147483649
+    },
+    {
+      "description": "xor 0x7fffffff,0xffffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "xor 0x80000000,0x0",
+      "expected": 2147483648
+    },
+    {
+      "description": "xor 0x80000000,0x1",
+      "expected": 2147483649
+    },
+    {
+      "description": "xor 0x80000000,0x2",
+      "expected": 2147483650
+    },
+    {
+      "description": "xor 0x80000000,0x1f",
+      "expected": 2147483679
+    },
+    {
+      "description": "xor 0x80000000,0x20",
+      "expected": 2147483680
+    },
+    {
+      "description": "xor 0x80000000,0x7fffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "xor 0x80000000,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "xor 0x80000000,0xfffffffe",
+      "expected": 2147483646
+    },
+    {
+      "description": "xor 0x80000000,0xffffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "xor 0xfffffffe,0x0",
+      "expected": 4294967294
+    },
+    {
+      "description": "xor 0xfffffffe,0x1",
+      "expected": 4294967295
+    },
+    {
+      "description": "xor 0xfffffffe,0x2",
+      "expected": 4294967292
+    },
+    {
+      "description": "xor 0xfffffffe,0x1f",
+      "expected": 4294967265
+    },
+    {
+      "description": "xor 0xfffffffe,0x20",
+      "expected": 4294967262
+    },
+    {
+      "description": "xor 0xfffffffe,0x7fffffff",
+      "expected": 2147483649
+    },
+    {
+      "description": "xor 0xfffffffe,0x80000000",
+      "expected": 2147483646
+    },
+    {
+      "description": "xor 0xfffffffe,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "xor 0xfffffffe,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "xor 0xffffffff,0x0",
+      "expected": 4294967295
+    },
+    {
+      "description": "xor 0xffffffff,0x1",
+      "expected": 4294967294
+    },
+    {
+      "description": "xor 0xffffffff,0x2",
+      "expected": 4294967293
+    },
+    {
+      "description": "xor 0xffffffff,0x1f",
+      "expected": 4294967264
+    },
+    {
+      "description": "xor 0xffffffff,0x20",
+      "expected": 4294967263
+    },
+    {
+      "description": "xor 0xffffffff,0x7fffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "xor 0xffffffff,0x80000000",
+      "expected": 2147483647
+    },
+    {
+      "description": "xor 0xffffffff,0xfffffffe",
+      "expected": 1
+    },
+    {
+      "description": "xor 0xffffffff,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "or 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "or 0x0,0x1",
+      "expected": 1
+    },
+    {
+      "description": "or 0x0,0x2",
+      "expected": 2
+    },
+    {
+      "description": "or 0x0,0x1f",
+      "expected": 31
+    },
+    {
+      "description": "or 0x0,0x20",
+      "expected": 32
+    },
+    {
+      "description": "or 0x0,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x0,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "or 0x0,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "or 0x0,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x1,0x0",
+      "expected": 1
+    },
+    {
+      "description": "or 0x1,0x1",
+      "expected": 1
+    },
+    {
+      "description": "or 0x1,0x2",
+      "expected": 3
+    },
+    {
+      "description": "or 0x1,0x1f",
+      "expected": 31
+    },
+    {
+      "description": "or 0x1,0x20",
+      "expected": 33
+    },
+    {
+      "description": "or 0x1,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x1,0x80000000",
+      "expected": 2147483649
+    },
+    {
+      "description": "or 0x1,0xfffffffe",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x1,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x2,0x0",
+      "expected": 2
+    },
+    {
+      "description": "or 0x2,0x1",
+      "expected": 3
+    },
+    {
+      "description": "or 0x2,0x2",
+      "expected": 2
+    },
+    {
+      "description": "or 0x2,0x1f",
+      "expected": 31
+    },
+    {
+      "description": "or 0x2,0x20",
+      "expected": 34
+    },
+    {
+      "description": "or 0x2,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x2,0x80000000",
+      "expected": 2147483650
+    },
+    {
+      "description": "or 0x2,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "or 0x2,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x1f,0x0",
+      "expected": 31
+    },
+    {
+      "description": "or 0x1f,0x1",
+      "expected": 31
+    },
+    {
+      "description": "or 0x1f,0x2",
+      "expected": 31
+    },
+    {
+      "description": "or 0x1f,0x1f",
+      "expected": 31
+    },
+    {
+      "description": "or 0x1f,0x20",
+      "expected": 63
+    },
+    {
+      "description": "or 0x1f,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x1f,0x80000000",
+      "expected": 2147483679
+    },
+    {
+      "description": "or 0x1f,0xfffffffe",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x1f,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x20,0x0",
+      "expected": 32
+    },
+    {
+      "description": "or 0x20,0x1",
+      "expected": 33
+    },
+    {
+      "description": "or 0x20,0x2",
+      "expected": 34
+    },
+    {
+      "description": "or 0x20,0x1f",
+      "expected": 63
+    },
+    {
+      "description": "or 0x20,0x20",
+      "expected": 32
+    },
+    {
+      "description": "or 0x20,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x20,0x80000000",
+      "expected": 2147483680
+    },
+    {
+      "description": "or 0x20,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "or 0x20,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x7fffffff,0x0",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x7fffffff,0x1",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x7fffffff,0x2",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x7fffffff,0x1f",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x7fffffff,0x20",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x7fffffff,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "or 0x7fffffff,0x80000000",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x7fffffff,0xfffffffe",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x7fffffff,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x80000000,0x0",
+      "expected": 2147483648
+    },
+    {
+      "description": "or 0x80000000,0x1",
+      "expected": 2147483649
+    },
+    {
+      "description": "or 0x80000000,0x2",
+      "expected": 2147483650
+    },
+    {
+      "description": "or 0x80000000,0x1f",
+      "expected": 2147483679
+    },
+    {
+      "description": "or 0x80000000,0x20",
+      "expected": 2147483680
+    },
+    {
+      "description": "or 0x80000000,0x7fffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0x80000000,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "or 0x80000000,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "or 0x80000000,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xfffffffe,0x0",
+      "expected": 4294967294
+    },
+    {
+      "description": "or 0xfffffffe,0x1",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xfffffffe,0x2",
+      "expected": 4294967294
+    },
+    {
+      "description": "or 0xfffffffe,0x1f",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xfffffffe,0x20",
+      "expected": 4294967294
+    },
+    {
+      "description": "or 0xfffffffe,0x7fffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xfffffffe,0x80000000",
+      "expected": 4294967294
+    },
+    {
+      "description": "or 0xfffffffe,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "or 0xfffffffe,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xffffffff,0x0",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xffffffff,0x1",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xffffffff,0x2",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xffffffff,0x1f",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xffffffff,0x20",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xffffffff,0x7fffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xffffffff,0x80000000",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xffffffff,0xfffffffe",
+      "expected": 4294967295
+    },
+    {
+      "description": "or 0xffffffff,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "and 0x0,0x0",
+      "expected": 0
+    },
+    {
+      "description": "and 0x0,0x1",
+      "expected": 0
+    },
+    {
+      "description": "and 0x0,0x2",
+      "expected": 0
+    },
+    {
+      "description": "and 0x0,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "and 0x0,0x20",
+      "expected": 0
+    },
+    {
+      "description": "and 0x0,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "and 0x0,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "and 0x0,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "and 0x0,0xffffffff",
+      "expected": 0
+    },
+    {
+      "description": "and 0x1,0x0",
+      "expected": 0
+    },
+    {
+      "description": "and 0x1,0x1",
+      "expected": 1
+    },
+    {
+      "description": "and 0x1,0x2",
+      "expected": 0
+    },
+    {
+      "description": "and 0x1,0x1f",
+      "expected": 1
+    },
+    {
+      "description": "and 0x1,0x20",
+      "expected": 0
+    },
+    {
+      "description": "and 0x1,0x7fffffff",
+      "expected": 1
+    },
+    {
+      "description": "and 0x1,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "and 0x1,0xfffffffe",
+      "expected": 0
+    },
+    {
+      "description": "and 0x1,0xffffffff",
+      "expected": 1
+    },
+    {
+      "description": "and 0x2,0x0",
+      "expected": 0
+    },
+    {
+      "description": "and 0x2,0x1",
+      "expected": 0
+    },
+    {
+      "description": "and 0x2,0x2",
+      "expected": 2
+    },
+    {
+      "description": "and 0x2,0x1f",
+      "expected": 2
+    },
+    {
+      "description": "and 0x2,0x20",
+      "expected": 0
+    },
+    {
+      "description": "and 0x2,0x7fffffff",
+      "expected": 2
+    },
+    {
+      "description": "and 0x2,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "and 0x2,0xfffffffe",
+      "expected": 2
+    },
+    {
+      "description": "and 0x2,0xffffffff",
+      "expected": 2
+    },
+    {
+      "description": "and 0x1f,0x0",
+      "expected": 0
+    },
+    {
+      "description": "and 0x1f,0x1",
+      "expected": 1
+    },
+    {
+      "description": "and 0x1f,0x2",
+      "expected": 2
+    },
+    {
+      "description": "and 0x1f,0x1f",
+      "expected": 31
+    },
+    {
+      "description": "and 0x1f,0x20",
+      "expected": 0
+    },
+    {
+      "description": "and 0x1f,0x7fffffff",
+      "expected": 31
+    },
+    {
+      "description": "and 0x1f,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "and 0x1f,0xfffffffe",
+      "expected": 30
+    },
+    {
+      "description": "and 0x1f,0xffffffff",
+      "expected": 31
+    },
+    {
+      "description": "and 0x20,0x0",
+      "expected": 0
+    },
+    {
+      "description": "and 0x20,0x1",
+      "expected": 0
+    },
+    {
+      "description": "and 0x20,0x2",
+      "expected": 0
+    },
+    {
+      "description": "and 0x20,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "and 0x20,0x20",
+      "expected": 32
+    },
+    {
+      "description": "and 0x20,0x7fffffff",
+      "expected": 32
+    },
+    {
+      "description": "and 0x20,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "and 0x20,0xfffffffe",
+      "expected": 32
+    },
+    {
+      "description": "and 0x20,0xffffffff",
+      "expected": 32
+    },
+    {
+      "description": "and 0x7fffffff,0x0",
+      "expected": 0
+    },
+    {
+      "description": "and 0x7fffffff,0x1",
+      "expected": 1
+    },
+    {
+      "description": "and 0x7fffffff,0x2",
+      "expected": 2
+    },
+    {
+      "description": "and 0x7fffffff,0x1f",
+      "expected": 31
+    },
+    {
+      "description": "and 0x7fffffff,0x20",
+      "expected": 32
+    },
+    {
+      "description": "and 0x7fffffff,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "and 0x7fffffff,0x80000000",
+      "expected": 0
+    },
+    {
+      "description": "and 0x7fffffff,0xfffffffe",
+      "expected": 2147483646
+    },
+    {
+      "description": "and 0x7fffffff,0xffffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "and 0x80000000,0x0",
+      "expected": 0
+    },
+    {
+      "description": "and 0x80000000,0x1",
+      "expected": 0
+    },
+    {
+      "description": "and 0x80000000,0x2",
+      "expected": 0
+    },
+    {
+      "description": "and 0x80000000,0x1f",
+      "expected": 0
+    },
+    {
+      "description": "and 0x80000000,0x20",
+      "expected": 0
+    },
+    {
+      "description": "and 0x80000000,0x7fffffff",
+      "expected": 0
+    },
+    {
+      "description": "and 0x80000000,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "and 0x80000000,0xfffffffe",
+      "expected": 2147483648
+    },
+    {
+      "description": "and 0x80000000,0xffffffff",
+      "expected": 2147483648
+    },
+    {
+      "description": "and 0xfffffffe,0x0",
+      "expected": 0
+    },
+    {
+      "description": "and 0xfffffffe,0x1",
+      "expected": 0
+    },
+    {
+      "description": "and 0xfffffffe,0x2",
+      "expected": 2
+    },
+    {
+      "description": "and 0xfffffffe,0x1f",
+      "expected": 30
+    },
+    {
+      "description": "and 0xfffffffe,0x20",
+      "expected": 32
+    },
+    {
+      "description": "and 0xfffffffe,0x7fffffff",
+      "expected": 2147483646
+    },
+    {
+      "description": "and 0xfffffffe,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "and 0xfffffffe,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "and 0xfffffffe,0xffffffff",
+      "expected": 4294967294
+    },
+    {
+      "description": "and 0xffffffff,0x0",
+      "expected": 0
+    },
+    {
+      "description": "and 0xffffffff,0x1",
+      "expected": 1
+    },
+    {
+      "description": "and 0xffffffff,0x2",
+      "expected": 2
+    },
+    {
+      "description": "and 0xffffffff,0x1f",
+      "expected": 31
+    },
+    {
+      "description": "and 0xffffffff,0x20",
+      "expected": 32
+    },
+    {
+      "description": "and 0xffffffff,0x7fffffff",
+      "expected": 2147483647
+    },
+    {
+      "description": "and 0xffffffff,0x80000000",
+      "expected": 2147483648
+    },
+    {
+      "description": "and 0xffffffff,0xfffffffe",
+      "expected": 4294967294
+    },
+    {
+      "description": "and 0xffffffff,0xffffffff",
+      "expected": 4294967295
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 391300
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2042837955
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 738197504
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2239758336
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2071421615
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1244998805
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1662764738
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2585957010
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 40247424
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 1610456902
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3292681645
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 816994741
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 1006632213
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 990
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967295
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 383651
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 927
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 14
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3598597673
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1647736975
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 140949288
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2582969240
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 340787200
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 1117802016
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 268435456
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1385292124
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2006581074
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1385901599
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3009076864
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2761206592
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2320322351
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3413751549
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1894285312
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3685309664
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1417270635
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1245663383
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1855529727
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3905238259
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2108748090
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 677904392
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 7
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 552645376
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3808394847
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3250207630
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3568653216
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2236062230
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3666572347
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 7887744
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3721803025
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 2
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 40092508
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 923845186
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1549795328
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967212
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967287
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2570501123
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2377882983
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 13821169
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 227854848
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3412735930
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 9441329
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1609470910
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294521421
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 71
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4294957934
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2550136832
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 847540232
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4252874751
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 313676647
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 4078
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 3424131841
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4227858373
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 3246522380
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 72402166
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 33603712
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1323042700
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2550798024
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2109681501
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3976715927
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 1034162464
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3458415585
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 22
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2151172901
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2667661672
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2599786838
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1289873408
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4210938983
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1279001807
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 452982719
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 916
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 36
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 526533930
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 3786220095
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1848447282
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2095185920
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294957780
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 38295112
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 2308
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3149913145
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 4066712113
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 178933888
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 107411802
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4026007518
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 241228
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 761297552
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3203362492
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294356651
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 940589060
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 372
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2238046596
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2559965183
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967291
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 2892
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 22
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 15
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 15152936
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 775985281
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 5638528
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 1789525346
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 3065114572
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3553275833
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 350616782
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1073741824
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 101
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3817803827
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 3909091328
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 501359308
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2684354560
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 97084128
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2393684864
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 334980413
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1931584330
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 4244125696
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 446614816
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4293221953
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3602862419
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 3439523496
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 19431693
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 208672780
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 36145145
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3606966008
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2834108471
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 4251070869
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2919219151
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1991957591
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 335676355
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3196055108
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 268538424
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1627407246
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1411721256
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4127173725
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 579380478
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967295
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967295
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2301627736
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2957019137
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1797625040
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 7062
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2286092338
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 2236703
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3436922125
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4145282923
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 436275593
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 155971299
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2453292032
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1979711488
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 17494
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1605201180
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 5
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 370407551
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 219304
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 9612582
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 1797849092
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3938950270
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 1506774764
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4134395583
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2556844160
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 979028399
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 143570997
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3892309979
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4290204653
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3961888383
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 4282698353
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 1600012270
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 1006641284
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 396699745
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 952
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 3816816640
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2458803935
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 485407025
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4208668670
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 323669166
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 541179906
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2555060236
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3211816959
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 4268602739
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1409928418
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2776653834
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1879048192
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1313300514
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 3399445095
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 4593749
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 1392506618
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3156878015
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3620525328
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4294668271
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2859220490
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1551765091
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4211062775
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2156951746
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2536668240
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4125560570
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3220897773
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3017345918
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2684354560
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967290
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 1837061
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3061372922
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 319823968
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2725792077
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 609356661
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2389704704
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 1347866568
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1777384229
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 3342762
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294245045
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 18
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 496181376
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3179200511
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2217254916
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 5454792
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3959404087
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2701131776
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 3896639765
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 2419461287
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 83517495
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1485018284
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2594816219
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1006506225
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294951956
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 6091549
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2139095018
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 74
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967240
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 236074368
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 4119134857
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967285
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 4141221357
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3170805731
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 652
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 4234907054
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2284670464
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 4189807104
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3153059774
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1486099038
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4073035193
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967294
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 1207822335
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3075833086
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2033188864
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1258731675
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294964351
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 3899197446
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 3221225472
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 302121001
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 385677239
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 58375510
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2247779830
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1758929564
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294965982
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4290707189
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1049472189
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2554716192
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 4034185728
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294052889
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4281289839
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1384504192
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3744855998
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2526150199
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294966799
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 181748738
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294963997
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294099933
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2104457717
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1513102890
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 3
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3274189170
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3231258642
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 479
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294839134
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 61440
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3335061837
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 194002037
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 403832832
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294006906
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2245636575
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 1442775033
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2549653335
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 59511
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2691473053
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3866848192
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3204362009
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 792470663
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2885681150
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 2415919104
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 4243570688
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 33554509
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 4139036928
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2284152132
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3856637773
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 501360640
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 1522063579
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4273634867
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1913945024
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 163154
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 171968928
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3121770440
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3185008383
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294965831
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2741267696
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 310796800
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2357172143
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 1108873612
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4219430910
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 180554534
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2263951326
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 1633293394
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2604270915
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 3724447966
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2559552699
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 383911134
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1763391069
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294964119
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 540977640
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 4277979663
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3264853336
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 5291003
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2844404501
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 132140405
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 4294967198
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2966197344
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4291786230
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 1035891551
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2076048238
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 4067885056
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3169691279
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 438459992
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 90
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 2542008319
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 37095
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 14583407
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 221605232
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 3599624327
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3868484229
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 235714032
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2568682606
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3975813613
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 3539842
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1970071809
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 310397588
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 215289
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1763127296
+    },
+    {
+      "description": "random slt rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 3254589440
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1073741824
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3244414114
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 2271990282
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 46517091
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 19717933
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 3796660224
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 1090524448
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 3399418767
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4210778078
+    },
+    {
+      "description": "random or rd=rs1",
+      "expected": 4226805215
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1948939516
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 3338665984
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 3023904366
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2960230749
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1641452130
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 514342
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 86248
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 1115566080
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 16134
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 918295358
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 14921409
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2823844386
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 114
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 1
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 1312991205
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 1056979070
+    },
+    {
+      "description": "random add rd=rs1",
+      "expected": 2450642115
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 1745421602
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 14
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 1468
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 1485675139
+    },
+    {
+      "description": "random sra rd=rs1",
+      "expected": 9319
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 994701864
+    },
+    {
+      "description": "random xor rd=rs1",
+      "expected": 1106004090
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 726748183
+    },
+    {
+      "description": "random and rd=rs1",
+      "expected": 2231567366
+    },
+    {
+      "description": "random sub rd=rs1",
+      "expected": 2311765127
+    },
+    {
+      "description": "random sltu rd=rs1",
+      "expected": 0
+    },
+    {
+      "description": "random srl rd=rs1",
+      "expected": 140
+    },
+    {
+      "description": "random sll rd=rs1",
+      "expected": 146735104
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294965248
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294965248
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294965248
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 0
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 0
+    },
+    {
+      "description": "ori immediate",
+      "expected": 0
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 1
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 1
+    },
+    {
+      "description": "ori immediate",
+      "expected": 1
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2047
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2047
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2047
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294965249
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294965249
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294965249
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 0
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294967294
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 1
+    },
+    {
+      "description": "addi immediate",
+      "expected": 1
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 1
+    },
+    {
+      "description": "ori immediate",
+      "expected": 1
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 0
+    },
+    {
+      "description": "ori immediate",
+      "expected": 1
+    },
+    {
+      "description": "andi immediate",
+      "expected": 1
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2048
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2046
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2047
+    },
+    {
+      "description": "andi immediate",
+      "expected": 1
+    },
+    {
+      "description": "slli shamt",
+      "expected": 1
+    },
+    {
+      "description": "srli shamt",
+      "expected": 1
+    },
+    {
+      "description": "srai shamt",
+      "expected": 1
+    },
+    {
+      "description": "slli shamt",
+      "expected": 2
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 32768
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 2147483648
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294965250
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294965250
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294965250
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 1
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294967293
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 2
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 3
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 3
+    },
+    {
+      "description": "ori immediate",
+      "expected": 3
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2049
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2045
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2047
+    },
+    {
+      "description": "andi immediate",
+      "expected": 2
+    },
+    {
+      "description": "slli shamt",
+      "expected": 2
+    },
+    {
+      "description": "srli shamt",
+      "expected": 2
+    },
+    {
+      "description": "srai shamt",
+      "expected": 2
+    },
+    {
+      "description": "slli shamt",
+      "expected": 4
+    },
+    {
+      "description": "srli shamt",
+      "expected": 1
+    },
+    {
+      "description": "srai shamt",
+      "expected": 1
+    },
+    {
+      "description": "slli shamt",
+      "expected": 65536
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294965279
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294965279
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294965279
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 30
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294967264
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 31
+    },
+    {
+      "description": "addi immediate",
+      "expected": 31
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 31
+    },
+    {
+      "description": "ori immediate",
+      "expected": 31
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 32
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 30
+    },
+    {
+      "description": "ori immediate",
+      "expected": 31
+    },
+    {
+      "description": "andi immediate",
+      "expected": 1
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2078
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2016
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2047
+    },
+    {
+      "description": "andi immediate",
+      "expected": 31
+    },
+    {
+      "description": "slli shamt",
+      "expected": 31
+    },
+    {
+      "description": "srli shamt",
+      "expected": 31
+    },
+    {
+      "description": "srai shamt",
+      "expected": 31
+    },
+    {
+      "description": "slli shamt",
+      "expected": 62
+    },
+    {
+      "description": "srli shamt",
+      "expected": 15
+    },
+    {
+      "description": "srai shamt",
+      "expected": 15
+    },
+    {
+      "description": "slli shamt",
+      "expected": 1015808
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 2147483648
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294965280
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294965280
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294965280
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 31
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294967263
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 32
+    },
+    {
+      "description": "addi immediate",
+      "expected": 32
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 32
+    },
+    {
+      "description": "ori immediate",
+      "expected": 32
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 33
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 33
+    },
+    {
+      "description": "ori immediate",
+      "expected": 33
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2079
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2015
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2047
+    },
+    {
+      "description": "andi immediate",
+      "expected": 32
+    },
+    {
+      "description": "slli shamt",
+      "expected": 32
+    },
+    {
+      "description": "srli shamt",
+      "expected": 32
+    },
+    {
+      "description": "srai shamt",
+      "expected": 32
+    },
+    {
+      "description": "slli shamt",
+      "expected": 64
+    },
+    {
+      "description": "srli shamt",
+      "expected": 16
+    },
+    {
+      "description": "srai shamt",
+      "expected": 16
+    },
+    {
+      "description": "slli shamt",
+      "expected": 1048576
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147481599
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147485695
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 2147481600
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147483646
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147483648
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 2147483647
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147483647
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147483647
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2147483647
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147483648
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147483646
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2147483647
+    },
+    {
+      "description": "andi immediate",
+      "expected": 1
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147485694
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147481600
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2147483647
+    },
+    {
+      "description": "andi immediate",
+      "expected": 2047
+    },
+    {
+      "description": "slli shamt",
+      "expected": 2147483647
+    },
+    {
+      "description": "srli shamt",
+      "expected": 2147483647
+    },
+    {
+      "description": "srai shamt",
+      "expected": 2147483647
+    },
+    {
+      "description": "slli shamt",
+      "expected": 4294967294
+    },
+    {
+      "description": "srli shamt",
+      "expected": 1073741823
+    },
+    {
+      "description": "srai shamt",
+      "expected": 1073741823
+    },
+    {
+      "description": "slli shamt",
+      "expected": 4294934528
+    },
+    {
+      "description": "srli shamt",
+      "expected": 65535
+    },
+    {
+      "description": "srai shamt",
+      "expected": 65535
+    },
+    {
+      "description": "slli shamt",
+      "expected": 2147483648
+    },
+    {
+      "description": "srli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srai shamt",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147481600
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147481600
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294965248
+    },
+    {
+      "description": "andi immediate",
+      "expected": 2147483648
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147483647
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147483647
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 2147483648
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147483648
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147483648
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2147483648
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147483649
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147483649
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2147483649
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2147485695
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2147485695
+    },
+    {
+      "description": "ori immediate",
+      "expected": 2147485695
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "slli shamt",
+      "expected": 2147483648
+    },
+    {
+      "description": "srli shamt",
+      "expected": 2147483648
+    },
+    {
+      "description": "srai shamt",
+      "expected": 2147483648
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 1073741824
+    },
+    {
+      "description": "srai shamt",
+      "expected": 3221225472
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 65536
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294901760
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 1
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294965246
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2046
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967294
+    },
+    {
+      "description": "andi immediate",
+      "expected": 4294965248
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294967293
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 1
+    },
+    {
+      "description": "xori immediate",
+      "expected": 1
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 4294967294
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294967294
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294967294
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967294
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2045
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294965249
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 2046
+    },
+    {
+      "description": "slli shamt",
+      "expected": 4294967294
+    },
+    {
+      "description": "srli shamt",
+      "expected": 4294967294
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294967294
+    },
+    {
+      "description": "slli shamt",
+      "expected": 4294967292
+    },
+    {
+      "description": "srli shamt",
+      "expected": 2147483647
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "slli shamt",
+      "expected": 4294901760
+    },
+    {
+      "description": "srli shamt",
+      "expected": 131071
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "slli shamt",
+      "expected": 0
+    },
+    {
+      "description": "srli shamt",
+      "expected": 1
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294965247
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 2047
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 4294965248
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294967294
+    },
+    {
+      "description": "slti immediate",
+      "expected": 0
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 0
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "addi immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 0
+    },
+    {
+      "description": "addi immediate",
+      "expected": 0
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294967294
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 1
+    },
+    {
+      "description": "addi immediate",
+      "expected": 2046
+    },
+    {
+      "description": "slti immediate",
+      "expected": 1
+    },
+    {
+      "description": "sltiu immediate",
+      "expected": 0
+    },
+    {
+      "description": "xori immediate",
+      "expected": 4294965248
+    },
+    {
+      "description": "ori immediate",
+      "expected": 4294967295
+    },
+    {
+      "description": "andi immediate",
+      "expected": 2047
+    },
+    {
+      "description": "slli shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "srli shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "slli shamt",
+      "expected": 4294967294
+    },
+    {
+      "description": "srli shamt",
+      "expected": 2147483647
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "slli shamt",
+      "expected": 4294934528
+    },
+    {
+      "description": "srli shamt",
+      "expected": 131071
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "slli shamt",
+      "expected": 2147483648
+    },
+    {
+      "description": "srli shamt",
+      "expected": 1
+    },
+    {
+      "description": "srai shamt",
+      "expected": 4294967295
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 73
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 146
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 219
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 292
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 365
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 438
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 584
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 657
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 803
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 876
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 949
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 1022
+    },
+    {
+      "description": "all accessible registers",
+      "expected": 1095
+    },
+    {
+      "description": "x0 stays zero",
+      "expected": 0
+    },
+    {
+      "description": "LUI",
+      "expected": 2882396160
+    },
+    {
+      "description": "beq direction",
+      "expected": 1
+    },
+    {
+      "description": "beq direction",
+      "expected": 0
+    },
+    {
+      "description": "beq direction",
+      "expected": 0
+    },
+    {
+      "description": "beq direction",
+      "expected": 0
+    },
+    {
+      "description": "beq direction",
+      "expected": 0
+    },
+    {
+      "description": "bne direction",
+      "expected": 0
+    },
+    {
+      "description": "bne direction",
+      "expected": 1
+    },
+    {
+      "description": "bne direction",
+      "expected": 1
+    },
+    {
+      "description": "bne direction",
+      "expected": 1
+    },
+    {
+      "description": "bne direction",
+      "expected": 1
+    },
+    {
+      "description": "blt direction",
+      "expected": 0
+    },
+    {
+      "description": "blt direction",
+      "expected": 1
+    },
+    {
+      "description": "blt direction",
+      "expected": 0
+    },
+    {
+      "description": "blt direction",
+      "expected": 1
+    },
+    {
+      "description": "blt direction",
+      "expected": 1
+    },
+    {
+      "description": "bge direction",
+      "expected": 1
+    },
+    {
+      "description": "bge direction",
+      "expected": 0
+    },
+    {
+      "description": "bge direction",
+      "expected": 1
+    },
+    {
+      "description": "bge direction",
+      "expected": 0
+    },
+    {
+      "description": "bge direction",
+      "expected": 0
+    },
+    {
+      "description": "bltu direction",
+      "expected": 0
+    },
+    {
+      "description": "bltu direction",
+      "expected": 1
+    },
+    {
+      "description": "bltu direction",
+      "expected": 0
+    },
+    {
+      "description": "bltu direction",
+      "expected": 0
+    },
+    {
+      "description": "bltu direction",
+      "expected": 0
+    },
+    {
+      "description": "bgeu direction",
+      "expected": 1
+    },
+    {
+      "description": "bgeu direction",
+      "expected": 0
+    },
+    {
+      "description": "bgeu direction",
+      "expected": 1
+    },
+    {
+      "description": "bgeu direction",
+      "expected": 1
+    },
+    {
+      "description": "bgeu direction",
+      "expected": 1
+    },
+    {
+      "description": "backward loop",
+      "expected": 9
+    },
+    {
+      "description": "lb extension",
+      "expected": 1
+    },
+    {
+      "description": "lb extension",
+      "expected": 127
+    },
+    {
+      "description": "lb extension",
+      "expected": 4294967295
+    },
+    {
+      "description": "lb extension",
+      "expected": 4294967168
+    },
+    {
+      "description": "lbu extension",
+      "expected": 255
+    },
+    {
+      "description": "lh extension",
+      "expected": 32513
+    },
+    {
+      "description": "lh extension",
+      "expected": 4294934783
+    },
+    {
+      "description": "lhu extension",
+      "expected": 33023
+    },
+    {
+      "description": "lw extension",
+      "expected": 2164227841
+    },
+    {
+      "description": "SB preserves other lanes",
+      "expected": 2164217089
+    },
+    {
+      "description": "SH preserves other lanes",
+      "expected": 287462657
+    },
+    {
+      "description": "last RAM byte",
+      "expected": 90
+    }
+  ]
+}

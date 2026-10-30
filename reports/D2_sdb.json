@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "interactive_cases": [
+    {
+      "name": "steps",
+      "status": "PASS",
+      "log": "artifacts/D2/sdb/steps",
+      "commands_sha256": "73191abf8b91683a9adb79178fb214f22f1b5dd58829c6a3593faa82512b1304",
+      "elapsed_seconds": 0.163
+    },
+    {
+      "name": "watch",
+      "status": "PASS",
+      "log": "artifacts/D2/sdb/watch",
+      "commands_sha256": "05a832e089decc952e2a0d452be95a141450200c16edff554d2e09782f8f7d1e",
+      "elapsed_seconds": 0.147
+    },
+    {
+      "name": "bad",
+      "status": "PASS",
+      "log": "artifacts/D2/sdb/bad",
+      "commands_sha256": "102d4f592988c4011e6575a21407ebc8edb52491d69113b34b436bfbb8958af0",
+      "elapsed_seconds": 0.192
+    },
+    {
+      "name": "pool",
+      "status": "PASS",
+      "log": "artifacts/D2/sdb/pool",
+      "commands_sha256": "de3e92b2389fda3eff7aec644e91c846103a8f5e350b9d16b9012169b54d5b35",
+      "elapsed_seconds": 0.208
+    },
+    {
+      "name": "watch_error",
+      "status": "PASS",
+      "log": "artifacts/D2/sdb/watch_error",
+      "commands_sha256": "bfcbb0232b9685075fdb21134d33fdd1e6ec362c19dc1c08ba25ffbfae2c50d8",
+      "elapsed_seconds": 0.096
+    }
+  ],
+  "expression_evidence": "reports/D2_expression.json",
+  "sanitizer": "Actual NEMU built with AddressSanitizer; all scripted command sessions clean including leak checks. Debugger core also tested with ASan+UBSan.",
+  "source_line_counts": {
+    "original": {
+      "files": 114,
+      "lines": 17516,
+      "nonblank_lines": 15301
+    },
+    "PA1": {
+      "files": 116,
+      "lines": 17487,
+      "nonblank_lines": 15349
+    },
+    "delta_lines": -29,
+    "delta_nonblank": 48,
+    "scope": "all authored/framework .c/.h below NEMU, excluding .git/build/repo/generated/config; same exclusions on baseline"
+  },
+  "frozen_snapshot": "D/D2/snapshot/nemu-pa1.tar.gz",
+  "snapshot_sha256": "8fe4bc769d5b1e7ff7e1ec9e29e4b90c5efedf7c63b82cbef5a6ea5116290532",
+  "official_submission": "EXCLUDED_SCOPE",
+  "instruction_scope": "Original PA1 four-instruction scaffold; no RV32IM completion claim yet."
+}

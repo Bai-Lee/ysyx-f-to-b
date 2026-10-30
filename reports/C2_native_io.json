@@ -1,0 +1,442 @@
+{
+  "status": "PASS_BOUNDED_GUI_AND_CONTROLS",
+  "screensaver_core_cases": 7744,
+  "wrong_blend_rejected": true,
+  "runs": [
+    {
+      "status": "PASS",
+      "case": "solid",
+      "executable_sha256": "24ab5be33e2d2deaf75b43fcdc0d12933a6102f602ec5ae3c35b97cd4dd1d726",
+      "observations": {
+        "logical_size": [
+          400,
+          300
+        ],
+        "physical_capture_size": [
+          800,
+          600
+        ],
+        "all_pixels_blue": true
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/c2-native/screensaver/build/screensaver-native.elf"
+        ],
+        "mainargs": "solid-audit",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 3.212419780999994,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291470"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/native/solid/session/blue.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "key",
+              "Escape"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "program Escape path"
+      },
+      "stdout_sha256": "e4c5f46e0ad977285eaa1c64268448a9f397c3f1dd65ec66066f3d5c82096ef7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "images": [
+        {
+          "path": "artifacts/C2/native/solid/session/blue.png",
+          "sha256": "f9cdcba32ac916e1bf7bb85d4c022ece786219b6a32ae33817e3e20561577ce5"
+        }
+      ]
+    },
+    {
+      "status": "PASS",
+      "case": "gradient",
+      "executable_sha256": "24ab5be33e2d2deaf75b43fcdc0d12933a6102f602ec5ae3c35b97cd4dd1d726",
+      "observations": {
+        "frames": 316,
+        "normal_median_us": 33333,
+        "held_median_us": 8333.0,
+        "measured_rate_ratio": 4.000120004800192,
+        "multi_key_release_correct": true,
+        "endpoint_seen": true
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/c2-native/screensaver/build/screensaver-native.elf"
+        ],
+        "mainargs": "audit",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 6.343701535999969,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291470"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/native/gradient/session/normal.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keydown",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/native/gradient/session/accelerated.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keydown",
+              "Left"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keyup",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keyup",
+              "Left"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/native/gradient/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "key",
+              "Escape"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "program Escape path"
+      },
+      "stdout_sha256": "99c9ce4f1f2404bc59e53f9b8992301c002dd4c21f5e2260cfef944747e315dc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "images": [
+        {
+          "path": "artifacts/C2/native/gradient/session/accelerated.png",
+          "sha256": "1d3fecaa78b76b8014ed0b12da8136128b1a6ce173b9c5be9664484e240607e6"
+        },
+        {
+          "path": "artifacts/C2/native/gradient/session/normal.png",
+          "sha256": "b86c2fd10790a955b40060b0b4bbea6998a285faecdcb5fb5841667aa4bbcf23"
+        },
+        {
+          "path": "artifacts/C2/native/gradient/session/released.png",
+          "sha256": "6f770d136e2db10712efe565988f75a92f6ada88431a023fffc44f7eac45a044"
+        }
+      ]
+    },
+    {
+      "status": "PASS",
+      "case": "timer",
+      "executable_sha256": "6ddd268170d0e25d2bb53cc2669a0aa2f8f88f4034ee83958301a902f3878423",
+      "observations": {
+        "observed_seconds": [
+          1,
+          2,
+          3
+        ],
+        "scope": "Infinite official app, bounded observation followed by normal SDL close."
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/c2-native/am-tests/build/amtest-native.elf"
+        ],
+        "mainargs": "t",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 4.863223484000002,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291470"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/native/timer/session/timer_window.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "stdout_sha256": "f9c47c87134668f1eafa532268314d3b4e26fbb57e34954a4034efd6b1950925",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "images": [
+        {
+          "path": "artifacts/C2/native/timer/session/timer_window.png",
+          "sha256": "87a0d994554eccad55159f2bd5129052f68269130a657e4e3ae399d129fa3c65"
+        }
+      ]
+    },
+    {
+      "status": "PASS",
+      "case": "keyboard",
+      "executable_sha256": "6ddd268170d0e25d2bb53cc2669a0aa2f8f88f4034ee83958301a902f3878423",
+      "observations": {
+        "events": [
+          [
+            "J",
+            "49",
+            "DOWN"
+          ],
+          [
+            "J",
+            "49",
+            "UP"
+          ],
+          [
+            "LEFT",
+            "75",
+            "DOWN"
+          ],
+          [
+            "LEFT",
+            "75",
+            "UP"
+          ]
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/c2-native/am-tests/build/amtest-native.elf"
+        ],
+        "mainargs": "k",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 1.7226495360000058,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291470"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keydown",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keyup",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keydown",
+              "Left"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keyup",
+              "Left"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "stdout_sha256": "be3514f53bbe5f38456fb11f13bf22ea41524f1d8d88023f77d3e430a68e5e16",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "images": []
+    },
+    {
+      "status": "PASS",
+      "case": "video",
+      "executable_sha256": "6ddd268170d0e25d2bb53cc2669a0aa2f8f88f4034ee83958301a902f3878423",
+      "observations": {
+        "changed_pixels": 442368,
+        "unique_colors": 256
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/c2-native/am-tests/build/amtest-native.elf"
+        ],
+        "mainargs": "v",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 3.2042038259999686,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291470"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/native/video/session/frame1.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/native/video/session/frame2.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "stdout_sha256": "08131197470f9a95b7aa8f4a2e33745d7f7cb28d35ba636f8b7aa39bcee4b628",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "images": [
+        {
+          "path": "artifacts/C2/native/video/session/frame1.png",
+          "sha256": "f23f4e89c3f195b47d6a760d493d734333b8c9c06c4e2373886442a1dfb6a5aa"
+        },
+        {
+          "path": "artifacts/C2/native/video/session/frame2.png",
+          "sha256": "b184fe472efd60b8d4873d5e1f23e63ffb5503708ebd2eda71a5a8521c58094c"
+        }
+      ]
+    }
+  ],
+  "scope": "Unchanged official native t/k/v; authored 400x300 screensaver real SDL display, keyboard acceleration/release and Escape termination. Isolated Xvfb; no claim of physical monitor protection or every keyboard layout."
+}

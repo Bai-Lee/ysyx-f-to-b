@@ -1,0 +1,30 @@
+{
+  "status": "PASS_FOUR_STATE_AND_CYCLE_CONTRACT",
+  "rows": [
+    {
+      "stage": 1,
+      "mutant": false,
+      "status": "PASS",
+      "stdout": "VCD info: dumpfile /workspace/projects/ysyx_f_to_b/C/C4/results/stage1.vcd opened for output.\nRETIRE stage=1 ordinal=1 cycle=2 pc=80000000 inst=800102b7\nRETIRE stage=1 ordinal=2 cycle=4 pc=80000004 inst=00100093\nRETIRE stage=1 ordinal=3 cycle=6 pc=80000008 inst=0012a023\nRETIRE stage=1 ordinal=4 cycle=8 pc=8000000c inst=00028103\nRETIRE stage=1 ordinal=5 cycle=10 pc=80000010 inst=00000513\nRETIRE stage=1 ordinal=6 cycle=12 pc=80000014 inst=00100073\nSIMPLE_CPU_PASS stage=1 cycles=12\n/workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/simple_cpu_tb.sv:65: $finish called at 136000 (1ps)\n",
+      "wave": "C/C4/results/stage1.vcd",
+      "wave_sha256": "250f25e4509edfcc4339e5182462273ab5f31e7cb1615dc8dc67f65a6148cd16"
+    },
+    {
+      "stage": 2,
+      "mutant": false,
+      "status": "PASS",
+      "stdout": "VCD info: dumpfile /workspace/projects/ysyx_f_to_b/C/C4/results/stage2.vcd opened for output.\nRETIRE stage=2 ordinal=1 cycle=2 pc=80000000 inst=800102b7\nRETIRE stage=2 ordinal=2 cycle=4 pc=80000004 inst=00100093\nRETIRE stage=2 ordinal=3 cycle=7 pc=80000008 inst=0012a023\nRETIRE stage=2 ordinal=4 cycle=10 pc=8000000c inst=00028103\nRETIRE stage=2 ordinal=5 cycle=12 pc=80000010 inst=00000513\nRETIRE stage=2 ordinal=6 cycle=14 pc=80000014 inst=00100073\nSIMPLE_CPU_PASS stage=2 cycles=14\n/workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/simple_cpu_tb.sv:65: $finish called at 156000 (1ps)\n",
+      "wave": "C/C4/results/stage2.vcd",
+      "wave_sha256": "4b9dda5c26667eb53d3e8cdaa0877c47f6ae9c846c7b3181ea5bd174e6792868"
+    },
+    {
+      "stage": 2,
+      "mutant": true,
+      "status": "PASS_REJECTED",
+      "stdout": "VCD info: dumpfile /workspace/projects/ysyx_f_to_b/C/C4/results/stage2-mutant.vcd opened for output.\nRETIRE stage=2 ordinal=1 cycle=2 pc=80000000 inst=800102b7\nFATAL: /workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/simple_cpu_tb.sv:57: REGISTER_MISMATCH x1\n       Time: 56000  Scope: simple_cpu_tb\n",
+      "wave": "C/C4/results/stage2-mutant.vcd",
+      "wave_sha256": "43aed455e5f6d6bf49350bbff0e8c28df119fa8727a73f81bf08d161dad8de7b"
+    }
+  ],
+  "scope": "Independent ROM/constants, exact per-instruction 2-cycle stage1 and 2/3-cycle stage2, stable architectural state during waits, real wrong-ADDI RTL rejected. Zero-delay functional VCD, not SDF or silicon timing."
+}

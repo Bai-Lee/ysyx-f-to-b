@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "name": "positive",
+      "status": "PASS",
+      "expected_exit": 0,
+      "limit_MiB": 160,
+      "peak_pss_bytes": 82335744,
+      "evidence": "artifacts/C/parallel-budget/positive"
+    },
+    {
+      "name": "aggregate-over-budget",
+      "status": "PASS",
+      "expected_exit": 125,
+      "limit_MiB": 48,
+      "peak_pss_bytes": 82350080,
+      "evidence": "artifacts/C/parallel-budget/aggregate-over-budget"
+    }
+  ],
+  "scope": "Two actual child allocators each below48MiB together exceed48MiB; the whole shared process group is stopped. A160MiB aggregate budget accepts both. No multi-GiB allocation used just to test the guard."
+}

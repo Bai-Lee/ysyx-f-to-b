@@ -1,0 +1,682 @@
+{
+  "creator": "Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)",
+  "modules": {
+    "alu_shared": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:13.1-26.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9 ]
+        },
+        "op": {
+          "direction": "input",
+          "bits": [ 10, 11, 12 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 13, 14, 15, 16 ]
+        }
+      },
+      "cells": {
+        "$add$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15$12": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15.16-15.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, "0" ],
+            "B": [ 17, 18, 19, 20, "0" ],
+            "Y": [ 21, 22, 23, 24, 25 ]
+          }
+        },
+        "$add$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15$13": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15.16-15.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 21, 22, 23, 24, 25 ],
+            "B": [ 26, "0", "0", "0", "0" ],
+            "Y": [ 27, 28, 29, 30, 31 ]
+          }
+        },
+        "$logic_not$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:19$17": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:19.11-19.18"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$ne$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:14$10": {
+          "hide_name": 1,
+          "type": "$reduce_bool",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:14.16-14.21"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$ne$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:16$14": {
+          "hide_name": 1,
+          "type": "$ne",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:16.19-16.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 9 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$procmux$22": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000111",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:23.25-23.25|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, "0", "0", "0", 32, "0", "0", "0", 27, 28, 29, 30 ],
+            "S": [ 51, 52, 53, 54, 55, 56, 57 ],
+            "Y": [ 13, 14, 15, 16 ]
+          }
+        },
+        "$procmux$23_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:23.25-23.25|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12 ],
+            "B": [ "1", "1", "1" ],
+            "Y": [ 51 ]
+          }
+        },
+        "$procmux$24_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:22.15-22.15|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 52 ]
+          }
+        },
+        "$procmux$25_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:21.15-21.15|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 53 ]
+          }
+        },
+        "$procmux$26_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:20.24-20.24|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 54 ]
+          }
+        },
+        "$procmux$27_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:19.20-19.20|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 55 ]
+          }
+        },
+        "$procmux$28_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:18.16-18.16|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 56 ]
+          }
+        },
+        "$procmux$29_ANY": {
+          "hide_name": 1,
+          "type": "$reduce_or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.18-17.18|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 58, 59 ],
+            "Y": [ 57 ]
+          }
+        },
+        "$procmux$29_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.18-17.18|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12 ],
+            "Y": [ 58 ]
+          }
+        },
+        "$procmux$29_CMP1": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.18-17.18|/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:17.10-25.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 59 ]
+          }
+        },
+        "$shl$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:21$18": {
+          "hide_name": 1,
+          "type": "$shl",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:21.5-21.14"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5 ],
+            "B": [ 6, 7 ],
+            "Y": [ 46, 47, 48, 49 ]
+          }
+        },
+        "$shr$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:22$19": {
+          "hide_name": 1,
+          "type": "$shr",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:22.5-22.14"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5 ],
+            "B": [ 6, 7 ],
+            "Y": [ 42, 43, 44, 45 ]
+          }
+        },
+        "$sshr$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:23$20": {
+          "hide_name": 1,
+          "type": "$sshr",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:23.5-23.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5 ],
+            "B": [ 6, 7 ],
+            "Y": [ 38, 39, 40, 41 ]
+          }
+        },
+        "$ternary$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:16$15": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:16.18-16.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 5 ],
+            "S": [ 33 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$xor$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15$11": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15.32-15.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7, 8, 9 ],
+            "B": [ 26, 26, 26, 26 ],
+            "Y": [ 17, 18, 19, 20 ]
+          }
+        },
+        "$xor$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:24$21": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:24.5-24.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5 ],
+            "B": [ 6, 7, 8, 9 ],
+            "Y": [ 34, 35, 36, 37 ]
+          }
+        }
+      },
+      "netnames": {
+        "$add$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15$12_Y": {
+          "hide_name": 1,
+          "bits": [ 21, 22, 23, 24, 25 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15.16-15.49"
+          }
+        },
+        "$logic_not$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:19$17_Y": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:19.11-19.18"
+          }
+        },
+        "$ne$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:16$14_Y": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:16.19-16.29"
+          }
+        },
+        "$procmux$23_CMP": {
+          "hide_name": 1,
+          "bits": [ 51 ],
+          "attributes": {
+          }
+        },
+        "$procmux$24_CMP": {
+          "hide_name": 1,
+          "bits": [ 52 ],
+          "attributes": {
+          }
+        },
+        "$procmux$25_CMP": {
+          "hide_name": 1,
+          "bits": [ 53 ],
+          "attributes": {
+          }
+        },
+        "$procmux$26_CMP": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+          }
+        },
+        "$procmux$27_CMP": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+          }
+        },
+        "$procmux$28_CMP": {
+          "hide_name": 1,
+          "bits": [ 56 ],
+          "attributes": {
+          }
+        },
+        "$procmux$29_CMP": {
+          "hide_name": 1,
+          "bits": [ 58, 59 ],
+          "attributes": {
+          }
+        },
+        "$procmux$29_CTRL": {
+          "hide_name": 1,
+          "bits": [ 57 ],
+          "attributes": {
+          }
+        },
+        "$shl$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:21$18_Y": {
+          "hide_name": 1,
+          "bits": [ 46, 47, 48, 49 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:21.5-21.14"
+          }
+        },
+        "$shr$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:22$19_Y": {
+          "hide_name": 1,
+          "bits": [ 42, 43, 44, 45 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:22.5-22.14"
+          }
+        },
+        "$sshr$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:23$20_Y": {
+          "hide_name": 1,
+          "bits": [ 38, 39, 40, 41 ],
+          "signed": 1,
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:23.5-23.24"
+          }
+        },
+        "$xor$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15$11_Y": {
+          "hide_name": 1,
+          "bits": [ 17, 18, 19, 20 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15.32-15.47"
+          }
+        },
+        "$xor$/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:24$21_Y": {
+          "hide_name": 1,
+          "bits": [ 34, 35, 36, 37 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:24.5-24.8"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:13.31-13.32"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:13.33-13.34"
+          }
+        },
+        "op": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:13.47-13.49"
+          }
+        },
+        "signed_less": {
+          "hide_name": 0,
+          "bits": [ 50 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:16.6-16.17"
+          }
+        },
+        "subtract": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:14.6-14.14"
+          }
+        },
+        "sum": {
+          "hide_name": 0,
+          "bits": [ 27, 28, 29, 30, 31 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:15.12-15.15"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 13, 14, 15, 16 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D8/alu_study.v:13.66-13.67"
+          }
+        }
+      }
+    }
+  }
+}

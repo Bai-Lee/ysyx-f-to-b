@@ -1,0 +1,292 @@
+{
+  "status": "PASS",
+  "case": "typing",
+  "variant": "30000000-cycle-psram4m-qpi-sdram32x2-opt-gui",
+  "image_sha256": "071471b12ede598c7ec26de4ebb1ebf0292ed2b7cbf5845392ea554147775bd8",
+  "elf_sha256": "c413a0077bd3cba77e83e7e4ed70f8700fd26fe23c947671927fd55e77fc7af6",
+  "executable_sha256": "ba44651fb9a640518f84a2f5e8ad8220ba143b936dcb55ca7a946b3b0f424463",
+  "reference_sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab",
+  "session": {
+    "status": "COMPLETED_OBSERVATION",
+    "command": [
+      "stdbuf",
+      "-oL",
+      "python3",
+      "/workspace/projects/ysyx_f_to_b/C/runtime/budget_exec.py",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/typing/session/resources.json",
+      "--",
+      "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui/sim",
+      "--gui",
+      "--flash",
+      "/home/USER/c-stage/c5/app-images/typing-game/sdram128/empty/image.bin",
+      "--ref",
+      "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/typing/session/simulation.json",
+      "--vga-ppm",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/typing/session/last-frame.ppm",
+      "--uart-bit-cycles",
+      "16",
+      "--max-cycles",
+      "100000000000",
+      "--progress-cycles",
+      "100000000"
+    ],
+    "display": ":99",
+    "exit_code": 0,
+    "elapsed_seconds": 43.05450025800002,
+    "commands": [
+      {
+        "command": [
+          "xdotool",
+          "windowfocus",
+          "--sync",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "getwindowgeometry",
+          "--shell",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "1196",
+          "978"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/typing/session/before-hit.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keydown",
+          "q"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keyup",
+          "q"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/typing/session/after-hit.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "key",
+          "Escape"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "termination": "Original typing-game Escape -> CPU GOOD_TRAP"
+  },
+  "observations": {
+    "hit_counts": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "changed_native_canvas_pixels": 68
+  },
+  "simulation_summary": {
+    "result": "GOOD_TRAP",
+    "cycles": 40063207,
+    "instructions": 4468833,
+    "wall_seconds": 40.6283,
+    "diff_checked": 4153326,
+    "device_sync_checked": 315507,
+    "minimum_nonzero_sp": 251663716,
+    "pins": {
+      "enabled": true,
+      "led_changes": [],
+      "segments": [
+        192,
+        192,
+        192,
+        192,
+        192,
+        192,
+        192,
+        192
+      ],
+      "switch_reads": [],
+      "ps2_scans": [
+        [
+          36151147,
+          21
+        ],
+        [
+          36574947,
+          240
+        ],
+        [
+          36575189,
+          21
+        ],
+        [
+          40056117,
+          118
+        ]
+      ],
+      "ps2_frame_errors": 0,
+      "vga_frames": 95,
+      "vga_changed_frames": 55,
+      "vga_last_hash": 11661892216157594891,
+      "vga_hashes": [
+        13527433256064336771,
+        13527433256064336771,
+        11648286734523590276,
+        18314081186990497481,
+        5816272643052894899,
+        2892286380267405916,
+        18202059042435568638,
+        438041781266308112,
+        9840406524571816195,
+        8534197100620040707,
+        4952596400040107293,
+        5030794599532137047,
+        8365119495752510097,
+        11934276734341933394,
+        8757282548302394868,
+        13481887350980453014,
+        6544262373744180323,
+        18047742213077150333,
+        8266096674927318199,
+        11972233248728401521,
+        14395525333663584626,
+        5602601030776801428,
+        16821426877857591990,
+        3970249789632913219,
+        3569967687721818205,
+        11381440773728835479,
+        16882524111049389521,
+        17869994588716245906,
+        889223882789809716,
+        3522803105502838998,
+        4772164679209090467,
+        15744518988908996029,
+        1092032683398942199,
+        12729142669190694321,
+        16509077591535166386,
+        6580797115391643860,
+        7829652592561564918,
+        7570060072063355011,
+        14877460835243059101,
+        15112729040966378711,
+        3073770958448886033,
+        18286728033465560530,
+        717087779555812980,
+        13712887011170488086,
+        6505539400883573475,
+        7666633911337146621,
+        8849096699718278967,
+        9428559574817121088,
+        13941229439476787698,
+        10261520065786901780,
+        15724300718568240003,
+        15724300718568240003,
+        15724300718568240003,
+        15724300718568240003,
+        15724300718568240003,
+        15724300718568240003,
+        15724300718568240003,
+        15724300718568240003,
+        15724300718568240003,
+        15724300718568240003,
+        15724300718568240003,
+        12586276011931089331,
+        12586276011931089331,
+        12586276011931089331
+      ]
+    },
+    "traps": {
+      "ecall": 0,
+      "mret": 0
+    }
+  },
+  "uart_tx_bytes": 344,
+  "uart_rx_bytes": 0,
+  "screenshots": [
+    {
+      "path": "artifacts/C5/gui/typing/session/before-hit.png",
+      "sha256": "32f5737fb1e9fbbde146cd28ff1a840d8aeac756f667b17a0d2c98a718f5be8e"
+    },
+    {
+      "path": "artifacts/C5/gui/typing/session/after-hit.png",
+      "sha256": "ba1fa5579462ca8d5ac2de3ea729c8dae035f65102e9c5fbb43a749cf788d764"
+    }
+  ],
+  "evidence": "artifacts/C5/gui/typing",
+  "scope": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program.",
+  "visual_review": {
+    "reviewer": "Codex inspection of actual native-window captures",
+    "observed": "Native captures show the falling Q and the hit counter changing from0 to1 after the Q key; the glyph changes color and position. Escape ends through the original program halt path.",
+    "screenshots": [
+      {
+        "path": "artifacts/C5/gui/typing/session/before-hit.png",
+        "sha256": "32f5737fb1e9fbbde146cd28ff1a840d8aeac756f667b17a0d2c98a718f5be8e"
+      },
+      {
+        "path": "artifacts/C5/gui/typing/session/after-hit.png",
+        "sha256": "ba1fa5579462ca8d5ac2de3ea729c8dae035f65102e9c5fbb43a749cf788d764"
+      }
+    ]
+  }
+}

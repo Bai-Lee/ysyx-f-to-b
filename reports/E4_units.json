@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "top": "comb",
+      "result": "PASS comb checks=1462785 method2_counterexamples=16 seed=260704",
+      "run": {
+        "status": "PASS",
+        "name": "units/comb",
+        "command": [
+          "/home/USER/e4-lab/build/comb/comb"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T20:31:25.208298+00:00",
+        "elapsed_seconds": 0.057,
+        "exit_code": 0,
+        "expected_exit": [
+          0
+        ],
+        "timeout_seconds": 180,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/comb/comb",
+            "sha256": "b3d3de3c6897c9fcdaf780842689a83e5b53254aec011b585e517399d387e3a8"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/comb/comb",
+            "sha256": "b3d3de3c6897c9fcdaf780842689a83e5b53254aec011b585e517399d387e3a8"
+          }
+        ],
+        "stdout_sha256": "8693a6bb3250c98f986356157edd685c7cd47d8e1a1538d8234d341af9a6a9ba",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    },
+    {
+      "top": "sequential",
+      "result": "PASS sequential checks=258341 lfsr_period=255 fsm_traces=4096 light_cycles=80000017",
+      "run": {
+        "status": "PASS",
+        "name": "units/sequential",
+        "command": [
+          "/home/USER/e4-lab/build/sequential/sequential"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T20:31:39.156841+00:00",
+        "elapsed_seconds": 9.911,
+        "exit_code": 0,
+        "expected_exit": [
+          0
+        ],
+        "timeout_seconds": 180,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/sequential/sequential",
+            "sha256": "47c582bc9c8cd0b82352e13b7908572476d448c82eed0a726d161e93ae9a0aab"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/sequential/sequential",
+            "sha256": "47c582bc9c8cd0b82352e13b7908572476d448c82eed0a726d161e93ae9a0aab"
+          }
+        ],
+        "stdout_sha256": "f0c22a0db27ae0d66e04eb47ba750207a0018fdb95abc3b8ba1b8ea3058a3ca2",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    },
+    {
+      "top": "keyboard",
+      "result": "PASS keyboard checks=340 received_frames=803 errors=0 letters_digits=36 modifiers=Shift/CTRL",
+      "run": {
+        "status": "PASS",
+        "name": "units/keyboard",
+        "command": [
+          "/home/USER/e4-lab/build/keyboard/keyboard"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T20:32:54.659358+00:00",
+        "elapsed_seconds": 0.039,
+        "exit_code": 0,
+        "expected_exit": [
+          0
+        ],
+        "timeout_seconds": 180,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/keyboard/keyboard",
+            "sha256": "11496731ec898184c83b3a3a2e88fa0cd31a6ee1549c880272ab1b801ac7a205"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/keyboard/keyboard",
+            "sha256": "11496731ec898184c83b3a3a2e88fa0cd31a6ee1549c880272ab1b801ac7a205"
+          }
+        ],
+        "stdout_sha256": "8999561cdd9583bd7d7ece3e9cd323de1342bdb85a5d8ca99ad101a5feb64482",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    },
+    {
+      "top": "vga",
+      "result": "PASS VGA checks=7560003 static_frames=2 moving_frames=3 pixels_per_frame=420000 active=307200 frequency=25MHz refresh=59.5238095Hz",
+      "run": {
+        "status": "PASS",
+        "name": "units/vga",
+        "command": [
+          "/home/USER/e4-lab/build/vga/vga"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T21:29:16.388096+00:00",
+        "elapsed_seconds": 0.353,
+        "exit_code": 0,
+        "expected_exit": [
+          0
+        ],
+        "timeout_seconds": 180,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/vga/vga",
+            "sha256": "945583fde0910341fcd2e8e6712cbce84ecab397701ece0a9c821282061b8a25"
+          },
+          {
+            "path": "/home/USER/e4-lab/image.mem",
+            "sha256": "078eb412977160f36704e91b5a7789ea6ada81596c12a4ea982080d39e069a98"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/vga/vga",
+            "sha256": "945583fde0910341fcd2e8e6712cbce84ecab397701ece0a9c821282061b8a25"
+          },
+          {
+            "path": "/home/USER/e4-lab/image.mem",
+            "sha256": "078eb412977160f36704e91b5a7789ea6ada81596c12a4ea982080d39e069a98"
+          }
+        ],
+        "stdout_sha256": "db7a8c67bfcadd0f919ff5a4eb3d50952331ee4c226df9815b550bff40a4b924",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    },
+    {
+      "top": "motion",
+      "result": "PASS motion checks=4000000 trials=1000 frames_each=1000 seed=260708 edges_and_corners=covered",
+      "run": {
+        "status": "PASS",
+        "name": "units/motion",
+        "command": [
+          "/home/USER/e4-lab/build/motion/motion"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T20:38:03.575170+00:00",
+        "elapsed_seconds": 0.146,
+        "exit_code": 0,
+        "expected_exit": [
+          0
+        ],
+        "timeout_seconds": 180,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/motion/motion",
+            "sha256": "321cd2ff4c0185a6a7035aeba2361585faa7e4a9ce14377040a6ec2feaa19e9c"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/motion/motion",
+            "sha256": "321cd2ff4c0185a6a7035aeba2361585faa7e4a9ce14377040a6ec2feaa19e9c"
+          }
+        ],
+        "stdout_sha256": "4bd85c870a2cfb85d40eba8900bd188313e199fa54955bda0fba1dcdbf67d5b8",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    }
+  ],
+  "trace_volume": "No waveform on exhaustive or long tests; selected short traces generated separately."
+}

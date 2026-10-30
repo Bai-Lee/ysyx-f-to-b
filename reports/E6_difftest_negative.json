@@ -1,0 +1,40 @@
+{
+  "status": "PASS_EXPECTED_REJECTION",
+  "fault": "FAULT_SIGN_EXT",
+  "make_exit": 2,
+  "simulation": {
+    "result": "DIFF_FAIL",
+    "exit_code": 1,
+    "pc": 2147483668,
+    "a0": 0,
+    "cycles": 5,
+    "instructions": 4,
+    "frequency_hz": 100000000,
+    "wall_seconds": 0.001260706,
+    "ebreak_calls": 0,
+    "memory_writes": 0,
+    "load_commits": 0,
+    "uart_bytes": 0,
+    "uart_polls": 0,
+    "uart_not_ready": 0,
+    "gpr": [
+      0,
+      2147495452,
+      2147823616,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "diagnostic": "DIFF step=4 pc_before=80000010 inst=e1c08093 x1 dut=80002e1c ref=80001e1c\nDIFF transactions dut=0 ref=0\nREFERENCE_OR_DIFF_FAILURE pc=80000010 fault=0\nDIFF_FAIL pc=80000014 a0=0 expected=0 cycles=5 instructions=4 dpi_ebreak_calls=0 wall=0.001261\nmake[2]: *** [Makefile:18: sim] Error 1\nmake[1]: *** [/home/USER/e-stage/workbench/abstract-machine/scripts/platform/npc.mk:29: run] Error 2\nmake: *** [Makefile:52: run] Error 1\n"
+}

@@ -1,0 +1,129 @@
+{
+  "status": "PREPARED_NOT_RUNTIME_ACCEPTED",
+  "workbench": "/home/USER/c-stage/c5/workbench",
+  "files": [
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/riscv32e-ysyxsoc.mk",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/scripts/riscv32e-ysyxsoc.mk",
+      "sha256": "5ec02aae11235b2ece201159399d06bf3d11cf81280d4a56a95b7be188572198"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/ysyxsoc.mk",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/scripts/platform/ysyxsoc.mk",
+      "sha256": "7c95bbb8586d93f61c1a492bb2362595f13ef65101be78d7c07792bd1a4a8534"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/ysyxsoc-mrom.ld",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/scripts/ysyxsoc-mrom.ld",
+      "sha256": "5791bd9092591a2e7f610c87d3c0a71ab4501b239b196c328f4e24209d519106"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/ysyxsoc-initial.ld",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/scripts/ysyxsoc-initial.ld",
+      "sha256": "63a9d7d894533b0340112d88bbb422ab49a9c9ccf2dc486aecc2a5657b098727"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/start.S",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/am/src/riscv/ysyxsoc/start.S",
+      "sha256": "367603931847e7bce70dbaaa4f98da9cfcdeb468c6c561c1b500511966a5c412"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/trm.c",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/am/src/riscv/ysyxsoc/trm.c",
+      "sha256": "def958a68153d47bb207025fd9e86d43102ed7d060cac1afaa6d31c1aaba97bb"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/ioe.c",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/am/src/riscv/ysyxsoc/ioe.c",
+      "sha256": "74069ea37782ca32b8e6727471953e8ec599aef179551b051af6a5a869b826d3"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/lshrdi3.S",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/am/src/riscv/ysyxsoc/lshrdi3.S",
+      "sha256": "cf4ac4b20b9167bd181f3471067db47ca396d27e87be7fd24b048b9d518e0212"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/cte.c",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/am/src/riscv/ysyxsoc/cte.c",
+      "sha256": "d89354bdfacc8385483d4aaf8cf85d6c99a1d54a63797bc433b63ccb52f03a7a"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/trap.S",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/am/src/riscv/ysyxsoc/trap.S",
+      "sha256": "656a134e5d61b73e6585839f0055cc03eda07989b92b79c21ed34df6c2753b7f"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/riscv.h",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/am/include/arch/riscv.h",
+      "sha256": "7218a79c5a1d8a203cd0ccaec164f93492359e76894713d5687561ed07bc827b"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/am/ps2.h",
+      "destination": "/home/USER/c-stage/c5/workbench/abstract-machine/am/src/riscv/ysyxsoc/ps2.h",
+      "sha256": "e4885d750fd3b8bca1dde8d1513f486f8a59e3a28b2bc7c6c38b821fab2955af"
+    }
+  ],
+  "profiles": {
+    "initial": {
+      "SOC_BOOT_DATA": 0,
+      "SOC_UART_MODE": 0
+    },
+    "raw": {
+      "SOC_UART_MODE": 0
+    },
+    "divisor": {
+      "SOC_UART_MODE": 1
+    },
+    "poison": {
+      "SOC_POISON_SRAM": 1
+    },
+    "broken-data": {
+      "SOC_POISON_SRAM": 1,
+      "SOC_SKIP_DATA": 1
+    },
+    "broken-bss": {
+      "SOC_POISON_SRAM": 1,
+      "SOC_SKIP_BSS": 1
+    },
+    "flash": {
+      "SOC_FLASH_BOOT": 1
+    },
+    "flash-id": {
+      "SOC_FLASH_BOOT": 1,
+      "SOC_PRINT_ID": 1
+    },
+    "flash-psram": {
+      "SOC_PSRAM_DATA": 1
+    },
+    "psram": {
+      "SOC_RELOCATE_TEXT": 1
+    },
+    "sram-code": {
+      "SOC_RELOCATE_TEXT": 1,
+      "SOC_CODE_SRAM": 1
+    },
+    "psram-ssbl": {
+      "SOC_RELOCATE_TEXT": 1,
+      "SOC_TWO_STAGE": 1
+    },
+    "sdram32": {
+      "SOC_RELOCATE_TEXT": 1,
+      "SOC_TWO_STAGE": 1,
+      "SOC_CODE_SDRAM": 1,
+      "SOC_SDRAM_MB": 32
+    },
+    "sdram64": {
+      "SOC_RELOCATE_TEXT": 1,
+      "SOC_TWO_STAGE": 1,
+      "SOC_CODE_SDRAM": 1,
+      "SOC_SDRAM_MB": 64
+    },
+    "sdram128": {
+      "SOC_RELOCATE_TEXT": 1,
+      "SOC_TWO_STAGE": 1,
+      "SOC_CODE_SDRAM": 1,
+      "SOC_SDRAM_MB": 128
+    }
+  },
+  "scope": "MROM4KiB/SRAM8KiB; stack2KiB reserved; initial no-copy demonstration and final .data/.bss bootloader. Explicit poisoned-SRAM omission controls. UART raw/divisor/poll profiles; unimplemented peripherals report absent."
+}

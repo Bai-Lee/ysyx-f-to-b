@@ -1,0 +1,9 @@
+{
+  "status": "UPDATED_LIMIT_ONLY",
+  "old_default_cycles": 10000000000,
+  "new_cycles": 100000000000,
+  "per_program_wall_timeout_seconds": 7200,
+  "reason": "E6 llama2 train executes about4.0billioninstructions; multicycleLSU can legitimately exceed10billioncycles. No workload, validator, RTL, simulator executable or DiffTest setting changes. Explicit laterNPC_ARGS can still select a lower limit.",
+  "before_sha256": "3aa50b71e8764723838315391499fba21398b1595cdf187be19abdbffb85cb1d",
+  "after_sha256": "a1d5f277bc0b0cc9176863e122c3e30d6f509e31f0f108a001fa6bfb315bd4a2"
+}

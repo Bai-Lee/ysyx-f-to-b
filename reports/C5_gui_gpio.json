@@ -1,0 +1,924 @@
+{
+  "status": "PASS",
+  "case": "gpio",
+  "variant": "30000000-cycle-psram4m-qpi-sdram32x2-opt-gui",
+  "image_sha256": "6f0948ea7200e4895c0250c4ba38277252768e86af26bd6af991fd40ed580900",
+  "elf_sha256": "7ae7c7328de2893af0fe78ee49a038b5baa958836c4a6ce25a24efa6c67fe93c",
+  "executable_sha256": "ba44651fb9a640518f84a2f5e8ad8220ba143b936dcb55ca7a946b3b0f424463",
+  "reference_sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab",
+  "session": {
+    "status": "PASS",
+    "command": [
+      "stdbuf",
+      "-oL",
+      "python3",
+      "/workspace/projects/ysyx_f_to_b/C/runtime/budget_exec.py",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/gpio/session/resources.json",
+      "--",
+      "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui/sim",
+      "--gui",
+      "--flash",
+      "/home/USER/c-stage/c5/app-images/gpio-demo/sdram32/empty/image.bin",
+      "--ref",
+      "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/gpio/session/simulation.json",
+      "--vga-ppm",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/gpio/session/last-frame.ppm",
+      "--uart-bit-cycles",
+      "16",
+      "--max-cycles",
+      "100000000000",
+      "--progress-cycles",
+      "100000000"
+    ],
+    "mainargs": "",
+    "display": ":99",
+    "exit_code": 0,
+    "elapsed_seconds": 27.255192047,
+    "commands": [
+      {
+        "command": [
+          "xdotool",
+          "windowfocus",
+          "--sync",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "getwindowgeometry",
+          "--shell",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/gpio/session/locked.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "692",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "665",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "638",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "611",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "584",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "557",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "530",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "503",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "476",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "449",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "422",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "395",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "368",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "341",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "314",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "287",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/gpio/session/wrong-password.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "692",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "638",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "557",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "503",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "449",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "395",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "368",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "314",
+          "546"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/gpio/session/walking.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/gpio/session/complete.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+  },
+  "observations": {
+    "password": "FFFF blocked;A55A continued through software MMIO polling"
+  },
+  "simulation_summary": {
+    "result": "GUI_OBSERVATION_STOP",
+    "cycles": 24516230,
+    "instructions": 2706235,
+    "wall_seconds": 24.7324,
+    "diff_checked": 2385762,
+    "device_sync_checked": 320473,
+    "minimum_nonzero_sp": 251666136,
+    "pins": {
+      "enabled": true,
+      "led_changes": [
+        [
+          7089050,
+          1
+        ],
+        [
+          8096831,
+          2
+        ],
+        [
+          9106770,
+          4
+        ],
+        [
+          10115408,
+          8
+        ],
+        [
+          11124055,
+          16
+        ],
+        [
+          12132695,
+          32
+        ],
+        [
+          13141356,
+          64
+        ],
+        [
+          14149985,
+          128
+        ],
+        [
+          15158620,
+          256
+        ],
+        [
+          16167248,
+          512
+        ],
+        [
+          17177461,
+          1024
+        ],
+        [
+          18184041,
+          2048
+        ],
+        [
+          19190650,
+          4096
+        ],
+        [
+          20197240,
+          8192
+        ],
+        [
+          21203839,
+          16384
+        ],
+        [
+          22210439,
+          32768
+        ],
+        [
+          23217032,
+          42330
+        ]
+      ],
+      "segments": [
+        249,
+        192,
+        192,
+        192,
+        248,
+        192,
+        130,
+        164
+      ],
+      "switch_reads": [
+        [
+          0,
+          54493
+        ],
+        [
+          1,
+          7786
+        ],
+        [
+          3,
+          8461
+        ],
+        [
+          7,
+          9350
+        ],
+        [
+          15,
+          8443
+        ],
+        [
+          31,
+          8523
+        ],
+        [
+          63,
+          9248
+        ],
+        [
+          127,
+          8456
+        ],
+        [
+          255,
+          8247
+        ],
+        [
+          511,
+          9067
+        ],
+        [
+          1023,
+          8296
+        ],
+        [
+          2047,
+          8537
+        ],
+        [
+          4095,
+          8292
+        ],
+        [
+          8191,
+          8612
+        ],
+        [
+          16383,
+          9049
+        ],
+        [
+          32767,
+          8535
+        ],
+        [
+          42330,
+          1
+        ],
+        [
+          58714,
+          8445
+        ],
+        [
+          62810,
+          8292
+        ],
+        [
+          64858,
+          7753
+        ],
+        [
+          65370,
+          8087
+        ],
+        [
+          65498,
+          7992
+        ],
+        [
+          65530,
+          8308
+        ],
+        [
+          65534,
+          7105
+        ],
+        [
+          65535,
+          75816
+        ]
+      ],
+      "ps2_scans": [],
+      "ps2_frame_errors": 0,
+      "vga_frames": 58,
+      "vga_changed_frames": 1,
+      "vga_last_hash": 13527433256064336771,
+      "vga_hashes": [
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771
+      ]
+    },
+    "traps": {
+      "ecall": 0,
+      "mret": 0
+    }
+  },
+  "uart_tx_bytes": 66,
+  "uart_rx_bytes": 0,
+  "screenshots": [
+    {
+      "path": "artifacts/C5/gui/gpio/session/locked.png",
+      "sha256": "da47542846f63c543567bf075e292fb7379018c35981b6ae54bd752f75d46836"
+    },
+    {
+      "path": "artifacts/C5/gui/gpio/session/wrong-password.png",
+      "sha256": "bc9b0cc03f88e6be9246b31ad05508581e2046f0d33e340a51f8b01eae43a257"
+    },
+    {
+      "path": "artifacts/C5/gui/gpio/session/walking.png",
+      "sha256": "5f67495758ac5181276c178fb523af93f19d4bee8c04d1e04825ba75bb1850d8"
+    },
+    {
+      "path": "artifacts/C5/gui/gpio/session/complete.png",
+      "sha256": "d689bd9c74086dbf0528992d0e9850687464a24bd1287afcf1e732096b7b3030"
+    }
+  ],
+  "evidence": "artifacts/C5/gui/gpio",
+  "scope": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program.",
+  "visual_review": {
+    "reviewer": "Codex inspection of actual native-window captures",
+    "observed": "Four native captures show 26070001, FFFF switches remaining locked, A55A unlocking, a walking LED and final A55A LEDs; UART text agrees with the program.",
+    "screenshots": [
+      {
+        "path": "artifacts/C5/gui/gpio/session/locked.png",
+        "sha256": "da47542846f63c543567bf075e292fb7379018c35981b6ae54bd752f75d46836"
+      },
+      {
+        "path": "artifacts/C5/gui/gpio/session/wrong-password.png",
+        "sha256": "bc9b0cc03f88e6be9246b31ad05508581e2046f0d33e340a51f8b01eae43a257"
+      },
+      {
+        "path": "artifacts/C5/gui/gpio/session/walking.png",
+        "sha256": "5f67495758ac5181276c178fb523af93f19d4bee8c04d1e04825ba75bb1850d8"
+      },
+      {
+        "path": "artifacts/C5/gui/gpio/session/complete.png",
+        "sha256": "d689bd9c74086dbf0528992d0e9850687464a24bd1287afcf1e732096b7b3030"
+      }
+    ]
+  }
+}

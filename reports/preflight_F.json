@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-24T05:30:10-0400",
+  "scope": "F stages: Logisim structural circuits, transistor-switch reasoning, sequential state machines, sISA CPU and IO. No claim of physical chip PPA/metastability.",
+  "capability": "Logisim 4.0.0 downloaded and official digest checked; minimal positive/negative circuit control still required before bulk implementation",
+  "limits": {
+    "jvm_heap_mib": 512,
+    "heavy_jobs": 1,
+    "compile_jobs_max": 4,
+    "free_memory_floor_gib": 3
+  },
+  "source_archive": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive",
+  "source_task_hash": "ee75d71d86d584f87ecc474c41fd76e04cca911de91e3019fe614a34d8286e40",
+  "verification": "Combinational exhaustive vectors; sequential state/clock/reset traces; independent ISA reference and instruction commit comparison; injected faults; GUI open/save/reopen and IO observations",
+  "ambiguities": [
+    "F3 transistor/latch source images must be inspected before interpreting topology",
+    "Original sISA R0 writable, enhanced branch uses PC+signext(offset), arithmetic wraps 8 bits",
+    "Digital oscillation is not an analog metastability measurement"
+  ],
+  "status": "PASS",
+  "controls": [
+    {
+      "name": "preflight/logisim_positive",
+      "timestamp": "2026-10-24T09:39:40.393550+00:00",
+      "command": [
+        "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath\\java.exe",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Duser.language=en",
+        "-Duser.country=US",
+        "-Dfile.encoding=UTF-8",
+        "-Djava.util.prefs.PreferencesFactory=LocalPrefsFactory",
+        "-cp",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\java-classes;C:\\YSYX_WORKSPACE\\tools\\logisim-evolution-4.0.0\\logisim-evolution-4.0.0-all.jar",
+        "CircuitRunner",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\preflight.circ",
+        "control_and",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\preflight_good.txt"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.797,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\preflight.circ",
+          "sha256": "bbb1459cfcc2461043e4c619285bdefc2edf95e615b803033b3f2470d2c0cc60"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\preflight_good.txt",
+          "sha256": "dd5cb6321725e9f7560f5f0e7bdd5346494c5d0aebc4f35fe2651ba10aa6a83c"
+        }
+      ],
+      "stdout_sha256": "621ccacc02cacd37493f94f122b498079b4cb8db43156451f1746fc11695571a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "preflight/logisim_negative",
+      "timestamp": "2026-10-24T09:39:41.147402+00:00",
+      "command": [
+        "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath\\java.exe",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Duser.language=en",
+        "-Duser.country=US",
+        "-Dfile.encoding=UTF-8",
+        "-Djava.util.prefs.PreferencesFactory=LocalPrefsFactory",
+        "-cp",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\java-classes;C:\\YSYX_WORKSPACE\\tools\\logisim-evolution-4.0.0\\logisim-evolution-4.0.0-all.jar",
+        "CircuitRunner",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\preflight.circ",
+        "control_and",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\preflight_bad.txt"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "status": "PASS",
+      "elapsed_seconds": 0.719,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\preflight.circ",
+          "sha256": "bbb1459cfcc2461043e4c619285bdefc2edf95e615b803033b3f2470d2c0cc60"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\preflight_bad.txt",
+          "sha256": "2c7f2195ea362375bece311eaa0488a0ded1a6bcca8dff6bb7a9a487085e0914"
+        }
+      ],
+      "stdout_sha256": "e17a58406e792f17789a3336d051387330ede152a197ea41e6adfa7fa97cc3a6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limits_note": "Digital Logisim control only; no physical timing or analog metastability claim"
+}

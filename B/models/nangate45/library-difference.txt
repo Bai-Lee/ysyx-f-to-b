@@ -1,0 +1,35 @@
+--- prior_OpenROAD
++++ course_archive
+@@ -49150,32 +49150,6 @@
+ 
+ 
+   /******************************************************************************************
+-   Module          	: TAPCELL_X1
+-   Cell Description	: Physical cell (TAPCELL_X1)
+-  *******************************************************************************************/
+-
+-  cell (TAPCELL_X1) {
+-
+-	drive_strength     	: 1;
+-
+-	area               	: 0.266000;
+-	dont_touch		: true;
+-	dont_use		: true;
+-
+-	pg_pin(VDD) {
+-		voltage_name : VDD;
+-		pg_type      : primary_power;
+-	}
+-	pg_pin(VSS) {
+-		voltage_name : VSS;
+-		pg_type      : primary_ground;
+-	}
+-
+-
+-  }
+-
+-
+-  /******************************************************************************************
+    Module          	: FILLCELL_X2
+    Cell Description	: Physical cell (FILLCELL_X2)
+   *******************************************************************************************/

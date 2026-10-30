@@ -1,0 +1,144 @@
+{
+  "status": "PASS_SMALL_NETLIST_CONTROLS",
+  "cases": [
+    {
+      "variant": "baseline",
+      "engine": "iverilog",
+      "case": "correct",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      }
+    },
+    {
+      "variant": "baseline",
+      "engine": "iverilog",
+      "case": "bad_exit",
+      "result": {
+        "result": "FAIL",
+        "exit_code": 1,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 1,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      }
+    },
+    {
+      "variant": "baseline",
+      "engine": "verilator",
+      "case": "correct",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      }
+    },
+    {
+      "variant": "baseline",
+      "engine": "verilator",
+      "case": "bad_exit",
+      "result": {
+        "result": "FAIL",
+        "exit_code": 1,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 1,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      }
+    },
+    {
+      "variant": "area",
+      "engine": "iverilog",
+      "case": "correct",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      }
+    },
+    {
+      "variant": "area",
+      "engine": "iverilog",
+      "case": "bad_exit",
+      "result": {
+        "result": "FAIL",
+        "exit_code": 1,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 1,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      }
+    },
+    {
+      "variant": "area",
+      "engine": "verilator",
+      "case": "correct",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      }
+    },
+    {
+      "variant": "area",
+      "engine": "verilator",
+      "case": "bad_exit",
+      "result": {
+        "result": "FAIL",
+        "exit_code": 1,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 1,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      }
+    }
+  ],
+  "library_models": [
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/verilog/ics55_LLSC_H7CR.v",
+      "sha256": "0c91575677119a9aa0965846bef054331bc5ffb8e69a0b2a26ec41dcc93c5fdb"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/verilog/ics55_LLSC_H7CL.v",
+      "sha256": "dad221865ccc7a05d792de68c7e4e3c71c211ba76e7f217ae27ec71c90fe4c01"
+    }
+  ],
+  "scope": "Actual baseline andAREA mappedstandardcells tested inbothsimulators; small positive/negativeexit casesonly. Completehello/microbenchmappedtests stillpending."
+}

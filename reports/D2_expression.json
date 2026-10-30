@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "random_expressions": 10000,
+  "seed": "0x2607d2",
+  "oracle": "Actual GCC C11 uint32_t computations, batched 128 per compilation",
+  "unit_checks": [
+    "precedence",
+    "associativity",
+    "parentheses",
+    "decimal and hexadecimal",
+    "uint32 wraparound",
+    "negative/unary operators",
+    "register and memory callbacks",
+    "short circuit",
+    "invalid syntax",
+    "zero division",
+    "literal overflow",
+    "token and recursion bounds",
+    "32-slot pool exhaustion",
+    "delete/recycle/invariants",
+    "change detection only once"
+  ],
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "negative_control": "wrong addition becomes subtraction; same assertions abort",
+  "vectors_sha256": "4c561f96387eed5b8798492413babee4bb8a698d561a4d057d6b20446c077c89",
+  "evidence": "artifacts/D2/expr"
+}

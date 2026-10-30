@@ -1,0 +1,261 @@
+{
+  "status": "PASS",
+  "records": 16,
+  "timings": [
+    {
+      "optimization": "O0",
+      "n": 100000000,
+      "result": "5000000050000000",
+      "wall_seconds": [
+        0.29,
+        0.306,
+        0.296
+      ],
+      "median_seconds": 0.296
+    },
+    {
+      "optimization": "O1",
+      "n": 100000000,
+      "result": "5000000050000000",
+      "wall_seconds": [
+        0.089,
+        0.104,
+        0.061
+      ],
+      "median_seconds": 0.089
+    },
+    {
+      "optimization": "O2",
+      "n": 100000000,
+      "result": "5000000050000000",
+      "wall_seconds": [
+        0.054,
+        0.052,
+        0.059
+      ],
+      "median_seconds": 0.054
+    }
+  ],
+  "macro_differences": {
+    "__x86_64__": {
+      "host": "1",
+      "riscv": null
+    },
+    "__riscv": {
+      "host": null,
+      "riscv": "1"
+    },
+    "__riscv_xlen": {
+      "host": null,
+      "riscv": "64"
+    },
+    "__LP64__": {
+      "host": "1",
+      "riscv": "1"
+    },
+    "__SIZEOF_POINTER__": {
+      "host": "8",
+      "riscv": "8"
+    },
+    "__BYTE_ORDER__": {
+      "host": "__ORDER_LITTLE_ENDIAN__",
+      "riscv": "__ORDER_LITTLE_ENDIAN__"
+    }
+  },
+  "ir_observation": {
+    "O0_add": true,
+    "O1_constant_30": true,
+    "volatile_load_store_retained": true
+  },
+  "behavior_observations": [
+    {
+      "compiler": "gcc",
+      "case": "source_unsequenced",
+      "observed_output": [
+        "x = 2, y = 1",
+        "x = 2, y = 1"
+      ],
+      "diagnostic": "/workspace/projects/ysyx_f_to_b/D/D1/src/source_unsequenced.c: In function 'main':\n/workspace/projects/ysyx_f_to_b/D/D1/src/source_unsequenced.c:3:31: warning: operation on 'i' may be undefined [-Wsequence-point]\n    3 | int main(void){int i=1;f(i++,i++);return 0;}\n      |                              ~^~",
+      "fixed_output_assertion": false,
+      "source_classification_corrected": true
+    },
+    {
+      "compiler": "gcc",
+      "case": "unspecified_order",
+      "observed_output": [
+        "RIGHT\nLEFT\n1 2",
+        "RIGHT\nLEFT\n1 2"
+      ],
+      "diagnostic": "",
+      "fixed_output_assertion": false,
+      "source_classification_corrected": false
+    },
+    {
+      "compiler": "gcc",
+      "case": "sequenced",
+      "observed_output": [
+        "x = 1, y = 2",
+        "x = 1, y = 2"
+      ],
+      "diagnostic": "",
+      "fixed_output_assertion": true,
+      "source_classification_corrected": false
+    },
+    {
+      "compiler": "gcc",
+      "case": "source_bounds",
+      "observed_output": [
+        "a[10] = -1198376192",
+        "a[10] = 2112767744"
+      ],
+      "diagnostic": "",
+      "fixed_output_assertion": false,
+      "source_classification_corrected": false
+    },
+    {
+      "compiler": "clang",
+      "case": "source_unsequenced",
+      "observed_output": [
+        "x = 1, y = 2",
+        "x = 1, y = 2"
+      ],
+      "diagnostic": "/workspace/projects/ysyx_f_to_b/D/D1/src/source_unsequenced.c:3:27: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]\nint main(void){int i=1;f(i++,i++);return 0;}\n                          ^   ~~\n1 warning generated.",
+      "fixed_output_assertion": false,
+      "source_classification_corrected": true
+    },
+    {
+      "compiler": "clang",
+      "case": "unspecified_order",
+      "observed_output": [
+        "LEFT\nRIGHT\n1 2",
+        "LEFT\nRIGHT\n1 2"
+      ],
+      "diagnostic": "",
+      "fixed_output_assertion": false,
+      "source_classification_corrected": false
+    },
+    {
+      "compiler": "clang",
+      "case": "sequenced",
+      "observed_output": [
+        "x = 1, y = 2",
+        "x = 1, y = 2"
+      ],
+      "diagnostic": "",
+      "fixed_output_assertion": true,
+      "source_classification_corrected": false
+    },
+    {
+      "compiler": "clang",
+      "case": "source_bounds",
+      "observed_output": [
+        "a[10] = -1739653024",
+        "a[10] = 1750552672"
+      ],
+      "diagnostic": "/workspace/projects/ysyx_f_to_b/D/D1/src/source_bounds.c:2:52: warning: array index 10 is past the end of the array (which contains 10 elements) [-Warray-bounds]\nint main(void){int a[10]={0};printf(\"a[10] = %d\\n\",a[10]);return 0;}\n                                                   ^ ~~\n/workspace/projects/ysyx_f_to_b/D/D1/src/source_bounds.c:2:16: note: array 'a' declared here\nint main(void){int a[10]={0};printf(\"a[10] = %d\\n\",a[10]);return 0;}\n               ^\n1 warning generated.",
+      "fixed_output_assertion": false,
+      "source_classification_corrected": false
+    }
+  ],
+  "source_corrections": [
+    {
+      "source": "D/D1/sources/D1.md:991",
+      "correction": "f(i++,i++) modifies the same scalar without sequencing and has undefined behavior in C11, not merely unspecified argument order. Preserve observed executions, never constrain them to the two printed examples.",
+      "authority": "ISO C11 draft N1570 6.5 paragraph 2; 6.5.2.2 paragraph 10",
+      "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf"
+    },
+    {
+      "correction": "The linked N1570 document is a C11 committee draft, although the course calls it C99 in places."
+    },
+    {
+      "correction": "Higher optimization levels do not guarantee faster execution on every program or target."
+    }
+  ],
+  "evidence": "artifacts/D1",
+  "outputs": [
+    {
+      "path": "D/D1/results/O0-executable-disasm.txt",
+      "sha256": "f9c08c77973b2d362188789b8985b0d7d724a74b7623728c3071cf6a07274235"
+    },
+    {
+      "path": "D/D1/results/O0-object-disasm.txt",
+      "sha256": "24d301d512605972e4120c7c8b67014dd7481feabf7abd631fb14d63012f606b"
+    },
+    {
+      "path": "D/D1/results/O0.ll",
+      "sha256": "2af752da04d2b951c1531861c64e0946d5e7dadfbbfc9214d7123b4d430a2ff2"
+    },
+    {
+      "path": "D/D1/results/O1-executable-disasm.txt",
+      "sha256": "d2c9d7e0484a2436c8a553262aba9d3ebd8eae7b114489cad7645bf049b56f9e"
+    },
+    {
+      "path": "D/D1/results/O1-object-disasm.txt",
+      "sha256": "33548e8972ed6ce0202a5b0e453eeaf2532d4029d01eff684e550da31c82c23e"
+    },
+    {
+      "path": "D/D1/results/O1.ll",
+      "sha256": "3ed7d66c2a50bd666d7999f7bda5f2158af6e8af1ba7a072cf94c2af2efd9352"
+    },
+    {
+      "path": "D/D1/results/custom.i",
+      "sha256": "aaa0aad7e700bedbb1781cfa679794cd3b54649dc7c139541e75a6c233a52577"
+    },
+    {
+      "path": "D/D1/results/host-macros.txt",
+      "sha256": "bad243991d7249933ad8fe0ca599460b44c03a5de63ced06480d9217915dcfdd"
+    },
+    {
+      "path": "D/D1/results/host.i",
+      "sha256": "bc3c8582179bb5456a3b6fd07bc8eba9aaa8ec93953862b075c65be990e25998"
+    },
+    {
+      "path": "D/D1/results/riscv-macros.txt",
+      "sha256": "4418911c1c851ac323573458e755c2841509c107a0da4d68523bd426becacd06"
+    },
+    {
+      "path": "D/D1/results/riscv.i",
+      "sha256": "3ab7afdbbb8fcd2db8f1f6fd8935b968ad6900a99f916622ae3a94e30578a521"
+    },
+    {
+      "path": "D/D1/results/rv64-O0.elf",
+      "sha256": "b34656da6132ae96a6d226e94f2ad23e98a65285677657e119573c7644b0593c"
+    },
+    {
+      "path": "D/D1/results/rv64-O0.o",
+      "sha256": "b8d918852ac94273a335a6f43a988dae739b1c3667e65970e44cffda07f8af50"
+    },
+    {
+      "path": "D/D1/results/rv64-O0.s",
+      "sha256": "4680d01bbca5ab96bec798d1b45c7adcaef2700932f3bf9cd12dcbbaf52d66ec"
+    },
+    {
+      "path": "D/D1/results/rv64-O1.elf",
+      "sha256": "76a43c5bff82a216df3e29a72deb8c0fd7a7f01f0d8885d357dc41651415237e"
+    },
+    {
+      "path": "D/D1/results/rv64-O1.o",
+      "sha256": "a73f4ccb0bc216bc15147976d1267581e09f959f909eb2d98489cfe2fc57d62d"
+    },
+    {
+      "path": "D/D1/results/rv64-O1.s",
+      "sha256": "bb1bbee3791dfdc95200fa5a70e6976e7fe380de2abb1f3b1fd58e02fa94b706"
+    },
+    {
+      "path": "D/D1/results/sum-O0.txt",
+      "sha256": "4c0537234bb524188bb60887ef0d8463334b1a63b97e27a9fb93d1c784b7bf3e"
+    },
+    {
+      "path": "D/D1/results/sum-O1.txt",
+      "sha256": "bcbd6ecc4e5018ade449932fc0d11aaaaaebf1f35c29bbf72d7392dd07fda1dd"
+    },
+    {
+      "path": "D/D1/results/sum-O2.txt",
+      "sha256": "dbb0693415d95eac9e3fd2a4d1d76de7351a7d7943229abb5b414248d6060ddb"
+    },
+    {
+      "path": "D/D1/results/volatile_O1.ll",
+      "sha256": "a1a3e74881455e0d287b85b82d80ea9bc049b44d48cbe3542646c6066ef5fb32"
+    }
+  ]
+}

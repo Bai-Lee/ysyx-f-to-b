@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "program": "dummy",
+      "make_exit": 0,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147483720,
+        "a0": 0,
+        "cycles": 18,
+        "instructions": 18,
+        "frequency_hz": 100000000,
+        "wall_seconds": 9.363e-06,
+        "ebreak_calls": 1,
+        "memory_writes": 1,
+        "load_commits": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "gpr": [
+          0,
+          2147483708,
+          2147520500,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result_sha256": "357b29a07ae693f7a08934b4b22c3b9cdfd760eeadb166a6abf4cc21e78189f3"
+    },
+    {
+      "program": "wrong",
+      "make_exit": 2,
+      "simulation": {
+        "result": "BAD_TRAP",
+        "exit_code": 1,
+        "pc": 2147483720,
+        "a0": 1,
+        "cycles": 18,
+        "instructions": 18,
+        "frequency_hz": 100000000,
+        "wall_seconds": 9.88e-06,
+        "ebreak_calls": 1,
+        "memory_writes": 1,
+        "load_commits": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "gpr": [
+          0,
+          2147483708,
+          2147520500,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "result_sha256": "790df80506ab69b7870036e248ae90eec772a75b2e526927e85ba60f06f494cb"
+    }
+  ],
+  "notes": "Original CPU-test parent recipe hid failures via a grep-q pipeline; fixed aggregation, with deliberate wrong retained as a separate expected-rejection control."
+}

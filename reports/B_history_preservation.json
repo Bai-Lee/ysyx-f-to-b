@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-30T06:26:16.222505+00:00",
+  "baseline_manifest_sha256": "260665882f6158102f0a56891ba9b20f9f72fe46cdfaceb3729917f0d9dcf143",
+  "checked_files": 43505,
+  "checked_bytes": 12796918003,
+  "checked_list_sha256": "fecc081e225fd183e320f430f127af6773bcd4bd35a0df5423e979ebcc53a868",
+  "archives": [
+    {
+      "path": "YSYX_D_DELIVERY.zip",
+      "sha256": "f849038746551a4de729c138f52bbff7a5699ccd8ba773fc70d54ef027df97a5",
+      "bytes": 8027220513
+    },
+    {
+      "path": "YSYX_C_DELIVERY.zip",
+      "sha256": "1baeed212b22f6e9c07616ac03393c6b345e73e587bb1b2c6a2f170bb1ee1d3a",
+      "bytes": 11652980262
+    }
+  ],
+  "scope": "Every F/E/D/C source, stage report and command artifact present in the prior C manifest is byte-identical. New early-B telemetry sessions under artifacts/C are additions outside that frozen set; subsequent telemetry is B-owned. Root project status/configuration changes are separately backed up and authorized by B scope."
+}

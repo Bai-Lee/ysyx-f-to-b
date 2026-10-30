@@ -1,0 +1,104 @@
+{
+  "native": {
+    "z3": {
+      "status": "PASS",
+      "expected_stdout": "z = 3\n",
+      "source_sha256": "4378f4653c354a656d51af78041e9c5a915b2020faaca3a961d1d3a80fc7fc01",
+      "assembly": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\analysis\\z3_native.s",
+      "assembly_sha256": "5dff7076b49f65a7685a80c41a7da0e9c43e965fab08a86a46250702847b2ba2"
+    },
+    "z42": {
+      "status": "PASS",
+      "expected_stdout": "z = 42\n",
+      "source_sha256": "7b203e72064102212eb1260afba9266f3328f522ccdfc12cb54f1bd30e943c25",
+      "assembly": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\analysis\\z42_native.s",
+      "assembly_sha256": "ef582bae2f7c7b46da3f4cc9ecf3d3fe0bc52ca96238e48de0f142557d7c9cf6"
+    },
+    "sum10_c": {
+      "status": "PASS",
+      "expected_stdout": "sum = 55\n",
+      "source_sha256": "37fc1d93fd46b45df106cc5fe8dab50dbd8facd256b4f56317dfc7659b0f3eb2",
+      "assembly": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\analysis\\sum10_c_native.s",
+      "assembly_sha256": "87e2ecf28498c2e0bdf9b3ffce98a8c43af847e14af9593ef68d16ff8a9b7b2d"
+    }
+  },
+  "online": {
+    "z3": {
+      "status": "PASS",
+      "url": "https://godbolt.org/api/compiler/cg151/compile",
+      "compiler": "cg151",
+      "didExecute": true,
+      "stdout": "z = 3\n",
+      "request_sha256": "cd2284d03f9357fce25d44e50dd2f1c929da55d63d3e5843671997515606567b",
+      "response_sha256": "a08e035073064c248972647e4ece3ffbaf0f7c426fc8cdd4e0cfc1ecb8bef904",
+      "http_status": 200
+    },
+    "z42": {
+      "status": "PASS",
+      "url": "https://godbolt.org/api/compiler/cg151/compile",
+      "compiler": "cg151",
+      "didExecute": true,
+      "stdout": "z = 42\n",
+      "request_sha256": "88188538b68efa537d4adef2e6429649b80ebef06cb99facb4cad58105ac13d5",
+      "response_sha256": "3cbb64a1097046d7c04b3ace7b7a0392339d59681d5a958ab06b2da3440a5733",
+      "http_status": 200
+    },
+    "sum10_c": {
+      "status": "PASS",
+      "url": "https://godbolt.org/api/compiler/cg151/compile",
+      "compiler": "cg151",
+      "didExecute": true,
+      "stdout": "sum = 55\n",
+      "request_sha256": "18532206dcff14aaf1ce000ec9fd1c0e11836c553defa34df7e3b9de0b9e2d7a",
+      "response_sha256": "a851d0749c5fc15cba9122c3ae6d12b539b10a022956df7f14c8f73e7f0d24f8",
+      "http_status": 200
+    }
+  },
+  "source_scope": "F4 C execution and source/assembly correspondence only; not E coursework",
+  "negative_compile": {
+    "name": "F4/negative_compiler",
+    "timestamp": "2026-10-24T10:34:03.230638+00:00",
+    "command": [
+      "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+      "-x",
+      "c",
+      "-std=c17",
+      "-Wall",
+      "-Werror",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\programs\\negative_invalid_c.txt",
+      "-o",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\negative_c.exe"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "status": "PASS",
+    "elapsed_seconds": 0.063,
+    "timeout_seconds": 30,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\programs\\negative_invalid_c.txt",
+        "sha256": "4250de582be0e36790a5bc182e8c982c2e896154d91216f7add438e1f4fd288c"
+      }
+    ],
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "2cabf3bfb3ab9ffedac89535f92715a1792f45acb7edf56aa9ae729f3e77887e"
+  },
+  "source_assembly": {
+    "status": "PASS",
+    "mapped_instructions": 17,
+    "raw_response_sha256": "d2a761f1ccdd20b5020a343cae3373c628db23c1a07bb910152eb6aea45f8432"
+  },
+  "state_boundary_invariant": {
+    "status": "PASS",
+    "rows": 57,
+    "scope": "At loop boundary PC4 or terminal PC7, sum=i(i+1)/2. The two add instructions create an intermediate state not identical to a dedicated-sum clock."
+  },
+  "toolchain": {
+    "gcc": "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+    "sha256": "b6aa727e46c8c7d494ed2e712fe40cb51e2360cc9ca0706979d698f1aabeb387",
+    "gdb": null,
+    "compiler_explorer": "gcc 15.1 cg151"
+  },
+  "status": "PASS"
+}

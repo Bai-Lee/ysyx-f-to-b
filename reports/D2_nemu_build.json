@@ -1,0 +1,50 @@
+{
+  "status": "PASS_BUILD_AND_BUILTIN_ONLY",
+  "runtime": "/home/USER/d-stage/workbench/nemu",
+  "executable": "/home/USER/d-stage/workbench/nemu/build/riscv32-nemu-interpreter",
+  "sha256": "7544c465cfcfdd1df26a98456896c099bcb94dfc0fa25b4f98e5ed0019e0dde1",
+  "inputs": [
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/src/isa/riscv32/reg.c",
+      "sha256": "562740cb439bfb6d14978cf4f8835551d0f0d6744b093e21a0c2e11f6531d66d"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/src/monitor/sdb/expr.c",
+      "sha256": "4d70a57c5f4a26aa1e56a46320233f16b4714ff2f17bb88b97fee08281204ad9"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/src/monitor/sdb/sdb.c",
+      "sha256": "22ab97743c964ad67ee28fb52807d24530c154a8484e637961dd6fb4b3799adc"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/src/monitor/sdb/sdb.h",
+      "sha256": "c727dd74a58670249e7e5e069ca8939946d23f8cc0e6ac198cecc54c1acf4f79"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/src/monitor/sdb/watchpoint.c",
+      "sha256": "bf75275a7f0731b74dada887c4b4e8d37e5ac3e14488caca63fd2bc0e8e7dc16"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/src/monitor/sdb/debug_core.c",
+      "sha256": "4e7b9d923a6631f3937352f71fea9626a1215d257206b17cd0ac341cc66d6551"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/include/debug_core.h",
+      "sha256": "4b4fc366635cdbe55fd21e19aab9ffd38a3a24f8cb80002c9f9fabf1713b18a8"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/src/monitor/monitor.c",
+      "sha256": "645d56a7efbc6fc6722c07c713e34c9ca46004047ec8e9d0ca49df1639cf2ebc"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/src/cpu/cpu-exec.c",
+      "sha256": "41f3a3dcd94b30d822270acbdb8b6ab65d0716ab0bda333487447d588dc7a91e"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/.config",
+      "sha256": "116aa64c6e34d861b51f197fc261666f7273b3d113c1c19ee4c1f47ee8723dde"
+    }
+  ],
+  "upstream": "8e7a0fecc95b5b5d2c1f6be0ec1b703da93356c0",
+  "instruction_scope": "Original PA1 minimal four-instruction scaffold retained; full RV32IM belongs to D3."
+}

@@ -1,0 +1,90 @@
+{
+  "authorization": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_authorization.json",
+  "actions": [
+    {
+      "type": "wslconfig_authorized_merge",
+      "status": "PASS",
+      "path": "C:\\Users\\USER\\.wslconfig",
+      "sha256": "7d1bc9376a5821447e4a14f4cba0febd0e90381d6235d4605809d14a14525817",
+      "backup": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\history\\20261024T140535671004",
+      "scope": "memory2GB/processors4/swap2GB/D:swapFile only"
+    },
+    {
+      "type": "wsl_update",
+      "execution": {
+        "name": "E3/wsl_update",
+        "timestamp": "2026-10-24T14:10:35.765114+00:00",
+        "command": [
+          "wsl.exe",
+          "--update",
+          "--web-download"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": null,
+        "expected_exit": 0,
+        "status": "TIMEOUT",
+        "elapsed_seconds": 300.079,
+        "timeout_seconds": 300,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_authorization.json",
+            "sha256": "4c5bd0f70966a3e4b50123f91b59558906c070ab5f5ebce6184b91b2028368a4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_ENVIRONMENT_PROPOSAL.json",
+            "sha256": "85bd5ad0e5b9b69f3ee1aa5d6c5a54647bea6092ef5709938bc4675cc723eb0e"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\preflight\\wslconfig.proposed",
+            "sha256": "7d1bc9376a5821447e4a14f4cba0febd0e90381d6235d4605809d14a14525817"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_authorization.json",
+            "sha256": "4c5bd0f70966a3e4b50123f91b59558906c070ab5f5ebce6184b91b2028368a4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_ENVIRONMENT_PROPOSAL.json",
+            "sha256": "85bd5ad0e5b9b69f3ee1aa5d6c5a54647bea6092ef5709938bc4675cc723eb0e"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\preflight\\wslconfig.proposed",
+            "sha256": "7d1bc9376a5821447e4a14f4cba0febd0e90381d6235d4605809d14a14525817"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "status": "LINUX_E3_ENGINEERING_ACCEPTANCE_PASS",
+  "offline_kernel_install": {
+    "arguments": [
+      "/i",
+      "\"C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\wsl_update_x64.msi\"",
+      "/qn",
+      "/norestart",
+      "REBOOT=ReallySuppress",
+      "/L*v",
+      "\"C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\kernel_msi\\install_20261024T141714900.log\""
+    ],
+    "exit_code": 0,
+    "automatic_reboot": false,
+    "finished": "2026-10-24T14:17:19.0411609Z",
+    "log": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\kernel_msi\\install_20261024T141714900.log",
+    "status": "INSTALLER_PASS_CHECK_REQUIRED",
+    "signer": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "sha256": "4d09c776c8d45f70a202281d18e19be1118f53159b0c217a5274a31ce18525fe",
+    "signature": "Valid",
+    "package": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\wsl_update_x64.msi",
+    "timestamp": "2026-10-24T14:17:14.9098154Z"
+  },
+  "current_kernel": "5.10.16.3-microsoft-standard-WSL2",
+  "distribution": "YSYX-Linux",
+  "automatic_windows_reboot": false,
+  "current_acceptance": "reports/E3_AUDIT.json",
+  "current_memory_limit_gib": 2,
+  "resume_record": "config/E3_resume.json"
+}

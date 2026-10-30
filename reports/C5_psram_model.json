@@ -1,0 +1,49 @@
+{
+  "status": "PASS_FOUR_STATE_PIN_PROTOCOL_AND_CONTROLS",
+  "runs": [
+    {
+      "name": "good",
+      "status": "PASS",
+      "expected_exit": 0,
+      "stdout": "PSRAM_PIN_PROTOCOL_PASS checks=265\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/psram_tb.sv:74: $finish called at 65236000 (1ps)\n",
+      "evidence": "C5/psram-unit/good/run"
+    },
+    {
+      "name": "wrong-data",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/psram_tb.sv:54: PSRAM_READ_DATA address=000020 got=4be12d87 expected=5af03c96\n       Time: 328000  Scope: psram_tb.read_bytes\n",
+      "evidence": "C5/psram-unit/wrong-data/run"
+    },
+    {
+      "name": "no-powerup-clock",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/perip/psram/psram.v:37: PSRAM_CE_HIGH_CLOCK_REQUIRED\n       Time: 10000  Scope: psram_tb.dut\n",
+      "evidence": "C5/psram-unit/no-powerup-clock/run"
+    },
+    {
+      "name": "outside-model",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/perip/psram/psram.v:62: PSRAM_ADDRESS_OUTSIDE_MODEL addr=001000\n       Time: 94000  Scope: psram_tb.dut\n",
+      "evidence": "C5/psram-unit/outside-model/run"
+    },
+    {
+      "name": "bus-contention",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/psram_tb.sv:54: PSRAM_READ_DATA address=000020 got=XXfxXXXX expected=5af03c96\n       Time: 328000  Scope: psram_tb.read_bytes\n",
+      "evidence": "C5/psram-unit/bus-contention/run"
+    },
+    {
+      "name": "unsupported",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/perip/psram/psram.v:55: PSRAM_UNSUPPORTED_COMMAND cmd=ff qpi=0\n       Time: 58000  Scope: psram_tb.dut\n",
+      "evidence": "C5/psram-unit/unsupported/run"
+    }
+  ],
+  "model_sha256": "30a44facb4dfc9989901eb162a324a5cebfdd39f1515becf56bfe3dcfbee768e",
+  "scope": "4KiB initial model. SPIEB/38,6dummy clocks, nibble order, allbytevalues,1024-byte pagewrap,35enter/F5exitQPI, high-Z direction and aborted partial writes tested. Wrong data, missing power-up clock, capacity overrun, host contention and unsupported command rejected. Zero initialization is deterministic model state; no analog/PVT/refresh claim."
+}

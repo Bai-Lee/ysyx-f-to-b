@@ -1,0 +1,25 @@
+{
+  "status": "READY_FOR_BOUNDED_BACKGROUND_EXPERIMENT",
+  "core_tasks": 0,
+  "tools": [
+    {
+      "name": "gcc",
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89",
+      "version": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0"
+    },
+    {
+      "name": "gdb",
+      "path": "/usr/bin/gdb",
+      "sha256": "a6222ff0f450ca040e3479c04fdb7d0f1e0cabb099688270e720b7115d933c3d",
+      "version": "GNU gdb (Ubuntu 12.1-0ubuntu1~22.04.2) 12.1"
+    }
+  ],
+  "capabilities": [
+    "debug-symbol compilation",
+    "batch GDB watchpoint/backtrace"
+  ],
+  "budget": "Sequential light native jobs; no large NEMU/RTL build. Core dumps disabled for the deliberately rejected mutant.",
+  "source": "/workspace/YSYX_F_B_Archive/slides/markdown/2306/1dbf54f914088a36.md",
+  "source_sha256": "87fcb44719ab053c7b63f9508d6d6a57cb6cb89bfc4d84382cfda74c379801dd"
+}

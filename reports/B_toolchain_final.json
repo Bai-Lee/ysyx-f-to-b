@@ -1,0 +1,119 @@
+{
+  "status": "PASS_CURRENT_FINGERPRINTS",
+  "tools": [
+    {
+      "path": "/home/USER/tools/verilator-stable-src/bin/verilator",
+      "sha256": "308c54eb0194bb5c95d7cc093e0491922d2455177d401b03a8224ad7efe5cf35",
+      "version": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261024-983a06a",
+      "acceptance": "B_PREFLIGHT and actual B build/runtime evidence"
+    },
+    {
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89",
+      "version": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+      "acceptance": "B_PREFLIGHT and actual B build/runtime evidence"
+    },
+    {
+      "path": "/usr/bin/riscv64-linux-gnu-gcc",
+      "sha256": "0c54895c55568be5b5fee49e2426abcc8fb05ca2c121ca5685dea2cbc24a1c13",
+      "version": "riscv64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0",
+      "acceptance": "B_PREFLIGHT and actual B build/runtime evidence"
+    },
+    {
+      "path": "/usr/bin/make",
+      "sha256": "92f646030615cd98490a68a94c0aefd87b552be3158b941c02e43b0bfdb576db",
+      "version": "GNU Make 4.3",
+      "acceptance": "B_PREFLIGHT and actual B build/runtime evidence"
+    },
+    {
+      "name": "yosys",
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/yosys",
+      "sha256": "7c3e3396b38c129dd7485be5a0a0f0da8e495a94c8fd486059e3bea043a588d6",
+      "version": "Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)",
+      "acceptance": "Actual final synthesis/four-state/STA evidence; version call alone is not acceptance"
+    },
+    {
+      "name": "iverilog",
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/iverilog",
+      "sha256": "6d84be4052a92cf7184c7149506f5db6ac251f99e438a96ae3ce33f326e2ff9d",
+      "version": "Icarus Verilog version 14.0 (devel) (s20260301-381-gb5fdf0647-dirty)\n\nCopyright (c) 2000-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 14.0 (devel) (s20260301-381-gb5fdf0647-dirty)\n\nCopyright (c) 1999-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 14.0 (devel) (s20260301-381-gb5fdf0647-dirty)\n\nCopyright (c) 1998-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 14.0 (devel) (s20260301-381-gb5fdf0647-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+      "acceptance": "Actual final synthesis/four-state/STA evidence; version call alone is not acceptance"
+    },
+    {
+      "name": "vvp",
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/vvp",
+      "sha256": "9f6d770762b5e77d81216e5f21a634028a9ee062a724eeb116980bdb6cb110cc",
+      "version": "Icarus Verilog runtime version 14.0 (devel) (s20260301-381-gb5fdf0647-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+      "acceptance": "Actual final synthesis/four-state/STA evidence; version call alone is not acceptance"
+    },
+    {
+      "name": "opensta",
+      "path": "/home/USER/tools/c-stage/opensta/usr/bin/sta",
+      "sha256": "9630070fdbcfd2a92a9d0dc6b6e5480f7be8e216b720f1fb32f447fb4cedc2ff",
+      "version": "2.0.17",
+      "acceptance": "Actual final synthesis/four-state/STA evidence; version call alone is not acceptance"
+    }
+  ],
+  "launch_support": [
+    {
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/libexec/yosys",
+      "sha256": "0acec1c4bc5ec42ada465b2d38e3a0079d41570dc6290a9f03f2cc92fda3d506"
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/libexec/iverilog",
+      "sha256": "6e36bf5f61fa888468bdb9309780de9281acac7de761cb5088e0383ef72e6b05"
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/libexec/vvp",
+      "sha256": "ab27c1490506a997dd3337fa9d374c4a4d26d9f56efba252bd1c2688eaf214f5"
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/lib/ld-linux-x86-64.so.2",
+      "sha256": "c5e80a563850d6ab5c2f2482e4202d9c1b71fbf44854b8c399e63527202c64e1"
+    },
+    {
+      "path": "/home/USER/tools/verilator-stable-src/bin/verilator_bin",
+      "sha256": "8aa7d35dbb7d270ccdd10f5d11dd00b98d154ef05f4d8b10e7fc71b38d29e771"
+    },
+    {
+      "path": "/usr/bin/python3.10",
+      "sha256": "11dde438e1a636073e79c81d4c2543708cc0a2922e7c42c38b1b588e17545f96"
+    },
+    {
+      "path": "/usr/bin/x86_64-linux-gnu-g++-11",
+      "sha256": "2360901d864cf10bfd6296e261cb2c14053552a80377761ab07146ec9ec9a2c0"
+    }
+  ],
+  "library": {
+    "path": "B/models/nangate45/lib/Nangate45_typ.lib",
+    "sha256": "2efd0b32eb580e4e60e72fc0575bb3bc69aac907c91d908442e4ae6d7fe55895"
+  },
+  "cell_models": {
+    "path": "B/models/nangate45/sim/cells.v",
+    "sha256": "9430fe45ddf1d60b3c74851c7df759bf4c0f5a78fbff80b65e6cd619cdfd6b69"
+  },
+  "memory_observed": {
+    "linux_bytes": {
+      "MemTotal": 7120334848,
+      "MemAvailable": 6653083648,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648
+    },
+    "windows_available_bytes": 5149634560
+  },
+  "active_limits": {
+    "source": "/workspace/config/toolchain.lock.json",
+    "revision": "2026-10-29-user-throughput",
+    "heavy_jobs": 1,
+    "compile_jobs": 4,
+    "process_group_limit_mib": 6144,
+    "windows_start_available_mib": 2048,
+    "windows_running_available_mib": 1024,
+    "linux_running_available_mib": 512,
+    "jvm_heap_mib": 4096,
+    "max_simulators": 8,
+    "estimated_simulator_mib": 400,
+    "windows_simulator_reserve_mib": 1280
+  },
+  "scope": "Windows base Python/venv kept separate from Linux EDA/runtime tools. Current hashes rechecked against accepted source/build evidence; no installs or global environment changes."
+}

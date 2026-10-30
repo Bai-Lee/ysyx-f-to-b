@@ -1,0 +1,39 @@
+{
+  "status": "PASS_MEASURED_PARALLEL_POLICY",
+  "authorization": "User: 使用更大胆的内存使用策略，提速一生一芯项目",
+  "profile": {
+    "max_simulators": 8,
+    "estimated_worker_MiB": 400,
+    "windows_reserve_MiB": 1280,
+    "aggregate_pss_limit_MiB": 6144,
+    "compile_jobs": 4,
+    "admission": "Choose worker count from current Windows/WSL free memory; all batch workers share one measured process group.",
+    "validation": "Each pattern traverses the full address range; no address partitioning; preserve per-instruction reference checks and all negative controls."
+  },
+  "backup": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\history\\C_parallel_20261029T094342319275",
+  "files": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\AGENTS.md",
+      "sha256": "7b32bac846e26ea57371f7bc5ee6824014869b1d24b23de128a4e11ca479f123"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\config\\toolchain.lock.json",
+      "sha256": "9a7d58898de88cac83c3ebaeccc961c54aeb9b143814d7de9ec811eef423ba6b"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\execution_policy.json",
+      "sha256": "ab8cd13b8918c92a71ba20496b92fa2427e69b40564456df8d3f3671360a4150"
+    }
+  ],
+  "reason": "Current single-thread DUT uses about334MiB and one CPU thread. Extra memory is used for independent full-range simulations instead of increasing an unused per-process cap. No global WSL setting changed.",
+  "acceptance": "reports/C5_parallel_sdram_pilot.json",
+  "pilot_speedup": 3.329379392205577,
+  "actual_pilot_workers": 4,
+  "pilot_peak_pss_bytes": 1276089344,
+  "duplicate_full_job_control": {
+    "status": "PASS_REJECTED",
+    "evidence": "artifacts/C/parallel-job-duplicate-control",
+    "run_sha256": "24697afc08782b4dd8a30114ba7bd536f18b4570a1225d310dbaffc708b13500"
+  },
+  "host_memory_channel": "reports/C_host_memory_controls.json"
+}

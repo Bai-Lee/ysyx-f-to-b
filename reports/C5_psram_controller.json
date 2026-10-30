@@ -1,0 +1,40 @@
+{
+  "status": "PASS_SPI_QPI_MASKS_AND_WARM_RESET",
+  "runs": [
+    {
+      "mode": 0,
+      "status": "PASS",
+      "stdout": "PSRAM_CONTROLLER_PASS checks=11 qpi=0\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/psram_controller_tb.sv:41: $finish called at 9990000 (1ps)\n",
+      "evidence": "C5/psram-controller/spi/run"
+    },
+    {
+      "mode": 1,
+      "status": "PASS",
+      "stdout": "PSRAM_CONTROLLER_PASS checks=11 qpi=1\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/psram_controller_tb.sv:41: $finish called at 8190000 (1ps)\n",
+      "evidence": "C5/psram-controller/qpi/run"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/perip/psram/psram.v",
+      "sha256": "30a44facb4dfc9989901eb162a324a5cebfdd39f1515becf56bfe3dcfbee768e"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/perip/psram/psram_top_apb.v",
+      "sha256": "5690a35b6eb81adbecbb0910223d65eb1573f188030e6d94c2a5e62bdc4313f6"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/perip/psram/efabless/EF_PSRAM_CTRL.v",
+      "sha256": "fc035ecde1a7e00556fe4c96d8babdc337d3bdd4eec76bde5aa273877df46752"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/perip/psram/efabless/EF_PSRAM_CTRL_wb.v",
+      "sha256": "9cb9490b56a1a33115b6d747cc4f114b664c65d4c05e0bca402ba0c2c4736589"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/psram_controller_tb.sv",
+      "sha256": "5d2ac08527fe39164a7f9bee10a415afd22450c8e8ebc5fc986b9ec83c99b7a4"
+    }
+  ],
+  "scope": "Actual preserved Efabless data paths with parameterized command phase and authored initialization: CE-high clock, safe quad F5 resynchronization, optional serial35 entry. Byte/half/word stores, aligned readback, page boundaries, zero-strobe no-op, unsupported noncontiguous mask SLVERR and warm-reset data/mode preservation."
+}

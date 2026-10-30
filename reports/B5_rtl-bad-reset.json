@@ -1,0 +1,23 @@
+{
+  "status": "PASS_COMPLETED_RUNS",
+  "mode": "rtl",
+  "fault_reset": true,
+  "executable_sha256": "8fef2809cefcb4287688f206ff35e45aade144a6afbb4b41d92501ebbfd61eec",
+  "netlist_sha256": null,
+  "runs": [
+    {
+      "name": "hello",
+      "status": "PASS_MISSING_RESET_REJECTED",
+      "mode": "rtl",
+      "fast_memory": false,
+      "executable_sha256": "8fef2809cefcb4287688f206ff35e45aade144a6afbb4b41d92501ebbfd61eec",
+      "netlist_sha256": null,
+      "image_sha256": "467e043f4faf04e05c84afce29c1c7a05a9c288fe47626afa4e351ae963ff7f9",
+      "hex_sha256": "465f54428bc8077a760f075e5dbb758b1bc404e2165e1fa8a6708eed01a9572e",
+      "wall_seconds": 0.743,
+      "counts": null,
+      "evidence": "artifacts/B5/design/rtl-bad-reset/hello"
+    }
+  ],
+  "scope": "Icarus four-state execution at the public AXI boundary. Unwritten RAM and non-reset cache data remain X; control/address and active write-byte unknowns are rejected. Fixed-reset mapped CPU uses a two-instruction Flash trampoline to the program at0x80000000. Sparse model covers128MiB addresses with8MiB resident pages, and actual page usage is recorded. Fast-memory runs remove artificial bus wait cycles while preserving the full program, four-state memory, and every checker. Zero-delay functional cell simulation, no SDF/timing-signoff claim."
+}

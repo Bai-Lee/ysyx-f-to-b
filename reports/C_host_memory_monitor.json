@@ -1,0 +1,37 @@
+{
+  "status": "PASS_STOPPED_AFTER_VALIDATION",
+  "session": "20261029T111259621",
+  "sampler_pid": 388,
+  "samples": 2877,
+  "minimum_available_bytes": 3192680448,
+  "elapsed_seconds": 5757.155765533447,
+  "files": [
+    {
+      "path": "artifacts/C/host-memory-monitor/20261029T111259621/launch.json",
+      "sha256": "0fb84e299e5567adf50a67cc95db7832799d2b93c0e66c967be53b66141ba3ae"
+    },
+    {
+      "path": "artifacts/C/host-memory-monitor/20261029T111259621/started.json",
+      "sha256": "98ed4c48244694dba6defe68d7c5834e4d1da122e4bac4e97b76d67494bd478d"
+    },
+    {
+      "path": "artifacts/C/host-memory-monitor/20261029T111259621/samples.jsonl",
+      "sha256": "73c38d7b01ff361dacfa9b9cccb5b129378a43f7d5d98ab9cd1c10b694f173fb"
+    },
+    {
+      "path": "artifacts/C/host-memory-monitor/20261029T111259621/result.json",
+      "sha256": "03ef5c57ed920456814eaa9b540b0921ac241d92ca99099c030996180b955753"
+    }
+  ],
+  "controls_sha256": "95f927e44d96cf4e23ce1343a717e9675d162a1af94d6122ecc4ae429a41127c",
+  "io_controls_sha256": "e78cad3dd9642a9ddead4cc91f90563f576b0018fefb3212cb3e959a0dcf7e98",
+  "prior_sessions": [
+    {
+      "path": "artifacts/C/host-memory-monitor/20261029T103219611/result.json",
+      "sha256": "11b74d33ced79db38dd36eaa8f206defe7a2c739e2a9fc55fe435c93dbb24bb4",
+      "status": "FAIL",
+      "error": "PermissionError(13, '拒绝访问。')"
+    }
+  ],
+  "scope": "Bounded task-owned Windows process used the native physical-memory API and appended newline-framed telemetry for detached WSL guards. Readers select the latest complete record. Stale/missing telemetry fails closed. Sampler stopped normally before the delivery manifest is made; no service/scheduled task/system setting was created."
+}

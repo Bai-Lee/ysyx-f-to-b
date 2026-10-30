@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "tools": {
+    "verilator": {
+      "path": "/home/USER/tools/verilator-stable-src/bin/verilator",
+      "sha256": "308c54eb0194bb5c95d7cc093e0491922d2455177d401b03a8224ad7efe5cf35"
+    },
+    "verilator_bin": {
+      "path": "/home/USER/tools/verilator-stable-src/bin/verilator_bin",
+      "sha256": "8aa7d35dbb7d270ccdd10f5d11dd00b98d154ef05f4d8b10e7fc71b38d29e771"
+    },
+    "g++": {
+      "path": "/usr/bin/g++",
+      "sha256": "2360901d864cf10bfd6296e261cb2c14053552a80377761ab07146ec9ec9a2c0"
+    },
+    "gcc": {
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89"
+    },
+    "git": {
+      "path": "/usr/bin/git",
+      "sha256": "fd7c9389e200d626b46551835e5233bbde49a6a2326f9ebb85c70ed235861001"
+    },
+    "make": {
+      "path": "/usr/bin/make",
+      "sha256": "92f646030615cd98490a68a94c0aefd87b552be3158b941c02e43b0bfdb576db"
+    },
+    "iverilog": {
+      "path": "/usr/bin/iverilog",
+      "sha256": "1ba67856249142771239573b5d51c7f6e4d67a1e7931a0d0fab56e0d473d2167"
+    },
+    "vvp": {
+      "path": "/usr/bin/vvp",
+      "sha256": "075b114070eed3bc72e0e4559decf40520f3b693b1da9c94bba1defe8896966d"
+    },
+    "gtkwave": {
+      "path": "/usr/bin/gtkwave",
+      "sha256": "303a85f11d05b5a373a7332de19b89bb329dc524f1454707df88f823118e5e1f"
+    },
+    "fst2vcd": {
+      "path": "/usr/bin/fst2vcd",
+      "sha256": "bc207a71f1d325f5404eecc47203fa48ee9dc8184b1c826f6d5fb36aef1f6316"
+    },
+    "Xvfb": {
+      "path": "/usr/bin/Xvfb",
+      "sha256": "cf71d78eab8321f7c568271053af449f966a75422140117ea1f244bf72a7e81e"
+    },
+    "xdotool": {
+      "path": "/usr/bin/xdotool",
+      "sha256": "6e3e9a8affe004c1d4a70d2ee9b0c3d61fcaeae84b6f75850e438240158b157a"
+    },
+    "scrot": {
+      "path": "/usr/bin/scrot",
+      "sha256": "79440401725b6aae1336b06ee8c7cdf96080e68ffc53f703e4dd3d1d89091865"
+    }
+  },
+  "packages": [
+    {
+      "package": "g++",
+      "version": "4:11.2.0-1ubuntu1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "gcc",
+      "version": "4:11.2.0-1ubuntu1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "git",
+      "version": "1:2.34.1-1ubuntu1.12",
+      "architecture": "amd64"
+    },
+    {
+      "package": "gtkwave",
+      "version": "3.3.104-2build1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "iverilog",
+      "version": "11.0-1.1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "liblz4-dev",
+      "version": "1.9.3-2build2",
+      "architecture": "amd64"
+    },
+    {
+      "package": "libsdl2-dev",
+      "version": "2.0.20+dfsg-2ubuntu1.22.04.1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "libsdl2-image-dev",
+      "version": "2.0.5+dfsg1-3build1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "libsdl2-ttf-dev",
+      "version": "2.0.18+dfsg-2",
+      "architecture": "amd64"
+    },
+    {
+      "package": "make",
+      "version": "4.3-4.1build1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "scrot",
+      "version": "1.7-1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "xauth",
+      "version": "1:1.1-1build2",
+      "architecture": "amd64"
+    },
+    {
+      "package": "xdotool",
+      "version": "1:3.20160805.1-4",
+      "architecture": "amd64"
+    },
+    {
+      "package": "xvfb",
+      "version": "2:21.1.4-2ubuntu1.7~22.04.16",
+      "architecture": "amd64"
+    }
+  ],
+  "verilator_source_commit": "983a06a16f2aea1cf4bda3a45099c8bad24d112c",
+  "verilator_version": "5.052 2026-09-05",
+  "nvboard_source_commit": "b5f49b68a85f4a1a185086cbd6532fff3ecda454",
+  "nvboard_history": "Upstream archived snapshot is shallow. Imported object bundle plus exact original shallow boundary; fsck verified. No full-history claim.",
+  "originality": "Local AI engineering experiment, not student independent-authorship certification."
+}

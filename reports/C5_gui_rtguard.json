@@ -1,0 +1,299 @@
+{
+  "status": "PASS",
+  "case": "rtguard",
+  "variant": "30000000-cycle-psram4m-qpi-sdram32x2-opt-gui-ps2log",
+  "image_sha256": "47574c54894861d6f839c07c0ce3be2467fd0e3e532e3de3746a2648dcfde613",
+  "elf_sha256": "a70480778d354a6aa6de6fb434828c8de0841d3e3da266889a04fd4a397729c9",
+  "executable_sha256": "c577c6a23b2451ff3412fd4b9586eb2631979ebb1c8cd92ec0dad81aaee123b5",
+  "reference_sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab",
+  "session": {
+    "status": "COMPLETED_OBSERVATION",
+    "command": [
+      "stdbuf",
+      "-oL",
+      "python3",
+      "/workspace/projects/ysyx_f_to_b/C/runtime/budget_exec.py",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/rtguard/session/resources.json",
+      "--",
+      "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui-ps2log/sim",
+      "--gui",
+      "--flash",
+      "/home/USER/c-stage/c5/rt-thread-interactive/bsp/abstract-machine/build/rtthread-riscv32e-ysyxsoc-sdram128.bin",
+      "--ref",
+      "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/rtguard/session/simulation.json",
+      "--vga-ppm",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/rtguard/session/last-frame.ppm",
+      "--uart-bit-cycles",
+      "16",
+      "--max-cycles",
+      "100000000000",
+      "--progress-cycles",
+      "100000000"
+    ],
+    "display": ":99",
+    "exit_code": 1,
+    "elapsed_seconds": 47.11722010700001,
+    "commands": [
+      {
+        "command": [
+          "xdotool",
+          "windowfocus",
+          "--sync",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "getwindowgeometry",
+          "--shell",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "1034",
+          "366"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "type",
+          "--clearmodifiers",
+          "--delay",
+          "120",
+          "c5_guard_test"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "key",
+          "Return"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/rtguard/session/heap-check.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "1034",
+          "366"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "type",
+          "--clearmodifiers",
+          "--delay",
+          "120",
+          "c5_done"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "key",
+          "Return"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "termination": "Explicitapplicationheapownership/guardtest"
+  },
+  "observations": {
+    "input_policy": {
+      "display": ":99",
+      "api": "XAutoRepeatOff after SDL window initialization",
+      "before": 1,
+      "after": 0,
+      "scope": "Only this test-owned Xvfb server; user display is not accessed."
+    },
+    "ps2_queue": {
+      "accepted": 0,
+      "dropped": 0,
+      "invalid": 0,
+      "popped": 0,
+      "maximum_occupancy": 0
+    }
+  },
+  "simulation_summary": {
+    "result": "BAD_TRAP",
+    "cycles": 43123360,
+    "instructions": 2889335,
+    "wall_seconds": 44.7984,
+    "diff_checked": 2879531,
+    "device_sync_checked": 9804,
+    "minimum_nonzero_sp": 251666116,
+    "pins": {
+      "enabled": true,
+      "led_changes": [],
+      "segments": [
+        192,
+        192,
+        192,
+        192,
+        192,
+        192,
+        192,
+        192
+      ],
+      "switch_reads": [],
+      "ps2_scans": [],
+      "ps2_frame_errors": 0,
+      "vga_frames": 102,
+      "vga_changed_frames": 1,
+      "vga_last_hash": 13527433256064336771,
+      "vga_hashes": [
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771
+      ]
+    },
+    "traps": {
+      "ecall": 5,
+      "mret": 5
+    }
+  },
+  "uart_tx_bytes": 3831,
+  "uart_rx_bytes": 22,
+  "screenshots": [
+    {
+      "path": "artifacts/C5/gui/rtguard/session/heap-check.png",
+      "sha256": "d566c7f12935050e40711ef5888e75439574640bc76930cf1b0072913dddd116"
+    }
+  ],
+  "evidence": "artifacts/C5/gui/rtguard",
+  "scope": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program.",
+  "visual_review": {
+    "reviewer": "Codex inspection of actual native-window captures",
+    "observed": "NativeUART displays deliberateguard_negative withguards=0 andexit82; c5_done isrejectedbyCPU BAD_TRAP84. Thisisthenegativecontrol.",
+    "screenshots": [
+      {
+        "path": "artifacts/C5/gui/rtguard/session/heap-check.png",
+        "sha256": "d566c7f12935050e40711ef5888e75439574640bc76930cf1b0072913dddd116"
+      }
+    ]
+  }
+}

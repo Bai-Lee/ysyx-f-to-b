@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-10-24T11:17:06.465433+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "source_inventory_unchanged",
+      "status": "PASS",
+      "detail": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\inventory\\assignment_matrix.json"
+    },
+    {
+      "check": "64_required_technical_tasks",
+      "status": "PASS",
+      "detail": {
+        "EXCLUDED_SCOPE": 3,
+        "PASS": 48,
+        "PASS_ADAPTED": 16
+      }
+    },
+    {
+      "check": "state_fields_consistent",
+      "status": "PASS",
+      "detail": 1242
+    },
+    {
+      "check": "no_E_to_B_started",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "stop_after_F_and_no_GUI",
+      "status": "PASS",
+      "detail": {
+        "current_scope": "Finish F1-F6 required technical tasks and selected F optional exercises; F7 placeholder ignored",
+        "stop_after": "F",
+        "next_model_requested_by_user": "GPT-6 Astra",
+        "advance_to_E": false,
+        "source_instruction": "User explicitly requested notification at F completion and will change model before E.",
+        "allow_logisim_gui": false,
+        "computer_use_logisim": false,
+        "logisim_optional": true,
+        "tool_adaptation": "User authorized flexible non-Logisim workflow; F5/F6 SystemVerilog + Icarus/Yosys; previous native Logisim headless circuit results retained"
+      }
+    },
+    {
+      "check": "each_pass_has_evidence",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "all_evidence_reports_pass",
+      "status": "PASS",
+      "detail": {
+        "F_circuit_results.json": "PASS",
+        "F_cpu_results.json": "PASS",
+        "F4_results.json": "PASS",
+        "F_theory_results.json": "PASS",
+        "F2_results.json": "PASS_ADAPTED",
+        "F_optional_results.json": "PASS",
+        "F_assembler_results.json": "PASS"
+      }
+    },
+    {
+      "check": "native_33_circuits_25753_vectors",
+      "status": "PASS",
+      "detail": 33
+    },
+    {
+      "check": "CPU_case_counts",
+      "status": "PASS",
+      "detail": {
+        "normal_firmware": 23,
+        "firmware_cycles": 5314,
+        "isa_samples": 32768,
+        "checks": 36
+      }
+    },
+    {
+      "check": "four_actual_DUT_fault_rejections",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "hold_release_behavior_independent_check",
+      "status": "PASS",
+      "detail": "PASS: each held interval leaves term unchanged; each of eight releases advances exactly one term"
+    },
+    {
+      "check": "final_hardware_inputs_and_logs_match",
+      "status": "PASS",
+      "detail": {
+        "commands": 71,
+        "unique_inputs": 103,
+        "input_mismatches": [],
+        "log_mismatches": []
+      }
+    },
+    {
+      "check": "real_online_C_execution",
+      "status": "PASS",
+      "detail": {
+        "z3": {
+          "status": "PASS",
+          "url": "https://godbolt.org/api/compiler/cg151/compile",
+          "compiler": "cg151",
+          "didExecute": true,
+          "stdout": "z = 3\n",
+          "request_sha256": "cd2284d03f9357fce25d44e50dd2f1c929da55d63d3e5843671997515606567b",
+          "response_sha256": "a08e035073064c248972647e4ece3ffbaf0f7c426fc8cdd4e0cfc1ecb8bef904",
+          "http_status": 200
+        },
+        "z42": {
+          "status": "PASS",
+          "url": "https://godbolt.org/api/compiler/cg151/compile",
+          "compiler": "cg151",
+          "didExecute": true,
+          "stdout": "z = 42\n",
+          "request_sha256": "88188538b68efa537d4adef2e6429649b80ebef06cb99facb4cad58105ac13d5",
+          "response_sha256": "3cbb64a1097046d7c04b3ace7b7a0392339d59681d5a958ab06b2da3440a5733",
+          "http_status": 200
+        },
+        "sum10_c": {
+          "status": "PASS",
+          "url": "https://godbolt.org/api/compiler/cg151/compile",
+          "compiler": "cg151",
+          "didExecute": true,
+          "stdout": "sum = 55\n",
+          "request_sha256": "18532206dcff14aaf1ce000ec9fd1c0e11836c553defa34df7e3b9de0b9e2d7a",
+          "response_sha256": "a851d0749c5fc15cba9122c3ae6d12b539b10a022956df7f14c8f73e7f0d24f8",
+          "http_status": 200
+        }
+      }
+    },
+    {
+      "check": "Compiler_Explorer_evidence_hashes",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "delivery_links",
+      "status": "PASS",
+      "detail": {
+        "references": 199,
+        "broken": []
+      }
+    }
+  ],
+  "failures": [],
+  "scope": "F only; required technical tasks plus explicitly selected optional work; no official qualification or physical signoff claim"
+}

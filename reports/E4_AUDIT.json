@@ -1,0 +1,676 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "stage_status": "COMPLETE_LOCAL_NVBOARD_VALIDATION",
+  "timestamp": "2026-10-24T21:33:57.605698+00:00",
+  "core_tasks_passed": 17,
+  "core_tasks_total": 17,
+  "nju_items_completed": 16,
+  "advanced_keyboard_optional_completed": true,
+  "all_scope_items": 44,
+  "status_counts": {
+    "PASS": 35,
+    "PASS_DOCUMENTED": 6,
+    "READ_DOCUMENTED": 1,
+    "OPTIONAL_NOT_SELECTED": 2
+  },
+  "optional_not_selected": [
+    "E4-O002",
+    "E4-O003"
+  ],
+  "missing_required_items": [],
+  "validated_latest_commands": 129,
+  "historical_command_records": 126,
+  "input_snapshot_archives_verified": 119,
+  "input_snapshot_entries_verified": 298,
+  "nvboard_screenshots": 26,
+  "gtkwave_screenshots": 2,
+  "difftest_random_steps": 50000,
+  "sum_steps": 200,
+  "evidence_checker_corrupt_hash_rejected": true,
+  "source_originals_unchanged": true,
+  "scope_limits": [
+    "Virtual NVBoard/Xvfb, not physical FPGA",
+    "sISA, not RISC-V",
+    "Structural checks and bounded/exhaustive simulations, not whole-design unbounded proof",
+    "No PPA or official examination/tapeout certification"
+  ],
+  "latest_commands": [
+    "artifacts/E4/basic/dual/run.json",
+    "artifacts/E4/basic/fst/run.json",
+    "artifacts/E4/basic/xor_negative/run.json",
+    "artifacts/E4/board/library/run.json",
+    "artifacts/E4/board/official_build/run.json",
+    "artifacts/E4/board/pin_bind/run.json",
+    "artifacts/E4/build/comb/run.json",
+    "artifacts/E4/build/diff_bad_gpr/run.json",
+    "artifacts/E4/build/diff_bad_pc/run.json",
+    "artifacts/E4/build/difftest/run.json",
+    "artifacts/E4/build/dual/run.json",
+    "artifacts/E4/build/dual_bad/run.json",
+    "artifacts/E4/build/dual_fst/run.json",
+    "artifacts/E4/build/fault_lfsr/run.json",
+    "artifacts/E4/build/fault_overflow/run.json",
+    "artifacts/E4/build/fault_parity/run.json",
+    "artifacts/E4/build/fault_priority/run.json",
+    "artifacts/E4/build/fault_vga_total/run.json",
+    "artifacts/E4/build/keyboard/run.json",
+    "artifacts/E4/build/lab_board/run.json",
+    "artifacts/E4/build/motion/run.json",
+    "artifacts/E4/build/official/run.json",
+    "artifacts/E4/build/sequential/run.json",
+    "artifacts/E4/build/vga/run.json",
+    "artifacts/E4/cpu/diff_random/run.json",
+    "artifacts/E4/cpu/diff_sum/run.json",
+    "artifacts/E4/cpu/negative_gpr/run.json",
+    "artifacts/E4/cpu/negative_pc/run.json",
+    "artifacts/E4/cpu/semu_compile/run.json",
+    "artifacts/E4/cpu/semu_f5_sum10/run.json",
+    "artifacts/E4/cpu/semu_f6_output/run.json",
+    "artifacts/E4/cpu/semu_f6_sum10/run.json",
+    "artifacts/E4/cpu/semu_object/run.json",
+    "artifacts/E4/environment/build_verilator/run.json",
+    "artifacts/E4/environment/dependencies/run.json",
+    "artifacts/E4/environment/fst_dependency/run.json",
+    "artifacts/E4/environment/nvboard_bundle/run.json",
+    "artifacts/E4/environment/nvboard_commit/run.json",
+    "artifacts/E4/environment/source/run.json",
+    "artifacts/E4/export/nvboard/run.json",
+    "artifacts/E4/export/nvboard_clean/run.json",
+    "artifacts/E4/fourstate/compile/run.json",
+    "artifacts/E4/fourstate/run/run.json",
+    "artifacts/E4/framework/init_npc/run.json",
+    "artifacts/E4/framework/local_branch/run.json",
+    "artifacts/E4/framework/make_sim/run.json",
+    "artifacts/E4/framework/nvboard_checkout/run.json",
+    "artifacts/E4/framework/nvboard_commit/run.json",
+    "artifacts/E4/framework/nvboard_fsck/run.json",
+    "artifacts/E4/framework/nvboard_head/run.json",
+    "artifacts/E4/framework/nvboard_init/run.json",
+    "artifacts/E4/framework/nvboard_read_tree/run.json",
+    "artifacts/E4/framework/nvboard_submodules/run.json",
+    "artifacts/E4/framework/nvboard_unbundle/run.json",
+    "artifacts/E4/framework/process_environment/run.json",
+    "artifacts/E4/framework/restore_owned_index/run.json",
+    "artifacts/E4/framework/traced_files/run.json",
+    "artifacts/E4/framework/tracer_log/run.json",
+    "artifacts/E4/gui/capture_alu_1656/run.json",
+    "artifacts/E4/gui/capture_alu_1928/run.json",
+    "artifacts/E4/gui/capture_alu_23/run.json",
+    "artifacts/E4/gui/capture_alu_376/run.json",
+    "artifacts/E4/gui/capture_cpu_sum55/run.json",
+    "artifacts/E4/gui/capture_dual_0/run.json",
+    "artifacts/E4/gui/capture_dual_1/run.json",
+    "artifacts/E4/gui/capture_dual_2/run.json",
+    "artifacts/E4/gui/capture_dual_3/run.json",
+    "artifacts/E4/gui/capture_encoder_256/run.json",
+    "artifacts/E4/gui/capture_encoder_270/run.json",
+    "artifacts/E4/gui/capture_encoder_384/run.json",
+    "artifacts/E4/gui/capture_fsm_four_ones/run.json",
+    "artifacts/E4/gui/capture_fsm_four_zeros/run.json",
+    "artifacts/E4/gui/capture_gtkwave_fst/run.json",
+    "artifacts/E4/gui/capture_gtkwave_vcd/run.json",
+    "artifacts/E4/gui/capture_keyboard_a/run.json",
+    "artifacts/E4/gui/capture_keyboard_ctrl/run.json",
+    "artifacts/E4/gui/capture_keyboard_release/run.json",
+    "artifacts/E4/gui/capture_keyboard_shift_w/run.json",
+    "artifacts/E4/gui/capture_lfsr/run.json",
+    "artifacts/E4/gui/capture_official_after_switch/run.json",
+    "artifacts/E4/gui/capture_official_before/run.json",
+    "artifacts/E4/gui/capture_running_light/run.json",
+    "artifacts/E4/gui/capture_shift/run.json",
+    "artifacts/E4/gui/capture_vga_moving_1/run.json",
+    "artifacts/E4/gui/capture_vga_moving_2/run.json",
+    "artifacts/E4/gui/capture_vga_static/run.json",
+    "artifacts/E4/gui/session/run.json",
+    "artifacts/E4/lint/comb/run.json",
+    "artifacts/E4/lint/cpu_top/run.json",
+    "artifacts/E4/lint/keyboard/run.json",
+    "artifacts/E4/lint/lab_board/run.json",
+    "artifacts/E4/lint/negative/run.json",
+    "artifacts/E4/lint/sequential/run.json",
+    "artifacts/E4/lint/vga/run.json",
+    "artifacts/E4/negative/lfsr/run.json",
+    "artifacts/E4/negative/overflow/run.json",
+    "artifacts/E4/negative/parity/run.json",
+    "artifacts/E4/negative/priority/run.json",
+    "artifacts/E4/negative/vga_total/run.json",
+    "artifacts/E4/official/example/run.json",
+    "artifacts/E4/offline/git_add/run.json",
+    "artifacts/E4/offline/git_commit/run.json",
+    "artifacts/E4/offline/git_email/run.json",
+    "artifacts/E4/offline/git_init/run.json",
+    "artifacts/E4/offline/git_name/run.json",
+    "artifacts/E4/offline/hex_all16/run.json",
+    "artifacts/E4/offline/hex_compile/run.json",
+    "artifacts/E4/offline/make_sim/run.json",
+    "artifacts/E4/offline/semu_build/run.json",
+    "artifacts/E4/offline/semu_sum/run.json",
+    "artifacts/E4/rom/all_addresses/run.json",
+    "artifacts/E4/rom/compile/run.json",
+    "artifacts/E4/structure/comb/run.json",
+    "artifacts/E4/structure/cpu_top/run.json",
+    "artifacts/E4/structure/keyboard/run.json",
+    "artifacts/E4/structure/motion/run.json",
+    "artifacts/E4/structure/negative/run.json",
+    "artifacts/E4/structure/negative_clock/run.json",
+    "artifacts/E4/structure/sequential/run.json",
+    "artifacts/E4/structure/vga_timing/run.json",
+    "artifacts/E4/tools/iverilog/run.json",
+    "artifacts/E4/tools/packages/run.json",
+    "artifacts/E4/tools/versions/run.json",
+    "artifacts/E4/units/comb/run.json",
+    "artifacts/E4/units/keyboard/run.json",
+    "artifacts/E4/units/motion/run.json",
+    "artifacts/E4/units/sequential/run.json",
+    "artifacts/E4/units/vga/run.json",
+    "artifacts/E4/waves/fst_convert/run.json"
+  ],
+  "historical": [
+    {
+      "path": "artifacts\\E4\\basic\\dual\\attempts\\20261024T203749660966\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\basic\\xor_negative\\attempts\\20261024T203750402284\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\library\\attempts\\20261024T204545606251\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\library\\attempts\\20261024T204648915814\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\library\\attempts\\20261024T204859519833\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\library\\attempts\\20261024T205130598310\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\library\\attempts\\20261024T211324045479\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\official_build\\attempts\\20261024T204545823799\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\official_build\\attempts\\20261024T204649240607\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\official_build\\attempts\\20261024T204859703393\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\official_build\\attempts\\20261024T205130841562\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\official_build\\attempts\\20261024T211324429111\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\pin_bind\\attempts\\20261024T204545981053\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\pin_bind\\attempts\\20261024T204649492301\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\pin_bind\\attempts\\20261024T204859845160\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\pin_bind\\attempts\\20261024T205131140912\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\board\\pin_bind\\attempts\\20261024T211324780110\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\comb\\attempts\\20261024T203120295277\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\diff_bad_gpr\\attempts\\20261024T204144279221\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\diff_bad_pc\\attempts\\20261024T204148876657\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\build\\difftest\\attempts\\20261024T204138554423\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\dual\\attempts\\20261024T203749275463\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\dual_bad\\attempts\\20261024T203750023322\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\dual_fst\\attempts\\20261024T203750707381\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\build\\keyboard\\attempts\\20261024T203250140896\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\build\\lab_board\\attempts\\20261024T204546164458\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\build\\lab_board\\attempts\\20261024T204649789576\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\build\\lab_board\\attempts\\20261024T204900261690\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\lab_board\\attempts\\20261024T205131446675\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\lab_board\\attempts\\20261024T211325213306\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\official\\attempts\\20261024T203748580865\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\vga\\attempts\\20261024T203754724714\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\build\\vga\\attempts\\20261024T205737136060\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\build\\vga\\attempts\\20261024T212915389424\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\cpu\\diff_random\\attempts\\20261024T204143683278\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\cpu\\diff_sum\\attempts\\20261024T204143409245\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\cpu\\negative_gpr\\attempts\\20261024T204148580600\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\cpu\\semu_compile\\attempts\\20261024T204136572314\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\cpu\\semu_f5_sum10\\attempts\\20261024T204137822389\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\cpu\\semu_f6_output\\attempts\\20261024T204138343040\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\cpu\\semu_f6_sum10\\attempts\\20261024T204138083112\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\cpu\\semu_object\\attempts\\20261024T204137331242\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\environment\\source\\attempts\\20261024T201809127430\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\framework\\make_sim\\attempts\\20261024T204902220515\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\framework\\make_sim\\attempts\\20261024T205133710806\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\framework\\make_sim\\attempts\\20261024T211331272427\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\framework\\nvboard_clone\\run.json",
+      "status": "RESOLVED_FAILURE",
+      "reason": "Archived repository is shallow; original shallow metadata plus bundled objects restored, checkout/fsck succeeded."
+    },
+    {
+      "path": "artifacts\\E4\\framework\\nvboard_read_tree\\attempts\\20261024T203200407850\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\framework\\traced_files\\attempts\\20261024T211331809606\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\framework\\tracer_log\\attempts\\20261024T205135231167\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\framework\\tracer_log\\attempts\\20261024T211331604981\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_alu_1656\\attempts\\20261024T210205384518\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_alu_1656\\attempts\\20261024T211344730862\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_alu_1928\\attempts\\20261024T210206280874\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_alu_1928\\attempts\\20261024T211345561953\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_alu_23\\attempts\\20261024T210203716618\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_alu_23\\attempts\\20261024T211343055020\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_alu_376\\attempts\\20261024T210204773912\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_alu_376\\attempts\\20261024T211344072533\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_cpu_sum55\\attempts\\20261024T210219438302\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_cpu_sum55\\attempts\\20261024T211358526355\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_dual_0\\attempts\\20261024T205712921781\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_dual_0\\attempts\\20261024T210158328638\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_dual_0\\attempts\\20261024T211337984166\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_dual_1\\attempts\\20261024T210158794631\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_dual_1\\attempts\\20261024T211338424185\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_dual_2\\attempts\\20261024T210159710778\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_dual_2\\attempts\\20261024T211339264414\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_dual_3\\attempts\\20261024T210159273509\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_dual_3\\attempts\\20261024T211338830597\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_encoder_256\\attempts\\20261024T210200840360\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_encoder_256\\attempts\\20261024T211340285938\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_encoder_270\\attempts\\20261024T210201602853\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_encoder_270\\attempts\\20261024T211340970390\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_encoder_384\\attempts\\20261024T210202372745\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_encoder_384\\attempts\\20261024T211341760107\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_fsm_four_ones\\attempts\\20261024T210211914066\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_fsm_four_ones\\attempts\\20261024T211351134774\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_fsm_four_zeros\\attempts\\20261024T210210937686\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_fsm_four_zeros\\attempts\\20261024T211350217899\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_gtkwave_fst\\attempts\\20261024T210225647676\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_gtkwave_fst\\attempts\\20261024T211404922961\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_gtkwave_vcd\\attempts\\20261024T210224752903\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_gtkwave_vcd\\attempts\\20261024T211404060690\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_keyboard_a\\attempts\\20261024T210213661478\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_keyboard_a\\attempts\\20261024T211352877853\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_keyboard_ctrl\\attempts\\20261024T210214794855\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_keyboard_ctrl\\attempts\\20261024T211353955223\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_keyboard_release\\attempts\\20261024T210214034181\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_keyboard_release\\attempts\\20261024T211353212027\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_keyboard_shift_w\\attempts\\20261024T210214421627\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_keyboard_shift_w\\attempts\\20261024T211353593504\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_lfsr\\attempts\\20261024T210207717890\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_lfsr\\attempts\\20261024T211346974276\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_official_after_switch\\attempts\\20261024T205351582654\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_official_after_switch\\attempts\\20261024T205712014721\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_official_after_switch\\attempts\\20261024T210157211296\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_official_after_switch\\attempts\\20261024T211336723704\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_official_before\\attempts\\20261024T205351101632\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_official_before\\attempts\\20261024T205711499749\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_official_before\\attempts\\20261024T210156572263\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_official_before\\attempts\\20261024T211336119417\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_running_light\\attempts\\20261024T210223762837\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_running_light\\attempts\\20261024T211403125739\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_shift\\attempts\\20261024T210209520015\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_shift\\attempts\\20261024T211348799808\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_vga_moving_1\\attempts\\20261024T210217420791\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_vga_moving_1\\attempts\\20261024T211356544544\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_vga_moving_2\\attempts\\20261024T210218542625\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_vga_moving_2\\attempts\\20261024T211357602123\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_vga_static\\attempts\\20261024T210216231077\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\capture_vga_static\\attempts\\20261024T211355381953\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\session\\attempts\\20261024T205344896564\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\session\\attempts\\20261024T205707077774\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\session\\attempts\\20261024T210150517042\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\gui\\session\\attempts\\20261024T211332250098\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\lint\\lab_board\\attempts\\20261024T212136532581\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\official\\example\\attempts\\20261024T203748969944\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\structure\\comb\\attempts\\20261024T210708180651\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\structure\\cpu_top\\attempts\\20261024T210708663601\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\structure\\keyboard\\attempts\\20261024T210708431658\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\structure\\sequential\\attempts\\20261024T210708310843\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\tools\\versions\\attempts\\20261024T203746868182\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\units\\comb\\attempts\\20261024T203124946505\\run.json",
+      "status": "FAIL"
+    },
+    {
+      "path": "artifacts\\E4\\units\\vga\\attempts\\20261024T205739171583\\run.json",
+      "status": "PASS"
+    },
+    {
+      "path": "artifacts\\E4\\units\\vga\\attempts\\20261024T212915822930\\run.json",
+      "status": "PASS"
+    }
+  ]
+}

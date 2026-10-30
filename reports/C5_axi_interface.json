@@ -1,0 +1,71 @@
+{
+  "status": "PASS_FULL_AXI4_INTERFACE_CONTROLS",
+  "runs": [
+    {
+      "scenario": 0,
+      "status": "PASS",
+      "stdout": "AXI4_CPU_PROTOCOL_PASS scenario=0 cycles=88 reads=7 writes=1 rstalls=6\n- /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/axi4_cpu_tb.sv:147: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 880ns; walltime 0.001 s; speed 763.368 us/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 2 MB\n",
+      "evidence": "C5/axi-unit/scenario0"
+    },
+    {
+      "scenario": 1,
+      "status": "PASS",
+      "stdout": "AXI4_CPU_PROTOCOL_PASS scenario=1 cycles=88 reads=7 writes=1 rstalls=6\n- /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/axi4_cpu_tb.sv:147: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 880ns; walltime 0.002 s; speed 495.190 us/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 2 MB\n",
+      "evidence": "C5/axi-unit/scenario1"
+    },
+    {
+      "scenario": 2,
+      "status": "PASS",
+      "stdout": "AXI4_CPU_PROTOCOL_PASS scenario=2 cycles=88 reads=7 writes=1 rstalls=6\n- /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/axi4_cpu_tb.sv:147: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 880ns; walltime 0.002 s; speed 551.729 us/s\n- Verilator: cpu 0.001 s on 1 threads; allocated 2 MB\n",
+      "evidence": "C5/axi-unit/scenario2"
+    },
+    {
+      "scenario": 3,
+      "status": "PASS",
+      "stdout": "AXI4_CPU_PROTOCOL_REJECT_PASS scenario=3 fault=5 instructions=0\n- /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/axi4_cpu_tb.sv:143: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 140ns; walltime 0.001 s; speed 143.496 us/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 2 MB\n",
+      "evidence": "C5/axi-unit/scenario3"
+    },
+    {
+      "scenario": 4,
+      "status": "PASS",
+      "stdout": "AXI4_CPU_PROTOCOL_REJECT_PASS scenario=4 fault=5 instructions=0\n- /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/axi4_cpu_tb.sv:143: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 140ns; walltime 0.001 s; speed 234.342 us/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 2 MB\n",
+      "evidence": "C5/axi-unit/scenario4"
+    },
+    {
+      "scenario": 5,
+      "status": "PASS",
+      "stdout": "AXI4_CPU_PROTOCOL_REJECT_PASS scenario=5 fault=5 instructions=2\n- /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/axi4_cpu_tb.sv:143: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 390ns; walltime 0.001 s; speed 481.970 us/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 2 MB\n",
+      "evidence": "C5/axi-unit/scenario5"
+    },
+    {
+      "scenario": 6,
+      "status": "PASS",
+      "stdout": "AXI4_CPU_PROTOCOL_PASS scenario=6 cycles=90 reads=7 writes=1 rstalls=8\n- /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/axi4_cpu_tb.sv:147: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 900ns; walltime 0.001 s; speed 857.650 us/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 2 MB\n",
+      "evidence": "C5/axi-unit/scenario6"
+    },
+    {
+      "mutation": "master WLAST stuck0",
+      "status": "PASS_REJECTED",
+      "evidence": "C5/axi-unit/bad-wlast"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/rtl/ysyx_00000000_core.sv",
+      "sha256": "2676a7c2819a1c87e7e1c48fd68cc7d113df446eb8fac4c8562f43041404041f"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/rtl/ysyx_00000000_execute.sv",
+      "sha256": "772363386a8d3b5b565cbf3757f44d7a1f1bbee65649d1581aac93c5d2e63616"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/rtl/ysyx_00000000.v",
+      "sha256": "1761657c9686752add1e44c59511d3b852835e3c88e080b605e6ceaef07146d3"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/axi4_cpu_tb.sv",
+      "sha256": "9e20ccdde19367b4dd2d657edd14a4d4930d2f86978279b10d30db55cf8315de"
+    }
+  ],
+  "scope": "Finite timed CPU-only bus fixture: all unused slave outputs zero, byte addresses and AxSIZE/WSTRB, AW-first/W-first/simultaneous acceptance, held requests, randomized response readiness, reset with outstanding read; malformed RLAST/RID/BID rejected. Actual master WLAST mutation fails. Full SoC MROM/SRAM tests remain separate."
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS_BOUNDED_OBSERVATION",
+  "simulation": {
+    "result": "BOUNDED_OUTPUT_OBSERVATION",
+    "exit_code": 0,
+    "pc": 2147509844,
+    "a0": 46,
+    "cycles": 9537750,
+    "instructions": 9537750,
+    "frequency_hz": 100000000,
+    "wall_seconds": 2.982248174,
+    "ebreak_calls": 0,
+    "memory_writes": 2408797,
+    "load_commits": 3591475,
+    "uart_bytes": 103,
+    "uart_polls": 103,
+    "uart_not_ready": 0,
+    "gpr": [
+      0,
+      2147548384,
+      2148507392,
+      2147509840,
+      2147509840,
+      2147550020,
+      4294967295,
+      47,
+      0,
+      2148507552,
+      46,
+      1,
+      1,
+      2148507518,
+      268435456,
+      1
+    ]
+  },
+  "observed_seconds": [
+    1,
+    2,
+    3
+  ],
+  "evidence": "artifacts/E6/devices/official_timer",
+  "purpose": "Official infinite timer test; stops after the third completed output line, not a timeout."
+}

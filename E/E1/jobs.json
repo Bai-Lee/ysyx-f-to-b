@@ -1,0 +1,5652 @@
+{
+  "source_count": 112,
+  "records": [
+    {
+      "id": "HDL-001",
+      "slug": "step_one",
+      "title": "Getting Started",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\24a46b4ef8d49b2d.html",
+      "source_sha256": "1b11dc287dff5d8615788765a7c8397e333e21f6a8d37e3bbf9423cd7497f9ad",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\step_one.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\step_one_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\step_one_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\step_one_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\step_one.txt",
+      "cases": 2,
+      "outputs_checked": {
+        "one": 2
+      },
+      "mask_reasons": {},
+      "explanation": "常量1，连续驱动输出。",
+      "interface": [
+        {
+          "name": "one",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-002",
+      "slug": "zero",
+      "title": "Output Zero",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\13af1bfb56e32a4e.html",
+      "source_sha256": "903e43a3e82ab32bd9d292b7327c0de232357103d1dde5c03ffa68491df6711d",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\zero.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\zero_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\zero_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\zero_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\zero.txt",
+      "cases": 2,
+      "outputs_checked": {
+        "zero": 2
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "zero",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-003",
+      "slug": "wire",
+      "title": "Simple wire",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\7718f7c36bb79a09.html",
+      "source_sha256": "affae59d3e99a46959b2165d900be23019dc59453dd301e28daa4f67175d1586",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\wire.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\wire_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\wire_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\wire_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\wire.txt",
+      "cases": 2,
+      "outputs_checked": {
+        "out": 2
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-004",
+      "slug": "wire4",
+      "title": "Four wires",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\8252b824e0612819.html",
+      "source_sha256": "f3f901b12eab8b7cb3056a123c52dd3b6d8d7eadce544561df9275ee0ef28ef6",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\wire4.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\wire4_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\wire4_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\wire4_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\wire4.txt",
+      "cases": 8,
+      "outputs_checked": {
+        "w": 8,
+        "x": 8,
+        "y": 8,
+        "z": 8
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "c",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "w",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "x",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "y",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-005",
+      "slug": "notgate",
+      "title": "Inverter",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\66299c9368857a86.html",
+      "source_sha256": "b5de97d4661de6ab0bbafd200c229c9f874598a9de8640c99d01c1a3cdbb4c95",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\notgate.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\notgate_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\notgate_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\notgate_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\notgate.txt",
+      "cases": 2,
+      "outputs_checked": {
+        "out": 2
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-006",
+      "slug": "andgate",
+      "title": "AND gate",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\6ae043af8880cc6d.html",
+      "source_sha256": "828283be95bd47aef3db705ae48c70e33a45cd687b37a8d217fbfac72eae62be",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\andgate.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+      "cases": 4,
+      "outputs_checked": {
+        "out": 4
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-007",
+      "slug": "norgate",
+      "title": "NOR gate",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\cc5eeeb9282026ce.html",
+      "source_sha256": "c4d69e2a2437d222358645a108cbfaf0d74d892c5bd3a829301513ea6fd6b74b",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\norgate.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\norgate_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\norgate_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\norgate_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\norgate.txt",
+      "cases": 4,
+      "outputs_checked": {
+        "out": 4
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-008",
+      "slug": "xnorgate",
+      "title": "XNOR gate",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\2eaf7265d46dd9b6.html",
+      "source_sha256": "4efb8dd31f1959e9bdab00f455c145b354623631624f50c633bd2053b43966ef",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\xnorgate.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\xnorgate_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\xnorgate_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\xnorgate_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\xnorgate.txt",
+      "cases": 4,
+      "outputs_checked": {
+        "out": 4
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-009",
+      "slug": "wire_decl",
+      "title": "Declaring wires",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\24f5dc891e06259d.html",
+      "source_sha256": "4096437244de2bcaaaf6bc4c41865a94c4bb8b4f2c87f1ba7064d1be7166b950",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\wire_decl.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\wire_decl_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\wire_decl_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\wire_decl_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\wire_decl.txt",
+      "cases": 16,
+      "outputs_checked": {
+        "out": 16,
+        "out_n": 16
+      },
+      "mask_reasons": {},
+      "explanation": "原图两组AND汇入OR，out再取反；中间导线显式声明。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "c",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_n",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-010",
+      "slug": "7458",
+      "title": "7458 chip",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\09ec3ebf14cf3512.html",
+      "source_sha256": "1f94e11d58e55cb0557697eff718b106aba041ea93d4e5dd4738e384c648024f",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\7458.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\7458_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\7458_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\7458_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\7458.txt",
+      "cases": 1024,
+      "outputs_checked": {
+        "p1y": 1024,
+        "p2y": 1024
+      },
+      "mask_reasons": {},
+      "explanation": "逐引脚核对7458原图：两个三输入AND和两个二输入AND分别汇入两个OR。",
+      "interface": [
+        {
+          "name": "p1a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p1b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p1c",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p1d",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p1e",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p1f",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p1y",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p2a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p2b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p2c",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p2d",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "p2y",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-011",
+      "slug": "vector0",
+      "title": "Vectors",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\1c057655620ee342.html",
+      "source_sha256": "faf112a0340cca062988f59aa5f618dee1719b44480119edb43de9a244273ff3",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\vector0.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector0_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector0_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector0_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\vector0.txt",
+      "cases": 8,
+      "outputs_checked": {
+        "outv": 8,
+        "o2": 8,
+        "o1": 8,
+        "o0": 8
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "vec",
+          "direction": "input",
+          "bounds": "[2:0]",
+          "width": 3
+        },
+        {
+          "name": "outv",
+          "direction": "output",
+          "bounds": "[2:0]",
+          "width": 3
+        },
+        {
+          "name": "o2",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "o1",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "o0",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-012",
+      "slug": "vector1",
+      "title": "Vectors in more detail",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\f2d96056c06db7ca.html",
+      "source_sha256": "ba367997866f0f5adad3d2b793dfc3def21e2b3298cc7f203862d7301dda2ecf",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\vector1.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector1_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector1_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector1_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\vector1.txt",
+      "cases": 65536,
+      "outputs_checked": {
+        "out_hi": 65536,
+        "out_lo": 65536
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "out_hi",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "out_lo",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-013",
+      "slug": "vector2",
+      "title": "Vector part select",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\b98b67dfe943102e.html",
+      "source_sha256": "d077131c36046cae9b2b83febbd34874ac66ac0bcc91619086ff2b2ad655f431",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\vector2.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector2_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector2_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector2_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\vector2.txt",
+      "cases": 466,
+      "outputs_checked": {
+        "out": 466
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[31:0]",
+          "width": 32
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-014",
+      "slug": "vectorgates",
+      "title": "Bitwise operators",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\e8ecaa747282f574.html",
+      "source_sha256": "08877a76baa44277099017a5fe968482110e72f3b547fd159dfc0d7570c2b9ed",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\vectorgates.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vectorgates_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vectorgates_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vectorgates_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\vectorgates.txt",
+      "cases": 64,
+      "outputs_checked": {
+        "out_or_bitwise": 64,
+        "out_or_logical": 64,
+        "out_not": 64
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[2:0]",
+          "width": 3
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[2:0]",
+          "width": 3
+        },
+        {
+          "name": "out_or_bitwise",
+          "direction": "output",
+          "bounds": "[2:0]",
+          "width": 3
+        },
+        {
+          "name": "out_or_logical",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_not",
+          "direction": "output",
+          "bounds": "[5:0]",
+          "width": 6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-015",
+      "slug": "gates4",
+      "title": "Four-input gates",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\025ff45ba530f489.html",
+      "source_sha256": "60d66b3ef9eb13d05da49078901efd7724f59ac7e9a8cb896dd34e44ff81545f",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\gates4.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gates4_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gates4_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gates4_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\gates4.txt",
+      "cases": 16,
+      "outputs_checked": {
+        "out_and": 16,
+        "out_or": 16,
+        "out_xor": 16
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "out_and",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_or",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_xor",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-016",
+      "slug": "vector3",
+      "title": "Vector concatenation operator",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\c9c1f3730b421a10.html",
+      "source_sha256": "28e30d4bf7a4ec7780491b85751a5e0ded8fba0be016947a7602ba7468c2b72b",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\vector3.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector3_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector3_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector3_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\vector3.txt",
+      "cases": 462,
+      "outputs_checked": {
+        "w": 462,
+        "x": 462,
+        "y": 462,
+        "z": 462
+      },
+      "mask_reasons": {},
+      "explanation": "30输入位按a到f顺序拼接，再附两个1；独立按字符串分组检验。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[4:0]",
+          "width": 5
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[4:0]",
+          "width": 5
+        },
+        {
+          "name": "c",
+          "direction": "input",
+          "bounds": "[4:0]",
+          "width": 5
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "[4:0]",
+          "width": 5
+        },
+        {
+          "name": "e",
+          "direction": "input",
+          "bounds": "[4:0]",
+          "width": 5
+        },
+        {
+          "name": "f",
+          "direction": "input",
+          "bounds": "[4:0]",
+          "width": 5
+        },
+        {
+          "name": "w",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "x",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "y",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-017",
+      "slug": "vectorr",
+      "title": "Vector reversal 1",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\47e5d50fe5de95ad.html",
+      "source_sha256": "9983e5bb7cb0a55b8fa68fa9c05ccf533c29b3e0d3fa6c62a313227f794761a5",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\vectorr.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vectorr_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vectorr_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vectorr_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\vectorr.txt",
+      "cases": 256,
+      "outputs_checked": {
+        "out": 256
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-018",
+      "slug": "vector4",
+      "title": "Replication operator",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\b63c1f13c650b833.html",
+      "source_sha256": "c0007d4eceb5812a87bc370eec6edf1d47eefa800450f18c31f6333ecd5f8a4b",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\vector4.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector4_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector4_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector4_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\vector4.txt",
+      "cases": 256,
+      "outputs_checked": {
+        "out": 256
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[31:0]",
+          "width": 32
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-019",
+      "slug": "vector5",
+      "title": "More replication",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\0572c6851848d75b.html",
+      "source_sha256": "1697a53a59cc805f8ddf12515047647a312a04a7b9f7de56834b4fdc1bf87304",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\vector5.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector5_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector5_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector5_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\vector5.txt",
+      "cases": 32,
+      "outputs_checked": {
+        "out": 32
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "c",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "e",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[24:0]",
+          "width": 25
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-020",
+      "slug": "module",
+      "title": "Modules",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\1d9959f03f3c36ed.html",
+      "source_sha256": "75759a086eb847c992aa25d1097139fe626bd84f64cb789a2f953417218236a1",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\module.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\module.txt",
+      "cases": 8,
+      "outputs_checked": {
+        "out": 8
+      },
+      "mask_reasons": {},
+      "explanation": "题面未给黑盒内部逻辑，测试独立驱动其输出并直接核验每个输入连接；不假造黑盒功能。按名称题还置换fixture端口顺序。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-021",
+      "slug": "module_pos",
+      "title": "Connecting ports by position",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\8633d439430db812.html",
+      "source_sha256": "5dcb362776360e61897b43034579d16fb7bef2ebd820a77d073b5d1ca9f822fd",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\module_pos.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_pos_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_pos_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_pos_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\module_pos.txt",
+      "cases": 64,
+      "outputs_checked": {
+        "out1": 64,
+        "out2": 64
+      },
+      "mask_reasons": {},
+      "explanation": "题面未给黑盒内部逻辑，测试独立驱动其输出并直接核验每个输入连接；不假造黑盒功能。按名称题还置换fixture端口顺序。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "c",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out1",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out2",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-022",
+      "slug": "module_name",
+      "title": "Connecting ports by name",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\5f282069004a8b30.html",
+      "source_sha256": "eeee6349667fea0835ba7aaa6a93a6b135f5e84ea204860ae978ef2697430d1b",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\module_name.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_name_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_name_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_name_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\module_name.txt",
+      "cases": 64,
+      "outputs_checked": {
+        "out1": 64,
+        "out2": 64
+      },
+      "mask_reasons": {},
+      "explanation": "题面未给黑盒内部逻辑，测试独立驱动其输出并直接核验每个输入连接；不假造黑盒功能。按名称题还置换fixture端口顺序。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "c",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out1",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out2",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-023",
+      "slug": "module_shift",
+      "title": "Three modules",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\a36ec3244f2d819b.html",
+      "source_sha256": "5516547bd95058b51f2342e8d2b251641fcacf43c7157d0b86194ced529995fb",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\module_shift.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_shift_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_shift_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_shift_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\module_shift.txt",
+      "cases": 500,
+      "outputs_checked": {
+        "q": 495
+      },
+      "mask_reasons": {
+        "q": "No reset; pipeline positions are undefined until three samples arrive."
+      },
+      "explanation": "三个题面DFF串接；独立队列参考验证三拍历史，无新增复位。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-024",
+      "slug": "module_shift8",
+      "title": "Modules and vectors",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\80a884be905ec48e.html",
+      "source_sha256": "3711d4b2d9b83e12811baa03923a1112e5692a09a2d39f88b6edb1b469b0a192",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\module_shift8.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_shift8_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_shift8_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_shift8_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\module_shift8.txt",
+      "cases": 1600,
+      "outputs_checked": {
+        "q": 1600
+      },
+      "mask_reasons": {
+        "q": "Unfilled pipeline tap undefined; direct input and filled taps still checked."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "sel",
+          "direction": "input",
+          "bounds": "[1:0]",
+          "width": 2
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-025",
+      "slug": "module_add",
+      "title": "Adder 1",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\03cf4a90addf2490.html",
+      "source_sha256": "4ad69c36566be3d7a306b59f5b4ad7fdcfdd24c85dc63e3176c72144eeba8292",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\module_add.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_add_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_add_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_add_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\module_add.txt",
+      "cases": 735,
+      "outputs_checked": {
+        "sum": 735
+      },
+      "mask_reasons": {},
+      "explanation": "两个16位加法器低半部向高半部传递进位；公开add16契约由离线fixture补齐。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "sum",
+          "direction": "output",
+          "bounds": "[31:0]",
+          "width": 32
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-026",
+      "slug": "module_fadd",
+      "title": "Adder 2",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\cc8203024edee10a.html",
+      "source_sha256": "3c492e6d9124193cb88347bc399440c53432b1e94cf9617a63956775324698b0",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\module_fadd.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_fadd_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_fadd_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_fadd_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\module_fadd.txt",
+      "cases": 735,
+      "outputs_checked": {
+        "sum": 735
+      },
+      "mask_reasons": {},
+      "explanation": "top实例化两个add16；测试提供的add16分别实例化16个本题自写add1，完整两级层次。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "sum",
+          "direction": "output",
+          "bounds": "[31:0]",
+          "width": 32
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-027",
+      "slug": "module_cseladd",
+      "title": "Carry-select adder",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\26a17e9830baba03.html",
+      "source_sha256": "4a6f9437d116156dee6ef64e6eab9641c68a63c9ff0dad853fee23a2c95eb3f0",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\module_cseladd.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_cseladd_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_cseladd_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_cseladd_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\module_cseladd.txt",
+      "cases": 735,
+      "outputs_checked": {
+        "sum": 735
+      },
+      "mask_reasons": {},
+      "explanation": "三个add16，上半部预先计算cin0/1并用低半部进位选择。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "sum",
+          "direction": "output",
+          "bounds": "[31:0]",
+          "width": 32
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-028",
+      "slug": "module_addsub",
+      "title": "Adder-subtractor",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\17902a3f46f08ef7.html",
+      "source_sha256": "3ed7eccfde9093917f10077e031347d761324b96080b7f61a4fa7d564927877a",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\module_addsub.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_addsub_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_addsub_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\module_addsub_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\module_addsub.txt",
+      "cases": 532,
+      "outputs_checked": {
+        "sum": 532
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "sub",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "sum",
+          "direction": "output",
+          "bounds": "[31:0]",
+          "width": 32
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-029",
+      "slug": "alwaysblock1",
+      "title": "Always blocks (combinational)",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\1f71f00a1e4e8f64.html",
+      "source_sha256": "6e383a2e257bd0ba4adfd263f8cb019fc1fb9686636c66c55fb4474c830f5455",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\alwaysblock1.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\alwaysblock1_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\alwaysblock1_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\alwaysblock1_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\alwaysblock1.txt",
+      "cases": 4,
+      "outputs_checked": {
+        "out_assign": 4,
+        "out_alwaysblock": 4
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_assign",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_alwaysblock",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-030",
+      "slug": "alwaysblock2",
+      "title": "Always blocks (clocked)",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\0321f1ea7d56a6dd.html",
+      "source_sha256": "f65940028623ef2b2b9e2656192d022cde3a4dec8a8bd49b217957b62ac55058",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\alwaysblock2.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\alwaysblock2_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\alwaysblock2_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\alwaysblock2_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\alwaysblock2.txt",
+      "cases": 240,
+      "outputs_checked": {
+        "out_assign": 240,
+        "out_always_comb": 240,
+        "out_always_ff": 239
+      },
+      "mask_reasons": {
+        "out_always_ff": "Unreset flop before its first sample only."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_assign",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_always_comb",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_always_ff",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-031",
+      "slug": "always_if",
+      "title": "If statement",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\4a9997fef0c7d00e.html",
+      "source_sha256": "ae39bf162fe31609f6f20dbbc1029e30dc544b2b929aaf991497c673a2b2cb62",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\always_if.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_if_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_if_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_if_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\always_if.txt",
+      "cases": 16,
+      "outputs_checked": {
+        "out_assign": 16,
+        "out_always": 16
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "sel_b1",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "sel_b2",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_assign",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_always",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-032",
+      "slug": "always_if2",
+      "title": "If statement latches",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\1aab92864d920945.html",
+      "source_sha256": "b95c2bcc89bee5b2c9f855ce0216c8a4b75cd60e4049958b697f1f72bb6d5070",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\always_if2.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_if2_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_if2_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_if2_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\always_if2.txt",
+      "cases": 8,
+      "outputs_checked": {
+        "shut_off_computer": 8,
+        "keep_driving": 8
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "cpu_overheated",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "shut_off_computer",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "arrived",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "gas_tank_empty",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "keep_driving",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-033",
+      "slug": "always_case",
+      "title": "Case statement",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\fdcfe9670d5929aa.html",
+      "source_sha256": "e140adf48c74c944c79c296de6a98b98754d50f31cfa1b8f57f8376bdfc60db2",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\always_case.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_case_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_case_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_case_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\always_case.txt",
+      "cases": 960,
+      "outputs_checked": {
+        "out": 960
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "sel",
+          "direction": "input",
+          "bounds": "[2:0]",
+          "width": 3
+        },
+        {
+          "name": "data0",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "data1",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "data2",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "data3",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "data4",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "data5",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[3:0]",
+          "width": 4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-034",
+      "slug": "always_case2",
+      "title": "Priority encoder",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\cf018e4cc32b8f83.html",
+      "source_sha256": "3eb99ed313d74651b5bafd4e6d82df623a0b898bdda1f1f4d06b5eb0c00ca5bb",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\always_case2.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_case2_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_case2_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_case2_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\always_case2.txt",
+      "cases": 16,
+      "outputs_checked": {
+        "pos": 16
+      },
+      "mask_reasons": {},
+      "explanation": "与F阶段高位优先不同：本题最低有效位优先。",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "pos",
+          "direction": "output",
+          "bounds": "[1:0]",
+          "width": 2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-035",
+      "slug": "always_casez",
+      "title": "Priority encoder with casez",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\547736a87fac50b3.html",
+      "source_sha256": "779ba49b3741622edc81c66def8dc568ef815ae0c6678d384cb8f7e3678461e0",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\always_casez.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_casez_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_casez_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_casez_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\always_casez.txt",
+      "cases": 256,
+      "outputs_checked": {
+        "pos": 256
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "pos",
+          "direction": "output",
+          "bounds": "[2:0]",
+          "width": 3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-036",
+      "slug": "always_nolatches",
+      "title": "Avoiding latches",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\e769c858da53c60b.html",
+      "source_sha256": "f613462d2c07ba430967968af73bb7c305c2843c1c228d275241212c9acfdf12",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\always_nolatches.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_nolatches_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_nolatches_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\always_nolatches_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\always_nolatches.txt",
+      "cases": 65536,
+      "outputs_checked": {
+        "left": 65536,
+        "down": 65536,
+        "right": 65536,
+        "up": 65536
+      },
+      "mask_reasons": {},
+      "explanation": "穷举全部16位扫描码，四个输出在每次输入下都有确定赋值。",
+      "interface": [
+        {
+          "name": "scancode",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "left",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "down",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "right",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "up",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-037",
+      "slug": "conditional",
+      "title": "Conditional ternary operator",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\5345d19ef64578d9.html",
+      "source_sha256": "0570dd638673a39dfe497500d39d716381b5444eed5e8da3612c17493d8e300d",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\conditional.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conditional_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conditional_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conditional_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\conditional.txt",
+      "cases": 466,
+      "outputs_checked": {
+        "min": 466
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "c",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "min",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-038",
+      "slug": "reduction",
+      "title": "Reduction operators",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\9c307f46759789f6.html",
+      "source_sha256": "78df56f524e20522be8e5a7daf19fb8156fa1ce3994b9818968f9539ecaa59a4",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\reduction.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\reduction_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\reduction_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\reduction_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\reduction.txt",
+      "cases": 256,
+      "outputs_checked": {
+        "parity": 256
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "parity",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-039",
+      "slug": "gates100",
+      "title": "Reduction: Even wider gates",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\a28750136ece336b.html",
+      "source_sha256": "b5375000ba8a931ae93e38a3b8d6b762d8f0b5bb521d70de378022b1c0eb9b95",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\gates100.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gates100_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gates100_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gates100_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\gates100.txt",
+      "cases": 602,
+      "outputs_checked": {
+        "out_and": 602,
+        "out_or": 602,
+        "out_xor": 602
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "out_and",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_or",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_xor",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-040",
+      "slug": "vector100r",
+      "title": "Combinational for-loop: Vector reversal 2",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\a5b4a1941aa2e15e.html",
+      "source_sha256": "2c82c7d96534403de8693748f4f848b74bdc730c6d7faa0e816d5344c41db290",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\vector100r.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector100r_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector100r_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\vector100r_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\vector100r.txt",
+      "cases": 602,
+      "outputs_checked": {
+        "out": 602
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[99:0]",
+          "width": 100
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-041",
+      "slug": "popcount255",
+      "title": "Combinational for-loop: 255-bit population count",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\cf6a892d0c3d0578.html",
+      "source_sha256": "4c4b6106ccd1cd9146d9a9b1ebf17115677809a4d3b587d3f6097f418de60e5c",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\popcount255.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\popcount255_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\popcount255_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\popcount255_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\popcount255.txt",
+      "cases": 1168,
+      "outputs_checked": {
+        "out": 1168
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[254:0]",
+          "width": 255
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-042",
+      "slug": "adder100i",
+      "title": "Generate for-loop: 100-bit binary adder 2",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\a1fc1c4803f510da.html",
+      "source_sha256": "79e47601f3da98d4a09af566a67c62050bc52e58df310c56b793608daf0a3018",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\adder100i.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\adder100i.txt",
+      "cases": 804,
+      "outputs_checked": {
+        "cout": 804,
+        "sum": 804
+      },
+      "mask_reasons": {},
+      "explanation": "100个全加器真实层次；每一级carry与独立前缀整数加法核对。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "cin",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "cout",
+          "direction": "output",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "sum",
+          "direction": "output",
+          "bounds": "[99:0]",
+          "width": 100
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-043",
+      "slug": "bcdadd100",
+      "title": "Generate for-loop: 100-digit BCD adder",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\4d96080bd12c225d.html",
+      "source_sha256": "21c211229217c68e6a24e428b8330dce182018a266c8cab049d3b1e9ce52eada",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\bcdadd100.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\bcdadd100_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\bcdadd100_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\bcdadd100_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\bcdadd100.txt",
+      "cases": 502,
+      "outputs_checked": {
+        "cout": 502,
+        "sum": 502
+      },
+      "mask_reasons": {},
+      "explanation": "100个题面BCD单元串接；参考在Python中解码为大十进制整数后整体验算。只给合法BCD数字。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[399:0]",
+          "width": 400
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[399:0]",
+          "width": 400
+        },
+        {
+          "name": "cin",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "cout",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "sum",
+          "direction": "output",
+          "bounds": "[399:0]",
+          "width": 400
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-049",
+      "slug": "gates",
+      "title": "More logic gates",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\fe2b28ccd51ba018.html",
+      "source_sha256": "cbded553eac4d3c634addd089939c325ff47cd7232cadcec8b16f6877c778629",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\gates.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gates_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gates_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gates_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\gates.txt",
+      "cases": 4,
+      "outputs_checked": {
+        "out_and": 4,
+        "out_or": 4,
+        "out_xor": 4,
+        "out_nand": 4,
+        "out_nor": 4,
+        "out_xnor": 4,
+        "out_anotb": 4
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_and",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_or",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_xor",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_nand",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_nor",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_xnor",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_anotb",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-051",
+      "slug": "truthtable1",
+      "title": "Truth tables",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\40048da3295749c9.html",
+      "source_sha256": "01896ab23b8d25a2bf504e9f1b72169d3158a299fd31bef8808b225daae53c7a",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\truthtable1.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\truthtable1_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\truthtable1_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\truthtable1_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\truthtable1.txt",
+      "cases": 8,
+      "outputs_checked": {
+        "f": 8
+      },
+      "mask_reasons": {},
+      "explanation": "按原真值表逐行核对，RTL采用化简式。",
+      "interface": [
+        {
+          "name": "x3",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "x2",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "x1",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "f",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-053",
+      "slug": "mt2015_q4a",
+      "title": "Simple circuit A",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\b8d588a26bf186a7.html",
+      "source_sha256": "acdf50143d32c14dcf1d4f9b7bde1cde98cdf2542d436265dc011cd9f47f4f3a",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\mt2015_q4a.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mt2015_q4a_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mt2015_q4a_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mt2015_q4a_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\mt2015_q4a.txt",
+      "cases": 4,
+      "outputs_checked": {
+        "z": 4
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "x",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "y",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-054",
+      "slug": "mt2015_q4b",
+      "title": "Simple circuit B",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\5dbcf7b7dbed8b0e.html",
+      "source_sha256": "489e07aa46d0adf42bb101dc18d16be5c8e78350b9cb8fcce31dd06ba4248104",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\mt2015_q4b.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mt2015_q4b_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mt2015_q4b_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mt2015_q4b_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\mt2015_q4b.txt",
+      "cases": 4,
+      "outputs_checked": {
+        "z": 4
+      },
+      "mask_reasons": {},
+      "explanation": "原波形四个稳定区间依次对应00→1、10→0、01→0、11→1。",
+      "interface": [
+        {
+          "name": "x",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "y",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-057",
+      "slug": "thermostat",
+      "title": "Thermostat",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\0c512b90d5c509ed.html",
+      "source_sha256": "b039341f834e9c92237fe4b03f2a358888c5981496d2a3f000a1593ee3d2a612",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\thermostat.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\thermostat_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\thermostat_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\thermostat_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\thermostat.txt",
+      "cases": 16,
+      "outputs_checked": {
+        "heater": 16,
+        "aircon": 16,
+        "fan": 16
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "too_cold",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "too_hot",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "mode",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "fan_on",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "heater",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "aircon",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "fan",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-058",
+      "slug": "popcount3",
+      "title": "3-bit population count",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\f5cd4b0acb291896.html",
+      "source_sha256": "0061348c773ccfa0ee7cc830217fca8d5ff691762ce3a831496d9ed2f40d07ee",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\popcount3.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\popcount3_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\popcount3_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\popcount3_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\popcount3.txt",
+      "cases": 8,
+      "outputs_checked": {
+        "out": 8
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[2:0]",
+          "width": 3
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[1:0]",
+          "width": 2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-060",
+      "slug": "gatesv100",
+      "title": "Even longer vectors",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\c82faaf923f64256.html",
+      "source_sha256": "5b4fa021950f1414ff24fda68cf5b0be489876d3ab0e1ed95f8ddc1c0b99d594",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\gatesv100.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gatesv100_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gatesv100_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\gatesv100_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\gatesv100.txt",
+      "cases": 602,
+      "outputs_checked": {
+        "out_both": 602,
+        "out_any": 602,
+        "out_different": 602
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "out_both",
+          "direction": "output",
+          "bounds": "[98:0]",
+          "width": 99
+        },
+        {
+          "name": "out_any",
+          "direction": "output",
+          "bounds": "[99:1]",
+          "width": 99
+        },
+        {
+          "name": "out_different",
+          "direction": "output",
+          "bounds": "[99:0]",
+          "width": 100
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-061",
+      "slug": "mux2to1",
+      "title": "2-to-1 multiplexer",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\732621f4f2296189.html",
+      "source_sha256": "27b155a72cb3361f45d13d5c05134065aeef17ac8b31d96e5b68773a4573ef69",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\mux2to1.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mux2to1_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mux2to1_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mux2to1_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\mux2to1.txt",
+      "cases": 8,
+      "outputs_checked": {
+        "out": 8
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "sel",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-063",
+      "slug": "mux9to1v",
+      "title": "9-to-1 multiplexer",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\6057ef8dc18aa6f6.html",
+      "source_sha256": "dcebfeb47bda5afcda5246d880a8a6b40aca0d6eb1f76b28968a8ca1de0f2bbe",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\mux9to1v.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mux9to1v_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mux9to1v_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mux9to1v_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\mux9to1v.txt",
+      "cases": 1600,
+      "outputs_checked": {
+        "out": 1600
+      },
+      "mask_reasons": {},
+      "explanation": "未使用sel9…15按原题返回全1，不能沿用另一题mux的默认0。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "c",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "e",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "f",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "g",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "h",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "i",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "sel",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[15:0]",
+          "width": 16
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-065",
+      "slug": "mux256to1v",
+      "title": "256-to-1 4-bit multiplexer",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\31de27ed95a5dec7.html",
+      "source_sha256": "d614f2df11d926783e9689e70a7f720742575173c7d2de20f1c3664bb79ce25e",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\mux256to1v.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mux256to1v_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mux256to1v_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mux256to1v_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\mux256to1v.txt",
+      "cases": 1536,
+      "outputs_checked": {
+        "out": 1536
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[1023:0]",
+          "width": 1024
+        },
+        {
+          "name": "sel",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[3:0]",
+          "width": 4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-070",
+      "slug": "ece241_2014_q1c",
+      "title": "Signed addition overflow",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\b98164a4421e17e5.html",
+      "source_sha256": "28b36513841fe7f64bdfd4d88a4d9d7a9734a5543d9d12cf42e155cbfbb822f0",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\ece241_2014_q1c.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q1c_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q1c_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q1c_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\ece241_2014_q1c.txt",
+      "cases": 65536,
+      "outputs_checked": {
+        "s": 65536,
+        "overflow": 65536
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "s",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "overflow",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-071",
+      "slug": "adder100",
+      "title": "100-bit binary adder",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\4f273f0b269bdf0f.html",
+      "source_sha256": "1ae18c57f93b755c36ae96e4a7f111473714208f7a6b8355c25cfcbfca91df2e",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\adder100.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\adder100.txt",
+      "cases": 804,
+      "outputs_checked": {
+        "cout": 804,
+        "sum": 804
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "cin",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "cout",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "sum",
+          "direction": "output",
+          "bounds": "[99:0]",
+          "width": 100
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-081",
+      "slug": "dff",
+      "title": "D flip-flop",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\659cf231925109fa.html",
+      "source_sha256": "9bcc80b861b405289ef60bfa4354e3d7e1cd8c457272e669b8fd4ab14c206f77",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\dff.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dff.txt",
+      "cases": 600,
+      "outputs_checked": {
+        "q": 599
+      },
+      "mask_reasons": {
+        "q": "Unreset flop before first positive edge."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-084",
+      "slug": "dff8p",
+      "title": "DFF with reset value",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\9344f0a1f99a2ce2.html",
+      "source_sha256": "eaddea842fc7d7e1b7035415b5bc7cee0ccde6ac604b54a4eb3ab11256bfd098",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\dff8p.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dff8p.txt",
+      "cases": 1200,
+      "outputs_checked": {
+        "q": 1199
+      },
+      "mask_reasons": {
+        "q": "Before first synchronous reset/clock sample."
+      },
+      "explanation": "原文指定下降沿和同步复位0x34；时钟正沿阶段的保持也单独检查。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-085",
+      "slug": "dff8ar",
+      "title": "DFF with asynchronous reset",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\5cd0b5614bbb6da8.html",
+      "source_sha256": "36320d21e21c50986bc9994e1490aacf2fee2f8d47c4fd0a5088aa614469e8ea",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\dff8ar.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8ar_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8ar_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8ar_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dff8ar.txt",
+      "cases": 1200,
+      "outputs_checked": {
+        "q": 1200
+      },
+      "mask_reasons": {},
+      "explanation": "异步复位在无正沿的输入阶段立即验证，不能被同步复位代替。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-086",
+      "slug": "dff16e",
+      "title": "DFF with byte enable",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\2bc75c749404c522.html",
+      "source_sha256": "5535e0fd4e872ebfa505fa9de1d15cb9bfe494a7c088b4991c7113f6e22bff16",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\dff16e.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff16e_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff16e_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff16e_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dff16e.txt",
+      "cases": 2000,
+      "outputs_checked": {
+        "q": 1999
+      },
+      "mask_reasons": {
+        "q": "Before the initial active-low synchronous reset."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "resetn",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "byteena",
+          "direction": "input",
+          "bounds": "[1:0]",
+          "width": 2
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "[15:0]",
+          "width": 16
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[15:0]",
+          "width": 16
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-091",
+      "slug": "mt2015_muxdff",
+      "title": "Mux and DFF",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\918c137acd15c1ee.html",
+      "source_sha256": "73ee70a6fad0578f83f850c14d967655e46bc4b19c16547028af2d7e981cea12",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\mt2015_muxdff.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mt2015_muxdff_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mt2015_muxdff_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\mt2015_muxdff_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\mt2015_muxdff.txt",
+      "cases": 320,
+      "outputs_checked": {
+        "Q": 319
+      },
+      "mask_reasons": {
+        "Q": "Unreset stage until first edge."
+      },
+      "explanation": "只实现图中一个MUX+DFF子级；q_in是外部端口，不是本级反馈Q。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "L",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "r_in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "q_in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Q",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-092",
+      "slug": "2014_q4a",
+      "title": "Mux and DFF",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\24823d4b6666b37b.html",
+      "source_sha256": "a71a219d28775b1df49d277a05505c40d49574bf64ad1b8505ff3c386aee51d2",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2014_q4a.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q4a_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q4a_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q4a_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2014_q4a.txt",
+      "cases": 642,
+      "outputs_checked": {
+        "Q": 641
+      },
+      "mask_reasons": {
+        "Q": "Unreset until a load/enable samples a value."
+      },
+      "explanation": "按原图：L优先于E；L0/E0反馈保持，L0/E1选择w。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "w",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "R",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "E",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "L",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Q",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-094",
+      "slug": "ece241_2013_q7",
+      "title": "Create circuit from truth table",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\ad3d76f5fa691b07.html",
+      "source_sha256": "e5b318e34cb7745fb025fd80ac9986dee05eab6b569255afe3e13ace613d2c13",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\ece241_2013_q7.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q7_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q7_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q7_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\ece241_2013_q7.txt",
+      "cases": 242,
+      "outputs_checked": {
+        "Q": 241
+      },
+      "mask_reasons": {
+        "Q": "No initial state specified; first clear/set establishes it."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "j",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "k",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Q",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-095",
+      "slug": "edgedetect",
+      "title": "Detect an edge",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\95cba20f30db53f7.html",
+      "source_sha256": "dc125489deb88c6d955a0b51c091a7b74afc772c32e8fec4650ec78daf7470d6",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\edgedetect.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgedetect_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgedetect_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgedetect_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\edgedetect.txt",
+      "cases": 2018,
+      "outputs_checked": {
+        "pedge": 2015
+      },
+      "mask_reasons": {
+        "pedge": "First comparison lacks a previous sample; later outputs always checked."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "pedge",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-096",
+      "slug": "edgedetect2",
+      "title": "Detect both edges",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\3074c6099e9a4cde.html",
+      "source_sha256": "06c8cc3fe8b3e95387a85878334b114ed6935056466fcf18bc237e483f2c06ac",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\edgedetect2.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgedetect2_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgedetect2_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgedetect2_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\edgedetect2.txt",
+      "cases": 2018,
+      "outputs_checked": {
+        "anyedge": 2015
+      },
+      "mask_reasons": {
+        "anyedge": "First comparison lacks a previous sample; later outputs always checked."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "anyedge",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-097",
+      "slug": "edgecapture",
+      "title": "Edge capture register",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\a901d2224de8d362.html",
+      "source_sha256": "8db01c5cb2e88ce0bee968d84f4a4f0ca47f0a0387c2be055ebd8431d5820799",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\edgecapture.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\edgecapture.txt",
+      "cases": 3008,
+      "outputs_checked": {
+        "out": 3007
+      },
+      "mask_reasons": {
+        "out": "Before initial synchronous reset only."
+      },
+      "explanation": "previous每拍都采样，包括复位拍；复位优先于本拍捕获。专测复位拍in=1、下一拍in=0的捕获。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[31:0]",
+          "width": 32
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-098",
+      "slug": "dualedge",
+      "title": "Dual-edge triggered flip-flop",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\bd7700a9a71ba62d.html",
+      "source_sha256": "5d7f3d7a60ea09e0ec059ccb0236b95ab19ce30a0806ccc4c55505419e59ef9d",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\dualedge.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dualedge_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dualedge_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dualedge_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dualedge.txt",
+      "cases": 1000,
+      "outputs_checked": {
+        "q": 1000
+      },
+      "mask_reasons": {},
+      "explanation": "两个单沿触发器加时钟选择MUX；符合题目允许忽略组合毛刺的功能模型，不能原封不动带入后续禁止下降沿的NPC。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-101",
+      "slug": "count1to10",
+      "title": "Decade counter again",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\eaab293e1b7d948a.html",
+      "source_sha256": "14196d964bab3f9776b3c55f12190e4b88a5a9cd96a60e81f0585e10ee7abacc",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\count1to10.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count1to10_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count1to10_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count1to10_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\count1to10.txt",
+      "cases": 1600,
+      "outputs_checked": {
+        "q": 1599
+      },
+      "mask_reasons": {
+        "q": "Before initial synchronous reset."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[3:0]",
+          "width": 4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-102",
+      "slug": "countslow",
+      "title": "Slow decade counter",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\8a07c2c64dac5215.html",
+      "source_sha256": "00f547a62d95c1343718ce18a83c1034eda9763c882b612bc50988ef172fbc1a",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\countslow.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\countslow_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\countslow_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\countslow_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\countslow.txt",
+      "cases": 1600,
+      "outputs_checked": {
+        "q": 1599
+      },
+      "mask_reasons": {
+        "q": "Before initial synchronous reset."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "slowena",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[3:0]",
+          "width": 4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-104",
+      "slug": "ece241_2014_q7b",
+      "title": "Counter 1000",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\54f9f0f82b1587e8.html",
+      "source_sha256": "ddfd274303b4d201dabd12cc224a3b341bac87440a329704f15cf4f245dc5eef",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\ece241_2014_q7b.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q7b_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q7b_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q7b_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\ece241_2014_q7b.txt",
+      "cases": 9010,
+      "outputs_checked": {
+        "OneHertz": 9009,
+        "c_enable": 9009
+      },
+      "mask_reasons": {
+        "OneHertz": "Before first reset.",
+        "c_enable": "Before first reset."
+      },
+      "explanation": "三个BCD计数器直接共用clk；进位用enable，OneHertz每1000周期只高一拍。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "OneHertz",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "c_enable",
+          "direction": "output",
+          "bounds": "[2:0]",
+          "width": 3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-106",
+      "slug": "count_clock",
+      "title": "12-hour clock",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\6419e79796d34234.html",
+      "source_sha256": "66b75eab5bc5b89df9a8172ee18b1d83418f89669182c9fd468828c7862ba4c5",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\count_clock.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\count_clock.txt",
+      "cases": 172822,
+      "outputs_checked": {
+        "pm": 172821,
+        "hh": 172821,
+        "mm": 172821,
+        "ss": 172821
+      },
+      "mask_reasons": {
+        "pm": "Before initial synchronous reset.",
+        "hh": "Before initial synchronous reset.",
+        "mm": "Before initial synchronous reset.",
+        "ss": "Before initial synchronous reset."
+      },
+      "explanation": "完整24小时状态循环，加使能暂停及未使能时复位；参考使用累计秒数，RTL使用独立BCD进位。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "ena",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "pm",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "hh",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "mm",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "ss",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-108",
+      "slug": "rotate100",
+      "title": "Left/right rotator",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\03581c4141024d71.html",
+      "source_sha256": "3131fd87187cb8ccc3dfa2fb2222dd5d1961abf8021770f678f7b25913ade30f",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\rotate100.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\rotate100_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\rotate100_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\rotate100_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\rotate100.txt",
+      "cases": 2410,
+      "outputs_checked": {
+        "q": 2409
+      },
+      "mask_reasons": {
+        "q": "Before first synchronous load."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "load",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "ena",
+          "direction": "input",
+          "bounds": "[1:0]",
+          "width": 2
+        },
+        {
+          "name": "data",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[99:0]",
+          "width": 100
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-109",
+      "slug": "shift18",
+      "title": "Left/right arithmetic shift by 1 or 8",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\0f207e129a1b3014.html",
+      "source_sha256": "41074b74971324168623d706ceb7f119144b38467e20d6c03ef5fefc2cab101e",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\shift18.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\shift18_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\shift18_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\shift18_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\shift18.txt",
+      "cases": 4144,
+      "outputs_checked": {
+        "q": 4143
+      },
+      "mask_reasons": {
+        "q": "Before first load."
+      },
+      "explanation": "负数算术右移按有符号除2的幂向下取整参考；专测符号位、全1、1和移8。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "load",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "ena",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "amount",
+          "direction": "input",
+          "bounds": "[1:0]",
+          "width": 2
+        },
+        {
+          "name": "data",
+          "direction": "input",
+          "bounds": "[63:0]",
+          "width": 64
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[63:0]",
+          "width": 64
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-110",
+      "slug": "lfsr5",
+      "title": "5-bit LFSR",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\e44607c44f1915e8.html",
+      "source_sha256": "33e2e1010d58feb617de556d9b0becbff312f54cd1a02313d381b85c509572cb",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\lfsr5.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lfsr5_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lfsr5_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lfsr5_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lfsr5.txt",
+      "cases": 420,
+      "outputs_checked": {
+        "q": 419
+      },
+      "mask_reasons": {
+        "q": "Before initial reset."
+      },
+      "explanation": "核对原图Galois抽头5、3：旧bit0反馈到新bit4和新bit2；非Fibonacci式总异或。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[4:0]",
+          "width": 5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-113",
+      "slug": "m2014_q4k",
+      "title": "Shift register",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\ff6fbf2b046c1148.html",
+      "source_sha256": "0d180bf9d0ff0bf8877bba7ef85a7edca789011b3463c5d0642a849d687d36cf",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\m2014_q4k.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q4k_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q4k_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q4k_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\m2014_q4k.txt",
+      "cases": 1200,
+      "outputs_checked": {
+        "out": 1199
+      },
+      "mask_reasons": {
+        "out": "Before first synchronous reset."
+      },
+      "explanation": "图中四个DFF，resetn以题面明确的同步低有效为准。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "resetn",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-114",
+      "slug": "2014_q4b",
+      "title": "Shift register",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\8a468338f383e85d.html",
+      "source_sha256": "f835599a4689238987ff01877c0a59a99c4d13451429935526ab8fe74265e5a8",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2014_q4b.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q4b_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q4b_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q4b_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2014_q4b.txt",
+      "cases": 2002,
+      "outputs_checked": {
+        "LEDR": 2001
+      },
+      "mask_reasons": {
+        "LEDR": "No reset; initial parallel load establishes all four bits."
+      },
+      "explanation": "按原图w进入Q[n-1]，向Q0移动；不能误用另一移位题的S→Q0方向。KEY0时钟、KEY1使能、KEY2装载、KEY3串入。",
+      "interface": [
+        {
+          "name": "SW",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "KEY",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "LEDR",
+          "direction": "output",
+          "bounds": "[3:0]",
+          "width": 4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-115",
+      "slug": "ece241_2013_q12",
+      "title": "3-input LUT",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\ffd1f0eb7e2a4e9d.html",
+      "source_sha256": "65b73921c06ecebe7c7922dd9e3ed82304d351095eb716f236f4f77abdf99cd7",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\ece241_2013_q12.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q12_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q12_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q12_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\ece241_2013_q12.txt",
+      "cases": 8192,
+      "outputs_checked": {
+        "Z": 8191
+      },
+      "mask_reasons": {
+        "Z": "Unread initial bit until shifted data reaches that position."
+      },
+      "explanation": "S进入Q0；MSB先写8拍后得到完整LUT。枚举全部256配置和8个地址，并测试enable保持。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "enable",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "S",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "A",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "B",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "C",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-116",
+      "slug": "rule90",
+      "title": "Rule 90",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\33ef5003c6c93530.html",
+      "source_sha256": "d29eb1b6b3ee27ab2324935a6e23824a47ca8628110dbb1a1f4f885d19f55737",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\rule90.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\rule90_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\rule90_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\rule90_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\rule90.txt",
+      "cases": 1008,
+      "outputs_checked": {
+        "q": 1007
+      },
+      "mask_reasons": {
+        "q": "Before initial load."
+      },
+      "explanation": "512格、两端固定0；参考按MSB到LSB字符串查规则表，避免复制RTL位移方向。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "load",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "data",
+          "direction": "input",
+          "bounds": "[511:0]",
+          "width": 512
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[511:0]",
+          "width": 512
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-117",
+      "slug": "rule110",
+      "title": "Rule 110",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\52d53bbb3a53b028.html",
+      "source_sha256": "bbb439c900a311d6b4009297bc4bb5e7307f56ec8d6282b3634768f50904e280",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\rule110.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\rule110_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\rule110_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\rule110_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\rule110.txt",
+      "cases": 1008,
+      "outputs_checked": {
+        "q": 1007
+      },
+      "mask_reasons": {
+        "q": "Before initial load."
+      },
+      "explanation": "512格、两端固定0；参考按MSB到LSB字符串查规则表，避免复制RTL位移方向。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "load",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "data",
+          "direction": "input",
+          "bounds": "[511:0]",
+          "width": 512
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[511:0]",
+          "width": 512
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-118",
+      "slug": "conwaylife",
+      "title": "Conway's Game of Life 16x16",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\69da8d3ebdffae27.html",
+      "source_sha256": "7d66a9261212096698f6a91e70f736d99049e90b0d0514405c95a02b73bf0713",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\conwaylife.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\conwaylife.txt",
+      "cases": 1152,
+      "outputs_checked": {
+        "q": 1151
+      },
+      "mask_reasons": {
+        "q": "Before initial load."
+      },
+      "explanation": "16×16环面，边界不是固定0；参考采用活细胞坐标集合及邻居贡献计数，与RTL逐格求和不同。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "load",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "data",
+          "direction": "input",
+          "bounds": "[255:0]",
+          "width": 256
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[255:0]",
+          "width": 256
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-119",
+      "slug": "fsm1",
+      "title": "Simple FSM 1 (asynchronous reset)",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\76a0bdd17a04d8ce.html",
+      "source_sha256": "89bd724385e3aeda3857d645a101fedac07248123b7bfd3206d7eaf6161b6251",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm1.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm1.txt",
+      "cases": 2028,
+      "outputs_checked": {
+        "out": 2028
+      },
+      "mask_reasons": {},
+      "explanation": "A输出0/B输出1；复位B，in=0切换，in=1保持。遍历所有状态/输入/复位。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-120",
+      "slug": "fsm1s",
+      "title": "Simple FSM 1 (synchronous reset)",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\35b85c4e8f126c0e.html",
+      "source_sha256": "2a22a7b7c71dfb7441aa41db1eff03e0977d8712d6fcb7d83f9071dcc6e165d0",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm1s.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1s_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1s_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1s_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm1s.txt",
+      "cases": 2028,
+      "outputs_checked": {
+        "out": 2027
+      },
+      "mask_reasons": {
+        "out": "Before initial synchronous reset only."
+      },
+      "explanation": "A输出0/B输出1；复位B，in=0切换，in=1保持。遍历所有状态/输入/复位。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-121",
+      "slug": "fsm2",
+      "title": "Simple FSM 2 (asynchronous reset)",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\41f2db0c81bcad5a.html",
+      "source_sha256": "c930e8568638d1f9e40e1e170482714926085890b7df6c4bada9119a657ff24b",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm2.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm2_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm2_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm2_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm2.txt",
+      "cases": 2056,
+      "outputs_checked": {
+        "out": 2056
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "j",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "k",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-122",
+      "slug": "fsm2s",
+      "title": "Simple FSM 2 (synchronous reset)",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\6751f58ebe64cc6e.html",
+      "source_sha256": "72cb30bf07923c50e65cc7a9a19fba78d199a67efff979118ae6038a24044112",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm2s.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm2s_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm2s_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm2s_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm2s.txt",
+      "cases": 2056,
+      "outputs_checked": {
+        "out": 2055
+      },
+      "mask_reasons": {
+        "out": "Before initial synchronous reset."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "j",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "k",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-123",
+      "slug": "fsm3comb",
+      "title": "Simple state transitions 3",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\406afb44395b2edf.html",
+      "source_sha256": "579dabd5e187b6f70b4967515ad1a9f464e15895cecd9dc1f72238190c136f4a",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm3comb.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3comb_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3comb_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3comb_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm3comb.txt",
+      "cases": 8,
+      "outputs_checked": {
+        "next_state": 8,
+        "out": 8
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "state",
+          "direction": "input",
+          "bounds": "[1:0]",
+          "width": 2
+        },
+        {
+          "name": "next_state",
+          "direction": "output",
+          "bounds": "[1:0]",
+          "width": 2
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-124",
+      "slug": "fsm3onehot",
+      "title": "Simple one-hot state transitions 3",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\708391a43c8f1d33.html",
+      "source_sha256": "c0e75086d1e93ea06d2f0cbc5a3fa337bc2c2707481975cf4c6a942b0a5d2139",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm3onehot.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3onehot_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3onehot_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3onehot_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm3onehot.txt",
+      "cases": 32,
+      "outputs_checked": {
+        "next_state": 32,
+        "out": 32
+      },
+      "mask_reasons": {},
+      "explanation": "OR所有入边；全16种state×2输入，包括零状态和多热状态。",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "state",
+          "direction": "input",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "next_state",
+          "direction": "output",
+          "bounds": "[3:0]",
+          "width": 4
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-125",
+      "slug": "fsm3",
+      "title": "Simple FSM 3 (asynchronous reset)",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\283a7148cd6d78c4.html",
+      "source_sha256": "6149dbed8863d3c5172aa57241a944ed209e94e8f148487ad306d845056b3ade",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm3.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm3.txt",
+      "cases": 2072,
+      "outputs_checked": {
+        "out": 2072
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-126",
+      "slug": "fsm3s",
+      "title": "Simple FSM 3 (synchronous reset)",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\149bc8ab6b32919d.html",
+      "source_sha256": "966a3bc40d62240fe5cf673dce0b26d0cf3bb343bbd69849c6c19d6917e2226f",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm3s.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3s_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3s_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm3s_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm3s.txt",
+      "cases": 2072,
+      "outputs_checked": {
+        "out": 2071
+      },
+      "mask_reasons": {
+        "out": "Before initial synchronous reset."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-127",
+      "slug": "ece241_2013_q4",
+      "title": "Design a Moore FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\c24eb30f8cef5e63.html",
+      "source_sha256": "5bb95c3b771108218a2693225ca3bcefaa658926b059dfb729a99e9c75124fd8",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\ece241_2013_q4.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q4_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q4_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q4_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\ece241_2013_q4.txt",
+      "cases": 2560,
+      "outputs_checked": {
+        "fr3": 2559,
+        "fr2": 2559,
+        "fr1": 2559,
+        "dfr": 2559
+      },
+      "mask_reasons": {
+        "fr3": "Before first synchronous reset.",
+        "fr2": "Before first synchronous reset.",
+        "fr1": "Before first synchronous reset.",
+        "dfr": "Before first synchronous reset."
+      },
+      "explanation": "按原扫描图六个Moore状态；Python以数值水位与最近变化方向建模。只给物理可实现温度计码0/1/3/7赋验收含义；测试跨级、保持、升降及复位。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "s",
+          "direction": "input",
+          "bounds": "[3:1]",
+          "width": 3
+        },
+        {
+          "name": "fr3",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "fr2",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "fr1",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "dfr",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-128",
+      "slug": "lemmings1",
+      "title": "Lemmings 1",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\a83eb8a3dded5175.html",
+      "source_sha256": "6e03d96969f923d15dd67efbe126d0b91448c6217475efd06f130fa69882ad6e",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\lemmings1.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings1_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings1_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings1_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings1.txt",
+      "cases": 3512,
+      "outputs_checked": {
+        "walk_left": 3512,
+        "walk_right": 3512
+      },
+      "mask_reasons": {},
+      "explanation": "独立行为模型：落下和落地拍忽略碰撞；挖掘只在地面行走时开始，跌落优先；异步复位恢复向左。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_left",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_right",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_left",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_right",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-129",
+      "slug": "lemmings2",
+      "title": "Lemmings 2",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\b51b08821d94c444.html",
+      "source_sha256": "5bb38610235d776e1434dc4786f241e8a3de6c183b24f5ccad3ce2be39a30e01",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\lemmings2.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings2_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings2_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings2_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings2.txt",
+      "cases": 14168,
+      "outputs_checked": {
+        "walk_left": 14168,
+        "walk_right": 14168,
+        "aaah": 14168
+      },
+      "mask_reasons": {},
+      "explanation": "独立行为模型：落下和落地拍忽略碰撞；挖掘只在地面行走时开始，跌落优先；异步复位恢复向左。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_left",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_right",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "ground",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_left",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_right",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "aaah",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-130",
+      "slug": "lemmings3",
+      "title": "Lemmings 3",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\6b28c15d5960c9f6.html",
+      "source_sha256": "a7d1950180acd2a7a7f62ffee2a5e3502db578a8ed3a7d1da726e70c5de0d05c",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\lemmings3.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings3_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings3_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings3_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings3.txt",
+      "cases": 49960,
+      "outputs_checked": {
+        "walk_left": 49960,
+        "walk_right": 49960,
+        "aaah": 49960,
+        "digging": 49960
+      },
+      "mask_reasons": {},
+      "explanation": "独立行为模型：落下和落地拍忽略碰撞；挖掘只在地面行走时开始，跌落优先；异步复位恢复向左。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_left",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_right",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "ground",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "dig",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_left",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_right",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "aaah",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "digging",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-131",
+      "slug": "lemmings4",
+      "title": "Lemmings 4",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\0e4028830111a85a.html",
+      "source_sha256": "a2d5a8d4808f0e75a0957f1a8f24ce6868d8099d2cd96d44efc13c69bf34164c",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\lemmings4.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+      "cases": 49960,
+      "outputs_checked": {
+        "walk_left": 49960,
+        "walk_right": 49960,
+        "aaah": 49960,
+        "digging": 49960
+      },
+      "mask_reasons": {},
+      "explanation": "独立行为模型保存方向、动作和无界跌落时长；RTL有限状态加饱和计数。专测20/21周期边界、1025周期长跌落、空中不死亡、落地不处理碰撞、fall>dig>bump优先级。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_left",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_right",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "ground",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "dig",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_left",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_right",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "aaah",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "digging",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-132",
+      "slug": "fsm_onehot",
+      "title": "One-hot FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\745013775b0fd13e.html",
+      "source_sha256": "527faeb56eac416fdbe0508e1d41bcaf9ede061f227009301d6942632c34f4d0",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_onehot.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_onehot.txt",
+      "cases": 2048,
+      "outputs_checked": {
+        "next_state": 2048,
+        "out1": 2048,
+        "out2": 2048
+      },
+      "mask_reasons": {},
+      "explanation": "逐条按图转录有向边；全1024种state×2输入，任意多热输入按入边OR，不加非法状态纠错。",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "state",
+          "direction": "input",
+          "bounds": "[9:0]",
+          "width": 10
+        },
+        {
+          "name": "next_state",
+          "direction": "output",
+          "bounds": "[9:0]",
+          "width": 10
+        },
+        {
+          "name": "out1",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out2",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-133",
+      "slug": "fsm_ps2",
+      "title": "PS/2 packet parser",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\a7126c946eeae72d.html",
+      "source_sha256": "03e28313c3b40fcd643d9b7b6ac9ffd933b96ec96738c01e13a6e149269afbeb",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_ps2.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_ps2.txt",
+      "cases": 9670,
+      "outputs_checked": {
+        "done": 9669
+      },
+      "mask_reasons": {
+        "done": "Before initial synchronous reset."
+      },
+      "explanation": "独立三字节列表解析；第一字节bit3同步，后两字节不作同步条件；支持连续包，done与第三字节采样对应。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-134",
+      "slug": "fsm_ps2data",
+      "title": "PS/2 packet parser and datapath",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\40f8c235cc74e458.html",
+      "source_sha256": "16ed7a539c2103fbbd6aef5d451a2eba3fa0eb799f57b7d9456c0d5ccc375b64",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_ps2data.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_ps2data.txt",
+      "cases": 9670,
+      "outputs_checked": {
+        "out_bytes": 2788,
+        "done": 9669
+      },
+      "mask_reasons": {
+        "done": "Before initial synchronous reset.",
+        "out_bytes": "Task explicitly defines out_bytes only when done=1; done always checked after reset."
+      },
+      "explanation": "独立三字节列表解析；第一字节bit3同步，后两字节不作同步条件；支持连续包，done与第三字节采样对应。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_bytes",
+          "direction": "output",
+          "bounds": "[23:0]",
+          "width": 24
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-135",
+      "slug": "fsm_serial",
+      "title": "Serial receiver",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\c64bb996909dd665.html",
+      "source_sha256": "efdaff301448fb074afdf2a2e507221c0c0c3bb3177221efca6ef75c479aee2f",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_serial.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serial_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serial_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serial_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serial.txt",
+      "cases": 9668,
+      "outputs_checked": {
+        "done": 9667
+      },
+      "mask_reasons": {
+        "done": "Before initial synchronous reset."
+      },
+      "explanation": "独立帧位列表、奇数个1计数和恢复条件参考；全256数据、连续帧、坏停止位、奇偶错误、逐相位复位。LSB先到；停止位不进入奇偶校验。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-136",
+      "slug": "fsm_serialdata",
+      "title": "Serial receiver and datapath",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\e2edcdc387fa4a18.html",
+      "source_sha256": "b156e67977c845152fcf413022d5ccaaa3b48a528d3f6e5ceef6e0ba3a7d77db",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_serialdata.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdata.txt",
+      "cases": 9668,
+      "outputs_checked": {
+        "out_byte": 694,
+        "done": 9667
+      },
+      "mask_reasons": {
+        "done": "Before initial synchronous reset.",
+        "out_byte": "Specified only in the valid done cycle; invalid/no-frame bytes are not judged."
+      },
+      "explanation": "独立帧位列表、奇数个1计数和恢复条件参考；全256数据、连续帧、坏停止位、奇偶错误、逐相位复位。LSB先到；停止位不进入奇偶校验。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_byte",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-137",
+      "slug": "fsm_serialdp",
+      "title": "Serial receiver with parity checking",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\983e83bf12c1ed42.html",
+      "source_sha256": "884ef4636feb3f865a95500b52a5bd628f7f03a18d7605053c9235f74526589f",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_serialdp.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdp.txt",
+      "cases": 21542,
+      "outputs_checked": {
+        "out_byte": 1132,
+        "done": 21541
+      },
+      "mask_reasons": {
+        "done": "Before initial synchronous reset.",
+        "out_byte": "Specified only in the valid done cycle; invalid/no-frame bytes are not judged."
+      },
+      "explanation": "独立帧位列表、奇数个1计数和恢复条件参考；全256数据、连续帧、坏停止位、奇偶错误、逐相位复位。LSB先到；停止位不进入奇偶校验。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_byte",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-138",
+      "slug": "fsm_hdlc",
+      "title": "Sequence recognition",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\b857abe1781f43b7.html",
+      "source_sha256": "c9545414e22b690ae36c0fb8a549f01742c8f22997767312b03448ffcad4d473",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_hdlc.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_hdlc_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_hdlc_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_hdlc_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_hdlc.txt",
+      "cases": 11836,
+      "outputs_checked": {
+        "disc": 11835,
+        "flag": 11835,
+        "err": 11835
+      },
+      "mask_reasons": {
+        "disc": "Before initial synchronous reset.",
+        "flag": "Before initial synchronous reset.",
+        "err": "Before initial synchronous reset."
+      },
+      "explanation": "RTL显式十状态；参考无界连续1计数。5个1+0丢弃，6个1+0标记，至少7个1持续错误，0清除。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "disc",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "flag",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "err",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-139",
+      "slug": "ece241_2013_q8",
+      "title": "Q8: Design a Mealy FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\d81048db8705209b.html",
+      "source_sha256": "b0e4dc186340f6cfdb8a606315c5112a0a1e337096b767d9f715805d9bdfe179",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\ece241_2013_q8.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q8_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q8_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2013_q8_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\ece241_2013_q8.txt",
+      "cases": 6608,
+      "outputs_checked": {
+        "z": 6608
+      },
+      "mask_reasons": {},
+      "explanation": "恰好三个Mealy状态，异步低有效复位；独立历史串检测101，覆盖重叠10101及输入改变到时钟沿之间的组合输出。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "aresetn",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "x",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-140",
+      "slug": "ece241_2014_q5a",
+      "title": "Q5a: Serial two's complementer (Moore FSM)",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\4a89847a77335dfd.html",
+      "source_sha256": "bc265ba0cc7aa44ebd15215146bc9591903a2433ed2ae0f5d9380d56abb2ce29",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\ece241_2014_q5a.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q5a_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q5a_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q5a_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\ece241_2014_q5a.txt",
+      "cases": 5764,
+      "outputs_checked": {
+        "z": 5764
+      },
+      "mask_reasons": {},
+      "explanation": "Moore两补数转换，LSB先到；参考直接计算任意精度负整数的当前位，不复制RTL状态转移。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "x",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-141",
+      "slug": "ece241_2014_q5b",
+      "title": "Q5b: Serial two's complementer (Mealy FSM)",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\93ddc9a89b50acfe.html",
+      "source_sha256": "977c746b97f5c541321f933f86bfa616cb0c520df54933890773640243c5e7fe",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\ece241_2014_q5b.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q5b_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q5b_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\ece241_2014_q5b_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\ece241_2014_q5b.txt",
+      "cases": 5764,
+      "outputs_checked": {
+        "z": 5764
+      },
+      "mask_reasons": {},
+      "explanation": "按原图两状态one-hot Mealy实现；整数取负参考计算当前输入对应的组合输出，复位只改变状态，不额外屏蔽x。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "x",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-142",
+      "slug": "2014_q3fsm",
+      "title": "Q3a: FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\4faf0d1b386afc39.html",
+      "source_sha256": "8c99ebbbf976733f245da6cccd19f60d6b4dbcaa74ceffe08dbcae1e5c2e005d",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2014_q3fsm.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q3fsm_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q3fsm_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q3fsm_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2014_q3fsm.txt",
+      "cases": 14288,
+      "outputs_checked": {
+        "z": 14287
+      },
+      "mask_reasons": {
+        "z": "Before initial synchronous reset."
+      },
+      "explanation": "八个Moore状态；s仅启动，启动拍不消费w。随后每三个不重叠采样恰好两个1时输出一拍。独立列表计数参考并核对原WaveDrom。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "s",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "w",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-143",
+      "slug": "2014_q3bfsm",
+      "title": "Q3b: FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\1e604bb60027765f.html",
+      "source_sha256": "e24d20f5f3c7350a2f7b7c8eebaca44de0a67667e5e783aefd8c717bbc0a1f78",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2014_q3bfsm.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q3bfsm_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q3bfsm_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q3bfsm_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2014_q3bfsm.txt",
+      "cases": 2100,
+      "outputs_checked": {
+        "z": 2099
+      },
+      "mask_reasons": {
+        "z": "Before initial synchronous reset."
+      },
+      "explanation": "",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "x",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-144",
+      "slug": "2014_q3c",
+      "title": "Q3c: FSM logic",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\ad9567c5290d9bd4.html",
+      "source_sha256": "9280b04a023c5b119ef8c5d7b010cf6716f1ac03d9153e406cce722a607fc450",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2014_q3c.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q3c_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q3c_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2014_q3c_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2014_q3c.txt",
+      "cases": 32,
+      "outputs_checked": {
+        "Y0": 20,
+        "z": 20
+      },
+      "mask_reasons": {
+        "Y0": "Source table assigns no behavior to y=5,6,7.",
+        "z": "Source table assigns no behavior to y=5,6,7."
+      },
+      "explanation": "只实现表中的组合Y0与z；clk是题面保留端口，没有触发器。未定义编码不擅自成为验收规格。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "y",
+          "direction": "input",
+          "bounds": "[2:0]",
+          "width": 3
+        },
+        {
+          "name": "x",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Y0",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-145",
+      "slug": "m2014_q6b",
+      "title": "Q6b: FSM next-state logic",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\e0adf86c0a853f2d.html",
+      "source_sha256": "1386f75fc13978dbcae8204f3634988ffc38ed129f956861f0a766ecf573e7e9",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\m2014_q6b.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q6b_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q6b_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q6b_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\m2014_q6b.txt",
+      "cases": 16,
+      "outputs_checked": {
+        "Y2": 12
+      },
+      "mask_reasons": {
+        "Y2": "Unused binary encodings6/7 are unspecified."
+      },
+      "explanation": "y[3:1]和Y2：输出中间位，等于紧凑编码的bit1，不能误当bit2。",
+      "interface": [
+        {
+          "name": "y",
+          "direction": "input",
+          "bounds": "[3:1]",
+          "width": 3
+        },
+        {
+          "name": "w",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Y2",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-146",
+      "slug": "m2014_q6c",
+      "title": "Q6c: FSM one-hot next-state logic",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\b5942dab12b66e2f.html",
+      "source_sha256": "b742213f5c8769101aeab15a1394d6133cf6f6634c715cdf8edff30f1eb8b762",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\m2014_q6c.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q6c_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q6c_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q6c_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\m2014_q6c.txt",
+      "cases": 128,
+      "outputs_checked": {
+        "Y2": 128,
+        "Y4": 128
+      },
+      "mask_reasons": {},
+      "explanation": "one-hot端口下标从1开始：Y2为B、Y4为D；所有64种零/多热组合也按入边OR验证。",
+      "interface": [
+        {
+          "name": "y",
+          "direction": "input",
+          "bounds": "[6:1]",
+          "width": 6
+        },
+        {
+          "name": "w",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Y2",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Y4",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-147",
+      "slug": "m2014_q6",
+      "title": "Q6: FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\cb3f4908bc86ad43.html",
+      "source_sha256": "dceb6eef6ac6cbe0dc548edcad0c9f61873c34360b491ea0bfec9b6a93df4dd5",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\m2014_q6.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q6_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q6_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\m2014_q6_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\m2014_q6.txt",
+      "cases": 2116,
+      "outputs_checked": {
+        "z": 2115
+      },
+      "mask_reasons": {
+        "z": "Before initial synchronous reset."
+      },
+      "explanation": "按各自原图逐边转录，六状态Moore；组合转移与时序寄存器分开always。覆盖全部状态/入边、同步复位与随机长序列。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "w",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-148",
+      "slug": "2012_q2fsm",
+      "title": "Q2a: FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\fde5f57bce40a68f.html",
+      "source_sha256": "c5413640374d86c06468c28fa3884aa096607399ff66a013379ca7812337c394",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2012_q2fsm.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2012_q2fsm_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2012_q2fsm_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2012_q2fsm_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2012_q2fsm.txt",
+      "cases": 2116,
+      "outputs_checked": {
+        "z": 2115
+      },
+      "mask_reasons": {
+        "z": "Before initial synchronous reset."
+      },
+      "explanation": "按各自原图逐边转录，六状态Moore；组合转移与时序寄存器分开always。覆盖全部状态/入边、同步复位与随机长序列。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "w",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "z",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-149",
+      "slug": "2012_q2b",
+      "title": "Q2b: One-hot FSM equations",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\84b9a324eda71029.html",
+      "source_sha256": "e3d643a148792751d3dc287a9fcda170f85466cd612827d2dc73d721243fa877",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2012_q2b.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2012_q2b_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2012_q2b_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2012_q2b_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2012_q2b.txt",
+      "cases": 128,
+      "outputs_checked": {
+        "Y1": 128,
+        "Y3": 128
+      },
+      "mask_reasons": {},
+      "explanation": "另一张图的输入标签与2014题不同；这里端口从0起，下标1为B、3为D。所有64种state均按OR入边。",
+      "interface": [
+        {
+          "name": "y",
+          "direction": "input",
+          "bounds": "[5:0]",
+          "width": 6
+        },
+        {
+          "name": "w",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Y1",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "Y3",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-150",
+      "slug": "2013_q2afsm",
+      "title": "Q2a: FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\ac84c7f31ae37198.html",
+      "source_sha256": "54d5a622729e6cd99dbdba6655b4bc6d639f4594feec06d8a4d1834ac6aa5ee2",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2013_q2afsm.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2afsm_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2afsm_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2afsm_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2013_q2afsm.txt",
+      "cases": 42960,
+      "outputs_checked": {
+        "g": 42959
+      },
+      "mask_reasons": {
+        "g": "Before initial active-low synchronous reset."
+      },
+      "explanation": "设备1优先；已有授权不可抢占；释放请求先回A空闲一拍，再重新仲裁，按原图保留这个空拍。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "resetn",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "r",
+          "direction": "input",
+          "bounds": "[3:1]",
+          "width": 3
+        },
+        {
+          "name": "g",
+          "direction": "output",
+          "bounds": "[3:1]",
+          "width": 3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HDL-151",
+      "slug": "2013_q2bfsm",
+      "title": "Q2b: Another FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\f79eea316bcddad0.html",
+      "source_sha256": "d72941dcb0a6a642a9586b722e92a16116c00b1ed6881fe3d66a9338354868e1",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2013_q2bfsm.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2013_q2bfsm.txt",
+      "cases": 76672,
+      "outputs_checked": {
+        "f": 76671,
+        "g": 76671
+      },
+      "mask_reasons": {
+        "f": "Before first synchronous reset.",
+        "g": "Before first synchronous reset."
+      },
+      "explanation": "f脉冲结束后才采x；检测101后g高时才开始两拍y窗口。分别验早到/首拍/第二拍/迟到y、永久成功/失败、所有阶段复位。参考历史串和截止时限，不复制RTL状态图。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "resetn",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "x",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "y",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "f",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "g",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS"
+    }
+  ]
+}

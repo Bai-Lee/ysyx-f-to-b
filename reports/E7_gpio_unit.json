@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "correct",
+      "exit": 0,
+      "stdout": "GPIO_APB_PASS all16_strobes all16_digits setup_access readonly reserved reset\n"
+    },
+    {
+      "case": "fault_setup",
+      "exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/E/E7/gpio_tb.sv:11: GPIO modified during APB setup\n       Time: 146 Scope: gpio_tb.put\n"
+    }
+  ],
+  "scope": "Four-state Icarus, APB setup/access, every byte strobe, every hex digit, reads/read-only/reserved address and repeated reset; erroneous setup-phase write is rejected."
+}

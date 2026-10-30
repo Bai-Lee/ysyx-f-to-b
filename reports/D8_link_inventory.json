@@ -1,0 +1,219 @@
+{
+  "status": "DIAGNOSTIC_NOT_RUNTIME_ACCEPTANCE",
+  "rows": [
+    {
+      "program": "000.hello",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "100.blockchain",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "101.igemm",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "102.queen",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "103.dinic",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "104.malloc",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "fclose",
+        "fopen",
+        "fread"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "105.bf",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "106.qsort",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "107.stream",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "108.ntt",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "200.genann",
+      "status": "LINKED",
+      "missing_symbols": [],
+      "exit_code": 0
+    },
+    {
+      "program": "201.jpeg",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "fclose",
+        "fopen",
+        "fread",
+        "fseek",
+        "ftell"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "202.llama2",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "fclose",
+        "fflush",
+        "fopen",
+        "fread",
+        "fseek",
+        "ftell",
+        "stdout"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "203.rsa",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "fclose",
+        "fopen",
+        "fread"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "204.hypergraph",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "__isoc99_fscanf",
+        "fclose",
+        "fopen"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "300.bzip3",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "fclose",
+        "feof",
+        "ferror",
+        "fflush",
+        "fopen",
+        "fprintf",
+        "fputs",
+        "fread",
+        "stderr",
+        "stdin",
+        "stdout"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "301.gsim",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "fclose",
+        "fopen",
+        "fread"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "302.lua",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "clearerr",
+        "fclose",
+        "feof",
+        "ferror",
+        "fflush",
+        "fopen",
+        "fprintf",
+        "fputs",
+        "fread",
+        "fseek",
+        "ftell",
+        "fwrite",
+        "getc",
+        "stderr",
+        "stdin",
+        "stdout"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "303.cproc",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "fclose",
+        "ferror",
+        "fflush",
+        "fopen",
+        "fprintf",
+        "fputc",
+        "fwrite",
+        "getc",
+        "putc",
+        "stderr",
+        "stdin",
+        "stdout",
+        "vfprintf"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "304.mp3",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "fclose",
+        "fopen",
+        "fread",
+        "ftell",
+        "fwrite"
+      ],
+      "exit_code": 2
+    },
+    {
+      "program": "305.h264",
+      "status": "MISSING_INTERFACES",
+      "missing_symbols": [
+        "fclose",
+        "fopen",
+        "fprintf",
+        "fread",
+        "fseek",
+        "ftell",
+        "fwrite",
+        "stderr"
+      ],
+      "exit_code": 2
+    }
+  ]
+}

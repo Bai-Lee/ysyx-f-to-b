@@ -1,0 +1,228 @@
+{
+  "status": "PASS",
+  "case": "video",
+  "variant": "30000000-cycle-psram4m-qpi-sdram32x2-opt-gui",
+  "image_sha256": "ba19f131b505e67e83770b8da7b3e33f7141514a91a6f822ae46038a64b4944b",
+  "elf_sha256": "8aebdcb2d0acc908b87c440fe8b71ece343e0490396e174a3b17753527be99d6",
+  "executable_sha256": "ba44651fb9a640518f84a2f5e8ad8220ba143b936dcb55ca7a946b3b0f424463",
+  "reference_sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab",
+  "session": {
+    "status": "PASS",
+    "command": [
+      "stdbuf",
+      "-oL",
+      "python3",
+      "/workspace/projects/ysyx_f_to_b/C/runtime/budget_exec.py",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/video/session/resources.json",
+      "--",
+      "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui/sim",
+      "--gui",
+      "--flash",
+      "/home/USER/c-stage/c5/app-images/am-tests/sdram32/v/image.bin",
+      "--ref",
+      "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/video/session/simulation.json",
+      "--vga-ppm",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/video/session/last-frame.ppm",
+      "--uart-bit-cycles",
+      "16",
+      "--max-cycles",
+      "100000000000",
+      "--progress-cycles",
+      "100000000"
+    ],
+    "mainargs": "",
+    "display": ":99",
+    "exit_code": 0,
+    "elapsed_seconds": 324.473567672,
+    "commands": [
+      {
+        "command": [
+          "xdotool",
+          "windowfocus",
+          "--sync",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "getwindowgeometry",
+          "--shell",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/video/session/first-picture.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/video/session/animated-picture.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+  },
+  "observations": {
+    "changed_native_canvas_pixels": 248832,
+    "completed_program_fps_reports": [
+      [
+        "1384",
+        "4"
+      ],
+      [
+        "2710",
+        "3"
+      ]
+    ]
+  },
+  "simulation_summary": {
+    "result": "GUI_OBSERVATION_STOP",
+    "cycles": 316579883,
+    "instructions": 28858052,
+    "wall_seconds": 322.559,
+    "diff_checked": 26702177,
+    "device_sync_checked": 2155875,
+    "minimum_nonzero_sp": 251666124,
+    "pins": {
+      "enabled": true,
+      "led_changes": [],
+      "segments": [
+        192,
+        192,
+        192,
+        192,
+        192,
+        192,
+        192,
+        192
+      ],
+      "switch_reads": [],
+      "ps2_scans": [],
+      "ps2_frame_errors": 0,
+      "vga_frames": 753,
+      "vga_changed_frames": 730,
+      "vga_last_hash": 5968349192149928789,
+      "vga_hashes": [
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        14623655411125665175,
+        1105274934151055775,
+        2814461590288396367,
+        2698730117136230259,
+        7379087300981651299,
+        17919826356500901035,
+        13723437231332547767,
+        13188188766254842415,
+        15983415538146780543,
+        9364746776913889443,
+        13770930921941193363,
+        3528629416973991963,
+        5811604830002491799,
+        5071574415979988871,
+        1047847774849496999,
+        5801616307151304931,
+        263838462722985419,
+        3085675682669186163,
+        15369530720320033919,
+        8626476015515612695,
+        3342739714827763047,
+        15746713224233864323,
+        14645173494446131691,
+        13750364187952277443,
+        11859844384217732375,
+        12615220246882944791,
+        3308583977328257959,
+        8846912461079835987,
+        2207297471935156315,
+        12312345091935457099,
+        8104839699032277479,
+        16326303600350765479,
+        9488608980057707343,
+        6659558399099251411,
+        10142159443825672883,
+        14683081658075716691,
+        17125396666799031727,
+        15227162459168580700,
+        16836271279424563199,
+        14802995850842494659,
+        11997934223257263215,
+        6478617394544877539,
+        10283705171606891383,
+        10925171976945436394,
+        4505667979847467439,
+        4061852439936015347,
+        12543709868354995843,
+        11545775989303177267
+      ]
+    },
+    "traps": {
+      "ecall": 0,
+      "mret": 0
+    }
+  },
+  "uart_tx_bytes": 28,
+  "uart_rx_bytes": 0,
+  "screenshots": [
+    {
+      "path": "artifacts/C5/gui/video/session/first-picture.png",
+      "sha256": "ead51087ab129d19a67b811a0aa164253e66a7fa6463db10703e8d3aa232bf2e"
+    },
+    {
+      "path": "artifacts/C5/gui/video/session/animated-picture.png",
+      "sha256": "56a16a99fd70980ef4d575811368b1b760aa8786dc7900e1c32f92a524fe6466"
+    }
+  ],
+  "evidence": "artifacts/C5/gui/video",
+  "scope": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program.",
+  "visual_review": {
+    "reviewer": "Codex inspection of actual native-window captures",
+    "observed": "Two native VGA captures show a complete colored spiral pattern with changed colors; UART reports1384ms/FPS4 then2710ms/FPS3, establishing repeated application redraws.",
+    "screenshots": [
+      {
+        "path": "artifacts/C5/gui/video/session/first-picture.png",
+        "sha256": "ead51087ab129d19a67b811a0aa164253e66a7fa6463db10703e8d3aa232bf2e"
+      },
+      {
+        "path": "artifacts/C5/gui/video/session/animated-picture.png",
+        "sha256": "56a16a99fd70980ef4d575811368b1b760aa8786dc7900e1c32f92a524fe6466"
+      }
+    ]
+  }
+}

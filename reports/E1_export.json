@@ -1,0 +1,617 @@
+{
+  "source": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+  "source_sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b",
+  "export": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export.v",
+  "export_sha256": "082cbdee96da6cd123b9efa7790b170588510da7981717d2dd223dfe8c386057",
+  "parts": [
+    {
+      "name": "Pin",
+      "label": "X",
+      "direction": "input",
+      "ports": [
+        [
+          100,
+          100
+        ]
+      ],
+      "loc": [
+        100,
+        100
+      ],
+      "index": 0,
+      "nets": [
+        "n0"
+      ]
+    },
+    {
+      "name": "Pin",
+      "label": "Y",
+      "direction": "input",
+      "ports": [
+        [
+          100,
+          300
+        ]
+      ],
+      "loc": [
+        100,
+        300
+      ],
+      "index": 1,
+      "nets": [
+        "n1"
+      ]
+    },
+    {
+      "name": "Pin",
+      "label": "Z",
+      "direction": "output",
+      "ports": [
+        [
+          650,
+          200
+        ]
+      ],
+      "loc": [
+        650,
+        200
+      ],
+      "index": 2,
+      "nets": [
+        "n6"
+      ]
+    },
+    {
+      "name": "NOT Gate",
+      "primitive": "not",
+      "ports": [
+        [
+          250,
+          100
+        ],
+        [
+          220,
+          100
+        ]
+      ],
+      "loc": [
+        250,
+        100
+      ],
+      "index": 3,
+      "nets": [
+        "n2",
+        "n0"
+      ]
+    },
+    {
+      "name": "NOT Gate",
+      "primitive": "not",
+      "ports": [
+        [
+          250,
+          300
+        ],
+        [
+          220,
+          300
+        ]
+      ],
+      "loc": [
+        250,
+        300
+      ],
+      "index": 4,
+      "nets": [
+        "n3",
+        "n1"
+      ]
+    },
+    {
+      "name": "AND Gate",
+      "primitive": "and",
+      "ports": [
+        [
+          400,
+          140
+        ],
+        [
+          350,
+          120
+        ],
+        [
+          350,
+          160
+        ]
+      ],
+      "loc": [
+        400,
+        140
+      ],
+      "index": 5,
+      "nets": [
+        "n4",
+        "n0",
+        "n3"
+      ]
+    },
+    {
+      "name": "AND Gate",
+      "primitive": "and",
+      "ports": [
+        [
+          400,
+          260
+        ],
+        [
+          350,
+          240
+        ],
+        [
+          350,
+          280
+        ]
+      ],
+      "loc": [
+        400,
+        260
+      ],
+      "index": 6,
+      "nets": [
+        "n5",
+        "n2",
+        "n1"
+      ]
+    },
+    {
+      "name": "OR Gate",
+      "primitive": "or",
+      "ports": [
+        [
+          550,
+          200
+        ],
+        [
+          500,
+          180
+        ],
+        [
+          500,
+          220
+        ]
+      ],
+      "loc": [
+        550,
+        200
+      ],
+      "index": 7,
+      "nets": [
+        "n6",
+        "n4",
+        "n5"
+      ]
+    }
+  ],
+  "nets": [
+    {
+      "name": "n0",
+      "points": [
+        [
+          100,
+          100
+        ],
+        [
+          150,
+          100
+        ],
+        [
+          150,
+          120
+        ],
+        [
+          220,
+          100
+        ],
+        [
+          350,
+          120
+        ]
+      ],
+      "drivers": [
+        "X"
+      ],
+      "consumers": [
+        "gate_3",
+        "gate_5"
+      ]
+    },
+    {
+      "name": "n1",
+      "points": [
+        [
+          100,
+          300
+        ],
+        [
+          170,
+          280
+        ],
+        [
+          170,
+          300
+        ],
+        [
+          220,
+          300
+        ],
+        [
+          350,
+          280
+        ]
+      ],
+      "drivers": [
+        "Y"
+      ],
+      "consumers": [
+        "gate_4",
+        "gate_6"
+      ]
+    },
+    {
+      "name": "n2",
+      "points": [
+        [
+          250,
+          100
+        ],
+        [
+          280,
+          100
+        ],
+        [
+          280,
+          240
+        ],
+        [
+          350,
+          240
+        ]
+      ],
+      "drivers": [
+        "gate_3"
+      ],
+      "consumers": [
+        "gate_6"
+      ]
+    },
+    {
+      "name": "n3",
+      "points": [
+        [
+          250,
+          300
+        ],
+        [
+          300,
+          160
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          350,
+          160
+        ]
+      ],
+      "drivers": [
+        "gate_4"
+      ],
+      "consumers": [
+        "gate_5"
+      ]
+    },
+    {
+      "name": "n4",
+      "points": [
+        [
+          400,
+          140
+        ],
+        [
+          450,
+          140
+        ],
+        [
+          450,
+          180
+        ],
+        [
+          500,
+          180
+        ]
+      ],
+      "drivers": [
+        "gate_5"
+      ],
+      "consumers": [
+        "gate_7"
+      ]
+    },
+    {
+      "name": "n5",
+      "points": [
+        [
+          400,
+          260
+        ],
+        [
+          470,
+          220
+        ],
+        [
+          470,
+          260
+        ],
+        [
+          500,
+          220
+        ]
+      ],
+      "drivers": [
+        "gate_6"
+      ],
+      "consumers": [
+        "gate_7"
+      ]
+    },
+    {
+      "name": "n6",
+      "points": [
+        [
+          550,
+          200
+        ],
+        [
+          650,
+          200
+        ]
+      ],
+      "drivers": [
+        "gate_7"
+      ],
+      "consumers": [
+        "Z"
+      ]
+    }
+  ],
+  "disconnected_output_control": {
+    "status": "PASS",
+    "error": "n6: disconnected/unconsumed net",
+    "input": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E1\\export\\disconnected_output\\input.circ",
+    "input_sha256": "2026869ba49f562c2d0502bcf25074d3829bf3b50c0d9d810fb6a91ea194d733"
+  },
+  "status": "PASS_ADAPTED",
+  "crossing_tests": "PASS: interior/interior separate; explicit endpoint/pin joins",
+  "runs": [
+    {
+      "name": "normal",
+      "status": "PASS",
+      "compile": {
+        "name": "E1/export/normal/compile",
+        "timestamp": "2026-10-24T13:36:56.820392+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_normal.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.109,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+            "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export.v",
+            "sha256": "082cbdee96da6cd123b9efa7790b170588510da7981717d2dd223dfe8c386057"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv",
+            "sha256": "cbb9b6ab28d405d67e5eefbcde5e2f4858d9c98672e2d5b4b045af11b1e1bb71"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+            "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export.v",
+            "sha256": "082cbdee96da6cd123b9efa7790b170588510da7981717d2dd223dfe8c386057"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv",
+            "sha256": "cbb9b6ab28d405d67e5eefbcde5e2f4858d9c98672e2d5b4b045af11b1e1bb71"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "simulation": {
+        "name": "E1/export/normal/simulate",
+        "timestamp": "2026-10-24T13:36:56.876302+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_normal.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+            "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export.v",
+            "sha256": "082cbdee96da6cd123b9efa7790b170588510da7981717d2dd223dfe8c386057"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv",
+            "sha256": "cbb9b6ab28d405d67e5eefbcde5e2f4858d9c98672e2d5b4b045af11b1e1bb71"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_normal.vvp",
+            "sha256": "6814d18d2154a1ae43ff74f523622bb99945550f7fd8000382ba857696676cdb"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+            "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export.v",
+            "sha256": "082cbdee96da6cd123b9efa7790b170588510da7981717d2dd223dfe8c386057"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv",
+            "sha256": "cbb9b6ab28d405d67e5eefbcde5e2f4858d9c98672e2d5b4b045af11b1e1bb71"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_normal.vvp",
+            "sha256": "6814d18d2154a1ae43ff74f523622bb99945550f7fd8000382ba857696676cdb"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "ca489b6a46af526feb28b94ba234813c56aeda098fdd61d570b2146c95cc308b",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "or_changed_to_and",
+      "status": "PASS",
+      "compile": {
+        "name": "E1/export/or_changed_to_and/compile",
+        "timestamp": "2026-10-24T13:36:56.993869+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_or_changed_to_and.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_mutated.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+            "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_mutated.v",
+            "sha256": "ad69239aea8200ca8b81b77a909df50f1ae9bf4d8f694779736d572bbfb09286"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv",
+            "sha256": "cbb9b6ab28d405d67e5eefbcde5e2f4858d9c98672e2d5b4b045af11b1e1bb71"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+            "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_mutated.v",
+            "sha256": "ad69239aea8200ca8b81b77a909df50f1ae9bf4d8f694779736d572bbfb09286"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv",
+            "sha256": "cbb9b6ab28d405d67e5eefbcde5e2f4858d9c98672e2d5b4b045af11b1e1bb71"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "simulation": {
+        "name": "E1/export/or_changed_to_and/simulate",
+        "timestamp": "2026-10-24T13:36:57.057527+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_or_changed_to_and.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+            "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_mutated.v",
+            "sha256": "ad69239aea8200ca8b81b77a909df50f1ae9bf4d8f694779736d572bbfb09286"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv",
+            "sha256": "cbb9b6ab28d405d67e5eefbcde5e2f4858d9c98672e2d5b4b045af11b1e1bb71"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_or_changed_to_and.vvp",
+            "sha256": "3f3986f84b608e15b3032124bc31112d249cf14e14d9534928bd124fdfd7ff0f"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+            "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_mutated.v",
+            "sha256": "ad69239aea8200ca8b81b77a909df50f1ae9bf4d8f694779736d572bbfb09286"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\export\\tutorial_export_tb.sv",
+            "sha256": "cbb9b6ab28d405d67e5eefbcde5e2f4858d9c98672e2d5b4b045af11b1e1bb71"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\tutorial_or_changed_to_and.vvp",
+            "sha256": "3f3986f84b608e15b3032124bc31112d249cf14e14d9534928bd124fdfd7ff0f"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e9fa3928678f06f23f5c9a18437a569448c3b123dec2e675cde075cafd974d9e",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "timestamp": "2026-10-24T13:36:57.077679+00:00",
+  "source_unchanged": true,
+  "adaptation": "User authorized command-line alternatives; native XML connectivity export replaces Logisim GUI HDL generation. Not an official Logisim exporter claim."
+}

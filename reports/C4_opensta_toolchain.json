@@ -1,0 +1,29 @@
+{
+  "status": "PASS_POSITIVE_AND_NEGATIVE_TIMING",
+  "binary": "/home/USER/tools/c-stage/opensta/usr/bin/sta",
+  "sha256": "9630070fdbcfd2a92a9d0dc6b6e5480f7be8e216b720f1fb32f447fb4cedc2ff",
+  "version": "2.0.17",
+  "package": {
+    "url": "http://archive.ubuntu.com/ubuntu/pool/universe/o/opensta/opensta_0%7e20191111gitc018cb2%2bdfsg-1build1_amd64.deb",
+    "archive": "/workspace/downloads/ysyx_c_stage/opensta/opensta_0~20191111gitc018cb2+dfsg-1build1_amd64.deb",
+    "official_digest_algorithm": "SHA512",
+    "official_digest": "c4d7e154b564619b923f0b2d3f7edf66ab488404d027ced4f88616c20c0905fcdf9ea853b319146482531b07bc9416439dbd1e50bd70a5ce6da5dae1319b7533",
+    "official_digest_match": true,
+    "sha256": "b1272a4816bc2c67098872f39820f27b4dddf640205e09a31444c71c9fe41e9e"
+  },
+  "controls": [
+    {
+      "case": "good",
+      "period_ns": 10,
+      "worst_slack_ns": 9.826635,
+      "status": "PASS"
+    },
+    {
+      "case": "bad_timing",
+      "period_ns": 0.001,
+      "worst_slack_ns": -0.172364,
+      "status": "EXPECTED_TIMING_VIOLATION_DETECTED"
+    }
+  ],
+  "scope": "Task-local official Ubuntu OpenSTA extraction; no system installation. Added because ECC post-synthesis STA exceeded the recorded memory guard on the required full2KB baseline. Uses same characterized TT cells, not replacement ideal delays."
+}

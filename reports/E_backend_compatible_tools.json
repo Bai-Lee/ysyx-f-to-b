@@ -1,0 +1,308 @@
+{
+  "status": "PASS_SYNTHESIS_STA_ONLY",
+  "ecc": "/home/USER/tools/e-stage/ecos-alpha9/squashfs-root/resources/binaries/ecc",
+  "yosys_root": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite",
+  "version": "Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)\n",
+  "project": "/home/USER/e-stage/backend/light/runs/yosys_august",
+  "mapped_instances": 225,
+  "pin_errors": [],
+  "negative_control_detected": [
+    {
+      "cell": "DFFQX0P5H7R",
+      "instance": "count_0__reg_p",
+      "bad_port": "INTENTIONALLY_INVALID_PORT"
+    }
+  ],
+  "failed_newer_yosys_port_errors": [
+    {
+      "cell": "AOI211X0P5H7L",
+      "instance": "count_10__reg_p_D_AOI211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "AOI211X0P5H7L",
+      "instance": "count_12__reg_p_D_AOI211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "NOR3BX0P5H7L",
+      "instance": "count_14__reg_p_D_NOR3BX0P5H7L_Y",
+      "bad_port": "AOI21BX2H7R"
+    },
+    {
+      "cell": "AOAI211X0P5H7L",
+      "instance": "count_17__reg_p_D_AOI31X0P5H7L_Y_B0_AOAI211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "AOAI211X0P5H7L",
+      "instance": "count_20__reg_p_D_AOI21X0P5H7L_Y_B0_AOAI211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "AOI211X0P5H7L",
+      "instance": "count_22__reg_p_D_AOI211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "AOAI211X0P5H7L",
+      "instance": "count_26__reg_p_D_AOI21X0P5H7L_Y_B0_AOAI211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "AOI211X0P5H7L",
+      "instance": "count_28__reg_p_D_AOI211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "OA211X0P5H7L",
+      "instance": "count_30__reg_p_D_OA211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "NOR2BX1H7L",
+      "instance": "count_30__reg_p_D_OA211X0P5H7L_Y_A1_NAND4X0P5H7L_Y_B_NOR2BX1H7L_Z",
+      "bad_port": "AOI21BX2H7R"
+    },
+    {
+      "cell": "NAND4BX0P5H7L",
+      "instance": "count_30__reg_p_D_OA211X0P5H7L_Y_B0_OAI21X0P5H7L_Y_A0_NAND4BX0P5H7L_Y",
+      "bad_port": "AOI21BX2H7R"
+    },
+    {
+      "cell": "NAND4BX0P5H7L",
+      "instance": "count_31__INVX0P5H7L_A_Y_NAND4BX0P5H7L_C",
+      "bad_port": "AOI21BX2H7R"
+    },
+    {
+      "cell": "AOI2BB1X0P5H7L",
+      "instance": "count_31__INVX0P5H7L_A_Y_NAND4BX0P5H7L_C_Y_OR4X0P5H7L_B_Y_NOR2X0P5H7L_A_B_NAND4X0P5H7L_Y_C_AND4X0P5H7L_D_Y_NAND3X0P5H7L_C_Y_AOI2BB1X0P5H7L_AOI22X6H7R",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "AOI2BB1X0P5H7L",
+      "instance": "count_31__INVX0P5H7L_A_Y_NAND4BX0P5H7L_C_Y_OR4X0P5H7L_B_Y_NOR2X0P5H7L_A_B_NAND4X0P5H7L_Y_C_AND4X0P5H7L_D_Y_NAND3X0P5H7L_C_Y_AOI2BB1X0P5H7L_AOI22X6H7R",
+      "bad_port": "BUFX2H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "count_31__INVX0P5H7L_A_Y_NAND4BX0P5H7L_C_Y_OR4X0P5H7L_B_Y_NOR2X0P5H7L_A_B_NAND4X0P5H7L_Y_C_AND4X0P5H7L_D_Y_NAND3X0P5H7L_C_Y_OAI21BX0P5H7L_A1",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "OA211X0P5H7L",
+      "instance": "count_31__reg_p_D_OA211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "AOA211X0P5H7L",
+      "instance": "count_6__reg_p_D_AOA211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "AOAI211X0P5H7L",
+      "instance": "count_7__reg_p_D_AOI31X0P5H7L_Y_B0_AOAI211X0P5H7L_Y",
+      "bad_port": "DFFRX3H7R"
+    },
+    {
+      "cell": "OAI2XB1X0P5H7L",
+      "instance": "\\led[0]_reg_p_D_OAI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[10]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[10]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[11]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[11]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[12]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[12]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[13]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[13]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[14]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[14]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[15]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[15]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[1]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[1]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[2]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[2]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[3]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[3]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[4]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[4]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[5]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[5]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[6]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[6]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[7]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[7]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[8]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[8]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    },
+    {
+      "cell": "AOI2XB1X0P5H7L",
+      "instance": "\\led[9]_reg_p_D_AOI2XB1X0P5H7L_Y",
+      "bad_port": "AOI22X6H7R"
+    },
+    {
+      "cell": "OAI21BX0P5H7L",
+      "instance": "\\led[9]_reg_p_D_AOI2XB1X0P5H7L_Y_B0_OAI21BX0P5H7L_Y",
+      "bad_port": "AOI22X1P4H7R"
+    }
+  ],
+  "netlist_sha256": "f2e7364b0bab9eab6d934ea45d6453b8e05fc29b5ec3a7a1ebb604d8324061bd",
+  "qor": {
+    "path_groups": [
+      {
+        "name": "clock",
+        "setup": {
+          "wns": 9.419,
+          "tns": 0.0,
+          "nvp": 0,
+          "frequency_mhz": 1720
+        },
+        "hold": {
+          "wns": 0.137,
+          "tns": 0.0,
+          "nvp": 0
+        }
+      }
+    ],
+    "summary": {
+      "setup": {
+        "wns": 9.419,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 1720
+      },
+      "hold": {
+        "wns": 0.137,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    "design_statistics": {
+      "cap": 0,
+      "fanout": 0,
+      "tran": 0,
+      "tdrc": 0,
+      "cella": 625,
+      "bufs": null,
+      "leafs_k": 0,
+      "tnets_k": null,
+      "ctbuf": null,
+      "regs": null
+    }
+  },
+  "scope": "syn_sta positive run only. Overall ECC signoff checklist correctly remains blocked for unrequested physical steps; no route/DRC/LVS claim."
+}

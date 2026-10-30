@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/sources/ysyxSoC-bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e.tar.gz",
+      "path": "C/offline/sources/ysyxSoC-bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e.tar.gz",
+      "sha256": "1ede015007ade45c3ecf4ca3972f207ba8843aa49999e4888f503b3f79ba8e5d",
+      "bytes": 365835,
+      "repository": "https://github.com/OSCPU/ysyxSoC",
+      "commit": "bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e",
+      "url": null
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/sources/rocket-chip-d0c6b50fdefcdbe121e9788433ea51f7efaf1d32.tar.gz",
+      "path": "C/offline/sources/rocket-chip-d0c6b50fdefcdbe121e9788433ea51f7efaf1d32.tar.gz",
+      "sha256": "8392178266660c27d7001f7f8f0060befaec1a53112ca1babd8dea187780415b",
+      "bytes": 625974,
+      "repository": null,
+      "commit": "d0c6b50fdefcdbe121e9788433ea51f7efaf1d32",
+      "url": null
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/sources/rocket-chip__dependencies__cde-52768c97a27b254c0cc0ac9401feb55b29e18c28.tar.gz",
+      "path": "C/offline/sources/rocket-chip__dependencies__cde-52768c97a27b254c0cc0ac9401feb55b29e18c28.tar.gz",
+      "sha256": "3c59d1f1d59ed2fa6cd6d8b2fa43c37b3c047152f7f83c681410dc04a148f0c5",
+      "bytes": 17211,
+      "repository": null,
+      "commit": "52768c97a27b254c0cc0ac9401feb55b29e18c28",
+      "url": null
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/sources/rocket-chip__dependencies__chisel-e3bcc90db37f1aec9f8048813f4f0666098d9bee.tar.gz",
+      "path": "C/offline/sources/rocket-chip__dependencies__chisel-e3bcc90db37f1aec9f8048813f4f0666098d9bee.tar.gz",
+      "sha256": "50aa67a796fcfb2a2d8902f5e82ff840114b149548dbd9c6670201e0395307a5",
+      "bytes": 1804389,
+      "repository": null,
+      "commit": "e3bcc90db37f1aec9f8048813f4f0666098d9bee",
+      "url": null
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/sources/rocket-chip__dependencies__diplomacy-edf375300d99a4c260a214d7c1553de0040771d7.tar.gz",
+      "path": "C/offline/sources/rocket-chip__dependencies__diplomacy-edf375300d99a4c260a214d7c1553de0040771d7.tar.gz",
+      "sha256": "4ae761f63c9cd22e5f1cfb1137dea729e0430e8e1dea79cabdea5b8e0bc2b2b3",
+      "bytes": 40578,
+      "repository": null,
+      "commit": "edf375300d99a4c260a214d7c1553de0040771d7",
+      "url": null
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/sources/rocket-chip__dependencies__hardfloat-d93aa570806013dea479a92ba9bb33d1f2d4f69f.tar.gz",
+      "path": "C/offline/sources/rocket-chip__dependencies__hardfloat-d93aa570806013dea479a92ba9bb33d1f2d4f69f.tar.gz",
+      "sha256": "145cad3d70a8380b74a4a7d211997220d389c6325b4d9791dd71edf900cc1b1d",
+      "bytes": 1026994,
+      "repository": null,
+      "commit": "d93aa570806013dea479a92ba9bb33d1f2d4f69f",
+      "url": null
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/sources/rocket-chip__dependencies__hardfloat__berkeley-softfloat-3-5c06db33fc1e2130f67c045327b0ec949032df1d.tar.gz",
+      "path": "C/offline/sources/rocket-chip__dependencies__hardfloat__berkeley-softfloat-3-5c06db33fc1e2130f67c045327b0ec949032df1d.tar.gz",
+      "sha256": "032138880a8d8d36bb6b76bfb1a94e0f009f9222bca13c2c937ddc3a731c0822",
+      "bytes": 148161,
+      "repository": null,
+      "commit": "5c06db33fc1e2130f67c045327b0ec949032df1d",
+      "url": null
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/sources/rocket-chip__dependencies__hardfloat__berkeley-testfloat-3-06b20075dd3c1a5d0dd007a93643282832221612.tar.gz",
+      "path": "C/offline/sources/rocket-chip__dependencies__hardfloat__berkeley-testfloat-3-06b20075dd3c1a5d0dd007a93643282832221612.tar.gz",
+      "sha256": "09dc3e654dcce59625d64b11bb98dd17e08ec255eba6b3d9f6d44be36c6fa993",
+      "bytes": 138134,
+      "repository": null,
+      "commit": "06b20075dd3c1a5d0dd007a93643282832221612",
+      "url": null
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/specifications/IHI0022H_amba_axi_protocol_spec.pdf",
+      "path": "C/offline/sources/IHI0022H_amba_axi_protocol_spec.pdf",
+      "sha256": "d70578d92bfcdc84b6d94c87d6a126614e26f89d1fdd8c77ac128e7063a9990e",
+      "bytes": 2308667,
+      "repository": null,
+      "commit": null,
+      "url": "https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/IHI0022H_amba_axi_protocol_spec.pdf"
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/nangate45/NangateOpenCellLibrary_typical.lib",
+      "path": "C/offline/sources/NangateOpenCellLibrary_typical.lib",
+      "sha256": "8d540a4d4cf6d09d27c87ad067857a9c0c2eeb023ab7a56e058cd3113db4e9b1",
+      "bytes": 6692032,
+      "repository": "https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts",
+      "commit": "6c6fc7e21b2d0b5b88b1a52d0a5860ea4d88e9e5",
+      "url": "https://raw.githubusercontent.com/The-OpenROAD-Project/OpenROAD-flow-scripts/6c6fc7e21b2d0b5b88b1a52d0a5860ea4d88e9e5/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib"
+    },
+    {
+      "source": "/workspace/downloads/ysyx_c_stage/nangate45/OpenCellLibraryLicenseSi2.txt",
+      "path": "C/offline/sources/OpenCellLibraryLicenseSi2.txt",
+      "sha256": "ceee811023a06fe8ed9ba3369fc7e8b9d8035a0b2a7d7b321384c4e2051de3c8",
+      "bytes": 2108,
+      "repository": "https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts",
+      "commit": "6c6fc7e21b2d0b5b88b1a52d0a5860ea4d88e9e5",
+      "url": null
+    }
+  ],
+  "inherited_pristine_sources": [
+    "reports/E_offline_sources.json",
+    "reports/D_offline_sources.json"
+  ],
+  "scope": "FixedCfullSoCandrecursive source archives/additional documents copiedandhashed. ExistingbaseNEMU/AM/kernel/FCEUX source archives remaininthecumulativeF/E/D delivery tree. Installedtools/Maven/JDK/systemlibraries remain separatelylocked dependencies."
+}

@@ -1,0 +1,10 @@
+Hello from the final B-stage RV32E CPU!
+
+
+
+B5_PROGRAM_PASS cycles=868 reads=96 beats=96 writes=41 pages=1
+
+$REPO\B\B5\cpu_four_state_tb.sv:103: $finish called at 8885000 (1ps)
+
+PUBLIC_DEMO_PASS
+Evidence: build\hello\20261030T064916-971555000

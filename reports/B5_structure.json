@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+  "mapped_json_sha256": "f7f40327f7a5c73e4f4cb8a04f4d638f6df8628f87725f757944ff77de0c0bab",
+  "exported_rtl_sha256": "0c56b8296b8d03f359cedc07028e2a40eaafd7785979714ebd74c7291f17aed8",
+  "modules": [
+    "ysyx_00000000",
+    "ysyx_00000000_alu",
+    "ysyx_00000000_core",
+    "ysyx_00000000_execute",
+    "ysyx_00000000_icache",
+    "ysyx_00000000_pipe"
+  ],
+  "cell_types": {
+    "INV_X1": 1030,
+    "BUF_X1": 847,
+    "NOR2_X1": 975,
+    "AND2_X1": 227,
+    "OAI211_X1": 351,
+    "OR3_X1": 32,
+    "NAND2_X1": 839,
+    "NOR3_X1": 203,
+    "NOR4_X1": 55,
+    "OR4_X1": 15,
+    "AOI21_X1": 1296,
+    "MUX2_X1": 1641,
+    "CLKBUF_X1": 323,
+    "AOI211_X1": 443,
+    "NAND3_X1": 173,
+    "OAI21_X1": 1230,
+    "AND3_X1": 67,
+    "OAI22_X1": 680,
+    "AOI221_X1": 407,
+    "XOR2_X1": 100,
+    "AOI22_X1": 313,
+    "OR2_X1": 360,
+    "NAND2_X2": 1,
+    "NAND4_X1": 43,
+    "OAI33_X1": 31,
+    "XNOR2_X1": 243,
+    "NOR4_X4": 8,
+    "OR4_X2": 4,
+    "BUF_X4": 5,
+    "OR3_X2": 1,
+    "AOI211_X2": 4,
+    "NOR2_X2": 2,
+    "BUF_X2": 32,
+    "OAI221_X1": 98,
+    "OAI222_X1": 7,
+    "OR2_X2": 3,
+    "AOI21_X2": 4,
+    "XOR2_X2": 1,
+    "AOI222_X1": 73,
+    "AOI22_X4": 1,
+    "AND2_X2": 1,
+    "AOI22_X2": 1,
+    "OAI21_X2": 2,
+    "AOI221_X2": 2,
+    "OAI211_X2": 4,
+    "AND4_X1": 26,
+    "NOR4_X2": 3,
+    "MUX2_X2": 1,
+    "NAND4_X4": 2,
+    "OR4_X4": 2,
+    "NAND4_X2": 1,
+    "DFF_X1": 2371
+  },
+  "DFF_rising_clock": "All DFF_X1 CK pins connect directly to top-level clock; cell edge behavior was separately verified",
+  "latches": 0,
+  "axi_data_bits": 32,
+  "negative_controls": [
+    {
+      "mutation": "latch",
+      "status": "PASS_MUTATION_REJECTED",
+      "reason": "LATCH"
+    },
+    {
+      "mutation": "clock",
+      "status": "PASS_MUTATION_REJECTED",
+      "reason": "CLOCK_TREE"
+    },
+    {
+      "mutation": "width",
+      "status": "PASS_MUTATION_REJECTED",
+      "reason": "AXI_WIDTH"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "DECLFILENAME",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:269:8: Filename 'ysyx_00000000' does not match MODULE name: 'ysyx_00000000_alu'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:125:15: Signal is not used: 'pc'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:125:23: Signal is not used: 'halted'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:125:41: Signal is not used: 'fault'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:125:47: Signal is not used: 'debug_state'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:126:8: Signal is not used: 'commit_valid'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:126:33: Signal is not used: 'commit_pc'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:126:43: Signal is not used: 'commit_inst'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:126:55: Signal is not used: 'commit_next_pc'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:126:83: Signal is not used: 'debug_gpr'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:127:18: Signal is not used: 'exec_ebreak'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:127:30: Signal is not used: 'exec_mem_valid'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:127:45: Signal is not used: 'exec_mem_write'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:128:15: Signal is not used: 'exec_pc'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:128:23: Bits of signal are not used: 'exec_inst'[31:15,11:7]"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:128:33: Signal is not used: 'exec_mem_addr'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:128:47: Signal is not used: 'exec_mem_wdata'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:128:62: Signal is not used: 'exec_mem_rdata'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:128:88: Signal is not used: 'exec_mem_size'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:137:8: Signal is not used: 'cache_access'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:137:21: Signal is not used: 'cache_hit'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:137:31: Signal is not used: 'cache_miss'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:137:42: Signal is not used: 'cache_bypass'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:137:55: Signal is not used: 'cache_fill'"
+    },
+    {
+      "code": "UNUSEDPARAM",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:776:21: Parameter is not used: 'STAGE'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:782:21: Signal is not used: 'delay_enable'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:782:53: Signal is not used: 'lfsr_seed'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:812:42: Bits of function variable are not used: 'instruction'[31:15,11:7]"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:815:43: Bits of function variable are not used: 'instruction'[31:7]"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:886:8: Signal is not used: 'load_use'"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:270:51: Bits of signal are not used: 'csr_mtvec'[1:0]"
+    },
+    {
+      "code": "UNUSEDSIGNAL",
+      "location": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv:277:14: Bits of signal are not used: 'rd'[3:0]"
+    }
+  ],
+  "warning_review": {
+    "DECLFILENAME": "Required single-file export contains several prefixed modules.",
+    "UNUSEDSIGNAL": "Unused commit/debug/performance taps are simulation-only; unused decode bits are intentionally selected opcode fields; mtvec low bits are aligned to four bytes. No unused functional AXI ready/valid path is hidden.",
+    "UNUSEDPARAM": "STAGE preserves the inherited core interface; the implemented pipeline is fixed at four stages."
+  },
+  "scope": "Final exported DUT and exact final mapped netlist. Simulation-only negedge observation hooks are excluded. No official whitelist, hidden tests or physical-signoff claim."
+}

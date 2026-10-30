@@ -1,0 +1,1262 @@
+{
+  "status": "PASS_SYNTHESIS_STA_ONLY",
+  "constraint_mhz": 100,
+  "strategy": "DELAY 4",
+  "scope": "Same RTL, clock, LEF and strategy; each corner re-synthesized, so mapped cells may change. No routed parasitics; power is vectorless tool estimate. Not physical signoff or measured silicon.",
+  "rows": [
+    {
+      "label": "tt",
+      "corner": "typ_tt_1p2_25",
+      "status": "PASS_SYNTHESIS_STA_ONLY",
+      "qor": {
+        "path_groups": [
+          {
+            "name": "clock",
+            "setup": {
+              "wns": 9.419,
+              "tns": 0.0,
+              "nvp": 0,
+              "frequency_mhz": 1720
+            },
+            "hold": {
+              "wns": 0.137,
+              "tns": 0.0,
+              "nvp": 0
+            }
+          }
+        ],
+        "summary": {
+          "setup": {
+            "wns": 9.419,
+            "tns": 0.0,
+            "nvp": 0,
+            "frequency_mhz": 1720
+          },
+          "hold": {
+            "wns": 0.137,
+            "tns": 0.0,
+            "nvp": 0
+          }
+        },
+        "design_statistics": {
+          "cap": 0,
+          "fanout": 0,
+          "tran": 0,
+          "tdrc": 0,
+          "cella": 625,
+          "bufs": null,
+          "leafs_k": 0,
+          "tnets_k": null,
+          "ctbuf": null,
+          "regs": null
+        }
+      },
+      "metrics": {
+        "schema_version": 3,
+        "analysis_revision": "quality-gates-v4",
+        "tool": "yosys",
+        "step": "Synthesis",
+        "design": "light",
+        "status": "success",
+        "metrics": [
+          {
+            "id": "peak_memory_mb",
+            "display_name": "Peak Memory",
+            "value": 1141.395,
+            "unit": "MB",
+            "category": "runtime",
+            "direction": "lower_is_better",
+            "scope": "synthesis_execution",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "secondary",
+            "analysis_group": "runtime",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/run/peak_memory_mb"
+            }
+          },
+          {
+            "id": "runtime_seconds",
+            "display_name": "Step Runtime",
+            "value": 16.172,
+            "unit": "s",
+            "category": "runtime",
+            "direction": "lower_is_better",
+            "scope": "synthesis_execution",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "secondary",
+            "analysis_group": "runtime",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/run/runtime_seconds"
+            }
+          },
+          {
+            "id": "synthesis_cell_area",
+            "display_name": "Synthesis Cell Area",
+            "value": 625.52,
+            "unit": "um^2",
+            "category": "area_cost",
+            "direction": "lower_is_better",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": true,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/area"
+            }
+          },
+          {
+            "id": "synthesis_cell_count",
+            "display_name": "Synthesis Cell Count",
+            "value": 225,
+            "unit": "count",
+            "category": "area_cost",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_cells"
+            }
+          },
+          {
+            "id": "synthesis_port_count",
+            "display_name": "Synthesis Port Count",
+            "value": 18,
+            "unit": "count",
+            "category": "routability_physical",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_port_bits"
+            }
+          },
+          {
+            "id": "synthesis_power_dynamic_uw",
+            "display_name": "Synthesis Dynamic Power",
+            "value": 54.7681,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/dynamic_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_internal_uw",
+            "display_name": "Synthesis Internal Power",
+            "value": 54.2602,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/internal_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_leakage_uw",
+            "display_name": "Synthesis Leakage Power",
+            "value": 0.0780479,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/leakage_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_switching_uw",
+            "display_name": "Synthesis Switching Power",
+            "value": 0.5079149,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/switching_uw"
+            }
+          },
+          {
+            "id": "synthesis_wire_count",
+            "display_name": "Synthesis Wire Count",
+            "value": 227,
+            "unit": "count",
+            "category": "routability_physical",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_wires"
+            }
+          }
+        ],
+        "details": [],
+        "sources": [
+          {
+            "kind": "feature",
+            "path": "feature/Synthesis.step.json"
+          },
+          {
+            "kind": "feature",
+            "path": "feature/Synthesis_stat.json"
+          },
+          {
+            "kind": "feature",
+            "path": "feature/post_synthesis/power_summary.json"
+          }
+        ],
+        "integrity": {
+          "status": "pass",
+          "invalid_metric_source_ids": [],
+          "invalid_detail_ids": []
+        },
+        "context": {
+          "timing_constraints": {
+            "sdc_sha256": "5d84aa9bb79fd0458d282e337af15bae4e9f40edac449e4bb68e2b549fa7a11e",
+            "sdc_size_bytes": 257,
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/constraints/sdc"
+            }
+          }
+        }
+      },
+      "power_report": "Design : light\nOperating Conditions: ICS_N55_H7BR_tt_mos_TYP_1.2_25\nAnalysis Effort : low\nWire Load Model : ZeroWireload\nGlobal Operating Voltage = 1.2\n\nDynamic Power Units = 1mW\nLeakage Power Units = 1nW\n\nCell Internal Power  =   54.2602 uW\nNet Switching Power  =  507.9149 nW\nTotal Dynamic Power  =   54.7681 uW\nCell Leakage Power   =   78.0479 nW\n\n                 Internal         Switching           Leakage            Total\nPower Group      Power            Power               Power              Power   (   %    )  Attrs\n--------------------------------------------------------------------------------------------------\nio_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)\nmemory             0.0000            0.0000            0.0000            0.0000  (   0.00%)\nblack_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)\nclock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i\nregister       5.3943e-02        8.1844e-05           17.7200        5.4043e-02  (  98.53%)\nsequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)\ncombinational  3.1722e-04        4.2607e-04           60.3279        8.0362e-04  (   1.47%)\n--------------------------------------------------------------------------------------------------\nTotal          5.4260e-02 mW     5.0791e-04 mW        78.0479 nW     5.4846e-02 mW\n\ni - Including register clock pin internal power\n",
+      "libraries": [
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib",
+          "sha256": "e6733a87b3a015c2234172625abf0ee366a35f2725e640c88e149ee073fc13be"
+        },
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib",
+          "sha256": "a5fb35bea1c7e8f06d2e93089d48986125731f8e744580adaa4d320283e23988"
+        }
+      ],
+      "netlist_sha256": "8294784843eac8628f76a135345713ec6609682f5a6b49ebd77713768a999247",
+      "files": [
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/ecc.toml",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/00_ecc.toml",
+          "sha256": "8065755d04e136bea6b06dd6cf24bd2ab4c255db6cd55aa87d8666ee5d3f118c"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/rtl/light.v",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/01_light.v",
+          "sha256": "5bdebc152a313d43429b3940b6a5865082133ce6a7133d68a244718b47695cf5"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/output/light_Synthesis.v.gz",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/02_light_Synthesis.v.gz",
+          "sha256": "8294784843eac8628f76a135345713ec6609682f5a6b49ebd77713768a999247"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/analysis/qor_metrics.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/03_qor_metrics.json",
+          "sha256": "1c3814f61ba911e521a5985319de35aeaa5382c97dfbbcfc1bb0441408111dea"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/report/post_synthesis/power.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/04_power.rpt",
+          "sha256": "92fd6727af708cc4f32a258eee1b393142ff562d40c472194d587c50836191fa"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/feature/post_synthesis/qor_summary.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/05_qor_summary.json",
+          "sha256": "1fa1972720bbd110621192c15957855219da5fba49ba6010957bea3ec2fd954a"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/report/Synthesis_check.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/06_Synthesis_check.rpt",
+          "sha256": "6bac4b30aca5e6f18de6123b51b33cd8686f46204bc643197750aee826d38462"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/report/post_synthesis/timing_max.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/07_timing_max.rpt",
+          "sha256": "1d0e73b8cb33e92a9d9fd217c13c24600d3079feeb20622d4cce98effd799228"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/report/post_synthesis/qor_summary.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/08_qor_summary.rpt",
+          "sha256": "45301baa21a6bf14026ca0031f4b832f2e5761023f31f6d836496bb9f4c45025"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/script/yosys_synthesis.tcl",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/09_yosys_synthesis.tcl",
+          "sha256": "224f6331af06e2232b40faea4e494ea1ccb9a5f773081536a7e9857b92c9dcd4"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/script/init_tech.tcl",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/10_init_tech.tcl",
+          "sha256": "536755095d017ae9233a82e45024387739b4cf5dfdb34625d26f3201274026ee"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/Synthesis_yosys/log/Synthesis.log",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/11_Synthesis.log",
+          "sha256": "e31a99ee0acf14633fa537ab6ce072a683ddea5a57b798888b6c2ecd68b5e298"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/origin/light.sdc",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/12_light.sdc",
+          "sha256": "5d84aa9bb79fd0458d282e337af15bae4e9f40edac449e4bb68e2b549fa7a11e"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_tt/runs/baseline/home/flow.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/13_flow.json",
+          "sha256": "8396d1e3147c8416c763357fc250c112d6077d734bb53e4989e30e9e3dd8a5f6"
+        },
+        {
+          "original": "/workspace/projects/ysyx_f_to_b/artifacts/D6/pvt/tt/budget.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/tt/14_budget.json",
+          "sha256": "2bfc0d6b1fbe39fe295e33025176b25265ef977d979eae0804e95b88f39c469e"
+        }
+      ]
+    },
+    {
+      "label": "ss",
+      "corner": "ss_rcworst_1p08_125",
+      "status": "PASS_SYNTHESIS_STA_ONLY",
+      "qor": {
+        "path_groups": [
+          {
+            "name": "clock",
+            "setup": {
+              "wns": 8.971,
+              "tns": 0.0,
+              "nvp": 0,
+              "frequency_mhz": 971
+            },
+            "hold": {
+              "wns": 0.246,
+              "tns": 0.0,
+              "nvp": 0
+            }
+          }
+        ],
+        "summary": {
+          "setup": {
+            "wns": 8.971,
+            "tns": 0.0,
+            "nvp": 0,
+            "frequency_mhz": 971
+          },
+          "hold": {
+            "wns": 0.246,
+            "tns": 0.0,
+            "nvp": 0
+          }
+        },
+        "design_statistics": {
+          "cap": 0,
+          "fanout": 0,
+          "tran": 0,
+          "tdrc": 0,
+          "cella": 637,
+          "bufs": null,
+          "leafs_k": 0,
+          "tnets_k": null,
+          "ctbuf": null,
+          "regs": null
+        }
+      },
+      "metrics": {
+        "schema_version": 3,
+        "analysis_revision": "quality-gates-v4",
+        "tool": "yosys",
+        "step": "Synthesis",
+        "design": "light",
+        "status": "success",
+        "metrics": [
+          {
+            "id": "peak_memory_mb",
+            "display_name": "Peak Memory",
+            "value": 1164.84,
+            "unit": "MB",
+            "category": "runtime",
+            "direction": "lower_is_better",
+            "scope": "synthesis_execution",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "secondary",
+            "analysis_group": "runtime",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/run/peak_memory_mb"
+            }
+          },
+          {
+            "id": "runtime_seconds",
+            "display_name": "Step Runtime",
+            "value": 17.927,
+            "unit": "s",
+            "category": "runtime",
+            "direction": "lower_is_better",
+            "scope": "synthesis_execution",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "secondary",
+            "analysis_group": "runtime",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/run/runtime_seconds"
+            }
+          },
+          {
+            "id": "synthesis_cell_area",
+            "display_name": "Synthesis Cell Area",
+            "value": 637.56,
+            "unit": "um^2",
+            "category": "area_cost",
+            "direction": "lower_is_better",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": true,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/area"
+            }
+          },
+          {
+            "id": "synthesis_cell_count",
+            "display_name": "Synthesis Cell Count",
+            "value": 225,
+            "unit": "count",
+            "category": "area_cost",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_cells"
+            }
+          },
+          {
+            "id": "synthesis_port_count",
+            "display_name": "Synthesis Port Count",
+            "value": 18,
+            "unit": "count",
+            "category": "routability_physical",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_port_bits"
+            }
+          },
+          {
+            "id": "synthesis_power_dynamic_uw",
+            "display_name": "Synthesis Dynamic Power",
+            "value": 40.3029,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/dynamic_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_internal_uw",
+            "display_name": "Synthesis Internal Power",
+            "value": 39.8629,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/internal_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_leakage_uw",
+            "display_name": "Synthesis Leakage Power",
+            "value": 0.8693549,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/leakage_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_switching_uw",
+            "display_name": "Synthesis Switching Power",
+            "value": 0.4400022,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/switching_uw"
+            }
+          },
+          {
+            "id": "synthesis_wire_count",
+            "display_name": "Synthesis Wire Count",
+            "value": 227,
+            "unit": "count",
+            "category": "routability_physical",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_wires"
+            }
+          }
+        ],
+        "details": [],
+        "sources": [
+          {
+            "kind": "feature",
+            "path": "feature/Synthesis.step.json"
+          },
+          {
+            "kind": "feature",
+            "path": "feature/Synthesis_stat.json"
+          },
+          {
+            "kind": "feature",
+            "path": "feature/post_synthesis/power_summary.json"
+          }
+        ],
+        "integrity": {
+          "status": "pass",
+          "invalid_metric_source_ids": [],
+          "invalid_detail_ids": []
+        },
+        "context": {
+          "timing_constraints": {
+            "sdc_sha256": "5d84aa9bb79fd0458d282e337af15bae4e9f40edac449e4bb68e2b549fa7a11e",
+            "sdc_size_bytes": 257,
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/constraints/sdc"
+            }
+          }
+        }
+      },
+      "power_report": "Design : light\nOperating Conditions: ICS_N55_H7BR_ss_mos_RCworst_1.08_125\nAnalysis Effort : low\nWire Load Model : ZeroWireload\nGlobal Operating Voltage = 1.08\n\nDynamic Power Units = 1mW\nLeakage Power Units = 1nW\n\nCell Internal Power  =   39.8629 uW\nNet Switching Power  =  440.0022 nW\nTotal Dynamic Power  =   40.3029 uW\nCell Leakage Power   =  869.3549 nW\n\n                 Internal         Switching           Leakage            Total\nPower Group      Power            Power               Power              Power   (   %    )  Attrs\n--------------------------------------------------------------------------------------------------\nio_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)\nmemory             0.0000            0.0000            0.0000            0.0000  (   0.00%)\nblack_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)\nclock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i\nregister       3.9539e-02        6.0758e-05          325.1518        3.9925e-02  (  96.97%)\nsequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)\ncombinational  3.2349e-04        3.7924e-04          544.2031        1.2469e-03  (   3.03%)\n--------------------------------------------------------------------------------------------------\nTotal          3.9863e-02 mW     4.4000e-04 mW       869.3549 nW     4.1172e-02 mW\n\ni - Including register clock pin internal power\n",
+      "libraries": [
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_ss_rcworst_1p08_125_nldm.lib",
+          "sha256": "76dbe524737e47022004d386115a98d39911b22734cb3a8fb4c305dc3be0c7b4"
+        },
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_ss_rcworst_1p08_125_nldm.lib",
+          "sha256": "0e075ae8b64e47286b8ca7de086a82c42fdd3f9aad4cb205cd23b52277bf6097"
+        }
+      ],
+      "netlist_sha256": "db3d7746dd92de299e3a1c7c846cccef76a401c61cb131d120d77eaba4853d22",
+      "files": [
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/ecc.toml",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/00_ecc.toml",
+          "sha256": "b9e1f2ce8177c703a68727a2162216994f5d41d1377ab385f8f8ee65f3de4822"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/rtl/light.v",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/01_light.v",
+          "sha256": "5bdebc152a313d43429b3940b6a5865082133ce6a7133d68a244718b47695cf5"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/output/light_Synthesis.v.gz",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/02_light_Synthesis.v.gz",
+          "sha256": "db3d7746dd92de299e3a1c7c846cccef76a401c61cb131d120d77eaba4853d22"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/analysis/qor_metrics.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/03_qor_metrics.json",
+          "sha256": "fb75d462e62ed948c7769fb991fe2219d1d837b5ec4ee45d7eb025d69414ad24"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/report/post_synthesis/power.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/04_power.rpt",
+          "sha256": "7ab4a8c3b259fd78578fb821ab7a9538936003cc6f8524fb362fa1e92e847bf2"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/feature/post_synthesis/qor_summary.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/05_qor_summary.json",
+          "sha256": "b0a5b2f57a11bee242cf62b8a83cd918b62bce575ba062297b6f5944b7a63f23"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/report/Synthesis_check.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/06_Synthesis_check.rpt",
+          "sha256": "6bac4b30aca5e6f18de6123b51b33cd8686f46204bc643197750aee826d38462"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/report/post_synthesis/timing_max.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/07_timing_max.rpt",
+          "sha256": "1d0e73b8cb33e92a9d9fd217c13c24600d3079feeb20622d4cce98effd799228"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/report/post_synthesis/qor_summary.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/08_qor_summary.rpt",
+          "sha256": "b6eeca0bb266d049f6e78b84a6884535e347c6b063e49d2d5ad4253d219dc4cc"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/script/yosys_synthesis.tcl",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/09_yosys_synthesis.tcl",
+          "sha256": "224f6331af06e2232b40faea4e494ea1ccb9a5f773081536a7e9857b92c9dcd4"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/script/init_tech.tcl",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/10_init_tech.tcl",
+          "sha256": "536755095d017ae9233a82e45024387739b4cf5dfdb34625d26f3201274026ee"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/log/Synthesis.log",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/11_Synthesis.log",
+          "sha256": "b28f3595a8fb1f74c8c7420c71eea903f47e808ecfe3d75d4d527b561d1f853c"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.sdc",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/12_light.sdc",
+          "sha256": "5d84aa9bb79fd0458d282e337af15bae4e9f40edac449e4bb68e2b549fa7a11e"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ss/runs/baseline/home/flow.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/13_flow.json",
+          "sha256": "f769c4cb6d45751ac58b73cd93208c74be6e48ac64d0b51324603a3e61a00149"
+        },
+        {
+          "original": "/workspace/projects/ysyx_f_to_b/artifacts/D6/pvt/ss/budget.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ss/14_budget.json",
+          "sha256": "b6db37caa634faf9ff1a9bdd79196313d9dfe9d63d0d7f4c747ac801fd8fe84f"
+        }
+      ]
+    },
+    {
+      "label": "ff",
+      "corner": "ff_rcbest_1p32_m40",
+      "status": "PASS_SYNTHESIS_STA_ONLY",
+      "qor": {
+        "path_groups": [
+          {
+            "name": "clock",
+            "setup": {
+              "wns": 9.652,
+              "tns": 0.0,
+              "nvp": 0,
+              "frequency_mhz": 2876
+            },
+            "hold": {
+              "wns": 0.082,
+              "tns": 0.0,
+              "nvp": 0
+            }
+          }
+        ],
+        "summary": {
+          "setup": {
+            "wns": 9.652,
+            "tns": 0.0,
+            "nvp": 0,
+            "frequency_mhz": 2876
+          },
+          "hold": {
+            "wns": 0.082,
+            "tns": 0.0,
+            "nvp": 0
+          }
+        },
+        "design_statistics": {
+          "cap": 0,
+          "fanout": 0,
+          "tran": 0,
+          "tdrc": 0,
+          "cella": 636,
+          "bufs": null,
+          "leafs_k": 0,
+          "tnets_k": null,
+          "ctbuf": null,
+          "regs": null
+        }
+      },
+      "metrics": {
+        "schema_version": 3,
+        "analysis_revision": "quality-gates-v4",
+        "tool": "yosys",
+        "step": "Synthesis",
+        "design": "light",
+        "status": "success",
+        "metrics": [
+          {
+            "id": "peak_memory_mb",
+            "display_name": "Peak Memory",
+            "value": 1162.648,
+            "unit": "MB",
+            "category": "runtime",
+            "direction": "lower_is_better",
+            "scope": "synthesis_execution",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "secondary",
+            "analysis_group": "runtime",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/run/peak_memory_mb"
+            }
+          },
+          {
+            "id": "runtime_seconds",
+            "display_name": "Step Runtime",
+            "value": 17.52,
+            "unit": "s",
+            "category": "runtime",
+            "direction": "lower_is_better",
+            "scope": "synthesis_execution",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "secondary",
+            "analysis_group": "runtime",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/run/runtime_seconds"
+            }
+          },
+          {
+            "id": "synthesis_cell_area",
+            "display_name": "Synthesis Cell Area",
+            "value": 636.72,
+            "unit": "um^2",
+            "category": "area_cost",
+            "direction": "lower_is_better",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": true,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/area"
+            }
+          },
+          {
+            "id": "synthesis_cell_count",
+            "display_name": "Synthesis Cell Count",
+            "value": 225,
+            "unit": "count",
+            "category": "area_cost",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_cells"
+            }
+          },
+          {
+            "id": "synthesis_port_count",
+            "display_name": "Synthesis Port Count",
+            "value": 18,
+            "unit": "count",
+            "category": "routability_physical",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_port_bits"
+            }
+          },
+          {
+            "id": "synthesis_power_dynamic_uw",
+            "display_name": "Synthesis Dynamic Power",
+            "value": 71.4548,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/dynamic_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_internal_uw",
+            "display_name": "Synthesis Internal Power",
+            "value": 70.6239,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/internal_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_leakage_uw",
+            "display_name": "Synthesis Leakage Power",
+            "value": 0.5802495,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/leakage_uw"
+            }
+          },
+          {
+            "id": "synthesis_power_switching_uw",
+            "display_name": "Synthesis Switching Power",
+            "value": 0.8308982,
+            "unit": "uW",
+            "category": "power",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "medium",
+            "source": {
+              "kind": "feature",
+              "path": "feature/post_synthesis/power_summary.json",
+              "selector": "/switching_uw"
+            }
+          },
+          {
+            "id": "synthesis_wire_count",
+            "display_name": "Synthesis Wire Count",
+            "value": 227,
+            "unit": "count",
+            "category": "routability_physical",
+            "direction": "trend_only",
+            "scope": "synthesis",
+            "corner": null,
+            "project_role": "trend",
+            "step_role": "primary",
+            "analysis_group": "synthesis_metrics",
+            "rating": {
+              "gate": false,
+              "score": false,
+              "trend": true
+            },
+            "confidence": "high",
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis_stat.json",
+              "selector": "/design/num_wires"
+            }
+          }
+        ],
+        "details": [],
+        "sources": [
+          {
+            "kind": "feature",
+            "path": "feature/Synthesis.step.json"
+          },
+          {
+            "kind": "feature",
+            "path": "feature/Synthesis_stat.json"
+          },
+          {
+            "kind": "feature",
+            "path": "feature/post_synthesis/power_summary.json"
+          }
+        ],
+        "integrity": {
+          "status": "pass",
+          "invalid_metric_source_ids": [],
+          "invalid_detail_ids": []
+        },
+        "context": {
+          "timing_constraints": {
+            "sdc_sha256": "5d84aa9bb79fd0458d282e337af15bae4e9f40edac449e4bb68e2b549fa7a11e",
+            "sdc_size_bytes": 257,
+            "source": {
+              "kind": "feature",
+              "path": "feature/Synthesis.step.json",
+              "selector": "/constraints/sdc"
+            }
+          }
+        }
+      },
+      "power_report": "Design : light\nOperating Conditions: ICS_N55_H7BL_ff_mos_RCbest_1.32_-40\nAnalysis Effort : low\nWire Load Model : ZeroWireload\nGlobal Operating Voltage = 1.32\n\nDynamic Power Units = 1mW\nLeakage Power Units = 1nW\n\nCell Internal Power  =   70.6239 uW\nNet Switching Power  =  830.8982 nW\nTotal Dynamic Power  =   71.4548 uW\nCell Leakage Power   =  580.2495 nW\n\n                 Internal         Switching           Leakage            Total\nPower Group      Power            Power               Power              Power   (   %    )  Attrs\n--------------------------------------------------------------------------------------------------\nio_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)\nmemory             0.0000            0.0000            0.0000            0.0000  (   0.00%)\nblack_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)\nclock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i\nregister       6.9920e-02        1.1397e-04           25.6934        7.0059e-02  (  97.26%)\nsequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)\ncombinational  7.0422e-04        7.1693e-04          554.5561        1.9757e-03  (   2.74%)\n--------------------------------------------------------------------------------------------------\nTotal          7.0624e-02 mW     8.3090e-04 mW       580.2495 nW     7.2035e-02 mW\n\ni - Including register clock pin internal power\n",
+      "libraries": [
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_ff_rcbest_1p32_m40_nldm.lib",
+          "sha256": "7ecca1337bbe93de532b82f33dcf0e44a575fc018694e72408ac6f85ae041541"
+        },
+        {
+          "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_ff_rcbest_1p32_m40_nldm.lib",
+          "sha256": "1d8e8c5cab6b3d4a214dba47a9d0d7ff8711b7d4eda098a4096b409894efaa93"
+        }
+      ],
+      "netlist_sha256": "bec0e14629fd700bbd9e975db41c94e7d50c769fecbd0805207f053979911045",
+      "files": [
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/ecc.toml",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/00_ecc.toml",
+          "sha256": "2ba84a4ff4b36c8c2278393b92eb9a4f3379710f71a102e1cde46cda9a774a41"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/rtl/light.v",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/01_light.v",
+          "sha256": "5bdebc152a313d43429b3940b6a5865082133ce6a7133d68a244718b47695cf5"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/output/light_Synthesis.v.gz",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/02_light_Synthesis.v.gz",
+          "sha256": "bec0e14629fd700bbd9e975db41c94e7d50c769fecbd0805207f053979911045"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/analysis/qor_metrics.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/03_qor_metrics.json",
+          "sha256": "6383f96ef7e8e10873c65c33b6a85da58c11251e943ccd11cd1a2ce21fbe8a03"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/report/post_synthesis/power.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/04_power.rpt",
+          "sha256": "3da73b9cd1910a1ca250ad5018533c3e4b4fd37c7a3e3efbd30257810ee828a0"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/feature/post_synthesis/qor_summary.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/05_qor_summary.json",
+          "sha256": "f8e9dda2120f6e1f2fc0bb1cd86a129ae93ae0068f1a7df425a8f5e006227f83"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/report/Synthesis_check.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/06_Synthesis_check.rpt",
+          "sha256": "6bac4b30aca5e6f18de6123b51b33cd8686f46204bc643197750aee826d38462"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/report/post_synthesis/timing_max.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/07_timing_max.rpt",
+          "sha256": "1d0e73b8cb33e92a9d9fd217c13c24600d3079feeb20622d4cce98effd799228"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/report/post_synthesis/qor_summary.rpt",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/08_qor_summary.rpt",
+          "sha256": "8f04f3528bfb9ecdbe2c47cfbe16abfa03690017c3f7b925abc597bc0cecf3a3"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/script/yosys_synthesis.tcl",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/09_yosys_synthesis.tcl",
+          "sha256": "224f6331af06e2232b40faea4e494ea1ccb9a5f773081536a7e9857b92c9dcd4"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/script/init_tech.tcl",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/10_init_tech.tcl",
+          "sha256": "536755095d017ae9233a82e45024387739b4cf5dfdb34625d26f3201274026ee"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/Synthesis_yosys/log/Synthesis.log",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/11_Synthesis.log",
+          "sha256": "62c0503c4ad61a9d744c3afe0de074bc63216f7560895b1afca6c07c3de1044b"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/origin/light.sdc",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/12_light.sdc",
+          "sha256": "5d84aa9bb79fd0458d282e337af15bae4e9f40edac449e4bb68e2b549fa7a11e"
+        },
+        {
+          "original": "/home/USER/d-stage/backend/light_ff/runs/baseline/home/flow.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/13_flow.json",
+          "sha256": "bd7abee50f904e24380ce9c080e0bf803a5215d435e6944a8c315069174831cb"
+        },
+        {
+          "original": "/workspace/projects/ysyx_f_to_b/artifacts/D6/pvt/ff/budget.json",
+          "copy": "/workspace/projects/ysyx_f_to_b/D/D6/results/pvt/ff/14_budget.json",
+          "sha256": "07e7cec596be14a14353965c8a2abc3abdef5ac114eb01ef42a6c4330d41932a"
+        }
+      ]
+    }
+  ]
+}

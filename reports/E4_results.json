@@ -1,0 +1,416 @@
+{
+  "status": "PASS_WITH_EXPLICIT_OPTIONAL_SCOPE",
+  "timestamp": "2026-10-24T21:33:57.605698+00:00",
+  "records": [
+    {
+      "id": "E4-M001",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_verilator_build.json",
+        "artifacts/E4/official/example",
+        "artifacts/E4/basic/dual",
+        "artifacts/E4/basic/xor_negative"
+      ],
+      "details": "Official fixed stable Linux source build and C++ example actually execute; bounded XOR exhaustive patterns and real wrong-RTL rejection, no version-only readiness claim."
+    },
+    {
+      "id": "E4-M002",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_verilator_build.json",
+        "artifacts/E4/official/example",
+        "artifacts/E4/basic/dual",
+        "artifacts/E4/basic/xor_negative"
+      ],
+      "details": "Official fixed stable Linux source build and C++ example actually execute; bounded XOR exhaustive patterns and real wrong-RTL rejection, no version-only readiness claim."
+    },
+    {
+      "id": "E4-M003",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_verilator_build.json",
+        "artifacts/E4/official/example",
+        "artifacts/E4/basic/dual",
+        "artifacts/E4/basic/xor_negative"
+      ],
+      "details": "Official fixed stable Linux source build and C++ example actually execute; bounded XOR exhaustive patterns and real wrong-RTL rejection, no version-only readiness claim."
+    },
+    {
+      "id": "E4-M004",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_verilator_build.json",
+        "artifacts/E4/official/example",
+        "artifacts/E4/basic/dual",
+        "artifacts/E4/basic/xor_negative"
+      ],
+      "details": "Official fixed stable Linux source build and C++ example actually execute; bounded XOR exhaustive patterns and real wrong-RTL rejection, no version-only readiness claim."
+    },
+    {
+      "id": "E4-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_waves.json",
+        "reports/E4_gui.json",
+        "artifacts/E4/waves"
+      ],
+      "details": "Real VCD and FST generated, decoded samples match; wrong-RTL VCD rejected; GTKWave actually displays all3 signals. Trace150ns, exhaustive/long runs do not dump huge waveforms."
+    },
+    {
+      "id": "E4-M006",
+      "status": "PASS",
+      "evidence": [
+        "artifacts/E4/framework/make_sim",
+        "artifacts/E4/framework/tracer_log",
+        "E/E4/npc/Makefile"
+      ],
+      "details": "Real one-command make sim and preserved exact git_commit call; tracer commit exists and explicitly identifies AI engineering work without fabricated student identity."
+    },
+    {
+      "id": "E4-M007",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json",
+        "reports/E4_units.json"
+      ],
+      "details": "上游NVBoard官方例与自写RTL真实运行并经X11事件交互；26张虚拟板截图逐位核验，NJU五实验完成；不作实体FPGA结论。"
+    },
+    {
+      "id": "E4-M008",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json",
+        "reports/E4_units.json"
+      ],
+      "details": "上游NVBoard官方例与自写RTL真实运行并经X11事件交互；26张虚拟板截图逐位核验，NJU五实验完成；不作实体FPGA结论。"
+    },
+    {
+      "id": "E4-M009",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json",
+        "reports/E4_units.json"
+      ],
+      "details": "上游NVBoard官方例与自写RTL真实运行并经X11事件交互；26张虚拟板截图逐位核验，NJU五实验完成；不作实体FPGA结论。"
+    },
+    {
+      "id": "E4-M010",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_negative.json",
+        "artifacts/E4/lint"
+      ],
+      "details": "All six production top modules lint clean with only documented multi-module filename style waiver; deliberate latch/width mistakes rejected; five additional compiled RTL mutants rejected at runtime."
+    },
+    {
+      "id": "E4-M011",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json",
+        "reports/E4_units.json"
+      ],
+      "details": "上游NVBoard官方例与自写RTL真实运行并经X11事件交互；26张虚拟板截图逐位核验，NJU五实验完成；不作实体FPGA结论。"
+    },
+    {
+      "id": "E4-M012",
+      "status": "PASS",
+      "evidence": [
+        "artifacts/E4/rom/all_addresses",
+        "artifacts/E4/gui/cpu_sum55.png",
+        "artifacts/E4/cpu/diff_sum",
+        "E/E4/rtl/program_rom.sv"
+      ],
+      "details": "F阶段自写sCPU复用到Linux Verilator；RTL程序ROM256字节全核对，NVBoard实际显示IO求和55，完整取指路径与独立sEMU一致。"
+    },
+    {
+      "id": "E4-M013",
+      "status": "PASS",
+      "evidence": [
+        "artifacts/E4/cpu",
+        "artifacts/E4/cpu_source.json"
+      ],
+      "details": "Real C11 sEMU, native Verilator sCPU, all256 instruction encodings in50000-step deterministic stream and200-step sum; independent prior Python model checks every state; genuine GPR and PC-only RTL mutations rejected at first divergence."
+    },
+    {
+      "id": "E4-M014",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E4/NOTES.md"
+      ],
+      "details": "已说明软硬状态模型、HDL事件/并行/选择网络、独立构建流程及伪随机序列的周期与安全边界。"
+    },
+    {
+      "id": "E4-M015",
+      "status": "PASS",
+      "evidence": [
+        "artifacts/E4/cpu",
+        "artifacts/E4/cpu_source.json"
+      ],
+      "details": "Real C11 sEMU, native Verilator sCPU, all256 instruction encodings in50000-step deterministic stream and200-step sum; independent prior Python model checks every state; genuine GPR and PC-only RTL mutations rejected at first divergence."
+    },
+    {
+      "id": "E4-M016",
+      "status": "PASS",
+      "evidence": [
+        "artifacts/E4/cpu",
+        "artifacts/E4/cpu_source.json"
+      ],
+      "details": "Real C11 sEMU, native Verilator sCPU, all256 instruction encodings in50000-step deterministic stream and200-step sum; independent prior Python model checks every state; genuine GPR and PC-only RTL mutations rejected at first divergence."
+    },
+    {
+      "id": "E4-M017",
+      "status": "PASS",
+      "evidence": [
+        "artifacts/E4/cpu",
+        "artifacts/E4/cpu_source.json"
+      ],
+      "details": "Real C11 sEMU, native Verilator sCPU, all256 instruction encodings in50000-step deterministic stream and200-step sum; independent prior Python model checks every state; genuine GPR and PC-only RTL mutations rejected at first divergence."
+    },
+    {
+      "id": "E4-O001",
+      "status": "READ_DOCUMENTED",
+      "evidence": [
+        "E/E4/NOTES.md"
+      ],
+      "details": "原页NVBoard背景介绍已阅读；纯背景不虚构额外程序验收。"
+    },
+    {
+      "id": "E4-O002",
+      "status": "OPTIONAL_NOT_SELECTED",
+      "evidence": [
+        "E/E4/NOTES.md"
+      ],
+      "details": "额外进阶阅读未作为独立项目展开；本阶段实际所需原版手册与高级Trace/约束/接口内容已随工程留存。"
+    },
+    {
+      "id": "E4-O003",
+      "status": "OPTIONAL_NOT_SELECTED",
+      "evidence": [
+        "E/E4/NOTES.md"
+      ],
+      "details": "采用SystemVerilog路线；Chisel及个人交流群申请不属于所选实现路线。"
+    },
+    {
+      "id": "E4-R001",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E4/NOTES.md"
+      ],
+      "details": "已说明软硬状态模型、HDL事件/并行/选择网络、独立构建流程及伪随机序列的周期与安全边界。"
+    },
+    {
+      "id": "E4-R002",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_waves.json",
+        "reports/E4_gui.json",
+        "artifacts/E4/waves"
+      ],
+      "details": "Real VCD and FST generated, decoded samples match; wrong-RTL VCD rejected; GTKWave actually displays all3 signals. Trace150ns, exhaustive/long runs do not dump huge waveforms."
+    },
+    {
+      "id": "E4-R003",
+      "status": "PASS",
+      "evidence": [
+        "artifacts/E4/framework/make_sim",
+        "artifacts/E4/framework/tracer_log",
+        "E/E4/npc/Makefile"
+      ],
+      "details": "Real one-command make sim and preserved exact git_commit call; tracer commit exists and explicitly identifies AI engineering work without fabricated student identity."
+    },
+    {
+      "id": "E4-R004",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E4/NOTES.md"
+      ],
+      "details": "已说明软硬状态模型、HDL事件/并行/选择网络、独立构建流程及伪随机序列的周期与安全边界。"
+    },
+    {
+      "id": "E4-R005",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E4/NOTES.md"
+      ],
+      "details": "已说明软硬状态模型、HDL事件/并行/选择网络、独立构建流程及伪随机序列的周期与安全边界。"
+    },
+    {
+      "id": "E4-R006",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E4/NOTES.md"
+      ],
+      "details": "已说明软硬状态模型、HDL事件/并行/选择网络、独立构建流程及伪随机序列的周期与安全边界。"
+    },
+    {
+      "id": "E4-R007",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_structure.json",
+        "reports/E4_negative.json",
+        "E/E4/NOTES.md"
+      ],
+      "details": "真正时钟单元仅posedge、无推断锁存器；异步读口与触发沿分开判断，实际negedge和latch反例均被拒绝。"
+    },
+    {
+      "id": "E4-R008",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_structure.json",
+        "reports/E4_negative.json",
+        "E/E4/NOTES.md"
+      ],
+      "details": "真正时钟单元仅posedge、无推断锁存器；异步读口与触发沿分开判断，实际negedge和latch反例均被拒绝。"
+    },
+    {
+      "id": "NJU-02-01",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim."
+    },
+    {
+      "id": "NJU-02-02",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim. 对应NVBoard交互与像素验收也已完成。"
+    },
+    {
+      "id": "NJU-02-03",
+      "status": "PASS",
+      "evidence": [
+        "artifacts/E4/fourstate"
+      ],
+      "details": "Actual Icarus four-state case/casez/casex observations; no reliance on two-state Verilator to claim X/Z behavior."
+    },
+    {
+      "id": "NJU-03-01",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim."
+    },
+    {
+      "id": "NJU-03-02",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim. 对应NVBoard交互与像素验收也已完成。"
+    },
+    {
+      "id": "NJU-03-03",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim."
+    },
+    {
+      "id": "NJU-06-01",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim."
+    },
+    {
+      "id": "NJU-06-02",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim."
+    },
+    {
+      "id": "NJU-06-03",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim. 对应NVBoard交互与像素验收也已完成。"
+    },
+    {
+      "id": "NJU-06-04",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E4/NOTES.md"
+      ],
+      "details": "已说明软硬状态模型、HDL事件/并行/选择网络、独立构建流程及伪随机序列的周期与安全边界。"
+    },
+    {
+      "id": "NJU-07-01",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim. 对应NVBoard交互与像素验收也已完成。"
+    },
+    {
+      "id": "NJU-07-02",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim. 对应NVBoard交互与像素验收也已完成。"
+    },
+    {
+      "id": "NJU-07-03",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim. 对应NVBoard交互与像素验收也已完成。"
+    },
+    {
+      "id": "NJU-08-01",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim. 对应NVBoard交互与像素验收也已完成。"
+    },
+    {
+      "id": "NJU-08-02",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim. 对应NVBoard交互与像素验收也已完成。"
+    },
+    {
+      "id": "NJU-08-03",
+      "status": "PASS",
+      "evidence": [
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json"
+      ],
+      "details": "RTL exhaustive/model-backed unit validation completed. NVBoard integration is tracked separately; no physical FPGA claim. 对应NVBoard交互与像素验收也已完成。"
+    }
+  ]
+}

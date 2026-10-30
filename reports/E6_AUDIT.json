@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "timestamp": "2026-10-25T09:51:48.335100+00:00",
+  "core_tasks": 22,
+  "background_nodes": 2,
+  "riscv_tests": 38,
+  "cpu_positive_tests": 35,
+  "negative_controls": "wrong; RTL sign-extension mutant; busy UART write; timer rollover; GUI/audio fixture defects retained as failed attempts",
+  "archbench_test_programs": 21,
+  "archbench_train_programs_per_mode": 20,
+  "train_modes": 4,
+  "performance_scaling": {
+    "status": "PASS",
+    "relative_time_tolerance": 0.001,
+    "observed_max_relative_time_error": 0.0001348526993592003,
+    "source_explanation": [
+      "archbench/bench/200.genann/minctest.h prints measured subtest microseconds inside bench_run",
+      "archbench/bench/202.llama2/run.c:815-859 prints computed tokens/s inside bench_run"
+    ],
+    "rejected_assumption": "An initial fixed20us discrepancy limit incorrectly assumed frequency-independent formatted output and instruction counts; exact differences and both original logs are retained. No benchmark workload, algorithm validator or per-instruction differential check was changed."
+  },
+  "snapshot": [
+    {
+      "path": "E/E6/runtime_snapshot/runner.cpp",
+      "sha256": "a4d326cacf2f88fa468747d32a68e5c6ad9bc79c82189785558f4ae0a947fbc5"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/memory.hpp",
+      "sha256": "42e77cd8fbf2e882bd81eb13a16df9c5d6221bf0f298fef138f26280a1acb576"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/ref.c",
+      "sha256": "ed9c1ec8f3539e53007567496f087e668047a0d6a392c615a0fb0a9c44ff76d0"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/ref.h",
+      "sha256": "76b3f7d945b1c292e2c8bf559f8a5fe311a9f9231348f2283189aa927debccb1"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/minirv_decode.sv",
+      "sha256": "e49c237de7281619ed9c455ab28c69c6daccb1c096843f2a08462efd32919aa9"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/minirv_regfile.sv",
+      "sha256": "8b066dc92589821567b6571c8f585523e2c58f6570ec9af3a659626ba01f9fb3"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/minirv_single.sv",
+      "sha256": "619602a169c6b9f00797f854ef893afc9ec1ec98f99c4b14ac5bac02e9fe962c"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/npc_sim.sv",
+      "sha256": "deb928c3a7677c729aed84557d1a7935fba4217f53207288475467918521f50a"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/NPC.Makefile",
+      "sha256": "ca5f8375953819dd927ed713ff8d5bba1664a272bcb3fd1864b73536f97af0c1"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/trm.c",
+      "sha256": "c8c0eec7446c84b013ffd3548b9b1ce5c022e5c704578d481daac7da97b98d4e"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/timer.c",
+      "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/npc.mk",
+      "sha256": "6df7cbc604f26b26cdbe97f555b4c4f663bac8787934807f022a2fff03ea8a91"
+    },
+    {
+      "path": "E/E6/runtime_snapshot/riscv.mk",
+      "sha256": "96f9c26da2795f107bcc3716f6c6a1548bad57340c369dc63971fe1439f51265"
+    }
+  ],
+  "simulator_sha256": "cdc7e0aaf782e9426f716e0d0b62f65921ef422f55c34e3cc425a4bcc5a3d3de",
+  "source_archive_policy": "Exact pinned repositories and official klib; canonical text inputs repaired without changing validator/checksum expectations.",
+  "scope_limits": [
+    "minirv8-op CPU plus simulation ebreak, not fullRV32I",
+    "FCEUX legal authored interaction ROM, virtualSDL display and capturedaudio; no physicalspeaker or commercial-game claim",
+    "pre-layout TT synthesis estimate only; no E6 physical signoff"
+  ]
+}

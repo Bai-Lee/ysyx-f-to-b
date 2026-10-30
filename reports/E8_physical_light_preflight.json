@@ -1,0 +1,108 @@
+{
+  "status": "PASS_PHYSICAL_SIGNOFF",
+  "workspace": "/home/USER/e-stage/physical/light_preflight",
+  "flow": {
+    "steps": [
+      {
+        "name": "Floorplan",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:1",
+        "peak memory (mb)": 120.133,
+        "info": {}
+      },
+      {
+        "name": "fixFanout",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:1",
+        "peak memory (mb)": 118.988,
+        "info": {}
+      },
+      {
+        "name": "place",
+        "tool": "dreamplace",
+        "state": "Success",
+        "runtime": "0:0:40",
+        "peak memory (mb)": 1365.133,
+        "info": {}
+      },
+      {
+        "name": "CTS",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:23",
+        "peak memory (mb)": 1474.086,
+        "info": {}
+      },
+      {
+        "name": "legalization",
+        "tool": "dreamplace",
+        "state": "Success",
+        "runtime": "0:0:1",
+        "peak memory (mb)": 0.254,
+        "info": {}
+      },
+      {
+        "name": "route",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:6",
+        "peak memory (mb)": 0.0,
+        "info": {}
+      },
+      {
+        "name": "drc",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:2",
+        "peak memory (mb)": 27.477,
+        "info": {}
+      },
+      {
+        "name": "lvs",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:1",
+        "peak memory (mb)": 1.203,
+        "info": {}
+      },
+      {
+        "name": "filler",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:2",
+        "peak memory (mb)": 33.359,
+        "info": {}
+      },
+      {
+        "name": "RCX",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:0",
+        "peak memory (mb)": 0.0,
+        "info": {}
+      },
+      {
+        "name": "sta",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:2:43",
+        "peak memory (mb)": 1140.82,
+        "info": {}
+      },
+      {
+        "name": "Harden",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:12",
+        "peak memory (mb)": 988.266,
+        "info": {}
+      }
+    ]
+  },
+  "resource_evidence": "artifacts/E8/physical/light_preflight/budget.json",
+  "prior_status": "FLOW_EXECUTED_REQUIRES_SIGNOFF_REVIEW",
+  "signoff_evidence": "reports/E8_physical_preflight.json",
+  "review_note": "All required stages and gates passed; only the permitted no-macro location warning remains."
+}

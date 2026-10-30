@@ -1,0 +1,18 @@
+{
+  "status": "PASS_DISCREPANCY_ISOLATED_AND_FIXED",
+  "runs": [
+    {
+      "expression": "original",
+      "rtl": "PASS_EXPECTED_30000000",
+      "synthesis": "COUNTEREXAMPLE",
+      "evidence": "artifacts/B5/address/original"
+    },
+    {
+      "expression": "explicit-mask",
+      "rtl": "PASS_EXPECTED_30000000",
+      "synthesis": "PASS_ALL_COMBINATIONAL_INPUTS",
+      "evidence": "artifacts/B5/address/explicit-mask"
+    }
+  ],
+  "scope": "The original unary-sized-cast expression is correct in the tested RTL simulator but is evaluated differently by the pinned Yosys frontend. Explicit32-bit shift mask agrees with an independent shift-based reference for all address/beat/cache/burst inputs at8words. No architectural behavior or checks were relaxed. Earlier cached netlists require regeneration and functional acceptance."
+}

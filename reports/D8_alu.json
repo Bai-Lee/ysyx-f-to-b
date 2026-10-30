@@ -1,0 +1,54 @@
+{
+  "status": "PASS_FOUR_BIT_EQUIVALENCE",
+  "designs": [
+    {
+      "design": "alu_naive",
+      "coarse_cells": {
+        "$add": 1,
+        "$lt": 2,
+        "$pmux": 1,
+        "$eq": 7,
+        "$logic_not": 1,
+        "$shl": 1,
+        "$shr": 1,
+        "$sshr": 1,
+        "$sub": 1,
+        "$xor": 1
+      },
+      "mapped_generic_cells": {
+        "$_NOT_": 10,
+        "$_OR_": 32,
+        "$_XOR_": 10,
+        "$_AND_": 54,
+        "$_MUX_": 8
+      }
+    },
+    {
+      "design": "alu_shared",
+      "coarse_cells": {
+        "$add": 2,
+        "$logic_not": 2,
+        "$reduce_bool": 1,
+        "$ne": 1,
+        "$pmux": 1,
+        "$eq": 7,
+        "$reduce_or": 1,
+        "$shl": 1,
+        "$shr": 1,
+        "$sshr": 1,
+        "$mux": 1,
+        "$xor": 2
+      },
+      "mapped_generic_cells": {
+        "$_NOT_": 17,
+        "$_AND_": 52,
+        "$_OR_": 33,
+        "$_XOR_": 15,
+        "$_MUX_": 9
+      }
+    }
+  ],
+  "proof": "All 2048 combinations of 4-bit a, 4-bit b and 3-bit op, via combinational SAT equivalence; wrong carry interpretation rejected.",
+  "scope": "Generic gate counts, not standard-cell area or nanosecond timing. This study does not replace the 32-bit CPU ISA tests.",
+  "evidence": "artifacts/D8/alu"
+}

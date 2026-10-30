@@ -1,0 +1,144 @@
+{
+  "status": "PASS_FULL_CAPACITY_PARALLEL_PATTERNS",
+  "variant": "b5-release",
+  "patterns": 8,
+  "bytes_per_pattern": 134217728,
+  "total_cycles": 28850962770,
+  "total_instructions": 2936031090,
+  "executable_sha256": "5e4e95778a9c9f9c36716c53c6365a6c50b9cbe5c1c4089588914449d04b44fc",
+  "reference_sha256": "d90693e60e982420b6cc64a14d1f71fffc2f122d1ec44becb447b1869522d880",
+  "summary_sha256": "bde2854eac784eebfbdbd953573bc46fc2282d0a7ae6e6083d419e2589dbb56a",
+  "resumed_patterns": 4,
+  "resource_bindings": [
+    {
+      "phase": 0,
+      "resumed": false,
+      "run_sha256": "ec844319d06da61271abcc604266e3d2fc3583206083f00b1de9d21b7e90f254",
+      "resource": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/resources.json",
+        "sha256": "80ecb729e9e48542cbb181cee984fe47e7dc4628baa74f7d6201738b911ebac4"
+      },
+      "original_batch_status": "PASS"
+    },
+    {
+      "phase": 1,
+      "resumed": false,
+      "run_sha256": "a6a522a91dbfa1f806ab790482656887a38be250fd1b90825d201de2c1a4cc52",
+      "resource": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/resources.json",
+        "sha256": "80ecb729e9e48542cbb181cee984fe47e7dc4628baa74f7d6201738b911ebac4"
+      },
+      "original_batch_status": "PASS"
+    },
+    {
+      "phase": 2,
+      "resumed": true,
+      "run_sha256": "24c299407bf96524142457ff71ab2959b91855947583df6c94eed9c14421c44b",
+      "resource": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/resources.json",
+        "sha256": "cfc18c7619112afce13329acd1433956bf75bc2b5beaf3e81283fc5b4d024d7a"
+      },
+      "original_driver": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-run.json",
+        "sha256": "ae78f9c09085ba23fc750a462540835a1ba5874f5ec5c6bac6bf977328d85094"
+      },
+      "original_started": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-started.json",
+        "sha256": "8647f129cef6254f9a014dc13c4b87f49585a4934b04ed2dfb360fe35085aed1"
+      },
+      "original_batch_status": "RESOURCE_LIMIT",
+      "phase_completion_elapsed_seconds": 4967.16961,
+      "original_batch_end_seconds": 7386.687629354,
+      "minimum_sampled_windows_bytes_through_completion": 1633890304,
+      "scope": "Phase completed with valid sampled headroom before the later batch resource stop. Its original immutable budget copy is used; the current retry budget does not retroactively cover it."
+    },
+    {
+      "phase": 3,
+      "resumed": true,
+      "run_sha256": "5d93742c873f2ef82a450d8ba2150ec306142378e06c7ecd294c1fb1070236d5",
+      "resource": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/resources.json",
+        "sha256": "cfc18c7619112afce13329acd1433956bf75bc2b5beaf3e81283fc5b4d024d7a"
+      },
+      "original_driver": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-run.json",
+        "sha256": "ae78f9c09085ba23fc750a462540835a1ba5874f5ec5c6bac6bf977328d85094"
+      },
+      "original_started": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-started.json",
+        "sha256": "8647f129cef6254f9a014dc13c4b87f49585a4934b04ed2dfb360fe35085aed1"
+      },
+      "original_batch_status": "RESOURCE_LIMIT",
+      "phase_completion_elapsed_seconds": 4976.409272,
+      "original_batch_end_seconds": 7386.687629354,
+      "minimum_sampled_windows_bytes_through_completion": 1633890304,
+      "scope": "Phase completed with valid sampled headroom before the later batch resource stop. Its original immutable budget copy is used; the current retry budget does not retroactively cover it."
+    },
+    {
+      "phase": 4,
+      "resumed": true,
+      "run_sha256": "3aee7030c15b0d89961b2abcbf445dc5dd6ef146b41f974d819f43b805221f59",
+      "resource": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/resources.json",
+        "sha256": "cfc18c7619112afce13329acd1433956bf75bc2b5beaf3e81283fc5b4d024d7a"
+      },
+      "original_driver": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-run.json",
+        "sha256": "ae78f9c09085ba23fc750a462540835a1ba5874f5ec5c6bac6bf977328d85094"
+      },
+      "original_started": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-started.json",
+        "sha256": "8647f129cef6254f9a014dc13c4b87f49585a4934b04ed2dfb360fe35085aed1"
+      },
+      "original_batch_status": "RESOURCE_LIMIT",
+      "phase_completion_elapsed_seconds": 7358.82714,
+      "original_batch_end_seconds": 7386.687629354,
+      "minimum_sampled_windows_bytes_through_completion": 1628508160,
+      "scope": "Phase completed with valid sampled headroom before the later batch resource stop. Its original immutable budget copy is used; the current retry budget does not retroactively cover it."
+    },
+    {
+      "phase": 5,
+      "resumed": true,
+      "run_sha256": "c5e539d456d7d350d6ff1428aab4ba079c99c87fadf0a9b070d9ac10ec907ae7",
+      "resource": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/resources.json",
+        "sha256": "cfc18c7619112afce13329acd1433956bf75bc2b5beaf3e81283fc5b4d024d7a"
+      },
+      "original_driver": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-run.json",
+        "sha256": "ae78f9c09085ba23fc750a462540835a1ba5874f5ec5c6bac6bf977328d85094"
+      },
+      "original_started": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/batch-history/20261030T031912205574/driver-started.json",
+        "sha256": "8647f129cef6254f9a014dc13c4b87f49585a4934b04ed2dfb360fe35085aed1"
+      },
+      "original_batch_status": "RESOURCE_LIMIT",
+      "phase_completion_elapsed_seconds": 7368.509419,
+      "original_batch_end_seconds": 7386.687629354,
+      "minimum_sampled_windows_bytes_through_completion": 1628508160,
+      "scope": "Phase completed with valid sampled headroom before the later batch resource stop. Its original immutable budget copy is used; the current retry budget does not retroactively cover it."
+    },
+    {
+      "phase": 6,
+      "resumed": false,
+      "run_sha256": "23fb74a726c6cf86f06c3336bbe4a17d4288ad882544ccd486dbc91906c897b5",
+      "resource": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/resources.json",
+        "sha256": "80ecb729e9e48542cbb181cee984fe47e7dc4628baa74f7d6201738b911ebac4"
+      },
+      "original_batch_status": "PASS"
+    },
+    {
+      "phase": 7,
+      "resumed": false,
+      "run_sha256": "937b4b54efa98575267fcfac74bdc00cf79d1048efdaa099a76227d7ee7d4b1e",
+      "resource": {
+        "path": "artifacts/B4/parallel-sdram/release-full128/resources.json",
+        "sha256": "80ecb729e9e48542cbb181cee984fe47e7dc4628baa74f7d6201738b911ebac4"
+      },
+      "original_batch_status": "PASS"
+    }
+  ],
+  "resume_registry_sha256": "44dd69831fdda074cc5696f80cff51e1d5868a5bc1dc9194f811bcfaaaed90d0",
+  "scope": "Each independently reset pattern traverses all128MiB. No address partitioning. Full logical width/address/inverse counts and four physical chips checked. AXI BL8 model has an extra discarded beat on single-word reads; total pin read payload is32N across8patterns, writes8N."
+}

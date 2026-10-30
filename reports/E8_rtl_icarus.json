@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "programs": [
+    {
+      "name": "hello",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "elapsed_seconds": 0.807
+    },
+    {
+      "name": "microbench",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 22129163,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 515,
+        "uart_polls": 4240,
+        "uart_not_ready": 3725,
+        "memory_writes": 1984000
+      },
+      "elapsed_seconds": 344.164
+    }
+  ],
+  "scope": "Actual four-state CPU RTL and VPI memory; official hello and complete microbench test workload with original algorithm checks; no X/Z control or unknown memory arguments permitted."
+}

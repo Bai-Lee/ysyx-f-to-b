@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "core_tasks": 16,
+  "scope_records": 27,
+  "records": [
+    {
+      "id": "D1-O001",
+      "status": "PASS",
+      "evidence": [
+        "D/D1/colorize.py",
+        "artifacts/D1/extras/colorizer"
+      ],
+      "details": "Small lexical highlighter distinguishes comments/strings/keywords/identifiers; stripping ANSI reproduces exact source bytes."
+    },
+    {
+      "id": "D1-R001",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-O002",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-O003",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-O004",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-O005",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-O006",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-O007",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-O008",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-R002",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-R003",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "reports/D1_background.json",
+        "D/D1/NOTES.md"
+      ],
+      "details": "Review tied to real token/AST/lint, integer-limit and symbol-visibility evidence; source errors identified explicitly."
+    },
+    {
+      "id": "D1-M001",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M002",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M003",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M004",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M006",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M007",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M008",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M009",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M010",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M011",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M012",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M013",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M014",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M015",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    },
+    {
+      "id": "D1-M016",
+      "status": "PASS",
+      "evidence": [
+        "reports/D1_experiments.json",
+        "D/D1/results",
+        "artifacts/D1"
+      ],
+      "details": "Real compiler, LLVM IR, cross-toolchain, timing, GDB/strace and UB diagnostics. Source misclassification explicitly corrected from N1570."
+    }
+  ],
+  "report": "D/D1/NOTES.md",
+  "qualification": "Public local engineering requirements only; reference-only background is not claimed completed learning."
+}

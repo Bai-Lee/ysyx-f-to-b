@@ -1,0 +1,10 @@
+read_liberty -lib /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib
+read_verilog -sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_arbiter2.sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_clint.sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_reg_frontend.sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_uart.sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_xbar3.sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_core.sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_soc.sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/simple_to_axil.sv
+synth -top c4_axi_core -flatten
+dfflibmap -liberty /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib
+abc -liberty /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib -D 10000
+clean
+check -assert
+tee -o /workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/axi/stat.json stat -liberty /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib -json
+write_verilog -noattr -noexpr /workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/axi/mapped.v
+write_json /workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/axi/mapped.json

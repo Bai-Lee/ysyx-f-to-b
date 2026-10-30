@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "codec": "gzip/DEFLATE level6",
+  "raw_bytes": 17960940,
+  "compressed_bytes": 458299,
+  "compression_ratio": 0.025516426200410447,
+  "write_seconds": 0.18173303799994756,
+  "restore_hash_seconds": 0.1039618419999897,
+  "trace_sha256": "a58407a525b382505930ba4206d1cd721cc23c34085bddbcec3bb1e27c71a5f7",
+  "archive_sha256": "1da802b6f8f922dc37c10c1f3d1788d092bc82b7432f89fc922463a175568fd2",
+  "scope": "Complete final test-scale20-byte binary trace; gzip is an authored storage choice. Decompressed byte count and SHA match every source byte. Compression and restore/hash wall times are measured on this host; no RLE/bzip2 implementation claim."
+}

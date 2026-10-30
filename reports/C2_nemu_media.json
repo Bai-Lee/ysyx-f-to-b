@@ -1,0 +1,721 @@
+{
+  "status": "PASS_EXTRACTION_VERSION_ONLY",
+  "executable": "/home/USER/tools/c-stage/media/usr/bin/ffmpeg",
+  "sha256": "36d94a605d612e4090d1b8aec889d0c0801c6eafb1593c90f5c0dfd2e2966a45",
+  "environment": {
+    "LD_LIBRARY_PATH": "/home/USER/tools/c-stage/media/usr/lib/x86_64-linux-gnu"
+  },
+  "packages": [
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/liba/libavc1394/libavc1394-0_0.5.4-5build2_amd64.deb",
+      "filename": "libavc1394-0_0.5.4-5build2_amd64.deb",
+      "bytes": 16982,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "224c62cb757149ffb9ec6c431624bdca603efc2f12d267b7f8a1e6c3197bb6e1eb266d448a4be0b2bb0ced187c05c8d9dc37e6116d477ccb3be1bf7af72d069a",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libavc1394-0_0.5.4-5build2_amd64.deb",
+      "sha256": "b627c0427e3ba40406d5951727f320d45740da39234fbaec37636d3a498b1825",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libc/libcdio-paranoia/libcdio-cdda2_10.2%2b2.0.0-1build3_amd64.deb",
+      "filename": "libcdio-cdda2_10.2+2.0.0-1build3_amd64.deb",
+      "bytes": 16744,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "4050da75323229f4f2ef2513fd07ec820f0a50075116e32712d4d43fa07f7f2e3555e32fa82fd58f6a112ec51a9c06ab3dfa8a6f7f53a730900ea963ba430ff1",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libcdio-cdda2_10.2+2.0.0-1build3_amd64.deb",
+      "sha256": "fe997e00ff8bce19be8b9ce40a9c0dd7edcbaaec15863d42026f25a9772881ff",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libc/libcdio-paranoia/libcdio-paranoia2_10.2%2b2.0.0-1build3_amd64.deb",
+      "filename": "libcdio-paranoia2_10.2+2.0.0-1build3_amd64.deb",
+      "bytes": 15942,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "42a0a108ad96e9c3dba7415c19ba41c5da26c6e10174063ccdc1096f70bbabdc5bb0d89c87c63c267f7fe3698d55f18079d244ec4d7e6675249e44d9a053f2f2",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libcdio-paranoia2_10.2+2.0.0-1build3_amd64.deb",
+      "sha256": "6ebe35ba93f5fe2145133b9d56a54f2666ea5e15ce4fe475b6555d20412e6515",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libi/libiec61883/libiec61883-0_1.2.0-4build3_amd64.deb",
+      "filename": "libiec61883-0_1.2.0-4build3_amd64.deb",
+      "bytes": 25864,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "32c8cba6219f3897f41b8ae705883ae9702041d1bbd5a7e519423db212d0a33d661e05dcef1b872676c8764279c2c9f37e7dc71d512fe79b046ceb4154873672",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libiec61883-0_1.2.0-4build3_amd64.deb",
+      "sha256": "247692e79de29441e84deb3c0325d7cbea12ba20e203c7eecab22f6f547c6c34",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/j/jackd2/libjack-jackd2-0_1.9.20%7edfsg-1_amd64.deb",
+      "filename": "libjack-jackd2-0_1.9.20~dfsg-1_amd64.deb",
+      "bytes": 292754,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "5a8695afe895edae69310e15311c3c2bf8f6865113930da81d4b9cee8dbd340266752581cf994606582535f9acccb2cb8bf4b8bd577431618961485d5371c447",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libjack-jackd2-0_1.9.20~dfsg-1_amd64.deb",
+      "sha256": "8fd0298d320bf8fa0af334367e797c9db930225d26962e89acf46e0fc7975e88",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/l/lame/libmp3lame0_3.100-3build2_amd64.deb",
+      "filename": "libmp3lame0_3.100-3build2_amd64.deb",
+      "bytes": 141442,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "16dde63288f7dd0d19c5eef6dda8f9ec08e1f1af28fc8b09d05cfcde318081b01dd5689fa9339104828f93b5f6344d83584b2deda2202e3a1aa4c404c09c523a",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libmp3lame0_3.100-3build2_amd64.deb",
+      "sha256": "799cfeb7f6ab0645c194cc99074407e112eb7b9f3b129409e05f2573c6b85f2b",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw1394/libraw1394-11_2.1.2-2build2_amd64.deb",
+      "filename": "libraw1394-11_2.1.2-2build2_amd64.deb",
+      "bytes": 26976,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "b333b7a9bbbcee177c84070a4e3f6ef3c892a312c3ab650a6a2def89aced8d06cf5dc0711c7996d624e261fbb2f03d4e671eaf55d5913a10daa457303ff87e0b",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libraw1394-11_2.1.2-2build2_amd64.deb",
+      "sha256": "d1516af66e5ad3d033444cb4aebd18e4ff30c0dd7fb3809d5f3fc14451f286c5",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libs/libsamplerate/libsamplerate0_0.2.2-1build1_amd64.deb",
+      "filename": "libsamplerate0_0.2.2-1build1_amd64.deb",
+      "bytes": 1358842,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "5b74a4b4baa8e44a9feb6bbc8378642bb03ac6e49c3a5cb3eedc03a013e9b49673f5a88e6a2516dd25c4f974ca09582bd051e4edf30b3c4559dc43508373a5c1",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libsamplerate0_0.2.2-1build1_amd64.deb",
+      "sha256": "89faab8f6a9ca71cb6dd6d9dd604301d3e9f7f534790a8a4bf8156b4da33ccbb",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/s/snappy/libsnappy1v5_1.1.8-1build3_amd64.deb",
+      "filename": "libsnappy1v5_1.1.8-1build3_amd64.deb",
+      "bytes": 17486,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "9306aed15bd40f4a1be0b22014faae4a9e41ee0bc2f7fd27c03f58c8d080c2f1f0093c80bb211b416a92a77892a930f5cbd0c315305f8c0f45abeb98d9fd9875",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libsnappy1v5_1.1.8-1build3_amd64.deb",
+      "sha256": "245a0f6b5a9dda0bee20c6a62f78a88bf885be831b1f1108f19231b2a97a797e",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libs/libsoxr/libsoxr0_0.1.3-4build2_amd64.deb",
+      "filename": "libsoxr0_0.1.3-4build2_amd64.deb",
+      "bytes": 79768,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "2684ba949575c7912b401a5eba90015dfad1f2c8947ebb6a3b0e9209de3ce32778e92a2f80c09111a4aebfbe03786b670c127e5dba75433d181c48e7c27675a5",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libsoxr0_0.1.3-4build2_amd64.deb",
+      "sha256": "6de7fb8a10ec3e88831dc831d03aec24dc0d3df0772e375e9e8d31839a25c9d8",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/s/speex/libspeex1_1.2%7erc1.2-1.1ubuntu3_amd64.deb",
+      "filename": "libspeex1_1.2~rc1.2-1.1ubuntu3_amd64.deb",
+      "bytes": 57894,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "17936bafed2ff1eecbb5a7e95b40600f1e864bfab384fdd4cce1d4ed939d5f33aa201bb7f3a5b795b44e4327612357f9e6e8cf55f961b584c7d7df8cafd4b55c",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libspeex1_1.2~rc1.2-1.1ubuntu3_amd64.deb",
+      "sha256": "a2fa1a19f9f473339c287f89763f78363a6c10490c3836258f4a12e959494bd6",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libt/libtheora/libtheora0_1.1.1%2bdfsg.1-15ubuntu4_amd64.deb",
+      "filename": "libtheora0_1.1.1+dfsg.1-15ubuntu4_amd64.deb",
+      "bytes": 209030,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "401d1ce44842285b6c1d836b4a8a603a475f035ed87f0961eb2e262e18def5dfbb1b84fa0dbfa04aeba02e4a512b0e7ea0d9e13f3750f6b11668804084e34339",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libtheora0_1.1.1+dfsg.1-15ubuntu4_amd64.deb",
+      "sha256": "549485bfe7ad431b387aa084fd0e088b025feb3dcdb77a5a1d130b29a62875dd",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/t/twolame/libtwolame0_0.4.0-2build2_amd64.deb",
+      "filename": "libtwolame0_0.4.0-2build2_amd64.deb",
+      "bytes": 52480,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "56a4ac70377c4e6e569d8fcecd0e261d04be070bdaff95e696c571abdd89bda8adc81dae02531a02bd6f74d9cd24a6df36357a30b853bbb8fd936dbdc6b0d554",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libtwolame0_0.4.0-2build2_amd64.deb",
+      "sha256": "83ed6b7cbd6c6e79cf9859f29eafa89a914dbf00bf6b3babc89bb7accf5873f5",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libv/libvdpau/libvdpau1_1.4-3build2_amd64.deb",
+      "filename": "libvdpau1_1.4-3build2_amd64.deb",
+      "bytes": 27046,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "9be2e7ccfee07ee1dea820052c55eb302fb4516fb9f750c0ef788b59fe74be15f42093a562d731d3583ad09a42c52adb76ac4bce28103a461dade1710af2ea9c",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libvdpau1_1.4-3build2_amd64.deb",
+      "sha256": "babb1a8e6eec4190d9125f1bf88d5e2e9a6cc0af1f98573cd726d95c982b70b9",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbisfile3_1.3.7-1build2_amd64.deb",
+      "filename": "libvorbisfile3_1.3.7-1build2_amd64.deb",
+      "bytes": 17072,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "eaa58a1b4cd0fabfd34f2c6176b3966111bae1e8ee0a89852535508f6662d6190123573ba6a2cee28310f0ca9a2da90c48448d5dda510987d9feafd2f3c9d480",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libvorbisfile3_1.3.7-1build2_amd64.deb",
+      "sha256": "e8ccb1bd8dec2c2b9c9a11b4b37ce58356848a6f0fb3e55070bfe563e19212de",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-shape0_1.14-3ubuntu3_amd64.deb",
+      "filename": "libxcb-shape0_1.14-3ubuntu3_amd64.deb",
+      "bytes": 6158,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "aef115aae8de49da8748346b66faeebcacef1df34968d34f6668b402a4c3df81845a4e7d816c9489c4ec2d48326ff83a4dd139b7fe5f6b1b5c7fe28e2570b7e8",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libxcb-shape0_1.14-3ubuntu3_amd64.deb",
+      "sha256": "71666977d7aa11877d7af663231cabf4bde60b033947b83358522c6f43873b3d",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/liba/libass/libass9_0.15.2-1_amd64.deb",
+      "filename": "libass9_1%3a0.15.2-1_amd64.deb",
+      "bytes": 97546,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "9d05af1d275887260b7cc7f8b09dc4245790925c1f3c79cc82fb876fb184e63b20722ac4a0fdb2c001af4611b9188388de38eab3ff28e744fc64494af6699125",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libass9_1%3a0.15.2-1_amd64.deb",
+      "sha256": "e9d388f0bbded6f36704c24280417a9d046abebcf2c6574ed640e3cfd1373d52",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libb/libbluray/libbluray2_1.3.1-1_amd64.deb",
+      "filename": "libbluray2_1%3a1.3.1-1_amd64.deb",
+      "bytes": 158834,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "ab35dda73a0d62a6e17f26520e9b663a90e0194af6c627a6cad64cacf06e8d16169f9af11a07409018a04e7ab5f30be62a3d6c074d468a69b3cd730c59512153",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libbluray2_1%3a1.3.1-1_amd64.deb",
+      "sha256": "2f1d520f30a2cd8b6dd543014f0ff10d4ff615cb4526b999b3fbaab911881ff2",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libb/libbs2b/libbs2b0_3.1.0%2bdfsg-2.2build1_amd64.deb",
+      "filename": "libbs2b0_3.1.0+dfsg-2.2build1_amd64.deb",
+      "bytes": 10164,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "f8fea3d10be6a0c775be6e976c153c63f48b46e6eccaf4fadcf265cd3efc316c6205de9649f74a9b5a83d56f850550b382b907739104f5a9943f51a3e58d0ad5",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libbs2b0_3.1.0+dfsg-2.2build1_amd64.deb",
+      "sha256": "2cf73adeb858f9438d184145875a266f17d881eae5edcf80207cff239c8b1866",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/c/chromaprint/libchromaprint1_1.5.1-2_amd64.deb",
+      "filename": "libchromaprint1_1.5.1-2_amd64.deb",
+      "bytes": 28418,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "f9fdc3963f5acecc78aee398ba4bcef5c62cc102d9c594decedb191e631fd467de12b5c26c46100084116bacb90c401261e75721c9b5340341f891f863ee2902",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libchromaprint1_1.5.1-2_amd64.deb",
+      "sha256": "5899140e82b42e436d1972f15466210fc21f4d038e0669ad82f635fef71d8d0a",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/c/codec2/libcodec2-1.0_1.0.1-3_amd64.deb",
+      "filename": "libcodec2-1.0_1.0.1-3_amd64.deb",
+      "bytes": 8435402,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "eed92f88f85c1c6bfa027ae33dcacb29969abc7388544db21acaa4fc3be6e74f83c4e63f3920360a3de2a3a659d7f47322da1eab607ab410550486f0607451a5",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libcodec2-1.0_1.0.1-3_amd64.deb",
+      "sha256": "1fbf2167aeb9dedea22c68b6166873d6b5ed0e854cbc4383f148fe20cbe7b142",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/d/dav1d/libdav1d5_0.9.2-1_amd64.deb",
+      "filename": "libdav1d5_0.9.2-1_amd64.deb",
+      "bytes": 462956,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "b5e8994bfd3be0af5c4963e74aeefe8c1ac15860f5177b79a34c1de4b5a12f0f3dd9d4c0956fe734f72efe03cb54a8227fcec4f25e7a4c4759fff023b9566ac0",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libdav1d5_0.9.2-1_amd64.deb",
+      "sha256": "1f92d5961a84a6d1365e6fc9da9d1fbfb7988a47c7f3bee8403eb57cd67545cf",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libd/libdc1394/libdc1394-25_2.2.6-4_amd64.deb",
+      "filename": "libdc1394-25_2.2.6-4_amd64.deb",
+      "bytes": 88796,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "099b261ae2d55826eaadbf0f0c329eab9f4ccc58d3f5c433ca8d2c95ca9948efcfedbf4d71cf1cb9b989012d85a6e04c7a871db619249081dd951613df7ee53a",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libdc1394-25_2.2.6-4_amd64.deb",
+      "sha256": "5c9ec8b9f75e7d0447e243fbf7ad2860e2481ba15e19b871b6defa0373dc56aa",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/flite/libflite1_2.2-3_amd64.deb",
+      "filename": "libflite1_2.2-3_amd64.deb",
+      "bytes": 13676782,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "67d009800188989a14a59dbedf7456d3cb3532d49f4bbf6afb3412e7aacb7ed0af04ec0cf2d5fdf4c2ee82a5e6382d93f68b5731793ba28657c05bf8a0ce1c52",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libflite1_2.2-3_amd64.deb",
+      "sha256": "079ec37390feef7b59a099bc0cb56a1fc9f922c17c6415ee813010436ce5840e",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/libgme0_0.6.3-2_amd64.deb",
+      "filename": "libgme0_0.6.3-2_amd64.deb",
+      "bytes": 127456,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "d71d990b22dbad3a5e880eeb8b3a346072d286ae4814609d38dfecfc8a8dd189654fc283b2b92ad6504fb4db72ce932c6fab01523eaeb4aec4c1186fc40c573e",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libgme0_0.6.3-2_amd64.deb",
+      "sha256": "74949cd9dfd2becc1fb6d1c6799bb2dc572bea9dddec8c29214d51401ab06e6a",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libg/libgsm/libgsm1_1.0.19-1_amd64.deb",
+      "filename": "libgsm1_1.0.19-1_amd64.deb",
+      "bytes": 27726,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "18043040c0f0ec2b17cc0a93ec32b5e6c594b0db89dabc122aeced7a0eaf3ef273076f43a178303c7c12be4d4e349c9c7f1b5bb51bd8e46f308330df256e4365",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libgsm1_1.0.19-1_amd64.deb",
+      "sha256": "7dbfc7eb7b990f208993eec5584758bdd5429e4ac014ac8664b56084c9057864",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/l/lilv/liblilv-0-0_0.24.12-2_amd64.deb",
+      "filename": "liblilv-0-0_0.24.12-2_amd64.deb",
+      "bytes": 42812,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "28a5a88da80e652e163ba893e36bc31dd02b0c4c7b0ba74e49922d8302f85e59b44848157926fa05e1d92a78651fc7413bdaa22cf9c1eb4d8aae3d2db610a5f1",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/liblilv-0-0_0.24.12-2_amd64.deb",
+      "sha256": "a277601fb9875c90acc71b2fa38e8fe856b9e3283bd8341eb1f53ad5ead77977",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/i/intel-mediasdk/libmfx1_22.3.0-1_amd64.deb",
+      "filename": "libmfx1_22.3.0-1_amd64.deb",
+      "bytes": 3104792,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "e6537e14dcd265e09565ea0905360a7e82e46195f404bfbfc9b1125b9b4f7c436f6dd6bd174de1eb0dc49c2f0536577ec71ebf26f5fa9c0c4ac251172a25ecb8",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libmfx1_22.3.0-1_amd64.deb",
+      "sha256": "a04a16280471ec59405290f6ca85d8252b3476bae5542b5e0a4e442c041f9a4a",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libm/libmysofa/libmysofa1_1.2.1%7edfsg0-1_amd64.deb",
+      "filename": "libmysofa1_1.2.1~dfsg0-1_amd64.deb",
+      "bytes": 1157126,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "faa0c09f6cf386f213f4e1dd0aad6e16cdca400c27534312c49c71006e4360ebd0e0f3ec937efcdf69fc2cd85107f56c7c08f58ee9e30caf84ab73dcb8921800",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libmysofa1_1.2.1~dfsg0-1_amd64.deb",
+      "sha256": "e3fb04d1c7ddb831cb02ec432eb06744a27f7f1a043207cbfdf047ae787e2a78",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/n/norm/libnorm1_1.5.9%2bdfsg-2_amd64.deb",
+      "filename": "libnorm1_1.5.9+dfsg-2_amd64.deb",
+      "bytes": 221160,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "c80aabb60dd96f8634637879586df361b54ffe318ab906950cbc48a0fb40703a60d3d8841541895b26ba7bec9002819a9ed8e0040ccf05c2df29159ca2031770",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libnorm1_1.5.9+dfsg-2_amd64.deb",
+      "sha256": "54289be7e191ff7a63127c147892a72afecc2c49714c35ba2839db30f4303b0f",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/o/openal-soft/libopenal-data_1.19.1-2build3_all.deb",
+      "filename": "libopenal-data_1%3a1.19.1-2build3_all.deb",
+      "bytes": 163962,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "77fa040084290f5da93b7ae1b2520f218467f5fb0d4997027fad48efc62e86311668499a667f8fb12fcd5720f3ecb3fcb06c45c57f277c50bc058d063c8f6d63",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libopenal-data_1%3a1.19.1-2build3_all.deb",
+      "sha256": "0fc7b012c00d611b5f5df3d380a80cade877f32a70b893d60409393f9a17f9bb",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/o/openal-soft/libopenal1_1.19.1-2build3_amd64.deb",
+      "filename": "libopenal1_1%3a1.19.1-2build3_amd64.deb",
+      "bytes": 534604,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "a23bb7cab71d9f77cd6696affc244eb8ad4d395c305109f8e2cfd3b3a6c54d4d63c7e75a7901dad73024bf415fa16e92bd38881943ac69c085e4bb5e06ec5188",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libopenal1_1%3a1.19.1-2build3_amd64.deb",
+      "sha256": "ce3542debf4313c400e232fa8281559b5b2895c33f59897b5876ae5e9580a823",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libo/libopenmpt/libopenmpt0_0.6.1-1_amd64.deb",
+      "filename": "libopenmpt0_0.6.1-1_amd64.deb",
+      "bytes": 592450,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "0c5c206b838efeab061f75ec2fcc3d2410af1eeb0209f7f7f3d0fe54e6bae569e8a00c86127f26aa145cd5191ebdb24ef7fc653cdd8c8b6a5c097220c4579d35",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libopenmpt0_0.6.1-1_amd64.deb",
+      "sha256": "7e2d745b442e2776f8fc563bba20079f0a38fab0ef70ff4c2acdcc96604222a2",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libp/libpgm/libpgm-5.3-0_5.3.128%7edfsg-2_amd64.deb",
+      "filename": "libpgm-5.3-0_5.3.128~dfsg-2_amd64.deb",
+      "bytes": 161180,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "dd3613855174fe3902083696a13c6d93def96c91fa72850e07a9cc4b50ccd34f225a44ff83a1c1fe4e2221c926a7234a91e1d5ad423ec564bbd583b9e3d00001",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libpgm-5.3-0_5.3.128~dfsg-2_amd64.deb",
+      "sha256": "5e14963fe9155cabcd2ba6c7d66289b45bbf08db6bc5dfe8107b244becc312c9",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/p/pocketsphinx/libpocketsphinx3_0.8.0%2breal5prealpha%2b1-14ubuntu1_amd64.deb",
+      "filename": "libpocketsphinx3_0.8.0+real5prealpha+1-14ubuntu1_amd64.deb",
+      "bytes": 132264,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "41b55abccb0cbda0329f81044659ee185ea0c9898a3bf13b500dc39f94920fdc12875d73ca1dcb0acab37d428d10108711baf38bc98097acaeab11df6091773d",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libpocketsphinx3_0.8.0+real5prealpha+1-14ubuntu1_amd64.deb",
+      "sha256": "3e19eb33065660f6a604d262867ff2217f48befaadb623486ec71d2ae65f38c3",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/r/rubberband/librubberband2_2.0.0-2_amd64.deb",
+      "filename": "librubberband2_2.0.0-2_amd64.deb",
+      "bytes": 89976,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "8ec03e8842f3ccb6a8fdb0bad466a3b7c007e0d35304eb7b828c65d73721930891882a37f7328d46bcd9ed266ee17ccb7b91a643dea80d887771c06dd8718e48",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/librubberband2_2.0.0-2_amd64.deb",
+      "sha256": "ffe78e254bb3817c70e2bf6986c0aa16533fdc8d0eb7c7db4910ec5df6742f09",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/s/serd/libserd-0-0_0.30.10-2_amd64.deb",
+      "filename": "libserd-0-0_0.30.10-2_amd64.deb",
+      "bytes": 40768,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "a39a969e85df51eeed56789f25c0b5fec56b380b3dade1ed1882fa921d55f528d49277fef9d5d4650116fb9ac7d7256810f6d48d777b3f9709f36e002508677d",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libserd-0-0_0.30.10-2_amd64.deb",
+      "sha256": "5e1b679d793faa773411a117192b99b1cfc87c61e521d8d8c71e0046eb5aae2e",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/s/shine/libshine3_3.1.1-2_amd64.deb",
+      "filename": "libshine3_3.1.1-2_amd64.deb",
+      "bytes": 23160,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "cbfcce1e1f75d8a73645a4bf89679506080aaccf4651c8de0ac9db495e0a89a9451c7c58dbb6689ffba9e73be61d1ebc6a6a0f29a88fc333026b30f52ea04a1f",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libshine3_3.1.1-2_amd64.deb",
+      "sha256": "318968ed95078eebceb155f19a177667092f6b998ead2e09115133dcc7cd5ddc",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/s/sord/libsord-0-0_0.16.8-2_amd64.deb",
+      "filename": "libsord-0-0_0.16.8-2_amd64.deb",
+      "bytes": 21184,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "103c1e3467ba3dc3cdaf913e5efe28783d52372d063f8239829c3bd44f5e363d44f24dc7f2bc5148db9330d52b195ff7fbae722a62f777ad62b8d42ab1f3e043",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libsord-0-0_0.16.8-2_amd64.deb",
+      "sha256": "f871c61f20a45f15ca4fe52a6965da01b0761dfe35595fd20db776198763e384",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/s/sphinxbase/libsphinxbase3_0.8%2b5prealpha%2b1-13build1_amd64.deb",
+      "filename": "libsphinxbase3_0.8+5prealpha+1-13build1_amd64.deb",
+      "bytes": 126398,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "7034e464267520c597308f3e2f250cea75803ecc1694174ae98cb211513796b869ae9f2f285c08846a72b997840e7e29ee050a714ffe99911cec54190d667d3e",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libsphinxbase3_0.8+5prealpha+1-13build1_amd64.deb",
+      "sha256": "af2649a25313f10300ebbd750f81660b69126be0bdc2090f712c9543b495fbba",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/s/sratom/libsratom-0-0_0.6.8-1_amd64.deb",
+      "filename": "libsratom-0-0_0.6.8-1_amd64.deb",
+      "bytes": 17008,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "ef9fc1315393e53bf1282366ba7d3ae4a72e7e69dfb4db65c9cf23ca27637ceb05f26acab8d0abb49faada1970e50ad2eb81b995f7fa4cf6bb7c53b95a687dea",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libsratom-0-0_0.6.8-1_amd64.deb",
+      "sha256": "25e9ca5c4d5fc118b7470be65dbcc02dc2709af97555f771c2e73a322aa61abc",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/s/srt/libsrt1.4-gnutls_1.4.4-4_amd64.deb",
+      "filename": "libsrt1.4-gnutls_1.4.4-4_amd64.deb",
+      "bytes": 308604,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "3e905c80a5b42994b8c6884db8ed037594848201ed4cdbbe9894b0d3bd1cd0e7c8c6d778502b415bdb72574bac6e50a43b13d5018e1c699b840e949c942256c1",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libsrt1.4-gnutls_1.4.4-4_amd64.deb",
+      "sha256": "a9460464081cf15bbf73f09d6a47bb48194cb8c33eaa947248a75bc4271ea6cc",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libu/libudfread/libudfread0_1.1.2-1_amd64.deb",
+      "filename": "libudfread0_1.1.2-1_amd64.deb",
+      "bytes": 16248,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "62a66dbcd1a11c1e946d9d1504d9969f2a12d388543d273275f2908c83575fa819ca640197200fb61a61c0f0827520a9e463d10f8f8db3ad9c7fd9903279b0b4",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libudfread0_1.1.2-1_amd64.deb",
+      "sha256": "0467e8ad7ab00cac04e5b54cb141daf8c038264e933a468ae2788d5fd650e516",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libv/libva/libva-drm2_2.14.0-1_amd64.deb",
+      "filename": "libva-drm2_2.14.0-1_amd64.deb",
+      "bytes": 7502,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "e89942468fe1d8327e31ba1aff7ede3dfe78763a18e26f29190c707a3111aac6c93ab0122691c94fd8736d4ef73673c7221e7e62e67e630755262ab32a8548fc",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libva-drm2_2.14.0-1_amd64.deb",
+      "sha256": "c409075cc49011919d364cd20a729d02a212fb86fbd617146b47e2243e5ec318",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libv/libva/libva-x11-2_2.14.0-1_amd64.deb",
+      "filename": "libva-x11-2_2.14.0-1_amd64.deb",
+      "bytes": 12600,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "1db9f3ea82a7e35a4c8b0b574ca2af4365b8cd2013342fe0f5caab91fc00cb08f0f29bf967c5553ca1c944088f6289da9aa5706b94e076f577d3ff67ea89a468",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libva-x11-2_2.14.0-1_amd64.deb",
+      "sha256": "e9331395732187e39117102f0811b1c49b554e8c8b5e50a46788f991b19aa8e9",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libv/libva/libva2_2.14.0-1_amd64.deb",
+      "filename": "libva2_2.14.0-1_amd64.deb",
+      "bytes": 64972,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "786cd1c4356df2d80520c4727909abb9520e2048c3dae9c10443aa22d3b98ea77fadffe2566ee92001fb1f5121111d1eff0237c8f2ba2a6d72204876eb8de848",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libva2_2.14.0-1_amd64.deb",
+      "sha256": "30da2b3d7c066137116cb0c69c68d2709e6352bea0706ae54fadb89af24463fb",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/libv/libvidstab/libvidstab1.1_1.1.0-2_amd64.deb",
+      "filename": "libvidstab1.1_1.1.0-2_amd64.deb",
+      "bytes": 35040,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "58409f4067dd755699ea1b19063f26b853804c85489a4dba521da78340b86cb9086154af4dc66a93df9a85f1f3ac867c27b12fffe89fb54e10c30e4244aa4f85",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libvidstab1.1_1.1.0-2_amd64.deb",
+      "sha256": "477655192eac8eaef3980aa46f5e8b073611827da1476f7c356abefbb89183c3",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/x/x264/libx264-163_0.163.3060%2bgit5db6aa6-2build1_amd64.deb",
+      "filename": "libx264-163_2%3a0.163.3060+git5db6aa6-2build1_amd64.deb",
+      "bytes": 591486,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "3e5d87242b7b9b1ce7978b0397682d23c287c799ef71eaf708c76cbd136f71370058de539712daf88326423efecc629998b77b50ca4501a08feced3c3349981c",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libx264-163_2%3a0.163.3060+git5db6aa6-2build1_amd64.deb",
+      "sha256": "4b6dc88ca9fee6a234b599cfc67ce1042050dd2814f00b5065406bcdc75baf47",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/x/x265/libx265-199_3.5-2_amd64.deb",
+      "filename": "libx265-199_3.5-2_amd64.deb",
+      "bytes": 1170076,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "2c319a5e07433983e81a21a4caebdef4b04e7af4e3e65ce1ba1e6867b523c099f306c3764bbd86483b23503551f6736b14ab3f90c0c12ac98657ca88e74e9c37",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libx265-199_3.5-2_amd64.deb",
+      "sha256": "8cb4d8ba814357e480c48caa7afba944e9a62f26589ee6d39e498f869bf343d2",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/x/xvidcore/libxvidcore4_1.3.7-1_amd64.deb",
+      "filename": "libxvidcore4_2%3a1.3.7-1_amd64.deb",
+      "bytes": 201320,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "f3117bed93ef3d5ef3ac936bcf6677159fe2dd96b9ac71a297eac29d3841adc4bebab74a42a2db9a5b057b1ce22eb0bfcc33085a2cea5cd1095820d8448dbf25",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libxvidcore4_2%3a1.3.7-1_amd64.deb",
+      "sha256": "626b3e5a46d65df55eddb23037841c9dcb7bde3c8e325da09c9f3528c8416afb",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/z/zimg/libzimg2_3.0.3%2bds1-1_amd64.deb",
+      "filename": "libzimg2_3.0.3+ds1-1_amd64.deb",
+      "bytes": 241140,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "7b4eba2d55a599747b2195f03fc12baecbc57162b3ff3f25cac85268185f855c2451d38821f1817b34920c53047933570f6231aaf7a5d75918e5c0f6f5e65e8b",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libzimg2_3.0.3+ds1-1_amd64.deb",
+      "sha256": "8c31afaea7dbe2a1fb3acaf24f60707daac9136afb99d62a046beb3f186ebeeb",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/z/zeromq3/libzmq5_4.3.4-2_amd64.deb",
+      "filename": "libzmq5_4.3.4-2_amd64.deb",
+      "bytes": 256228,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "73262f929816badd138c40dd1ac3800670a62494297bd07fb3a29b134200a30bd9cfd6f16cf71dc1eea54f08ed6ac2e75b19ccd0e2eb0dcf8ae78f72e7d41278",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libzmq5_4.3.4-2_amd64.deb",
+      "sha256": "6eb106134ac13d4be583a28c2d107edf1e838cf3705ed85b7af0372ae92af3e0",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/z/zvbi/libzvbi-common_0.2.35-19_all.deb",
+      "filename": "libzvbi-common_0.2.35-19_all.deb",
+      "bytes": 35452,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "13e5272818f7b59609aaf1292acc3c255e7bada536db5ac8c95a35cf1b768ef3ba72d08ae114e89f2cf8261e9b5087f7f661b65999f5159efde95bad87970efa",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libzvbi-common_0.2.35-19_all.deb",
+      "sha256": "54d35e9faa0469396e730c5c8f9a73eddc19865118a3262e9b1c69396bcaab97",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/z/zvbi/libzvbi0_0.2.35-19_amd64.deb",
+      "filename": "libzvbi0_0.2.35-19_amd64.deb",
+      "bytes": 262300,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "a90c6bddbace366c7cfeca9a53541b71a542e6f1b0b45caecb86cda1faace4410bee64b8f49405ca097bf114f7721dca7f77ac8cbf8a970c7f5af69cd728860f",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libzvbi0_0.2.35-19_amd64.deb",
+      "sha256": "bf3ad890d20d62977abc24372c60fb436de3685bd19053e21576d39d2671555d",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/o/ocl-icd/ocl-icd-libopencl1_2.2.14-3_amd64.deb",
+      "filename": "ocl-icd-libopencl1_2.2.14-3_amd64.deb",
+      "bytes": 39136,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "fceb3a0b1522adb9b773ad079ab8c41c42ddada8087a54fdb293f5bc037531defbd8a0021673ddf1e31609974468a4c13a79e95597684fa9c5b89340bc86dd19",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/ocl-icd-libopencl1_2.2.14-3_amd64.deb",
+      "sha256": "9c4ecdb6b69f10157796f4eef6ead8f4f42532f9064ccf1e80f9b337719370a9",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libc/libcaca/libcaca0_0.99.beta19-2.2ubuntu4.2_amd64.deb",
+      "filename": "libcaca0_0.99.beta19-2.2ubuntu4.2_amd64.deb",
+      "bytes": 223992,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "a66ed505b4b257fcb2c8bed78da7c5680832c4dbd115e63c411aca2638f72987e321abdf2f7ac5ef8f8c7c6c1521342bdf5bc46694d2fa29218c0052cc7585bf",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libcaca0_0.99.beta19-2.2ubuntu4.2_amd64.deb",
+      "sha256": "7eabb28c9428f3a011e5f1961ab78a5dc911d92f4423134bc046bb58769188aa",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libc/libcdio/libcdio19_2.1.0-3ubuntu0.2_amd64.deb",
+      "filename": "libcdio19_2.1.0-3ubuntu0.2_amd64.deb",
+      "bytes": 63558,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "9ce15cc22be6a50b7b1eb1393e92fb85794e1fd3c7790dc0e2624e06702fdd417477d92da71f98e00aec68dd3fded61d5be3a6d18bd938e050a455d3a381aa3f",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libcdio19_2.1.0-3ubuntu0.2_amd64.deb",
+      "sha256": "9f0c8372c197ff43d3900fe844f3bf78c7fea67cea9bc0679a400424c63042a4",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/libmpg123-0_1.29.3-1ubuntu0.1_amd64.deb",
+      "filename": "libmpg123-0_1.29.3-1ubuntu0.1_amd64.deb",
+      "bytes": 172002,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "a337d77a74272f100d6c3014d11235f31cf874ac804c5b934ce59a395bdfc0eb1c66401456db0d12b00b5d5ad4f067143a5cfae546c92f9fb6cb92367ace7990",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libmpg123-0_1.29.3-1ubuntu0.1_amd64.deb",
+      "sha256": "a71e502ddd867536a4dbde5dee9d1154faeca369fc9e274e8b98331641a2dd26",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libr/librabbitmq/librabbitmq4_0.10.0-1ubuntu2.2_amd64.deb",
+      "filename": "librabbitmq4_0.10.0-1ubuntu2.2_amd64.deb",
+      "bytes": 39850,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "c86d2f78638e32fa836d32c0f81d50df5b154e1a1e6fcf457c5dfd0a853bab91b23e2499d9570bee089029c15722d0d4529892d946830cdb6e234191caea1081",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/librabbitmq4_0.10.0-1ubuntu2.2_amd64.deb",
+      "sha256": "148e987046214291c760897584c7c3812d24f2f6751b5d2516b55ae56e572d8b",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh-gcrypt-4_0.9.6-2ubuntu0.22.04.8_amd64.deb",
+      "filename": "libssh-gcrypt-4_0.9.6-2ubuntu0.22.04.8_amd64.deb",
+      "bytes": 225738,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "aefebba6fe97797dc1f254fdf59d8c1657158d6fc43e7db13e221f804b434ff385d74a015ad46d0274b59a026567864253a794b6c3963bbe57d6590a1b326487",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libssh-gcrypt-4_0.9.6-2ubuntu0.22.04.8_amd64.deb",
+      "sha256": "09290b41b847885bc2204ce7b03fd617f1589de9a046b9aa96fa28e8f828f1e5",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx7_1.11.0-2ubuntu2.5_amd64.deb",
+      "filename": "libvpx7_1.11.0-2ubuntu2.5_amd64.deb",
+      "bytes": 1078120,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "e34e14830db400edc1b1d39a7daca13e4915f45f1b98b0c3027c917bf162aafb43b0a9bbe32820ac06cec83e509e44fd29964afa587b5e939f50cb07369b647f",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libvpx7_1.11.0-2ubuntu2.5_amd64.deb",
+      "sha256": "5561f3376bb9232d098a44dabc33eed3b3abfeec751c27893b58b6e6912684e0",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "filename": "ffmpeg_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "bytes": 1695740,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "5545b51470c08fe395445356778414873a2f7d90505ecaeedb3a8ebaf086e8037749c2f575fd936675ebc8afda077b6a3a2ed42c424443a4227a034d89872fb4",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/ffmpeg_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "sha256": "96beb71a9c3904c69a03c500caf9135370beb499e8599d6a544644cd9b909462",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/libaom3_3.3.0-1ubuntu0.1_amd64.deb",
+      "filename": "libaom3_3.3.0-1ubuntu0.1_amd64.deb",
+      "bytes": 1748348,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "cd4b75670d8628d89e5c3b2777d17bae7d99ad1943b36aa848f23b2a34f4e2c69465e15af29a661a00c935574a659335adcef52daf4185c639bf5cde2ae2e743",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libaom3_3.3.0-1ubuntu0.1_amd64.deb",
+      "sha256": "e3b7e5438218e5fe9f85327dc95c2a39d10dcf6289344a75c3c5833ae14e7462",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libavcodec58_4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "filename": "libavcodec58_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "bytes": 5566900,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "f39a3534c265638cececc4d02d798e30f4cdf1b52381a4be8a2a4d4440a1dea8326b5dfde44f2275496d3930fea1399488e67b7af472f7562d84833dac831071",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libavcodec58_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "sha256": "2704a3c4283008daa293334f102ed2f32d056fc000df618d0ef98380e6ba18a1",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libavdevice58_4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "filename": "libavdevice58_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "bytes": 87514,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "347c814ccbb34dc6a292b6e00576b7d73a976ff2a3f8bd9c33dd7e265680ce53050b11be59f8386564ed1d3b488f49c2cfdcdae751922978e7a9b249db41bccd",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libavdevice58_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "sha256": "b44a8a7c9e6e96bbb4f3a617c6a421bb42aefe1df6041c4a35f9f0b6b75f2399",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libavfilter7_4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "filename": "libavfilter7_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "bytes": 1495698,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "796e84598c6b95c55f8e9f56ea0d2eb2ea147bc752b407c0f1782fc75e5290ba9e4d4d26bd2dabc1e750711f9813d615ec163dedc25d1caf1e90370f8dfdb7c2",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libavfilter7_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "sha256": "9a2fc248cc8d3476cf3c134f91eaa0446fd7cbc0e1e3f1b2f83b33daa9a89cdb",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libavformat58_4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "filename": "libavformat58_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "bytes": 1102550,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "79d5d759871da1e9216d3126fec39721d167706ff8f9b7f44dbb190a5eb879c7986eb5723e827c08cc671e74b4a4a3d73bb6aaac6677031842a7124f79295ed3",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libavformat58_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "sha256": "27515c1ceb13be92e4817e806bfb4d35d10d728f1eebcece36edf1fb9c658b47",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libavutil56_4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "filename": "libavutil56_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "bytes": 289650,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "94a8c2af228dffb7a5ca3346727abb9b2ed794a7e1f8d910626f607c89ab7da1944822ac021a2a887db55158bb51ca79684a91c4eef2d5d41358f94954bcfe60",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libavutil56_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "sha256": "79993e85a16cab6f8c4820677836fb957a9bcc09b102da472bc93250c531979a",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libpostproc55_4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "filename": "libpostproc55_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "bytes": 60142,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "5b99e08c3d812ed2459c23cb07097ff5c77dbfe68d347fa0bc6c1e82bbeee1804a61737a268ef371fcaa30ef9f118c4f37e0cd31fe1064a655af4f6d370a9d94",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libpostproc55_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "sha256": "de3631cfb6cf3340c3c2364bc3d4237c2562f949a8158e90f09265f8e3d18c57",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libswresample3_4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "filename": "libswresample3_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "bytes": 62168,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "c969bd27c33d2b3efe7d766770fbf81c5dcb320d25017cc905893cbf0a1b390a71dbe899f52960204c5b2b8a97db176bf937b41f44ded898c0ebc4d6741941d7",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libswresample3_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "sha256": "3027189b2512eaa841c81593b8c65e0f32ff8117626b7e40f3744a0b3801fec5",
+      "official_digest_match": true
+    },
+    {
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libswscale5_4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "filename": "libswscale5_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "bytes": 180074,
+      "official_digest_algorithm": "SHA512",
+      "official_digest": "1af7311547f8b84282427a1a130afa7295a4a0065dd8b95051580fe1cd809e41b47bfc3fb7768a0275d7b68b9c2228622b0fe515d41c4c1d7669afc05586df4a",
+      "archive": "/workspace/downloads/ysyx_c_stage/media/libswscale5_7%3a4.4.2-0ubuntu0.22.04.1_amd64.deb",
+      "sha256": "c67fa8cde362e67cf6fc7814597b1db3df6fbff7ee2eafb5cb651e4f90a3093a",
+      "official_digest_match": true
+    }
+  ],
+  "scope": "Official Ubuntu packages downloaded to D and extracted into task-local directory. All package digests matched the configured Ubuntu APT metadata. No global install, CUDA or system changes. Actual MP4 conversion/negative input validation follows when runtime budget is available."
+}

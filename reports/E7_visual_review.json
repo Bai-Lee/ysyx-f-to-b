@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "images": [
+    {
+      "file": "artifacts/E7/gui/locked.png",
+      "sha256": "e061db0a0bf4a51eeb216a252bdd317d705c2fa1cfbed2d6dee024c8abeae62a"
+    },
+    {
+      "file": "artifacts/E7/gui/wrong_password.png",
+      "sha256": "31530b1146afff70bc5c1b1434698c7c963078fbb796d48ff582e001f702118a"
+    },
+    {
+      "file": "artifacts/E7/gui/walking.png",
+      "sha256": "3fe0776912b866c030d548f29a23898e50f8c1a9a0a3c0d081a2601b7f8cff0e"
+    },
+    {
+      "file": "artifacts/E7/gui/completed.png",
+      "sha256": "b364ac2cd9df8831dc430c70c2120807736e57d7acb9b873dfeb74346cc112c5"
+    }
+  ],
+  "observations": [
+    "Locked/incorrectFFFFstatesretainLOCKEDtextandLEDsoff.",
+    "WalkingframehasasingleLEDlitandcorrectA55Aswitchpattern.",
+    "CompletedframevisiblyshowsUNLOCKEDandfullGPIO_SEQUENCE_PASS, A55ALEDpattern, and018DCBF1sevensegmentdisplay."
+  ],
+  "review_method": "ActualPNGsreadthroughview_image afterrealX11interaction; noimageediting. Software/framebuffercontentisnotasubstituteforrecordedhardwaretransactions.",
+  "fixed_issue": "AfterCPUhaltNVBoardadaptiverepaintcountdownneededcontinuedpublicnvboard_updatepumping; initialstaleconsoleattemptretained."
+}

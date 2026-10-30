@@ -1,0 +1,49 @@
+{
+  "status": "PASS_BOUNDED_OBSERVATION",
+  "image": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/dummy-minirv-npc.bin",
+  "sha256": "b8035dae0d66e644b053bd7264caf48f2b074ded60cce6d846023ee9937181e3",
+  "elf": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/dummy-minirv-npc.elf",
+  "containing_symbol": "80000020 00000028 T _trm_init",
+  "halt_inlined": true,
+  "last_pc_values": [
+    2147483708,
+    2147483712,
+    2147483716
+  ],
+  "result": {
+    "result": "REQUESTED_STEPS_COMPLETE",
+    "exit_code": 0,
+    "pc": 2147483716,
+    "a0": 0,
+    "cycles": 20000,
+    "instructions": 20000,
+    "frequency_hz": 100000000,
+    "wall_seconds": 0.028165677,
+    "ebreak_calls": 0,
+    "memory_writes": 1,
+    "load_commits": 0,
+    "uart_bytes": 0,
+    "uart_polls": 0,
+    "uart_not_ready": 0,
+    "gpr": [
+      0,
+      2147483708,
+      2147520500,
+      0,
+      2147483708,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "runtime_binary": "/home/USER/e-stage/build/E6/npc/sim",
+  "scope": "Original AM halt loop observed forrequested20000 commits; compiler may inline it into _trm_init; not falsely reported as a terminating program."
+}

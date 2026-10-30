@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "command": [
+    "/home/USER/e-stage/workbench/fceux-am/build/fceux-native.elf"
+  ],
+  "binary_sha256": "44b22138178420abe6210f279d65d9e48e30741129915c16e3941927e06e78c8",
+  "rom_sha256": "29ccb7d3b35f40a5c56f07f9cde787a55259eb6fbfd021c67006e731da494817",
+  "elapsed_seconds": 7.189464657999906,
+  "exit_code": 0,
+  "display": ":99",
+  "commands": [
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291470"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scrot",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E6/fceux/native_session/released.png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keydown",
+        "j"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scrot",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E6/fceux/native_session/pressed.png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keyup",
+        "j"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scrot",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E6/fceux/native_session/released_again.png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "key",
+        "q"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "changed_pixels_on_J": 90112,
+  "pixels_not_recovered": 0,
+  "pitch_hz": [
+    440.0,
+    220.0,
+    440.0
+  ],
+  "audio_sha256": "6a5d25f576e7fa0821c72c5016421edac378e1954397a7b930fe2c6fe1cef409",
+  "stdout_sha256": "c05cf31e867b24281c6598b175e9837e23d3e36f8aad05b2e5ec3085427ab625",
+  "stderr_sha256": "6bad9a5fe47b950d0c042212a8802e37135e8b9337cd3c82f7cc2690a235361c",
+  "scope": "Real upstream FCEUX on native AM/SDL under isolated Xvfb; X11 keyboard input, actual rendered framebuffer and SDL audio callback PCM verified. No physical loudspeaker verification or commercial-game ROM."
+}

@@ -1,0 +1,125 @@
+{
+  "status": "PASS_PHYSICAL_SIGNOFF",
+  "workspace": "/home/USER/e-stage/physical/cpu_baseline",
+  "flow": {
+    "steps": [
+      {
+        "name": "Floorplan",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:1",
+        "peak memory (mb)": 180.977,
+        "info": {}
+      },
+      {
+        "name": "fixFanout",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:1",
+        "peak memory (mb)": 177.395,
+        "info": {}
+      },
+      {
+        "name": "place",
+        "tool": "dreamplace",
+        "state": "Success",
+        "runtime": "0:1:44",
+        "peak memory (mb)": 1789.523,
+        "info": {}
+      },
+      {
+        "name": "CTS",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:34",
+        "peak memory (mb)": 2373.035,
+        "info": {}
+      },
+      {
+        "name": "legalization",
+        "tool": "dreamplace",
+        "state": "Success",
+        "runtime": "0:0:4",
+        "peak memory (mb)": 373.191,
+        "info": {}
+      },
+      {
+        "name": "route",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:40",
+        "peak memory (mb)": 399.852,
+        "info": {}
+      },
+      {
+        "name": "drc",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:6",
+        "peak memory (mb)": 522.312,
+        "info": {}
+      },
+      {
+        "name": "lvs",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:4",
+        "peak memory (mb)": 389.254,
+        "info": {}
+      },
+      {
+        "name": "filler",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:5",
+        "peak memory (mb)": 452.891,
+        "info": {}
+      },
+      {
+        "name": "RCX",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:12",
+        "peak memory (mb)": 696.516,
+        "info": {}
+      },
+      {
+        "name": "sta",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:5:27",
+        "peak memory (mb)": 1365.191,
+        "info": {}
+      },
+      {
+        "name": "Harden",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:21",
+        "peak memory (mb)": 1297.07,
+        "info": {}
+      }
+    ]
+  },
+  "resource_evidence": [
+    "artifacts/E8/physical/cpu_baseline/Floorplan/budget.json",
+    "artifacts/E8/physical/cpu_baseline/fixFanout/budget.json",
+    "artifacts/E8/physical/cpu_baseline/place/budget.json",
+    "artifacts/E8/physical/cpu_baseline/CTS/budget.json",
+    "artifacts/E8/physical/cpu_baseline/legalization/budget.json",
+    "artifacts/E8/physical/cpu_baseline/route/budget.json",
+    "artifacts/E8/physical/cpu_baseline/drc/budget.json",
+    "artifacts/E8/physical/cpu_baseline/lvs/budget.json",
+    "artifacts/E8/physical/cpu_baseline/filler/budget.json",
+    "artifacts/E8/physical/cpu_baseline/RCX/budget.json",
+    "artifacts/E8/physical/cpu_baseline/sta/budget.json",
+    "artifacts/E8/physical/cpu_baseline/Harden/budget.json"
+  ],
+  "ecc": "/home/USER/tools/e-stage/ecos-alpha9/squashfs-root/resources/binaries/ecc",
+  "ecc_sha256": "f7c4a05bb3220293e37576984049d69fc00753f7ebbac13ddc8d181d3291ad4c",
+  "isolated_steps": true,
+  "policy": "Eachselectedstepusesofficial--only inafreshprocess; noflowstate/checklist/qualitygateediting. Allmandatoryflowstepsandactualsignoffinspectionstillrequired.",
+  "prior_status": "FLOW_EXECUTED_REQUIRES_SIGNOFF_REVIEW",
+  "signoff_evidence": "reports/E8_signoff_export.json",
+  "review_note": "All required stages and gates passed; only the permitted no-macro location warning remains."
+}

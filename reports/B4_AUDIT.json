@@ -1,0 +1,786 @@
+{
+  "status": "PASS_PUBLIC_ENGINEERING_WITH_DECLARED_LIMITS",
+  "stage_complete": true,
+  "stage": "B4",
+  "core_tasks": 17,
+  "adapted_tasks": 0,
+  "scope_records": 37,
+  "records": [
+    {
+      "id": "B4-R001",
+      "status": "REVIEWED_TECHNICAL_CONSTRAINT",
+      "evidence": [
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B_performance_analysis.json"
+      ],
+      "details": "按本框方法要求审视实际设计与数据；单元面积、校准模型、有限覆盖和全局最优边界在说明中明确。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O001",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-R002",
+      "status": "REVIEWED_TECHNICAL_CONSTRAINT",
+      "evidence": [
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B_performance_analysis.json"
+      ],
+      "details": "按本框方法要求审视实际设计与数据；单元面积、校准模型、有限覆盖和全局最优边界在说明中明确。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O002",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O003",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O004",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O005",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O006",
+      "status": "PASS_FINITE_CONTROL_SEQUENCES",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B4_functional_release.json"
+      ],
+      "details": "最终完整trace含连续动态控制指令对，均随退休与NEMU比较；另有错路store/非法指令清除用例，不声称穷尽。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B4_functional_release.json": "69bdf792a5b15e0ae599a6a30ae5a66307f191268c056e60d3d637af43d8c34b"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O007",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O008",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O009",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O010",
+      "status": "TIMEOUT_OPTIONAL",
+      "evidence": [
+        "reports/B4_formal.json",
+        "B/B4/NOTES.md"
+      ],
+      "details": "三条任意算术指令有界miter达到600秒上限；保留断言与输入，没有证明或反例结论。",
+      "evidence_sha256": {
+        "reports/B4_formal.json": "178c2c9817dcef34910a3a041109a9bc26a9cb5c71639cebbdb5b4698572ac79",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O011",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-R003",
+      "status": "REVIEWED_TECHNICAL_CONSTRAINT",
+      "evidence": [
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B_performance_analysis.json"
+      ],
+      "details": "按本框方法要求审视实际设计与数据；单元面积、校准模型、有限覆盖和全局最优边界在说明中明确。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O012",
+      "status": "PASS_SCOPED_OPTIONAL",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B3_icache_unit.json"
+      ],
+      "details": "cache返回被接收的同周期可接收下一命中；独立供给率与完整SoC收益均实测。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B3_icache_unit.json": "18d7864af59ec18725e01955b905923a2f507a32a266573a134f44b43f10a94b"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O013",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B4/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O014",
+      "status": "NOT_RUN_OPTIONAL",
+      "evidence": [
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md"
+      ],
+      "details": "BTB和返回地址栈没有实现；性能上限与面积余量用于解释选择，不冒充RTL结果。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O015",
+      "status": "PASS_SCOPED_OPTIONAL",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B4_functional_release.json"
+      ],
+      "details": "JAL目标由当前指令提前计算，保留链接寄存器和错路恢复；与无预测同频配置比较。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B4_functional_release.json": "69bdf792a5b15e0ae599a6a30ae5a66307f191268c056e60d3d637af43d8c34b"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-O016",
+      "status": "NOT_RUN_OPTIONAL",
+      "evidence": [
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md"
+      ],
+      "details": "BTB和返回地址栈没有实现；性能上限与面积余量用于解释选择，不冒充RTL结果。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-R004",
+      "status": "REVIEWED_TECHNICAL_CONSTRAINT",
+      "evidence": [
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B_performance_analysis.json"
+      ],
+      "details": "按本框方法要求审视实际设计与数据；单元面积、校准模型、有限覆盖和全局最优边界在说明中明确。",
+      "evidence_sha256": {
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M001",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B3_trace_controls.json",
+        "reports/B3_cache_analysis_b5-multicycle-325.json"
+      ],
+      "details": "按优化后cache的完整data trace重估理想和有限WB/WA dcache；手算脏替换和MMIO绕过例通过。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B3_trace_controls.json": "16c6ae08b766b302801f187fa8eed047f312f0ae280a33a54e9fb45e34e545ec",
+        "reports/B3_cache_analysis_b5-multicycle-325.json": "18749b8165d546e58bb86c52432358487217330b6252272f17ed071898cf6cf7"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M002",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B3_trace_controls.json",
+        "reports/B3_cache_analysis_b5-multicycle-325.json"
+      ],
+      "details": "按优化后cache的完整data trace重估理想和有限WB/WA dcache；手算脏替换和MMIO绕过例通过。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B3_trace_controls.json": "16c6ae08b766b302801f187fa8eed047f312f0ae280a33a54e9fb45e34e545ec",
+        "reports/B3_cache_analysis_b5-multicycle-325.json": "18749b8165d546e58bb86c52432358487217330b6252272f17ed071898cf6cf7"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M003",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md"
+      ],
+      "details": "保留实测icache缺失/绕过与load/store退休区间，估算非访存每周期一条；明确均值分摊近似。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M004",
+      "status": "PASS",
+      "evidence": [
+        "reports/B4_functional_pipeline-stall.json",
+        "reports/B_standalone_pipeline-stall.json",
+        "reports/B4_functional_release.json",
+        "B/B4/NOTES.md"
+      ],
+      "details": "四级valid/ready流水线；初始阻塞版本和最终版均真实测试，包含独立1200操作/内存期望及RAW故障反例。",
+      "evidence_sha256": {
+        "reports/B4_functional_pipeline-stall.json": "f01ebca0fd05bbae4dc606b6d95e4c13a8c05e9e35e7126f1af33bc26aa52778",
+        "reports/B_standalone_pipeline-stall.json": "c2979f8c49b1425d404ce8ab52ef010546dfb098c63f897d33adfe69c8273bae",
+        "reports/B4_functional_release.json": "69bdf792a5b15e0ae599a6a30ae5a66307f191268c056e60d3d637af43d8c34b",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/B4_functional_release.json",
+        "reports/B4_release_soc.json",
+        "B/B4/NOTES.md"
+      ],
+      "details": "较老指令提交、年轻指令清除、串行CSR/ECALL/MRET；上下文与RT-Thread回归。",
+      "evidence_sha256": {
+        "reports/B4_functional_release.json": "69bdf792a5b15e0ae599a6a30ae5a66307f191268c056e60d3d637af43d8c34b",
+        "reports/B4_release_soc.json": "84f48dee4fbe5bda71a6dd339dfab9997db024367f4c0a15d020d022755f0383",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M006",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B4_controlled_evaluation.json"
+      ],
+      "details": "相同325MHz/延迟比例下多周期、阻塞、转发、连续取指、JAL优化实测；保留朴素流水线退化。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B4_controlled_evaluation.json": "772a2a9795aee5585b9ee11e40485137feb46d28eff13adf394a8ce673dc9afa"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M007",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B4_controlled_evaluation.json"
+      ],
+      "details": "相同325MHz/延迟比例下多周期、阻塞、转发、连续取指、JAL优化实测；保留朴素流水线退化。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B4_controlled_evaluation.json": "772a2a9795aee5585b9ee11e40485137feb46d28eff13adf394a8ce673dc9afa"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M008",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B3_icache_unit.json"
+      ],
+      "details": "先用命中事件估计供给改善上界；独立256次连续命中512→257周期，整机实际收益另列。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B3_icache_unit.json": "18d7864af59ec18725e01955b905923a2f507a32a266573a134f44b43f10a94b"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M009",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md"
+      ],
+      "details": "RAW总等待减去load-use作为可消除部分的乐观代理，再与实际转发收益比较；不提前使用load数据。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M010",
+      "status": "PASS",
+      "evidence": [
+        "reports/B4_functional_release.json",
+        "reports/B4_functional_pipeline-bad-raw.json",
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md"
+      ],
+      "details": "MEM/WB向EX转发，x0排除、较近生产者优先、load未返回继续阻塞；独立序列与错误互锁反例。",
+      "evidence_sha256": {
+        "reports/B4_functional_release.json": "69bdf792a5b15e0ae599a6a30ae5a66307f191268c056e60d3d637af43d8c34b",
+        "reports/B4_functional_pipeline-bad-raw.json": "d59613b45b18ced9de5e9904d37344c7e1b9e8d6d52e03a1d55359a096d4590d",
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M011",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B4_branchsim_b5-stream-325.json"
+      ],
+      "details": "控制等待代理上界与jal/jalr/ret频率分别加权；ret是jalr子集，重叠/平均等待假设不隐藏。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B4_branchsim_b5-stream-325.json": "66f5585be9b216aabf0a1d9cb687c970ad2cb5ff22f5e11b8de0eef848e4f94e"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M012",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B4_branchsim_b5-stream-325.json",
+        "reports/B4_branchsim_b5-release.json"
+      ],
+      "details": "完整trace与RTL分支计数一致；三种静态策略，六种准确率×三类题设流水线公式及截断输入反例。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B4_branchsim_b5-stream-325.json": "66f5585be9b216aabf0a1d9cb687c970ad2cb5ff22f5e11b8de0eef848e4f94e",
+        "reports/B4_branchsim_b5-release.json": "368f071fa9f568a1d3012e35bf70ed20f7de93692cf11d93f18b55ab06e829e5"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M013",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B4_branchsim_b5-stream-325.json",
+        "reports/B4_branchsim_b5-release.json"
+      ],
+      "details": "完整trace与RTL分支计数一致；三种静态策略，六种准确率×三类题设流水线公式及截断输入反例。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B4_branchsim_b5-stream-325.json": "66f5585be9b216aabf0a1d9cb687c970ad2cb5ff22f5e11b8de0eef848e4f94e",
+        "reports/B4_branchsim_b5-release.json": "368f071fa9f568a1d3012e35bf70ed20f7de93692cf11d93f18b55ab06e829e5"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M014",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B4_branchsim_b5-stream-325.json"
+      ],
+      "details": "控制等待代理上界与jal/jalr/ret频率分别加权；ret是jalr子集，重叠/平均等待假设不隐藏。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B4_branchsim_b5-stream-325.json": "66f5585be9b216aabf0a1d9cb687c970ad2cb5ff22f5e11b8de0eef848e4f94e"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M015",
+      "status": "PASS",
+      "evidence": [
+        "reports/B_performance_analysis.json",
+        "B/B4/NOTES.md",
+        "B/B4/RESULTS.md",
+        "reports/B5_final_timing.json"
+      ],
+      "details": "在128B/8字块/2路缓存的已测325MHz流水线候选中采用转发、连续取指、早期JAL；满足面积。4字块组合成本是筛选估计，更高频率组合未全局搜索。",
+      "evidence_sha256": {
+        "reports/B_performance_analysis.json": "e68e0c54820225ed41920278fb6bc3a5f6bb776ac3bc99a62d916420649c8088",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2",
+        "B/B4/RESULTS.md": "14afeecf5f1dae0e569ec2b1261d6ec5332d43004ed5e1371113f6afad1cf9da",
+        "reports/B5_final_timing.json": "c00192f34923ffdff99dba01ac769b7b51d62a7f7e288fc4f7c23ce64f5594ce"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M016",
+      "status": "PASS",
+      "evidence": [
+        "reports/B4_functional_pipeline-bad-fence.json",
+        "reports/B4_functional_release.json",
+        "B/B4/programs/fence-prefetch.S",
+        "B/B4/NOTES.md"
+      ],
+      "details": "构造流水寄存器保留旧指令的实际反例；修复清空年轻指令并丢弃旧未完成取指，保持AXI响应可完成。",
+      "evidence_sha256": {
+        "reports/B4_functional_pipeline-bad-fence.json": "2213a3cecce6c9ee79ef7ddc3d7eded85a4c9f7190f92148adf2b3a1de7d6f81",
+        "reports/B4_functional_release.json": "69bdf792a5b15e0ae599a6a30ae5a66307f191268c056e60d3d637af43d8c34b",
+        "B/B4/programs/fence-prefetch.S": "32ac2a02e6b6fed85caa8c302b1d81f78a2385dae6e89139a75d2a02794d1bca",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B4-M017",
+      "status": "PASS",
+      "evidence": [
+        "reports/B4_functional_pipeline-bad-fence.json",
+        "reports/B4_functional_release.json",
+        "B/B4/programs/fence-prefetch.S",
+        "B/B4/NOTES.md"
+      ],
+      "details": "构造流水寄存器保留旧指令的实际反例；修复清空年轻指令并丢弃旧未完成取指，保持AXI响应可完成。",
+      "evidence_sha256": {
+        "reports/B4_functional_pipeline-bad-fence.json": "2213a3cecce6c9ee79ef7ddc3d7eded85a4c9f7190f92148adf2b3a1de7d6f81",
+        "reports/B4_functional_release.json": "69bdf792a5b15e0ae599a6a30ae5a66307f191268c056e60d3d637af43d8c34b",
+        "B/B4/programs/fence-prefetch.S": "32ac2a02e6b6fed85caa8c302b1d81f78a2385dae6e89139a75d2a02794d1bca",
+        "B/B4/NOTES.md": "8598cecab81aa4cf020fa018006440a6ac81e38183c1af6eeff3bd90379fedd2"
+      },
+      "source": {
+        "path": "B/B4/sources/B4.md",
+        "sha256": "df1b0d43815c64a94ed8837c151257fa88f320bc631800fc882016acfa214528",
+        "raw_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+        "version": "v26.07"
+      }
+    }
+  ],
+  "scope": "Mandatory public engineering accepted; optional NOT_RUN/TIMEOUT, background and official-process exclusions remain explicit."
+}

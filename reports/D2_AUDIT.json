@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "core_tasks": 2,
+  "scope_records": 3,
+  "records": [
+    {
+      "id": "D2-O001",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "D/D2/NOTES.md",
+        "D/D2/sources/D2.md"
+      ],
+      "details": "MOOC supplement indexed; no claim of completing video courses."
+    },
+    {
+      "id": "D2-M001",
+      "status": "PASS",
+      "evidence": [
+        "D/D2/NOTES.md",
+        "D/runtime/sources/pa/5f9e9322a3fdd920.md"
+      ],
+      "details": "FAQ scope, debugging, manual use and official personal submission boundary documented."
+    },
+    {
+      "id": "D2-M002",
+      "status": "PASS",
+      "evidence": [
+        "reports/D2_expression.json",
+        "reports/D2_sdb.json",
+        "D/D2/NOTES.md",
+        "D/D2/snapshot/manifest.json"
+      ],
+      "details": "PA1 SDB, uint32 expression grammar, actual GCC oracle 10000 cases, watchpoint pool and commit boundary tests, sanitizer runs, and all five required report topics."
+    }
+  ],
+  "report": "D/D2/NOTES.md",
+  "qualification": "Public local engineering requirements only; reference-only background is not claimed completed learning."
+}

@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "divisor": 13,
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 3555191,
+        "instructions": 17204,
+        "ipc": 0.00483912116114,
+        "application_cycles": 2290,
+        "application_instructions": 29,
+        "application_ipc": 0.0126637554585,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 18787,
+        "lsu_requests": 9525,
+        "lsu_responses": 9525,
+        "uart_bytes": 50,
+        "serial_bytes": 50,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 1.328095785,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "dependency_sha256": "c8133b8d5e336cd74edd5c42fcce47665324d747aee007de66807e846144e1e4",
+      "image_sha256": "d117d5c9753642793e7fa6a837c402391a61549931609d77c86f6e1aaaa7cc24"
+    },
+    {
+      "divisor": 27,
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 3555191,
+        "instructions": 17204,
+        "ipc": 0.00483912116114,
+        "application_cycles": 2290,
+        "application_instructions": 29,
+        "application_ipc": 0.0126637554585,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 18787,
+        "lsu_requests": 9525,
+        "lsu_responses": 9525,
+        "uart_bytes": 50,
+        "serial_bytes": 50,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 1.423884724,
+        "uart_divisors": [
+          13,
+          27
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "dependency_sha256": "c8133b8d5e336cd74edd5c42fcce47665324d747aee007de66807e846144e1e4",
+      "image_sha256": "9faeb072f9d07ae64406f61d99fe44956aabaeba324a0056d8110375d8d687ef"
+    },
+    {
+      "divisor": 13,
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 3555191,
+        "instructions": 17204,
+        "ipc": 0.00483912116114,
+        "application_cycles": 2290,
+        "application_instructions": 29,
+        "application_ipc": 0.0126637554585,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 18787,
+        "lsu_requests": 9525,
+        "lsu_responses": 9525,
+        "uart_bytes": 50,
+        "serial_bytes": 50,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 1.398708354,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "dependency_sha256": "c8133b8d5e336cd74edd5c42fcce47665324d747aee007de66807e846144e1e4",
+      "image_sha256": "d117d5c9753642793e7fa6a837c402391a61549931609d77c86f6e1aaaa7cc24"
+    }
+  ],
+  "wrapper_sha256": "03b3a17b483192d8d228c5bc92790244454a805f15559799885ad5260a046b0e",
+  "cause": "The two-stage C->assembly->object wrapper overwrote C-header dependencies during assembly. Changing only e7_config.h therefore left stale UART/timer code. Both dependency sets now target the object and are retained. RealSoCdummy verified13->27->13 changes without touching Csource between switches."
+}

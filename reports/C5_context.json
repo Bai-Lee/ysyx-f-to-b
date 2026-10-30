@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "name": "positive",
+      "status": "PASS",
+      "result": "GOOD_TRAP",
+      "cycles": 4235781,
+      "instructions": 39936,
+      "diff_checked": 39886,
+      "ecalls": 52,
+      "mrets": 52,
+      "uart": "C5_CTE_PASS a=12 b=12\n",
+      "image_sha256": "d5a43c7f64a6809dc2aae1b346fe2b48ac0e67c558bfcfcc8463ae7c5a9ed770",
+      "elf_sha256": "ff09534610051e685b0c01ee353a29e93e98c0844861243512888140707ba23c",
+      "evidence": "artifacts/C5/context/positive"
+    },
+    {
+      "name": "bad-restore",
+      "status": "PASS",
+      "result": "BAD_TRAP",
+      "cycles": 2954627,
+      "instructions": 17744,
+      "diff_checked": 17738,
+      "ecalls": 5,
+      "mrets": 5,
+      "uart": "",
+      "image_sha256": "f8bb6ab17cc459c99beb4a187ca6557a76c77e9dcc8a761043d425f5a5c81e4d",
+      "elf_sha256": "d1bfb4c7e8387ae2a1b116325716acdccb8a69ba52277a391b6d90b756ac2b2f",
+      "evidence": "artifacts/C5/context/bad-restore"
+    }
+  ],
+  "scope": "Two distinct PSRAM stacks and arguments, all16 RV32E GPR slots across52 ECALL/MRET context transfers, stack locals, MIE nesting foundation. Corrupt t0 restore is rejected with explicit programcode95. An earlier s1-corruption attempt disrupted test control flow and was stopped without a correctness conclusion; its logs remain in attempts. No asynchronous interrupt delivery."
+}

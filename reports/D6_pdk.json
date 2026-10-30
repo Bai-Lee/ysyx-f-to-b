@@ -1,0 +1,1588 @@
+{
+  "status": "PASS_TOPOLOGY_AND_LIBRARY_ANALYSIS",
+  "inputs": [
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib",
+      "sha256": "a5fb35bea1c7e8f06d2e93089d48986125731f8e744580adaa4d320283e23988"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/cdl/ics55_LLSC_H7CL.cdl",
+      "sha256": "80bddc3bf97dcea31d7d74339fd4cc3f260c5865f7c797eaef78973e3e338546"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/lef/ics55_LLSC_H7CL.lef",
+      "sha256": "bd565a026483452b54d0e828742f369527660e727b56b58fa08094ae4baa94d5"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/prtech/techLEF/N551P6M.lef",
+      "sha256": "dbc26034f24e7cc4e0b0d620a82fce9f3d9e7f2667cf9ac5f791a7bfd5839ef5"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/IO/ICsprout_55LLULP1233_IO_251013/lef/ICSIOA_N55_3P3_1P6M1TM.lef",
+      "sha256": "a8eace728706072db095c55b787ffe0d0b2c5dbfdad201423078778cf0ffd309"
+    }
+  ],
+  "scope": "NAND/OAI/AOI/ADDF combinational MOS checks; DFF 28-device graph/count and CDL-derived two-latch phase abstraction only. No DFF transistor-transient, analog SPICE timing or layout LVS claim. LIB delays separately interpolated.",
+  "dff_raw_switch_probe": {
+    "status": "FAIL_UNQUALIFIED_MODEL",
+    "reason": "Ideal zero-delay/equal-strength/delayed MOS approximations lost state or produced X; transistor models/capacitances are not present in this PDK export. Failed expectations were not relaxed; preserved in artifacts/D6/pdk/switch-run/attempts and raw_dff_probe_tb.v. Main DFF check explicitly uses the documented phase abstraction.",
+    "required_task": "D6-O013 asks for drawing, transistor count and functional explanation; it does not require analog transient qualification."
+  },
+  "cells": {
+    "NAND2X1H7L": {
+      "area_um2": 1.12,
+      "leakage_nw": 0.434974,
+      "functions": {
+        "Y": "(!A) + (!B)"
+      },
+      "mos_count": 4,
+      "transistors": [
+        {
+          "id": "MMN0",
+          "D": "Y",
+          "G": "B",
+          "S": "net6",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMN1",
+          "D": "net6",
+          "G": "A",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP1",
+          "D": "Y",
+          "G": "B",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP0",
+          "D": "Y",
+          "G": "A",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ],
+      "A_to_Y_at_49ps_10fF": {
+        "cell_rise": 0.08756068767614361,
+        "cell_fall": 0.08856458083442359,
+        "rise_transition": 0.1310713793751333,
+        "fall_transition": 0.13110755328542037
+      },
+      "A_cap_pf": 0.000898206
+    },
+    "NAND2X2H7L": {
+      "area_um2": 1.96,
+      "leakage_nw": 0.750363,
+      "functions": {
+        "Y": "(!A) + (!B)"
+      },
+      "mos_count": 4,
+      "transistors": [
+        {
+          "id": "MMN0",
+          "D": "Y",
+          "G": "B",
+          "S": "net6",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.3,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMN1",
+          "D": "net6",
+          "G": "A",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.3,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP1",
+          "D": "Y",
+          "G": "B",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.38,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP0",
+          "D": "Y",
+          "G": "A",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.38,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ],
+      "A_to_Y_at_49ps_10fF": {
+        "cell_rise": 0.06886312707454277,
+        "cell_fall": 0.06905319033714458,
+        "rise_transition": 0.09404358612515087,
+        "fall_transition": 0.09295762964304771
+      },
+      "A_cap_pf": 0.00151208
+    },
+    "NAND2X4H7L": {
+      "area_um2": 3.36,
+      "leakage_nw": 1.50065,
+      "functions": {
+        "Y": "(!A) + (!B)"
+      },
+      "mos_count": 4,
+      "transistors": [
+        {
+          "id": "MMN0",
+          "D": "Y",
+          "G": "B",
+          "S": "net6",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.6,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMN1",
+          "D": "net6",
+          "G": "A",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.6,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP1",
+          "D": "Y",
+          "G": "B",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.76,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP0",
+          "D": "Y",
+          "G": "A",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.76,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ],
+      "A_to_Y_at_49ps_10fF": {
+        "cell_rise": 0.047594552550658226,
+        "cell_fall": 0.045715969257117656,
+        "rise_transition": 0.05468377342132701,
+        "fall_transition": 0.052147964930455384
+      },
+      "A_cap_pf": 0.00303063
+    },
+    "OAI22X1H7L": {
+      "area_um2": 1.96,
+      "leakage_nw": 0.626032,
+      "functions": {
+        "Y": "(!A0 * !A1) + (!B0 * !B1)"
+      },
+      "mos_count": 8,
+      "transistors": [
+        {
+          "id": "MNM4",
+          "D": "net8",
+          "G": "A1",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MNM3",
+          "D": "net8",
+          "G": "A0",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMN5",
+          "D": "Y",
+          "G": "B0",
+          "S": "net8",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MNM5",
+          "D": "Y",
+          "G": "B1",
+          "S": "net8",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP5",
+          "D": "Y",
+          "G": "A1",
+          "S": "net046",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MPM3",
+          "D": "net046",
+          "G": "A0",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MPM5",
+          "D": "Y",
+          "G": "B1",
+          "S": "net049",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MPM4",
+          "D": "net049",
+          "G": "B0",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ]
+    },
+    "AOI221X1H7L": {
+      "area_um2": 2.52,
+      "leakage_nw": 0.592437,
+      "functions": {
+        "Y": "(!A0 * !B0 * !C0) + (!A0 * !B1 * !C0) + (!A1 * !B0 * !C0) + (!A1 * !B1 * !C0)"
+      },
+      "mos_count": 10,
+      "transistors": [
+        {
+          "id": "MMNM4",
+          "D": "Y",
+          "G": "C0",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMNM3",
+          "D": "net16",
+          "G": "B0",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMNM2",
+          "D": "Y",
+          "G": "B1",
+          "S": "net16",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMNM1",
+          "D": "net17",
+          "G": "A0",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMNM0",
+          "D": "Y",
+          "G": "A1",
+          "S": "net17",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMPM4",
+          "D": "Y",
+          "G": "C0",
+          "S": "net1",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMPM3",
+          "D": "net1",
+          "G": "B1",
+          "S": "net8",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMPM2",
+          "D": "net1",
+          "G": "B0",
+          "S": "net8",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMPM1",
+          "D": "net8",
+          "G": "A1",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMPM0",
+          "D": "net8",
+          "G": "A0",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ]
+    },
+    "DFFX1H7L": {
+      "area_um2": 6.44,
+      "leakage_nw": 3.91399,
+      "functions": {
+        "Q": "IQ",
+        "QN": "IQN"
+      },
+      "mos_count": 28,
+      "transistors": [
+        {
+          "id": "XI2_MMN0",
+          "D": "net33",
+          "G": "CKP",
+          "S": "XI2_net18",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI2_MMN1",
+          "D": "XI2_net18",
+          "G": "net46",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI2_MMP1",
+          "D": "XI2_net024",
+          "G": "net46",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI2_MMP0",
+          "D": "net33",
+          "G": "CKN",
+          "S": "XI2_net024",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI6_MMN0",
+          "D": "net33",
+          "G": "CKN",
+          "S": "XXI6_net18",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.19999999999999998,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI6_MMN1",
+          "D": "XXI6_net18",
+          "G": "D",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.19999999999999998,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI6_MMP1",
+          "D": "XXI6_net024",
+          "G": "D",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.28,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI6_MMP0",
+          "D": "net33",
+          "G": "CKP",
+          "S": "XXI6_net024",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.28,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI3_MMN0",
+          "D": "net25",
+          "G": "CKP",
+          "S": "XI3_net18",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.22,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI3_MMN1",
+          "D": "XI3_net18",
+          "G": "net46",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.22,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI3_MMP1",
+          "D": "XI3_net024",
+          "G": "net46",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.3,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI3_MMP0",
+          "D": "net25",
+          "G": "CKN",
+          "S": "XI3_net024",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.3,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI4_MMN0",
+          "D": "net25",
+          "G": "CKN",
+          "S": "XI4_net18",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI4_MMN1",
+          "D": "XI4_net18",
+          "G": "net9",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI4_MMP1",
+          "D": "XI4_net024",
+          "G": "net9",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI4_MMP0",
+          "D": "net25",
+          "G": "CKP",
+          "S": "XI4_net024",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI1_MMN0",
+          "D": "net46",
+          "G": "net33",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.19999999999999998,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI1_MMP0",
+          "D": "net46",
+          "G": "net33",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.28,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI0_MMN0",
+          "D": "CKP",
+          "G": "CKN",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.19999999999999998,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI0_MMP0",
+          "D": "CKP",
+          "G": "CKN",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.28,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI12_MMN0",
+          "D": "Q",
+          "G": "net25",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.24,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI12_MMP0",
+          "D": "Q",
+          "G": "net25",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.3,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI10_MMN0",
+          "D": "net9",
+          "G": "net25",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.22,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI10_MMP0",
+          "D": "net9",
+          "G": "net25",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.3,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI5_MMN0",
+          "D": "QN",
+          "G": "net9",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.24,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI5_MMP0",
+          "D": "QN",
+          "G": "net9",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.3,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI4_MMN0",
+          "D": "CKN",
+          "G": "CK",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.19999999999999998,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI4_MMP0",
+          "D": "CKN",
+          "G": "CK",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.28,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ]
+    },
+    "ADDFX1H7L": {
+      "area_um2": 6.72,
+      "leakage_nw": 2.35661,
+      "functions": {
+        "CO": "(A * B) + (A * CI) + (B * CI)",
+        "S": "(A * B * CI) + (A * !B * !CI) + (!A * B * !CI) + (!A * !B * CI)"
+      },
+      "mos_count": 28,
+      "transistors": [
+        {
+          "id": "MMM12",
+          "D": "net90",
+          "G": "A",
+          "S": "net29",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM10",
+          "D": "net29",
+          "G": "net62",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM2",
+          "D": "net9",
+          "G": "B",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM11",
+          "D": "net90",
+          "G": "B",
+          "S": "net29",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM6",
+          "D": "net25",
+          "G": "CI",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM13",
+          "D": "net90",
+          "G": "CI",
+          "S": "net29",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM7",
+          "D": "net62",
+          "G": "A",
+          "S": "net25",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM8",
+          "D": "net62",
+          "G": "B",
+          "S": "net25",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM25",
+          "D": "net49",
+          "G": "B",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.23,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM23",
+          "D": "net90",
+          "G": "A",
+          "S": "net53",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.23,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM0",
+          "D": "net62",
+          "G": "A",
+          "S": "net9",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM22",
+          "D": "net53",
+          "G": "CI",
+          "S": "net49",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.23,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM20",
+          "D": "net102",
+          "G": "CI",
+          "S": "net110",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.18,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM3",
+          "D": "net66",
+          "G": "B",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM24",
+          "D": "net110",
+          "G": "B",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.18,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM5",
+          "D": "net62",
+          "G": "A",
+          "S": "net77",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM14",
+          "D": "net93",
+          "G": "net62",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM16",
+          "D": "net90",
+          "G": "A",
+          "S": "net93",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM1",
+          "D": "net62",
+          "G": "A",
+          "S": "net66",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM17",
+          "D": "net90",
+          "G": "CI",
+          "S": "net93",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM15",
+          "D": "net90",
+          "G": "B",
+          "S": "net93",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM9",
+          "D": "net62",
+          "G": "B",
+          "S": "net77",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM21",
+          "D": "net90",
+          "G": "A",
+          "S": "net102",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.18,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMM4",
+          "D": "net77",
+          "G": "CI",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI2_MMN0",
+          "D": "S",
+          "G": "net90",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI2_MMP0",
+          "D": "S",
+          "G": "net90",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI2_MMN0",
+          "D": "CO",
+          "G": "net62",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI2_MMP0",
+          "D": "CO",
+          "G": "net62",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ]
+    },
+    "XOR2X1H7L": {
+      "area_um2": 2.8,
+      "leakage_nw": 2.12759,
+      "functions": {
+        "Y": "(A * !B) + (!A * B)"
+      },
+      "mos_count": 12,
+      "transistors": [
+        {
+          "id": "XI0_MMN0",
+          "D": "BN",
+          "G": "AN",
+          "S": "net19",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI0_MMP0",
+          "D": "BN",
+          "G": "A",
+          "S": "net19",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI5_MMN0",
+          "D": "Y",
+          "G": "net19",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI5_MMP0",
+          "D": "Y",
+          "G": "net19",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI1_MMN0",
+          "D": "BN",
+          "G": "B",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI1_MMP0",
+          "D": "BN",
+          "G": "B",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI4_MMN0",
+          "D": "AN",
+          "G": "A",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI4_MMP0",
+          "D": "AN",
+          "G": "A",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI3_MMN0",
+          "D": "net19",
+          "G": "A",
+          "S": "XI3_net18",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI3_MMN1",
+          "D": "XI3_net18",
+          "G": "BN",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI3_MMP1",
+          "D": "XI3_net024",
+          "G": "BN",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XI3_MMP0",
+          "D": "net19",
+          "G": "AN",
+          "S": "XI3_net024",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ]
+    },
+    "AND2X1H7L": {
+      "area_um2": 1.68,
+      "leakage_nw": 0.698496,
+      "functions": {
+        "Y": "(A * B)"
+      },
+      "mos_count": 6,
+      "transistors": [
+        {
+          "id": "MMN0",
+          "D": "net26",
+          "G": "B",
+          "S": "net6",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMN1",
+          "D": "net6",
+          "G": "A",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MPM0",
+          "D": "net26",
+          "G": "B",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP0",
+          "D": "net26",
+          "G": "A",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI2_MMN0",
+          "D": "Y",
+          "G": "net26",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI2_MMP0",
+          "D": "Y",
+          "G": "net26",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ]
+    },
+    "OR2X1H7L": {
+      "area_um2": 1.68,
+      "leakage_nw": 1.07734,
+      "functions": {
+        "Y": "(A) + (B)"
+      },
+      "mos_count": 6,
+      "transistors": [
+        {
+          "id": "MMN2",
+          "D": "net21",
+          "G": "B",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMN0",
+          "D": "net21",
+          "G": "A",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.15,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP2",
+          "D": "net21",
+          "G": "B",
+          "S": "net016",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "MMP1",
+          "D": "net016",
+          "G": "A",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.19,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI4_MMN0",
+          "D": "Y",
+          "G": "net21",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI4_MMP0",
+          "D": "Y",
+          "G": "net21",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ]
+    },
+    "INVX1H7L": {
+      "area_um2": 0.84,
+      "leakage_nw": 0.490446,
+      "functions": {
+        "Y": "!A"
+      },
+      "mos_count": 2,
+      "transistors": [
+        {
+          "id": "XXI0_MMN0",
+          "D": "Y",
+          "G": "A",
+          "S": "VSS",
+          "B": "VSS",
+          "model": "nm1p2_lvt_lp",
+          "type": "n",
+          "W_um": 0.21,
+          "L_um": 0.06,
+          "m": 1
+        },
+        {
+          "id": "XXI0_MMP0",
+          "D": "Y",
+          "G": "A",
+          "S": "VDD",
+          "B": "VDD",
+          "model": "pm1p2_lvt_lp",
+          "type": "p",
+          "W_um": 0.27,
+          "L_um": 0.06,
+          "m": 1
+        }
+      ]
+    }
+  },
+  "fulladder": {
+    "dedicated_area_um2": 6.72,
+    "dedicated_mos": 28,
+    "gate_formula": "2 XOR2X1H7L + 2 AND2X1H7L + 1 OR2X1H7L; S=(A xor B) xor CI; CO=A B + CI (A xor B)",
+    "gate_area_um2": 10.639999999999999,
+    "gate_mos": 42
+  },
+  "layers": {
+    "MET1": {
+      "DIRECTION": "HORIZONTAL",
+      "PITCH": "0.2 0.2",
+      "WIDTH": "0.09"
+    },
+    "MET2": {
+      "DIRECTION": "VERTICAL",
+      "PITCH": "0.2 0.2",
+      "WIDTH": "0.1"
+    },
+    "MET3": {
+      "DIRECTION": "HORIZONTAL",
+      "PITCH": "0.2 0.2",
+      "WIDTH": "0.1"
+    },
+    "MET4": {
+      "DIRECTION": "VERTICAL",
+      "PITCH": "0.2 0.2",
+      "WIDTH": "0.1"
+    },
+    "MET5": {
+      "DIRECTION": "HORIZONTAL",
+      "PITCH": "0.2 0.2",
+      "WIDTH": "0.1"
+    },
+    "T4M2": {
+      "DIRECTION": "VERTICAL",
+      "PITCH": "0.8 0.8",
+      "WIDTH": "0.4"
+    },
+    "RDL": {
+      "DIRECTION": "HORIZONTAL",
+      "PITCH": "5 5",
+      "WIDTH": "3"
+    }
+  },
+  "track_count": 6.999999999999999,
+  "site_core7_um": [
+    0.2,
+    1.4
+  ],
+  "smallest_filler": [
+    0.27999999999999997,
+    "FILLER1H7L",
+    [
+      0.2,
+      1.4
+    ]
+  ],
+  "nand_size_um": [
+    0.8,
+    1.4
+  ],
+  "io_example": {
+    "name": "P65_1233_PBMUX",
+    "size_um": [
+      65.0,
+      130.0
+    ]
+  },
+  "cell_count": 747,
+  "category_counts": {
+    "combinational": 578,
+    "buffer": 45,
+    "sequential": 77,
+    "physical": 4,
+    "clock": 10,
+    "scan": 31,
+    "tie": 2
+  }
+}

@@ -1,0 +1,1 @@
+module address_control #(parameter integer WORDS=8)(input [31:0] address,input [3:0] beat,input cached,burst,output [31:0] y,output good); assign y=cached?((address&~32'(WORDS*4-1))+(burst?32'b0:{26'b0,beat,2'b0})):address;wire [31:0] reference=cached?(((address>>(2+$clog2(WORDS)))<<(2+$clog2(WORDS)))+(burst?32'b0:{26'b0,beat,2'b0})):address;assign good=(y==reference);endmodule

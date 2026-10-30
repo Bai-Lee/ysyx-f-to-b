@@ -1,0 +1,227 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><title>Make tmux Pretty and Usable - Ham Vocke</title><meta charset="UTF-8"><meta name="author" content="Ham Vocke"><meta name="description" content="Customize the look and feel of tmux"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="https://hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/"><link rel="me" href="https://hachyderm.io/@ham"><link rel="alternate" type="application/rss+xml" title="Full RSS Feed" href="https://hamvocke.com/feed.xml"><link rel="alternate" type="application/rss+xml" title="Software Engineering RSS Feed" href="https://hamvocke.com/feed-tech.xml"><link rel="alternate" type="application/rss+xml" title="Personal RSS Feed" href="https://hamvocke.com/feed-personal.xml"><link rel="alternate" type="application/rss+xml" title="Microblog RSS Feed" href="https://hamvocke.com/feed-moments.xml"><link rel="webmention" href="https://webmention.io/hamvocke.com/webmention"><link rel="sitemap" href="/sitemap-index.xml"><meta content="Make tmux Pretty and Usable - Ham Vocke" property="og:title"><meta content="Customize the look and feel of tmux" property="og:description"><meta content="https://hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/" property="og:url"><meta content="https://hamvocke.com/_astro/tmux-custom.JReQpud4.png" property="og:image"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Make tmux Pretty and Usable - Ham Vocke"><meta name="twitter:description" content="Customize the look and feel of tmux"><meta name="twitter:image" content="https://hamvocke.com/_astro/tmux-custom.JReQpud4.png"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><script defer data-domain="hamvocke.com" src="/js/script.js"></script><script>
+      ((window.plausible =
+        window.plausible ||
+        function () {
+          (plausible.q = plausible.q || []).push(arguments);
+        }),
+        (plausible.init =
+          plausible.init ||
+          function (i) {
+            plausible.o = i || {};
+          }));
+      plausible.init({
+        endpoint: "/api/event",
+      });
+    </script><style>@font-face{font-family:"Lilita One-75099238f5094a06";src:url("/_astro/fonts/c5e83a764c2a33a3.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:400;font-style:normal;}@font-face{font-family:"Lilita One-75099238f5094a06 fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:96.007%;ascent-override:96.1388%;descent-override:22.915%;line-gap-override:0%;}:root{--font-display:"Lilita One-75099238f5094a06","Lilita One-75099238f5094a06 fallback: Arial",sans-serif;}</style><style>@font-face{font-family:"Germania One-4e43833f700bbae3";src:url("/_astro/fonts/c67256a33ddc925e.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:400;font-style:normal;}@font-face{font-family:"Germania One-4e43833f700bbae3 fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:88.3803%;ascent-override:103.0773%;descent-override:28.2869%;line-gap-override:0%;}:root{--font-terminal:"Germania One-4e43833f700bbae3","Germania One-4e43833f700bbae3 fallback: Arial",sans-serif;}</style><link rel="stylesheet" href="/_astro/Layout.C4qKNUvc.css"><style>.tag[data-astro-cid-7t72llso]{background:var(--accent-transparent);border-radius:var(--border-radius);padding:.2rem .6rem;display:flex}
+article aside{border:1px solid var(--text);margin:1rem 0;padding:0 1rem;font-size:.9rem;display:inline-block}article aside,article p img{border-radius:var(--border-radius)}article p img{max-width:100%;height:auto;margin:var(--block-element-bottom-margin) auto}.footnotes{font-size:.833rem}h2 a,h2 a:visited,h3 a,h3 a:visited,h4 a,h4 a:visited,h5 a,h5 a:visited,h6 a,h6 a:visited{color:var(--text);-webkit-text-decoration:none;text-decoration:none}
+header[data-astro-cid-jo55ryrt]{background:oklch(from var(--accent) l c h/.05);color:var(--text);border-radius:3rem;max-width:100ch;margin:2rem auto 5rem;padding:3rem;display:block}@media (width>=640px){header[data-astro-cid-jo55ryrt]{margin-top:4rem;margin-bottom:6rem;padding:4rem}}.dark header[data-astro-cid-jo55ryrt]{color:var(--accent);background:0 0;padding:3rem 0}.dark header[data-astro-cid-jo55ryrt] h1[data-astro-cid-jo55ryrt]{padding-bottom:1rem;font-size:4rem;line-height:1em;-webkit-mask-image:url(/img/paper.webp);mask-image:url(/img/paper.webp);mask-mode:luminance}@media (width>=640px){.dark header[data-astro-cid-jo55ryrt]{padding:4rem 2em}.dark header[data-astro-cid-jo55ryrt] h1[data-astro-cid-jo55ryrt]{font-size:5.5rem}}header[data-astro-cid-jo55ryrt] h1[data-astro-cid-jo55ryrt]{letter-spacing:-.05em;margin-top:0;font-size:3rem;line-height:1em}@media (width>=640px){header[data-astro-cid-jo55ryrt] h1[data-astro-cid-jo55ryrt]{font-size:5rem}}.intro[data-astro-cid-jo55ryrt]{font-family:var(--font-family-display);font-size:1.3rem;line-height:1em}@media (width>=640px){.intro[data-astro-cid-jo55ryrt]{font-size:1.7rem}}.metadata[data-astro-cid-jo55ryrt]{flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem;width:100%;font-size:.8rem;display:flex}.tags[data-astro-cid-jo55ryrt]{gap:.25rem;display:inline-flex}.draftWarning[data-astro-cid-jo55ryrt]{background:var(--accent-transparent);border:1px solid var(--accent);border-radius:var(--border-radius);margin:1rem 0;padding:1rem}main[data-astro-cid-jo55ryrt]{max-width:var(--content-column-width);margin:auto}article[data-astro-cid-jo55ryrt] .footnotes{font-size:.833rem}
+</style></head><body data-astro-cid-ju4pidww><header data-astro-cid-nen7h5rs><nav data-astro-cid-nen7h5rs><a href="/" class="logo" data-astro-cid-nen7h5rs><div class="piggie" data-astro-cid-nen7h5rs><img src="/img/beerpig.svg" alt="Beer Pig" data-astro-cid-nen7h5rs></div><span class="name" data-astro-cid-nen7h5rs>Ham<br data-astro-cid-nen7h5rs>Vocke</span></a><button aria-label="Menu" aria-expanded="false" aria-controls="menu" id="toggle" data-astro-cid-nen7h5rs><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true" data-astro-cid-nen7h5rs="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button><ul id="menu" class="hidden" data-astro-cid-nen7h5rs><li data-astro-cid-nen7h5rs><a href="/blog" class="active" data-astro-cid-nen7h5rs>Blog</a></li><li data-astro-cid-nen7h5rs><a href="/moments" class data-astro-cid-nen7h5rs>Moments</a></li><li data-astro-cid-nen7h5rs><a href="/about" class data-astro-cid-nen7h5rs>About</a></li><li data-astro-cid-nen7h5rs><a href="/now" class data-astro-cid-nen7h5rs>Now</a></li><li class="theme" data-astro-cid-nen7h5rs><div class="toggle" data-astro-cid-cyp3wpwp><button id="theme-toggle" aria-label="toggle theme" data-astro-cid-cyp3wpwp><div class="sun" data-astro-cid-cyp3wpwp><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" aria-hidden="true" data-astro-cid-cyp3wpwp="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></div><div class="moon" data-astro-cid-cyp3wpwp><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon" aria-hidden="true" data-astro-cid-cyp3wpwp="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></div></button><button id="flashlight-toggle" data-astro-cid-cyp3wpwp><span class="flashlight-on" data-astro-cid-cyp3wpwp><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flashlight" aria-hidden="true" data-astro-cid-cyp3wpwp="true"><path d="M12 13v1"></path><path d="M17 2a1 1 0 0 1 1 1v4a3 3 0 0 1-.6 1.8l-.6.8A4 4 0 0 0 16 12v8a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-8a4 4 0 0 0-.8-2.4l-.6-.8A3 3 0 0 1 6 7V3a1 1 0 0 1 1-1z"></path><path d="M6 6h12"></path></svg></span><span class="flashlight-off" data-astro-cid-cyp3wpwp><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flashlight-off" aria-hidden="true" data-astro-cid-cyp3wpwp="true"><path d="M11.652 6H18"></path><path d="M12 13v1"></path><path d="M16 16v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-8a4 4 0 0 0-.8-2.4l-.6-.8A3 3 0 0 1 6 7V6"></path><path d="m2 2 20 20"></path><path d="M7.649 2H17a1 1 0 0 1 1 1v4a3 3 0 0 1-.6 1.8l-.6.8a4 4 0 0 0-.55 1.007"></path></svg></span></button></div><script>
+  const theme = loadFromStorage(
+    "theme",
+    (() => {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+      }
+
+      return "light";
+    })(),
+  );
+
+  const flashlight = loadFromStorage("flashlight", "flashlight");
+
+  if (theme === "light") {
+    document.documentElement.classList.remove("dark");
+    document.documentElement.classList.add("light");
+  } else {
+    document.documentElement.classList.remove("light");
+    document.documentElement.classList.add("dark");
+  }
+
+  document.documentElement.classList.add(flashlight);
+
+  window.localStorage.setItem("theme", theme);
+  window.localStorage.setItem("flashlight", flashlight);
+
+  function loadFromStorage(key, defaultValue) {
+    if (typeof localStorage !== "undefined" && localStorage.getItem(key)) {
+      return localStorage.getItem(key);
+    }
+
+    return defaultValue;
+  }
+
+  const handleToggleClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle("dark");
+    element.classList.toggle("light");
+
+    const isDark = element.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  };
+
+  const handleFlashlightClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle("flashlight");
+    element.classList.toggle("no-flashlight");
+
+    localStorage.setItem(
+      "flashlight",
+      flashlight === "flashlight" ? "no-flashlight" : "flashlight",
+    );
+  };
+
+  document
+    .getElementById("theme-toggle")
+    .addEventListener("click", handleToggleClick);
+
+  document
+    .getElementById("flashlight-toggle")
+    .addEventListener("click", handleFlashlightClick);
+</script></li></ul></nav></header><script>
+  const menuToggle = document.getElementById("toggle");
+  const menu = document.getElementById("menu");
+
+  function toggleMenu() {
+    const open = JSON.parse(menuToggle.getAttribute("aria-expanded"));
+    menuToggle.setAttribute("aria-expanded", !open);
+    menu.classList.toggle("hidden");
+    document.removeEventListener("click", closeMenuOnOutsideClick);
+
+    if (!open) {
+      // only attach document listener when we actually show the menu
+      document.addEventListener("click", closeMenuOnOutsideClick);
+    }
+  }
+
+  function closeMenuOnOutsideClick(event) {
+    const path = event.composedPath();
+    if (path.some((elem) => elem.id === "menu" || elem.id === "toggle")) {
+      return;
+    }
+    toggleMenu();
+  }
+
+  menuToggle.addEventListener("click", toggleMenu);
+</script><article itemscope itemtype="https://schema.org/BlogPosting" data-astro-cid-jo55ryrt><header data-astro-cid-jo55ryrt><h1 itemprop="name" data-astro-cid-jo55ryrt>Make tmux Pretty and Usable</h1><p class="intro" data-astro-cid-jo55ryrt>tmux has its flaws when you use its vanilla configuration. I&#39;ll show you how you can customize tmux so that it fits your needs, is a little more comfortable to use and pretty to look at.</p><div class="metadata" data-astro-cid-jo55ryrt><time datetime="2015-08-17T00:00:00.000Z" itemprop="datePublished">Aug 17, 2015</time><div data-astro-cid-jo55ryrt>Last updated on <time datetime="2024-10-02T00:00:00.000Z" itemprop="dateModified">Oct 2, 2024</time></div><span itemprop="keywords" class="tags" data-astro-cid-jo55ryrt><span class="tag" data-astro-cid-7t72llso><a href="/tags/command-line" data-astro-cid-7t72llso>command-line </a></span></span></div></header><main itemprop="articleBody" data-astro-cid-jo55ryrt><p>In my <a href="/blog/a-quick-and-easy-guide-to-tmux">previous blog post</a> I gave a quick and easy introduction to tmux and explained how to use tmux with a basic configuration.</p>
+<p>If you’ve followed that guide you might have had a feeling that many people have when working with tmux for the first time: “These key combinations are really awkward!”. Rest assured, you’re not alone. Judging from the copious blog posts and dotfiles repos on GitHub there are many people out there who feel the urge to make tmux behave a little different; to make it more comfortable to use.</p>
+<p>And actually it’s quite easy to customize the look and feel of tmux. Let me tell you something about the basics of customizing tmux and share some of the configurations I find most useful.</p>
+<h2 id="customizing-tmux">Customizing tmux</h2>
+<p>Customizing tmux is as easy as editing a text file. Tmux uses a file called <code>tmux.conf</code> to store its configuration. If you store that file as <code>~/.tmux.conf</code> (<strong>Note:</strong> there’s a period as the first character in the file name. It’s a hidden file) tmux will pick this configuration file for your current user. If you want to share a configuration for multiple users you can also put your <code>tmux.conf</code> into a system-wide directory. The location of this directory will be different across different operating systems. The man page (<code>man tmux</code>) will tell you the exact location, just have a look at documentation for the <code>-f</code> parameter.</p>
+<h3 id="less-awkward-prefix-keys">Less awkward prefix keys</h3>
+<p>Probably the most common change among tmux users is to change the <strong>prefix</strong> from the rather awkward <code>C-b</code> to something that’s a little more accessible. Personally I’m using <code>C-a</code> instead but note that this might interfere with bash’s “go to beginning of line” command<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup>. On top of the <code>C-a</code> binding I’ve also remapped my Caps Lock key to act as <kbd>Ctrl</kbd> since I’m not using Caps Lock anyways. This allows me to nicely trigger my prefix key combo.</p>
+<p>To change your prefix from <code>C-b</code> to <code>C-a</code>, simply add following lines to your <code>tmux.conf</code>:</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span># remap prefix from 'C-b' to 'C-a'</span></span>
+<span class="line"><span>unbind C-b</span></span>
+<span class="line"><span>set-option -g prefix C-a</span></span>
+<span class="line"><span>bind-key C-a send-prefix</span></span></code></pre>
+<h3 id="intuitive-split-commands">Intuitive Split Commands</h3>
+<p>Another thing I personally find quite difficult to remember is the pane splitting commands.<code>"</code> to split vertically and <code>%</code> to split horizontally just doesn’t work for my brain. I find it helpful to have use characters that resemble a visual representation of the split, so I chose <code>|</code> and <code>-</code> for splitting panes horizontally and vertically:</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span># split panes using | and -</span></span>
+<span class="line"><span>bind | split-window -h</span></span>
+<span class="line"><span>bind - split-window -v</span></span>
+<span class="line"><span>unbind '"'</span></span>
+<span class="line"><span>unbind %</span></span></code></pre>
+<h3 id="easy-config-reloads">Easy Config Reloads</h3>
+<p>Since I’m experimenting quite often with my <code>tmux.conf</code> I want to reload the config easily. This is why I have a command to reload my config on <code>r</code>:</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span># reload config file (change file location to your the tmux.conf you want to use)</span></span>
+<span class="line"><span>bind r source-file ~/.tmux.conf</span></span></code></pre>
+<h3 id="fast-pane-switching">Fast Pane-Switching</h3>
+<p>Switching between panes is one of the most frequent tasks when using tmux. Therefore it should be as easy as possible. I’m not quite fond of triggering the prefix key all the time. I want to be able to simply say <code>M-&lt;direction&gt;</code> to go where I want to go (remember: <code>M</code> is for <code>Meta</code>, which is usually your <code>Alt</code> key). With this modification I can simply press <code>Alt-left</code> to go to the left pane (and other directions respectively):</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span># switch panes using Alt-arrow without prefix</span></span>
+<span class="line"><span>bind -n M-Left select-pane -L</span></span>
+<span class="line"><span>bind -n M-Right select-pane -R</span></span>
+<span class="line"><span>bind -n M-Up select-pane -U</span></span>
+<span class="line"><span>bind -n M-Down select-pane -D</span></span></code></pre>
+<h3 id="mouse-mode">Mouse mode</h3>
+<p>Although tmux clearly focuses on keyboard-only usage (and this is certainly the most efficient way of interacting with your terminal) it can be helpful to enable mouse interaction with tmux. This is especially helpful if you find yourself in a situation where others have to work with your tmux config and naturally don’t have a clue about your key bindings or tmux in general. Pair Programming might be one of those occasions where this happens quite frequently.</p>
+<p>Enabling mouse mode allows you to select windows and different panes by simply clicking and to resize panes by dragging their borders around. I find it pretty convenient and it doesn’t get in my way often, so I usually enable it:</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span># Enable mouse control (clickable windows, panes, resizable panes)</span></span>
+<span class="line"><span>set -g mouse on</span></span></code></pre>
+<h3 id="stop-renaming-windows-automatically">Stop Renaming Windows Automatically</h3>
+<p>I like to give my tmux windows custom names using the <code>,</code> key. This helps me naming my windows according to the context they’re focusing on. By default tmux will update the window title automatically depending on the last executed command within that window. In order to prevent tmux from overriding my wisely chosen window names I want to suppress this behavior:</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span># don't rename windows automatically</span></span>
+<span class="line"><span>set-option -g allow-rename off</span></span></code></pre>
+<h2 id="changing-the-look-of-tmux">Changing the Look of tmux</h2>
+<p>Changing the colors and design of tmux is a little more complex than what I’ve presented so far. As tmux allows you to tweak the appearance of a lot of elements (e.g. the borders of panes, your statusbar and individual elements of it, messages), you’ll need to add a few options to get a consistent look and feel. You can make this as simple or as elaborate as you like. Tmux’s <code>man</code> page (specifically the <code>STYLES</code> section) contains more information about what you can tweak and how you can tweak it.</p>
+<p>Depending on your color scheme your resulting tmux will look something like this:</p>
+<p><img alt="themed tmux" loading="lazy" decoding="async" width="1282" height="788" src="/_astro/tmux-custom.JReQpud4_1TUvCB.webp"></p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span># DESIGN TWEAKS</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># don't do anything when a 'bell' rings</span></span>
+<span class="line"><span>set -g visual-activity off</span></span>
+<span class="line"><span>set -g visual-bell off</span></span>
+<span class="line"><span>set -g visual-silence off</span></span>
+<span class="line"><span>setw -g monitor-activity off</span></span>
+<span class="line"><span>set -g bell-action none</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># clock mode</span></span>
+<span class="line"><span>setw -g clock-mode-colour yellow</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># copy mode</span></span>
+<span class="line"><span>setw -g mode-style 'fg=black bg=red bold'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># panes</span></span>
+<span class="line"><span>set -g pane-border-style 'fg=red'</span></span>
+<span class="line"><span>set -g pane-active-border-style 'fg=yellow'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># statusbar</span></span>
+<span class="line"><span>set -g status-position bottom</span></span>
+<span class="line"><span>set -g status-justify left</span></span>
+<span class="line"><span>set -g status-style 'fg=red'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>set -g status-left ''</span></span>
+<span class="line"><span>set -g status-left-length 10</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>set -g status-right-style 'fg=black bg=yellow'</span></span>
+<span class="line"><span>set -g status-right '%Y-%m-%d %H:%M '</span></span>
+<span class="line"><span>set -g status-right-length 50</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>setw -g window-status-current-style 'fg=black bg=red'</span></span>
+<span class="line"><span>setw -g window-status-current-format ' #I #W #F '</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>setw -g window-status-style 'fg=red bg=black'</span></span>
+<span class="line"><span>setw -g window-status-format ' #I #[fg=white]#W #[fg=yellow]#F '</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>setw -g window-status-bell-style 'fg=yellow bg=red bold'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># messages</span></span>
+<span class="line"><span>set -g message-style 'fg=yellow bg=red bold'</span></span></code></pre>
+<p>In the snippet above, I’m using your terminal’s default colors (by using the named colors, like <code>red</code>, <code>yellow</code> or <code>black</code>). This allows tmux to play nicely with whatever color theme you have set for your terminal. Some prefer to use a broader range of colors for their terminals and tmux color schemes. If you don’t want to use your terminal default colors but instead want to define colors from a 256 colors range, you can use <code>colour0</code> to <code>colour256</code> instead of <code>red</code>, <code>cyan</code>, and so on when defining your colors in your <code>tmux.conf</code>.</p>
+<blockquote>
+<p><strong>Looking for a nice color scheme for your terminal?</strong></p>
+<p>If you’re looking for a nice color scheme for your terminal I recommend to check out my very own <a href="https://rootloops.sh">Root Loops</a>. With Root Loops you can easily design a personal, awesome-looking terminal color scheme and stand out from all the other folks using the same boring-ass color schemes everyone else is using.</p>
+</blockquote>
+<h2 id="further-resources">Further Resources</h2>
+<p>There are plenty of resources out there where you can find people presenting their tmux configurations. GitHub and other code hosting services tend to be a great source. Simply search for <em>“tmux.conf”</em> or repos called <em>“dotfiles”</em> to find a vast amount of configurations that are out there. Some people share their configuration on their blog. Reddit might have a few subreddits that could have useful inspiration, too (there’s <code>/r/dotfiles</code> and <code>/r/unixporn</code>, for example).</p>
+<p>You can find my complete <code>tmux.conf</code> (along with other configuration files I’m using on my systems) on my personal <a href="https://github.com/hamvocke/dotfiles">dotfiles repo</a> on GitHub.</p>
+<p>If you want to dive deeper into how you can customize tmux, the canonical source of truth is tmux’s <code>man</code> page (simply type <code>man tmux</code> to get there). You should also take a look at the elaborate <a href="https://github.com/tmux/tmux/wiki">tmux wiki</a> and see their <a href="https://github.com/tmux/tmux/wiki/Getting-Started#configuring-tmux">Configuring tmux</a> section if this blog post was too shallow for your needs. Both will contain up-to-date information about each and every tiny thing you can tweak to make your tmux experience truly yours. Have fun!</p>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>you can still invoke “go to beginning of line” by typing <code>C-a C-a</code> <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
+</main></article><footer data-astro-cid-jo6i4kqk><ul class="links" data-astro-cid-jo6i4kqk><li data-astro-cid-jo6i4kqk><a href="#top" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg> Back to top</a></li><li data-astro-cid-jo6i4kqk><a href="/feeds" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg> RSS Feeds</a></li><li data-astro-cid-jo6i4kqk><a href="mailto:ham@hamvocke.com" rel="me" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg> Say "hi"!</a></li><li data-astro-cid-jo6i4kqk><a href="https://hachyderm.io/@ham" rel="me" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg> Mastodon</a></li><li data-astro-cid-jo6i4kqk><a href="https://github.com/hamvocke" rel="me" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg> Github</a></li><li data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/in/hamvocke/" rel="me" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg> LinkedIn</a></li></ul><p data-astro-cid-jo6i4kqk>&copy; 2014-2026 Hermann "Ham" Vocke</p></footer><div class="spotlight" data-astro-cid-ju4pidww></div></body></html><script>
+  const defaultSpotlightSize = 200;
+  const cursor = document.querySelector(".spotlight");
+
+  const setCssProp = (name, value) =>
+    document.documentElement.style.setProperty(name, value);
+
+  setCssProp("--spotlight-size", `${defaultSpotlightSize}px`);
+
+  document.addEventListener("mousemove", (event) => {
+    cursor.style.left = `${event.clientX}px`;
+    cursor.style.top = `${event.clientY}px`;
+  });
+
+  document.addEventListener("click", () => {
+    setCssProp("--spotlight-size", `${defaultSpotlightSize * 2}px`);
+
+    setTimeout(
+      () => setCssProp("--spotlight-size", `${defaultSpotlightSize}px`),
+      1500,
+    );
+  });
+</script>

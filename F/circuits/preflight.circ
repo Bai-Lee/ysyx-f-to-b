@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="4.0.0" version="1.0">
+  <lib desc="#Wiring" name="0"/><lib desc="#Gates" name="1"/>
+  <main name="control_and"/>
+  <circuit name="control_and">
+    <a name="appearance" val="classic"/>
+    <comp lib="0" loc="(100,80)" name="Pin"><a name="label" val="A"/></comp>
+    <comp lib="0" loc="(100,120)" name="Pin"><a name="label" val="B"/></comp>
+    <comp lib="1" loc="(200,100)" name="AND Gate"><a name="inputs" val="2"/></comp>
+    <comp lib="0" loc="(250,100)" name="Pin"><a name="facing" val="west"/><a name="type" val="output"/><a name="label" val="Y"/></comp>
+    <wire from="(100,80)" to="(150,80)"/><wire from="(100,120)" to="(150,120)"/><wire from="(200,100)" to="(250,100)"/>
+  </circuit>
+</project>

@@ -1,0 +1,51 @@
+.section .text.context_probe,"ax",@progbits
+.balign 4
+.global context_probe
+.type context_probe,@function
+context_probe:
+  addi sp,sp,-96
+  sw ra,64(sp)
+  sw s0,68(sp)
+  sw s1,72(sp)
+  sw gp,76(sp)
+  sw tp,80(sp)
+  li ra,0x10000001
+  li tp,0x10000004
+  li t0,0x10000005
+  li t1,0x10000006
+  li t2,0x10000007
+  li s0,0x10000008
+  li s1,0x10000009
+  li a0,0x1000000a
+  li a1,0x1000000b
+  li a2,0x1000000c
+  li a3,0x1000000d
+  li a4,0x1000000e
+  li a5,-1
+  ecall
+  sw zero,0(sp)
+  sw ra,4(sp)
+  sw sp,8(sp)
+  sw gp,12(sp)
+  sw tp,16(sp)
+  sw t0,20(sp)
+  sw t1,24(sp)
+  sw t2,28(sp)
+  sw s0,32(sp)
+  sw s1,36(sp)
+  sw a0,40(sp)
+  sw a1,44(sp)
+  sw a2,48(sp)
+  sw a3,52(sp)
+  sw a4,56(sp)
+  sw a5,60(sp)
+  mv a0,sp
+  call probe_check
+  lw ra,64(sp)
+  lw s0,68(sp)
+  lw s1,72(sp)
+  lw gp,76(sp)
+  lw tp,80(sp)
+  addi sp,sp,96
+  ret
+.size context_probe,.-context_probe

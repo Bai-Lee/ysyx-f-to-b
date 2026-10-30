@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scope": "Official stable 5.052 commit983a06a; optimized executable, run-in-place; debug/coverage utilities not built",
+  "jobs": 1,
+  "run": {
+    "name": "E4/environment/build_verilator",
+    "timestamp": "2026-10-24T20:28:51.510026+00:00",
+    "command": [
+      "wsl.exe",
+      "-d",
+      "YSYX-Linux",
+      "-u",
+      "ysyx",
+      "--exec",
+      "bash",
+      "-lc",
+      "set -eu\ncd /home/USER/tools/verilator-stable-src\ntest \"$(git rev-parse HEAD)\" = 983a06a16f2aea1cf4bda3a45099c8bad24d112c\nautoconf\n./configure --prefix=/home/USER/tools/verilator-5.052\nmake -C src -j1 opt\nexport VERILATOR_ROOT=$PWD\n./bin/verilator --version\n"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "status": "PASS",
+    "elapsed_seconds": 472.438,
+    "timeout_seconds": 1800,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\build_E4_verilator.py",
+        "sha256": "ae7fa98e0f03ff620d56a780d6327529596b45f0aa31c04de2ac04bb9a7c0a95"
+      }
+    ],
+    "inputs_after": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\build_E4_verilator.py",
+        "sha256": "ae7fa98e0f03ff620d56a780d6327529596b45f0aa31c04de2ac04bb9a7c0a95"
+      }
+    ],
+    "inputs_unchanged": true,
+    "stdout_sha256": "2a99e570127067177b3eff76a1809aec02ca89ac5c8e2cce62ef476bb93b15a4",
+    "stderr_sha256": "2c280a821103ab13553d776eb9f8e320d76a818c2677222e4dda0d893ecf9866"
+  }
+}

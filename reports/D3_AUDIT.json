@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "core_tasks": 1,
+  "scope_records": 2,
+  "records": [
+    {
+      "id": "D3-O001",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D3/NOTES.md",
+        "D/D3/sources/D3.md"
+      ]
+    },
+    {
+      "id": "D3-M001",
+      "status": "PASS",
+      "details": "PA2 stage 1 RV32IM: independent 2392-case expectation generator + Spike, 81 original tests, explicit image/encoding/address negatives; all 81 rerun after D7 tracing. Native GUI/audio/key checked in D8.",
+      "evidence": [
+        "D/D3/NOTES.md",
+        "reports/D3_isa.json",
+        "reports/D3_official_tests.json",
+        "reports/D7_regression.json",
+        "reports/D8_fceux_native.json",
+        "reports/D8_native_keyboard.json"
+      ]
+    }
+  ],
+  "report": "D/D3/NOTES.md",
+  "qualification": "Public local engineering requirements only; reference-only background is not claimed completed learning."
+}

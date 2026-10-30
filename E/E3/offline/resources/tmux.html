@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><title>A Quick and Easy Guide to tmux - Ham Vocke</title><meta charset="UTF-8"><meta name="author" content="Ham Vocke"><meta name="description" content="Become a master of tmux in a few minutes"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="https://hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/"><link rel="me" href="https://hachyderm.io/@ham"><link rel="alternate" type="application/rss+xml" title="Full RSS Feed" href="https://hamvocke.com/feed.xml"><link rel="alternate" type="application/rss+xml" title="Software Engineering RSS Feed" href="https://hamvocke.com/feed-tech.xml"><link rel="alternate" type="application/rss+xml" title="Personal RSS Feed" href="https://hamvocke.com/feed-personal.xml"><link rel="alternate" type="application/rss+xml" title="Microblog RSS Feed" href="https://hamvocke.com/feed-moments.xml"><link rel="webmention" href="https://webmention.io/hamvocke.com/webmention"><link rel="sitemap" href="/sitemap-index.xml"><meta content="A Quick and Easy Guide to tmux - Ham Vocke" property="og:title"><meta content="Become a master of tmux in a few minutes" property="og:description"><meta content="https://hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/" property="og:url"><meta content="https://hamvocke.com/_astro/tmux.D4cBv9kl.png" property="og:image"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="A Quick and Easy Guide to tmux - Ham Vocke"><meta name="twitter:description" content="Become a master of tmux in a few minutes"><meta name="twitter:image" content="https://hamvocke.com/_astro/tmux.D4cBv9kl.png"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><script defer data-domain="hamvocke.com" src="/js/script.js"></script><script>
+      ((window.plausible =
+        window.plausible ||
+        function () {
+          (plausible.q = plausible.q || []).push(arguments);
+        }),
+        (plausible.init =
+          plausible.init ||
+          function (i) {
+            plausible.o = i || {};
+          }));
+      plausible.init({
+        endpoint: "/api/event",
+      });
+    </script><style>@font-face{font-family:"Lilita One-75099238f5094a06";src:url("/_astro/fonts/c5e83a764c2a33a3.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:400;font-style:normal;}@font-face{font-family:"Lilita One-75099238f5094a06 fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:96.007%;ascent-override:96.1388%;descent-override:22.915%;line-gap-override:0%;}:root{--font-display:"Lilita One-75099238f5094a06","Lilita One-75099238f5094a06 fallback: Arial",sans-serif;}</style><style>@font-face{font-family:"Germania One-4e43833f700bbae3";src:url("/_astro/fonts/c67256a33ddc925e.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:400;font-style:normal;}@font-face{font-family:"Germania One-4e43833f700bbae3 fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:88.3803%;ascent-override:103.0773%;descent-override:28.2869%;line-gap-override:0%;}:root{--font-terminal:"Germania One-4e43833f700bbae3","Germania One-4e43833f700bbae3 fallback: Arial",sans-serif;}</style><link rel="stylesheet" href="/_astro/Layout.C4qKNUvc.css"><style>.tag[data-astro-cid-7t72llso]{background:var(--accent-transparent);border-radius:var(--border-radius);padding:.2rem .6rem;display:flex}
+article aside{border:1px solid var(--text);margin:1rem 0;padding:0 1rem;font-size:.9rem;display:inline-block}article aside,article p img{border-radius:var(--border-radius)}article p img{max-width:100%;height:auto;margin:var(--block-element-bottom-margin) auto}.footnotes{font-size:.833rem}h2 a,h2 a:visited,h3 a,h3 a:visited,h4 a,h4 a:visited,h5 a,h5 a:visited,h6 a,h6 a:visited{color:var(--text);-webkit-text-decoration:none;text-decoration:none}
+header[data-astro-cid-jo55ryrt]{background:oklch(from var(--accent) l c h/.05);color:var(--text);border-radius:3rem;max-width:100ch;margin:2rem auto 5rem;padding:3rem;display:block}@media (width>=640px){header[data-astro-cid-jo55ryrt]{margin-top:4rem;margin-bottom:6rem;padding:4rem}}.dark header[data-astro-cid-jo55ryrt]{color:var(--accent);background:0 0;padding:3rem 0}.dark header[data-astro-cid-jo55ryrt] h1[data-astro-cid-jo55ryrt]{padding-bottom:1rem;font-size:4rem;line-height:1em;-webkit-mask-image:url(/img/paper.webp);mask-image:url(/img/paper.webp);mask-mode:luminance}@media (width>=640px){.dark header[data-astro-cid-jo55ryrt]{padding:4rem 2em}.dark header[data-astro-cid-jo55ryrt] h1[data-astro-cid-jo55ryrt]{font-size:5.5rem}}header[data-astro-cid-jo55ryrt] h1[data-astro-cid-jo55ryrt]{letter-spacing:-.05em;margin-top:0;font-size:3rem;line-height:1em}@media (width>=640px){header[data-astro-cid-jo55ryrt] h1[data-astro-cid-jo55ryrt]{font-size:5rem}}.intro[data-astro-cid-jo55ryrt]{font-family:var(--font-family-display);font-size:1.3rem;line-height:1em}@media (width>=640px){.intro[data-astro-cid-jo55ryrt]{font-size:1.7rem}}.metadata[data-astro-cid-jo55ryrt]{flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem;width:100%;font-size:.8rem;display:flex}.tags[data-astro-cid-jo55ryrt]{gap:.25rem;display:inline-flex}.draftWarning[data-astro-cid-jo55ryrt]{background:var(--accent-transparent);border:1px solid var(--accent);border-radius:var(--border-radius);margin:1rem 0;padding:1rem}main[data-astro-cid-jo55ryrt]{max-width:var(--content-column-width);margin:auto}article[data-astro-cid-jo55ryrt] .footnotes{font-size:.833rem}
+</style></head><body data-astro-cid-ju4pidww><header data-astro-cid-nen7h5rs><nav data-astro-cid-nen7h5rs><a href="/" class="logo" data-astro-cid-nen7h5rs><div class="piggie" data-astro-cid-nen7h5rs><img src="/img/beerpig.svg" alt="Beer Pig" data-astro-cid-nen7h5rs></div><span class="name" data-astro-cid-nen7h5rs>Ham<br data-astro-cid-nen7h5rs>Vocke</span></a><button aria-label="Menu" aria-expanded="false" aria-controls="menu" id="toggle" data-astro-cid-nen7h5rs><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true" data-astro-cid-nen7h5rs="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button><ul id="menu" class="hidden" data-astro-cid-nen7h5rs><li data-astro-cid-nen7h5rs><a href="/blog" class="active" data-astro-cid-nen7h5rs>Blog</a></li><li data-astro-cid-nen7h5rs><a href="/moments" class data-astro-cid-nen7h5rs>Moments</a></li><li data-astro-cid-nen7h5rs><a href="/about" class data-astro-cid-nen7h5rs>About</a></li><li data-astro-cid-nen7h5rs><a href="/now" class data-astro-cid-nen7h5rs>Now</a></li><li class="theme" data-astro-cid-nen7h5rs><div class="toggle" data-astro-cid-cyp3wpwp><button id="theme-toggle" aria-label="toggle theme" data-astro-cid-cyp3wpwp><div class="sun" data-astro-cid-cyp3wpwp><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" aria-hidden="true" data-astro-cid-cyp3wpwp="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></div><div class="moon" data-astro-cid-cyp3wpwp><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon" aria-hidden="true" data-astro-cid-cyp3wpwp="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></div></button><button id="flashlight-toggle" data-astro-cid-cyp3wpwp><span class="flashlight-on" data-astro-cid-cyp3wpwp><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flashlight" aria-hidden="true" data-astro-cid-cyp3wpwp="true"><path d="M12 13v1"></path><path d="M17 2a1 1 0 0 1 1 1v4a3 3 0 0 1-.6 1.8l-.6.8A4 4 0 0 0 16 12v8a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-8a4 4 0 0 0-.8-2.4l-.6-.8A3 3 0 0 1 6 7V3a1 1 0 0 1 1-1z"></path><path d="M6 6h12"></path></svg></span><span class="flashlight-off" data-astro-cid-cyp3wpwp><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flashlight-off" aria-hidden="true" data-astro-cid-cyp3wpwp="true"><path d="M11.652 6H18"></path><path d="M12 13v1"></path><path d="M16 16v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-8a4 4 0 0 0-.8-2.4l-.6-.8A3 3 0 0 1 6 7V6"></path><path d="m2 2 20 20"></path><path d="M7.649 2H17a1 1 0 0 1 1 1v4a3 3 0 0 1-.6 1.8l-.6.8a4 4 0 0 0-.55 1.007"></path></svg></span></button></div><script>
+  const theme = loadFromStorage(
+    "theme",
+    (() => {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+      }
+
+      return "light";
+    })(),
+  );
+
+  const flashlight = loadFromStorage("flashlight", "flashlight");
+
+  if (theme === "light") {
+    document.documentElement.classList.remove("dark");
+    document.documentElement.classList.add("light");
+  } else {
+    document.documentElement.classList.remove("light");
+    document.documentElement.classList.add("dark");
+  }
+
+  document.documentElement.classList.add(flashlight);
+
+  window.localStorage.setItem("theme", theme);
+  window.localStorage.setItem("flashlight", flashlight);
+
+  function loadFromStorage(key, defaultValue) {
+    if (typeof localStorage !== "undefined" && localStorage.getItem(key)) {
+      return localStorage.getItem(key);
+    }
+
+    return defaultValue;
+  }
+
+  const handleToggleClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle("dark");
+    element.classList.toggle("light");
+
+    const isDark = element.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  };
+
+  const handleFlashlightClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle("flashlight");
+    element.classList.toggle("no-flashlight");
+
+    localStorage.setItem(
+      "flashlight",
+      flashlight === "flashlight" ? "no-flashlight" : "flashlight",
+    );
+  };
+
+  document
+    .getElementById("theme-toggle")
+    .addEventListener("click", handleToggleClick);
+
+  document
+    .getElementById("flashlight-toggle")
+    .addEventListener("click", handleFlashlightClick);
+</script></li></ul></nav></header><script>
+  const menuToggle = document.getElementById("toggle");
+  const menu = document.getElementById("menu");
+
+  function toggleMenu() {
+    const open = JSON.parse(menuToggle.getAttribute("aria-expanded"));
+    menuToggle.setAttribute("aria-expanded", !open);
+    menu.classList.toggle("hidden");
+    document.removeEventListener("click", closeMenuOnOutsideClick);
+
+    if (!open) {
+      // only attach document listener when we actually show the menu
+      document.addEventListener("click", closeMenuOnOutsideClick);
+    }
+  }
+
+  function closeMenuOnOutsideClick(event) {
+    const path = event.composedPath();
+    if (path.some((elem) => elem.id === "menu" || elem.id === "toggle")) {
+      return;
+    }
+    toggleMenu();
+  }
+
+  menuToggle.addEventListener("click", toggleMenu);
+</script><article itemscope itemtype="https://schema.org/BlogPosting" data-astro-cid-jo55ryrt><header data-astro-cid-jo55ryrt><h1 itemprop="name" data-astro-cid-jo55ryrt>A Quick and Easy Guide to tmux</h1><p class="intro" data-astro-cid-jo55ryrt>tmux is a tool that can boost your productivity while using the terminal. Think of it as a window manager in your terminal with some extra fanciness on top. This post gives you an easy-to-follow introduction to tmux and explains its basic features and how to use them.</p><div class="metadata" data-astro-cid-jo55ryrt><time datetime="2015-08-16T00:00:00.000Z" itemprop="datePublished">Aug 16, 2015</time><div data-astro-cid-jo55ryrt>Last updated on <time datetime="2022-11-22T00:00:00.000Z" itemprop="dateModified">Nov 22, 2022</time></div><span itemprop="keywords" class="tags" data-astro-cid-jo55ryrt><span class="tag" data-astro-cid-7t72llso><a href="/tags/command-line" data-astro-cid-7t72llso>command-line </a></span></span></div></header><main itemprop="articleBody" data-astro-cid-jo55ryrt><p>I love working with the command line. I think there’s hardly any more productive and versatile tool for a software developer than the terminal. The additional hacker/wizard/neckbeard kind of feeling you get when using a terminal comes for free, what’s not to love?</p>
+<p>Over the years I’ve tried to streamline and customize my command line experience to be more convenient, more fun to use or just to look rad. One of the most important tools to drive my daily command line experience is <code>tmux</code>. Check this out:</p>
+<p><img alt="tmux in action" loading="lazy" decoding="async" width="814" height="834" src="/_astro/tmux.D4cBv9kl_tTWrr.webp"></p>
+<p>This screenshot shows nothing less than the best thing since sliced bread. It’s <a href="https://tmux.github.io/">tmux</a>, a so-called <em>terminal multiplexer</em>. Simply speaking, tmux acts as a window manager within your terminal<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup> and allows you to create multiple windows and panes within a single terminal window.</p>
+<p>This post will give you the same quick introduction to tmux and its possibilities, followed by a 10 minute hands-on guide to set up and get to know tmux yourself. If you’ve got 10 minutes to spare and want to earn street cred with your nerd friends: read on and become proficient with tmux!</p>
+<h2 id="whats-tmux">What’s tmux?</h2>
+<p>tmux’s authors describe it as a <em>terminal multiplexer</em>. Behind this fancy term hides a simple concept: Within one terminal window you can open multiple windows and split-views (called <em>“panes”</em> in tmux lingo). Each pane will contain its own, independently running shell instance (bash, zsh, whatever you’re using). This allows you to have multiple terminal commands and applications running side by side without the need to open multiple terminal emulator windows.</p>
+<p>On top of that tmux keeps these windows and panes in a <em>session</em>. You can exit a session at any point. This is called <em>“detaching”</em>. tmux will keep this session alive until you kill the tmux server (e.g. when you reboot)<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref aria-describedby="footnote-label">2</a></sup>. This is incredibly useful because at any later point in time you can pick that session up exactly from where you left it by simply <em>“attaching”</em> to that session.</p>
+<p>If you’ve ever worked with remote servers (maybe a Raspberry Pi in your home lab, a dedicated developer machine that you run Claude Code on, or a production server) over <code>ssh</code> you can guess where this will be useful: When you lose your ssh connection the tmux session will simply be detached but will keep running on the server in the background including all the processes that run within your session. To continue your session simply ssh to the server again and attach to the running session.</p>
+<p>tmux is helpful when working on a remote machine but it shines just as much when you’re working locally. Not only for its window management features but also for the session handling. Personally I find myself detaching from sessions when I’m switching context. I’ll just start a new session for my new task and attach to the old session whenever I want to continue with my old task.</p>
+<p>You see that tmux basically offers two big features:</p>
+<ol>
+<li>Window management in your terminal</li>
+<li>and session management</li>
+</ol>
+<p>If you are familiar with <a href="https://www.gnu.org/software/screen">GNU Screen</a> this might all sound familiar. Think of tmux as an easier-to-use and a little more powerful alternative to Screen (obviously I’m being opinionated here).</p>
+<p>Enough with the concepts. Let’s get our hands dirty!</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>This hands-on guide will get you up and running with tmux pretty quickly. It will only cover the basic features which should be more than enough to get started and be productive with tmux. Simply open your terminal and follow the instructions.</p>
+<h3 id="installation">Installation</h3>
+<p>Fortunately installing tmux is pretty straightforward on most operating systems: a simple <code>sudo apt-get install tmux</code> (Ubuntu, WSL and derivatives) or <code>brew install tmux</code> (Mac) should be sufficient.</p>
+<h3 id="starting-your-first-session">Starting Your First Session</h3>
+<p>For your first session simply start <code>tmux</code> with a fresh session:</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>tmux</span></span></code></pre>
+<p>This will create a new tmux session with a nice all-green status bar at the bottom:</p>
+<p><img alt="vanilla tmux on startup" loading="lazy" decoding="async" width="764" height="284" src="/_astro/tmux_blank.Dr18TZ6y_1nsC2c.webp"></p>
+<p>The status bar is an important part of tmux. Apart from the currently opened windows (on the left) it also shows some system information like date and time (on the right). The status bar can also be customized and I’ve seen some really fancy stuff around (upcoming calendar events, battery status, to name a few) but this is something we’ll leave for later.</p>
+<h3 id="splitting-panes">Splitting Panes</h3>
+<p>Now that we’ve created our first session we can get a feeling for panes. When you create a new session, tmux will by default start with one window and a single panel inside. We want a nice split-screen, so let’s split this bad boy.</p>
+<p>All commands in tmux are triggered by a <strong>prefix key</strong> followed by a <strong>command key</strong> (all you <code>emacs</code> weirdos out there will feel right at home). By default, tmux uses <code>C-b</code> as prefix key. This notation might read a little weird if you’re not used to it. In “emacs” notation <code>C-</code> means “press and hold the <code>Ctrl</code> key”<sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref aria-describedby="footnote-label">3</a></sup>. Thus <code>C-b</code> simply means press the <code>Ctrl</code> and <code>b</code> keys at the same time.</p>
+<p>The shortcut to split panes into a left and a right pane is <code>C-b %</code>. This means: to split your single pane into a left and a right pane you press <code>Ctrl</code> and <code>b</code> at the same time, release both, and then type the <code>%</code> key. Voilà! You’ve just invoked your first tmux command and split your pane in two.</p>
+<p><img alt="tmux with two split panes" loading="lazy" decoding="async" width="764" height="284" src="/_astro/tmux_split.b845PJCE_Z2bHIbY.webp"></p>
+<p>Where there’s a split into left and right, there’s also a split into top and bottom pane. To split a pane into top and bottom panes use the <code>C-b "</code> shortcut.</p>
+<h3 id="navigating-panes">Navigating Panes</h3>
+<p>Right now we’re trapped in the newly created pane. But we really really want to go back to the left one. Easy peasy: Switching to a different pane uses the <code>C-b &lt;arrow key&gt;</code> shortcut, where &lt;arrow key&gt; is the arrow key pointing to the pane you want to switch to. In our case we want to switch to the panel on the left so it’s <code>C-b left</code> for us. Just once more, so that we fully understand this: This means you press <code>Ctrl</code> and <code>b</code> (your prefix) followed by the <code>left</code> arrow key to get to the pane on the left.</p>
+<p>You can now go ahead and split each of your new panels even further. Feel free to experiment and split your panes like a maniac to get a feeling for it.</p>
+<h3 id="closing-panes">Closing Panes</h3>
+<p>Closing a pane is as simple as closing a regular terminal session. Either type <code>exit</code> or hit <code>Ctrl-d</code> and it’s gone.</p>
+<h3 id="creating-windows">Creating Windows</h3>
+<p>Windows in tmux can be compared to creating new virtual desktops; if you’ve ever worked with one of the major Linux desktop environments (KDE, Gnome) or a Mac you’ll hopefully find this analogy helpful.</p>
+<p>Creating new windows is as easy as typing <code>C-b c</code> (one last time: that’s <code>Ctrl</code> and <code>b</code> at once, then <code>c</code>). The new window will then be presented to you in tmux’s status bar.</p>
+<p><img alt="tmux with two windows" loading="lazy" decoding="async" width="764" height="284" src="/_astro/tmux_window.BaMbDeGW_2b8xsN.webp"></p>
+<p>You can now divide the pane in your new window as you like. Or don’t. That’s up to you.</p>
+<p>To switch to the <em>previous</em> window (according to the order in your status bar) use <code>C-b p</code>, to switch to the <em>next</em> window use <code>C-b n</code>. If you’ve created many windows you might find it useful to go to a window directly by typing its number (the status bar will tell you which window has which number), just use <code>C-b &lt;number&gt;</code> where &lt;number&gt; is the number in front of the window’s name in your status bar.</p>
+<h3 id="session-handling">Session Handling</h3>
+<p>If you’re done with your session you can either get rid of it by simply exiting all the panes inside or you can keep the session in the background for later reuse.</p>
+<p>To detach your current session use <code>C-b d</code>. You can also use <code>C-b D</code> to let tmux give you a choice which of your sessions you want to detach. Detaching from a session will leave everything you’re doing in that session running in the background. You can come back to this session at a later point in time.</p>
+<p>To re-attach to a session and continue where you left you need to figure out which session you want to attach to first. List the currently running sessions by using</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>tmux ls</span></span></code></pre>
+<p>This will give you a list of all running sessions, which in our example should be something like</p>
+<blockquote>
+<p>0: 2 windows (created Sat Aug 15 17:55:34 2015) [199x44] (detached)</p>
+</blockquote>
+<p>To connect to that session you start tmux again but this time tell it which session to attach to:</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>tmux attach -t 0</span></span></code></pre>
+<p>Note that the <code>-t 0</code> is the parameter that tells tmux which session to attach to. “0” is the first part of your <code>tmux ls</code> output.</p>
+<p>If you prefer to give your sessions a more meaningful name (instead of a numerical one starting with 0) you can create your next session using</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>tmux new -s database</span></span></code></pre>
+<p>This will create a new session with the name “database”.</p>
+<p>You could also rename your existing session:</p>
+<pre class="astro-code material-theme-ocean" style="background-color:#0F111A;color:#babed8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>tmux rename-session -t 0 database</span></span></code></pre>
+<p>The next time you attach to that session you simply use <code>tmux attach -t database</code>. If you’re using multiple sessions at once this can become an essential feature.</p>
+<p>And that’s it! Congratulations, you’ve just completed your first tmux session and got your hands dirty with its window and session management. Yes, there’s more stuff tmux can do. But what you’ve just learned should be everything to start using tmux in the future.</p>
+<h2 id="why-tmux">Why tmux?</h2>
+<p>A response that I get quite often is: “Great, I get it. But why should I use tmux and its weird key combinations instead of just using iTerm2?”</p>
+<p>And you’re right, when it’s only basic window management, <a href="http://iterm2.com/">iTerm</a> for Mac supports tabs and panes as well. For Linux there’s <a href="https://gnome-terminator.org">Terminator</a>. So why would anyone feel the urge to learn some archaic technology in this day and age?</p>
+<p>Well, obviously there’s the bragging rights. But if that doesn’t convince you, there are a couple of actual reasons why I favor tmux over iTerm et al.:</p>
+<ul>
+<li>session handling: detaching from and attaching to sessions helps me with context switching and remote working</li>
+<li>platform independence: I can use tmux on my Macbook, my Linux notebook, servers, Raspberry Pis, you name it.</li>
+<li>customizable: there are many ways I can customize the look and behavior of my tmux environment. And I can sync this across different platforms using a simple dotfile</li>
+</ul>
+<h2 id="moving-on">Moving on</h2>
+<p>If you’re curious to learn what else tmux can do that’s a great thing. And luckily most of the stuff is quite simple to discover. Just type <code>C-b ?</code> to see a list of all available commands and start experimenting.</p>
+<p>Some of the commands that I’m using myself quite often are:</p>
+<ul>
+<li><code>C-b z</code>: make a pane go full screen. Hit <code>C-b z</code> again to shrink it back to its previous size</li>
+<li><code>C-b C-&lt;arrow key&gt;</code>: Resize pane in direction of &lt;arrow key&gt;<sup><a href="#user-content-fn-4" id="user-content-fnref-4" data-footnote-ref aria-describedby="footnote-label">4</a></sup></li>
+<li><code>C-b ,</code>: Rename the current window</li>
+</ul>
+<p>On top of that there are plenty of resources out there that help you getting further with tmux. People like me are blogging about their tmux experience and share what they’ve discovered. You can find people sharing their tmux configurations in their dotfiles repos on Github. There’s even a <a href="https://pragprog.com/book/bhtmux/tmux">book by Brian Hogan</a> dedicated to tmux.</p>
+<p>For now it’s best to discover some stuff on your own. Experiment, fool around and maybe try to use tmux for your daily work. It takes a while to get used to and you’ll probably feel slow when you start out. I encourage you to keep using it. Get a feeling for its functionality and in no time you’ll find out that your work with the terminal will be pure bliss and refreshingly fast.</p>
+<p>If you’re interested in customizing your tmux experience I recommend that you read my <a href="/blog/a-guide-to-customizing-your-tmux-conf/">Guide to Customizing your tmux.conf</a>.</p>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>If you’re coming from a Linux background you’re probably familiar with the concept of window managers like <a href="http://openbox.org/wiki/Main_Page">Openbox</a>, <a href="http://i3wm.org">i3</a> or <a href="http://awesome.naquadah.org/wiki/FAQ">awesome</a> <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-2">
+<p>tmux is based on a client-server architecture. While this is rarely relevant, it’s helpful to understand how stuff works. The tmux server keeps track of all the running sessions. You will only ever work with the tmux client and create new sessions or connect to existing ones. <a href="#user-content-fnref-2" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-3">
+<p>there could also be <code>M-</code> which is the same only for the <code>Meta</code> key (i.e. <code>Alt</code> on most keyboards). <a href="#user-content-fnref-3" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-4">
+<p>This is an interesting one. Yes, you need <code>Ctrl</code> in your prefix and also your command key. I find it easiest to only release the <code>b</code> key after the prefix key and keep <code>Ctrl</code> pressed all the time while I hit the arrow key repeatedly. Experiment a little bit to get a feeling for it. <a href="#user-content-fnref-4" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
+</main></article><footer data-astro-cid-jo6i4kqk><ul class="links" data-astro-cid-jo6i4kqk><li data-astro-cid-jo6i4kqk><a href="#top" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg> Back to top</a></li><li data-astro-cid-jo6i4kqk><a href="/feeds" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg> RSS Feeds</a></li><li data-astro-cid-jo6i4kqk><a href="mailto:ham@hamvocke.com" rel="me" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg> Say "hi"!</a></li><li data-astro-cid-jo6i4kqk><a href="https://hachyderm.io/@ham" rel="me" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg> Mastodon</a></li><li data-astro-cid-jo6i4kqk><a href="https://github.com/hamvocke" rel="me" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg> Github</a></li><li data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/in/hamvocke/" rel="me" data-astro-cid-jo6i4kqk><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase" aria-hidden="true" data-astro-cid-jo6i4kqk="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg> LinkedIn</a></li></ul><p data-astro-cid-jo6i4kqk>&copy; 2014-2026 Hermann "Ham" Vocke</p></footer><div class="spotlight" data-astro-cid-ju4pidww></div></body></html><script>
+  const defaultSpotlightSize = 200;
+  const cursor = document.querySelector(".spotlight");
+
+  const setCssProp = (name, value) =>
+    document.documentElement.style.setProperty(name, value);
+
+  setCssProp("--spotlight-size", `${defaultSpotlightSize}px`);
+
+  document.addEventListener("mousemove", (event) => {
+    cursor.style.left = `${event.clientX}px`;
+    cursor.style.top = `${event.clientY}px`;
+  });
+
+  document.addEventListener("click", () => {
+    setCssProp("--spotlight-size", `${defaultSpotlightSize * 2}px`);
+
+    setTimeout(
+      () => setCssProp("--spotlight-size", `${defaultSpotlightSize}px`),
+      1500,
+    );
+  });
+</script>

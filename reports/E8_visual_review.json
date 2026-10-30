@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-25T17:36:37.747596+00:00",
+  "images": [
+    {
+      "path": "artifacts/E8/gui/dashboard_ready.png",
+      "sha256": "2cf4f1eb1bc7d1581fac1d7537aed468a437fcf314f25f84fa1f699d13d60046"
+    },
+    {
+      "path": "artifacts/E8/gui/checklist.png",
+      "sha256": "82a1a542a95dd57325cc9f107199582e43e0a7ff8394ccfdc7a7b7ca448f0a04"
+    },
+    {
+      "path": "artifacts/E8/gui/checklist_timing.png",
+      "sha256": "87f08bed5e4b477104c010fdd395a1f626d0abf69e7ab645c46a9b888abbea84"
+    },
+    {
+      "path": "artifacts/E8/gui/checklist_warning.png",
+      "sha256": "428eff363dd1a68aa5889a9014b1fbf432727636781dd6330051b024eb1229aa"
+    },
+    {
+      "path": "artifacts/E8/gui/native_micrometers.png",
+      "sha256": "998d210878cfaa64fc47f9270b46e7db234484a129cf72d38766aa21ec92615d"
+    },
+    {
+      "path": "E/E8/signoff/layout.png",
+      "sha256": "9ae8b0d39a8a0e196dab19bbc9fb6dd93f1324c59e7677d5de0664549cf3ec21"
+    }
+  ],
+  "observations": [
+    "Actual ECOS Studio v0.1.0-alpha.9 opened cpu_baseline; all12 flow steps green.",
+    "Checklist31passing,0blocked,1optional macro_locations warning.",
+    "DRC0,LVS0,13STA corner summaries,9SPEF outputs and0SPEF parse failures visibly confirmed.",
+    "Setup WNS2.707ns,hold WNS0.085ns,TNS0;die area34596um2 shown.",
+    "Actual native2D viewer displayed all20physical layers and382252/382252drawing objects with micrometer axes.",
+    "Exported layout PNG shows the complete routed CPU region."
+  ],
+  "method": "Actual UI screenshots and exported image inspected using view_image across recorded ECOS sessions. No image editing.",
+  "native_renderer": "Supported ECOS_GPU_CANVAS=0 CPU2D path;3D not selected.",
+  "optional_embedded_agent": "Not configured; unrelated to backend flow and local viewer."
+}

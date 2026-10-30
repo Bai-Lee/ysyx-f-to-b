@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "label": "E2",
+  "archive": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\YSYX_E2_DELIVERY.zip",
+  "bytes": 19224515,
+  "sha256": "8c05a19fff9395171dfa1d2e1b60b9d3d5e0530164d047c3fe942c98c182d597",
+  "verified_entries": 6633,
+  "all_member_sha256_verified": true,
+  "crc_verified": true,
+  "timestamp": "2026-10-24T14:08:24.550686+00:00"
+}

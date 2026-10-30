@@ -1,0 +1,196 @@
+{
+  "status": "PASS_SMOKE",
+  "simulation": {
+    "result": "GOOD_TRAP",
+    "exit_code": 0,
+    "cycles": 50573,
+    "instructions": 18,
+    "ipc": 0.000355921143693,
+    "application_cycles": 75,
+    "application_instructions": 1,
+    "application_ipc": 0.0133333333333,
+    "cpu_soc_ratio": 1,
+    "assumed_cpu_frequency_hz": 25000000,
+    "flash_reads": 17,
+    "lsu_requests": 6,
+    "lsu_responses": 6,
+    "uart_bytes": 1,
+    "serial_bytes": 1,
+    "serial_matches": true,
+    "serial_framing_errors": 0,
+    "wall_seconds": 0.029510638,
+    "uart_divisors": [
+      13
+    ],
+    "led_sequence": [],
+    "segments": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "ratio_tests": [
+    {
+      "ratio": 1,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 50573,
+        "instructions": 18,
+        "ipc": 0.000355921143693,
+        "application_cycles": 75,
+        "application_instructions": 1,
+        "application_ipc": 0.0133333333333,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 17,
+        "lsu_requests": 6,
+        "lsu_responses": 6,
+        "uart_bytes": 1,
+        "serial_bytes": 1,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 0.029510638,
+        "uart_divisors": [
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "clock_wave_check": {
+        "signals": {
+          "clock": "TOP.clock",
+          "cpuClock": "TOP.cpuClock"
+        },
+        "rising_edges": {
+          "clock": 20000,
+          "cpuClock": 20000
+        },
+        "mean_period_ticks": {
+          "clock": 40000.0,
+          "cpuClock": 40000.0
+        },
+        "cpu_to_soc_frequency_ratio": 1.0
+      }
+    },
+    {
+      "ratio": 3,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 151714,
+        "instructions": 18,
+        "ipc": 0.000118644291232,
+        "application_cycles": 224,
+        "application_instructions": 1,
+        "application_ipc": 0.00446428571429,
+        "cpu_soc_ratio": 3,
+        "assumed_cpu_frequency_hz": 75000000,
+        "flash_reads": 17,
+        "lsu_requests": 6,
+        "lsu_responses": 6,
+        "uart_bytes": 1,
+        "serial_bytes": 1,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 0.043124015,
+        "uart_divisors": [
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "clock_wave_check": {
+        "signals": {
+          "clock": "TOP.clock",
+          "cpuClock": "TOP.cpuClock"
+        },
+        "rising_edges": {
+          "clock": 6667,
+          "cpuClock": 20000
+        },
+        "mean_period_ticks": {
+          "clock": 40000.0,
+          "cpuClock": 13333.333316665834
+        },
+        "cpu_to_soc_frequency_ratio": 3.0000000037501873
+      }
+    },
+    {
+      "ratio": 7,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 354002,
+        "instructions": 18,
+        "ipc": 5.0847170355e-05,
+        "application_cycles": 524,
+        "application_instructions": 1,
+        "application_ipc": 0.00190839694656,
+        "cpu_soc_ratio": 7,
+        "assumed_cpu_frequency_hz": 175000000,
+        "flash_reads": 17,
+        "lsu_requests": 6,
+        "lsu_responses": 6,
+        "uart_bytes": 1,
+        "serial_bytes": 1,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 0.0677539,
+        "uart_divisors": [
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "clock_wave_check": {
+        "signals": {
+          "clock": "TOP.clock",
+          "cpuClock": "TOP.cpuClock"
+        },
+        "rising_edges": {
+          "clock": 2857,
+          "cpuClock": 20000
+        },
+        "mean_period_ticks": {
+          "clock": 40000.0,
+          "cpuClock": 5714.285714285715
+        },
+        "cpu_to_soc_frequency_ratio": 6.999999999999999
+      }
+    }
+  ],
+  "scope": "Actual provided SoC: flash fetch, APB UART initialization and physical TX bit decoding, write ebreak instruction into PSRAM and execute it; complete software/reference comparison at1/3/7clock ratios with parsedwaveforms. Full loader, official test suites, GUI and performance still pending."
+}

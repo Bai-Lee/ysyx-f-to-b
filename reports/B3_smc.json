@@ -1,0 +1,254 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "label": "multicycle-cache128",
+      "fence": false,
+      "diff_enabled": false,
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 626,
+        "instructions": 65,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147483904,
+        "instruction": 1048691,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "device_sync_checked": 0,
+        "wall_seconds": 0.000675944,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "",
+        "performance": {
+          "core_cycles": 626,
+          "ifu_requests": 65,
+          "ifu_responses": 65,
+          "lsu_requests": 14,
+          "lsu_responses": 14,
+          "exu_completions": 51,
+          "ifu_latency_sum": 521,
+          "lsu_latency_sum": 40,
+          "class_counts": [
+            37,
+            3,
+            11,
+            4,
+            1,
+            8,
+            1,
+            0
+          ],
+          "class_cycles": [
+            425,
+            56,
+            50,
+            42,
+            2,
+            16,
+            35,
+            0
+          ],
+          "state_cycles": [
+            65,
+            521,
+            0,
+            40,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ifu_absence": [
+            65,
+            456,
+            0,
+            40
+          ],
+          "cache_events": [
+            65,
+            52,
+            13,
+            0,
+            13,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/B3/smc/multicycle-cache128-fence0"
+    },
+    {
+      "label": "multicycle-cache128",
+      "fence": true,
+      "diff_enabled": true,
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 641,
+        "instructions": 66,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147483900,
+        "instruction": 1048691,
+        "diff_enabled": true,
+        "diff_checked": 58,
+        "device_sync_checked": 8,
+        "wall_seconds": 0.000979303,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "",
+        "performance": {
+          "core_cycles": 641,
+          "ifu_requests": 66,
+          "ifu_responses": 66,
+          "lsu_requests": 14,
+          "lsu_responses": 14,
+          "exu_completions": 52,
+          "ifu_latency_sum": 542,
+          "lsu_latency_sum": 33,
+          "class_counts": [
+            37,
+            3,
+            11,
+            4,
+            1,
+            8,
+            1,
+            1
+          ],
+          "class_cycles": [
+            348,
+            12,
+            117,
+            42,
+            33,
+            85,
+            2,
+            2
+          ],
+          "state_cycles": [
+            66,
+            542,
+            0,
+            33,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ifu_absence": [
+            66,
+            476,
+            0,
+            33
+          ],
+          "cache_events": [
+            66,
+            52,
+            14,
+            0,
+            14,
+            1
+          ]
+        }
+      },
+      "evidence": "artifacts/B3/smc/multicycle-cache128-fence1"
+    },
+    {
+      "label": "bad-fence-cache128",
+      "fence": true,
+      "diff_enabled": true,
+      "status": "PASS_FAULT_REJECTED",
+      "simulation": {
+        "result": "DIFF_FAIL",
+        "cycles": 380,
+        "instructions": 43,
+        "a0": 1,
+        "fault": 0,
+        "pc": 2147483808,
+        "instruction": 1049875,
+        "diff_enabled": true,
+        "diff_checked": 37,
+        "device_sync_checked": 5,
+        "wall_seconds": 0.00134137,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "",
+        "performance": {
+          "core_cycles": 380,
+          "ifu_requests": 43,
+          "ifu_responses": 43,
+          "lsu_requests": 9,
+          "lsu_responses": 9,
+          "exu_completions": 34,
+          "ifu_latency_sum": 317,
+          "lsu_latency_sum": 20,
+          "class_counts": [
+            26,
+            0,
+            9,
+            2,
+            0,
+            5,
+            0,
+            1
+          ],
+          "class_cycles": [
+            227,
+            0,
+            70,
+            38,
+            0,
+            43,
+            0,
+            2
+          ],
+          "state_cycles": [
+            43,
+            317,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ifu_absence": [
+            43,
+            274,
+            0,
+            20
+          ],
+          "cache_events": [
+            43,
+            35,
+            8,
+            0,
+            8,
+            0
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            35,
+            282,
+            0
+          ],
+          "data_counts": [
+            0,
+            1,
+            0,
+            8
+          ],
+          "data_latency": [
+            0,
+            3,
+            0,
+            17
+          ]
+        }
+      },
+      "evidence": "artifacts/B3/smc/bad-fence-cache128-fence1"
+    }
+  ],
+  "scope": "RAM function returns1, store changes ADDI immediate to2. Without FENCE.I the characterized cache returns stale1 and the bounded program confirms it; this is permitted RISC-V behavior and explicitly uses no eager-coherent reference. With FENCE.I every retirement/instruction byte is checked by NEMU and the function returns2. Disabling invalidation gives a precise instruction mismatch; no timeout is accepted as a counterexample."
+}

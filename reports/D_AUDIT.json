@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "stage": "D",
+  "timestamp": "2026-10-26T13:36:44.729076+00:00",
+  "core_tasks": 55,
+  "scope_records": 103,
+  "stop_after": "D",
+  "verification": {
+    "status": "PASS",
+    "verification_kind": "read-only retained evidence, not rerun simulation",
+    "checker_controls": {
+      "valid_archive_accepted": true,
+      "corrupt_digest_rejected": true,
+      "traversal_name_rejected": true
+    },
+    "stage_audits": {
+      "D1": {
+        "path": "reports/D1_AUDIT.json",
+        "sha256": "72719ab72c994bf5e68db13cf2502783ea4d04256f0b1eab156499cd631ec556"
+      },
+      "D2": {
+        "path": "reports/D2_AUDIT.json",
+        "sha256": "bf06c78e34c42a90f903460351e211e6031c73cb5e806e132e33bce25a72dd63"
+      },
+      "D3": {
+        "path": "reports/D3_AUDIT.json",
+        "sha256": "60ab74c93ba94cff68d464afcc0847c7d55af99a202ef29742f76095e1cb9b82"
+      },
+      "D4": {
+        "path": "reports/D4_AUDIT.json",
+        "sha256": "5b5962e660d2542e751db39821578a3361a98c908588a21549a447d292796cb1"
+      },
+      "D5": {
+        "path": "reports/D5_AUDIT.json",
+        "sha256": "492e00f80fc4c55b39d0891be2e660732b145c2aef9d60f3d373d915d64775b3"
+      },
+      "D6": {
+        "path": "reports/D6_AUDIT.json",
+        "sha256": "5adcbeed7f9c7f0641596cc852a3d14243d4b8ddfe557cc89d341515ab892f19"
+      },
+      "D7": {
+        "path": "reports/D7_AUDIT.json",
+        "sha256": "cb21881f4a5480dc9241acae103c013bbab7f62f93787ee5b57ae424590cc74f"
+      },
+      "D8": {
+        "path": "reports/D8_AUDIT.json",
+        "sha256": "5b49e482caea7930b6a0dba00421f14831c9d61166942b00e82db0bb9ace03af"
+      }
+    },
+    "scope": {
+      "core_passed": 55,
+      "records": 103,
+      "statuses": {
+        "PASS": 56,
+        "PASS_BACKGROUND_REVIEW": 11,
+        "REFERENCE_ONLY": 13,
+        "PASS_METHOD_REVIEW": 7,
+        "PASS_ANALYSIS": 14,
+        "SOURCE_CLAIM_NOT_ADOPTED": 1,
+        "EXCLUDED_SCOPE": 1
+      }
+    },
+    "checks": {
+      "D1_experiments": "da17e044c71ca06cfd78d7eb9b909003b00b161f997f07144f35c940128e0d94",
+      "D1_background": "5a33aaf0d50ee3eaaa97bdb99cd2844ebee94bbe415c21991f34ef0892cb1717",
+      "D2_expression": "0dc76ce1283a2b5d553617cae1c1174e801416c3357f8202507e3bc56c4d626a",
+      "D2_sdb": "fd7eacac5cfa829400ce35b5c59c68a0d3249105b5bbecdf9887fbfa256006f3",
+      "D3_isa": "1207fe17e8f0db14fc768ec882068ed384ba63b74661222b64d26faeb18f259f",
+      "D3_official_tests": "56898219b71a5ad74c8e3462dde34d873cfc53c895c1a515a664893c5763c995",
+      "D5_headers": "62d88067fdb434984b4da9546f2b017d8a586b3361e702172c1a4bdf5f33e497",
+      "D5_host_klib": "9c2bda04a8cd4098198a7cd214f89de5efd83ce92322b6dab10422990fa52de3",
+      "D5_allocator": "3e50d6cdbe2092165289642a807fab10832cd38129a97b2a797d9ca8fbb3ff58",
+      "D5_portable": "1ff2c7adef9b671a60ffd449f554064dde2f25d940fa7f19bd72f679e5dc72b9",
+      "D6_logic": "492329bab44e665e72952ec87d36393a630cb8bd2d1a4b1426056c9d96382760",
+      "D6_pdk": "8d2dff73e793c97138fe7c12feebd258e444d254ac0c805c66e71dc7dd6b2026",
+      "D6_pvt": "c2694b0e36cb2827f9f5574f1956e6b2efa7263934b6b9454b57de293ff7e7da",
+      "D7_trace": "1d8e4daf82c27344b80120a4796b543906329a5eda446bb494a00dc97aeff607",
+      "D7_regression": "dc2927eb2a0cdb05d155e9abbff0e337d54e0c51f364569195c3244942dca88b",
+      "D8_reference": "9ef5dec5189b197ee870bd52d61ef603200912f771c48c2aeea0f5a3ca8b6013",
+      "D8_reset": "2e7b443e2a80cd29631c35f016aa278b3b7b475aba181270e8aeba1cc82867e1",
+      "D8_front": "c2a22a40748bae9e4e813cca99783737e0a2d5c702fb1613ca7f5eec5de77be2",
+      "D8_isa": "4e853e550d679b622610e5a004bf242d4065d4732a74fd04431620d37532abe6",
+      "D8_official_tests": "87ae068c7afcd52bbfd7ce4fbd22dd8f85412dbc080f3abaaa76e11e640cf27b",
+      "D8_apps_test": "65850424e11ca091cd6c16b6da6057452285ae2ec295524842c523578a4f63aa",
+      "D8_apps_train": "88183540799b8c63065f65dfaf6248eb17257b1c35c8140a53d7e6b0b71bcd3d",
+      "D8_extra": "737e062a3de8a4a58d202caaf40a1a970a4ec9a0bfd9709bcb78998bf56699f5",
+      "D8_fileio": "de10e400bf8e98abf67460d8d6fb837c26a9d432b9595e5d499d126d5fa9d0dd",
+      "D8_alu": "588efefcf6b1def830cb46650132e3d87df8ddad068aa24f6821aa596c5a4cf7",
+      "D8_prior_tests": "8c777b97c32e73f1ed90b53f9d543c47982600029971f0f1c6a83fe261ea0ed1",
+      "D8_timer": "90d55974d2117e1f2bddc38152a4f8b9a444599dd2e50230d86c990832d0caa0",
+      "D8_fceux_native": "db81fbf2723ad030f6094cbeee76bd9826274a43487820def6b535eebcf9c5b6",
+      "D8_fceux_ascii": "c1956949d5aa4d86261f63b9e0380ab53057bd4f284e75b6e978251f0149f776",
+      "D8_native_keyboard": "37585517e31e86024714618d21e39b6fc83fc000203c1b13ea7a2452bab47847",
+      "D_runtime_export": "397d0025052b3c80e6a8acb8563dfa23fc8b4f9e2f6765806811c8130dc434bc",
+      "D_offline_sources": "e49dfc60ed1e43a76a792448dc1cb59b0f98a094afafb50ed5db979cf6c812d6",
+      "D_final_bindings": "eec0acd41c489a22211fb308b0f2ad9c8b5a44072866b9e606c8202d37c2a743",
+      "D_toolchain_final": "26fbd95c2ba4001f15471e01201e72b34f0457a6a4ff96f8bcc22333b7918ff7",
+      "D_visual_review": "28b79440f0eb53082edac7afed480863a0e40038aec65cd19a5c6dc3acc1400b",
+      "D_history_preservation": "d1e16254923f53fec5b38464bbaa730842d43e1aa2e42404d72557628bc31af4"
+    },
+    "frozen_members": {
+      "PA1": 189,
+      "final_runtime": 1788
+    },
+    "source_copies_checked": 21,
+    "commands": {
+      "current_accepted_commands": 809,
+      "expected_nonzero_controls": 116,
+      "snapshot_archives_verified": 1201,
+      "changed_inputs_recorded": [
+        {
+          "path": "artifacts/D7/strip/native-strip/run.json",
+          "reason": "Build input may be generated or deliberately mutated; before/after and snapshot retained."
+        }
+      ],
+      "historical_attempt_status_counts": {
+        "FAIL": 29,
+        "PASS": 484,
+        "TIMEOUT": 1
+      },
+      "unaccepted_diagnostic_commands": [
+        {
+          "path": "artifacts/D/downloads/capstone/resolve/run.json",
+          "status": "FAIL",
+          "exit_code": 128,
+          "resolution": "Git transport failed. Official HTTPS archive at the resolved commit was acquired and hashed separately in D_additional_sources/D_offline_sources. This command is not counted as PASS."
+        }
+      ],
+      "scope": "Current command acceptance and retained byte integrity. Historical failures stay visible; diagnostic extra DFF failure is separately declared."
+    },
+    "markdown": {
+      "documents": 14,
+      "resolved_links": 374,
+      "external_reference_paths": [
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\slides\\markdown\\2306\\794c74a99ad98c54.md",
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\slides\\markdown\\2306\\836dea4a445f0860.md"
+      ],
+      "scope": "File targets, not full math/Markdown rendering."
+    }
+  },
+  "declared_limits": [
+    "D6 extra ideal-MOS DFF transient FAIL_UNQUALIFIED_MODEL; required structural task is complete.",
+    "D8 RV32E finite functional verification; no C-stage privilege/interrupts, complete ISA proof or new physical signoff.",
+    "MMIO independently decoded/checked before reference synchronization, not two independent device-model comparisons.",
+    "Reference-only reading/video nodes and original todo are not counted as experimental passes.",
+    "FCEUX virtual display and actual PCM capture; no physical loudspeaker test.",
+    "Prior F/E qualification remains bound to its original sources and constraints."
+  ],
+  "delivery": "YSYX_D_DELIVERY.zip; CRC and every member SHA-256 checked by package_delivery.py after this audit."
+}

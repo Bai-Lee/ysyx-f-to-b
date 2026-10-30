@@ -1,0 +1,78 @@
+{
+  "status": "PASS_PROFILE_ONLY",
+  "rows": [
+    {
+      "version": "11",
+      "model": "udp",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "elapsed_seconds": 14.55,
+      "vvp": "/home/USER/e-stage/build/E8/profile/11/udp.vvp",
+      "plugin": "/home/USER/e-stage/build/E8/profile/11/vpi_memory.vpi"
+    },
+    {
+      "version": "11",
+      "model": "behavioral",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "elapsed_seconds": 20.263,
+      "vvp": "/home/USER/e-stage/build/E8/profile/11/behavioral.vvp",
+      "plugin": "/home/USER/e-stage/build/E8/profile/11/vpi_memory.vpi"
+    },
+    {
+      "version": "14",
+      "model": "udp",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "elapsed_seconds": 12.602,
+      "vvp": "/home/USER/e-stage/build/E8/profile/14/udp.vvp",
+      "plugin": "/home/USER/e-stage/build/E8/profile/14/vpi_memory.vpi"
+    },
+    {
+      "version": "14",
+      "model": "behavioral",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "elapsed_seconds": 18.244,
+      "vvp": "/home/USER/e-stage/build/E8/profile/14/behavioral.vvp",
+      "plugin": "/home/USER/e-stage/build/E8/profile/14/vpi_memory.vpi"
+    }
+  ],
+  "scope": "AllvariantsuseunchangedofficialPDKsource. SelectingbehavioralFFbranchforfour-statequalificationrequiresseparateequivalenceevidenceundermappeddesignclock/resetassumptions."
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS_FRESH_AND_FAIL_CLOSED_CONTROLS",
+  "first_sample": {
+    "schema": 1,
+    "source": "GlobalMemoryStatusEx.ullAvailPhys",
+    "pid": 388,
+    "session": "20261029T111259621",
+    "timestamp": 1793272624.1425116,
+    "available_bytes": 6307893248,
+    "total_bytes": 14710988800,
+    "load_percent": 57
+  },
+  "second_sample": {
+    "schema": 1,
+    "source": "GlobalMemoryStatusEx.ullAvailPhys",
+    "pid": 388,
+    "session": "20261029T111259621",
+    "timestamp": 1793272626.1433046,
+    "available_bytes": 5961883648,
+    "total_bytes": 14710988800,
+    "load_percent": 59
+  },
+  "sampler_pid": 388,
+  "session": "20261029T111259621",
+  "observed_available_bytes": 5961883648,
+  "stale_rejected": true,
+  "missing_rejected": true,
+  "no_interop_calls": true,
+  "reader_sha256": "11bbc077555ec409e769a6d35e642a66dacdb66ef5368d0d9d39a4b254d30759",
+  "sampler_sha256": "9b003bea67ec0228a8ef8bd031a9f4302d691d706733027e0439b44fafebb769",
+  "scope": "Actual fresh Windows append-only physical-memory samples advance after the launching shell exits. Only complete newline-terminated records are read. Required missing/stale telemetry raises an error. Native interop invocation was explicitly prohibited during this control."
+}

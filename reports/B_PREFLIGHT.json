@@ -1,0 +1,60 @@
+{
+  "status": "READY_FOR_B1_SCOPED_RUNS",
+  "timestamp": "2026-10-29T18:39:56.214550+00:00",
+  "capabilities": [
+    "NEMU C interpreter",
+    "RV32 cross compiler",
+    "Verilator with C++ runner",
+    "pinned original SoC RTL",
+    "Icarus and synthesis/STA to be checked at B3/B5 use"
+  ],
+  "inputs": [
+    "B/runtime/course_specs.json",
+    "reports/B_baseline.json",
+    "reports/B_runtime_setup.json"
+  ],
+  "tools": [
+    {
+      "path": "/home/USER/tools/verilator-stable-src/bin/verilator",
+      "sha256": "308c54eb0194bb5c95d7cc093e0491922d2455177d401b03a8224ad7efe5cf35",
+      "version": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261024-983a06a"
+    },
+    {
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89",
+      "version": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0"
+    },
+    {
+      "path": "/usr/bin/riscv64-linux-gnu-gcc",
+      "sha256": "0c54895c55568be5b5fee49e2426abcc8fb05ca2c121ca5685dea2cbc24a1c13",
+      "version": "riscv64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
+    },
+    {
+      "path": "/usr/bin/make",
+      "sha256": "92f646030615cd98490a68a94c0aefd87b552be3158b941c02e43b0bfdb576db",
+      "version": "GNU Make 4.3"
+    }
+  ],
+  "memory": {
+    "windows_available_bytes": 4698603520,
+    "linux": {
+      "MemTotal": 7120334848,
+      "MemAvailable": 6744805376,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648
+    }
+  },
+  "limits": {
+    "source": "/workspace/config/toolchain.lock.json",
+    "revision": "2026-10-29-user-throughput",
+    "heavy_jobs": 1,
+    "compile_jobs": 4,
+    "process_group_limit_mib": 6144,
+    "windows_start_available_mib": 2048,
+    "windows_running_available_mib": 1024,
+    "linux_running_available_mib": 512,
+    "jvm_heap_mib": 4096
+  },
+  "validation": "B1 positive/negative CSR, context and RT-Thread tests; every NPC retirement compared against independent NEMU, cycles clocked independently without copying DUT CSR values. Standalone NEMU also checked against qualified Spike where applicable.",
+  "scope": "Machine mode, synchronous ECALL only, no asynchronous interrupts/U/S/VM or official examination; project ID is not a student identity. B2 source has no programming assignment. B3/B4/B5 remain pending."
+}

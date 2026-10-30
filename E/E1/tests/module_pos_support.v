@@ -1,0 +1,1 @@
+module mod_a(output out1,out2,input in1,in2,in3,in4);assign out1=tb.v_stub0;assign out2=tb.v_stub1;endmodule

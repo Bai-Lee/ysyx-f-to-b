@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "timestamp": "20261026T080808833108",
+  "E_zip_sha256": "1392190dd1da18e8c3b5ffb7b22e73b9492162f1666490eb91a0aba8eac1986c",
+  "E_audit_sha256": "192abf4dcf09dc9b8345c60de11e8b8a257947bc1104118c04a0da110bc8bde0",
+  "git_head": "9f00cf4f5f1ab7aebd6b9354924531842e4b154d",
+  "source_count": 9,
+  "pa_sources": 12,
+  "scope_records": 103,
+  "core_records": 55,
+  "preservation": "E source, simulation runtimes and ZIP retained; D has separate code, builds and evidence."
+}

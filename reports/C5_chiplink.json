@@ -1,0 +1,1282 @@
+{
+  "status": "PASS_PIN_LINK_REMOTE_RAM_AND_NEGATIVE",
+  "runs": [
+    {
+      "status": "PASS",
+      "name": "positive",
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink",
+      "result": "GOOD_TRAP",
+      "cycles": 1800643,
+      "instructions": 92929,
+      "wall_seconds": 25.8674,
+      "cpu_coverage": {
+        "base": 3221225472,
+        "size": 4096,
+        "unique_read_bytes": 4096,
+        "unique_written_bytes": 4096,
+        "read_ops_by_width": [
+          8192,
+          4096,
+          4096
+        ],
+        "write_ops_by_width": [
+          8192,
+          4096,
+          4096
+        ]
+      },
+      "link": {
+        "words": [
+          1800640,
+          1800640
+        ],
+        "hashes": [
+          15780823147341711171,
+          5154173775262632643
+        ],
+        "samples": [
+          [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              13,
+              5
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              15,
+              5
+            ],
+            [
+              16,
+              5
+            ],
+            [
+              17,
+              5
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              19,
+              5
+            ],
+            [
+              20,
+              5
+            ],
+            [
+              21,
+              5
+            ],
+            [
+              22,
+              5
+            ],
+            [
+              23,
+              5
+            ],
+            [
+              24,
+              5
+            ],
+            [
+              25,
+              831283973
+            ],
+            [
+              26,
+              5
+            ],
+            [
+              27,
+              5
+            ],
+            [
+              28,
+              5
+            ],
+            [
+              29,
+              5
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              31,
+              5
+            ],
+            [
+              32,
+              5
+            ],
+            [
+              33,
+              5
+            ],
+            [
+              34,
+              5
+            ],
+            [
+              35,
+              5
+            ],
+            [
+              36,
+              5
+            ],
+            [
+              37,
+              5
+            ],
+            [
+              38,
+              5
+            ],
+            [
+              39,
+              5
+            ],
+            [
+              40,
+              5
+            ],
+            [
+              41,
+              5
+            ],
+            [
+              42,
+              5
+            ],
+            [
+              43,
+              5
+            ],
+            [
+              44,
+              5
+            ],
+            [
+              45,
+              5
+            ],
+            [
+              46,
+              5
+            ],
+            [
+              47,
+              5
+            ],
+            [
+              48,
+              5
+            ],
+            [
+              49,
+              5
+            ],
+            [
+              50,
+              5
+            ],
+            [
+              51,
+              5
+            ],
+            [
+              52,
+              5
+            ],
+            [
+              53,
+              5
+            ],
+            [
+              54,
+              5
+            ],
+            [
+              55,
+              5
+            ],
+            [
+              56,
+              5
+            ],
+            [
+              57,
+              5
+            ],
+            [
+              58,
+              5
+            ],
+            [
+              59,
+              5
+            ],
+            [
+              60,
+              5
+            ],
+            [
+              61,
+              5
+            ],
+            [
+              62,
+              5
+            ],
+            [
+              63,
+              5
+            ],
+            [
+              64,
+              5
+            ],
+            [
+              65,
+              5
+            ],
+            [
+              66,
+              5
+            ],
+            [
+              67,
+              5
+            ]
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              13,
+              5
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              15,
+              5
+            ],
+            [
+              16,
+              5
+            ],
+            [
+              17,
+              5
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              19,
+              5
+            ],
+            [
+              20,
+              5
+            ],
+            [
+              21,
+              5
+            ],
+            [
+              22,
+              5
+            ],
+            [
+              23,
+              5
+            ],
+            [
+              24,
+              5
+            ],
+            [
+              25,
+              831283973
+            ],
+            [
+              26,
+              5
+            ],
+            [
+              27,
+              5
+            ],
+            [
+              28,
+              5
+            ],
+            [
+              29,
+              5
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              31,
+              5
+            ],
+            [
+              32,
+              5
+            ],
+            [
+              33,
+              5
+            ],
+            [
+              34,
+              5
+            ],
+            [
+              35,
+              5
+            ],
+            [
+              36,
+              5
+            ],
+            [
+              37,
+              5
+            ],
+            [
+              38,
+              5
+            ],
+            [
+              39,
+              5
+            ],
+            [
+              40,
+              5
+            ],
+            [
+              41,
+              5
+            ],
+            [
+              42,
+              5
+            ],
+            [
+              43,
+              5
+            ],
+            [
+              44,
+              5
+            ],
+            [
+              45,
+              5
+            ],
+            [
+              46,
+              5
+            ],
+            [
+              47,
+              5
+            ],
+            [
+              48,
+              5
+            ],
+            [
+              49,
+              5
+            ],
+            [
+              50,
+              5
+            ],
+            [
+              51,
+              5
+            ],
+            [
+              52,
+              5
+            ],
+            [
+              53,
+              5
+            ],
+            [
+              54,
+              5
+            ],
+            [
+              55,
+              5
+            ],
+            [
+              56,
+              5
+            ],
+            [
+              57,
+              5
+            ],
+            [
+              58,
+              5
+            ],
+            [
+              59,
+              5
+            ],
+            [
+              60,
+              5
+            ],
+            [
+              61,
+              5
+            ],
+            [
+              62,
+              5
+            ],
+            [
+              63,
+              5
+            ],
+            [
+              64,
+              5
+            ],
+            [
+              65,
+              5
+            ],
+            [
+              66,
+              5
+            ],
+            [
+              67,
+              5
+            ]
+          ]
+        ],
+        "remote_read_requests": 16384,
+        "remote_write_requests": 16384,
+        "remote_written_bytes": 32768,
+        "remote_unique_read_bytes": 4096,
+        "remote_unique_written_bytes": 4096,
+        "maximum_remote_byte_address": 3221229567,
+        "first_memory_cycle": 464297,
+        "last_memory_cycle": 1800206
+      },
+      "reset_cycles": 16,
+      "image_sha256": "26855d83a46ae8e9ac0a83300cf1891494f4fe89b67a5532e9ffbee0845e2365",
+      "executable_sha256": "74e5352ca7a570b49d13a8f6506e000205fe3f613603423aed2f924a34b3f53b",
+      "evidence": "artifacts/C5/chiplink/positive",
+      "resources": {
+        "status": "PASS",
+        "reason": null,
+        "error": null,
+        "exit_code": 0,
+        "elapsed_seconds": 28.131180257,
+        "peak_group_rss_bytes": 1290530816,
+        "peak_group_pss_bytes": 1290841088,
+        "metric": "pss",
+        "memory_limit_bytes": 6442450944,
+        "minimum_system_available_bytes": 5405990912,
+        "minimum_windows_available_bytes": 4745494528,
+        "policy": {
+          "source": "/workspace/config/toolchain.lock.json",
+          "revision": "2026-10-28-user-expanded",
+          "heavy_jobs": 1,
+          "compile_jobs": 1,
+          "process_group_limit_mib": 6144,
+          "windows_start_available_mib": 2048,
+          "windows_running_available_mib": 1024,
+          "linux_running_available_mib": 512,
+          "jvm_heap_mib": 4096
+        },
+        "policy_sha256": "9dded49cf48d3e89c12746ea729984a94f189cc82f60bdb2429423131391f1bc",
+        "timeline": [
+          {
+            "elapsed_seconds": 0.5285996879999999,
+            "rss_bytes": 4096,
+            "pss_bytes": 188416,
+            "available_bytes": 6696374272,
+            "windows_available_bytes": 6042890240
+          },
+          {
+            "elapsed_seconds": 5.896003757000001,
+            "rss_bytes": 1290530816,
+            "pss_bytes": 1290710016,
+            "available_bytes": 5407092736,
+            "windows_available_bytes": 4767535104
+          },
+          {
+            "elapsed_seconds": 11.259264035000001,
+            "rss_bytes": 1290530816,
+            "pss_bytes": 1290841088,
+            "available_bytes": 5406728192,
+            "windows_available_bytes": 4757917696
+          },
+          {
+            "elapsed_seconds": 16.6928715,
+            "rss_bytes": 1290530816,
+            "pss_bytes": 1290841088,
+            "available_bytes": 5406040064,
+            "windows_available_bytes": 4753481728
+          },
+          {
+            "elapsed_seconds": 22.121909709,
+            "rss_bytes": 1290530816,
+            "pss_bytes": 1290841088,
+            "available_bytes": 5406015488,
+            "windows_available_bytes": 4751863808
+          },
+          {
+            "elapsed_seconds": 27.630358192,
+            "rss_bytes": 1290530816,
+            "pss_bytes": 1290841088,
+            "available_bytes": 5405990912,
+            "windows_available_bytes": 4745494528
+          }
+        ],
+        "command": [
+          "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink/sim",
+          "--flash",
+          "/home/USER/c-stage/c5/workbench/chiplink-test/build/chiplink-test-riscv32e-ysyxsoc-sram-code.bin",
+          "--ref",
+          "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "--report",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/chiplink/positive/simulation.json",
+          "--coverage-base",
+          "0xc0000000",
+          "--coverage-size",
+          "4096",
+          "--max-cycles",
+          "200000000",
+          "--progress-cycles",
+          "10000000"
+        ],
+        "sampling": "Group every 0.5s, Windows every 5s; sampled soft limit, no OS hard cap."
+      }
+    },
+    {
+      "status": "PASS",
+      "name": "bad-read",
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink-bad-read",
+      "result": "DIFF_FAIL",
+      "cycles": 627138,
+      "instructions": 11916,
+      "wall_seconds": 9.07757,
+      "cpu_coverage": {
+        "base": 3221225472,
+        "size": 4096,
+        "unique_read_bytes": 1,
+        "unique_written_bytes": 4096,
+        "read_ops_by_width": [
+          1,
+          0,
+          0
+        ],
+        "write_ops_by_width": [
+          4096,
+          0,
+          0
+        ]
+      },
+      "link": {
+        "words": [
+          627135,
+          627135
+        ],
+        "hashes": [
+          13861753978050309725,
+          10925521252171066290
+        ],
+        "samples": [
+          [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              13,
+              5
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              15,
+              5
+            ],
+            [
+              16,
+              5
+            ],
+            [
+              17,
+              5
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              19,
+              5
+            ],
+            [
+              20,
+              5
+            ],
+            [
+              21,
+              5
+            ],
+            [
+              22,
+              5
+            ],
+            [
+              23,
+              5
+            ],
+            [
+              24,
+              5
+            ],
+            [
+              25,
+              831283973
+            ],
+            [
+              26,
+              5
+            ],
+            [
+              27,
+              5
+            ],
+            [
+              28,
+              5
+            ],
+            [
+              29,
+              5
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              31,
+              5
+            ],
+            [
+              32,
+              5
+            ],
+            [
+              33,
+              5
+            ],
+            [
+              34,
+              5
+            ],
+            [
+              35,
+              5
+            ],
+            [
+              36,
+              5
+            ],
+            [
+              37,
+              5
+            ],
+            [
+              38,
+              5
+            ],
+            [
+              39,
+              5
+            ],
+            [
+              40,
+              5
+            ],
+            [
+              41,
+              5
+            ],
+            [
+              42,
+              5
+            ],
+            [
+              43,
+              5
+            ],
+            [
+              44,
+              5
+            ],
+            [
+              45,
+              5
+            ],
+            [
+              46,
+              5
+            ],
+            [
+              47,
+              5
+            ],
+            [
+              48,
+              5
+            ],
+            [
+              49,
+              5
+            ],
+            [
+              50,
+              5
+            ],
+            [
+              51,
+              5
+            ],
+            [
+              52,
+              5
+            ],
+            [
+              53,
+              5
+            ],
+            [
+              54,
+              5
+            ],
+            [
+              55,
+              5
+            ],
+            [
+              56,
+              5
+            ],
+            [
+              57,
+              5
+            ],
+            [
+              58,
+              5
+            ],
+            [
+              59,
+              5
+            ],
+            [
+              60,
+              5
+            ],
+            [
+              61,
+              5
+            ],
+            [
+              62,
+              5
+            ],
+            [
+              63,
+              5
+            ],
+            [
+              64,
+              5
+            ],
+            [
+              65,
+              5
+            ],
+            [
+              66,
+              5
+            ],
+            [
+              67,
+              5
+            ]
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              13,
+              5
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              15,
+              5
+            ],
+            [
+              16,
+              5
+            ],
+            [
+              17,
+              5
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              19,
+              5
+            ],
+            [
+              20,
+              5
+            ],
+            [
+              21,
+              5
+            ],
+            [
+              22,
+              5
+            ],
+            [
+              23,
+              5
+            ],
+            [
+              24,
+              5
+            ],
+            [
+              25,
+              831283973
+            ],
+            [
+              26,
+              5
+            ],
+            [
+              27,
+              5
+            ],
+            [
+              28,
+              5
+            ],
+            [
+              29,
+              5
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              31,
+              5
+            ],
+            [
+              32,
+              5
+            ],
+            [
+              33,
+              5
+            ],
+            [
+              34,
+              5
+            ],
+            [
+              35,
+              5
+            ],
+            [
+              36,
+              5
+            ],
+            [
+              37,
+              5
+            ],
+            [
+              38,
+              5
+            ],
+            [
+              39,
+              5
+            ],
+            [
+              40,
+              5
+            ],
+            [
+              41,
+              5
+            ],
+            [
+              42,
+              5
+            ],
+            [
+              43,
+              5
+            ],
+            [
+              44,
+              5
+            ],
+            [
+              45,
+              5
+            ],
+            [
+              46,
+              5
+            ],
+            [
+              47,
+              5
+            ],
+            [
+              48,
+              5
+            ],
+            [
+              49,
+              5
+            ],
+            [
+              50,
+              5
+            ],
+            [
+              51,
+              5
+            ],
+            [
+              52,
+              5
+            ],
+            [
+              53,
+              5
+            ],
+            [
+              54,
+              5
+            ],
+            [
+              55,
+              5
+            ],
+            [
+              56,
+              5
+            ],
+            [
+              57,
+              5
+            ],
+            [
+              58,
+              5
+            ],
+            [
+              59,
+              5
+            ],
+            [
+              60,
+              5
+            ],
+            [
+              61,
+              5
+            ],
+            [
+              62,
+              5
+            ],
+            [
+              63,
+              5
+            ],
+            [
+              64,
+              5
+            ],
+            [
+              65,
+              5
+            ],
+            [
+              66,
+              5
+            ],
+            [
+              67,
+              5
+            ]
+          ]
+        ],
+        "remote_read_requests": 1,
+        "remote_write_requests": 4096,
+        "remote_written_bytes": 4096,
+        "remote_unique_read_bytes": 4,
+        "remote_unique_written_bytes": 4096,
+        "maximum_remote_byte_address": 3221229567,
+        "first_memory_cycle": 464297,
+        "last_memory_cycle": 627123
+      },
+      "reset_cycles": 16,
+      "image_sha256": "26855d83a46ae8e9ac0a83300cf1891494f4fe89b67a5532e9ffbee0845e2365",
+      "executable_sha256": "8de34cd757d2139cf1c43ad58cdc88e257b0105b34a3458244105ef60c2c2a56",
+      "evidence": "artifacts/C5/chiplink/bad-read",
+      "resources": {
+        "status": "CHILD_FAILURE",
+        "reason": null,
+        "error": null,
+        "exit_code": 1,
+        "elapsed_seconds": 10.49756391699998,
+        "peak_group_rss_bytes": 1290407936,
+        "peak_group_pss_bytes": 1290827776,
+        "metric": "pss",
+        "memory_limit_bytes": 6442450944,
+        "minimum_system_available_bytes": 5332271104,
+        "minimum_windows_available_bytes": 4044132352,
+        "policy": {
+          "source": "/workspace/config/toolchain.lock.json",
+          "revision": "2026-10-28-user-expanded",
+          "heavy_jobs": 1,
+          "compile_jobs": 1,
+          "process_group_limit_mib": 6144,
+          "windows_start_available_mib": 2048,
+          "windows_running_available_mib": 1024,
+          "linux_running_available_mib": 512,
+          "jvm_heap_mib": 4096
+        },
+        "policy_sha256": "9dded49cf48d3e89c12746ea729984a94f189cc82f60bdb2429423131391f1bc",
+        "timeline": [
+          {
+            "elapsed_seconds": 0.5595954809999739,
+            "rss_bytes": 589824,
+            "pss_bytes": 1139712,
+            "available_bytes": 6619975680,
+            "windows_available_bytes": 5237739520
+          },
+          {
+            "elapsed_seconds": 5.98461226500001,
+            "rss_bytes": 1290407936,
+            "pss_bytes": 1290631168,
+            "available_bytes": 5332279296,
+            "windows_available_bytes": 4044132352
+          }
+        ],
+        "command": [
+          "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink-bad-read/sim",
+          "--flash",
+          "/home/USER/c-stage/c5/workbench/chiplink-test/build/chiplink-test-riscv32e-ysyxsoc-sram-code.bin",
+          "--ref",
+          "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "--report",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/chiplink/bad-read/simulation.json",
+          "--coverage-base",
+          "0xc0000000",
+          "--coverage-size",
+          "4096",
+          "--max-cycles",
+          "200000000",
+          "--progress-cycles",
+          "10000000"
+        ],
+        "sampling": "Group every 0.5s, Windows every 5s; sampled soft limit, no OS hard cap."
+      }
+    }
+  ],
+  "scope": "Actual175-moduleupstreamChipLinkelaboration, ASICandFPGA transmitpins observedbothdirections, original1GiBremoteRTLMemory retained. CPUtests4KiB withallrequestedwidths/patterns; remoteRAMunique-byte/maskedwritecoverage agrees. Readbitfault occurs inthefarRAMandisdetectedafterthereturnlink byNEMU.16externalresetcycles; sameidealclocks, nooffchip electrical/CDCsignoff. 1GiB is modeledcapacity, not a1GiBexhaustivetest."
+}

@@ -1,0 +1,240 @@
+{
+  "status": "LIBRARY_BUILT_NOT_GUI_ACCEPTED",
+  "source": "/workspace/YSYX_F_B_Archive/repos/NJU-ProjectN__nvboard__master",
+  "source_commit": "b5f49b68a85f4a1a185086cbd6532fff3ecda454",
+  "workbench": "/home/USER/c-stage/c5/nvboard",
+  "uart_cycles_per_bit": 16,
+  "uart16550_dll": 1,
+  "patch_scope": "Original NVBoard decoding/rendering. Passive binary logs after actualTXdecode and beforeRXqueue insertion. Native window close requests return to the host for evidence finalization instead of exit(0). No synthetic keyboard/UART data injected by these patches.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "d7df42b15b70dc49169ffd5fb7623692a066f5357c26222002ea509537125e75"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d0b16a3cb603569486834cb55fa8a539832063864793339386f5e1f646928987"
+    },
+    {
+      "path": "NVBoard.jpg",
+      "sha256": "dccceb10a01bcc7176597a185bb1f77ca86189a61bfb53e3d8a6945aaa76184b"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a2a534b1ca9cf99ffa5d82926b3b63892e701df43aa5aa2a953de311a2809ee7"
+    },
+    {
+      "path": "board/N4",
+      "sha256": "4392f1409e9e5a169e4ae715f65f0cbb10a99fcd7a15de03b4c91d66855f4953"
+    },
+    {
+      "path": "example/.gitignore",
+      "sha256": "260e84f110430f15dd217508bb1109cf4de34efedc3cbb256c197013cc26f3ef"
+    },
+    {
+      "path": "example/Makefile",
+      "sha256": "bbb8d32f51d3d1450ce831579d650d8d176436cb0e693eebd60b40c3a417d43e"
+    },
+    {
+      "path": "example/README.md",
+      "sha256": "eb9d19f0a78b20c40c3eeb92f2b06d6053dcdbb817c326a412c96cb7ff7aedef"
+    },
+    {
+      "path": "example/constr/top.nxdc",
+      "sha256": "1b6572267aa5a85677419477fe6b1fbd6f4dd63b3ee30a5b7476fd095624a256"
+    },
+    {
+      "path": "example/csrc/main.cpp",
+      "sha256": "9951f127059701fb4bcbc4149ed132f5362a9c0d9d6ffdc2c04cea9ee7482380"
+    },
+    {
+      "path": "example/resource/picture.hex",
+      "sha256": "9fc5ed9ea23271a2124a85caf424e1b1ac8b7f99c24bc905bf2c012615e9e5f4"
+    },
+    {
+      "path": "example/vsrc/led.v",
+      "sha256": "308fd3d089b9f7183d53dd51b393d35a77cf2b16f6fb4880df14484ce6ea9ab1"
+    },
+    {
+      "path": "example/vsrc/ps2_keyboard.v",
+      "sha256": "ec4502b423096367df3dc2b327b1100ed354d8e0eb394146a0038e41744c97d9"
+    },
+    {
+      "path": "example/vsrc/seg.v",
+      "sha256": "304399f69dec2a9e9aeb4d3f949813ba35657d629387ac3d44a5da6717efedd7"
+    },
+    {
+      "path": "example/vsrc/top.v",
+      "sha256": "0aae291557b460363d65892115cdae504e9f517a0ed1355a2d70c35d3b777eca"
+    },
+    {
+      "path": "example/vsrc/uart.v",
+      "sha256": "d59e6addff1ee6fe0a336b42ed90eab94ea0146825e20572ce8cc1b6fa3211e5"
+    },
+    {
+      "path": "example/vsrc/vga_ctrl.v",
+      "sha256": "cdb6736f8c0709088cf9392fdf6c4f4a9196c2b67bcbfd756eb255d1e5867a2b"
+    },
+    {
+      "path": "include/.gitignore",
+      "sha256": "313a6c6365465514926858a5cef36fb3ffa7d1d4bd454cff890fe4f83c6a4198"
+    },
+    {
+      "path": "include/component.h",
+      "sha256": "b7c9d06cc30b0466a935e3e23be1a07432775aba2e1b85857b9281b66f8babc0"
+    },
+    {
+      "path": "include/configs.h",
+      "sha256": "51c4cf43640a3cfcfa4f34804d77a2ce1c9a43b4be4bb008cddc74f7ca8aacbb"
+    },
+    {
+      "path": "include/font.h",
+      "sha256": "c659360da465c1552269b3fbadd276e7581cf19f27eaab09e42a5bea797dcd2f"
+    },
+    {
+      "path": "include/keyboard.h",
+      "sha256": "9bbed5cdfd01431c6922cb089650ae6cca1c2b9919dd74b394b7e1ebf4b11087"
+    },
+    {
+      "path": "include/macro.h",
+      "sha256": "e545d6f5d866959fb3e5ec64d1eb314b162664735a57804605877c333c219c9a"
+    },
+    {
+      "path": "include/nvboard.h",
+      "sha256": "3f2e0b7cc26a14c29250ca50596d87fab6da4f1bdc2acda33428f9fdf7a3c47e"
+    },
+    {
+      "path": "include/pins.h",
+      "sha256": "0e6c18263f1e66da5a0635deacd631a23b2fb3b0814834a73fa86b6a4106f4e4"
+    },
+    {
+      "path": "include/render.h",
+      "sha256": "9b4cadcb26e436e9cf34299a9834a5034e5b41854c617edf9a5894e9ae75e75d"
+    },
+    {
+      "path": "include/term.h",
+      "sha256": "241500e04f57cd9603d0c0f3e0cd7b5c6f10d538d5ca131051dcfef32e00e332"
+    },
+    {
+      "path": "include/uart.h",
+      "sha256": "0c68743074690342630da965f0c3597ef43b4fc1708d49c252b346921bbb9efb"
+    },
+    {
+      "path": "include/vga.h",
+      "sha256": "5a04019f697a3d84381eefe07833a8e1a3fc9b78d4476ae77f101c3eb758118c"
+    },
+    {
+      "path": "resources/font/FreeMono.ttf",
+      "sha256": "30b4b98748839431a366123f859871549b57e461a8b8ec2d3d65b55b2fb9f22d"
+    },
+    {
+      "path": "resources/pic/.gitignore",
+      "sha256": "2b72909ccbeb034a7c74d4817cb9e3d388b5c17c961c6b05d932c37b4ab99d60"
+    },
+    {
+      "path": "resources/pic/vbtn_off.png",
+      "sha256": "a03d92c776e1f8a7b5527b5332a00b152e5cef203e97755073fd2411ca95486b"
+    },
+    {
+      "path": "resources/pic/vbtn_on.png",
+      "sha256": "a29a4449403ac8e76dca401ff5455daf96acf21612ab508252e984ad40fee088"
+    },
+    {
+      "path": "resources/pic/vsw_off.png",
+      "sha256": "e1703cf0f504a4a4b6bfa199f0faa4bbfd900e52f9c199943d7356d568d2f2c0"
+    },
+    {
+      "path": "resources/pic/vsw_on.png",
+      "sha256": "3573086f11966df9a84ebdf9ce21e69ab359d16892281281e6dede6b6562cad5"
+    },
+    {
+      "path": "scripts/.gitignore",
+      "sha256": "1dc06088afe4f5ef37defe47f3ca081d2281089d47eb2f320247e98c52818e48"
+    },
+    {
+      "path": "scripts/auto_pin_bind.py",
+      "sha256": "072608ac81924079d18d4dad5821cc7f359fc4b9e125f1db01189422143886c5"
+    },
+    {
+      "path": "scripts/nvboard.mk",
+      "sha256": "87e7fb4a76d695fbea1823f903fe41672ab9cb052b7f70efdedbaf5ba58172e8"
+    },
+    {
+      "path": "src/.gitignore",
+      "sha256": "8e5d2a4752b1234b23ac26e57378c9d58a8b035ed9136cd04add114f7833aef7"
+    },
+    {
+      "path": "src/at_scancode.h",
+      "sha256": "bc6f9de0ea2043d9303394acb1cd4f73c6b04e2a5c4088fa044dad7e46fd1746"
+    },
+    {
+      "path": "src/button.cpp",
+      "sha256": "321357c4cc1cdd0547effdebcdb30cca8294fddf06469148563cc1b4caca174d"
+    },
+    {
+      "path": "src/component.cpp",
+      "sha256": "c420fa92a7d471373ec98aa60f86304e426194b53663eab17ec81e59292c2b87"
+    },
+    {
+      "path": "src/event.cpp",
+      "sha256": "7d25b00ee42e88a5ac0f8020da68029be24b1e9f7bf718f9f1964c0163943cb4"
+    },
+    {
+      "path": "src/font.cpp",
+      "sha256": "8605529c01377b1aaea9b9396449b1ceac9f7b718cc7ef34f41faae5c6a43e3f"
+    },
+    {
+      "path": "src/keyboard.cpp",
+      "sha256": "462a95e55875e861f82572b4deb766c8da94263a6b736bdb46418c3b3db79073"
+    },
+    {
+      "path": "src/led.cpp",
+      "sha256": "752edc7e2825b4be18466327061414744737e9361b52b1fffeedd9dc848801fd"
+    },
+    {
+      "path": "src/nvboard.cpp",
+      "sha256": "cbdb3f24aa10148c3a5cccd30cd34956edeb1c0f38b1ad444a36f38222ff4107"
+    },
+    {
+      "path": "src/render.cpp",
+      "sha256": "263fa258f330f6fe529786c5735a91d82a65bc8e2aa7289570f87d7502221d5c"
+    },
+    {
+      "path": "src/segs7.cpp",
+      "sha256": "37d0ca78608752c5d47b322781730586cd391764af5ce4e2dcaf3723d4b943ba"
+    },
+    {
+      "path": "src/switch.cpp",
+      "sha256": "ebbc121cf9e901e41345d1a18fd45b9b5ebdde96592b3c08ac5da50acf2eb966"
+    },
+    {
+      "path": "src/term.cpp",
+      "sha256": "66190070f23db5db0be0b76a7cc45421f086ef6303455610bf48d937a59c427c"
+    },
+    {
+      "path": "src/timer.cpp",
+      "sha256": "e23c37b18f64c9ef980c66dfcd412f85a81d8ff756fdde186ef6810733077b0e"
+    },
+    {
+      "path": "src/uart.cpp",
+      "sha256": "dadea121e1d461b03960c7b7a8c25875674d90940102417413ee0269a5caa5ea"
+    },
+    {
+      "path": "src/vga.cpp",
+      "sha256": "60b8d3ad62ffd7b34ce0a24b99e5fc5063669129857bbbb6e495097d8f9ca80e"
+    },
+    {
+      "path": "usr/include/nvboard.h",
+      "sha256": "f977bd7ab613ff4695513e95122e1e90aa7ff0d394bb67ed10e6ef99a1b28916"
+    },
+    {
+      "path": "usr/include/pins.h",
+      "sha256": "ba5bab6fb8f810d0f03f5d6c2ec5a06ed9c2703a91e1e1d6a6c0f0978cd0b205"
+    }
+  ],
+  "binding": {
+    "path": "/home/USER/c-stage/c5/nvboard_bind.cpp",
+    "sha256": "0326e25141a5704e3e5792b05c38ca93bfdb3e92c78f8bf24dac99e4e6991758"
+  },
+  "constraint_sha256": "03d5bfd2bbd40637528a6586688b47fddec78bc062dc4fa6419e413b2b730f59"
+}

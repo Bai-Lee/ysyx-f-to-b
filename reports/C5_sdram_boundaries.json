@@ -1,0 +1,156 @@
+{
+  "status": "PASS_COMPLETED_BOUNDARY_PROFILES",
+  "runs": [
+    {
+      "status": "PASS",
+      "width": 32,
+      "ranks": 1,
+      "corrupt": false,
+      "capacity": 67108864,
+      "uart": "C5_MEMORY_BOUNDARIES_PASS points=70 bytes=67108864\n",
+      "coverage": {
+        "base": 2684354560,
+        "size": 67108864,
+        "unique_read_bytes": 280,
+        "unique_written_bytes": 280,
+        "read_ops_by_width": [
+          0,
+          0,
+          140
+        ],
+        "write_ops_by_width": [
+          70,
+          70,
+          70
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 280,
+          "write_bytes": 210,
+          "maximum_byte_address": 33554431
+        },
+        {
+          "read_bytes": 280,
+          "write_bytes": 280,
+          "maximum_byte_address": 33554431
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "cycles": 1497038,
+      "instructions": 40073,
+      "image_sha256": "4767d875cfbf02482f2a19643543a26f19c664a6d8a9e0e46a841a7eb457c364",
+      "evidence": "artifacts/C5/sdram-boundaries/boundaries-32x1"
+    },
+    {
+      "status": "PASS",
+      "width": 32,
+      "ranks": 2,
+      "corrupt": false,
+      "capacity": 134217728,
+      "uart": "C5_MEMORY_BOUNDARIES_PASS points=73 bytes=134217728\n",
+      "coverage": {
+        "base": 2684354560,
+        "size": 134217728,
+        "unique_read_bytes": 292,
+        "unique_written_bytes": 292,
+        "read_ops_by_width": [
+          0,
+          0,
+          146
+        ],
+        "write_ops_by_width": [
+          73,
+          73,
+          73
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 280,
+          "write_bytes": 210,
+          "maximum_byte_address": 33554431
+        },
+        {
+          "read_bytes": 280,
+          "write_bytes": 280,
+          "maximum_byte_address": 33554431
+        },
+        {
+          "read_bytes": 12,
+          "write_bytes": 9,
+          "maximum_byte_address": 33554431
+        },
+        {
+          "read_bytes": 12,
+          "write_bytes": 12,
+          "maximum_byte_address": 33554431
+        }
+      ],
+      "cycles": 1505540,
+      "instructions": 42499,
+      "image_sha256": "aeb085676476cf2d849a1de9e1987793f5e3c83b6c5d87efe2d83677361c35b7",
+      "evidence": "artifacts/C5/sdram-boundaries/boundaries-32x2"
+    },
+    {
+      "status": "PASS",
+      "width": 32,
+      "ranks": 2,
+      "corrupt": true,
+      "capacity": 134217728,
+      "uart": "",
+      "coverage": {
+        "base": 2684354560,
+        "size": 134217728,
+        "unique_read_bytes": 288,
+        "unique_written_bytes": 292,
+        "read_ops_by_width": [
+          0,
+          0,
+          73
+        ],
+        "write_ops_by_width": [
+          0,
+          0,
+          74
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 138,
+          "write_bytes": 140,
+          "maximum_byte_address": 33554431
+        },
+        {
+          "read_bytes": 138,
+          "write_bytes": 140,
+          "maximum_byte_address": 33554431
+        },
+        {
+          "read_bytes": 8,
+          "write_bytes": 8,
+          "maximum_byte_address": 33554431
+        },
+        {
+          "read_bytes": 8,
+          "write_bytes": 8,
+          "maximum_byte_address": 33554431
+        }
+      ],
+      "cycles": 1452445,
+      "instructions": 27833,
+      "image_sha256": "e385dc2421f015f9ed7953ad5100f2e2ebf0cdffa4aec6d0da959dd75e8f3bd2",
+      "evidence": "artifacts/C5/sdram-boundaries/boundaries-32x2-bad"
+    }
+  ],
+  "scope": "ActualfullSoCCPU probes alladdressbitboundaries andphysicalhighestaddresses, upperrank andbothlanes, afterwritingdistinctvalues before reverse-orderreadback; byte/halfwordmasks. Lastphysicalwordcorruption rejected. These probes do not replace requiredfull32/128MiB sweeps."
+}

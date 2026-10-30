@@ -1,0 +1,98 @@
+Breakpoint 1 at 0x11b9: file /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c, line 9.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, sum_sequence (values=0x7ffed3619ad0, count=5) at /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:9
+9	  for (size_t i = 0; i < count; ++i) {
+Hardware watchpoint 2: running_total
+
+Hardware watchpoint 2: running_total
+
+Old value = 0
+New value = 1
+sum_sequence (values=0x7ffed3619ad0, count=5) at /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:9
+9	  for (size_t i = 0; i < count; ++i) {
+
+Hardware watchpoint 2: running_total
+
+Old value = 1
+New value = 3
+sum_sequence (values=0x7ffed3619ad0, count=5) at /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:9
+9	  for (size_t i = 0; i < count; ++i) {
+
+Hardware watchpoint 2: running_total
+
+Old value = 3
+New value = 6
+sum_sequence (values=0x7ffed3619ad0, count=5) at /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:9
+9	  for (size_t i = 0; i < count; ++i) {
+
+Hardware watchpoint 2: running_total
+
+Old value = 6
+New value = 11
+sum_sequence (values=0x7ffed3619ad0, count=5) at /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:9
+9	  for (size_t i = 0; i < count; ++i) {
+FIRST_BAD_PREFIX=11 INDEX=3 DELTA=5
+#0  sum_sequence (values=0x7ffed3619ad0, count=5) at /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:9
+#1  0x0000561a4412325d in main () at /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:18
+Dump of assembler code for function sum_sequence:
+/workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:
+8	__attribute__((noinline)) static int sum_sequence(const int *values, size_t count) {
+   0x0000561a441231a9 <+0>:	endbr64 
+   0x0000561a441231ad <+4>:	push   %rbp
+   0x0000561a441231ae <+5>:	mov    %rsp,%rbp
+   0x0000561a441231b1 <+8>:	mov    %rdi,-0x18(%rbp)
+   0x0000561a441231b5 <+12>:	mov    %rsi,-0x20(%rbp)
+
+9	  for (size_t i = 0; i < count; ++i) {
+   0x0000561a441231b9 <+16>:	movq   $0x0,-0x8(%rbp)
+   0x0000561a441231c1 <+24>:	jmp    0x561a441231fc <sum_sequence+83>
+
+10	    int term = values[i];
+   0x0000561a441231c3 <+26>:	mov    -0x8(%rbp),%rax
+   0x0000561a441231c7 <+30>:	lea    0x0(,%rax,4),%rdx
+   0x0000561a441231cf <+38>:	mov    -0x18(%rbp),%rax
+   0x0000561a441231d3 <+42>:	add    %rdx,%rax
+   0x0000561a441231d6 <+45>:	mov    (%rax),%eax
+   0x0000561a441231d8 <+47>:	mov    %eax,-0xc(%rbp)
+
+11	    if (INJECT_FAULT && i == 3) term += 1;
+   0x0000561a441231db <+50>:	cmpq   $0x3,-0x8(%rbp)
+   0x0000561a441231e0 <+55>:	jne    0x561a441231e6 <sum_sequence+61>
+   0x0000561a441231e2 <+57>:	addl   $0x1,-0xc(%rbp)
+
+12	    running_total += term;
+   0x0000561a441231e6 <+61>:	mov    0x2e30(%rip),%edx        # 0x561a4412601c <running_total>
+   0x0000561a441231ec <+67>:	mov    -0xc(%rbp),%eax
+   0x0000561a441231ef <+70>:	add    %edx,%eax
+   0x0000561a441231f1 <+72>:	mov    %eax,0x2e25(%rip)        # 0x561a4412601c <running_total>
+
+9	  for (size_t i = 0; i < count; ++i) {
+=> 0x0000561a441231f7 <+78>:	addq   $0x1,-0x8(%rbp)
+   0x0000561a441231fc <+83>:	mov    -0x8(%rbp),%rax
+   0x0000561a44123200 <+87>:	cmp    -0x20(%rbp),%rax
+   0x0000561a44123204 <+91>:	jb     0x561a441231c3 <sum_sequence+26>
+
+13	  }
+14	  return running_total;
+   0x0000561a44123206 <+93>:	mov    0x2e10(%rip),%eax        # 0x561a4412601c <running_total>
+
+15	}
+   0x0000561a4412320c <+99>:	pop    %rbp
+   0x0000561a4412320d <+100>:	ret    
+End of assembler dump.
+SUM_RESULT=16 expected=15
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=139992480433984) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=139992480433984) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=139992480433984) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=139992480433984, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007f528a159476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007f528a13f7f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007f528a13f71b in __assert_fail_base (fmt=0x7f528a2f4150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x561a4412405f "result == 15", file=0x561a44124028 "/workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c", line=21, function=<optimized out>) at ./assert/assert.c:94
+#6  0x00007f528a150e96 in __GI___assert_fail (assertion=0x561a4412405f "result == 15", file=0x561a44124028 "/workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c", line=21, function=0x561a4412406c <__PRETTY_FUNCTION__.0> "main") at ./assert/assert.c:103
+#7  0x0000561a441232b6 in main () at /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:21
+mutant: /workspace/projects/ysyx_f_to_b/C/C3/sum_debug.c:21: main: Assertion `result == 15' failed.
+44	./nptl/pthread_kill.c: No such file or directory.

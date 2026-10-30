@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "scope": "Actual saved images inspected. Pixel and audio tests are separately logged; no physical speaker claim.",
+  "images": [
+    {
+      "path": "D/D6/results/read.png",
+      "sha256": "58ec24bd00b50030dd5d50a8bbaf7127541da17fea49b929fb7c6e9bfacc82d7",
+      "observation": "Inspected actual Yosys graph; stage labels, ports and topology visible. Functional comparison is separate."
+    },
+    {
+      "path": "D/D6/results/proc.png",
+      "sha256": "8bddeeeac9eef83faf6b6bd535de750f9fd3616d85c2cd1f677feff4385034b5",
+      "observation": "Inspected actual Yosys graph; stage labels, ports and topology visible. Functional comparison is separate."
+    },
+    {
+      "path": "D/D6/results/opt.png",
+      "sha256": "2d051a6bb016ab37e15c399723aada4c38227ad37be28a0d175e9e95927dc3ee",
+      "observation": "Inspected actual Yosys graph; stage labels, ports and topology visible. Functional comparison is separate."
+    },
+    {
+      "path": "D/D6/results/techmap.png",
+      "sha256": "8f7ef1980f0b403cf02623e9c0fd92856dc3321679ae0f4249f5bde7c5ba1243",
+      "observation": "Inspected actual Yosys graph; stage labels, ports and topology visible. Functional comparison is separate."
+    },
+    {
+      "path": "D/D6/results/dfflibmap.png",
+      "sha256": "55c5bbdc8aadc22cefced6b6aa5546f838bae0fc2cde7629fd2de575cba3f409",
+      "observation": "Inspected actual Yosys graph; stage labels, ports and topology visible. Functional comparison is separate."
+    },
+    {
+      "path": "D/D6/results/abc.png",
+      "sha256": "963ba39368018078682b737591d39681f2744bd84063520a03eb7eded6fc1be5",
+      "observation": "Inspected actual Yosys graph; stage labels, ports and topology visible. Functional comparison is separate."
+    },
+    {
+      "path": "D/D6/results/pdk/NAND2X1H7L.png",
+      "sha256": "e9f6be37f10c35465a5b117fd3afb9675c4fc6363d1a80e177f41f62a10e337c",
+      "observation": "Inspected CDL connectivity graph. Dense DFF/ADDF networks require zooming the retained SVG; not a physical layout or LVS certificate."
+    },
+    {
+      "path": "D/D6/results/pdk/OAI22X1H7L.png",
+      "sha256": "6ee36c6b53ee6af758a58e32314661297458c0cb1f00ce5823571500cdd0c972",
+      "observation": "Inspected CDL connectivity graph. Dense DFF/ADDF networks require zooming the retained SVG; not a physical layout or LVS certificate."
+    },
+    {
+      "path": "D/D6/results/pdk/DFFX1H7L.png",
+      "sha256": "08911f5b54a36b48f9224cfe2aa999d4b7514288ecfca94518b92443fa6e6f00",
+      "observation": "Inspected CDL connectivity graph. Dense DFF/ADDF networks require zooming the retained SVG; not a physical layout or LVS certificate."
+    },
+    {
+      "path": "D/D6/results/pdk/ADDFX1H7L.png",
+      "sha256": "da880b22ce8a21f136fdc993b3d263352f3b980e3b63f5dce6287f2fd5364c99",
+      "observation": "Inspected CDL connectivity graph. Dense DFF/ADDF networks require zooming the retained SVG; not a physical layout or LVS certificate."
+    },
+    {
+      "path": "D/D8/architecture.png",
+      "sha256": "dc182f6b6331c531dc2b7c55c85b3c35f0d1ad03ca007a646d955c1067fd7246",
+      "observation": "Inspected final single-cycle datapath including PC+4 writeback, PC operands, RF observation and commit/halt paths."
+    },
+    {
+      "path": "artifacts/D8/fceux/native_session/released.png",
+      "sha256": "1ca42ffca49ddaa553cbfbdcc7adcf063a212acee372513ac4f48bc71f369049",
+      "observation": "Blue checkerboard in the actual final-candidate SDL/Xvfb capture."
+    },
+    {
+      "path": "artifacts/D8/fceux/native_session/pressed.png",
+      "sha256": "d415050163488cb1bd1ff707cf6eb602172556ca57dd1b4a1d14703a0b1009f5",
+      "observation": "Red checkerboard while J is down in the actual final-candidate SDL/Xvfb capture."
+    },
+    {
+      "path": "artifacts/D8/fceux/native_session/released_again.png",
+      "sha256": "1ca42ffca49ddaa553cbfbdcc7adcf063a212acee372513ac4f48bc71f369049",
+      "observation": "Blue checkerboard restored in the actual final-candidate SDL/Xvfb capture."
+    }
+  ]
+}

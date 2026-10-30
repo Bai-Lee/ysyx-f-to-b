@@ -1,0 +1,18 @@
+{
+  "status": "PASS_BUILTIN_ONLY",
+  "nemu": "/home/USER/d-stage/workbench/nemu/build/riscv32-nemu-interpreter",
+  "nemu_sha256": "8def1030e86d7ff073b4cf5bd3796fbe8f8e6a24bdc77d2776b0a7b9597219a1",
+  "spike": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/build/riscv32-spike-so",
+  "spike_sha256": "98e34e28bc605ef3d66e2ac5fe48e52664e71372c49464b927d049a35e2a8133",
+  "runtime_environment": {
+    "NEMU_HOME": "/home/USER/d-stage/workbench/nemu",
+    "PATH": "/home/USER/tools/d-stage/support/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell:/mnt/c/Users/admin/.codex/tmp/arg0-windows/codex-arg0ezUOlj:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libheif/libheif/bin:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/jxrlib/jxrlib/bin:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/Library/bin:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Wolfram Research/WolframScript/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/d/msys64/ucrt64/bin:/mnt/c/Users/admin/AppData/Local/Programs/Python/Python312:/mnt/c/Users/admin/AppData/Local/Programs/Python/Python312/Scripts:/mnt/d/nodejs/:/mnt/d/Git/Git/cmd:/mnt/c/Users/admin/.grok/bin:/mnt/c/Users/admin/AppData/Local/Microsoft/WindowsApps:/mnt/d/texlive/2023/bin/windows:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2024.1/bin:/mnt/d/modeltech64_10.4/win64:/mnt/d/VSCode/Microsoft VS Code/bin:/mnt/c/Users/admin/.local/bin:/mnt/c/Users/admin/AppData/Roaming/npm:/mnt/c/Users/admin/.mineru/bin:/mnt/c/Users/admin/.dotnet/tools:/mnt/d/VSCode/Microsoft VS Code/bin/copilot-shim:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd:/mnt/c/Users/admin/AppData/Local/OpenAI/Codex/bin/c602dfdab3808440:/mnt/c/Users/admin/AppData/Local/OpenAI/Codex/bin/2993767bd1dfb009",
+    "LD_LIBRARY_PATH": "/home/USER/tools/d-stage/support/usr/lib/x86_64-linux-gnu"
+  },
+  "instructions": "RV32I integer operations and M; FENCE/FENCE.I sequential model; EBREAK host termination. Privileged CSR/trap machinery is deferred.",
+  "memory": "128 MiB at 0x80000000, little-endian. NEMU RAM permits defined unaligned memcpy; Spike configured to reject misaligned operations, so such tests require separate evidence.",
+  "evidence": [
+    "artifacts/D3/nemu",
+    "artifacts/D3/spike"
+  ]
+}

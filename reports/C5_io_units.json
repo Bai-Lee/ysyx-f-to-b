@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "peripheral": "gpio",
+      "name": "good",
+      "status": "PASS",
+      "expected_exit": 0,
+      "stdout": "GPIO_APB_PASS checks=65680\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/gpio_tb.sv:31: $finish called at 1967220000 (1ps)\n",
+      "evidence": "artifacts/C5/io-units/gpio-good",
+      "implementation_sha256": "5f2e11b68934aa18423f6ca90a66f6376f81e68767042e0f16d4b7cb3258717e",
+      "canonical_sha256": "5f2e11b68934aa18423f6ca90a66f6376f81e68767042e0f16d4b7cb3258717e"
+    },
+    {
+      "peripheral": "gpio",
+      "name": "bad-segment",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/gpio_tb.sv:26: GPIO_SEGMENTS\n       Time: 660000  Scope: gpio_tb.$ivl_for_loop1\n",
+      "evidence": "artifacts/C5/io-units/gpio-bad-segment",
+      "implementation_sha256": "5237d8ae0e7d9e064796c6b688d2feda4dce3f873fcff4bd7cd4b5f0df02bdde",
+      "canonical_sha256": "5f2e11b68934aa18423f6ca90a66f6376f81e68767042e0f16d4b7cb3258717e"
+    },
+    {
+      "peripheral": "vga",
+      "name": "good",
+      "status": "PASS",
+      "expected_exit": 0,
+      "stdout": "VGA_FULL_FRAME_PASS pixels=307200\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/vga_tb.sv:42: $finish called at 16800061000 (1ps)\n",
+      "evidence": "artifacts/C5/io-units/vga-good",
+      "implementation_sha256": "3846a548768144b1076d3c4e35a2e72979b263a023467c1b19621f612ead7049",
+      "canonical_sha256": "3846a548768144b1076d3c4e35a2e72979b263a023467c1b19621f612ead7049"
+    },
+    {
+      "peripheral": "vga",
+      "name": "bad-colors",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/vga_tb.sv:37: VGA_PIXEL_DATA n=28144 got=000000 expected=aa0000\n       Time: 12881470000  Scope: vga_tb.$ivl_for_loop2.$unm_blk_7\n",
+      "evidence": "artifacts/C5/io-units/vga-bad-colors",
+      "implementation_sha256": "1dcc751e52e55c4ddb88053363193278699cb15e92043900f55761c57b606862",
+      "canonical_sha256": "3846a548768144b1076d3c4e35a2e72979b263a023467c1b19621f612ead7049"
+    },
+    {
+      "peripheral": "ps2",
+      "name": "good",
+      "status": "PASS",
+      "expected_exit": 0,
+      "stdout": "PS2_APB_PASS checks=532\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/ps2_tb.sv:33: $finish called at 555730000 (1ps)\n",
+      "evidence": "artifacts/C5/io-units/ps2-good",
+      "implementation_sha256": "97d45f08f3341ffbee9a98808e155036e53e08e9c54542fdce287fb70bc02334",
+      "canonical_sha256": "97d45f08f3341ffbee9a98808e155036e53e08e9c54542fdce287fb70bc02334"
+    },
+    {
+      "peripheral": "ps2",
+      "name": "bad-parity",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/ps2_tb.sv:20: PS2_FIFO_DATA got=00000045 expected=00\n       Time: 518545000  Scope: ps2_tb.read_byte\n",
+      "evidence": "artifacts/C5/io-units/ps2-bad-parity",
+      "implementation_sha256": "4dd7d42f63f15e1bc58e108d033b96e0a5bbf6d8009713900a44fa6731ccf648",
+      "canonical_sha256": "97d45f08f3341ffbee9a98808e155036e53e08e9c54542fdce287fb70bc02334"
+    }
+  ],
+  "scope": "GPIO16 walking LEDs, byte masks,16hex patterns on8digits,65536 input patterns; PS2 all256bytes, oddparity/stop/timeout rejection, FIFOoverflow; VGA307200independent pattern pixels scored overone800x525pin frame, masks/bounds/warmreset. Segment/parity/color mutants rejected. This is not NVBoard GUI or CPU application acceptance and does not verify physical metastability/pixel-clock timing."
+}

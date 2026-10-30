@@ -1,0 +1,97 @@
+{
+  "status": "PASS_BOUNDED_OBSERVATION",
+  "platform": "npc",
+  "runs": [
+    {
+      "platform": "npc",
+      "coefficient_cycles_per_second": 7000000,
+      "displayed_time_samples": [
+        {
+          "second": 1,
+          "wall_seconds": 1.0752967640000861,
+          "line": "1900-0-0 00:00:00 GMT (1 second)."
+        },
+        {
+          "second": 2,
+          "wall_seconds": 2.0366451390000293,
+          "line": "1900-0-0 00:00:00 GMT (2 seconds)."
+        },
+        {
+          "second": 3,
+          "wall_seconds": 3.019399431000238,
+          "line": "1900-0-0 00:00:00 GMT (3 seconds)."
+        },
+        {
+          "second": 4,
+          "wall_seconds": 3.999074051000207,
+          "line": "1900-0-0 00:00:00 GMT (4 seconds)."
+        }
+      ],
+      "interval_seconds": [
+        0.9613483749999432,
+        0.9827542920002088,
+        0.9796746199999689
+      ],
+      "mean_interval_seconds": 0.9745924290000403,
+      "simulation": {
+        "result": "BOUNDED_OUTPUT_OBSERVATION",
+        "exit_code": 0,
+        "cycles": 28228139,
+        "instructions": 10624856,
+        "ipc": 0.376392365079,
+        "ifu_requests": 10624857,
+        "lsu_requests": 6978426,
+        "responses": 17603282,
+        "wall_seconds": 3.907133337,
+        "frequency_hz": 7000000,
+        "mode": 3,
+        "delay": 1,
+        "random_memory_delay": false,
+        "uart_bytes": 139,
+        "counter": 28228139,
+        "fault": 0,
+        "gpr": [
+          0,
+          2147549444,
+          2148511488,
+          2147509840,
+          2147509840,
+          2147551080,
+          4294967295,
+          47,
+          0,
+          2148511648,
+          10,
+          1,
+          1,
+          2148511614,
+          268435456,
+          1
+        ]
+      },
+      "command": [
+        "/home/USER/e-stage/build/E7/valid/sim",
+        "--image",
+        "/home/USER/e-stage/software-timer-npc/timer/build/amtest-minirv-npc.bin",
+        "--report",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E7/timer/npc_trial_1/result.json",
+        "--mode",
+        "3",
+        "--frequency",
+        "7000000",
+        "--uart-random",
+        "--max-cycles",
+        "5000000000",
+        "--until-output",
+        "4 seconds).\n"
+      ],
+      "cwd": "/home/USER/e-stage",
+      "exit_code": 0,
+      "image_sha256": "d57198e5021487e16229db6adec70ae794487ec29ce859289073fdce7d9db32f",
+      "binary_sha256": "c6e912dd69bb24d81d88eb30ad9430fed9cd758976d5019830062b3580525666",
+      "stdout_sha256": "74416c6c0a4f462e31284915bec474cb44532fbd7b697119e468c0be807ec29d",
+      "elapsed_seconds": 4.037460528000338
+    }
+  ],
+  "scope": "Originalofficialam-testsRTCprints1..4seconds onstandalonevalidNPC, intervalmeasuredusinghostmonotonicclock. ConversioncoefficientcalibratedforsimulatorspeedasallowedbyE7, notchipfrequency. FullDiffTest; isolatedtimerAMdoesnotchangeactiveSoCbenchmarkconfiguration. RealSoCfour-lineRTCobservationsalso retained: dateformatting/PSRAM/UARTcostgaveabout1.7sperline evenattheminimumcoefficient, sonoSoCone-secondclaim. Endlessprogramstoppedaftercomplete4secondsline, notGOOD_TRAP."
+}

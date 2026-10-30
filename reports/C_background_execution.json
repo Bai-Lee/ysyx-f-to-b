@@ -1,0 +1,30 @@
+{
+  "status": "PASS_DETACHED_LAUNCH_CONTROL",
+  "probe": {
+    "path": "artifacts\\C\\detach-probe\\resources.json",
+    "sha256": "1ec1f65283555bb210e273a92bb4cf07b636e8a4e6736af0d533e8e6b930d4e0",
+    "elapsed_seconds": 16.018513773000002,
+    "host_samples": 3,
+    "purpose": "Budget monitor and child continue after original wsl.exe caller exits, retaining Windows memory interop."
+  },
+  "interrupted_run": {
+    "status": "UNKNOWN",
+    "evidence": "artifacts\\C5\\full128-job\\attempts\\interrupted-20261029T084326687051",
+    "last_progress": "C5_PROGRESS cycles=14750000000 instructions=2584161236 written=134217728 read=134217728 r8=268435456 r16=134217728 r32=46603642",
+    "completed_markers_are_not_full_acceptance": true,
+    "classification_record": {
+      "path": "artifacts/C5/full128-job/attempts/1793263411440350889/status.json",
+      "sha256": "6e2548482b02ca19aeae036414f0b9591f6f877f72da90d4a79c4d79c3921eaf"
+    }
+  },
+  "launcher": {
+    "path": "C/runtime/launch_detached.py",
+    "sha256": "f77ef738e4cb182c9d17d8c14caa853ec64c2da22ddc52d8cbdb31f283f56fbe"
+  },
+  "scope": "No persistent service, scheduled task or system settings. WSL termination/reboot still stops Linux jobs; neither partial markers nor stale RUNNING files count as completed tests.",
+  "duplicate_worker_control": {
+    "status": "PASS_REJECTED",
+    "evidence": "artifacts/C/detached-duplicate-control",
+    "run_sha256": "e33a6a6c58ef738a5436ccbcac37d69e1515fa588868cf4d1af6557fbbfd5dcb"
+  }
+}

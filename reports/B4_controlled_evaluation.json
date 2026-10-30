@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "frequency_mhz": 325,
+  "padding": 24,
+  "variants": [
+    "b5-multicycle-325",
+    "b5-stall-325",
+    "b5-forward-325",
+    "b5-stream-325",
+    "b5-block1-325",
+    "b5-block4-325"
+  ],
+  "scope": "Actual full-SoC test-scale executions with per-retirement NEMU and the same325MHz Q8 delay ratios. Fixed128B capacity for1/4/8-word block comparisons. Independent synthesis records are area/timing-model measurements, not physical signoff. Train results are reported separately."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-24T13:58:28.453780+00:00",
+  "node": "E2",
+  "route": "official independent linked-list competence branch",
+  "main_task": "E2-M001",
+  "native_selftest_operations_per_optimization": 20000,
+  "optimization_levels": [
+    "O0",
+    "O2"
+  ],
+  "python_oracle_operations": 12525,
+  "compiled_faults_rejected": 3,
+  "online_execution": [
+    "normal",
+    "asan_ubsan"
+  ],
+  "source_sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff",
+  "all_CEX_exercises_completed": false,
+  "scope_limits": [
+    "Official E2 permits the independent linked-list competence branch; individual textbook exercises were not done and are not marked PASS.",
+    "Native host is Windows x86-64; Compiler Explorer sanitizer execution is remote Linux, not an installed local Linux environment.",
+    "Finite tests and sanitizer success are not an unlimited proof of all possible memory behavior."
+  ],
+  "evidence": "reports/E2_results.json"
+}

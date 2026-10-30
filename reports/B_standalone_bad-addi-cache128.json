@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "name": "hello",
+      "size": "test",
+      "status": "PASS",
+      "simulation": {
+        "result": "DIFF_FAIL",
+        "cycles": 35,
+        "instructions": 2,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147483652,
+        "instruction": 65811,
+        "diff_enabled": true,
+        "diff_checked": 2,
+        "device_sync_checked": 0,
+        "wall_seconds": 0.000748507,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "",
+        "performance": {
+          "core_cycles": 35,
+          "ifu_requests": 2,
+          "ifu_responses": 2,
+          "lsu_requests": 0,
+          "lsu_responses": 0,
+          "exu_completions": 2,
+          "ifu_latency_sum": 33,
+          "lsu_latency_sum": 0,
+          "class_counts": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "class_cycles": [
+            35,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "state_cycles": [
+            2,
+            33,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ifu_absence": [
+            2,
+            31,
+            0,
+            0
+          ],
+          "cache_events": [
+            2,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            1,
+            32,
+            0
+          ],
+          "data_counts": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_latency": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "image": "/home/USER/b-stage/b1/apps/fast-hello/build/fast-hello-riscv32e-bnpc.bin",
+      "elf": "/home/USER/b-stage/b1/apps/fast-hello/build/fast-hello-riscv32e-bnpc.elf",
+      "image_sha256": "467e043f4faf04e05c84afce29c1c7a05a9c288fe47626afa4e351ae963ff7f9",
+      "elf_sha256": "657fc519d9a5c98367a91307340ca11726f43f4c628c448d26ba54d268eabc0a",
+      "evidence": "artifacts/B/standalone/validation/bad-addi-cache128-hello-test"
+    }
+  ],
+  "scope": "Same RTL CPU/cache and AXI boundary with a fast functional RAM/UART model; every retirement compared to independent NEMU. Random deterministic channel stalls. No SoC timing or memory-pin performance claim."
+}

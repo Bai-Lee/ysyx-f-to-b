@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "comparisons": 21199,
+  "reference": "Native glibc functions, plus unchanged guard bytes and return pointers; comparison source compiled separately from renamed candidate functions.",
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "negative_control": "Missing string terminator rejected by same unchanged assertions",
+  "printf_scope": "integer/string/char/pointer/percent; flags, width, precision, hh/h/l/ll/z/t/j. No floating conversion or %n claim; widths above 1,000,000 are resource-rejected.",
+  "evidence": "artifacts/D5/host"
+}

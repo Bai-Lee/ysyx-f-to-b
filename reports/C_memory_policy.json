@@ -1,0 +1,146 @@
+{
+  "status": "PASS_POLICY_UPDATE_AND_SMALL_CONTROLS",
+  "date": "2026-10-28",
+  "backup": "C:\\YSYX_WORKSPACE\\config\\history\\memory-policy-20261028T1202533337809Z",
+  "files": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\AGENTS.md",
+      "previous_sha256": "ea3837b3997d3c3364d763563ae068c51fbe1b732e8df8c2bf25549f58dbf24e",
+      "current_sha256": "dc316f8609de1bd8fd2f863247d59f7c349f99e286412b480a32967915d5e3d3"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\README.md",
+      "previous_sha256": "deacbdecb0b2877af48c61ad09720b7101b338436735b9ef4fe923a68be87cd5",
+      "current_sha256": "c4213e44e0fa0cc3d9b75dedcf62846468b57042c69e14f67b6a233ccf95a7e4"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\config\\toolchain.lock.json",
+      "previous_sha256": "9894ddc9c38ba4569544f909ce215d030db38f41218e4b97be615fd7ddd083ef",
+      "current_sha256": "9dded49cf48d3e89c12746ea729984a94f189cc82f60bdb2429423131391f1bc"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\scripts\\setup_ops.py",
+      "previous_sha256": "9522fc9f89391c367c47f0b0abbb63064dac5f0009089c25e99d5753beb923cd",
+      "current_sha256": "bd71e2c49b50a475a8a030a95096a2107436fb2bafc47ec9a9188c4626f9426b"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\scripts\\smoke_tests.py",
+      "previous_sha256": "99efd72ca08b81391296aa0b71f3bc40908fc08a11ad87e91be8439eeae84b50",
+      "current_sha256": "ad05a452dc2766ffe29c90ee9f96da646a0dfe17b4afacd9fbec6184ece51000"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\reports\\TOOLCHAIN_READY.md",
+      "previous_sha256": "7a6fc323a68af65d359b34627b6539f25f4c40f5b396a4845dd3b5075e675271",
+      "current_sha256": "277e2b40ceb33c91f724787423b2f691d0b54f7264ffb28d2bedd16a60446fdc"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\README.md",
+      "previous_sha256": "d051adc06e3e8cd10bb490f7de19baa940cb6cd376f8dcdef2f33411c9a8715d",
+      "current_sha256": "7cc212a13732524d89cf70ba93773047ff97041ff9104207380cdf34ddadda57"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\execution_policy.json",
+      "previous_sha256": "f38c068d11981f54467318ca2b763db202aceaacca5af332c81e26b714678c70",
+      "current_sha256": "fcf68f529b4369db46cc7ebe6849451addc98d0cdcd86079d27c6b460c7192c4"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\toolchain.json",
+      "previous_sha256": "9f2613a0d85b28e04a31c15194c4c3d0ea250f3ebe3092332df6c93dee2cb164",
+      "current_sha256": "1262c8afecc39424449753a70acd082b9724352d7ca6cec65470af5318b0dd89"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\runtime\\preflight.py",
+      "previous_sha256": "8fbf04a16192a758ca03f12274077bcb6e16368222f2768252111d2b30792dd8",
+      "current_sha256": "24d815ab8df3a1d0c18fa40e4132a804ee28c5f3b90b7c45ed12f8021dcd89c1"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\runtime\\resume_check.py",
+      "previous_sha256": "7e7baa3efb0b4c7b7372bbf8d4b2ff7cd40e1f959f466ecbe9198bcfaf63b121",
+      "current_sha256": "b25df16207e1523eab4946f789369decdbe8aa180088ef1afbba0d71c6943e5e"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\runtime\\README.md",
+      "previous_sha256": "6e8fd5cd0fd7d770e0e774ae27680dd9ee85945408770f787ea8670d431fd9dc",
+      "current_sha256": "359b5b12140e81f4799d83d7355707b4329914456833e21fa97901cf16ab90e0"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\C4\\synthesis.py",
+      "previous_sha256": "eeafed35636161c1c6f2445df37ce09d93871f8967177dca761184abe8c56ea0",
+      "current_sha256": "9224ef803c3cc4815718edd843273a43bc43bf0b12aa9c40ea078abf7cab1b46"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\C4\\synthesis\\analyze_netlist.py",
+      "previous_sha256": "b47c6bb94746354a932a798e808213da014d81a793d067a923cef8667c2efbbc",
+      "current_sha256": "1604cfde0d9255281f07500ee47e9bc19de2a722a72345ed281751bfe39cd8a9"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\C4\\synthesis\\budget_exec.py",
+      "previous_sha256": "2d1d395609db150d4a9208488a9f36a0b4be21e1f11bb387f60be25be99129c8",
+      "current_sha256": "0d626bdb2e5f5f66488464e4d038cd53a45ec076dbb6d2e0efd283c67cd4f677"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\C5\\generation\\budget_exec.py",
+      "previous_sha256": "2d1d395609db150d4a9208488a9f36a0b4be21e1f11bb387f60be25be99129c8",
+      "current_sha256": "b1ce5bab0803fd47c71a810e6e01a77437135b6bedd00a6df30fc04eb440558b"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\C5\\bootstrap_generate.py",
+      "previous_sha256": "a95b97a54983adda49c8f57fd18c31f9e3da02cbf95ddf33453425b49cbdd3f6",
+      "current_sha256": "04547a9fae0d0cb77368683f70546eb585b4b1756d0f802b2640cbbaa8fe6cda"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\C5\\bootstrap_setup.py",
+      "previous_sha256": "b5df2282c2da515892d3e7e388bac665a4e18b51e05107ada448985fdc6827a3",
+      "current_sha256": "cae010899fe614d4c3a21757eaa8e050bded20428f7dc243f05634513ba83663"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\runtime\\common.py",
+      "previous_sha256": "94a6497e4e65a8dd2199925e26f3e0cbb29996c9bab4ca9b336fe229bce889db",
+      "current_sha256": "bca42f38a9b95452cfe05fb1cb683d93e2294d9f08ea8a77f897c345be05cfb6"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\runtime\\resource_policy.py",
+      "current_sha256": "fa6e62db536c42057d7b5fbcf7527f81c58bd3cab445c93bf3258c4ff25a7f90",
+      "new": true
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\runtime\\budget_exec.py",
+      "current_sha256": "4580880a40135bd55cf2fbb45c9b70d49489c4d36f22747140e21f5e3d80c67c",
+      "new": true
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\runtime\\test_resource_budget.py",
+      "current_sha256": "6f4f113abbc1c0c49d77a0756ba8898258f8aecc735fd9a3946b528429457216",
+      "new": true
+    }
+  ],
+  "active_policy": {
+    "not_validated": [
+      "user circuit problems",
+      "task-specific official benchmark import/verification workflows",
+      "PDK/process accuracy",
+      "physical PPA",
+      "all inputs of arbitrary designs"
+    ],
+    "heavy_parallelism": 1,
+    "light_parallelism_max": 2,
+    "compile_jobs_default": 4,
+    "soft_process_tree_rss_GiB": 6,
+    "minimum_free_ram_before_heavy_GiB": 2,
+    "os_hard_memory_limit": false,
+    "minimum_free_ram_during_heavy_GiB": 1,
+    "minimum_wsl_available_MiB": 512,
+    "C_jvm_heap_MiB": 4096,
+    "memory_policy_revision": "2026-10-28-user-expanded",
+    "memory_policy_authorization": "User requested increasing memory in AGENTS.md and other constraints; sampled limits only, no system configuration changes."
+  },
+  "validation": {
+    "C_runtime": "3 unittest controls PASS in 6.838 seconds; active 6144MiB policy + JVM override; low-host refusal without launching; real 32MiB allocation under 128MiB limit passes, real 80MiB allocation under 32MiB limit stopped with RESOURCE_LIMIT/125. No multi-GiB stress allocation.",
+    "syntax": "All changed Python parsed and JSON decoded; Linux helper and bootstrap_generate compiled.",
+    "workspace_regression": "34 passed in 0.76s (python -m pytest tests -q)",
+    "real_C4_run": "C4/opensta/axi PASS under new shared guard; report reports/C4_mapped_timing.json",
+    "current_C4_completion": "C4_AUDIT.json covers12 core tasks with declared timing limits. Targeted mode6 update passed74 ISA cases and negative/SDB controls; all6 modes total444 runs."
+  },
+  "historical_evidence": "F/E/D runners, original reports and frozen snapshots retain old limits. Historical TOOLCHAIN_READY capability results preserved; only current guidance updated.",
+  "system_settings_changed": false
+}

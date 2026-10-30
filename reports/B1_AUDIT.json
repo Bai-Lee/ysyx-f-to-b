@@ -1,0 +1,423 @@
+{
+  "status": "PASS_PUBLIC_ENGINEERING",
+  "nested_records": [
+    {
+      "id": "PA-3.2-01",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-02",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-03",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-04",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-05",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-06",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-07",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-01",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-02",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-RTTHREAD",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "Actual NEMU and NPC RT-Thread boot, original scripted shell commands and context switching."
+    },
+    {
+      "id": "PA-4.1-AMAPPS",
+      "status": "REVIEWED_OUTSIDE_B1_STARTUP_BOUNDARY",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "B1 explicitly stops at RT-Thread startup. Application integration is later optional material; preserved C results are not attributed to the B pipeline."
+    },
+    {
+      "id": "PA-3.1-AUX01",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.1-AUX02",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.1-AUX03",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX01",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX02",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX03",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX04",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX05",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX06",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX07",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX08",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX09",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX10",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-3.2-AUX11",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX01",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX02",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX03",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX04",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX05",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX06",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX07",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX08",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX09",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX10",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX12",
+      "status": "REVIEWED_BACKGROUND_OR_RULE",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "RISC-V path and RT-Thread prefix; x86/MIPS examples are explanatory only."
+    },
+    {
+      "id": "PA-4.1-AUX14",
+      "status": "REVIEWED_OUTSIDE_B1_STARTUP_BOUNDARY",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "reports/B1_spike_environment.json",
+        "B/B1/NOTES.md"
+      ],
+      "scope": "B1 explicitly stops at RT-Thread startup. Application integration is later optional material; preserved C results are not attributed to the B pipeline."
+    }
+  ],
+  "evidence": [
+    "reports/B1_native.json",
+    "reports/B1_npc.json",
+    "reports/B1_spike_environment.json",
+    "B/B1/NOTES.md"
+  ],
+  "exclusions": [
+    "B1 personal C-stage application",
+    "PA4 Nanos-lite and later user processes",
+    "full privileged ISA and asynchronous interrupts"
+  ]
+}

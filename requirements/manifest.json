@@ -1,0 +1,227 @@
+{
+  "scope": "36 F-B chapter snapshots plus course index; source HTML hash is an archival fingerprint, not an upstream signature",
+  "chapters": [
+    {
+      "path": "original/B/B1.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/b/1.html",
+      "source_html_sha256": "8805377ab8cb50371f098fe01543a3928753d49d0d28f55d4ceccb7e2bc71eaf",
+      "snapshot_sha256": "867a6bee418fe6179c7c61e5a732daae7308e612ecce4fe0fcb8b1f88fbcf504"
+    },
+    {
+      "path": "original/B/B2.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/b/2.html",
+      "source_html_sha256": "76bdf20b7d8c972a2bb6de75a6a7bb2abc9a1f864362cd64e1591ef638b542a2",
+      "snapshot_sha256": "f73c4c55a26dbe36fd2b24a9eaf3057b22a2ecf5fe2f786f4cdd68969f69e00b"
+    },
+    {
+      "path": "original/B/B3.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/b/3.html",
+      "source_html_sha256": "b4787d0920744c7212eda2de5620391029c9822030dcc086c1e1ab78117057ef",
+      "snapshot_sha256": "6463a40cbca6175eb1c1e4b0e01bc7a7f171048f0db5f48fee8bb84a332e44a9"
+    },
+    {
+      "path": "original/B/B4.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/b/4.html",
+      "source_html_sha256": "eed1dc0020a0806fd559fcc2ec201ca0fc0ea77215ea878119aaea9299feb0c2",
+      "snapshot_sha256": "7a08bd139a2ad0e5f4319ecd8233ad96d4bd1919bd300f1c3c489f8b6fe1e666"
+    },
+    {
+      "path": "original/B/B5.md",
+      "url": "https://ysyx.oscc.cc/docs/2306/basic/1.11.html",
+      "source_html_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+      "snapshot_sha256": "6c08a6d0b784f82dc0798f214de595f80aa87bd3328cf6ae5b669aa7f42b1266"
+    },
+    {
+      "path": "original/C/C1.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/c/1.html",
+      "source_html_sha256": "022fca99745eb3bb9a0161a0cf2826d5147ed6987e56009af5eb1615e2616509",
+      "snapshot_sha256": "1e91024fe09179debdf26facc741284acf89e219bf80a2e2a31aac444b88574c"
+    },
+    {
+      "path": "original/C/C2.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/c/2.html",
+      "source_html_sha256": "a1d0c13691b4e1a565e60ba66bb7c77b43e25beb92ed497f92b0bfed51c9482a",
+      "snapshot_sha256": "5e72a409247bca849f47a59b7b17842c354fba1709e59f0959daed1ff10ac5de"
+    },
+    {
+      "path": "original/C/C3.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/c/3.html",
+      "source_html_sha256": "6cba2a9d76e65f01c2c1cfbd0aa4cf545a2e33f6221a4324f071fa5a2aa6d5a4",
+      "snapshot_sha256": "4b9245b4ba4220bd0d1ebb51efb230702238d1b27464c34b4de533acbd059ade"
+    },
+    {
+      "path": "original/C/C4.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/c/4.html",
+      "source_html_sha256": "bc4a17cbbab091e79c07ebe4e3ead82106c3f9163fc2ec8978748804f2c038ed",
+      "snapshot_sha256": "128bc3a2c089f0fe9a75de226387794b6aad71ccf80ec80d37169a9fa11cb32d"
+    },
+    {
+      "path": "original/C/C5.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/c/5.html",
+      "source_html_sha256": "2fc700898dcdad84835e6796aa95d1d1a93e3117ecbe1cc43fbd8e10e3e0e90c",
+      "snapshot_sha256": "665d6021f6cd4845c9b2f80580f2eba6f2005164ecfa8929245a8ad8ad41decb"
+    },
+    {
+      "path": "original/C/C6.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/c/6.html",
+      "source_html_sha256": "6dc1cf6df9186c9b2efacdd8c7ae3dd38da3b61741bd62fa71d18d16fd06d562",
+      "snapshot_sha256": "5d159cecb3ddc62810a4bfffe8ad59684b6e0c72ffe75c3066d9573174bbd1ef"
+    },
+    {
+      "path": "original/course_index.md",
+      "url": "https://ysyx.oscc.cc/docs/",
+      "source_html_sha256": "d75f25abaa4d1e4f4c7b168ebf195236121fabab7c3c392125d6bc9edc840c25",
+      "snapshot_sha256": "90cef678a81a87de8b4b81b8ff2cf39c6d96567207344f0cc1c3c48b794ac490"
+    },
+    {
+      "path": "original/D/D1.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/d/1.html",
+      "source_html_sha256": "8a9b692a4cf58c8b33f832f9f89f0d23db4c5e0af9879351d5dda973325624bd",
+      "snapshot_sha256": "9a04ebfa65cbbb86c06e718b7d5b51a11f8c4963a8f2396f330ba6cdc71b7b01"
+    },
+    {
+      "path": "original/D/D2.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/d/2.html",
+      "source_html_sha256": "c2bbb22ca3696ec9f7ac7b6ec68e47826baec4e6b7d04b04ff40b9cd2d6a5fec",
+      "snapshot_sha256": "7526789fbf83391aa95bbfbde504d07faa71877a9a7551309036807321848257"
+    },
+    {
+      "path": "original/D/D3.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/d/3.html",
+      "source_html_sha256": "d00ea4ce5fe9367348fd6b7bd6bb5f5a96d49d76e4b6890d5fbb8093e4c48472",
+      "snapshot_sha256": "30424569177143c25c1614a0d3a2b8b7b7b8061ad454032c87193ab778867dd5"
+    },
+    {
+      "path": "original/D/D4.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/d/4.html",
+      "source_html_sha256": "83c66229f527f90e924d77153bb880241f074815384443121e9ce0bc36206b72",
+      "snapshot_sha256": "db267b703d091f11b9647c9513c00aecf6dc79e9c9fa8258bcc3863238bbfbaf"
+    },
+    {
+      "path": "original/D/D5.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/d/5.html",
+      "source_html_sha256": "c2f81ea1f7dea66a4cee1b7de226bf864357e091cb6f38c52507580cf1555990",
+      "snapshot_sha256": "0f8e9d274381c3bc9fbf4d2e3b2e66e6b80882744b95a2fd7394c1edeefe79dc"
+    },
+    {
+      "path": "original/D/D6.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/d/6.html",
+      "source_html_sha256": "f3f5b45cec4dc296fd5055d909c28627667f544b241bb39337dd199199111bab",
+      "snapshot_sha256": "9336d07ce933b478b1cd38e46ac3036b37e9785d123772b377fdfed0f013e187"
+    },
+    {
+      "path": "original/D/D7.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/d/7.html",
+      "source_html_sha256": "35a5f24d3a7344a7900df0ce76fb4f1cdd9e689093b5ebfda5db1df46db4e29a",
+      "snapshot_sha256": "083133799d01d3290a7bc4e8d660f99413517438ef462a1a70de0f224a334bd7"
+    },
+    {
+      "path": "original/D/D8.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/d/8.html",
+      "source_html_sha256": "441f7f6248f33912e38748b4bfe4b0e159931ebba0f50385e3d1e07b90e510f2",
+      "snapshot_sha256": "5532de93b1843823a710470214a3d05610a327c128db7cc38797806955d2cfef"
+    },
+    {
+      "path": "original/D/D9.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/d/9.html",
+      "source_html_sha256": "8c3345d4c794005168d3c7b29b8d89d6ffaa727a62436e13d8e4f5facc344577",
+      "snapshot_sha256": "04195b2d7ad361409b749119b70286f3240920e5c2bc5658f02b03201fb157e4"
+    },
+    {
+      "path": "original/E/E1.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/e/1.html",
+      "source_html_sha256": "4b5494fbfad8970628c0389c6fbae84fc3f47ed12fdb8156d620c0577711887e",
+      "snapshot_sha256": "d563c3309822db1d8b9dc80f9a718013afffb3edd9d7571fc39dc4bc9b2618f3"
+    },
+    {
+      "path": "original/E/E2.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/e/2.html",
+      "source_html_sha256": "493138ea6d09fc4b3cf97d0a339627a5466d6d7d83c5736df1115e9fa125f646",
+      "snapshot_sha256": "0947018a5d1edd1084746767adc6aaea788c07efd133776048da7d1264638441"
+    },
+    {
+      "path": "original/E/E3.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/e/3.html",
+      "source_html_sha256": "4996f7905c15909448cee282dfe1beacabe0f99be0382b5a2d2c0a367e1267a2",
+      "snapshot_sha256": "d731d2051fb5a54b8c47b9af27c55dbac8fb490fc2ebfb93f605ebb879e5a6c8"
+    },
+    {
+      "path": "original/E/E4.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/e/4.html",
+      "source_html_sha256": "e66f396da2ae493633ef3f45444054e1c7622eac0aab437b1ee7d7f50c6e3831",
+      "snapshot_sha256": "882621c601bf82cc16d7fdf1060665880afb41c79dabf2bde343bfff22d225bb"
+    },
+    {
+      "path": "original/E/E5.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/e/5.html",
+      "source_html_sha256": "e5009aa36e753d6f72c14e6316a9103e87be73868055b7c73092395d7c40a80d",
+      "snapshot_sha256": "9ec6a293dc7236fada4e1b4d4242d149a0dc80f6cd3968480fe954164c65ba34"
+    },
+    {
+      "path": "original/E/E6.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/e/6.html",
+      "source_html_sha256": "2c9a160b656f848e28a9dc3bd6a85e078f7bf81d192ed8c6d10f79e104921fe1",
+      "snapshot_sha256": "f7bf307b0e90132480f9f5c2f8b79446f741bfd0b58346663cc0317a4a56fb3d"
+    },
+    {
+      "path": "original/E/E7.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/e/7.html",
+      "source_html_sha256": "afe05b82e0af90c72a51428ced54dce56109ae1c3038e752337d1da440874682",
+      "snapshot_sha256": "bc6ee50203dd5708b7416d650d4a3ace5e2c6b9a925609079564c99e056e117d"
+    },
+    {
+      "path": "original/E/E8.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/e/8.html",
+      "source_html_sha256": "9b9598afebb39abd4025ea8924b67c19b4b07faf8318f559c442a65611759547",
+      "snapshot_sha256": "27b615b73d8cfe7f750bcea533d6d85987f64e7ba4efdf1f76212a189adf2731"
+    },
+    {
+      "path": "original/E/E9.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/e/9.html",
+      "source_html_sha256": "4b03553095808029eb18b86fc66feaea1dd50bd09037f419e04b2d8e5c72629a",
+      "snapshot_sha256": "bd72fe3fe67c10e78e0347d4892f397899b66837dabe1aff72834a465ba907ac"
+    },
+    {
+      "path": "original/F/F1.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/f/1.html",
+      "source_html_sha256": "d5fe34081f9fb13fc8f085e583007b180c1c288aef1d893c9e5da56502d5ef6d",
+      "snapshot_sha256": "e2ab1aaf4586f4187278734daf35d951308b35db75f26568530cfca2ee2e1743"
+    },
+    {
+      "path": "original/F/F2.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/f/2.html",
+      "source_html_sha256": "8f8bc07462e23693e539945aac40666062f880d5fd6a54e25a45d1fbacd1191d",
+      "snapshot_sha256": "1d77adf4c3ca43e65edc28c2bf6be0f504101fa65f0af866e9b6f8bce8d92b6c"
+    },
+    {
+      "path": "original/F/F3.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/f/3.html",
+      "source_html_sha256": "9b1a5648f5b7bbf8fdb84bca898934f38effb741104939e7980954fdc8038e15",
+      "snapshot_sha256": "8ae088eacbde960c9ae1286ad8d60cf5fc5813e9610b59c80dd164a846332a4b"
+    },
+    {
+      "path": "original/F/F4.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/f/4.html",
+      "source_html_sha256": "2f739da1cd255574e84b0a219cf56022dd1c55141efc24437a70141a2ede2f33",
+      "snapshot_sha256": "662b545a28dc9a7d30fc05be497c017498dfc6de30a65d7c2bea776eb6cb66ae"
+    },
+    {
+      "path": "original/F/F5.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/f/5.html",
+      "source_html_sha256": "23b76a787d603460139ba27d800bf1b14a0de9e772198b4f926c394999b0c1b1",
+      "snapshot_sha256": "f97733fd5c2ce9269f1c8bb2083944a5e5b37b7f3c4021f3b7be3ab85cae00ca"
+    },
+    {
+      "path": "original/F/F6.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/f/6.html",
+      "source_html_sha256": "85a7a0e4d022136b390d3335b22a7a372c54cfb8d7cdfbc0af10629f275be6a3",
+      "snapshot_sha256": "6538d84473e92724093170f77f1774cddf521a5d8d69250c9a42e3ca762a22da"
+    },
+    {
+      "path": "original/F/F7.md",
+      "url": "https://ysyx.oscc.cc/docs/2607/f/7.html",
+      "source_html_sha256": "c47149068ad017fb0ad9f5c4ab306a88f1f8a89559aaa70424eb0905c1f4e57f",
+      "snapshot_sha256": "e0b740cb44a1779838ed9c29fca7ba11640d4b95c55267280db302571629b05b"
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "status": "PASS",
+  "scope": "Original examples8/9 array writes and integer reinterpretation activities",
+  "runs": [
+    {
+      "name": "E3/lcthw/arrays/ex8_assignments/compile",
+      "timestamp": "2026-10-24T16:52:16.371979+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "gcc",
+        "-std=c17",
+        "-Wall",
+        "-Werror",
+        "-O0",
+        "-g",
+        "/workspace/projects/ysyx_f_to_b/E/E3/lcthw/solutions/early/ex8_assignments.c",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/early/bin/ex8_assignments.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.562,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex8_assignments.c",
+          "sha256": "4e26099500fb689c29755bc83f7fa2016e7fce88882233c168e961d35f0b87f1"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex8_assignments.c",
+          "sha256": "4e26099500fb689c29755bc83f7fa2016e7fce88882233c168e961d35f0b87f1"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/lcthw/arrays/ex8_assignments/run",
+      "timestamp": "2026-10-24T16:52:16.909885+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "valgrind",
+        "--error-exitcode=99",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/early/bin/ex8_assignments.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.515,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex8_assignments.c",
+          "sha256": "4e26099500fb689c29755bc83f7fa2016e7fce88882233c168e961d35f0b87f1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex8_assignments.elf",
+          "sha256": "f63f5272a776ae971e5d5eb77229b9c7fa3ce0cf31a01478234259fb7db321ef"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex8_assignments.c",
+          "sha256": "4e26099500fb689c29755bc83f7fa2016e7fce88882233c168e961d35f0b87f1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex8_assignments.elf",
+          "sha256": "f63f5272a776ae971e5d5eb77229b9c7fa3ce0cf31a01478234259fb7db321ef"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "eec40952898ea3139ca3cfbe1abf74be3f233b52b31090ed6b18f64cd6664e26",
+      "stderr_sha256": "1eba7b2ca7ad98a1d05ca66f7d597dec82071f666f0649d690f6696d6d621f4d"
+    },
+    {
+      "name": "E3/lcthw/arrays/ex9_char_numbers/compile",
+      "timestamp": "2026-10-24T16:52:17.556673+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "gcc",
+        "-std=c17",
+        "-Wall",
+        "-Werror",
+        "-O0",
+        "-g",
+        "/workspace/projects/ysyx_f_to_b/E/E3/lcthw/solutions/early/ex9_char_numbers.c",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/early/bin/ex9_char_numbers.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.578,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_char_numbers.c",
+          "sha256": "8ee5c41e7c67f81c3917bfc212bd906e9649323d05607822eb5efea3a40340b1"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_char_numbers.c",
+          "sha256": "8ee5c41e7c67f81c3917bfc212bd906e9649323d05607822eb5efea3a40340b1"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/lcthw/arrays/ex9_char_numbers/run",
+      "timestamp": "2026-10-24T16:52:18.113587+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "valgrind",
+        "--error-exitcode=99",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/early/bin/ex9_char_numbers.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.531,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_char_numbers.c",
+          "sha256": "8ee5c41e7c67f81c3917bfc212bd906e9649323d05607822eb5efea3a40340b1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex9_char_numbers.elf",
+          "sha256": "2e3036ef022925ae1593135a0f45604becea52f5bb6cca8ac5a8966fc06a0169"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_char_numbers.c",
+          "sha256": "8ee5c41e7c67f81c3917bfc212bd906e9649323d05607822eb5efea3a40340b1"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex9_char_numbers.elf",
+          "sha256": "2e3036ef022925ae1593135a0f45604becea52f5bb6cca8ac5a8966fc06a0169"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "7e227bdbc28f668413073c1a98c37033b78fc010e876352e53b6ef5d0da3077a",
+      "stderr_sha256": "657b0530af71cb70979b5a3290a150e1c6f6fc65cc48193f794ebda517474587"
+    },
+    {
+      "name": "E3/lcthw/arrays/ex9_int_array_pun/compile",
+      "timestamp": "2026-10-24T16:52:18.730937+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "gcc",
+        "-std=c17",
+        "-Wall",
+        "-Werror",
+        "-O0",
+        "-g",
+        "/workspace/projects/ysyx_f_to_b/E/E3/lcthw/solutions/early/ex9_int_array_pun.c",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/early/bin/ex9_int_array_pun.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.547,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_int_array_pun.c",
+          "sha256": "597ed610c6d1908e5cf115d1506237d3c14cc615618ebf5cfccee986dc4b4e09"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_int_array_pun.c",
+          "sha256": "597ed610c6d1908e5cf115d1506237d3c14cc615618ebf5cfccee986dc4b4e09"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/lcthw/arrays/ex9_int_array_pun/run",
+      "timestamp": "2026-10-24T16:52:19.282836+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "valgrind",
+        "--error-exitcode=99",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/early/bin/ex9_int_array_pun.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": [
+        0,
+        99,
+        11,
+        139
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.531,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_int_array_pun.c",
+          "sha256": "597ed610c6d1908e5cf115d1506237d3c14cc615618ebf5cfccee986dc4b4e09"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex9_int_array_pun.elf",
+          "sha256": "b3b8716b529247a6b0a95e7e42d67c64c8c95022e2a687670a950e98f1b5cc7c"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_int_array_pun.c",
+          "sha256": "597ed610c6d1908e5cf115d1506237d3c14cc615618ebf5cfccee986dc4b4e09"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex9_int_array_pun.elf",
+          "sha256": "b3b8716b529247a6b0a95e7e42d67c64c8c95022e2a687670a950e98f1b5cc7c"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "13c8d901fd1f3c06cf3f8e554cbdc8a0eaf0278ae74d469251874e6cf0ee941a",
+      "stderr_sha256": "12839fd367c461ba7da8024450bd7deb3538e55cb3eb60a48087852414411bcc"
+    },
+    {
+      "name": "E3/lcthw/arrays/ex9_int_array_pun_asan/compile",
+      "timestamp": "2026-10-24T16:52:19.846668+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "gcc",
+        "-std=c17",
+        "-Wall",
+        "-Werror",
+        "-O0",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-sanitize-recover=all",
+        "/workspace/projects/ysyx_f_to_b/E/E3/lcthw/solutions/early/ex9_int_array_pun_asan.c",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/early/bin/ex9_int_array_pun_asan.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.516,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_int_array_pun_asan.c",
+          "sha256": "597ed610c6d1908e5cf115d1506237d3c14cc615618ebf5cfccee986dc4b4e09"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_int_array_pun_asan.c",
+          "sha256": "597ed610c6d1908e5cf115d1506237d3c14cc615618ebf5cfccee986dc4b4e09"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/lcthw/arrays/ex9_int_array_pun_asan/run",
+      "timestamp": "2026-10-24T16:52:20.043483+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E3/lcthw/early/bin/ex9_int_array_pun_asan.elf"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "status": "PASS",
+      "elapsed_seconds": 0.156,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_int_array_pun_asan.c",
+          "sha256": "597ed610c6d1908e5cf115d1506237d3c14cc615618ebf5cfccee986dc4b4e09"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex9_int_array_pun_asan.elf",
+          "sha256": "00b69b2af42886efa8a096271518d936ae6394d1b421a29ea669f7b65819dd93"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\solutions\\early\\ex9_int_array_pun_asan.c",
+          "sha256": "597ed610c6d1908e5cf115d1506237d3c14cc615618ebf5cfccee986dc4b4e09"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E3\\lcthw\\early\\bin\\ex9_int_array_pun_asan.elf",
+          "sha256": "00b69b2af42886efa8a096271518d936ae6394d1b421a29ea669f7b65819dd93"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "16092c05d6440b722ecdb022e812cd8b1b2e5de83d9a9b7e897691426c8324ec"
+    }
+  ],
+  "observations": [
+    {
+      "name": "ex8_assignments",
+      "mode": "good",
+      "exit_code": 0,
+      "valgrind_zero_error": true,
+      "asan_bounds_error": false
+    },
+    {
+      "name": "ex9_char_numbers",
+      "mode": "good",
+      "exit_code": 0,
+      "valgrind_zero_error": true,
+      "asan_bounds_error": false
+    },
+    {
+      "name": "ex9_int_array_pun",
+      "mode": "observe",
+      "exit_code": 0,
+      "valgrind_zero_error": true,
+      "asan_bounds_error": false
+    },
+    {
+      "name": "ex9_int_array_pun_asan",
+      "mode": "asan",
+      "exit_code": 1,
+      "valgrind_zero_error": false,
+      "asan_bounds_error": true
+    }
+  ]
+}

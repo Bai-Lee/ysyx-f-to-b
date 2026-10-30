@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "backup": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\history\\B_documents_20261030T061549958535",
+  "status_counts": {
+    "PASS": 57,
+    "EXCLUDED_SCOPE": 3,
+    "REVIEWED_TECHNICAL_CONSTRAINT": 16,
+    "REVIEWED_BACKGROUND": 19,
+    "NOT_RUN_OPTIONAL": 6,
+    "PASS_AUTHORED_TRACE_EXAMPLE": 1,
+    "PASS_SCOPED_OPTIONAL": 3,
+    "PASS_FINITE_CONTROL_SEQUENCES": 1,
+    "TIMEOUT_OPTIONAL": 1,
+    "PASS_PROJECT_ID_ADAPTATION": 2,
+    "EXCLUDED_OFFICIAL_LOCAL_REHEARSAL_RECORDED": 1
+  },
+  "report_sha256": "843447c978db9ec5432dfb417a728bfa27215c074c41d0b01ee2494301fd99cb",
+  "runtime_members": 4977,
+  "offline_replay_cases": 6,
+  "scope": "Documents and current status merged after validated engineering/replay. Resource numeric limits and previous stage records retained. ZIP verification is the following delivery step."
+}

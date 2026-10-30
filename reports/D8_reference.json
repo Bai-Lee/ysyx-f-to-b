@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "shared_object": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+  "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a",
+  "configuration": "/home/USER/d-stage/nemu-ref/.config",
+  "configuration_sha256": "a49c23adb0afc230082b8165ae17194b123b140c7f09c691d47642efedd5efd0",
+  "abi": "32 x uint32_t GPR followed by uint32_t PC (132 bytes); memcpy/regcpy direction 0 TO_DUT, 1 TO_REF",
+  "verified": [
+    "1000 bidirectional memory copies",
+    "GPR/PC both directions",
+    "x0 hard zero",
+    "exec(1),exec(2),store/load state",
+    "clean repeated init",
+    "memory bounds rejected",
+    "unused interrupt API explicitly rejects"
+  ],
+  "evidence": "artifacts/D8/ref"
+}

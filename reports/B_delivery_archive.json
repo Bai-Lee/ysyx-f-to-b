@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "verified_entries": 49030,
+  "crc_verified": true,
+  "all_member_sha256_verified": true,
+  "current_files_match": true,
+  "label": "B",
+  "archive": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\YSYX_B_DELIVERY.zip",
+  "bytes": 12619913742,
+  "sha256": "50a17f1f146a9704a47e0be357138d7eedcdebd42c35a8b2cca235532dc1a1c1",
+  "manifest_sha256": "25f99dd95766a50efea60e2974cf94127ddc258979983e454261b5951c1153ab",
+  "checker_controls": {
+    "valid_accepted": true,
+    "bad_digest_rejected": true,
+    "extra_rejected": true,
+    "unsafe_rejected": true
+  },
+  "timestamp": "2026-10-30T06:50:30.764918+00:00",
+  "final_audit_binding_check": {
+    "status": "PASS",
+    "bound_files": 106,
+    "scope": "Final audit, every task evidence digest, source copies, original/retry memory resource records, runtime, host telemetry and report match the fully CRC/SHA-verified manifest. Full ZIP contents were verified by package_B.py and were not redundantly reread."
+  }
+}

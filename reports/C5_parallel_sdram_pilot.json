@@ -1,0 +1,29 @@
+{
+  "status": "PASS_FUNCTION_AND_THROUGHPUT",
+  "serial_seconds": 13.44614138299994,
+  "parallel_seconds": 4.038632969999981,
+  "speedup": 3.329379392205577,
+  "actual_workers": 4,
+  "peak_group_pss_bytes": 1276089344,
+  "compared_fields": [
+    "result",
+    "exit_code",
+    "cycles",
+    "instructions",
+    "coverage",
+    "gpr",
+    "sdram_chips",
+    "uart",
+    "diff_checked",
+    "device_sync_checked"
+  ],
+  "assembly_sha256": "39e77b0201f8a5197cbfc709898084d2222eb6c78f31b39e63436075b782759a",
+  "checks": {
+    "controls-good": "3a00051de6534e1e44079816cc14311ea23b7c8218894239003698a7829568b6",
+    "controls-bad": "ccdab5d2f8b123c760646698887297444f5771bfc270059a2898ccec7a8e2967",
+    "pilot-serial": "25b4f994a19f82c58199bf9360ded6715a7df5a44a1e4e8cfb4d2eab743b40a7",
+    "pilot-parallel": "e9ec4cb0981cd9f9385e1f98356ced503607df950f423ff6356f4e347205ad6f"
+  },
+  "resource_controls_sha256": "26fa99483785d2615687be34ce5a83ac8fea0bd773dff51574dd024ccfea7f2a",
+  "scope": "Same eight full-range pattern firmwares run serially and concurrently. Equal deterministic results and original serial assembly payload counts. Each pattern resets independently; this is not an uninterrupted eight-pattern state sequence. Small pilot speedup is measured, not a promise of identical full-run speedup."
+}

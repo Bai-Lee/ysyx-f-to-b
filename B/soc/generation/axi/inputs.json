@@ -1,0 +1,147 @@
+{
+  "files": [
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/CPU.scala",
+      "sha256": "e47550a37826333b153f6e68adcea78949fd55789714e52cae9fa96523d48ddb"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/SoC.scala",
+      "sha256": "544121823ac5d69215e2ec07aba497f186ec543f1194826bbb2609e9f1a80f9a"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/Top.scala",
+      "sha256": "47171aac426fde9e0078b53c0012ef7bab96bf0b79fef5d71ca2dc2e07f329de"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/amba/APBDelayer.scala",
+      "sha256": "78ddd0ee980fede5c86882a6d9de7bcc1afe15f6ff1b0168f6d7e263a064c1f2"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/amba/AXI4Delayer.scala",
+      "sha256": "14a202120e775f595e9febeee4acfeb8d75b768c04969097462e6cac487ba54d"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/amba/AXI4ToAPB.scala",
+      "sha256": "103ef6233a4d5bb5f4dfb7e149cb216f33f860cbe068b56c64eba4eaaa44c80d"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/Bundles.scala",
+      "sha256": "bad91d40a6c6d2d8e1e70384e1912ce3818fc523a90373058e02846a1ffea72f"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/CAM.scala",
+      "sha256": "3c0f218dd90871bb8dbc13bbf5e943c893f1b29919f0fe8bfe3d19b1b654687c"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/ChipLink.scala",
+      "sha256": "a95aa7d5d2ffd1bb6c5beeffa81f3eea71c1a8b9b8ed578dba8bf2127c919312"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/Parameters.scala",
+      "sha256": "7ec0b3bff6ba8505f3316f22b6ac484bdae6497c9196deb982310ece79e18f1a"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/Partial.scala",
+      "sha256": "454762fe551bfe80671665e2a7bf11c0d87cd1bdd941a76e5f7f67b2d7172280"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/RX.scala",
+      "sha256": "666d7d6a20ce5b96d730b9eeda9e25a383f3515ecf4b60747bacc85860b4902b"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SinkA.scala",
+      "sha256": "8a2cf27efe8a1afc7c344c2ceb349d04819a26b114d47dc10f954b5cb0c07f0c"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SinkB.scala",
+      "sha256": "8c0c869a0ff967fa12c675aa6817afccfbca35c62a1d60d91c3b687d17a5a260"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SinkC.scala",
+      "sha256": "51044bb52f8c5291031678326ee8ad1d1970eb3ae28f9c27a9771b6618c7cb7c"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SinkD.scala",
+      "sha256": "14f1f94e30d0383b510d6e5fcbda4060575d86e62a62ec608958dd4651a21a62"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SinkE.scala",
+      "sha256": "9bfdd27e9c30ed978272a60679aec6e572c57cc3190b27d523a4148674b837c5"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SourceA.scala",
+      "sha256": "de1a464e6395afc2c9ea50c2ab7d4ad57770f2d3ccedcf2e912f542f4315769d"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SourceB.scala",
+      "sha256": "3019bed2acdea41c2dd2b4aad4dca70f56dea4f12cb93573e8fad6fad98cda26"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SourceC.scala",
+      "sha256": "d103eba393b809f8e364b19b7ecc01bd67ee72ddb0fb6f38c74549f6f419392a"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SourceD.scala",
+      "sha256": "9770155b01e44b5bcbae402fec8c3eed5c798a1c1c51c3216f2e59688bb9f5f6"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/SourceE.scala",
+      "sha256": "a98a26922d37bf0f18896b8c5b8f4b6fc9d2797d4f87e62038a57a5f3d135c2d"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/StuckSnooper.scala",
+      "sha256": "50f06f52ef7535db8897de9082668b48a4897d7ba04209a999c9e7a5ab833187"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/chiplink/TX.scala",
+      "sha256": "f384083f9a205047c9b807358b4ccb46320293561accd6f8762705877d7531d0"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/BitRev.scala",
+      "sha256": "b88140380a3955579acf7e5ed1c3f69ee24d36149464be817b76a105d440b416"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/ChipLinkBridge.scala",
+      "sha256": "268341dd3fe3311c2cb8bbac3e3d1464245cf18433c92043313ab34ee8df6b19"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/GPIO.scala",
+      "sha256": "3bf450e4fbbda6f3d0d9fb5006914007c85da4d1003deedcfb517ed0abb5ebf3"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/Keyboard.scala",
+      "sha256": "7c947c4173b62c6755ca541e863e4b18d3de1b4cc2213390e9e4fd3dfc13acc1"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/MROM.scala",
+      "sha256": "b8b0d253f9bcb24250eb2a4024913f467f3f3b92d08e9b2896f000422a459b4f"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/PSRAM.scala",
+      "sha256": "c049ceb44325ac7512e2e753f44b2f170c35907622b4380f62002bf75c8f3ba7"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/SDRAM.scala",
+      "sha256": "558d1491b7eab843ba18ee84c78e9ee39c25518a50a9cfd04f7fb6f2a67bf879"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/SPI.scala",
+      "sha256": "9ef692e804966ce24bffc26684bad985562d9e41b1fa8f3f7c68f15a390594e3"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/Uart16550.scala",
+      "sha256": "e4ba2641a9a16b74a1f7083d45396db854cfed7bae64bc9f64d2bcb3e12e2b35"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/device/VGA.scala",
+      "sha256": "9ac0929cb557688263d9675111de232841075753408d0b28894ee1e31f660fc6"
+    },
+    {
+      "path": "/home/USER/b-stage/soc-generation/ysyxSoC/src/util/TriState.scala",
+      "sha256": "a611eaad7bf47d87020734ed02ff9c421cd7937f5ee640dc25530082f42ca649"
+    }
+  ],
+  "C_top_sha256": "6f42f2c5694eb613c88ef4e2d09e5ba2337b70c46909b9da792939516b9fae54",
+  "tools": "reports/C5_toolchain.json",
+  "scope": "Pinned already dev-init-completed framework copied; one Config switch. Reuses local compiled dependency caches and pinned tools."
+}

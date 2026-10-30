@@ -1,0 +1,6 @@
+{
+  "status": "PASS_EXPECTED_REJECTION",
+  "wrapper": "/home/USER/e-stage/software-soc/abstract-machine/tools/minirv/minirv-common.sh",
+  "sha256": "953a5eda986ee17f75744a9a6d2e1c0025a6620f031bb64590e983d49c685d23",
+  "reason": "Original wrapper continued after compiler errors and its finaldd could create a40byte bogusobject andreturn0. IsolatedSoCcopy nowusesfailfast; invalidC returnsnonzero andcreatesnoobject. E6/activeE7standaloneworkbench untouched."
+}

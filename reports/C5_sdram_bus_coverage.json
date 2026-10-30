@@ -1,0 +1,136 @@
+{
+  "status": "PASS_RECORDED_COMPLETED_SWEEPS",
+  "source_sha256": "bff111e8bba63f1467e92a25a3651db0c85ad24e8bfa9c8c4d5b25f5e902e8d3",
+  "runs": [
+    {
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-4096",
+      "width": 16,
+      "ranks": 1,
+      "bytes": 4096,
+      "status": "PASS",
+      "physical_byte_expectations": [
+        {
+          "chip": 0,
+          "unique_capacity_bytes_exercised": 4096,
+          "read_bytes": 65536,
+          "write_bytes": 32768
+        }
+      ]
+    },
+    {
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-65536-original",
+      "width": 16,
+      "ranks": 1,
+      "bytes": 65536,
+      "status": "PASS",
+      "physical_byte_expectations": [
+        {
+          "chip": 0,
+          "unique_capacity_bytes_exercised": 65536,
+          "read_bytes": 1048576,
+          "write_bytes": 524288
+        }
+      ]
+    },
+    {
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-65536",
+      "width": 16,
+      "ranks": 1,
+      "bytes": 65536,
+      "status": "PASS",
+      "physical_byte_expectations": [
+        {
+          "chip": 0,
+          "unique_capacity_bytes_exercised": 65536,
+          "read_bytes": 1048576,
+          "write_bytes": 524288
+        }
+      ]
+    },
+    {
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-65536-asm",
+      "width": 16,
+      "ranks": 1,
+      "bytes": 65536,
+      "status": "PASS",
+      "physical_byte_expectations": [
+        {
+          "chip": 0,
+          "unique_capacity_bytes_exercised": 65536,
+          "read_bytes": 1048576,
+          "write_bytes": 524288
+        }
+      ]
+    },
+    {
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-33554432-asm",
+      "width": 16,
+      "ranks": 1,
+      "bytes": 33554432,
+      "status": "PASS",
+      "physical_byte_expectations": [
+        {
+          "chip": 0,
+          "unique_capacity_bytes_exercised": 33554432,
+          "read_bytes": 536870912,
+          "write_bytes": 268435456
+        }
+      ]
+    },
+    {
+      "evidence": "artifacts/C5/sdram-sweep/sdram32x1-65536-asm",
+      "width": 32,
+      "ranks": 1,
+      "bytes": 65536,
+      "status": "PASS",
+      "physical_byte_expectations": [
+        {
+          "chip": 0,
+          "unique_capacity_bytes_exercised": 32768,
+          "read_bytes": 524288,
+          "write_bytes": 262144
+        },
+        {
+          "chip": 1,
+          "unique_capacity_bytes_exercised": 32768,
+          "read_bytes": 524288,
+          "write_bytes": 262144
+        }
+      ]
+    },
+    {
+      "evidence": "artifacts/C5/sdram-sweep/sdram32x2-65536-asm",
+      "width": 32,
+      "ranks": 2,
+      "bytes": 65536,
+      "status": "PASS",
+      "physical_byte_expectations": [
+        {
+          "chip": 0,
+          "unique_capacity_bytes_exercised": 32768,
+          "read_bytes": 524288,
+          "write_bytes": 262144
+        },
+        {
+          "chip": 1,
+          "unique_capacity_bytes_exercised": 32768,
+          "read_bytes": 524288,
+          "write_bytes": 262144
+        },
+        {
+          "chip": 2,
+          "unique_capacity_bytes_exercised": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        {
+          "chip": 3,
+          "unique_capacity_bytes_exercised": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        }
+      ]
+    }
+  ],
+  "derivation": "Every requested8/16/32/64-bit width is written/read foraddress andinverse. CPUlogicalbytepayload=8N eachdirection. SDRAMcontroller reads32bits for everyarchitectural load, giving16N pinreadbytes; maskedpinwrites commit8N. Eachx16lane andrank receives its proportional share. These physicalcounts supplement CPUunique-byte/operationcoverage."
+}

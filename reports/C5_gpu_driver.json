@@ -1,0 +1,18 @@
+{
+  "status": "PASS_NATIVE_LOGIC_AND_NEGATIVE",
+  "runs": [
+    {
+      "name": "good",
+      "status": "PASS",
+      "expected_exit": 0,
+      "evidence": "artifacts/C5/gpu-driver/good"
+    },
+    {
+      "name": "bad-row-stride",
+      "status": "PASS",
+      "expected_exit": 1,
+      "evidence": "artifacts/C5/gpu-driver/bad-row-stride"
+    }
+  ],
+  "scope": "ExactC5ioe.c compiled with the real AM headers and test framebuffer address.13rectangles independently scored per sourcepixel, clipping onall4sides, zero/sync-only, INT_MIN outsidecoordinates, originalsourcepitch and8wordguards. Wrongdestinationrowstride rejected. Does not replace actualCPU/NVBoard acceptance."
+}

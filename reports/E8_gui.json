@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "review": "reports/E8_visual_review.json",
+  "images": [
+    {
+      "path": "artifacts/E8/gui/dashboard_ready.png",
+      "sha256": "2cf4f1eb1bc7d1581fac1d7537aed468a437fcf314f25f84fa1f699d13d60046"
+    },
+    {
+      "path": "artifacts/E8/gui/checklist.png",
+      "sha256": "82a1a542a95dd57325cc9f107199582e43e0a7ff8394ccfdc7a7b7ca448f0a04"
+    },
+    {
+      "path": "artifacts/E8/gui/checklist_timing.png",
+      "sha256": "87f08bed5e4b477104c010fdd395a1f626d0abf69e7ab645c46a9b888abbea84"
+    },
+    {
+      "path": "artifacts/E8/gui/checklist_warning.png",
+      "sha256": "428eff363dd1a68aa5889a9014b1fbf432727636781dd6330051b024eb1229aa"
+    },
+    {
+      "path": "artifacts/E8/gui/native_micrometers.png",
+      "sha256": "998d210878cfaa64fc47f9270b46e7db234484a129cf72d38766aa21ec92615d"
+    },
+    {
+      "path": "E/E8/signoff/layout.png",
+      "sha256": "9ae8b0d39a8a0e196dab19bbc9fb6dd93f1324c59e7677d5de0664549cf3ec21"
+    }
+  ],
+  "native_viewer": {
+    "status": "OBSERVED_RUNNING_NATIVE_2D",
+    "pid": 385,
+    "command": [
+      "/home/USER/tools/e-stage/ecos-alpha9/squashfs-root/resources/binaries/chip-viewer-native",
+      "--manifest",
+      "/home/USER/e-stage/physical/cpu_baseline/filler_ecc/output/geometry/geometry.manifest",
+      "--mode",
+      "view",
+      "--map-root",
+      "/home/USER/e-stage/physical/cpu_baseline/filler_ecc/feature",
+      ""
+    ],
+    "environment": {
+      "ECOS_GPU_CANVAS": "0",
+      "LD_LIBRARY_PATH": "/home/USER/tools/e-stage/ecos-alpha9/squashfs-root/resources/binaries/_internal/ecc_tools_bin/lib:/home/USER/tools/e-stage/gui-libs/usr/lib/x86_64-linux-gnu:/home/USER/tools/e-stage/ecos-alpha9/squashfs-root",
+      "VK_ICD_FILENAMES": "/home/USER/tools/e-stage/ecos-alpha9/squashfs-root/vk_swiftshader_icd.json",
+      "DISPLAY": ":100",
+      "XDG_RUNTIME_DIR": "/home/USER/e-stage/ecos_gui_profile/runtime"
+    }
+  },
+  "geometry_manifest_sha256": "5518a710dd88941003a5d43852aabd41599353f0ba03b41be4617dafe0eccb8a",
+  "interaction_log": "artifacts/E8/gui/interactions.json",
+  "application_version": "ECOS Studio0.1.0-alpha.9",
+  "scope": "RealECOSdashboard/checklistandnative2Dread-onlyview;CPUcanvasflagisprovidedbytheupstreamsource. OptionalembeddedAIagentand3Dviewnotselected. NoLogisimcomputeruse."
+}

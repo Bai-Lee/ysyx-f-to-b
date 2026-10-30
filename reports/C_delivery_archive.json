@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "verified_entries": 43692,
+  "crc_verified": true,
+  "all_member_sha256_verified": true,
+  "current_files_match": true,
+  "label": "C",
+  "archive": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\YSYX_C_DELIVERY.zip",
+  "bytes": 11652980262,
+  "sha256": "1baeed212b22f6e9c07616ac03393c6b345e73e587bb1b2c6a2f170bb1ee1d3a",
+  "manifest_sha256": "260665882f6158102f0a56891ba9b20f9f72fe46cdfaceb3729917f0d9dcf143",
+  "timestamp": "2026-10-29T13:36:10.022091+00:00",
+  "final_audit_binding_check": {
+    "status": "PASS",
+    "bound_reports": 68,
+    "scope": "Final audit dependency hashes and sidecar match the fully CRC/SHA-verified delivery manifest. Full member content checking was completed by package_C.py."
+  }
+}

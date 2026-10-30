@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "data_reference": {
+    "lines": 2,
+    "words": 1,
+    "ways": 1,
+    "padding": 0,
+    "capacity_bytes": 8,
+    "accesses": 7,
+    "misses": 5,
+    "bypasses": 1,
+    "reads": 5,
+    "writes": 2,
+    "writebacks": 1,
+    "invalidations": 0
+  },
+  "locality": [
+    {
+      "layout": "array",
+      "stride_bytes": 4,
+      "result": {
+        "lines": 8,
+        "words": 4,
+        "ways": 2,
+        "padding": 0,
+        "capacity_bytes": 128,
+        "accesses": 64,
+        "misses": 16,
+        "bypasses": 0,
+        "reads": 64,
+        "writes": 0,
+        "writebacks": 0,
+        "invalidations": 0
+      },
+      "source": "Authored synthetic address sequence, not an observed application trace"
+    },
+    {
+      "layout": "scattered-list",
+      "stride_bytes": 128,
+      "result": {
+        "lines": 8,
+        "words": 4,
+        "ways": 2,
+        "padding": 0,
+        "capacity_bytes": 128,
+        "accesses": 64,
+        "misses": 64,
+        "bypasses": 0,
+        "reads": 64,
+        "writes": 0,
+        "writebacks": 0,
+        "invalidations": 0
+      },
+      "source": "Authored synthetic address sequence, not an observed application trace"
+    }
+  ],
+  "scope": "Hand-calculated direct-mapped WB/WA fixture exercises hits, clean replacement, dirty eviction and MMIO bypass. Synthetic locality examples hold access count and cache parameters fixed; linked lists allocated contiguously need not behave like this scattered example."
+}

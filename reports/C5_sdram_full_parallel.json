@@ -1,0 +1,28 @@
+{
+  "status": "PASS_FULL_CAPACITY_PARALLEL_PATTERNS",
+  "bytes_per_pattern": 134217728,
+  "independent_resets": 8,
+  "worker_slots": 8,
+  "actual_workers": 4,
+  "elapsed_seconds": 4108.722973180001,
+  "peak_group_pss_bytes": 1424036864,
+  "resumed_phases": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "total_cycles": 16997356624,
+  "total_instructions": 2936031274,
+  "executable_sha256": "c90d2cd5886f553023b90c04c2f9403e6e1cd4e55580d18ce342efaa61f41085",
+  "reference_sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab",
+  "assembly_sha256": "39e77b0201f8a5197cbfc709898084d2222eb6c78f31b39e63436075b782759a",
+  "pattern_driver_sha256": "a0ba5581d4c450f5948fb8fa9ecd6146a02987eab6693c0fdec2b440ef67cbcd",
+  "summary": "artifacts/C5/parallel-sdram/full128/summary.json",
+  "summary_sha256": "8b8f2a88033352c0cc1459d3dca9b3b56873ab8efe6d8e99b35a7f9bda627500",
+  "resources_sha256": "05013d46ff45a043dd763e8e03295b5dbce8260ade87f50107182b09b86a4262",
+  "driver_sha256": "867199113bd81c336cf4f986903d7a2b19887fc260a3a1dff43215373bfc30ce",
+  "worker_status_sha256": "b5d41382fd1e07841850934bf0366955a0f8642177c7583682523680b0ca3ef8",
+  "pilot_sha256": "97bf7e2d9b15ae9e14b03dc34fbe6a24ae6309aab1c21d2dceb0c181746097db",
+  "scope": "Eight independent reset runs, each covering the entire specified address range. Exact accepted assembly bodies, full non-MMIO NEMU checking, original widths/address/inverse patterns. No partitioning of addresses between models. Not a claim of one uninterrupted eight-pattern controller-state sequence."
+}

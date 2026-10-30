@@ -1,0 +1,61 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "source_commit": "72ba231bb79db53f1c07920f2642ef20679faeff",
+  "source": "/workspace/YSYX_F_B_Archive/repos/NJU-ProjectN__rt-thread-am__master",
+  "workbench": "/home/USER/c-stage/c5/rt-thread-am",
+  "scons": {
+    "version": "4.0.1+dfsg-2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/scons/scons_4.0.1+dfsg-2_all.deb",
+    "package": "/workspace/downloads/scons_4.0.1+dfsg-2_all.deb",
+    "sha256": "d451de7060ea2f2eed75fb8ac55a37df680a678ffaeaa2e8be44ce36ad575f6d",
+    "verification": "Compared with SHA256 in the installed Ubuntu apt package index. Portable extraction; no system install.",
+    "wrapper": "/home/USER/tools/scons-4.0.1/bin/scons"
+  },
+  "patches": [
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/src/acceptance.c",
+      "sha256": "9b035204c21ad9174aa7790b155c2701dd7c906935df4e03c19d8e6271e3e3e0"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/src/context.c",
+      "sha256": "1919cba9c338dd3bab79e8095a8a1f691c9c4b050026de1685f3f548b446fbb5"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/src/hello.c",
+      "sha256": "cfe1f536468988640f2ebf34f1cf8c23f71c3bc25ae71570865bf5960d73d746"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/src/init.c",
+      "sha256": "f399df241cd21db01e3680ebf3167027b1f7608efeacc35935661fa00d042016"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/src/interrupt.c",
+      "sha256": "ce722c08e3ef285eb96f238e5f6dbeb74e73b163293867c0a62ce45cf7a0a71d"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/src/libc.c",
+      "sha256": "cdff8bf4704903fdefc7e83ef5cf06c510cb21b74f20d659a908fdc804c1f113"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/src/uart.c",
+      "sha256": "5da9af9e3a9e89796bfea2616838f6879ba7cfbcc43c969e1633bfa1d17bee12"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/Makefile",
+      "sha256": "16c8d188043e11b85ed56182710864ace0da6be513055278c6fd6fe61e330993"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/SConstruct",
+      "sha256": "3f854d2dfeaa4f87cce844a2068b1a8c72410ac40c7a2ba61b2658cbedc4bacf"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/.config",
+      "sha256": "3b3b26c2e657c433026c361f1dc762daf115be57b7931be1be4c7e26ddf5ad15"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/rt-thread-am/bsp/abstract-machine/extra.ld",
+      "sha256": "1cb278d5eca4ba7234544ce2b2d3d7fb1f9a0f2acf01e8d4d0a4442479391a88"
+    }
+  ],
+  "scope": "Original RT-Thread kernel and built-in scripted shell commands. Added real single-CPU synchronous context switching, interrupt state restoration, thread-return validation. Polling without asynchronous interrupts; integrated AM applications not yet tested."
+}

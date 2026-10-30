@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SOURCE_PAGE_INSPECTION",
+  "image": {
+    "path": "C/C1/results/n1570-external-definitions.png",
+    "sha256": "7e86113b0f2a42f54daac94123b3cf551310d6ad94fd709db7ae9e86af78896b"
+  },
+  "source": "/workspace/YSYX_F_B_Archive/assets/offline/www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+  "physical_page": 173,
+  "printed_page": 155,
+  "observation": "Inspected complete section 6.9 page including paragraph 5 and footnote 161. Page 176 section 6.9.2 was text-inspected. This is source reading, not PDF authoring."
+}

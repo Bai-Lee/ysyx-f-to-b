@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "lines": 16,
+      "words": 1,
+      "ways": 1,
+      "burst": 0,
+      "negative": false,
+      "status": "PASS",
+      "result": "ICACHE_PASS accesses=824 hits=269 misses=455 bypass=100 memory_requests=555 beats=555 stream_requests=256 stream_cycles=512",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/cache-l16-w1-a1-b0-bad0/transactions.vcd",
+      "wave_sha256": "4d0f492b1c7849713c60073b1e2af19fd2a07971d87ab534da394c656737b2fb",
+      "evidence": "artifacts/B3/unit/cache-l16-w1-a1-b0-bad0"
+    },
+    {
+      "lines": 16,
+      "words": 4,
+      "ways": 1,
+      "burst": 0,
+      "negative": false,
+      "status": "PASS",
+      "result": "ICACHE_PASS accesses=824 hits=374 misses=350 bypass=100 memory_requests=1500 beats=1500 stream_requests=256 stream_cycles=512",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/cache-l16-w4-a1-b0-bad0/transactions.vcd",
+      "wave_sha256": "1f4fb2c009c0c31b699635132dfba5fbed84c0f4e20ac49dce111fd59eda9a47",
+      "evidence": "artifacts/B3/unit/cache-l16-w4-a1-b0-bad0"
+    },
+    {
+      "lines": 16,
+      "words": 4,
+      "ways": 1,
+      "burst": 1,
+      "negative": false,
+      "status": "PASS",
+      "result": "ICACHE_PASS accesses=824 hits=375 misses=349 bypass=100 memory_requests=899 beats=1496 stream_requests=256 stream_cycles=512",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/cache-l16-w4-a1-b1-bad0/transactions.vcd",
+      "wave_sha256": "3cca8350c55497bd44d079dfa098facd44d85caea80d867040068ba587ce2e13",
+      "evidence": "artifacts/B3/unit/cache-l16-w4-a1-b1-bad0"
+    },
+    {
+      "lines": 16,
+      "words": 4,
+      "ways": 2,
+      "burst": 1,
+      "negative": false,
+      "status": "PASS",
+      "result": "ICACHE_PASS accesses=824 hits=428 misses=296 bypass=100 memory_requests=846 beats=1284 stream_requests=256 stream_cycles=512",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/cache-l16-w4-a2-b1-bad0/transactions.vcd",
+      "wave_sha256": "6abaaf16c127b9c22973aac30b2d0603e8c45feaaa7f52eb25cbc1b2ee6a8671",
+      "evidence": "artifacts/B3/unit/cache-l16-w4-a2-b1-bad0"
+    },
+    {
+      "lines": 8,
+      "words": 8,
+      "ways": 2,
+      "burst": 1,
+      "negative": false,
+      "status": "PASS",
+      "result": "ICACHE_PASS accesses=824 hits=433 misses=291 bypass=100 memory_requests=1441 beats=2428 stream_requests=256 stream_cycles=512",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/cache-l8-w8-a2-b1-bad0/transactions.vcd",
+      "wave_sha256": "e5497d35efa1cfce9fe8dba6bf076de5e673d8a61b52f701f6c535b02c7abe9c",
+      "evidence": "artifacts/B3/unit/cache-l8-w8-a2-b1-bad0"
+    },
+    {
+      "lines": 16,
+      "words": 1,
+      "ways": 1,
+      "burst": 0,
+      "negative": true,
+      "status": "PASS_TAG_FAULT_REJECTED",
+      "result": "",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/cache-l16-w1-a1-b0-bad1/transactions.vcd",
+      "wave_sha256": "8e28206191f62510a5713cb2eb0523dceb4bc1170ea5f6e0c57726faede5a63a",
+      "evidence": "artifacts/B3/unit/cache-l16-w1-a1-b0-bad1"
+    },
+    {
+      "lines": 4,
+      "words": 8,
+      "ways": 2,
+      "burst": 1,
+      "negative": false,
+      "status": "PASS",
+      "result": "ICACHE_PASS accesses=824 hits=430 misses=294 bypass=100 memory_requests=1444 beats=2452 stream_requests=256 stream_cycles=257",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/cache-l4-w8-a2-b1-bad0-pipe/transactions.vcd",
+      "wave_sha256": "6a93cbc731625b8d852ebff18f1ab61aefe348827a89660979f95dbd4a618abb",
+      "evidence": "artifacts/B3/unit/cache-l4-w8-a2-b1-bad0-pipe"
+    }
+  ],
+  "seed": "0x2607b301",
+  "scope": "Independent data function, randomized memory/CPU backpressure, conflicting tags, full line words,1/2ways,1/4/8word lines, single/INCR burst reads, flash serial fill, SRAM/MMIO bypass, backing-memory edits followed by invalidation. Finite test suite, not universal proof."
+}

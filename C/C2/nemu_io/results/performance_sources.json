@@ -1,0 +1,21 @@
+{
+  "status": "PASS_CANONICAL_RESTORED",
+  "files": [
+    {
+      "path": "/home/USER/c-stage/c2-nemu-apps/am-kernels/benchmarks/dhrystone/dry.c",
+      "sha256": "30a2da8eac1160e256dd6d103921aca02f40fb1d4f0a9f6f368a59f912caf2fe",
+      "canonical_source_archive_sha256": "d5a9a14719a40255c11e07580c0b4d1a27a8537394ed59bda53a2d5bb87d8183"
+    },
+    {
+      "path": "/home/USER/c-stage/c2-nemu-apps/am-kernels/benchmarks/coremark/src/core_main.c",
+      "sha256": "56dd2c1fb9c3722215f1d0d87df082156755434ff1b1c65cecf262e2b660848c",
+      "canonical_source_archive_sha256": "d5a9a14719a40255c11e07580c0b4d1a27a8537394ed59bda53a2d5bb87d8183"
+    },
+    {
+      "path": "/home/USER/c-stage/c2-nemu-apps/am-kernels/benchmarks/coremark/include/core_portme.h",
+      "sha256": "82d28033f8ecb75f539fa9d2971b0fed30fbcddfdb8f69f7005847df2fb5d326",
+      "canonical_source_archive_sha256": "d5a9a14719a40255c11e07580c0b4d1a27a8537394ed59bda53a2d5bb87d8183"
+    }
+  ],
+  "scope": "C2 performance uses original official iteration counts, not D minimal demonstration iterations. Original validation logic restored byte-for-byte."
+}

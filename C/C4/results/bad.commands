@@ -1,0 +1,10 @@
+si 0
+si -1
+p $x16
+p 1/0
+x 1 0
+d 31
+info z
+blah
+si
+q

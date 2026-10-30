@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "timestamp": "2026-10-25T16:13:40.179730+00:00",
+  "core_tasks_passed": 30,
+  "core_tasks_total": 30,
+  "all_scope_items": 35,
+  "standalone_program_runs": 135,
+  "standalone_fceux_complete_frames_per_mode": 2,
+  "official_tests_per_bus_configuration": 73,
+  "bus_configurations": 7,
+  "soc_official_test_bodies": 73,
+  "soc_cold_boot_batch_count": 1,
+  "soc_negative_wrong_separate": true,
+  "soc_performance_runs": 3,
+  "gui_visual_review": "PASS",
+  "timer_platform": "standalonevalidNPC",
+  "timer_intervals_seconds": [
+    0.9613483749999432,
+    0.9827542920002088,
+    0.9796746199999689
+  ],
+  "snapshot": [
+    {
+      "path": "E/E7/runtime_snapshot/npc/Makefile",
+      "sha256": "56ed86163270475497e823e556ea232af792803c1f537ed90f11decb6146a7ff"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/npc/csrc/bus_runner.cpp",
+      "sha256": "f09c689c83b89751d5754d3a51aa1809e895d7b96c4fef85c341ec3d4d252d58"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/npc/csrc/soc_runner.cpp",
+      "sha256": "5cfa05a7c5471f1beba44ba424ddab99dac92b175ad4b8af0d1236a02da5aafb"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/npc/csrc/ref.c",
+      "sha256": "ed9c1ec8f3539e53007567496f087e668047a0d6a392c615a0fb0a9c44ff76d0"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/npc/csrc/ref.h",
+      "sha256": "76b3f7d945b1c292e2c8bf559f8a5fe311a9f9231348f2283189aa927debccb1"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/npc/csrc/memory.hpp",
+      "sha256": "42e77cd8fbf2e882bd81eb13a16df9c5d6221bf0f298fef138f26280a1acb576"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/npc/vsrc/minirv_bus.sv",
+      "sha256": "a7c5b2a000ce92e50819b057636bbe1175b9bf6c7e166bc4d1abe8ebcac0845e"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/npc/vsrc/ysyx_00000000.sv",
+      "sha256": "8c437e5a1713a92b5800694ebeb3db11e9b8b43b74eaeead84323e2236f3a929"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/npc/vsrc/mygpio_top_apb.v",
+      "sha256": "96316561961e4df75db0113ebf3f58093b088fbbeb75fe255b3497b469a1e312"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/soc_am/am/src/riscv/npc/trm.c",
+      "sha256": "c61c459a813c484cc38cc517a65f4e57a813b85f391673eae2c4dd8dd825f63a"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/soc_am/am/src/riscv/npc/timer.c",
+      "sha256": "09cae6e392dcf295d3cf2071f1392fe74c08d04789359934e4ec819905b8ffbf"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/soc_am/am/src/riscv/npc/e7_config.h",
+      "sha256": "1035477ece82b18ff45de05c36c79f98c6f32481488d2bbfa3bbae5d77108e35"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/soc_am/tools/minirv/minirv-common.sh",
+      "sha256": "03b3a17b483192d8d228c5bc92790244454a805f15559799885ad5260a046b0e"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/soc_am/scripts/minirv-ysyxsoc.mk",
+      "sha256": "53170069e8bb0d0e94eb81eaccf5053b04cb9c4d6adc295d6384c36da6275227"
+    },
+    {
+      "path": "E/E7/runtime_snapshot/soc_am/scripts/platform/npc.mk",
+      "sha256": "5cede96ac473046d4ddb2469796bea7d317fae206bc2dc1995cc34a7fdca23d3"
+    },
+    {
+      "path": "E/E7/offline/npc-ifu-linux",
+      "sha256": "62d14f1ea32cd7f54642c4b5c88cd3a211d5ea5afd9974957e3451c9b997e059"
+    },
+    {
+      "path": "E/E7/offline/npc-lsu-linux",
+      "sha256": "b740cc021432864011d2f33562cdfd843766efb8d894c4c867a38be340c63ec7"
+    },
+    {
+      "path": "E/E7/offline/npc-valid-linux",
+      "sha256": "c6e912dd69bb24d81d88eb30ad9430fed9cd758976d5019830062b3580525666"
+    },
+    {
+      "path": "E/E7/offline/npc-soc-linux",
+      "sha256": "28128d95b7557c4285727290c31a289a486da5a3119911c40112277b77d1366d"
+    },
+    {
+      "path": "E/E7/offline/npc-soc_gui-linux",
+      "sha256": "1d76d135a0793c0d26580cc7d3401761b757a94900128bf6e4a93c1dab17551f"
+    }
+  ],
+  "limits": [
+    "Localqualificationonly;notofficialcourseadmission",
+    "SoCofficialtestsbatchedwithallocatedobjectsectionsunchanged;not73coldboots",
+    "Clockratiofunctionaltestsarenotanalogmetastabilityproof",
+    "Synthesisfrequency/costareprelayoutTTandcoursehypothetical;finalphysicalsignoffbelongsE8",
+    "RealSoCdateprintingwasabout1.7s/line;one-secondRTCdemonstrationusesoriginaltestonstandaloneNPC"
+  ]
+}

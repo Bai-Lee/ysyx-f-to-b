@@ -1,0 +1,7 @@
+{
+  "rom_source": "E/E6/homebrew/interaction.nes",
+  "rom_sha256": "29ccb7d3b35f40a5c56f07f9cde787a55259eb6fbfd021c67006e731da494817",
+  "script_source": "/workspace/projects/ysyx_f_to_b/E/E6/fceux_verify.py",
+  "script_source_sha256": "c2ba97c9f8747c125caddc5f7ae0f4998ce8bab2ce6b9b97956d9a3bc08aa9b1",
+  "purpose": "Existing original project-authored ROM and actual SDL/X11 callback test, rerun in the D-stage workbench. No E files are modified."
+}

@@ -1,0 +1,515 @@
+{
+  "status": "AUDITED_WITH_DECLARED_EXCEPTIONS",
+  "records": [
+    {
+      "id": "MS-01-01",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header."
+    },
+    {
+      "id": "MS-01-02",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header."
+    },
+    {
+      "id": "MS-01-03",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header."
+    },
+    {
+      "id": "MS-01-04",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header."
+    },
+    {
+      "id": "MS-01-05",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header."
+    },
+    {
+      "id": "MS-01-06",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header."
+    },
+    {
+      "id": "MS-01-07",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header."
+    },
+    {
+      "id": "MS-01-08",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header."
+    },
+    {
+      "id": "MS-01-09",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header."
+    },
+    {
+      "id": "MS-01-10",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "shell/sysfs_probe.json",
+        "data/host_probe.json"
+      ],
+      "details": "WSL sysfs lacks battery sensor; actual host Win32_Battery charge/status obtained read-only, explicitly Windows interface rather than fabricated Linux sysfs."
+    },
+    {
+      "id": "MS-02-01",
+      "status": "PASS",
+      "evidence": [
+        "scripts/ls",
+        "scripts/man_ls"
+      ],
+      "details": "Actual hidden file, colors, mtime order and human-readable size."
+    },
+    {
+      "id": "MS-02-02",
+      "status": "PASS",
+      "evidence": [
+        "scripts/marco",
+        "/home/USER/e3-lab/missing-semester/marco.sh"
+      ],
+      "details": "Returned to exact saved path including spaces."
+    },
+    {
+      "id": "MS-02-03",
+      "status": "PASS",
+      "evidence": [
+        "scripts/until_failure",
+        "/home/USER/e3-lab/missing-semester/rare.sh"
+      ],
+      "details": "Original RANDOM script really failed; both streams and attempt count retained. Reaching the resource cap is not success."
+    },
+    {
+      "id": "MS-02-04",
+      "status": "PASS",
+      "evidence": [
+        "scripts/html_zip",
+        "/home/USER/e3-lab/missing-semester/html-files.zip"
+      ],
+      "details": "NUL-safe pipeline independently checked on spaces, newline and leading hyphen filenames."
+    },
+    {
+      "id": "MS-02-05",
+      "status": "PASS",
+      "evidence": [
+        "scripts/newest"
+      ],
+      "details": "NUL-delimited sorting checked against independent stat."
+    },
+    {
+      "id": "MS-03-01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "editors/tutor_commands",
+        "/home/USER/e3-lab/missing-semester/vim-lab/vimtutor-source.txt"
+      ],
+      "details": "Native Vim assertions for all7 tutor command families: movement, operators/counts, insert/change, undo/redo, put, search/substitution, file/help/options. Automated practice, not a human time-based completion claim."
+    },
+    {
+      "id": "MS-03-02",
+      "status": "PASS",
+      "evidence": [
+        "editors/settings",
+        "editors/plugin_docs"
+      ],
+      "details": "Course vimrc loaded, options inspected, CtrlP and commentary installed at pinned source commits in dedicated Linux user."
+    },
+    {
+      "id": "MS-03-03",
+      "status": "PASS",
+      "evidence": [
+        "editors/ctrlp.pty",
+        "editors/settings",
+        "/home/USER/e3-lab/missing-semester/vim-lab/picked.txt"
+      ],
+      "details": "Actual Ctrl-P typed into80x24 Vim PTY; picker opened the expected file."
+    },
+    {
+      "id": "MS-03-04",
+      "status": "PASS",
+      "evidence": [
+        "editors/fizz_edit",
+        "editors/fizz_30"
+      ],
+      "details": "Actual Vim repair of all five demo defects, independently checked for1/3/5/15/30."
+    },
+    {
+      "id": "MS-03-05",
+      "status": "NOT_APPLICABLE_HUMAN_DURATION",
+      "evidence": [],
+      "details": "A month of personal editor habit cannot be truthfully compressed into this agent run; no future month claimed."
+    },
+    {
+      "id": "MS-03-06",
+      "status": "PASS",
+      "evidence": [
+        "editors/bash_vi"
+      ],
+      "details": "Actual Bash Readline vi mode; no Windows application settings changed."
+    },
+    {
+      "id": "MS-03-07",
+      "status": "PASS",
+      "evidence": [
+        "editors/settings",
+        "editors/plugin_docs"
+      ],
+      "details": "Course vimrc loaded, options inspected, CtrlP and commentary installed at pinned source commits in dedicated Linux user."
+    },
+    {
+      "id": "MS-03-08",
+      "status": "PASS",
+      "evidence": [
+        "editors/xml_macro",
+        "editors/xml_result.json"
+      ],
+      "details": "Actual Vim register macro; independent XML/JSON parsers compare every object. Read lecture macro guidance; not claimed to be solved without seeing hints."
+    },
+    {
+      "id": "MS-04-01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "editors/regex_tests.json"
+      ],
+      "details": "Tutorial concepts learned and executed as local ASCII-compatible regex/capture tests, rather than claiming website UI progress."
+    },
+    {
+      "id": "MS-04-02",
+      "status": "PASS",
+      "evidence": [
+        "data/words",
+        "data/words_analysis.json"
+      ],
+      "details": "Actual dictionary, independent substring/count oracle, all absent ASCII pairs."
+    },
+    {
+      "id": "MS-04-03",
+      "status": "PASS",
+      "evidence": [
+        "data/truncation"
+      ],
+      "details": "Actual shell redirection truncation and corrected sed -i, only within an isolated fixture."
+    },
+    {
+      "id": "MS-04-04",
+      "status": "UNAVAILABLE_HISTORY_METHOD_TESTED",
+      "evidence": [
+        "data/journal_inventory",
+        "data/boot_scope.json",
+        "data/boot_method_fixture.json"
+      ],
+      "details": "Real history absent; fixture is labeled synthetic, never claimed as measured boots."
+    },
+    {
+      "id": "MS-04-05",
+      "status": "UNAVAILABLE_HISTORY_METHOD_TESTED",
+      "evidence": [
+        "data/journal_inventory",
+        "data/boot_scope.json",
+        "data/boot_method_fixture.json"
+      ],
+      "details": "Real history absent; fixture is labeled synthetic, never claimed as measured boots."
+    },
+    {
+      "id": "MS-04-06",
+      "status": "PASS",
+      "evidence": [
+        "data/iris_download",
+        "data/iris_minmax",
+        "data/iris_difference",
+        "data/iris_source.json"
+      ],
+      "details": "Real curl download; awk results checked against Decimal on identical source bytes."
+    },
+    {
+      "id": "MS-05-01",
+      "status": "PASS",
+      "evidence": [
+        "terminal/pty.log"
+      ],
+      "details": "Real80x24 PTY, Ctrl-Z, bg, scoped pgrep/pkill on this shell child only."
+    },
+    {
+      "id": "MS-05-02",
+      "status": "PASS",
+      "evidence": [
+        "terminal/wait",
+        "terminal/pidwait"
+      ],
+      "details": "Actual60s wait and separate-shell non-child rejection; kill-0 polling tested."
+    },
+    {
+      "id": "MS-05-03",
+      "status": "PASS",
+      "evidence": [
+        "terminal/tmux_list",
+        "terminal/tmux_capture",
+        "terminal/tmux_option"
+      ],
+      "details": "Actual session, windows, split panes, key input/capture and custom prefix; isolated server socket."
+    },
+    {
+      "id": "MS-05-04",
+      "status": "PASS",
+      "evidence": [
+        "terminal/dc"
+      ],
+      "details": "dc alias actually changes directory."
+    },
+    {
+      "id": "MS-05-05",
+      "status": "PASS",
+      "evidence": [
+        "terminal/history",
+        "terminal/pty.log"
+      ],
+      "details": "Statistics use the actual recorded interactive session, not a fabricated long-term history."
+    },
+    {
+      "id": "MS-05-06",
+      "status": "PASS",
+      "evidence": [
+        "dotfiles/install",
+        "dotfiles/use",
+        "dotfiles/fsck"
+      ],
+      "details": "Dedicated Linux lab-account plain-text settings backed up, versioned and symlinked; private SSH keys and Windows settings excluded."
+    },
+    {
+      "id": "MS-05-07",
+      "status": "PASS",
+      "evidence": [
+        "dotfiles/install",
+        "dotfiles/use",
+        "dotfiles/fsck"
+      ],
+      "details": "Dedicated Linux lab-account plain-text settings backed up, versioned and symlinked; private SSH keys and Windows settings excluded."
+    },
+    {
+      "id": "MS-05-08",
+      "status": "PASS",
+      "evidence": [
+        "dotfiles/install",
+        "dotfiles/use",
+        "dotfiles/fsck"
+      ],
+      "details": "Dedicated Linux lab-account plain-text settings backed up, versioned and symlinked; private SSH keys and Windows settings excluded."
+    },
+    {
+      "id": "MS-05-09",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "dotfiles/clean_account"
+      ],
+      "details": "Fresh Linux account/home tested instead of importing a second VM. Default files backed up, installer rerun idempotently, aliases and per-user ignore path verified."
+    },
+    {
+      "id": "MS-05-10",
+      "status": "PASS",
+      "evidence": [
+        "dotfiles/install",
+        "dotfiles/use",
+        "dotfiles/fsck"
+      ],
+      "details": "Dedicated Linux lab-account plain-text settings backed up, versioned and symlinked; private SSH keys and Windows settings excluded."
+    },
+    {
+      "id": "MS-05-11",
+      "status": "NOT_PUBLISHED_PERSONAL_ACTION",
+      "evidence": [
+        "dotfiles/fsck"
+      ],
+      "details": "Local dotfiles repository prepared; no unrequested publication to the user GitHub account."
+    },
+    {
+      "id": "MS-05-12",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project."
+    },
+    {
+      "id": "MS-05-13",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project."
+    },
+    {
+      "id": "MS-05-14",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project."
+    },
+    {
+      "id": "MS-05-15",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project."
+    },
+    {
+      "id": "MS-05-16",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/harden_vim",
+        "ssh/after_hardening",
+        "ssh/no_password",
+        "ssh/effective_settings.txt"
+      ],
+      "details": "Actual Vim edit and server reload; effective PasswordAuthentication=no and PermitRootLogin=no, public-key login remains working. Isolated server config rather than global sshd service."
+    },
+    {
+      "id": "MS-05-17",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "terminal/mosh_result.json",
+        "terminal/mosh.pty"
+      ],
+      "details": "Actual Mosh session survived3s bidirectional UDP packet drop. Test tokens encoded in shell input prevent input echo from being mistaken for server output."
+    },
+    {
+      "id": "MS-05-18",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project."
+    },
+    {
+      "id": "MS-06-01",
+      "status": "PASS",
+      "evidence": [
+        "git/data_model",
+        "git/tree",
+        "git/history"
+      ],
+      "details": "Commit/tree/blob relationships exercised; identity is synthetic local lab, no public author impersonation."
+    },
+    {
+      "id": "MS-06-02",
+      "status": "PASS",
+      "evidence": [
+        "git/history",
+        "git/readme_author",
+        "git/collections_blame",
+        "git/collections_commit"
+      ],
+      "details": "Actual full-history official-course clone; identity, commit and line provenance recorded at pinned HEAD."
+    },
+    {
+      "id": "MS-06-03",
+      "status": "PASS",
+      "evidence": [
+        "git/filter",
+        "git/objects",
+        "git/old_blob_absent"
+      ],
+      "details": "Synthetic file removed from this isolated repository history, backups/reflogs expired, blob unreachable and pruned. No user history rewritten."
+    },
+    {
+      "id": "MS-06-04",
+      "status": "PASS",
+      "evidence": [
+        "git/stash",
+        "git/stash_graph",
+        "git/stash_pop"
+      ],
+      "details": "Real clone, tracked edit, stash graph and exact pop restoration."
+    },
+    {
+      "id": "MS-06-05",
+      "status": "PASS",
+      "evidence": [
+        "git/graph",
+        "git/ignored"
+      ],
+      "details": "Settings apply only to the dedicated Linux ysyx account; Windows/user repositories untouched."
+    },
+    {
+      "id": "MS-06-06",
+      "status": "PASS",
+      "evidence": [
+        "git/graph",
+        "git/ignored"
+      ],
+      "details": "Settings apply only to the dedicated Linux ysyx account; Windows/user repositories untouched."
+    },
+    {
+      "id": "MS-06-07",
+      "status": "PREPARED_NOT_PUBLISHED",
+      "evidence": [
+        "git/proposed.patch"
+      ],
+      "details": "Local reviewable terminology correction prepared; GitHub fork/PR is a personal external-publication action, not falsely reported submitted."
+    }
+  ]
+}

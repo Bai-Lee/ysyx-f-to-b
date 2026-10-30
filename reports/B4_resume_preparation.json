@@ -1,0 +1,21 @@
+{
+  "status": "PASS_COMPLETED_PATTERNS_PRESERVED",
+  "completed_phases": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "remaining_full_range_phases": [
+    0,
+    1,
+    6,
+    7
+  ],
+  "resource_failure": "WINDOWS_RUNNING_HEADROOM",
+  "minimum_windows_bytes": 771092480,
+  "peak_aggregate_pss_bytes": 3162339328,
+  "registry": "artifacts/B4/parallel-sdram/release-full128/accepted_case_budgets.json",
+  "registry_sha256": "44dd69831fdda074cc5696f80cff51e1d5868a5bc1dc9194f811bcfaaaed90d0",
+  "scope": "No partial range is accepted. Four complete independent phases can be resumed by exact executable/reference/image/ELF/output hashes. Other four restart from address-range beginning."
+}

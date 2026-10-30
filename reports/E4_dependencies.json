@@ -1,0 +1,35 @@
+{
+  "name": "E4/environment/dependencies",
+  "timestamp": "2026-10-24T20:19:18.849198+00:00",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "YSYX-Linux",
+    "-u",
+    "root",
+    "--exec",
+    "bash",
+    "/workspace/projects/ysyx_f_to_b/E/E4/bootstrap.sh"
+  ],
+  "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+  "exit_code": 0,
+  "expected_exit": 0,
+  "status": "PASS",
+  "elapsed_seconds": 112.219,
+  "timeout_seconds": 900,
+  "inputs": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\bootstrap.sh",
+      "sha256": "6f584f6cc675d505a7b0183b399f9555731eb9d44f6cf27be444adae4b33851d"
+    }
+  ],
+  "inputs_after": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\bootstrap.sh",
+      "sha256": "6f584f6cc675d505a7b0183b399f9555731eb9d44f6cf27be444adae4b33851d"
+    }
+  ],
+  "inputs_unchanged": true,
+  "stdout_sha256": "47ec91b094ad0042a2e5880320062b5278c6be2d2b9a46cdf0fc03e8d8c107c0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

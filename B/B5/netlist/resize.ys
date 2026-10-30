@@ -1,0 +1,9 @@
+read_liberty -lib /workspace/projects/ysyx_f_to_b/B/models/nangate45/lib/Nangate45_typ.lib
+read_verilog /workspace/projects/ysyx_f_to_b/B/B3/synthesis/b5-release-cpu/mapped.v
+write_json /workspace/projects/ysyx_f_to_b/B/B5/netlist/before-resize.json
+chtype -set NOR4_X2 ysyx_00000000/_19037_
+chtype -set NOR4_X2 ysyx_00000000/_19060_
+check -assert
+tee -o /workspace/projects/ysyx_f_to_b/B/B5/netlist/stat.json stat -liberty /workspace/projects/ysyx_f_to_b/B/models/nangate45/lib/Nangate45_typ.lib -json
+write_verilog -noattr -noexpr -simple-lhs /workspace/projects/ysyx_f_to_b/B/B5/netlist/ysyx_00000000.v
+write_json /workspace/projects/ysyx_f_to_b/B/B5/netlist/mapped.json

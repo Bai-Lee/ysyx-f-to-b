@@ -1,0 +1,50 @@
+{
+  "status": "PASS_DOWNLOADS_ONLY",
+  "files": [
+    {
+      "name": "openjdk-17-jdk-headless",
+      "version": "17.0.20.1+1-1~22.04",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/o/openjdk-17/openjdk-17-jdk-headless_17.0.20.1+1-1~22.04_amd64.deb",
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\tooling\\openjdk-17-jdk-headless_17.0.20.1+1-1~22.04_amd64.deb",
+      "sha256": "65b6595526f98963c6b1f665760c71ddcd24af6b1f6d1f4772feb15d61b18a34",
+      "official_digest_match": true,
+      "digest_source": "existing official Ubuntu apt metadata retained in artifacts/C5/bootstrap/apt/openjdk-17-jdk-headless"
+    },
+    {
+      "name": "openjdk-17-jre-headless",
+      "version": "17.0.20.1+1-1~22.04",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/o/openjdk-17/openjdk-17-jre-headless_17.0.20.1+1-1~22.04_amd64.deb",
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\tooling\\openjdk-17-jre-headless_17.0.20.1+1-1~22.04_amd64.deb",
+      "sha256": "ef0aefbbd9161fff99f36bda0ce0c9690156a275b84c027b5283ada4ea6120bc",
+      "official_digest_match": true,
+      "digest_source": "existing official Ubuntu apt metadata retained in artifacts/C5/bootstrap/apt/openjdk-17-jre-headless"
+    },
+    {
+      "name": "mill-0.12.4",
+      "url": "https://github.com/com-lihaoyi/mill/releases/download/0.12.4/0.12.4",
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\tooling\\0.12.4",
+      "sha256": "04cac56046f5f9a16be65720b4134152cd01272fdf420f54f99796db58c9b423",
+      "official_digest_match": false,
+      "provenance": "Official release asset; API size matched. No separately published checksum asset/API digest was supplied."
+    },
+    {
+      "name": "mill-0.12.4-assembly",
+      "url": "https://github.com/com-lihaoyi/mill/releases/download/0.12.4/0.12.4-assembly",
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\tooling\\0.12.4-assembly",
+      "sha256": "5a5ca4c8dc97522b51e851db8595ce7892ad302aefa092b582bba1f86fe191bf",
+      "official_digest_match": false,
+      "provenance": "Official release asset; API size matched. No separately published checksum asset/API digest was supplied."
+    },
+    {
+      "name": "firtool",
+      "version": "1.105.0",
+      "url": "https://github.com/llvm/circt/releases/download/firtool-1.105.0/firrtl-bin-linux-x64.tar.gz",
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\tooling\\firrtl-bin-linux-x64.tar.gz",
+      "sha256": "d73a49e841385f0f7d2ad6fcf891c82f88990e3fe07a68b6b4906d06617b5f84",
+      "official_digest_match": true,
+      "checksum_file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\tooling\\firrtl-bin-linux-x64.tar.gz.sha256",
+      "checksum_sha256": "ce2be00a9126568a181b89cde5cf2d0c9fa5ee7f00a7a8fc05e0c6564ae89bb8"
+    }
+  ],
+  "scope": "Portable task-local tools; no system/global install. Downloads alone do not qualify generation."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS_LOCAL_COMMIT",
+  "revision": "d37c64a0b27db283126dcd0dbbdd2b798717b8b7",
+  "tree": "561bd88174be7026c35233c64bc490ab74dab94d",
+  "branch": "main",
+  "scope": "Complete D source, retained report metadata and frozen runtime; archive receipt is committed separately after packaging.",
+  "audit_sha256": "a39612c97bd468302922dd7c5fdf40364100e7f98f967289b6844a11d85f2509",
+  "runtime_archive_sha256": "cf8ffd43dce321971521153d5d0cc2d1381d3c5098c431e811229b2616a5dc09"
+}

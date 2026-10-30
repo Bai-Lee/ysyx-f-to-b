@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "version": "5.0.6",
+  "commit": "accf4df62f1fba6f92cae692985d27063552601c",
+  "library": "/home/USER/d-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+  "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350",
+  "architectures": [
+    "riscv"
+  ],
+  "evidence": "artifacts/D/dependencies"
+}

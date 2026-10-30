@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "compile": {
+    "name": "F/optional_compile",
+    "timestamp": "2026-10-24T11:16:58.674808+00:00",
+    "command": [
+      "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-o",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\optional_logic.vvp",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\optional_logic.sv",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\optional_logic.sv"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "status": "PASS",
+    "elapsed_seconds": 0.11,
+    "timeout_seconds": 30,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\optional_logic.sv",
+        "sha256": "246508238a04892952d1f761292e375df41c757d158b0d2b79602867714aa6de"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\optional_logic.sv",
+        "sha256": "fc155cf4405cb3281a585c8e5a2302ae4421f477fb04dbdcd2633821330b62ab"
+      }
+    ],
+    "inputs_after": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\optional_logic.sv",
+        "sha256": "246508238a04892952d1f761292e375df41c757d158b0d2b79602867714aa6de"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\optional_logic.sv",
+        "sha256": "fc155cf4405cb3281a585c8e5a2302ae4421f477fb04dbdcd2633821330b62ab"
+      }
+    ],
+    "inputs_unchanged": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "simulation": {
+    "name": "F/optional_logic",
+    "timestamp": "2026-10-24T11:17:02.264438+00:00",
+    "command": [
+      "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\optional_logic.vvp"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "status": "PASS",
+    "elapsed_seconds": 3.547,
+    "timeout_seconds": 40,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\optional_logic.sv",
+        "sha256": "246508238a04892952d1f761292e375df41c757d158b0d2b79602867714aa6de"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\optional_logic.sv",
+        "sha256": "fc155cf4405cb3281a585c8e5a2302ae4421f477fb04dbdcd2633821330b62ab"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\optional_logic.vvp",
+        "sha256": "e677c656e4e7cf3de842cb49c2c92128ec59d7d72ad7e15f4da9432daeed6f33"
+      }
+    ],
+    "inputs_after": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\optional_logic.sv",
+        "sha256": "246508238a04892952d1f761292e375df41c757d158b0d2b79602867714aa6de"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\optional_logic.sv",
+        "sha256": "fc155cf4405cb3281a585c8e5a2302ae4421f477fb04dbdcd2633821330b62ab"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\optional_logic.vvp",
+        "sha256": "e677c656e4e7cf3de842cb49c2c92128ec59d7d72ad7e15f4da9432daeed6f33"
+      }
+    ],
+    "inputs_unchanged": true,
+    "stdout_sha256": "812d2cc88c9f2442d86dfe63dd17ac578ffdbce1fa5892a085ceccd616fee1e3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "priority_and_count_cases": 65536,
+  "full_adder_cases": 8,
+  "tasks": [
+    "F3-O011",
+    "F3-O012",
+    "F3-O013"
+  ],
+  "method": "User-authorized RTL alternative; priority16 instantiates four group priority4 encoders and one group selector; all 16-bit inputs exhaustively checked"
+}

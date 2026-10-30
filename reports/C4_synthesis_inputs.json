@@ -1,0 +1,86 @@
+{
+  "status": "PREPARED_NOT_RUN",
+  "variants": [
+    {
+      "name": "single",
+      "top": "single_with_memories",
+      "project": "/home/USER/c-stage/c4/synthesis/single",
+      "config": "/home/USER/c-stage/c4/synthesis/single/ecc.toml",
+      "source": "/home/USER/c-stage/c4/synthesis/single/rtl/cpu.sv",
+      "source_sha256": "b3eb142c27de5867a92c5923a0332195ffbf1542d1b1ce563bd52fac842d514b",
+      "source_files": [
+        {
+          "path": "C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "C/C4/synthesis/single_with_memories.sv",
+          "sha256": "257d77c4ffa90c38b06669ec383dbdadb3bf7e2dbc469acb83b4bf01ccd28012"
+        }
+      ]
+    },
+    {
+      "name": "axi",
+      "top": "c4_axi_core",
+      "project": "/home/USER/c-stage/c4/synthesis/axi",
+      "config": "/home/USER/c-stage/c4/synthesis/axi/ecc.toml",
+      "source": "/home/USER/c-stage/c4/synthesis/axi/rtl/cpu.sv",
+      "source_sha256": "e2831a5cfe6d10e23957e1f68f5c24cbfe28daf09165369ca9c8a9d2747863ab",
+      "source_files": [
+        {
+          "path": "C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "C/C4/rtl/axil_xbar3.sv",
+          "sha256": "ec0dddc7f11c7153bd87dfade0d078fcb36253c62a2245789ba7792b50233784"
+        },
+        {
+          "path": "C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        }
+      ]
+    }
+  ],
+  "libraries": [
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib",
+      "sha256": "e6733a87b3a015c2234172625abf0ee366a35f2725e640c88e149ee073fc13be"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib",
+      "sha256": "a5fb35bea1c7e8f06d2e93089d48986125731f8e744580adaa4d320283e23988"
+    }
+  ],
+  "clock_mhz": 100,
+  "strategy": "DELAY 4",
+  "scope": "Baseline contains exactly two256x32 asynchronous-read flop memories plus CPU; AXI comparison contains CPU+adapters+arbiter, no DPI memory slave. Final SDC/structure/timing reports are authoritative."
+}

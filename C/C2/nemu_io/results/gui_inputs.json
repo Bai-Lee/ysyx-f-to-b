@@ -1,0 +1,46 @@
+{
+  "timer": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.elf"
+  },
+  "keyboard": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.elf"
+  },
+  "video": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.elf"
+  },
+  "slider": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/slider/build/slider-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/slider/build/slider-riscv32-nemu.elf"
+  },
+  "typing-game": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/typing-game/build/typing-game-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/typing-game/build/typing-game-riscv32-nemu.elf"
+  },
+  "demo": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/demo/build/demo-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/demo/build/demo-riscv32-nemu.elf"
+  },
+  "bad-apple": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/bad-apple/build/bad-apple-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/bad-apple/build/bad-apple-riscv32-nemu.elf"
+  },
+  "snake": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/snake/build/snake-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/snake/build/snake-riscv32-nemu.elf"
+  },
+  "litenes": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/litenes/build/litenes-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/litenes/build/litenes-riscv32-nemu.elf"
+  },
+  "fceux": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/fceux-am/build/fceux-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/fceux-am/build/fceux-riscv32-nemu.elf"
+  },
+  "initial-canvas": {
+    "image": "/home/USER/c-stage/c2-nemu-apps/initial-canvas/build/initial-canvas-riscv32-nemu.bin",
+    "elf": "/home/USER/c-stage/c2-nemu-apps/initial-canvas/build/initial-canvas-riscv32-nemu.elf"
+  }
+}

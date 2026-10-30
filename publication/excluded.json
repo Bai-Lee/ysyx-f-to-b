@@ -1,0 +1,2525 @@
+{
+  "scope": "Excluded relative paths from the original project index; source files were not deleted",
+  "files": [
+    {
+      "source": ".gitattributes",
+      "reason": "replaced_by_public_entrypoint",
+      "bytes": 89
+    },
+    {
+      "source": ".gitignore",
+      "reason": "replaced_by_public_entrypoint",
+      "bytes": 91
+    },
+    {
+      "source": "B/offline/b-final-runtime.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 117976852
+    },
+    {
+      "source": "B/soc/perip/.gitignore",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5
+    },
+    {
+      "source": "B/soc/perip/amba/apb_delayer.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2571
+    },
+    {
+      "source": "B/soc/perip/amba/axi4_delayer.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 6318
+    },
+    {
+      "source": "B/soc/perip/bitrev/bitrev.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 590
+    },
+    {
+      "source": "B/soc/perip/flash/flash.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2745
+    },
+    {
+      "source": "B/soc/perip/gpio/gpio_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2344
+    },
+    {
+      "source": "B/soc/perip/ps2/ps2_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2882
+    },
+    {
+      "source": "B/soc/perip/psram/efabless/EF_PSRAM_CTRL.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 7024
+    },
+    {
+      "source": "B/soc/perip/psram/efabless/EF_PSRAM_CTRL_wb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4955
+    },
+    {
+      "source": "B/soc/perip/psram/efabless/LICENSE",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 11357
+    },
+    {
+      "source": "B/soc/perip/psram/psram.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4671
+    },
+    {
+      "source": "B/soc/perip/psram/psram_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2998
+    },
+    {
+      "source": "B/soc/perip/sdram/b_sdram32_axi.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 8421
+    },
+    {
+      "source": "B/soc/perip/sdram/c5_sdram32_controller.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4614
+    },
+    {
+      "source": "B/soc/perip/sdram/core_sdram_axi4/LICENSE",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 35149
+    },
+    {
+      "source": "B/soc/perip/sdram/core_sdram_axi4/README.md",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 3763
+    },
+    {
+      "source": "B/soc/perip/sdram/core_sdram_axi4/sdram_axi.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 6135
+    },
+    {
+      "source": "B/soc/perip/sdram/core_sdram_axi4/sdram_axi_core.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 22766
+    },
+    {
+      "source": "B/soc/perip/sdram/core_sdram_axi4/sdram_axi_pmem.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 12750
+    },
+    {
+      "source": "B/soc/perip/sdram/sdram.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5026
+    },
+    {
+      "source": "B/soc/perip/sdram/sdram_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 3048
+    },
+    {
+      "source": "B/soc/perip/sdram/sdram_top_axi.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2921
+    },
+    {
+      "source": "B/soc/perip/spi/doc/spi.pdf",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 78741
+    },
+    {
+      "source": "B/soc/perip/spi/rtl/spi_clgen.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5016
+    },
+    {
+      "source": "B/soc/perip/spi/rtl/spi_defines.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 6037
+    },
+    {
+      "source": "B/soc/perip/spi/rtl/spi_shift.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 9311
+    },
+    {
+      "source": "B/soc/perip/spi/rtl/spi_top.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 12767
+    },
+    {
+      "source": "B/soc/perip/spi/rtl/spi_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4290
+    },
+    {
+      "source": "B/soc/perip/uart16550/doc/UART_spec.pdf",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 163447
+    },
+    {
+      "source": "B/soc/perip/uart16550/rtl/raminfr.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5917
+    },
+    {
+      "source": "B/soc/perip/uart16550/rtl/uart_defines.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 10874
+    },
+    {
+      "source": "B/soc/perip/uart16550/rtl/uart_receiver.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 17737
+    },
+    {
+      "source": "B/soc/perip/uart16550/rtl/uart_regs.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 31266
+    },
+    {
+      "source": "B/soc/perip/uart16550/rtl/uart_rfifo.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 11288
+    },
+    {
+      "source": "B/soc/perip/uart16550/rtl/uart_sync_flops.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5794
+    },
+    {
+      "source": "B/soc/perip/uart16550/rtl/uart_tfifo.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 10426
+    },
+    {
+      "source": "B/soc/perip/uart16550/rtl/uart_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 3644
+    },
+    {
+      "source": "B/soc/perip/uart16550/rtl/uart_transmitter.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 14825
+    },
+    {
+      "source": "B/soc/perip/vga/vga_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1944
+    },
+    {
+      "source": "C/C1/results/duplicate.o",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 2664
+    },
+    {
+      "source": "C/C1/results/liblesson.a",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 7566
+    },
+    {
+      "source": "C/C1/results/linked.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 18352
+    },
+    {
+      "source": "C/C1/results/main.o",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4616
+    },
+    {
+      "source": "C/C1/results/producer-rv32e.o",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4400
+    },
+    {
+      "source": "C/C1/results/producer.o",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4200
+    },
+    {
+      "source": "C/C1/results/unused.o",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 3088
+    },
+    {
+      "source": "C/C2/homebrew/interaction.nes",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24592
+    },
+    {
+      "source": "C/C2/nemu_io/installed/abstract-machine/am/src/platform/nemu/ioe/gpu.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1426
+    },
+    {
+      "source": "C/C2/nemu_io/installed/abstract-machine/am/src/platform/nemu/ioe/input.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 236
+    },
+    {
+      "source": "C/C2/nemu_io/installed/abstract-machine/am/src/platform/nemu/ioe/timer.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 567
+    },
+    {
+      "source": "C/C2/nemu_io/installed/nemu/Kconfig",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4266
+    },
+    {
+      "source": "C/C2/nemu_io/installed/nemu/include/dtrace.h",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 885
+    },
+    {
+      "source": "C/C2/nemu_io/installed/nemu/src/device/io/map.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4384
+    },
+    {
+      "source": "C/C2/nemu_io/installed/nemu/src/device/vga.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 3038
+    },
+    {
+      "source": "C/C2/nemu_io/installed/nemu/src/utils/trace_adapter.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1861
+    },
+    {
+      "source": "C/C2/nemu_io/installed/nemu/tools/difftest.mk",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1191
+    },
+    {
+      "source": "C/C2/nemu_io/results/bad-media.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 19
+    },
+    {
+      "source": "C/C2/nemu_io/results/excluded.dtrace",
+      "reason": "large_regenerable_trace",
+      "bytes": 0
+    },
+    {
+      "source": "C/C2/nemu_io/results/mmio-cross-end.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 16
+    },
+    {
+      "source": "C/C2/nemu_io/results/mmio-cross-end.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4556
+    },
+    {
+      "source": "C/C2/nemu_io/results/serial.dtrace",
+      "reason": "large_regenerable_trace",
+      "bytes": 533
+    },
+    {
+      "source": "C/C2/nemu_io/runtime/nemu-c2-feature",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 74496
+    },
+    {
+      "source": "C/C2/nemu_io/runtime/nemu-c2-performance",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 63728
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/abstract-machine/am/src/platform/nemu/ioe/gpu.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 435
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/abstract-machine/am/src/platform/nemu/ioe/input.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 165
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/abstract-machine/am/src/platform/nemu/ioe/timer.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 388
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/nemu/Kconfig",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4167
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/nemu/include/dtrace.h",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 368
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/nemu/src/device/io/map.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2299
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/nemu/src/device/vga.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2999
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/nemu/src/utils/trace_adapter.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1740
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/nemu/tools/difftest.mk",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1132
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/performance/benchmarks/coremark/include/core_portme.h",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4808
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/performance/benchmarks/coremark/src/core_main.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 11867
+    },
+    {
+      "source": "C/C2/nemu_io/upstream/performance/benchmarks/dhrystone/dry.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 32324
+    },
+    {
+      "source": "C/C2/snapshot/nemu-io-final.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 14829034
+    },
+    {
+      "source": "C/C3/results/correct",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 46480
+    },
+    {
+      "source": "C/C3/results/mutant",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 46504
+    },
+    {
+      "source": "C/C4/results/DECERR.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "C/C4/results/M-extension.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "C/C4/results/fabric.vcd",
+      "reason": "large_regenerable_trace",
+      "bytes": 519924
+    },
+    {
+      "source": "C/C4/results/half-align.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "C/C4/results/invalid.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "C/C4/results/jump-align.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "C/C4/results/read-unknown-uart.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "C/C4/results/read-writeonly-uart.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "C/C4/results/stage1.vcd",
+      "reason": "large_regenerable_trace",
+      "bytes": 17792
+    },
+    {
+      "source": "C/C4/results/stage2-mutant.vcd",
+      "reason": "large_regenerable_trace",
+      "bytes": 12057
+    },
+    {
+      "source": "C/C4/results/stage2.vcd",
+      "reason": "large_regenerable_trace",
+      "bytes": 18036
+    },
+    {
+      "source": "C/C4/results/uart-zero-read.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 12
+    },
+    {
+      "source": "C/C4/results/word-align.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "C/C4/results/write-readonly-clint.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 12
+    },
+    {
+      "source": "C/C4/results/write-readonly-uart.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 12
+    },
+    {
+      "source": "C/C4/results/x16.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "C/C4/synthesis/axi/02_c4_axi_Synthesis.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 252966
+    },
+    {
+      "source": "C/C4/synthesis/axi/c4_axi_Synthesis.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 252966
+    },
+    {
+      "source": "C/C4/synthesis/axi/c4_axi_Synthesis_sim.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 243763
+    },
+    {
+      "source": "C/C4/synthesis/single/c4_single_Synthesis.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1510687
+    },
+    {
+      "source": "C/C4/synthesis/single/c4_single_Synthesis_sim.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1509900
+    },
+    {
+      "source": "C/C5/perip/.gitignore",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5
+    },
+    {
+      "source": "C/C5/perip/amba/apb_delayer.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 965
+    },
+    {
+      "source": "C/C5/perip/amba/axi4_delayer.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2583
+    },
+    {
+      "source": "C/C5/perip/bitrev/bitrev.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 590
+    },
+    {
+      "source": "C/C5/perip/flash/flash.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2745
+    },
+    {
+      "source": "C/C5/perip/gpio/gpio_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2344
+    },
+    {
+      "source": "C/C5/perip/ps2/ps2_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2882
+    },
+    {
+      "source": "C/C5/perip/psram/efabless/EF_PSRAM_CTRL.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 7024
+    },
+    {
+      "source": "C/C5/perip/psram/efabless/EF_PSRAM_CTRL_wb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4955
+    },
+    {
+      "source": "C/C5/perip/psram/efabless/LICENSE",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 11357
+    },
+    {
+      "source": "C/C5/perip/psram/psram.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4671
+    },
+    {
+      "source": "C/C5/perip/psram/psram_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2998
+    },
+    {
+      "source": "C/C5/perip/sdram/c5_sdram32_controller.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4614
+    },
+    {
+      "source": "C/C5/perip/sdram/core_sdram_axi4/LICENSE",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 35149
+    },
+    {
+      "source": "C/C5/perip/sdram/core_sdram_axi4/README.md",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 3763
+    },
+    {
+      "source": "C/C5/perip/sdram/core_sdram_axi4/sdram_axi.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 6135
+    },
+    {
+      "source": "C/C5/perip/sdram/core_sdram_axi4/sdram_axi_core.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 22766
+    },
+    {
+      "source": "C/C5/perip/sdram/core_sdram_axi4/sdram_axi_pmem.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 12750
+    },
+    {
+      "source": "C/C5/perip/sdram/sdram.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5026
+    },
+    {
+      "source": "C/C5/perip/sdram/sdram_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 3048
+    },
+    {
+      "source": "C/C5/perip/sdram/sdram_top_axi.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2621
+    },
+    {
+      "source": "C/C5/perip/spi/doc/spi.pdf",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 78741
+    },
+    {
+      "source": "C/C5/perip/spi/rtl/spi_clgen.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5016
+    },
+    {
+      "source": "C/C5/perip/spi/rtl/spi_defines.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 6037
+    },
+    {
+      "source": "C/C5/perip/spi/rtl/spi_shift.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 9311
+    },
+    {
+      "source": "C/C5/perip/spi/rtl/spi_top.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 12767
+    },
+    {
+      "source": "C/C5/perip/spi/rtl/spi_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4290
+    },
+    {
+      "source": "C/C5/perip/uart16550/doc/UART_spec.pdf",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 163447
+    },
+    {
+      "source": "C/C5/perip/uart16550/rtl/raminfr.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5917
+    },
+    {
+      "source": "C/C5/perip/uart16550/rtl/uart_defines.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 10874
+    },
+    {
+      "source": "C/C5/perip/uart16550/rtl/uart_receiver.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 17737
+    },
+    {
+      "source": "C/C5/perip/uart16550/rtl/uart_regs.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 31266
+    },
+    {
+      "source": "C/C5/perip/uart16550/rtl/uart_rfifo.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 11288
+    },
+    {
+      "source": "C/C5/perip/uart16550/rtl/uart_sync_flops.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 5794
+    },
+    {
+      "source": "C/C5/perip/uart16550/rtl/uart_tfifo.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 10426
+    },
+    {
+      "source": "C/C5/perip/uart16550/rtl/uart_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 3644
+    },
+    {
+      "source": "C/C5/perip/uart16550/rtl/uart_transmitter.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 14825
+    },
+    {
+      "source": "C/C5/perip/vga/vga_top_apb.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1944
+    },
+    {
+      "source": "C/offline/c-final-runtime.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 336212284
+    },
+    {
+      "source": "C/offline/sources/IHI0022H_amba_axi_protocol_spec.pdf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 2308667
+    },
+    {
+      "source": "C/offline/sources/rocket-chip-d0c6b50fdefcdbe121e9788433ea51f7efaf1d32.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 625974
+    },
+    {
+      "source": "C/offline/sources/rocket-chip__dependencies__cde-52768c97a27b254c0cc0ac9401feb55b29e18c28.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 17211
+    },
+    {
+      "source": "C/offline/sources/rocket-chip__dependencies__chisel-e3bcc90db37f1aec9f8048813f4f0666098d9bee.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1804389
+    },
+    {
+      "source": "C/offline/sources/rocket-chip__dependencies__diplomacy-edf375300d99a4c260a214d7c1553de0040771d7.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 40578
+    },
+    {
+      "source": "C/offline/sources/rocket-chip__dependencies__hardfloat-d93aa570806013dea479a92ba9bb33d1f2d4f69f.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1026994
+    },
+    {
+      "source": "C/offline/sources/rocket-chip__dependencies__hardfloat__berkeley-softfloat-3-5c06db33fc1e2130f67c045327b0ec949032df1d.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 148161
+    },
+    {
+      "source": "C/offline/sources/rocket-chip__dependencies__hardfloat__berkeley-testfloat-3-06b20075dd3c1a5d0dd007a93643282832221612.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 138134
+    },
+    {
+      "source": "C/offline/sources/ysyxSoC-bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 365835
+    },
+    {
+      "source": "D/D1/results/rv64-O0.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8472
+    },
+    {
+      "source": "D/D1/results/rv64-O0.o",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1296
+    },
+    {
+      "source": "D/D1/results/rv64-O1.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8472
+    },
+    {
+      "source": "D/D1/results/rv64-O1.o",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1248
+    },
+    {
+      "source": "D/D1/results/visibility.o",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1304
+    },
+    {
+      "source": "D/D2/snapshot/nemu-pa1.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 345191
+    },
+    {
+      "source": "D/D3/programs/bad_shift.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/D3/programs/cross_ram_end.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 12
+    },
+    {
+      "source": "D/D3/programs/misaligned_jump.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/D3/programs/outside_memory.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "D/D3/programs/reserved.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/D3/programs/rv32im-boundaries.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 74456
+    },
+    {
+      "source": "D/D3/programs/rv64_addiw.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/D6/results/pvt/ff/02_light_Synthesis.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 5289
+    },
+    {
+      "source": "D/D6/results/pvt/ss/02_light_Synthesis.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 5264
+    },
+    {
+      "source": "D/D6/results/pvt/tt/02_light_Synthesis.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 5222
+    },
+    {
+      "source": "D/D7/before_trace.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 5449
+    },
+    {
+      "source": "D/D7/results/badmem.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 12
+    },
+    {
+      "source": "D/D7/results/bigendian.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4692
+    },
+    {
+      "source": "D/D7/results/class64.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4692
+    },
+    {
+      "source": "D/D7/results/edge-range.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4692
+    },
+    {
+      "source": "D/D7/results/illegal.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 164
+    },
+    {
+      "source": "D/D7/results/magic.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4692
+    },
+    {
+      "source": "D/D7/results/random_0.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 134
+    },
+    {
+      "source": "D/D7/results/random_1.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 119
+    },
+    {
+      "source": "D/D7/results/random_10.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 146
+    },
+    {
+      "source": "D/D7/results/random_11.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 192
+    },
+    {
+      "source": "D/D7/results/random_12.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 22
+    },
+    {
+      "source": "D/D7/results/random_13.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 129
+    },
+    {
+      "source": "D/D7/results/random_14.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 22
+    },
+    {
+      "source": "D/D7/results/random_15.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 102
+    },
+    {
+      "source": "D/D7/results/random_16.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 62
+    },
+    {
+      "source": "D/D7/results/random_17.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 187
+    },
+    {
+      "source": "D/D7/results/random_18.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 163
+    },
+    {
+      "source": "D/D7/results/random_19.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 134
+    },
+    {
+      "source": "D/D7/results/random_2.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 102
+    },
+    {
+      "source": "D/D7/results/random_20.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 20
+    },
+    {
+      "source": "D/D7/results/random_21.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 101
+    },
+    {
+      "source": "D/D7/results/random_22.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 99
+    },
+    {
+      "source": "D/D7/results/random_23.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 113
+    },
+    {
+      "source": "D/D7/results/random_24.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 152
+    },
+    {
+      "source": "D/D7/results/random_25.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 47
+    },
+    {
+      "source": "D/D7/results/random_26.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 72
+    },
+    {
+      "source": "D/D7/results/random_27.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 167
+    },
+    {
+      "source": "D/D7/results/random_28.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 168
+    },
+    {
+      "source": "D/D7/results/random_29.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 94
+    },
+    {
+      "source": "D/D7/results/random_3.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 164
+    },
+    {
+      "source": "D/D7/results/random_30.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 46
+    },
+    {
+      "source": "D/D7/results/random_31.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 133
+    },
+    {
+      "source": "D/D7/results/random_32.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 121
+    },
+    {
+      "source": "D/D7/results/random_33.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 20
+    },
+    {
+      "source": "D/D7/results/random_34.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 60
+    },
+    {
+      "source": "D/D7/results/random_35.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 196
+    },
+    {
+      "source": "D/D7/results/random_36.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 50
+    },
+    {
+      "source": "D/D7/results/random_37.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 109
+    },
+    {
+      "source": "D/D7/results/random_38.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 190
+    },
+    {
+      "source": "D/D7/results/random_39.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 81
+    },
+    {
+      "source": "D/D7/results/random_4.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 27
+    },
+    {
+      "source": "D/D7/results/random_40.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 25
+    },
+    {
+      "source": "D/D7/results/random_41.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 74
+    },
+    {
+      "source": "D/D7/results/random_42.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 6
+    },
+    {
+      "source": "D/D7/results/random_43.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 127
+    },
+    {
+      "source": "D/D7/results/random_44.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 34
+    },
+    {
+      "source": "D/D7/results/random_45.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 27
+    },
+    {
+      "source": "D/D7/results/random_46.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 110
+    },
+    {
+      "source": "D/D7/results/random_47.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 122
+    },
+    {
+      "source": "D/D7/results/random_48.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 150
+    },
+    {
+      "source": "D/D7/results/random_49.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 178
+    },
+    {
+      "source": "D/D7/results/random_5.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 103
+    },
+    {
+      "source": "D/D7/results/random_6.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 45
+    },
+    {
+      "source": "D/D7/results/random_7.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 53
+    },
+    {
+      "source": "D/D7/results/random_8.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 23
+    },
+    {
+      "source": "D/D7/results/random_9.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 68
+    },
+    {
+      "source": "D/D7/results/section_oob.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4692
+    },
+    {
+      "source": "D/D7/results/short.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/D7/results/stripped.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4396
+    },
+    {
+      "source": "D/D7/results/trace.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 72
+    },
+    {
+      "source": "D/D7/results/trace.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4692
+    },
+    {
+      "source": "D/D8/homebrew/interaction.nes",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24592
+    },
+    {
+      "source": "D/D8/results/misaligned_jump.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/D8/results/multiply.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/D8/results/prior/address_wrap.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24
+    },
+    {
+      "source": "D/D8/results/prior/address_wrap.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4560
+    },
+    {
+      "source": "D/D8/results/prior/invalid_opcode.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "D/D8/results/prior/invalid_opcode.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4544
+    },
+    {
+      "source": "D/D8/results/prior/jalr_alias_odd.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 28
+    },
+    {
+      "source": "D/D8/results/prior/jalr_alias_odd.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4564
+    },
+    {
+      "source": "D/D8/results/prior/memory_endian.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 108
+    },
+    {
+      "source": "D/D8/results/prior/memory_endian.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4644
+    },
+    {
+      "source": "D/D8/results/prior/misaligned_jump.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "D/D8/results/prior/misaligned_jump.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4544
+    },
+    {
+      "source": "D/D8/results/prior/negative_immediates.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 32
+    },
+    {
+      "source": "D/D8/results/prior/negative_immediates.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4568
+    },
+    {
+      "source": "D/D8/results/prior/random_ops.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 28496
+    },
+    {
+      "source": "D/D8/results/prior/random_ops.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 33032
+    },
+    {
+      "source": "D/D8/results/prior/reserved_register.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "D/D8/results/prior/reserved_register.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4544
+    },
+    {
+      "source": "D/D8/results/prior/six_ebreak.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24
+    },
+    {
+      "source": "D/D8/results/prior/six_ebreak.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4560
+    },
+    {
+      "source": "D/D8/results/prior/six_loop.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24
+    },
+    {
+      "source": "D/D8/results/prior/six_loop.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4560
+    },
+    {
+      "source": "D/D8/results/prior/unaligned_word.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 12
+    },
+    {
+      "source": "D/D8/results/prior/unaligned_word.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4548
+    },
+    {
+      "source": "D/D8/results/prior/x0_overflow.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 36
+    },
+    {
+      "source": "D/D8/results/prior/x0_overflow.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4572
+    },
+    {
+      "source": "D/D8/results/reserved.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/D8/results/rv32e-boundaries.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 54324
+    },
+    {
+      "source": "D/D8/results/rv32e-boundaries.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 61056
+    },
+    {
+      "source": "D/D8/results/signedness.o",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 896
+    },
+    {
+      "source": "D/D8/results/trace-rv32e.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 72
+    },
+    {
+      "source": "D/D8/results/trace-rv32e.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4688
+    },
+    {
+      "source": "D/D8/results/unaligned_half.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "D/D8/results/unaligned_word.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "D/D8/results/x16_destination.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/D8/results/x16_source.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "D/offline/d-final-runtime.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 165388175
+    },
+    {
+      "source": "D/offline/sources/NJU-ProjectN__nemu__ics2024.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 135637
+    },
+    {
+      "source": "D/offline/sources/capstone-accf4df62f1fba6f92cae692985d27063552601c.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 7661950
+    },
+    {
+      "source": "D/offline/sources/spike-b3cb1ef52ba0cb1bce84135febef1c4941c5455b.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 493615
+    },
+    {
+      "source": "E/E3/lcthw/original/ex00/block_00.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 39
+    },
+    {
+      "source": "E/E3/lcthw/original/ex00/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 45
+    },
+    {
+      "source": "E/E3/lcthw/original/ex01/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 78
+    },
+    {
+      "source": "E/E3/lcthw/original/ex01/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 33
+    },
+    {
+      "source": "E/E3/lcthw/original/ex01/block_02.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 21
+    },
+    {
+      "source": "E/E3/lcthw/original/ex01/block_03.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 170
+    },
+    {
+      "source": "E/E3/lcthw/original/ex01/block_04.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 19
+    },
+    {
+      "source": "E/E3/lcthw/original/ex02/block_00.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 55
+    },
+    {
+      "source": "E/E3/lcthw/original/ex02/block_01.mk",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 38
+    },
+    {
+      "source": "E/E3/lcthw/original/ex02/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 24
+    },
+    {
+      "source": "E/E3/lcthw/original/ex02/block_03.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 151
+    },
+    {
+      "source": "E/E3/lcthw/original/ex02/block_04.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 55
+    },
+    {
+      "source": "E/E3/lcthw/original/ex03/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 177
+    },
+    {
+      "source": "E/E3/lcthw/original/ex03/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 91
+    },
+    {
+      "source": "E/E3/lcthw/original/ex03/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 473
+    },
+    {
+      "source": "E/E3/lcthw/original/ex04/block_00.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 404
+    },
+    {
+      "source": "E/E3/lcthw/original/ex04/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 217
+    },
+    {
+      "source": "E/E3/lcthw/original/ex04/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1920
+    },
+    {
+      "source": "E/E3/lcthw/original/ex05/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 202
+    },
+    {
+      "source": "E/E3/lcthw/original/ex05/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 75
+    },
+    {
+      "source": "E/E3/lcthw/original/ex06/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 653
+    },
+    {
+      "source": "E/E3/lcthw/original/ex06/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 255
+    },
+    {
+      "source": "E/E3/lcthw/original/ex06/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 439
+    },
+    {
+      "source": "E/E3/lcthw/original/ex07/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 825
+    },
+    {
+      "source": "E/E3/lcthw/original/ex07/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 272
+    },
+    {
+      "source": "E/E3/lcthw/original/ex08/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1148
+    },
+    {
+      "source": "E/E3/lcthw/original/ex08/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 340
+    },
+    {
+      "source": "E/E3/lcthw/original/ex09/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1142
+    },
+    {
+      "source": "E/E3/lcthw/original/ex09/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 169
+    },
+    {
+      "source": "E/E3/lcthw/original/ex10/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 495
+    },
+    {
+      "source": "E/E3/lcthw/original/ex10/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 50
+    },
+    {
+      "source": "E/E3/lcthw/original/ex11/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 497
+    },
+    {
+      "source": "E/E3/lcthw/original/ex11/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 26
+    },
+    {
+      "source": "E/E3/lcthw/original/ex11/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 266
+    },
+    {
+      "source": "E/E3/lcthw/original/ex12/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 433
+    },
+    {
+      "source": "E/E3/lcthw/original/ex12/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 70
+    },
+    {
+      "source": "E/E3/lcthw/original/ex12/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 257
+    },
+    {
+      "source": "E/E3/lcthw/original/ex13/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1170
+    },
+    {
+      "source": "E/E3/lcthw/original/ex13/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 353
+    },
+    {
+      "source": "E/E3/lcthw/original/ex14/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 640
+    },
+    {
+      "source": "E/E3/lcthw/original/ex14/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 431
+    },
+    {
+      "source": "E/E3/lcthw/original/ex15/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1252
+    },
+    {
+      "source": "E/E3/lcthw/original/ex15/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 582
+    },
+    {
+      "source": "E/E3/lcthw/original/ex16/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1518
+    },
+    {
+      "source": "E/E3/lcthw/original/ex16/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 357
+    },
+    {
+      "source": "E/E3/lcthw/original/ex17/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4298
+    },
+    {
+      "source": "E/E3/lcthw/original/ex17/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 483
+    },
+    {
+      "source": "E/E3/lcthw/original/ex18/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 34
+    },
+    {
+      "source": "E/E3/lcthw/original/ex18/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 114
+    },
+    {
+      "source": "E/E3/lcthw/original/ex18/block_02.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2139
+    },
+    {
+      "source": "E/E3/lcthw/original/ex18/block_03.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 111
+    },
+    {
+      "source": "E/E3/lcthw/original/ex18/block_04.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 118
+    },
+    {
+      "source": "E/E3/lcthw/original/ex18/block_05.txt",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 76
+    },
+    {
+      "source": "E/E3/lcthw/original/ex19/block_00.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 18
+    },
+    {
+      "source": "E/E3/lcthw/original/ex19/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 675
+    },
+    {
+      "source": "E/E3/lcthw/original/ex19/block_02.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1545
+    },
+    {
+      "source": "E/E3/lcthw/original/ex19/block_03.mk",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 64
+    },
+    {
+      "source": "E/E3/lcthw/original/ex19/block_04.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 742
+    },
+    {
+      "source": "E/E3/lcthw/original/ex19/block_05.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 4302
+    },
+    {
+      "source": "E/E3/lcthw/original/ex19/block_06.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 593
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 982
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2110
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 633
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_03.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 118
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_04.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 63
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_05.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 214
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_06.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 41
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_07.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 115
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_08.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 34
+    },
+    {
+      "source": "E/E3/lcthw/original/ex20/block_09.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 84
+    },
+    {
+      "source": "E/E3/lcthw/original/ex22/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 324
+    },
+    {
+      "source": "E/E3/lcthw/original/ex22/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 409
+    },
+    {
+      "source": "E/E3/lcthw/original/ex22/block_02.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1131
+    },
+    {
+      "source": "E/E3/lcthw/original/ex22/block_03.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 893
+    },
+    {
+      "source": "E/E3/lcthw/original/ex24/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1731
+    },
+    {
+      "source": "E/E3/lcthw/original/ex24/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 337
+    },
+    {
+      "source": "E/E3/lcthw/original/ex25/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 3000
+    },
+    {
+      "source": "E/E3/lcthw/original/ex25/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 232
+    },
+    {
+      "source": "E/E3/lcthw/original/ex27/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1798
+    },
+    {
+      "source": "E/E3/lcthw/original/ex28/block_00.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 605
+    },
+    {
+      "source": "E/E3/lcthw/original/ex28/block_01.mk",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1383
+    },
+    {
+      "source": "E/E3/lcthw/original/ex28/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 184
+    },
+    {
+      "source": "E/E3/lcthw/original/ex28/block_03.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 348
+    },
+    {
+      "source": "E/E3/lcthw/original/ex28/block_04.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1289
+    },
+    {
+      "source": "E/E3/lcthw/original/ex29/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 615
+    },
+    {
+      "source": "E/E3/lcthw/original/ex29/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 812
+    },
+    {
+      "source": "E/E3/lcthw/original/ex29/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1274
+    },
+    {
+      "source": "E/E3/lcthw/original/ex30/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 816
+    },
+    {
+      "source": "E/E3/lcthw/original/ex30/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 412
+    },
+    {
+      "source": "E/E3/lcthw/original/ex30/block_02.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 14
+    },
+    {
+      "source": "E/E3/lcthw/original/ex30/block_03.txt",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 695
+    },
+    {
+      "source": "E/E3/lcthw/original/ex30/block_04.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1448
+    },
+    {
+      "source": "E/E3/lcthw/original/ex31/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 138
+    },
+    {
+      "source": "E/E3/lcthw/original/ex31/block_01.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1747
+    },
+    {
+      "source": "E/E3/lcthw/original/ex32/block_00.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 504
+    },
+    {
+      "source": "E/E3/lcthw/original/ex32/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 918
+    },
+    {
+      "source": "E/E3/lcthw/original/ex32/block_02.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2411
+    },
+    {
+      "source": "E/E3/lcthw/original/ex32/block_03.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2542
+    },
+    {
+      "source": "E/E3/lcthw/original/ex32/block_04.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 460
+    },
+    {
+      "source": "E/E3/lcthw/original/ex33/block_00.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2121
+    },
+    {
+      "source": "E/E3/lcthw/original/ex33/block_01.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 254
+    },
+    {
+      "source": "E/E3/lcthw/original/ex33/block_02.c",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2069
+    },
+    {
+      "source": "E/E3/lcthw/original/ex33/block_03.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1035
+    },
+    {
+      "source": "E/E3/offline/ms/dotfiles.bundle",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 5329
+    },
+    {
+      "source": "E/E3/offline/ms/html-files.zip",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 693
+    },
+    {
+      "source": "E/E3/offline/resources/commentary.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 3274
+    },
+    {
+      "source": "E/E3/offline/resources/course.bundle",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 23633783
+    },
+    {
+      "source": "E/E3/offline/resources/ctrlp.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 79793
+    },
+    {
+      "source": "E/E4/data/expected.ppm",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 921615
+    },
+    {
+      "source": "E/E4/data/source.ppm",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 921615
+    },
+    {
+      "source": "E/E4/official/our.v",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 155
+    },
+    {
+      "source": "E/E4/official/sim_main.cpp",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 278
+    },
+    {
+      "source": "E/E4/offline/manifest.json",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 3465
+    },
+    {
+      "source": "E/E4/offline/nvboard.tar.gz",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 909024
+    },
+    {
+      "source": "E/E4/offline/verilator-guide/LICENSE",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 42098
+    },
+    {
+      "source": "E/E4/offline/verilator-guide/example_cc.rst",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2565
+    },
+    {
+      "source": "E/E4/offline/verilator-guide/install.rst",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 11772
+    },
+    {
+      "source": "E/E4/offline/verilator-guide/overview.rst",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2450
+    },
+    {
+      "source": "E/E4/offline/verilator-guide/simulating.rst",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 29303
+    },
+    {
+      "source": "E/E4/offline/verilator-guide/warnings.rst",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 89896
+    },
+    {
+      "source": "E/E4/offline/workbench-base/.gitignore",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 122
+    },
+    {
+      "source": "E/E4/offline/workbench-base/AGENTS.md",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 7798
+    },
+    {
+      "source": "E/E4/offline/workbench-base/Makefile",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1968
+    },
+    {
+      "source": "E/E4/offline/workbench-base/init.sh",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 2862
+    },
+    {
+      "source": "E/E5/programs/address_wrap.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24
+    },
+    {
+      "source": "E/E5/programs/invalid_opcode.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "E/E5/programs/jalr_alias_odd.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24
+    },
+    {
+      "source": "E/E5/programs/memory_endian.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 108
+    },
+    {
+      "source": "E/E5/programs/misaligned_jump.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "E/E5/programs/negative_immediates.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 32
+    },
+    {
+      "source": "E/E5/programs/random_ops.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 28496
+    },
+    {
+      "source": "E/E5/programs/reserved_register.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "E/E5/programs/six_ebreak.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24
+    },
+    {
+      "source": "E/E5/programs/six_loop.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24
+    },
+    {
+      "source": "E/E5/programs/unaligned_word.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 12
+    },
+    {
+      "source": "E/E5/programs/x0_overflow.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 36
+    },
+    {
+      "source": "E/E6/homebrew/interaction.nes",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 24592
+    },
+    {
+      "source": "E/E6/offline/npc-e6-linux",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 4943480
+    },
+    {
+      "source": "E/E6/synthesis/e6_minirv_Synthesis.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 98312
+    },
+    {
+      "source": "E/E6/synthesis/e6_minirv_Synthesis_sim.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 90623
+    },
+    {
+      "source": "E/E6/upstream/klib-minirv-npc.a",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1995166
+    },
+    {
+      "source": "E/E7/batch/all/official-batch-all-minirv-npc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 893900
+    },
+    {
+      "source": "E/E7/batch/all/official-batch-all-minirv-npc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1147112
+    },
+    {
+      "source": "E/E7/batch/all/official-batch-all-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1516552
+    },
+    {
+      "source": "E/E7/batch/all/official-batch-all-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 1147400
+    },
+    {
+      "source": "E/E7/batch/objects-and-dispatch.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4361934
+    },
+    {
+      "source": "E/E7/batch/wrong/official-batch-wrong-minirv-npc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 350720
+    },
+    {
+      "source": "E/E7/batch/wrong/official-batch-wrong-minirv-npc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 385684
+    },
+    {
+      "source": "E/E7/batch/wrong/official-batch-wrong-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 755136
+    },
+    {
+      "source": "E/E7/batch/wrong/official-batch-wrong-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 385984
+    },
+    {
+      "source": "E/E7/offline/npc-ifu-linux",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 466824
+    },
+    {
+      "source": "E/E7/offline/npc-lsu-linux",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 466824
+    },
+    {
+      "source": "E/E7/offline/npc-soc-linux",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 686184
+    },
+    {
+      "source": "E/E7/offline/npc-soc_gui-linux",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 759832
+    },
+    {
+      "source": "E/E7/offline/npc-valid-linux",
+      "reason": "binary_or_non_utf8_pending_review",
+      "bytes": 466824
+    },
+    {
+      "source": "E/E7/programs/csr_cycle_rollover.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 152
+    },
+    {
+      "source": "E/E7/programs/csr_identity.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 16
+    },
+    {
+      "source": "E/E7/programs/csr_readonly_write.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 8
+    },
+    {
+      "source": "E/E7/programs/csr_reserved_register.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "E/E7/programs/csr_unknown_csr.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4
+    },
+    {
+      "source": "E/E7/programs/soc_smoke.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 68
+    },
+    {
+      "source": "E/E7/software_soc/dependency_divisor_13/dummy-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 374480
+    },
+    {
+      "source": "E/E7/software_soc/dependency_divisor_13/dummy-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 5328
+    },
+    {
+      "source": "E/E7/software_soc/dependency_divisor_27/dummy-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 374480
+    },
+    {
+      "source": "E/E7/software_soc/dependency_divisor_27/dummy-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 5328
+    },
+    {
+      "source": "E/E7/software_soc/dummy/dummy-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 374480
+    },
+    {
+      "source": "E/E7/software_soc/dummy/dummy-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 5328
+    },
+    {
+      "source": "E/E7/software_soc/gpio/gpio-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 763656
+    },
+    {
+      "source": "E/E7/software_soc/gpio/gpio-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 394504
+    },
+    {
+      "source": "E/E7/software_soc/hello/hello-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 672620
+    },
+    {
+      "source": "E/E7/software_soc/hello/hello-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 303468
+    },
+    {
+      "source": "E/E7/software_soc/hello_baud57600/hello-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 672620
+    },
+    {
+      "source": "E/E7/software_soc/hello_baud57600/hello-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 303468
+    },
+    {
+      "source": "E/E7/software_soc/hello_default/hello-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 672620
+    },
+    {
+      "source": "E/E7/software_soc/hello_default/hello-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 303468
+    },
+    {
+      "source": "E/E7/software_soc/hello_ratio3/hello-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 672620
+    },
+    {
+      "source": "E/E7/software_soc/hello_ratio3/hello-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 303468
+    },
+    {
+      "source": "E/E7/software_soc/timer_calibration/amtest-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 874328
+    },
+    {
+      "source": "E/E7/software_soc/timer_calibration/amtest-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 505176
+    },
+    {
+      "source": "E/E7/software_soc/timer_npc_trial_1/amtest-minirv-npc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 991996
+    },
+    {
+      "source": "E/E7/software_soc/timer_npc_trial_1/amtest-minirv-npc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 504864
+    },
+    {
+      "source": "E/E7/software_soc/timer_npc_trial_2/amtest-minirv-npc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 991996
+    },
+    {
+      "source": "E/E7/software_soc/timer_npc_trial_2/amtest-minirv-npc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 504864
+    },
+    {
+      "source": "E/E7/software_soc/timer_npc_trial_3/amtest-minirv-npc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 992508
+    },
+    {
+      "source": "E/E7/software_soc/timer_npc_trial_3/amtest-minirv-npc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 505592
+    },
+    {
+      "source": "E/E7/software_soc/timer_trial_1/amtest-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 874328
+    },
+    {
+      "source": "E/E7/software_soc/timer_trial_1/amtest-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 505176
+    },
+    {
+      "source": "E/E7/software_soc/timer_trial_2/amtest-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 874328
+    },
+    {
+      "source": "E/E7/software_soc/timer_trial_2/amtest-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 505176
+    },
+    {
+      "source": "E/E7/software_soc/timer_trial_3/amtest-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 874328
+    },
+    {
+      "source": "E/E7/software_soc/timer_trial_3/amtest-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 505176
+    },
+    {
+      "source": "E/E7/software_soc/wrong/wrong-minirv-ysyxsoc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 374480
+    },
+    {
+      "source": "E/E7/software_soc/wrong/wrong-minirv-ysyxsoc.elf",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 5328
+    },
+    {
+      "source": "E/E7/synthesis/area/e7_minirv_Synthesis.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 111176
+    },
+    {
+      "source": "E/E7/synthesis/area/e7_minirv_Synthesis_sim.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 109681
+    },
+    {
+      "source": "E/E7/synthesis/baseline/e7_minirv_Synthesis.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 103850
+    },
+    {
+      "source": "E/E7/synthesis/baseline/e7_minirv_Synthesis_sim.v.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 102301
+    },
+    {
+      "source": "E/E8/examples/bad_exit.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 20
+    },
+    {
+      "source": "E/E8/examples/correct.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 20
+    },
+    {
+      "source": "E/E8/examples/unreset_state.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 20
+    },
+    {
+      "source": "E/E8/signoff/cpu-baseline-signoff.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 45440615
+    },
+    {
+      "source": "E/E8/signoff/native-run-evidence.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 957240
+    },
+    {
+      "source": "E/E8/software/hello-minirv-npc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 297216
+    },
+    {
+      "source": "E/E8/software/microbench-minirv-npc.bin",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 526624
+    },
+    {
+      "source": "E/offline/patched-runtime.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 4357233
+    },
+    {
+      "source": "E/offline/sources/NJU-ProjectN__abstract-machine__ics2026.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 78117
+    },
+    {
+      "source": "E/offline/sources/NJU-ProjectN__am-kernels__ics2026.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 6511780
+    },
+    {
+      "source": "E/offline/sources/NJU-ProjectN__fceux-am__ics2021.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 253446
+    },
+    {
+      "source": "E/offline/sources/NJU-ProjectN__riscv-tests-am__master.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 444941
+    },
+    {
+      "source": "E/offline/sources/OSCPU__archbench__main.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 141214415
+    },
+    {
+      "source": "E/offline/sources/OSCPU__ysyx-workbench.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 6810
+    },
+    {
+      "source": "E/offline/sources/OSCPU__ysyxSoC__2607.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 345108
+    },
+    {
+      "source": "E/offline/sources/klib-minirv-npc.tar.bz2",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 182005
+    },
+    {
+      "source": "E/offline/sources/openecos-projects__icsprout55-pdk__unconfirmed.tar.gz",
+      "reason": "compiled_or_bundled_output_restore_from_sources",
+      "bytes": 49765247
+    },
+    {
+      "source": "README.md",
+      "reason": "replaced_by_public_entrypoint",
+      "bytes": 5030
+    },
+    {
+      "source": "YSYX_B_DELIVERY.zip.sha256",
+      "reason": "checksum_of_local_only_delivery",
+      "bytes": 87
+    },
+    {
+      "source": "YSYX_C_DELIVERY.zip.sha256",
+      "reason": "checksum_of_local_only_delivery",
+      "bytes": 87
+    },
+    {
+      "source": "YSYX_D_DELIVERY.zip.sha256",
+      "reason": "checksum_of_local_only_delivery",
+      "bytes": 87
+    },
+    {
+      "source": "YSYX_E1_DELIVERY.zip.sha256",
+      "reason": "checksum_of_local_only_delivery",
+      "bytes": 88
+    },
+    {
+      "source": "YSYX_E2_DELIVERY.zip.sha256",
+      "reason": "checksum_of_local_only_delivery",
+      "bytes": 88
+    },
+    {
+      "source": "YSYX_E3_CHECKPOINT.zip.sha256",
+      "reason": "checksum_of_local_only_delivery",
+      "bytes": 90
+    },
+    {
+      "source": "YSYX_E3_DELIVERY.zip.sha256",
+      "reason": "checksum_of_local_only_delivery",
+      "bytes": 88
+    },
+    {
+      "source": "YSYX_E4_DELIVERY.zip.sha256",
+      "reason": "checksum_of_local_only_delivery",
+      "bytes": 88
+    },
+    {
+      "source": "YSYX_E_DELIVERY.zip.sha256",
+      "reason": "checksum_of_local_only_delivery",
+      "bytes": 87
+    },
+    {
+      "source": "config/E3_authorization.json",
+      "reason": "local_execution_configuration",
+      "bytes": 796
+    },
+    {
+      "source": "config/E3_resume.json",
+      "reason": "local_execution_configuration",
+      "bytes": 594
+    },
+    {
+      "source": "config/F_circuit_jobs.json",
+      "reason": "local_execution_configuration",
+      "bytes": 6790
+    },
+    {
+      "source": "config/F_rtl_tool_fingerprints.json",
+      "reason": "local_execution_configuration",
+      "bytes": 674
+    },
+    {
+      "source": "config/backups/wslconfig_before_backend_4GiB_20261025.ini",
+      "reason": "local_execution_configuration",
+      "bytes": 89
+    },
+    {
+      "source": "config/execution_policy.json",
+      "reason": "local_execution_configuration",
+      "bytes": 2038
+    },
+    {
+      "source": "config/logisim_jar_catalog.json",
+      "reason": "local_execution_configuration",
+      "bytes": 969061
+    },
+    {
+      "source": "config/task_status.json",
+      "reason": "local_execution_configuration",
+      "bytes": 2083067
+    },
+    {
+      "source": "config/toolchain.json",
+      "reason": "local_execution_configuration",
+      "bytes": 4236
+    },
+    {
+      "source": "config/workspace_baseline_backup/README.md",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 1641
+    },
+    {
+      "source": "config/workspace_baseline_backup/toolchain.lock.json",
+      "reason": "external_dependency_or_book_original",
+      "bytes": 22823
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+#include <am.h>
+#include <klib.h>
+#include <rtthread.h>
+extern Area am_apps_heap,am_apps_data,am_apps_bss;
+extern uint8_t *am_apps_data_content;
+extern void klib_heap_reset(void *,void *);
+extern int klib_heap_validate(void);
+unsigned c5_app_failures;
+struct app_call { int (*main)(const char *);bool uses_klib_allocator;char name[40];char arguments[256]; };
+static struct app_call *active_app;
+static volatile uint32_t *low_guard,*high_guard;
+static uint32_t guard_value(unsigned index,bool high){return (high?0xa5c00000u:0xc5f00000u)^(index*0x10203u);}
+static void prepare_heap(bool uses_klib){
+  uintptr_t begin=((uintptr_t)am_apps_heap.start+15)&~(uintptr_t)15;
+  uintptr_t end=(uintptr_t)am_apps_heap.end&~(uintptr_t)15;assert(end>begin+512);
+  low_guard=(volatile uint32_t *)begin;high_guard=(volatile uint32_t *)(end-64);
+  for(unsigned i=0;i<16;i++){low_guard[i]=guard_value(i,false);high_guard[i]=guard_value(i,true);}
+  heap=(Area){(void *)(begin+64),(void *)(end-64)};
+  if(uses_klib){klib_heap_reset(heap.start,heap.end);assert(klib_heap_validate());}
+  else klib_heap_reset(NULL,NULL);
+}
+static void finish_app(int code) {
+  assert(active_app!=NULL);
+  bool guards=true;
+  for(unsigned i=0;i<16;i++)if(low_guard[i]!=guard_value(i,false)||high_guard[i]!=guard_value(i,true))guards=false;
+  int allocator=active_app->uses_klib_allocator?klib_heap_validate():-1;
+  if(!guards||allocator==0)code=82;
+  rt_kprintf("C5_AM_MEMORY name=%s mode=%s guards=%u allocator=%d\n",active_app->name,active_app->uses_klib_allocator?"klib":"private",(unsigned)guards,allocator);
+  if(code)c5_app_failures++;
+  rt_kprintf("C5_AM_EXIT name=%s code=%d\n",active_app->name,code);
+  struct app_call *owned=active_app;active_app=NULL;rt_free(owned);
+  void rt_thread_exit(void);rt_thread_exit();
+  halt(83);
+}
+static void app_thread(void *argument) {
+  struct app_call *owned=argument;assert(owned==active_app);
+  finish_app(owned->main(owned->arguments));
+}
+static void app_start(const char *name,int (*entry)(const char *),int argc,char **argv,bool uses_klib) {
+  if(active_app){rt_kprintf("C5_AM_BUSY\n");return;}
+  struct app_call *owned=rt_malloc(sizeof *owned);assert(owned!=NULL);memset(owned,0,sizeof *owned);
+  assert(strlen(name)<sizeof owned->name);strcpy(owned->name,name);owned->main=entry;owned->uses_klib_allocator=uses_klib;
+  size_t used=0;
+  for(int i=1;i<argc;i++){
+    size_t length=strlen(argv[i]);assert(used+length+(i>1)+1<=sizeof owned->arguments);
+    if(i>1)owned->arguments[used++]=' ';
+    memcpy(owned->arguments+used,argv[i],length);used+=length;
+  }
+  owned->arguments[used]=0;
+  memcpy(am_apps_data.start,am_apps_data_content,(uintptr_t)am_apps_data.end-(uintptr_t)am_apps_data.start);
+  memset(am_apps_bss.start,0,(uintptr_t)am_apps_bss.end-(uintptr_t)am_apps_bss.start);
+  prepare_heap(uses_klib);
+  active_app=owned;
+  rt_thread_t thread=rt_thread_create(name,app_thread,owned,0x4000,0,20);assert(thread!=NULL);
+  rt_kprintf("C5_AM_START name=%s args=%s\n",name,owned->arguments);
+  assert(rt_thread_startup(thread)==RT_EOK);
+}
+bool c5_dummy_ioe_init(void){return true;}
+bool c5_dummy_cte_init(Context *(*handler)(Event,Context *)){(void)handler;return true;}
+bool c5_dummy_vme_init(void *(*alloc)(int),void (*free_fn)(void *)){(void)alloc;(void)free_fn;return true;}
+bool c5_dummy_mpe_init(void (*entry)(void)){(void)entry;return true;}
+void c5_am_halt(int code){finish_app(code);}
+void c5_am_exit(int code){finish_app(code);}
+static int guard_negative_main(const char *args){(void)args;*(volatile uint32_t *)heap.end^=1;return 0;}
+static void c5_guard_test(int argc,char **argv){app_start("guard_negative",guard_negative_main,argc,argv,false);}
+MSH_CMD_EXPORT(c5_guard_test,Deliberate application heap guard negative control);
+/* APP_WRAPPERS */

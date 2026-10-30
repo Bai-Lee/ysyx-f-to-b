@@ -1,0 +1,170 @@
+{
+  "creator": "Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)",
+  "modules": {
+    "counter": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:2.1-12.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "count[0]": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "count[1]": {
+          "direction": "output",
+          "offset": 1,
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:337:slice$82": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:8.3-11.6"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 7 ],
+            "E": [ 4 ],
+            "Q": [ 5 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$83": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:8.3-11.6"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 8 ],
+            "E": [ 4 ],
+            "Q": [ 6 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$opt_expr.cc:607:replace_const_cells$122": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$91": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:10.27-10.39|/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/lib/../share/yosys/techmap.v:296.13-296.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 5 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$add$/workspace/projects/ysyx_f_to_b/D/D6/counter.v:10$2_Y[0]": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:10.27-10.39"
+          }
+        },
+        "$add$/workspace/projects/ysyx_f_to_b/D/D6/counter.v:10$2_Y[1]": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "offset": 1,
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:10.27-10.39"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:3.9-3.12"
+          }
+        },
+        "count[0]": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:6.20-6.25"
+          }
+        },
+        "count[1]": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "offset": 1,
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:6.20-6.25"
+          }
+        },
+        "en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:5.9-5.11"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/workspace/projects/ysyx_f_to_b/D/D6/counter.v:4.9-4.12"
+          }
+        }
+      }
+    }
+  }
+}

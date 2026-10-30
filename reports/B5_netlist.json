@@ -1,0 +1,105 @@
+{
+  "status": "PASS_COMPLETED_RUNS",
+  "mode": "netlist",
+  "fault_reset": false,
+  "executable_sha256": "c1712e1b69e9fb455b87739b97dfc526d6ffdaf6d831ee40a169a1e88b503c17",
+  "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+  "runs": [
+    {
+      "name": "hello",
+      "status": "PASS",
+      "mode": "netlist",
+      "fast_memory": true,
+      "executable_sha256": "c1712e1b69e9fb455b87739b97dfc526d6ffdaf6d831ee40a169a1e88b503c17",
+      "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+      "image_sha256": "467e043f4faf04e05c84afce29c1c7a05a9c288fe47626afa4e351ae963ff7f9",
+      "hex_sha256": "465f54428bc8077a760f075e5dbb758b1bc404e2165e1fa8a6708eed01a9572e",
+      "wall_seconds": 5.409,
+      "counts": {
+        "cycles": 4234,
+        "read_transactions": 939,
+        "read_beats": 939,
+        "write_transactions": 114,
+        "resident_pages": 2
+      },
+      "evidence": "artifacts/B5/design/netlist/hello"
+    },
+    {
+      "name": "hazards",
+      "status": "PASS",
+      "mode": "netlist",
+      "fast_memory": true,
+      "executable_sha256": "c1712e1b69e9fb455b87739b97dfc526d6ffdaf6d831ee40a169a1e88b503c17",
+      "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+      "image_sha256": "70f2529d0c9a2dec91a4a609bb8fe2bc4c58d777846aaff0f540d39e83bf108e",
+      "hex_sha256": "90664e99e10c65aae946ebd26968e6e7420d09022a3c0be7eb18c89242c75318",
+      "wall_seconds": 19.055,
+      "counts": {
+        "cycles": 16613,
+        "read_transactions": 2756,
+        "read_beats": 2756,
+        "write_transactions": 781,
+        "resident_pages": 4
+      },
+      "evidence": "artifacts/B5/design/netlist/hazards"
+    },
+    {
+      "name": "fence-prefetch",
+      "status": "PASS",
+      "mode": "netlist",
+      "fast_memory": true,
+      "executable_sha256": "c1712e1b69e9fb455b87739b97dfc526d6ffdaf6d831ee40a169a1e88b503c17",
+      "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+      "image_sha256": "5beb234e703b9c029b5b7493fded1381e2eec46aa27a1066c464a074d054a21e",
+      "hex_sha256": "3909855cedd9634e456086d56bc173d491289d416355d7f361353f70f90c5a2a",
+      "wall_seconds": 1.236,
+      "counts": {
+        "cycles": 450,
+        "read_transactions": 113,
+        "read_beats": 113,
+        "write_transactions": 9,
+        "resident_pages": 2
+      },
+      "evidence": "artifacts/B5/design/netlist/fence-prefetch"
+    },
+    {
+      "name": "microbench",
+      "status": "PASS",
+      "mode": "netlist",
+      "fast_memory": true,
+      "executable_sha256": "c1712e1b69e9fb455b87739b97dfc526d6ffdaf6d831ee40a169a1e88b503c17",
+      "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+      "image_sha256": "17d4eb74292aaa8e8c20c0ed42b8b3fbe32bfbad80d8d193b00032043e0de88f",
+      "hex_sha256": "6de2c8eb2d7971dfd1f3ec50a44c01e98056175e920e0668584400c9a0f2c643",
+      "wall_seconds": 3840.577,
+      "counts": {
+        "cycles": 3624257,
+        "read_transactions": 671169,
+        "read_beats": 671169,
+        "write_transactions": 61725,
+        "resident_pages": 17
+      },
+      "evidence": "artifacts/B5/design/netlist/microbench"
+    },
+    {
+      "name": "rtthread",
+      "status": "PASS",
+      "mode": "netlist",
+      "fast_memory": true,
+      "executable_sha256": "c1712e1b69e9fb455b87739b97dfc526d6ffdaf6d831ee40a169a1e88b503c17",
+      "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+      "image_sha256": "4decb972e742c347dd15be9c274d7552e54d30461a6e5a352217a95ff75ec495",
+      "hex_sha256": "20ddfa26c164edbcbcf637ce55e612a19e2547ece493bebaca80a1bb6ca08ddd",
+      "wall_seconds": 3902.084,
+      "counts": {
+        "cycles": 3666102,
+        "read_transactions": 716665,
+        "read_beats": 716665,
+        "write_transactions": 76940,
+        "resident_pages": 48
+      },
+      "evidence": "artifacts/B5/design/netlist/rtthread"
+    }
+  ],
+  "scope": "Icarus four-state execution at the public AXI boundary. Unwritten RAM and non-reset cache data remain X; control/address and active write-byte unknowns are rejected. Fixed-reset mapped CPU uses a two-instruction Flash trampoline to the program at0x80000000. Sparse model covers128MiB addresses with8MiB resident pages, and actual page usage is recorded. Fast-memory runs remove artificial bus wait cycles while preserving the full program, four-state memory, and every checker. Zero-delay functional cell simulation, no SDF/timing-signoff claim."
+}

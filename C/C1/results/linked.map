@@ -1,0 +1,537 @@
+Archive member included to satisfy reference by file (symbol)
+
+/workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+                              /workspace/projects/ysyx_f_to_b/C/C1/results/main.o (counter)
+
+Merging program properties
+
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.6                     /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o (__libc_start_main@@GLIBC_2.34)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtend.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/crtend.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+LOAD /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+LOAD /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libgcc_s.so.1
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libc.so
+START GROUP
+LOAD /lib/x86_64-linux-gnu/libc.so.6
+LOAD /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+LOAD /lib64/ld-linux-x86-64.so.2
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libgcc_s.so.1
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/crtend.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400318                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp         0x0000000000400318       0x1c
+ *(.interp)
+ .interp        0x0000000000400318       0x1c /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.note.gnu.property
+                0x0000000000400338       0x30
+ .note.gnu.property
+                0x0000000000400338       0x30 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.note.gnu.build-id
+                0x0000000000400368       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000400368       0x24 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.note.ABI-tag   0x000000000040038c       0x20
+ .note.ABI-tag  0x000000000040038c       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x00000000004003b0       0x1c
+ *(.gnu.hash)
+ .gnu.hash      0x00000000004003b0       0x1c /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.dynsym         0x00000000004003d0       0x60
+ *(.dynsym)
+ .dynsym        0x00000000004003d0       0x60 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.dynstr         0x0000000000400430       0x4a
+ *(.dynstr)
+ .dynstr        0x0000000000400430       0x4a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.gnu.version    0x000000000040047a        0x8
+ *(.gnu.version)
+ .gnu.version   0x000000000040047a        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.gnu.version_d  0x0000000000400488        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400488        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.gnu.version_r  0x0000000000400488       0x30
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400488       0x30 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.rela.dyn       0x00000000004004b8       0x30
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text     0x00000000004004b8        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x00000000004004b8        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000004004b8       0x30 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x00000000004004e8        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x00000000004004e8       0x18
+ *(.rela.plt)
+ .rela.plt      0x00000000004004e8       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400500        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+                0x0000000000401000                . = ALIGN (CONSTANT (MAXPAGESIZE))
+
+.init           0x0000000000401000       0x1b
+ *(SORT_NONE(.init))
+ .init          0x0000000000401000       0x16 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x0000000000401000                _init
+ .init          0x0000000000401016        0x5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+
+.plt            0x0000000000401020       0x20
+ *(.plt)
+ .plt           0x0000000000401020       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ *(.iplt)
+ .iplt          0x0000000000401040        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.plt.got        0x0000000000401040        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401040        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.plt.sec        0x0000000000401040       0x10
+ *(.plt.sec)
+ .plt.sec       0x0000000000401040       0x10 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000401040                printf@@GLIBC_2.2.5
+
+.text           0x0000000000401050      0x175
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000401050       0x35 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000401050                _start
+                0x0000000000401080                _dl_relocate_static_pie
+ .text          0x0000000000401085        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ *fill*         0x0000000000401085        0xb 
+ .text          0x0000000000401090       0xa6 /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+ .text          0x0000000000401136       0x63 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+                0x0000000000401136                main
+ .text          0x0000000000401199       0x2c /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+                0x0000000000401199                add_to_counter
+ .text          0x00000000004011c5        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtend.o
+ .text          0x00000000004011c5        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ *(.gnu.warning)
+
+.fini           0x00000000004011c8        0xd
+ *(SORT_NONE(.fini))
+ .fini          0x00000000004011c8        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x00000000004011c8                _fini
+ .fini          0x00000000004011d0        0x5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+                0x0000000000402000                . = ALIGN (CONSTANT (MAXPAGESIZE))
+                0x0000000000402000                . = SEGMENT_START ("rodata-segment", (ALIGN (CONSTANT (MAXPAGESIZE)) + (. & (CONSTANT (MAXPAGESIZE) - 0x1))))
+
+.rodata         0x0000000000402000       0x2e
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x0000000000402000        0x4 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000402000                _IO_stdin_used
+ .rodata        0x0000000000402004       0x17 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ *fill*         0x000000000040201b        0x5 
+ .rodata        0x0000000000402020        0xe /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+                0x0000000000402020                banner
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000402030       0x3c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000402030       0x3c /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000402030                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000402070       0xc4
+ *(.eh_frame)
+ .eh_frame      0x0000000000402070       0x40 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                                         0x5c (size before relaxing)
+ *fill*         0x00000000004020b0        0x0 
+ .eh_frame      0x00000000004020b0       0x28 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000004020d8        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ .eh_frame      0x00000000004020d8       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                                         0x30 (size before relaxing)
+ .eh_frame      0x00000000004020f0       0x20 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000402110       0x20 /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000402130        0x4 /usr/lib/gcc/x86_64-linux-gnu/11/crtend.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000403e10                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000403e10        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000403e10        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000403e10        0x8
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x0000000000403e10        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000403e18        0x8
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000000403e18        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000403e20        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000403e20        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.dynamic        0x0000000000403e20      0x1d0
+ *(.dynamic)
+ .dynamic       0x0000000000403e20      0x1d0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000403e20                _DYNAMIC
+
+.got            0x0000000000403ff0       0x10
+ *(.got)
+ .got           0x0000000000403ff0       0x10 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ *(.igot)
+                0x0000000000404fe8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000404000       0x20
+ *(.got.plt)
+ .got.plt       0x0000000000404000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000404000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000404020        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+
+.data           0x0000000000404020       0x18
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000404020        0x4 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000404020                data_start
+                0x0000000000404020                __data_start
+ .data          0x0000000000404024        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ *fill*         0x0000000000404024        0x4 
+ .data          0x0000000000404028        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+                0x0000000000404028                __dso_handle
+ .data          0x0000000000404030        0x0 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ .data          0x0000000000404030        0x8 /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+                0x0000000000404030                counter
+ .data          0x0000000000404038        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtend.o
+ .data          0x0000000000404038        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+
+.tm_clone_table
+                0x0000000000404038        0x0
+ .tm_clone_table
+                0x0000000000404038        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+ .tm_clone_table
+                0x0000000000404038        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtend.o
+
+.data1
+ *(.data1)
+                0x0000000000404038                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000404038                . = .
+                0x0000000000404038                __bss_start = .
+
+.bss            0x0000000000404038        0x8
+ *(.dynbss)
+ .dynbss        0x0000000000404038        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000404038        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o
+ .bss           0x0000000000404038        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .bss           0x0000000000404038        0x1 /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+ .bss           0x0000000000404039        0x0 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ *fill*         0x0000000000404039        0x3 
+ .bss           0x000000000040403c        0x4 /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+                0x000000000040403c                zero_counter
+ .bss           0x0000000000404040        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtend.o
+ .bss           0x0000000000404040        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ *(COMMON)
+                0x0000000000404040                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000404040                . = ALIGN (0x8)
+                0x0000000000404040                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000406040        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000406040                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000406040                . = ALIGN (0x8)
+                0x0000000000404040                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000406040                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2d
+ *(.comment)
+ .comment       0x0000000000000000       0x2d /usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o
+                                         0x2e (size before relaxing)
+ .comment       0x000000000000002d       0x2e /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ .comment       0x000000000000002d       0x2e /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+ .comment       0x000000000000002d       0x2e /usr/lib/gcc/x86_64-linux-gnu/11/crtend.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x60
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x30 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ .debug_aranges
+                0x0000000000000030       0x30 /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x20f
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x106 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ .debug_info    0x0000000000000106      0x109 /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+
+.debug_abbrev   0x0000000000000000      0x17d
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0xc2 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ .debug_abbrev  0x00000000000000c2       0xbb /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+
+.debug_line     0x0000000000000000       0xec
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x8e /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+ .debug_line    0x000000000000008e       0x5e /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x137
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x12c /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+                                        0x152 (size before relaxing)
+ .debug_str     0x000000000000012c        0xb /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+                                         0xfd (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x0000000000000000       0xed
+ *(.debug_line_str)
+ .debug_line_str
+                0x0000000000000000       0xb3 /workspace/projects/ysyx_f_to_b/C/C1/results/main.o
+                                         0xf4 (size before relaxing)
+ .debug_line_str
+                0x00000000000000b3       0x3a /workspace/projects/ysyx_f_to_b/C/C1/results/liblesson.a(producer.o)
+                                         0xeb (size before relaxing)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/workspace/projects/ysyx_f_to_b/C/C1/results/linked.elf elf64-x86-64)

@@ -1,0 +1,1 @@
+module mod_a(input in1,in2,output out);assign out=1'b0;endmodule

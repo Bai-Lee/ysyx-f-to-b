@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "ratio_q": 256,
+      "fraction_bits": 8,
+      "negative": false,
+      "status": "PASS",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/apb-256/timing.vcd",
+      "wave_sha256": "bba1415844a77901b392cda1367d8a3706ec5e71b1cb87250c12e3df3c7219b7",
+      "evidence": "artifacts/B3/unit/apb-256"
+    },
+    {
+      "ratio_q": 320,
+      "fraction_bits": 8,
+      "negative": false,
+      "status": "PASS",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/apb-320/timing.vcd",
+      "wave_sha256": "4d6583fd0b8a9b85d82f9f7d336450571564cf3d03b32e9536bfb67b97cdb80c",
+      "evidence": "artifacts/B3/unit/apb-320"
+    },
+    {
+      "ratio_q": 512,
+      "fraction_bits": 8,
+      "negative": false,
+      "status": "PASS",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/apb-512/timing.vcd",
+      "wave_sha256": "6403c977df1f35bee711bea99d6ca6f7e1495ce4cd9e1f02e8e98207903c100b",
+      "evidence": "artifacts/B3/unit/apb-512"
+    },
+    {
+      "ratio_q": 1408,
+      "fraction_bits": 8,
+      "negative": false,
+      "status": "PASS",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/apb-1408/timing.vcd",
+      "wave_sha256": "f31967fe201e27a27314f5c3e44e88a2bd34e2d10a5b9fe3f3895c320d1391d1",
+      "evidence": "artifacts/B3/unit/apb-1408"
+    },
+    {
+      "ratio_q": 512,
+      "fraction_bits": 8,
+      "negative": true,
+      "status": "PASS_WRONG_DELAY_REJECTED",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/apb-512-bad/timing.vcd",
+      "wave_sha256": "0ec1fd4ea36901efd3f60ca8a036aeb2c26e5dad6cd421acba1b87adc8e1b77a",
+      "evidence": "artifacts/B3/unit/apb-512-bad"
+    }
+  ],
+  "contract": "t0 is the sampled APB setup edge, k is device completion distance. Upstream completion is ceil(k*ratio_q/256); extra cycles accumulate ratio_q-256 per device cycle. Error/data are buffered, device completion occurs once, back-to-back setup supported. Unity is exact bypass. Positive ratios1,1.25,2,5.5; variable service1..33 and read/write strobes/error responses."
+}

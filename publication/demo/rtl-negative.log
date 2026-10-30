@@ -1,0 +1,10 @@
+Hello from the final B-stage RV32E CPU!
+
+B5_BAD_TRAP code=00000001
+
+FATAL: $REPO\B\B5\cpu_four_state_tb.sv:101: B5_PROGRAM_FAILED
+
+       Time: 8885000  Scope: cpu_four_state_tb.memory_write
+
+PUBLIC_DEMO_PASS_EXPECTED_REJECTION
+Evidence: build\negative\20261030T064921-386039600

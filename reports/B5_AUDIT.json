@@ -1,0 +1,308 @@
+{
+  "status": "PASS_PUBLIC_ENGINEERING_WITH_DECLARED_LIMITS",
+  "stage_complete": true,
+  "stage": "B5",
+  "core_tasks": 6,
+  "adapted_tasks": 1,
+  "scope_records": 15,
+  "records": [
+    {
+      "id": "B5-O001",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B5/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-O002",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B5/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-O003",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B5/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-O004",
+      "status": "REVIEWED_BACKGROUND",
+      "evidence": [
+        "B/B5/NOTES.md"
+      ],
+      "details": "背景/思考按实际范围说明；Chisel、其它ISA、外部研究或历史产品示例不冒充本工程实现。",
+      "evidence_sha256": {
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-R001",
+      "status": "EXCLUDED_SCOPE",
+      "evidence": [
+        "B/runtime/course_specs.json",
+        "B/B5/NOTES.md"
+      ],
+      "details": "个人身份、申请、白名单、官方提交或联系流程排除。",
+      "evidence_sha256": {
+        "B/runtime/course_specs.json": "2dae681f19642fa277b253a846ceab4e3aaaa1647c1885fee4f1e40d49456cf1",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-R002",
+      "status": "REVIEWED_TECHNICAL_CONSTRAINT",
+      "evidence": [
+        "B/B5/NOTES.md"
+      ],
+      "details": "所有导出/驱动替换在脚本中重现；本地研究记录保留网表证据，未生成或提交官方小于1MB的申请补丁。",
+      "evidence_sha256": {
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-M001",
+      "status": "PASS",
+      "evidence": [
+        "reports/B5_ACCEPTANCE.json",
+        "B/B5/NOTES.md",
+        "reports/B5_structure.json"
+      ],
+      "details": "最终32位AXI、2371个同一上升沿DFF、无Nangate latch；位宽/时钟/latch检查器反例通过。",
+      "evidence_sha256": {
+        "reports/B5_ACCEPTANCE.json": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f",
+        "reports/B5_structure.json": "07de3c2331683ecd0bd4c3e86181aa9130038161b5488cbca348ded3d94f1e92"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-M002",
+      "status": "PASS",
+      "evidence": [
+        "reports/B5_ACCEPTANCE.json",
+        "B/B5/NOTES.md",
+        "reports/B5_structure.json"
+      ],
+      "details": "最终32位AXI、2371个同一上升沿DFF、无Nangate latch；位宽/时钟/latch检查器反例通过。",
+      "evidence_sha256": {
+        "reports/B5_ACCEPTANCE.json": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f",
+        "reports/B5_structure.json": "07de3c2331683ecd0bd4c3e86181aa9130038161b5488cbca348ded3d94f1e92"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-M003",
+      "status": "PASS",
+      "evidence": [
+        "reports/B5_ACCEPTANCE.json",
+        "B/B5/NOTES.md",
+        "reports/B5_structure.json"
+      ],
+      "details": "最终32位AXI、2371个同一上升沿DFF、无Nangate latch；位宽/时钟/latch检查器反例通过。",
+      "evidence_sha256": {
+        "reports/B5_ACCEPTANCE.json": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f",
+        "reports/B5_structure.json": "07de3c2331683ecd0bd4c3e86181aa9130038161b5488cbca348ded3d94f1e92"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-M004",
+      "status": "PASS_PROJECT_ID_ADAPTATION",
+      "evidence": [
+        "reports/B5_ACCEPTANCE.json",
+        "B/B5/NOTES.md",
+        "reports/B5_export.json"
+      ],
+      "details": "工程编号00000000、顶层与全部模块前缀一致；make verilog可复现单文件导出并实际仿真。",
+      "evidence_sha256": {
+        "reports/B5_ACCEPTANCE.json": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f",
+        "reports/B5_export.json": "dc63a960847aded8d4e75505b5682d4c57ad6c18f37e135deb739b3fb4cb6ea9"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/B5_ACCEPTANCE.json",
+        "B/B5/NOTES.md",
+        "reports/B5_rtl.json",
+        "reports/B5_rtl-bad-reset.json"
+      ],
+      "details": "最终源代码Icarus四值执行完整microbench test与RT-Thread及短用例；未写RAM保留X，缺复位被拒绝。",
+      "evidence_sha256": {
+        "reports/B5_ACCEPTANCE.json": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f",
+        "reports/B5_rtl.json": "1245d23d51eca8efadf863c005c95a523d3ab0d1da82e0dee3ad10cf4c24be02",
+        "reports/B5_rtl-bad-reset.json": "f8be86e50df0031a57be35e06a8f285893cb058274e6a7a914b11e495296d711"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-M006",
+      "status": "PASS",
+      "evidence": [
+        "reports/B5_ACCEPTANCE.json",
+        "B/B5/NOTES.md",
+        "reports/B5_netlist.json",
+        "reports/B5_cell_models.json"
+      ],
+      "details": "精确最终网表及验证过的标准单元模型，完整microbench test/RT-Thread四值运行；无SDF签核声明。",
+      "evidence_sha256": {
+        "reports/B5_ACCEPTANCE.json": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f",
+        "reports/B5_netlist.json": "c15cf769788114a50da80bc26283a602eed7cb88a3814732d9e2bdfd214fe33a",
+        "reports/B5_cell_models.json": "371bdefdf3774f8ca8c7a4784b7e52a3c7ef6a6a61f1df3227b57ec1baf48040"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-M007",
+      "status": "PASS",
+      "evidence": [
+        "reports/B5_ACCEPTANCE.json",
+        "B/B5/NOTES.md",
+        "reports/B_final_regressions.json",
+        "reports/B4_full128.json"
+      ],
+      "details": "修复后最终源码、网表、模型、程序和报告按哈希绑定；原CPU套件/负例、OS、性能及全容量测试均完成。",
+      "evidence_sha256": {
+        "reports/B5_ACCEPTANCE.json": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f",
+        "reports/B_final_regressions.json": "10884d66a4b9239d780c56bd8d0e216074420cb60e85a5e98bd5e1be58ff8843",
+        "reports/B4_full128.json": "a08daadf6dcc8923226b40b6e1b84fc80e980bc1424a03995717721d1fa3a07d"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-M008",
+      "status": "EXCLUDED_SCOPE",
+      "evidence": [
+        "B/runtime/course_specs.json",
+        "B/B5/NOTES.md"
+      ],
+      "details": "个人身份、申请、白名单、官方提交或联系流程排除。",
+      "evidence_sha256": {
+        "B/runtime/course_specs.json": "2dae681f19642fa277b253a846ceab4e3aaaa1647c1885fee4f1e40d49456cf1",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    },
+    {
+      "id": "B5-M009",
+      "status": "EXCLUDED_OFFICIAL_LOCAL_REHEARSAL_RECORDED",
+      "evidence": [
+        "reports/B5_ACCEPTANCE.json",
+        "B/B5/NOTES.md",
+        "reports/B5_public_entrypoints.json"
+      ],
+      "details": "公开make接口做本地演练；没有申请、代替用户参加或宣称通过官方调试考核。",
+      "evidence_sha256": {
+        "reports/B5_ACCEPTANCE.json": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f",
+        "reports/B5_public_entrypoints.json": "c2cada40def0c4bd878a722d96f9866843df4ebdfdf5ea8ca1a60c7ce3b70c78"
+      },
+      "source": {
+        "path": "B/B5/sources/B5.md",
+        "sha256": "20984ebf1fc4e95e5a3fd1716c3b2cd68f06d0d3263355d2ebe367a7a54ee5e0",
+        "raw_sha256": "83fe7268d427c7c11d2468d2cb4165b1a6fbe0b9ffc5ca884939609405c0886f",
+        "version": "v23.06 linked by v26.07 index"
+      }
+    }
+  ],
+  "scope": "Mandatory public engineering accepted; optional NOT_RUN/TIMEOUT, background and official-process exclusions remain explicit."
+}

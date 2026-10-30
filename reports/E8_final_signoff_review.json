@@ -1,0 +1,86 @@
+{
+  "status": "attention",
+  "groups": [
+    {
+      "id": "initial",
+      "label": "Initial",
+      "status": "ready",
+      "available": 2,
+      "expected": 2,
+      "summary": "2 of 2 requirements ready"
+    },
+    {
+      "id": "config",
+      "label": "Config",
+      "status": "attention",
+      "available": 4,
+      "expected": 5,
+      "summary": "1 attention-only checklist requirements"
+    },
+    {
+      "id": "harden",
+      "label": "Harden",
+      "status": "ready",
+      "available": 4,
+      "expected": 4,
+      "summary": "4 of 4 requirements ready"
+    },
+    {
+      "id": "final_design",
+      "label": "Final Design",
+      "status": "ready",
+      "available": 10,
+      "expected": 10,
+      "summary": "10 of 10 requirements ready"
+    },
+    {
+      "id": "sta",
+      "label": "STA",
+      "status": "ready",
+      "available": 6,
+      "expected": 6,
+      "summary": "6 of 6 requirements ready"
+    },
+    {
+      "id": "spef",
+      "label": "SPEF",
+      "status": "ready",
+      "available": 4,
+      "expected": 4,
+      "summary": "4 of 4 requirements ready"
+    },
+    {
+      "id": "reports",
+      "label": "Reports",
+      "status": "ready",
+      "available": 1,
+      "expected": 1,
+      "summary": "1 of 1 requirements ready"
+    }
+  ],
+  "risks": [
+    {
+      "severity": "warning",
+      "title": "Config signoff attention",
+      "summary": "1 attention-only checklist requirements",
+      "details": [
+        {
+          "kind": "artifact",
+          "label": "config.macro_locations",
+          "location": "config/macro_locations.txt",
+          "reason": "Optional file is missing or empty",
+          "owner": "checklist",
+          "policy": "warn",
+          "state": "warning",
+          "evidence": [
+            {
+              "kind": "package",
+              "path": "config/macro_locations.txt",
+              "destination": "config/macro_locations.txt"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

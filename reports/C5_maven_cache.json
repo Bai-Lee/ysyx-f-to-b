@@ -1,0 +1,24 @@
+{
+  "status": "PASS_VERIFIED_CACHE",
+  "artifacts": [
+    {
+      "url": "https://repo.maven.apache.org/maven2/com/lihaoyi/scalac-mill-moduledefs-plugin_2.13.15/0.11.1/scalac-mill-moduledefs-plugin_2.13.15-0.11.1.jar",
+      "fetched_from": "https://repo1.maven.org/maven2/com/lihaoyi/scalac-mill-moduledefs-plugin_2.13.15/0.11.1/scalac-mill-moduledefs-plugin_2.13.15-0.11.1.jar",
+      "download": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\maven\\com\\lihaoyi\\scalac-mill-moduledefs-plugin_2.13.15\\0.11.1\\scalac-mill-moduledefs-plugin_2.13.15-0.11.1.jar",
+      "sha256": "ca585eed357ff929696b3485a67e843de057d1fadf2795f06b05c2a48346023f",
+      "official_sha1": "b5b0bd54fa746ba8765355e682e46d6ad7ffe82e",
+      "official_digest_match": true,
+      "relative": "com/lihaoyi/scalac-mill-moduledefs-plugin_2.13.15/0.11.1/scalac-mill-moduledefs-plugin_2.13.15-0.11.1.jar"
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.0/sourcecode_2.13-0.3.0.jar",
+      "fetched_from": "https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.0/sourcecode_2.13-0.3.0.jar",
+      "download": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\maven\\com\\lihaoyi\\sourcecode_2.13\\0.3.0\\sourcecode_2.13-0.3.0.jar",
+      "sha256": "6e5b2d55e942b450a222bfd3ebc23e99ca03716e42da25af1b2c8cde038100f5",
+      "official_sha1": "9574da0ce993607b071f682af95f6535ebe2a1f1",
+      "official_digest_match": true,
+      "relative": "com/lihaoyi/sourcecode_2.13/0.3.0/sourcecode_2.13-0.3.0.jar"
+    }
+  ],
+  "scope": "Only failed immutable Maven Central artifacts fetched through Windows curl with ordinary certificate/hostname verification, SHA-1 checked against the same official origin, local SHA-256 also recorded. No untrusted mirrors or disabled TLS verification."
+}

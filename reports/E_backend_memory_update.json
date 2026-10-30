@@ -1,0 +1,21 @@
+{
+  "status": "APPLIED_AND_VERIFIED",
+  "authorization": "User explicitly authorized using more memory in the current conversation.",
+  "memory_before": "2GB",
+  "memory_after": "4GB",
+  "only_changed_field": "wsl2.memory",
+  "other_fields_unchanged": true,
+  "before_sha256": "7d1bc9376a5821447e4a14f4cba0febd0e90381d6235d4605809d14a14525817",
+  "after_sha256": "80f8b32f680a7a6f28b88b55d997ea14046cb532bfa213b2b4411afa89bd2342",
+  "backup": "config\\backups\\wslconfig_before_backend_4GiB_20261025.ini",
+  "timestamp": "2026-10-25T14:16:39.691362+00:00",
+  "restart_policy": "Do not stop current tests. First wait for completion and confirm no other WSL jobs; then apply via controlled WSL restart. Verify actual Linux MemTotal/SwapTotal afterwards.",
+  "actual_linux_memory_KiB": {
+    "MemTotal": 4025660,
+    "MemAvailable": 3830012,
+    "SwapTotal": 0,
+    "SwapFree": 0
+  },
+  "applied_at": "2026-10-25T16:16:41.654907+00:00",
+  "activation": "Already effective after the completed jobs and subsequent WSL launch; no explicit shutdown needed."
+}

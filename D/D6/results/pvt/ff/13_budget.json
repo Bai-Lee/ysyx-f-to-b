@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "elapsed_seconds": 19.141666325000017,
+  "peak_group_rss_bytes": 1375412224,
+  "peak_group_pss_bytes": 1376104448,
+  "metric": "pss",
+  "memory_limit_bytes": 2936012800,
+  "minimum_system_available_bytes": 2536796160,
+  "timeline": [
+    {
+      "elapsed_seconds": 0.0010470539999971606,
+      "rss_bytes": 1036288,
+      "pss_bytes": 659456,
+      "available_bytes": 3829501952
+    },
+    {
+      "elapsed_seconds": 5.028522065999994,
+      "rss_bytes": 655802368,
+      "pss_bytes": 650353664,
+      "available_bytes": 3269111808
+    },
+    {
+      "elapsed_seconds": 10.061043244000018,
+      "rss_bytes": 1076334592,
+      "pss_bytes": 1075060736,
+      "available_bytes": 2834370560
+    },
+    {
+      "elapsed_seconds": 15.106886945000014,
+      "rss_bytes": 1375412224,
+      "pss_bytes": 1374093312,
+      "available_bytes": 2537054208
+    }
+  ],
+  "command": [
+    "taskset",
+    "-c",
+    "0,1",
+    "/home/USER/tools/e-stage/ecos-alpha9/squashfs-root/resources/binaries/ecc",
+    "run",
+    "--project",
+    "/home/USER/d-stage/backend/light_ff",
+    "--plain"
+  ]
+}

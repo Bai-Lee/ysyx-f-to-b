@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "assets": [
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\v0.1.0-alpha.10\\ecc-cli-linux-x86_64.tar.gz",
+      "url": "https://github.com/openecos-projects/ecc/releases/download/v0.1.0-alpha.10/ecc-cli-linux-x86_64.tar.gz",
+      "release": "v0.1.0-alpha.10",
+      "bytes": 513549656,
+      "sha256": "fc3daaca24dddb04ba3490329042f52da05190da03c3831042293dd0cbffdca6",
+      "published_digest_match": true
+    },
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\v1.10.100\\ics55_LLSC_H7CH_gds.tar.bz2",
+      "url": "https://github.com/openecos-projects/icsprout55-pdk/releases/download/v1.10.100/ics55_LLSC_H7CH_gds.tar.bz2",
+      "release": "v1.10.100",
+      "bytes": 1502571,
+      "sha256": "c1138641deb9683422bdc4da7828af0aedeae1b4424c78c288722f5fdb7fc273",
+      "published_digest_match": true
+    },
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\v1.10.100\\ics55_LLSC_H7CH_liberty.tar.bz2",
+      "url": "https://github.com/openecos-projects/icsprout55-pdk/releases/download/v1.10.100/ics55_LLSC_H7CH_liberty.tar.bz2",
+      "release": "v1.10.100",
+      "bytes": 76376908,
+      "sha256": "bd8327c9694b625275bebf63743d49e9e019f23be76152d2edbd530e150ecbba",
+      "published_digest_match": true
+    },
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\v1.10.100\\ics55_LLSC_H7CL_gds.tar.bz2",
+      "url": "https://github.com/openecos-projects/icsprout55-pdk/releases/download/v1.10.100/ics55_LLSC_H7CL_gds.tar.bz2",
+      "release": "v1.10.100",
+      "bytes": 1507950,
+      "sha256": "10adbc3edb4618639544227f6bbc78208848929f6a2e3468b3064ab1ede79942",
+      "published_digest_match": true
+    },
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\v1.10.100\\ics55_LLSC_H7CL_liberty.tar.bz2",
+      "url": "https://github.com/openecos-projects/icsprout55-pdk/releases/download/v1.10.100/ics55_LLSC_H7CL_liberty.tar.bz2",
+      "release": "v1.10.100",
+      "bytes": 77545734,
+      "sha256": "8312dd3f2e4fed8a63fd26c51deb8c79a75becfdfe544e44cce164e87f7875f4",
+      "published_digest_match": true
+    },
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\v1.10.100\\ics55_LLSC_H7CR_gds.tar.bz2",
+      "url": "https://github.com/openecos-projects/icsprout55-pdk/releases/download/v1.10.100/ics55_LLSC_H7CR_gds.tar.bz2",
+      "release": "v1.10.100",
+      "bytes": 1489068,
+      "sha256": "279a6775b84270de84761a08a1c4b523eca478747273178bf252816be585fd9d",
+      "published_digest_match": true
+    },
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\v1.10.100\\ics55_LLSC_H7CR_liberty.tar.bz2",
+      "url": "https://github.com/openecos-projects/icsprout55-pdk/releases/download/v1.10.100/ics55_LLSC_H7CR_liberty.tar.bz2",
+      "release": "v1.10.100",
+      "bytes": 77016163,
+      "sha256": "faa3fc2f3ef8560c2d7cafc7800ecee39b69b8d177b14d098ed94062ba3f6e5c",
+      "published_digest_match": true
+    },
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\v1.10.100\\ICsprout_55LLULP1233_IO_251013_gds.tar.bz2",
+      "url": "https://github.com/openecos-projects/icsprout55-pdk/releases/download/v1.10.100/ICsprout_55LLULP1233_IO_251013_gds.tar.bz2",
+      "release": "v1.10.100",
+      "bytes": 7574722,
+      "sha256": "c775a0078316f29de5545f5c39f79563c3ae10dd6fe4d90df619b72f6d29db54",
+      "published_digest_match": true
+    },
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\2026-10-22\\oss-cad-suite-linux-x64-20261022.tgz",
+      "url": "https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-10-22/oss-cad-suite-linux-x64-20261022.tgz",
+      "release": "2026-10-22",
+      "bytes": 748265110,
+      "sha256": "45b7401d677f1e6cffb19dcaafb8e92c95a49dfc05b332ae4d00b84c94f62f6e",
+      "published_digest_match": true
+    },
+    {
+      "file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\v0.1.0-alpha.9\\ECOS-Studio_0.1.0-alpha.9_x86_64.AppImage",
+      "url": "https://github.com/openecos-projects/ecos-studio/releases/download/v0.1.0-alpha.9/ECOS-Studio_0.1.0-alpha.9_x86_64.AppImage",
+      "release": "v0.1.0-alpha.9",
+      "bytes": 699099030,
+      "sha256": "09e4c698966d4212ff950cf1a4061ec86821096263fad083454444fece39d179",
+      "published_digest_match": true
+    }
+  ]
+}

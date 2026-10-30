@@ -1,0 +1,107 @@
+{
+  "status": "PASS_FINAL_SESSION_STOPPED",
+  "session": "20261030T032622830",
+  "sessions": [
+    {
+      "path": "artifacts/B/host-memory-monitor/20261030T003458469",
+      "status": "STOPPED_BY_REQUEST",
+      "error": null,
+      "samples": 5137,
+      "minimum_available_bytes": 768000000,
+      "files": [
+        {
+          "path": "artifacts/B/host-memory-monitor/20261030T003458469/started.json",
+          "sha256": "9b8eeaf296584ae60da899f18cb925e7183114156da8bc8bc68686d14e46564a"
+        },
+        {
+          "path": "artifacts/B/host-memory-monitor/20261030T003458469/samples.jsonl",
+          "sha256": "b15b758b35351788a950ca525559e8e48ec9e6f0dcc4771f0db0786b4a35d821"
+        },
+        {
+          "path": "artifacts/B/host-memory-monitor/20261030T003458469/result.json",
+          "sha256": "6cc4a9ce0e36a1ba0bb9b390158f0f3ae7cb7de62c2d8c24a597c3f246326dfe"
+        },
+        {
+          "path": "artifacts/B/host-memory-monitor/20261030T003458469/launch.json",
+          "sha256": "62a4829b6e7c88c245d47a7ad85bfb737ee31c3285c09e63357c24c433b6562e"
+        }
+      ]
+    },
+    {
+      "path": "artifacts/B/host-memory-monitor/20261030T032622830",
+      "status": "STOPPED_BY_REQUEST",
+      "error": null,
+      "samples": 5080,
+      "minimum_available_bytes": 4296445952,
+      "files": [
+        {
+          "path": "artifacts/B/host-memory-monitor/20261030T032622830/started.json",
+          "sha256": "24e8c5ceede40fe79d9f0b25312ccb38f5d39118c91b729e2672488de8693c02"
+        },
+        {
+          "path": "artifacts/B/host-memory-monitor/20261030T032622830/samples.jsonl",
+          "sha256": "a198768e1987d12ecba2ae239e88e120b4b24c70433284449b26b9b38ff8cb08"
+        },
+        {
+          "path": "artifacts/B/host-memory-monitor/20261030T032622830/result.json",
+          "sha256": "abf501547ba60a01ddccd431b3b3841b2d10539dfaaf35edca1ed9dd82c2870a"
+        },
+        {
+          "path": "artifacts/B/host-memory-monitor/20261030T032622830/launch.json",
+          "sha256": "f7eda591efa53bb6545fe4e1684d9d31995227cb815a572f3ac03b7ce1777155"
+        }
+      ]
+    },
+    {
+      "path": "artifacts/C/host-memory-monitor/20261029T183737894",
+      "status": "STOPPED_BY_REQUEST",
+      "error": null,
+      "samples": 10246,
+      "minimum_available_bytes": 1089171456,
+      "files": [
+        {
+          "path": "artifacts/C/host-memory-monitor/20261029T183737894/started.json",
+          "sha256": "5bdf7e180f7ca4c4734eb99ea85c261ecfbfc2f66d391db61158f015b9389f67"
+        },
+        {
+          "path": "artifacts/C/host-memory-monitor/20261029T183737894/samples.jsonl",
+          "sha256": "30e69519a3a041c60886130e263afbd4fcd03eaa1f1163f3aa9207ccf5b1032f"
+        },
+        {
+          "path": "artifacts/C/host-memory-monitor/20261029T183737894/result.json",
+          "sha256": "56e5836dcba1a0fd4459842404334fd7a44bce1d98269953b6712d60368394c2"
+        },
+        {
+          "path": "artifacts/C/host-memory-monitor/20261029T183737894/launch.json",
+          "sha256": "887502290e79631f0f43e154092e853fd9f1a9514d1489a632d239659b3469ff"
+        }
+      ]
+    },
+    {
+      "path": "artifacts/C/host-memory-monitor/20261030T001925055",
+      "status": "STOPPED_BY_REQUEST",
+      "error": null,
+      "samples": 465,
+      "minimum_available_bytes": 2315370496,
+      "files": [
+        {
+          "path": "artifacts/C/host-memory-monitor/20261030T001925055/started.json",
+          "sha256": "0f9afb6bc2c32d82499eeec722ef88e181be552f09f1841029ef4f096e4622c7"
+        },
+        {
+          "path": "artifacts/C/host-memory-monitor/20261030T001925055/samples.jsonl",
+          "sha256": "456028b01f71357e851a5ed07d705a7cf160b8fee871312f7936ef665b120a3c"
+        },
+        {
+          "path": "artifacts/C/host-memory-monitor/20261030T001925055/result.json",
+          "sha256": "819a2514ae78c30eaca6bd08ab492e804ff6536cec177b812dd9a70125417abd"
+        },
+        {
+          "path": "artifacts/C/host-memory-monitor/20261030T001925055/launch.json",
+          "sha256": "199865e2de5cdde36c8ef22ddbd2b124cced2a3ba3088212d33c55a16d6a9735"
+        }
+      ]
+    }
+  ],
+  "scope": "Task-local native Windows physical-memory sampling. Early B sessions added under the historical C telemetry directory are explicitly listed; previously delivered C files remain unchanged. Final B session stopped normally before the delivery manifest. No service, automation or global system change."
+}

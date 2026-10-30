@@ -1,0 +1,4 @@
+{
+  "status": "PASS",
+  "scope": "Final-source Icarus RTL suite and missing-reset mutant;35 unchanged original CPU positives and wrong.c negative on the final SoC; public make entrypoints and controlled performance comparisons. Long gate programs and full128 acceptance remain separate requirements."
+}

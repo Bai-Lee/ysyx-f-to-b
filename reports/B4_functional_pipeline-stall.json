@@ -1,0 +1,448 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "name": "hazards",
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 30285,
+        "instructions": 4195,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147492528,
+        "instruction": 1048691,
+        "diff_enabled": true,
+        "diff_checked": 4187,
+        "device_sync_checked": 8,
+        "wall_seconds": 0.0175994,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "",
+        "performance": {
+          "core_cycles": 30285,
+          "ifu_requests": 4195,
+          "ifu_responses": 4195,
+          "lsu_requests": 1273,
+          "lsu_responses": 1273,
+          "exu_completions": 2922,
+          "ifu_latency_sum": 21920,
+          "lsu_latency_sum": 4778,
+          "class_counts": [
+            1582,
+            491,
+            782,
+            822,
+            513,
+            4,
+            1,
+            0
+          ],
+          "class_cycles": [
+            9593,
+            8551,
+            6639,
+            4975,
+            514,
+            11,
+            2,
+            0
+          ],
+          "state_cycles": [
+            1035,
+            16327,
+            3871,
+            5637,
+            743,
+            2669,
+            3,
+            0
+          ],
+          "ifu_absence": [
+            1035,
+            14615,
+            0,
+            10440
+          ],
+          "cache_events": [
+            4195,
+            3913,
+            282,
+            0,
+            282,
+            0
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            4680,
+            17240,
+            0
+          ],
+          "data_counts": [
+            487,
+            771,
+            4,
+            11
+          ],
+          "data_latency": [
+            2750,
+            1975,
+            27,
+            26
+          ],
+          "pipeline_events": [
+            1907,
+            1042,
+            5637,
+            4167,
+            562,
+            0,
+            0,
+            4195,
+            4194,
+            4194,
+            1,
+            18740
+          ]
+        }
+      },
+      "evidence": "artifacts/B4/functional/pipeline-stall-hazards",
+      "image_sha256": "227b79786b1211578f11a48d394f675c96d27a97f5be4c2bda048c8ab5710ff7"
+    },
+    {
+      "name": "fence-prefetch",
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 937,
+        "instructions": 60,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147483876,
+        "instruction": 1048691,
+        "diff_enabled": true,
+        "diff_checked": 52,
+        "device_sync_checked": 8,
+        "wall_seconds": 0.0010781,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "",
+        "performance": {
+          "core_cycles": 937,
+          "ifu_requests": 60,
+          "ifu_responses": 60,
+          "lsu_requests": 12,
+          "lsu_responses": 12,
+          "exu_completions": 48,
+          "ifu_latency_sum": 837,
+          "lsu_latency_sum": 32,
+          "class_counts": [
+            36,
+            2,
+            10,
+            3,
+            1,
+            6,
+            1,
+            1
+          ],
+          "class_cycles": [
+            613,
+            73,
+            175,
+            54,
+            2,
+            16,
+            2,
+            2
+          ],
+          "state_cycles": [
+            17,
+            764,
+            52,
+            44,
+            33,
+            20,
+            7,
+            0
+          ],
+          "ifu_absence": [
+            17,
+            734,
+            0,
+            126
+          ],
+          "cache_events": [
+            60,
+            46,
+            14,
+            0,
+            14,
+            1
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            63,
+            774,
+            0
+          ],
+          "data_counts": [
+            0,
+            1,
+            2,
+            9
+          ],
+          "data_latency": [
+            0,
+            2,
+            8,
+            22
+          ],
+          "pipeline_events": [
+            44,
+            7,
+            44,
+            31,
+            10,
+            0,
+            0,
+            60,
+            58,
+            58,
+            2,
+            769
+          ]
+        }
+      },
+      "evidence": "artifacts/B4/functional/pipeline-stall-fence-prefetch",
+      "image_sha256": "5beb234e703b9c029b5b7493fded1381e2eec46aa27a1066c464a074d054a21e"
+    },
+    {
+      "name": "context",
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 232399,
+        "instructions": 27847,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147485668,
+        "instruction": 1048691,
+        "diff_enabled": true,
+        "diff_checked": 27795,
+        "device_sync_checked": 52,
+        "wall_seconds": 0.146643,
+        "ecalls": 52,
+        "mrets": 52,
+        "uart_hex": "42315f4354455f5041535320613d313220623d31320a",
+        "performance": {
+          "core_cycles": 232399,
+          "ifu_requests": 27847,
+          "ifu_responses": 27847,
+          "lsu_requests": 8103,
+          "lsu_responses": 8103,
+          "exu_completions": 19744,
+          "ifu_latency_sum": 177029,
+          "lsu_latency_sum": 32691,
+          "class_counts": [
+            11860,
+            3660,
+            4443,
+            4710,
+            2119,
+            684,
+            371,
+            0
+          ],
+          "class_cycles": [
+            87406,
+            62771,
+            40813,
+            23754,
+            5207,
+            6915,
+            5533,
+            0
+          ],
+          "state_cycles": [
+            6946,
+            135459,
+            25432,
+            39579,
+            9000,
+            14980,
+            1003,
+            0
+          ],
+          "ifu_absence": [
+            6946,
+            122563,
+            0,
+            75043
+          ],
+          "cache_events": [
+            27847,
+            25448,
+            2399,
+            0,
+            2399,
+            0
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            36691,
+            140338,
+            0
+          ],
+          "data_counts": [
+            2141,
+            2890,
+            1519,
+            1553
+          ],
+          "data_latency": [
+            12381,
+            7443,
+            8863,
+            4004
+          ],
+          "pipeline_events": [
+            15419,
+            5616,
+            39579,
+            25745,
+            5990,
+            0,
+            0,
+            27847,
+            27476,
+            27476,
+            371,
+            147103
+          ]
+        }
+      },
+      "evidence": "artifacts/B4/functional/pipeline-stall-context",
+      "image_sha256": "a14120e138af5972a5002b0c6434b1f907cb3b38619d921e8ba08cc215793d49"
+    },
+    {
+      "name": "cycle",
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 158026,
+        "instructions": 23407,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147484048,
+        "instruction": 1048691,
+        "diff_enabled": true,
+        "diff_checked": 23303,
+        "device_sync_checked": 104,
+        "wall_seconds": 0.18045,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "42315f4d4359434c455f504153532076656e646f723d37393733373937382070726f6a6563743d32363037303030310a",
+        "performance": {
+          "core_cycles": 158026,
+          "ifu_requests": 23407,
+          "ifu_responses": 23407,
+          "lsu_requests": 2833,
+          "lsu_responses": 2833,
+          "exu_completions": 20574,
+          "ifu_latency_sum": 125150,
+          "lsu_latency_sum": 13798,
+          "class_counts": [
+            17550,
+            1930,
+            903,
+            2173,
+            96,
+            642,
+            113,
+            0
+          ],
+          "class_cycles": [
+            96158,
+            34032,
+            8827,
+            12022,
+            1746,
+            4833,
+            408,
+            0
+          ],
+          "state_cycles": [
+            3605,
+            95608,
+            28099,
+            16238,
+            8416,
+            5800,
+            260,
+            0
+          ],
+          "ifu_absence": [
+            3605,
+            87246,
+            0,
+            43768
+          ],
+          "cache_events": [
+            23407,
+            21745,
+            1662,
+            0,
+            1662,
+            0
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            29786,
+            95364,
+            0
+          ],
+          "data_counts": [
+            65,
+            0,
+            1865,
+            903
+          ],
+          "data_latency": [
+            366,
+            0,
+            11025,
+            2407
+          ],
+          "pipeline_events": [
+            12064,
+            1137,
+            16238,
+            9205,
+            2429,
+            0,
+            0,
+            23407,
+            23294,
+            23294,
+            113,
+            98261
+          ]
+        }
+      },
+      "evidence": "artifacts/B4/functional/pipeline-stall-cycle",
+      "image_sha256": "7177113b512bc24b0a4aae4323a75772af5dad5d11c6459079bf530171cb3220"
+    }
+  ],
+  "configuration": {
+    "label": "pipeline-stall",
+    "executable": "/home/USER/b-stage/standalone/build/pipeline-stall/sim",
+    "sha256": "249c678ea0471d0df4e79a105551e7f36b7614ca96b4d0fede65d0d90fb34cc7",
+    "cache_lines": 4,
+    "cache_words": 8,
+    "cache_ways": 2,
+    "mutant": false,
+    "fault_fence": false,
+    "pipeline": true,
+    "forward": false,
+    "predict": false,
+    "fault_fence_flush": false
+  },
+  "scope": "Complete GPR/PC/instruction/memory comparisons to NEMU on randomized ready/valid stalls, independently generated arithmetic/memory checks, precise control redirects, real CTE/CSR tests and an explicit stale-prefetch FENCE.I fixture. Finite instruction streams, not a universal proof."
+}

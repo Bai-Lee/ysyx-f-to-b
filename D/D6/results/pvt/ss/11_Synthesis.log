@@ -1,0 +1,1258 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+1. Executing Liberty frontend: /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_ss_rcworst_1p08_125_nldm.lib
+Imported 747 cell types from liberty file.
+
+2. Executing Liberty frontend: /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_ss_rcworst_1p08_125_nldm.lib
+Reading Verilog sources with native parser: /home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v
+Imported 747 cell types from liberty file.
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+[INFO]: STRATEGY = DELAY-4
+[INFO]: CLK_PERIOD = 10000.0ps
+[INFO]: ABC_TARGET  = 9500ps
+[INFO]: DELAY_SLACK_MARGIN = 0.95
+[INFO]: DELAY_RETIME_M    = 8
+[INFO]: DELAY_MAX_FO      = 20
+[INFO]: DELAY_MULTIPASS   = 1
+[INFO]: ABC script: +&get -n;&st;&dch;&nf;&put;&get -n;&st;&syn2;&if -g -K 6;&synch2;&nf;&put;&get -n;&st;&syn2;&if -g -K 6;&synch2;&nf;&put;&get -n;&st;&syn2;&if -g -K 6;&synch2;&nf;&put;&get -n;&st;&syn2;&if -g -K 6;&synch2;&nf;&put;&get -n;&st;&syn2;&if -g -K 6;&synch2;&nf;&put;buffer -c -N 20;topo;stime -c;upsize -c;dnsize -c;;stime,-p;print_stats -m
+
+3. Executing Verilog-2005 frontend: /home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v
+Parsing SystemVerilog input from `/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v' to AST representation.
+Generating RTLIL representation for module `\light'.
+Successfully finished Verilog frontend.
+
+4. Executing ATTRMAP pass (move or copy attributes).
+
+5. Executing ATTRMVCP pass (move or copy attributes).
+
+6. Executing SYNTH pass.
+
+6.1. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1.1. Analyzing design hierarchy..
+Top module:  \light
+
+6.1.2. Analyzing design hierarchy..
+Top module:  \light
+Removed 0 unused modules.
+
+6.2. Executing PROC pass (convert processes to netlists).
+
+6.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:3$1 in module light.
+Removed a total of 0 dead cases.
+
+6.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 0 assignments to connections.
+
+6.2.4. Executing PROC_INIT pass (extract init attributes).
+
+6.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+6.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~2 debug messages>
+
+6.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\light.$proc$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:3$1'.
+     1/2: $0\count[31:0]
+     2/2: $0\led[15:0]
+
+6.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+6.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\light.\led' using process `\light.$proc$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:3$1'.
+  created $dff cell `$procdff$14' with positive edge clock.
+Creating register for signal `\light.\count' using process `\light.$proc$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:3$1'.
+  created $dff cell `$procdff$15' with positive edge clock.
+
+6.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\light.$proc$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:3$1'.
+Removing empty process `light.$proc$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:3$1'.
+Cleaned up 2 empty switches.
+
+6.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+<suppressed ~1 debug messages>
+
+6.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+6.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+6.5. Executing CHECK pass (checking for obvious problems).
+Checking module light...
+Found and reported 0 problems.
+
+6.6. Executing OPT pass (performing simple optimizations).
+
+6.6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+6.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 9 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+6.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \light..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+6.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \light.
+Performed a total of 0 changes.
+
+6.6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 9 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+6.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+6.6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+6.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+6.7. Executing FSM pass (extract and optimize FSM).
+
+6.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+6.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+6.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+6.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+6.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+6.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+6.8. Executing OPT pass (performing simple optimizations).
+
+6.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+6.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 9 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+6.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \light..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+6.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \light.
+Performed a total of 0 changes.
+
+6.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 9 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+6.8.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$14 ($dff) from module light (D = $procmux$9_Y, Q = \led, rval = 16'0000000000000001).
+Adding EN signal on $auto$ff.cc:337:slice$16 ($sdff) from module light (D = { \led [14:0] \led [15] }, Q = \led).
+Adding SRST signal on $procdff$15 ($dff) from module light (D = $add$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:5$4_Y, Q = \count, rval = 0).
+
+6.8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+Removed 4 unused cells and 4 unused wires.
+<suppressed ~5 debug messages>
+
+6.8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+6.8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \light..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \light.
+Performed a total of 0 changes.
+
+6.8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 6 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+6.8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+6.8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+6.8.16. Finished fast OPT passes. (There is nothing left to do.)
+
+6.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 9 bits (of 32) from port B of cell light.$eq$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:5$3 ($eq).
+Removed top 31 bits (of 32) from port B of cell light.$add$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:5$4 ($add).
+
+6.10. Executing PEEPOPT pass (run peephole optimizers).
+
+6.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+6.12. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module light:
+  creating $macc model for $add$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:5$4 ($add).
+  creating $alu model for $macc $add$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:5$4.
+  creating $alu cell for $add$/home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.v:5$4: $auto$alumacc.cc:548:replace_alu$21
+  created 1 $alu and 0 $macc cells.
+
+6.13. Executing SHARE pass (SAT-based resource sharing).
+
+6.14. Executing OPT pass (performing simple optimizations).
+
+6.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+6.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 6 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+6.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \light..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \light.
+Performed a total of 0 changes.
+
+6.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 6 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+6.14.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+6.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+6.14.9. Finished fast OPT passes. (There is nothing left to do.)
+
+6.15. Executing MEMORY pass.
+
+6.15.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+6.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+6.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+6.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+6.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+6.15.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+6.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+6.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+6.15.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+6.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+7. Executing FLATTEN pass (flatten design).
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 6 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \light..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \light.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 6 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_SHARE pass.
+
+8.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+8.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+8.10. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing SHARE pass (SAT-based resource sharing).
+
+10. Executing ONEHOT pass.
+
+11. Executing MUXPACK pass ($mux cell cascades to $pmux).
+Converted 0 (p)mux cells into 0 pmux cells.
+
+12. Executing OPT_DEMORGAN pass (push inverters through $reduce_* cells).
+Inspecting $reduce_or cell $auto$opt_dff.cc:393:combine_resets$20 (2 inputs)
+  0 / 2 inputs are inverted, not pushing
+
+13. Executing OPT_FFINV pass (push inverters through FFs).
+Discovering LUTs.
+Pushed 0 inverters.
+
+14. Executing OPT pass (performing simple optimizations).
+
+14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 6 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+14.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+14.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+14.5. Finished fast OPT passes.
+
+15. Executing SYNTH pass.
+
+15.1. Executing OPT pass (performing simple optimizations).
+
+15.1.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+15.1.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 6 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+15.1.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+15.1.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+15.1.5. Finished fast OPT passes.
+
+15.2. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+15.3. Executing OPT pass (performing simple optimizations).
+
+15.3.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+15.3.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 6 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+15.3.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \light..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+15.3.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \light.
+Performed a total of 0 changes.
+
+15.3.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 6 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+15.3.6. Executing OPT_SHARE pass.
+
+15.3.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+15.3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+15.3.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+15.3.10. Finished fast OPT passes. (There is nothing left to do.)
+
+15.4. Executing TECHMAP pass (map to technology primitives).
+
+15.4.1. Executing Verilog-2005 frontend: /home/USER/tools/e-stage/oss-20260821/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+15.4.2. Continuing TECHMAP pass.
+Using template $paramod$6a42b6fefed750f8a1c58eab59479d960557103c\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~406 debug messages>
+
+15.5. Executing OPT pass (performing simple optimizations).
+
+15.5.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+<suppressed ~311 debug messages>
+
+15.5.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 242 cells of `\light'.
+Finding duplicate cells in `\light'.
+Computing hashes of 223 cells of `\light'.
+Finding duplicate cells in `\light'.
+Computing hashes of 220 cells of `\light'.
+Finding duplicate cells in `\light'.
+Computing hashes of 219 cells of `\light'.
+Finding duplicate cells in `\light'.
+<suppressed ~69 debug messages>
+Removed a total of 23 cells.
+
+15.5.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+15.5.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+Removed 28 unused cells and 131 unused wires.
+<suppressed ~29 debug messages>
+
+15.5.5. Finished fast OPT passes.
+
+15.6. Executing ABC pass (technology mapping using ABC).
+
+15.6.1. Extracting gate netlist of module `\light' to `<abc-temp-dir>/input.blif'..
+
+15.6.1.1. Executed ABC.
+Extracted 143 gates and 176 wires to a netlist network with 33 inputs and 34 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Aug 21 2026 02:12:29)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+15.6.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:       54
+ABC RESULTS:            ANDNOT cells:        2
+ABC RESULTS:              NAND cells:        1
+ABC RESULTS:               NOR cells:       17
+ABC RESULTS:               NOT cells:        1
+ABC RESULTS:                OR cells:        1
+ABC RESULTS:              XNOR cells:        1
+ABC RESULTS:               XOR cells:       29
+ABC RESULTS:        internal signals:      109
+ABC RESULTS:           input signals:       33
+ABC RESULTS:          output signals:       34
+Removing temp directory.
+Removing global temp directory.
+
+15.7. Executing OPT pass (performing simple optimizations).
+
+15.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+15.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 154 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+15.7.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+15.7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+Removed 0 unused cells and 109 unused wires.
+<suppressed ~1 debug messages>
+
+15.7.5. Finished fast OPT passes.
+
+15.8. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `light'. Setting top module to light.
+
+15.8.1. Analyzing design hierarchy..
+Top module:  \light
+
+15.8.2. Analyzing design hierarchy..
+Top module:  \light
+Removed 0 unused modules.
+
+15.9. Printing statistics.
+
+=== light ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       80 wires
+      188 wire bits
+        4 public wires
+       50 public wire bits
+        3 ports
+       18 port bits
+      154 cells
+        2   $_ANDNOT_
+       54   $_AND_
+        1   $_NAND_
+       17   $_NOR_
+        1   $_NOT_
+        1   $_OR_
+       15   $_SDFFE_PP0P_
+        1   $_SDFFE_PP1P_
+       32   $_SDFF_PP0_
+        1   $_XNOR_
+       29   $_XOR_
+
+15.10. Executing CHECK pass (checking for obvious problems).
+Checking module light...
+Found and reported 0 problems.
+
+16. Executing TRIBUF pass.
+
+17. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+18. Executing TECHMAP pass (map to technology primitives).
+
+18.1. Executing Verilog-2005 frontend: /home/USER/tools/e-stage/oss-20260821/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+18.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~77 debug messages>
+
+19. Executing OPT pass (performing simple optimizations).
+
+19.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+19.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 154 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+19.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+19.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+19.5. Finished fast OPT passes.
+
+20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+21. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+22. Executing AUTONAME pass.
+Renamed 212 objects in module light.
+<suppressed ~212 debug messages>
+Removed 0 unused cells and 32 unused wires.
+
+23. Executing CLOCK_GATE pass (extract clock gating out of flip flops).
+Converted 0 FFs.
+
+24. Executing DFFLIBMAP pass (mapping DFF/DLATCH cells to sequential cells from liberty file).
+  cell DFFNQX1H7R (noninv, pins=3, area=6.44) is a direct match for cell type $_DFF_N_.
+  cell DFFQX0P5H7R (noninv, pins=3, area=6.16) is a direct match for cell type $_DFF_P_.
+  cell DFFNRX0P5H7R (noninv, pins=5, area=8.40) is a direct match for cell type $_DFF_NN0_.
+  cell DFFNSX0P5H7R (noninv, pins=5, area=9.24) is a direct match for cell type $_DFF_NN1_.
+  cell DFFRQNX1H7R (inv, pins=4, area=7.84) is a direct match for cell type $_DFF_PN0_.
+  cell DFFSQNX1H7R (inv, pins=4, area=8.12) is a direct match for cell type $_DFF_PN1_.
+  cell DFFNSRX0P5H7R (noninv, pins=6, area=10.08) is a direct match for cell type $_DFFSR_NNN_.
+  cell DFFSRQX1H7R (noninv, pins=5, area=9.24) is a direct match for cell type $_DFFSR_PNN_.
+  cell LATLX0P5H7R (noninv, pins=4, area=5.32) is a direct match for cell type $_DLATCH_N_.
+  cell LATHX0P5H7R (noninv, pins=4, area=4.48) is a direct match for cell type $_DLATCH_P_.
+  cell LATLRX0P5H7R (noninv, pins=5, area=5.60) is a direct match for cell type $_DLATCH_NN0_.
+  cell LATLSX0P5H7R (noninv, pins=5, area=8.12) is a direct match for cell type $_DLATCH_NN1_.
+  cell LATHRX0P5H7R (noninv, pins=5, area=5.88) is a direct match for cell type $_DLATCH_PN0_.
+  cell LATHSX0P5H7R (noninv, pins=5, area=7.56) is a direct match for cell type $_DLATCH_PN1_.
+  cell LATLSRX0P5H7R (noninv, pins=6, area=9.52) is a direct match for cell type $_DLATCHSR_NNN_.
+  cell LATHSRX0P5H7R (noninv, pins=6, area=7.28) is a direct match for cell type $_DLATCHSR_PNN_.
+  final dff/dlatch cell mappings:
+    \DFFNQX1H7R _DFF_N_ (.CKN( C), .D( D), .Q( Q));
+    \DFFQX0P5H7R _DFF_P_ (.CK( C), .D( D), .Q( Q));
+    \DFFNRX0P5H7R _DFF_NN0_ (.CKN( C), .D( D), .Q( Q), .QN(~Q), .RN( R));
+    \DFFNSX0P5H7R _DFF_NN1_ (.CKN( C), .D( D), .Q( Q), .QN(~Q), .SN( R));
+    unmapped dff/dlatch cell: $_DFF_NP0_
+    unmapped dff/dlatch cell: $_DFF_NP1_
+    \DFFRQNX1H7R _DFF_PN0_ (.CK( C), .D( D), .QN(~Q), .RN( R));
+    \DFFSQNX1H7R _DFF_PN1_ (.CK( C), .D( D), .QN(~Q), .SN( R));
+    unmapped dff/dlatch cell: $_DFF_PP0_
+    unmapped dff/dlatch cell: $_DFF_PP1_
+    unmapped dff/dlatch cell: $_DFFE_NN_
+    unmapped dff/dlatch cell: $_DFFE_NP_
+    unmapped dff/dlatch cell: $_DFFE_PN_
+    unmapped dff/dlatch cell: $_DFFE_PP_
+    \DFFNSRX0P5H7R _DFFSR_NNN_ (.CKN( C), .D( D), .Q( Q), .QN(~Q), .RN( R), .SN( S));
+    unmapped dff/dlatch cell: $_DFFSR_NNP_
+    unmapped dff/dlatch cell: $_DFFSR_NPN_
+    unmapped dff/dlatch cell: $_DFFSR_NPP_
+    \DFFSRQX1H7R _DFFSR_PNN_ (.CK( C), .D( D), .Q( Q), .RN( R), .SN( S));
+    unmapped dff/dlatch cell: $_DFFSR_PNP_
+    unmapped dff/dlatch cell: $_DFFSR_PPN_
+    unmapped dff/dlatch cell: $_DFFSR_PPP_
+    \LATLX0P5H7R _DLATCH_N_ (.D( D), .GN( E), .Q( Q), .QN(~Q));
+    \LATHX0P5H7R _DLATCH_P_ (.D( D), .G( E), .Q( Q), .QN(~Q));
+    \LATLRX0P5H7R _DLATCH_NN0_ (.D( D), .GN( E), .Q( Q), .QN(~Q), .RN( R));
+    \LATLSX0P5H7R _DLATCH_NN1_ (.D( D), .GN( E), .Q( Q), .QN(~Q), .SN( R));
+    unmapped dff/dlatch cell: $_DLATCH_NP0_
+    unmapped dff/dlatch cell: $_DLATCH_NP1_
+    \LATHRX0P5H7R _DLATCH_PN0_ (.D( D), .G( E), .Q( Q), .QN(~Q), .RN( R));
+    \LATHSX0P5H7R _DLATCH_PN1_ (.D( D), .G( E), .Q( Q), .QN(~Q), .SN( R));
+    unmapped dff/dlatch cell: $_DLATCH_PP0_
+    unmapped dff/dlatch cell: $_DLATCH_PP1_
+    \LATLSRX0P5H7R _DLATCHSR_NNN_ (.D( D), .GN( E), .Q( Q), .QN(~Q), .RN( R), .SN( S));
+    unmapped dff/dlatch cell: $_DLATCHSR_NNP_
+    unmapped dff/dlatch cell: $_DLATCHSR_NPN_
+    unmapped dff/dlatch cell: $_DLATCHSR_NPP_
+    \LATHSRX0P5H7R _DLATCHSR_PNN_ (.D( D), .G( E), .Q( Q), .QN(~Q), .RN( R), .SN( S));
+    unmapped dff/dlatch cell: $_DLATCHSR_PNP_
+    unmapped dff/dlatch cell: $_DLATCHSR_PPN_
+    unmapped dff/dlatch cell: $_DLATCHSR_PPP_
+
+24.1. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+<suppressed ~74 debug messages>
+Mapping DFF/DLATCH cells in module `\light':
+  mapped 48 $_DFF_P_ cells to \DFFQX0P5H7R cells.
+
+25. Executing TECHMAP pass (map to technology primitives).
+
+25.1. Executing Verilog-2005 frontend: /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/tmp/ics55_latch_map.v
+Parsing Verilog input from `/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/tmp/ics55_latch_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Generating RTLIL representation for module `$_DLATCH_NN0_'.
+Generating RTLIL representation for module `$_DLATCH_NN1_'.
+Generating RTLIL representation for module `$_DLATCH_NP0_'.
+Generating RTLIL representation for module `$_DLATCH_NP1_'.
+Generating RTLIL representation for module `$_DLATCH_PN0_'.
+Generating RTLIL representation for module `$_DLATCH_PN1_'.
+Generating RTLIL representation for module `$_DLATCH_PP0_'.
+Generating RTLIL representation for module `$_DLATCH_PP1_'.
+Successfully finished Verilog frontend.
+
+25.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~12 debug messages>
+
+26. Executing OPT pass (performing simple optimizations).
+
+26.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+26.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 218 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+26.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+26.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+26.5. Finished fast OPT passes.
+
+27. Executing TECHMAP pass (map to technology primitives).
+
+27.1. Executing Verilog-2005 frontend: /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/tmp/ics55_tri_map.v
+Parsing Verilog input from `/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/tmp/ics55_tri_map.v' to AST representation.
+Generating RTLIL representation for module `\_tbuf_disabled'.
+Generating RTLIL representation for module `\_tbuf_enabled'.
+Successfully finished Verilog frontend.
+
+27.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+28. Executing OPT pass (performing simple optimizations).
+
+28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 218 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+28.5. Finished fast OPT passes.
+
+29. Executing OPT pass (performing simple optimizations).
+
+29.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+29.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 218 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+29.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \light..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+29.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \light.
+Performed a total of 0 changes.
+
+29.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\light'.
+Computing hashes of 218 cells of `\light'.
+Finding duplicate cells in `\light'.
+Removed a total of 0 cells.
+
+29.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+29.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+29.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module light.
+
+29.9. Finished fast OPT passes. (There is nothing left to do.)
+
+30. Executing ABC pass (technology mapping using ABC).
+
+30.1. Extracting gate netlist of module `\light' to `/tmp/yosys-abc-LpKi3e/input.blif'..
+
+30.1.1. Executed ABC.
+Extracted 170 gates and 221 wires to a netlist network with 49 inputs and 48 outputs.
+Running ABC script: /tmp/yosys-abc-LpKi3e/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Aug 21 2026 02:12:29)
+ABC: abc 01> empty
+ABC: abc 01> source /tmp/yosys-abc-LpKi3e/abc.script
+ABC: + read_blif /tmp/yosys-abc-LpKi3e/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache/yosys_merged_397e077d.scl 
+ABC: Warning: Detected 12 multi-output cells (for example, "ADDFX1H7R").
+ABC: + read_constr -v /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/tmp/abc.constr 
+ABC: Setting driving cell to be "BUFX0P5H7R".
+ABC: Setting output load to be 0.015000.
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &dch 
+ABC: + &nf 
+ABC: + &put 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &syn2 
+ABC: + &if -g -K 6 
+ABC: + &synch2 
+ABC: + &nf 
+ABC: + &put 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &syn2 
+ABC: + &if -g -K 6 
+ABC: + &synch2 
+ABC: + &nf 
+ABC: + &put 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &syn2 
+ABC: + &if -g -K 6 
+ABC: + &synch2 
+ABC: + &nf 
+ABC: + &put 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &syn2 
+ABC: + &if -g -K 6 
+ABC: + &synch2 
+ABC: + &nf 
+ABC: + &put 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &syn2 
+ABC: + &if -g -K 6 
+ABC: + &synch2 
+ABC: + &nf 
+ABC: + &put 
+ABC: + buffer -c -N 20 
+ABC: + topo 
+ABC: + stime -c 
+ABC: WireLoad = "none"  Gates =    177 (  6.2 %)   Cap =  1.6 ff (  2.8 %)   Area =      334.32 ( 96.0 %)   Delay =  1212.83 ps  ( 25.4 %)               
+ABC: + upsize -c 
+ABC: + dnsize -c 
+ABC: + 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =    177 (  6.2 %)   Cap =  1.8 ff ( 17.6 %)   Area =      341.88 ( 45.8 %)   Delay =   783.40 ps  ( 41.8 %)               
+ABC: Path  0 --      33 : 0    6 pi          A =   0.00  Df =  73.0  -11.9 ps  S = 148.0 ps  Cin =  0.0 ff  Cout =   4.4 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     101 : 4    1 OR4X3H7L    A =   2.80  Df = 278.9 -110.0 ps  S =  65.7 ps  Cin =  0.8 ff  Cout =   0.9 ff  Cmax =  74.1 ff  G =  107  
+ABC: Path  2 --     105 : 4    4 OR4X3H7L    A =   2.80  Df = 535.7 -262.2 ps  S = 108.1 ps  Cin =  0.8 ff  Cout =   7.1 ff  Cmax =  74.1 ff  G =  852  
+ABC: Path  3 --     111 : 2    1 NOR2X8H7L   A =   3.92  Df = 607.5 -290.7 ps  S =  61.6 ps  Cin =  3.9 ff  Cout =   4.0 ff  Cmax =  91.7 ff  G =  102  
+ABC: Path  4 --     112 : 1   15 BUFX20H7L   A =   6.16  Df = 682.8 -297.7 ps  S =  51.0 ps  Cin =  4.0 ff  Cout =  26.0 ff  Cmax = 481.7 ff  G =  651  
+ABC: Path  5 --     113 : 3    1 MUX2X0P5H7L A =   2.80  Df = 783.4 -294.2 ps  S =  27.3 ps  Cin =  1.0 ff  Cout =   0.0 ff  Cmax =  25.3 ff  G =    1  
+ABC: Start-point = pi32 (\count_16_).  End-point = po0 ($auto$rtlil.cc:3513:MuxGate$1036).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =   49/   48  lat =    0  nd =   177  edge =    502  area =341.88  delay = 7.00  lev = 7
+ABC: + write_blif /tmp/yosys-abc-LpKi3e/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+30.1.2. Re-integrating ABC results.
+ABC RESULTS:         AND2X1H7R cells:        1
+ABC RESULTS:       AND3X1P4H7L cells:        1
+ABC RESULTS:       AND3X1P4H7R cells:        1
+ABC RESULTS:       AND4X0P5H7R cells:        4
+ABC RESULTS:       AND4X1P4H7L cells:        1
+ABC RESULTS:       AND4X1P4H7R cells:        2
+ABC RESULTS:      AOI21X0P5H7R cells:        7
+ABC RESULTS:      AOI21X0P7H7L cells:        3
+ABC RESULTS:      AOI21X1P4H7L cells:        6
+ABC RESULTS:    AOI2BB1X0P5H7R cells:        1
+ABC RESULTS:    AOI2XB1X0P5H7R cells:        1
+ABC RESULTS:      AOI2XB1X1H7L cells:        1
+ABC RESULTS:         BUFX12H7L cells:        1
+ABC RESULTS:        BUFX1P4H7L cells:        1
+ABC RESULTS:         BUFX20H7L cells:        2
+ABC RESULTS:          BUFX5H7L cells:        2
+ABC RESULTS:          BUFX8H7L cells:        1
+ABC RESULTS:        INVX0P5H7R cells:        4
+ABC RESULTS:       MUX2X0P5H7L cells:       13
+ABC RESULTS:         MUX2X3H7L cells:        2
+ABC RESULTS:      NAND2X0P5H7R cells:        9
+ABC RESULTS:      NAND2X1P4H7L cells:        1
+ABC RESULTS:      NAND3X0P5H7R cells:        9
+ABC RESULTS:     NAND4BX0P5H7R cells:        1
+ABC RESULTS:      NAND4X0P5H7L cells:        2
+ABC RESULTS:      NAND4X0P5H7R cells:        5
+ABC RESULTS:      NAND4X1P4H7L cells:        1
+ABC RESULTS:        NAND4X2H7L cells:        1
+ABC RESULTS:        NOR2BX1H7R cells:       16
+ABC RESULTS:       NOR2X0P7H7L cells:        9
+ABC RESULTS:       NOR2X1P4H7L cells:        5
+ABC RESULTS:         NOR2X8H7L cells:        1
+ABC RESULTS:       NOR3X0P5H7R cells:        3
+ABC RESULTS:      OAI21X0P5H7R cells:        9
+ABC RESULTS:        OAI21X4H7L cells:        1
+ABC RESULTS:      OAI31X0P5H7R cells:       10
+ABC RESULTS:          OR3X1H7R cells:        5
+ABC RESULTS:        OR4X0P5H7L cells:        2
+ABC RESULTS:        OR4X0P7H7L cells:        1
+ABC RESULTS:        OR4X1P4H7L cells:       15
+ABC RESULTS:          OR4X3H7L cells:        3
+ABC RESULTS:      XNOR2X0P5H7R cells:        3
+ABC RESULTS:       XOR2X0P5H7R cells:       10
+ABC RESULTS:        internal signals:      124
+ABC RESULTS:           input signals:       49
+ABC RESULTS:          output signals:       48
+Removing temp directory.
+Removing global temp directory.
+
+31. Executing HILOMAP pass (mapping to constant drivers).
+
+32. Executing SETUNDEF pass (replace undef values with defined constants).
+
+33. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+Removed 0 unused cells and 219 unused wires.
+<suppressed ~107 debug messages>
+
+34. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+35. Executing AUTONAME pass.
+Renamed 354 objects in module light.
+<suppressed ~354 debug messages>
+
+36. Executing Verilog backend.
+Dumping module `\light'.
+
+37. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+38. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \light..
+
+39. Printing statistics.
+
+=== light ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      227        - wires
+      227        - wire bits
+      227        - public wires
+      227        - public wire bits
+       18        - ports
+       18        - port bits
+      225   637.56 cells
+        1     1.68   AND2X1H7R
+        1     1.96   AND3X1P4H7L
+        1     1.96   AND3X1P4H7R
+        4     8.96   AND4X0P5H7R
+        1     2.24   AND4X1P4H7L
+        2     4.48   AND4X1P4H7R
+        7      9.8   AOI21X0P5H7R
+        3      4.2   AOI21X0P7H7L
+        6      8.4   AOI21X1P4H7L
+        1     1.96   AOI2BB1X0P5H7R
+        1     2.24   AOI2XB1X0P5H7R
+        1     2.24   AOI2XB1X1H7L
+        1     3.92   BUFX12H7L
+        1     1.12   BUFX1P4H7L
+        2    12.32   BUFX20H7L
+        2     3.92   BUFX5H7L
+        1      2.8   BUFX8H7L
+       48   295.68   DFFQX0P5H7R
+        4     3.36   INVX0P5H7R
+       13     36.4   MUX2X0P5H7L
+        2     7.28   MUX2X3H7L
+        9    10.08   NAND2X0P5H7R
+        1     1.12   NAND2X1P4H7L
+        9     12.6   NAND3X0P5H7R
+        1     2.24   NAND4BX0P5H7R
+        2     3.92   NAND4X0P5H7L
+        5      9.8   NAND4X0P5H7R
+        1     1.96   NAND4X1P4H7L
+        1     2.24   NAND4X2H7L
+       16     22.4   NOR2BX1H7R
+        9    10.08   NOR2X0P7H7L
+        5      5.6   NOR2X1P4H7L
+        1     3.92   NOR2X8H7L
+        3      4.2   NOR3X0P5H7R
+        9     12.6   OAI21X0P5H7R
+        1     3.36   OAI21X4H7L
+       10     19.6   OAI31X0P5H7R
+        5      9.8   OR3X1H7R
+        2     4.48   OR4X0P5H7L
+        1     2.24   OR4X0P7H7L
+       15     33.6   OR4X1P4H7L
+        3      8.4   OR4X3H7L
+        3      8.4   XNOR2X0P5H7R
+       10       28   XOR2X0P5H7R
+
+   Chip area for module '\light': 637.560000
+     of which used for sequential elements: 295.680000 (46.38%)
+
+
+41. Executing Verilog backend.
+Dumping module `\light'.
+
+End of script. Logfile hash: ad5945b52f, time: 5.73s, user: 3.13s, system: 0.51s, MEM: 404.43 MB peak
+Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 36% 2x abc (2 sec), 20% 4x stat (1 sec), ...
+[ECC 20261026 06:07:29 gYojgLQD dm_config.cpp:51 [1;34mInfo[0m initConfig] [Data config] begin config, path = /home/USER/d-stage/backend/light_ss/runs/baseline/config/db_ecc.json
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:82 [1;34mInfo[0m set_tech_lef_path] [Data config set] tech lef = /home/USER/tools/icsprout55-e-stage/prtech/techLEF/N551P6M_ecos.lef
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:88 [1;34mInfo[0m set_lef_paths] [Data config set] lef = /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/lef/ics55_LLSC_H7CR_ecos.lef
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:88 [1;34mInfo[0m set_lef_paths] [Data config set] lef = /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/lef/ics55_LLSC_H7CL_ecos.lef
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:94 [1;34mInfo[0m set_def_path] [Data config set] def = 
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:99 [1;34mInfo[0m set_verilog_path] [Data config set] verilog = 
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:110 [1;34mInfo[0m set_lib_paths] [Data config set] lib = /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_ss_rcworst_1p08_125_nldm.lib
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:110 [1;34mInfo[0m set_lib_paths] [Data config set] lib = /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_ss_rcworst_1p08_125_nldm.lib
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:116 [1;34mInfo[0m set_sdc_path] [Data config set] sdc = /home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.sdc
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:122 [1;34mInfo[0m set_spef_path] [Data config set] spef = 
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:128 [1;34mInfo[0m set_vcd_path] [Data config set] vcd = 
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:104 [1;34mInfo[0m set_output_path] [Data config set] output dir = 
+[ECC 20261026 06:07:29 gYojgLQD dm_config.cpp:86 [1;34mInfo[0m initConfig] [Data config] end config
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:104 [1;34mInfo[0m set_output_path] [Data config set] output dir = /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:134 [1;34mInfo[0m set_feature_path] [Data config set] feature = /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/feature
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:82 [1;34mInfo[0m set_tech_lef_path] [Data config set] tech lef = /home/USER/tools/icsprout55-e-stage/prtech/techLEF/N551P6M_ecos.lef
+[ECC 20261026 06:07:29 gYojgLQD builder.cpp:221 [1;34mInfo[0m buildLef] Read LEF file : /home/USER/tools/icsprout55-e-stage/prtech/techLEF/N551P6M_ecos.lef
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:88 [1;34mInfo[0m set_lef_paths] [Data config set] lef = /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/lef/ics55_LLSC_H7CR_ecos.lef
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:88 [1;34mInfo[0m set_lef_paths] [Data config set] lef = /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/lef/ics55_LLSC_H7CL_ecos.lef
+[ECC 20261026 06:07:29 gYojgLQD builder.cpp:221 [1;34mInfo[0m buildLef] Read LEF file : /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/lef/ics55_LLSC_H7CR_ecos.lef
+[ECC 20261026 06:07:29 gYojgLQD builder.cpp:221 [1;34mInfo[0m buildLef] Read LEF file : /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/lef/ics55_LLSC_H7CL_ecos.lef
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:99 [1;34mInfo[0m set_verilog_path] [Data config set] verilog = /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/output/light_Synthesis.v.gz
+[ECC 20261026 06:07:29 gYojgLQD builder.cpp:249 [1;34mInfo[0m buildVerilog] Read Verilog file success : /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/output/light_Synthesis.v.gz
+[ECC 20261026 06:07:29 gYojgLQD VerilogReader.cc:42 [1;34mInfo[0m readVerilog] load verilog file /tmp/verilog_read_S9ofwk.v
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:110 [1;34mInfo[0m set_lib_paths] [Data config set] lib = /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_ss_rcworst_1p08_125_nldm.lib
+[ECC 20261026 06:07:29 gYojgLQD dm_config.h:110 [1;34mInfo[0m set_lib_paths] [Data config set] lib = /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_ss_rcworst_1p08_125_nldm.lib
+[ECC 20261026 06:07:29 gYojgLQD LibParserCpp.cc:2055 [1;34mInfo[0m readLib] load liberty file /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_ss_rcworst_1p08_125_nldm.lib
+[ECC 20261026 06:07:31 gYojgLQD LibParserCpp.cc:2071 [1;34mInfo[0m readLib] load liberty file /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_ss_rcworst_1p08_125_nldm.lib success.
+[ECC 20261026 06:07:31 gYojgLQD LibParserCpp.cc:2055 [1;34mInfo[0m readLib] load liberty file /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_ss_rcworst_1p08_125_nldm.lib
+[ECC 20261026 06:07:33 gYojgLQD LibParserCpp.cc:2071 [1;34mInfo[0m readLib] load liberty file /home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_ss_rcworst_1p08_125_nldm.lib success.
+[ECC 20261026 06:07:33 gYojgLQD dm_config.h:116 [1;34mInfo[0m set_sdc_path] [Data config set] sdc = /home/USER/d-stage/backend/light_ss/runs/baseline/origin/light.sdc
+[ECC 20261026 06:07:33 gYojgLQD dm_config.h:122 [1;34mInfo[0m set_spef_path] [Data config set] spef = 
+[ECC 20261026 06:07:33 gYojgLQD SpefReader.cc:23 [1;33mWarn[0m parseSpefFile] open spef file failed: 
+[STA 20261026 06:07:33 gYojgLQD STAInterface.cpp:75 [1;34mInfo[0m initSTA] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[STA 20261026 06:07:33 gYojgLQD STAInterface.cpp:76 [1;34mInfo[0m initSTA] _____ _______________________       _______________________ ________ ________ 
+[STA 20261026 06:07:33 gYojgLQD STAInterface.cpp:77 [1;34mInfo[0m initSTA] ___(_)__  ___/___  __/___    |      __  ___/___  __/___    |___  __ \___  __/
+[STA 20261026 06:07:33 gYojgLQD STAInterface.cpp:78 [1;34mInfo[0m initSTA] __  / _____ \ __  /   __  /| |      _____ \ __  /   __  /| |__  /_/ /__  /  
+[STA 20261026 06:07:33 gYojgLQD STAInterface.cpp:79 [1;34mInfo[0m initSTA] _  /  ____/ / _  /    _  ___ |      ____/ / _  /    _  ___ |_  _, _/ _  /     
+[STA 20261026 06:07:33 gYojgLQD STAInterface.cpp:80 [1;34mInfo[0m initSTA] /_/   /____/  /_/     /_/  |_|      /____/  /_/     /_/  |_|/_/ |_|  /_/      
+[STA 20261026 06:07:33 gYojgLQD STAInterface.cpp:81 [1;34mInfo[0m initSTA] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[STA 20261026 06:07:33 gYojgLQD STAInterface.cpp:88 [1;34mInfo[0m initSTA] Starting...
+[STA 20261026 06:07:33 gYojgLQD DataManager.cpp:57 [1;34mInfo[0m input] Starting...
+[STA 20261026 06:07:33 gYojgLQD Utility.hpp:100 [1;33mWarn[0m getConfigValue<int>] The config '-thread_number' uses the default value!
+[STA 20261026 06:07:33 gYojgLQD Utility.hpp:100 [1;33mWarn[0m getConfigValue<int>] The config '-nworst' uses the default value!
+[STA 20261026 06:07:33 gYojgLQD Utility.hpp:100 [1;33mWarn[0m getConfigValue<std::__cxx11::basic_string<char> >] The config '-delay_type' uses the default value!
+[STA 20261026 06:07:33 gYojgLQD Utility.hpp:100 [1;33mWarn[0m getConfigValue<std::__cxx11::basic_string<char> >] The config '-start_end_type' uses the default value!
+[STA 20261026 06:07:33 gYojgLQD STAInterface.cpp:515 [1;34mInfo[0m wrapTimingLibrary] Starting...
+[STA 20261026 06:07:40 gYojgLQD STAInterface.cpp:529 [1;34mInfo[0m wrapTimingLibrary] Completed (elapsed = 00:00:08, cpu = 00:00:08, mem = 238.54MB) 
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:329 [1;34mInfo[0m printConfig] STA_CONFIG_INPUT
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:330 [1;34mInfo[0m printConfig]   temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:331 [1;34mInfo[0m printConfig]     /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:332 [1;34mInfo[0m printConfig]   thread_number
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:333 [1;34mInfo[0m printConfig]     128
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:334 [1;34mInfo[0m printConfig]   path_report_number
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:335 [1;34mInfo[0m printConfig]     1000
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:336 [1;34mInfo[0m printConfig]   endpoint_path_report_number
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:337 [1;34mInfo[0m printConfig]     1
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:338 [1;34mInfo[0m printConfig]   timing_report_delay_type
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:339 [1;34mInfo[0m printConfig]     max
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:340 [1;34mInfo[0m printConfig]   timing_report_start_end_type
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:341 [1;34mInfo[0m printConfig]     all
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:342 [1;34mInfo[0m printConfig]   has_timing_report_slack_lesser_than
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:343 [1;34mInfo[0m printConfig]     0
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:344 [1;34mInfo[0m printConfig]   timing_report_slack_lesser_than
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:345 [1;34mInfo[0m printConfig]     0
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:346 [1;34mInfo[0m printConfig]   has_timing_report_slack_greater_than
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:347 [1;34mInfo[0m printConfig]     0
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:348 [1;34mInfo[0m printConfig]   timing_report_slack_greater_than
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:349 [1;34mInfo[0m printConfig]     0
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:350 [1;34mInfo[0m printConfig]   output_timing_reports
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:351 [1;34mInfo[0m printConfig]     1
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:352 [1;34mInfo[0m printConfig]   output_timing_features
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:353 [1;34mInfo[0m printConfig]     1
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:354 [1;34mInfo[0m printConfig]   timing_path_limit
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:355 [1;34mInfo[0m printConfig]     20
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:357 [1;34mInfo[0m printConfig] STA_CONFIG_BUILD
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:358 [1;34mInfo[0m printConfig]   log_file_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:359 [1;34mInfo[0m printConfig]     /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/sta.log
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:361 [1;34mInfo[0m printConfig]   DataManager
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:362 [1;34mInfo[0m printConfig]     dm_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:363 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/data_manager/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:365 [1;34mInfo[0m printConfig]   GraphBuilder
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:366 [1;34mInfo[0m printConfig]     gb_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:367 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/graph_builder/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:369 [1;34mInfo[0m printConfig]   DelayCalculator
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:370 [1;34mInfo[0m printConfig]     dc_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:371 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/delay_calculator/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:373 [1;34mInfo[0m printConfig]   ClockPropagator
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:374 [1;34mInfo[0m printConfig]     cp_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:375 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/clock_propagator/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:377 [1;34mInfo[0m printConfig]   TimingPropagator
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:378 [1;34mInfo[0m printConfig]     tp_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:379 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/timing_propagator/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:381 [1;34mInfo[0m printConfig]   PowerPropagator
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:382 [1;34mInfo[0m printConfig]     pp_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:383 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/power_propagator/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:385 [1;34mInfo[0m printConfig]   TimingAnalyzer
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:386 [1;34mInfo[0m printConfig]     ta_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:387 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/timing_analyzer/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:389 [1;34mInfo[0m printConfig]   PowerAnalyzer
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:390 [1;34mInfo[0m printConfig]     pa_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:391 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/power_analyzer/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:393 [1;34mInfo[0m printConfig]   TimingCharacterizer
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:394 [1;34mInfo[0m printConfig]     tc_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:395 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/timing_characterizer/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:397 [1;34mInfo[0m printConfig]   TimingReporter
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:398 [1;34mInfo[0m printConfig]     tr_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:399 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/timing_reporter/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:401 [1;34mInfo[0m printConfig]   PowerReporter
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:402 [1;34mInfo[0m printConfig]     pr_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:403 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/power_reporter/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:405 [1;34mInfo[0m printConfig]   SDFWriter
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:406 [1;34mInfo[0m printConfig]     sw_temp_directory_path
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:407 [1;34mInfo[0m printConfig]       /home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/sdf_writer/
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:421 [1;34mInfo[0m printDatabase] STA_DATABASE
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:422 [1;34mInfo[0m printDatabase]   design_name
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:423 [1;34mInfo[0m printDatabase]     light
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:424 [1;34mInfo[0m printDatabase]   instance_num
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:425 [1;34mInfo[0m printDatabase]     225
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:426 [1;34mInfo[0m printDatabase]   port_num
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:427 [1;34mInfo[0m printDatabase]     18
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:428 [1;34mInfo[0m printDatabase]   pin_num
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:429 [1;34mInfo[0m printDatabase]     841
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:430 [1;34mInfo[0m printDatabase]   net_num
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:431 [1;34mInfo[0m printDatabase]     227
+[STA 20261026 06:07:40 gYojgLQD DataManager.cpp:63 [1;34mInfo[0m input] Completed (elapsed = 00:00:08, cpu = 00:00:08, mem = 238.54MB) 
+[STA 20261026 06:07:40 gYojgLQD STAInterface.cpp:109 [1;34mInfo[0m initSTA] Completed (elapsed = 00:00:08, cpu = 00:00:08, mem = 238.54MB) 
+[STA 20261026 06:07:40 gYojgLQD STAInterface.cpp:115 [1;34mInfo[0m runSTA] Starting...
+[STA 20261026 06:07:40 gYojgLQD DelayCalculator.cpp:58 [1;34mInfo[0m init] Starting...
+[STA 20261026 06:07:40 gYojgLQD DelayCalculator.cpp:62 [1;34mInfo[0m init] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:40 gYojgLQD GraphBuilder.cpp:57 [1;34mInfo[0m build] Starting...
+[STA 20261026 06:07:40 gYojgLQD GraphBuilder.cpp:69 [1;34mInfo[0m build] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:40 gYojgLQD ClockPropagator.cpp:56 [1;34mInfo[0m propagate] Starting...
+[STA 20261026 06:07:40 gYojgLQD ClockPropagator.cpp:62 [1;34mInfo[0m propagate] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:40 gYojgLQD TimingPropagator.cpp:56 [1;34mInfo[0m propagate] Starting...
+[STA 20261026 06:07:41 gYojgLQD TimingPropagator.cpp:75 [1;34mInfo[0m propagate] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD PowerPropagator.cpp:55 [1;34mInfo[0m propagate] Starting...
+[STA 20261026 06:07:41 gYojgLQD PowerPropagator.cpp:60 [1;34mInfo[0m propagate] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD TimingAnalyzer.cpp:56 [1;34mInfo[0m analyze] Starting...
+[STA 20261026 06:07:41 gYojgLQD TimingAnalyzer.cpp:62 [1;34mInfo[0m analyze] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD PowerAnalyzer.cpp:55 [1;34mInfo[0m analyze] Starting...
+[STA 20261026 06:07:41 gYojgLQD PowerAnalyzer.cpp:60 [1;34mInfo[0m analyze] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD TimingReporter.cpp:187 [1;34mInfo[0m report] Starting...
+[STA 20261026 06:07:41 gYojgLQD TimingReporter.cpp:191 [1;34mInfo[0m report] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD PowerReporter.cpp:55 [1;34mInfo[0m report] Starting...
+[STA 20261026 06:07:41 gYojgLQD PowerReporter.cpp:61 [1;34mInfo[0m report] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD SDFWriter.cpp:60 [1;34mInfo[0m write] Starting...
+[STA 20261026 06:07:41 gYojgLQD SDFWriter.cpp:599 [1;33mWarn[0m adjustSDFHoldTimingCheckDelay] Adjusted HOLD timing-check delay for led[0]_reg_p: D relative to CK would otherwise sum to less than zero with the matching SETUP delay.
+[STA 20261026 06:07:41 gYojgLQD SDFWriter.cpp:64 [1;34mInfo[0m write] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD DelayCalculator.cpp:90 [1;34mInfo[0m destroy] Starting...
+[STA 20261026 06:07:41 gYojgLQD DelayCalculator.cpp:94 [1;34mInfo[0m destroy] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:157 [1;34mInfo[0m runSTA] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 2.13MB) 
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:195 [1;34mInfo[0m destroySTA] Starting...
+[STA 20261026 06:07:41 gYojgLQD DelayCalculator.cpp:90 [1;34mInfo[0m destroy] Starting...
+[STA 20261026 06:07:41 gYojgLQD DelayCalculator.cpp:94 [1;34mInfo[0m destroy] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD DataManager.cpp:69 [1;34mInfo[0m output] Starting...
+[STA 20261026 06:07:41 gYojgLQD DataManager.cpp:71 [1;34mInfo[0m output] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:203 [1;34mInfo[0m destroySTA] Completed (elapsed = 00:00:00, cpu = 00:00:00, mem = 0.00MB) 
+[STA 20261026 06:07:41 gYojgLQD Logger.hpp:56 [1;34mInfo[0m printLogFilePath] The log file path is '/home/USER/d-stage/backend/light_ss/runs/baseline/Synthesis_yosys/data/sta/sta.log'!
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:207 [1;34mInfo[0m destroySTA] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:208 [1;34mInfo[0m destroySTA] _____ _______________________       _______________________   ________________________  __  
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:209 [1;34mInfo[0m destroySTA] ___(_)__  ___/___  __/___    |      ___  ____/____  _/___  | / /____  _/__  ___/___  / / /  
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:210 [1;34mInfo[0m destroySTA] __  / _____ \ __  /   __  /| |      __  /_     __  /  __   |/ /  __  /  _____ \ __  /_/ / 
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:211 [1;34mInfo[0m destroySTA] _  /  ____/ / _  /    _  ___ |      _  __/    __/ /   _  /|  /  __/ /   ____/ / _  __  /    
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:212 [1;34mInfo[0m destroySTA] /_/   /____/  /_/     /_/  |_|      /_/       /___/   /_/ |_/   /___/   /____/  /_/ /_/     
+[STA 20261026 06:07:41 gYojgLQD STAInterface.cpp:213 [1;34mInfo[0m destroySTA] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

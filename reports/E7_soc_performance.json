@@ -1,0 +1,221 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "name": "baseline_k1",
+      "variant": "baseline",
+      "k": 1,
+      "cpu_frequency_hz": 25000000,
+      "soc_frequency_hz": 25000000,
+      "synthesis_frequency_mhz": 130,
+      "min_time_us": 76162395,
+      "score": 1,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 2221666902,
+        "instructions": 18113623,
+        "ipc": 0.00815316777852,
+        "application_cycles": 2018536673,
+        "application_instructions": 17143059,
+        "application_ipc": 0.00849281523061,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 1084215,
+        "lsu_requests": 11225018,
+        "lsu_responses": 11225018,
+        "uart_bytes": 670,
+        "serial_bytes": 670,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 829.13686703,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "wave": {
+        "signals": {
+          "clock": "TOP.clock",
+          "cpuClock": "TOP.cpuClock"
+        },
+        "rising_edges": {
+          "clock": 10000,
+          "cpuClock": 10000
+        },
+        "mean_period_ticks": {
+          "clock": 40000.0,
+          "cpuClock": 40000.0
+        },
+        "cpu_to_soc_frequency_ratio": 1.0
+      },
+      "simulator_sha256": "28128d95b7557c4285727290c31a289a486da5a3119911c40112277b77d1366d",
+      "config_sha256": "14367f328302d9bff3e72abcc1d46cc5b3c0c07ac10a28d94fe7a8b4b0c23ffd",
+      "stdout_sha256": "9baf1a53d41970190896dfb063149cc8901f73c88cc1865a57bb98efb8f256e3",
+      "image_sha256": "7cfebbb667ba3129120bc48336dad967b6860dca1a15f51555e5437dc415fbb8",
+      "evidence": "artifacts/E7/soc_performance/baseline_k1"
+    },
+    {
+      "name": "baseline_kmax",
+      "variant": "baseline",
+      "k": 5,
+      "cpu_frequency_hz": 125000000,
+      "soc_frequency_hz": 25000000,
+      "synthesis_frequency_mhz": 130,
+      "min_time_us": 75515393,
+      "score": 1,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 11025384943,
+        "instructions": 18127021,
+        "ipc": 0.00164411683526,
+        "application_cycles": 10014586574,
+        "application_instructions": 17156457,
+        "application_ipc": 0.00171314680573,
+        "cpu_soc_ratio": 5,
+        "assumed_cpu_frequency_hz": 125000000,
+        "flash_reads": 1084215,
+        "lsu_requests": 11232544,
+        "lsu_responses": 11232544,
+        "uart_bytes": 670,
+        "serial_bytes": 670,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 2105.26515359,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "wave": {
+        "signals": {
+          "clock": "TOP.clock",
+          "cpuClock": "TOP.cpuClock"
+        },
+        "rising_edges": {
+          "clock": 2000,
+          "cpuClock": 10000
+        },
+        "mean_period_ticks": {
+          "clock": 40000.0,
+          "cpuClock": 8000.0
+        },
+        "cpu_to_soc_frequency_ratio": 5.0
+      },
+      "simulator_sha256": "28128d95b7557c4285727290c31a289a486da5a3119911c40112277b77d1366d",
+      "config_sha256": "1500b5433b6cc8f37abbfef217d2a3de34b8a7c799d1fbb7a98e44ae303e508d",
+      "stdout_sha256": "b93062daff3b821b7b6420ef305ad44f8aee71cb184c26e1ea1e240632d2464e",
+      "image_sha256": "972633b8f6ca1209985c6c6b1006c4066a93754ac8da8f62649a733cc664231c",
+      "evidence": "artifacts/E7/soc_performance/baseline_kmax"
+    },
+    {
+      "name": "area_kmax",
+      "variant": "area",
+      "k": 3,
+      "cpu_frequency_hz": 75000000,
+      "soc_frequency_hz": 25000000,
+      "synthesis_frequency_mhz": 89,
+      "min_time_us": 75515393,
+      "score": 1,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 6614558215,
+        "instructions": 18125175,
+        "ipc": 0.00274019434267,
+        "application_cycles": 6008079194,
+        "application_instructions": 17154611,
+        "application_ipc": 0.00285525713728,
+        "cpu_soc_ratio": 3,
+        "assumed_cpu_frequency_hz": 75000000,
+        "flash_reads": 1084215,
+        "lsu_requests": 11231264,
+        "lsu_responses": 11231264,
+        "uart_bytes": 670,
+        "serial_bytes": 670,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 1543.95585001,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "wave": {
+        "signals": {
+          "clock": "TOP.clock",
+          "cpuClock": "TOP.cpuClock"
+        },
+        "rising_edges": {
+          "clock": 3333,
+          "cpuClock": 10000
+        },
+        "mean_period_ticks": {
+          "clock": 40000.0,
+          "cpuClock": 13333.333333333334
+        },
+        "cpu_to_soc_frequency_ratio": 3.0
+      },
+      "simulator_sha256": "28128d95b7557c4285727290c31a289a486da5a3119911c40112277b77d1366d",
+      "config_sha256": "ce8143359a619295032ff7e3b98ed6275cbdd5e6b6db75bb7c9e639c1b4bbf7d",
+      "stdout_sha256": "3a660270f0bf696d1d12116eb78ed6746f0da0a0d53df44b70566fb04e6d9253",
+      "image_sha256": "81217d82e3ab2b83c7bfcd6567cc9a907c5df7423cfbdf45f9d391ed706b7070",
+      "evidence": "artifacts/E7/soc_performance/area_kmax"
+    }
+  ],
+  "comparison": [
+    {
+      "name": "baseline_k1",
+      "speedup_vs_k1": 1.0,
+      "cell_area_um2": 9915,
+      "modeled_cost_cny": 495.75000000000006
+    },
+    {
+      "name": "baseline_kmax",
+      "speedup_vs_k1": 1.0085678161007519,
+      "cell_area_um2": 9915,
+      "modeled_cost_cny": 495.75000000000006
+    },
+    {
+      "name": "area_kmax",
+      "speedup_vs_k1": 1.0085678161007519,
+      "cell_area_um2": 9306,
+      "modeled_cost_cny": 465.3
+    }
+  ],
+  "scope": "ThreeactualfulltrainSoCrunswithpercommitDiffTest, suppliedFlashloader/PSRAM/UARTandoriginalbenchmarkvalidators. AreaandbaselinehaveidenticalRTLfunctionalitybutdifferentmappedcellimplementation; theirlegalprelayoutPLLfrequenciesaredifferent. Thesearefunctionalmodeltimes, notpostroutefrequencymeasurements."
+}

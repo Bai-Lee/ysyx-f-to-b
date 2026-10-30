@@ -1,0 +1,6060 @@
+{
+  "status": "PASS_OBJECT_PRESERVATION_AND_FLAT_RUN",
+  "tests": [
+    {
+      "id": "cpu:add",
+      "symbol": "cpu_add__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/add.o",
+      "original_sha256": "9f91f01bfacee4b4921a8f52a290065187c02388a2dd8f6625314189a789463e",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_add.o",
+      "namespaced_sha256": "db03ec3380eb2e2408952c8a1c3cd943e3ba843b25b66a26689f1cbe70d77396",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.add": [
+            1,
+            6,
+            8,
+            "5a1905a019e15ecc4686880c2900e50441a4dbf02b7592076b21b6a4461d82a6"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            864,
+            "0375bcd792327e20a13cabb3abd39a318c4faeb9f590a01005d4de966a9832c0"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            256,
+            "c5feaabcf1b25b984ee38d1c1f9bf25587ad735b18ab629f09a8e5136737e75e"
+          ],
+          ".data.test_data": [
+            1,
+            3,
+            32,
+            "4f89652f194dabb6dceb6782d859d74decb8711b31d5a717e9e2594a03c21693"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "070fdf82a73028829bf45c1111a447a74581320973e86a5fc62eb39913071f68",
+      "mapping": [
+        [
+          "add",
+          "cpu_add__add"
+        ],
+        [
+          "ans",
+          "cpu_add__ans"
+        ],
+        [
+          "check",
+          "cpu_add__check"
+        ],
+        [
+          "main",
+          "cpu_add__main"
+        ],
+        [
+          "test_data",
+          "cpu_add__test_data"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:add-longlong",
+      "symbol": "cpu_add_longlong__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/add-longlong.o",
+      "original_sha256": "27e2375ffcef950c038f6cbfffc2d8339db6ea56dec981d3bcf42be8e58e8b6b",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_add_longlong.o",
+      "namespaced_sha256": "4e39b0fba453c43b85536b8f852554cd7eb04cd472c51a91adbfc0e2e92bd9f8",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.add": [
+            1,
+            6,
+            236,
+            "2e2470bc59ca8d1804a6b3ca56333b769ef21b37eec109b8b591e081f055ff57"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1444,
+            "b5432bfceb233a65423f1ebaf09a2444dd2992dd267bcabd9e57c2ae448a4640"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            512,
+            "80a291dd5361986daffbdd81dc07de3d2ee848f24d5037c1cfc4b4401e0fcadf"
+          ],
+          ".data.test_data": [
+            1,
+            3,
+            64,
+            "fb841d2206f8d737b9a17a23500015744d32e9cd305a72dfb8f56ef7fec8b765"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "a6f34bfa2a20c0dfd4420f95271d78842541c45392148c21afabfd22755d1975",
+      "mapping": [
+        [
+          "add",
+          "cpu_add_longlong__add"
+        ],
+        [
+          "ans",
+          "cpu_add_longlong__ans"
+        ],
+        [
+          "check",
+          "cpu_add_longlong__check"
+        ],
+        [
+          "main",
+          "cpu_add_longlong__main"
+        ],
+        [
+          "test_data",
+          "cpu_add_longlong__test_data"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:bit",
+      "symbol": "cpu_bit__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/bit.o",
+      "original_sha256": "031a1c84126abed5ce569fa5bdbe7551a35be25bd6389843d5222afde5e3978e",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_bit.o",
+      "namespaced_sha256": "2df75733c24b21dc69a44b3214defdd0e46195f6497e081a6dc4a987ec9c4f86",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.getbit": [
+            1,
+            6,
+            944,
+            "b4554d71965ba335c59775695b0259fa0c27b6b3b46a04c4a539faa231bb28d5"
+          ],
+          ".text.setbit": [
+            1,
+            6,
+            1308,
+            "27a82742218170d2dbc7572a757d4244c440077275f93c1a9e41861c89dae7a6"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1856,
+            "0d0a8cc156730ba22420cd9cbb4dbe1076f844ecdcab8389f5b5f299080f2331"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "1a9f89e8c8502c94e88743d26b2cec7bc1eb63c67beace2690e651756c66c2c2",
+      "mapping": [
+        [
+          "check",
+          "cpu_bit__check"
+        ],
+        [
+          "getbit",
+          "cpu_bit__getbit"
+        ],
+        [
+          "main",
+          "cpu_bit__main"
+        ],
+        [
+          "setbit",
+          "cpu_bit__setbit"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:bubble-sort",
+      "symbol": "cpu_bubble_sort__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/bubble-sort.o",
+      "original_sha256": "63183bf9f58dd7c303f096e9b548c94e26bb6a4b52a33978ec8577e13174295b",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_bubble_sort.o",
+      "namespaced_sha256": "aca35affdbcdc4aafe462a27267bb8b493f9dbdc02066c00e9e54dea974c0fec",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.bubble_sort": [
+            1,
+            6,
+            904,
+            "afd63c9e5c30c6ff88d44f9788248f88cf4e733596b34b1219a07e5e3743aabc"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1028,
+            "82dded0c44af14645c38b58f65fd4c9715d944482e8cce97f2de956b1754a63b"
+          ],
+          ".data.a": [
+            1,
+            3,
+            80,
+            "4ee884f7e614c55426c223fc56764fc696b433beb14b26acb50c17f153f5f4bb"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "32b7e89e8b26d93be7a1b9d8b51f41b75c1309d8102992cce443f4f10148e9f3",
+      "mapping": [
+        [
+          "a",
+          "cpu_bubble_sort__a"
+        ],
+        [
+          "bubble_sort",
+          "cpu_bubble_sort__bubble_sort"
+        ],
+        [
+          "check",
+          "cpu_bubble_sort__check"
+        ],
+        [
+          "main",
+          "cpu_bubble_sort__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:crc32",
+      "symbol": "cpu_crc32__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/crc32.o",
+      "original_sha256": "b668b18576a83b0e3abfb741f825f279817770a4b943c3a7ef83bd5e74e89105",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_crc32.o",
+      "namespaced_sha256": "9df363c82957cecab164f32f193176c03a04e557004bab683c180603c8d5843c",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.rc_crc32": [
+            1,
+            6,
+            2552,
+            "35ac7e50473efc03648c3b67c9838e39fb1df9cc254ede41e6761fe72fc51bf9"
+          ],
+          ".rodata.main.str1.4": [
+            1,
+            50,
+            44,
+            "26b54a596255364bf3b1d9b4df2fd33d61974d1f000df23b6f7de4313a6c72e5"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            172,
+            "ec46f778a38aec725eee25dbb2b48ec3275bdde1a6e23249f1e4dd8850ef2db6"
+          ],
+          ".bss.table.0": [
+            8,
+            3,
+            1024,
+            null
+          ],
+          ".sbss.have_table.1": [
+            8,
+            3,
+            4,
+            null
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "ffef583284d16a324c700fca2012694b4b1f1c05da0aea3de2dddbb1f827065b",
+      "mapping": [
+        [
+          "check",
+          "cpu_crc32__check"
+        ],
+        [
+          "main",
+          "cpu_crc32__main"
+        ],
+        [
+          "rc_crc32",
+          "cpu_crc32__rc_crc32"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:div",
+      "symbol": "cpu_div__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/div.o",
+      "original_sha256": "413b53b3d4b167cd05ec76d8fb779b6a4192fe2b1336b2b197511a04313f69d3",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_div.o",
+      "namespaced_sha256": "53ac4a184a71559a7f506412cf844ae45faa9366c5f4a6d033dc9b4b3447c293",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1844,
+            "e3291e9775a5e538c3d942491a081a8116cf11b61bb52771c897a879ece91a9b"
+          ],
+          ".bss.a": [
+            8,
+            3,
+            40,
+            null
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "a51397c8b6c4023661f6b098160709057761077f426940af3c16198660688166",
+      "mapping": [
+        [
+          "a",
+          "cpu_div__a"
+        ],
+        [
+          "check",
+          "cpu_div__check"
+        ],
+        [
+          "main",
+          "cpu_div__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:dummy",
+      "symbol": "cpu_dummy__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/dummy.o",
+      "original_sha256": "6c4907fdbca98b7dfb32b0c2c7afa0b0929ba4db5439c8440470eb8096669222",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_dummy.o",
+      "namespaced_sha256": "9928dc832583699744ef744a3580d57768f094cdef4dab251378b4c177a4cc46",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            8,
+            "52ae1f372c7c68f0ab334f87afbf96bf7815f6784dae7556c835b30a74fa0769"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "0da297985a3008bb2455248a97f8343009ae84ef82d909eaedb78def9954fe64",
+      "mapping": [
+        [
+          "main",
+          "cpu_dummy__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:fact",
+      "symbol": "cpu_fact__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/fact.o",
+      "original_sha256": "4ff9986345b275c982e723de837ac881189a2bb31b50e04792b2986a0ef94d6c",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_fact.o",
+      "namespaced_sha256": "cb3db39e53ecd62b64dc130d23e348f925f6c1bc16fd01cee0187c0c0222748c",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.fact": [
+            1,
+            6,
+            560,
+            "67d679baa21a5adfb5cf77ca12b72156dfb974c537ea8ef99f526ab2dcf67a47"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1068,
+            "77502669fa2ca6b767f23e9efb51104a17280b0cadd4cc699f1219c6445c4cdc"
+          ],
+          ".bss.f": [
+            8,
+            3,
+            60,
+            null
+          ],
+          ".data.ans": [
+            1,
+            3,
+            52,
+            "68b0ec9651952494e89c2feeb52714b8564e7e5eb69de8989ba986a8ae5361a1"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "6a4033dbb2698e2c120428cb1a761b7aeecf60c9bff0b85d612297f30fd8aaf5",
+      "mapping": [
+        [
+          "ans",
+          "cpu_fact__ans"
+        ],
+        [
+          "check",
+          "cpu_fact__check"
+        ],
+        [
+          "f",
+          "cpu_fact__f"
+        ],
+        [
+          "fact",
+          "cpu_fact__fact"
+        ],
+        [
+          "main",
+          "cpu_fact__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:fib",
+      "symbol": "cpu_fib__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/fib.o",
+      "original_sha256": "eba6448500afd75088699f348a7874d866b34685d526a4bbefc35662ee5b2267",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_fib.o",
+      "namespaced_sha256": "79e9dddd9ce1f8f0fada5959145c719785bf0b17baf7ecfd4de38be15acaf66b",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            544,
+            "0cc94ab00bee92f0da51e62b9b67be2780d8574faeff94ee11413bc1c2e2e8c1"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            160,
+            "52f06c22f4821e68023cb55633773588162cba1d324b8c2f5aec268cc084b505"
+          ],
+          ".data.fib": [
+            1,
+            3,
+            160,
+            "e278bf447117e4e03756b639f7dfcb857bf1c40e30f5fc20c15d63cd0e2263a8"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "c45530b4e036eee4a79e97368803cc7a814ed0a639d465ab6c007c61793c5b9c",
+      "mapping": [
+        [
+          "ans",
+          "cpu_fib__ans"
+        ],
+        [
+          "check",
+          "cpu_fib__check"
+        ],
+        [
+          "fib",
+          "cpu_fib__fib"
+        ],
+        [
+          "main",
+          "cpu_fib__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:goldbach",
+      "symbol": "cpu_goldbach__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/goldbach.o",
+      "original_sha256": "099af1a9b35146f12e98d6655291d1aa7c03848c97a4c4d696a01148882e8b70",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_goldbach.o",
+      "namespaced_sha256": "36f82387e4a701f53a1e5d16bcd0de60709dbe8583cb92d24183bacba46388c8",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.is_prime": [
+            1,
+            6,
+            1276,
+            "362de7a8ca21b325a8f44e059f2d303130e1daff8036619529c382c2329f23b6"
+          ],
+          ".text.goldbach": [
+            1,
+            6,
+            2736,
+            "e66db0d40ba65d228742b02a77b07bb7231e7b7663331faac709d444ebc806d8"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            412,
+            "8257ed42f7268f7f6941c0a95eca5aa51f2b39d45b30ae124f639c774d5d51ca"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "44fce6a06eb231577cb7b1ea158a5dce2730c9277bcd1d067875b0f1372f5477",
+      "mapping": [
+        [
+          "check",
+          "cpu_goldbach__check"
+        ],
+        [
+          "goldbach",
+          "cpu_goldbach__goldbach"
+        ],
+        [
+          "is_prime",
+          "cpu_goldbach__is_prime"
+        ],
+        [
+          "main",
+          "cpu_goldbach__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:hello-str",
+      "symbol": "cpu_hello_str__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/hello-str.o",
+      "original_sha256": "5492b4eacb5be74370393eac8066f1000b7e493baaeb38386c478aed2b88b2fc",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_hello_str.o",
+      "namespaced_sha256": "0b73344d6a2d2a32cc48c2f5f6ac19e2abdeb21672314988ac42f5aba5ae4aa8",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".rodata.main.str1.4": [
+            1,
+            50,
+            61,
+            "8bce7cbc31a1101b37d6128150c450184235b1dfe9c0ad9d79551d740ae403ba"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            540,
+            "5bb90541be88b34630baf907a844febf64aeca9f1778cb0a29dd337acb51f093"
+          ],
+          ".bss.buf": [
+            8,
+            3,
+            128,
+            null
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "de726d1c80c94592490497f8f6b0356095a90e844f1a338c54e8632e28f319b0",
+      "mapping": [
+        [
+          "buf",
+          "cpu_hello_str__buf"
+        ],
+        [
+          "check",
+          "cpu_hello_str__check"
+        ],
+        [
+          "main",
+          "cpu_hello_str__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:if-else",
+      "symbol": "cpu_if_else__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/if-else.o",
+      "original_sha256": "e74c1637e69887e47bc2250179f5d113640fba21892057c8f56aae14a902855a",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_if_else.o",
+      "namespaced_sha256": "10dc04aa5f9ea157155bdd06e3273fe7c8ef710cfc78e9ad2778297a499f2c92",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.if_else": [
+            1,
+            6,
+            1288,
+            "b49a2147ed7c6e2399b196c8d0c8a6694ebfe4593b7c50d5f18bed2b43c63d11"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1808,
+            "005f805ade99e64bb60c01affd70d7745dbb92bab64e2116b25d1f93ae31e465"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            56,
+            "c80f090c0a802488b524f1836d63677f71b1c1ecaca4b44a9a4fa428e9777f65"
+          ],
+          ".data.test_data": [
+            1,
+            3,
+            56,
+            "4ccfc2cb4718c653ec00be94f907f33eaced1d4637a6db20a3aadfdf05fbfb9e"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "1df0d2c890358bbbcc8a74ab6efb8e96aeb9fcf8cf60182027e6af762bb11710",
+      "mapping": [
+        [
+          "ans",
+          "cpu_if_else__ans"
+        ],
+        [
+          "check",
+          "cpu_if_else__check"
+        ],
+        [
+          "if_else",
+          "cpu_if_else__if_else"
+        ],
+        [
+          "main",
+          "cpu_if_else__main"
+        ],
+        [
+          "test_data",
+          "cpu_if_else__test_data"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:leap-year",
+      "symbol": "cpu_leap_year__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/leap-year.o",
+      "original_sha256": "12ad4054205ca22737437544bed544a38aacd85273f46a1e0c66c18e7e2f393a",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_leap_year.o",
+      "namespaced_sha256": "f51c79f7e81fe97fd27aea46e953c4b85dd844d612746592e3e12a467b7f2ed3",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.is_leap_year": [
+            1,
+            6,
+            624,
+            "a65c2c841e619962c4ed6f90044648b0ea0b32a768e883185bfa6f1dfa15ea55"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1080,
+            "497ce18a0a6dde219943d89506e189b07c677ededc2d693a3eba34c9afded304"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            500,
+            "ac533ca2b619c890413c6a540545ef2539891ce32410686470fcd72489d35a17"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "98bda99befab4bbb5eaa3c152a808fe02180bd87139810c816c2a15b250d81e6",
+      "mapping": [
+        [
+          "ans",
+          "cpu_leap_year__ans"
+        ],
+        [
+          "check",
+          "cpu_leap_year__check"
+        ],
+        [
+          "is_leap_year",
+          "cpu_leap_year__is_leap_year"
+        ],
+        [
+          "main",
+          "cpu_leap_year__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:load-store",
+      "symbol": "cpu_load_store__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/load-store.o",
+      "original_sha256": "193eb7a4dba544f5e1f18ff7f8971fd9c79d4cd377cf66302970ad4046b29aae",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_load_store.o",
+      "namespaced_sha256": "2b439e36c266835b3f05f3811882ecc2785741ceead15db6d61b98d235f90048",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            4488,
+            "dbf1f2cbe82db8221a0af3c1495f55e258f922ab4660e93c0f347c1e630424a7"
+          ],
+          ".data.lh_ans": [
+            1,
+            3,
+            32,
+            "88756b6fc232b102ee91d3179ac1e3edc067dd172d214e5c305b0896094361be"
+          ],
+          ".data.lhu_ans": [
+            1,
+            3,
+            32,
+            "5e2771d602a497595ad5c612b7871aa24d19a8f055f5ad81b23b3f053fe747bc"
+          ],
+          ".data.lwlr_ans": [
+            1,
+            3,
+            16,
+            "7bc482ce5ee5642cde0a6a6bb6b55aef8aefb6b8d45d631afb9982fdffa54468"
+          ],
+          ".data.mem": [
+            1,
+            3,
+            16,
+            "79893dc4da6db58b862973ef9fbff02a7aadf3ce09a9cc8040df2149b2f4520f"
+          ],
+          ".data.sh_ans": [
+            1,
+            3,
+            32,
+            "ead1242c365862a84383656e0bfdd7bc13a915852ef3241da9766da937e3973d"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "27d614869c4ab64961505ef210fe99193cac88e66778685f8175b8dc0ad23308",
+      "mapping": [
+        [
+          "check",
+          "cpu_load_store__check"
+        ],
+        [
+          "lh_ans",
+          "cpu_load_store__lh_ans"
+        ],
+        [
+          "lhu_ans",
+          "cpu_load_store__lhu_ans"
+        ],
+        [
+          "lwlr_ans",
+          "cpu_load_store__lwlr_ans"
+        ],
+        [
+          "main",
+          "cpu_load_store__main"
+        ],
+        [
+          "mem",
+          "cpu_load_store__mem"
+        ],
+        [
+          "sh_ans",
+          "cpu_load_store__sh_ans"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:matrix-mul",
+      "symbol": "cpu_matrix_mul__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/matrix-mul.o",
+      "original_sha256": "d73bae9e15a9df236243018fc29f31747c73780d9a91ef80f0fda4e90d8ab9cf",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_matrix_mul.o",
+      "namespaced_sha256": "365704e0e2528aa08e45a7d1f64d98423ed5bfdc2552318f9917d3f445e189ee",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1180,
+            "a627c84be69bf7c6471096645643b3e2f5f4495dc3739d27732b986cac11351e"
+          ],
+          ".bss.c": [
+            8,
+            3,
+            400,
+            null
+          ],
+          ".data.a": [
+            1,
+            3,
+            400,
+            "fea3104aaa4f5462bd806c1f5c5fafa28d4979904d353f8016d2b6b385b71ab1"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            400,
+            "32f59cd5b9594af16ea30a32ea384c9756446a31f23c22964efae4920ab847cf"
+          ],
+          ".data.b": [
+            1,
+            3,
+            400,
+            "b285ab9c2a95e1b65099f111f02bff97a65f61106f03e1d8a863151f367eb245"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "89140ca3005ab790c063b48d789b3c99b2bb87e10b047fed9eb1fb065416b273",
+      "mapping": [
+        [
+          "a",
+          "cpu_matrix_mul__a"
+        ],
+        [
+          "ans",
+          "cpu_matrix_mul__ans"
+        ],
+        [
+          "b",
+          "cpu_matrix_mul__b"
+        ],
+        [
+          "c",
+          "cpu_matrix_mul__c"
+        ],
+        [
+          "check",
+          "cpu_matrix_mul__check"
+        ],
+        [
+          "main",
+          "cpu_matrix_mul__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:max",
+      "symbol": "cpu_max__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/max.o",
+      "original_sha256": "af4127351144a1601445e6193df8c707ba8cf3142714016de85d6b00859025a8",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_max.o",
+      "namespaced_sha256": "d3bf6867cfc449a15cd1356d7d8178ba70f3246493648ec9f646ce9eb00a96e9",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.max": [
+            1,
+            6,
+            268,
+            "45b4e6e56a6a22b658cb3c3b0ef19ff11315429ba9c6d113418bf7999483fc06"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1124,
+            "d88b5c64b19c9cb6d8a64d0335cbc0816580b798ffd66afe7c13fa66dbd87180"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            256,
+            "32dcce6f1f0372b9cc321808d374f6107a5e0406f8a92db59db5eaeb1b1fc0c9"
+          ],
+          ".data.test_data": [
+            1,
+            3,
+            32,
+            "4f89652f194dabb6dceb6782d859d74decb8711b31d5a717e9e2594a03c21693"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "399e5053df2918c6777040529c1686851f015096d346018087da111f52cdb40f",
+      "mapping": [
+        [
+          "ans",
+          "cpu_max__ans"
+        ],
+        [
+          "check",
+          "cpu_max__check"
+        ],
+        [
+          "main",
+          "cpu_max__main"
+        ],
+        [
+          "max",
+          "cpu_max__max"
+        ],
+        [
+          "test_data",
+          "cpu_max__test_data"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:mersenne",
+      "symbol": "cpu_mersenne__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/mersenne.o",
+      "original_sha256": "a315bff4a54ea093c3ce0d5ccf3435676e5d9436e19e05f60659f8b95aadc60c",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_mersenne.o",
+      "namespaced_sha256": "946381952f09ea822793b48eab387d889c86345c32bc7a240a4edcdd041f2ded",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.isPrime": [
+            1,
+            6,
+            1980,
+            "d5dad345756f983d57cf93cc99f6676af070135fb31c66d22d992b479cad40a7"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            2516,
+            "e19aa41e8703f14593f4991550fddcd7d475263781fe99df5b8637c22ee61594"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "9611c02022a9812692ead796ada1bc03e02158b41b0042e82a8dbbb7c69c1927",
+      "mapping": [
+        [
+          "check",
+          "cpu_mersenne__check"
+        ],
+        [
+          "isPrime",
+          "cpu_mersenne__isPrime"
+        ],
+        [
+          "main",
+          "cpu_mersenne__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:min3",
+      "symbol": "cpu_min3__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/min3.o",
+      "original_sha256": "673e6a41e67add2a49046e3509f221ed9f88448cffed3ba061410984203a75f2",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_min3.o",
+      "namespaced_sha256": "5dff4dd53460fb3dba6c69ba848b3ba3283724f4039da278c507d4a2509fc267",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.min3": [
+            1,
+            6,
+            540,
+            "17d62155ecd78f15b7f311dc67e984f5852133882a3936e962bb1c5b45b7da5c"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1700,
+            "b22736ec0b98935dc67c8c46b16ae809da2aa545a31123ce97bf608ef9801ac8"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            256,
+            "1d1212ff3a7b458cf5f8b0dda0f9c374919f9a15e27a306649ec5916ac4a6370"
+          ],
+          ".data.test_data": [
+            1,
+            3,
+            16,
+            "49622d82874aca1224f1e4f2f4ba102ecd41bc7736b3664e492e0ad090e5182e"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "2d28fb7c251797578ae61c4828e3f21cb18fedcfe540a7993e6193b1986f50a2",
+      "mapping": [
+        [
+          "ans",
+          "cpu_min3__ans"
+        ],
+        [
+          "check",
+          "cpu_min3__check"
+        ],
+        [
+          "main",
+          "cpu_min3__main"
+        ],
+        [
+          "min3",
+          "cpu_min3__min3"
+        ],
+        [
+          "test_data",
+          "cpu_min3__test_data"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:mov-c",
+      "symbol": "cpu_mov_c__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/mov-c.o",
+      "original_sha256": "1db13479d764fb21bca75c338a99352c44a3b8de2d18d4da9b9c97ab9fcd6938",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_mov_c.o",
+      "namespaced_sha256": "ffd3112744e4c5317de8617a7109d81858780d7b338c8c6e38c7b275a631d9d0",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            916,
+            "9724a5f1d96f342fe1c84f51b6cc6a8048eb959632c4483eccecadf98f595e5f"
+          ],
+          ".bss.A": [
+            8,
+            3,
+            40,
+            null
+          ],
+          ".sbss.b": [
+            8,
+            3,
+            4,
+            null
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "3f3c3b7053a70fcce7c2800e7d38a80489f4ed225ed5c32a6a0865a1612dd761",
+      "mapping": [
+        [
+          "A",
+          "cpu_mov_c__A"
+        ],
+        [
+          "b",
+          "cpu_mov_c__b"
+        ],
+        [
+          "check",
+          "cpu_mov_c__check"
+        ],
+        [
+          "main",
+          "cpu_mov_c__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:movsx",
+      "symbol": "cpu_movsx__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/movsx.o",
+      "original_sha256": "051779d974659e4384df469d103c40d732cb8fe4431c66ef3678259875782570",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_movsx.o",
+      "namespaced_sha256": "575621641c114665c31c0d616cd11b18710f13bb8432123f27f31a2d1b9d149f",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1704,
+            "913b1e12f0da16240d7472933dc3bbefe7ad14999721a0c0bdd08857bdb289cd"
+          ],
+          ".bss.A": [
+            8,
+            3,
+            40,
+            null
+          ],
+          ".bss.C": [
+            8,
+            3,
+            10,
+            null
+          ],
+          ".sbss.b": [
+            8,
+            3,
+            4,
+            null
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "df4692b3767a82b3145a98649273fb00eecb49973a0bb7cfdf4b2094feca1402",
+      "mapping": [
+        [
+          "A",
+          "cpu_movsx__A"
+        ],
+        [
+          "C",
+          "cpu_movsx__C"
+        ],
+        [
+          "b",
+          "cpu_movsx__b"
+        ],
+        [
+          "check",
+          "cpu_movsx__check"
+        ],
+        [
+          "main",
+          "cpu_movsx__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:mul-longlong",
+      "symbol": "cpu_mul_longlong__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/mul-longlong.o",
+      "original_sha256": "b08764cf1cf3cd68f60a1f07047107523def6868bec94c4d4a92363e7afb69c4",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_mul_longlong.o",
+      "namespaced_sha256": "4695a2ef9011b5b65db9f6b16d2ab8bd815f900a8b7b6a0ec1fbcd1608210af7",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.mul": [
+            1,
+            6,
+            32,
+            "65d01fecddf2c3a28986d10887b1ae38c304dbdba4e4bfc20fbee11166668c9c"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            2248,
+            "06fd75c8219f7ccb5dd0457c48d55df3968e0b9d944e57a8a36562178431083d"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            80,
+            "4814a0cc40f342d15c08f7109908030ced20177e7b4e31bb0270c61021eb977b"
+          ],
+          ".data.test_data": [
+            1,
+            3,
+            16,
+            "bf101516d85051d5489c9c9863611cd85d02f0ca5b4a8484cd3a6d5e5dfd9815"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "31276e994fa2d2554d663343c5801463cafbd168e740a315a547a9255201a8dc",
+      "mapping": [
+        [
+          "ans",
+          "cpu_mul_longlong__ans"
+        ],
+        [
+          "check",
+          "cpu_mul_longlong__check"
+        ],
+        [
+          "main",
+          "cpu_mul_longlong__main"
+        ],
+        [
+          "mul",
+          "cpu_mul_longlong__mul"
+        ],
+        [
+          "test_data",
+          "cpu_mul_longlong__test_data"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:narcissistic",
+      "symbol": "cpu_narcissistic__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/narcissistic.o",
+      "original_sha256": "074366f8fa495b26b74f49518eea3a4d65bc7fbce5700f7935975a16a1ccc847",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_narcissistic.o",
+      "namespaced_sha256": "bf677ba40fd78f8b379cb09af2d777f6454b2b8b90df5c928b26f67a1ee6f9b7",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.cube": [
+            1,
+            6,
+            64,
+            "50d3fefb0d67c19305edeeff25fedd9465a6b4205ca9e89c6ab329af36f25798"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1376,
+            "c1b2471d7fd9562ffb5e2d96ae482697a478d13047f57e42f0d33e5128577b29"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            16,
+            "4d95873fa11891d73a8384aee7503adf0a03add13e654365b66b932517925ec6"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "a949635c3d51ecbd9a00b095694739f541880b4985e14098329a40d8b8434805",
+      "mapping": [
+        [
+          "ans",
+          "cpu_narcissistic__ans"
+        ],
+        [
+          "check",
+          "cpu_narcissistic__check"
+        ],
+        [
+          "cube",
+          "cpu_narcissistic__cube"
+        ],
+        [
+          "main",
+          "cpu_narcissistic__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:pascal",
+      "symbol": "cpu_pascal__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/pascal.o",
+      "original_sha256": "94ff2fbd0df37d5b289aa93fd9993163574e252938bfb67c3db35aec84e238a9",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_pascal.o",
+      "namespaced_sha256": "1b824117122c7be376f4c4d33d31926e4862df14f28cf85246af5ec057c8d5f1",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1120,
+            "5f918d3a8810149dbee962bb15d9bb9fb28d7b8829b6b88bc4d01c0e276a9794"
+          ],
+          ".bss.a": [
+            8,
+            3,
+            124,
+            null
+          ],
+          ".data.ans": [
+            1,
+            3,
+            124,
+            "68ad1e09f438027b645a9c84169d4aadccabc408e5f4f26d70c2654be8360927"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "4f67ad461399435940383d0c32fa281947e3478f964d999ebc6dc7651912d76e",
+      "mapping": [
+        [
+          "a",
+          "cpu_pascal__a"
+        ],
+        [
+          "ans",
+          "cpu_pascal__ans"
+        ],
+        [
+          "check",
+          "cpu_pascal__check"
+        ],
+        [
+          "main",
+          "cpu_pascal__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:prime",
+      "symbol": "cpu_prime__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/prime.o",
+      "original_sha256": "5ed7c9874eb613e305eb2cabe9970940569be1a39690beb424beb06eeb7fa0d8",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_prime.o",
+      "namespaced_sha256": "55ca215dc253e49ed05750f53fc2089817bae41cd67a681c971990c918a6022f",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1044,
+            "3aa80496abacc4d445ae229191b9648f3be82eb5c474ef991cd2cf1791816676"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            40,
+            "cc690f6c70c5deee35d9e3104b97a184a7ac2aeee3c49659e9ae69d51b7564f2"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "038bf0b115d3dc434da24e9df85cb2ed14714e6ad30e80516353eb5fda09b476",
+      "mapping": [
+        [
+          "ans",
+          "cpu_prime__ans"
+        ],
+        [
+          "check",
+          "cpu_prime__check"
+        ],
+        [
+          "main",
+          "cpu_prime__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:quick-sort",
+      "symbol": "cpu_quick_sort__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/quick-sort.o",
+      "original_sha256": "4689f0750e2e4c7cd41a86ed4c6caac067434a8f8ca34e4ccaf53d762291163a",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_quick_sort.o",
+      "namespaced_sha256": "693ca7f96530b836b23422de173714dc7dacb59e241a671f766b12c35de47462",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.partition": [
+            1,
+            6,
+            2012,
+            "46f7e27d15cf73cbd7663c2f8bdaeec2b207297c6ca4439e66d00aa3795e88c2"
+          ],
+          ".text.quick_sort": [
+            1,
+            6,
+            5272,
+            "b0a24947723e817726a18b653a7154fb06125aeb01fb642401cd4e39a6fff94b"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1056,
+            "98fadf7243e9338e765bcdfeb841db216be74c3051319d126cc13333b574f875"
+          ],
+          ".data.a": [
+            1,
+            3,
+            80,
+            "4ee884f7e614c55426c223fc56764fc696b433beb14b26acb50c17f153f5f4bb"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "5f508d371554d770324282cafad7bf27efc7b1346fd85103b0d74b3c143e5180",
+      "mapping": [
+        [
+          "a",
+          "cpu_quick_sort__a"
+        ],
+        [
+          "check",
+          "cpu_quick_sort__check"
+        ],
+        [
+          "main",
+          "cpu_quick_sort__main"
+        ],
+        [
+          "partition",
+          "cpu_quick_sort__partition"
+        ],
+        [
+          "quick_sort",
+          "cpu_quick_sort__quick_sort"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:recursion",
+      "symbol": "cpu_recursion__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/recursion.o",
+      "original_sha256": "91527a6a61c0669fae32485260bd59c21a8feee76abc94c0c00b0ae01923ccd1",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_recursion.o",
+      "namespaced_sha256": "a73e47e071ee1336e333bd32808396f6b36bf41a7bdc4f2fabc0b1725d992bf4",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.f0": [
+            1,
+            6,
+            480,
+            "ee5457fb520dc43239119b1e58d6391e32f37754db0d1b4faf20d9b6adff5c59"
+          ],
+          ".text.f1": [
+            1,
+            6,
+            436,
+            "9be5178109701ad94ff2549d615b6fc595521b39c05b2aa50b22b720c74daea7"
+          ],
+          ".text.f2": [
+            1,
+            6,
+            464,
+            "de3f8c7b4cb30f7242a1cc674414d52712f217ca97cdcd8a9d0a38123707ab0e"
+          ],
+          ".text.f3": [
+            1,
+            6,
+            708,
+            "ac36567f57b2ac9e77f4961535b42389c563a92112786ba2c029205d361bbc83"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            716,
+            "eaec1ff3489cfdd33bc7c3fde1426fc6721fa315749d18ccff9301c112f0cd43"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            12,
+            "d584dbb0b9b5e536d08f48a2f2ff5b4c5767dd2ce891bf711f6e025ecd10a11a"
+          ],
+          ".data.func": [
+            1,
+            3,
+            16,
+            "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+          ],
+          ".sbss.lvl": [
+            8,
+            3,
+            4,
+            null
+          ],
+          ".sbss.rec": [
+            8,
+            3,
+            4,
+            null
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "0b2094bc04d344e09be4f25cefefa5d28251a2d9ef2da707bc778870331e5e5b",
+      "mapping": [
+        [
+          "ans",
+          "cpu_recursion__ans"
+        ],
+        [
+          "check",
+          "cpu_recursion__check"
+        ],
+        [
+          "f0",
+          "cpu_recursion__f0"
+        ],
+        [
+          "f1",
+          "cpu_recursion__f1"
+        ],
+        [
+          "f2",
+          "cpu_recursion__f2"
+        ],
+        [
+          "f3",
+          "cpu_recursion__f3"
+        ],
+        [
+          "func",
+          "cpu_recursion__func"
+        ],
+        [
+          "lvl",
+          "cpu_recursion__lvl"
+        ],
+        [
+          "main",
+          "cpu_recursion__main"
+        ],
+        [
+          "rec",
+          "cpu_recursion__rec"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:select-sort",
+      "symbol": "cpu_select_sort__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/select-sort.o",
+      "original_sha256": "b185c7819b190fd1821a7b95dff1bcf690d4d30d1a44102f383d2e8a55d4b153",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_select_sort.o",
+      "namespaced_sha256": "ad0cd0a75cdd6ee60ff9908caa236a00e01785e2412082071240cfe43fabf5d1",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.select_sort": [
+            1,
+            6,
+            848,
+            "a5575c74482b212461432b2df614f0e9b633588dc7215e5ccd85c712cf836fff"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1028,
+            "82dded0c44af14645c38b58f65fd4c9715d944482e8cce97f2de956b1754a63b"
+          ],
+          ".data.a": [
+            1,
+            3,
+            80,
+            "4ee884f7e614c55426c223fc56764fc696b433beb14b26acb50c17f153f5f4bb"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "f9e8e0cb883259a7ddb5416832b8d7810d969a8d4cbba44a057e795e0584e94b",
+      "mapping": [
+        [
+          "a",
+          "cpu_select_sort__a"
+        ],
+        [
+          "check",
+          "cpu_select_sort__check"
+        ],
+        [
+          "main",
+          "cpu_select_sort__main"
+        ],
+        [
+          "select_sort",
+          "cpu_select_sort__select_sort"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:shift",
+      "symbol": "cpu_shift__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/shift.o",
+      "original_sha256": "8a589f97adb5bbae7e5137a4be28af88a6c6ae8627a0046744885aaa5329f882",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_shift.o",
+      "namespaced_sha256": "c8a9cc9eb1adab903487e787ef8535e64adc0c68b2d4ecd4b11810a66fd36ee5",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            2116,
+            "dfa3bb1ac366249df7dd261e639261ffccd12ea11d72e5542d712bc465e3bde3"
+          ],
+          ".data.srav_ans": [
+            1,
+            3,
+            32,
+            "4fa169bb7cf5e1e864f5daabc7e0eb3771616ff1591d5dacf28b78e987ba57d4"
+          ],
+          ".data.srl_ans": [
+            1,
+            3,
+            32,
+            "e77e324aee660e4aa6c316706cddf3ee2c424ef4c9f41a4c76b70fa9e62694d8"
+          ],
+          ".data.srlv_ans": [
+            1,
+            3,
+            32,
+            "00301faf1ac24f5c69e2c25801bf51e6f4bb7437fae38b3a416621e3f143282e"
+          ],
+          ".data.test": [
+            1,
+            3,
+            32,
+            "da61887d60c6e969688e8703762f76e6d55154b63a70c8f57ff08efc13d917e1"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "2fdeff34c91924d68408437757dcc398b3c37fbf2203aaa8ea3d24f9c09dd246",
+      "mapping": [
+        [
+          "check",
+          "cpu_shift__check"
+        ],
+        [
+          "main",
+          "cpu_shift__main"
+        ],
+        [
+          "srav_ans",
+          "cpu_shift__srav_ans"
+        ],
+        [
+          "srl_ans",
+          "cpu_shift__srl_ans"
+        ],
+        [
+          "srlv_ans",
+          "cpu_shift__srlv_ans"
+        ],
+        [
+          "test",
+          "cpu_shift__test"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:string",
+      "symbol": "cpu_string__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/string.o",
+      "original_sha256": "74ebfcd185c920f24cd74706a3fcc84226439b5002f79de213667b696d743b53",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_string.o",
+      "namespaced_sha256": "4103b12e6c79b1bdd55e8885fbcc348248f2fc9c024a3d94fb0038af9930bafb",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1324,
+            "0c82afcfa937cc13527c6d3fe8cca53cc22cf2a01725f4bc6e9f6d39e3572746"
+          ],
+          ".rodata.str1.4": [
+            1,
+            50,
+            114,
+            "e3464b34318c081b9acda2aabff88c321f2e4d5309984888663b35ee119c18fc"
+          ],
+          ".bss.str": [
+            8,
+            3,
+            20,
+            null
+          ],
+          ".data.s": [
+            1,
+            3,
+            24,
+            "9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0"
+          ],
+          ".sdata.str1": [
+            1,
+            3,
+            6,
+            "d9d3734cd05564a131946ecf9e240e0319ca2f5ba321bd9f87d634a24a29ef4d"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "6e01b7f83ca29dbd35fb5a5e50d0aa90713ccb3d4570586b93353f99597c1a16",
+      "mapping": [
+        [
+          "check",
+          "cpu_string__check"
+        ],
+        [
+          "main",
+          "cpu_string__main"
+        ],
+        [
+          "s",
+          "cpu_string__s"
+        ],
+        [
+          "str",
+          "cpu_string__str"
+        ],
+        [
+          "str1",
+          "cpu_string__str1"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:sub-longlong",
+      "symbol": "cpu_sub_longlong__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/sub-longlong.o",
+      "original_sha256": "50fff6f30f63ff33dce0a61ed3074c5d2c614fbe6a3c9e968c5e6f0fd031ddee",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_sub_longlong.o",
+      "namespaced_sha256": "81b228dc807ae20a820178d00ffe2557e444df1fbaea7fa8d8f5cd7d9c3ec3b9",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.sub": [
+            1,
+            6,
+            512,
+            "f07ace4c8548cc4882fb42504a6f2e13799c9e55d8288d120f0162eb68c55902"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1720,
+            "f70f7ef163dc918b43a024b231d48baf9ebde9877ded0679490a257484543816"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            512,
+            "e827bd19e8d243c8cd73155f2959537b5c7421a175d6604f50a986ad9c57dd14"
+          ],
+          ".data.test_data": [
+            1,
+            3,
+            64,
+            "fb841d2206f8d737b9a17a23500015744d32e9cd305a72dfb8f56ef7fec8b765"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "fb6600bb6ac206f4f7d1144e35f97ca5984c54d3067c71cab2ed193a2f6fb4df",
+      "mapping": [
+        [
+          "ans",
+          "cpu_sub_longlong__ans"
+        ],
+        [
+          "check",
+          "cpu_sub_longlong__check"
+        ],
+        [
+          "main",
+          "cpu_sub_longlong__main"
+        ],
+        [
+          "sub",
+          "cpu_sub_longlong__sub"
+        ],
+        [
+          "test_data",
+          "cpu_sub_longlong__test_data"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:sum",
+      "symbol": "cpu_sum__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/sum.o",
+      "original_sha256": "8257033addcddf7f9eeeb738c539dbc65cbcb8822640e27d12299f51976a4386",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_sum.o",
+      "namespaced_sha256": "5adabed29d0d59523d5f3b0991b0b15a18d551ffa29fd43048f8c0565ff5d0d0",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            408,
+            "8a40147cc62b5a0e324e17fa20f561d1ccb5dd32036061b2a0c6483c35750be6"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "149d5a58a13badae1c3473b40417b541e9bbb7f6f761f7dbfb707d3dbe2f1057",
+      "mapping": [
+        [
+          "check",
+          "cpu_sum__check"
+        ],
+        [
+          "main",
+          "cpu_sum__main"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:switch",
+      "symbol": "cpu_switch__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/switch.o",
+      "original_sha256": "a3a38b624bdf3d3caabb5e64a85bca08393af5b2c4eff6fc2b258f72c036df8a",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_switch.o",
+      "namespaced_sha256": "f0b76dc9302eddea4896573217270f07e08212f32f99b21b14974e013071f034",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.switch_case": [
+            1,
+            6,
+            300,
+            "511ae9b4d8d48c1b237f33e154a8362153f75e0982020952b21c156adbabe6f3"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            800,
+            "f293070ce0f7703828c0b384b84e5f95bed8c1dae00f8afd81061629b728f87e"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            60,
+            "59f39df1faf38204b8f803d0d8315fb3fabeeb95d33ccc6bdf5d82a0f60086c4"
+          ],
+          ".rodata.CSWTCH.2": [
+            1,
+            2,
+            52,
+            "98b689b91dd3a982744a1d30420869f165028074ae07ae3ca3cfd5057e28d2c9"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "b0035c32cd7068a2ac0bff6bacf72decb21dc453417cf453e57d0341ab822277",
+      "mapping": [
+        [
+          "ans",
+          "cpu_switch__ans"
+        ],
+        [
+          "check",
+          "cpu_switch__check"
+        ],
+        [
+          "main",
+          "cpu_switch__main"
+        ],
+        [
+          "switch_case",
+          "cpu_switch__switch_case"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:to-lower-case",
+      "symbol": "cpu_to_lower_case__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/to-lower-case.o",
+      "original_sha256": "d28ad4d9684670dcd7eab80df221de2779f0b981b1f07c27d3792c0fa675ac8c",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_to_lower_case.o",
+      "namespaced_sha256": "b8e554b1e67ea1397de8dde9d1c0bd8a3baa0f847865618194c34b8c9589c628",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.to_lower_case": [
+            1,
+            6,
+            588,
+            "806373a1026f4b126e28821222a583de87e9ee49994caa80a533891d67edcb3d"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1260,
+            "b6c4a1b0dbaa32275440e7a62ea063c913a2d5a5c7b8bed5b9405b5320953511"
+          ],
+          ".data.ans": [
+            1,
+            3,
+            128,
+            "fc5b9b2c32b0ecc0354c66f03e60790599a8fbae3511b2b60b2c0f7f27b6ceae"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "fa980614087f0d2d6b2783efd5d192f26ad509b17a7ac87a18bd457af14763c7",
+      "mapping": [
+        [
+          "ans",
+          "cpu_to_lower_case__ans"
+        ],
+        [
+          "check",
+          "cpu_to_lower_case__check"
+        ],
+        [
+          "main",
+          "cpu_to_lower_case__main"
+        ],
+        [
+          "to_lower_case",
+          "cpu_to_lower_case__to_lower_case"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:unalign",
+      "symbol": "cpu_unalign__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/unalign.o",
+      "original_sha256": "4a32ec1f04ddfa09da0f4d60ee3c43c40587ef664aac1eaad95376c58319f429",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_unalign.o",
+      "namespaced_sha256": "627ebaabf367b4cff36b3fe0f95337097998ced29782ff0c6bcbd6ff6b29c7d6",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            960,
+            "da14b4575fcf233ad1af94a8a7f044fd03f4b188bd70e597b04cd5d9f0deea8d"
+          ],
+          ".bss.buf": [
+            8,
+            3,
+            16,
+            null
+          ],
+          ".sdata.x": [
+            1,
+            3,
+            4,
+            "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "8c20654ec26f6c3c04ae12fc1ec8a2b1eb62b954c21f7a7aa170eafa5943a771",
+      "mapping": [
+        [
+          "buf",
+          "cpu_unalign__buf"
+        ],
+        [
+          "check",
+          "cpu_unalign__check"
+        ],
+        [
+          "main",
+          "cpu_unalign__main"
+        ],
+        [
+          "x",
+          "cpu_unalign__x"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:wanshu",
+      "symbol": "cpu_wanshu__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/wanshu.o",
+      "original_sha256": "71ea6935ccedc1b00adf0822737b9c63192c59f6632c9cdf7d30c3d67046d949",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_wanshu.o",
+      "namespaced_sha256": "59990085fe49fd9271434eec165c162e3b975e42f54e9cfc480741b919e495f2",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.check": [
+            1,
+            6,
+            168,
+            "23a36a96bfb5a38fe93c8cbaf3ff2528de1b2ef3873aa8a0037fd78190101890"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            1588,
+            "4b59dc0216a7698be0e9c8bc0a5da9e25a86eb7f7c9d15513e93222715190cf6"
+          ],
+          ".sdata.ans": [
+            1,
+            3,
+            8,
+            "e0c7c9f41dd5b4f6c71dca849059260a7f2a84e01d24bf07287441718dbebc91"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "3a26197d31c6e9d26146bed755b48060d62e493836ed35a75eff17d21dfd4867",
+      "mapping": [
+        [
+          "ans",
+          "cpu_wanshu__ans"
+        ],
+        [
+          "check",
+          "cpu_wanshu__check"
+        ],
+        [
+          "main",
+          "cpu_wanshu__main"
+        ]
+      ]
+    },
+    {
+      "id": "isa:add",
+      "symbol": "isa_add__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/add.o",
+      "original_sha256": "18397c691027ee48902d64f32900470fd31bb7115c7b5c5a21514953c56a2c68",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_add.o",
+      "namespaced_sha256": "00009087ec56bb750fce96ad7d5aa023f917d1c13fe8e5f6bca212c5f1b93ea2",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            13248,
+            "eb6c426e9b11c4624cf14452dd75b3dcd96ab35c5459d194718a9c29bf5ae6e6"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "fad9e33eb46983e52e6bef74cf5201c452abf9fb2eaca1615204fbc51b747b19",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_add__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_add__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_add__fromhost"
+        ],
+        [
+          "main",
+          "isa_add__main"
+        ],
+        [
+          "tohost",
+          "isa_add__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:addi",
+      "symbol": "isa_addi__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/addi.o",
+      "original_sha256": "00ef3255f1b6c4fa14d4e4da097835ef5505f28be02f8801937c6d0d3892080d",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_addi.o",
+      "namespaced_sha256": "0b7a72249806b604a0178ad28a7ae197460b29949afee7a05f62f94e232893b1",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            7680,
+            "bf6e05de6c56e9009474784d6dc417df4995a823c9d796e433635feea811ddd4"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "a7538ee88ee0b5f45610a8545ac8fbec44f8e335ad4c1d66d79106b3b8063752",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_addi__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_addi__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_addi__fromhost"
+        ],
+        [
+          "main",
+          "isa_addi__main"
+        ],
+        [
+          "tohost",
+          "isa_addi__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:and",
+      "symbol": "isa_and__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/and.o",
+      "original_sha256": "f1ef644c8760efe45eda415f4e9471f159fe0a6bd930803324fa339a0f415b5d",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_and.o",
+      "namespaced_sha256": "e4ec5265be577eb792e7a9478aefa0324d6d4bc96789191fc5d715e30f184055",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            14400,
+            "bbd406703e20fdb6e90dfa6450c103613ad01a4ab10dbaba605c551e42187c09"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "836a0cdb4500093984c89d24c9bd897db65c29ae24d11ed2fbaa723066053f61",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_and__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_and__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_and__fromhost"
+        ],
+        [
+          "main",
+          "isa_and__main"
+        ],
+        [
+          "tohost",
+          "isa_and__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:andi",
+      "symbol": "isa_andi__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/andi.o",
+      "original_sha256": "1960637e837cc29b929665f4cc278a309f565df15528d896d915bbc3f1c74ebf",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_andi.o",
+      "namespaced_sha256": "30ac32b52cddd0695a02d5aaaf2db08463b13606d8c339656be080c36584b92a",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            6784,
+            "090d07708e1fc6d13188d9e4a96831a07e3b6193a12548d3400039bcb0e9d700"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "215935a4159b01e150af79db49a14ac82a5287d2f600d21c4eb64e639c05d6ca",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_andi__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_andi__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_andi__fromhost"
+        ],
+        [
+          "main",
+          "isa_andi__main"
+        ],
+        [
+          "tohost",
+          "isa_andi__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:auipc",
+      "symbol": "isa_auipc__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/auipc.o",
+      "original_sha256": "edadf58e4ec9c94a2d8ced6cde591ad55b4c6827a12a3775e906c3df736e34a2",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_auipc.o",
+      "namespaced_sha256": "e36fc2e41ec2270186d7dd059b8d575788a7d4b4965f8957cd2cf21a6b65c508",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            1024,
+            "e9d18b74af00c0360f0555a0a9b3259b01d40fdbe04dac1f095676a995cd6c7f"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "0fdd5df46e151b53281d7d63280f9238693450f978ced7edca256d09eb33d015",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_auipc__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_auipc__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_auipc__fromhost"
+        ],
+        [
+          "main",
+          "isa_auipc__main"
+        ],
+        [
+          "tohost",
+          "isa_auipc__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:beq",
+      "symbol": "isa_beq__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/beq.o",
+      "original_sha256": "7d8de1c37caa92c2a083cb7525c1014f2a4b1cfcac25f5ba5383a432d63d3756",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_beq.o",
+      "namespaced_sha256": "fc7c26b03660be5971cdfa4de97a5ed1b6d89dee5af37801215aae028bfc214f",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            12288,
+            "e0e888e1b3dbe722b0c22375e704fa018fc9c3c94da026b61a1263c4835d0b21"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "1907842f07f2227cd8e858c50fcb17bb22ed45b08016efe5872d2a736cfb526e",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_beq__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_beq__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_beq__fromhost"
+        ],
+        [
+          "main",
+          "isa_beq__main"
+        ],
+        [
+          "tohost",
+          "isa_beq__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:bge",
+      "symbol": "isa_bge__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/bge.o",
+      "original_sha256": "ac84a2d270465cc12f0f6ff719d7cca1b228d90c760cee745662ac78e887a33a",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_bge.o",
+      "namespaced_sha256": "c37e5b2cbe6b967afa7ef55157b839076f5e2e27167f093120f4e46ad64fc77c",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            16000,
+            "c4fcf5616d6c8817c2b1ed0f869ed2489940be83d8ea19c55f94f22973d7f17f"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "2817407a480f492ce03e9303949c66fbcc214156a73a3434dab54cdcf4dee082",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_bge__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_bge__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_bge__fromhost"
+        ],
+        [
+          "main",
+          "isa_bge__main"
+        ],
+        [
+          "tohost",
+          "isa_bge__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:bgeu",
+      "symbol": "isa_bgeu__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/bgeu.o",
+      "original_sha256": "7009c373e16fac2361aa3df200d3c3eb6a44ffd11bcc469a48cc4cbdd5e293f6",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_bgeu.o",
+      "namespaced_sha256": "159c463a422a125133d2797a29baa8984a874116723a770fcd1c15dd1b622aa8",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            16064,
+            "428544e8f45030b590a2f0aa82891ef0148f2c597b05419ec1ec0f64f6e758df"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "99689d1b0144940ce81de0249aba21c9157591d5e7c99198244ff470f517db69",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_bgeu__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_bgeu__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_bgeu__fromhost"
+        ],
+        [
+          "main",
+          "isa_bgeu__main"
+        ],
+        [
+          "tohost",
+          "isa_bgeu__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:blt",
+      "symbol": "isa_blt__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/blt.o",
+      "original_sha256": "2786d233ceba22ea27b4c811dabfbea2717a8395662122b453425a7e11eb7215",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_blt.o",
+      "namespaced_sha256": "1f1766c84f589e7f2bd6ff20483854cce6342bb6b96c0285c324308f73c2f83a",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            12992,
+            "d102764872b0920a913f3ef0e1676a4c82f1defe72cd757cfd77a459c81c78ff"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "78c94640ab50efa21e45dd2a18a55d3c93f418adffebbea420de90b99b1ede25",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_blt__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_blt__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_blt__fromhost"
+        ],
+        [
+          "main",
+          "isa_blt__main"
+        ],
+        [
+          "tohost",
+          "isa_blt__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:bltu",
+      "symbol": "isa_bltu__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/bltu.o",
+      "original_sha256": "8b64d94e622d4e886de6d09292ebf51f39401a4b29b6c2fa6a397f7d7c973f0d",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_bltu.o",
+      "namespaced_sha256": "eb066adbad0d4f94849dd4f6cd020015d5bc0cfcc3a824a4f6da3d48e8716abd",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            13184,
+            "d47758d24578622230530b716c64ea76876b1cfa540934e1f4bb64016b49e58e"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "8b483c7e700be81c785ce2fa86c7ade4bf469211485198e9288fc59cc93cd19e",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_bltu__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_bltu__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_bltu__fromhost"
+        ],
+        [
+          "main",
+          "isa_bltu__main"
+        ],
+        [
+          "tohost",
+          "isa_bltu__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:bne",
+      "symbol": "isa_bne__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/bne.o",
+      "original_sha256": "56da9d53659baf2ae5c0677012b12e11bd8470a6b5c435d41cb8232b5b32f4fa",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_bne.o",
+      "namespaced_sha256": "94a17cf3cb039ec7beecc0226bab31736d8e723e55b04bf43eb68cd1df9444c5",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            12416,
+            "7f17d9b372b0ebf7ac0b0887f6a0dcf772d74cca5b43d1de193f7c0769247d77"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "54135699d14458cb21de6c59bee88dccaa3e1a55c7162f00654a6d0f20e2644d",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_bne__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_bne__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_bne__fromhost"
+        ],
+        [
+          "main",
+          "isa_bne__main"
+        ],
+        [
+          "tohost",
+          "isa_bne__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:jal",
+      "symbol": "isa_jal__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/jal.o",
+      "original_sha256": "a358d072b3d566e137b3765546c019c83b010b48309e5f5dfb6e8401d060fa78",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_jal.o",
+      "namespaced_sha256": "fb022a713274afa3ddc55121e1f0db6f6862addeca9b86dfdae8c1ae85d6af97",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            832,
+            "f8a934ba2932329b936337d04fbc6fbd8efaa7f0b51a93b046d8d464ed689833"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "a80de14dff845a33cf00461f4540f6d79dfdb1e8542a2327b9438bd575423f6b",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_jal__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_jal__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_jal__fromhost"
+        ],
+        [
+          "main",
+          "isa_jal__main"
+        ],
+        [
+          "tohost",
+          "isa_jal__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:jalr",
+      "symbol": "isa_jalr__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/jalr.o",
+      "original_sha256": "2ed863d69867e47e885c168840b7731da5ade28037fdf2507f1b80688c0cf9d6",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_jalr.o",
+      "namespaced_sha256": "be11bb10143dcc083b1ace2d630c3a650934d103ceb81502137d0fa634535ada",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            2304,
+            "ef518665774b591c5e7df1b0e8699293192f9f746c796b5e50b7890a316fdc01"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "aae5ad16430983ea7ccd001111b7032fd11fa1c31c4387426a49b92009cc9498",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_jalr__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_jalr__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_jalr__fromhost"
+        ],
+        [
+          "main",
+          "isa_jalr__main"
+        ],
+        [
+          "tohost",
+          "isa_jalr__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:lb",
+      "symbol": "isa_lb__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lb.o",
+      "original_sha256": "24b673c87e2238c171afd5d46431d35f9eb2bb4a2a57323d01d4f4ac3b9d9cec",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_lb.o",
+      "namespaced_sha256": "a024bcab1628b0e62b8d0a80601a76768720b207fea5af05029cc33acde723db",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            272,
+            "ad6b35a5045c53fbd9d3d51c9582263d6aa5a4b742cb85f7df37feef0feb6742"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            7168,
+            "3ca0c90cd498e4fecf4833c32d365a5eb674e74afbb3646e8bc2cacb1b6d618f"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "d3379f7bf939ac39ecc9d26cb1da08e155beb35430d45bba84f78e9db03956b8",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_lb__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_lb__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_lb__fromhost"
+        ],
+        [
+          "main",
+          "isa_lb__main"
+        ],
+        [
+          "tohost",
+          "isa_lb__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:lbu",
+      "symbol": "isa_lbu__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lbu.o",
+      "original_sha256": "7e19cc04356ce5f4bff754a6e888236a185d4ea3524e49904610d131887f295f",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_lbu.o",
+      "namespaced_sha256": "77e75be47fa3162b105c9849a1aa8b27d0dae8bd88366f77cd229855c31faf66",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            272,
+            "ad6b35a5045c53fbd9d3d51c9582263d6aa5a4b742cb85f7df37feef0feb6742"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            6336,
+            "7b27c076f863981d7682376e6b883cffce4d6e26bc144798f4f4e08148eec118"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "0937cf51e08f1b8ab160dd9ca533a479c6fea308ca519b3737e4cd9dafafb68f",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_lbu__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_lbu__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_lbu__fromhost"
+        ],
+        [
+          "main",
+          "isa_lbu__main"
+        ],
+        [
+          "tohost",
+          "isa_lbu__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:lh",
+      "symbol": "isa_lh__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lh.o",
+      "original_sha256": "34fb59c49b259fc409452ea5ddec9d3247d69fed275917639c222d4431ea1499",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_lh.o",
+      "namespaced_sha256": "96c82d1bd4278edeaa0e858054e30eb478b501fae55634fdddd6cd517d085c1d",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            272,
+            "cd573523add68d43add22becac44b0c2cdaa102c55dce4fcfe8c0f6a30cf8df6"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            9984,
+            "e9b9b8d92d29d54612303f3ecaeb59a972213e6f531086181de64ef993c744f9"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "42e53f0b198be06f3799dac241d71eb8ccd5363dbb3294bc5c9ac30757973df6",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_lh__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_lh__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_lh__fromhost"
+        ],
+        [
+          "main",
+          "isa_lh__main"
+        ],
+        [
+          "tohost",
+          "isa_lh__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:lhu",
+      "symbol": "isa_lhu__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lhu.o",
+      "original_sha256": "652de3bdd0d8aa95289c64b906ad54d5ddc5844a203d791b028b5d67bce2a2f6",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_lhu.o",
+      "namespaced_sha256": "004655022565b0713f147815fb19d2052c5c4b24c95db4ca3a9597cacb80b9f0",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            272,
+            "cd573523add68d43add22becac44b0c2cdaa102c55dce4fcfe8c0f6a30cf8df6"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            6784,
+            "baf2cd164a3df1e77c608e9f601e4ccf0a2f16751e4be93eb32bb2d39b427685"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "510c9f4f5d4e5ecbe35a83ba1fc4768e305b18ecba20ba5bc1c88d75a6f8391f",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_lhu__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_lhu__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_lhu__fromhost"
+        ],
+        [
+          "main",
+          "isa_lhu__main"
+        ],
+        [
+          "tohost",
+          "isa_lhu__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:lui",
+      "symbol": "isa_lui__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lui.o",
+      "original_sha256": "8c6b459af9090a0e9d6a6da014dfdf38213e0f58dcb274cf0c9c3f1783bd494e",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_lui.o",
+      "namespaced_sha256": "2986e8d9c3ed00d63f5459fbbf292048ba6e396dd69c9cda7498fd3ba249994d",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            1920,
+            "f4ef9ee172e1ed7c2e12b0b5b35568263815fe33d03e50a59517d5da400eebde"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "2d8d0a8ec7b25eda0b61c74a39c8aa0e7aca866f31ce4b3e2ecacba31b4a46a4",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_lui__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_lui__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_lui__fromhost"
+        ],
+        [
+          "main",
+          "isa_lui__main"
+        ],
+        [
+          "tohost",
+          "isa_lui__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:lw",
+      "symbol": "isa_lw__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/lw.o",
+      "original_sha256": "ae28d8b95a7854f5fbd5d0a0d27fe3ce7b14fa6a65bbda454e9ffc301f749cc3",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_lw.o",
+      "namespaced_sha256": "ff74acdba127fde4c81694974b2ff962126f270c76bd3506d7a8d6c669904e38",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            272,
+            "9beab509247798b25c27b4a22ac189d9fcef1d317ae6a532834a7cf9e65837ea"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            6464,
+            "36b4a19cacb1b782af48b8ac62b6845638e152e4ccf64ff6204604f6aeeb90cb"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "8ce44644b86ec02173b742f74711ec6566ef44105d889e1f89c94c689705ed17",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_lw__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_lw__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_lw__fromhost"
+        ],
+        [
+          "main",
+          "isa_lw__main"
+        ],
+        [
+          "tohost",
+          "isa_lw__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:or",
+      "symbol": "isa_or__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/or.o",
+      "original_sha256": "36c54281837de3e9ba3401f0d6aab2bf313fb74fe07315ffaca1488ef7bae579",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_or.o",
+      "namespaced_sha256": "9b9ba5124bf8b651299af8c8733ac3ca989296894a6c434c86e2819fc1f5bdc2",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            14464,
+            "a011e371c36e4667db1414b09482e6bc0ed9e4800c594d3fe7d62cdc1f38fa10"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "23b40bd082e619b5a89322b6ab689d799fdeae3a2a109de978491e1f6436da83",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_or__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_or__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_or__fromhost"
+        ],
+        [
+          "main",
+          "isa_or__main"
+        ],
+        [
+          "tohost",
+          "isa_or__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:ori",
+      "symbol": "isa_ori__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/ori.o",
+      "original_sha256": "1f4aa941fa80ea1618eab23261c7151f4b4126a1a80716c00d198edb3b490e3f",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_ori.o",
+      "namespaced_sha256": "6739e730e3e90acf9f8b139e8c7b97ac62cd1943a20983496f87f9f55efcfe34",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            6784,
+            "b93a0e065627ea4216b468224b55ee2e84f8d793a722b168a3e8052d533f76ab"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "a1a7c0837fcd230a2adc202ae159935d7f4631ac09e26c71fccf378b20146a02",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_ori__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_ori__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_ori__fromhost"
+        ],
+        [
+          "main",
+          "isa_ori__main"
+        ],
+        [
+          "tohost",
+          "isa_ori__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:sb",
+      "symbol": "isa_sb__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sb.o",
+      "original_sha256": "e55eae075fce26917cf9bc982e6015ecbba32fec0ab86801527693f958c92bca",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_sb.o",
+      "namespaced_sha256": "259504840bcffe4a882477449210bdc014a3495a4215199a7b35c4863a8770be",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            272,
+            "e72f09a7d2280aea46334401520c6bf90064a7da63cb8e72e7f01b7602175cf0"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            10368,
+            "048d0ece8e6faa3dff2b210e1f41d6a8d79b1720f14ac542af39969e939e6af6"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "d056896edc37dd55e7779afe663f47f8882eedccef66d20533de9c39a1c357fc",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_sb__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_sb__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_sb__fromhost"
+        ],
+        [
+          "main",
+          "isa_sb__main"
+        ],
+        [
+          "tohost",
+          "isa_sb__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:sh",
+      "symbol": "isa_sh__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sh.o",
+      "original_sha256": "23c685c0d051590e5954d10a644970a3d2465d5d748eae41e1986e06ccab4e7f",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_sh.o",
+      "namespaced_sha256": "35ca600610088693492a3d2fdbe5e452d51933a5d77517ac2bc4c71337116804",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            288,
+            "65c5501969a5f12a199fc066a746db1d190a2e4494e921ac0c12552e78eb0270"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            13824,
+            "a0662eab2c67b59d3d318345194473fbfda8a535e8c72a25cfa4cd54e26bd69a"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "bf5d6e95218ef57c8e13bc2253cb743d1654b22f981c81866c3cd145e5d5bd57",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_sh__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_sh__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_sh__fromhost"
+        ],
+        [
+          "main",
+          "isa_sh__main"
+        ],
+        [
+          "tohost",
+          "isa_sh__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:simple",
+      "symbol": "isa_simple__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/simple.o",
+      "original_sha256": "43283633f4511167acc2a319c507af7fe2a25386901a619955889028071f1ca2",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_simple.o",
+      "namespaced_sha256": "8c4223ff54bfdce5fed82332f3483b7aeecf699aaee3aff09a02ad6c25c31787",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            128,
+            "b774f7a488a51bdeec5544ee86397afa226f0ec40f88e8f1bb03dfbc8632ad93"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "3451880a532c1b5a3e8fee69f6ca524deff2f0c77a5ca508836d856fe7604f5e",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_simple__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_simple__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_simple__fromhost"
+        ],
+        [
+          "main",
+          "isa_simple__main"
+        ],
+        [
+          "tohost",
+          "isa_simple__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:sll",
+      "symbol": "isa_sll__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sll.o",
+      "original_sha256": "46879a7596452e809e774092a6a163455bfb5899d28075795eb852afec819926",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_sll.o",
+      "namespaced_sha256": "dbad48d362418287a3024d92591dea66d8ec62b49ba37769e466344158951800",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            23296,
+            "44ca4acf66952f8876395cae7c70b846d81b7d2ab90e9f0f9d95b86e90a3cd3f"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "eaf3924fd5ee7e40aab9433be92e2e3170909658bd48e7f48f345fbe72a90423",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_sll__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_sll__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_sll__fromhost"
+        ],
+        [
+          "main",
+          "isa_sll__main"
+        ],
+        [
+          "tohost",
+          "isa_sll__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:slli",
+      "symbol": "isa_slli__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/slli.o",
+      "original_sha256": "86354d453e49ed39b818900acf4309eca32e0b0a2ed7c3691484fa04ddeec6f5",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_slli.o",
+      "namespaced_sha256": "fadbc7f5b0cd09f29fdf7014e9a6a33497ce1be27e51de35d6d5e745c24f2f16",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            8320,
+            "77fbbd51820a9cff87651df3b925ecfbb07058a11256f9487a7bcf23dca743a2"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "3f96df8ebe4abd9860bd6879530a9d486bf757a7eff050450e56d00545ac1aaa",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_slli__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_slli__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_slli__fromhost"
+        ],
+        [
+          "main",
+          "isa_slli__main"
+        ],
+        [
+          "tohost",
+          "isa_slli__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:slt",
+      "symbol": "isa_slt__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/slt.o",
+      "original_sha256": "ab6a4bd8e094f3cf1094a3a0345a5e470fd251ae470844427cc17023208bf552",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_slt.o",
+      "namespaced_sha256": "6af5e8d847d96163197eb0c5885199175868037a01d6aa82a57b7daab8b22175",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            21120,
+            "ca34c56dd82cd0229bd5f6f449860c52fe80e52c1179acdafa71dc22181b80c4"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "45b08404b04cda827976f4df5b02f91d0d7b940979978982c77d3fef8e5c25db",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_slt__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_slt__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_slt__fromhost"
+        ],
+        [
+          "main",
+          "isa_slt__main"
+        ],
+        [
+          "tohost",
+          "isa_slt__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:slti",
+      "symbol": "isa_slti__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/slti.o",
+      "original_sha256": "33a20519aca631bea3e0c7b0505bd273e8954c963073dd238928447990aeeab5",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_slti.o",
+      "namespaced_sha256": "756df884d86892cb8b3cd16fc5f326b5a8a0a5d7fcd39c6d608bd31b5b1049f4",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            12800,
+            "c40eb889ef40123935a1f6667076dfd0257a9f7953fd944370282e58a039c4f2"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "7503e7a0ebad8cc013488966c6356ebb482e915b2a658ece09b3f3f3a779d1d1",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_slti__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_slti__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_slti__fromhost"
+        ],
+        [
+          "main",
+          "isa_slti__main"
+        ],
+        [
+          "tohost",
+          "isa_slti__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:sltiu",
+      "symbol": "isa_sltiu__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sltiu.o",
+      "original_sha256": "d9bd8fdefff69c3025699999facdfdb9e34fefa79c8b73dd190fbe622192560d",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_sltiu.o",
+      "namespaced_sha256": "e058eaf5f70f505e12fe62e43c97fea5177499db90a83e42c73b9be18c1bdf42",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            12800,
+            "1e702ddd26c948c5b7a620bcbba85c4744015463e07e70378e55524ea0c98d76"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "7efd68a9b0d4c88ce55d1a252a8bd9b613f6fc4404a06c42352b71e29c5af210",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_sltiu__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_sltiu__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_sltiu__fromhost"
+        ],
+        [
+          "main",
+          "isa_sltiu__main"
+        ],
+        [
+          "tohost",
+          "isa_sltiu__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:sltu",
+      "symbol": "isa_sltu__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sltu.o",
+      "original_sha256": "c1f11e3e142aaf34cc37b8c6f60ee0c1a08b54cedefed721dfaed3339712e42e",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_sltu.o",
+      "namespaced_sha256": "bbe87a2f160c2a31da666b5247ca4b31c3e3e00e3dd5893acb5882427dee123a",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            21120,
+            "fe9678320b2ff551c524ba6fa4d52c963cf7dc1cca6d35caef041af31d8dd397"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "37a7ba88e22762b18f094f2fad779de36ca4cde65c60ed4f13e34f936b9b4bd6",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_sltu__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_sltu__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_sltu__fromhost"
+        ],
+        [
+          "main",
+          "isa_sltu__main"
+        ],
+        [
+          "tohost",
+          "isa_sltu__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:sra",
+      "symbol": "isa_sra__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sra.o",
+      "original_sha256": "f6ca9e9770354e75af97ac189689e1cfd7f286c5f5a260562bf20e2d8e3c5fe4",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_sra.o",
+      "namespaced_sha256": "7034378019c8a4937e4d5f2e4039eea5a6723c53991cb24a4033c6f1bef79328",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            24000,
+            "2f4dd8aaf6ef8bd85559436bd3a473194c490bd8aa95dcbe92607325ea10e3e6"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "883a1b90455f9ddaf0ae97dd7c84f0322de5274ddbea99a1f28570496df688b0",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_sra__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_sra__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_sra__fromhost"
+        ],
+        [
+          "main",
+          "isa_sra__main"
+        ],
+        [
+          "tohost",
+          "isa_sra__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:srai",
+      "symbol": "isa_srai__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/srai.o",
+      "original_sha256": "77a728b1c5b3dbfc0093f7bf8c2c9ab36c0b629536d0ec27b33d832297a9b694",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_srai.o",
+      "namespaced_sha256": "f017e2335ada8ca94583a14cae13b8ad13b267615d0735b632162ca5d63f1b10",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            11904,
+            "8b76cfe5c7bd6ffe023d21bd7bc0a825d315b6a5ce9b7551d806e616d8f56554"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "53025444c28a675e1780cdbcbf422c7e00d3b572d338e71c49e0a760c2968650",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_srai__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_srai__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_srai__fromhost"
+        ],
+        [
+          "main",
+          "isa_srai__main"
+        ],
+        [
+          "tohost",
+          "isa_srai__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:srl",
+      "symbol": "isa_srl__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/srl.o",
+      "original_sha256": "0935d9288a749e7f4d55fdfc7e165468a59db47f2380ccd9313cd0780a36ed70",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_srl.o",
+      "namespaced_sha256": "4f9911f94ae7cf86426f318a3bdca59c426ebc461b1fa8d673a7a3c51506be27",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            23488,
+            "d4f66e4f6b90d4ebd207f038e5da1cea4d3a797e5824e90ff713dab41c176e41"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "d421cbf384c4a86eadd627a6a6d74cc9fa1c1ea81c003094c3e2c11964536186",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_srl__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_srl__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_srl__fromhost"
+        ],
+        [
+          "main",
+          "isa_srl__main"
+        ],
+        [
+          "tohost",
+          "isa_srl__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:srli",
+      "symbol": "isa_srli__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/srli.o",
+      "original_sha256": "df3913e5fc1c80a7150f1589b90768c42fd147417a08277a208fd3b66df4dc72",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_srli.o",
+      "namespaced_sha256": "74acef5eb42667506e5dd72d605a64145e78eaa733d3656588c477a22cfad0fe",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            11648,
+            "b9579e1db3c05a4c043d2192dc6c50149d8012470b555866654a21c8d7085148"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "241b26c0812a73ac0acd3397fb735b80139d3d5ca512874b26c8ef78e254a0bd",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_srli__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_srli__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_srli__fromhost"
+        ],
+        [
+          "main",
+          "isa_srli__main"
+        ],
+        [
+          "tohost",
+          "isa_srli__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:sub",
+      "symbol": "isa_sub__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sub.o",
+      "original_sha256": "660dd65e63bfe9bb61dda90b9d26fa6bfdf8bc278976c995645010847d7a2253",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_sub.o",
+      "namespaced_sha256": "c5259b01e70411925055293da4f49b0daaf2a0c45df4de088f2a8358d7067059",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            16320,
+            "b882ee843fa39e260b12821088967499739bc7397de2e01db053e6d6d7c28891"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "7f21546daf8aa6f87f28a26e427fee73ff060500395f86264c68ea56fdf8f769",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_sub__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_sub__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_sub__fromhost"
+        ],
+        [
+          "main",
+          "isa_sub__main"
+        ],
+        [
+          "tohost",
+          "isa_sub__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:sw",
+      "symbol": "isa_sw__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/sw.o",
+      "original_sha256": "ae3d9bf3cd835bcf7e1cee0c52266e952442501bf1982406138db5451b4ff1e3",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_sw.o",
+      "namespaced_sha256": "124b786bfa629626bf479991341cfe2b38b36fb55d663e313c9aebba63aebe1a",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            304,
+            "6e5b19a72521cfc596ba9b1221b221d32bf0ce2b7af405ba257fbfeec224d8cf"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            9344,
+            "46bd467458734bf3fb9b2cba32bec837ba9b4b072796888011f36d1d8028643c"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "1ac81dbf934b983f7ab813f3e4a29656cdafa742392d86e4373000274a074f49",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_sw__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_sw__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_sw__fromhost"
+        ],
+        [
+          "main",
+          "isa_sw__main"
+        ],
+        [
+          "tohost",
+          "isa_sw__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:xor",
+      "symbol": "isa_xor__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/xor.o",
+      "original_sha256": "eb4de9f0c405a6a0ecd4ac4572ee20d44c05219f535972130fc9ce6d0e8c3d74",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_xor.o",
+      "namespaced_sha256": "0ea3e66d0fae9e45f1f77be5039372f6001759ffdad295b890243afc999405f7",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            14400,
+            "ae934552e2649f65b34045208b9ad53862d09db73e06f9dd9ca60305e7c1b60a"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "588fb454d33e7b587c32d6e3201089c2222c38ad1fd31cb31d0ac83094a53dad",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_xor__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_xor__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_xor__fromhost"
+        ],
+        [
+          "main",
+          "isa_xor__main"
+        ],
+        [
+          "tohost",
+          "isa_xor__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "isa:xori",
+      "symbol": "isa_xori__main",
+      "asm": true,
+      "original_object": "/home/USER/e-stage/workbench/riscv-tests/build/minirv-npc/isa/rv32ui/xori.o",
+      "original_sha256": "79222ebbfbdeff1697c59d636de846314691f47f4214c8f9658a79648476dab2",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/isa_xori.o",
+      "namespaced_sha256": "32994f9f7dbd7abf855128bbb7fb7b5ca984fe0edefc68d17a52882c78ce2b3f",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.init": [
+            1,
+            6,
+            6784,
+            "8a692e535859061cb4dd63e18732ef5749618164800d527d4f061e6224ec2720"
+          ],
+          ".tohost": [
+            1,
+            3,
+            72,
+            "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": "fd19000ca43e8954197454e582f26b2109e53a57b5c00cda241e49aeef9636a3",
+      "mapping": [
+        [
+          "begin_signature",
+          "isa_xori__begin_signature"
+        ],
+        [
+          "end_signature",
+          "isa_xori__end_signature"
+        ],
+        [
+          "fromhost",
+          "isa_xori__fromhost"
+        ],
+        [
+          "main",
+          "isa_xori__main"
+        ],
+        [
+          "tohost",
+          "isa_xori__tohost"
+        ],
+        [
+          "halt",
+          "batch_return"
+        ]
+      ]
+    },
+    {
+      "id": "cpu:wrong",
+      "symbol": "cpu_wrong__main",
+      "asm": false,
+      "original_object": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/build/minirv-npc/tests/wrong.o",
+      "original_sha256": "dda48584194c156c75a5cc222a58ee67aba995d9d137da0f423bbad12ffe1fb7",
+      "namespaced_object": "/home/USER/e-stage/software-soc/batch/objects/cpu_wrong.o",
+      "namespaced_sha256": "1c495963598be2e39a21bfe152e66f6a4c7a2a24f932c371cfbcbc34f068a0fb",
+      "allocated_sections_unchanged": true,
+      "allocated_sections": {
+        "flags": 2147483656,
+        "allocated_sections": {
+          ".text": [
+            1,
+            6,
+            0,
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          ".data": [
+            1,
+            3,
+            256,
+            "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+          ],
+          ".bss": [
+            8,
+            3,
+            0,
+            null
+          ],
+          ".rodata": [
+            1,
+            2,
+            295424,
+            "3d42396c89aabe1f5dadd68ec66a008fac3eaaa01b2949d0d867813ebb2511f1"
+          ],
+          ".text.startup.main": [
+            1,
+            6,
+            8,
+            "1d9800c3cff8ba31463c9553f9006c1771cf1ef69decc7b7f2669429d135955c"
+          ]
+        }
+      },
+      "prior_individual_passed_image_sha256": null,
+      "mapping": [
+        [
+          "main",
+          "cpu_wrong__main"
+        ]
+      ]
+    }
+  ],
+  "positive_count": 73,
+  "negative_count": 1,
+  "policy": "Exact object code/data from individually passed E6 tests; onlystrong-symbol namespacing and assemblyhalt relocation change. All allocatedsections byte-identical. C failure checks still call realhalt. Assembly pass/fail status returned through a state-restoring bridge and checked. This batches SoC execution, not test assertions; completeSoC run remains pending."
+}

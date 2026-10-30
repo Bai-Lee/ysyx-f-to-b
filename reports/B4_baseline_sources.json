@@ -1,0 +1,80 @@
+{
+  "status": "PASS_IMMUTABLE_BASELINE_SOURCES",
+  "variants": [
+    {
+      "variant": "pipeline-stall",
+      "input_snapshot_sha256": "eaa1d81cc9894729fea8875547e56f26381c608e190b3e54cef480be8f98dd6d",
+      "run_record_sha256": "e79a6d78cbd627182fe93d4a4c8158bdb2496fa3d572ac1586647395aad0414e",
+      "files": [
+        {
+          "path": "B\\B4\\snapshots\\pipeline-stall\\rtl\\ysyx_00000000_alu.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_alu.sv",
+          "sha256": "8d5c21c89b900f9077a84be87ef1bf0c160ccd1fa416256c8f87cfbec7d144d5"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-stall\\rtl\\ysyx_00000000_core.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_core.sv",
+          "sha256": "2676a7c2819a1c87e7e1c48fd68cc7d113df446eb8fac4c8562f43041404041f"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-stall\\rtl\\ysyx_00000000_execute.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_execute.sv",
+          "sha256": "dabba1fb0185fdc7935042c9c8968a5d6ff5718e1a5548e74d183ed73182795c"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-stall\\rtl\\ysyx_00000000_icache.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_icache.sv",
+          "sha256": "a6f535cd27416d5b77f3aeb2ad3c0968bda0a2da94aa9090bd1a2a25c678c857"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-stall\\rtl\\ysyx_00000000_pipe.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_pipe.sv",
+          "sha256": "b1fe082b9659a9578d095342ebe5e343250119076410d8345926359c190ad678"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-stall\\rtl\\ysyx_00000000.v",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000.v",
+          "sha256": "cc186e7f469f19b12677889e65fafacaba9eb91a99c08d945bd6a19878a3e6e6"
+        }
+      ]
+    },
+    {
+      "variant": "pipeline-forward",
+      "input_snapshot_sha256": "450dc3c140c7f0b36f72868e90f18ae98362f5ffbe4afe86c411dddc03e30f03",
+      "run_record_sha256": "23f07a6906dbac3c6694f276296aedf17726af1d8fdb6d8da1fb088421e60fdc",
+      "files": [
+        {
+          "path": "B\\B4\\snapshots\\pipeline-forward\\rtl\\ysyx_00000000_alu.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_alu.sv",
+          "sha256": "8d5c21c89b900f9077a84be87ef1bf0c160ccd1fa416256c8f87cfbec7d144d5"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-forward\\rtl\\ysyx_00000000_core.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_core.sv",
+          "sha256": "2676a7c2819a1c87e7e1c48fd68cc7d113df446eb8fac4c8562f43041404041f"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-forward\\rtl\\ysyx_00000000_execute.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_execute.sv",
+          "sha256": "dabba1fb0185fdc7935042c9c8968a5d6ff5718e1a5548e74d183ed73182795c"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-forward\\rtl\\ysyx_00000000_icache.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_icache.sv",
+          "sha256": "a6f535cd27416d5b77f3aeb2ad3c0968bda0a2da94aa9090bd1a2a25c678c857"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-forward\\rtl\\ysyx_00000000_pipe.sv",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_pipe.sv",
+          "sha256": "8e30eabb3eb1f438f485e647def85cac2922a86604c4d934b9d3b040f621b440"
+        },
+        {
+          "path": "B\\B4\\snapshots\\pipeline-forward\\rtl\\ysyx_00000000.v",
+          "source": "/workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000.v",
+          "sha256": "594b264912c74732e9cfc33d3b9e7d1ac79425569d79672a2f3ee8b7d30e260e"
+        }
+      ]
+    }
+  ],
+  "scope": "Exact RTL bytes used by the accepted baseline builds; input hashes were unchanged during compilation. Full SoC comparison rebuilds these copies under distinct labels."
+}

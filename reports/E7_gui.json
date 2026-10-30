@@ -1,0 +1,985 @@
+{
+  "status": "PASS",
+  "command": [
+    "/home/USER/e-stage/build/E7/soc_gui/sim",
+    "--image",
+    "/home/USER/e-stage/software-soc/programs/gpio/build/gpio-minirv-ysyxsoc.bin",
+    "--report",
+    "/workspace/projects/ysyx_f_to_b/artifacts/E7/gui/result.json",
+    "--gui",
+    "--hold-gui",
+    "--ratio",
+    "1",
+    "--max-cycles",
+    "2000000000"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 105.02376793900021,
+  "binary_sha256": "1d76d135a0793c0d26580cc7d3401761b757a94900128bf6e4a93c1dab17551f",
+  "image_sha256": "be15bdfadd804d80661f49cd522e5969000583dd01c001bd035d7c98f70f8c9a",
+  "stdout_sha256": "2764a605cbb96d93eb48072778ab99f5816e488f082e3e68d89bee5f2e8b38d9",
+  "stderr_sha256": "42b004164af5c93aad30c09381c16af6457e7ee55ec1c07a712a080223b291bc",
+  "simulation": {
+    "result": "GOOD_TRAP",
+    "exit_code": 0,
+    "cycles": 289715534,
+    "instructions": 1762321,
+    "ipc": 0.00608293582214,
+    "application_cycles": 105590232,
+    "application_instructions": 882698,
+    "application_ipc": 0.00835965584392,
+    "cpu_soc_ratio": 1,
+    "assumed_cpu_frequency_hz": 25000000,
+    "flash_reads": 982926,
+    "lsu_requests": 1103180,
+    "lsu_responses": 1103180,
+    "uart_bytes": 214,
+    "serial_bytes": 214,
+    "serial_matches": true,
+    "serial_framing_errors": 0,
+    "wall_seconds": 102.996895502,
+    "uart_divisors": [
+      13,
+      13
+    ],
+    "led_sequence": [
+      [
+        208725308,
+        1
+      ],
+      [
+        213727095,
+        2
+      ],
+      [
+        218728882,
+        4
+      ],
+      [
+        223730669,
+        8
+      ],
+      [
+        228732456,
+        16
+      ],
+      [
+        233734243,
+        32
+      ],
+      [
+        238736030,
+        64
+      ],
+      [
+        243737817,
+        128
+      ],
+      [
+        248739604,
+        256
+      ],
+      [
+        253741391,
+        512
+      ],
+      [
+        258743178,
+        1024
+      ],
+      [
+        263744965,
+        2048
+      ],
+      [
+        268746752,
+        4096
+      ],
+      [
+        273927123,
+        8192
+      ],
+      [
+        279107494,
+        16384
+      ],
+      [
+        284287865,
+        32768
+      ],
+      [
+        289462134,
+        42330
+      ]
+    ],
+    "segments": [
+      159,
+      113,
+      193,
+      99,
+      133,
+      1,
+      159,
+      3
+    ]
+  },
+  "wrong_password_read_count": 276,
+  "switch_reads": {
+    "0": 95,
+    "1": 24,
+    "3": 28,
+    "7": 24,
+    "15": 28,
+    "31": 23,
+    "63": 24,
+    "127": 28,
+    "255": 24,
+    "511": 28,
+    "1023": 27,
+    "2047": 24,
+    "4095": 27,
+    "8191": 25,
+    "16383": 27,
+    "32767": 24,
+    "42330": 1,
+    "58714": 23,
+    "62810": 28,
+    "64858": 24,
+    "65370": 24,
+    "65498": 27,
+    "65530": 23,
+    "65534": 28,
+    "65535": 276
+  },
+  "project_id": 26070001,
+  "project_id_hex": "018dcbf1",
+  "display": ":99",
+  "commands": [
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291466"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "getwindowgeometry",
+        "--shell",
+        "6291466"
+      ],
+      "exit": 0,
+      "stdout": "WINDOW=6291466\nX=144\nY=118\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scrot",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E7/gui/locked.png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "612",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "585",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "558",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "531",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "504",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "477",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "450",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "423",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "396",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "369",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "342",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "315",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "288",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "261",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "234",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "207",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scrot",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E7/gui/wrong_password.png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "612",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "558",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "477",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "423",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "369",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "315",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "288",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousemove",
+        "234",
+        "496"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mousedown",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "mouseup",
+        "1"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scrot",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E7/gui/walking.png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scrot",
+        "-o",
+        "/workspace/projects/ysyx_f_to_b/artifacts/E7/gui/completed.png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "artifacts/E7/gui/locked.png",
+      "sha256": "e061db0a0bf4a51eeb216a252bdd317d705c2fa1cfbed2d6dee024c8abeae62a"
+    },
+    {
+      "file": "artifacts/E7/gui/wrong_password.png",
+      "sha256": "31530b1146afff70bc5c1b1434698c7c963078fbb796d48ff582e001f702118a"
+    },
+    {
+      "file": "artifacts/E7/gui/walking.png",
+      "sha256": "3fe0776912b866c030d548f29a23898e50f8c1a9a0a3c0d081a2601b7f8cff0e"
+    },
+    {
+      "file": "artifacts/E7/gui/completed.png",
+      "sha256": "b364ac2cd9df8831dc430c70c2120807736e57d7acb9b873dfeb74346cc112c5"
+    }
+  ],
+  "scope": "Real upstream NVBoard, actual GPIO switches clicked through X11, UART decoded from actual SoC TX pins and displayed, LEDs/segments driven by actual compiled software/MMIO.",
+  "visual_review": "reports/E7_visual_review.json"
+}

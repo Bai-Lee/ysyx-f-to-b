@@ -1,0 +1,15 @@
+{
+  "current": "ics55_LLSC_H7CR_gds.tar.bz2",
+  "attempts": [
+    {
+      "attempt": 1,
+      "error": "('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))",
+      "time": "2026-10-24T22:01:11.682684+00:00"
+    },
+    {
+      "attempt": 2,
+      "error": "('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))",
+      "time": "2026-10-24T22:01:20.777202+00:00"
+    }
+  ]
+}

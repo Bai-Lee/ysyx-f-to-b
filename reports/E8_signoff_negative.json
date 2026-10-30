@@ -1,0 +1,1630 @@
+{
+  "status": "PASS_EXPECTED_BLOCK",
+  "review": {
+    "status": "blocked",
+    "groups": [
+      {
+        "id": "initial",
+        "label": "Initial",
+        "status": "ready",
+        "available": 2,
+        "expected": 2,
+        "summary": "2 of 2 requirements ready"
+      },
+      {
+        "id": "config",
+        "label": "Config",
+        "status": "attention",
+        "available": 4,
+        "expected": 5,
+        "summary": "1 attention-only checklist requirements"
+      },
+      {
+        "id": "harden",
+        "label": "Harden",
+        "status": "blocked",
+        "available": 0,
+        "expected": 5,
+        "summary": "4 blocking checklist requirements"
+      },
+      {
+        "id": "final_design",
+        "label": "Final Design",
+        "status": "blocked",
+        "available": 0,
+        "expected": 9,
+        "summary": "8 blocking checklist requirements"
+      },
+      {
+        "id": "sta",
+        "label": "STA",
+        "status": "blocked",
+        "available": 0,
+        "expected": 68,
+        "summary": "55 blocking checklist requirements"
+      },
+      {
+        "id": "spef",
+        "label": "SPEF",
+        "status": "blocked",
+        "available": 0,
+        "expected": 12,
+        "summary": "12 blocking checklist requirements"
+      },
+      {
+        "id": "reports",
+        "label": "Reports",
+        "status": "blocked",
+        "available": 1,
+        "expected": 2,
+        "summary": "1 blocking checklist requirements"
+      }
+    ],
+    "risks": [
+      {
+        "severity": "blocked",
+        "title": "Harden signoff requirements block export",
+        "summary": "4 blocking checklist requirements",
+        "details": [
+          {
+            "kind": "flow",
+            "label": "Harden flow completed",
+            "location": "home/flow.json",
+            "reason": "Current flow state is missing.",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "flow",
+                "path": "home/flow.json",
+                "selector": "/steps/Harden"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "harden.gds",
+            "location": "Harden_ecc/output/light_Harden.gds",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "Harden_ecc/output/light_Harden.gds",
+                "destination": "harden/light.gds"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "harden.lef",
+            "location": "Harden_ecc/output/light_Harden.lef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "Harden_ecc/output/light_Harden.lef",
+                "destination": "harden/light.lef"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "harden.lib",
+            "location": "Harden_ecc/output/light_Harden.lib",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "Harden_ecc/output/light_Harden.lib",
+                "destination": "harden/light.lib"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "severity": "blocked",
+        "title": "Final Design signoff requirements block export",
+        "summary": "8 blocking checklist requirements",
+        "details": [
+          {
+            "kind": "quality_gate",
+            "label": "qor.drc.clean",
+            "location": "drc_ecc/analysis/qor_summary.json",
+            "reason": "Current QoR gate is unavailable; rerun analysis for this step.",
+            "owner": "qor",
+            "policy": "block",
+            "state": "unavailable",
+            "evidence": []
+          },
+          {
+            "kind": "quality_gate",
+            "label": "qor.lvs.clean",
+            "location": "lvs_ecc/analysis/qor_summary.json",
+            "reason": "Current QoR gate is unavailable; rerun analysis for this step.",
+            "owner": "qor",
+            "policy": "block",
+            "state": "unavailable",
+            "evidence": []
+          },
+          {
+            "kind": "flow",
+            "label": "drc flow completed",
+            "location": "home/flow.json",
+            "reason": "Current flow state is missing.",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "flow",
+                "path": "home/flow.json",
+                "selector": "/steps/drc"
+              }
+            ]
+          },
+          {
+            "kind": "flow",
+            "label": "lvs flow completed",
+            "location": "home/flow.json",
+            "reason": "Current flow state is missing.",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "flow",
+                "path": "home/flow.json",
+                "selector": "/steps/lvs"
+              }
+            ]
+          },
+          {
+            "kind": "flow",
+            "label": "filler flow completed",
+            "location": "home/flow.json",
+            "reason": "Current flow state is missing.",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "flow",
+                "path": "home/flow.json",
+                "selector": "/steps/filler"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.design.verilog",
+            "location": "filler_ecc/output/light_filler.v.gz",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "filler_ecc/output/light_filler.v.gz",
+                "destination": "final/design/light.v.gz"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.design.def",
+            "location": "filler_ecc/output/light_filler.def.gz",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "filler_ecc/output/light_filler.def.gz",
+                "destination": "final/design/light.def.gz"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.design.gds",
+            "location": "filler_ecc/output/light_filler.gds",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "filler_ecc/output/light_filler.gds",
+                "destination": "final/design/light.gds"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "severity": "blocked",
+        "title": "STA signoff requirements block export",
+        "summary": "55 blocking checklist requirements",
+        "details": [
+          {
+            "kind": "quality_gate",
+            "label": "qor.sta.setup_closed",
+            "location": "sta_ecc/analysis/qor_summary.json",
+            "reason": "Current QoR gate is unavailable; rerun analysis for this step.",
+            "owner": "qor",
+            "policy": "block",
+            "state": "unavailable",
+            "evidence": []
+          },
+          {
+            "kind": "quality_gate",
+            "label": "qor.sta.hold_closed",
+            "location": "sta_ecc/analysis/qor_summary.json",
+            "reason": "Current QoR gate is unavailable; rerun analysis for this step.",
+            "owner": "qor",
+            "policy": "block",
+            "state": "unavailable",
+            "evidence": []
+          },
+          {
+            "kind": "flow",
+            "label": "sta flow completed",
+            "location": "home/flow.json",
+            "reason": "Current flow state is missing.",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "flow",
+                "path": "home/flow.json",
+                "selector": "/steps/sta"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MAX_125/Cworst/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MAX_125/Cworst/qor_summary.rpt",
+                "destination": "final/timing/sta/MAX_125/Cworst/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MAX_125/Cworst/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MAX_125/Cworst/timing_max.rpt",
+                "destination": "final/timing/sta/MAX_125/Cworst/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/MAX_125/Cworst/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MAX_125/Cworst/qor_summary.json",
+                "destination": "final/timing/sta/MAX_125/Cworst/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/MAX_125/Cworst/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MAX_125/Cworst/timing_paths.json",
+                "destination": "final/timing/sta/MAX_125/Cworst/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MAX_125/RCworst/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MAX_125/RCworst/qor_summary.rpt",
+                "destination": "final/timing/sta/MAX_125/RCworst/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MAX_125/RCworst/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MAX_125/RCworst/timing_max.rpt",
+                "destination": "final/timing/sta/MAX_125/RCworst/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/MAX_125/RCworst/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MAX_125/RCworst/qor_summary.json",
+                "destination": "final/timing/sta/MAX_125/RCworst/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/MAX_125/RCworst/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MAX_125/RCworst/timing_paths.json",
+                "destination": "final/timing/sta/MAX_125/RCworst/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/WCL_m40/Cworst/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/WCL_m40/Cworst/qor_summary.rpt",
+                "destination": "final/timing/sta/WCL_m40/Cworst/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/WCL_m40/Cworst/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/WCL_m40/Cworst/timing_max.rpt",
+                "destination": "final/timing/sta/WCL_m40/Cworst/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/WCL_m40/Cworst/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/WCL_m40/Cworst/qor_summary.json",
+                "destination": "final/timing/sta/WCL_m40/Cworst/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/WCL_m40/Cworst/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/WCL_m40/Cworst/timing_paths.json",
+                "destination": "final/timing/sta/WCL_m40/Cworst/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/WCL_m40/RCworst/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/WCL_m40/RCworst/qor_summary.rpt",
+                "destination": "final/timing/sta/WCL_m40/RCworst/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/WCL_m40/RCworst/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/WCL_m40/RCworst/timing_max.rpt",
+                "destination": "final/timing/sta/WCL_m40/RCworst/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/WCL_m40/RCworst/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/WCL_m40/RCworst/qor_summary.json",
+                "destination": "final/timing/sta/WCL_m40/RCworst/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/WCL_m40/RCworst/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/WCL_m40/RCworst/timing_paths.json",
+                "destination": "final/timing/sta/WCL_m40/RCworst/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/TYP_25/TYPICAL/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/TYP_25/TYPICAL/qor_summary.rpt",
+                "destination": "final/timing/sta/TYP_25/TYPICAL/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/TYP_25/TYPICAL/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/TYP_25/TYPICAL/timing_max.rpt",
+                "destination": "final/timing/sta/TYP_25/TYPICAL/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/TYP_25/TYPICAL/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/TYP_25/TYPICAL/qor_summary.json",
+                "destination": "final/timing/sta/TYP_25/TYPICAL/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/TYP_25/TYPICAL/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/TYP_25/TYPICAL/timing_paths.json",
+                "destination": "final/timing/sta/TYP_25/TYPICAL/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/Cworst/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/Cworst/qor_summary.rpt",
+                "destination": "final/timing/sta/MIN_m40/Cworst/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/Cworst/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/Cworst/timing_max.rpt",
+                "destination": "final/timing/sta/MIN_m40/Cworst/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/MIN_m40/Cworst/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MIN_m40/Cworst/qor_summary.json",
+                "destination": "final/timing/sta/MIN_m40/Cworst/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/MIN_m40/Cworst/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MIN_m40/Cworst/timing_paths.json",
+                "destination": "final/timing/sta/MIN_m40/Cworst/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/RCworst/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/RCworst/qor_summary.rpt",
+                "destination": "final/timing/sta/MIN_m40/RCworst/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/RCworst/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/RCworst/timing_max.rpt",
+                "destination": "final/timing/sta/MIN_m40/RCworst/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/MIN_m40/RCworst/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MIN_m40/RCworst/qor_summary.json",
+                "destination": "final/timing/sta/MIN_m40/RCworst/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/MIN_m40/RCworst/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MIN_m40/RCworst/timing_paths.json",
+                "destination": "final/timing/sta/MIN_m40/RCworst/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/Cbest/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/Cbest/qor_summary.rpt",
+                "destination": "final/timing/sta/MIN_m40/Cbest/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/Cbest/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/Cbest/timing_max.rpt",
+                "destination": "final/timing/sta/MIN_m40/Cbest/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/MIN_m40/Cbest/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MIN_m40/Cbest/qor_summary.json",
+                "destination": "final/timing/sta/MIN_m40/Cbest/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/MIN_m40/Cbest/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MIN_m40/Cbest/timing_paths.json",
+                "destination": "final/timing/sta/MIN_m40/Cbest/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/RCbest/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/RCbest/qor_summary.rpt",
+                "destination": "final/timing/sta/MIN_m40/RCbest/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/RCbest/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/RCbest/timing_max.rpt",
+                "destination": "final/timing/sta/MIN_m40/RCbest/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/MIN_m40/RCbest/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MIN_m40/RCbest/qor_summary.json",
+                "destination": "final/timing/sta/MIN_m40/RCbest/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/MIN_m40/RCbest/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/MIN_m40/RCbest/timing_paths.json",
+                "destination": "final/timing/sta/MIN_m40/RCbest/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/Cworst/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/Cworst/qor_summary.rpt",
+                "destination": "final/timing/sta/ML_125/Cworst/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/Cworst/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/Cworst/timing_max.rpt",
+                "destination": "final/timing/sta/ML_125/Cworst/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/ML_125/Cworst/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/ML_125/Cworst/qor_summary.json",
+                "destination": "final/timing/sta/ML_125/Cworst/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/ML_125/Cworst/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/ML_125/Cworst/timing_paths.json",
+                "destination": "final/timing/sta/ML_125/Cworst/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/RCworst/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/RCworst/qor_summary.rpt",
+                "destination": "final/timing/sta/ML_125/RCworst/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/RCworst/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/RCworst/timing_max.rpt",
+                "destination": "final/timing/sta/ML_125/RCworst/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/ML_125/RCworst/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/ML_125/RCworst/qor_summary.json",
+                "destination": "final/timing/sta/ML_125/RCworst/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/ML_125/RCworst/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/ML_125/RCworst/timing_paths.json",
+                "destination": "final/timing/sta/ML_125/RCworst/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/Cbest/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/Cbest/qor_summary.rpt",
+                "destination": "final/timing/sta/ML_125/Cbest/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/Cbest/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/Cbest/timing_max.rpt",
+                "destination": "final/timing/sta/ML_125/Cbest/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/ML_125/Cbest/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/ML_125/Cbest/qor_summary.json",
+                "destination": "final/timing/sta/ML_125/Cbest/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/ML_125/Cbest/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/ML_125/Cbest/timing_paths.json",
+                "destination": "final/timing/sta/ML_125/Cbest/feature/timing_paths.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/RCbest/qor_summary.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/RCbest/qor_summary.rpt",
+                "destination": "final/timing/sta/ML_125/RCbest/report/qor_summary.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/RCbest/timing_max.rpt",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/RCbest/timing_max.rpt",
+                "destination": "final/timing/sta/ML_125/RCbest/report/timing_max.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_qor_summary",
+            "location": "sta_ecc/feature/ML_125/RCbest/qor_summary.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/ML_125/RCbest/qor_summary.json",
+                "destination": "final/timing/sta/ML_125/RCbest/feature/qor_summary.json"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_timing_paths",
+            "location": "sta_ecc/feature/ML_125/RCbest/timing_paths.json",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/feature/ML_125/RCbest/timing_paths.json",
+                "destination": "final/timing/sta/ML_125/RCbest/feature/timing_paths.json"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "severity": "blocked",
+        "title": "SPEF signoff requirements block export",
+        "summary": "12 blocking checklist requirements",
+        "details": [
+          {
+            "kind": "quality_gate",
+            "label": "qor.rcx.corner_coverage",
+            "location": "RCX_ecc/analysis/qor_summary.json",
+            "reason": "Current QoR gate is unavailable; rerun analysis for this step.",
+            "owner": "qor",
+            "policy": "block",
+            "state": "unavailable",
+            "evidence": []
+          },
+          {
+            "kind": "quality_gate",
+            "label": "qor.rcx.spef_parse_health",
+            "location": "RCX_ecc/analysis/qor_summary.json",
+            "reason": "Current QoR gate is unavailable; rerun analysis for this step.",
+            "owner": "qor",
+            "policy": "block",
+            "state": "unavailable",
+            "evidence": []
+          },
+          {
+            "kind": "flow",
+            "label": "RCX flow completed",
+            "location": "home/flow.json",
+            "reason": "Current flow state is missing.",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "flow",
+                "path": "home/flow.json",
+                "selector": "/steps/RCX"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.spef",
+            "location": "RCX_ecc/output/light_Cbest_125C.spef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "RCX_ecc/output/light_Cbest_125C.spef",
+                "destination": "final/timing/spef/light_Cbest_125C.spef"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.spef",
+            "location": "RCX_ecc/output/light_Cbest_m40C.spef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "RCX_ecc/output/light_Cbest_m40C.spef",
+                "destination": "final/timing/spef/light_Cbest_m40C.spef"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.spef",
+            "location": "RCX_ecc/output/light_Cworst_125C.spef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "RCX_ecc/output/light_Cworst_125C.spef",
+                "destination": "final/timing/spef/light_Cworst_125C.spef"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.spef",
+            "location": "RCX_ecc/output/light_Cworst_m40C.spef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "RCX_ecc/output/light_Cworst_m40C.spef",
+                "destination": "final/timing/spef/light_Cworst_m40C.spef"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.spef",
+            "location": "RCX_ecc/output/light_RCbest_125C.spef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "RCX_ecc/output/light_RCbest_125C.spef",
+                "destination": "final/timing/spef/light_RCbest_125C.spef"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.spef",
+            "location": "RCX_ecc/output/light_RCbest_m40C.spef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "RCX_ecc/output/light_RCbest_m40C.spef",
+                "destination": "final/timing/spef/light_RCbest_m40C.spef"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.spef",
+            "location": "RCX_ecc/output/light_RCworst_125C.spef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "RCX_ecc/output/light_RCworst_125C.spef",
+                "destination": "final/timing/spef/light_RCworst_125C.spef"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.spef",
+            "location": "RCX_ecc/output/light_RCworst_m40C.spef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "RCX_ecc/output/light_RCworst_m40C.spef",
+                "destination": "final/timing/spef/light_RCworst_m40C.spef"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.spef",
+            "location": "RCX_ecc/output/light_TYPICAL_25C.spef",
+            "reason": "Required file is missing or empty",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "RCX_ecc/output/light_TYPICAL_25C.spef",
+                "destination": "final/timing/spef/light_TYPICAL_25C.spef"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "severity": "blocked",
+        "title": "Reports signoff requirements block export",
+        "summary": "1 blocking checklist requirements",
+        "details": [
+          {
+            "kind": "flow",
+            "label": "route flow completed",
+            "location": "home/flow.json",
+            "reason": "Current flow state is missing.",
+            "owner": "checklist",
+            "policy": "block",
+            "state": "failed",
+            "evidence": [
+              {
+                "kind": "flow",
+                "path": "home/flow.json",
+                "selector": "/steps/route"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "severity": "warning",
+        "title": "Config signoff attention",
+        "summary": "1 attention-only checklist requirements",
+        "details": [
+          {
+            "kind": "artifact",
+            "label": "config.macro_locations",
+            "location": "config/macro_locations.txt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "config/macro_locations.txt",
+                "destination": "config/macro_locations.txt"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "severity": "warning",
+        "title": "Harden signoff attention",
+        "summary": "1 attention-only checklist requirements",
+        "details": [
+          {
+            "kind": "artifact",
+            "label": "harden.image",
+            "location": "Harden_ecc/output/light_Harden.png",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "Harden_ecc/output/light_Harden.png",
+                "destination": "harden/light.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "severity": "warning",
+        "title": "Final Design signoff attention",
+        "summary": "1 attention-only checklist requirements",
+        "details": [
+          {
+            "kind": "artifact",
+            "label": "final.design.image",
+            "location": "filler_ecc/output/light_filler.png",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "filler_ecc/output/light_filler.png",
+                "destination": "final/design/light.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "severity": "warning",
+        "title": "STA signoff attention",
+        "summary": "13 attention-only checklist requirements",
+        "details": [
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MAX_125/Cworst/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MAX_125/Cworst/power.rpt",
+                "destination": "final/timing/sta/MAX_125/Cworst/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MAX_125/RCworst/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MAX_125/RCworst/power.rpt",
+                "destination": "final/timing/sta/MAX_125/RCworst/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/WCL_m40/Cworst/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/WCL_m40/Cworst/power.rpt",
+                "destination": "final/timing/sta/WCL_m40/Cworst/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/WCL_m40/RCworst/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/WCL_m40/RCworst/power.rpt",
+                "destination": "final/timing/sta/WCL_m40/RCworst/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/TYP_25/TYPICAL/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/TYP_25/TYPICAL/power.rpt",
+                "destination": "final/timing/sta/TYP_25/TYPICAL/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/Cworst/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/Cworst/power.rpt",
+                "destination": "final/timing/sta/MIN_m40/Cworst/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/RCworst/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/RCworst/power.rpt",
+                "destination": "final/timing/sta/MIN_m40/RCworst/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/Cbest/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/Cbest/power.rpt",
+                "destination": "final/timing/sta/MIN_m40/Cbest/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/MIN_m40/RCbest/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/MIN_m40/RCbest/power.rpt",
+                "destination": "final/timing/sta/MIN_m40/RCbest/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/Cworst/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/Cworst/power.rpt",
+                "destination": "final/timing/sta/ML_125/Cworst/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/RCworst/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/RCworst/power.rpt",
+                "destination": "final/timing/sta/ML_125/RCworst/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/Cbest/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/Cbest/power.rpt",
+                "destination": "final/timing/sta/ML_125/Cbest/report/power.rpt"
+              }
+            ]
+          },
+          {
+            "kind": "artifact",
+            "label": "final.sta_report",
+            "location": "sta_ecc/report/ML_125/RCbest/power.rpt",
+            "reason": "Optional file is missing or empty",
+            "owner": "checklist",
+            "policy": "warn",
+            "state": "warning",
+            "evidence": [
+              {
+                "kind": "package",
+                "path": "sta_ecc/report/ML_125/RCbest/power.rpt",
+                "destination": "final/timing/sta/ML_125/RCbest/report/power.rpt"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "policy": "Synthesis-only workspace correctly fails actualECOS/ECC signoff inspection. Noexportrequested whileblocked; noqualitygateoverrides."
+}

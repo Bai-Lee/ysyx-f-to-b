@@ -1,0 +1,377 @@
+{
+  "status": "PASS",
+  "source": "/home/USER/e3-lab/valgrind-3.18.1-source",
+  "prefix": "/home/USER/tools/valgrind-3.18.1-source",
+  "source_lock": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+  "make_jobs": 2,
+  "architecture": "amd64 only, matching the actual target host",
+  "runs": [
+    {
+      "name": "E3/valgrind_build/extract",
+      "timestamp": "2026-10-24T18:30:41.264062+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "set -eu\ntest \"$(awk '/MemTotal/ {print $2}' /proc/meminfo)\" -ge 1800000\nif [ ! -d /home/USER/e3-lab/valgrind-3.18.1-source ]; then\n    dpkg-source -x /workspace/downloads/ysyx_e3/valgrind-source/valgrind_3.18.1-1ubuntu2.dsc /home/USER/e3-lab/valgrind-3.18.1-source\nfi\ntest -f /home/USER/e3-lab/valgrind-3.18.1-source/configure\n"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 9.297,
+      "timeout_seconds": 120,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "7a9586ee501b751f11885986ac6cba7626ebbb0c74cdedc5ae0ff9d5dfd5a2f0",
+      "stderr_sha256": "5751f617dc0d84b910a98284504b11919108ec405448c164a2cd3d9fb0ce9737"
+    },
+    {
+      "name": "E3/valgrind_build/configure",
+      "timestamp": "2026-10-24T18:31:17.639010+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "cd /home/USER/e3-lab/valgrind-3.18.1-source\n./configure --prefix=/home/USER/tools/valgrind-3.18.1-source --enable-only64bit"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 36.344,
+      "timeout_seconds": 300,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "f8e11c7c3adb338473f8b0f5bae38c72064987fccc6fbbc2d8c2d3b793b5f2d3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/valgrind_build/make",
+      "timestamp": "2026-10-24T18:32:25.169247+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "cd /home/USER/e3-lab/valgrind-3.18.1-source\nmake -j2"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 67.516,
+      "timeout_seconds": 1800,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "28ca7d631c4db63551009295448a2861467a33f3357088967b2947b9f95a109c",
+      "stderr_sha256": "d2ea2d83b59be213085b3d051fb2fa07ff3a99ebf5425cbbc5f4c36007e56eca"
+    },
+    {
+      "name": "E3/valgrind_build/install",
+      "timestamp": "2026-10-24T18:32:26.426366+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "cd /home/USER/e3-lab/valgrind-3.18.1-source\nmake -j1 install"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 1.219,
+      "timeout_seconds": 300,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "0a51cf9efce51dedc7e00e1dc3a5e3546555ef840cda0fb261b540c528ea1a51",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/valgrind_build/positive",
+      "timestamp": "2026-10-24T18:32:27.082898+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "/home/USER/tools/valgrind-3.18.1-source/bin/valgrind --version\n/home/USER/tools/valgrind-3.18.1-source/bin/valgrind --error-exitcode=99 --leak-check=full --show-leak-kinds=all /home/USER/e3-lab/tool-probe/good"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.641,
+      "timeout_seconds": 60,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "3dff2ca25bf42b77975c7f8829c3838d1648936d9ec2ea8e5f0c1966e3601b70",
+      "stderr_sha256": "01cea928a37dde874477e40122c752c5708976f33cf1b3e16e26246a7a5fb8bd"
+    },
+    {
+      "name": "E3/valgrind_build/negative",
+      "timestamp": "2026-10-24T18:32:27.663467+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "/home/USER/tools/valgrind-3.18.1-source/bin/valgrind --error-exitcode=99 --leak-check=full /home/USER/e3-lab/tool-probe/bad_memory"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 99,
+      "expected_exit": 99,
+      "status": "PASS",
+      "elapsed_seconds": 0.562,
+      "timeout_seconds": 60,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "b33f1d6841b6e9cf5d9f4604b829baacfca791dd9395afd6ccde8ddb710d0842"
+    },
+    {
+      "name": "E3/valgrind_build/fingerprints",
+      "timestamp": "2026-10-24T18:32:27.798746+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "sha256sum /home/USER/tools/valgrind-3.18.1-source/bin/valgrind /home/USER/tools/valgrind-3.18.1-source/libexec/valgrind/memcheck-amd64-linux\n/home/USER/tools/valgrind-3.18.1-source/bin/valgrind --version"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.125,
+      "timeout_seconds": 120,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json",
+          "sha256": "7e9921e2d2c850a04a78b8c63f60ed76fdf88f753d2d16b979314736193e22b8"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\e3\\build_valgrind.py",
+          "sha256": "50c669cf8a6e564051395d9819f024e3d76a4315b4f8811128dfea8b32a43551"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_resume.json",
+          "sha256": "5e120b25f5dcd734d0ae91733c5adbd2c00ecacce14ecd9fc8bbe48019d34e8b"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "af438b9440fe49c037926922de822f16c3b0c561d1d9a2fcf1c4edef704b3896",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "fingerprints": "9bbd353ecac5d2168898af32cee52c3c074e27826170bc6a731b8bb46c67e049  /home/USER/tools/valgrind-3.18.1-source/bin/valgrind\ndbec45472012e60027809fdc1b1582cac06b1dfccc4185c96b8d55b4ef530cec  /home/USER/tools/valgrind-3.18.1-source/libexec/valgrind/memcheck-amd64-linux\nvalgrind-3.18.1\n",
+  "timestamp": "2026-10-24T18:32:27.820631+00:00",
+  "scope": "Actual configure/make/install from Ubuntu-authenticated source; private user prefix. This build covers AMD64 host programs, not every supported architecture."
+}

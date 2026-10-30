@@ -1,0 +1,972 @@
+{
+  "status": "COMPLETE_ENGINEERING_WITH_DECLARED_ADAPTATIONS",
+  "records": [
+    {
+      "id": "E5-M001",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E5/NOTES.md",
+        "artifacts/E5/manual/index.json",
+        "reports/E5_execution.json"
+      ],
+      "details": "按原文7个编号问题回答并核对官方手册图表；指令编码、PC/GPR/x0、字节寻址、EEI/对齐、立即数与旧rs1语义明确。"
+    },
+    {
+      "id": "E5-M002",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E5/NOTES.md",
+        "artifacts/E5/manual/index.json",
+        "reports/E5_execution.json"
+      ],
+      "details": "按原文7个编号问题回答并核对官方手册图表；指令编码、PC/GPR/x0、字节寻址、EEI/对齐、立即数与旧rs1语义明确。"
+    },
+    {
+      "id": "E5-M003",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E5/NOTES.md",
+        "artifacts/E5/manual/index.json",
+        "reports/E5_execution.json"
+      ],
+      "details": "按原文7个编号问题回答并核对官方手册图表；指令编码、PC/GPR/x0、字节寻址、EEI/对齐、立即数与旧rs1语义明确。"
+    },
+    {
+      "id": "E5-M004",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E5/NOTES.md",
+        "artifacts/E5/manual/index.json",
+        "reports/E5_execution.json"
+      ],
+      "details": "按原文7个编号问题回答并核对官方手册图表；指令编码、PC/GPR/x0、字节寻址、EEI/对齐、立即数与旧rs1语义明确。"
+    },
+    {
+      "id": "E5-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M006",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M007",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M008",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E5/NOTES.md",
+        "artifacts/E5/manual/index.json",
+        "reports/E5_execution.json"
+      ],
+      "details": "按原文7个编号问题回答并核对官方手册图表；指令编码、PC/GPR/x0、字节寻址、EEI/对齐、立即数与旧rs1语义明确。"
+    },
+    {
+      "id": "E5-M009",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M010",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M011",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M012",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M013",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M014",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M015",
+      "status": "PASS",
+      "evidence": [
+        "artifacts/E5/dpi",
+        "artifacts/E5/dpi_negative"
+      ],
+      "details": "Executed installed Verilator manual DPI add import/example, signed parameters and returns; compiled faulty C implementation rejected."
+    },
+    {
+      "id": "E5-M016",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-M017",
+      "status": "PASS",
+      "evidence": [
+        "reports/E5_execution.json",
+        "reports/E5_vectors.json",
+        "artifacts/E5/cases"
+      ],
+      "details": "Actual C11 and Linux Verilator execution with independent Python traces. Exact8 core instructions,16GPR/x0, signed immediates, jalr alias/odd target, little-endian/partial writes, reserved/unaligned rejection and once-only ebreak callback including post-halt probes."
+    },
+    {
+      "id": "E5-O001",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E5/NOTES.md",
+        "artifacts/E5/manual/index.json",
+        "reports/E5_execution.json"
+      ],
+      "details": "按原文7个编号问题回答并核对官方手册图表；指令编码、PC/GPR/x0、字节寻址、EEI/对齐、立即数与旧rs1语义明确。"
+    },
+    {
+      "id": "E6-M001",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_fceux_native.json",
+        "artifacts/E6/fceux/native_session"
+      ],
+      "details": "FCEUX native ran original legal homebrew ROM; real SDL framebuffer changed with J and recovered, audio 440/220/440Hz checked from callback PCM; physical speaker is outside automated scope."
+    },
+    {
+      "id": "E6-M002",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_original_dummy.json",
+        "artifacts/E6/dummy_original"
+      ],
+      "details": "Real cross compilation and NPC image load at0x80000000; originalAM code reaches and remains in the halt symbol range,128MiB model and bounded observation explicit."
+    },
+    {
+      "id": "E6-M003",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_halt_and_exit.json",
+        "artifacts/E6/runtime",
+        "E/E6/runtime_patch"
+      ],
+      "details": "AM embeds a0 result plus ebreak. make uses its just-built binary path; dummyGOOD/exit0, wrongBAD/make-nonzero; error aggregation is verified rather than trusting text alone."
+    },
+    {
+      "id": "E6-M004",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_halt_and_exit.json",
+        "artifacts/E6/runtime",
+        "E/E6/runtime_patch"
+      ],
+      "details": "AM embeds a0 result plus ebreak. make uses its just-built binary path; dummyGOOD/exit0, wrongBAD/make-nonzero; error aggregation is verified rather than trusting text alone."
+    },
+    {
+      "id": "E6-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_halt_and_exit.json",
+        "artifacts/E6/runtime",
+        "E/E6/runtime_patch"
+      ],
+      "details": "AM embeds a0 result plus ebreak. make uses its just-built binary path; dummyGOOD/exit0, wrongBAD/make-nonzero; error aggregation is verified rather than trusting text alone."
+    },
+    {
+      "id": "E6-M006",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_halt_and_exit.json",
+        "artifacts/E6/runtime",
+        "E/E6/runtime_patch"
+      ],
+      "details": "AM embeds a0 result plus ebreak. make uses its just-built binary path; dummyGOOD/exit0, wrongBAD/make-nonzero; error aggregation is verified rather than trusting text alone."
+    },
+    {
+      "id": "E6-M007",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_official_tests.json",
+        "artifacts/E6/official/riscv-tests"
+      ],
+      "details": "38 official tests compiled and executed with every committed instruction checked against independent C reference; exact test list and source defaults retained."
+    },
+    {
+      "id": "E6-M008",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_difftest_negative.json",
+        "artifacts/E6/fault_sign"
+      ],
+      "details": "Actual RTL sign-extension mutant produces first-mismatch PC/instruction/register diagnostic, simulator nonzero and top-level make FAIL; valid control restored and passes."
+    },
+    {
+      "id": "E6-M009",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_official_tests.json",
+        "artifacts/E6/official/cpu-tests"
+      ],
+      "details": "35 official tests compiled and executed with every committed instruction checked against independent C reference; exact test list and source defaults retained."
+    },
+    {
+      "id": "E6-M010",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_devices.json",
+        "artifacts/E6/devices"
+      ],
+      "details": "Native and RTL hello output checked; random 1/8 readiness and mandatory polling; every load synchronized with independent reference. 100000-sample device and rollover tests passed."
+    },
+    {
+      "id": "E6-M011",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_benchmarks.json",
+        "artifacts/E6/benchmarks"
+      ],
+      "details": "Dhrystone/CoreMark use course-permitted 2 iterations, microbench uses test; native and RTL runs independently validate; measured host time is not silicon performance."
+    },
+    {
+      "id": "E6-M012",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_benchmarks.json",
+        "artifacts/E6/archbench_test/202.llama2_minirv-npc"
+      ],
+      "details": "Official tiny test model compiled and ran on minirv NPC, emitted Once and passed upstream validation, full differential checking enabled."
+    },
+    {
+      "id": "E6-M013",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_benchmarks.json",
+        "artifacts/E6/archbench_test"
+      ],
+      "details": "Every pinned archbench directory ran test on native and minirv NPC, including upstream checksum validation and independent per-commit differential comparison."
+    },
+    {
+      "id": "E6-M014",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_devices.json",
+        "artifacts/E6/devices"
+      ],
+      "details": "Native and RTL hello output checked; random 1/8 readiness and mandatory polling; every load synchronized with independent reference. 100000-sample device and rollover tests passed."
+    },
+    {
+      "id": "E6-M015",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_timer.json",
+        "artifacts/E6/devices/official_timer"
+      ],
+      "details": "Official AM t program produced 1/2/3-second lines with host monotonic timer; RTL/C per-commit comparison retained. Timer rollover independently tested."
+    },
+    {
+      "id": "E6-M016",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_benchmarks.json",
+        "artifacts/E6/benchmarks"
+      ],
+      "details": "Dhrystone/CoreMark use course-permitted 2 iterations, microbench uses test; native and RTL runs independently validate; measured host time is not silicon performance."
+    },
+    {
+      "id": "E6-M017",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_fceux_ascii.json",
+        "artifacts/E6/fceux/npc_ascii"
+      ],
+      "details": "Actual minirv NPC executed upstream FCEUX and two complete ASCII frames, with per-instruction differential checking; bounded semantic stop."
+    },
+    {
+      "id": "E6-M018",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_performance.json",
+        "artifacts/E6/performance/wall"
+      ],
+      "details": "All 20 official train workloads ran serially with full per-commit differential checks. Per-program process exits, upstream validators, input/output snapshots and arithmetic/geometric means audited. Original upstream script attempt retained separately as interrupted."
+    },
+    {
+      "id": "E6-M019",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_performance.json",
+        "artifacts/E6/performance/100MHz"
+      ],
+      "details": "All 20 official train workloads ran serially with full per-commit differential checks. Per-program process exits, upstream validators, input/output snapshots and arithmetic/geometric means audited. Original upstream script attempt retained separately as interrupted."
+    },
+    {
+      "id": "E6-M020",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_performance.json",
+        "artifacts/E6/performance/1000MHz"
+      ],
+      "details": "All 20 official train workloads ran serially with full per-commit differential checks. Per-program process exits, upstream validators, input/output snapshots and arithmetic/geometric means audited. Original upstream script attempt retained separately as interrupted."
+    },
+    {
+      "id": "E6-M021",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_synthesis.json",
+        "E/E6/synthesis",
+        "artifacts/E6/synthesis"
+      ],
+      "details": "Real ECC synthesis and TT static timing, with compatible Yosys. Independent LEF pin-name checks pass; timing assumptions and no-layout scope explicit."
+    },
+    {
+      "id": "E6-M022",
+      "status": "PASS",
+      "evidence": [
+        "reports/E6_performance.json",
+        "artifacts/E6/performance/synthesis"
+      ],
+      "details": "All 20 official train workloads ran serially with full per-commit differential checks. Per-program process exits, upstream validators, input/output snapshots and arithmetic/geometric means audited. Original upstream script attempt retained separately as interrupted."
+    },
+    {
+      "id": "E6-O001",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E6/NOTES.md",
+        "reports/E_backend_compatible_tools.json"
+      ],
+      "details": "Explained why test inputs are not representative performance loads; retained official tool-version compatibility failures and validated working locked versions."
+    },
+    {
+      "id": "E6-O002",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E6/NOTES.md",
+        "reports/E_backend_compatible_tools.json"
+      ],
+      "details": "Explained why test inputs are not representative performance loads; retained official tool-version compatibility failures and validated working locked versions."
+    },
+    {
+      "id": "E7-M001",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_bus_tests.json",
+        "reports/E7_bus_negative.json",
+        "reports/E7_standalone.json"
+      ],
+      "details": "Exact2-cycle IFU,3-cycleloads andvalid-request protocol verified fromcycleCSV/VCD.73officialtests passed eachof7fixed/randomdelay configs;corruptedread/duplicatestore rejected; fullapplicationsandtrainrerun;DiffTestonlyoncommit."
+    },
+    {
+      "id": "E7-M002",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_bus_tests.json",
+        "reports/E7_bus_negative.json",
+        "reports/E7_standalone.json"
+      ],
+      "details": "Exact2-cycle IFU,3-cycleloads andvalid-request protocol verified fromcycleCSV/VCD.73officialtests passed eachof7fixed/randomdelay configs;corruptedread/duplicatestore rejected; fullapplicationsandtrainrerun;DiffTestonlyoncommit."
+    },
+    {
+      "id": "E7-M003",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_standalone.json",
+        "reports/E7_ifu_performance.json",
+        "artifacts/E7/standalone/ifu"
+      ],
+      "details": "All21archbench test and20train programs, three kernel benchmarks, helloIPC andtwoFCEUXframes executed with fullper-commit DiffTest. Common100MHz model frequency is held fixed for latency comparison."
+    },
+    {
+      "id": "E7-M004",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_bus_tests.json",
+        "reports/E7_bus_negative.json",
+        "reports/E7_standalone.json"
+      ],
+      "details": "Exact2-cycle IFU,3-cycleloads andvalid-request protocol verified fromcycleCSV/VCD.73officialtests passed eachof7fixed/randomdelay configs;corruptedread/duplicatestore rejected; fullapplicationsandtrainrerun;DiffTestonlyoncommit."
+    },
+    {
+      "id": "E7-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_standalone.json",
+        "reports/E7_lsu_performance.json",
+        "artifacts/E7/standalone/lsu"
+      ],
+      "details": "All21archbench test and20train programs, three kernel benchmarks, helloIPC andtwoFCEUXframes executed with fullper-commit DiffTest. Common100MHz model frequency is held fixed for latency comparison."
+    },
+    {
+      "id": "E7-M006",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_bus_tests.json",
+        "reports/E7_bus_negative.json",
+        "reports/E7_standalone.json"
+      ],
+      "details": "Exact2-cycle IFU,3-cycleloads andvalid-request protocol verified fromcycleCSV/VCD.73officialtests passed eachof7fixed/randomdelay configs;corruptedread/duplicatestore rejected; fullapplicationsandtrainrerun;DiffTestonlyoncommit."
+    },
+    {
+      "id": "E7-M007",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_standalone.json",
+        "reports/E7_valid_performance.json",
+        "artifacts/E7/standalone/valid"
+      ],
+      "details": "All21archbench test and20train programs, three kernel benchmarks, helloIPC andtwoFCEUXframes executed with fullper-commit DiffTest. Common100MHz model frequency is held fixed for latency comparison."
+    },
+    {
+      "id": "E7-M008",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_bus_tests.json",
+        "reports/E7_bus_negative.json",
+        "reports/E7_standalone.json"
+      ],
+      "details": "Exact2-cycle IFU,3-cycleloads andvalid-request protocol verified fromcycleCSV/VCD.73officialtests passed eachof7fixed/randomdelay configs;corruptedread/duplicatestore rejected; fullapplicationsandtrainrerun;DiffTestonlyoncommit."
+    },
+    {
+      "id": "E7-M009",
+      "status": "PASS",
+      "evidence": [
+        "reports/E_source_lock.json",
+        "reports/E7_soc_smoke.json",
+        "reports/E7_official_hello.json",
+        "artifacts/E7/official_hello"
+      ],
+      "details": "Pinned2607SoC and supplied periphery integrated with exact interface; reset110SoCcycles, explicitflash-stub rejection, complete untouched officialhello boot and physicalserialdecode, CPU/SOC clocks exercised at1/3/7."
+    },
+    {
+      "id": "E7-M010",
+      "status": "PASS",
+      "evidence": [
+        "reports/E_source_lock.json",
+        "reports/E7_soc_smoke.json",
+        "reports/E7_official_hello.json",
+        "artifacts/E7/official_hello"
+      ],
+      "details": "Pinned2607SoC and supplied periphery integrated with exact interface; reset110SoCcycles, explicitflash-stub rejection, complete untouched officialhello boot and physicalserialdecode, CPU/SOC clocks exercised at1/3/7."
+    },
+    {
+      "id": "E7-M011",
+      "status": "PASS",
+      "evidence": [
+        "reports/E_source_lock.json",
+        "reports/E7_soc_smoke.json",
+        "reports/E7_official_hello.json",
+        "artifacts/E7/official_hello"
+      ],
+      "details": "Pinned2607SoC and supplied periphery integrated with exact interface; reset110SoCcycles, explicitflash-stub rejection, complete untouched officialhello boot and physicalserialdecode, CPU/SOC clocks exercised at1/3/7."
+    },
+    {
+      "id": "E7-M012",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_software.json",
+        "E/E7/software_soc",
+        "artifacts/E7/soc_software"
+      ],
+      "details": "Originaldummy/wrong/hello compiledthroughminirv-ysyxsoc andunchangedloaderprefix;GOOD/BADandmakeexitverified; mainargsreachesapplication;UART16550divisor13/8N1/LSRpollingandactualTXdecodingpass."
+    },
+    {
+      "id": "E7-M013",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_tests.json",
+        "reports/E7_SOC_TESTS.md",
+        "reports/E7_batch_integrity.json",
+        "artifacts/E7/soc_batch"
+      ],
+      "details": "All35CPUand38ISAofficialtestbodiesactuallyranonrealSoC withpercommitDiffTest andper-casepass/cycleoutput; originalallocatedcode/data preserved; batchedoneboot, wrongbatchfailurepropagates."
+    },
+    {
+      "id": "E7-M014",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_uart_math.json",
+        "reports/E7_soc_hello.json",
+        "E/E7/NOTES.md"
+      ],
+      "details": "Bauddivisor16xoversamplinganderrorcalculated;default13/alternative14and57600divisor27distinguished;realSoCTXdigitalstreamsverified."
+    },
+    {
+      "id": "E7-M015",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_software.json",
+        "E/E7/software_soc",
+        "artifacts/E7/soc_software"
+      ],
+      "details": "Originaldummy/wrong/hello compiledthroughminirv-ysyxsoc andunchangedloaderprefix;GOOD/BADandmakeexitverified; mainargsreachesapplication;UART16550divisor13/8N1/LSRpollingandactualTXdecodingpass."
+    },
+    {
+      "id": "E7-M016",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_gui.json",
+        "reports/E7_visual_review.json",
+        "reports/E7_gpio_unit.json",
+        "reports/E7_csr_tests.json",
+        "artifacts/E7/gui"
+      ],
+      "details": "ActualNVBoardTXdisplay/wrongpassword/correctunlock/16walkingLEDstates/hexIDdisplayverified;GPIOunitstrobe/APBnegativeandCSRreadonly/rollovernegativesretained;allGUIimagesvisuallyinspected."
+    },
+    {
+      "id": "E7-M017",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_gui.json",
+        "reports/E7_visual_review.json",
+        "reports/E7_gpio_unit.json",
+        "reports/E7_csr_tests.json",
+        "artifacts/E7/gui"
+      ],
+      "details": "ActualNVBoardTXdisplay/wrongpassword/correctunlock/16walkingLEDstates/hexIDdisplayverified;GPIOunitstrobe/APBnegativeandCSRreadonly/rollovernegativesretained;allGUIimagesvisuallyinspected."
+    },
+    {
+      "id": "E7-M018",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_gui.json",
+        "reports/E7_visual_review.json",
+        "reports/E7_gpio_unit.json",
+        "reports/E7_csr_tests.json",
+        "artifacts/E7/gui"
+      ],
+      "details": "ActualNVBoardTXdisplay/wrongpassword/correctunlock/16walkingLEDstates/hexIDdisplayverified;GPIOunitstrobe/APBnegativeandCSRreadonly/rollovernegativesretained;allGUIimagesvisuallyinspected."
+    },
+    {
+      "id": "E7-M019",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_gui.json",
+        "reports/E7_visual_review.json",
+        "reports/E7_gpio_unit.json",
+        "reports/E7_csr_tests.json",
+        "artifacts/E7/gui"
+      ],
+      "details": "ActualNVBoardTXdisplay/wrongpassword/correctunlock/16walkingLEDstates/hexIDdisplayverified;GPIOunitstrobe/APBnegativeandCSRreadonly/rollovernegativesretained;allGUIimagesvisuallyinspected."
+    },
+    {
+      "id": "E7-M020",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_gui.json",
+        "reports/E7_visual_review.json",
+        "reports/E7_gpio_unit.json",
+        "reports/E7_csr_tests.json",
+        "artifacts/E7/gui"
+      ],
+      "details": "ActualNVBoardTXdisplay/wrongpassword/correctunlock/16walkingLEDstates/hexIDdisplayverified;GPIOunitstrobe/APBnegativeandCSRreadonly/rollovernegativesretained;allGUIimagesvisuallyinspected."
+    },
+    {
+      "id": "E7-M021",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_gui.json",
+        "reports/E7_visual_review.json",
+        "reports/E7_gpio_unit.json",
+        "reports/E7_csr_tests.json",
+        "artifacts/E7/gui"
+      ],
+      "details": "ActualNVBoardTXdisplay/wrongpassword/correctunlock/16walkingLEDstates/hexIDdisplayverified;GPIOunitstrobe/APBnegativeandCSRreadonly/rollovernegativesretained;allGUIimagesvisuallyinspected."
+    },
+    {
+      "id": "E7-M022",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_timer.json",
+        "E/E7/runtime_patch/timer.c",
+        "artifacts/E7/timer"
+      ],
+      "details": "Originalam-testsRTConstandaloneNPCprints4successivesecondswithhostintervalcloseto1safterdocumentedcoefficientcalibration;64bitmcyclehigh-low-highreadandfullDiff. RealSoCcounter/UARTalreadyverified;itsdate-printintervalabout1.7sdocumentedseparately."
+    },
+    {
+      "id": "E7-M023",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_hello.json",
+        "reports/E7_soc_runtime_smoke.json",
+        "artifacts/E7/soc_hello"
+      ],
+      "details": "ActualcompiledSoChelloandmainargs, UART16550DLL13and27/8N1/LSRpolling, fullbyteTXdecode, application/wholeIPC, clockratio1and3verifiedfromactualVCDandfunctionalruns."
+    },
+    {
+      "id": "E7-M024",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_performance.json",
+        "reports/E7_synthesis.json",
+        "reports/E7_area_units.json",
+        "artifacts/E7/soc_performance"
+      ],
+      "details": "Full100.blockchaintrainactualruns at25MHzk1,125MHzk5baseline and75MHzk3area;25MHzperipherals;counterfrequencyandVCDratioverified;min-times,marks,area/costretained."
+    },
+    {
+      "id": "E7-M025",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_hello.json",
+        "reports/E7_soc_runtime_smoke.json",
+        "artifacts/E7/soc_hello"
+      ],
+      "details": "ActualcompiledSoChelloandmainargs, UART16550DLL13and27/8N1/LSRpolling, fullbyteTXdecode, application/wholeIPC, clockratio1and3verifiedfromactualVCDandfunctionalruns."
+    },
+    {
+      "id": "E7-M026",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_performance.json",
+        "reports/E7_synthesis.json",
+        "reports/E7_area_units.json",
+        "artifacts/E7/soc_performance"
+      ],
+      "details": "Full100.blockchaintrainactualruns at25MHzk1,125MHzk5baseline and75MHzk3area;25MHzperipherals;counterfrequencyandVCDratioverified;min-times,marks,area/costretained."
+    },
+    {
+      "id": "E7-M027",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_performance.json",
+        "reports/E7_synthesis.json",
+        "reports/E7_area_units.json",
+        "artifacts/E7/soc_performance"
+      ],
+      "details": "Full100.blockchaintrainactualruns at25MHzk1,125MHzk5baseline and75MHzk3area;25MHzperipherals;counterfrequencyandVCDratioverified;min-times,marks,area/costretained."
+    },
+    {
+      "id": "E7-M028",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_synthesis.json",
+        "E/E7/synthesis"
+      ],
+      "details": "Computed the course hypothetical die/cost model from actual synthesis area; CPU-only and missing other costs explicitly bounded."
+    },
+    {
+      "id": "E7-M029",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_performance.json",
+        "reports/E7_synthesis.json",
+        "reports/E7_area_units.json",
+        "artifacts/E7/soc_performance"
+      ],
+      "details": "Full100.blockchaintrainactualruns at25MHzk1,125MHzk5baseline and75MHzk3area;25MHzperipherals;counterfrequencyandVCDratioverified;min-times,marks,area/costretained."
+    },
+    {
+      "id": "E7-M030",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_final_runtime.json",
+        "reports/E7_soc_software.json",
+        "reports/E7_standalone.json",
+        "E/E7/runtime_patch/NPC.Makefile"
+      ],
+      "details": "OneNPCMakefile selectsindependentbusCPUoractualSoC; bothactuallyexecuteAMapplications. Correctcompiler/headerdependencyfixesfrozenandrecheckedwithfullmicrobench; GUIselectorpassescorrectarguments."
+    },
+    {
+      "id": "E7-O001",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_bus_tests.json",
+        "reports/E7_bus_negative.json",
+        "reports/E7_standalone.json"
+      ],
+      "details": "Exact2-cycle IFU,3-cycleloads andvalid-request protocol verified fromcycleCSV/VCD.73officialtests passed eachof7fixed/randomdelay configs;corruptedread/duplicatestore rejected; fullapplicationsandtrainrerun;DiffTestonlyoncommit."
+    },
+    {
+      "id": "E7-O002",
+      "status": "NOT_SELECTED_OPTIONAL",
+      "evidence": [
+        "E/E7/NOTES.md",
+        "reports/E7_standalone.json",
+        "reports/E7_soc_performance.json"
+      ],
+      "details": "The optional roughly10hour fullarchbenchSoCsweep is notselected. All21test/20trainprogramsrunineachstandalonevariant; requiredSoCblockchaintrainsrunatall3selectedoperatingpoints."
+    },
+    {
+      "id": "E7-O003",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E7/NOTES.md",
+        "reports/E7_soc_performance.json"
+      ],
+      "details": "Measuredk1/kmaxandarearesults separateCPUfrequencyfrom25MHzperipheral/PSRAMlatency; integerMarksroundingandmin-timedifferencesreported, nofrequency-onlyperformanceclaim."
+    },
+    {
+      "id": "E7-R001",
+      "status": "PASS",
+      "evidence": [
+        "reports/E7_soc_software.json",
+        "E/E7/software_soc",
+        "artifacts/E7/soc_software"
+      ],
+      "details": "Originaldummy/wrong/hello compiledthroughminirv-ysyxsoc andunchangedloaderprefix;GOOD/BADandmakeexitverified; mainargsreachesapplication;UART16550divisor13/8N1/LSRpollingandactualTXdecodingpass."
+    },
+    {
+      "id": "E7-R002",
+      "status": "PASS",
+      "evidence": [
+        "reports/E_source_lock.json",
+        "reports/E7_soc_smoke.json",
+        "reports/E7_official_hello.json",
+        "artifacts/E7/official_hello"
+      ],
+      "details": "Pinned2607SoC and supplied periphery integrated with exact interface; reset110SoCcycles, explicitflash-stub rejection, complete untouched officialhello boot and physicalserialdecode, CPU/SOC clocks exercised at1/3/7."
+    },
+    {
+      "id": "E8-M001",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_front_audit.json",
+        "reports/E8_address_reset.json",
+        "reports/E8_rtl_icarus.json",
+        "reports/E8_two_state_control.json",
+        "artifacts/E8/final_front"
+      ],
+      "details": "CurrentRTLhashmatchesactualsynthesisinput; fulladdressboundarytests+clippingnegative;posedgeonly/611DFFsingleclock/noLAT;strictlintandcompleteRTLmicrobench4statepass;missingreset/Xargument/invalidexitnegativesretained. Laterchangeswerebuild/hostUIonly, notDUTRTL."
+    },
+    {
+      "id": "E8-M002",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_front_audit.json",
+        "reports/E8_address_reset.json",
+        "reports/E8_rtl_icarus.json",
+        "reports/E8_two_state_control.json",
+        "artifacts/E8/final_front"
+      ],
+      "details": "CurrentRTLhashmatchesactualsynthesisinput; fulladdressboundarytests+clippingnegative;posedgeonly/611DFFsingleclock/noLAT;strictlintandcompleteRTLmicrobench4statepass;missingreset/Xargument/invalidexitnegativesretained. Laterchangeswerebuild/hostUIonly, notDUTRTL."
+    },
+    {
+      "id": "E8-M003",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_front_audit.json",
+        "reports/E8_address_reset.json",
+        "reports/E8_rtl_icarus.json",
+        "reports/E8_two_state_control.json",
+        "artifacts/E8/final_front"
+      ],
+      "details": "CurrentRTLhashmatchesactualsynthesisinput; fulladdressboundarytests+clippingnegative;posedgeonly/611DFFsingleclock/noLAT;strictlintandcompleteRTLmicrobench4statepass;missingreset/Xargument/invalidexitnegativesretained. Laterchangeswerebuild/hostUIonly, notDUTRTL."
+    },
+    {
+      "id": "E8-M004",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_front_audit.json",
+        "reports/E8_address_reset.json",
+        "reports/E8_rtl_icarus.json",
+        "reports/E8_two_state_control.json",
+        "artifacts/E8/final_front"
+      ],
+      "details": "CurrentRTLhashmatchesactualsynthesisinput; fulladdressboundarytests+clippingnegative;posedgeonly/611DFFsingleclock/noLAT;strictlintandcompleteRTLmicrobench4statepass;missingreset/Xargument/invalidexitnegativesretained. Laterchangeswerebuild/hostUIonly, notDUTRTL."
+    },
+    {
+      "id": "E8-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_front_audit.json",
+        "reports/E8_address_reset.json",
+        "reports/E8_rtl_icarus.json",
+        "reports/E8_two_state_control.json",
+        "artifacts/E8/final_front"
+      ],
+      "details": "CurrentRTLhashmatchesactualsynthesisinput; fulladdressboundarytests+clippingnegative;posedgeonly/611DFFsingleclock/noLAT;strictlintandcompleteRTLmicrobench4statepass;missingreset/Xargument/invalidexitnegativesretained. Laterchangeswerebuild/hostUIonly, notDUTRTL."
+    },
+    {
+      "id": "E8-M006",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_rtl_icarus.json",
+        "reports/E8_icarus14_controls.json"
+      ],
+      "details": "Completeofficialmicrobench/hellopassedfour-stateRTL; version14positive/missing-reset/Xargumentcontrolsalsopassed."
+    },
+    {
+      "id": "E8-M007",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_final_mapped.json",
+        "reports/E8_icarus14_controls.json"
+      ],
+      "details": "Finalbaselineactualmappednetlistcompletedhello/fullmicrobench inVerilatorandIcarus14 withoriginalPDKUDPmodels;22,129,163cyclesGOOD_TRAP."
+    },
+    {
+      "id": "E8-M008",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_final_mapped.json",
+        "reports/E8_icarus14_controls.json"
+      ],
+      "details": "Finalbaselineactualmappednetlistcompletedhello/fullmicrobench inVerilatorandIcarus14 withoriginalPDKUDPmodels;22,129,163cyclesGOOD_TRAP."
+    },
+    {
+      "id": "E8-M009",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_front_audit.json",
+        "reports/E8_address_reset.json",
+        "reports/E8_rtl_icarus.json",
+        "reports/E8_two_state_control.json",
+        "artifacts/E8/final_front"
+      ],
+      "details": "CurrentRTLhashmatchesactualsynthesisinput; fulladdressboundarytests+clippingnegative;posedgeonly/611DFFsingleclock/noLAT;strictlintandcompleteRTLmicrobench4statepass;missingreset/Xargument/invalidexitnegativesretained. Laterchangeswerebuild/hostUIonly, notDUTRTL."
+    },
+    {
+      "id": "E8-M010",
+      "status": "PASS",
+      "evidence": [
+        "reports/E8_signoff_export.json",
+        "reports/E8_gui.json",
+        "reports/E8_visual_review.json",
+        "E/E8/signoff/cpu-baseline-signoff.tar.gz",
+        "E/E8/signoff/layout.png",
+        "artifacts/E8/physical/cpu_baseline"
+      ],
+      "details": "ActualCPU12-stepphysicalflow,DRC0/LVS0,13cornerSTAsetup/holdclosedat50MHz,9validSPEFs;actualengineexport210membershashverified;realECOSdashboard/checklist/native2Dviewinspected. Onlyoptionalno-macrolocationwarning."
+    },
+    {
+      "id": "E8-O001",
+      "status": "NOT_APPLICABLE",
+      "evidence": [
+        "E/E8/NOTES.md",
+        "reports/E8_front_audit.json"
+      ],
+      "details": "TheseareChisel-specificbackgroundnotes;thisprojectuseshandwrittenSystemVerilog. Equivalentgeneralrequirementsareactuallychecked."
+    },
+    {
+      "id": "E8-O002",
+      "status": "NOT_APPLICABLE",
+      "evidence": [
+        "E/E8/NOTES.md",
+        "reports/E8_front_audit.json"
+      ],
+      "details": "TheseareChisel-specificbackgroundnotes;thisprojectuseshandwrittenSystemVerilog. Equivalentgeneralrequirementsareactuallychecked."
+    },
+    {
+      "id": "E8-O003",
+      "status": "NOT_APPLICABLE",
+      "evidence": [
+        "E/E8/NOTES.md",
+        "reports/E8_front_audit.json"
+      ],
+      "details": "TheseareChisel-specificbackgroundnotes;thisprojectuseshandwrittenSystemVerilog. Equivalentgeneralrequirementsareactuallychecked."
+    },
+    {
+      "id": "E8-O004",
+      "status": "NOT_APPLICABLE",
+      "evidence": [
+        "E/E8/NOTES.md",
+        "reports/E8_front_audit.json"
+      ],
+      "details": "TheseareChisel-specificbackgroundnotes;thisprojectuseshandwrittenSystemVerilog. Equivalentgeneralrequirementsareactuallychecked."
+    },
+    {
+      "id": "E8-O005",
+      "status": "NOT_SELECTED_OPTIONAL",
+      "evidence": [
+        "E/E8/NOTES.md"
+      ],
+      "details": "Optionalmaximumutilizationsearchnotselected;objectiveisonefullycheckedphysicalcandidate. Nooptimalityclaim."
+    },
+    {
+      "id": "E8-R001",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "reports/E_backend_assets.json",
+        "reports/E8_mapped_preflight.json",
+        "E/E8/NOTES.md"
+      ],
+      "details": "Lockedv1.10.100modelsincludeofficialVerilatorcompatibilitybranch;physical/functionalmodelhashesrecorded. FinalIcarususesoriginalUDPbranch."
+    },
+    {
+      "id": "E9-M001",
+      "status": "EXCLUDED_SCOPE",
+      "evidence": [
+        "E/E9/SCOPE.md",
+        "E/E9/sources/E9.md",
+        "reports/E9_AUDIT.json"
+      ],
+      "details": "Personal reflections, identity, admission application and defense remain user-excluded; original requirements retained."
+    },
+    {
+      "id": "E9-M002",
+      "status": "EXCLUDED_SCOPE",
+      "evidence": [
+        "E/E9/SCOPE.md",
+        "E/E9/sources/E9.md",
+        "reports/E9_AUDIT.json"
+      ],
+      "details": "Personal reflections, identity, admission application and defense remain user-excluded; original requirements retained."
+    },
+    {
+      "id": "E9-O001",
+      "status": "EXCLUDED_SCOPE",
+      "evidence": [
+        "E/E9/SCOPE.md",
+        "E/E9/sources/E9.md",
+        "reports/E9_AUDIT.json"
+      ],
+      "details": "Personal reflections, identity, admission application and defense remain user-excluded; original requirements retained."
+    }
+  ],
+  "timestamp": "2026-10-25T18:18:02.522518+00:00"
+}

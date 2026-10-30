@@ -1,0 +1,339 @@
+{
+  "status": "PASS",
+  "tool": "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\yosys.exe",
+  "tool_sha256": "1b1fa4a8666b3c92ba5bca049692cf1eba0228b3ac0b9e9ef67762581d6f03a4",
+  "results": [
+    {
+      "top": "comb",
+      "cells_in_retained_modules": 112,
+      "clocked_cells": 0,
+      "asynchronous_memory_read_ports": 1,
+      "json_sha256": "fbdb80ef5e03e78423d29c99ea43774bdd0e4a8c3ee607eef9599989d7848e4f",
+      "run": {
+        "name": "E4/structure/comb",
+        "timestamp": "2026-10-24T21:07:08.277812+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\yosys.exe",
+          "-Q",
+          "-T",
+          "-s",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\comb.ys"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.063,
+        "timeout_seconds": 120,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\comb.sv",
+            "sha256": "16bd1c558eb8d6e69acd61a5363abb83b509ab86bd2c95d801ce07b2a7379eb9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\comb.ys",
+            "sha256": "d9a0d5937269a919b420aa222f97bb23b22fbd48b894b8feb09e70a0e8d55a24"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\comb.sv",
+            "sha256": "16bd1c558eb8d6e69acd61a5363abb83b509ab86bd2c95d801ce07b2a7379eb9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\comb.ys",
+            "sha256": "d9a0d5937269a919b420aa222f97bb23b22fbd48b894b8feb09e70a0e8d55a24"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "93b6ead109092fcd51d5f7d4fe863fd9a3f61e0188b42452c7461fc16df5ddac",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "top": "sequential",
+      "cells_in_retained_modules": 72,
+      "clocked_cells": 9,
+      "asynchronous_memory_read_ports": 0,
+      "json_sha256": "18c4333507579b6a67aa89418e5707e418d58479278ae0f0d9e160f53ea92f8c",
+      "run": {
+        "name": "E4/structure/sequential",
+        "timestamp": "2026-10-24T21:07:08.397892+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\yosys.exe",
+          "-Q",
+          "-T",
+          "-s",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\sequential.ys"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.047,
+        "timeout_seconds": 120,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\sequential.sv",
+            "sha256": "c4e1c417da823ee4da7c7547ecb6af9f61dbef92618bf502462c70729d92a3d0"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\sequential.ys",
+            "sha256": "d146e0f4bcf7972bec164adee6a9c0cf8dbd095da47e10e622fd73f5e4961cad"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\sequential.sv",
+            "sha256": "c4e1c417da823ee4da7c7547ecb6af9f61dbef92618bf502462c70729d92a3d0"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\sequential.ys",
+            "sha256": "d146e0f4bcf7972bec164adee6a9c0cf8dbd095da47e10e622fd73f5e4961cad"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "5ee643d58c02db0891afb9cef0874a30c4390627ad34e8bfb19d6d99098f58ef",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "top": "keyboard",
+      "cells_in_retained_modules": 119,
+      "clocked_cells": 18,
+      "asynchronous_memory_read_ports": 1,
+      "json_sha256": "e9abd802e5106d973144e79fbaead08f5bffd281603d4fcd51e7d692f2d7de84",
+      "run": {
+        "name": "E4/structure/keyboard",
+        "timestamp": "2026-10-24T21:07:08.628687+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\yosys.exe",
+          "-Q",
+          "-T",
+          "-s",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\keyboard.ys"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.156,
+        "timeout_seconds": 120,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\keyboard.sv",
+            "sha256": "1998ccd4529aee1d2825b0e0b18c24b8d984dd2bce94b10d72e38cf15949e43d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\keyboard.ys",
+            "sha256": "d38924f6cc404828368f409a4f2c86bb223bccdbd373e46405b396b339e754f3"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\keyboard.sv",
+            "sha256": "1998ccd4529aee1d2825b0e0b18c24b8d984dd2bce94b10d72e38cf15949e43d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\keyboard.ys",
+            "sha256": "d38924f6cc404828368f409a4f2c86bb223bccdbd373e46405b396b339e754f3"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "3e497674a3464d9bb2f8b56379c3ebc348ffa9dc5bc9eaf8f7709789ca611ff4",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "top": "cpu_top",
+      "cells_in_retained_modules": 55,
+      "clocked_cells": 8,
+      "asynchronous_memory_read_ports": 7,
+      "json_sha256": "79fb7e02e909f980321e9d930ee8c4308cc349c6c7f83c0caa4b335dedb49d47",
+      "run": {
+        "name": "E4/structure/cpu_top",
+        "timestamp": "2026-10-24T21:07:08.765460+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\yosys.exe",
+          "-Q",
+          "-T",
+          "-s",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\cpu_top.ys"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.063,
+        "timeout_seconds": 120,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\scpu.sv",
+            "sha256": "cc6e2d87c89a34d038dfdf2c292c05ff6f45704171086fb5d23ddac5aeb9bb95"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\cpu_top.sv",
+            "sha256": "3cca20f126fab80968956c1698ee099d1129cce956ea8cd2acf88e00c8e2609f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\cpu_top.ys",
+            "sha256": "2a0ab7daf24b248b1e69ec719f8faa0e4bd80c0171e3fe37f590abb60246418c"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\scpu.sv",
+            "sha256": "cc6e2d87c89a34d038dfdf2c292c05ff6f45704171086fb5d23ddac5aeb9bb95"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\rtl\\cpu_top.sv",
+            "sha256": "3cca20f126fab80968956c1698ee099d1129cce956ea8cd2acf88e00c8e2609f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\cpu_top.ys",
+            "sha256": "2a0ab7daf24b248b1e69ec719f8faa0e4bd80c0171e3fe37f590abb60246418c"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "72f08a98aa4f11286b4ad8a29b2aad865991739e5c8fde71ba2fdd730aafeee7",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "top": "vga_timing",
+      "cells_in_retained_modules": 22,
+      "clocked_cells": 2,
+      "asynchronous_memory_read_ports": 0,
+      "json_sha256": "697b11a29b8cb1f26d9eb1c769cf618fedd42d64c632fed9ac89b7a9dc7f8b60",
+      "run": {
+        "name": "E4/structure/vga_timing",
+        "timestamp": "2026-10-24T21:07:08.872670+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\yosys.exe",
+          "-Q",
+          "-T",
+          "-s",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\vga_timing.ys"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 120,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\vga_control_only.sv",
+            "sha256": "8984861cbb403c5d61385d9c4d11e359dac0e975bfdbf7e3a93d1e7b4658601f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\vga_timing.ys",
+            "sha256": "1b99b8b8de143cda7e0da260ef56beda6fe11bc2dcbd671b98edc94336c1e923"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\vga_control_only.sv",
+            "sha256": "8984861cbb403c5d61385d9c4d11e359dac0e975bfdbf7e3a93d1e7b4658601f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\vga_timing.ys",
+            "sha256": "1b99b8b8de143cda7e0da260ef56beda6fe11bc2dcbd671b98edc94336c1e923"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "0bf3affc7cc9f6c0d2032185d0f71f081f0838f6e1d91dc1667160ceb18b7f85",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "top": "motion",
+      "cells_in_retained_modules": 41,
+      "clocked_cells": 4,
+      "asynchronous_memory_read_ports": 0,
+      "json_sha256": "fb2f608df90609ac656eaf460aa4daa63a2d0a5b1fa381ec51c7f8204377c3d7",
+      "run": {
+        "name": "E4/structure/motion",
+        "timestamp": "2026-10-24T21:07:08.964734+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\yosys.exe",
+          "-Q",
+          "-T",
+          "-s",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\motion.ys"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.062,
+        "timeout_seconds": 120,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\vga_control_only.sv",
+            "sha256": "8984861cbb403c5d61385d9c4d11e359dac0e975bfdbf7e3a93d1e7b4658601f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\motion.ys",
+            "sha256": "59aa8135021c3fdd5f6a94863e2fa63f60dbb987c5888f97760f7fc4f03346b8"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\vga_control_only.sv",
+            "sha256": "8984861cbb403c5d61385d9c4d11e359dac0e975bfdbf7e3a93d1e7b4658601f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\motion.ys",
+            "sha256": "59aa8135021c3fdd5f6a94863e2fa63f60dbb987c5888f97760f7fc4f03346b8"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e739eab69037de65a334e77842812f9bec59b725f3233c5409abbf5815f03f1e",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "negative": {
+    "name": "E4/structure/negative",
+    "timestamp": "2026-10-24T21:07:09.019185+00:00",
+    "command": [
+      "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\yosys.exe",
+      "-Q",
+      "-T",
+      "-s",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\negative.ys"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "status": "PASS",
+    "elapsed_seconds": 0.047,
+    "timeout_seconds": 90,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\faults\\lint_bad.sv",
+        "sha256": "19ee5d8a937505f16f1377846fb75a0f3d3f3ab7a103fb8afc5b0efc6c3036f4"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\negative.ys",
+        "sha256": "b5fa64c33bc6fc26ab7f4236e914dab2943ca56d069234d1f8877810f6c7d4c8"
+      }
+    ],
+    "inputs_after": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E4\\faults\\lint_bad.sv",
+        "sha256": "19ee5d8a937505f16f1377846fb75a0f3d3f3ab7a103fb8afc5b0efc6c3036f4"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E4\\structure\\negative.ys",
+        "sha256": "b5fa64c33bc6fc26ab7f4236e914dab2943ca56d069234d1f8877810f6c7d4c8"
+      }
+    ],
+    "inputs_unchanged": true,
+    "stdout_sha256": "95d653bf21f1145227b5b58f0e70c9ff311077d1e735f1eadf3c7a5b35600942",
+    "stderr_sha256": "3d811f4e163262fdcd018807ec8f8a03d5df4f33abe774fe7493f4d907e44f28"
+  },
+  "negative_clock_rejected": true,
+  "scope": "Process/netlist structural checks only: no inferred latches, only positive-edge clocked cells. $memrd CLK_ENABLE=0 is asynchronous and its unused CLK_POLARITY is not interpreted as a falling-edge flop. Full display image RAM excluded; no physical PPA or unbounded functional proof."
+}

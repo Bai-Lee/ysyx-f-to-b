@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "workbench_commit": "a839def3f3b046f730537ea420d3075e725d27ce",
+  "nvboard_commit": "b5f49b68a85f4a1a185086cbd6532fff3ecda454",
+  "nvboard_source_bundle": "/workspace/downloads/ysyx_e4/nvboard.bundle",
+  "bundle_sha256": "ac9ca41ead83c02d86fd255fb13397a62946fe433fefe5dd1398aab63c450a05",
+  "init_adaptation": "Offline clone from archived official objects; per-process env.sh instead of persistent shell rc edits. Original upstream AGENTS retained; direct user requests autonomous AI engineering benchmark, no student-authorship claim.",
+  "integration_evidence": "reports/E4_board_build.json"
+}

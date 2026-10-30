@@ -1,0 +1,10 @@
+read_liberty -lib /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib
+read_verilog -sv -DSYNTHESIS /workspace/projects/ysyx_f_to_b/B/B3/components.sv
+synth -top b_adder32 -flatten
+dfflibmap -liberty /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib
+abc -liberty /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib -constr /workspace/projects/ysyx_f_to_b/B/B3/synthesis/b3-uncached-adder/abc.constr -D 200
+clean
+check -assert
+tee -o /workspace/projects/ysyx_f_to_b/B/B3/synthesis/b3-uncached-adder/stat.json stat -liberty /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib -json
+write_verilog -noattr -noexpr -simple-lhs /workspace/projects/ysyx_f_to_b/B/B3/synthesis/b3-uncached-adder/mapped.v
+write_json /workspace/projects/ysyx_f_to_b/B/B3/synthesis/b3-uncached-adder/mapped.json

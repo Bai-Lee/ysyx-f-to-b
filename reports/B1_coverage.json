@@ -1,0 +1,162 @@
+{
+  "status": "PASS_PUBLIC_ENGINEERING_WITH_DECLARED_LIMITS",
+  "stage_complete": true,
+  "stage": "B1",
+  "core_tasks": 4,
+  "adapted_tasks": 1,
+  "scope_records": 7,
+  "records": [
+    {
+      "id": "B1-O001",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "B/B1/NOTES.md",
+        "reports/B4_release_soc.json"
+      ],
+      "details": "串口按字节输出，完整msh提示符和后续命令可见；不依赖末尾换行。",
+      "evidence_sha256": {
+        "reports/B1_native.json": "bbf92b0158f9a58e3961f35e62b6bce87fdf7e02fe2bad682c10d020a13bb1a1",
+        "reports/B1_npc.json": "1a06d0b3ce4d623bbfb5be6e7f0b554d958723824246e53f59e4c4a73ed9acb1",
+        "B/B1/NOTES.md": "f56c92eabc85802c0985d804705c7578195874b034a5c0e7ec9584c58879ef4c",
+        "reports/B4_release_soc.json": "84f48dee4fbe5bda71a6dd339dfab9997db024367f4c0a15d020d022755f0383"
+      },
+      "source": {
+        "path": "B/B1/sources/B1.md",
+        "sha256": "14ecf21f03ec0dead63eea348e9b7180a53dc19570254477a300736f4d50bdec",
+        "raw_sha256": "8805377ab8cb50371f098fe01543a3928753d49d0d28f55d4ceccb7e2bc71eaf",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B1-O002",
+      "status": "EXCLUDED_SCOPE",
+      "evidence": [
+        "B/runtime/course_specs.json",
+        "B/B5/NOTES.md"
+      ],
+      "details": "个人身份、申请、白名单、官方提交或联系流程排除。",
+      "evidence_sha256": {
+        "B/runtime/course_specs.json": "2dae681f19642fa277b253a846ceab4e3aaaa1647c1885fee4f1e40d49456cf1",
+        "B/B5/NOTES.md": "66d80747657288ec1f87016c12415ef875cc86843d8fae0fdf2923fa6e41d97f"
+      },
+      "source": {
+        "path": "B/B1/sources/B1.md",
+        "sha256": "14ecf21f03ec0dead63eea348e9b7180a53dc19570254477a300736f4d50bdec",
+        "raw_sha256": "8805377ab8cb50371f098fe01543a3928753d49d0d28f55d4ceccb7e2bc71eaf",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B1-M001",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "B/B1/NOTES.md"
+      ],
+      "details": "ECALL/MRET、CSR、etrace、完整上下文形成与恢复；32寄存器NEMU、16寄存器NPC，t0破坏反例。",
+      "evidence_sha256": {
+        "reports/B1_native.json": "bbf92b0158f9a58e3961f35e62b6bce87fdf7e02fe2bad682c10d020a13bb1a1",
+        "reports/B1_npc.json": "1a06d0b3ce4d623bbfb5be6e7f0b554d958723824246e53f59e4c4a73ed9acb1",
+        "B/B1/NOTES.md": "f56c92eabc85802c0985d804705c7578195874b034a5c0e7ec9584c58879ef4c"
+      },
+      "source": {
+        "path": "B/B1/sources/B1.md",
+        "sha256": "14ecf21f03ec0dead63eea348e9b7180a53dc19570254477a300736f4d50bdec",
+        "raw_sha256": "8805377ab8cb50371f098fe01543a3928753d49d0d28f55d4ceccb7e2bc71eaf",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B1-M002",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "B/B1/NOTES.md"
+      ],
+      "details": "独立NEMU真实启动RT-Thread，原始Shell命令及线程参数/返回完成；止于启动范围。",
+      "evidence_sha256": {
+        "reports/B1_native.json": "bbf92b0158f9a58e3961f35e62b6bce87fdf7e02fe2bad682c10d020a13bb1a1",
+        "reports/B1_npc.json": "1a06d0b3ce4d623bbfb5be6e7f0b554d958723824246e53f59e4c4a73ed9acb1",
+        "B/B1/NOTES.md": "f56c92eabc85802c0985d804705c7578195874b034a5c0e7ec9584c58879ef4c"
+      },
+      "source": {
+        "path": "B/B1/sources/B1.md",
+        "sha256": "14ecf21f03ec0dead63eea348e9b7180a53dc19570254477a300736f4d50bdec",
+        "raw_sha256": "8805377ab8cb50371f098fe01543a3928753d49d0d28f55d4ceccb7e2bc71eaf",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B1-M003",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "B/B1/NOTES.md",
+        "reports/B4_release_soc.json"
+      ],
+      "details": "mcycle/mcycleh递增、回绕和CSR操作；参考时钟独立推进，冻结参考时钟会失败。",
+      "evidence_sha256": {
+        "reports/B1_native.json": "bbf92b0158f9a58e3961f35e62b6bce87fdf7e02fe2bad682c10d020a13bb1a1",
+        "reports/B1_npc.json": "1a06d0b3ce4d623bbfb5be6e7f0b554d958723824246e53f59e4c4a73ed9acb1",
+        "B/B1/NOTES.md": "f56c92eabc85802c0985d804705c7578195874b034a5c0e7ec9584c58879ef4c",
+        "reports/B4_release_soc.json": "84f48dee4fbe5bda71a6dd339dfab9997db024367f4c0a15d020d022755f0383"
+      },
+      "source": {
+        "path": "B/B1/sources/B1.md",
+        "sha256": "14ecf21f03ec0dead63eea348e9b7180a53dc19570254477a300736f4d50bdec",
+        "raw_sha256": "8805377ab8cb50371f098fe01543a3928753d49d0d28f55d4ceccb7e2bc71eaf",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B1-M004",
+      "status": "PASS_PROJECT_ID_ADAPTATION",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "B/B1/NOTES.md"
+      ],
+      "details": "mvendorid=0x79737978、marchid=0x26070001及进入main前输出；稳定项目编号适配，非个人学号。",
+      "evidence_sha256": {
+        "reports/B1_native.json": "bbf92b0158f9a58e3961f35e62b6bce87fdf7e02fe2bad682c10d020a13bb1a1",
+        "reports/B1_npc.json": "1a06d0b3ce4d623bbfb5be6e7f0b554d958723824246e53f59e4c4a73ed9acb1",
+        "B/B1/NOTES.md": "f56c92eabc85802c0985d804705c7578195874b034a5c0e7ec9584c58879ef4c"
+      },
+      "source": {
+        "path": "B/B1/sources/B1.md",
+        "sha256": "14ecf21f03ec0dead63eea348e9b7180a53dc19570254477a300736f4d50bdec",
+        "raw_sha256": "8805377ab8cb50371f098fe01543a3928753d49d0d28f55d4ceccb7e2bc71eaf",
+        "version": "v26.07"
+      }
+    },
+    {
+      "id": "B1-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/B1_native.json",
+        "reports/B1_npc.json",
+        "B/B1/NOTES.md",
+        "reports/B4_release_soc.json"
+      ],
+      "details": "M模式同步ECALL、上下文切换、完整SoC上的RT-Thread；不扩充为完整特权级或异步抢占。",
+      "evidence_sha256": {
+        "reports/B1_native.json": "bbf92b0158f9a58e3961f35e62b6bce87fdf7e02fe2bad682c10d020a13bb1a1",
+        "reports/B1_npc.json": "1a06d0b3ce4d623bbfb5be6e7f0b554d958723824246e53f59e4c4a73ed9acb1",
+        "B/B1/NOTES.md": "f56c92eabc85802c0985d804705c7578195874b034a5c0e7ec9584c58879ef4c",
+        "reports/B4_release_soc.json": "84f48dee4fbe5bda71a6dd339dfab9997db024367f4c0a15d020d022755f0383"
+      },
+      "source": {
+        "path": "B/B1/sources/B1.md",
+        "sha256": "14ecf21f03ec0dead63eea348e9b7180a53dc19570254477a300736f4d50bdec",
+        "raw_sha256": "8805377ab8cb50371f098fe01543a3928753d49d0d28f55d4ceccb7e2bc71eaf",
+        "version": "v26.07"
+      }
+    }
+  ],
+  "scope": "Mandatory public engineering accepted; optional NOT_RUN/TIMEOUT, background and official-process exclusions remain explicit."
+}

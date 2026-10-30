@@ -1,0 +1,3294 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "id": "HDL-006",
+      "slug": "andgate",
+      "title": "AND gate",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\6ae043af8880cc6d.html",
+      "source_sha256": "828283be95bd47aef3db705ae48c70e33a45cd687b37a8d217fbfac72eae62be",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\andgate.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+      "cases": 4,
+      "outputs_checked": {
+        "out": 4
+      },
+      "mask_reasons": {},
+      "explanation": "",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "or_instead_of_and",
+        "old": "assign out = a & b;",
+        "new": "assign out = a | b;"
+      },
+      "syntax": {
+        "name": "E1/andgate__fault_or_instead_of_and/syntax",
+        "timestamp": "2026-10-24T13:36:49.297292+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.125,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.v",
+            "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.v",
+            "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/andgate__fault_or_instead_of_and/compile",
+        "timestamp": "2026-10-24T13:36:49.418118+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.v",
+            "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+            "sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+            "sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.v",
+            "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+            "sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+            "sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "a3ba3329cb3e977347fe66316d390ebfe4482ef89ef3c68d31fb318cdc93041c"
+      },
+      "simulation": {
+        "name": "E1/andgate__fault_or_instead_of_and/simulate",
+        "timestamp": "2026-10-24T13:36:49.525450+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.032,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.v",
+            "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+            "sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+            "sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.vvp",
+            "sha256": "0d25c515e491f3dd8b138ad0b4cd9fad9fcdf83732772525cbef3cf973244076"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.v",
+            "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+            "sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+            "sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_or_instead_of_and.vvp",
+            "sha256": "0d25c515e491f3dd8b138ad0b4cd9fad9fcdf83732772525cbef3cf973244076"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "95367d07975af945b51fd57e67867ec6c01f257fae43eeddb9c15737b3b7aa5e",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504",
+      "vectors_sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa",
+      "testbench_sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-119",
+      "slug": "fsm1",
+      "title": "Simple FSM 1 (asynchronous reset)",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\76a0bdd17a04d8ce.html",
+      "source_sha256": "89bd724385e3aeda3857d645a101fedac07248123b7bfd3206d7eaf6161b6251",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm1.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm1.txt",
+      "cases": 2028,
+      "outputs_checked": {
+        "out": 2028
+      },
+      "mask_reasons": {},
+      "explanation": "A输出0/B输出1；复位B，in=0切换，in=1保持。遍历所有状态/输入/复位。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "sync_instead_of_async",
+        "old": "always @(posedge clk or posedge areset)",
+        "new": "always @(posedge clk)"
+      },
+      "syntax": {
+        "name": "E1/fsm1__fault_sync_instead_of_async/syntax",
+        "timestamp": "2026-10-24T13:36:49.646557+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.079,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.v",
+            "sha256": "b09862a11bc944a48b11110e123f4b64918bcf8bb04692aeb17839f28dd6cfa7"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.v",
+            "sha256": "b09862a11bc944a48b11110e123f4b64918bcf8bb04692aeb17839f28dd6cfa7"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/fsm1__fault_sync_instead_of_async/compile",
+        "timestamp": "2026-10-24T13:36:49.759548+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.v",
+            "sha256": "b09862a11bc944a48b11110e123f4b64918bcf8bb04692aeb17839f28dd6cfa7"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_tb.sv",
+            "sha256": "2c9243a854989de59a5afb27d58349cb4ab3d067c39ad078fb5d52cb25a64a7a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm1.txt",
+            "sha256": "f4eae49263eb2ef0aaca22717e82e84e004c558bdd0debbf5be26cca0f6f7fda"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.v",
+            "sha256": "b09862a11bc944a48b11110e123f4b64918bcf8bb04692aeb17839f28dd6cfa7"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_tb.sv",
+            "sha256": "2c9243a854989de59a5afb27d58349cb4ab3d067c39ad078fb5d52cb25a64a7a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm1.txt",
+            "sha256": "f4eae49263eb2ef0aaca22717e82e84e004c558bdd0debbf5be26cca0f6f7fda"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "f0aa6e53dc754dbca131d2167eb086bddd8ad91a0968476e6d0108aa06fc386a"
+      },
+      "simulation": {
+        "name": "E1/fsm1__fault_sync_instead_of_async/simulate",
+        "timestamp": "2026-10-24T13:36:49.832151+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.047,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.v",
+            "sha256": "b09862a11bc944a48b11110e123f4b64918bcf8bb04692aeb17839f28dd6cfa7"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_tb.sv",
+            "sha256": "2c9243a854989de59a5afb27d58349cb4ab3d067c39ad078fb5d52cb25a64a7a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm1.txt",
+            "sha256": "f4eae49263eb2ef0aaca22717e82e84e004c558bdd0debbf5be26cca0f6f7fda"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.vvp",
+            "sha256": "513d4563bf8139dc241e225fdad6163a709543a48bea33cfe17f7864ab0a542f"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.v",
+            "sha256": "b09862a11bc944a48b11110e123f4b64918bcf8bb04692aeb17839f28dd6cfa7"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_tb.sv",
+            "sha256": "2c9243a854989de59a5afb27d58349cb4ab3d067c39ad078fb5d52cb25a64a7a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm1_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm1.txt",
+            "sha256": "f4eae49263eb2ef0aaca22717e82e84e004c558bdd0debbf5be26cca0f6f7fda"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm1__fault_sync_instead_of_async.vvp",
+            "sha256": "513d4563bf8139dc241e225fdad6163a709543a48bea33cfe17f7864ab0a542f"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "0ff29d5eb4dd3d43902735c34adfde482ae5892e91577b7a073483669b561850",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "b09862a11bc944a48b11110e123f4b64918bcf8bb04692aeb17839f28dd6cfa7",
+      "vectors_sha256": "f4eae49263eb2ef0aaca22717e82e84e004c558bdd0debbf5be26cca0f6f7fda",
+      "testbench_sha256": "2c9243a854989de59a5afb27d58349cb4ab3d067c39ad078fb5d52cb25a64a7a",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-084",
+      "slug": "dff8p",
+      "title": "DFF with reset value",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\9344f0a1f99a2ce2.html",
+      "source_sha256": "eaddea842fc7d7e1b7035415b5bc7cee0ccde6ac604b54a4eb3ab11256bfd098",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\dff8p.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dff8p.txt",
+      "cases": 1200,
+      "outputs_checked": {
+        "q": 1199
+      },
+      "mask_reasons": {
+        "q": "Before first synchronous reset/clock sample."
+      },
+      "explanation": "原文指定下降沿和同步复位0x34；时钟正沿阶段的保持也单独检查。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "wrong_reset_value",
+        "old": "value<=8'h34",
+        "new": "value<=8'h00"
+      },
+      "syntax": {
+        "name": "E1/dff8p__fault_wrong_reset_value/syntax",
+        "timestamp": "2026-10-24T13:36:49.958763+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.v",
+            "sha256": "bb796eaf473c6da7a200bd00bbc3629b57823c3f59a019c7b24fd20ee720a911"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.v",
+            "sha256": "bb796eaf473c6da7a200bd00bbc3629b57823c3f59a019c7b24fd20ee720a911"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/dff8p__fault_wrong_reset_value/compile",
+        "timestamp": "2026-10-24T13:36:50.083406+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.v",
+            "sha256": "bb796eaf473c6da7a200bd00bbc3629b57823c3f59a019c7b24fd20ee720a911"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_tb.sv",
+            "sha256": "62d3527b0e2d85c75b0b345343754e34e283bf98aae3eb5d1baae2d24b4a87b4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dff8p.txt",
+            "sha256": "ef6f34695e4398c6d1ebe2855dad1412b38771a1bc25c9db0b43d1aa7ce3b0b7"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.v",
+            "sha256": "bb796eaf473c6da7a200bd00bbc3629b57823c3f59a019c7b24fd20ee720a911"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_tb.sv",
+            "sha256": "62d3527b0e2d85c75b0b345343754e34e283bf98aae3eb5d1baae2d24b4a87b4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dff8p.txt",
+            "sha256": "ef6f34695e4398c6d1ebe2855dad1412b38771a1bc25c9db0b43d1aa7ce3b0b7"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "207b6f26e7507e9de77be93067633c3c09a7f886d88716b83f0f24b3a113d268"
+      },
+      "simulation": {
+        "name": "E1/dff8p__fault_wrong_reset_value/simulate",
+        "timestamp": "2026-10-24T13:36:50.146299+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.032,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.v",
+            "sha256": "bb796eaf473c6da7a200bd00bbc3629b57823c3f59a019c7b24fd20ee720a911"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_tb.sv",
+            "sha256": "62d3527b0e2d85c75b0b345343754e34e283bf98aae3eb5d1baae2d24b4a87b4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dff8p.txt",
+            "sha256": "ef6f34695e4398c6d1ebe2855dad1412b38771a1bc25c9db0b43d1aa7ce3b0b7"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.vvp",
+            "sha256": "c69e4dce2c0ef74d52fd5c1f28eb13b8aa2c72bc588c0eff7894110c4e0c8a58"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.v",
+            "sha256": "bb796eaf473c6da7a200bd00bbc3629b57823c3f59a019c7b24fd20ee720a911"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_tb.sv",
+            "sha256": "62d3527b0e2d85c75b0b345343754e34e283bf98aae3eb5d1baae2d24b4a87b4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\dff8p_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\dff8p.txt",
+            "sha256": "ef6f34695e4398c6d1ebe2855dad1412b38771a1bc25c9db0b43d1aa7ce3b0b7"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\dff8p__fault_wrong_reset_value.vvp",
+            "sha256": "c69e4dce2c0ef74d52fd5c1f28eb13b8aa2c72bc588c0eff7894110c4e0c8a58"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "2bde7c90afa7b46a7bf0ce3907d9d3c3c54920d5458dd2c928143950daf60663",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "bb796eaf473c6da7a200bd00bbc3629b57823c3f59a019c7b24fd20ee720a911",
+      "vectors_sha256": "ef6f34695e4398c6d1ebe2855dad1412b38771a1bc25c9db0b43d1aa7ce3b0b7",
+      "testbench_sha256": "62d3527b0e2d85c75b0b345343754e34e283bf98aae3eb5d1baae2d24b4a87b4",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-042",
+      "slug": "adder100i",
+      "title": "Generate for-loop: 100-bit binary adder 2",
+      "scope": "原文建议的语法基础题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\a1fc1c4803f510da.html",
+      "source_sha256": "79e47601f3da98d4a09af566a67c62050bc52e58df310c56b793608daf0a3018",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\adder100i.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\adder100i.txt",
+      "cases": 804,
+      "outputs_checked": {
+        "cout": 804,
+        "sum": 804
+      },
+      "mask_reasons": {},
+      "explanation": "100个全加器真实层次；每一级carry与独立前缀整数加法核对。",
+      "interface": [
+        {
+          "name": "a",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "cin",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "cout",
+          "direction": "output",
+          "bounds": "[99:0]",
+          "width": 100
+        },
+        {
+          "name": "sum",
+          "direction": "output",
+          "bounds": "[99:0]",
+          "width": 100
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "carry_vector_off_by_one",
+        "old": "assign cout=c[100:1];",
+        "new": "assign cout=c[99:0];"
+      },
+      "syntax": {
+        "name": "E1/adder100i__fault_carry_vector_off_by_one/syntax",
+        "timestamp": "2026-10-24T13:36:50.291958+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.v",
+            "sha256": "c8c2f5547b94c2c52a12fe843c7ae7c4f1d1398eebe139429f32756fa0161d8b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.v",
+            "sha256": "c8c2f5547b94c2c52a12fe843c7ae7c4f1d1398eebe139429f32756fa0161d8b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/adder100i__fault_carry_vector_off_by_one/compile",
+        "timestamp": "2026-10-24T13:36:50.420525+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.11,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.v",
+            "sha256": "c8c2f5547b94c2c52a12fe843c7ae7c4f1d1398eebe139429f32756fa0161d8b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_tb.sv",
+            "sha256": "4634c7262ae606333c03b4cb5f7224092eac32a80201db05d3bc356fdde2429f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\adder100i.txt",
+            "sha256": "8cf0b5e62a67adefa8435297b19b77e6293504293ae9dc33d446fc10043515ef"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.v",
+            "sha256": "c8c2f5547b94c2c52a12fe843c7ae7c4f1d1398eebe139429f32756fa0161d8b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_tb.sv",
+            "sha256": "4634c7262ae606333c03b4cb5f7224092eac32a80201db05d3bc356fdde2429f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\adder100i.txt",
+            "sha256": "8cf0b5e62a67adefa8435297b19b77e6293504293ae9dc33d446fc10043515ef"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e6fac042b0b942615e7ee445a8ed82e8c2e6dddc5d71205e432b32cb09acb19a"
+      },
+      "simulation": {
+        "name": "E1/adder100i__fault_carry_vector_off_by_one/simulate",
+        "timestamp": "2026-10-24T13:36:50.533704+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.062,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.v",
+            "sha256": "c8c2f5547b94c2c52a12fe843c7ae7c4f1d1398eebe139429f32756fa0161d8b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_tb.sv",
+            "sha256": "4634c7262ae606333c03b4cb5f7224092eac32a80201db05d3bc356fdde2429f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\adder100i.txt",
+            "sha256": "8cf0b5e62a67adefa8435297b19b77e6293504293ae9dc33d446fc10043515ef"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.vvp",
+            "sha256": "6cea9f693d569c7527c3da4f76cc225a40a9350b47c367f5353ff183fb950d2d"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.v",
+            "sha256": "c8c2f5547b94c2c52a12fe843c7ae7c4f1d1398eebe139429f32756fa0161d8b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_tb.sv",
+            "sha256": "4634c7262ae606333c03b4cb5f7224092eac32a80201db05d3bc356fdde2429f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\adder100i_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\adder100i.txt",
+            "sha256": "8cf0b5e62a67adefa8435297b19b77e6293504293ae9dc33d446fc10043515ef"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\adder100i__fault_carry_vector_off_by_one.vvp",
+            "sha256": "6cea9f693d569c7527c3da4f76cc225a40a9350b47c367f5353ff183fb950d2d"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "fc296ac646622873e2db5cbc4e9daf80300831eb5610e9e60e2fa382e7952266",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "c8c2f5547b94c2c52a12fe843c7ae7c4f1d1398eebe139429f32756fa0161d8b",
+      "vectors_sha256": "8cf0b5e62a67adefa8435297b19b77e6293504293ae9dc33d446fc10043515ef",
+      "testbench_sha256": "4634c7262ae606333c03b4cb5f7224092eac32a80201db05d3bc356fdde2429f",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-131",
+      "slug": "lemmings4",
+      "title": "Lemmings 4",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\0e4028830111a85a.html",
+      "source_sha256": "a2d5a8d4808f0e75a0957f1a8f24ce6868d8099d2cd96d44efc13c69bf34164c",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\lemmings4.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+      "cases": 49960,
+      "outputs_checked": {
+        "walk_left": 49960,
+        "walk_right": 49960,
+        "aaah": 49960,
+        "digging": 49960
+      },
+      "mask_reasons": {},
+      "explanation": "独立行为模型保存方向、动作和无界跌落时长；RTL有限状态加饱和计数。专测20/21周期边界、1025周期长跌落、空中不死亡、落地不处理碰撞、fall>dig>bump优先级。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_left",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_right",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "ground",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "dig",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_left",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_right",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "aaah",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "digging",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "death_at_20",
+        "old": "FLEFT:if(ground)next_state=(fall_count>20)?DEAD:LEFT;",
+        "new": "FLEFT:if(ground)next_state=(fall_count>=20)?DEAD:LEFT;"
+      },
+      "syntax": {
+        "name": "E1/lemmings4__fault_death_at_20/syntax",
+        "timestamp": "2026-10-24T13:36:50.671324+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.v",
+            "sha256": "69cbf95342d891054ada4b2d54f793205ad5e9b21593bf49c85872d757001d52"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.v",
+            "sha256": "69cbf95342d891054ada4b2d54f793205ad5e9b21593bf49c85872d757001d52"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/lemmings4__fault_death_at_20/compile",
+        "timestamp": "2026-10-24T13:36:50.807009+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.v",
+            "sha256": "69cbf95342d891054ada4b2d54f793205ad5e9b21593bf49c85872d757001d52"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+            "sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+            "sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.v",
+            "sha256": "69cbf95342d891054ada4b2d54f793205ad5e9b21593bf49c85872d757001d52"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+            "sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+            "sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "85111f48a27b937f1a5eefe647be7a114861f701b3caa947474f034bbfef4238"
+      },
+      "simulation": {
+        "name": "E1/lemmings4__fault_death_at_20/simulate",
+        "timestamp": "2026-10-24T13:36:51.242223+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.39,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.v",
+            "sha256": "69cbf95342d891054ada4b2d54f793205ad5e9b21593bf49c85872d757001d52"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+            "sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+            "sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.vvp",
+            "sha256": "d0ae86f50a991f224c63f35406377cefc187eb911e3ae11060471f2ae3218bac"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.v",
+            "sha256": "69cbf95342d891054ada4b2d54f793205ad5e9b21593bf49c85872d757001d52"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+            "sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+            "sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_death_at_20.vvp",
+            "sha256": "d0ae86f50a991f224c63f35406377cefc187eb911e3ae11060471f2ae3218bac"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "51dd9e444cdd57c5e3185a7e369a2bec8de9a13132125007e3d9d0bc24b8bb4c",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "69cbf95342d891054ada4b2d54f793205ad5e9b21593bf49c85872d757001d52",
+      "vectors_sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d",
+      "testbench_sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-131",
+      "slug": "lemmings4",
+      "title": "Lemmings 4",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\0e4028830111a85a.html",
+      "source_sha256": "a2d5a8d4808f0e75a0957f1a8f24ce6868d8099d2cd96d44efc13c69bf34164c",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\lemmings4.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+      "cases": 49960,
+      "outputs_checked": {
+        "walk_left": 49960,
+        "walk_right": 49960,
+        "aaah": 49960,
+        "digging": 49960
+      },
+      "mask_reasons": {},
+      "explanation": "独立行为模型保存方向、动作和无界跌落时长；RTL有限状态加饱和计数。专测20/21周期边界、1025周期长跌落、空中不死亡、落地不处理碰撞、fall>dig>bump优先级。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "areset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_left",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "bump_right",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "ground",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "dig",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_left",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "walk_right",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "aaah",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "digging",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "fall_counter_wrap",
+        "old": "if(!ground && fall_count<21)",
+        "new": "if(!ground)"
+      },
+      "syntax": {
+        "name": "E1/lemmings4__fault_fall_counter_wrap/syntax",
+        "timestamp": "2026-10-24T13:36:51.400316+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.11,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.v",
+            "sha256": "1453930b5546c88c50eb2724762d73e8a0a19cd9694972d579af2978a33ec487"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.v",
+            "sha256": "1453930b5546c88c50eb2724762d73e8a0a19cd9694972d579af2978a33ec487"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/lemmings4__fault_fall_counter_wrap/compile",
+        "timestamp": "2026-10-24T13:36:51.552924+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.11,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.v",
+            "sha256": "1453930b5546c88c50eb2724762d73e8a0a19cd9694972d579af2978a33ec487"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+            "sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+            "sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.v",
+            "sha256": "1453930b5546c88c50eb2724762d73e8a0a19cd9694972d579af2978a33ec487"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+            "sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+            "sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "f1a7ed21465bf5b140ba4abb6481417687c698cd4bc8843787e2670ee0ba61c7"
+      },
+      "simulation": {
+        "name": "E1/lemmings4__fault_fall_counter_wrap/simulate",
+        "timestamp": "2026-10-24T13:36:51.987770+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.406,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.v",
+            "sha256": "1453930b5546c88c50eb2724762d73e8a0a19cd9694972d579af2978a33ec487"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+            "sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+            "sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.vvp",
+            "sha256": "4c6fab4e89f5e7a5535a76343743ee08b002dab2b3764eeff22b79547d0fcf87"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.v",
+            "sha256": "1453930b5546c88c50eb2724762d73e8a0a19cd9694972d579af2978a33ec487"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_tb.sv",
+            "sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\lemmings4_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\lemmings4.txt",
+            "sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\lemmings4__fault_fall_counter_wrap.vvp",
+            "sha256": "4c6fab4e89f5e7a5535a76343743ee08b002dab2b3764eeff22b79547d0fcf87"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "c1a91036a71ab445a28d60171c8eafceb5ad05d1be7a6cf817b41ee8d1311726",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "1453930b5546c88c50eb2724762d73e8a0a19cd9694972d579af2978a33ec487",
+      "vectors_sha256": "bf83f52cd58c565b4c3c14da3a763dfc472deb50b7ef3d0c3451aa5b6062f84d",
+      "testbench_sha256": "b689bf689cc887c62183fe4b292fcc82b9f374c9fe4c0092f51f1383e519ea9b",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-136",
+      "slug": "fsm_serialdata",
+      "title": "Serial receiver and datapath",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\e2edcdc387fa4a18.html",
+      "source_sha256": "b156e67977c845152fcf413022d5ccaaa3b48a528d3f6e5ceef6e0ba3a7d77db",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_serialdata.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdata.txt",
+      "cases": 9668,
+      "outputs_checked": {
+        "out_byte": 694,
+        "done": 9667
+      },
+      "mask_reasons": {
+        "done": "Before initial synchronous reset.",
+        "out_byte": "Specified only in the valid done cycle; invalid/no-frame bytes are not judged."
+      },
+      "explanation": "独立帧位列表、奇数个1计数和恢复条件参考；全256数据、连续帧、坏停止位、奇偶错误、逐相位复位。LSB先到；停止位不进入奇偶校验。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_byte",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "resync_before_stop",
+        "old": "end else state<=RECOVER;end",
+        "new": "end else state<=IDLE;end"
+      },
+      "syntax": {
+        "name": "E1/fsm_serialdata__fault_resync_before_stop/syntax",
+        "timestamp": "2026-10-24T13:36:52.134813+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.v",
+            "sha256": "0feb832d96111caa76a2c1f8584b53178db9e6bba28417d92f5591be41a338a9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.v",
+            "sha256": "0feb832d96111caa76a2c1f8584b53178db9e6bba28417d92f5591be41a338a9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/fsm_serialdata__fault_resync_before_stop/compile",
+        "timestamp": "2026-10-24T13:36:52.254167+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.v",
+            "sha256": "0feb832d96111caa76a2c1f8584b53178db9e6bba28417d92f5591be41a338a9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_tb.sv",
+            "sha256": "28b18bbe3047ef32c05103cf329a52fe930d01282b4336b431961404135ff490"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdata.txt",
+            "sha256": "fe397a8a1c64f7c2acb1827c5978693332ca43d6420fab0ff03689ba79dea07a"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.v",
+            "sha256": "0feb832d96111caa76a2c1f8584b53178db9e6bba28417d92f5591be41a338a9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_tb.sv",
+            "sha256": "28b18bbe3047ef32c05103cf329a52fe930d01282b4336b431961404135ff490"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdata.txt",
+            "sha256": "fe397a8a1c64f7c2acb1827c5978693332ca43d6420fab0ff03689ba79dea07a"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "a6173bb755178006337673acada58b29efe14494c5084cc3517377005c11c7ec"
+      },
+      "simulation": {
+        "name": "E1/fsm_serialdata__fault_resync_before_stop/simulate",
+        "timestamp": "2026-10-24T13:36:52.358383+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.062,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.v",
+            "sha256": "0feb832d96111caa76a2c1f8584b53178db9e6bba28417d92f5591be41a338a9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_tb.sv",
+            "sha256": "28b18bbe3047ef32c05103cf329a52fe930d01282b4336b431961404135ff490"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdata.txt",
+            "sha256": "fe397a8a1c64f7c2acb1827c5978693332ca43d6420fab0ff03689ba79dea07a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.vvp",
+            "sha256": "8d267cb26c2f5458cecc6360776bd43e36be905541ec712c0d31cc1fcc98fd5e"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.v",
+            "sha256": "0feb832d96111caa76a2c1f8584b53178db9e6bba28417d92f5591be41a338a9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_tb.sv",
+            "sha256": "28b18bbe3047ef32c05103cf329a52fe930d01282b4336b431961404135ff490"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdata_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdata.txt",
+            "sha256": "fe397a8a1c64f7c2acb1827c5978693332ca43d6420fab0ff03689ba79dea07a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdata__fault_resync_before_stop.vvp",
+            "sha256": "8d267cb26c2f5458cecc6360776bd43e36be905541ec712c0d31cc1fcc98fd5e"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "c7b804cad347531d5305fa8cb758a8651ea716da61638f6ee72f2d4098d8c7a3",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "0feb832d96111caa76a2c1f8584b53178db9e6bba28417d92f5591be41a338a9",
+      "vectors_sha256": "fe397a8a1c64f7c2acb1827c5978693332ca43d6420fab0ff03689ba79dea07a",
+      "testbench_sha256": "28b18bbe3047ef32c05103cf329a52fe930d01282b4336b431961404135ff490",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-137",
+      "slug": "fsm_serialdp",
+      "title": "Serial receiver with parity checking",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\983e83bf12c1ed42.html",
+      "source_sha256": "884ef4636feb3f865a95500b52a5bd628f7f03a18d7605053c9235f74526589f",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_serialdp.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdp.txt",
+      "cases": 21542,
+      "outputs_checked": {
+        "out_byte": 1132,
+        "done": 21541
+      },
+      "mask_reasons": {
+        "done": "Before initial synchronous reset.",
+        "out_byte": "Specified only in the valid done cycle; invalid/no-frame bytes are not judged."
+      },
+      "explanation": "独立帧位列表、奇数个1计数和恢复条件参考；全256数据、连续帧、坏停止位、奇偶错误、逐相位复位。LSB先到；停止位不进入奇偶校验。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_byte",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "wrong_parity",
+        "old": "if(odd)begin",
+        "new": "if(!odd)begin"
+      },
+      "syntax": {
+        "name": "E1/fsm_serialdp__fault_wrong_parity/syntax",
+        "timestamp": "2026-10-24T13:36:52.526075+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.141,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.v",
+            "sha256": "26a52d648fbdf17b576aed356bf7c968291b85ae88557c9a53a2903f2fe7f257"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_syntax_support.v",
+            "sha256": "a896c259547662213ddd21c12042366b3976f619410fc8b667a3c062d3d07f59"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.v",
+            "sha256": "26a52d648fbdf17b576aed356bf7c968291b85ae88557c9a53a2903f2fe7f257"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_syntax_support.v",
+            "sha256": "a896c259547662213ddd21c12042366b3976f619410fc8b667a3c062d3d07f59"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/fsm_serialdp__fault_wrong_parity/compile",
+        "timestamp": "2026-10-24T13:36:52.647853+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.079,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.v",
+            "sha256": "26a52d648fbdf17b576aed356bf7c968291b85ae88557c9a53a2903f2fe7f257"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_tb.sv",
+            "sha256": "e8d88612f1049bc7fd16230d6ce6a08aceb8f4db3764c672d17c819367157449"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_support.v",
+            "sha256": "a896c259547662213ddd21c12042366b3976f619410fc8b667a3c062d3d07f59"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdp.txt",
+            "sha256": "e8231072f2438f2bc3e1c08c3120ba118a2056a59f0ab4ad47b635b500289ac2"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.v",
+            "sha256": "26a52d648fbdf17b576aed356bf7c968291b85ae88557c9a53a2903f2fe7f257"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_tb.sv",
+            "sha256": "e8d88612f1049bc7fd16230d6ce6a08aceb8f4db3764c672d17c819367157449"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_support.v",
+            "sha256": "a896c259547662213ddd21c12042366b3976f619410fc8b667a3c062d3d07f59"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdp.txt",
+            "sha256": "e8231072f2438f2bc3e1c08c3120ba118a2056a59f0ab4ad47b635b500289ac2"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "f69b0dcb2b57af46b13841dfeb202e0121ddc12d6f0fc2a00405ca8f01c9e00b"
+      },
+      "simulation": {
+        "name": "E1/fsm_serialdp__fault_wrong_parity/simulate",
+        "timestamp": "2026-10-24T13:36:52.725319+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.047,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.v",
+            "sha256": "26a52d648fbdf17b576aed356bf7c968291b85ae88557c9a53a2903f2fe7f257"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_tb.sv",
+            "sha256": "e8d88612f1049bc7fd16230d6ce6a08aceb8f4db3764c672d17c819367157449"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_support.v",
+            "sha256": "a896c259547662213ddd21c12042366b3976f619410fc8b667a3c062d3d07f59"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdp.txt",
+            "sha256": "e8231072f2438f2bc3e1c08c3120ba118a2056a59f0ab4ad47b635b500289ac2"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.vvp",
+            "sha256": "10a6eeb80c7ac50606a09e21e8a3422dd1f217518ac7976434f8e295dd37d52c"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.v",
+            "sha256": "26a52d648fbdf17b576aed356bf7c968291b85ae88557c9a53a2903f2fe7f257"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_tb.sv",
+            "sha256": "e8d88612f1049bc7fd16230d6ce6a08aceb8f4db3764c672d17c819367157449"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_serialdp_support.v",
+            "sha256": "a896c259547662213ddd21c12042366b3976f619410fc8b667a3c062d3d07f59"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_serialdp.txt",
+            "sha256": "e8231072f2438f2bc3e1c08c3120ba118a2056a59f0ab4ad47b635b500289ac2"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_serialdp__fault_wrong_parity.vvp",
+            "sha256": "10a6eeb80c7ac50606a09e21e8a3422dd1f217518ac7976434f8e295dd37d52c"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "085df03ad27fd53b83e9522cef86fcdd7c8c1d84ed0c641a504e393239a67da4",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "26a52d648fbdf17b576aed356bf7c968291b85ae88557c9a53a2903f2fe7f257",
+      "vectors_sha256": "e8231072f2438f2bc3e1c08c3120ba118a2056a59f0ab4ad47b635b500289ac2",
+      "testbench_sha256": "e8d88612f1049bc7fd16230d6ce6a08aceb8f4db3764c672d17c819367157449",
+      "support_sha256": "a896c259547662213ddd21c12042366b3976f619410fc8b667a3c062d3d07f59",
+      "syntax_support_sha256": "a896c259547662213ddd21c12042366b3976f619410fc8b667a3c062d3d07f59",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-134",
+      "slug": "fsm_ps2data",
+      "title": "PS/2 packet parser and datapath",
+      "scope": "基础路径指定题；九题自检之一",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\40f8c235cc74e458.html",
+      "source_sha256": "16ed7a539c2103fbbd6aef5d451a2eba3fa0eb799f57b7d9456c0d5ccc375b64",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_ps2data.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_ps2data.txt",
+      "cases": 9670,
+      "outputs_checked": {
+        "out_bytes": 2788,
+        "done": 9669
+      },
+      "mask_reasons": {
+        "done": "Before initial synchronous reset.",
+        "out_bytes": "Task explicitly defines out_bytes only when done=1; done always checked after reset."
+      },
+      "explanation": "独立三字节列表解析；第一字节bit3同步，后两字节不作同步条件；支持连续包，done与第三字节采样对应。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out_bytes",
+          "direction": "output",
+          "bounds": "[23:0]",
+          "width": 24
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "reversed_bytes",
+        "old": "out_bytes<={first,second,in};",
+        "new": "out_bytes<={in,second,first};"
+      },
+      "syntax": {
+        "name": "E1/fsm_ps2data__fault_reversed_bytes/syntax",
+        "timestamp": "2026-10-24T13:36:52.858391+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.109,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.v",
+            "sha256": "560ff369afccc26b234cedea14f75c25041df7a6fb25f8f57dc91c6948e2a416"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.v",
+            "sha256": "560ff369afccc26b234cedea14f75c25041df7a6fb25f8f57dc91c6948e2a416"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/fsm_ps2data__fault_reversed_bytes/compile",
+        "timestamp": "2026-10-24T13:36:52.966626+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.v",
+            "sha256": "560ff369afccc26b234cedea14f75c25041df7a6fb25f8f57dc91c6948e2a416"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_tb.sv",
+            "sha256": "01208a1ebef28565bc8483b12d38bf006d1599731545f77e667ff38becd5c92e"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_ps2data.txt",
+            "sha256": "f6eaf23f74933de2b6f9b5539786a2f805ac5f68f94bc78c72991fd5b7ca2b67"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.v",
+            "sha256": "560ff369afccc26b234cedea14f75c25041df7a6fb25f8f57dc91c6948e2a416"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_tb.sv",
+            "sha256": "01208a1ebef28565bc8483b12d38bf006d1599731545f77e667ff38becd5c92e"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_ps2data.txt",
+            "sha256": "f6eaf23f74933de2b6f9b5539786a2f805ac5f68f94bc78c72991fd5b7ca2b67"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "0172021044b59867505f3df0f1634e0400eb20b133412ef7e1fffedc87d02bb6"
+      },
+      "simulation": {
+        "name": "E1/fsm_ps2data__fault_reversed_bytes/simulate",
+        "timestamp": "2026-10-24T13:36:53.043465+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.v",
+            "sha256": "560ff369afccc26b234cedea14f75c25041df7a6fb25f8f57dc91c6948e2a416"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_tb.sv",
+            "sha256": "01208a1ebef28565bc8483b12d38bf006d1599731545f77e667ff38becd5c92e"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_ps2data.txt",
+            "sha256": "f6eaf23f74933de2b6f9b5539786a2f805ac5f68f94bc78c72991fd5b7ca2b67"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.vvp",
+            "sha256": "0d3902e06886d8191fe2e1aea4c8811dde4cb81b541dfc2998138f3048538483"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.v",
+            "sha256": "560ff369afccc26b234cedea14f75c25041df7a6fb25f8f57dc91c6948e2a416"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_tb.sv",
+            "sha256": "01208a1ebef28565bc8483b12d38bf006d1599731545f77e667ff38becd5c92e"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_ps2data_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_ps2data.txt",
+            "sha256": "f6eaf23f74933de2b6f9b5539786a2f805ac5f68f94bc78c72991fd5b7ca2b67"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_ps2data__fault_reversed_bytes.vvp",
+            "sha256": "0d3902e06886d8191fe2e1aea4c8811dde4cb81b541dfc2998138f3048538483"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "3f76762af4328f6101d25bdc5925eeba1d88cc7f04cef6d14aefaab7e862ab3c",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "560ff369afccc26b234cedea14f75c25041df7a6fb25f8f57dc91c6948e2a416",
+      "vectors_sha256": "f6eaf23f74933de2b6f9b5539786a2f805ac5f68f94bc78c72991fd5b7ca2b67",
+      "testbench_sha256": "01208a1ebef28565bc8483b12d38bf006d1599731545f77e667ff38becd5c92e",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-118",
+      "slug": "conwaylife",
+      "title": "Conway's Game of Life 16x16",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\69da8d3ebdffae27.html",
+      "source_sha256": "7d66a9261212096698f6a91e70f736d99049e90b0d0514405c95a02b73bf0713",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\conwaylife.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\conwaylife.txt",
+      "cases": 1152,
+      "outputs_checked": {
+        "q": 1151
+      },
+      "mask_reasons": {
+        "q": "Before initial load."
+      },
+      "explanation": "16×16环面，边界不是固定0；参考采用活细胞坐标集合及邻居贡献计数，与RTL逐格求和不同。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "load",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "data",
+          "direction": "input",
+          "bounds": "[255:0]",
+          "width": 256
+        },
+        {
+          "name": "q",
+          "direction": "output",
+          "bounds": "[255:0]",
+          "width": 256
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "wrong_wrapped_neighbor",
+        "old": "cells[((r+15)%16)*16+(c+15)%16]",
+        "new": "cells[((r+14)%16)*16+(c+15)%16]"
+      },
+      "syntax": {
+        "name": "E1/conwaylife__fault_wrong_wrapped_neighbor/syntax",
+        "timestamp": "2026-10-24T13:36:53.308208+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.235,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.v",
+            "sha256": "3d71d68e6764ce14b01a8ac0952038471b94b9ac7debcd9d72eacf8cd510a707"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.v",
+            "sha256": "3d71d68e6764ce14b01a8ac0952038471b94b9ac7debcd9d72eacf8cd510a707"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/conwaylife__fault_wrong_wrapped_neighbor/compile",
+        "timestamp": "2026-10-24T13:36:53.571678+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.218,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.v",
+            "sha256": "3d71d68e6764ce14b01a8ac0952038471b94b9ac7debcd9d72eacf8cd510a707"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_tb.sv",
+            "sha256": "ed67b98547597f4aeb1ba41ce3ecea937d6193565c73da05c08b0cf869e1e28a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\conwaylife.txt",
+            "sha256": "e2162762d8daa8302df22ea27c4e4c3f33e9351d52696ffdefa5083b39334d1c"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.v",
+            "sha256": "3d71d68e6764ce14b01a8ac0952038471b94b9ac7debcd9d72eacf8cd510a707"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_tb.sv",
+            "sha256": "ed67b98547597f4aeb1ba41ce3ecea937d6193565c73da05c08b0cf869e1e28a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\conwaylife.txt",
+            "sha256": "e2162762d8daa8302df22ea27c4e4c3f33e9351d52696ffdefa5083b39334d1c"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "5a9739e5bec6021c21e66c897f59fec4556255ba878222161aca4cda7e142665"
+      },
+      "simulation": {
+        "name": "E1/conwaylife__fault_wrong_wrapped_neighbor/simulate",
+        "timestamp": "2026-10-24T13:36:53.792105+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.187,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.v",
+            "sha256": "3d71d68e6764ce14b01a8ac0952038471b94b9ac7debcd9d72eacf8cd510a707"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_tb.sv",
+            "sha256": "ed67b98547597f4aeb1ba41ce3ecea937d6193565c73da05c08b0cf869e1e28a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\conwaylife.txt",
+            "sha256": "e2162762d8daa8302df22ea27c4e4c3f33e9351d52696ffdefa5083b39334d1c"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.vvp",
+            "sha256": "d5534b865e3572873fb559ce4a1d406dfa19288b1024b4cd1ad1d9995c14b287"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.v",
+            "sha256": "3d71d68e6764ce14b01a8ac0952038471b94b9ac7debcd9d72eacf8cd510a707"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_tb.sv",
+            "sha256": "ed67b98547597f4aeb1ba41ce3ecea937d6193565c73da05c08b0cf869e1e28a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\conwaylife_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\conwaylife.txt",
+            "sha256": "e2162762d8daa8302df22ea27c4e4c3f33e9351d52696ffdefa5083b39334d1c"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\conwaylife__fault_wrong_wrapped_neighbor.vvp",
+            "sha256": "d5534b865e3572873fb559ce4a1d406dfa19288b1024b4cd1ad1d9995c14b287"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "c6b44336be94771759537ca69a2994cd33e30765f4e07461dc918ec973eb76ac",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "3d71d68e6764ce14b01a8ac0952038471b94b9ac7debcd9d72eacf8cd510a707",
+      "vectors_sha256": "e2162762d8daa8302df22ea27c4e4c3f33e9351d52696ffdefa5083b39334d1c",
+      "testbench_sha256": "ed67b98547597f4aeb1ba41ce3ecea937d6193565c73da05c08b0cf869e1e28a",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-106",
+      "slug": "count_clock",
+      "title": "12-hour clock",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\6419e79796d34234.html",
+      "source_sha256": "66b75eab5bc5b89df9a8172ee18b1d83418f89669182c9fd468828c7862ba4c5",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\count_clock.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\count_clock.txt",
+      "cases": 172822,
+      "outputs_checked": {
+        "pm": 172821,
+        "hh": 172821,
+        "mm": 172821,
+        "ss": 172821
+      },
+      "mask_reasons": {
+        "pm": "Before initial synchronous reset.",
+        "hh": "Before initial synchronous reset.",
+        "mm": "Before initial synchronous reset.",
+        "ss": "Before initial synchronous reset."
+      },
+      "explanation": "完整24小时状态循环，加使能暂停及未使能时复位；参考使用累计秒数，RTL使用独立BCD进位。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "ena",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "pm",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "hh",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "mm",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        },
+        {
+          "name": "ss",
+          "direction": "output",
+          "bounds": "[7:0]",
+          "width": 8
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "pm_never_toggles",
+        "old": "pm_value<=~pm_value;",
+        "new": "pm_value<=pm_value;"
+      },
+      "syntax": {
+        "name": "E1/count_clock__fault_pm_never_toggles/syntax",
+        "timestamp": "2026-10-24T13:36:53.962457+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.125,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.v",
+            "sha256": "86f3a7c349c1720d19a18d48f596040112b9f0fec75b47acc3c93c72b04199c8"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.v",
+            "sha256": "86f3a7c349c1720d19a18d48f596040112b9f0fec75b47acc3c93c72b04199c8"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/count_clock__fault_pm_never_toggles/compile",
+        "timestamp": "2026-10-24T13:36:54.228816+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.235,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.v",
+            "sha256": "86f3a7c349c1720d19a18d48f596040112b9f0fec75b47acc3c93c72b04199c8"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_tb.sv",
+            "sha256": "745c17807403c701c875c92a5d8f7947d366b4b098c49548cb9a06f72765a181"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\count_clock.txt",
+            "sha256": "98c1e599a3f889dacbe7c0fcdbe2724c161e8f020deb60c4b8cdf52c33f59d88"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.v",
+            "sha256": "86f3a7c349c1720d19a18d48f596040112b9f0fec75b47acc3c93c72b04199c8"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_tb.sv",
+            "sha256": "745c17807403c701c875c92a5d8f7947d366b4b098c49548cb9a06f72765a181"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\count_clock.txt",
+            "sha256": "98c1e599a3f889dacbe7c0fcdbe2724c161e8f020deb60c4b8cdf52c33f59d88"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e0258ea1311cfe2416e2b6dd12fae6c544fd41cf20cf5db5f4396fd90f5b3403"
+      },
+      "simulation": {
+        "name": "E1/count_clock__fault_pm_never_toggles/simulate",
+        "timestamp": "2026-10-24T13:36:55.170382+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.922,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.v",
+            "sha256": "86f3a7c349c1720d19a18d48f596040112b9f0fec75b47acc3c93c72b04199c8"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_tb.sv",
+            "sha256": "745c17807403c701c875c92a5d8f7947d366b4b098c49548cb9a06f72765a181"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\count_clock.txt",
+            "sha256": "98c1e599a3f889dacbe7c0fcdbe2724c161e8f020deb60c4b8cdf52c33f59d88"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.vvp",
+            "sha256": "be32878582b1afacbd66edcaf846a8b035971a1c2f88b2a243104762d062240e"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.v",
+            "sha256": "86f3a7c349c1720d19a18d48f596040112b9f0fec75b47acc3c93c72b04199c8"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_tb.sv",
+            "sha256": "745c17807403c701c875c92a5d8f7947d366b4b098c49548cb9a06f72765a181"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\count_clock_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\count_clock.txt",
+            "sha256": "98c1e599a3f889dacbe7c0fcdbe2724c161e8f020deb60c4b8cdf52c33f59d88"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\count_clock__fault_pm_never_toggles.vvp",
+            "sha256": "be32878582b1afacbd66edcaf846a8b035971a1c2f88b2a243104762d062240e"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "235f3a23b4228b7136b671060c78b5428670ce8facdb649ebde719ec5e7cabf2",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "86f3a7c349c1720d19a18d48f596040112b9f0fec75b47acc3c93c72b04199c8",
+      "vectors_sha256": "98c1e599a3f889dacbe7c0fcdbe2724c161e8f020deb60c4b8cdf52c33f59d88",
+      "testbench_sha256": "745c17807403c701c875c92a5d8f7947d366b4b098c49548cb9a06f72765a181",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-151",
+      "slug": "2013_q2bfsm",
+      "title": "Q2b: Another FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\f79eea316bcddad0.html",
+      "source_sha256": "d72941dcb0a6a642a9586b722e92a16116c00b1ed6881fe3d66a9338354868e1",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\2013_q2bfsm.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2013_q2bfsm.txt",
+      "cases": 76672,
+      "outputs_checked": {
+        "f": 76671,
+        "g": 76671
+      },
+      "mask_reasons": {
+        "f": "Before first synchronous reset.",
+        "g": "Before first synchronous reset."
+      },
+      "explanation": "f脉冲结束后才采x；检测101后g高时才开始两拍y窗口。分别验早到/首拍/第二拍/迟到y、永久成功/失败、所有阶段复位。参考历史串和截止时限，不复制RTL状态图。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "resetn",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "x",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "y",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "f",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "g",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "late_y_accepted",
+        "old": "G:next_state=y?H:I;",
+        "new": "G:next_state=y?H:G;"
+      },
+      "syntax": {
+        "name": "E1/2013_q2bfsm__fault_late_y_accepted/syntax",
+        "timestamp": "2026-10-24T13:36:55.382043+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.156,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.v",
+            "sha256": "4382f1bfe97e6b8cc6d8810397d1c708e4ce500d8626ef70e76b46bbd81f813b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.v",
+            "sha256": "4382f1bfe97e6b8cc6d8810397d1c708e4ce500d8626ef70e76b46bbd81f813b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/2013_q2bfsm__fault_late_y_accepted/compile",
+        "timestamp": "2026-10-24T13:36:55.507947+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.109,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.v",
+            "sha256": "4382f1bfe97e6b8cc6d8810397d1c708e4ce500d8626ef70e76b46bbd81f813b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_tb.sv",
+            "sha256": "8c189f02857098fff98610237fd9f5c8532759a1e987cd3debdf9d2bc7e15794"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2013_q2bfsm.txt",
+            "sha256": "825c83c27d0bf982f4f637fd6c61849caf0d9fe07c1e0bc91a10424ead06cdf4"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.v",
+            "sha256": "4382f1bfe97e6b8cc6d8810397d1c708e4ce500d8626ef70e76b46bbd81f813b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_tb.sv",
+            "sha256": "8c189f02857098fff98610237fd9f5c8532759a1e987cd3debdf9d2bc7e15794"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2013_q2bfsm.txt",
+            "sha256": "825c83c27d0bf982f4f637fd6c61849caf0d9fe07c1e0bc91a10424ead06cdf4"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "326249578e5545f982815870b6648a3a87d6a1d4cd9ee069ec01cd635df8fa85"
+      },
+      "simulation": {
+        "name": "E1/2013_q2bfsm__fault_late_y_accepted/simulate",
+        "timestamp": "2026-10-24T13:36:55.640703+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.079,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.v",
+            "sha256": "4382f1bfe97e6b8cc6d8810397d1c708e4ce500d8626ef70e76b46bbd81f813b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_tb.sv",
+            "sha256": "8c189f02857098fff98610237fd9f5c8532759a1e987cd3debdf9d2bc7e15794"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2013_q2bfsm.txt",
+            "sha256": "825c83c27d0bf982f4f637fd6c61849caf0d9fe07c1e0bc91a10424ead06cdf4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.vvp",
+            "sha256": "411c48ee57a21ab4898f738a1c76558c9350a6ba3cece9ff0e45329a7f6cf14e"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.v",
+            "sha256": "4382f1bfe97e6b8cc6d8810397d1c708e4ce500d8626ef70e76b46bbd81f813b"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_tb.sv",
+            "sha256": "8c189f02857098fff98610237fd9f5c8532759a1e987cd3debdf9d2bc7e15794"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\2013_q2bfsm_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\2013_q2bfsm.txt",
+            "sha256": "825c83c27d0bf982f4f637fd6c61849caf0d9fe07c1e0bc91a10424ead06cdf4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\2013_q2bfsm__fault_late_y_accepted.vvp",
+            "sha256": "411c48ee57a21ab4898f738a1c76558c9350a6ba3cece9ff0e45329a7f6cf14e"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "89295c580e92ae7f26ac0a78fff03e95f0276577bd8fcdcd946aed1589ae9cb1",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "4382f1bfe97e6b8cc6d8810397d1c708e4ce500d8626ef70e76b46bbd81f813b",
+      "vectors_sha256": "825c83c27d0bf982f4f637fd6c61849caf0d9fe07c1e0bc91a10424ead06cdf4",
+      "testbench_sha256": "8c189f02857098fff98610237fd9f5c8532759a1e987cd3debdf9d2bc7e15794",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-132",
+      "slug": "fsm_onehot",
+      "title": "One-hot FSM",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\745013775b0fd13e.html",
+      "source_sha256": "527faeb56eac416fdbe0508e1d41bcaf9ede061f227009301d6942632c34f4d0",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\fsm_onehot.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_onehot.txt",
+      "cases": 2048,
+      "outputs_checked": {
+        "next_state": 2048,
+        "out1": 2048,
+        "out2": 2048
+      },
+      "mask_reasons": {},
+      "explanation": "逐条按图转录有向边；全1024种state×2输入，任意多热输入按入边OR，不加非法状态纠错。",
+      "interface": [
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "state",
+          "direction": "input",
+          "bounds": "[9:0]",
+          "width": 10
+        },
+        {
+          "name": "next_state",
+          "direction": "output",
+          "bounds": "[9:0]",
+          "width": 10
+        },
+        {
+          "name": "out1",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "out2",
+          "direction": "output",
+          "bounds": "",
+          "width": 1
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "ignores_second_active_state",
+        "old": "assign next_state[1]=in&(state[0]|state[8]|state[9]);",
+        "new": "assign next_state[1]=in&state[0];"
+      },
+      "syntax": {
+        "name": "E1/fsm_onehot__fault_ignores_second_active_state/syntax",
+        "timestamp": "2026-10-24T13:36:55.816049+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.125,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.v",
+            "sha256": "9b6f14fa4367bc93499a98ef9eef214f6659f85eef1e5e80e00083d5fe2ce2d9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.v",
+            "sha256": "9b6f14fa4367bc93499a98ef9eef214f6659f85eef1e5e80e00083d5fe2ce2d9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/fsm_onehot__fault_ignores_second_active_state/compile",
+        "timestamp": "2026-10-24T13:36:55.941146+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.v",
+            "sha256": "9b6f14fa4367bc93499a98ef9eef214f6659f85eef1e5e80e00083d5fe2ce2d9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_tb.sv",
+            "sha256": "f677a56a4e4ce18b29e842f146cb11c5f79a4295ddf8602eed316f8c733cce7a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_onehot.txt",
+            "sha256": "4a7401e810826a4998d777a9891272bee301ce4037f54fd2da522e721b386de1"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.v",
+            "sha256": "9b6f14fa4367bc93499a98ef9eef214f6659f85eef1e5e80e00083d5fe2ce2d9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_tb.sv",
+            "sha256": "f677a56a4e4ce18b29e842f146cb11c5f79a4295ddf8602eed316f8c733cce7a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_onehot.txt",
+            "sha256": "4a7401e810826a4998d777a9891272bee301ce4037f54fd2da522e721b386de1"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e035570a923c152c0f8fcb9368d1cb681c403f32cf5a03c8126d9138f34cba46"
+      },
+      "simulation": {
+        "name": "E1/fsm_onehot__fault_ignores_second_active_state/simulate",
+        "timestamp": "2026-10-24T13:36:55.999431+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.047,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.v",
+            "sha256": "9b6f14fa4367bc93499a98ef9eef214f6659f85eef1e5e80e00083d5fe2ce2d9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_tb.sv",
+            "sha256": "f677a56a4e4ce18b29e842f146cb11c5f79a4295ddf8602eed316f8c733cce7a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_onehot.txt",
+            "sha256": "4a7401e810826a4998d777a9891272bee301ce4037f54fd2da522e721b386de1"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.vvp",
+            "sha256": "21e52bdcae6e8c469bf6c6cd2cdea36c2fd11e683bee1c85fba511ffdc947588"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.v",
+            "sha256": "9b6f14fa4367bc93499a98ef9eef214f6659f85eef1e5e80e00083d5fe2ce2d9"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_tb.sv",
+            "sha256": "f677a56a4e4ce18b29e842f146cb11c5f79a4295ddf8602eed316f8c733cce7a"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\fsm_onehot_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\fsm_onehot.txt",
+            "sha256": "4a7401e810826a4998d777a9891272bee301ce4037f54fd2da522e721b386de1"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\fsm_onehot__fault_ignores_second_active_state.vvp",
+            "sha256": "21e52bdcae6e8c469bf6c6cd2cdea36c2fd11e683bee1c85fba511ffdc947588"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "4f8e7ebb5343ca940b78aeba3a03f7251424d7b028ef7c8f02393acd97c8fc55",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "9b6f14fa4367bc93499a98ef9eef214f6659f85eef1e5e80e00083d5fe2ce2d9",
+      "vectors_sha256": "4a7401e810826a4998d777a9891272bee301ce4037f54fd2da522e721b386de1",
+      "testbench_sha256": "f677a56a4e4ce18b29e842f146cb11c5f79a4295ddf8602eed316f8c733cce7a",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    },
+    {
+      "id": "HDL-097",
+      "slug": "edgecapture",
+      "title": "Edge capture register",
+      "scope": "基础路径指定题",
+      "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\a901d2224de8d362.html",
+      "source_sha256": "8db01c5cb2e88ce0bee968d84f4a4f0ca47f0a0387c2be055ebd8431d5820799",
+      "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\edgecapture.v",
+      "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_tb.sv",
+      "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_support.v",
+      "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_syntax_support.v",
+      "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\edgecapture.txt",
+      "cases": 3008,
+      "outputs_checked": {
+        "out": 3007
+      },
+      "mask_reasons": {
+        "out": "Before initial synchronous reset only."
+      },
+      "explanation": "previous每拍都采样，包括复位拍；复位优先于本拍捕获。专测复位拍in=1、下一拍in=0的捕获。",
+      "interface": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "reset",
+          "direction": "input",
+          "bounds": "",
+          "width": 1
+        },
+        {
+          "name": "in",
+          "direction": "input",
+          "bounds": "[31:0]",
+          "width": 32
+        },
+        {
+          "name": "out",
+          "direction": "output",
+          "bounds": "[31:0]",
+          "width": 32
+        }
+      ],
+      "status": "PASS",
+      "mutation": {
+        "name": "loses_previous_during_reset",
+        "old": "previous<=in;if(reset)",
+        "new": "if(!reset)previous<=in;if(reset)"
+      },
+      "syntax": {
+        "name": "E1/edgecapture__fault_loses_previous_during_reset/syntax",
+        "timestamp": "2026-10-24T13:36:56.126784+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2005",
+          "-Wall",
+          "-s",
+          "top_module",
+          "-tnull",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_syntax_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.v",
+            "sha256": "5b77ed954771eaafe440364f0706f0afac9768c7a7fb3a728e997551255b4b44"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.v",
+            "sha256": "5b77ed954771eaafe440364f0706f0afac9768c7a7fb3a728e997551255b4b44"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_syntax_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "compile": {
+        "name": "E1/edgecapture__fault_loses_previous_during_reset/compile",
+        "timestamp": "2026-10-24T13:36:56.249347+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.vvp",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.v",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_tb.sv",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_support.v"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.109,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.v",
+            "sha256": "5b77ed954771eaafe440364f0706f0afac9768c7a7fb3a728e997551255b4b44"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_tb.sv",
+            "sha256": "081e1d0773c898ce35d6de16b6fd210cb65ec01a672758b16b700ba140e4a93d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\edgecapture.txt",
+            "sha256": "6dbb8e971522f2ebf23697925eaacb7b55455873e3afb9d84ade255f37c4dfc6"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.v",
+            "sha256": "5b77ed954771eaafe440364f0706f0afac9768c7a7fb3a728e997551255b4b44"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_tb.sv",
+            "sha256": "081e1d0773c898ce35d6de16b6fd210cb65ec01a672758b16b700ba140e4a93d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\edgecapture.txt",
+            "sha256": "6dbb8e971522f2ebf23697925eaacb7b55455873e3afb9d84ade255f37c4dfc6"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "afee58617a690e6349a495eaf1aff0e8e3cc6922627bb57081e4a99e99428cd6"
+      },
+      "simulation": {
+        "name": "E1/edgecapture__fault_loses_previous_during_reset/simulate",
+        "timestamp": "2026-10-24T13:36:56.339112+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.vvp"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.v",
+            "sha256": "5b77ed954771eaafe440364f0706f0afac9768c7a7fb3a728e997551255b4b44"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_tb.sv",
+            "sha256": "081e1d0773c898ce35d6de16b6fd210cb65ec01a672758b16b700ba140e4a93d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\edgecapture.txt",
+            "sha256": "6dbb8e971522f2ebf23697925eaacb7b55455873e3afb9d84ade255f37c4dfc6"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.vvp",
+            "sha256": "ed496c0b688b344160138cedf138c69a3a101bc5f8b5eaea2d13f5d0cb642b63"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.v",
+            "sha256": "5b77ed954771eaafe440364f0706f0afac9768c7a7fb3a728e997551255b4b44"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_tb.sv",
+            "sha256": "081e1d0773c898ce35d6de16b6fd210cb65ec01a672758b16b700ba140e4a93d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\edgecapture_support.v",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\edgecapture.txt",
+            "sha256": "6dbb8e971522f2ebf23697925eaacb7b55455873e3afb9d84ade255f37c4dfc6"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\edgecapture__fault_loses_previous_during_reset.vvp",
+            "sha256": "ed496c0b688b344160138cedf138c69a3a101bc5f8b5eaea2d13f5d0cb642b63"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "80e51340573d3a670e92123d0d73674e6f9225cc0a967c6f1e2d0c1bf0705ef2",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "semantic_sentinel_pass": true,
+      "dut_sha256": "5b77ed954771eaafe440364f0706f0afac9768c7a7fb3a728e997551255b4b44",
+      "vectors_sha256": "6dbb8e971522f2ebf23697925eaacb7b55455873e3afb9d84ade255f37c4dfc6",
+      "testbench_sha256": "081e1d0773c898ce35d6de16b6fd210cb65ec01a672758b16b700ba140e4a93d",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fault_rejected": true
+    }
+  ],
+  "timestamp": "2026-10-24T13:36:56.347976+00:00",
+  "meaning": "PASS means mutated RTL compiled and simulation exited1 with an explicit behavioral MISMATCH; failed compilation never counts as rejection."
+}

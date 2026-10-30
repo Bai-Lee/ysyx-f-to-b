@@ -1,0 +1,302 @@
+{
+  "status": "PASS_GENERATION_NOT_EXECUTION",
+  "seed": 260705,
+  "cases": [
+    {
+      "name": "six_loop",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/six_loop.bin",
+      "sha256": "b6f1bf68a2a90f54013990fddddf9a160e4a79297d4f6d2a101485186c52b8ee",
+      "steps": 12,
+      "expect": 30,
+      "error": 0,
+      "expected": {
+        "pc": 12,
+        "gpr": [
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "instructions": 12,
+        "loads": 0,
+        "stores": 0
+      },
+      "trace": "/workspace/projects/ysyx_f_to_b/E/E5/programs/six_loop.expected.csv"
+    },
+    {
+      "name": "six_ebreak",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/six_ebreak.bin",
+      "sha256": "14c289f76dddf28091123f38119a5c136c61c37493763d81a9018df98b3af13b",
+      "steps": 0,
+      "expect": 30,
+      "error": 0,
+      "expected": {
+        "pc": 16,
+        "gpr": [
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "instructions": 6,
+        "loads": 0,
+        "stores": 0
+      },
+      "trace": "/workspace/projects/ysyx_f_to_b/E/E5/programs/six_ebreak.expected.csv"
+    },
+    {
+      "name": "negative_immediates",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/negative_immediates.bin",
+      "sha256": "365f4cc1fe63368468683f890e5599657f8cc0664b430dd97288f6ef082af032",
+      "steps": 0,
+      "expect": 0,
+      "error": 0,
+      "expected": {
+        "pc": 32,
+        "gpr": [
+          0,
+          4294967295,
+          4294965248,
+          2047,
+          4294967295,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "instructions": 8,
+        "loads": 0,
+        "stores": 0
+      },
+      "trace": "/workspace/projects/ysyx_f_to_b/E/E5/programs/negative_immediates.expected.csv"
+    },
+    {
+      "name": "jalr_alias_odd",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/jalr_alias_odd.bin",
+      "sha256": "57bce4c9ab2d0aac5ac52794007668acfb2e25e25edca6c7fa9564de1035d7a6",
+      "steps": 0,
+      "expect": 30,
+      "error": 0,
+      "expected": {
+        "pc": 24,
+        "gpr": [
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "instructions": 4,
+        "loads": 0,
+        "stores": 0
+      },
+      "trace": "/workspace/projects/ysyx_f_to_b/E/E5/programs/jalr_alias_odd.expected.csv"
+    },
+    {
+      "name": "x0_overflow",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/x0_overflow.bin",
+      "sha256": "ea41766c3e7a88f35a55be68f38ea3f65d78bf740bdd6eab82d7a639b632666d",
+      "steps": 0,
+      "expect": 0,
+      "error": 0,
+      "expected": {
+        "pc": 36,
+        "gpr": [
+          0,
+          4294967295,
+          1,
+          0,
+          2147481600,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "instructions": 9,
+        "loads": 0,
+        "stores": 0
+      },
+      "trace": "/workspace/projects/ysyx_f_to_b/E/E5/programs/x0_overflow.expected.csv"
+    },
+    {
+      "name": "memory_endian",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/memory_endian.bin",
+      "sha256": "e268534571433011b2f2136521b42077113a8227e5aa79bffa29f8f0fbaf736c",
+      "steps": 0,
+      "expect": 0,
+      "error": 0,
+      "expected": {
+        "pc": 108,
+        "gpr": [
+          0,
+          262144,
+          305419896,
+          305419896,
+          239,
+          205,
+          171,
+          144,
+          0,
+          239,
+          0,
+          2427178479,
+          305419896,
+          0,
+          0,
+          0
+        ],
+        "instructions": 27,
+        "loads": 12,
+        "stores": 6
+      },
+      "trace": "/workspace/projects/ysyx_f_to_b/E/E5/programs/memory_endian.expected.csv"
+    },
+    {
+      "name": "address_wrap",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/address_wrap.bin",
+      "sha256": "67427d4c683d4565b30e8fdaa2e390e1b7761d5833627924c41a14892109243c",
+      "steps": 0,
+      "expect": 0,
+      "error": 0,
+      "expected": {
+        "pc": 24,
+        "gpr": [
+          0,
+          4294967280,
+          291,
+          291,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "instructions": 6,
+        "loads": 1,
+        "stores": 1
+      },
+      "trace": "/workspace/projects/ysyx_f_to_b/E/E5/programs/address_wrap.expected.csv"
+    },
+    {
+      "name": "reserved_register",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/reserved_register.bin",
+      "sha256": "588e9beb79fd5229d38e50dc636dc3fa32e6c82524adaa313dbc66d210dc5005",
+      "steps": 0,
+      "expect": 0,
+      "error": 3
+    },
+    {
+      "name": "invalid_opcode",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/invalid_opcode.bin",
+      "sha256": "4703bd9f125a3cfe63d80aa106f6578934ca5c3e3212568744825f895796dff7",
+      "steps": 0,
+      "expect": 0,
+      "error": 3
+    },
+    {
+      "name": "unaligned_word",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/unaligned_word.bin",
+      "sha256": "13c2ccc1c1bb183b3a85ce5abc7b7b58b493970a45e75ee9449a2bf8413849e1",
+      "steps": 0,
+      "expect": 0,
+      "error": 3
+    },
+    {
+      "name": "misaligned_jump",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/misaligned_jump.bin",
+      "sha256": "2084bb3598f9582bddf5bb26fd2e1c391be1a2ebd47d2d7639ccfe186c4a1942",
+      "steps": 0,
+      "expect": 0,
+      "error": 3
+    },
+    {
+      "name": "random_ops",
+      "path": "/workspace/projects/ysyx_f_to_b/E/E5/programs/random_ops.bin",
+      "sha256": "8773a850d327f1e38b85c94cc1634afa57ae672cf4125df2f836e59f4fcaaabc",
+      "steps": 0,
+      "expect": 0,
+      "error": 0,
+      "expected": {
+        "pc": 28496,
+        "gpr": [
+          0,
+          28452,
+          3544608768,
+          3246074148,
+          3736285184,
+          0,
+          784342069,
+          525372046,
+          262144,
+          150876160,
+          0,
+          3246074265,
+          1063657472,
+          3618730288,
+          372658176,
+          0
+        ],
+        "instructions": 6417,
+        "loads": 1220,
+        "stores": 1220
+      },
+      "trace": "/workspace/projects/ysyx_f_to_b/E/E5/programs/random_ops.expected.csv"
+    }
+  ]
+}

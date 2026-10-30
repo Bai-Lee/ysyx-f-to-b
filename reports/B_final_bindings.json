@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "authored_rtl": [
+    {
+      "path": "B/soc/rtl/ysyx_00000000.v",
+      "sha256": "8eb5e262b149eda35769db808d80bd7c402caa84211a076c7a437bc6654e7344"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_alu.sv",
+      "sha256": "8d5c21c89b900f9077a84be87ef1bf0c160ccd1fa416256c8f87cfbec7d144d5"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_core.sv",
+      "sha256": "2676a7c2819a1c87e7e1c48fd68cc7d113df446eb8fac4c8562f43041404041f"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_execute.sv",
+      "sha256": "dabba1fb0185fdc7935042c9c8968a5d6ff5718e1a5548e74d183ed73182795c"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_icache.sv",
+      "sha256": "e9fb1193018d4754f700181ce7842de23b2fe4c0ba7a8005aee444c6aff91c67"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_pipe.sv",
+      "sha256": "643b8e854d5793f7b1169daffd907de0ea5d08e5c650436c992b038ee5b2192d"
+    }
+  ],
+  "binaries": [
+    {
+      "role": "final_soc",
+      "source": "/home/USER/b-stage/soc/build/b5-release/sim",
+      "sha256": "5e4e95778a9c9f9c36716c53c6365a6c50b9cbe5c1c4089588914449d04b44fc",
+      "member": "soc/build/b5-release/sim"
+    },
+    {
+      "role": "final_standalone",
+      "source": "/home/USER/b-stage/standalone/build/release/sim",
+      "sha256": "b99f66d83eee9e39c07a4f9e07ff6a6f2deb1334227dc698cc512819dd286bd3",
+      "member": "standalone/build/release/sim"
+    },
+    {
+      "role": "reference_or_native",
+      "source": "/home/USER/b-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "sha256": "d90693e60e982420b6cc64a14d1f71fffc2f122d1ec44becb447b1869522d880",
+      "member": "nemu-ref/build/riscv32-nemu-interpreter-so"
+    },
+    {
+      "role": "reference_or_native",
+      "source": "/home/USER/b-stage/fast-nemu-ref/build/riscv32-nemu-interpreter-so",
+      "sha256": "6acf1d670025fe50e02806d3a484b2e78741475e1672b489fefe14f58b310169",
+      "member": "fast-nemu-ref/build/riscv32-nemu-interpreter-so"
+    },
+    {
+      "role": "reference_or_native",
+      "source": "/home/USER/b-stage/workbench/nemu/build/riscv32-nemu-interpreter",
+      "sha256": "92c8741c44e11100385e1eb4116973ac085092a1654bb72afb963bee2a57647b",
+      "member": "workbench/nemu/build/riscv32-nemu-interpreter"
+    },
+    {
+      "role": "reference_or_native",
+      "source": "/home/USER/b-stage/workbench/nemu/tools/spike-diff/build/riscv32-spike-so",
+      "sha256": "bd320107b6156e54ddab74621936946a31a834b2e4d9dc6067654219933298e7",
+      "member": "workbench/nemu/tools/spike-diff/build/riscv32-spike-so"
+    }
+  ],
+  "soc_build_sha256": "3033fb8a4ae64c1c8d307cea071c13a8d1bc10e706c097c37b7c770048e3ad23",
+  "standalone_build_index_sha256": "3ec56b76fd2cce4a0461e372e4fdaa4ec5cf070de37f2eade526fe2842c593c6",
+  "mapped_netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+  "exported_rtl_sha256": "0c56b8296b8d03f359cedc07028e2a40eaafd7785979714ebd74c7291f17aed8",
+  "archive_sha256": "bdbfe29cfc2a0f18442d1d465efcde6689c6d9193f2bf5c030c17ae6fbdc2789",
+  "policy_metadata_changes": [],
+  "scope": "Every final RTL source byte belongs to both the accepted full-SoC build and original fixed-address synthesis. Two drive substitutions and export normalization are separately checked. Final binaries and references match the frozen runtime when not in preview mode."
+}

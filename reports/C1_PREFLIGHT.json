@@ -1,0 +1,54 @@
+{
+  "status": "READY_FOR_BOUNDED_BACKGROUND_EXPERIMENT",
+  "core_tasks": 0,
+  "capabilities": [
+    "host C compilation",
+    "ELF and archive inspection",
+    "RV32E object generation only"
+  ],
+  "tools": [
+    {
+      "name": "gcc",
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89",
+      "version": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0"
+    },
+    {
+      "name": "ar",
+      "path": "/usr/bin/ar",
+      "sha256": "5b394f8752fde1776992d405d76034d5017b24b9b922bedaeeaff8cc344ef044",
+      "version": "GNU ar (GNU Binutils for Ubuntu) 2.38"
+    },
+    {
+      "name": "nm",
+      "path": "/usr/bin/nm",
+      "sha256": "ed6565c132d6f20019ff3f050043dc1b2b8bc2e8b3b94c1ffe3f34436431a5a4",
+      "version": "GNU nm (GNU Binutils for Ubuntu) 2.38"
+    },
+    {
+      "name": "readelf",
+      "path": "/usr/bin/readelf",
+      "sha256": "04db0000749aff89e4af21429340b00b536fc6f80e811c872c006507881a5560",
+      "version": "GNU readelf (GNU Binutils for Ubuntu) 2.38"
+    },
+    {
+      "name": "objdump",
+      "path": "/usr/bin/objdump",
+      "sha256": "1eaaef2e7f57c4c7f69115c495e2466f5a8c8e5f3bc42221d092382f30f9d4cd",
+      "version": "GNU objdump (GNU Binutils for Ubuntu) 2.38"
+    },
+    {
+      "name": "riscv64-linux-gnu-gcc",
+      "path": "/usr/bin/riscv64-linux-gnu-gcc",
+      "sha256": "0c54895c55568be5b5fee49e2426abcc8fb05ca2c121ca5685dea2cbc24a1c13",
+      "version": "riscv64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
+    }
+  ],
+  "budget": "Sequential light compilation only, no project-wide builds or installations.",
+  "source": "/workspace/YSYX_F_B_Archive/slides/markdown/2306/580e82b43f0b9820.md",
+  "source_sha256": "4b865c8c37595e40425ca0e57b6d424dfe4209bace271ec02f1ca257217cf8d7",
+  "limits": [
+    "Host ELF experiment is x86-64; RV32E object is inspected but not executed.",
+    "No whole-video or course-mastery claim."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PREPARED",
+  "sources": [
+    {
+      "program": "dummy",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/tests/dummy.c",
+      "sha256": "1af9b28c197e2ffee47e44489ff8314c3b81bd6ad56ba30b6a01f93fb2e9d762"
+    },
+    {
+      "program": "wrong",
+      "source": "/home/USER/e-stage/workbench/am-kernels/tests/cpu-tests/tests/wrong.c",
+      "sha256": "1c4834dbf49a6ace78ab382a72da2029510a46dbed47d736c7e170274af60974"
+    },
+    {
+      "program": "hello",
+      "source": "/home/USER/e-stage/workbench/am-kernels/kernels/hello/hello.c",
+      "sha256": "fb2adbc2321de804e0c0eb4c0bd2a4e18e3c4c81de6663a62fb98f73b5244ec2"
+    },
+    {
+      "program": "gpio",
+      "source": "/workspace/projects/ysyx_f_to_b/E/E7/programs/gpio.c",
+      "sha256": "44d03fe08c320b08ddf7b45a75d625464b89d60d45338442e59f1ee38b94a92d"
+    }
+  ],
+  "timer_source": "Pinnedofficialam-kernels/tests/am-tests",
+  "am": "/home/USER/e-stage/software-soc/abstract-machine",
+  "isolation": "SoCfrequencychanges cannotmutate the runningstandaloneE7AMworkbench."
+}

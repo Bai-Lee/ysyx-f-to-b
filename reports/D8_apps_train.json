@@ -1,0 +1,3663 @@
+{
+  "status": "PASS",
+  "selected": null,
+  "mode": "train",
+  "runs": 20,
+  "rows": [
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "100.blockchain",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/100.blockchain/Makefile",
+          "sha256": "5416efb93c2363290a255e1c76815563a7f96241859e2b144820b15ce795e517"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/100.blockchain/Block.c",
+          "sha256": "3b562eecc3d3ef5c3aee1cf6cd0565c0b2c284d5fb99b573f666d95d31c253c3"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/100.blockchain/Blockchain.c",
+          "sha256": "ccc2d27032cb71b1639d4fce534fb113fb20a65e05c959539901a78a767aeffe"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/100.blockchain/main.c",
+          "sha256": "18236f218403c590ac6d3be17743a69959ed976a1c68b6c25863e4e4b10e142d"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/100.blockchain/sha256.c",
+          "sha256": "4494f1424d2b26378c140d9dfc44d3b5519e072ad9315f6ac564229ef6c70bcf"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/100.blockchain/Block.h",
+          "sha256": "14ba3ece34133ff3f512fd769cb520bec01ceae005d16a58a24078242d643d4d"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/100.blockchain/Blockchain.h",
+          "sha256": "27e8125b57415ff728b505708728d23219b7b5e068a9d9b012c3b83571b05545"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/100.blockchain/sha256.h",
+          "sha256": "1b6c0190ea5e04002e04f2408cbc99336ea991e6b0092a81832d12daf3d19142"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 2.066,
+      "evidence": "D8/apps/train/archbench/100.blockchain_riscv32e-npc",
+      "stdout_sha256": "571357b7d5c950888422c6afceb5e7354f77fd6f7668f9420480f02e96dc4847",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/100.blockchain_riscv32e-npc/blockchain-riscv32e-npc.bin.npc.json",
+          "sha256": "b088d19f855c1a7ecfda780532dd3a0ef51b8977cf410f9c9ff408504ffee12e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/100.blockchain_riscv32e-npc/blockchain-riscv32e-npc.elf",
+          "sha256": "4824903781b0a0c58a717f69daccd8dbc58984483e8a7d07d9241fd1880ede1f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/100.blockchain_riscv32e-npc/blockchain-riscv32e-npc.bin",
+          "sha256": "a1a09ad9e1e500f3b6b5f366364aa0662f680a5053eb22f0fe3d111a5cda7ad7"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147486184,
+        "a0": 0,
+        "cycles": 2679486,
+        "instructions": 2679482,
+        "diff_enabled": true,
+        "diff_checked": 2674434,
+        "device_sync_checked": 5048,
+        "ebreak_calls": 1,
+        "memory_writes": 200372,
+        "load_commits": 334742,
+        "uart_bytes": 561,
+        "uart_polls": 4479,
+        "uart_not_ready": 3918,
+        "frequency_hz": 100000000,
+        "wall_seconds": 1.721560842,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147486172,
+          2147532788,
+          0,
+          0,
+          2147499132,
+          2147532684,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147532716,
+          2147496772,
+          0
+        ]
+      },
+      "score": 1628,
+      "min_time_us": 26400
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "101.igemm",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/101.igemm/Makefile",
+          "sha256": "5378707dd52335f5ccc651192edadaca074a3c2ea9f1a7508990218893e8b095"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/101.igemm/igemm.c",
+          "sha256": "7103e0af42d6696e5c3190e12b9e2bcf0ada3d1070b4acf5422ac3725256f370"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 7.843,
+      "evidence": "D8/apps/train/archbench/101.igemm_riscv32e-npc",
+      "stdout_sha256": "2ae022b9f01566cb9901e90d6267d6e4579ff67cf5c04bd3f85a80509f77cae2",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/101.igemm_riscv32e-npc/igemm-riscv32e-npc.bin.npc.json",
+          "sha256": "44f2538a6fe0ceb889819d31c3790968abc0a46c499de93a22b242611766ce37"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/101.igemm_riscv32e-npc/igemm-riscv32e-npc.elf",
+          "sha256": "cdf6e222c714f8bd83058b0cebe269d95543df54815eb4c76a4c0a0095e7ea48"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/101.igemm_riscv32e-npc/igemm-riscv32e-npc.bin",
+          "sha256": "9b7f282e2790e1b8e542e866e8c271f3b51129af70049f4037012b9e5085b665"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147485144,
+        "a0": 0,
+        "cycles": 14688995,
+        "instructions": 14688991,
+        "diff_enabled": true,
+        "diff_checked": 14685977,
+        "device_sync_checked": 3014,
+        "ebreak_calls": 1,
+        "memory_writes": 176259,
+        "load_commits": 458366,
+        "uart_bytes": 336,
+        "uart_polls": 2666,
+        "uart_not_ready": 2330,
+        "frequency_hz": 100000000,
+        "wall_seconds": 7.48769871,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147485132,
+          2147532788,
+          0,
+          0,
+          2147496120,
+          2147532684,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          28,
+          2147532716,
+          2147495568,
+          0
+        ]
+      },
+      "score": 183,
+      "min_time_us": 120074
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "102.queen",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/102.queen/Makefile",
+          "sha256": "e1d9cc1fc197bf07ef6519d84ac2267ffafd0736a85acff0b033ce95f339fb7c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/102.queen/queen.c",
+          "sha256": "1e80157a10f1cdb5114f0ab808a1607ac571627a97c5ca94d26abd9399ab975c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 4.013,
+      "evidence": "D8/apps/train/archbench/102.queen_riscv32e-npc",
+      "stdout_sha256": "27896c4b2085e3c6581d5e946755ac798fcf090c4635ccbf3fa9182b102373b9",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/102.queen_riscv32e-npc/queen-riscv32e-npc.bin.npc.json",
+          "sha256": "2bf7c789b6e2ef99c3a01960c407d59db842e8577c5ede97fd7d218d88cabfe9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/102.queen_riscv32e-npc/queen-riscv32e-npc.elf",
+          "sha256": "987019303a6e297f4090d24a50a9bdc8032e93215b30b88c0eb84c0bbe223a56"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/102.queen_riscv32e-npc/queen-riscv32e-npc.bin",
+          "sha256": "d2e35351a2ec1e745188e45cb1ca0c4b34aa41b751bd4e6a6bb734b614677349"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147484152,
+        "a0": 0,
+        "cycles": 6365940,
+        "instructions": 6365936,
+        "diff_enabled": true,
+        "diff_checked": 6363097,
+        "device_sync_checked": 2839,
+        "ebreak_calls": 1,
+        "memory_writes": 1004207,
+        "load_commits": 1175563,
+        "uart_bytes": 319,
+        "uart_polls": 2512,
+        "uart_not_ready": 2193,
+        "frequency_hz": 100000000,
+        "wall_seconds": 3.711508736,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147484140,
+          2147528692,
+          0,
+          0,
+          2147492424,
+          2147528588,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147528620,
+          2147491908,
+          0
+        ]
+      },
+      "score": 8712,
+      "min_time_us": 63244
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "103.dinic",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/103.dinic/Makefile",
+          "sha256": "8a9e8c31da0a668db8b7c0c36914458629be741f9441335ea71b92ebe1dd7b81"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/103.dinic/dinic.c",
+          "sha256": "a2ee93b650991b76e543be5e54d096d28c636de2f2bf143bdd926e3a9d432204"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 3.264,
+      "evidence": "D8/apps/train/archbench/103.dinic_riscv32e-npc",
+      "stdout_sha256": "86e600ff5e28f8f63f69767bc3ad024ccfb79a308b517dbfaed4a6cd8c732fa6",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/103.dinic_riscv32e-npc/dinic-riscv32e-npc.bin.npc.json",
+          "sha256": "30abb62104dc89afca0e3f2dfb1c5217f81cc25f35168ceb0de86226f1d9ff6a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/103.dinic_riscv32e-npc/dinic-riscv32e-npc.elf",
+          "sha256": "a2bbe397fd094f71fc5d0582da45af6bb3de274065f6e4a329b3450c35d5df44"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/103.dinic_riscv32e-npc/dinic-riscv32e-npc.bin",
+          "sha256": "e0407caf32da71ae72a1e83c05ed7953e3cf5eeab2767696cb76335cfb640828"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147485524,
+        "a0": 0,
+        "cycles": 5708757,
+        "instructions": 5708753,
+        "diff_enabled": true,
+        "diff_checked": 5706144,
+        "device_sync_checked": 2609,
+        "ebreak_calls": 1,
+        "memory_writes": 267707,
+        "load_commits": 664314,
+        "uart_bytes": 285,
+        "uart_polls": 2316,
+        "uart_not_ready": 2031,
+        "frequency_hz": 100000000,
+        "wall_seconds": 2.917358308,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147485512,
+          2147532788,
+          0,
+          0,
+          2147495856,
+          2147532684,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147532716,
+          2147495312,
+          0
+        ]
+      },
+      "score": 6861,
+      "min_time_us": 16032
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "104.malloc",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/104.malloc/Makefile",
+          "sha256": "4c537e321097e53965760221a5cb1d1f60748b1625dd4c1f2f4859a728ba22df"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/104.malloc/main.c",
+          "sha256": "726f4eb800829cc78691ba3c4aa89a0254eb741a871345bc3b36f435439abb8b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/104.malloc/malloc.c",
+          "sha256": "6aee96b0d0d0efc1ee52b394257aa4e59879d52e7c4cf8d01710317745736780"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 4.407,
+      "evidence": "D8/apps/train/archbench/104.malloc_riscv32e-npc",
+      "stdout_sha256": "cdf54a21e34ac42e9a35506de78f93301a6e09a8b3834b2c05307eb3cae37166",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/104.malloc_riscv32e-npc/malloc-riscv32e-npc.bin.npc.json",
+          "sha256": "283e70e8133bda06f44b9455835fd8cc21756810cc2a01b5203e9dfe0b722dc2"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/104.malloc_riscv32e-npc/malloc-riscv32e-npc.elf",
+          "sha256": "2a3fc0a60dcdd0339201e5270a151d60ee659d9b4aef3e87e5ce2ab1d806b612"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/104.malloc_riscv32e-npc/malloc-riscv32e-npc.bin",
+          "sha256": "109fbb5df717d9cb66a466e4f6771921fd8e9aef5031a0d05d50b4b471749792"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147486336,
+        "a0": 0,
+        "cycles": 8281744,
+        "instructions": 8281740,
+        "diff_enabled": true,
+        "diff_checked": 8278753,
+        "device_sync_checked": 2987,
+        "ebreak_calls": 1,
+        "memory_writes": 1827232,
+        "load_commits": 753976,
+        "uart_bytes": 332,
+        "uart_polls": 2647,
+        "uart_not_ready": 2315,
+        "frequency_hz": 100000000,
+        "wall_seconds": 3.991606526,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147486324,
+          2147631092,
+          0,
+          0,
+          2147597384,
+          2147630988,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147631020,
+          2147577888,
+          0
+        ]
+      },
+      "score": 8631,
+      "min_time_us": 74962
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "105.bf",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/105.bf/Makefile",
+          "sha256": "fdb872e2a77685d825009b33263de3905323be78c308822137f406fa05358aa7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/105.bf/bf.c",
+          "sha256": "fca2c450411beca654476d39e46f063f6a97c16828bca8f8f278c3b9d36a004a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 2.06,
+      "evidence": "D8/apps/train/archbench/105.bf_riscv32e-npc",
+      "stdout_sha256": "3c70e2cefc32aac9bc3b7212e259b4db89619ba2d2dc9a51f32dfdc4b87895ed",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/105.bf_riscv32e-npc/bf-riscv32e-npc.bin.npc.json",
+          "sha256": "a122a339bab50bfb5647a541b061bf83cc998b195aac0f6761f4dd7696f3a179"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/105.bf_riscv32e-npc/bf-riscv32e-npc.elf",
+          "sha256": "c2adc7fb93b5c27f023db7f81d096ed743b1e8983d7ff98af0b6db0455df5016"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/105.bf_riscv32e-npc/bf-riscv32e-npc.bin",
+          "sha256": "97b566fe18746821f7b691d28939f74d501bd85d91212d5e33ae5bc919cbaf46"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147485584,
+        "a0": 0,
+        "cycles": 3011342,
+        "instructions": 3011338,
+        "diff_enabled": true,
+        "diff_checked": 3008505,
+        "device_sync_checked": 2833,
+        "ebreak_calls": 1,
+        "memory_writes": 98694,
+        "load_commits": 464113,
+        "uart_bytes": 317,
+        "uart_polls": 2508,
+        "uart_not_ready": 2191,
+        "frequency_hz": 100000000,
+        "wall_seconds": 1.788570256,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147485572,
+          2147532788,
+          0,
+          0,
+          2147496736,
+          2147532684,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147532716,
+          2147496192,
+          0
+        ]
+      },
+      "score": 5825,
+      "min_time_us": 27635
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "106.qsort",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/106.qsort/Makefile",
+          "sha256": "712d0d2d93da263bf5098255aca5a0f2bbfc068ac5c126dfd80758dd50ef864d"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/106.qsort/qsort.c",
+          "sha256": "68431086d4dfd8092835cacebef6cb40fb1a9b4285e1e116bff25b4b7f5c51ab"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 5.714,
+      "evidence": "D8/apps/train/archbench/106.qsort_riscv32e-npc",
+      "stdout_sha256": "8a5014d58abe8cbcbfcc593a45332621f77d20c5fed577e8a5b8f12dc0eb1c0c",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/106.qsort_riscv32e-npc/qsort-riscv32e-npc.bin.npc.json",
+          "sha256": "c2827332ec45de9debeff06ffd2ccc0168904f61c2781eac467877b367331d6d"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/106.qsort_riscv32e-npc/qsort-riscv32e-npc.elf",
+          "sha256": "91aacf79ddde283cacd238a35410d866671c9fc56fb7d0a1f3c262361d9db39f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/106.qsort_riscv32e-npc/qsort-riscv32e-npc.bin",
+          "sha256": "60d77a80d586a700be7446ce44ebb879ddd3887d91a78e6bdd85991a5f9b27c3"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147484280,
+        "a0": 0,
+        "cycles": 9827021,
+        "instructions": 9827017,
+        "diff_enabled": true,
+        "diff_checked": 9824367,
+        "device_sync_checked": 2650,
+        "ebreak_calls": 1,
+        "memory_writes": 309793,
+        "load_commits": 465793,
+        "uart_bytes": 289,
+        "uart_polls": 2353,
+        "uart_not_ready": 2064,
+        "frequency_hz": 100000000,
+        "wall_seconds": 5.144914995,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147484268,
+          2147528692,
+          0,
+          0,
+          2147494808,
+          2147528588,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147528620,
+          2147494264,
+          0
+        ]
+      },
+      "score": 18576,
+      "min_time_us": 13027
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "107.stream",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/107.stream/Makefile",
+          "sha256": "7135e6e4918a265ffd8f926336b303c19689789967c7e98306d37560a93c1d7f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/107.stream/stream.c",
+          "sha256": "22dfa41ef614831b570778659d5cb963cb81c23d2c4912cbe7c64e8c1596fb4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 6.476,
+      "evidence": "D8/apps/train/archbench/107.stream_riscv32e-npc",
+      "stdout_sha256": "8fbbe2531edd884a6a3433a1e2a1e70c125d4fa399d4741685e940e27d8a2553",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/107.stream_riscv32e-npc/stream-riscv32e-npc.bin.npc.json",
+          "sha256": "27b05686169f33d97aea9ae4b8d258f3abbd7b80ebf6cbf650ea48a9764cd8a0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/107.stream_riscv32e-npc/stream-riscv32e-npc.elf",
+          "sha256": "0023aaaa7287cacd2aacd0f8f746e1a43db9444f1c5c7ed31c2c397b35562ba8"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/107.stream_riscv32e-npc/stream-riscv32e-npc.bin",
+          "sha256": "e858afe39b6cd30959cece4a70e3836f0e7bbb851c78d478b932f3aef737a834"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147487836,
+        "a0": 0,
+        "cycles": 9872893,
+        "instructions": 9872889,
+        "diff_enabled": true,
+        "diff_checked": 9854381,
+        "device_sync_checked": 18508,
+        "ebreak_calls": 1,
+        "memory_writes": 1246091,
+        "load_commits": 1912221,
+        "uart_bytes": 1872,
+        "uart_polls": 14906,
+        "uart_not_ready": 13034,
+        "frequency_hz": 100000000,
+        "wall_seconds": 6.07188928,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147487824,
+          2147536884,
+          0,
+          0,
+          2147502936,
+          2147536780,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147536812,
+          2147499080,
+          0
+        ]
+      },
+      "score": 2989,
+      "min_time_us": 90319
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "108.ntt",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/108.ntt/Makefile",
+          "sha256": "0887cdf2ca3f14ce0ac2aadc3208446e97d776d0410349ac2443c756e517a286"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/108.ntt/ntt.c",
+          "sha256": "fc17627e109acbac995c0f8c891141f01e40ef623deab0ed1a9290a1191ad579"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 3.082,
+      "evidence": "D8/apps/train/archbench/108.ntt_riscv32e-npc",
+      "stdout_sha256": "07b5fb8d37514c6210377f64c6a37eb9e15192cefdcd5a0ceec01993c41a1353",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/108.ntt_riscv32e-npc/ntt-riscv32e-npc.bin.npc.json",
+          "sha256": "59e93912315cb6f526c9cac2a1207356003267dcbd9dc2c1e6caf9364c69620e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/108.ntt_riscv32e-npc/ntt-riscv32e-npc.elf",
+          "sha256": "456af2f7fa6f90fe1b690558725273d087c1a3550722c47b306267dd5a5c8210"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/108.ntt_riscv32e-npc/ntt-riscv32e-npc.bin",
+          "sha256": "0e077af181f0bfc7da4b341ce1dcb6788835f6092fdfae31b8e02bd040276254"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147486632,
+        "a0": 0,
+        "cycles": 5223936,
+        "instructions": 5223932,
+        "diff_enabled": true,
+        "diff_checked": 5219333,
+        "device_sync_checked": 4599,
+        "ebreak_calls": 1,
+        "memory_writes": 204954,
+        "load_commits": 214894,
+        "uart_bytes": 499,
+        "uart_polls": 4092,
+        "uart_not_ready": 3593,
+        "frequency_hz": 100000000,
+        "wall_seconds": 2.727734659,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147486620,
+          2147532788,
+          0,
+          0,
+          2147499184,
+          2147532684,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147532716,
+          2147498640,
+          0
+        ]
+      },
+      "score": 136,
+      "min_time_us": 51427
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "200.genann",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/200.genann/Makefile",
+          "sha256": "7f2aa40f210c8085e560c74d4d0ff90054ad173eb6e6776a67b221fb83d5303e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/200.genann/genann.c",
+          "sha256": "1bf840707dd295e514ba2a7159b052e09557d54206b89023c48b46e955d8a84a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/200.genann/test.c",
+          "sha256": "e748736743decbaea03d107914f7ab76a8ae144eab2fc4791b0d3499ad98dbdd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/200.genann/genann.h",
+          "sha256": "cb1a16035c3a9b011182aae039014b5741fb5a4a13c8e3d73146df6c5532afdc"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/200.genann/lookup.h",
+          "sha256": "bb1c16104921eef1022d4204380540f019eda738a304b7d2fc8c97b16bdc2833"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/200.genann/minctest.h",
+          "sha256": "8ebccfd057f760c41409f10e3be51fcd62460cefc28a6ffc2bda4f42fb8f06c0"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 17.594,
+      "evidence": "D8/apps/train/archbench/200.genann_riscv32e-npc",
+      "stdout_sha256": "e17acb62dcd9b9a0cb67d0e54a24c8e66da35521b1a4b551da67521fa1e93a92",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/200.genann_riscv32e-npc/genann-riscv32e-npc.bin.npc.json",
+          "sha256": "d6df2cd571908e42889ed19922ec5fa0e8c32ed1534c3f3e03e29f9187b1d709"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/200.genann_riscv32e-npc/genann-riscv32e-npc.elf",
+          "sha256": "fa2cdd95193682b24062eae03d8c5e1520d31e8218fca10d706be97025956c9d"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/200.genann_riscv32e-npc/genann-riscv32e-npc.bin",
+          "sha256": "9dc366e954003b2d0c19fd8f91aa7de530b6282301b2201cdc6fa1542b7f9377"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147493844,
+        "a0": 0,
+        "cycles": 34927229,
+        "instructions": 34927225,
+        "diff_enabled": true,
+        "diff_checked": 34921622,
+        "device_sync_checked": 5603,
+        "ebreak_calls": 1,
+        "memory_writes": 704864,
+        "load_commits": 1024402,
+        "uart_bytes": 627,
+        "uart_polls": 4948,
+        "uart_not_ready": 4321,
+        "frequency_hz": 100000000,
+        "wall_seconds": 17.167999217,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147493832,
+          2147561460,
+          0,
+          0,
+          2147524992,
+          2147561356,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          28,
+          2147561388,
+          2147508068,
+          0
+        ]
+      },
+      "score": 189,
+      "min_time_us": 348843
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "201.jpeg",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/201.jpeg/Makefile",
+          "sha256": "d267afd8e6e5c5c35781c35fa6cbf949c0c17057d5c14439e8a7532868369686"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/201.jpeg/jpeg.c",
+          "sha256": "1668211bd3c42b4eed3d3881ac807a75502f0070d69817b66e35fa2e783cb267"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/201.jpeg/main.c",
+          "sha256": "d3d22d99971cf8f62a3512f4e60723549c45fe6635a6ff7f0bb68ce1b3e64937"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/201.jpeg/stb.h",
+          "sha256": "f61fdf365927beece13ebfec63a6603fe4aa1754fd73185ec0d9a6ae14e30a32"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 2.788,
+      "evidence": "D8/apps/train/archbench/201.jpeg_riscv32e-npc",
+      "stdout_sha256": "399e9c1dd82f62b2a38493bde28ed9aa4983cc95be42de9c119da9970977aacc",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/201.jpeg_riscv32e-npc/jpeg-riscv32e-npc.bin.npc.json",
+          "sha256": "10389f45a7060dafebc03465ed5f6746a679cff24bde8e0892e8b0b3a98ec186"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/201.jpeg_riscv32e-npc/jpeg-riscv32e-npc.elf",
+          "sha256": "843e771472e5dffbcfb5d3f9c47765e94a630afab43f1246df94b5a36e4420f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/201.jpeg_riscv32e-npc/jpeg-riscv32e-npc.bin",
+          "sha256": "9c3910266ce9b0628a833c7a6e3cf182537c041dbfc8b64aa01571506bff8804"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147504112,
+        "a0": 0,
+        "cycles": 4477012,
+        "instructions": 4477008,
+        "diff_enabled": true,
+        "diff_checked": 4474182,
+        "device_sync_checked": 2826,
+        "ebreak_calls": 1,
+        "memory_writes": 426364,
+        "load_commits": 774545,
+        "uart_bytes": 316,
+        "uart_polls": 2502,
+        "uart_not_ready": 2186,
+        "frequency_hz": 100000000,
+        "wall_seconds": 2.271847296,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147504100,
+          2147586036,
+          0,
+          0,
+          2147551996,
+          2147585932,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147585964,
+          2147532464,
+          0
+        ]
+      },
+      "score": 2162,
+      "min_time_us": 38389
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "202.llama2",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/202.llama2/Makefile",
+          "sha256": "16277481c81ebd7a0ffb15c659d749d083b1b381e5e13ebb9c07da282994312f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/202.llama2/bsearch.c",
+          "sha256": "d3b44fcaaefb710b73443df58d11c21245720a235830ca6bc84d724e5901f25b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/202.llama2/fixedptc.c",
+          "sha256": "1b00f1974e8a0a4b74ebbb172612f18060a39f52293c18d1a44958f17e52850c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/202.llama2/qsort.c",
+          "sha256": "be8f1c965ec97b83d5efaa596cda59ec606cd50ec3a5de6b6a61dc7e20ff747e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/202.llama2/run.c",
+          "sha256": "1b7c6513563704564e25ad9f37a90655951264fed43191f53c34844d4c6ad966"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/202.llama2/fixedptc.h",
+          "sha256": "c29612a734ed0eefccf26a84a05dc85448f353a0869afec4dcf646f487f66606"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 88.163,
+      "evidence": "D8/apps/train/archbench/202.llama2_riscv32e-npc",
+      "stdout_sha256": "6d61d93b6f57d8ba7ec53ebfa6b09a7e277208ad5c10453d23e49d215f38b43a",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/202.llama2_riscv32e-npc/llama2-riscv32e-npc.bin.npc.json",
+          "sha256": "0609a4b922be2c453aa22d88f2df686a035c3911f3459db6fecc33fc7e4cf009"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/202.llama2_riscv32e-npc/llama2-riscv32e-npc.elf",
+          "sha256": "83848f0ea6d3bd07a62525c34e11cdfa3b3e1884babd9be292c190d27b9a9178"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/202.llama2_riscv32e-npc/llama2-riscv32e-npc.bin",
+          "sha256": "8f215293bbc3ce3826a689e55dfed0ad444898af1fdf81f6c7637907dae00cfb"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147500212,
+        "a0": 0,
+        "cycles": 176869442,
+        "instructions": 176869438,
+        "diff_enabled": true,
+        "diff_checked": 176866130,
+        "device_sync_checked": 3308,
+        "ebreak_calls": 1,
+        "memory_writes": 3169904,
+        "load_commits": 3984060,
+        "uart_bytes": 365,
+        "uart_polls": 2931,
+        "uart_not_ready": 2566,
+        "frequency_hz": 100000000,
+        "wall_seconds": 87.780263557,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147500200,
+          2147647476,
+          0,
+          0,
+          2147613416,
+          2147647372,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          29,
+          2147647404,
+          2147593044,
+          0
+        ]
+      },
+      "score": 117,
+      "min_time_us": 1757686
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "203.rsa",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/203.rsa/Makefile",
+          "sha256": "65302dacdb17f2b7665d9f2c09f9dd2aa2bc10f0155d8bb6962ecd481efae605"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/203.rsa/rsa.c",
+          "sha256": "3eb53207f956d9abb250fb36b003c8aa51a8dd1318df5ef3694510699c8761b3"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 8.251,
+      "evidence": "D8/apps/train/archbench/203.rsa_riscv32e-npc",
+      "stdout_sha256": "32df9b37cdf56900b40c408d47412692ff843ef5c8c22a2901ecca12f14282b5",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/203.rsa_riscv32e-npc/rsa-riscv32e-npc.bin.npc.json",
+          "sha256": "14cefc1c751b91a61e1cc97b61298c2ec3f491e9f1c07038e16c7bf9d7e6f3c2"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/203.rsa_riscv32e-npc/rsa-riscv32e-npc.elf",
+          "sha256": "6d231697303cd881da115aab17a0d76b70c88d9f131816f8dcfaa9e0ad394d50"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/203.rsa_riscv32e-npc/rsa-riscv32e-npc.bin",
+          "sha256": "1026063c84de9cd9bb0fff27a37229df6aefc4d1125761cc3d215d949fb05469"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147499604,
+        "a0": 0,
+        "cycles": 13642118,
+        "instructions": 13642114,
+        "diff_enabled": true,
+        "diff_checked": 13634742,
+        "device_sync_checked": 7372,
+        "ebreak_calls": 1,
+        "memory_writes": 969658,
+        "load_commits": 1969590,
+        "uart_bytes": 829,
+        "uart_polls": 6535,
+        "uart_not_ready": 5706,
+        "frequency_hz": 100000000,
+        "wall_seconds": 7.700001566,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147499592,
+          2147569652,
+          0,
+          0,
+          2147532824,
+          2147569548,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          28,
+          2147569580,
+          2147512636,
+          0
+        ]
+      },
+      "score": 1595,
+      "min_time_us": 135965
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "204.hypergraph",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/Makefile",
+          "sha256": "8a155048c8a8de8e7c23739cf1c1df9c6e03e7446a3996bfd9608da35ab2100d"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_bucketio.c",
+          "sha256": "f20237efbe72116a3181faec58cbaeb4bdca3cc1f1ae5d644ffb9bc242bb7174"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_fileio.c",
+          "sha256": "8cf98c2cbb92fd54c857fed996bec0f708f13874e4422607454b42b1c598e303"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_fms.c",
+          "sha256": "d6e53482c42d721b9b61c0aebf73d001fb195aa30297f921e9c0d9e483a2d57c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_lib.c",
+          "sha256": "65209abad43c9e81f8f4c82893cc276834916acdb3a6427233bb6d0b90472249"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_lib_fms.c",
+          "sha256": "e29c417c642608db4e60cb3e4410c208d2f3148a865cfc90048c08b8eaf32a7f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_partition.c",
+          "sha256": "feb14c84e1b65a8e903d0fed9a7e95f12c74eaadc7a0a4d5986c3259b7655f46"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_print.c",
+          "sha256": "1e0204f8aad56a83c9fcc9aa5fb657410e8ca3c4428d48a885a8f1b321419a42"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_random.c",
+          "sha256": "3efe6bef35c70be99c30790a0a9d7f8eb20049e0b6205c676156b2c37d7e406a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/src/ad_readinput.c",
+          "sha256": "986e3d2e75653af3c75b416cf1bbc10beae80b5d928bd0b5fffb5bb980eb79a0"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_bucketio.h",
+          "sha256": "0c0b2a049ea847ac16e289b3cdb12801fa2ea0be11505662a6d63151b02d0485"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_defs.h",
+          "sha256": "b0ce0b2f1e4035b88451402e0a1f7780248224d9fd457a8bacd7c5d3ee05e5fa"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_fileio.h",
+          "sha256": "70a6a92a4ae6174e1791a6feb1d5002f4d574f293a3c741c2dc2edacf905d245"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_lib.h",
+          "sha256": "8929eaeb7dde9537380e1f8b1fb0fc4f70dbaed6e1939ef24933f98940b9b33f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_lib_fms.h",
+          "sha256": "38e58982430a565d280a0520a4a9b4cee525a6f8b75c4a7672c86ddc9fead235"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_partition.h",
+          "sha256": "af20afeb1ad88f553aaa8a88459c30c920f33a78679e03b040a385a7991a6118"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_print.h",
+          "sha256": "2e7e9b94087fbd57ba9464f822da94b79b7e6069d87e136eadff04b38c0d16bb"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_random.h",
+          "sha256": "c24c1aa8e7b849cc7217981442ab028685c1bf52bf711aaab46abe30f480430c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/204.hypergraph/include/ad_readinput.h",
+          "sha256": "329957c6798d969449dfc64a50c232f118b072b885ce9ec841d901120adbca43"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 47.352,
+      "evidence": "D8/apps/train/archbench/204.hypergraph_riscv32e-npc",
+      "stdout_sha256": "7f1570a8d276caacbb5831be7277763b61107319cb296b3d8246f6ca75d67959",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/204.hypergraph_riscv32e-npc/hypergraph-riscv32e-npc.bin.npc.json",
+          "sha256": "b98eeb5d6a16e77d91e91686e3b73e93f8d70dae0d2e3451bd9fea89eee5477d"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/204.hypergraph_riscv32e-npc/hypergraph-riscv32e-npc.elf",
+          "sha256": "e5d7fecc0c37f20a0725384aaff80059e94c2f3f96874a2a00556ad94419a6e9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/204.hypergraph_riscv32e-npc/hypergraph-riscv32e-npc.bin",
+          "sha256": "eefa143c618430bcaed9db0984e4dfd306e6fcac66b52bcc2f0c4d5dfa375459"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147496212,
+        "a0": 0,
+        "cycles": 86817657,
+        "instructions": 86817653,
+        "diff_enabled": true,
+        "diff_checked": 86814229,
+        "device_sync_checked": 3424,
+        "ebreak_calls": 1,
+        "memory_writes": 7372242,
+        "load_commits": 15672291,
+        "uart_bytes": 375,
+        "uart_polls": 3041,
+        "uart_not_ready": 2666,
+        "frequency_hz": 100000000,
+        "wall_seconds": 46.124833244,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147496200,
+          2147606516,
+          0,
+          0,
+          2147569708,
+          2147606412,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          28,
+          2147606444,
+          2147550180,
+          0
+        ]
+      },
+      "score": 5845,
+      "min_time_us": 298025
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "300.bzip3",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/300.bzip3/Makefile",
+          "sha256": "94e17a95c42cfe53988e467a6603871e1a3d6d6564fde9f9243083ccbf262d5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/300.bzip3/input/train-queen.c",
+          "sha256": "176636c6c9eb0e18b9fedbe12e4654bac4b56dd9f8d22848e965ad13f02fb777"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/300.bzip3/libbz3.c",
+          "sha256": "eadd464305807102f8b933572a86e784ad8b5dacfd8cb6a4286513bc603740bf"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/300.bzip3/main.c",
+          "sha256": "8fc547d8c0f1ec3fc08fabb85ed9e9b24568053d14823473fd002b2fd07d602b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/300.bzip3/include/common.h",
+          "sha256": "4fa6bb2d98ea16b8dfc2c0e89b63db9d84b7f1e5e67027a71527c4b1d966ceb5"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/300.bzip3/include/libbz3.h",
+          "sha256": "d66c4bfd370c612326d95cc13e8c964fd3a5ec3d807b409b7b0b30e0a4af92e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/300.bzip3/include/libsais.h",
+          "sha256": "35521c422d17fcab10984cccf06ebfef2361990585ed50400e3362d87b4820c5"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/300.bzip3/include/yarg.h",
+          "sha256": "c8ba0950e81c4331cce4e92f61adc21a75e26122ad94ae0ba2718c1cdc2535fb"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 8.679,
+      "evidence": "D8/apps/train/archbench/300.bzip3_riscv32e-npc",
+      "stdout_sha256": "fc5eddefdad2670e40f7f2f0ee96b088a32adc1415015b51c4a0044f4c0e34fb",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/300.bzip3_riscv32e-npc/bzip3-riscv32e-npc.bin.npc.json",
+          "sha256": "abb081df33550170614b749e3ba367b89d13bfe68eb2f0a34188d4916d4cfb0f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/300.bzip3_riscv32e-npc/bzip3-riscv32e-npc.elf",
+          "sha256": "aa08c83935a0c072b7352363863aa0a545766d2fd02be0dc812c5e07f02b6047"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/300.bzip3_riscv32e-npc/bzip3-riscv32e-npc.bin",
+          "sha256": "1ee903998c6bb6b8c2e9d790f2a737fbd9ad9230d1eb996763529157a3bfb0bc"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147540700,
+        "a0": 0,
+        "cycles": 16389235,
+        "instructions": 16389231,
+        "diff_enabled": true,
+        "diff_checked": 16386284,
+        "device_sync_checked": 2947,
+        "ebreak_calls": 1,
+        "memory_writes": 4035184,
+        "load_commits": 335574,
+        "uart_bytes": 328,
+        "uart_polls": 2611,
+        "uart_not_ready": 2283,
+        "frequency_hz": 100000000,
+        "wall_seconds": 8.218948844,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147540688,
+          2147614708,
+          0,
+          0,
+          2147580848,
+          2147614604,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          28,
+          2147614636,
+          2147561212,
+          0
+        ]
+      },
+      "score": 3427,
+      "min_time_us": 163384
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "301.gsim",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/301.gsim/Makefile",
+          "sha256": "75768bab9c3a84f18aa7aeef0b31afb9e720d13153f5da2b3785b9b7d8c2beb9"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/301.gsim/Top.c",
+          "sha256": "dd3ba763b921f39bdd8ba063bcd53a7b89da67082f1640286d39144d387f7f71"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/301.gsim/main.c",
+          "sha256": "bf656755d99b7d996dfb36dadfacfe9b450f3cd2a814362bc162afb017ce60f0"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/301.gsim/Top.h",
+          "sha256": "a3a48e60679051eae4bc04fff8d131eb50c0fb3c1ab91a505cde6edde7d365d3"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/301.gsim/utils.h",
+          "sha256": "456ad3592e31eb4ced60c1a26d14488718c3444987d2e5c4313c854d46dac34e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 2.511,
+      "evidence": "D8/apps/train/archbench/301.gsim_riscv32e-npc",
+      "stdout_sha256": "0322c3b36453491920b9c3896bd7e53da9c61f28db754df72bc3f38ba5ed088d",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/301.gsim_riscv32e-npc/gsim-riscv32e-npc.bin.npc.json",
+          "sha256": "b5900e358f28efa8f070c1a0c0f1865f41ae3ef014cb2d94f864c6a85e703d6a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/301.gsim_riscv32e-npc/gsim-riscv32e-npc.elf",
+          "sha256": "49ee2428cb51a212ed9791faa3d03740e8b02e35f0dc7fc19a485993e0a2b199"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/301.gsim_riscv32e-npc/gsim-riscv32e-npc.bin",
+          "sha256": "dd5bb8dca35758b95c3ba2b7cce9a1195924b31f2e39fd9d458bc3ffcdaede41"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147516356,
+        "a0": 0,
+        "cycles": 3397857,
+        "instructions": 3397853,
+        "diff_enabled": true,
+        "diff_checked": 3393890,
+        "device_sync_checked": 3963,
+        "ebreak_calls": 1,
+        "memory_writes": 432811,
+        "load_commits": 649554,
+        "uart_bytes": 430,
+        "uart_polls": 3521,
+        "uart_not_ready": 3091,
+        "frequency_hz": 100000000,
+        "wall_seconds": 2.045021733,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147516344,
+          2147586036,
+          0,
+          0,
+          2147549836,
+          2147585932,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147585964,
+          2147530156,
+          0
+        ]
+      },
+      "score": 3586,
+      "min_time_us": 26769
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "302.lua",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/Makefile",
+          "sha256": "c3bb29812b79cffdf822e06b9bbdb5c566951cec232fe999a448d65162457852"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lapi.c",
+          "sha256": "ad3c2c66e243e6866ca370826813c61dcfe27d3275f40d1134085ad30f9e74ab"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lauxlib.c",
+          "sha256": "b40e5524117e0ceaf13522554b1b807c819df34cebafe4ce5f66ba3d1441cf5e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lbaselib.c",
+          "sha256": "b92ff44d4030a8b989a6eae0c10178bd5ecad67b68af550a43090da77a970a29"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lbitlib.c",
+          "sha256": "be8ded35215467810f86731bfbdba629219aeb4e4b71d58487b52879333d52c4"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lcode.c",
+          "sha256": "f890b67a727658f008c500fc8013f9e0c10c676709db02c33749da1454bd7344"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lcorolib.c",
+          "sha256": "a9f93db837e9b455fa35987e1d901a6e8042e629d16cc3dfa49ba16722446342"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lctype.c",
+          "sha256": "4eb41691ad4bf1afd578dda80d63518e8ad08d873eb4457bd626411e31f61897"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/ldblib.c",
+          "sha256": "c1605988ad949e1c601109f05c89909cdfad39a50c9545c11ebb3bf11b77f35d"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/ldebug.c",
+          "sha256": "2f02b6e263d491d65f8761e6e71ca8f3bb9e810c5eea66620e4ab10a9e4f8737"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/ldo.c",
+          "sha256": "7519a108c27969a0802585eb449c65aff3fc06e7efbf2ff11ad9540f986c5a22"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/ldump.c",
+          "sha256": "57e3179371a7867a67cbd729eee4e47799a2b77678b4cfea69bb4b7952a020ea"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lfunc.c",
+          "sha256": "14628e1a5750b0f1022b85fc20aa2c9fd59def925613610446dc8b179db26d0c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lgc.c",
+          "sha256": "a6e060516869a791c8076e7460dbd867bcfeb76f7f9bb653d88c057d400def55"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/linit.c",
+          "sha256": "d407ede61316955c9351fe886f3c7637b9541cf56cbf0affa43cf92f36df440e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/liolib.c",
+          "sha256": "4871d678bd6d40e9a62195d5aa48860d29abbbb03ecf2a97f0c79f62c98e5670"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/llex.c",
+          "sha256": "bd5d0512430b84b41d6b07744cbb1a22a3ea1dd3ec92599f4675cda61c8d26fe"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lmathlib.c",
+          "sha256": "0000b63632a626e1c52d715a42313d59cea236ca3cd02171efa4ea2c2621cd1d"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lmem.c",
+          "sha256": "1688f3b636a7bf453bc96dbef16a81e7802efb61285d98591de436e3c9d96684"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/loadlib.c",
+          "sha256": "65f312e1b195fdcbfb6be1e5421f9fc5c5a03df7f5653ee82470d3900f1ce039"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lobject.c",
+          "sha256": "6a8ef88761b722fd8c031800df569e76ca79371c4633615f62bb9cac79d75005"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lopcodes.c",
+          "sha256": "50971bb32787cfc4ee536e165559774dd2e29dd4cda265663239add8725ad1a3"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/loslib.c",
+          "sha256": "d84e454255d5861bdb73f5a944241307972cff8166cc0941ec2208c499059e82"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lparser.c",
+          "sha256": "7f38a088ebffe0cfb3012e127907e39989bd196e9c2ea7bfc87c4711ae9781b3"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lstate.c",
+          "sha256": "90abbce34a0f2148daa4981411fa83e7f2ac5fce1df8b43e77a82218f23f7ded"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lstring.c",
+          "sha256": "19c847e93d98d05f3755331a339a40e561a6289a734f7b47bc218201340f4c1b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lstrlib.c",
+          "sha256": "25d010613594485aea1c54ac55e1bf8cc80079700edefd6f87e989da277949e8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/ltable.c",
+          "sha256": "f25875703ec368a876e5d2c1f290af133acdb51e5d0b068638cdbd1e23837115"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/ltablib.c",
+          "sha256": "c2977951fb70d8d1580cccd6d0e153b41986ff68de467d72d1ae8746d9c9862b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/ltm.c",
+          "sha256": "1c6d11738535c4642eae54571408d2d44dc908e8c8150f7d19e1fa343191c452"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lua.c",
+          "sha256": "78e8a6543e3289ca5a87b57246d188931abd0430e1fb381faa53a88a4a5f3e76"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lundump.c",
+          "sha256": "4eeef9f7414bf6ab41a5cc79387f96e1d13c114399df1d395839f362774c550c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lutf8lib.c",
+          "sha256": "ee23622dacdc23f9bd977cc5d29a0cc29fc3a21e637e51e28f4966dd00fd608f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lvm.c",
+          "sha256": "9bfc82686c1758c495dc3cf269551b8b3a218852ec5de3fa4dac9a14de22ce57"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/lzio.c",
+          "sha256": "f08914c816254e15f0bb90fc4ad07cba431704637c9213a22f44dfb4f4757e92"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/src/unused.c",
+          "sha256": "9a3402e2f5544e2d022f4fdd7e0c1f1b9366b495e57c2fc5f4ffebe8216d2bf3"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lapi.h",
+          "sha256": "8942d6c90ff854f663f6b64c11ec41b95c667cbcb96ba702e89bba127f040ebf"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lauxlib.h",
+          "sha256": "589a81dc35d742816feca88094de701f53270fa374df880630f8d75509ebeb35"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lcode.h",
+          "sha256": "81a0d1537b120838d2dcacdaf6a62c3e175bd093eae44ea71537921b96e8a9b7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lctype.h",
+          "sha256": "f2735381af3cc3d7f5181a6f87637baad80ec6e04d28abeaf707f3880823d48b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/ldebug.h",
+          "sha256": "6f1139be39dc704a8ab4d160689b48c56ce61718640d5e6259431d77fb3a9ae3"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/ldo.h",
+          "sha256": "898ca9191f78ce768cf2226608cfb5c7e27513525eb60676ff42930db5fdadcb"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lfunc.h",
+          "sha256": "7b269a1c72d8d45dbb6a2b23f258c67e67d1f59095812cadce7a578196bdf0fa"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lgc.h",
+          "sha256": "c74c40eb1c187d2c10e3f16a8ad2c34add9dbc556c07dfc77f46397661223276"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/llex.h",
+          "sha256": "fba4cc88cf914b8aff4cb866dce34f55290b051bad67352fb8d6dd6bf4bea46f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/llimits.h",
+          "sha256": "a883544cdf4108cbe482e9f19097dea5c6450459437b1e3056051b97cf68ab2e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lmem.h",
+          "sha256": "50ae0df90f53185d87af363546efd44fcdeed7eec228127d332006124eece851"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lobject.h",
+          "sha256": "521f208bb99edd61adadf78e99bfaebb416b78ca60ffa3ead151991ee2f1b192"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lopcodes.h",
+          "sha256": "fa473fe63ee8f88845a03e8afe4f8483964ccbcd43d01f20f8d345a6f3860b2a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lparser.h",
+          "sha256": "c4ef940516691f93ac6c628873e208dff5ef48841b3feff38e49c4ac3ba0b91a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lprefix.h",
+          "sha256": "6d3ada3c24bdc6436fd2359b9a21199d21728a9e94353543b493a025ae1b3719"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lstate.h",
+          "sha256": "d7733235a31feeca25ceb12d35f5c0f9a0f400e286d5d78d436dc27d80a383b9"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lstring.h",
+          "sha256": "d6bac506650eff3b8c0c48eb87965355c97d7b7b839451b7d6fec762d97dfe69"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/ltable.h",
+          "sha256": "7abd961b0caab2f40456c0d5e7cd8f6ef031014c68cea3e22e6e44042d274244"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/ltm.h",
+          "sha256": "716b140ec745e0377ebbc1d2301d8aa37b60507782794e36ac3bb1f4ad6ce8d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lua.h",
+          "sha256": "2eafad20b7a624388f65ac49ea661fa6275943dd09e9063336891342952ecd58"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/luaconf.h",
+          "sha256": "f565d66dcf5f11e17dcadf4092b3ebbe8189103d507637caa422ad8dcb5e44bf"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lualib.h",
+          "sha256": "ea3e652382e977836f452f928640a4aa71ea73e864d3ee794dcc9ba522c983fa"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lundump.h",
+          "sha256": "bf43c423f8dc0cc0bc5e03973eed94051c8392f0e3127eb5bae1097f6f3f3f47"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lvm.h",
+          "sha256": "cdc57250137d5e014dabf75fa5281db748989d65bcbcd382e5bccbb78fd51b32"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/lzio.h",
+          "sha256": "b73b3526774dffca2671f2f68fdcc497ae815571829cd213ceb4ed2110056e05"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/302.lua/include/unused.h",
+          "sha256": "5ff539b4650a27d39a70dd35dec4bb9e2ace1d410620b9fad45ff0364a0138b8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 1.298,
+      "evidence": "D8/apps/train/archbench/302.lua_riscv32e-npc",
+      "stdout_sha256": "15c12c5cb16c1ea0f47d15f62d62f3186383128bbdb06ad68510d4c0453192a6",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/302.lua_riscv32e-npc/lua-riscv32e-npc.bin.npc.json",
+          "sha256": "06e473d1bbabe7b8bebc46c1ef31204475a5481ff85444699d177dc1bf268ec6"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/302.lua_riscv32e-npc/lua-riscv32e-npc.elf",
+          "sha256": "2340e3e864dc6aeea8a96bee70492ff0742121d60f71d2eef38658853dd9a0f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/302.lua_riscv32e-npc/lua-riscv32e-npc.bin",
+          "sha256": "fe5b0c1b0de8791c15acb8a758d856016280e27d02a8cf83bbaa91ad14c16042"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147647856,
+        "a0": 0,
+        "cycles": 1106984,
+        "instructions": 1106980,
+        "diff_enabled": true,
+        "diff_checked": 1104272,
+        "device_sync_checked": 2708,
+        "ebreak_calls": 1,
+        "memory_writes": 160357,
+        "load_commits": 255486,
+        "uart_bytes": 296,
+        "uart_polls": 2404,
+        "uart_not_ready": 2108,
+        "frequency_hz": 100000000,
+        "wall_seconds": 0.724125886,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147647844,
+          2147737588,
+          0,
+          0,
+          2147702520,
+          2147737484,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147737516,
+          2147682984,
+          0
+        ]
+      },
+      "score": 6434,
+      "min_time_us": 10724
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "303.cproc",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/Makefile",
+          "sha256": "dffefe317a28897de787bd81f8e0cc8a0970c4f392a6b90fd9c0e2662103b204"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/input/huge.c",
+          "sha256": "b9955e24a33e56e143f2fe41a1f8cf202756661d2b256b5cedfdbed4e1365f40"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/input/test-dummy.c",
+          "sha256": "d353b56827d19e178e95681eb2dc18365d342cb6e4f339ac69ab66009f86611e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/attr.c",
+          "sha256": "66d2b5e81db1fecd7f26a70fd0e6f00f219a961b540b1b844220569ab5ea3810"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/decl.c",
+          "sha256": "6e2dfbd6f38efd3cd7bd491c157e5fc6d790e24d3994bed82afbaf0cc2a595f0"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/eval.c",
+          "sha256": "7948746471603972de9c4ad358eff2d19359089e5d19f0227609629ef7e72c3a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/expr.c",
+          "sha256": "8dc2be0836a4fc4ac56a165d34f5ca1de86dcbaaee8b369f9faac0d37682c11b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/init.c",
+          "sha256": "36034f54c33ac47c15012d5d14224e8cc17c8e1d563b76df43b83eda0db6dbab"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/main.c",
+          "sha256": "37a6054d64332f5f168f6ae9a5e647173502d0bf4b012adc528fc4930d19454a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/map.c",
+          "sha256": "7ff3d355546db98e1cd6d8ba5f0e0f14ca65469584625480427ae28d94a46103"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/myfun.c",
+          "sha256": "5a37afcc1f81f2f50a8daa7c52c6a78a3c6fc88bde5058efad4628362081a6b7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/pp.c",
+          "sha256": "16a267518a4a75688aba01337ae19d07ebbe5a5a60342a74f6c3d72c9bcd8476"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/qbe.c",
+          "sha256": "af0892bb57aa7ea90951e62a77049e7d99bb376e43e259487a89a30ac577ad21"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/scan.c",
+          "sha256": "4817897cc1a586af87b95f3adc741e3fece6bed78590f5c2e6e94e3f2d99c35a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/scope.c",
+          "sha256": "5aeebe8835040ca348f7b0498d2bddf0d505bcaa39e938da599b52bcbff1c064"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/stmt.c",
+          "sha256": "74b34d39f9b09558eb5c2ce112f1487c372b390f57aede48f808b2fa9e8265b7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/targ.c",
+          "sha256": "ad810ae0de75acb56ada8f9675a6e57924ae7c24bf954813df164577d0e91767"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/token.c",
+          "sha256": "a7638a9a8303efd847152c461eea075205acfda54c3facfef03eed96af91e834"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/tree.c",
+          "sha256": "40b712efda56785facb3a5f9e46086c162c25bd4eee7fc8431a0aef8bf94cca9"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/type.c",
+          "sha256": "cdc8627ac07d38d1ebb75ff0bc97f5cd40c4e5b8b80f627c9f9e9b99997daa76"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/utf.c",
+          "sha256": "7287ef638d9e0dfc07e14870c8383bfe400e70768d9894d829549faccebdd963"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/src/util.c",
+          "sha256": "ee34946716ebeb209fa53563fa978c680806f6f039bdf54ec63e2854bb75a14c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/include/arg.h",
+          "sha256": "ac6360bd5a8113faa007f1442e04c5ea3482dcff48c193303bc4560bb7176883"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/include/cc.h",
+          "sha256": "e8aca04ea7a172fc7d97925788184e2247d2d24777f24366419153d35ed2eab6"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/include/ops.h",
+          "sha256": "af58eabb281d8f9f694dd475c41d16d76375911e21dbd7b43ea3443323a1d3ae"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/include/utf.h",
+          "sha256": "95748cccef832037394b7d12f02ee279b97a3f8f6f23a4fb7c4bd8bb0e3f34fc"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/303.cproc/include/util.h",
+          "sha256": "c15b7a98397b9d325fa61fdd88d0f584a1f03e7275b6cbec10360188164705d5"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 3.714,
+      "evidence": "D8/apps/train/archbench/303.cproc_riscv32e-npc",
+      "stdout_sha256": "38b5c1d4f46583c56caa02e7e7c6f46b0e83a99dbc9d36e9ec1e23c748cd9632",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/303.cproc_riscv32e-npc/cproc-riscv32e-npc.bin.npc.json",
+          "sha256": "ae70e0029b5832d740ddee3ccbbcbf6116006e505c8264844ad690a6b04e3089"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/303.cproc_riscv32e-npc/cproc-riscv32e-npc.elf",
+          "sha256": "00685c52d1e600177fd1b9f8cceda76ea8b19271ec73c61813f73ffce50539c4"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/303.cproc_riscv32e-npc/cproc-riscv32e-npc.bin",
+          "sha256": "9b75967b42b53f4c0226bff177afaec8f0c6111df3f24ea8d2aaceb32305aef3"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147572204,
+        "a0": 0,
+        "cycles": 3466678,
+        "instructions": 3466674,
+        "diff_enabled": true,
+        "diff_checked": 3438891,
+        "device_sync_checked": 27783,
+        "ebreak_calls": 1,
+        "memory_writes": 462490,
+        "load_commits": 689107,
+        "uart_bytes": 3133,
+        "uart_polls": 24642,
+        "uart_not_ready": 21509,
+        "frequency_hz": 100000000,
+        "wall_seconds": 3.160030043,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147572192,
+          2147680244,
+          0,
+          0,
+          2147645012,
+          2147680140,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147680172,
+          2147622988,
+          0
+        ]
+      },
+      "score": 5490,
+      "min_time_us": 32969
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "304.mp3",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/Makefile",
+          "sha256": "724918d4fce3d3995812bad875f5020e3e9b8b9d25893e4b15ba8727a36e3785"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/bitstream.c",
+          "sha256": "04b4023c2ae12a418ff80fb1e8d406935ba31ab1dfdc8a953043184ae2384638"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/buffers.c",
+          "sha256": "9540f00e07e2bee1b09f7cdc243ba8f9d00e30f14bbc728c5bc3b87b28b19974"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/dct32.c",
+          "sha256": "ff2332cb3cad32b4cc459a8673ef8332676edeac1211b9660efcf3767200a651"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/dequant.c",
+          "sha256": "836f30df80d79e8563c6176d567f8a916c4539c351c0088e2d9d39a4c7f2cf75"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/dqchan.c",
+          "sha256": "16bd6a29c55f142fc86bb62ceb58023db0d9849810fc3503cc8896b9a0adab17"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/huffman.c",
+          "sha256": "a4d18116a8d3659bab53df4001e51ed4e031365ed804186feed9d3a97c1aa2ae"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/hufftabs.c",
+          "sha256": "f5a98a976b607f40f5f422a8a4cc35544d1e37abf9ffc6bd589c1482f6ea3ec7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/imdct.c",
+          "sha256": "f4dec587a9a72c3df6ba34f06f1b6e7956df2d7b46a710efadb9613a3bce42dd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/main.c",
+          "sha256": "acb79f6945c637539638e83cbed8c6f55c86023adc71214b7e1ec46bf0d04bfa"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/mp3dec.c",
+          "sha256": "22dd367cc6dc695f9eb263b2bbd8720348e6989d00a0adcb8ac5fd24e4a7601b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/mp3tabs.c",
+          "sha256": "fb377ebeb4846e7ffb6cc78197e6233f6c56748b6db0bdf24b8d7a2f57767376"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/polyphase.c",
+          "sha256": "55579e3547ecf82fcc18ed38450fe95e904294db7d6c5d7a8df6bbd4a04a86b5"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/scalfact.c",
+          "sha256": "b45f8e880b4719d607bfa208477a01e72e3efaf686df8563274d7745e2580ddd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/stproc.c",
+          "sha256": "88249e9a06164dff52d826f653e2ba165142bda3354a4da8c7868ee9610e76b6"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/subband.c",
+          "sha256": "3b591711ff05964771e4c1c53141da2769961af6f3867338dbe4877a04978df3"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/src/trigtabs.c",
+          "sha256": "7f34e1a8ef18e372288d346c14741bc8ad8f8c2dbb977e70d946ea6663089aec"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/include/assembly.h",
+          "sha256": "e220d7009a5fe70fc23e99cd59e5d519ffc906e5558f421d27621299330f4cad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/include/coder.h",
+          "sha256": "58cef0a5408e65d1a91389996b1b226da79272b6a2d86b602d9d8c9803410118"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/include/mp3common.h",
+          "sha256": "103800bdb11fdf8fdf9f192eaee8992d51638b6146280ab06f26f149cfd716d5"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/include/mp3dec.h",
+          "sha256": "0da74fac324b071b0f233bafa020a5dbc6b2d8c593c0f67d3221c2c9456aff15"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/304.mp3/include/statname.h",
+          "sha256": "e66151cc942109f0e36191269b4abf96870dcc28d41fd7ebe366371f4b0d66dc"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 9.182,
+      "evidence": "D8/apps/train/archbench/304.mp3_riscv32e-npc",
+      "stdout_sha256": "89421f7755f77dc7ea58ff502ff5572e579f5c4cbd2db9b506dcaf3173806c9c",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/304.mp3_riscv32e-npc/mp3-riscv32e-npc.bin.npc.json",
+          "sha256": "647431acdaa011e8d82bbdc1cec431faaeb26202ca1c7b90391468ff702db690"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/304.mp3_riscv32e-npc/mp3-riscv32e-npc.elf",
+          "sha256": "8153d0f928d2400de1dda3e555128cc0c7ec4383045b4301ccdccd3f725b9c28"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/304.mp3_riscv32e-npc/mp3-riscv32e-npc.bin",
+          "sha256": "e817adc043144d0612053a130d701d254504e8227ed10c4f18c07170822ac3e4"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147528080,
+        "a0": 0,
+        "cycles": 17072051,
+        "instructions": 17072047,
+        "diff_enabled": true,
+        "diff_checked": 17068075,
+        "device_sync_checked": 3972,
+        "ebreak_calls": 1,
+        "memory_writes": 494111,
+        "load_commits": 499963,
+        "uart_bytes": 429,
+        "uart_polls": 3519,
+        "uart_not_ready": 3090,
+        "frequency_hz": 100000000,
+        "wall_seconds": 8.631454863,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147528068,
+          2147631092,
+          0,
+          0,
+          2147596252,
+          2147630988,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          28,
+          2147631020,
+          2147554988,
+          0
+        ]
+      },
+      "score": 94,
+      "min_time_us": 168460
+    },
+    {
+      "mode": "train",
+      "group": "archbench",
+      "name": "305.h264",
+      "arch": "riscv32e-npc",
+      "status": "PASS",
+      "inputs": [
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/Makefile",
+          "sha256": "257e55fa515efa60f58e538f3b9a08f860ccc0ac8d6505a714ccbb39f3db2845"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_byte_stream.c",
+          "sha256": "06a6e439d8bfb2428881909964bb949cc0ddab7e9ca7b98e9906dd2ddcb9a8da"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_cavlc.c",
+          "sha256": "d9819ded57380e8757a305ce6f93e51a3c0a89778c514e93ef2005556c782173"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_conceal.c",
+          "sha256": "1d62141288ea75bc81b941d8ffc84be5b59f9cad627aa470e74106ab04c4e187"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_deblocking.c",
+          "sha256": "adcccc1e16c9b7895fd86a726b9fd403ef3a2fc5b10335c342c37ecbb8ac3562"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_decoder.c",
+          "sha256": "162335910c77563a5fc06df211a4f360961f24a175e28d7fc9e67b60e951350e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_dpb.c",
+          "sha256": "6f5144b099ad2473aff5ff261c1f4657c30136e03945aa6cff7fc9eff8a1928d"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_image.c",
+          "sha256": "1eac34feee9c8335fe30c8d12ef9e90fffaadaf7271392f7d439da042da8f4aa"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_inter_prediction.c",
+          "sha256": "0544740a6580c7da748390be3b80597db0e677e53f569552ca3088ba613277d6"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_intra_prediction.c",
+          "sha256": "4c5b8a0c711bdc1e9a9488a40b23b69bfa5bcb8837ef10316e5695b85903dc03"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_macroblock_layer.c",
+          "sha256": "4cf11441e84fd850989b896731a6522ebfa014f547760756d0b64994a9b5a8a4"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_nal_unit.c",
+          "sha256": "ff1ed03a20c57c71cdf542e87a69102d74128ce4f66eeca768c3a02166f141bb"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_neighbour.c",
+          "sha256": "6f69c20c4663cb134dce72f86462e247647d4d9cb9083bc428b6320cbcd7026a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_pic_order_cnt.c",
+          "sha256": "72f2a7953cd99f84a5231f6e27fe96988418f43c5090a3555fbfab82d185ecf2"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_pic_param_set.c",
+          "sha256": "6212c05b57b04eff239f8b1eac61a3c21cfe4aa3d354a1e43f6f9d13811b0ef3"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_reconstruct.c",
+          "sha256": "a9e5a9da7c659e52f3c86c110de33c35054ccf13dfbd973bf6469cf3a3501ec7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_sei.c",
+          "sha256": "f0d08957df934f8158b74b331e8d4ed066cd6f44a1994db174c0915d5ca1de01"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_seq_param_set.c",
+          "sha256": "607642dbc8fd260b1e6debbe2015218dafe20ef677a31438c2e783eb382c2577"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_slice_data.c",
+          "sha256": "d7a45a7444c7b7468f7d84342cca9c5d3162ca3732b55e0f5ad4a77cd39cd5a5"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_slice_group_map.c",
+          "sha256": "61171c999c2fd547858e815018465d1376c44e4c670cdecc9f8a3be62d0ee56b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_slice_header.c",
+          "sha256": "32f0c30382d87e5a22d064bcb3e1155d81ef2e4bb1ad7f4172013a9bef655085"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_storage.c",
+          "sha256": "0ea266eb5bcbbec399e50fb7be741f40273fd3b3126605699f16483b3a3a4291"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_stream.c",
+          "sha256": "7969cd25d3ac80fa93bdec3475995e22f9680c0921564a07310c1bbaf9457b6c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_transform.c",
+          "sha256": "8e0c629b0a9c3efbc7cabcb04596bac8a76aa2dd1a9c03f6af545e01ae629918"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_util.c",
+          "sha256": "88302ac30460384fe4aa55e9fac5781e37ed04b430471201f0a10a82f67d0310"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_vlc.c",
+          "sha256": "18059f858fe25f4f57cbe3b85a636943ea646c90596fcf74373127f897044e4c"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/h264bsd_vui.c",
+          "sha256": "fb6b2607446b100d1adaf5993a1b8274e5e4e9a8f986c1ca7d314c766279cefc"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/src/main.c",
+          "sha256": "8dc12632b2d14f8d69975c3aa6450134668f9fadfc61da2c52e1ad86570f673a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/basetype.h",
+          "sha256": "32536b414fa519bd0d3d252767b838a3f36ce25ff1ec7e0ab226ed37a430dd38"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_byte_stream.h",
+          "sha256": "471027dcc5884fcd5ecba1635e8c4b586f71bc9d4fe2f3201731fa0530203e3e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_cavlc.h",
+          "sha256": "bb72419b21290626a62553cd81dcbb7b8b0ee90adfeb4db8172358a1159688a2"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_cfg.h",
+          "sha256": "c2fdb2d27194ae7a52ee363e9d1812bb78f5e636f373f4e2d9ba33afb484555f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_conceal.h",
+          "sha256": "117c8928aead1d030cc1dc1c0ffd6a04b7e47739435aa642aa4a995dc1242452"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_container.h",
+          "sha256": "fef900ec4ea29c7f830d6dc0e1bc247cbde8c016c06cb2271d901402d00fd204"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_deblocking.h",
+          "sha256": "d8b73a9300d3c530bee9317cd424a562fb7573ed416cb826b8a051da22b557f9"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_decoder.h",
+          "sha256": "523bc7ab630cb4bd1582ad57e708aafd998b61b471a2fe6e10ac5ac1167c7a1e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_dpb.h",
+          "sha256": "702804e0f61d5a88af4e66683180dc9035f5d653ce4aeb2d9362f78305b38c77"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_image.h",
+          "sha256": "68263db35242cf62ab255c7416fd218e3e3717926f1454195b80664db688ec90"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_inter_prediction.h",
+          "sha256": "f06e6d8be198673e3b809acffcf71dcdd5a5ca6ce7230f5913ad5fe71f7cfb10"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_intra_prediction.h",
+          "sha256": "8a43bcea55b3bc892cd773964e283ddaae3e052ba824ae352e083b6c00fa6a04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_macroblock_layer.h",
+          "sha256": "26342500651a9bd72e4682b4a73c769ab1a8f210eb561ff6823cad0f5246563a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_nal_unit.h",
+          "sha256": "cb1ca319a6dc30bddae88374232b6e3c06c9b9f26f345cfe28bc78c61c6a3de1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_neighbour.h",
+          "sha256": "ff62c642ef6a33614897999a078e90a9229e62e74cca0129462c04d3e7a90f20"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_pic_order_cnt.h",
+          "sha256": "43608879e9a6152c2f047b88aa0ab0eb971c4f7704c38f205b930d2f3bad995b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_pic_param_set.h",
+          "sha256": "8db0ee5e1227f875ad8f266f1bfa50e3c54d3b5f0d87d2269d7451e1c01b642f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_reconstruct.h",
+          "sha256": "9ce10030fbff8257d389d2365a222645de42995efcb025ee715bf5b0c3c2739e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_sei.h",
+          "sha256": "a792a8945d7fc11f79b3ee7bac9cdf0c5af47d82d0ba8dcd6fea5236c68a3f2e"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_seq_param_set.h",
+          "sha256": "295c4975c103d308287d05125a90446ebd5f481e6453762f497bef5fd9977ff2"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_slice_data.h",
+          "sha256": "78fe1e9fc9bc95187db9e0377d1bbdc48c13750475ce4b4970b78b40b475579b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_slice_group_map.h",
+          "sha256": "877ca54578cb3241f3d23772ae045fd0b4974647c837bdd3a488e4ab1c8bdf2f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_slice_header.h",
+          "sha256": "ae139148b92e2699af645f099e640616c77633c69a14eb046e951d5eef643998"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_storage.h",
+          "sha256": "c0e7b107a69f130669e2b82b294253764da910407d1f41d1c007d67261424417"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_stream.h",
+          "sha256": "cd0345bed433e9fe80730d9276c2e1526f514bd4f11e1edbf4ceee9c665fc96d"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_transform.h",
+          "sha256": "e41461a9bb11b95014c8a790745f955f45ed4b620e3f93e41082dc8b22e62af7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_util.h",
+          "sha256": "b46d12d30a772df2178e2e91aa1111cf977d543eafe76fd1b779def7955c6346"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_vlc.h",
+          "sha256": "c4877ae872e82c224d28d9a036c1992b025a314a6a6ceba30099ec10803bf08f"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/bench/305.h264/include/h264bsd_vui.h",
+          "sha256": "5466cbb8aba8893c41a848c0120e409b7624dbfdea52c4853db32f47ac791ad4"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/Makefile",
+          "sha256": "a097be3ac4996263aefd71d4447ad2e0f13ea8ecc63ee1b6612fd80a37e2ca5b"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/isa/riscv.mk",
+          "sha256": "72021234aa54a3607d00b448a780a0e8527470fb6bfdcda68be03246992bd710"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/riscv32e-npc.mk",
+          "sha256": "7c7edad5337ba9f9bdd38af0de5c58e43871a90c1fa0ece96e503f24954a9652"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/scripts/platform/npc.mk",
+          "sha256": "7a022e65f98cdec7a7f0247d7907e8db46469e68fd02bd753d499eb54fdbcaad"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/am/src/riscv/npc/timer.c",
+          "sha256": "aee9d1485a1b7b463c8854e42cbebd4774fe4833c424769b3f4ba7bb780a2a4a"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+          "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/cpp.c",
+          "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/ctypes.c",
+          "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+          "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/int64.c",
+          "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+          "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdlib.c",
+          "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+          "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/Makefile",
+          "sha256": "be244bab3bb0cd84c048d19066eed7f8c38b9fff7f2a7c9adc4723dd42bcf8e1"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/archbench/libbench/bench.c",
+          "sha256": "2278eaf655e8b55da2c1d37f4423a14a72b24d4e5716d985e2590163fda7cb63"
+        },
+        {
+          "path": "/home/USER/d-stage/workbench/npc/build/sim",
+          "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+        },
+        {
+          "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+        }
+      ],
+      "elapsed_seconds": 4.625,
+      "evidence": "D8/apps/train/archbench/305.h264_riscv32e-npc",
+      "stdout_sha256": "d95e0956ab7a1c61a2231d5bf9d044bf03221025a15c13f9a3ca44e8fd87159a",
+      "saved": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/305.h264_riscv32e-npc/h264-riscv32e-npc.bin.npc.json",
+          "sha256": "fe3c188b1081e806790895519cc66d96b66def91ff645278376eee42fe166917"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/305.h264_riscv32e-npc/h264-riscv32e-npc.elf",
+          "sha256": "3612c0b167bc04bea0b8eb2f5b641f2d6db501d0276a409bba0845f05919c41d"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/artifacts/D8/apps/train/archbench/305.h264_riscv32e-npc/h264-riscv32e-npc.bin",
+          "sha256": "a0f2c1d9e56e499b3b13205f997496752e58dce5e637ace2f298d4c06770e023"
+        }
+      ],
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 2147568624,
+        "a0": 0,
+        "cycles": 7939554,
+        "instructions": 7939550,
+        "diff_enabled": true,
+        "diff_checked": 7935562,
+        "device_sync_checked": 3988,
+        "ebreak_calls": 1,
+        "memory_writes": 961213,
+        "load_commits": 1118721,
+        "uart_bytes": 437,
+        "uart_polls": 3543,
+        "uart_not_ready": 3106,
+        "frequency_hz": 100000000,
+        "wall_seconds": 4.154276727,
+        "bounded_output": false,
+        "gpr": [
+          0,
+          2147568612,
+          2147651572,
+          0,
+          0,
+          2147618036,
+          2147651468,
+          1,
+          0,
+          0,
+          0,
+          4294967295,
+          27,
+          2147651500,
+          2147594972,
+          0
+        ]
+      },
+      "score": 2882,
+      "min_time_us": 65578
+    }
+  ],
+  "scope": "Earlier standalone E6 application workloads recompiled for RV32E; --only is a selected diagnostic run, not whole-suite acceptance. Native baselines in test mode. Dhrystone/CoreMark retain prior course-permitted two-iteration configuration; train archbench workloads and validators unchanged. 100MHz is an assumed model frequency, not a silicon qualification.",
+  "arithmetic_mean": 4268.1,
+  "geometric_mean": 1894.3998531724917
+}

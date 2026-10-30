@@ -1,0 +1,1113 @@
+{
+  "status": "PASS_UART_CAUSE_DIVISOR_AND_POLLED_OUTPUT",
+  "runs": [
+    {
+      "name": "hello-raw-empty",
+      "status": "PASS_OBSERVATION",
+      "profile": "raw",
+      "expected_hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d2027272e0a",
+      "expected_bytes": 39,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871188,
+        "next_pc": 536871192,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 1912,
+        "instructions": 520,
+        "wall_seconds": 0.0340807,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 562,
+        "flash_dpi_calls": 0,
+        "memory_operations": 88,
+        "diff_enabled": true,
+        "diff_checked": 481,
+        "device_sync_checked": 39,
+        "axi_channels": [
+          565,
+          565,
+          43,
+          43,
+          43
+        ],
+        "gpr": [
+          0,
+          536871180,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 39,
+          "accepted": 16,
+          "dropped": 23,
+          "maximum_fifo_occupancy": 16,
+          "capture_truncated": false,
+          "hex": "48656c6c6f2c2041627374726163744d"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        }
+      },
+      "evidence": "artifacts/C5/uart/hello-raw-empty",
+      "source_sha256": "5d1b0609d624a4ad9c614fe52505273ed7cd421346fe21104a8029bd477a6919",
+      "image_sha256": "75b0fac24c941f2ee12e806e863a962af57ff639a06467fda7c4a466ca42886c",
+      "elf_sha256": "9148f71769ad90552af6f207a2ba8813a7eeb715dafcd1dda2d422f2d1683e31"
+    },
+    {
+      "name": "hello-raw-short",
+      "status": "PASS_OBSERVATION",
+      "profile": "raw",
+      "expected_hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d20276162636465666768272e0a",
+      "expected_bytes": 47,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871188,
+        "next_pc": 536871192,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 2264,
+        "instructions": 600,
+        "wall_seconds": 0.0390613,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 650,
+        "flash_dpi_calls": 0,
+        "memory_operations": 120,
+        "diff_enabled": true,
+        "diff_checked": 553,
+        "device_sync_checked": 47,
+        "axi_channels": [
+          661,
+          661,
+          59,
+          59,
+          59
+        ],
+        "gpr": [
+          0,
+          536871180,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 47,
+          "accepted": 16,
+          "dropped": 31,
+          "maximum_fifo_occupancy": 16,
+          "capture_truncated": false,
+          "hex": "48656c6c6f2c2041627374726163744d"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        }
+      },
+      "evidence": "artifacts/C5/uart/hello-raw-short",
+      "source_sha256": "5d1b0609d624a4ad9c614fe52505273ed7cd421346fe21104a8029bd477a6919",
+      "image_sha256": "14a8eb7e2d8cc20c0c263e995d46510c2fce6912c0941073da212af2e9e05cf8",
+      "elf_sha256": "9148f71769ad90552af6f207a2ba8813a7eeb715dafcd1dda2d422f2d1683e31"
+    },
+    {
+      "name": "hello-raw-long",
+      "status": "PASS_OBSERVATION",
+      "profile": "raw",
+      "expected_hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d2027303132333435363738396162636465663031323334353637383961626364656630313233343536373839616263646566272e0a",
+      "expected_bytes": 87,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871188,
+        "next_pc": 536871192,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 4024,
+        "instructions": 1000,
+        "wall_seconds": 0.0553671,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 1090,
+        "flash_dpi_calls": 0,
+        "memory_operations": 280,
+        "diff_enabled": true,
+        "diff_checked": 913,
+        "device_sync_checked": 87,
+        "axi_channels": [
+          1141,
+          1141,
+          139,
+          139,
+          139
+        ],
+        "gpr": [
+          0,
+          536871180,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 87,
+          "accepted": 16,
+          "dropped": 71,
+          "maximum_fifo_occupancy": 16,
+          "capture_truncated": false,
+          "hex": "48656c6c6f2c2041627374726163744d"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        }
+      },
+      "evidence": "artifacts/C5/uart/hello-raw-long",
+      "source_sha256": "5d1b0609d624a4ad9c614fe52505273ed7cd421346fe21104a8029bd477a6919",
+      "image_sha256": "f0999d307ae2afec70036ade470aec0d9856ad24d20c467b454a6b5e893f44bd",
+      "elf_sha256": "9148f71769ad90552af6f207a2ba8813a7eeb715dafcd1dda2d422f2d1683e31"
+    },
+    {
+      "name": "hello-divisor-only",
+      "status": "PASS_OBSERVATION",
+      "profile": "divisor",
+      "expected_hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d2027303132333435363738396162636465663031323334353637383961626364656630313233343536373839616263646566272e0a",
+      "expected_bytes": 87,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871180,
+        "next_pc": 536871184,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 6622,
+        "instructions": 1556,
+        "wall_seconds": 0.127038,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 1646,
+        "flash_dpi_calls": 0,
+        "memory_operations": 466,
+        "diff_enabled": true,
+        "diff_checked": 1283,
+        "device_sync_checked": 273,
+        "axi_channels": [
+          1878,
+          1878,
+          144,
+          144,
+          144
+        ],
+        "gpr": [
+          0,
+          536871260,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 87,
+          "accepted": 40,
+          "dropped": 47,
+          "maximum_fifo_occupancy": 16,
+          "capture_truncated": false,
+          "hex": "48656c6c6f2c2041627374726163744d616368696e652169673d3034386266333661653135386327"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 40,
+          "framing_errors": 0,
+          "hex": "48656c6c6f2c2061722027333761653235396430343762660a3d3034386266333661653135386327"
+        }
+      },
+      "evidence": "artifacts/C5/uart/hello-divisor-only",
+      "source_sha256": "5d1b0609d624a4ad9c614fe52505273ed7cd421346fe21104a8029bd477a6919",
+      "image_sha256": "1bad86a1107789bf47ff471390faf4d6071f709478ffac5e166b605be7312505",
+      "elf_sha256": "563dd418e554aa60992c2973df8954d0a44647e1d9d37a095c76b06296e50cd0"
+    },
+    {
+      "name": "hello-polled-empty",
+      "status": "PASS_COMPLETE_OUTPUT",
+      "profile": "",
+      "expected_hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d2027272e0a",
+      "expected_bytes": 39,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871192,
+        "next_pc": 536871196,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 6848,
+        "instructions": 1577,
+        "wall_seconds": 0.113491,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 1619,
+        "flash_dpi_calls": 0,
+        "memory_operations": 441,
+        "diff_enabled": true,
+        "diff_checked": 1185,
+        "device_sync_checked": 392,
+        "axi_channels": [
+          1970,
+          1970,
+          48,
+          48,
+          48
+        ],
+        "gpr": [
+          0,
+          536871272,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 39,
+          "accepted": 39,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d2027272e0a"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 39,
+          "framing_errors": 0,
+          "hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d2027272e0a"
+        }
+      },
+      "evidence": "artifacts/C5/uart/hello-polled-empty",
+      "source_sha256": "5d1b0609d624a4ad9c614fe52505273ed7cd421346fe21104a8029bd477a6919",
+      "image_sha256": "9e680570914b961f19fc22449ce5b9b0fd2c957e18fba51452235169f619e947",
+      "elf_sha256": "32b151dcfeffdee579335d62dc1382d2122788eb694d46cc92a87d8f5292944f"
+    },
+    {
+      "name": "hello-polled-long",
+      "status": "PASS_COMPLETE_OUTPUT",
+      "profile": "",
+      "expected_hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d2027303132333435363738396162636465663031323334353637383961626364656630313233343536373839616263646566272e0a",
+      "expected_bytes": 87,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871192,
+        "next_pc": 536871196,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 15008,
+        "instructions": 3353,
+        "wall_seconds": 0.251039,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 3443,
+        "flash_dpi_calls": 0,
+        "memory_operations": 1065,
+        "diff_enabled": true,
+        "diff_checked": 2481,
+        "device_sync_checked": 872,
+        "axi_channels": [
+          4274,
+          4274,
+          144,
+          144,
+          144
+        ],
+        "gpr": [
+          0,
+          536871272,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 87,
+          "accepted": 87,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d2027303132333435363738396162636465663031323334353637383961626364656630313233343536373839616263646566272e0a"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 87,
+          "framing_errors": 0,
+          "hex": "48656c6c6f2c2041627374726163744d616368696e65210a6d61696e61726773203d2027303132333435363738396162636465663031323334353637383961626364656630313233343536373839616263646566272e0a"
+        }
+      },
+      "evidence": "artifacts/C5/uart/hello-polled-long",
+      "source_sha256": "5d1b0609d624a4ad9c614fe52505273ed7cd421346fe21104a8029bd477a6919",
+      "image_sha256": "339ab0aa493bbf9cf14f9351fb89101a8599d30f3360637cf35d189d4c8e4053",
+      "elf_sha256": "32b151dcfeffdee579335d62dc1382d2122788eb694d46cc92a87d8f5292944f"
+    },
+    {
+      "name": "binary-1",
+      "status": "PASS_COMPLETE_OUTPUT",
+      "profile": "",
+      "expected_hex": "00",
+      "expected_bytes": 1,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871308,
+        "next_pc": 536871312,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 562,
+        "instructions": 135,
+        "wall_seconds": 0.0251453,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 137,
+        "flash_dpi_calls": 0,
+        "memory_operations": 33,
+        "diff_enabled": true,
+        "diff_checked": 111,
+        "device_sync_checked": 24,
+        "axi_channels": [
+          156,
+          156,
+          12,
+          12,
+          12
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          1,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 1,
+          "accepted": 1,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "00"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 1,
+          "framing_errors": 0,
+          "hex": "00"
+        }
+      },
+      "evidence": "artifacts/C5/uart/binary-1",
+      "source_sha256": "0e02a4d65244aaeb1064feb9335697f798890eb5bdd8ec47a9b13f3f5a9a6bb3",
+      "image_sha256": "ac3b6d098d0bb0753d422d30e180385a5226cc2b1f88c40fa06ab68c36689759",
+      "elf_sha256": "29e78782f0b7faba9378890b2157624ab78059d72d1a990788a2f9a39b4f62c0"
+    },
+    {
+      "name": "binary-8",
+      "status": "PASS_COMPLETE_OUTPUT",
+      "profile": "",
+      "expected_hex": "0001020304050607",
+      "expected_bytes": 8,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871308,
+        "next_pc": 536871312,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 1682,
+        "instructions": 390,
+        "wall_seconds": 0.0398886,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 392,
+        "flash_dpi_calls": 0,
+        "memory_operations": 104,
+        "diff_enabled": true,
+        "diff_checked": 295,
+        "device_sync_checked": 95,
+        "axi_channels": [
+          475,
+          475,
+          19,
+          19,
+          19
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          1,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 8,
+          "accepted": 8,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "0001020304050607"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 8,
+          "framing_errors": 0,
+          "hex": "0001020304050607"
+        }
+      },
+      "evidence": "artifacts/C5/uart/binary-8",
+      "source_sha256": "0e02a4d65244aaeb1064feb9335697f798890eb5bdd8ec47a9b13f3f5a9a6bb3",
+      "image_sha256": "85cc2b50b3d1394ebfd7b70b2da3f93a1f502f2972b9c7a33dd8da714422ae6f",
+      "elf_sha256": "29e78782f0b7faba9378890b2157624ab78059d72d1a990788a2f9a39b4f62c0"
+    },
+    {
+      "name": "binary-16",
+      "status": "PASS_COMPLETE_OUTPUT",
+      "profile": "",
+      "expected_hex": "000102030405060708090a0b0c0d0e0f",
+      "expected_bytes": 16,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871308,
+        "next_pc": 536871312,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 3013,
+        "instructions": 696,
+        "wall_seconds": 0.0419185,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 699,
+        "flash_dpi_calls": 0,
+        "memory_operations": 187,
+        "diff_enabled": true,
+        "diff_checked": 519,
+        "device_sync_checked": 177,
+        "axi_channels": [
+          856,
+          856,
+          27,
+          27,
+          27
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          1,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 16,
+          "accepted": 16,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "000102030405060708090a0b0c0d0e0f"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 16,
+          "framing_errors": 0,
+          "hex": "000102030405060708090a0b0c0d0e0f"
+        }
+      },
+      "evidence": "artifacts/C5/uart/binary-16",
+      "source_sha256": "0e02a4d65244aaeb1064feb9335697f798890eb5bdd8ec47a9b13f3f5a9a6bb3",
+      "image_sha256": "1c30e6f8bb3301b08ff311608ac803339d1be267ba0c5724df4a9e4ec70f5158",
+      "elf_sha256": "29e78782f0b7faba9378890b2157624ab78059d72d1a990788a2f9a39b4f62c0"
+    },
+    {
+      "name": "binary-64",
+      "status": "PASS_COMPLETE_OUTPUT",
+      "profile": "",
+      "expected_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+      "expected_bytes": 64,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871308,
+        "next_pc": 536871312,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 10681,
+        "instructions": 2442,
+        "wall_seconds": 0.192579,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 2445,
+        "flash_dpi_calls": 0,
+        "memory_operations": 673,
+        "diff_enabled": true,
+        "diff_checked": 1779,
+        "device_sync_checked": 663,
+        "axi_channels": [
+          3040,
+          3040,
+          75,
+          75,
+          75
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          1,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 64,
+          "accepted": 64,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 64,
+          "framing_errors": 0,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        }
+      },
+      "evidence": "artifacts/C5/uart/binary-64",
+      "source_sha256": "0e02a4d65244aaeb1064feb9335697f798890eb5bdd8ec47a9b13f3f5a9a6bb3",
+      "image_sha256": "1fe483fbd7d4641f9a58bbbd72d74e2cda424074485f1d3c9f2984d0c736f913",
+      "elf_sha256": "29e78782f0b7faba9378890b2157624ab78059d72d1a990788a2f9a39b4f62c0"
+    },
+    {
+      "name": "binary-257",
+      "status": "PASS_COMPLETE_OUTPUT",
+      "profile": "",
+      "expected_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff00",
+      "expected_bytes": 257,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871308,
+        "next_pc": 536871312,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 41606,
+        "instructions": 9486,
+        "wall_seconds": 0.544574,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 9490,
+        "flash_dpi_calls": 0,
+        "memory_operations": 2632,
+        "diff_enabled": true,
+        "diff_checked": 6865,
+        "device_sync_checked": 2621,
+        "axi_channels": [
+          11850,
+          11850,
+          268,
+          268,
+          268
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          1,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 257,
+          "accepted": 257,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff00"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 257,
+          "framing_errors": 0,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff00"
+        }
+      },
+      "evidence": "artifacts/C5/uart/binary-257",
+      "source_sha256": "0e02a4d65244aaeb1064feb9335697f798890eb5bdd8ec47a9b13f3f5a9a6bb3",
+      "image_sha256": "4075957d6f7bae689c5d991054adf5adf66271b3d3371be7c1c589ea72b6dd15",
+      "elf_sha256": "29e78782f0b7faba9378890b2157624ab78059d72d1a990788a2f9a39b4f62c0"
+    },
+    {
+      "name": "binary-512",
+      "status": "PASS_COMPLETE_OUTPUT",
+      "profile": "",
+      "expected_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+      "expected_bytes": 512,
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871308,
+        "next_pc": 536871312,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 82400,
+        "instructions": 18774,
+        "wall_seconds": 1.09371,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 18778,
+        "flash_dpi_calls": 0,
+        "memory_operations": 5218,
+        "diff_enabled": true,
+        "diff_checked": 13567,
+        "device_sync_checked": 5207,
+        "axi_channels": [
+          23469,
+          23469,
+          523,
+          523,
+          523
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          1,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 512,
+          "accepted": 512,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 512,
+          "framing_errors": 0,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        }
+      },
+      "evidence": "artifacts/C5/uart/binary-512",
+      "source_sha256": "0e02a4d65244aaeb1064feb9335697f798890eb5bdd8ec47a9b13f3f5a9a6bb3",
+      "image_sha256": "17bc32251bd69c182c1a8595ccf2790798ff09ec63c8ba3c771ade47322f63ef",
+      "elf_sha256": "29e78782f0b7faba9378890b2157624ab78059d72d1a990788a2f9a39b4f62c0"
+    }
+  ],
+  "wrong_sampling_period_control": {
+    "result": "GOOD_TRAP",
+    "exit_code": 0,
+    "pc": 536871308,
+    "next_pc": 536871312,
+    "instruction": 1048691,
+    "a0": 0,
+    "fault": 0,
+    "cycles": 82400,
+    "instructions": 18774,
+    "wall_seconds": 1.23105,
+    "reset_cycles": 16,
+    "mrom_dpi_calls": 18778,
+    "flash_dpi_calls": 0,
+    "memory_operations": 5218,
+    "diff_enabled": true,
+    "diff_checked": 13567,
+    "device_sync_checked": 5207,
+    "axi_channels": [
+      23469,
+      23469,
+      523,
+      523,
+      523
+    ],
+    "gpr": [
+      0,
+      536871388,
+      251666420,
+      251660288,
+      0,
+      251658240,
+      251658240,
+      251658240,
+      0,
+      0,
+      0,
+      1,
+      1,
+      268435456,
+      64,
+      0
+    ],
+    "coverage": {
+      "base": 0,
+      "size": 0,
+      "unique_read_bytes": 0,
+      "unique_written_bytes": 0,
+      "read_ops_by_width": [
+        0,
+        0,
+        0
+      ],
+      "write_ops_by_width": [
+        0,
+        0,
+        0
+      ]
+    },
+    "uart": {
+      "attempted": 512,
+      "accepted": 512,
+      "dropped": 0,
+      "maximum_fifo_occupancy": 0,
+      "capture_truncated": false,
+      "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+    },
+    "uart_pin": {
+      "cycles_per_bit": 8,
+      "frames": 404,
+      "framing_errors": 368,
+      "hex": "8080868098809e80e080e680f880fe808098e0f8988086868698869e86e086e686f886fe8698e098f89e98fe988680e6808698869898989e98e098e698f898fe988698e698869ee69e8686e0e6e0869e869e989e9e9ee09ee69ef89efe9e86f8e6f88686fee6fe86e680e086e098e09ee0e0e0e6e0f8e0fee0868098e0f89e809898e686e698e69ee6e0e6e6e6f8e6fee69ee09e9e9ef89e9efe9e80f886f898f89ef8e0f8e6f8f8f8fef898e680989ee0f880fe86fe98fe9efee0fee6fef8fefefe8086989ee0e6f8fe8080868098809e80e080e680f880fe808098e0f8988086868698869e86e086e686f886fe8698e098f89e98fe988680e6808698869898989e98e098e698f898fe988698e698869ee69e8686e0e6e0869e869e989e9e9ee09ee69ef89efe9e86f8e6f88686fee6fe86e680e086e098e09ee0e0e0e6e0f8e0fee0868098e0f89e809898e686e698e69ee6e0e6e6e6f8e6fee69ee09e9e9ef89e9efe9e80f886f898f89ef8e0f8e6f8f8f8fef898e680989ee0f880fe86fe98fe9efee0fee6fef8fefefe8086989ee0e6f8fe"
+    }
+  },
+  "overflow_detail": "The original tfifo RAM write-enable is raw push even when count==16; overflowing software can overwrite an unread FIFO entry. The accepted-byte debug log can therefore differ from actual TX payload in the unpolled divisor-only case. Polled cases require zero drops and exact independent TX-pin bytes.",
+  "manual": {
+    "path": "C/C5/perip/uart16550/doc/UART_spec.pdf",
+    "sha256": "be7687fff45395458ac7b4d5519c3a7b7cc4fa6acf799ee4da580bcb1d2bf035",
+    "PDF_pages": [
+      8,
+      12,
+      14,
+      15,
+      17,
+      18
+    ]
+  },
+  "scope": "Original hello with multiple argument lengths traverses real AXI4/APB/UART FIFO. Attempt/accept/drop counters observe original FIFO branches without changing functional assignments. Divisor written MSB then LSB,8N1 restored; actual register readback and TEMT drain tested. Polled output includes all256 byte values and multiple lengths, independently decoded from the real TX pin. A wrong sampling period is rejected. Verilator debug %c output omits NUL; serial data preserves it. NVBoard UI acceptance is separate and still pending."
+}

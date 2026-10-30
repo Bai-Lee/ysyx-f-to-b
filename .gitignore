@@ -1,0 +1,16 @@
+/build/
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*.key
+*.pem
+id_rsa
+id_ed25519
+temp/
+artifacts/
+*.zip
+*.tar.gz
+*.vvp
+

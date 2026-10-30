@@ -1,0 +1,53 @@
+{
+  "status": "PASS_BOUNDED_BACKGROUND_EXPERIMENT",
+  "course_record": "C3-O001",
+  "core_tasks": 0,
+  "source": "/workspace/YSYX_F_B_Archive/slides/markdown/2306/1dbf54f914088a36.md",
+  "source_sha256": "87fcb44719ab053c7b63f9508d6d6a57cb6cb89bfc4d84382cfda74c379801dd",
+  "expected_prefix_sums": [
+    1,
+    3,
+    6,
+    10,
+    15
+  ],
+  "observed_mutant_watch_values": [
+    1,
+    3,
+    6,
+    11
+  ],
+  "first_divergence": {
+    "zero_based_index": 3,
+    "expected_prefix": 10,
+    "actual_prefix": 11,
+    "observed_increment": 5
+  },
+  "correct_result": 15,
+  "mutant_result": 16,
+  "mutant_exit": -6,
+  "gdb_observed_SIGABRT": true,
+  "tools": [
+    {
+      "name": "gcc",
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89",
+      "version": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0"
+    },
+    {
+      "name": "gdb",
+      "path": "/usr/bin/gdb",
+      "sha256": "a6222ff0f450ca040e3479c04fdb7d0f1e0cabb099688270e720b7115d933c3d",
+      "version": "GNU gdb (Ubuntu 12.1-0ubuntu1~22.04.2) 12.1"
+    }
+  ],
+  "evidence": [
+    "artifacts/C3/debug",
+    "C/C3/results/watchpoint-transcript.txt"
+  ],
+  "limits": [
+    "One deterministic native host defect with -O0 debug variables; not a claim all GDB/RTL/optimized-variable scenarios are covered.",
+    "No perf sampling, reverse execution, multithread race analysis or new large CPU regression.",
+    "Initial watchpoint script tried to read a block-local term outside its debug scope; failure preserved. Final script observes the actual state delta and mixed source disassembly."
+  ]
+}

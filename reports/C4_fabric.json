@@ -1,0 +1,516 @@
+{
+  "status": "PASS_INDEPENDENT_CONTENTION_RESET_AND_MUTANTS",
+  "rows": [
+    {
+      "name": "fabric",
+      "status": "PASS",
+      "run": {
+        "status": "PASS",
+        "name": "C4/fabric/fabric/run",
+        "command": [
+          "/home/USER/c-stage/c4-fabric/fabric/sim",
+          "+VCD=/workspace/projects/ysyx_f_to_b/C/C4/results/fabric.vcd"
+        ],
+        "cwd": "/home/USER/c-stage",
+        "timestamp": "2026-10-28T12:38:23.557071+00:00",
+        "elapsed_seconds": 0.117,
+        "exit_code": 0,
+        "expected_exit": [
+          0
+        ],
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/fabric/sim",
+            "sha256": "9f048e7beccb2e19a8fd010c6f516c15f2e23cd3b8de77a1d7808a9848a88128"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/fabric/sim",
+            "sha256": "9f048e7beccb2e19a8fd010c6f516c15f2e23cd3b8de77a1d7808a9848a88128"
+          }
+        ],
+        "stdout_sha256": "f21ed2c4438a4282ac9127e40acdb48d69d637d871be10a400655d9681711f2b",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "Actual Linux memory/swap and per-process limits are recorded below. Compile j1; one heavy task, with task-specific PSS limits where applicable. VM capacity is re-observed at resume; historical configuration is not assumed current. No system settings changed.",
+        "resource_limits": {
+          "active_policy": {
+            "source": "/workspace/config/toolchain.lock.json",
+            "revision": "2026-10-28-user-expanded",
+            "heavy_jobs": 1,
+            "compile_jobs": 1,
+            "process_group_limit_mib": 6144,
+            "windows_start_available_mib": 2048,
+            "windows_running_available_mib": 1024,
+            "linux_running_available_mib": 512,
+            "jvm_heap_mib": 4096
+          },
+          "linux_memory_before": {
+            "MemTotal_KiB": 6953452,
+            "MemAvailable_KiB": 6494932,
+            "SwapTotal_KiB": 2097152,
+            "SwapFree_KiB": 2097152
+          },
+          "address_space_limit_bytes": [
+            -1,
+            -1
+          ],
+          "cpu_time_limit_seconds": [
+            -1,
+            -1
+          ],
+          "makeflags": "-j1",
+          "omp_threads": "1"
+        },
+        "child_resource_usage": {
+          "user_seconds": 0.009319999999998885,
+          "system_seconds": 0.009319999999999995,
+          "maxrss_kib_upper_bound_including_prior_children": 311488
+        },
+        "task_environment": {
+          "AM_HOME": "/home/USER/c-stage/workbench/abstract-machine",
+          "NPC_HOME": "/home/USER/c-stage/workbench/npc",
+          "VERILATOR_ROOT": "/home/USER/tools/verilator-stable-src",
+          "LC_ALL": "C",
+          "SHELL": "/bin/bash",
+          "MAKEFLAGS": "-j1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "stdin_file": null,
+        "outputs": [
+          {
+            "path": "/workspace/projects/ysyx_f_to_b/C/C4/results/fabric.vcd",
+            "sha256": "beca38ca71b5dd5ff9f295d0d42f7b65d5917ff67f7e2513dccc5e63ce580df8"
+          }
+        ]
+      },
+      "stdout": "FABRIC_PASS completed0=88 completed1=97 contended=64 reads=110 writes=41 cycles=1963\n- /workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/fabric_tb.sv:363: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 20us; walltime 0.041 s; speed 480.248 us/s\n- Verilator: cpu 0.014 s on 1 threads; allocated 4 MB\n",
+      "stderr": ""
+    },
+    {
+      "name": "fabric-wrong-read-data",
+      "status": "PASS",
+      "run": {
+        "status": "PASS",
+        "name": "C4/fabric/fabric-wrong-read-data/run",
+        "command": [
+          "/home/USER/c-stage/c4-fabric/fabric-wrong-read-data/sim"
+        ],
+        "cwd": "/home/USER/c-stage",
+        "timestamp": "2026-10-28T12:38:41.948740+00:00",
+        "elapsed_seconds": 0.06,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/fabric-wrong-read-data/sim",
+            "sha256": "c9583003943323950b6bf18d77161e9f5631a419ae8e1cd95992e0fc5d5ea594"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/fabric-wrong-read-data/sim",
+            "sha256": "c9583003943323950b6bf18d77161e9f5631a419ae8e1cd95992e0fc5d5ea594"
+          }
+        ],
+        "stdout_sha256": "04f6197296964120075eaa8cc095fcc104078d70d4b016fa960c536e7f3d1daf",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "Actual Linux memory/swap and per-process limits are recorded below. Compile j1; one heavy task, with task-specific PSS limits where applicable. VM capacity is re-observed at resume; historical configuration is not assumed current. No system settings changed.",
+        "resource_limits": {
+          "active_policy": {
+            "source": "/workspace/config/toolchain.lock.json",
+            "revision": "2026-10-28-user-expanded",
+            "heavy_jobs": 1,
+            "compile_jobs": 1,
+            "process_group_limit_mib": 6144,
+            "windows_start_available_mib": 2048,
+            "windows_running_available_mib": 1024,
+            "linux_running_available_mib": 512,
+            "jvm_heap_mib": 4096
+          },
+          "linux_memory_before": {
+            "MemTotal_KiB": 6953452,
+            "MemAvailable_KiB": 6478084,
+            "SwapTotal_KiB": 2097152,
+            "SwapFree_KiB": 2097152
+          },
+          "address_space_limit_bytes": [
+            -1,
+            -1
+          ],
+          "cpu_time_limit_seconds": [
+            -1,
+            -1
+          ],
+          "makeflags": "-j1",
+          "omp_threads": "1"
+        },
+        "child_resource_usage": {
+          "user_seconds": 0.0026559999999982153,
+          "system_seconds": 0.0,
+          "maxrss_kib_upper_bound_including_prior_children": 311488
+        },
+        "task_environment": {
+          "AM_HOME": "/home/USER/c-stage/workbench/abstract-machine",
+          "NPC_HOME": "/home/USER/c-stage/workbench/npc",
+          "VERILATOR_ROOT": "/home/USER/tools/verilator-stable-src",
+          "LC_ALL": "C",
+          "SHELL": "/bin/bash",
+          "MAKEFLAGS": "-j1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "stdin_file": null,
+        "outputs": []
+      },
+      "stdout": "[120000] %Fatal: fabric_tb.sv:286: Assertion failed in fabric_tb.transaction: READ_RESPONSE who=0 addr=80000000 got=91000014 expected=91000015\n%Error: /workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/fabric_tb.sv:286: Verilog $stop\nAborting...\n",
+      "stderr": ""
+    },
+    {
+      "name": "fabric-wrong-uart-route",
+      "status": "PASS",
+      "run": {
+        "status": "PASS",
+        "name": "C4/fabric/fabric-wrong-uart-route/run",
+        "command": [
+          "/home/USER/c-stage/c4-fabric/fabric-wrong-uart-route/sim"
+        ],
+        "cwd": "/home/USER/c-stage",
+        "timestamp": "2026-10-28T12:38:59.410311+00:00",
+        "elapsed_seconds": 0.038,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/fabric-wrong-uart-route/sim",
+            "sha256": "65b95aad2639263b1205994f1daf7c82b227cece1511b5fb1a2ef6f4d65da10d"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/fabric-wrong-uart-route/sim",
+            "sha256": "65b95aad2639263b1205994f1daf7c82b227cece1511b5fb1a2ef6f4d65da10d"
+          }
+        ],
+        "stdout_sha256": "31d52c75e200793f1f6b6590918de13fdba221f6273cef2f670e8208fc472fd2",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "Actual Linux memory/swap and per-process limits are recorded below. Compile j1; one heavy task, with task-specific PSS limits where applicable. VM capacity is re-observed at resume; historical configuration is not assumed current. No system settings changed.",
+        "resource_limits": {
+          "active_policy": {
+            "source": "/workspace/config/toolchain.lock.json",
+            "revision": "2026-10-28-user-expanded",
+            "heavy_jobs": 1,
+            "compile_jobs": 1,
+            "process_group_limit_mib": 6144,
+            "windows_start_available_mib": 2048,
+            "windows_running_available_mib": 1024,
+            "linux_running_available_mib": 512,
+            "jvm_heap_mib": 4096
+          },
+          "linux_memory_before": {
+            "MemTotal_KiB": 6953452,
+            "MemAvailable_KiB": 6471924,
+            "SwapTotal_KiB": 2097152,
+            "SwapFree_KiB": 2097152
+          },
+          "address_space_limit_bytes": [
+            -1,
+            -1
+          ],
+          "cpu_time_limit_seconds": [
+            -1,
+            -1
+          ],
+          "makeflags": "-j1",
+          "omp_threads": "1"
+        },
+        "child_resource_usage": {
+          "user_seconds": 0.0014200000000030855,
+          "system_seconds": 0.0,
+          "maxrss_kib_upper_bound_including_prior_children": 311488
+        },
+        "task_environment": {
+          "AM_HOME": "/home/USER/c-stage/workbench/abstract-machine",
+          "NPC_HOME": "/home/USER/c-stage/workbench/npc",
+          "VERILATOR_ROOT": "/home/USER/tools/verilator-stable-src",
+          "LC_ALL": "C",
+          "SHELL": "/bin/bash",
+          "MAKEFLAGS": "-j1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "stdin_file": null,
+        "outputs": []
+      },
+      "stdout": "[285000] %Fatal: fabric_tb.sv:208: Assertion failed in fabric_tb.unnamedblk2: XBAR_READ_TARGET\n%Error: /workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/fabric_tb.sv:208: Verilog $stop\nAborting...\n",
+      "stderr": ""
+    },
+    {
+      "name": "fabric-fixed-priority",
+      "status": "PASS",
+      "run": {
+        "status": "PASS",
+        "name": "C4/fabric/fabric-fixed-priority/run",
+        "command": [
+          "/home/USER/c-stage/c4-fabric/fabric-fixed-priority/sim"
+        ],
+        "cwd": "/home/USER/c-stage",
+        "timestamp": "2026-10-28T12:39:16.972298+00:00",
+        "elapsed_seconds": 0.046,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/fabric-fixed-priority/sim",
+            "sha256": "25245bfdaec2c90fef0dd3fe577c24adb3fa3a821178d968e4733a23feed50b5"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/fabric-fixed-priority/sim",
+            "sha256": "25245bfdaec2c90fef0dd3fe577c24adb3fa3a821178d968e4733a23feed50b5"
+          }
+        ],
+        "stdout_sha256": "5c1e29a186cc82fa41135ce666d769bf1cf259b275ae0ef4b03f87eecdc57538",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "Actual Linux memory/swap and per-process limits are recorded below. Compile j1; one heavy task, with task-specific PSS limits where applicable. VM capacity is re-observed at resume; historical configuration is not assumed current. No system settings changed.",
+        "resource_limits": {
+          "active_policy": {
+            "source": "/workspace/config/toolchain.lock.json",
+            "revision": "2026-10-28-user-expanded",
+            "heavy_jobs": 1,
+            "compile_jobs": 1,
+            "process_group_limit_mib": 6144,
+            "windows_start_available_mib": 2048,
+            "windows_running_available_mib": 1024,
+            "linux_running_available_mib": 512,
+            "jvm_heap_mib": 4096
+          },
+          "linux_memory_before": {
+            "MemTotal_KiB": 6953452,
+            "MemAvailable_KiB": 6466836,
+            "SwapTotal_KiB": 2097152,
+            "SwapFree_KiB": 2097152
+          },
+          "address_space_limit_bytes": [
+            -1,
+            -1
+          ],
+          "cpu_time_limit_seconds": [
+            -1,
+            -1
+          ],
+          "makeflags": "-j1",
+          "omp_threads": "1"
+        },
+        "child_resource_usage": {
+          "user_seconds": 0.006812000000003593,
+          "system_seconds": 0.0,
+          "maxrss_kib_upper_bound_including_prior_children": 313056
+        },
+        "task_environment": {
+          "AM_HOME": "/home/USER/c-stage/workbench/abstract-machine",
+          "NPC_HOME": "/home/USER/c-stage/workbench/npc",
+          "VERILATOR_ROOT": "/home/USER/tools/verilator-stable-src",
+          "LC_ALL": "C",
+          "SHELL": "/bin/bash",
+          "MAKEFLAGS": "-j1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "stdin_file": null,
+        "outputs": []
+      },
+      "stdout": "[9235000] %Fatal: fabric_tb.sv:196: Assertion failed in fabric_tb: ROUND_ROBIN_STARVATION\n%Error: /workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/fabric_tb.sv:196: Verilog $stop\nAborting...\n",
+      "stderr": ""
+    },
+    {
+      "name": "overlap",
+      "status": "PASS",
+      "run": {
+        "status": "PASS",
+        "name": "C4/fabric/overlap/run",
+        "command": [
+          "/home/USER/c-stage/c4-fabric/overlap/sim"
+        ],
+        "cwd": "/home/USER/c-stage",
+        "timestamp": "2026-10-28T12:39:27.167495+00:00",
+        "elapsed_seconds": 0.041,
+        "exit_code": 0,
+        "expected_exit": [
+          0
+        ],
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/overlap/sim",
+            "sha256": "7b2e4906824c7438b39e5b718bb11331626db826da523728ef9cc0ca07355983"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/overlap/sim",
+            "sha256": "7b2e4906824c7438b39e5b718bb11331626db826da523728ef9cc0ca07355983"
+          }
+        ],
+        "stdout_sha256": "0994ea5b490830631722119a4fe0c3b75e15e75a6acba73262e6088b4a3622de",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "Actual Linux memory/swap and per-process limits are recorded below. Compile j1; one heavy task, with task-specific PSS limits where applicable. VM capacity is re-observed at resume; historical configuration is not assumed current. No system settings changed.",
+        "resource_limits": {
+          "active_policy": {
+            "source": "/workspace/config/toolchain.lock.json",
+            "revision": "2026-10-28-user-expanded",
+            "heavy_jobs": 1,
+            "compile_jobs": 1,
+            "process_group_limit_mib": 6144,
+            "windows_start_available_mib": 2048,
+            "windows_running_available_mib": 1024,
+            "linux_running_available_mib": 512,
+            "jvm_heap_mib": 4096
+          },
+          "linux_memory_before": {
+            "MemTotal_KiB": 6953452,
+            "MemAvailable_KiB": 6465412,
+            "SwapTotal_KiB": 2097152,
+            "SwapFree_KiB": 2097152
+          },
+          "address_space_limit_bytes": [
+            -1,
+            -1
+          ],
+          "cpu_time_limit_seconds": [
+            -1,
+            -1
+          ],
+          "makeflags": "-j1",
+          "omp_threads": "1"
+        },
+        "child_resource_usage": {
+          "user_seconds": 0.003112999999999033,
+          "system_seconds": 0.0,
+          "maxrss_kib_upper_bound_including_prior_children": 313240
+        },
+        "task_environment": {
+          "AM_HOME": "/home/USER/c-stage/workbench/abstract-machine",
+          "NPC_HOME": "/home/USER/c-stage/workbench/npc",
+          "VERILATOR_ROOT": "/home/USER/tools/verilator-stable-src",
+          "LC_ALL": "C",
+          "SHELL": "/bin/bash",
+          "MAKEFLAGS": "-j1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "stdin_file": null,
+        "outputs": []
+      },
+      "stdout": "XBAR_OVERLAP_PASS reads=9 writes=9 cycles=193\n- /workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/xbar_overlap_tb.sv:325: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 2us; walltime 0.001 s; speed 1.677 ms/s\n- Verilator: cpu 0.001 s on 1 threads; allocated 2 MB\n",
+      "stderr": ""
+    },
+    {
+      "name": "overlap-ready-mutant",
+      "status": "PASS",
+      "run": {
+        "status": "PASS",
+        "name": "C4/fabric/overlap-ready-mutant/run",
+        "command": [
+          "/home/USER/c-stage/c4-fabric/overlap-ready-mutant/sim"
+        ],
+        "cwd": "/home/USER/c-stage",
+        "timestamp": "2026-10-28T12:39:37.698921+00:00",
+        "elapsed_seconds": 0.054,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/overlap-ready-mutant/sim",
+            "sha256": "4091d5bc91592a1893e8b1246848d7a4023b808b137e10c5e51092e29a334f78"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/c-stage/c4-fabric/overlap-ready-mutant/sim",
+            "sha256": "4091d5bc91592a1893e8b1246848d7a4023b808b137e10c5e51092e29a334f78"
+          }
+        ],
+        "stdout_sha256": "3838cd5593bf8a874a30876935f4199955e4170860aaf79c9232fc8b06952bff",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "budget": "Actual Linux memory/swap and per-process limits are recorded below. Compile j1; one heavy task, with task-specific PSS limits where applicable. VM capacity is re-observed at resume; historical configuration is not assumed current. No system settings changed.",
+        "resource_limits": {
+          "active_policy": {
+            "source": "/workspace/config/toolchain.lock.json",
+            "revision": "2026-10-28-user-expanded",
+            "heavy_jobs": 1,
+            "compile_jobs": 1,
+            "process_group_limit_mib": 6144,
+            "windows_start_available_mib": 2048,
+            "windows_running_available_mib": 1024,
+            "linux_running_available_mib": 512,
+            "jvm_heap_mib": 4096
+          },
+          "linux_memory_before": {
+            "MemTotal_KiB": 6953452,
+            "MemAvailable_KiB": 6461800,
+            "SwapTotal_KiB": 2097152,
+            "SwapFree_KiB": 2097152
+          },
+          "address_space_limit_bytes": [
+            -1,
+            -1
+          ],
+          "cpu_time_limit_seconds": [
+            -1,
+            -1
+          ],
+          "makeflags": "-j1",
+          "omp_threads": "1"
+        },
+        "child_resource_usage": {
+          "user_seconds": 0.0032450000000068258,
+          "system_seconds": 0.0,
+          "maxrss_kib_upper_bound_including_prior_children": 313240
+        },
+        "task_environment": {
+          "AM_HOME": "/home/USER/c-stage/workbench/abstract-machine",
+          "NPC_HOME": "/home/USER/c-stage/workbench/npc",
+          "VERILATOR_ROOT": "/home/USER/tools/verilator-stable-src",
+          "LC_ALL": "C",
+          "SHELL": "/bin/bash",
+          "MAKEFLAGS": "-j1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "stdin_file": null,
+        "outputs": []
+      },
+      "stdout": "[41000] %Fatal: xbar_overlap_tb.sv:316: Assertion failed in xbar_overlap_tb: COMBINATIONAL_VALID_TO_READY\n%Error: /workspace/projects/ysyx_f_to_b/C/C4/rtl_tests/xbar_overlap_tb.sv:316: Verilog $stop\nAborting...\n",
+      "stderr": ""
+    }
+  ],
+  "sources": [
+    {
+      "path": "C/C4/rtl/axil_arbiter2.sv",
+      "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+    },
+    {
+      "path": "C/C4/rtl/axil_xbar3.sv",
+      "sha256": "5f4c7a6fdefa836c53263a6aec8c52e5beeb8ba9f0658736df8fa2b726920769"
+    },
+    {
+      "path": "C/C4/rtl_tests/fabric_tb.sv",
+      "sha256": "35daf5fbf40714965e31f9e42ce1f06e5c607b6d456493298bf5b2f6cac065e5"
+    },
+    {
+      "path": "C/C4/rtl_tests/xbar_overlap_tb.sv",
+      "sha256": "b41717c0bc4425c7f69d9e4fa3f712c9bc336fffdfcd16b6501c51418636852b"
+    }
+  ],
+  "scope": "Verilator timed simulation of two independently driven masters,48 mixed transactions and32 continuously queued reads each, bounded service and contended round-robin ownership; independent fake endpoint signatures, all3 targets, DECERR/SLVERR/execute protection, address boundaries,16WSTRB masks, AW-first/W-first/simultaneous launches, stalled AR/AW/W/R/B payload checks, reset after partial AW and while R is pending. Finite simulation, not unrestricted protocol or four-state proof. Original Icarus attempt timed out at cycle11 with a delta-event scheduling loop; retained under artifacts/C4/rtl_unit/fabric, not counted as a pass."
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "runtime": "ECC CLI",
+  "ecc": "0.1.0a11",
+  "dreamplace": "0.1.0a7",
+  "ecc_tools": "0.1.0a12"
+}

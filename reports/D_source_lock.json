@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "repositories": [
+    {
+      "name": "NJU-ProjectN__nemu__ics2024",
+      "commit": "8e7a0fecc95b5b5d2c1f6be0ec1b703da93356c0",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_d_stage\\sources\\NJU-ProjectN__nemu__ics2024.tar.gz",
+      "sha256": "ac65080205b9bf54e49413ac5112e566c4da443d7d63d0cf16369e54e25b3fd5",
+      "original": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\NJU-ProjectN__nemu__ics2024"
+    }
+  ],
+  "inherited_source_lock": "reports/E_source_lock_canonical.json"
+}

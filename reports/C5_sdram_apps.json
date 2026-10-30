@@ -1,0 +1,107 @@
+{
+  "status": "PASS_COMPLETED_PROFILES",
+  "runs": [
+    {
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt",
+      "width": 16,
+      "ranks": 1,
+      "status": "PASS",
+      "image_sha256": "e7c6bde00fe5cfebe80db60ec9f2adf145b2679f539eb0dfeee217f5dfd333b3",
+      "elf_sha256": "0a99d241721e321a4a8fbce59f94a7a76c3fb0435105fe906a017c5915d77749",
+      "memory_profile": "sdram32",
+      "cycles": 11069716,
+      "instructions": 900573,
+      "wall_seconds": 10.5642,
+      "retired_by_region": [
+        0,
+        39744,
+        303,
+        0,
+        860526,
+        0,
+        0
+      ],
+      "sdram_chips": [
+        {
+          "read_bytes": 3592632,
+          "write_bytes": 131649,
+          "maximum_byte_address": 25181183
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "uart": "======= Running MicroBench [input *test*] =======\n[qsort] Quick sort: * Passed.\n[queen] Queen placement: * Passed.\n[bf] Brainf**k interpreter: * Passed.\n[fib] Fibonacci number: * Passed.\n[sieve] Eratosthenes sieve: * Passed.\n[15pz] A* 15-puzzle search: * Passed.\n[dinic] Dinic's maxflow algorithm: * Passed.\n[lzip] Lzip compression: * Passed.\n[ssort] Suffix sort: * Passed.\n[md5] MD5 digest: * Passed.\n==================================================\nMicroBench PASS\nScored time: 55.733 ms\nTotal  time: 96.398 ms\n",
+      "evidence": "artifacts/C5/sdram-apps/microbench-16x1"
+    },
+    {
+      "variant": "30000000-cycle-psram4m-qpi-sdram32x1-opt",
+      "width": 32,
+      "ranks": 1,
+      "status": "PASS",
+      "image_sha256": "e7c6bde00fe5cfebe80db60ec9f2adf145b2679f539eb0dfeee217f5dfd333b3",
+      "elf_sha256": "0a99d241721e321a4a8fbce59f94a7a76c3fb0435105fe906a017c5915d77749",
+      "memory_profile": "sdram32",
+      "cycles": 9262308,
+      "instructions": 900448,
+      "wall_seconds": 9.11435,
+      "retired_by_region": [
+        0,
+        39744,
+        303,
+        0,
+        860401,
+        0,
+        0
+      ],
+      "sdram_chips": [
+        {
+          "read_bytes": 1796066,
+          "write_bytes": 66163,
+          "maximum_byte_address": 25172991
+        },
+        {
+          "read_bytes": 1796066,
+          "write_bytes": 65486,
+          "maximum_byte_address": 25172991
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "uart": "======= Running MicroBench [input *test*] =======\n[qsort] Quick sort: * Passed.\n[queen] Queen placement: * Passed.\n[bf] Brainf**k interpreter: * Passed.\n[fib] Fibonacci number: * Passed.\n[sieve] Eratosthenes sieve: * Passed.\n[15pz] A* 15-puzzle search: * Passed.\n[dinic] Dinic's maxflow algorithm: * Passed.\n[lzip] Lzip compression: * Passed.\n[ssort] Suffix sort: * Passed.\n[md5] MD5 digest: * Passed.\n==================================================\nMicroBench PASS\nScored time: 45.687 ms\nTotal  time: 78.645 ms\n",
+      "evidence": "artifacts/C5/sdram-apps/microbench-32x1"
+    }
+  ],
+  "comparisons": [
+    {
+      "baseline": "30000000-cycle-psram4m-qpi-sdram16x1-opt",
+      "extended": "30000000-cycle-psram4m-qpi-sdram32x1-opt",
+      "same_firmware_sha256": "e7c6bde00fe5cfebe80db60ec9f2adf145b2679f539eb0dfeee217f5dfd333b3",
+      "baseline_cycles": 11069716,
+      "extended_cycles": 9262308,
+      "cycle_ratio": 0.8367249891505798,
+      "scope": "Identical microbench test firmware and32MiB softwareheap limit. Actual model-cycle totals include bootstrap andUART output; walltime is simulator speed, not hardware clock."
+    }
+  ],
+  "scope": "Real FSBL/SSBL loading and execution fromSDRAM, all10 original microbench test programs, full non-MMIO NEMU checking. The same sdram32 ELF is used for width comparison so increased heap does not confound it."
+}

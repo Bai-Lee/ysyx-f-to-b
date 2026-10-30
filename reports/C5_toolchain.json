@@ -1,0 +1,172 @@
+{
+  "status": "PASS_TOOLS_NOT_SOC_GENERATION",
+  "environment": {
+    "JAVA_HOME": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64",
+    "PATH": "/home/USER/tools/c-stage/bin:/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell:/mnt/c/Users/admin/.codex/tmp/arg0-windows/codex-arg0ezUOlj:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libheif/libheif/bin:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/jxrlib/jxrlib/bin:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/Library/bin:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Wolfram Research/WolframScript/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/d/msys64/ucrt64/bin:/mnt/c/Users/admin/AppData/Local/Programs/Python/Python312:/mnt/c/Users/admin/AppData/Local/Programs/Python/Python312/Scripts:/mnt/d/nodejs/:/mnt/d/Git/Git/cmd:/mnt/c/Users/admin/.grok/bin:/mnt/c/Users/admin/AppData/Local/Microsoft/WindowsApps:/mnt/d/texlive/2023/bin/windows:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2024.1/bin:/mnt/d/modeltech64_10.4/win64:/mnt/d/VSCode/Microsoft VS Code/bin:/mnt/c/Users/admin/.local/bin:/mnt/c/Users/admin/AppData/Roaming/npm:/mnt/c/Users/admin/.mineru/bin:/mnt/c/Users/admin/.dotnet/tools:/mnt/d/VSCode/Microsoft VS Code/bin/copilot-shim:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:/mnt/c/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd:/mnt/c/Users/admin/AppData/Local/OpenAI/Codex/bin/c602dfdab3808440:/mnt/c/Users/admin/AppData/Local/OpenAI/Codex/bin/2993767bd1dfb009",
+    "XDG_CACHE_HOME": "/home/USER/tools/c-stage/cache",
+    "COURSIER_CACHE": "/home/USER/tools/c-stage/cache/coursier",
+    "COURSIER_REPOSITORIES": "https://repo.maven.apache.org/maven2",
+    "MILL_JVM_OPTS": "-Xmx2g -XX:ActiveProcessorCount=2 -Djavax.net.ssl.trustStore=/home/USER/tools/c-stage/system-ca.jks -Djavax.net.ssl.trustStorePassword=changeit",
+    "JAVA_OPTS": "-Xmx2g -XX:ActiveProcessorCount=2 -Djavax.net.ssl.trustStore=/home/USER/tools/c-stage/system-ca.jks -Djavax.net.ssl.trustStorePassword=changeit",
+    "JAVA_TOOL_OPTIONS": "-Xmx2g -XX:ActiveProcessorCount=2 -Djavax.net.ssl.trustStore=/home/USER/tools/c-stage/system-ca.jks -Djavax.net.ssl.trustStorePassword=changeit"
+  },
+  "binaries": [
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/bin/java",
+      "sha256": "ac1d3bbe5301caaa1b86966802a4f8ec9f9f4f065c04dec45cc4a9f7dc24d075"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/bin/javac",
+      "sha256": "bafd67b6b902abb284b24c168ac90eb1490dac6448054a71ccb26c4918577b22"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/bin/mill",
+      "sha256": "04cac56046f5f9a16be65720b4134152cd01272fdf420f54f99796db58c9b423"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/cache/mill/download/0.12.4",
+      "sha256": "5a5ca4c8dc97522b51e851db8595ce7892ad302aefa092b582bba1f86fe191bf"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/firtool/firtool-1.105.0/bin/firtool",
+      "sha256": "1621ab876eb78ac60c938d60d5cafd36652673fe6454f0fb036125298ee2a181"
+    }
+  ],
+  "portable_symlink_adjustments": [
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/accessibility.properties",
+      "original_target": "/etc/java-17-openjdk/accessibility.properties",
+      "portable_target": "../../../../../etc/java-17-openjdk/accessibility.properties"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/logging.properties",
+      "original_target": "/etc/java-17-openjdk/logging.properties",
+      "portable_target": "../../../../../etc/java-17-openjdk/logging.properties"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/management/jmxremote.access",
+      "original_target": "/etc/java-17-openjdk/management/jmxremote.access",
+      "portable_target": "../../../../../../etc/java-17-openjdk/management/jmxremote.access"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/management/management.properties",
+      "original_target": "/etc/java-17-openjdk/management/management.properties",
+      "portable_target": "../../../../../../etc/java-17-openjdk/management/management.properties"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/net.properties",
+      "original_target": "/etc/java-17-openjdk/net.properties",
+      "portable_target": "../../../../../etc/java-17-openjdk/net.properties"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/security/java.policy",
+      "original_target": "/etc/java-17-openjdk/security/java.policy",
+      "portable_target": "../../../../../../etc/java-17-openjdk/security/java.policy"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/security/java.security",
+      "original_target": "/etc/java-17-openjdk/security/java.security",
+      "portable_target": "../../../../../../etc/java-17-openjdk/security/java.security"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/security/nss.cfg",
+      "original_target": "/etc/java-17-openjdk/security/nss.cfg",
+      "portable_target": "../../../../../../etc/java-17-openjdk/security/nss.cfg"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/security/policy/README.txt",
+      "original_target": "/etc/java-17-openjdk/security/policy/README.txt",
+      "portable_target": "../../../../../../../etc/java-17-openjdk/security/policy/README.txt"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/security/policy/limited/default_US_export.policy",
+      "original_target": "/etc/java-17-openjdk/security/policy/limited/default_US_export.policy",
+      "portable_target": "../../../../../../../../etc/java-17-openjdk/security/policy/limited/default_US_export.policy"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/security/policy/limited/default_local.policy",
+      "original_target": "/etc/java-17-openjdk/security/policy/limited/default_local.policy",
+      "portable_target": "../../../../../../../../etc/java-17-openjdk/security/policy/limited/default_local.policy"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/security/policy/limited/exempt_local.policy",
+      "original_target": "/etc/java-17-openjdk/security/policy/limited/exempt_local.policy",
+      "portable_target": "../../../../../../../../etc/java-17-openjdk/security/policy/limited/exempt_local.policy"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/security/policy/unlimited/default_US_export.policy",
+      "original_target": "/etc/java-17-openjdk/security/policy/unlimited/default_US_export.policy",
+      "portable_target": "../../../../../../../../etc/java-17-openjdk/security/policy/unlimited/default_US_export.policy"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/security/policy/unlimited/default_local.policy",
+      "original_target": "/etc/java-17-openjdk/security/policy/unlimited/default_local.policy",
+      "portable_target": "../../../../../../../../etc/java-17-openjdk/security/policy/unlimited/default_local.policy"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/sound.properties",
+      "original_target": "/etc/java-17-openjdk/sound.properties",
+      "portable_target": "../../../../../etc/java-17-openjdk/sound.properties"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/conf/swing.properties",
+      "original_target": "/etc/java-17-openjdk/swing.properties",
+      "portable_target": "../../../../../etc/java-17-openjdk/swing.properties"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/lib/jfr/default.jfc",
+      "original_target": "/etc/java-17-openjdk/jfr/default.jfc",
+      "portable_target": "../../../../../../etc/java-17-openjdk/jfr/default.jfc"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/lib/jfr/profile.jfc",
+      "original_target": "/etc/java-17-openjdk/jfr/profile.jfc",
+      "portable_target": "../../../../../../etc/java-17-openjdk/jfr/profile.jfc"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/lib/jvm.cfg",
+      "original_target": "/etc/java-17-openjdk/jvm-amd64.cfg",
+      "portable_target": "../../../../../etc/java-17-openjdk/jvm-amd64.cfg"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/lib/psfont.properties.ja",
+      "original_target": "/etc/java-17-openjdk/psfont.properties.ja",
+      "portable_target": "../../../../../etc/java-17-openjdk/psfont.properties.ja"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/lib/psfontj2d.properties",
+      "original_target": "/etc/java-17-openjdk/psfontj2d.properties",
+      "portable_target": "../../../../../etc/java-17-openjdk/psfontj2d.properties"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/lib/security/blocked.certs",
+      "original_target": "/etc/java-17-openjdk/security/blocked.certs",
+      "portable_target": "../../../../../../etc/java-17-openjdk/security/blocked.certs"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/lib/security/default.policy",
+      "original_target": "/etc/java-17-openjdk/security/default.policy",
+      "portable_target": "../../../../../../etc/java-17-openjdk/security/default.policy"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/lib/security/public_suffix_list.dat",
+      "original_target": "/etc/java-17-openjdk/security/public_suffix_list.dat",
+      "portable_target": "../../../../../../etc/java-17-openjdk/security/public_suffix_list.dat"
+    }
+  ],
+  "trust_store": {
+    "path": "/home/USER/tools/c-stage/system-ca.jks",
+    "sha256": "c5a3051a04e22b3605fd916a8bad1fa09e96215781836cadc8791ae6adcdb0ed",
+    "source": "/etc/ssl/certs/ca-certificates.crt",
+    "source_sha256": "78c6dc58385f66c06265e9d7b155fd02907f51c93c13bdd2b986c641e42a95de",
+    "scope": "Task-local JKS derived from existing OS trusted CA bundle; no system trust configuration changed."
+  },
+  "downloads_report": "reports/C5_toolchain_downloads.json",
+  "generation_limits": {
+    "jvm_heap_gib": 2,
+    "jvm_active_processors": 2,
+    "make_jobs": 1,
+    "system_available_memory_threshold_gib": 3
+  },
+  "scope": "Portable extracted tools; actual Java/firtool positive and negative controls, Mill version launch. SoC generation still pending."
+}

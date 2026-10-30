@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "runtime_archive_sha256": "cf8ffd43dce321971521153d5d0cc2d1381d3c5098c431e811229b2616a5dc09",
+  "authored_current_sources": [
+    {
+      "path": "D/D8/rv32e_core.sv",
+      "runtime_source": "/home/USER/d-stage/workbench/npc/vsrc/rv32e_core.sv",
+      "sha256": "99ffea922a840fbb314dc5dbe445a9650603552d1b92bd0175d1da6693226733",
+      "runtime_sha256": "99ffea922a840fbb314dc5dbe445a9650603552d1b92bd0175d1da6693226733",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/D8/npc_sim.sv",
+      "runtime_source": "/home/USER/d-stage/workbench/npc/vsrc/npc_sim.sv",
+      "sha256": "a120543742857d017918822002ef0a65a3757fb4c935cc0e1d5d5dde2f0362b8",
+      "runtime_sha256": "a120543742857d017918822002ef0a65a3757fb4c935cc0e1d5d5dde2f0362b8",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/D8/runner.cpp",
+      "runtime_source": "/home/USER/d-stage/workbench/npc/csrc/runner.cpp",
+      "sha256": "a72c6f79f098627b11705f938a7e9f7f83b2acac3d2664e86795742e6fd93b45",
+      "runtime_sha256": "a72c6f79f098627b11705f938a7e9f7f83b2acac3d2664e86795742e6fd93b45",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/D8/memory.hpp",
+      "runtime_source": "/home/USER/d-stage/workbench/npc/csrc/memory.hpp",
+      "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36",
+      "runtime_sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/runtime/debug_core.c",
+      "runtime_source": "/home/USER/d-stage/workbench/npc/csrc/debug_core.c",
+      "sha256": "4e7b9d923a6631f3937352f71fea9626a1215d257206b17cd0ac341cc66d6551",
+      "runtime_sha256": "4e7b9d923a6631f3937352f71fea9626a1215d257206b17cd0ac341cc66d6551",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/runtime/debug_core.h",
+      "runtime_source": "/home/USER/d-stage/workbench/npc/csrc/debug_core.h",
+      "sha256": "4b4fc366635cdbe55fd21e19aab9ffd38a3a24f8cb80002c9f9fabf1713b18a8",
+      "runtime_sha256": "4b4fc366635cdbe55fd21e19aab9ffd38a3a24f8cb80002c9f9fabf1713b18a8",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/runtime/trace_core.c",
+      "runtime_source": "/home/USER/d-stage/workbench/npc/csrc/trace_core.c",
+      "sha256": "be28723141c7312e1d7b7dfa9296ac0a8d375aade1eab9132c68ede7355a2452",
+      "runtime_sha256": "be28723141c7312e1d7b7dfa9296ac0a8d375aade1eab9132c68ede7355a2452",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/runtime/trace_core.h",
+      "runtime_source": "/home/USER/d-stage/workbench/npc/csrc/trace_core.h",
+      "sha256": "24af832c04d20f45de7543d22da6b6982af7ecd63d9b674f14e65af62d8ca163",
+      "runtime_sha256": "24af832c04d20f45de7543d22da6b6982af7ecd63d9b674f14e65af62d8ca163",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/klib_overlay/alloc.c",
+      "runtime_source": "/home/USER/d-stage/workbench/abstract-machine/klib/src/alloc.c",
+      "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7",
+      "runtime_sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/klib_overlay/fileio.c",
+      "runtime_source": "/home/USER/d-stage/workbench/abstract-machine/klib/src/fileio.c",
+      "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41",
+      "runtime_sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41",
+      "recipe": "byte-identical"
+    },
+    {
+      "path": "D/klib_overlay/stdio.c",
+      "runtime_source": "/home/USER/d-stage/workbench/abstract-machine/klib/src/stdio.c",
+      "sha256": "36bfa54a895bc2f69db8c3d22f4b7e751cad7f2789cad77c1a41366cf082bfdc",
+      "runtime_sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8",
+      "recipe": "Authored formatted-output prefix plus original __am_vsscanf_internal tail, exactly as D5/setup_am.py."
+    },
+    {
+      "path": "D/klib_overlay/string.c",
+      "runtime_source": "/home/USER/d-stage/workbench/abstract-machine/klib/src/string.c",
+      "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04",
+      "runtime_sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04",
+      "recipe": "byte-identical"
+    }
+  ],
+  "binaries": [
+    {
+      "path": "bin/npc-d8-linux",
+      "source": "/home/USER/d-stage/workbench/npc/build/sim",
+      "role": "binary",
+      "kind": "file",
+      "bytes": 5114448,
+      "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46"
+    },
+    {
+      "path": "bin/nemu-d7-linux",
+      "source": "/home/USER/d-stage/workbench/nemu/build/riscv32-nemu-interpreter",
+      "role": "binary",
+      "kind": "file",
+      "bytes": 68920,
+      "sha256": "bec3e2e2f11ca215d7e07276a02a9703795f6574c6cd00b2a17c176a2b6c496b"
+    },
+    {
+      "path": "bin/nemu-d8-ref.so",
+      "source": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "role": "binary",
+      "kind": "file",
+      "bytes": 59112,
+      "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+    },
+    {
+      "path": "bin/spike-riscv32.so",
+      "source": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/build/riscv32-spike-so",
+      "role": "binary",
+      "kind": "file",
+      "bytes": 37884568,
+      "sha256": "5ab7fa7909535008a57d2a9662a83700a3eeae40a72121ddf13925c0459e927d"
+    },
+    {
+      "path": "bin/libcapstone.so.5",
+      "source": "/home/USER/d-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+      "role": "binary",
+      "kind": "file",
+      "bytes": 150680,
+      "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+    }
+  ],
+  "qualification": "Final actual source/binary binding. Earlier stage reports keep their historical candidates; no claim that every historical hash is the final hash."
+}

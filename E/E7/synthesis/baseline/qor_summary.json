@@ -1,0 +1,5 @@
+{
+  "path_groups": [{"name":"clock","setup":{"wns":2.291,"tns":0.0,"nvp":0,"frequency_mhz":130},"hold":{"wns":0.120,"tns":0.0,"nvp":0}}],
+  "summary": {"setup":{"wns":2.291,"tns":0.0,"nvp":0,"frequency_mhz":130},"hold":{"wns":0.120,"tns":0.0,"nvp":0}},
+  "design_statistics": {"cap":0,"fanout":0,"tran":0,"tdrc":0,"cella":9915,"bufs":null,"leafs_k":3,"tnets_k":null,"ctbuf":null,"regs":null}
+}

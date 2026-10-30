@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "core_tasks": 1,
+  "scope_records": 2,
+  "records": [
+    {
+      "id": "D7-O001",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D7/NOTES.md",
+        "D/D7/sources/D7.md"
+      ]
+    },
+    {
+      "id": "D7-M001",
+      "status": "PASS",
+      "details": "PA2 stage 2: itrace/mtrace/ftrace, ELF function parsing/tail calls/limits, 55 malformed/edge ELF cases with ASAN+UBSAN, ring history, actual NEMU addi mutant vs Spike and 81-test regression.",
+      "evidence": [
+        "D/D7/NOTES.md",
+        "reports/D7_trace.json",
+        "reports/D7_regression.json"
+      ]
+    }
+  ],
+  "report": "D/D7/NOTES.md",
+  "qualification": "Public local engineering requirements only; reference-only background is not claimed completed learning."
+}

@@ -1,0 +1,40 @@
+{
+  "status": "BUILT_PENDING_CONTEXT_VALIDATION",
+  "source_commit": "b3cb1ef52ba0cb1bce84135febef1c4941c5455b",
+  "source_adapter_sha256": "f0ed5d53fed569b9de399ec20d330bce28657fce6ded98fe47db65a3cabf0415",
+  "adapter": "/home/USER/b-stage/workbench/nemu/tools/spike-diff/b1-difftest.cc",
+  "adapter_sha256": "0ac64ead0f9c7a0c72c968cc597ff2c197d50706a8a2bece0c10ff807a812b2e",
+  "executable": "/home/USER/b-stage/workbench/nemu/tools/spike-diff/build/riscv32-spike-so",
+  "sha256": "bd320107b6156e54ddab74621936946a31a834b2e4d9dc6067654219933298e7",
+  "libraries": [
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libspike_main.a",
+      "sha256": "644078cee07e3b2f74f2df72a6b7c2dc3a5e2a87605de10b4edcd9f922e735f6"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libriscv.a",
+      "sha256": "6c66236d145efb10f1fcd301854ee7d698ece957b71b14499f0f2718f75b89a1"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libdisasm.a",
+      "sha256": "a6114594015db301f95d65f27b65ba2909e28b6e7244c89e1874191f15c0c7f1"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libsoftfloat.a",
+      "sha256": "e2ee7b62a68750319a85971876bc4a425b391dbaeb84f1debf06681d7131ca34"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libfesvr.a",
+      "sha256": "a2b91e4fb291576659eebab026861709dda8a895469a3645e6f406b1a0d9b220"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libfdt.a",
+      "sha256": "9b7d74d472781fff5817ea69c20a0f4d8ad3264f6c653024a6af6d84d337d128"
+    }
+  ],
+  "ISA": "RV32IM with privileged CSR instructions",
+  "privilege_modes": "M only",
+  "initial_mstatus": "0x1800",
+  "reason": "The accepted older adapter default enabled U/S modes, whose MPP reset/MRET behavior differs from a machine-only processor. Align the explicit environment without changing Spike instruction semantics or skipping CSR comparisons.",
+  "specification": "https://docs.riscv.org/reference/isa/priv/machine.html"
+}

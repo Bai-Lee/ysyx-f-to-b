@@ -1,0 +1,4 @@
+read_verilog -sv /workspace/projects/ysyx_f_to_b/B/B5/address-checks/explicit-mask.sv
+prep -top address_control
+eval -set address 805306368 -set beat 0 -set cached 1 -set burst 0 -show y
+sat -prove good 1 -verify -show-inputs -show-outputs -dump_vcd /workspace/projects/ysyx_f_to_b/artifacts/B5/address/explicit-mask/counterexample.vcd

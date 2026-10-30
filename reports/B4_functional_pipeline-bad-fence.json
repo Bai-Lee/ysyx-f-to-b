@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "name": "fence-prefetch",
+      "status": "PASS_FAULT_REJECTED",
+      "simulation": {
+        "result": "DIFF_FAIL",
+        "cycles": 474,
+        "instructions": 38,
+        "a0": 1,
+        "fault": 0,
+        "pc": 2147483800,
+        "instruction": 1049875,
+        "diff_enabled": true,
+        "diff_checked": 32,
+        "device_sync_checked": 5,
+        "wall_seconds": 0.00194425,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "",
+        "performance": {
+          "core_cycles": 474,
+          "ifu_requests": 39,
+          "ifu_responses": 39,
+          "lsu_requests": 8,
+          "lsu_responses": 8,
+          "exu_completions": 30,
+          "ifu_latency_sum": 424,
+          "lsu_latency_sum": 21,
+          "class_counts": [
+            25,
+            0,
+            8,
+            1,
+            0,
+            3,
+            0,
+            1
+          ],
+          "class_cycles": [
+            316,
+            0,
+            103,
+            49,
+            0,
+            5,
+            0,
+            1
+          ],
+          "state_cycles": [
+            8,
+            363,
+            55,
+            39,
+            0,
+            9,
+            0,
+            0
+          ],
+          "ifu_absence": [
+            8,
+            355,
+            0,
+            72
+          ],
+          "cache_events": [
+            39,
+            32,
+            7,
+            0,
+            7,
+            1
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            33,
+            391,
+            0
+          ],
+          "data_counts": [
+            0,
+            1,
+            0,
+            7
+          ],
+          "data_latency": [
+            0,
+            2,
+            0,
+            19
+          ],
+          "pipeline_events": [
+            0,
+            0,
+            39,
+            11,
+            4,
+            4,
+            12,
+            39,
+            38,
+            38,
+            0,
+            382,
+            4,
+            4,
+            1,
+            1
+          ]
+        }
+      },
+      "evidence": "artifacts/B4/functional/pipeline-bad-fence-fence-prefetch",
+      "image_sha256": "5beb234e703b9c029b5b7493fded1381e2eec46aa27a1066c464a074d054a21e"
+    }
+  ],
+  "configuration": {
+    "label": "pipeline-bad-fence",
+    "executable": "/home/USER/b-stage/standalone/build/pipeline-bad-fence/sim",
+    "sha256": "9f65d6b616cdbe8cdf24e1d949255a661ea6fd211af334cb3a65a0940c92e3cd",
+    "cache_lines": 4,
+    "cache_words": 8,
+    "cache_ways": 2,
+    "mutant": false,
+    "fault_fence": false,
+    "pipeline": true,
+    "forward": true,
+    "predict": false,
+    "fault_fence_flush": true,
+    "fault_raw": false
+  },
+  "scope": "Complete GPR/PC/instruction/memory comparisons to NEMU on randomized ready/valid stalls, independently generated arithmetic/memory checks, precise control redirects, real CTE/CSR tests and an explicit stale-prefetch FENCE.I fixture. Finite instruction streams, not a universal proof."
+}

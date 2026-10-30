@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "directory": "/home/USER/e4-lab/e4-offline-ml7ra6fp",
+  "network_requests": 0,
+  "manifest_sha256": "60300485de081347cf355e433085f3be6f7f0bea68e08c584e49cf1fbd60e476",
+  "nvboard_source_restored": true,
+  "fresh_make_sim_and_tracer": true,
+  "fresh_C_sEMU_sum55": true,
+  "hex_values_checked": 16,
+  "scope": "Reconstructed local sources and Git base, native rebuild and execution; installed compiler/simulator prerequisites reused. Full NVBoard runtime verified separately; no bundled OS/toolchain image claim."
+}

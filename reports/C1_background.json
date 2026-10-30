@@ -1,0 +1,37 @@
+{
+  "status": "PASS_BACKGROUND_REVIEW",
+  "course_record": "C1-O001",
+  "core_tasks": 0,
+  "scope_records": 1,
+  "source_records": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\C\\C1\\sources\\C1.md",
+      "sha256": "c37fe84344d45ba1b931f8a2c82a9c953d71866a12f491790509de29d831acb3",
+      "role": "frozen_original_chapter"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\slides\\markdown\\2306\\580e82b43f0b9820.md",
+      "sha256": "4b865c8c37595e40425ca0e57b6d424dfe4209bace271ec02f1ca257217cf8d7",
+      "role": "fixed_v23_06_slide_text",
+      "read_content_lines": [
+        1,
+        1276
+      ]
+    }
+  ],
+  "notes": {
+    "path": "C/C1/NOTES.md",
+    "sha256": "f582f092b3fabeba2b40fd9da9418fc2a2a40bde3d518e29bfd6699deda995a0"
+  },
+  "experiment": {
+    "path": "reports/C1_experiment.json",
+    "sha256": "89644d20b36628b8453f8d14215e9577fd34efbdf4478f42073bffaecc20d977"
+  },
+  "local_markdown_targets_checked": 9,
+  "scope": "Fixed slide text reviewed with an authored bounded demonstration; no new core assignment, no all-video completion or official learner-mastery claim.",
+  "not_claimed": [
+    "Every linked video or external article viewed",
+    "Every slide code example rerun",
+    "Formal correctness of all programs or CPU states"
+  ]
+}

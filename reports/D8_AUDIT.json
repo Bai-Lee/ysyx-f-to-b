@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "core_tasks": 6,
+  "scope_records": 12,
+  "records": [
+    {
+      "id": "D8-R001",
+      "status": "PASS_METHOD_REVIEW",
+      "details": "Method reminder reviewed against the implementation and limitations documented in this chapter.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "D/D8/sources/D8.md"
+      ]
+    },
+    {
+      "id": "D8-O001",
+      "status": "PASS_ANALYSIS",
+      "details": "NEMU chosen as NPC REF; independent Spike used for NEMU.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_reference.json"
+      ]
+    },
+    {
+      "id": "D8-O002",
+      "status": "PASS_ANALYSIS",
+      "details": "Actual compilation: signed/unsigned add same encoding, SLT/SLTU distinct.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_extra.json"
+      ]
+    },
+    {
+      "id": "D8-O003",
+      "status": "PASS_ANALYSIS",
+      "details": "Yosys four-bit ALU structures/gates and all 2048 combinations by SAT; wrong carry negative. No physical area claim.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_alu.json"
+      ]
+    },
+    {
+      "id": "D8-O004",
+      "status": "PASS_ANALYSIS",
+      "details": "Software arithmetic helper path and actual C multiplication/division tests verified without M hardware.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_official_tests.json"
+      ]
+    },
+    {
+      "id": "D8-R002",
+      "status": "PASS_METHOD_REVIEW",
+      "details": "Method reminder reviewed against the implementation and limitations documented in this chapter.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "D/D8/sources/D8.md"
+      ]
+    },
+    {
+      "id": "D8-M001",
+      "status": "PASS",
+      "details": "SDB single step, register/memory read, reused expression/watch core; three exact commit-boundary watch hits and bad-input checks.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_front.json"
+      ]
+    },
+    {
+      "id": "D8-M002",
+      "status": "PASS",
+      "details": "Committed instruction/memory/function traces with Capstone, ELF names, tail calls and bounded logging.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_front.json",
+        "reports/D7_trace.json"
+      ]
+    },
+    {
+      "id": "D8-M003",
+      "status": "PASS",
+      "details": "Actual NEMU shared REF APIs tested in both copy directions; per-commit PC/GPR and RAM stores compared; real ADDI RTL mutation rejected.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_reference.json",
+        "reports/D8_front.json"
+      ]
+    },
+    {
+      "id": "D8-M004",
+      "status": "PASS",
+      "details": "Actual RVE ABI compilation, AM run/halt; dummy GOOD_TRAP and original wrong BAD_TRAP/make exit 2.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_front.json"
+      ]
+    },
+    {
+      "id": "D8-M005",
+      "status": "PASS",
+      "details": "Complete authored single-cycle datapath, state/control/host observation, and textbook comparison explained.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_alu.json"
+      ]
+    },
+    {
+      "id": "D8-M006",
+      "status": "PASS",
+      "details": "RV32E core: 1758 boundaries, 73 original programs, 48 native/RVE test runs, 20 train runs, 12 earlier fixtures, klib/timer/FCEUX; no M/CSR claim or inherited SoC/physical qualification.",
+      "evidence": [
+        "D/D8/NOTES.md",
+        "reports/D8_reset.json",
+        "reports/D8_isa.json",
+        "reports/D8_official_tests.json",
+        "reports/D8_apps_test.json",
+        "reports/D8_apps_train.json",
+        "reports/D8_prior_tests.json",
+        "reports/D8_timer.json",
+        "reports/D8_extra.json",
+        "reports/D8_fceux_native.json",
+        "reports/D8_fceux_ascii.json"
+      ]
+    }
+  ],
+  "report": "D/D8/NOTES.md",
+  "qualification": "Public local engineering requirements only; reference-only background is not claimed completed learning."
+}

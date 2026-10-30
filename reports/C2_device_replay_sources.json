@@ -1,0 +1,8 @@
+{
+  "status": "PASS_SOURCE_SETUP",
+  "source_harness": "/workspace/projects/ysyx_f_to_b/D/D8/fceux_verify.py",
+  "source_sha256": "04a374178afc7007c7033a6ff166fd0bb2ae11e6fed49542515a02fb83738f7c",
+  "C_harness_sha256": "b2c9335c9d3461a3ef9e2dd63a1364aaf18df771b3d93b5ef29bc46f5c477b3a",
+  "rom_sha256": "29ccb7d3b35f40a5c56f07f9cde787a55259eb6fbfd021c67006e731da494817",
+  "scope": "Project-authored CC0 ROM and established driver probes are reused and executed anew in isolated C apps. No original D files edited."
+}

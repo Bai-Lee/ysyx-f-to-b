@@ -1,0 +1,137 @@
+{
+  "status": "PASS_BASIC_PROGRAMS_GPIO_BUILT",
+  "programs": [
+    {
+      "program": "dummy",
+      "image": "/home/USER/e-stage/software-soc/programs/dummy/build/dummy-minirv-ysyxsoc.bin",
+      "sha256": "d117d5c9753642793e7fa6a837c402391a61549931609d77c86f6e1aaaa7cc24",
+      "config_sha256": "1035477ece82b18ff45de05c36c79f98c6f32481488d2bbfa3bbae5d77108e35",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 3555191,
+        "instructions": 17204,
+        "ipc": 0.00483912116114,
+        "application_cycles": 2290,
+        "application_instructions": 29,
+        "application_ipc": 0.0126637554585,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 18787,
+        "lsu_requests": 9525,
+        "lsu_responses": 9525,
+        "uart_bytes": 50,
+        "serial_bytes": 50,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 1.305252462,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "make_exit": 0
+    },
+    {
+      "program": "wrong",
+      "image": "/home/USER/e-stage/software-soc/programs/wrong/build/wrong-minirv-ysyxsoc.bin",
+      "sha256": "48ee526478b20fa6fa78c4d4f4f24213093689709e3e83dfcf247e82ea2da00f",
+      "config_sha256": "1035477ece82b18ff45de05c36c79f98c6f32481488d2bbfa3bbae5d77108e35",
+      "result": {
+        "result": "BAD_TRAP",
+        "exit_code": 1,
+        "cycles": 3555191,
+        "instructions": 17204,
+        "ipc": 0.00483912116114,
+        "application_cycles": 2290,
+        "application_instructions": 29,
+        "application_ipc": 0.0126637554585,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 18787,
+        "lsu_requests": 9525,
+        "lsu_responses": 9525,
+        "uart_bytes": 50,
+        "serial_bytes": 50,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 1.322828949,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "make_exit": 2
+    },
+    {
+      "program": "hello",
+      "image": "/home/USER/e-stage/software-soc/programs/hello/build/hello-minirv-ysyxsoc.bin",
+      "sha256": "bdd576505ff3e10e6c188cf949d77f13438d07f2e6f8b5bf80bfc0bcd7d25ea9",
+      "config_sha256": "1035477ece82b18ff45de05c36c79f98c6f32481488d2bbfa3bbae5d77108e35",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 155478293,
+        "instructions": 746482,
+        "ipc": 0.00480119755367,
+        "application_cycles": 868279,
+        "application_instructions": 7787,
+        "application_ipc": 0.00896831548385,
+        "cpu_soc_ratio": 1,
+        "assumed_cpu_frequency_hz": 25000000,
+        "flash_reads": 825358,
+        "lsu_requests": 449506,
+        "lsu_responses": 449506,
+        "uart_bytes": 145,
+        "serial_bytes": 145,
+        "serial_matches": true,
+        "serial_framing_errors": 0,
+        "wall_seconds": 55.748625676,
+        "uart_divisors": [
+          13,
+          13
+        ],
+        "led_sequence": [],
+        "segments": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "make_exit": 0
+    },
+    {
+      "program": "gpio",
+      "image": "/home/USER/e-stage/software-soc/programs/gpio/build/gpio-minirv-ysyxsoc.bin",
+      "sha256": "be15bdfadd804d80661f49cd522e5969000583dd01c001bd035d7c98f70f8c9a",
+      "config_sha256": "1035477ece82b18ff45de05c36c79f98c6f32481488d2bbfa3bbae5d77108e35"
+    }
+  ]
+}

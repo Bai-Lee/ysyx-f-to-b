@@ -1,0 +1,33 @@
+{
+  "status": "PASS_LIBRARIES_NOT_YET_API_TESTED",
+  "source": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo",
+  "commit": "b3cb1ef52ba0cb1bce84135febef1c4941c5455b",
+  "libraries": [
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libspike_main.a",
+      "sha256": "644078cee07e3b2f74f2df72a6b7c2dc3a5e2a87605de10b4edcd9f922e735f6"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libriscv.a",
+      "sha256": "6c66236d145efb10f1fcd301854ee7d698ece957b71b14499f0f2718f75b89a1"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libdisasm.a",
+      "sha256": "a6114594015db301f95d65f27b65ba2909e28b6e7244c89e1874191f15c0c7f1"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libsoftfloat.a",
+      "sha256": "e2ee7b62a68750319a85971876bc4a425b391dbaeb84f1debf06681d7131ca34"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libfesvr.a",
+      "sha256": "a2b91e4fb291576659eebab026861709dda8a895469a3645e6f406b1a0d9b220"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo/build/libfdt.a",
+      "sha256": "9b7d74d472781fff5817ea69c20a0f4d8ad3264f6c653024a6af6d84d337d128"
+    }
+  ],
+  "threads": 1,
+  "evidence": "artifacts/D/dependencies/spike_libraries"
+}

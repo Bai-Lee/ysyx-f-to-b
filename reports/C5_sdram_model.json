@@ -1,0 +1,53 @@
+{
+  "status": "PASS_ISOLATED_FOUR_STATE_PIN_PROTOCOL",
+  "runs": [
+    {
+      "name": "good",
+      "status": "PASS",
+      "expected_exit": 0,
+      "stdout": "SDRAM_PIN_PROTOCOL_PASS checks=129\n/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/sdram_tb.sv:72: $finish called at 2810000 (1ps)\n",
+      "evidence": "artifacts/C5/sdram-unit/good"
+    },
+    {
+      "name": "wrong-data",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/sdram_tb.sv:24: SDRAM_READ_DATA got=5a01 expected=5a00\n       Time: 60000  Scope: sdram_tb.expect_data\n",
+      "evidence": "artifacts/C5/sdram-unit/wrong-data"
+    },
+    {
+      "name": "no-active",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/sdram.v:117: SDRAM_ACCESS_WITHOUT_ACTIVE_ROW\n       Time: 18000  Scope: sdram_tb.dut\n",
+      "evidence": "artifacts/C5/sdram-unit/no-active"
+    },
+    {
+      "name": "bad-mode",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/sdram.v:107: SDRAM_UNSUPPORTED_MODE\n       Time: 18000  Scope: sdram_tb.dut\n",
+      "evidence": "artifacts/C5/sdram-unit/bad-mode"
+    },
+    {
+      "name": "floating-write",
+      "status": "PASS",
+      "expected_exit": 1,
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/C/C5/perip/sdram/sdram.v:68: SDRAM_WRITE_UNKNOWN_LOW\n       Time: 28000  Scope: sdram_tb.dut.write_beat\n",
+      "evidence": "artifacts/C5/sdram-unit/floating-write"
+    }
+  ],
+  "model_sha256": "7acfea7404c70a88182d9c2a1737d6ec4dc252ce43186b977b0ca22d09caa80b",
+  "spec": {
+    "path": "/workspace/YSYX_F_B_Archive/assets/offline/www.mouser.com/datasheet/2/12/alliance_MT48LC-1155509.pdf",
+    "sha256": "878da185e194dbc52d94c701e7a3678ac905c8a0d94a0f76a36bc87d3c1afde3",
+    "revision": "Micron256Mb_sdr Rev.W05/15",
+    "pages": [
+      45,
+      48,
+      50,
+      58
+    ]
+  },
+  "scope": "Small32KiB instance with real4banks/512columns/8rows. CL2/3, BL1/2/4/8, sequential/interleaved wrap, distinct bank/row data, byte masks, read DQM latency, CKE command suspension, highZ, precharge and refresh. Incorrect data and invalid commands rejected. Full32MiB/4-chip CPU acceptance is separate. No electrical/retention or arbitrary overlapped-read pipeline claim."
+}

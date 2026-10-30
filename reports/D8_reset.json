@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "scope": "Actual four-state Icarus simulation of initial and warm reset, clearing dirty registers, halted state and fault, plus wrong-reset-value negative control. No analog metastability claim.",
+  "rtl_sha256": "99ffea922a840fbb314dc5dbe445a9650603552d1b92bd0175d1da6693226733",
+  "testbench_sha256": "2514f9fba39a3515b83bff1fc41e19a83a62f76194e90bb0b34f9690988b5798"
+}

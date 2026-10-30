@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "standalone_programs": [
+    {
+      "name": "hello",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39730,
+        "instructions": 16231,
+        "ipc": 0.408532595016,
+        "ifu_requests": 16231,
+        "lsu_requests": 7268,
+        "responses": 23499,
+        "wall_seconds": 0.022906609,
+        "frequency_hz": 100000000,
+        "mode": 3,
+        "delay": 1,
+        "random_memory_delay": false,
+        "uart_bytes": 43,
+        "counter": 39730,
+        "fault": 0,
+        "gpr": [
+          0,
+          2147484772,
+          2147815412,
+          2147483876,
+          2147484568,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          268435456,
+          0
+        ]
+      },
+      "image_sha256": "593a76c7078c4d30c412217d4c455cefd7cd05f912ee7d4f5d3e6d45dee43df7",
+      "simulator_sha256": "c6e912dd69bb24d81d88eb30ad9430fed9cd758976d5019830062b3580525666"
+    },
+    {
+      "name": "microbench",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 22331101,
+        "instructions": 8691451,
+        "ipc": 0.389208351169,
+        "ifu_requests": 8691451,
+        "lsu_requests": 4948199,
+        "responses": 13639650,
+        "wall_seconds": 3.356819374,
+        "frequency_hz": 100000000,
+        "mode": 3,
+        "delay": 1,
+        "random_memory_delay": false,
+        "uart_bytes": 517,
+        "counter": 22331101,
+        "fault": 0,
+        "gpr": [
+          0,
+          2147650916,
+          2148044788,
+          2147682756,
+          0,
+          9,
+          2148007548,
+          0,
+          0,
+          0,
+          0,
+          7,
+          1,
+          2148010072,
+          2148006731,
+          0
+        ]
+      },
+      "image_sha256": "00e046e9c3c1ad04e1ef2f8803575e0238cd30a1c9e6382eea1b1189e532b53b",
+      "simulator_sha256": "c6e912dd69bb24d81d88eb30ad9430fed9cd758976d5019830062b3580525666"
+    }
+  ],
+  "soc_actual_evidence": "E7_soc_software.json and E7_soc_tests.json",
+  "compiler_wrapper_sha256": "03b3a17b483192d8d228c5bc92790244454a805f15559799885ad5260a046b0e",
+  "makefile_sha256": "56ed86163270475497e823e556ea232af792803c1f537ed90f11decb6146a7ff",
+  "policy": "CopiedalreadyverifiedSoCcompiler/headerfixesintostandaloneworkingcopy; originalwrapperpreserved. Standalonefullmicrobench/hello rerun; SoCactualexecutionsretained. GUIselectoralsocheckedthroughmake-n."
+}

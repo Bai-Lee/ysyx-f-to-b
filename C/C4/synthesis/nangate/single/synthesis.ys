@@ -1,0 +1,10 @@
+read_liberty -lib /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib
+read_verilog -sv /workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv /workspace/projects/ysyx_f_to_b/C/C4/synthesis/single_with_memories.sv
+synth -top single_with_memories -flatten
+dfflibmap -liberty /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib
+abc -liberty /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib -D 10000
+clean
+check -assert
+tee -o /workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/single/stat.json stat -liberty /workspace/projects/ysyx_f_to_b/C/C4/models/nangate45/NangateOpenCellLibrary_typical.lib -json
+write_verilog -noattr -noexpr /workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/single/mapped.v
+write_json /workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/single/mapped.json

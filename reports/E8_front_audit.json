@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "rtl_files": [
+    {
+      "path": "E/E5/rtl/minirv_decode.sv",
+      "sha256": "e49c237de7281619ed9c455ab28c69c6daccb1c096843f2a08462efd32919aa9"
+    },
+    {
+      "path": "E/E5/rtl/minirv_regfile.sv",
+      "sha256": "8b066dc92589821567b6571c8f585523e2c58f6570ec9af3a659626ba01f9fb3"
+    },
+    {
+      "path": "E/E7/rtl/minirv_bus.sv",
+      "sha256": "a7c5b2a000ce92e50819b057636bbe1175b9bf6c7e166bc4d1abe8ebcac0845e"
+    },
+    {
+      "path": "E/E7/rtl/ysyx_00000000.sv",
+      "sha256": "8c437e5a1713a92b5800694ebeb3db11e9b8b43b74eaeead84323e2236f3a929"
+    }
+  ],
+  "synthesis_rtl_matches_current": true,
+  "combined_sha256": "33582bddbfa4c6f36e3f3533e74e8f428c50f2f2a4885d10540ce510a4a3abcb",
+  "posedge_clock_blocks": 3,
+  "negedge_blocks": 0,
+  "mapped_latches": 0,
+  "mapped_DFFQX0P5H7R_instances": 611,
+  "all_mapped_flop_clocks": "clock",
+  "strict_lint": "-Wall; onlyDECLFILENAMEexempted. No-Wno-fatal. unused_*signalsareexplicitnameddebugoutputsremovedfromphysicaltop.",
+  "evidence": [
+    "E8_address_reset",
+    "E8_rtl_icarus",
+    "E8_rtl_verilator",
+    "E8_vpi_preflight",
+    "E8_two_state_control",
+    "E7_bus_tests",
+    "E7_bus_negative",
+    "E7_csr_tests",
+    "E7_gpio_unit"
+  ],
+  "boundary": "Staticstructureplusactualreportedregressions; notformalallinputproof. FinalnetlistIcarus/fullphysicalcompletionauditedseparately."
+}

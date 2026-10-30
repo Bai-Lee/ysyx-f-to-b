@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "repositories": [
+    {
+      "name": "OSCPU__ysyx-workbench",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyx-workbench",
+      "commit": "a839def3f3b046f730537ea420d3075e725d27ce",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\canonical\\OSCPU__ysyx-workbench.tar.gz",
+      "sha256": "de7a6baca0de0f20bb4227c7fc54a8951979e4af2d15af3206aab7300249d304",
+      "submodules_verified_in_original_archive": [],
+      "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+    },
+    {
+      "name": "NJU-ProjectN__abstract-machine__ics2026",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\NJU-ProjectN__abstract-machine__ics2026",
+      "commit": "9bc0a93c52c928a6de970f39a507be94cfb63a9f",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\canonical\\NJU-ProjectN__abstract-machine__ics2026.tar.gz",
+      "sha256": "b4c6e08615aa945185d163e5c1f298abb6cdf8678c32e126c50b316f6b663767",
+      "submodules_verified_in_original_archive": [],
+      "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+    },
+    {
+      "name": "NJU-ProjectN__am-kernels__ics2026",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\NJU-ProjectN__am-kernels__ics2026",
+      "commit": "9c433f7cf4b4e05d09543bf7e269b23502d1b2b6",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\canonical\\NJU-ProjectN__am-kernels__ics2026.tar.gz",
+      "sha256": "d5a9a14719a40255c11e07580c0b4d1a27a8537394ed59bda53a2d5bb87d8183",
+      "submodules_verified_in_original_archive": [],
+      "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+    },
+    {
+      "name": "NJU-ProjectN__riscv-tests-am__master",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\NJU-ProjectN__riscv-tests-am__master",
+      "commit": "676cbc7a4e520fca1c3d4dd1b586b2550769e02e",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\canonical\\NJU-ProjectN__riscv-tests-am__master.tar.gz",
+      "sha256": "c761173b3a3509e279ff9d2f207cce3bba600007c937949987c8085310fdae1a",
+      "submodules_verified_in_original_archive": [],
+      "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+    },
+    {
+      "name": "NJU-ProjectN__fceux-am__ics2021",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\NJU-ProjectN__fceux-am__ics2021",
+      "commit": "d5524ba624300869d6c793f01e6632e4dc3066ef",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\canonical\\NJU-ProjectN__fceux-am__ics2021.tar.gz",
+      "sha256": "ad810bf73c4bf5392b3e52867dc66433a72140561783f04872ba4668a7b19026",
+      "submodules_verified_in_original_archive": [],
+      "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+    },
+    {
+      "name": "OSCPU__archbench__main",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__archbench__main",
+      "commit": "52034e3c65e973cab0af7d2e6e614e6d4470cf86",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\canonical\\OSCPU__archbench__main.tar.gz",
+      "sha256": "e3412d334015ca977bf71bfe6c777673b6c6f605c74309fc3a92170597e62aaf",
+      "submodules_verified_in_original_archive": [],
+      "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+    },
+    {
+      "name": "OSCPU__ysyxSoC__2607",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607",
+      "commit": "1ab27ff3c1fd72776249d51631285a5ad72d9fe4",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\canonical\\OSCPU__ysyxSoC__2607.tar.gz",
+      "sha256": "679298ce6139bd7e08a54786f72d8c6bf4c3d7185185a4b0963857d5b0e5f2b6",
+      "submodules_verified_in_original_archive": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip",
+          "commit": "d0c6b50fdefcdbe121e9788433ea51f7efaf1d32"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\cde",
+          "commit": "52768c97a27b254c0cc0ac9401feb55b29e18c28"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\chisel",
+          "commit": "e3bcc90db37f1aec9f8048813f4f0666098d9bee"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\diplomacy",
+          "commit": "edf375300d99a4c260a214d7c1553de0040771d7"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\hardfloat",
+          "commit": "d93aa570806013dea479a92ba9bb33d1f2d4f69f"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\hardfloat\\berkeley-softfloat-3",
+          "commit": "5c06db33fc1e2130f67c045327b0ec949032df1d"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\hardfloat\\berkeley-testfloat-3",
+          "commit": "06b20075dd3c1a5d0dd007a93643282832221612"
+        }
+      ],
+      "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+    },
+    {
+      "name": "openecos-projects__icsprout55-pdk__unconfirmed",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\openecos-projects__icsprout55-pdk__unconfirmed",
+      "commit": "ab0555bf608a5cee7ac44e4a24112204324717ed",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\canonical\\openecos-projects__icsprout55-pdk__unconfirmed.tar.gz",
+      "sha256": "78523ea06f657cdd26c47a0f958ba84792eacb79f7168e9ef6fe54dc43fb9c22",
+      "submodules_verified_in_original_archive": [],
+      "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+    }
+  ],
+  "line_ending_policy": "Process-local core.autocrlf=false exports exact committed bytes. Initial CRLF archives and original E_source_lock.json remain unchanged for historical evidence."
+}

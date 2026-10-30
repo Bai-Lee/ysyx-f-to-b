@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "name": "good",
+      "status": "PASS",
+      "exit_code": 0,
+      "evidence": "artifacts/C5/rtthread/scons-controls/good"
+    },
+    {
+      "name": "missing-source",
+      "status": "PASS",
+      "exit_code": 2,
+      "evidence": "artifacts/C5/rtthread/scons-controls/missing-source"
+    }
+  ],
+  "scope": "Actual SCons dependency/build/execute positive andmissing-source failure; privateportable4.0.1package, no systemPython changes."
+}

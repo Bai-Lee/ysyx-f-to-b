@@ -1,0 +1,1 @@
+{"result":"NPC_FAULT","exit_code":3,"pc":2147483648,"a0":0,"cycles":1,"instructions":0,"diff_enabled":true,"diff_checked":0,"device_sync_checked":0,"ebreak_calls":0,"memory_writes":0,"load_commits":0,"uart_bytes":0,"uart_polls":0,"uart_not_ready":0,"frequency_hz":100000000,"wall_seconds":0.000950274,"bounded_output":false,"gpr":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}

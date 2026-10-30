@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "source_sha256": "a183abd4db676637dcf19d23345925879880411acb9808c62a08f2192323425d",
+  "stage_cells": {
+    "proc": {
+      "$add": 1,
+      "$dff": 1,
+      "$mux": 2
+    },
+    "opt": {
+      "$add": 1,
+      "$sdffe": 1
+    },
+    "techmap": {
+      "$_SDFFE_PP0P_": 2,
+      "$_NOT_": 1,
+      "$_XOR_": 1
+    },
+    "dfflibmap": {
+      "DFF": 2,
+      "$_MUX_": 4,
+      "$_NOT_": 1,
+      "$_XOR_": 1
+    },
+    "abc": {
+      "NOT": 3,
+      "NAND": 4,
+      "NOR": 4,
+      "DFF": 2
+    }
+  },
+  "mapped_cycles": 4096,
+  "negative": "inverted DFF must fail first reset",
+  "generated_cpp": [
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/D/D6/results/verilator/Vlight.cpp",
+      "sha256": "2bcb52a4e78c374bd947bb0bd3c1a6d74a69e75c26c750edd375ec36ceee91fe"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/D/D6/results/verilator/Vlight__Syms__Slow.cpp",
+      "sha256": "7f30b8004e3d947e8e5607a6376ecfaed709d3cb7841d0ea79d2ae5d911864e8"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/D/D6/results/verilator/Vlight___024root__0.cpp",
+      "sha256": "f004a55c76789de9413e732c7d384fa4333148e24d047f19fe0b5f19b770ae75"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/D/D6/results/verilator/Vlight___024root__0__Slow.cpp",
+      "sha256": "d422f63ed674882d40df59a0f53dfa6d9aebd2a76f666d17314d3161fd1f399d"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/D/D6/results/verilator/Vlight___024root__Slow.cpp",
+      "sha256": "e1d5b125823f89d5fbb3d9328124f97dba50e72846b6afb91ce82d4c5db34419"
+    }
+  ],
+  "evidence": [
+    "artifacts/D6/logic",
+    "artifacts/D6/synthesis",
+    "artifacts/D6/verilator",
+    "D/D6/results"
+  ],
+  "mismatch_examples_stdout": "MISMATCH_PASS sensitivity temporary casex casez delay\n/workspace/projects/ysyx_f_to_b/D/D6/mismatch.v:15: $finish called at 9000 (1ps)\n",
+  "event_model_evidence": "artifacts/D6/logic"
+}

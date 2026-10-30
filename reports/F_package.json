@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\YSYX_F_STAGE_DELIVERY.zip",
+  "bytes": 6003595,
+  "sha256": "7439815f8c19a72e962acb44f0b11d029bda4e8f68089838337b4d31e3c7db1b",
+  "members": 1271,
+  "crc_and_member_sha256": "PASS",
+  "scope": "Independent F implementation, notes, vectors, reports and raw evidence. Temp compilation products/.git/installed tools/external source archive omitted; replay recompiles from retained sources.",
+  "next_stage": "Stopped at F; E not started."
+}

@@ -1,0 +1,102 @@
+am-apps.data.size = 0, am-apps.bss.size = 0
+heap: [0xa0027340 - 0xa8000000]
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     5.0.1 build Oct 29 2026 20:20:12
+ 2006 - 2022 Copyright by RT-Thread team
+[32m[I/utest] utest is initialize success.[0m
+[32m[I/utest] total utest testcase num: (0)[0m
+Hello RISC-V!
+msh />help
+RT-Thread shell commands:
+c5_done          - C5 stop after original scripted commands and context checks
+c5_context_test  - C5 real trap context switch and return validation
+date             - get date and time or set (local timezone) [year month day hour min sec]
+list             - list objects
+version          - show RT-Thread version information
+clear            - clear the terminal screen
+free             - Show the memory usage in the system.
+ps               - List threads in the system.
+help             - RT-Thread shell help.
+tail             - print the last N - lines data of the given file
+echo             - echo string to file
+df               - disk free
+umount           - Unmount the mountpoint
+mount            - mount <device> <mountpoint> <fstype>
+mkfs             - format disk with file system
+mkdir            - Create the DIRECTORY.
+pwd              - Print the name of the current working directory.
+cd               - Change the shell working directory.
+rm               - Remove(unlink) the FILE(s).
+cat              - Concatenate FILE(s)
+mv               - Rename SOURCE to DEST.
+cp               - Copy SOURCE to DEST.
+ls               - List information about the FILEs.
+utest_run        - utest_run [-thread or -help] [testcase name] [loop num]
+utest_list       - output all utest testcase
+memtrace         - dump memory trace information
+memcheck         - check memory data
+
+msh />date
+[33m[W/time] Cannot find a RTC device![0m
+local time: Thu Jan  1 08:00:00 1970
+timestamps: 0
+timezone: UTC+8
+msh />version
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     5.0.1 build Oct 29 2026 20:20:12
+ 2006 - 2022 Copyright by RT-Thread team
+msh />free
+total    : 134057048
+used     : 33570496
+maximum  : 33570496
+available: 100486552
+msh />ps
+thread                   pri  status      sp     stack size max used left tick  error
+------------------------ ---  ------- ---------- ----------  ------  ---------- ---
+tshell                    20  running 0x00000068 0x00001000    15%   0x0000000a OK
+sys workq                 23  ready   0x00000060 0x00002000    01%   0x0000000a OK
+tidle0                    31  ready   0x00000060 0x00004000    00%   0x00000020 OK
+timer                      4  suspend 0x00000098 0x00004000    01%   0x0000000a OK
+main                      10  close   0x0000008c 0x00000800    13%   0x00000014 OK
+msh />pwd
+/
+msh />ls
+No such directory
+msh />memtrace
+
+memory heap address:
+name    : heap
+total   : 0x134057048
+used    : 0x33570496
+max_used: 0x33570528
+heap_ptr: 0xa0027388
+lfree   : 0xa202b248
+heap_end: 0xa7fffff0
+
+--memory item information --
+[0xa0027388 -   32M] NONE
+[0xa2027398 -   176] NONE
+[0xa2027458 -    2K] NONE
+[0xa2027c68 -    16] main
+[0xa2027c88 -    72] main
+[0xa2027ce0 -   176] main
+[0xa2027da0 -    8K] main
+[0xa2029db0 -   952] main
+[0xa202a178 -   176] main
+[0xa202a238 -    4K] main
+[0xa202b248 -   95M]     
+msh />memcheck
+msh />utest_list
+[32m[I/utest] Commands list : [0m
+msh />c5_context_test
+C5_CONTEXT_PASS a=12 b=12 switches=52 returns=2
+msh />c5_done
+C5_RTTHREAD_PASS
+[1;34m[src/cpu/cpu-exec.c:128 cpu_exec] nemu: [1;32mHIT GOOD TRAP[0m at pc = 0xa0017d38[0m
+[1;34m[src/cpu/cpu-exec.c:94 statistic] host time spent = 84196 us[0m
+[1;34m[src/cpu/cpu-exec.c:95 statistic] total guest instructions = 1034522[0m
+[1;34m[src/cpu/cpu-exec.c:96 statistic] simulation frequency = 12287068 inst/s[0m

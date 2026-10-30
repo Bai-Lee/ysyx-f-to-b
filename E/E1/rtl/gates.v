@@ -1,0 +1,19 @@
+// HDL-049 More logic gates
+// Source: https://hdlbits.01xz.net/wiki/gates
+// Independently authored implementation; exact external names and ranges preserved.
+`default_nettype none
+module top_module(
+  input wire a,
+  input wire b,
+  output wire out_and,
+  output wire out_or,
+  output wire out_xor,
+  output wire out_nand,
+  output wire out_nor,
+  output wire out_xnor,
+  output wire out_anotb
+);
+assign out_and=a&b;assign out_or=a|b;assign out_xor=a^b;assign out_nand=~(a&b);assign out_nor=~(a|b);assign out_xnor=~(a^b);assign out_anotb=a&~b;
+endmodule
+
+`default_nettype wire

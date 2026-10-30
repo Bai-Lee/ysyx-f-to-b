@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "task": "Combinational and sequential RTL, FSM and cell-array exercises, circuit-to-Verilog export",
+  "tools": {
+    "iverilog": {
+      "path": "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+      "sha256": "e1ab9334f5080bfdea0502662462017a97b9c7cd0339cfd3432a775630e46d9c",
+      "version": "14.0 devel s20260301-638-ge072b3334-dirty"
+    },
+    "vvp": {
+      "path": "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+      "sha256": "49071c29fbfb7297215cbf959a19a1a9775c3bc084e5792f8be1e3e42e8fab9a",
+      "version": "14.0 devel s20260301-638-ge072b3334-dirty"
+    },
+    "yosys": {
+      "path": "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\yosys.exe",
+      "sha256": "1b1fa4a8666b3c92ba5bca049692cf1eba0228b3ac0b9e9ef67762581d6f03a4",
+      "version": "0.70+190 git 485b63564"
+    }
+  },
+  "source_count": 112,
+  "method": "Icarus four-state simulation with independent mathematical/state/graph reference models; exact interfaces, asynchronous and synchronous reset, directed boundary sequences and seeded random streams; mutation rejection controls. Small combinational spaces exhaustive.",
+  "budget": {
+    "parallel_jobs": 1,
+    "heavy_jobs": 0,
+    "per_process_soft_mib": 256,
+    "compile_timeout_seconds": 30,
+    "simulation_timeout_seconds": 60
+  },
+  "resource_note": "Initial free physical memory about2.85GiB; only small single-process Icarus jobs, no new heavy compilation/VM jobs.",
+  "authorization": "User resumed E; no computer-use Logisim, no account/OJ login necessary for public local self-verification.",
+  "control": "reports/E1_preflight_control.json"
+}

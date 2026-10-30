@@ -1,0 +1,3 @@
+WE RESET Q OSC
+0 1 0 0
+1 0 - 1

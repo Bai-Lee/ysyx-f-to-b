@@ -1,0 +1,45 @@
+{
+  "status": "PASS_FINAL_CONFIGURATION_BOUND",
+  "soc_variant": "b5-release",
+  "standalone_variant": "release",
+  "model_frequency_mhz": 325,
+  "apb_ratio_q": 832,
+  "axi_ratio_q": 832,
+  "padding": 24,
+  "rtl": [
+    {
+      "path": "B/soc/rtl/ysyx_00000000.v",
+      "sha256": "8eb5e262b149eda35769db808d80bd7c402caa84211a076c7a437bc6654e7344"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_alu.sv",
+      "sha256": "8d5c21c89b900f9077a84be87ef1bf0c160ccd1fa416256c8f87cfbec7d144d5"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_core.sv",
+      "sha256": "2676a7c2819a1c87e7e1c48fd68cc7d113df446eb8fac4c8562f43041404041f"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_execute.sv",
+      "sha256": "dabba1fb0185fdc7935042c9c8968a5d6ff5718e1a5548e74d183ed73182795c"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_icache.sv",
+      "sha256": "e9fb1193018d4754f700181ce7842de23b2fe4c0ba7a8005aee444c6aff91c67"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_pipe.sv",
+      "sha256": "643b8e854d5793f7b1169daffd907de0ea5d08e5c650436c992b038ee5b2192d"
+    }
+  ],
+  "exported_rtl_sha256": "0c56b8296b8d03f359cedc07028e2a40eaafd7785979714ebd74c7291f17aed8",
+  "netlist": "B/B5/netlist/ysyx_00000000.v",
+  "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+  "area_um2": 24878.182,
+  "acceptance": {
+    "B5": "cdd0a81916079fd5b63dabcb1b4d27b361b98428ee8899df0accb03560e582eb",
+    "full128": "a08daadf6dcc8923226b40b6e1b84fc80e980bc1424a03995717721d1fa3a07d",
+    "bounded_regressions": "10884d66a4b9239d780c56bd8d0e216074420cb60e85a5e98bd5e1be58ff8843"
+  },
+  "reason": "Best end-to-end time among measured325MHz pipeline candidates with the selected128B/8word/2way cache. Required forwarding and stated area/timing model pass. Not a global optimum: faster4word multicycle and higher-Fmax alternatives remain visible; the4word pipeline cost is only an explicitly labeled screening estimate."
+}

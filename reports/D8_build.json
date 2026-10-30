@@ -1,0 +1,53 @@
+{
+  "status": "BUILT_NOT_YET_QUALIFIED",
+  "executable": "/home/USER/d-stage/workbench/npc/build/sim",
+  "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46",
+  "reference": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+  "capstone": "/home/USER/d-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+  "inputs": [
+    {
+      "path": "/home/USER/d-stage/workbench/npc/Makefile",
+      "sha256": "4a333e97561772191c6f030e260c34be5a3902042274566156d9d799429d09ae"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/npc/vsrc/rv32e_core.sv",
+      "sha256": "99ffea922a840fbb314dc5dbe445a9650603552d1b92bd0175d1da6693226733"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/npc/vsrc/npc_sim.sv",
+      "sha256": "a120543742857d017918822002ef0a65a3757fb4c935cc0e1d5d5dde2f0362b8"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/npc/csrc/memory.hpp",
+      "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/npc/csrc/debug_core.h",
+      "sha256": "4b4fc366635cdbe55fd21e19aab9ffd38a3a24f8cb80002c9f9fabf1713b18a8"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/npc/csrc/debug_core.c",
+      "sha256": "4e7b9d923a6631f3937352f71fea9626a1215d257206b17cd0ac341cc66d6551"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/npc/csrc/trace_core.h",
+      "sha256": "24af832c04d20f45de7543d22da6b6982af7ecd63d9b674f14e65af62d8ca163"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/npc/csrc/runner.cpp",
+      "sha256": "a72c6f79f098627b11705f938a7e9f7f83b2acac3d2664e86795742e6fd93b45"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/npc/csrc/trace_core.c",
+      "sha256": "be28723141c7312e1d7b7dfa9296ac0a8d375aade1eab9132c68ede7355a2452"
+    },
+    {
+      "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+      "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+    }
+  ]
+}

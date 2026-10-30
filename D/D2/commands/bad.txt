@@ -1,0 +1,23 @@
+
+unknown
+si -1
+si 0
+si abc
+si 1000001
+info
+info z
+p
+p 1+
+p $garbage
+p *0
+p 0&&*0
+x
+x -1 0
+x 2
+x 2 0xffffffff
+w
+d -1
+d 99
+d 0
+p 42
+q

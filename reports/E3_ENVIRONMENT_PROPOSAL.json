@@ -1,0 +1,118 @@
+{
+  "status": "AWAITING_USER_AUTHORIZATION",
+  "timestamp": "2026-10-24T14:05:06.407366+00:00",
+  "actions_executed": "Read-only wsl status/list/help; download official Ubuntu rootfs; compare upstream SHA256; write proposal under project only.",
+  "system_modified": false,
+  "probes": [
+    {
+      "name": "status",
+      "execution": {
+        "name": "E3/preflight/status",
+        "timestamp": "2026-10-24T14:05:02.774684+00:00",
+        "command": [
+          "wsl.exe",
+          "--status"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": [
+          0,
+          4294967295
+        ],
+        "status": "PASS",
+        "elapsed_seconds": 0.141,
+        "timeout_seconds": 20,
+        "inputs": [],
+        "inputs_after": [],
+        "inputs_unchanged": true,
+        "stdout_sha256": "054c65d4216ba21b47216a5b9635056549cd60bab182bffbaaed14bccdc7d927",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "text": "默认版本：2\r\r\n\r\n适用于 Linux 的 Windows 子系统内核可以使用“wsl --update”手动更新，但由于你的系统设置，无法进行自动更新。\r\r\n 若要接收自动内核更新，请启用 Windows 更新设置:“在更新 Windows 时接收其他 Microsoft 产品的更新”。\r\r\n 有关详细信息，请访问https://aka.ms/wsl2kernel。\r\r\nWindows 更新已暂停。\r\r\n\r\n未找到 WSL 2 内核文件。若要更新或恢复内核，请运行“wsl --update”。\r\r\n"
+    },
+    {
+      "name": "distributions",
+      "execution": {
+        "name": "E3/preflight/distributions",
+        "timestamp": "2026-10-24T14:05:02.836945+00:00",
+        "command": [
+          "wsl.exe",
+          "--list",
+          "--verbose"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 4294967295,
+        "expected_exit": [
+          0,
+          4294967295
+        ],
+        "status": "PASS",
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "inputs": [],
+        "inputs_after": [],
+        "inputs_unchanged": true,
+        "stdout_sha256": "4ebc1d2bc3d835dad6ce40827af0cac5d9745b37ff664e8305d185ff28545af8",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "text": "适用于 Linux 的 Windows 子系统没有已安装的分发版。\r\r\n可以通过访问 Microsoft Store 来安装分发版:\r\r\nhttps://aka.ms/wslstore\r\r\n"
+    },
+    {
+      "name": "help",
+      "execution": {
+        "name": "E3/preflight/help",
+        "timestamp": "2026-10-24T14:05:02.899130+00:00",
+        "command": [
+          "wsl.exe",
+          "--help"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 4294967295,
+        "expected_exit": [
+          0,
+          4294967295
+        ],
+        "status": "PASS",
+        "elapsed_seconds": 0.032,
+        "timeout_seconds": 20,
+        "inputs": [],
+        "inputs_after": [],
+        "inputs_unchanged": true,
+        "stdout_sha256": "41c2959779cf7e1d154ebb2c90c6ced991104dc06b511afeeb15c09693e589ba",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "text": "版权所有(c) Microsoft Corporation。保留所有权利。\r\r\n\r\r\n用法: wsl.exe [Argument] [Options...][CommandLine]\r\r\n\r\r\n运行 Linux 二进制文件的参数:\r\r\n\r\r\n    如果未提供命令行，wsl.exe 将启动默认 shell。\r\r\n\r\r\n    --exec、-e <CommandLine>\r\r\n        不使用默认 Linux shell 执行指定命令。\r\r\n\r\r\n    --\r\r\n        按原样传递剩余命令行。\r\r\n\r\r\n选项:\r\r\n    --cd <Directory>\r\r\n        将指定目录设置为当前工作目录。\r\r\n        如果使用 ~，则将使用 Linux 用户的主路径。如果路径以 / 字符开头，\r\r\n        它将被解释为绝对 Linux 路径。\r\r\n        否则，该值必须是绝对 Windows 路径。\r\r\n\r\r\n    --distribution、-d <Distro>\r\r\n        运行指定的分发。\r\r\n\r\r\n    --user、-u <UserName>\r\r\n        以指定用户身份运行。\r\r\n\r\r\n    --system\r\r\n        为系统分发启动 shell。\r\r\n\r\r\n用于管理适用于 Linux 的 Windows 子系统的参数:\r\r\n\r\r\n    --help\r\r\n        显示用法信息。\r\r\n\r\r\n    --install [Options]\r\r\n        安装其他适用于 Linux 的 Windows 子系统分发。\r\r\n        有关有效分发的列表，请使用“wsl --list --online”。\r\r\n\r\r\n        选项:\r\r\n            --distribution、-d [Argument]\r\r\n                按名称下载并安装分发。\r\r\n\r\r\n                参数:\r\r\n                    有效的分发名称(不区分大小写)。\r\r\n\r\r\n                示例:\r\r\n                    wsl --install -d Ubuntu\r\r\n                    wsl --install --distribution Debian\r\r\n\r\r\n            --no-launch, -n\r\r\n                安装后不启动发行版。\r\r\n\r\r\n    --mount <Disk>\r\r\n        在所有 WSL2 分发中附加和安装物理磁盘。\r\r\n\r\r\n        选项:\r\r\n            --bare\r\r\n                将磁盘附加到 WSL2，但不要装载它。\r\r\n\r\r\n            --type <Type>\r\r\n                装载磁盘时使用的文件系统，如果未指定，则默认为 ext4。\r\r\n\r\r\n            --options <Options>\r\r\n                其他装载选项。\r\r\n\r\r\n            --partition <Index>\r\r\n                要装载的分区索引，如果未指定，则默认为整个磁盘。\r\r\n\r\r\n    --set-default-version <Version>\r\r\n        更改新分发的默认安装版本。\r\r\n\r\r\n    --shutdown\r\r\n        立即终止所有正在运行的分发和 WSL 2\r\r\n        轻型实用程序虚拟机。\r\r\n\r\r\n    --status\r\r\n        显示适用于 Linux 的 Windows 子系统的状态。\r\r\n\r\r\n    --卸载 [Disk]\r\r\n        从所有 WSL2 分发中卸载并分离磁盘。\r\r\n        如果不带参数调用，则卸载并分离所有磁盘。\r\r\n\r\r\n    --更新 [Options]\r\r\n        如果未指定任何选项，将从 Microsoft Store 下载并安装 WSL。\r\r\n\r\r\n        选项:\r\r\n            --回滚\r\r\n                恢复到 WSL 2 内核的先前版本。\r\r\n\r\r\n            --inbox\r\r\n                仅更新收件箱 WSL 2 内核。不从 Microsoft Store 安装 WSL。\r\r\n\r\r\n            --web-download\r\r\n                从 internet 而不是 Microsoft  Store 下载 WSL 的最新版本。\r\r\n用于在适用于 Linux 的 Windows 子系统中管理分发的参数:\r\r\n\r\r\n    --export <Distro> <FileName>\r\r\n        将分发导出为 tar 文件。\r\r\n        对于标准输出，文件名可以是 -。\r\r\n\r\r\n    --import <Distro> <InstallLocation> <FileName> [Options]\r\r\n        将指定的 tar 文件作为新分发导入。\r\r\n        文件名可以是 - 用于标准输入。\r\r\n\r\r\n        选项:\r\r\n            --version <Version>\r\r\n                指定用于新分发的版本。\r\r\n\r\r\n    --list, -l [Options]\r\r\n        列出分发。\r\r\n\r\r\n        选项:\r\r\n            --所有\r\r\n                列出所有分发，包括当前\r\r\n                正在安装或卸载的分发。\r\r\n\r\r\n            --正在运行\r\r\n                仅列出当前正在运行的分发。\r\r\n\r\r\n            --安静的, -q\r\r\n                仅显示分发名称。\r\r\n\r\r\n            --详细的, -v\r\r\n                显示有关所有分发的详细信息。\r\r\n\r\r\n            --在线，-o\r\r\n                显示可使用“wsl --install”安装的可用分发列表。\r\r\n\r\r\n    --set-default, -s <Distro>\r\r\n        将分发设为默认值。\r\r\n\r\r\n    --set-version <Distro> <Version>\r\r\n        更改指定分发的版本。\r\r\n\r\r\n    --终止, -t <Distro>\r\r\n        终止指定的分发。\r\r\n\r\r\n    --取消注册 <Distro>\r\r\n        取消注册分发并删除根文件系统。\r\r\n"
+    }
+  ],
+  "image": {
+    "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\ubuntu-jammy-wsl-amd64-ubuntu22.04lts.rootfs.tar.gz",
+    "url": "https://cloud-images.ubuntu.com/wsl/jammy/current/ubuntu-jammy-wsl-amd64-ubuntu22.04lts.rootfs.tar.gz",
+    "sha256": "1483cc5c1dce13064f774834cbffdff226559fd522a67a381a8ea77d63fb4109",
+    "expected_sha256": "1483cc5c1dce13064f774834cbffdff226559fd522a67a381a8ea77d63fb4109",
+    "upstream_sha256_match": true,
+    "sha256_source": "https://cloud-images.ubuntu.com/wsl/jammy/current/SHA256SUMS",
+    "bytes": 341130963,
+    "edition": "Ubuntu22.04 LTS amd64, official archived WSL rootfs; apt updates required after import."
+  },
+  "proposed_distro_name": "YSYX-Linux",
+  "proposed_install_path": "C:\\YSYX_WORKSPACE\\tools\\wsl\\YSYX-Linux",
+  "wsl_config": {
+    "path": "C:\\Users\\USER\\.wslconfig",
+    "exists": false,
+    "current_sha256": null,
+    "proposal": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\preflight\\wslconfig.proposed",
+    "proposal_sha256": "7d1bc9376a5821447e4a14f4cba0febd0e90381d6235d4605809d14a14525817",
+    "changes": {
+      "memory": "2GB",
+      "processors": "4",
+      "swap": "2GB",
+      "swapFile": "D:\\\\A_Circuit\\\\temp\\\\wsl-swap.vhdx"
+    }
+  },
+  "authorization_basis": "/workspace/AGENTS.md: WSL/系统组件安装、重启、全局 .wslconfig 变更需用户批准。",
+  "references": [
+    "https://learn.microsoft.com/en-us/windows/wsl/basic-commands",
+    "https://learn.microsoft.com/en-us/windows/wsl/wsl-config",
+    "https://ubuntu.com/wsl/docs/latest/howto/install-ubuntu-wsl2/"
+  ]
+}

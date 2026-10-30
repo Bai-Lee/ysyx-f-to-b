@@ -1,0 +1,1 @@
+{"result":"USER_QUIT","exit_code":0,"pc":2147483652,"a0":0,"cycles":1,"instructions":1,"diff_enabled":true,"diff_checked":1,"device_sync_checked":0,"ebreak_calls":0,"memory_writes":0,"load_commits":0,"uart_bytes":0,"uart_polls":0,"uart_not_ready":0,"frequency_hz":100000000,"wall_seconds":0.009237622,"bounded_output":false,"gpr":[0,0,2147549184,0,0,0,0,0,0,0,0,0,0,0,0,0]}

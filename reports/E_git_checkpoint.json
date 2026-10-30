@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "source_commit": "3a5d2b469bf8df40f31c9738b98a8461adc2e4f2",
+  "parent": "b69914982ccb92a1faa0621a49d1dae2a643000f",
+  "branch": "main",
+  "local_only": true,
+  "push_performed": false,
+  "source_file_count": 479,
+  "evidence": "artifacts/E_delivery_git/source_commit/run.json",
+  "whitespace_check_scope": "Authored files, with CRLF recognized; immutable original course sources, upstream benchmark files and tool-generated SDCs retain their original bytes."
+}

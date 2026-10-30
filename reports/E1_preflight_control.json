@@ -1,0 +1,216 @@
+{
+  "id": "HDL-006",
+  "slug": "andgate",
+  "title": "AND gate",
+  "scope": "原文建议的语法基础题",
+  "source_path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\raw\\hdlbits.01xz.net\\6ae043af8880cc6d.html",
+  "source_sha256": "828283be95bd47aef3db705ae48c70e33a45cd687b37a8d217fbfac72eae62be",
+  "dut": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\rtl\\andgate.v",
+  "testbench": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+  "support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+  "syntax_support": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_syntax_support.v",
+  "vectors": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+  "cases": 4,
+  "outputs_checked": {
+    "out": 4
+  },
+  "mask_reasons": {},
+  "explanation": "",
+  "interface": [
+    {
+      "name": "a",
+      "direction": "input",
+      "bounds": "",
+      "width": 1
+    },
+    {
+      "name": "b",
+      "direction": "input",
+      "bounds": "",
+      "width": 1
+    },
+    {
+      "name": "out",
+      "direction": "output",
+      "bounds": "",
+      "width": 1
+    }
+  ],
+  "status": "PASS",
+  "mutation": {
+    "name": "and_replaced_by_or",
+    "old": "assign out = a & b;",
+    "new": "assign out = a | b;"
+  },
+  "syntax": {
+    "name": "E1/andgate__fault_and_replaced_by_or/syntax",
+    "timestamp": "2026-10-24T13:36:34.719016+00:00",
+    "command": [
+      "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+      "-g2005",
+      "-Wall",
+      "-s",
+      "top_module",
+      "-tnull",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.v",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_syntax_support.v"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "status": "PASS",
+    "elapsed_seconds": 0.11,
+    "timeout_seconds": 30,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.v",
+        "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_syntax_support.v",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "inputs_after": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.v",
+        "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_syntax_support.v",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "inputs_unchanged": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "compile": {
+    "name": "E1/andgate__fault_and_replaced_by_or/compile",
+    "timestamp": "2026-10-24T13:36:34.856485+00:00",
+    "command": [
+      "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-o",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.vvp",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.v",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "status": "PASS",
+    "elapsed_seconds": 0.094,
+    "timeout_seconds": 30,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.v",
+        "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+        "sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+        "sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa"
+      }
+    ],
+    "inputs_after": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.v",
+        "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+        "sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+        "sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa"
+      }
+    ],
+    "inputs_unchanged": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "98323d6d4bd1f737c697b54764d6b15b2bc1e002f2403be451831821ac657f51"
+  },
+  "simulation": {
+    "name": "E1/andgate__fault_and_replaced_by_or/simulate",
+    "timestamp": "2026-10-24T13:36:34.936526+00:00",
+    "command": [
+      "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+      "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.vvp"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "status": "PASS",
+    "elapsed_seconds": 0.062,
+    "timeout_seconds": 60,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.v",
+        "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+        "sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+        "sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.vvp",
+        "sha256": "9c705cdd544319576977ed26cc0de8e34f915232413008fd382737d82c754374"
+      }
+    ],
+    "inputs_after": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.v",
+        "sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_tb.sv",
+        "sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\tests\\andgate_support.v",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E1\\vectors\\andgate.txt",
+        "sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\andgate__fault_and_replaced_by_or.vvp",
+        "sha256": "9c705cdd544319576977ed26cc0de8e34f915232413008fd382737d82c754374"
+      }
+    ],
+    "inputs_unchanged": true,
+    "stdout_sha256": "95367d07975af945b51fd57e67867ec6c01f257fae43eeddb9c15737b3b7aa5e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "semantic_sentinel_pass": true,
+  "dut_sha256": "ab850f4eb896a13c57ee42bf2104b694f9a03800b8cb95f20fd9d92fa3897504",
+  "vectors_sha256": "5f33df9aaa9ddbdfa7f62bc14b2d899c946597ece1803834ba733cbd20c8bcfa",
+  "testbench_sha256": "47d5736b92d9bf525be1d7646acf38bd6d2c67099e8c4fc2fc80eeae42a752e0",
+  "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "syntax_support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

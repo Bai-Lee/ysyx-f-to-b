@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "project_id": "00000000",
+  "path": "/workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv",
+  "sha256": "0c56b8296b8d03f359cedc07028e2a40eaafd7785979714ebd74c7291f17aed8",
+  "reset_pc": "0x30000000",
+  "defines": [
+    "-DSYNTHESIS",
+    "-DC5_RESET_PC=32'h30000000",
+    "-DB_PIPELINE=1",
+    "-DB_FORWARD=1",
+    "-DB_PREDICT=2",
+    "-DB_FETCH_PIPELINED=1",
+    "-DB_ICACHE_ENABLE=1",
+    "-DB_ICACHE_LINES=4",
+    "-DB_ICACHE_WORDS=8",
+    "-DB_ICACHE_WAYS=2",
+    "-DB_ICACHE_BURST=1"
+  ],
+  "sources": [
+    {
+      "path": "B/soc/rtl/ysyx_00000000.v",
+      "sha256": "8eb5e262b149eda35769db808d80bd7c402caa84211a076c7a437bc6654e7344"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_alu.sv",
+      "sha256": "8d5c21c89b900f9077a84be87ef1bf0c160ccd1fa416256c8f87cfbec7d144d5"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_core.sv",
+      "sha256": "2676a7c2819a1c87e7e1c48fd68cc7d113df446eb8fac4c8562f43041404041f"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_execute.sv",
+      "sha256": "dabba1fb0185fdc7935042c9c8968a5d6ff5718e1a5548e74d183ed73182795c"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_icache.sv",
+      "sha256": "e9fb1193018d4754f700181ce7842de23b2fe4c0ba7a8005aee444c6aff91c67"
+    },
+    {
+      "path": "B/soc/rtl/ysyx_00000000_pipe.sv",
+      "sha256": "643b8e854d5793f7b1169daffd907de0ea5d08e5c650436c992b038ee5b2192d"
+    }
+  ],
+  "normalization": [
+    "Explicit zero extension of beat in three comparisons",
+    "Explicit integer-to-Boolean comparison for PREDICT in two expressions",
+    "Names for the two generate alternatives"
+  ],
+  "scope": "Public single-file SystemVerilog contract, generated reproducibly from the accepted RTL. Bit widths and generate labels are normalized without changing logic; equivalence is checked separately. Simulation DPI and event counters are excluded; project ID is not an official student identity."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "EXCLUDED_SCOPE",
+  "timestamp": "2026-10-25T18:18:02.522518+00:00",
+  "engineering_tasks_required": 0,
+  "items": [
+    "E9-M001",
+    "E9-M002",
+    "E9-O001"
+  ],
+  "source": "E/E9/sources/E9.md",
+  "explanation": "E/E9/SCOPE.md",
+  "personal_materials_authored": false,
+  "application_submitted": false,
+  "official_admission_or_defense_claimed": false
+}

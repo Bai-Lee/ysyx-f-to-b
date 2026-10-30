@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "elapsed_seconds": 62.45686405,
+  "peak_group_rss_bytes": 1446301696,
+  "peak_group_pss_bytes": 1445113856,
+  "metric": "pss",
+  "memory_limit_bytes": 2936012800,
+  "minimum_system_available_bytes": 5303279616,
+  "timeline": [
+    {
+      "elapsed_seconds": 0.0010647889999990667,
+      "rss_bytes": 962560,
+      "pss_bytes": 613376,
+      "available_bytes": 6670987264
+    },
+    {
+      "elapsed_seconds": 5.025043366,
+      "rss_bytes": 416370688,
+      "pss_bytes": 410815488,
+      "available_bytes": 6348541952
+    },
+    {
+      "elapsed_seconds": 10.054604678999999,
+      "rss_bytes": 686710784,
+      "pss_bytes": 680950784,
+      "available_bytes": 6078205952
+    },
+    {
+      "elapsed_seconds": 15.086766373999998,
+      "rss_bytes": 693293056,
+      "pss_bytes": 687729664,
+      "available_bytes": 6072369152
+    },
+    {
+      "elapsed_seconds": 20.119201403999995,
+      "rss_bytes": 695926784,
+      "pss_bytes": 690301952,
+      "available_bytes": 6069972992
+    },
+    {
+      "elapsed_seconds": 25.152943313999998,
+      "rss_bytes": 698056704,
+      "pss_bytes": 692485120,
+      "available_bytes": 6067576832
+    },
+    {
+      "elapsed_seconds": 30.185285598999997,
+      "rss_bytes": 699138048,
+      "pss_bytes": 693484544,
+      "available_bytes": 6066802688
+    },
+    {
+      "elapsed_seconds": 35.215638559,
+      "rss_bytes": 604749824,
+      "pss_bytes": 603254784,
+      "available_bytes": 6147670016
+    },
+    {
+      "elapsed_seconds": 40.244130833999996,
+      "rss_bytes": 1125490688,
+      "pss_bytes": 1124102144,
+      "available_bytes": 5622116352
+    },
+    {
+      "elapsed_seconds": 45.289635349,
+      "rss_bytes": 1443827712,
+      "pss_bytes": 1442471936,
+      "available_bytes": 5304422400
+    },
+    {
+      "elapsed_seconds": 50.335799739,
+      "rss_bytes": 1444634624,
+      "pss_bytes": 1444569088,
+      "available_bytes": 5303865344
+    },
+    {
+      "elapsed_seconds": 55.390767397,
+      "rss_bytes": 1444634624,
+      "pss_bytes": 1444704256,
+      "available_bytes": 5303873536
+    },
+    {
+      "elapsed_seconds": 60.440735947,
+      "rss_bytes": 1446301696,
+      "pss_bytes": 1444900864,
+      "available_bytes": 5303738368
+    }
+  ],
+  "command": [
+    "taskset",
+    "-c",
+    "0,1",
+    "/home/USER/tools/e-stage/ecos-alpha9/squashfs-root/resources/binaries/ecc",
+    "run",
+    "--project",
+    "/home/USER/c-stage/c4/synthesis/axi",
+    "--plain"
+  ]
+}

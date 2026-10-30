@@ -1,0 +1,24 @@
+graph circuit { graph [rankdir=LR,overlap=false,fontname="DejaVu Sans",label="NAND2X1H7L | MOS connectivity (not physical layout)",labelloc=t]; node [fontname="DejaVu Sans",fontsize=10];
+"A" [shape=ellipse,label="A"];
+"B" [shape=ellipse,label="B"];
+"VDD" [shape=ellipse,label="VDD"];
+"VSS" [shape=ellipse,label="VSS"];
+"Y" [shape=ellipse,label="Y"];
+"net6" [shape=ellipse,label="net6"];
+"MMN0" [shape=box,label="MMN0 nMOS\nW/L=0.21/0.06 um\nB=VSS"];
+"Y" -- "MMN0" [label="D",style=solid];
+"net6" -- "MMN0" [label="S",style=solid];
+"B" -- "MMN0" [label="G",style=dashed];
+"MMN1" [shape=box,label="MMN1 nMOS\nW/L=0.21/0.06 um\nB=VSS"];
+"net6" -- "MMN1" [label="D",style=solid];
+"VSS" -- "MMN1" [label="S",style=solid];
+"A" -- "MMN1" [label="G",style=dashed];
+"MMP1" [shape=box,label="MMP1 pMOS\nW/L=0.27/0.06 um\nB=VDD"];
+"Y" -- "MMP1" [label="D",style=solid];
+"VDD" -- "MMP1" [label="S",style=solid];
+"B" -- "MMP1" [label="G",style=dashed];
+"MMP0" [shape=box,label="MMP0 pMOS\nW/L=0.27/0.06 um\nB=VDD"];
+"Y" -- "MMP0" [label="D",style=solid];
+"VDD" -- "MMP0" [label="S",style=solid];
+"A" -- "MMP0" [label="G",style=dashed];
+}

@@ -1,0 +1,1225 @@
+{
+  "status": "PASS_RECHECKED_LOCKED_FILES",
+  "tools": [
+    {
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89",
+      "version": [
+        "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+        "Copyright (C) 2021 Free Software Foundation, Inc."
+      ],
+      "accepted_by": [
+        "reports/C_PREFLIGHT.json",
+        "reports/C1_experiment.json",
+        "reports/C3_experiment.json"
+      ]
+    },
+    {
+      "path": "/usr/bin/gdb",
+      "sha256": "a6222ff0f450ca040e3479c04fdb7d0f1e0cabb099688270e720b7115d933c3d",
+      "version": [
+        "GNU gdb (Ubuntu 12.1-0ubuntu1~22.04.2) 12.1",
+        "Copyright (C) 2022 Free Software Foundation, Inc."
+      ],
+      "accepted_by": [
+        "reports/C_PREFLIGHT.json",
+        "reports/C3_experiment.json"
+      ]
+    },
+    {
+      "path": "/usr/bin/riscv64-linux-gnu-gcc",
+      "sha256": "0c54895c55568be5b5fee49e2426abcc8fb05ca2c121ca5685dea2cbc24a1c13",
+      "version": [
+        "riscv64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0",
+        "Copyright (C) 2021 Free Software Foundation, Inc."
+      ],
+      "accepted_by": [
+        "reports/C_PREFLIGHT.json",
+        "reports/C1_experiment.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/verilator-stable-src/bin/verilator",
+      "sha256": "308c54eb0194bb5c95d7cc093e0491922d2455177d401b03a8224ad7efe5cf35",
+      "version": [
+        "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261024-983a06a"
+      ],
+      "accepted_by": [
+        "reports/C_PREFLIGHT.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20261022/oss-cad-suite/bin/iverilog",
+      "sha256": "6d84be4052a92cf7184c7149506f5db6ac251f99e438a96ae3ce33f326e2ff9d",
+      "version": [
+        "Icarus Verilog version 14.0 (devel) (s20260301-638-ge072b3334-dirty)",
+        ""
+      ],
+      "accepted_by": [
+        "reports/C_PREFLIGHT.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/yosys",
+      "sha256": "7c3e3396b38c129dd7485be5a0a0f0da8e495a94c8fd486059e3bea043a588d6",
+      "version": [
+        "Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)"
+      ],
+      "accepted_by": [
+        "reports/C_PREFLIGHT.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/dot",
+      "sha256": "83f213b0d85e370a7ddad41eff9795791e1409d7f514c2b53e906216958bc8fb",
+      "version": [
+        "dot - graphviz version 2.43.20190912.0211 (20190912.0211)"
+      ],
+      "accepted_by": [
+        "reports/C_PREFLIGHT.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/bin/java",
+      "sha256": "ac1d3bbe5301caaa1b86966802a4f8ec9f9f4f065c04dec45cc4a9f7dc24d075",
+      "version": null,
+      "accepted_by": [
+        "reports/C5_toolchain.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/bin/javac",
+      "sha256": "bafd67b6b902abb284b24c168ac90eb1490dac6448054a71ccb26c4918577b22",
+      "version": null,
+      "accepted_by": [
+        "reports/C5_toolchain.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/c-stage/bin/mill",
+      "sha256": "04cac56046f5f9a16be65720b4134152cd01272fdf420f54f99796db58c9b423",
+      "version": null,
+      "accepted_by": [
+        "reports/C5_toolchain.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/c-stage/cache/mill/download/0.12.4",
+      "sha256": "5a5ca4c8dc97522b51e851db8595ce7892ad302aefa092b582bba1f86fe191bf",
+      "version": null,
+      "accepted_by": [
+        "reports/C5_toolchain.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/c-stage/firtool/firtool-1.105.0/bin/firtool",
+      "sha256": "1621ab876eb78ac60c938d60d5cafd36652673fe6454f0fb036125298ee2a181",
+      "version": null,
+      "accepted_by": [
+        "reports/C5_toolchain.json"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/c-stage/opensta/usr/bin/sta",
+      "sha256": "9630070fdbcfd2a92a9d0dc6b6e5480f7be8e216b720f1fb32f447fb4cedc2ff",
+      "version": "2.0.17",
+      "accepted_by": [
+        "reports/C4_opensta_toolchain.json"
+      ]
+    },
+    {
+      "path": "/usr/bin/ar",
+      "sha256": "5b394f8752fde1776992d405d76034d5017b24b9b922bedaeeaff8cc344ef044",
+      "version": "GNU ar (GNU Binutils for Ubuntu) 2.38",
+      "accepted_by": [
+        "reports/C1_experiment.json"
+      ]
+    },
+    {
+      "path": "/usr/bin/nm",
+      "sha256": "ed6565c132d6f20019ff3f050043dc1b2b8bc2e8b3b94c1ffe3f34436431a5a4",
+      "version": "GNU nm (GNU Binutils for Ubuntu) 2.38",
+      "accepted_by": [
+        "reports/C1_experiment.json"
+      ]
+    },
+    {
+      "path": "/usr/bin/readelf",
+      "sha256": "04db0000749aff89e4af21429340b00b536fc6f80e811c872c006507881a5560",
+      "version": "GNU readelf (GNU Binutils for Ubuntu) 2.38",
+      "accepted_by": [
+        "reports/C1_experiment.json"
+      ]
+    },
+    {
+      "path": "/usr/bin/objdump",
+      "sha256": "1eaaef2e7f57c4c7f69115c495e2466f5a8c8e5f3bc42221d092382f30f9d4cd",
+      "version": "GNU objdump (GNU Binutils for Ubuntu) 2.38",
+      "accepted_by": [
+        "reports/C1_experiment.json"
+      ]
+    },
+    {
+      "path": "/usr/bin/python3.10",
+      "sha256": "11dde438e1a636073e79c81d4c2543708cc0a2922e7c42c38b1b588e17545f96",
+      "accepted_by": [
+        "Current fingerprint; acceptance use recorded in build/preflight commands"
+      ]
+    },
+    {
+      "path": "/usr/bin/x86_64-linux-gnu-g++-11",
+      "sha256": "2360901d864cf10bfd6296e261cb2c14053552a80377761ab07146ec9ec9a2c0",
+      "accepted_by": [
+        "Current fingerprint; acceptance use recorded in build/preflight commands"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/scons-4.0.1/bin/scons",
+      "sha256": "7a6c7feb31c4d65309735b57f520e2be15705268670b12c80032181789e0e3c3",
+      "accepted_by": [
+        "Current fingerprint; acceptance use recorded in build/preflight commands"
+      ]
+    },
+    {
+      "path": "/home/USER/tools/scons-4.0.1/usr/lib/python3/dist-packages/SCons/Script/__init__.py",
+      "sha256": "ddc4521e6b3e0e96b65f760a30d303b8a16ebb57dbefd2802af0f3eaa6d11f7e",
+      "accepted_by": [
+        "Current fingerprint; acceptance use recorded in build/preflight commands"
+      ]
+    }
+  ],
+  "timing_libraries": [
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib",
+      "sha256": "e6733a87b3a015c2234172625abf0ee366a35f2725e640c88e149ee073fc13be"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib",
+      "sha256": "a5fb35bea1c7e8f06d2e93089d48986125731f8e744580adaa4d320283e23988"
+    },
+    {
+      "path": "/workspace/downloads/ysyx_c_stage/nangate45/NangateOpenCellLibrary_typical.lib",
+      "sha256": "8d540a4d4cf6d09d27c87ad067857a9c0c2eeb023ab7a56e058cd3113db4e9b1"
+    }
+  ],
+  "binary_dependencies": [
+    {
+      "member": "bin/base/libcapstone.so.5",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/bin/libcapstone.so.5"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffd8ad6f000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f65830db000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f6583332000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6"
+      ]
+    },
+    {
+      "member": "bin/base/nemu-d7-linux",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/bin/nemu-d7-linux"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffdbefc5000)\n\tlibSDL2-2.0.so.0 => /lib/x86_64-linux-gnu/libSDL2-2.0.so.0 (0x00007f178967d000)\n\tlibreadline.so.8 => /lib/x86_64-linux-gnu/libreadline.so.8 (0x00007f1789629000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f1789400000)\n\tlibasound.so.2 => /lib/x86_64-linux-gnu/libasound.so.2 (0x00007f17892fd000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f1789216000)\n\tlibpulse.so.0 => /lib/x86_64-linux-gnu/libpulse.so.0 (0x00007f17891c1000)\n\tlibX11.so.6 => /lib/x86_64-linux-gnu/libX11.so.6 (0x00007f178907f000)\n\tlibXext.so.6 => /lib/x86_64-linux-gnu/libXext.so.6 (0x00007f178906a000)\n\tlibXcursor.so.1 => /lib/x86_64-linux-gnu/libXcursor.so.1 (0x00007f178905e000)\n\tlibXinerama.so.1 => /lib/x86_64-linux-gnu/libXinerama.so.1 (0x00007f1789059000)\n\tlibXi.so.6 => /lib/x86_64-linux-gnu/libXi.so.6 (0x00007f1789045000)\n\tlibXfixes.so.3 => /lib/x86_64-linux-gnu/libXfixes.so.3 (0x00007f178903d000)\n\tlibXrandr.so.2 => /lib/x86_64-linux-gnu/libXrandr.so.2 (0x00007f178902e000)\n\tlibXss.so.1 => /lib/x86_64-linux-gnu/libXss.so.1 (0x00007f1789029000)\n\tlibXxf86vm.so.1 => /lib/x86_64-linux-gnu/libXxf86vm.so.1 (0x00007f1789022000)\n\tlibdrm.so.2 => /lib/x86_64-linux-gnu/libdrm.so.2 (0x00007f178900c000)\n\tlibgbm.so.1 => /lib/x86_64-linux-gnu/libgbm.so.1 (0x00007f1788ffb000)\n\tlibwayland-egl.so.1 => /lib/x86_64-linux-gnu/libwayland-egl.so.1 (0x00007f1788ff6000)\n\tlibwayland-client.so.0 => /lib/x86_64-linux-gnu/libwayland-client.so.0 (0x00007f1788fe3000)\n\tlibwayland-cursor.so.0 => /lib/x86_64-linux-gnu/libwayland-cursor.so.0 (0x00007f1788fd9000)\n\tlibxkbcommon.so.0 => /lib/x86_64-linux-gnu/libxkbcommon.so.0 (0x00007f1788f92000)\n\tlibdecor-0.so.0 => /lib/x86_64-linux-gnu/libdecor-0.so.0 (0x00007f1788f88000)\n\tlibtinfo.so.6 => /lib/x86_64-linux-gnu/libtinfo.so.6 (0x00007f1788f56000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f179183f000)\n\tlibpulsecommon-15.99.so => /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-15.99.so (0x00007f1788ecf000)\n\tlibdbus-1.so.3 => /lib/x86_64-linux-gnu/libdbus-1.so.3 (0x00007f1788e81000)\n\tlibxcb.so.1 => /lib/x86_64-linux-gnu/libxcb.so.1 (0x00007f1788e57000)\n\tlibXrender.so.1 => /lib/x86_64-linux-gnu/libXrender.so.1 (0x00007f1788e4a000)\n\tlibwayland-server.so.0 => /lib/x86_64-linux-gnu/libwayland-server.so.0 (0x00007f1788e34000)\n\tlibexpat.so.1 => /lib/x86_64-linux-gnu/libexpat.so.1 (0x00007f1788e01000)\n\tlibxcb-randr.so.0 => /lib/x86_64-linux-gnu/libxcb-randr.so.0 (0x00007f1788dee000)\n\tlibffi.so.8 => /lib/x86_64-linux-gnu/libffi.so.8 (0x00007f1788de1000)\n\tlibsndfile.so.1 => /lib/x86_64-linux-gnu/libsndfile.so.1 (0x00007f1788d62000)\n\tlibX11-xcb.so.1 => /lib/x86_64-linux-gnu/libX11-xcb.so.1 (0x00007f1788d5d000)\n\tlibsystemd.so.0 => /lib/x86_64-linux-gnu/libsystemd.so.0 (0x00007f1788c94000)\n\tlibasyncns.so.0 => /lib/x86_64-linux-gnu/libasyncns.so.0 (0x00007f1788c8c000)\n\tlibapparmor.so.1 => /lib/x86_64-linux-gnu/libapparmor.so.1 (0x00007f1788c77000)\n\tlibXau.so.6 => /lib/x86_64-linux-gnu/libXau.so.6 (0x00007f1788c71000)\n\tlibXdmcp.so.6 => /lib/x86_64-linux-gnu/libXdmcp.so.6 (0x00007f1788c69000)\n\tlibFLAC.so.8 => /lib/x86_64-linux-gnu/libFLAC.so.8 (0x00007f1788c2b000)\n\tlibvorbis.so.0 => /lib/x86_64-linux-gnu/libvorbis.so.0 (0x00007f1788bfe000)\n\tlibvorbisenc.so.2 => /lib/x86_64-linux-gnu/libvorbisenc.so.2 (0x00007f1788b53000)\n\tlibopus.so.0 => /lib/x86_64-linux-gnu/libopus.so.0 (0x00007f1788af5000)\n\tlibogg.so.0 => /lib/x86_64-linux-gnu/libogg.so.0 (0x00007f1788aea000)\n\tliblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x00007f1788abf000)\n\tlibzstd.so.1 => /lib/x86_64-linux-gnu/libzstd.so.1 (0x00007f17889ee000)\n\tliblz4.so.1 => /lib/x86_64-linux-gnu/liblz4.so.1 (0x00007f17889ce000)\n\tlibcap.so.2 => /lib/x86_64-linux-gnu/libcap.so.2 (0x00007f17889c3000)\n\tlibgcrypt.so.20 => /lib/x86_64-linux-gnu/libgcrypt.so.20 (0x00007f1788885000)\n\tlibbsd.so.0 => /lib/x86_64-linux-gnu/libbsd.so.0 (0x00007f178886d000)\n\tlibgpg-error.so.0 => /lib/x86_64-linux-gnu/libgpg-error.so.0 (0x00007f1788845000)\n\tlibmd.so.0 => /lib/x86_64-linux-gnu/libmd.so.0 (0x00007f1788838000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libFLAC.so.8.3.0",
+        "/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.18.2",
+        "/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libX11.so.6.4.0",
+        "/usr/lib/x86_64-linux-gnu/libXau.so.6.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2",
+        "/usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0",
+        "/usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0",
+        "/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0",
+        "/usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0",
+        "/usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0",
+        "/usr/lib/x86_64-linux-gnu/libXss.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libapparmor.so.1.8.2",
+        "/usr/lib/x86_64-linux-gnu/libasound.so.2.0.0",
+        "/usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1",
+        "/usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libcap.so.2.44",
+        "/usr/lib/x86_64-linux-gnu/libdbus-1.so.3.19.13",
+        "/usr/lib/x86_64-linux-gnu/libdecor-0.so.0.100.0",
+        "/usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0",
+        "/usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7",
+        "/usr/lib/x86_64-linux-gnu/libffi.so.8.1.0",
+        "/usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4",
+        "/usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1",
+        "/usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3",
+        "/usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libmd.so.0.0.5",
+        "/usr/lib/x86_64-linux-gnu/libogg.so.0.8.5",
+        "/usr/lib/x86_64-linux-gnu/libopus.so.0.8.0",
+        "/usr/lib/x86_64-linux-gnu/libpulse.so.0.24.1",
+        "/usr/lib/x86_64-linux-gnu/libreadline.so.8.1",
+        "/usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.31",
+        "/usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0",
+        "/usr/lib/x86_64-linux-gnu/libtinfo.so.6.3",
+        "/usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.9",
+        "/usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.12",
+        "/usr/lib/x86_64-linux-gnu/libwayland-client.so.0.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwayland-server.so.0.20.0",
+        "/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0",
+        "/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0",
+        "/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0",
+        "/usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8",
+        "/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-15.99.so"
+      ]
+    },
+    {
+      "member": "bin/base/nemu-d8-ref.so",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/bin/nemu-d8-ref.so"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffd2e1be000)\n\tlibreadline.so.8 => /lib/x86_64-linux-gnu/libreadline.so.8 (0x00007f2ee2651000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f2ee2428000)\n\tlibtinfo.so.6 => /lib/x86_64-linux-gnu/libtinfo.so.6 (0x00007f2ee23f6000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f2eea6c5000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libreadline.so.8.1",
+        "/usr/lib/x86_64-linux-gnu/libtinfo.so.6.3"
+      ]
+    },
+    {
+      "member": "bin/base/npc-d8-linux",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/bin/npc-d8-linux"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffc748f1000)\n\tlibcapstone.so.5 => /home/USER/d-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5 (0x00007feca8326000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007feca80f2000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007feca800b000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007feca7feb000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007feca7dc2000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007feca83a5000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/home/USER/d-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/base/spike-riscv32.so",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/bin/spike-riscv32.so"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007fffb87c5000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f93fce37000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f93fce17000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f93fcbee000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f93fcb07000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f93fd1d1000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/20000000-mutant/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/20000000-mutant/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffdbb771000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fbc44de1000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fbc44cfa000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fbc44cda000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fbc44ab1000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fbc45159000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/20000000-fast/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/20000000-fast/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffc37972000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fe2fd0c1000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fe2fcfda000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fe2fcfba000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fe2fcd91000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fe2fd423000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/20000000-cycle/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/20000000-cycle/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffcb15bc000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f516d1dd000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f516d0f6000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f516d0d6000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f516cead000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f516d4c8000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/20000000/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/20000000/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffdeb593000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f57c5c34000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f57c5b4d000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f57c5b2d000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f57c5904000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f57c5faf000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffe714d0000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f8298567000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f8298480000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f8298460000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f8298237000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f8298858000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle-qpi/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle-qpi/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffe233aa000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f3a07ec5000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f3a07dde000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f3a07dbe000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f3a07b95000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f3a081b6000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle-psram4m-qpi/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffe141fd000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f2f57757000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f2f57670000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f2f57650000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f2f57427000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f2f57a48000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram16x1-opt/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram16x1-opt/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffd4a524000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f5553d9f000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f5553cb8000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f5553c98000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f5553a6f000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f5554094000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram32x1-opt/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x1-opt/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffe0d55f000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f6397de9000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f6397d02000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f6397ce2000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f6397ab9000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f63980e2000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram32x2-opt/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x2-opt/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffdf21eb000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f1d145d7000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f1d144f0000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f1d144d0000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f1d142a7000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f1d148d3000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffc315ef000)\n\tlibSDL2-2.0.so.0 => /lib/x86_64-linux-gnu/libSDL2-2.0.so.0 (0x00007f5d0aed1000)\n\tlibSDL2_image-2.0.so.0 => /lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0 (0x00007f5d0aeae000)\n\tlibSDL2_ttf-2.0.so.0 => /lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0 (0x00007f5d0ae9b000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f5d0ac6f000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f5d0ab88000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f5d0ab66000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f5d0a93d000)\n\tlibasound.so.2 => /lib/x86_64-linux-gnu/libasound.so.2 (0x00007f5d0a83a000)\n\tlibpulse.so.0 => /lib/x86_64-linux-gnu/libpulse.so.0 (0x00007f5d0a7e5000)\n\tlibX11.so.6 => /lib/x86_64-linux-gnu/libX11.so.6 (0x00007f5d0a6a5000)\n\tlibXext.so.6 => /lib/x86_64-linux-gnu/libXext.so.6 (0x00007f5d0a690000)\n\tlibXcursor.so.1 => /lib/x86_64-linux-gnu/libXcursor.so.1 (0x00007f5d0a682000)\n\tlibXinerama.so.1 => /lib/x86_64-linux-gnu/libXinerama.so.1 (0x00007f5d0a67d000)\n\tlibXi.so.6 => /lib/x86_64-linux-gnu/libXi.so.6 (0x00007f5d0a669000)\n\tlibXfixes.so.3 => /lib/x86_64-linux-gnu/libXfixes.so.3 (0x00007f5d0a661000)\n\tlibXrandr.so.2 => /lib/x86_64-linux-gnu/libXrandr.so.2 (0x00007f5d0a654000)\n\tlibXss.so.1 => /lib/x86_64-linux-gnu/libXss.so.1 (0x00007f5d0a64f000)\n\tlibXxf86vm.so.1 => /lib/x86_64-linux-gnu/libXxf86vm.so.1 (0x00007f5d0a646000)\n\tlibdrm.so.2 => /lib/x86_64-linux-gnu/libdrm.so.2 (0x00007f5d0a630000)\n\tlibgbm.so.1 => /lib/x86_64-linux-gnu/libgbm.so.1 (0x00007f5d0a61f000)\n\tlibwayland-egl.so.1 => /lib/x86_64-linux-gnu/libwayland-egl.so.1 (0x00007f5d0a61a000)\n\tlibwayland-client.so.0 => /lib/x86_64-linux-gnu/libwayland-client.so.0 (0x00007f5d0a609000)\n\tlibwayland-cursor.so.0 => /lib/x86_64-linux-gnu/libwayland-cursor.so.0 (0x00007f5d0a5ff000)\n\tlibxkbcommon.so.0 => /lib/x86_64-linux-gnu/libxkbcommon.so.0 (0x00007f5d0a5b6000)\n\tlibdecor-0.so.0 => /lib/x86_64-linux-gnu/libdecor-0.so.0 (0x00007f5d0a5ac000)\n\tlibpng16.so.16 => /lib/x86_64-linux-gnu/libpng16.so.16 (0x00007f5d0a571000)\n\tlibjpeg.so.8 => /lib/x86_64-linux-gnu/libjpeg.so.8 (0x00007f5d0a4f0000)\n\tlibtiff.so.5 => /lib/x86_64-linux-gnu/libtiff.so.5 (0x00007f5d0a468000)\n\tlibwebp.so.7 => /lib/x86_64-linux-gnu/libwebp.so.7 (0x00007f5d0a3fb000)\n\tlibfreetype.so.6 => /lib/x86_64-linux-gnu/libfreetype.so.6 (0x00007f5d0a331000)\n\tlibharfbuzz.so.0 => /lib/x86_64-linux-gnu/libharfbuzz.so.0 (0x00007f5d0a262000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f5d0b154000)\n\tlibpulsecommon-15.99.so => /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-15.99.so (0x00007f5d0a1dd000)\n\tlibdbus-1.so.3 => /lib/x86_64-linux-gnu/libdbus-1.so.3 (0x00007f5d0a18f000)\n\tlibxcb.so.1 => /lib/x86_64-linux-gnu/libxcb.so.1 (0x00007f5d0a165000)\n\tlibXrender.so.1 => /lib/x86_64-linux-gnu/libXrender.so.1 (0x00007f5d0a156000)\n\tlibwayland-server.so.0 => /lib/x86_64-linux-gnu/libwayland-server.so.0 (0x00007f5d0a140000)\n\tlibexpat.so.1 => /lib/x86_64-linux-gnu/libexpat.so.1 (0x00007f5d0a10f000)\n\tlibxcb-randr.so.0 => /lib/x86_64-linux-gnu/libxcb-randr.so.0 (0x00007f5d0a0fc000)\n\tlibffi.so.8 => /lib/x86_64-linux-gnu/libffi.so.8 (0x00007f5d0a0ef000)\n\tlibz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007f5d0a0d1000)\n\tlibzstd.so.1 => /lib/x86_64-linux-gnu/libzstd.so.1 (0x00007f5d0a002000)\n\tliblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x00007f5d09fd7000)\n\tlibjbig.so.0 => /lib/x86_64-linux-gnu/libjbig.so.0 (0x00007f5d09fc6000)\n\tlibdeflate.so.0 => /lib/x86_64-linux-gnu/libdeflate.so.0 (0x00007f5d09fa2000)\n\tlibbrotlidec.so.1 => /lib/x86_64-linux-gnu/libbrotlidec.so.1 (0x00007f5d09f94000)\n\tlibglib-2.0.so.0 => /lib/x86_64-linux-gnu/libglib-2.0.so.0 (0x00007f5d09e57000)\n\tlibgraphite2.so.3 => /lib/x86_64-linux-gnu/libgraphite2.so.3 (0x00007f5d09e30000)\n\tlibsndfile.so.1 => /lib/x86_64-linux-gnu/libsndfile.so.1 (0x00007f5d09db1000)\n\tlibX11-xcb.so.1 => /lib/x86_64-linux-gnu/libX11-xcb.so.1 (0x00007f5d09dac000)\n\tlibsystemd.so.0 => /lib/x86_64-linux-gnu/libsystemd.so.0 (0x00007f5d09ce5000)\n\tlibasyncns.so.0 => /lib/x86_64-linux-gnu/libasyncns.so.0 (0x00007f5d09cdd000)\n\tlibapparmor.so.1 => /lib/x86_64-linux-gnu/libapparmor.so.1 (0x00007f5d09cc6000)\n\tlibXau.so.6 => /lib/x86_64-linux-gnu/libXau.so.6 (0x00007f5d09cc0000)\n\tlibXdmcp.so.6 => /lib/x86_64-linux-gnu/libXdmcp.so.6 (0x00007f5d09cb8000)\n\tlibbrotlicommon.so.1 => /lib/x86_64-linux-gnu/libbrotlicommon.so.1 (0x00007f5d09c95000)\n\tlibpcre.so.3 => /lib/x86_64-linux-gnu/libpcre.so.3 (0x00007f5d09c1f000)\n\tlibFLAC.so.8 => /lib/x86_64-linux-gnu/libFLAC.so.8 (0x00007f5d09be1000)\n\tlibvorbis.so.0 => /lib/x86_64-linux-gnu/libvorbis.so.0 (0x00007f5d09bb4000)\n\tlibvorbisenc.so.2 => /lib/x86_64-linux-gnu/libvorbisenc.so.2 (0x00007f5d09b09000)\n\tlibopus.so.0 => /lib/x86_64-linux-gnu/libopus.so.0 (0x00007f5d09aab000)\n\tlibogg.so.0 => /lib/x86_64-linux-gnu/libogg.so.0 (0x00007f5d09aa0000)\n\tliblz4.so.1 => /lib/x86_64-linux-gnu/liblz4.so.1 (0x00007f5d09a80000)\n\tlibcap.so.2 => /lib/x86_64-linux-gnu/libcap.so.2 (0x00007f5d09a73000)\n\tlibgcrypt.so.20 => /lib/x86_64-linux-gnu/libgcrypt.so.20 (0x00007f5d09935000)\n\tlibbsd.so.0 => /lib/x86_64-linux-gnu/libbsd.so.0 (0x00007f5d0991d000)\n\tlibgpg-error.so.0 => /lib/x86_64-linux-gnu/libgpg-error.so.0 (0x00007f5d098f7000)\n\tlibmd.so.0 => /lib/x86_64-linux-gnu/libmd.so.0 (0x00007f5d098ea000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libFLAC.so.8.3.0",
+        "/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.18.2",
+        "/usr/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0.2.3",
+        "/usr/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0.18.0",
+        "/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libX11.so.6.4.0",
+        "/usr/lib/x86_64-linux-gnu/libXau.so.6.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2",
+        "/usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0",
+        "/usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0",
+        "/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0",
+        "/usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0",
+        "/usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0",
+        "/usr/lib/x86_64-linux-gnu/libXss.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libapparmor.so.1.8.2",
+        "/usr/lib/x86_64-linux-gnu/libasound.so.2.0.0",
+        "/usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1",
+        "/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9",
+        "/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.9",
+        "/usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libcap.so.2.44",
+        "/usr/lib/x86_64-linux-gnu/libdbus-1.so.3.19.13",
+        "/usr/lib/x86_64-linux-gnu/libdecor-0.so.0.100.0",
+        "/usr/lib/x86_64-linux-gnu/libdeflate.so.0",
+        "/usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0",
+        "/usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7",
+        "/usr/lib/x86_64-linux-gnu/libffi.so.8.1.0",
+        "/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1",
+        "/usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4",
+        "/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7200.4",
+        "/usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1",
+        "/usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1",
+        "/usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.20704.0",
+        "/usr/lib/x86_64-linux-gnu/libjbig.so.0",
+        "/usr/lib/x86_64-linux-gnu/libjpeg.so.8.2.2",
+        "/usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3",
+        "/usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libmd.so.0.0.5",
+        "/usr/lib/x86_64-linux-gnu/libogg.so.0.8.5",
+        "/usr/lib/x86_64-linux-gnu/libopus.so.0.8.0",
+        "/usr/lib/x86_64-linux-gnu/libpcre.so.3.13.3",
+        "/usr/lib/x86_64-linux-gnu/libpng16.so.16.37.0",
+        "/usr/lib/x86_64-linux-gnu/libpulse.so.0.24.1",
+        "/usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.31",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30",
+        "/usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0",
+        "/usr/lib/x86_64-linux-gnu/libtiff.so.5.7.0",
+        "/usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.9",
+        "/usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.12",
+        "/usr/lib/x86_64-linux-gnu/libwayland-client.so.0.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwayland-server.so.0.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwebp.so.7.1.3",
+        "/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0",
+        "/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0",
+        "/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0",
+        "/usr/lib/x86_64-linux-gnu/libz.so.1.2.11",
+        "/usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8",
+        "/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-15.99.so"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui-ps2log/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui-ps2log/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffda69a7000)\n\tlibSDL2-2.0.so.0 => /lib/x86_64-linux-gnu/libSDL2-2.0.so.0 (0x00007f0530f00000)\n\tlibSDL2_image-2.0.so.0 => /lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0 (0x00007f0530edd000)\n\tlibSDL2_ttf-2.0.so.0 => /lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0 (0x00007f0530eca000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f0530c9e000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f0530bb7000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f0530b95000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f053096c000)\n\tlibasound.so.2 => /lib/x86_64-linux-gnu/libasound.so.2 (0x00007f0530869000)\n\tlibpulse.so.0 => /lib/x86_64-linux-gnu/libpulse.so.0 (0x00007f0530814000)\n\tlibX11.so.6 => /lib/x86_64-linux-gnu/libX11.so.6 (0x00007f05306d4000)\n\tlibXext.so.6 => /lib/x86_64-linux-gnu/libXext.so.6 (0x00007f05306bf000)\n\tlibXcursor.so.1 => /lib/x86_64-linux-gnu/libXcursor.so.1 (0x00007f05306b1000)\n\tlibXinerama.so.1 => /lib/x86_64-linux-gnu/libXinerama.so.1 (0x00007f05306ac000)\n\tlibXi.so.6 => /lib/x86_64-linux-gnu/libXi.so.6 (0x00007f0530698000)\n\tlibXfixes.so.3 => /lib/x86_64-linux-gnu/libXfixes.so.3 (0x00007f0530690000)\n\tlibXrandr.so.2 => /lib/x86_64-linux-gnu/libXrandr.so.2 (0x00007f0530683000)\n\tlibXss.so.1 => /lib/x86_64-linux-gnu/libXss.so.1 (0x00007f053067e000)\n\tlibXxf86vm.so.1 => /lib/x86_64-linux-gnu/libXxf86vm.so.1 (0x00007f0530675000)\n\tlibdrm.so.2 => /lib/x86_64-linux-gnu/libdrm.so.2 (0x00007f053065f000)\n\tlibgbm.so.1 => /lib/x86_64-linux-gnu/libgbm.so.1 (0x00007f053064e000)\n\tlibwayland-egl.so.1 => /lib/x86_64-linux-gnu/libwayland-egl.so.1 (0x00007f0530649000)\n\tlibwayland-client.so.0 => /lib/x86_64-linux-gnu/libwayland-client.so.0 (0x00007f0530638000)\n\tlibwayland-cursor.so.0 => /lib/x86_64-linux-gnu/libwayland-cursor.so.0 (0x00007f053062e000)\n\tlibxkbcommon.so.0 => /lib/x86_64-linux-gnu/libxkbcommon.so.0 (0x00007f05305e5000)\n\tlibdecor-0.so.0 => /lib/x86_64-linux-gnu/libdecor-0.so.0 (0x00007f05305db000)\n\tlibpng16.so.16 => /lib/x86_64-linux-gnu/libpng16.so.16 (0x00007f05305a0000)\n\tlibjpeg.so.8 => /lib/x86_64-linux-gnu/libjpeg.so.8 (0x00007f053051f000)\n\tlibtiff.so.5 => /lib/x86_64-linux-gnu/libtiff.so.5 (0x00007f0530497000)\n\tlibwebp.so.7 => /lib/x86_64-linux-gnu/libwebp.so.7 (0x00007f053042a000)\n\tlibfreetype.so.6 => /lib/x86_64-linux-gnu/libfreetype.so.6 (0x00007f0530360000)\n\tlibharfbuzz.so.0 => /lib/x86_64-linux-gnu/libharfbuzz.so.0 (0x00007f0530291000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f0531183000)\n\tlibpulsecommon-15.99.so => /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-15.99.so (0x00007f053020c000)\n\tlibdbus-1.so.3 => /lib/x86_64-linux-gnu/libdbus-1.so.3 (0x00007f05301be000)\n\tlibxcb.so.1 => /lib/x86_64-linux-gnu/libxcb.so.1 (0x00007f0530194000)\n\tlibXrender.so.1 => /lib/x86_64-linux-gnu/libXrender.so.1 (0x00007f0530185000)\n\tlibwayland-server.so.0 => /lib/x86_64-linux-gnu/libwayland-server.so.0 (0x00007f053016f000)\n\tlibexpat.so.1 => /lib/x86_64-linux-gnu/libexpat.so.1 (0x00007f053013e000)\n\tlibxcb-randr.so.0 => /lib/x86_64-linux-gnu/libxcb-randr.so.0 (0x00007f053012b000)\n\tlibffi.so.8 => /lib/x86_64-linux-gnu/libffi.so.8 (0x00007f053011e000)\n\tlibz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007f0530100000)\n\tlibzstd.so.1 => /lib/x86_64-linux-gnu/libzstd.so.1 (0x00007f0530031000)\n\tliblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x00007f0530006000)\n\tlibjbig.so.0 => /lib/x86_64-linux-gnu/libjbig.so.0 (0x00007f052fff5000)\n\tlibdeflate.so.0 => /lib/x86_64-linux-gnu/libdeflate.so.0 (0x00007f052ffd1000)\n\tlibbrotlidec.so.1 => /lib/x86_64-linux-gnu/libbrotlidec.so.1 (0x00007f052ffc3000)\n\tlibglib-2.0.so.0 => /lib/x86_64-linux-gnu/libglib-2.0.so.0 (0x00007f052fe86000)\n\tlibgraphite2.so.3 => /lib/x86_64-linux-gnu/libgraphite2.so.3 (0x00007f052fe5f000)\n\tlibsndfile.so.1 => /lib/x86_64-linux-gnu/libsndfile.so.1 (0x00007f052fde0000)\n\tlibX11-xcb.so.1 => /lib/x86_64-linux-gnu/libX11-xcb.so.1 (0x00007f052fddb000)\n\tlibsystemd.so.0 => /lib/x86_64-linux-gnu/libsystemd.so.0 (0x00007f052fd14000)\n\tlibasyncns.so.0 => /lib/x86_64-linux-gnu/libasyncns.so.0 (0x00007f052fd0c000)\n\tlibapparmor.so.1 => /lib/x86_64-linux-gnu/libapparmor.so.1 (0x00007f052fcf5000)\n\tlibXau.so.6 => /lib/x86_64-linux-gnu/libXau.so.6 (0x00007f052fcef000)\n\tlibXdmcp.so.6 => /lib/x86_64-linux-gnu/libXdmcp.so.6 (0x00007f052fce7000)\n\tlibbrotlicommon.so.1 => /lib/x86_64-linux-gnu/libbrotlicommon.so.1 (0x00007f052fcc4000)\n\tlibpcre.so.3 => /lib/x86_64-linux-gnu/libpcre.so.3 (0x00007f052fc4e000)\n\tlibFLAC.so.8 => /lib/x86_64-linux-gnu/libFLAC.so.8 (0x00007f052fc10000)\n\tlibvorbis.so.0 => /lib/x86_64-linux-gnu/libvorbis.so.0 (0x00007f052fbe3000)\n\tlibvorbisenc.so.2 => /lib/x86_64-linux-gnu/libvorbisenc.so.2 (0x00007f052fb38000)\n\tlibopus.so.0 => /lib/x86_64-linux-gnu/libopus.so.0 (0x00007f052fada000)\n\tlibogg.so.0 => /lib/x86_64-linux-gnu/libogg.so.0 (0x00007f052facf000)\n\tliblz4.so.1 => /lib/x86_64-linux-gnu/liblz4.so.1 (0x00007f052faaf000)\n\tlibcap.so.2 => /lib/x86_64-linux-gnu/libcap.so.2 (0x00007f052faa2000)\n\tlibgcrypt.so.20 => /lib/x86_64-linux-gnu/libgcrypt.so.20 (0x00007f052f964000)\n\tlibbsd.so.0 => /lib/x86_64-linux-gnu/libbsd.so.0 (0x00007f052f94c000)\n\tlibgpg-error.so.0 => /lib/x86_64-linux-gnu/libgpg-error.so.0 (0x00007f052f926000)\n\tlibmd.so.0 => /lib/x86_64-linux-gnu/libmd.so.0 (0x00007f052f919000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libFLAC.so.8.3.0",
+        "/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.18.2",
+        "/usr/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0.2.3",
+        "/usr/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0.18.0",
+        "/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libX11.so.6.4.0",
+        "/usr/lib/x86_64-linux-gnu/libXau.so.6.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2",
+        "/usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0",
+        "/usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0",
+        "/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0",
+        "/usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0",
+        "/usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0",
+        "/usr/lib/x86_64-linux-gnu/libXss.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libapparmor.so.1.8.2",
+        "/usr/lib/x86_64-linux-gnu/libasound.so.2.0.0",
+        "/usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1",
+        "/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9",
+        "/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.9",
+        "/usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libcap.so.2.44",
+        "/usr/lib/x86_64-linux-gnu/libdbus-1.so.3.19.13",
+        "/usr/lib/x86_64-linux-gnu/libdecor-0.so.0.100.0",
+        "/usr/lib/x86_64-linux-gnu/libdeflate.so.0",
+        "/usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0",
+        "/usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7",
+        "/usr/lib/x86_64-linux-gnu/libffi.so.8.1.0",
+        "/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1",
+        "/usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4",
+        "/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7200.4",
+        "/usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1",
+        "/usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1",
+        "/usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.20704.0",
+        "/usr/lib/x86_64-linux-gnu/libjbig.so.0",
+        "/usr/lib/x86_64-linux-gnu/libjpeg.so.8.2.2",
+        "/usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3",
+        "/usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libmd.so.0.0.5",
+        "/usr/lib/x86_64-linux-gnu/libogg.so.0.8.5",
+        "/usr/lib/x86_64-linux-gnu/libopus.so.0.8.0",
+        "/usr/lib/x86_64-linux-gnu/libpcre.so.3.13.3",
+        "/usr/lib/x86_64-linux-gnu/libpng16.so.16.37.0",
+        "/usr/lib/x86_64-linux-gnu/libpulse.so.0.24.1",
+        "/usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.31",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30",
+        "/usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0",
+        "/usr/lib/x86_64-linux-gnu/libtiff.so.5.7.0",
+        "/usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.9",
+        "/usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.12",
+        "/usr/lib/x86_64-linux-gnu/libwayland-client.so.0.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwayland-server.so.0.20.0",
+        "/usr/lib/x86_64-linux-gnu/libwebp.so.7.1.3",
+        "/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0",
+        "/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0",
+        "/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0",
+        "/usr/lib/x86_64-linux-gnu/libz.so.1.2.11",
+        "/usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8",
+        "/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-15.99.so"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffd18fd3000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f1350d5c000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f1350c75000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f1350c55000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f1350a2c000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f1351477000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink-bad-read/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink-bad-read/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffea5dc1000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007ff90c863000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ff90c77c000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007ff90c75c000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ff90c533000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007ff90cf7e000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C4/mode1/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c4/build/mode1/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffecfd23000)\n\tlibcapstone.so.5 => /home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5 (0x00007f8466d52000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f8466b1e000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f8466a37000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f8466a17000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f84667ee000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f8466dd4000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C4/mode2/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c4/build/mode2/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffdedf8b000)\n\tlibcapstone.so.5 => /home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5 (0x00007f2fc8652000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f2fc841e000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f2fc8337000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f2fc8317000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f2fc80ee000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f2fc86d4000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C4/mode3/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c4/build/mode3/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffd18337000)\n\tlibcapstone.so.5 => /home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5 (0x00007f9105582000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f910534e000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f9105267000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f9105247000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f910501e000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f9105604000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C4/mode4/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c4/build/mode4/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffe1597a000)\n\tlibcapstone.so.5 => /home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5 (0x00007fcaa0001000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fca9fdcd000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fca9fce6000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fca9fcc6000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fca9fa9d000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fcaa0083000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C4/mode4-mutant/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c4/build/mode4-mutant/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffe725dd000)\n\tlibcapstone.so.5 => /home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5 (0x00007fc40fbe5000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fc40f9b1000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fc40f8ca000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fc40f8aa000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fc40f681000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fc40fc67000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C4/mode5/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c4/build/mode5/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffca3bff000)\n\tlibcapstone.so.5 => /home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5 (0x00007f8a5c15f000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f8a5bf2b000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f8a5be44000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f8a5be24000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f8a5bbfb000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f8a5c1e3000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C4/mode6/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c4/build/mode6/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffc1bb94000)\n\tlibcapstone.so.5 => /home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5 (0x00007fdd6c068000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fdd6be34000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fdd6bd4d000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fdd6bd2d000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fdd6bb04000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fdd6c0f0000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/C4/mode6-mutant/sim",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c4/build/mode6-mutant/sim"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007fff4351e000)\n\tlibcapstone.so.5 => /home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5 (0x00007fb4726f2000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fb4724be000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fb4723d7000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fb4723b7000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fb47218e000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fb47277a000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30"
+      ]
+    },
+    {
+      "member": "bin/c5-nemu-ref.so",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007fffaf522000)\n\tlibreadline.so.8 => /lib/x86_64-linux-gnu/libreadline.so.8 (0x00007ffb98984000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ffb9875b000)\n\tlibtinfo.so.6 => /lib/x86_64-linux-gnu/libtinfo.so.6 (0x00007ffb98729000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007ffb989fa000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libreadline.so.8.1",
+        "/usr/lib/x86_64-linux-gnu/libtinfo.so.6.3"
+      ]
+    },
+    {
+      "member": "bin/c4-nemu-ref.so",
+      "command": [
+        "ldd",
+        "/home/USER/c-stage/nemu-ref/build/riscv32-nemu-interpreter-so"
+      ],
+      "exit_code": 0,
+      "static": false,
+      "stdout": "\tlinux-vdso.so.1 (0x00007ffe95d3c000)\n\tlibreadline.so.8 => /lib/x86_64-linux-gnu/libreadline.so.8 (0x00007f9eaa4c1000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f9eaa298000)\n\tlibtinfo.so.6 => /lib/x86_64-linux-gnu/libtinfo.so.6 (0x00007f9eaa266000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f9eb2535000)\n",
+      "stderr": "",
+      "resolved_libraries": [
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "/usr/lib/x86_64-linux-gnu/libreadline.so.8.1",
+        "/usr/lib/x86_64-linux-gnu/libtinfo.so.6.3"
+      ]
+    }
+  ],
+  "system_libraries": [
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+      "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+      "sha256": "41daf7836f7fce21a40ca63a00c5caf21b05a35a76ccc075d86f1716212cdf01"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.18.2",
+      "sha256": "e929edba30ff878b9cde28c48b34aa748d3baa59a1a382504ebcf04e7c0e075c"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libreadline.so.8.1",
+      "sha256": "57419e3b177639246ecf7ffd2eba170bde779b7369d70e68b9b4c5fc3051cbc1"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libasound.so.2.0.0",
+      "sha256": "9b2bd6ae0b44763493961fc287ec6f50808bc79bc6974c2a892401514e190584"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+      "sha256": "3dd5511ae94785c9f921429b0f2b2f7aabb461b6f0e6de6dfdbef15f24bdfee6"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libpulse.so.0.24.1",
+      "sha256": "dc4e62204e11605b8568dede082f0f24d36b4d69b2fbc6cb5d9c10c89d748b7e"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libX11.so.6.4.0",
+      "sha256": "e23ed094eaf0a74a822a6d9d14eee628ab9f7ec08aecbf20ffd803f019ff6e98"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0",
+      "sha256": "d61399986f565c00c090a1f222019db7b40f42eaf2d93834136d6234c16ec465"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2",
+      "sha256": "a66dc7552a800690b9ff1e7e5026b2ec3f0c359603fe0267f82cc4a6f984f5ac"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0",
+      "sha256": "2db9101cec47fe2f00fe27dedf3325ad47e9e8d8f4a552c8ca5f04d6271bd172"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0",
+      "sha256": "dc46e4ed45e94b521486438d902b2c360e50bd162849448b53adc7143fa1cb84"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0",
+      "sha256": "3e03576f262820fe27a8cfbcf4d8a2f3bbb5f1df55290e91643794a8147dffb7"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0",
+      "sha256": "237b8560e61e4c2d244ea21b4d2e0cd9614de26ce284f7258646897940d8e796"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXss.so.1.0.0",
+      "sha256": "2c30b5f8ae4a1a733c70385229fe2143de270f292097a61879f4696abe63545b"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0",
+      "sha256": "1e15b2b5d7dafb15b858cd5bad2d4ed3e3dd040f1bcf695c96b95ff3481e47a6"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0",
+      "sha256": "bab1e283c0fdd19eae10db2522fdc5806f0efee3c175e5e8bb1bc1b478c7e2b1"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0",
+      "sha256": "c0e634db4bc3c8dc6a4a6c83ce52fec78848fd7e2af7b428203048b88933f453"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.20.0",
+      "sha256": "c776f338f3dfbbb7056253dde27e08ff851cd3eb269fb57ea9b04b81f56d6ec3"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libwayland-client.so.0.20.0",
+      "sha256": "30a119138d812d6e1c3280a7c2d5a9f49f13ae07b31cda2beb397da4f68f6d54"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.20.0",
+      "sha256": "1bf8bf6af96711611300c6a9be353af93ee89e208a2431eb6a894222d314c7b2"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0",
+      "sha256": "26773f54626af26f5f26f0279a9748ea2445c1adcfef50a7d572c9b54575bd86"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libdecor-0.so.0.100.0",
+      "sha256": "c2282c5bd979c4b6ddc2d6af2ae8d6fb9f8c1948b0d4e487ebbc80f5ed58a76f"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libtinfo.so.6.3",
+      "sha256": "856b8451914abc2277c3d91c64ba3e72b2e0d519806397afecae92fda1a6b10c"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-15.99.so",
+      "sha256": "34d98da64f951df8bec478523323695a198d7ca7596144f4c48c8f7568f138f5"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libdbus-1.so.3.19.13",
+      "sha256": "a3d53f7215af9860f3466b94cd8fe3e95c253c46df164dea62af9b9def93dcea"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0",
+      "sha256": "aabc489094abd96c876d1c989a2da8a8aa6d28f5a676c4a84dd6d0a0c34aec5d"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0",
+      "sha256": "2415c0b512d332522625bc65bcc5e05dba93c2e3418329ded2855111fb0cf723"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libwayland-server.so.0.20.0",
+      "sha256": "ce73bdce7d0953f4f045a232f5351ba386be24d3a4aa5f00149f346e4d639003"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7",
+      "sha256": "91308a7b13f2d71ae49c7c284d1e5fa12ea017389982f188144e53a766530695"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0",
+      "sha256": "942a242b33c80ab4a5ce6d3db62d12f8856589860fa1986248b046850e58a80e"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libffi.so.8.1.0",
+      "sha256": "247da4d5d34a91cadcdd6282be4c4644fcb8af001334d2b8a82ecda435418cbf"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.31",
+      "sha256": "ca86c8366be4cca11811f5338757439d9cb65db6728b4276083aad211b4fbf7f"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0",
+      "sha256": "d7f9e86161421311a1023c44295a88b4a00b6ecbd20c416fc71895f43e358a0a"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0",
+      "sha256": "40c7e0a11f089d712f0462df20e75e968c734a5813c4546f149c11a2f837d88c"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1",
+      "sha256": "a8c1d3161ac5b18145578742218d8c7c1b6cea692ffffddc3088c955c4199327"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libapparmor.so.1.8.2",
+      "sha256": "38b0a49583fb87e09825e0d8b43c5a18eb7d51684a23a41b23c109d53cbe314b"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXau.so.6.0.0",
+      "sha256": "98343a8324ea62ed75a13c923ed5dea96b7a8ad41aeba9f18126c4cbf7178064"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0",
+      "sha256": "1dc3ff1269a5ede69ef9a8ec2436d73fccbcd10531055b359292e0bde4e29b46"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libFLAC.so.8.3.0",
+      "sha256": "7f350d720a6ae1e0bab2a3f612d1fd49cefe266c1adc9d260da367e8132406e3"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.9",
+      "sha256": "09ea7bba29ecd10714d85d8de184955e04e37112c8528319ccff25a4013bd30a"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.12",
+      "sha256": "888a965f043cd8346d0ba759ba5e84038c2bf779b4457a0cb6ac628b419d6a47"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libopus.so.0.8.0",
+      "sha256": "f63e3597e52b57f8957bafb309e9f4d91108a3987136ace5f386f269a0947e55"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libogg.so.0.8.5",
+      "sha256": "a499308d738035e86cec230c6eb0a19e895f3b197c9399107a63706253e0c737"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5",
+      "sha256": "493cb401ab4aa3bba611ca464d12996afb3b327940d29476f535f999e167439b"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8",
+      "sha256": "5df4f4df42d76270bb6981fabc7c1fdccd8ad28a23d84d67f73203fb3f537667"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3",
+      "sha256": "65f47a3dc2cec5f938379b7b625f0621657bf1254551895d22462c6a204cbad8"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libcap.so.2.44",
+      "sha256": "a87681f705c09fc97f23db4dccc0c9a0fd34cf73698251361d8c6ccbf26efe75"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4",
+      "sha256": "7ff6ae38b83fd19beb283fa784d845d0614a0ee92917dab950846bdb14cce4f3"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5",
+      "sha256": "e4ad21c203d8e8b9b7f49071311339af6b438026e1ad236403e3b379b022f23d"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1",
+      "sha256": "ed682e103b671d628ef11f19f8a5b772b8d2501ba26e4b80c055331a4c4d8dfc"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libmd.so.0.0.5",
+      "sha256": "bb376813876bb214535bbbdac70f2c0c4b00baecb81557dab78a79518248df06"
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+      "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30",
+      "sha256": "ff0825e113603c3866680d5d52216bc6d8eedf3a59f52a0aef67ff01994db128"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "sha256": "fc9d43b2f6c20e53b009238f767c5b949d202389e20de9e202ea684b4ba3729a"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0.2.3",
+      "sha256": "e857da7c76f66c4b4fc30573cd317dcd66cab76e266479653221536a6f93216f"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0.18.0",
+      "sha256": "3c087c81f95e307528bdb14d798d1156275e335c8e724fe934d5c42cb2d91234"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libpng16.so.16.37.0",
+      "sha256": "210ba03c7855715a223465d36767a6a5588fe58f7192997e5f14777e4e045cde"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libjpeg.so.8.2.2",
+      "sha256": "2cfbcf67051b3efd1bf634af7d0b65a47dda98ff61ba793a87415ed554731344"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libtiff.so.5.7.0",
+      "sha256": "48d7f5f1b4218516fde1e8b5e0c6cac618b5de6bfe1625300a49404d287ee14d"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libwebp.so.7.1.3",
+      "sha256": "2cff2529eb932c3b81ef6a344b99a5412c893d3f672a7d28f986a8d08c8b2ccb"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1",
+      "sha256": "ef8908dd08eb7072dd1da355277b069048a86512122592d56b5051796ba62ee2"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.20704.0",
+      "sha256": "da47b2baefbb4e6e6058fec0c4dd0bc9d31703d94150c17c9615288188f4a118"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libz.so.1.2.11",
+      "sha256": "64c206f0146cc58bbddc4f22054436f4ff278f5a554aa3ce6921ddf7e9133370"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libjbig.so.0",
+      "sha256": "32ed19ff3065742c392e018840ed59a0b2a17817adf94ba409708f16d8cf234b"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libdeflate.so.0",
+      "sha256": "dce39e00c986632f7d83199f2e5f2b89d7e11c8f311c6e9f204595f899785fa6"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.9",
+      "sha256": "db9dbda709a46c3ae124433f47c4db71167db8aaba4eafdfd99c8a3a14584463"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7200.4",
+      "sha256": "86acf2c843bcfaf5e8c24ab959737960c797da53b41658dc8ec6f257c786048c"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1",
+      "sha256": "32982b1914a3e825f2b389b2ace8a4a098d53de5acd429fc9dc87e8490ee547c"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9",
+      "sha256": "abf86ae9362dbb413c740a55b194c74adb09a7bd92d8fbd96a293c797a4a6d08"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libpcre.so.3.13.3",
+      "sha256": "baae995e98223eee1afe6c640f21bdbba91b9c170584ce766418b59810d98a93"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+      "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+    }
+  ],
+  "os_release": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+  "observed_linux_memory": {
+    "MemTotal": "6953452 kB",
+    "MemAvailable": "6482668 kB",
+    "SwapTotal": "2097152 kB",
+    "SwapFree": "2097152 kB"
+  },
+  "active_policy": {
+    "source": "/workspace/config/toolchain.lock.json",
+    "revision": "2026-10-29-user-throughput",
+    "heavy_jobs": 1,
+    "compile_jobs": 1,
+    "process_group_limit_mib": 6144,
+    "windows_start_available_mib": 2048,
+    "windows_running_available_mib": 1024,
+    "linux_running_available_mib": 512,
+    "jvm_heap_mib": 4096
+  },
+  "resource_policy_report": "reports/C_memory_policy.json",
+  "parallel_validation_profile": {
+    "max_simulators": 8,
+    "estimated_worker_MiB": 400,
+    "windows_reserve_MiB": 1280,
+    "aggregate_pss_limit_MiB": 6144,
+    "compile_jobs": 4,
+    "admission": "Choose worker count from current Windows/WSL free memory; all batch workers share one measured process group.",
+    "validation": "Each pattern traverses the full address range; no address partitioning; preserve per-instruction reference checks and all negative controls."
+  },
+  "parallel_validation_acceptance": "reports/C5_parallel_sdram_pilot.json",
+  "scope": "Existing accepted tool files, timing libraries and resolved shared libraries of frozen ELF binaries are fingerprinted; per-command snapshots record usage and functional positive/negative controls. Installed OS libraries, portable tool installations and Maven/JDK caches remain external dependencies. ldd inspection and a fingerprint match are not a new clean-machine rebuild, tool-feature test or physical-PPA qualification."
+}

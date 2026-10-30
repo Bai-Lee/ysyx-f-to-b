@@ -1,0 +1,10 @@
+read_liberty -lib /workspace/projects/ysyx_f_to_b/B/models/nangate45/lib/Nangate45_typ.lib
+read_verilog -sv -DSYNTHESIS  -DC5_RESET_PC=32'h30000000 -DB_ICACHE_ENABLE=1 -DB_ICACHE_LINES=4 -DB_ICACHE_WORDS=8 -DB_ICACHE_WAYS=2 -DB_ICACHE_BURST=1 -DB_PIPELINE=1 -DB_FORWARD=1 -DB_PREDICT=2 -DB_FETCH_PIPELINED=1 /workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_alu.sv /workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_core.sv /workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_execute.sv /workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_icache.sv /workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000_pipe.sv /workspace/projects/ysyx_f_to_b/B/soc/rtl/ysyx_00000000.v
+synth -top ysyx_00000000 -flatten
+dfflibmap -liberty /workspace/projects/ysyx_f_to_b/B/models/nangate45/lib/Nangate45_typ.lib
+abc -liberty /workspace/projects/ysyx_f_to_b/B/models/nangate45/lib/Nangate45_typ.lib -constr /workspace/projects/ysyx_f_to_b/B/B3/synthesis/b4-valid-reset-cpu/abc.constr -D 200
+clean -purge
+check -assert
+tee -o /workspace/projects/ysyx_f_to_b/B/B3/synthesis/b4-valid-reset-cpu/stat.json stat -liberty /workspace/projects/ysyx_f_to_b/B/models/nangate45/lib/Nangate45_typ.lib -json
+write_verilog -noattr -noexpr -simple-lhs /workspace/projects/ysyx_f_to_b/B/B3/synthesis/b4-valid-reset-cpu/mapped.v
+write_json /workspace/projects/ysyx_f_to_b/B/B3/synthesis/b4-valid-reset-cpu/mapped.json

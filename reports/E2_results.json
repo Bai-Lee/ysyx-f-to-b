@@ -1,0 +1,606 @@
+{
+  "status": "PASS_ALTERNATIVE",
+  "branch": "official independent linked-list competence alternative",
+  "source": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+  "source_sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff",
+  "native_runs": [
+    {
+      "name": "E2/O0/compile",
+      "timestamp": "2026-10-24T13:58:24.209037+00:00",
+      "command": [
+        "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O0",
+        "-g",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+        "-o",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list_O0.exe"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.25,
+      "timeout_seconds": 60,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E2/O0/execute",
+      "timestamp": "2026-10-24T13:58:24.380629+00:00",
+      "command": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list_O0.exe"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.156,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list_O0.exe",
+          "sha256": "08599a71acff61fa7ce6ced9f183731effa4b4f1131aca300695f2036e6a4892"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list_O0.exe",
+          "sha256": "08599a71acff61fa7ce6ced9f183731effa4b4f1131aca300695f2036e6a4892"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "d74571d8d80cc663d538e57f020d9d46e8be81226d984b64bdc1bd39e53eb524",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E2/O2/compile",
+      "timestamp": "2026-10-24T13:58:24.750682+00:00",
+      "command": [
+        "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-g",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+        "-o",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list_O2.exe"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.359,
+      "timeout_seconds": 60,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E2/O2/execute",
+      "timestamp": "2026-10-24T13:58:24.917752+00:00",
+      "command": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list_O2.exe"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.14,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list_O2.exe",
+          "sha256": "75f5192ac3ff6db760d0ab8df9b099b62c7da6cc3069e5849d8980d02499c03a"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list_O2.exe",
+          "sha256": "75f5192ac3ff6db760d0ab8df9b099b62c7da6cc3069e5849d8980d02499c03a"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "d74571d8d80cc663d538e57f020d9d46e8be81226d984b64bdc1bd39e53eb524",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E2/ffi/compile",
+      "timestamp": "2026-10-24T13:58:25.200975+00:00",
+      "command": [
+        "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-g",
+        "-DLIST_LIBRARY",
+        "-shared",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+        "-o",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list.dll"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.281,
+      "timeout_seconds": 60,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E2/ffi/execute",
+      "timestamp": "2026-10-24T13:58:25.795974+00:00",
+      "command": [
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\.venv\\Scripts\\python.exe",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+        "--ffi",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list.dll"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.594,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+          "sha256": "6645f7ccd843013d9bb3faa91900b2699e99a2938b32e9a0263cb7261114254d"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list.dll",
+          "sha256": "26113e2a43c10eb45584e4aea62050491006557111b5291315ab84bbe1f2c512"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+          "sha256": "6645f7ccd843013d9bb3faa91900b2699e99a2938b32e9a0263cb7261114254d"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\linked_list.dll",
+          "sha256": "26113e2a43c10eb45584e4aea62050491006557111b5291315ab84bbe1f2c512"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "41b3c335ed3bc736351f7726aecc63ab03463df6f0ce70d9cbeff5bd1f17e87c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "controls": [
+    {
+      "name": "broken_reverse_tail",
+      "status": "PASS",
+      "compile": {
+        "name": "E2/faults/broken_reverse_tail/compile",
+        "timestamp": "2026-10-24T13:58:26.067382+00:00",
+        "command": [
+          "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+          "-std=c17",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-Werror",
+          "-O2",
+          "-DLIST_LIBRARY",
+          "-shared",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\broken_reverse_tail.c",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\broken_reverse_tail.dll"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.265,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\broken_reverse_tail.c",
+            "sha256": "78400520d97e22c902a9856c06adcfd095daee05ab6a51e99fbb7d2ca4cbefb4"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\broken_reverse_tail.c",
+            "sha256": "78400520d97e22c902a9856c06adcfd095daee05ab6a51e99fbb7d2ca4cbefb4"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "execute": {
+        "name": "E2/faults/broken_reverse_tail/execute",
+        "timestamp": "2026-10-24T13:58:26.396328+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\.venv\\Scripts\\python.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+          "--ffi",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\broken_reverse_tail.dll"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.313,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\broken_reverse_tail.c",
+            "sha256": "78400520d97e22c902a9856c06adcfd095daee05ab6a51e99fbb7d2ca4cbefb4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+            "sha256": "6645f7ccd843013d9bb3faa91900b2699e99a2938b32e9a0263cb7261114254d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\broken_reverse_tail.dll",
+            "sha256": "28f44e991337693f113babacfd4e42d749de423ec75cfcb896494d481297a74c"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\broken_reverse_tail.c",
+            "sha256": "78400520d97e22c902a9856c06adcfd095daee05ab6a51e99fbb7d2ca4cbefb4"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+            "sha256": "6645f7ccd843013d9bb3faa91900b2699e99a2938b32e9a0263cb7261114254d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\broken_reverse_tail.dll",
+            "sha256": "28f44e991337693f113babacfd4e42d749de423ec75cfcb896494d481297a74c"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e68f4c55ddb74481da832e838abef627f84edb7eaf96b725ade4d8db11ae0845"
+      }
+    },
+    {
+      "name": "descending_sort",
+      "status": "PASS",
+      "compile": {
+        "name": "E2/faults/descending_sort/compile",
+        "timestamp": "2026-10-24T13:58:26.669155+00:00",
+        "command": [
+          "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+          "-std=c17",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-Werror",
+          "-O2",
+          "-DLIST_LIBRARY",
+          "-shared",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\descending_sort.c",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\descending_sort.dll"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.25,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\descending_sort.c",
+            "sha256": "86eb29adc89e6bb20b887d4320981420969931f6b691f9a861e793f6d5bac4fa"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\descending_sort.c",
+            "sha256": "86eb29adc89e6bb20b887d4320981420969931f6b691f9a861e793f6d5bac4fa"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "execute": {
+        "name": "E2/faults/descending_sort/execute",
+        "timestamp": "2026-10-24T13:58:26.988686+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\.venv\\Scripts\\python.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+          "--ffi",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\descending_sort.dll"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.312,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\descending_sort.c",
+            "sha256": "86eb29adc89e6bb20b887d4320981420969931f6b691f9a861e793f6d5bac4fa"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+            "sha256": "6645f7ccd843013d9bb3faa91900b2699e99a2938b32e9a0263cb7261114254d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\descending_sort.dll",
+            "sha256": "afcb5e3f2177a873c747db3cb09629324ef9c50411a9a64e790d7c4681746f5b"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\descending_sort.c",
+            "sha256": "86eb29adc89e6bb20b887d4320981420969931f6b691f9a861e793f6d5bac4fa"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+            "sha256": "6645f7ccd843013d9bb3faa91900b2699e99a2938b32e9a0263cb7261114254d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\descending_sort.dll",
+            "sha256": "afcb5e3f2177a873c747db3cb09629324ef9c50411a9a64e790d7c4681746f5b"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "5ffda1b31f36b68c8a49a6d7f98c44b5be6c07c7d9766dd80f5923491186ad39"
+      }
+    },
+    {
+      "name": "allocation_failure_changes_size",
+      "status": "PASS",
+      "compile": {
+        "name": "E2/faults/allocation_failure_changes_size/compile",
+        "timestamp": "2026-10-24T13:58:27.275736+00:00",
+        "command": [
+          "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+          "-std=c17",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-Werror",
+          "-O2",
+          "-DLIST_LIBRARY",
+          "-shared",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\allocation_failure_changes_size.c",
+          "-o",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\allocation_failure_changes_size.dll"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "status": "PASS",
+        "elapsed_seconds": 0.282,
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\allocation_failure_changes_size.c",
+            "sha256": "6cbf65366b3307714a151fbd245ac3d491ca11f8090b1893b066ba46abb73bb3"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\allocation_failure_changes_size.c",
+            "sha256": "6cbf65366b3307714a151fbd245ac3d491ca11f8090b1893b066ba46abb73bb3"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "execute": {
+        "name": "E2/faults/allocation_failure_changes_size/execute",
+        "timestamp": "2026-10-24T13:58:27.635758+00:00",
+        "command": [
+          "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\.venv\\Scripts\\python.exe",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+          "--ffi",
+          "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\allocation_failure_changes_size.dll"
+        ],
+        "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "status": "PASS",
+        "elapsed_seconds": 0.344,
+        "timeout_seconds": 30,
+        "inputs": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\allocation_failure_changes_size.c",
+            "sha256": "6cbf65366b3307714a151fbd245ac3d491ca11f8090b1893b066ba46abb73bb3"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+            "sha256": "6645f7ccd843013d9bb3faa91900b2699e99a2938b32e9a0263cb7261114254d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\allocation_failure_changes_size.dll",
+            "sha256": "12d189680b48b628c6679b379886a542fbdc121c59786f6a4b07def68dff4137"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+            "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\allocation_failure_changes_size.c",
+            "sha256": "6cbf65366b3307714a151fbd245ac3d491ca11f8090b1893b066ba46abb73bb3"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\scripts\\verify_E2.py",
+            "sha256": "6645f7ccd843013d9bb3faa91900b2699e99a2938b32e9a0263cb7261114254d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E2\\allocation_failure_changes_size.dll",
+            "sha256": "12d189680b48b628c6679b379886a542fbdc121c59786f6a4b07def68dff4137"
+          }
+        ],
+        "inputs_unchanged": true,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "9f533387fc5c1845dec9b520bf67453c0778b2e1f882b80a8644b35c6a724861"
+      }
+    }
+  ],
+  "official_exercise_count_completed": 0,
+  "individual_CEX_rows_not_marked_pass": true,
+  "compiler": {
+    "path": "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+    "sha256": "b6aa727e46c8c7d494ed2e712fe40cb51e2360cc9ca0706979d698f1aabeb387",
+    "version": "gcc.exe (Rev13, Built by MSYS2 project) 15.2.0"
+  },
+  "platform": "Windows-11-10.0.22621-SP0",
+  "online": [
+    {
+      "name": "normal",
+      "status": "PASS",
+      "url": "https://godbolt.org/api/compiler/cg151/compile",
+      "compiler": "cg151",
+      "compiler_arguments": "-std=c17 -O1 -g -Wall -Wextra -Werror",
+      "http_status": 200,
+      "didExecute": true,
+      "exit_code": 0,
+      "stdout": "PASS E2 linked_list selftest operations=20000 live_nodes=0",
+      "stderr": "",
+      "request": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E2\\compiler_explorer\\normal_request.json",
+      "request_sha256": "8aaf52476f1844c469ced193e83cc7d9971d6acba1387b92a62babc9645debe9",
+      "response": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E2\\compiler_explorer\\normal_response.json",
+      "response_sha256": "4b956c5ff3e236b562f3c75285279fd6a8f88ff76cf65285d8d752df65d612d6"
+    },
+    {
+      "name": "asan_ubsan",
+      "status": "PASS",
+      "url": "https://godbolt.org/api/compiler/cg151/compile",
+      "compiler": "cg151",
+      "compiler_arguments": "-std=c17 -O1 -g -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer",
+      "http_status": 200,
+      "didExecute": true,
+      "exit_code": 0,
+      "stdout": "PASS E2 linked_list selftest operations=20000 live_nodes=0",
+      "stderr": "",
+      "request": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E2\\compiler_explorer\\asan_ubsan_request.json",
+      "request_sha256": "5c8c5a6708b6c30e07c7dd32da4e776be27518e28caec1906a4975c6fe94c843",
+      "response": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\E2\\compiler_explorer\\asan_ubsan_response.json",
+      "response_sha256": "d31f70ef6b625c65cb93ec726016de6f451fd31945fb5d1d9cfdc401673c2f74"
+    }
+  ],
+  "online_evidence_reused": true
+}

@@ -1,0 +1,297 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "stage": "C",
+  "timestamp": "2026-10-29T13:06:17.064477+00:00",
+  "core_tasks": 68,
+  "adapted_tasks": 2,
+  "scope_records": 101,
+  "nested_PA2_required": 17,
+  "stop_after": "C",
+  "verification": {
+    "status": "PASS",
+    "verification_kind": "read-only retained evidence, not simulation rerun",
+    "scope": {
+      "core_required": 68,
+      "adapted_required": 2,
+      "records_present": 101,
+      "records_required": 101,
+      "missing": [],
+      "statuses": {
+        "PASS_BACKGROUND_REVIEW": 2,
+        "PASS": 79,
+        "REFERENCE_ONLY": 17,
+        "PASS_EVALUATION_WITH_DECLARED_LIMITS": 2,
+        "OPTIONAL_NOT_IMPLEMENTED": 1
+      },
+      "stage_audits": {
+        "C1": {
+          "path": "reports/C1_AUDIT.json",
+          "sha256": "be4b46b1edc3afc84d29f0c2a549ddbc4555b63654e601b2a53ae35ac4ec44cf"
+        },
+        "C2": {
+          "path": "reports/C2_AUDIT.json",
+          "sha256": "94eb15f0030465a3adb6f1be7179a72b85b9300e85b17d947f0cfa6dc723cea0"
+        },
+        "C3": {
+          "path": "reports/C3_AUDIT.json",
+          "sha256": "0c18cfc5503386f4c99fa46218161a624a30b3c2b4283190e2d75284bb14cfc7"
+        },
+        "C4": {
+          "path": "reports/C4_AUDIT.json",
+          "sha256": "777abb4a57717712ad8f1cb5380a46877ad09fa990b91233977b8d625f199296"
+        },
+        "C5": {
+          "path": "reports/C5_AUDIT.json",
+          "sha256": "1c3bf60ce26c63fa51457e3a90cdd69d55b0f096630a7ce0807aa7b3bd18b286"
+        }
+      },
+      "source_copies": 8
+    },
+    "C5": {
+      "status": "PASS",
+      "pending": [],
+      "checks": {
+        "axi_interface": "ad27a111bcd146efa5c194cb62b96bfe29898a089bc8dbcef6fad463dfa08051",
+        "bitrev_unit": "79435e0b797e0f0b7f4ac840983cdc346ddc10d97b1f0acb274be5f76a82022f",
+        "boot": "ba352b248d610754f8ffe5cdf905b242c882b883cb79153890a60bc31bf8723a",
+        "context": "14ea9254fa4a73858f1bce177e54fbafbf13c95d79cfb52bc49703db2ca56b73",
+        "cpu_tests": "1ddd1205937b381183a47375c42ccdb2f74b4e4b1b8113c8953767b0783056fe",
+        "csr": "0b75d069e4bcaaa38332ba7a2c983156ac4c5b42ba783a609d088f0bdaae9768",
+        "cycle_profile": "7e4e7bc392a4301f8b25eb0268e24959aa66c9b37690e04b17e5336a8d6e8436",
+        "diff": "bc080c488aa2c8172843dd14b6c39702bea4edd420ab6a2f123c3a4c3b714cec",
+        "final_cpu": "e7990352f741f8102c956fe69aed568757ebda9ea7604b669315013fcc1f4e0e",
+        "flash_boot": "8647c445e972e9c47c8996da37f8b20f8edcf9733d5a6528299e5f1f481f90cc",
+        "generation": "dd4197dede451ff015bf2ef9147a0edb1f8413597a0aa8e4f2431a99e02ef095",
+        "gpu_driver": "8aa010bbd3c7382696b01161f5b7a5361ccb2f6294ac6ff471d8f9dcb711b470",
+        "io_units": "6153d1801216e0f7d76fa2c1a1bbbc2ec4f8e272445f700d041b1fbf929df445",
+        "loader": "1d183b01f01fc971b65cf3e86d194100184e00fb4fc2199218920526ad95e278",
+        "lshr": "9c6c2c2bdda7e143e766d40b60d9713798b9ddc4705b71d39cb1c5038d2dde85",
+        "psram_apps": "7a5d2f2ded088f3afea88540ca19f2a2f2be73f56484b3335b946023834ae6a1",
+        "psram_controller": "848d35d41ae9c9a1733666a08860af52ad2d8ca00ae9fdd32569a4a15f836b49",
+        "psram_model": "3f727623e0b195f51135816f9e966d7ecf9362092f57c90a6e7378a80f04e814",
+        "psram_small": "5edbd7c15192274b202b0b69a222ed322d6c3893526122d77f01181b080efd90",
+        "psram_sweep": "b0cdd825228fd63c10c76ce832e12de0b5369ced595f5c1485224f58e4431d68",
+        "ram": "f2eae931093d0f9b526309bd02deae9d2394508652d3234ab79147ac43b72507",
+        "reference_build": "35792ff3c0c8daa86cc8f188b5fdfdf501eb1bd1f48b964d08d01d352d401dfe",
+        "rtthread": "2d2fcd6537dccba62f5cdd673f5f15841067a39e26fe53ba76272124d5ec37ad",
+        "rtthread_sdram32": "b3e4f24f27f4b42608fc53b112ae46ca8fd292bca8e080f763167e38647af320",
+        "scons_controls": "735950215f2caafd81deb8356e48622167f6d4720f663d5aaa8339761d13bb13",
+        "sdram_apps": "f92a49664910553df492f8c6f64859098b14822862d718d1ec7700872a357c54",
+        "sdram_boundaries": "599cfcb53b662c60781ae1ae1630dc3e5242891301e70aab51a80dd71d4fc0df",
+        "sdram_controller": "4f00633a78fae95f4fe08aebcf425816b29552b5644f08c70e9705dba5d321e6",
+        "sdram_model": "1587782e908b5df71115ffe2b84c74d3590eca5c8a8f58395477631a66eff2d5",
+        "sdram_sweep": "bff111e8bba63f1467e92a25a3651db0c85ad24e8bfa9c8c4d5b25f5e902e8d3",
+        "sdram_bus_coverage": "e15ed426136c1c418fe0ac9c190ab84513a679367a1e874090a75bc4bfcfc5c3",
+        "source_lock": "232fdd1894732368f4d7d27edb91c6ee778afc017a6a6d658e4a84ee3bc8d1fd",
+        "spi": "b8a4be7ab865c738db7051e19626a0c3a996d4de4205473b54ef6e0c223bd499",
+        "spi_shared": "ed8c484f0fab1663f8e8f84f059e1e043110b941a8572afd3b9f80e36de6646d",
+        "uart": "334c3b86f40614377912b3b268b12d0c835314215a32d620f3ea2b3ada009959",
+        "vga_prerequisite": "10a989fa3575dda122d5a2a94d3ff9027e36b40828bdfa0eb2b0419b23978b31",
+        "xip": "9512697c2435e0d2e751fceb727b226b4140ff92522867934c09bedb69bee2b9",
+        "chiplink": "97271d30123121a530dd2fac2838e4618d9be731018090ef4ee3a56cbbf665ce",
+        "gui_input_control": "6c3c9d7f23a8157502799d95e6a100484076d34137ab916fd617de10157cb99c"
+      },
+      "parallel_full_capacity": {
+        "status": "PASS_FULL_CAPACITY_PARALLEL_PATTERNS",
+        "bytes_per_pattern": 134217728,
+        "independent_resets": 8,
+        "worker_slots": 8,
+        "actual_workers": 4,
+        "elapsed_seconds": 4108.722973180001,
+        "peak_group_pss_bytes": 1424036864,
+        "resumed_phases": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "total_cycles": 16997356624,
+        "total_instructions": 2936031274,
+        "executable_sha256": "c90d2cd5886f553023b90c04c2f9403e6e1cd4e55580d18ce342efaa61f41085",
+        "reference_sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab",
+        "assembly_sha256": "39e77b0201f8a5197cbfc709898084d2222eb6c78f31b39e63436075b782759a",
+        "pattern_driver_sha256": "a0ba5581d4c450f5948fb8fa9ecd6146a02987eab6693c0fdec2b440ef67cbcd",
+        "summary": "artifacts/C5/parallel-sdram/full128/summary.json",
+        "summary_sha256": "8b8f2a88033352c0cc1459d3dca9b3b56873ab8efe6d8e99b35a7f9bda627500",
+        "resources_sha256": "05013d46ff45a043dd763e8e03295b5dbce8260ade87f50107182b09b86a4262",
+        "driver_sha256": "867199113bd81c336cf4f986903d7a2b19887fc260a3a1dff43215373bfc30ce",
+        "worker_status_sha256": "b5d41382fd1e07841850934bf0366955a0f8642177c7583682523680b0ca3ef8",
+        "pilot_sha256": "97bf7e2d9b15ae9e14b03dc34fbe6a24ae6309aab1c21d2dceb0c181746097db",
+        "scope": "Eight independent reset runs, each covering the entire specified address range. Exact accepted assembly bodies, full non-MMIO NEMU checking, original widths/address/inverse patterns. No partitioning of addresses between models. Not a claim of one uninterrupted eight-pattern controller-state sequence."
+      },
+      "build_index_sha256": "410c5f2fbc092fae72731363cd2ddc605e484d538d6c34585ad912adbdaae1c5",
+      "gui": {
+        "gpio": {
+          "path": "reports\\C5_gui_gpio.json",
+          "sha256": "c1015a3a8ef6f147955c1ed126a961798acafe2b82dada2cd695a7fc9212ae87",
+          "result": "GUI_OBSERVATION_STOP",
+          "simulation_sha256": "4708cc84175b5f29ad154ef874ae95638d05630dacad8e33b6940490cb85aa86"
+        },
+        "keyboard": {
+          "path": "reports\\C5_gui_keyboard.json",
+          "sha256": "dc1fc8164de92826f8cf382118fca1fbcacdd7bea659b43106de5ba62466744a",
+          "result": "GUI_OBSERVATION_STOP",
+          "simulation_sha256": "2d49a6105660c1a8e3f8538aab23c60b9335ccb2f0508797a64df271d69e1e29"
+        },
+        "video": {
+          "path": "reports\\C5_gui_video.json",
+          "sha256": "2f1c4a18deb68fcbb24a35b91c4b6b1eb550bf1c352fdaafb06baac999f74c00",
+          "result": "GUI_OBSERVATION_STOP",
+          "simulation_sha256": "c0fb96680d5d20d9b4b9eed0e925d797f54157f506642a4340151f401d4e35d8"
+        },
+        "typing": {
+          "path": "reports\\C5_gui_typing.json",
+          "sha256": "e80f412710f3bc029df28e67272b9883eb30fba18c5b8ec9b1d725f999876fa9",
+          "result": "GOOD_TRAP",
+          "simulation_sha256": "ed3658255c791b6e5c83e25c1f97881810cab04d3558358adb3dee85d01fed52"
+        },
+        "fceux": {
+          "path": "reports\\C5_gui_fceux.json",
+          "sha256": "cd772fb648d8922f1d40e71615e3481356d13e2baaab9d4bbbb6c881c3256ed1",
+          "result": "GOOD_TRAP",
+          "simulation_sha256": "40c1c7f358402b1fc99cafdb5ec113c4f678e199fc25a4ab5aa87fece7b35767"
+        },
+        "rtthread": {
+          "path": "reports\\C5_gui_rtthread.json",
+          "sha256": "c65da85ef81e711d5531d82a6c38e90badda02558c1822fc346ced74bc3e52c5",
+          "result": "GOOD_TRAP",
+          "simulation_sha256": "363ef3ef92fb573a2aad7e7e28f3f91a7b36c7bfccf33acf2c747ac3241ad6f1"
+        },
+        "rtbench": {
+          "path": "reports\\C5_gui_rtbench.json",
+          "sha256": "23a69a532ee9f814064262f6d4f44b5748cf32f0299567eba4b51165839595b7",
+          "result": "GOOD_TRAP",
+          "simulation_sha256": "593cb58ce8a7baad56cf975cfc4c93a61c38034dc078142c4e5cef4022ca8d63"
+        },
+        "rtguard": {
+          "path": "reports\\C5_gui_rtguard.json",
+          "sha256": "ea902bca864dfae7e9f90ce71ba0c2e528564ac813c448069d8ac561900e9ddf",
+          "result": "BAD_TRAP",
+          "simulation_sha256": "3d4e0555cb07b625a5c9dca724a567cd0559cb9d445084e1abfb74d096e8087f"
+        }
+      },
+      "verified_full_psram_bytes": 4194304,
+      "verified_sdram_capacities": [
+        33554432,
+        134217728
+      ],
+      "checker_controls": {
+        "valid_archive_accepted": true,
+        "corrupt_digest_rejected": true,
+        "traversal_name_rejected": true,
+        "small_pilot_not_accepted_as_full_memory": true,
+        "C_zip_valid_accepted": true,
+        "C_zip_bad_digest_rejected": true,
+        "C_zip_unexpected_member_rejected": true,
+        "C_zip_unsafe_path_rejected": true
+      }
+    },
+    "commands": {
+      "counts": {
+        "current:PASS": 1426,
+        "history:PASS": 356,
+        "helper:FAIL": 1,
+        "helper:STOPPED_BY_REQUEST": 1,
+        "history:FAIL": 37,
+        "current:TIMEOUT": 1,
+        "current:RESOURCE_LIMIT": 1,
+        "current:FAIL": 2
+      },
+      "expected_nonzero_controls": 99,
+      "snapshot_archives_verified": 2418,
+      "deep_snapshot_check": true,
+      "declared_nonaccepted_diagnostics": [
+        {
+          "path": "artifacts/C4/rtl_unit/fabric/run/run.json",
+          "status": "TIMEOUT",
+          "exit_code": null,
+          "resolution": "Original Icarus zero-time scheduling stall. Retained as unresolved for that tool configuration; timed Verilator fabric tests and four rejecting mutants are separately accepted in C4_fabric."
+        },
+        {
+          "path": "artifacts/C4/synthesis/single/run.json",
+          "status": "RESOURCE_LIMIT",
+          "exit_code": 125,
+          "resolution": "Historical integrated ECC single-cycle STA reached its then-active PSS budget. Independent mapped OpenSTA and Nangate45 structural/timing assessments are accepted separately; max-transition failures remain unqualified."
+        },
+        {
+          "path": "artifacts/C5/rtthread/origin-commit/run.json",
+          "status": "FAIL",
+          "exit_code": 128,
+          "resolution": "Read-only Linux Git ownership check failed. No global trust setting changed; the detached archive HEAD and copied source provenance are recorded in C5_rtthread_setup."
+        },
+        {
+          "path": "artifacts/C5/sdram-sweep/sdram32x2-134217728-asm/run/run.json",
+          "status": "FAIL",
+          "exit_code": 143,
+          "resolution": "Serial full128 attempt intentionally stopped after user-authorized parallel strategy passed functional, throughput and aggregate-resource controls. Partial serial results are not accepted; final full128 evidence comes from eight independently reset, full-address-range patterns."
+        }
+      ],
+      "native_helper_sessions": [
+        {
+          "path": "artifacts/C/host-memory-monitor/20261029T103219611/started.json",
+          "status": "FAIL",
+          "error": "PermissionError(13, '拒绝访问。')"
+        },
+        {
+          "path": "artifacts/C/host-memory-monitor/20261029T111259621/started.json",
+          "status": "STOPPED_BY_REQUEST",
+          "error": null
+        }
+      ],
+      "unfinished_commands": [],
+      "scope": "Current command stdout/stderr and snapshot byte integrity. Native sampler terminal records are explicitly bound, including the retained failed predecessor. Historical attempt states are counted, not promoted to passes; all retained history bytes are also covered by the final delivery manifest."
+    },
+    "frozen": {
+      "checks": {
+        "C_runtime_export": "03bd01418d011277101c23fc4d4c03398fae159ffa8ccf2b41d460db0faef738",
+        "C_offline_sources": "197b16fcd1887def787159c99ce6b960f575bb245e6aba6a567a4721dc4e5bb3",
+        "C_offline_replay": "a5273f32e9b574fdf205a295293fb88e86761e5929aec6d71829d4c999e4ff45",
+        "C_final_bindings": "627be17a75e5fe952dcf7ae269d2a8b642c35c6c3aa6f9fdfb491e83ddb644c6",
+        "C_toolchain_final": "952506852aa8696e6a61df6314ad1cdb1f6a04073f7ecaafd17edb74f07e240f",
+        "C_history_preservation": "d48c4a2875dfbe8af4571183ae4fd7c249eb44c8684bba57b681261a3b46b849",
+        "C_background_execution": "9c3db77e7f82f02f68a16c5b8ee1dd944f31f0c73bdcc345322e4606205a35fc",
+        "C_performance_policy": "e1a668eece42c1bb46c170aecc1a160c45c1764fdb3023094efac9cccf98410f",
+        "C_parallel_resource_controls": "26fa99483785d2615687be34ce5a83ac8fea0bd773dff51574dd024ccfea7f2a",
+        "C_serial_superseded": "6001784f1534419c648d32f0d354c1cfea14757518c8566bc1a9d309199b574e",
+        "C_host_memory_controls": "95f927e44d96cf4e23ce1343a717e9675d162a1af94d6122ecc4ae429a41127c",
+        "C_host_memory_io_controls": "e78cad3dd9642a9ddead4cc91f90563f576b0018fefb3212cb3e959a0dcf7e98",
+        "C_host_memory_monitor": "73e85b150f83da2b9402cb814cd29a058f2b61e21b6b49dcff72c1be986ad816",
+        "C6_AUDIT": "2ab20a9051ebf226253f0e22ae528418fcfe484448f5975d87d4476022cfb858"
+      },
+      "runtime_members": 10894,
+      "C2_snapshot_members": 233,
+      "preserved_history_files": 31216,
+      "offline_source_archives": 11,
+      "offline_replay_cases": 4
+    },
+    "media": {
+      "verified_files": 56,
+      "scope": "Hashes declared by accepted image/audio records; prior visual observations remain in their original reports. This check does not perform a new visual or listening review."
+    },
+    "markdown": {
+      "documents": 13,
+      "resolved_links": 493,
+      "external_reference_paths": [
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\evelta.com\\content\\datasheets\\153-W25Q128JVSIQ.pdf",
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\www.open-std.org\\jtc1\\sc22\\wg14\\www\\docs\\n1570.pdf",
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\slides\\markdown\\2306\\1dbf54f914088a36.md",
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\slides\\markdown\\2306\\580e82b43f0b9820.md",
+        "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\specifications\\IHI0022H_amba_axi_protocol_spec.pdf"
+      ],
+      "scope": "File-target resolution; not a full Markdown/math rendering test."
+    }
+  },
+  "declared_limits": [
+    "C1/C3 are bounded authored background experiments, not a claim to have watched all videos or replayed all slide examples.",
+    "C2 optional NEMU audio is not implemented. Some earliest failed GUI attempt captures were not retained; outer failure records/inputs remain and later archival protection was fixed.",
+    "C4 Nangate45 maximum-transition violations remain; no qualified Fmax or whole-chip PPA claim. The evaluation task is complete with failures reported.",
+    "C5 finite RTL/functional memory models and cooperative machine-mode RT-Thread; no unbounded proof, full privileged ISA, asynchronous IRQ, physical display/electrical retention or new chip signoff.",
+    "Full128MiB acceptance uses eight independently reset full-range patterns under the user-authorized parallel memory strategy; not one uninterrupted eight-pattern controller-state sequence. All address/width/payload and reference checks remain required.",
+    "C5 MMIO is independently checked and then synchronized to NEMU; it is not two independently simulated device implementations.",
+    "ChipLink actual RTL model capacity is1GiB; tested range is4KiB. SPI interrupt-completion variant remains optional and unimplemented.",
+    "C6 source is under construction. No B work, personal submission, account application or tapeout completion claim.",
+    "Frozen binary replay uses the installed Linux environment. Full original course archive and installed tools/Maven/JDK/system libraries remain locked external dependencies."
+  ],
+  "delivery": "YSYX_C_DELIVERY.zip; package_C.py verifies CRC and every member SHA-256 after this audit."
+}

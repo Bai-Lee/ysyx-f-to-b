@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/.gitignore",
+      "sha256": "3eac188d30e6aa6f440949339bbf4ba613991c24e5eac945de639ce90bf71da1",
+      "prior_frozen_member": "c5/workbench/cpu-tests/.gitignore"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/Makefile",
+      "sha256": "7e8d9ecf9fcedc1c6444a9cb4dcbfafb8c13e58f18904d1bd75f101898decbfd",
+      "prior_frozen_member": "c5/workbench/cpu-tests/Makefile"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/include/trap.h",
+      "sha256": "46e5e9b3db8b904aeeea47c25d21434650950579c8e014e7981a08b3b65084ed",
+      "prior_frozen_member": "c5/workbench/cpu-tests/include/trap.h"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/add-longlong.c",
+      "sha256": "b020e7ac3f1b7399116916b39c6bfbf7e3bb0357e5f67f4a0054607c3b9c65ce",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/add-longlong.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/add.c",
+      "sha256": "15ab745eb7e9dfb836ad94762227c49269595827891612856ba5f1aa5fc95bed",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/add.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/bit.c",
+      "sha256": "e9217eef30b8acc713533567371cf31952891763016507102d6c5d85af0d54d3",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/bit.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/bubble-sort.c",
+      "sha256": "70968b92c3679b6ff972cbf2cbdba67b2ae7af4bc4f6f80cd95afe60fed6c19d",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/bubble-sort.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/crc32.c",
+      "sha256": "0983bd926015d3d1f1bc79e1e7453874195a8ae4087a6ce4a3cd38df816859ea",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/crc32.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/div.c",
+      "sha256": "e0e2d3a6da9917f53dcd792b83749a3d0686cc3441e91b42d5b89feeed5ad4e2",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/div.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/dummy.c",
+      "sha256": "8bd20ac94646806aec6dadb9325218718d1ba8abc039da6abc9aa8159658671d",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/dummy.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/fact.c",
+      "sha256": "5bc074a3bb8b805b17c8fa47b6b696abc2ff151b82705b9880bcd78d76674339",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/fact.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/fib.c",
+      "sha256": "6d9ca6610dda73b9bbe82973c164e1ad2eb59d2d2862f7919175324895d9655d",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/fib.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/goldbach.c",
+      "sha256": "9ca742d5856ef23546f5f352289493e95d8c48be5c173d33e2a9c302abfd9bf8",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/goldbach.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/hello-str.c",
+      "sha256": "eec91812e72cb14512c06769a57cb2dd6d0d90d95f40b49e82fdcfa9cd77cfc0",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/hello-str.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/if-else.c",
+      "sha256": "3b9d0a0a8865e5e3d694383f30ba0c1a6b0c21c988652bf00bd08e39306301b9",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/if-else.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/leap-year.c",
+      "sha256": "14a0523a564b4b3673e44a7a9c9d0dfe4d7cd0bad478b2267299288273238061",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/leap-year.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/load-store.c",
+      "sha256": "12889c9d4fe817a0fedd640d98a74eb1d96911061f2a949ff0d4dcba9f963c3a",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/load-store.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/matrix-mul.c",
+      "sha256": "706071f51f3dfa11e396ac96d0e76c36dd8c55f0b356282110c34081312afc37",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/matrix-mul.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/max.c",
+      "sha256": "71c35eaba19e2e35d6d22bd0bda6da22eb7dc54dce93da950a1e282607766ba4",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/max.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/mersenne.c",
+      "sha256": "31159f5dcc958eee0e74edb1e37d31866e48773b69d4d47bb37615c215c7802d",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/mersenne.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/min3.c",
+      "sha256": "95065eaad973d02d9f3f6af3e6d889aa8b8a0ca881d2a49c36c256383c3e6971",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/min3.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/mov-c.c",
+      "sha256": "71adc5886e77677e3bb39b05d026f2d4cd8911c355c2d18ec299216efdefedd2",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/mov-c.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/movsx.c",
+      "sha256": "fc460eefbde61488303cb57e5a54b1e34c75c3f5051e610146cbe1b5e4f9b04f",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/movsx.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/mul-longlong.c",
+      "sha256": "a1364ade0362cbde9dc696fe84d9fee9c60ed93d569a351ae0b1cea489c9f105",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/mul-longlong.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/narcissistic.c",
+      "sha256": "04c629312d5d290dad1c1ab085a7ac5c18049eed75844234ce3ea00d4fdd5cb7",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/narcissistic.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/pascal.c",
+      "sha256": "83a94223659c18fb87a9fe4e7f1224964cfd490e7c641442024c0e4e1d25e791",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/pascal.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/prime.c",
+      "sha256": "51c238106750c0f9323e5690de844f3360ea8b4c46391784fb4ef56da2904e0c",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/prime.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/quick-sort.c",
+      "sha256": "306abc33d4296134b0bd0df1ffca5454385cc827db9df4f1d166a1545174522d",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/quick-sort.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/recursion.c",
+      "sha256": "0a0d88b9fb126ad0a1e12ee40c0504d215dcaf783e348b4ae1fc77a1edd0a81c",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/recursion.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/select-sort.c",
+      "sha256": "097ddc20ece9f883c6c42fdabe8d5c640dc892e7c33ed1749ce59075a32d348c",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/select-sort.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/shift.c",
+      "sha256": "5a49fced5f683eb8cac9336e2217cc7110991a5ba057ea876c58f4ff1379cee8",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/shift.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/string.c",
+      "sha256": "f5883be91d6d47a9d17a8383c7f79d04282ff67bf94e546ef24aeeb27b90b0ca",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/string.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/sub-longlong.c",
+      "sha256": "8b19b65de5348504a2036881737de89a928e36e8bfc5ea884b38b5aed9b5a94e",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/sub-longlong.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/sum.c",
+      "sha256": "251ce88b50c08aacf2f5c7aadf165d9e9e7819800755947e675681aa2a2e0e5c",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/sum.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/switch.c",
+      "sha256": "ed3914f851a51e7012c588bc1bcf20572b61605121e9687645ac589d22e61eae",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/switch.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/to-lower-case.c",
+      "sha256": "7ed53af9ca2ad4a60fdb61d8ca21fca40e8f975174002df3779b2d515cb07bdb",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/to-lower-case.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/unalign.c",
+      "sha256": "5d79b666b68ca576934e2b8aff9e2a2b7ee5159a225d4f23b2827042849e39c7",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/unalign.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/wanshu.c",
+      "sha256": "af374c7cf9fced451fad678832a7a04efd341cf921e93917fc58d60d5dcf9286",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/wanshu.c"
+    },
+    {
+      "target": "/home/USER/b-stage/soc/workbench/cpu-tests/tests/wrong.c",
+      "sha256": "48de9f93e04d0ec94140ee91c3519f7ee1534038c3d43e083284093efbf379d0",
+      "prior_frozen_member": "c5/workbench/cpu-tests/tests/wrong.c"
+    }
+  ],
+  "prior_runtime_sha256": "21de1aa68b460ae54701f88dc56b2720d7cb35ce66c440cd914bebe173c4b741",
+  "suite_sha256": "7e5eb7d814fdfff16a3886892a6983873d3a2e40dbcdb53a07926f9269402496",
+  "scope": "All36 original C fixtures plus Makefile, trap.h and gitignore were hashed when copied before the test loop, and rechecked after execution against the frozen C runtime. Assertions/header and original wrong.c remain unchanged; this is provenance validation, not a duplicate simulation run."
+}

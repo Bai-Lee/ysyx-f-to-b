@@ -1,0 +1,1093 @@
+{
+  "status": "PASS_COMPLETED_SWEEPS",
+  "runs": [
+    {
+      "width": 16,
+      "ranks": 1,
+      "bytes": 4096,
+      "corrupt": false,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 1216563,
+      "instructions": 166441,
+      "wall_seconds": 1.16294,
+      "diff_checked": 166323,
+      "device_sync_checked": 118,
+      "coverage": {
+        "base": 2684354560,
+        "size": 4096,
+        "unique_read_bytes": 4096,
+        "unique_written_bytes": 4096,
+        "read_ops_by_width": [
+          8192,
+          4096,
+          4096
+        ],
+        "write_ops_by_width": [
+          8192,
+          4096,
+          4096
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 65536,
+          "write_bytes": 32768,
+          "maximum_byte_address": 25166847
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "putch": 251659568,
+        "halt": 251659592,
+        "_trm_init": 251659624,
+        "__rodata_start": 251659696,
+        "__text_end": 251659696,
+        "mainargs": 251659696,
+        "__am_apps_bss_end": 251659760,
+        "__am_apps_bss_start": 251659760,
+        "__am_apps_data_end": 251659760,
+        "__am_apps_data_start": 251659760,
+        "__bss_end": 251659760,
+        "__bss_start": 251659760,
+        "__data_end": 251659760,
+        "__data_start": 251659760,
+        "__fsymtab_end": 251659760,
+        "__fsymtab_start": 251659760,
+        "__rodata_end": 251659760,
+        "__rt_init_end": 251659760,
+        "__rt_init_start": 251659760,
+        "__rt_utest_tc_tab_end": 251659760,
+        "__rt_utest_tc_tab_start": 251659760,
+        "__vsymtab_end": 251659760,
+        "__vsymtab_start": 251659760,
+        "__global_pointer$": 251661808,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308032,
+        "__data_load": 805308096,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "343ee90d1c6cd0daf9c87a11237b8bfbcf961e1a497750ee31b1c77bce592723",
+      "elf_sha256": "57277674dfc20b7deec62ef61227e256762f27bd16bcb1fc3c95cf3e7177780a",
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-4096",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt"
+    },
+    {
+      "width": 16,
+      "ranks": 1,
+      "bytes": 4096,
+      "corrupt": true,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 505804,
+      "instructions": 19770,
+      "wall_seconds": 0.471535,
+      "diff_checked": 19764,
+      "device_sync_checked": 6,
+      "coverage": {
+        "base": 2684354560,
+        "size": 4096,
+        "unique_read_bytes": 1,
+        "unique_written_bytes": 4096,
+        "read_ops_by_width": [
+          2,
+          0,
+          0
+        ],
+        "write_ops_by_width": [
+          4097,
+          0,
+          0
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 8,
+          "write_bytes": 4097,
+          "maximum_byte_address": 25166847
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "putch": 251659568,
+        "halt": 251659592,
+        "_trm_init": 251659624,
+        "__rodata_start": 251659696,
+        "__text_end": 251659696,
+        "mainargs": 251659696,
+        "__am_apps_bss_end": 251659760,
+        "__am_apps_bss_start": 251659760,
+        "__am_apps_data_end": 251659760,
+        "__am_apps_data_start": 251659760,
+        "__bss_end": 251659760,
+        "__bss_start": 251659760,
+        "__data_end": 251659760,
+        "__data_start": 251659760,
+        "__fsymtab_end": 251659760,
+        "__fsymtab_start": 251659760,
+        "__rodata_end": 251659760,
+        "__rt_init_end": 251659760,
+        "__rt_init_start": 251659760,
+        "__rt_utest_tc_tab_end": 251659760,
+        "__rt_utest_tc_tab_start": 251659760,
+        "__vsymtab_end": 251659760,
+        "__vsymtab_start": 251659760,
+        "__global_pointer$": 251661808,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308032,
+        "__data_load": 805308096,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "7d08f3db3e2a84f63ab5aa3ed7da9cb72f6a1a4b25ab17ce7018aabdc289e8ab",
+      "elf_sha256": "57277674dfc20b7deec62ef61227e256762f27bd16bcb1fc3c95cf3e7177780a",
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-4096-bad",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt"
+    },
+    {
+      "width": 16,
+      "ranks": 1,
+      "bytes": 65536,
+      "corrupt": false,
+      "original_loop": true,
+      "status": "PASS",
+      "cycles": 17460156,
+      "instructions": 4065372,
+      "wall_seconds": 17.0382,
+      "diff_checked": 4065254,
+      "device_sync_checked": 118,
+      "coverage": {
+        "base": 2684354560,
+        "size": 65536,
+        "unique_read_bytes": 65536,
+        "unique_written_bytes": 65536,
+        "read_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ],
+        "write_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 1048576,
+          "write_bytes": 524288,
+          "maximum_byte_address": 25182207
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "putch": 251659088,
+        "halt": 251659112,
+        "_trm_init": 251659144,
+        "__rodata_start": 251659216,
+        "__text_end": 251659216,
+        "mainargs": 251659216,
+        "__am_apps_bss_end": 251659280,
+        "__am_apps_bss_start": 251659280,
+        "__am_apps_data_end": 251659280,
+        "__am_apps_data_start": 251659280,
+        "__bss_end": 251659280,
+        "__bss_start": 251659280,
+        "__data_end": 251659280,
+        "__data_start": 251659280,
+        "__fsymtab_end": 251659280,
+        "__fsymtab_start": 251659280,
+        "__rodata_end": 251659280,
+        "__rt_init_end": 251659280,
+        "__rt_init_start": 251659280,
+        "__rt_utest_tc_tab_end": 251659280,
+        "__rt_utest_tc_tab_start": 251659280,
+        "__vsymtab_end": 251659280,
+        "__vsymtab_start": 251659280,
+        "__global_pointer$": 251661328,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805307552,
+        "__data_load": 805307616,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "9307131b90d4080b69f1c06b8fbda8cdb1fba8300df55b71c1d1a8226c85de0b",
+      "elf_sha256": "a502269f9cca43af1bb8a77c67c0a5f2534cfa560d558bba5c77e6a5b3e01c14",
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-65536-original",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt"
+    },
+    {
+      "width": 16,
+      "ranks": 1,
+      "bytes": 65536,
+      "corrupt": false,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 13071923,
+      "instructions": 2620201,
+      "wall_seconds": 12.6111,
+      "diff_checked": 2620083,
+      "device_sync_checked": 118,
+      "coverage": {
+        "base": 2684354560,
+        "size": 65536,
+        "unique_read_bytes": 65536,
+        "unique_written_bytes": 65536,
+        "read_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ],
+        "write_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 1048576,
+          "write_bytes": 524288,
+          "maximum_byte_address": 25182207
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "putch": 251659568,
+        "halt": 251659592,
+        "_trm_init": 251659624,
+        "__rodata_start": 251659696,
+        "__text_end": 251659696,
+        "mainargs": 251659696,
+        "__am_apps_bss_end": 251659760,
+        "__am_apps_bss_start": 251659760,
+        "__am_apps_data_end": 251659760,
+        "__am_apps_data_start": 251659760,
+        "__bss_end": 251659760,
+        "__bss_start": 251659760,
+        "__data_end": 251659760,
+        "__data_start": 251659760,
+        "__fsymtab_end": 251659760,
+        "__fsymtab_start": 251659760,
+        "__rodata_end": 251659760,
+        "__rt_init_end": 251659760,
+        "__rt_init_start": 251659760,
+        "__rt_utest_tc_tab_end": 251659760,
+        "__rt_utest_tc_tab_start": 251659760,
+        "__vsymtab_end": 251659760,
+        "__vsymtab_start": 251659760,
+        "__global_pointer$": 251661808,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308032,
+        "__data_load": 805308096,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "61581eca5ca3f8a5051b22a31fbbc70cca2386982c4f563d7bdc250aa2f8182d",
+      "elf_sha256": "ae8d6ba101fd515a5be1ece07d87297d40645e690e5274eaa55d0b023a76cc0d",
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-65536",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt"
+    },
+    {
+      "width": 16,
+      "ranks": 1,
+      "bytes": 65536,
+      "corrupt": false,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 9328901,
+      "instructions": 1436929,
+      "wall_seconds": 9.02872,
+      "diff_checked": 1436811,
+      "device_sync_checked": 118,
+      "coverage": {
+        "base": 2684354560,
+        "size": 65536,
+        "unique_read_bytes": 65536,
+        "unique_written_bytes": 65536,
+        "read_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ],
+        "write_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 1048576,
+          "write_bytes": 524288,
+          "maximum_byte_address": 25182207
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "c5_sweep8": 251658512,
+        "c5_sweep16": 251658776,
+        "c5_sweep32": 251659048,
+        "c5_sweep64": 251659304,
+        "putch": 251659656,
+        "halt": 251659680,
+        "_trm_init": 251659712,
+        "memcpy": 251659784,
+        "__rodata_start": 251659824,
+        "__text_end": 251659824,
+        "mainargs": 251659840,
+        "__am_apps_bss_end": 251659904,
+        "__am_apps_bss_start": 251659904,
+        "__am_apps_data_end": 251659904,
+        "__am_apps_data_start": 251659904,
+        "__bss_end": 251659904,
+        "__bss_start": 251659904,
+        "__data_end": 251659904,
+        "__data_start": 251659904,
+        "__fsymtab_end": 251659904,
+        "__fsymtab_start": 251659904,
+        "__rodata_end": 251659904,
+        "__rt_init_end": 251659904,
+        "__rt_init_start": 251659904,
+        "__rt_utest_tc_tab_end": 251659904,
+        "__rt_utest_tc_tab_start": 251659904,
+        "__vsymtab_end": 251659904,
+        "__vsymtab_start": 251659904,
+        "__global_pointer$": 251661952,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308160,
+        "__data_load": 805308240,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "bd70ff0fc768f7a58d80ab518dc91c89d9948ed63c70b9096232d982b4c84124",
+      "elf_sha256": "602629cd133c54645429e18d8c82c83d2fe8ca33f8601040a23adf8efd7c5d1b",
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-65536-asm",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt",
+      "assembly_loop": true
+    },
+    {
+      "width": 16,
+      "ranks": 1,
+      "bytes": 4096,
+      "corrupt": true,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 521505,
+      "instructions": 11935,
+      "wall_seconds": 0.456893,
+      "diff_checked": 11929,
+      "device_sync_checked": 6,
+      "coverage": {
+        "base": 2684354560,
+        "size": 4096,
+        "unique_read_bytes": 1,
+        "unique_written_bytes": 4096,
+        "read_ops_by_width": [
+          2,
+          0,
+          0
+        ],
+        "write_ops_by_width": [
+          4097,
+          0,
+          0
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 8,
+          "write_bytes": 4097,
+          "maximum_byte_address": 25166847
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "c5_sweep8": 251658512,
+        "c5_sweep16": 251658776,
+        "c5_sweep32": 251659048,
+        "c5_sweep64": 251659304,
+        "putch": 251659656,
+        "halt": 251659680,
+        "_trm_init": 251659712,
+        "memcpy": 251659784,
+        "__rodata_start": 251659824,
+        "__text_end": 251659824,
+        "mainargs": 251659840,
+        "__am_apps_bss_end": 251659904,
+        "__am_apps_bss_start": 251659904,
+        "__am_apps_data_end": 251659904,
+        "__am_apps_data_start": 251659904,
+        "__bss_end": 251659904,
+        "__bss_start": 251659904,
+        "__data_end": 251659904,
+        "__data_start": 251659904,
+        "__fsymtab_end": 251659904,
+        "__fsymtab_start": 251659904,
+        "__rodata_end": 251659904,
+        "__rt_init_end": 251659904,
+        "__rt_init_start": 251659904,
+        "__rt_utest_tc_tab_end": 251659904,
+        "__rt_utest_tc_tab_start": 251659904,
+        "__vsymtab_end": 251659904,
+        "__vsymtab_start": 251659904,
+        "__global_pointer$": 251661952,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308160,
+        "__data_load": 805308240,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "581953c5da03728399df24f1d8d194dfb6563aaf41f41c47f8987efb8462ef2a",
+      "elf_sha256": "0d29c8c6960b1956c8390a3a87cdd97c38dbae1ed2c45e13c3ec1aeafc63f830",
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-4096-bad-asm",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt",
+      "assembly_loop": true
+    },
+    {
+      "width": 16,
+      "ranks": 1,
+      "bytes": 33554432,
+      "corrupt": false,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 4537769241,
+      "instructions": 734006529,
+      "wall_seconds": 4504.4,
+      "diff_checked": 734006411,
+      "device_sync_checked": 118,
+      "coverage": {
+        "base": 2684354560,
+        "size": 33554432,
+        "unique_read_bytes": 33554432,
+        "unique_written_bytes": 33554432,
+        "read_ops_by_width": [
+          67108864,
+          33554432,
+          33554432
+        ],
+        "write_ops_by_width": [
+          67108864,
+          33554432,
+          33554432
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 536870912,
+          "write_bytes": 268435456,
+          "maximum_byte_address": 33554431
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "c5_sweep8": 251658512,
+        "c5_sweep16": 251658776,
+        "c5_sweep32": 251659048,
+        "c5_sweep64": 251659304,
+        "putch": 251659656,
+        "halt": 251659680,
+        "_trm_init": 251659712,
+        "memcpy": 251659784,
+        "__rodata_start": 251659824,
+        "__text_end": 251659824,
+        "mainargs": 251659840,
+        "__am_apps_bss_end": 251659904,
+        "__am_apps_bss_start": 251659904,
+        "__am_apps_data_end": 251659904,
+        "__am_apps_data_start": 251659904,
+        "__bss_end": 251659904,
+        "__bss_start": 251659904,
+        "__data_end": 251659904,
+        "__data_start": 251659904,
+        "__fsymtab_end": 251659904,
+        "__fsymtab_start": 251659904,
+        "__rodata_end": 251659904,
+        "__rt_init_end": 251659904,
+        "__rt_init_start": 251659904,
+        "__rt_utest_tc_tab_end": 251659904,
+        "__rt_utest_tc_tab_start": 251659904,
+        "__vsymtab_end": 251659904,
+        "__vsymtab_start": 251659904,
+        "__global_pointer$": 251661952,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308160,
+        "__data_load": 805308240,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "6fa69b9cdf160f0ebb509e6d553ebe398133bb2dd1e85f6ac7bb41f756f40951",
+      "elf_sha256": "0286ba194f09da1c2995211b331c74e01ba83fb08a4b01cb52ae12ac25f015a7",
+      "evidence": "artifacts/C5/sdram-sweep/sdram16x1-33554432-asm",
+      "timeout_seconds": 7577,
+      "cycle_budget": 5255037044,
+      "variant": "30000000-cycle-psram4m-qpi-sdram16x1-opt",
+      "assembly_loop": true
+    },
+    {
+      "width": 32,
+      "ranks": 1,
+      "bytes": 65536,
+      "corrupt": false,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 8765469,
+      "instructions": 1436929,
+      "wall_seconds": 9.24438,
+      "diff_checked": 1436811,
+      "device_sync_checked": 118,
+      "coverage": {
+        "base": 2684354560,
+        "size": 65536,
+        "unique_read_bytes": 65536,
+        "unique_written_bytes": 65536,
+        "read_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ],
+        "write_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 524288,
+          "write_bytes": 262144,
+          "maximum_byte_address": 25174015
+        },
+        {
+          "read_bytes": 524288,
+          "write_bytes": 262144,
+          "maximum_byte_address": 25174015
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "c5_sweep8": 251658512,
+        "c5_sweep16": 251658776,
+        "c5_sweep32": 251659048,
+        "c5_sweep64": 251659304,
+        "putch": 251659656,
+        "halt": 251659680,
+        "_trm_init": 251659712,
+        "memcpy": 251659784,
+        "__rodata_start": 251659824,
+        "__text_end": 251659824,
+        "mainargs": 251659840,
+        "__am_apps_bss_end": 251659904,
+        "__am_apps_bss_start": 251659904,
+        "__am_apps_data_end": 251659904,
+        "__am_apps_data_start": 251659904,
+        "__bss_end": 251659904,
+        "__bss_start": 251659904,
+        "__data_end": 251659904,
+        "__data_start": 251659904,
+        "__fsymtab_end": 251659904,
+        "__fsymtab_start": 251659904,
+        "__rodata_end": 251659904,
+        "__rt_init_end": 251659904,
+        "__rt_init_start": 251659904,
+        "__rt_utest_tc_tab_end": 251659904,
+        "__rt_utest_tc_tab_start": 251659904,
+        "__vsymtab_end": 251659904,
+        "__vsymtab_start": 251659904,
+        "__global_pointer$": 251661952,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308160,
+        "__data_load": 805308240,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "bd70ff0fc768f7a58d80ab518dc91c89d9948ed63c70b9096232d982b4c84124",
+      "elf_sha256": "602629cd133c54645429e18d8c82c83d2fe8ca33f8601040a23adf8efd7c5d1b",
+      "evidence": "artifacts/C5/sdram-sweep/sdram32x1-65536-asm",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram32x1-opt",
+      "assembly_loop": true
+    },
+    {
+      "width": 32,
+      "ranks": 1,
+      "bytes": 4096,
+      "corrupt": true,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 521108,
+      "instructions": 11935,
+      "wall_seconds": 0.508346,
+      "diff_checked": 11929,
+      "device_sync_checked": 6,
+      "coverage": {
+        "base": 2684354560,
+        "size": 4096,
+        "unique_read_bytes": 1,
+        "unique_written_bytes": 4096,
+        "read_ops_by_width": [
+          2,
+          0,
+          0
+        ],
+        "write_ops_by_width": [
+          4097,
+          0,
+          0
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 4,
+          "write_bytes": 2049,
+          "maximum_byte_address": 8389631
+        },
+        {
+          "read_bytes": 4,
+          "write_bytes": 2048,
+          "maximum_byte_address": 8389631
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "c5_sweep8": 251658512,
+        "c5_sweep16": 251658776,
+        "c5_sweep32": 251659048,
+        "c5_sweep64": 251659304,
+        "putch": 251659656,
+        "halt": 251659680,
+        "_trm_init": 251659712,
+        "memcpy": 251659784,
+        "__rodata_start": 251659824,
+        "__text_end": 251659824,
+        "mainargs": 251659840,
+        "__am_apps_bss_end": 251659904,
+        "__am_apps_bss_start": 251659904,
+        "__am_apps_data_end": 251659904,
+        "__am_apps_data_start": 251659904,
+        "__bss_end": 251659904,
+        "__bss_start": 251659904,
+        "__data_end": 251659904,
+        "__data_start": 251659904,
+        "__fsymtab_end": 251659904,
+        "__fsymtab_start": 251659904,
+        "__rodata_end": 251659904,
+        "__rt_init_end": 251659904,
+        "__rt_init_start": 251659904,
+        "__rt_utest_tc_tab_end": 251659904,
+        "__rt_utest_tc_tab_start": 251659904,
+        "__vsymtab_end": 251659904,
+        "__vsymtab_start": 251659904,
+        "__global_pointer$": 251661952,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308160,
+        "__data_load": 805308240,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "581953c5da03728399df24f1d8d194dfb6563aaf41f41c47f8987efb8462ef2a",
+      "elf_sha256": "0d29c8c6960b1956c8390a3a87cdd97c38dbae1ed2c45e13c3ec1aeafc63f830",
+      "evidence": "artifacts/C5/sdram-sweep/sdram32x1-4096-bad-asm",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram32x1-opt",
+      "assembly_loop": true
+    },
+    {
+      "width": 32,
+      "ranks": 2,
+      "bytes": 65536,
+      "corrupt": false,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 8765469,
+      "instructions": 1436929,
+      "wall_seconds": 9.02996,
+      "diff_checked": 1436811,
+      "device_sync_checked": 118,
+      "coverage": {
+        "base": 2684354560,
+        "size": 65536,
+        "unique_read_bytes": 65536,
+        "unique_written_bytes": 65536,
+        "read_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ],
+        "write_ops_by_width": [
+          131072,
+          65536,
+          65536
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 524288,
+          "write_bytes": 262144,
+          "maximum_byte_address": 25174015
+        },
+        {
+          "read_bytes": 524288,
+          "write_bytes": 262144,
+          "maximum_byte_address": 25174015
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "c5_sweep8": 251658512,
+        "c5_sweep16": 251658776,
+        "c5_sweep32": 251659048,
+        "c5_sweep64": 251659304,
+        "putch": 251659656,
+        "halt": 251659680,
+        "_trm_init": 251659712,
+        "memcpy": 251659784,
+        "__rodata_start": 251659824,
+        "__text_end": 251659824,
+        "mainargs": 251659840,
+        "__am_apps_bss_end": 251659904,
+        "__am_apps_bss_start": 251659904,
+        "__am_apps_data_end": 251659904,
+        "__am_apps_data_start": 251659904,
+        "__bss_end": 251659904,
+        "__bss_start": 251659904,
+        "__data_end": 251659904,
+        "__data_start": 251659904,
+        "__fsymtab_end": 251659904,
+        "__fsymtab_start": 251659904,
+        "__rodata_end": 251659904,
+        "__rt_init_end": 251659904,
+        "__rt_init_start": 251659904,
+        "__rt_utest_tc_tab_end": 251659904,
+        "__rt_utest_tc_tab_start": 251659904,
+        "__vsymtab_end": 251659904,
+        "__vsymtab_start": 251659904,
+        "__global_pointer$": 251661952,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308160,
+        "__data_load": 805308240,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "bd70ff0fc768f7a58d80ab518dc91c89d9948ed63c70b9096232d982b4c84124",
+      "elf_sha256": "602629cd133c54645429e18d8c82c83d2fe8ca33f8601040a23adf8efd7c5d1b",
+      "evidence": "artifacts/C5/sdram-sweep/sdram32x2-65536-asm",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram32x2-opt",
+      "assembly_loop": true
+    },
+    {
+      "width": 32,
+      "ranks": 2,
+      "bytes": 4096,
+      "corrupt": true,
+      "original_loop": false,
+      "status": "PASS",
+      "cycles": 521108,
+      "instructions": 11935,
+      "wall_seconds": 0.487263,
+      "diff_checked": 11929,
+      "device_sync_checked": 6,
+      "coverage": {
+        "base": 2684354560,
+        "size": 4096,
+        "unique_read_bytes": 1,
+        "unique_written_bytes": 4096,
+        "read_ops_by_width": [
+          2,
+          0,
+          0
+        ],
+        "write_ops_by_width": [
+          4097,
+          0,
+          0
+        ]
+      },
+      "chips": [
+        {
+          "read_bytes": 4,
+          "write_bytes": 2049,
+          "maximum_byte_address": 8389631
+        },
+        {
+          "read_bytes": 4,
+          "write_bytes": 2048,
+          "maximum_byte_address": 8389631
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 0,
+          "maximum_byte_address": 0
+        }
+      ],
+      "symbols": {
+        "__ssbl_end": 251658240,
+        "__ssbl_start": 251658240,
+        "__text_start": 251658240,
+        "main": 251658240,
+        "c5_sweep8": 251658512,
+        "c5_sweep16": 251658776,
+        "c5_sweep32": 251659048,
+        "c5_sweep64": 251659304,
+        "putch": 251659656,
+        "halt": 251659680,
+        "_trm_init": 251659712,
+        "memcpy": 251659784,
+        "__rodata_start": 251659824,
+        "__text_end": 251659824,
+        "mainargs": 251659840,
+        "__am_apps_bss_end": 251659904,
+        "__am_apps_bss_start": 251659904,
+        "__am_apps_data_end": 251659904,
+        "__am_apps_data_start": 251659904,
+        "__bss_end": 251659904,
+        "__bss_start": 251659904,
+        "__data_end": 251659904,
+        "__data_start": 251659904,
+        "__fsymtab_end": 251659904,
+        "__fsymtab_start": 251659904,
+        "__rodata_end": 251659904,
+        "__rt_init_end": 251659904,
+        "__rt_init_start": 251659904,
+        "__rt_utest_tc_tab_end": 251659904,
+        "__rt_utest_tc_tab_start": 251659904,
+        "__vsymtab_end": 251659904,
+        "__vsymtab_start": 251659904,
+        "__global_pointer$": 251661952,
+        "_stack_pointer": 251666432,
+        "_start": 805306368,
+        "__ssbl_load": 805306576,
+        "__text_load": 805306576,
+        "__rodata_load": 805308160,
+        "__data_load": 805308240,
+        "_heap_start": 2147483648,
+        "_heap_end": 2151677952
+      },
+      "image_sha256": "581953c5da03728399df24f1d8d194dfb6563aaf41f41c47f8987efb8462ef2a",
+      "elf_sha256": "0d29c8c6960b1956c8390a3a87cdd97c38dbae1ed2c45e13c3ec1aeafc63f830",
+      "evidence": "artifacts/C5/sdram-sweep/sdram32x2-4096-bad-asm",
+      "timeout_seconds": 300,
+      "cycle_budget": 200000000,
+      "variant": "30000000-cycle-psram4m-qpi-sdram32x2-opt",
+      "assembly_loop": true
+    }
+  ],
+  "scope": "Actual CPU executing SRAM code/rodata after Flash loader. Full NEMU instruction checking and actual pin-level SDRAM; exact8/16/32/64-bit address/inverse counts. OriginalC, four-accessC andeight-accessassembly loops are explicitly labeled; unrolling changes only firmware bookkeeping. Small pilots are distinct from required full32MiB/128MiB sweeps."
+}

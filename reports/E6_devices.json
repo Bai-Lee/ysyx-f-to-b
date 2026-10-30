@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "hello": [
+    {
+      "result": "GOOD_TRAP",
+      "exit_code": 0,
+      "pc": 2147484784,
+      "a0": 0,
+      "cycles": 16756,
+      "instructions": 16756,
+      "frequency_hz": 100000000,
+      "wall_seconds": 0.02859284,
+      "ebreak_calls": 1,
+      "memory_writes": 2171,
+      "load_commits": 5324,
+      "uart_bytes": 46,
+      "uart_polls": 342,
+      "uart_not_ready": 296,
+      "gpr": [
+        0,
+        2147484772,
+        2147815412,
+        2147483876,
+        2147484568,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        268435456,
+        0
+      ]
+    }
+  ],
+  "unit_checks": "PASS side_effect_free_peek UART_ready=12476/100000 blocked_write_rejected timer_rollover_latched cycle_scaling\n",
+  "semantics": "UART peeks are side-effect free; state advances once on load commit. DUT MMIO samples replayed to reference. Timer low read latches high, tested across 32-bit rollover."
+}

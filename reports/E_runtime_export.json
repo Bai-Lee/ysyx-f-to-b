@@ -1,0 +1,4365 @@
+{
+  "status": "PASS",
+  "archive": "E/offline/patched-runtime.tar.gz",
+  "sha256": "e8e15af1208eb19a63ceacfdc387584d555fa3abc69acbdf4cad57e82790d78b",
+  "members": [
+    {
+      "path": "npc/.gitignore",
+      "bytes": 73,
+      "sha256": "6d95e504cb93e6509362de385bf471e45105e983c8a461deb8f1ed7d1496f6e3",
+      "source": "/home/USER/e-stage/workbench-e7/npc/.gitignore"
+    },
+    {
+      "path": "npc/Makefile",
+      "bytes": 1495,
+      "sha256": "56ed86163270475497e823e556ea232af792803c1f537ed90f11decb6146a7ff",
+      "source": "/home/USER/e-stage/workbench-e7/npc/Makefile"
+    },
+    {
+      "path": "npc/csrc/bus_runner.cpp",
+      "bytes": 8202,
+      "sha256": "f09c689c83b89751d5754d3a51aa1809e895d7b96c4fef85c341ec3d4d252d58",
+      "source": "/home/USER/e-stage/workbench-e7/npc/csrc/bus_runner.cpp"
+    },
+    {
+      "path": "npc/csrc/memory.hpp",
+      "bytes": 4035,
+      "sha256": "42e77cd8fbf2e882bd81eb13a16df9c5d6221bf0f298fef138f26280a1acb576",
+      "source": "/home/USER/e-stage/workbench-e7/npc/csrc/memory.hpp"
+    },
+    {
+      "path": "npc/csrc/ref.c",
+      "bytes": 2143,
+      "sha256": "ed9c1ec8f3539e53007567496f087e668047a0d6a392c615a0fb0a9c44ff76d0",
+      "source": "/home/USER/e-stage/workbench-e7/npc/csrc/ref.c"
+    },
+    {
+      "path": "npc/csrc/ref.h",
+      "bytes": 589,
+      "sha256": "76b3f7d945b1c292e2c8bf559f8a5fe311a9f9231348f2283189aa927debccb1",
+      "source": "/home/USER/e-stage/workbench-e7/npc/csrc/ref.h"
+    },
+    {
+      "path": "npc/csrc/soc_runner.cpp",
+      "bytes": 13965,
+      "sha256": "5cfa05a7c5471f1beba44ba424ddab99dac92b175ad4b8af0d1236a02da5aafb",
+      "source": "/home/USER/e-stage/workbench-e7/npc/csrc/soc_runner.cpp"
+    },
+    {
+      "path": "npc/vsrc/minirv_bus.sv",
+      "bytes": 4175,
+      "sha256": "a7c5b2a000ce92e50819b057636bbe1175b9bf6c7e166bc4d1abe8ebcac0845e",
+      "source": "/home/USER/e-stage/workbench-e7/npc/vsrc/minirv_bus.sv"
+    },
+    {
+      "path": "npc/vsrc/minirv_decode.sv",
+      "bytes": 2175,
+      "sha256": "e49c237de7281619ed9c455ab28c69c6daccb1c096843f2a08462efd32919aa9",
+      "source": "/home/USER/e-stage/workbench-e7/npc/vsrc/minirv_decode.sv"
+    },
+    {
+      "path": "npc/vsrc/minirv_regfile.sv",
+      "bytes": 767,
+      "sha256": "8b066dc92589821567b6571c8f585523e2c58f6570ec9af3a659626ba01f9fb3",
+      "source": "/home/USER/e-stage/workbench-e7/npc/vsrc/minirv_regfile.sv"
+    },
+    {
+      "path": "npc/vsrc/mygpio_top_apb.v",
+      "bytes": 2269,
+      "sha256": "96316561961e4df75db0113ebf3f58093b088fbbeb75fe255b3497b469a1e312",
+      "source": "/home/USER/e-stage/workbench-e7/npc/vsrc/mygpio_top_apb.v"
+    },
+    {
+      "path": "npc/vsrc/ysyx_00000000.sv",
+      "bytes": 2617,
+      "sha256": "8c437e5a1713a92b5800694ebeb3db11e9b8b43b74eaeead84323e2236f3a929",
+      "source": "/home/USER/e-stage/workbench-e7/npc/vsrc/ysyx_00000000.sv"
+    },
+    {
+      "path": "am_npc/.gitignore",
+      "bytes": 131,
+      "sha256": "0983ccfcdf30b995cccf02b95bd62d85fa981c103dc501a8c484f475a70182e7",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/.gitignore"
+    },
+    {
+      "path": "am_npc/.ysyx-source.json",
+      "bytes": 657,
+      "sha256": "1d4c4180740ce3cafe17dabed8b230c3f470ba39a9f5b403f5006633317cfab6",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/.ysyx-source.json"
+    },
+    {
+      "path": "am_npc/LICENSE",
+      "bytes": 1130,
+      "sha256": "a0c58b2790520c558bdc41e843d98da66015c2f00e9eac8da33c2ba0853a2b72",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/LICENSE"
+    },
+    {
+      "path": "am_npc/Makefile",
+      "bytes": 6086,
+      "sha256": "eef4e353f2a3b3b573331c109f933c7fa04a10cd9e2ea2369b0f73cdd48f035e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/Makefile"
+    },
+    {
+      "path": "am_npc/README",
+      "bytes": 542,
+      "sha256": "4bdf06e80e7cb366f3986f6c15e49134ffa645b6e6c428e396d970788e5d1b2f",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/README"
+    },
+    {
+      "path": "am_npc/am/Makefile",
+      "bytes": 121,
+      "sha256": "06aefd18946007499b9f19d3ec342febab91169a26aaee07f3e7cea802c2b860",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/Makefile"
+    },
+    {
+      "path": "am_npc/am/include/am.h",
+      "bytes": 2374,
+      "sha256": "fbfe84a8a0317352f2cc2774fbccaed527f4aec4b9552f8d6c4319edb3cb404f",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/include/am.h"
+    },
+    {
+      "path": "am_npc/am/include/amdev.h",
+      "bytes": 2756,
+      "sha256": "4b814182f059682cffa04f0bf1214e73aecdb6f77e3ee8c09e56c2fc2ec8ede5",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/include/amdev.h"
+    },
+    {
+      "path": "am_npc/am/include/arch/loongarch32r-nemu.h",
+      "bytes": 302,
+      "sha256": "c312ec6a5c8f72fb5ff4d493d141736b2f6aab8c5fd3cc86bfd6cef272a94157",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/include/arch/loongarch32r-nemu.h"
+    },
+    {
+      "path": "am_npc/am/include/arch/mips32-nemu.h",
+      "bytes": 311,
+      "sha256": "f1991e12cdd488fbfb05c25dd9f4da09cd8fc5b6d9ace8760b9f6882efc70d23",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/include/arch/mips32-nemu.h"
+    },
+    {
+      "path": "am_npc/am/include/arch/native.h",
+      "bytes": 1134,
+      "sha256": "d06a54add2fdeae5fb8b55ecdfc352fb3af716e43669a6c89785cd82bb05d4d4",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/include/arch/native.h"
+    },
+    {
+      "path": "am_npc/am/include/arch/riscv.h",
+      "bytes": 446,
+      "sha256": "33c49ebf45b970392e14430ff39d9db37035237628b2026663ebd88b6a6a7d4e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/include/arch/riscv.h"
+    },
+    {
+      "path": "am_npc/am/include/arch/x86-nemu.h",
+      "bytes": 317,
+      "sha256": "dddfd9575c61b20b674aadfb1ce8e38b7a499beaa5da0df627eb7fdb15b36f12",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/include/arch/x86-nemu.h"
+    },
+    {
+      "path": "am_npc/am/include/arch/x86-qemu.h",
+      "bytes": 287,
+      "sha256": "7be0945eeba33cabcf9797ce5e76fcae2bacf4c793d6f6a619f4e3dc49a9cac9",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/include/arch/x86-qemu.h"
+    },
+    {
+      "path": "am_npc/am/include/arch/x86_64-qemu.h",
+      "bytes": 358,
+      "sha256": "f01e3ac020992068011a2bb1c69262b83ad0cbcd3cbf0be03feadcf04c12faec",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/include/arch/x86_64-qemu.h"
+    },
+    {
+      "path": "am_npc/am/src/loongarch/loongarch32r.h",
+      "bytes": 957,
+      "sha256": "1dd5c48f9764449ab3e5138132e0243a2ac4b28bd5a551105d65a5ad40f2919f",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/loongarch/loongarch32r.h"
+    },
+    {
+      "path": "am_npc/am/src/loongarch/nemu/cte.c",
+      "bytes": 904,
+      "sha256": "9372b3093b318f5a4681760f326ed0eb621f17fe6e1290ba1aa8993af90eb9b9",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/loongarch/nemu/cte.c"
+    },
+    {
+      "path": "am_npc/am/src/loongarch/nemu/start.S",
+      "bytes": 140,
+      "sha256": "efdf23a0618a9855bac5679ec2b4f4fdd487a15e4d0148acbeed5b13a93fe2eb",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/loongarch/nemu/start.S"
+    },
+    {
+      "path": "am_npc/am/src/loongarch/nemu/trap.S",
+      "bytes": 1144,
+      "sha256": "48efea3b100be6fa2e5bbc213ed7950fcb26f7c0e89b08bd805acc3b2f4656c2",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/loongarch/nemu/trap.S"
+    },
+    {
+      "path": "am_npc/am/src/loongarch/nemu/vme.c",
+      "bytes": 897,
+      "sha256": "73efb7404ff54a8247e4edf4ce3630f5667b94d99bf9ae00ab21a6b45933b580",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/loongarch/nemu/vme.c"
+    },
+    {
+      "path": "am_npc/am/src/mips/mips32.h",
+      "bytes": 945,
+      "sha256": "106467cf7643da6a2bea59bff8b64e2ac3490d2d9388ee3d4f5bdd21d9a6b789",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/mips/mips32.h"
+    },
+    {
+      "path": "am_npc/am/src/mips/nemu/cte.c",
+      "bytes": 1156,
+      "sha256": "5a3d421f0e60e3d5dfb47c2a7b9590bc61470792d12607f1e43a581a71601dcb",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/mips/nemu/cte.c"
+    },
+    {
+      "path": "am_npc/am/src/mips/nemu/start.S",
+      "bytes": 150,
+      "sha256": "99b23ba9179a1a52fcc39de7d0a114404a311840864e3303276cfd2afcf6e80f",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/mips/nemu/start.S"
+    },
+    {
+      "path": "am_npc/am/src/mips/nemu/trap.S",
+      "bytes": 1473,
+      "sha256": "657f9ceec50e6354b51034826dca35be01d4d74022d4f6e91169fd22ce9202b3",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/mips/nemu/trap.S"
+    },
+    {
+      "path": "am_npc/am/src/mips/nemu/vme.c",
+      "bytes": 897,
+      "sha256": "73efb7404ff54a8247e4edf4ce3630f5667b94d99bf9ae00ab21a6b45933b580",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/mips/nemu/vme.c"
+    },
+    {
+      "path": "am_npc/am/src/native/cte.c",
+      "bytes": 6213,
+      "sha256": "40f1a39357c222b9672603d667e17fdeec00f34146d6f19a63c3e55c02bcd7ae",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/cte.c"
+    },
+    {
+      "path": "am_npc/am/src/native/ioe/audio.c",
+      "bytes": 1547,
+      "sha256": "48ba3d3338ca377b0a28dccdbe14b445513f866b5a9907da78955efc77c96ee4",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/ioe/audio.c"
+    },
+    {
+      "path": "am_npc/am/src/native/ioe/disk.c",
+      "bytes": 888,
+      "sha256": "d025516206640bd210a1b07759d125cf0a90732b413e0d2d9ebe9951e581da4a",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/ioe/disk.c"
+    },
+    {
+      "path": "am_npc/am/src/native/ioe/gpu.c",
+      "bytes": 1678,
+      "sha256": "7dcd5b7215b7a3c72854230cbe7188f26b399a0a430166fdf8f14961971827b1",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/ioe/gpu.c"
+    },
+    {
+      "path": "am_npc/am/src/native/ioe/input.c",
+      "bytes": 1611,
+      "sha256": "05a8bf89722b076ccaa27c6ec39d9bcc9a6a90e367fffd5e8d6830024c60b529",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/ioe/input.c"
+    },
+    {
+      "path": "am_npc/am/src/native/ioe/timer.c",
+      "bytes": 822,
+      "sha256": "f8d1381563ce457789099242e4e763eff754cbd3b62a58f5d81dd00b4bc49d09",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/ioe/timer.c"
+    },
+    {
+      "path": "am_npc/am/src/native/ioe/uart.c",
+      "bytes": 995,
+      "sha256": "9f4ee8c06319c276f44f7f2e7d4b2a9221ea746520ba9f9ea4ce2e51addf1cf1",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/ioe/uart.c"
+    },
+    {
+      "path": "am_npc/am/src/native/ioe.c",
+      "bytes": 2713,
+      "sha256": "11a83759269da0b88ee871b5d820974df16ed8ef9fd78cad3fc62eacc8dea412",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/ioe.c"
+    },
+    {
+      "path": "am_npc/am/src/native/mpe.c",
+      "bytes": 1004,
+      "sha256": "37e47e8adaba930b8a9b75a6b5a6e5ba1ffed2ba5c4e6f6c8f805268b992d7cf",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/mpe.c"
+    },
+    {
+      "path": "am_npc/am/src/native/platform.c",
+      "bytes": 7693,
+      "sha256": "47c07e8541306e4d5d52b41879f09bd7991f773c30f1738b1183bca746132907",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/platform.c"
+    },
+    {
+      "path": "am_npc/am/src/native/platform.h",
+      "bytes": 1297,
+      "sha256": "9a94b066c57eea81cb6e5b7533cd3468dc05c779f390320d0a4f392be2c85186",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/platform.h"
+    },
+    {
+      "path": "am_npc/am/src/native/trap.S",
+      "bytes": 856,
+      "sha256": "5f44e9f6cab303b0ab6276bcbac07e2b5f9c1bab8beda62e4aefbad6eb7c48d3",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/trap.S"
+    },
+    {
+      "path": "am_npc/am/src/native/trm.c",
+      "bytes": 577,
+      "sha256": "2c50d5ade777e427c17957436ecd33d670fc6d9b84588d733a9c9e1917a18921",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/trm.c"
+    },
+    {
+      "path": "am_npc/am/src/native/vme.c",
+      "bytes": 3429,
+      "sha256": "a9e0e083495cde8a2d4fe90fc2a36ca04d55b2b689e42b4b1965156a3e1d9afc",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/native/vme.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/dummy/cte.c",
+      "bytes": 275,
+      "sha256": "de7b3ffa3be6297a1b01149fd2391297c02ec8cc71f54217804fb7b7be2107a8",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/dummy/cte.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/dummy/ioe.c",
+      "bytes": 258,
+      "sha256": "c0e9917f045b5fea0f371a98115af664f494a90990f24e2c624ec9a253fb78fa",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/dummy/ioe.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/dummy/mpe.c",
+      "bytes": 209,
+      "sha256": "6a32ffe9d4b1f4300a183ec6d2c824ed6784d49e389a6f76bc141a2df9b988a3",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/dummy/mpe.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/dummy/trm.c",
+      "bytes": 121,
+      "sha256": "c1b43483cce167d7f5ecbc4cbb84555bcf4313e079212aad26c88a240d0ff660",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/dummy/trm.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/dummy/vme.c",
+      "bytes": 325,
+      "sha256": "fbec26d5d14012156f4d29025b11c644a357a133008b87ebefb74a5e8ba056bc",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/dummy/vme.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/logisim/ioe.c",
+      "bytes": 2766,
+      "sha256": "4e2f91f8573abf3435682e91d7125cbb7b190478a375aff78a0b0c0da2ed014c",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/logisim/ioe.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/logisim/trm.c",
+      "bytes": 323,
+      "sha256": "dff1873dddd58843440013397ea098bed0bf2409d62cd761ca9bc7162d3007e3",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/logisim/trm.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/nemu/include/nemu.h",
+      "bytes": 1570,
+      "sha256": "75b553dcca086d14c77ab6b5b24cccdd146088ac4a196ec984c0bfc8574f19e7",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/nemu/include/nemu.h"
+    },
+    {
+      "path": "am_npc/am/src/platform/nemu/ioe/audio.c",
+      "bytes": 628,
+      "sha256": "e968e08feb538cf67f28031f663c167a84595a7f8ae06a2382d03dceefd57c95",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/nemu/ioe/audio.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/nemu/ioe/disk.c",
+      "bytes": 218,
+      "sha256": "83668c9edc82280f9058ca7aff81a25c55ff024c5bbf9e5c59054b675641ff5f",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/nemu/ioe/disk.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/nemu/ioe/gpu.c",
+      "bytes": 460,
+      "sha256": "a2eb287ba0c79e5210c1657a7b9be0ee35add4f1ea951ebc9e7d549707dd75d6",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/nemu/ioe/gpu.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/nemu/ioe/input.c",
+      "bytes": 174,
+      "sha256": "4ec06becd6520a620be83b07f77e8ff6e384c2039fa03ef611affa02dcec6c9e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/nemu/ioe/input.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/nemu/ioe/ioe.c",
+      "bytes": 2189,
+      "sha256": "2f406311598d72e448094043c1f1b53296cfbf496a9800871e4b23d1b6370c76",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/nemu/ioe/ioe.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/nemu/ioe/timer.c",
+      "bytes": 316,
+      "sha256": "001fbbca73dec09074d713a8d4f7986b0a93648d8ecc096b963d873358aa70cc",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/nemu/ioe/timer.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/nemu/mpe.c",
+      "bytes": 313,
+      "sha256": "3c168509a18d68e94dc51d6998f8fdc92408b9ed06b4a82320734a40b19a9e47",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/nemu/mpe.c"
+    },
+    {
+      "path": "am_npc/am/src/platform/nemu/trm.c",
+      "bytes": 454,
+      "sha256": "878821355cb5f31800fd3a08d34c090e77decea86284e64bc9b8986702e9b366",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/platform/nemu/trm.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/nemu/cte.c",
+      "bytes": 918,
+      "sha256": "2bff60f0c93b0856515de413fdc67cc0bf9caf798942bf5e891a06b1cadbe28c",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/nemu/cte.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/nemu/start.S",
+      "bytes": 159,
+      "sha256": "2852310b02b796af860427988a960893bf5dd89e69001f529fa80f0d050eab8c",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/nemu/start.S"
+    },
+    {
+      "path": "am_npc/am/src/riscv/nemu/trap.S",
+      "bytes": 1546,
+      "sha256": "b8c3a16844588327ca1452c665f27da092606596c99960f7c4753d0dcd4e4d03",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/nemu/trap.S"
+    },
+    {
+      "path": "am_npc/am/src/riscv/nemu/vme.c",
+      "bytes": 1632,
+      "sha256": "2e5c2ade8b969f0b69fe9d67ae6f2eb175c26848df060c34d8b1049d752722d7",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/nemu/vme.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/cte.c",
+      "bytes": 918,
+      "sha256": "2bff60f0c93b0856515de413fdc67cc0bf9caf798942bf5e891a06b1cadbe28c",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/cte.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/e7_config.h",
+      "bytes": 131,
+      "sha256": "1035477ece82b18ff45de05c36c79f98c6f32481488d2bbfa3bbae5d77108e35",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/e7_config.h"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/input.c",
+      "bytes": 124,
+      "sha256": "1c21bbedd10a3e5d01f3eb71270dbb6292c8570d82c3608b25ec9f775acbc157",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/input.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/ioe.c",
+      "bytes": 1255,
+      "sha256": "0896426bb39c2629623635b6b15030875a11d81c4f9952a8f8809b637e300b72",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/ioe.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/libgcc/ashldi3.c",
+      "bytes": 546,
+      "sha256": "becc84a87d7a9038ceba9c7d7abc40fa41173de116152bddb09512168b80d2fd",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/libgcc/ashldi3.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/libgcc/div.S",
+      "bytes": 3862,
+      "sha256": "4b860ed895cc71378d36966d7c7550a467f15b6e7b5e6c04426e05dcb5c9d90e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/libgcc/div.S"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/libgcc/libgcc2.h",
+      "bytes": 17337,
+      "sha256": "04c7938597cf8c1789bf0f26d6fe366c451f7cdefd99a8de0e738febf64e3081",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/libgcc/libgcc2.h"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/libgcc/longlong.h",
+      "bytes": 62919,
+      "sha256": "d4c657718821033e038eec26cb617d4d3353998294e64343236c2083ae4a904e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/libgcc/longlong.h"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/libgcc/muldi3.S",
+      "bytes": 1427,
+      "sha256": "d37549240aebdef963369a504e69f345711ffbe186bcc1606cd6b544a30724ba",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/libgcc/muldi3.S"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/libgcc/multi3.c",
+      "bytes": 2425,
+      "sha256": "3a01788c94105b7558006508fba374f8c12b07c85a72732d051b246f5119ba95",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/libgcc/multi3.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/libgcc/riscv-asm.h",
+      "bytes": 1421,
+      "sha256": "2fdf000cfe81f015b013c4a61d79d385aed91fa5921b80965374e8faf752349b",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/libgcc/riscv-asm.h"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/libgcc/unused.c",
+      "bytes": 166,
+      "sha256": "c74bf9d32f407f4148daf553707f2bd30919fb731be9c33c620b7e0888bfc09e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/libgcc/unused.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/mpe.c",
+      "bytes": 209,
+      "sha256": "6a32ffe9d4b1f4300a183ec6d2c824ed6784d49e389a6f76bc141a2df9b988a3",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/mpe.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/start.S",
+      "bytes": 159,
+      "sha256": "2852310b02b796af860427988a960893bf5dd89e69001f529fa80f0d050eab8c",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/start.S"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/timer.c",
+      "bytes": 769,
+      "sha256": "09cae6e392dcf295d3cf2071f1392fe74c08d04789359934e4ec819905b8ffbf",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/timer.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/trap.S",
+      "bytes": 1448,
+      "sha256": "886d6ebb392fe1f1760418254fdb640c1814b7360eba8410ee94b015e17a962e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/trap.S"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/trm.c",
+      "bytes": 1033,
+      "sha256": "c61c459a813c484cc38cc517a65f4e57a813b85f391673eae2c4dd8dd825f63a",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/trm.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/npc/vme.c",
+      "bytes": 325,
+      "sha256": "fbec26d5d14012156f4d29025b11c644a357a133008b87ebefb74a5e8ba056bc",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/npc/vme.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/riscv.h",
+      "bytes": 1014,
+      "sha256": "60a3bc44cc7e94394c45d1e06ecd18a81e6069b7ced8e61e5bf81a6d868f57b4",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/riscv.h"
+    },
+    {
+      "path": "am_npc/am/src/riscv/spike/atomic.h",
+      "bytes": 2152,
+      "sha256": "7e6002327b2f369b0e4c0e10b729f74bb77cd243ae0ed9b31cb249736afc2ff7",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/spike/atomic.h"
+    },
+    {
+      "path": "am_npc/am/src/riscv/spike/htif.c",
+      "bytes": 2514,
+      "sha256": "b2c31d11e90c955e5d04f051cc137caacae349c486d6c0a2f94353bafdc6a5fe",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/spike/htif.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/spike/htif.h",
+      "bytes": 731,
+      "sha256": "234d765b19cb2a2ee046c71147328f2a6100a90807d1ebfb700d71386bb5a53b",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/spike/htif.h"
+    },
+    {
+      "path": "am_npc/am/src/riscv/spike/ioe.c",
+      "bytes": 798,
+      "sha256": "e3d9bff6344e79a561fea1d90efd1b7d1617e6549077933b094e17de3c86100b",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/spike/ioe.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/spike/linker.ld",
+      "bytes": 508,
+      "sha256": "a79b5124ad18a8af66edfd734db3a6f8a5b1e25d157de3553c557ae37f7795d0",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/spike/linker.ld"
+    },
+    {
+      "path": "am_npc/am/src/riscv/spike/start.S",
+      "bytes": 158,
+      "sha256": "6a77830b41b55660740cd771ace94bafae1b985e095e75ce0b0d389a76b213d2",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/spike/start.S"
+    },
+    {
+      "path": "am_npc/am/src/riscv/spike/timer.c",
+      "bytes": 682,
+      "sha256": "e3a158ad74a84d035dcc0edaaeca2464756fa5c0d855dd0a84440ef66cda210a",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/spike/timer.c"
+    },
+    {
+      "path": "am_npc/am/src/riscv/spike/trm.c",
+      "bytes": 653,
+      "sha256": "28a325b2901b826e6a6748d2bf7f8bee019e764dde9ea62126cdfbccae417b89",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/riscv/spike/trm.c"
+    },
+    {
+      "path": "am_npc/am/src/x86/nemu/cte.c",
+      "bytes": 1467,
+      "sha256": "154c53708eea2ee1d278f5ac023c75a373f605dab73a042e7fb6eb6341f7272b",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/nemu/cte.c"
+    },
+    {
+      "path": "am_npc/am/src/x86/nemu/start.S",
+      "bytes": 167,
+      "sha256": "04d5ab4be964628cceb7d6f9164a111c0e743bcade436fe5824fdefb93e5f2b4",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/nemu/start.S"
+    },
+    {
+      "path": "am_npc/am/src/x86/nemu/trap.S",
+      "bytes": 499,
+      "sha256": "d404f891af70c96a9fb0688ebb91494363735da55a89bce4d09a670d4e4b9955",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/nemu/trap.S"
+    },
+    {
+      "path": "am_npc/am/src/x86/nemu/vme.c",
+      "bytes": 1358,
+      "sha256": "0f6efaf448829ff31b56b9778fecbae31efdce7e2efb71346c9d4fe6a71adca5",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/nemu/vme.c"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/boot/Makefile",
+      "bytes": 249,
+      "sha256": "04784b0cce0d5f38185f511f3e56b239d9bae824179c168c69674f25549265f6",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/boot/Makefile"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/boot/genboot.py",
+      "bytes": 417,
+      "sha256": "2c4f5c4f703b4f6f0468a29ccf506bfa422ff1ba5bbcbb1a266e9643b6884d0c",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/boot/genboot.py"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/boot/main.c",
+      "bytes": 2418,
+      "sha256": "d5003d786806ab28776913bf2b41f6d2a911585d14ac9c3b2496fef7b306245d",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/boot/main.c"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/boot/start.S",
+      "bytes": 1154,
+      "sha256": "5ed96da2aa8d739f263e353675ad08ec005ed3c4b395689fc451a3f5a434cfc9",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/boot/start.S"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/cte.c",
+      "bytes": 4594,
+      "sha256": "92bde4b2d56435e1e6efbad83eb37c24f09676d4e7ec99456f14693c094ce650",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/cte.c"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/ioe.c",
+      "bytes": 14197,
+      "sha256": "5d1ec3e9c2b938309f0a8ce0d86decacfe32b2887fa29e78f68b7126791e0cf9",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/ioe.c"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/mpe.c",
+      "bytes": 1229,
+      "sha256": "d76d7c67be030bf80087f8355998d7a9956f1ec45847a1414e97f23145e1806c",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/mpe.c"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/start32.S",
+      "bytes": 100,
+      "sha256": "2614496ea7ee845e9e2c520ba041f9cfd85293f007d02b0df1cbc68aba3b63d9",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/start32.S"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/start64.S",
+      "bytes": 1631,
+      "sha256": "054b93267e92c312d7c577a25ef127f957260ddd035d8f17ec378b627071c631",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/start64.S"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/trap32.S",
+      "bytes": 1816,
+      "sha256": "a54a7b1e1855afd20837b51c6c1d283ee8d4b422583cd7189df04cc7e90394a8",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/trap32.S"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/trap64.S",
+      "bytes": 1068,
+      "sha256": "e0f89fc457ec3106ed46a39f4b1b88434ea03c288cf3c9bfce01e4a0650184b0",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/trap64.S"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/trm.c",
+      "bytes": 3124,
+      "sha256": "46bfbc1427ca006b44d40d4027f385582ca88a20acf2ddffc1cbc3864e131932",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/trm.c"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/vme.c",
+      "bytes": 5178,
+      "sha256": "18578a12bbbc98539d39e46cb961239849f7b99e39525f06970544c444941f95",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/vme.c"
+    },
+    {
+      "path": "am_npc/am/src/x86/qemu/x86-qemu.h",
+      "bytes": 2107,
+      "sha256": "ef2e3b218c903eb7208e8330c8bf51fd3d5b8b22ea4ac36d956786dbd7305a14",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/qemu/x86-qemu.h"
+    },
+    {
+      "path": "am_npc/am/src/x86/x86.h",
+      "bytes": 10463,
+      "sha256": "bedb63e62378f7d828431d4daed331a4f41bb5ae8a46e4a02329c766643dd4b2",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/am/src/x86/x86.h"
+    },
+    {
+      "path": "am_npc/klib/Makefile",
+      "bytes": 81,
+      "sha256": "d9b77f532a798523f54d741587ccc87e873e90cf227f8237115266dbc2f15f24",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/Makefile"
+    },
+    {
+      "path": "am_npc/klib/include/klib-macros.h",
+      "bytes": 1237,
+      "sha256": "9b4c6c0474ece1d06faf951e91e41a0cc640dd77b091123252b55f2176f7a37f",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/include/klib-macros.h"
+    },
+    {
+      "path": "am_npc/klib/include/klib.h",
+      "bytes": 2524,
+      "sha256": "122f192a06a5f766f0676daa33752c7c5d019e491e2b84d2ded0063c35553075",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/include/klib.h"
+    },
+    {
+      "path": "am_npc/klib/src/cpp.c",
+      "bytes": 195,
+      "sha256": "6aec8b1607eefe779fb8c8f6669bee6df8d866da344c31898d99f1525af3deed",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/src/cpp.c"
+    },
+    {
+      "path": "am_npc/klib/src/ctypes.c",
+      "bytes": 958,
+      "sha256": "581f755434e733c029cb6edfe7f6bcf56df62637b58b675431b1cb8337294c79",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/src/ctypes.c"
+    },
+    {
+      "path": "am_npc/klib/src/int64.c",
+      "bytes": 21008,
+      "sha256": "0afbc095ad9c1bd4233d69eda98c7132efff15200bbdb49137d6506534acd5fc",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/src/int64.c"
+    },
+    {
+      "path": "am_npc/klib/src/stdio.c",
+      "bytes": 2177,
+      "sha256": "c3d6bc25137b0650702d381163782ac442587cb96e98e3128560a9b3b31e55b5",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/src/stdio.c"
+    },
+    {
+      "path": "am_npc/klib/src/stdlib.c",
+      "bytes": 2180,
+      "sha256": "4810c222124942b41e13545c2d41139a194c879b8e4391c87ae96ed67c05f2a4",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/src/stdlib.c"
+    },
+    {
+      "path": "am_npc/klib/src/string.c",
+      "bytes": 1264,
+      "sha256": "f7114cda9bcca27fedf84456ec79502ab09a20b4380b8cc336c42d2b3c480690",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/src/string.c"
+    },
+    {
+      "path": "am_npc/scripts/isa/loongarch32r.mk",
+      "bytes": 151,
+      "sha256": "487eb64c8fd6a7bfae78deac0184b40f297330e9a4f63aa36c2125e8b9f0ec10",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/isa/loongarch32r.mk"
+    },
+    {
+      "path": "am_npc/scripts/isa/mips32.mk",
+      "bytes": 270,
+      "sha256": "da0b07ad8cfe9406ebf650b4ff8a8c860ad2469cd20ba4243e12854ebe63f9d7",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/isa/mips32.mk"
+    },
+    {
+      "path": "am_npc/scripts/isa/riscv.mk",
+      "bytes": 357,
+      "sha256": "96f9c26da2795f107bcc3716f6c6a1548bad57340c369dc63971fe1439f51265",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/isa/riscv.mk"
+    },
+    {
+      "path": "am_npc/scripts/isa/x86.mk",
+      "bytes": 352,
+      "sha256": "a71ab76e0913c03ecb5a70398d54d2ae9ac95b86f84dbe3b218202d8f5d05e48",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/isa/x86.mk"
+    },
+    {
+      "path": "am_npc/scripts/isa/x86_64.mk",
+      "bytes": 222,
+      "sha256": "95c0c8e2be0995faffea85ffe924e4385e60a90062e476ec33ad9b9ba9b5f913",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/isa/x86_64.mk"
+    },
+    {
+      "path": "am_npc/scripts/linker.ld",
+      "bytes": 577,
+      "sha256": "8e882c8b160137fed58bcfa021e67c8d634d98fdede6b659b2ac541a2e6c0c4e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/linker.ld"
+    },
+    {
+      "path": "am_npc/scripts/loongarch32r-nemu.mk",
+      "bytes": 285,
+      "sha256": "5009631f462885d3ebc22731b2d1863ca98574dfa2a516a1b4fc8f9eea9d16ae",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/loongarch32r-nemu.mk"
+    },
+    {
+      "path": "am_npc/scripts/minirv-logisim.mk",
+      "bytes": 692,
+      "sha256": "2e3ebc54297a39671046c890317955be21803058a57b123ff1105f16e53e7273",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/minirv-logisim.mk"
+    },
+    {
+      "path": "am_npc/scripts/minirv-npc.mk",
+      "bytes": 524,
+      "sha256": "bc36bc2c10518bb665a153d97e31c244b23769c5baebce4ed90c938883c9db3b",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/minirv-npc.mk"
+    },
+    {
+      "path": "am_npc/scripts/minirv-ysyxsoc.mk",
+      "bytes": 145,
+      "sha256": "53170069e8bb0d0e94eb81eaccf5053b04cb9c4d6adc295d6384c36da6275227",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/minirv-ysyxsoc.mk"
+    },
+    {
+      "path": "am_npc/scripts/mips32-nemu.mk",
+      "bytes": 248,
+      "sha256": "e426110102e2ab6ca8dcd540d3be9fcc243ee00cdd2e287b3af72668097ee6fc",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/mips32-nemu.mk"
+    },
+    {
+      "path": "am_npc/scripts/native.mk",
+      "bytes": 677,
+      "sha256": "30c150fa74a8ea3102b44064eb5f6e0e54d5af7cee6a678d92f765ad05303856",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/native.mk"
+    },
+    {
+      "path": "am_npc/scripts/platform/logisim.mk",
+      "bytes": 632,
+      "sha256": "57e8ca65604de3ae6c339625d66b3cef570e249efccfa2b715fe602a6268e05e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/platform/logisim.mk"
+    },
+    {
+      "path": "am_npc/scripts/platform/nemu.mk",
+      "bytes": 1374,
+      "sha256": "2da8b168ad6d7df83888ae7d00cde25ebd9cc00a784dc216a651b527c7c20a76",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/platform/nemu.mk"
+    },
+    {
+      "path": "am_npc/scripts/platform/npc.mk",
+      "bytes": 1135,
+      "sha256": "5cede96ac473046d4ddb2469796bea7d317fae206bc2dc1995cc34a7fdca23d3",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/platform/npc.mk"
+    },
+    {
+      "path": "am_npc/scripts/platform/qemu.mk",
+      "bytes": 562,
+      "sha256": "7701e0686cd971011163493c5815321bff6c82b0143408e96b433966b1316ac4",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/platform/qemu.mk"
+    },
+    {
+      "path": "am_npc/scripts/riscv32-nemu.mk",
+      "bytes": 379,
+      "sha256": "f45326f72cccce470201f70afe40ab0296acce93c874d1e4660c4bfe39fa1c8f",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/riscv32-nemu.mk"
+    },
+    {
+      "path": "am_npc/scripts/riscv32e-nemu.mk",
+      "bytes": 379,
+      "sha256": "90ae40e70c861081e5993794a2fadee58e1ba2c21e81ebe93a16da2f7ccd4b06",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/riscv32e-nemu.mk"
+    },
+    {
+      "path": "am_npc/scripts/riscv32e-npc.mk",
+      "bytes": 409,
+      "sha256": "75b26ce365efae7fbfbe0c697b2ab244406bde4e6f248a4c1071d61bcb37b7d8",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/riscv32e-npc.mk"
+    },
+    {
+      "path": "am_npc/scripts/riscv64-nemu.mk",
+      "bytes": 251,
+      "sha256": "96ef460b1fe2102037194c180bc975cb1457c8fb92885b524fffcf913fe1ff2f",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/riscv64-nemu.mk"
+    },
+    {
+      "path": "am_npc/scripts/spike.mk",
+      "bytes": 562,
+      "sha256": "75276f8ea8d2071cea4e5d5f3b80b078df57050d31114d7bbe27607889bb3983",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/spike.mk"
+    },
+    {
+      "path": "am_npc/scripts/x86-nemu.mk",
+      "bytes": 393,
+      "sha256": "1966a241e1b67eff195e7a8b884cc6e6d87d316fc89737d30815d85db7c5e19a",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/x86-nemu.mk"
+    },
+    {
+      "path": "am_npc/scripts/x86-qemu.mk",
+      "bytes": 346,
+      "sha256": "568c7885a54e42a9268341d96b18823f0f7e6bf87a70d69a900451991b275664",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/x86-qemu.mk"
+    },
+    {
+      "path": "am_npc/scripts/x86_64-qemu.mk",
+      "bytes": 351,
+      "sha256": "2fa8fb33c6d149644baed48424d9a9aab42a53245dc9dadfd52461f23a5aae32",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/scripts/x86_64-qemu.mk"
+    },
+    {
+      "path": "am_npc/tools/gen-ramdisk.py",
+      "bytes": 1429,
+      "sha256": "505a8809ca59ead7f29efa74f41bae3361e273713a23a75919df61c0c9e68d07",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/gen-ramdisk.py"
+    },
+    {
+      "path": "am_npc/tools/insert-arg.py",
+      "bytes": 695,
+      "sha256": "3077a894aac01d6003826d9fc11703a6d6e64d304a84a99e17c33bf073be642d",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/insert-arg.py"
+    },
+    {
+      "path": "am_npc/tools/logisim-img.py",
+      "bytes": 798,
+      "sha256": "357a7c925b02fc573a73e6a7814da7d09db0f53afa2f379bcd9b094b40260afe",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/logisim-img.py"
+    },
+    {
+      "path": "am_npc/tools/logisim-ysyx-img.py",
+      "bytes": 443,
+      "sha256": "2616eaba5f3852ada7ea9e22f15948291870e48cd2aac3bc5b5bc0f0949c73a8",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/logisim-ysyx-img.py"
+    },
+    {
+      "path": "am_npc/tools/minirv/.gitignore",
+      "bytes": 26,
+      "sha256": "8aa8cdc414933b1e6178a1307c58f9e50a9c0f21e91673c93d9ede83b1f68f2c",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/minirv/.gitignore"
+    },
+    {
+      "path": "am_npc/tools/minirv/.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/minirv/.lock"
+    },
+    {
+      "path": "am_npc/tools/minirv/gen-lut.c",
+      "bytes": 757,
+      "sha256": "dc256d103e0fdaa196b9be152213c2ff38b2517392f8f39ef8686ca791a547fc",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/minirv/gen-lut.c"
+    },
+    {
+      "path": "am_npc/tools/minirv/inst-replace.h",
+      "bytes": 15245,
+      "sha256": "308a046a40d14810330e2361e1f5e0f435df3416a88083923073938cc8a915f8",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/minirv/inst-replace.h"
+    },
+    {
+      "path": "am_npc/tools/minirv/lut.bin",
+      "bytes": 294912,
+      "sha256": "951081152ca2dc54a26528b87f03f73faa349f0c823ba23c858bcd7b19e5c1ea",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/minirv/lut.bin"
+    },
+    {
+      "path": "am_npc/tools/minirv/minirv-common.sh",
+      "bytes": 1574,
+      "sha256": "03b3a17b483192d8d228c5bc92790244454a805f15559799885ad5260a046b0e",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/minirv/minirv-common.sh"
+    },
+    {
+      "path": "am_npc/tools/minirv/minirv-g++",
+      "bytes": 42,
+      "sha256": "01e7beef9b2e8f0f5eeeb7fb246fbc0dcb7f01ef3f4e99711aabdf23ad26cc32",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/minirv/minirv-g++"
+    },
+    {
+      "path": "am_npc/tools/minirv/minirv-gcc",
+      "bytes": 42,
+      "sha256": "953de7a8552db2314fe8f5438bfdf0f4fce4971e4f0d76a73f09dcd8b2eb427a",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/tools/minirv/minirv-gcc"
+    },
+    {
+      "path": "am_soc/.gitignore",
+      "bytes": 131,
+      "sha256": "0983ccfcdf30b995cccf02b95bd62d85fa981c103dc501a8c484f475a70182e7",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/.gitignore"
+    },
+    {
+      "path": "am_soc/.ysyx-source.json",
+      "bytes": 657,
+      "sha256": "1d4c4180740ce3cafe17dabed8b230c3f470ba39a9f5b403f5006633317cfab6",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/.ysyx-source.json"
+    },
+    {
+      "path": "am_soc/LICENSE",
+      "bytes": 1130,
+      "sha256": "a0c58b2790520c558bdc41e843d98da66015c2f00e9eac8da33c2ba0853a2b72",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/LICENSE"
+    },
+    {
+      "path": "am_soc/Makefile",
+      "bytes": 6086,
+      "sha256": "eef4e353f2a3b3b573331c109f933c7fa04a10cd9e2ea2369b0f73cdd48f035e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/Makefile"
+    },
+    {
+      "path": "am_soc/README",
+      "bytes": 542,
+      "sha256": "4bdf06e80e7cb366f3986f6c15e49134ffa645b6e6c428e396d970788e5d1b2f",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/README"
+    },
+    {
+      "path": "am_soc/am/Makefile",
+      "bytes": 121,
+      "sha256": "06aefd18946007499b9f19d3ec342febab91169a26aaee07f3e7cea802c2b860",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/Makefile"
+    },
+    {
+      "path": "am_soc/am/include/am.h",
+      "bytes": 2374,
+      "sha256": "fbfe84a8a0317352f2cc2774fbccaed527f4aec4b9552f8d6c4319edb3cb404f",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/include/am.h"
+    },
+    {
+      "path": "am_soc/am/include/amdev.h",
+      "bytes": 2756,
+      "sha256": "4b814182f059682cffa04f0bf1214e73aecdb6f77e3ee8c09e56c2fc2ec8ede5",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/include/amdev.h"
+    },
+    {
+      "path": "am_soc/am/include/arch/loongarch32r-nemu.h",
+      "bytes": 302,
+      "sha256": "c312ec6a5c8f72fb5ff4d493d141736b2f6aab8c5fd3cc86bfd6cef272a94157",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/include/arch/loongarch32r-nemu.h"
+    },
+    {
+      "path": "am_soc/am/include/arch/mips32-nemu.h",
+      "bytes": 311,
+      "sha256": "f1991e12cdd488fbfb05c25dd9f4da09cd8fc5b6d9ace8760b9f6882efc70d23",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/include/arch/mips32-nemu.h"
+    },
+    {
+      "path": "am_soc/am/include/arch/native.h",
+      "bytes": 1134,
+      "sha256": "d06a54add2fdeae5fb8b55ecdfc352fb3af716e43669a6c89785cd82bb05d4d4",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/include/arch/native.h"
+    },
+    {
+      "path": "am_soc/am/include/arch/riscv.h",
+      "bytes": 446,
+      "sha256": "33c49ebf45b970392e14430ff39d9db37035237628b2026663ebd88b6a6a7d4e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/include/arch/riscv.h"
+    },
+    {
+      "path": "am_soc/am/include/arch/x86-nemu.h",
+      "bytes": 317,
+      "sha256": "dddfd9575c61b20b674aadfb1ce8e38b7a499beaa5da0df627eb7fdb15b36f12",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/include/arch/x86-nemu.h"
+    },
+    {
+      "path": "am_soc/am/include/arch/x86-qemu.h",
+      "bytes": 287,
+      "sha256": "7be0945eeba33cabcf9797ce5e76fcae2bacf4c793d6f6a619f4e3dc49a9cac9",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/include/arch/x86-qemu.h"
+    },
+    {
+      "path": "am_soc/am/include/arch/x86_64-qemu.h",
+      "bytes": 358,
+      "sha256": "f01e3ac020992068011a2bb1c69262b83ad0cbcd3cbf0be03feadcf04c12faec",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/include/arch/x86_64-qemu.h"
+    },
+    {
+      "path": "am_soc/am/src/loongarch/loongarch32r.h",
+      "bytes": 957,
+      "sha256": "1dd5c48f9764449ab3e5138132e0243a2ac4b28bd5a551105d65a5ad40f2919f",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/loongarch/loongarch32r.h"
+    },
+    {
+      "path": "am_soc/am/src/loongarch/nemu/cte.c",
+      "bytes": 904,
+      "sha256": "9372b3093b318f5a4681760f326ed0eb621f17fe6e1290ba1aa8993af90eb9b9",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/loongarch/nemu/cte.c"
+    },
+    {
+      "path": "am_soc/am/src/loongarch/nemu/start.S",
+      "bytes": 140,
+      "sha256": "efdf23a0618a9855bac5679ec2b4f4fdd487a15e4d0148acbeed5b13a93fe2eb",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/loongarch/nemu/start.S"
+    },
+    {
+      "path": "am_soc/am/src/loongarch/nemu/trap.S",
+      "bytes": 1144,
+      "sha256": "48efea3b100be6fa2e5bbc213ed7950fcb26f7c0e89b08bd805acc3b2f4656c2",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/loongarch/nemu/trap.S"
+    },
+    {
+      "path": "am_soc/am/src/loongarch/nemu/vme.c",
+      "bytes": 897,
+      "sha256": "73efb7404ff54a8247e4edf4ce3630f5667b94d99bf9ae00ab21a6b45933b580",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/loongarch/nemu/vme.c"
+    },
+    {
+      "path": "am_soc/am/src/mips/mips32.h",
+      "bytes": 945,
+      "sha256": "106467cf7643da6a2bea59bff8b64e2ac3490d2d9388ee3d4f5bdd21d9a6b789",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/mips/mips32.h"
+    },
+    {
+      "path": "am_soc/am/src/mips/nemu/cte.c",
+      "bytes": 1156,
+      "sha256": "5a3d421f0e60e3d5dfb47c2a7b9590bc61470792d12607f1e43a581a71601dcb",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/mips/nemu/cte.c"
+    },
+    {
+      "path": "am_soc/am/src/mips/nemu/start.S",
+      "bytes": 150,
+      "sha256": "99b23ba9179a1a52fcc39de7d0a114404a311840864e3303276cfd2afcf6e80f",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/mips/nemu/start.S"
+    },
+    {
+      "path": "am_soc/am/src/mips/nemu/trap.S",
+      "bytes": 1473,
+      "sha256": "657f9ceec50e6354b51034826dca35be01d4d74022d4f6e91169fd22ce9202b3",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/mips/nemu/trap.S"
+    },
+    {
+      "path": "am_soc/am/src/mips/nemu/vme.c",
+      "bytes": 897,
+      "sha256": "73efb7404ff54a8247e4edf4ce3630f5667b94d99bf9ae00ab21a6b45933b580",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/mips/nemu/vme.c"
+    },
+    {
+      "path": "am_soc/am/src/native/cte.c",
+      "bytes": 6213,
+      "sha256": "40f1a39357c222b9672603d667e17fdeec00f34146d6f19a63c3e55c02bcd7ae",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/cte.c"
+    },
+    {
+      "path": "am_soc/am/src/native/ioe/audio.c",
+      "bytes": 1547,
+      "sha256": "48ba3d3338ca377b0a28dccdbe14b445513f866b5a9907da78955efc77c96ee4",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/ioe/audio.c"
+    },
+    {
+      "path": "am_soc/am/src/native/ioe/disk.c",
+      "bytes": 888,
+      "sha256": "d025516206640bd210a1b07759d125cf0a90732b413e0d2d9ebe9951e581da4a",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/ioe/disk.c"
+    },
+    {
+      "path": "am_soc/am/src/native/ioe/gpu.c",
+      "bytes": 1678,
+      "sha256": "7dcd5b7215b7a3c72854230cbe7188f26b399a0a430166fdf8f14961971827b1",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/ioe/gpu.c"
+    },
+    {
+      "path": "am_soc/am/src/native/ioe/input.c",
+      "bytes": 1611,
+      "sha256": "05a8bf89722b076ccaa27c6ec39d9bcc9a6a90e367fffd5e8d6830024c60b529",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/ioe/input.c"
+    },
+    {
+      "path": "am_soc/am/src/native/ioe/timer.c",
+      "bytes": 822,
+      "sha256": "f8d1381563ce457789099242e4e763eff754cbd3b62a58f5d81dd00b4bc49d09",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/ioe/timer.c"
+    },
+    {
+      "path": "am_soc/am/src/native/ioe/uart.c",
+      "bytes": 995,
+      "sha256": "9f4ee8c06319c276f44f7f2e7d4b2a9221ea746520ba9f9ea4ce2e51addf1cf1",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/ioe/uart.c"
+    },
+    {
+      "path": "am_soc/am/src/native/ioe.c",
+      "bytes": 2713,
+      "sha256": "11a83759269da0b88ee871b5d820974df16ed8ef9fd78cad3fc62eacc8dea412",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/ioe.c"
+    },
+    {
+      "path": "am_soc/am/src/native/mpe.c",
+      "bytes": 1004,
+      "sha256": "37e47e8adaba930b8a9b75a6b5a6e5ba1ffed2ba5c4e6f6c8f805268b992d7cf",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/mpe.c"
+    },
+    {
+      "path": "am_soc/am/src/native/platform.c",
+      "bytes": 7693,
+      "sha256": "47c07e8541306e4d5d52b41879f09bd7991f773c30f1738b1183bca746132907",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/platform.c"
+    },
+    {
+      "path": "am_soc/am/src/native/platform.h",
+      "bytes": 1297,
+      "sha256": "9a94b066c57eea81cb6e5b7533cd3468dc05c779f390320d0a4f392be2c85186",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/platform.h"
+    },
+    {
+      "path": "am_soc/am/src/native/trap.S",
+      "bytes": 856,
+      "sha256": "5f44e9f6cab303b0ab6276bcbac07e2b5f9c1bab8beda62e4aefbad6eb7c48d3",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/trap.S"
+    },
+    {
+      "path": "am_soc/am/src/native/trm.c",
+      "bytes": 577,
+      "sha256": "2c50d5ade777e427c17957436ecd33d670fc6d9b84588d733a9c9e1917a18921",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/trm.c"
+    },
+    {
+      "path": "am_soc/am/src/native/vme.c",
+      "bytes": 3429,
+      "sha256": "a9e0e083495cde8a2d4fe90fc2a36ca04d55b2b689e42b4b1965156a3e1d9afc",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/native/vme.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/dummy/cte.c",
+      "bytes": 275,
+      "sha256": "de7b3ffa3be6297a1b01149fd2391297c02ec8cc71f54217804fb7b7be2107a8",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/dummy/cte.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/dummy/ioe.c",
+      "bytes": 258,
+      "sha256": "c0e9917f045b5fea0f371a98115af664f494a90990f24e2c624ec9a253fb78fa",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/dummy/ioe.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/dummy/mpe.c",
+      "bytes": 209,
+      "sha256": "6a32ffe9d4b1f4300a183ec6d2c824ed6784d49e389a6f76bc141a2df9b988a3",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/dummy/mpe.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/dummy/trm.c",
+      "bytes": 121,
+      "sha256": "c1b43483cce167d7f5ecbc4cbb84555bcf4313e079212aad26c88a240d0ff660",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/dummy/trm.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/dummy/vme.c",
+      "bytes": 325,
+      "sha256": "fbec26d5d14012156f4d29025b11c644a357a133008b87ebefb74a5e8ba056bc",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/dummy/vme.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/logisim/ioe.c",
+      "bytes": 2766,
+      "sha256": "4e2f91f8573abf3435682e91d7125cbb7b190478a375aff78a0b0c0da2ed014c",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/logisim/ioe.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/logisim/trm.c",
+      "bytes": 323,
+      "sha256": "dff1873dddd58843440013397ea098bed0bf2409d62cd761ca9bc7162d3007e3",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/logisim/trm.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/nemu/include/nemu.h",
+      "bytes": 1570,
+      "sha256": "75b553dcca086d14c77ab6b5b24cccdd146088ac4a196ec984c0bfc8574f19e7",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/nemu/include/nemu.h"
+    },
+    {
+      "path": "am_soc/am/src/platform/nemu/ioe/audio.c",
+      "bytes": 628,
+      "sha256": "e968e08feb538cf67f28031f663c167a84595a7f8ae06a2382d03dceefd57c95",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/nemu/ioe/audio.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/nemu/ioe/disk.c",
+      "bytes": 218,
+      "sha256": "83668c9edc82280f9058ca7aff81a25c55ff024c5bbf9e5c59054b675641ff5f",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/nemu/ioe/disk.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/nemu/ioe/gpu.c",
+      "bytes": 460,
+      "sha256": "a2eb287ba0c79e5210c1657a7b9be0ee35add4f1ea951ebc9e7d549707dd75d6",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/nemu/ioe/gpu.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/nemu/ioe/input.c",
+      "bytes": 174,
+      "sha256": "4ec06becd6520a620be83b07f77e8ff6e384c2039fa03ef611affa02dcec6c9e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/nemu/ioe/input.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/nemu/ioe/ioe.c",
+      "bytes": 2189,
+      "sha256": "2f406311598d72e448094043c1f1b53296cfbf496a9800871e4b23d1b6370c76",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/nemu/ioe/ioe.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/nemu/ioe/timer.c",
+      "bytes": 316,
+      "sha256": "001fbbca73dec09074d713a8d4f7986b0a93648d8ecc096b963d873358aa70cc",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/nemu/ioe/timer.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/nemu/mpe.c",
+      "bytes": 313,
+      "sha256": "3c168509a18d68e94dc51d6998f8fdc92408b9ed06b4a82320734a40b19a9e47",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/nemu/mpe.c"
+    },
+    {
+      "path": "am_soc/am/src/platform/nemu/trm.c",
+      "bytes": 454,
+      "sha256": "878821355cb5f31800fd3a08d34c090e77decea86284e64bc9b8986702e9b366",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/platform/nemu/trm.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/nemu/cte.c",
+      "bytes": 918,
+      "sha256": "2bff60f0c93b0856515de413fdc67cc0bf9caf798942bf5e891a06b1cadbe28c",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/nemu/cte.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/nemu/start.S",
+      "bytes": 159,
+      "sha256": "2852310b02b796af860427988a960893bf5dd89e69001f529fa80f0d050eab8c",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/nemu/start.S"
+    },
+    {
+      "path": "am_soc/am/src/riscv/nemu/trap.S",
+      "bytes": 1546,
+      "sha256": "b8c3a16844588327ca1452c665f27da092606596c99960f7c4753d0dcd4e4d03",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/nemu/trap.S"
+    },
+    {
+      "path": "am_soc/am/src/riscv/nemu/vme.c",
+      "bytes": 1632,
+      "sha256": "2e5c2ade8b969f0b69fe9d67ae6f2eb175c26848df060c34d8b1049d752722d7",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/nemu/vme.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/cte.c",
+      "bytes": 918,
+      "sha256": "2bff60f0c93b0856515de413fdc67cc0bf9caf798942bf5e891a06b1cadbe28c",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/cte.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/e7_config.h",
+      "bytes": 131,
+      "sha256": "1035477ece82b18ff45de05c36c79f98c6f32481488d2bbfa3bbae5d77108e35",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/e7_config.h"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/input.c",
+      "bytes": 124,
+      "sha256": "1c21bbedd10a3e5d01f3eb71270dbb6292c8570d82c3608b25ec9f775acbc157",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/input.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/ioe.c",
+      "bytes": 1255,
+      "sha256": "0896426bb39c2629623635b6b15030875a11d81c4f9952a8f8809b637e300b72",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/ioe.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/libgcc/ashldi3.c",
+      "bytes": 546,
+      "sha256": "becc84a87d7a9038ceba9c7d7abc40fa41173de116152bddb09512168b80d2fd",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/libgcc/ashldi3.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/libgcc/div.S",
+      "bytes": 3862,
+      "sha256": "4b860ed895cc71378d36966d7c7550a467f15b6e7b5e6c04426e05dcb5c9d90e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/libgcc/div.S"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/libgcc/libgcc2.h",
+      "bytes": 17337,
+      "sha256": "04c7938597cf8c1789bf0f26d6fe366c451f7cdefd99a8de0e738febf64e3081",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/libgcc/libgcc2.h"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/libgcc/longlong.h",
+      "bytes": 62919,
+      "sha256": "d4c657718821033e038eec26cb617d4d3353998294e64343236c2083ae4a904e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/libgcc/longlong.h"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/libgcc/muldi3.S",
+      "bytes": 1427,
+      "sha256": "d37549240aebdef963369a504e69f345711ffbe186bcc1606cd6b544a30724ba",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/libgcc/muldi3.S"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/libgcc/multi3.c",
+      "bytes": 2425,
+      "sha256": "3a01788c94105b7558006508fba374f8c12b07c85a72732d051b246f5119ba95",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/libgcc/multi3.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/libgcc/riscv-asm.h",
+      "bytes": 1421,
+      "sha256": "2fdf000cfe81f015b013c4a61d79d385aed91fa5921b80965374e8faf752349b",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/libgcc/riscv-asm.h"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/libgcc/unused.c",
+      "bytes": 166,
+      "sha256": "c74bf9d32f407f4148daf553707f2bd30919fb731be9c33c620b7e0888bfc09e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/libgcc/unused.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/mpe.c",
+      "bytes": 209,
+      "sha256": "6a32ffe9d4b1f4300a183ec6d2c824ed6784d49e389a6f76bc141a2df9b988a3",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/mpe.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/start.S",
+      "bytes": 159,
+      "sha256": "2852310b02b796af860427988a960893bf5dd89e69001f529fa80f0d050eab8c",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/start.S"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/timer.c",
+      "bytes": 769,
+      "sha256": "09cae6e392dcf295d3cf2071f1392fe74c08d04789359934e4ec819905b8ffbf",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/timer.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/trap.S",
+      "bytes": 1448,
+      "sha256": "886d6ebb392fe1f1760418254fdb640c1814b7360eba8410ee94b015e17a962e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/trap.S"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/trm.c",
+      "bytes": 1033,
+      "sha256": "c61c459a813c484cc38cc517a65f4e57a813b85f391673eae2c4dd8dd825f63a",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/trm.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/npc/vme.c",
+      "bytes": 325,
+      "sha256": "fbec26d5d14012156f4d29025b11c644a357a133008b87ebefb74a5e8ba056bc",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/vme.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/riscv.h",
+      "bytes": 1014,
+      "sha256": "60a3bc44cc7e94394c45d1e06ecd18a81e6069b7ced8e61e5bf81a6d868f57b4",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/riscv.h"
+    },
+    {
+      "path": "am_soc/am/src/riscv/spike/atomic.h",
+      "bytes": 2152,
+      "sha256": "7e6002327b2f369b0e4c0e10b729f74bb77cd243ae0ed9b31cb249736afc2ff7",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/spike/atomic.h"
+    },
+    {
+      "path": "am_soc/am/src/riscv/spike/htif.c",
+      "bytes": 2514,
+      "sha256": "b2c31d11e90c955e5d04f051cc137caacae349c486d6c0a2f94353bafdc6a5fe",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/spike/htif.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/spike/htif.h",
+      "bytes": 731,
+      "sha256": "234d765b19cb2a2ee046c71147328f2a6100a90807d1ebfb700d71386bb5a53b",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/spike/htif.h"
+    },
+    {
+      "path": "am_soc/am/src/riscv/spike/ioe.c",
+      "bytes": 798,
+      "sha256": "e3d9bff6344e79a561fea1d90efd1b7d1617e6549077933b094e17de3c86100b",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/spike/ioe.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/spike/linker.ld",
+      "bytes": 508,
+      "sha256": "a79b5124ad18a8af66edfd734db3a6f8a5b1e25d157de3553c557ae37f7795d0",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/spike/linker.ld"
+    },
+    {
+      "path": "am_soc/am/src/riscv/spike/start.S",
+      "bytes": 158,
+      "sha256": "6a77830b41b55660740cd771ace94bafae1b985e095e75ce0b0d389a76b213d2",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/spike/start.S"
+    },
+    {
+      "path": "am_soc/am/src/riscv/spike/timer.c",
+      "bytes": 682,
+      "sha256": "e3a158ad74a84d035dcc0edaaeca2464756fa5c0d855dd0a84440ef66cda210a",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/spike/timer.c"
+    },
+    {
+      "path": "am_soc/am/src/riscv/spike/trm.c",
+      "bytes": 653,
+      "sha256": "28a325b2901b826e6a6748d2bf7f8bee019e764dde9ea62126cdfbccae417b89",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/spike/trm.c"
+    },
+    {
+      "path": "am_soc/am/src/x86/nemu/cte.c",
+      "bytes": 1467,
+      "sha256": "154c53708eea2ee1d278f5ac023c75a373f605dab73a042e7fb6eb6341f7272b",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/nemu/cte.c"
+    },
+    {
+      "path": "am_soc/am/src/x86/nemu/start.S",
+      "bytes": 167,
+      "sha256": "04d5ab4be964628cceb7d6f9164a111c0e743bcade436fe5824fdefb93e5f2b4",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/nemu/start.S"
+    },
+    {
+      "path": "am_soc/am/src/x86/nemu/trap.S",
+      "bytes": 499,
+      "sha256": "d404f891af70c96a9fb0688ebb91494363735da55a89bce4d09a670d4e4b9955",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/nemu/trap.S"
+    },
+    {
+      "path": "am_soc/am/src/x86/nemu/vme.c",
+      "bytes": 1358,
+      "sha256": "0f6efaf448829ff31b56b9778fecbae31efdce7e2efb71346c9d4fe6a71adca5",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/nemu/vme.c"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/boot/Makefile",
+      "bytes": 249,
+      "sha256": "04784b0cce0d5f38185f511f3e56b239d9bae824179c168c69674f25549265f6",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/boot/Makefile"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/boot/genboot.py",
+      "bytes": 417,
+      "sha256": "2c4f5c4f703b4f6f0468a29ccf506bfa422ff1ba5bbcbb1a266e9643b6884d0c",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/boot/genboot.py"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/boot/main.c",
+      "bytes": 2418,
+      "sha256": "d5003d786806ab28776913bf2b41f6d2a911585d14ac9c3b2496fef7b306245d",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/boot/main.c"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/boot/start.S",
+      "bytes": 1154,
+      "sha256": "5ed96da2aa8d739f263e353675ad08ec005ed3c4b395689fc451a3f5a434cfc9",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/boot/start.S"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/cte.c",
+      "bytes": 4594,
+      "sha256": "92bde4b2d56435e1e6efbad83eb37c24f09676d4e7ec99456f14693c094ce650",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/cte.c"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/ioe.c",
+      "bytes": 14197,
+      "sha256": "5d1ec3e9c2b938309f0a8ce0d86decacfe32b2887fa29e78f68b7126791e0cf9",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/ioe.c"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/mpe.c",
+      "bytes": 1229,
+      "sha256": "d76d7c67be030bf80087f8355998d7a9956f1ec45847a1414e97f23145e1806c",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/mpe.c"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/start32.S",
+      "bytes": 100,
+      "sha256": "2614496ea7ee845e9e2c520ba041f9cfd85293f007d02b0df1cbc68aba3b63d9",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/start32.S"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/start64.S",
+      "bytes": 1631,
+      "sha256": "054b93267e92c312d7c577a25ef127f957260ddd035d8f17ec378b627071c631",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/start64.S"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/trap32.S",
+      "bytes": 1816,
+      "sha256": "a54a7b1e1855afd20837b51c6c1d283ee8d4b422583cd7189df04cc7e90394a8",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/trap32.S"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/trap64.S",
+      "bytes": 1068,
+      "sha256": "e0f89fc457ec3106ed46a39f4b1b88434ea03c288cf3c9bfce01e4a0650184b0",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/trap64.S"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/trm.c",
+      "bytes": 3124,
+      "sha256": "46bfbc1427ca006b44d40d4027f385582ca88a20acf2ddffc1cbc3864e131932",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/trm.c"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/vme.c",
+      "bytes": 5178,
+      "sha256": "18578a12bbbc98539d39e46cb961239849f7b99e39525f06970544c444941f95",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/vme.c"
+    },
+    {
+      "path": "am_soc/am/src/x86/qemu/x86-qemu.h",
+      "bytes": 2107,
+      "sha256": "ef2e3b218c903eb7208e8330c8bf51fd3d5b8b22ea4ac36d956786dbd7305a14",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/qemu/x86-qemu.h"
+    },
+    {
+      "path": "am_soc/am/src/x86/x86.h",
+      "bytes": 10463,
+      "sha256": "bedb63e62378f7d828431d4daed331a4f41bb5ae8a46e4a02329c766643dd4b2",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/am/src/x86/x86.h"
+    },
+    {
+      "path": "am_soc/klib/Makefile",
+      "bytes": 81,
+      "sha256": "d9b77f532a798523f54d741587ccc87e873e90cf227f8237115266dbc2f15f24",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/Makefile"
+    },
+    {
+      "path": "am_soc/klib/include/klib-macros.h",
+      "bytes": 1237,
+      "sha256": "9b4c6c0474ece1d06faf951e91e41a0cc640dd77b091123252b55f2176f7a37f",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/include/klib-macros.h"
+    },
+    {
+      "path": "am_soc/klib/include/klib.h",
+      "bytes": 2524,
+      "sha256": "122f192a06a5f766f0676daa33752c7c5d019e491e2b84d2ded0063c35553075",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/include/klib.h"
+    },
+    {
+      "path": "am_soc/klib/src/cpp.c",
+      "bytes": 195,
+      "sha256": "6aec8b1607eefe779fb8c8f6669bee6df8d866da344c31898d99f1525af3deed",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/src/cpp.c"
+    },
+    {
+      "path": "am_soc/klib/src/ctypes.c",
+      "bytes": 958,
+      "sha256": "581f755434e733c029cb6edfe7f6bcf56df62637b58b675431b1cb8337294c79",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/src/ctypes.c"
+    },
+    {
+      "path": "am_soc/klib/src/int64.c",
+      "bytes": 21008,
+      "sha256": "0afbc095ad9c1bd4233d69eda98c7132efff15200bbdb49137d6506534acd5fc",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/src/int64.c"
+    },
+    {
+      "path": "am_soc/klib/src/stdio.c",
+      "bytes": 2177,
+      "sha256": "c3d6bc25137b0650702d381163782ac442587cb96e98e3128560a9b3b31e55b5",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/src/stdio.c"
+    },
+    {
+      "path": "am_soc/klib/src/stdlib.c",
+      "bytes": 2180,
+      "sha256": "4810c222124942b41e13545c2d41139a194c879b8e4391c87ae96ed67c05f2a4",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/src/stdlib.c"
+    },
+    {
+      "path": "am_soc/klib/src/string.c",
+      "bytes": 1264,
+      "sha256": "f7114cda9bcca27fedf84456ec79502ab09a20b4380b8cc336c42d2b3c480690",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/src/string.c"
+    },
+    {
+      "path": "am_soc/scripts/isa/loongarch32r.mk",
+      "bytes": 151,
+      "sha256": "487eb64c8fd6a7bfae78deac0184b40f297330e9a4f63aa36c2125e8b9f0ec10",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/isa/loongarch32r.mk"
+    },
+    {
+      "path": "am_soc/scripts/isa/mips32.mk",
+      "bytes": 270,
+      "sha256": "da0b07ad8cfe9406ebf650b4ff8a8c860ad2469cd20ba4243e12854ebe63f9d7",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/isa/mips32.mk"
+    },
+    {
+      "path": "am_soc/scripts/isa/riscv.mk",
+      "bytes": 357,
+      "sha256": "96f9c26da2795f107bcc3716f6c6a1548bad57340c369dc63971fe1439f51265",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/isa/riscv.mk"
+    },
+    {
+      "path": "am_soc/scripts/isa/x86.mk",
+      "bytes": 352,
+      "sha256": "a71ab76e0913c03ecb5a70398d54d2ae9ac95b86f84dbe3b218202d8f5d05e48",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/isa/x86.mk"
+    },
+    {
+      "path": "am_soc/scripts/isa/x86_64.mk",
+      "bytes": 222,
+      "sha256": "95c0c8e2be0995faffea85ffe924e4385e60a90062e476ec33ad9b9ba9b5f913",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/isa/x86_64.mk"
+    },
+    {
+      "path": "am_soc/scripts/linker.ld",
+      "bytes": 577,
+      "sha256": "8e882c8b160137fed58bcfa021e67c8d634d98fdede6b659b2ac541a2e6c0c4e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/linker.ld"
+    },
+    {
+      "path": "am_soc/scripts/loongarch32r-nemu.mk",
+      "bytes": 285,
+      "sha256": "5009631f462885d3ebc22731b2d1863ca98574dfa2a516a1b4fc8f9eea9d16ae",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/loongarch32r-nemu.mk"
+    },
+    {
+      "path": "am_soc/scripts/minirv-logisim.mk",
+      "bytes": 692,
+      "sha256": "2e3ebc54297a39671046c890317955be21803058a57b123ff1105f16e53e7273",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/minirv-logisim.mk"
+    },
+    {
+      "path": "am_soc/scripts/minirv-npc.mk",
+      "bytes": 524,
+      "sha256": "bc36bc2c10518bb665a153d97e31c244b23769c5baebce4ed90c938883c9db3b",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/minirv-npc.mk"
+    },
+    {
+      "path": "am_soc/scripts/minirv-ysyxsoc.mk",
+      "bytes": 145,
+      "sha256": "53170069e8bb0d0e94eb81eaccf5053b04cb9c4d6adc295d6384c36da6275227",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/minirv-ysyxsoc.mk"
+    },
+    {
+      "path": "am_soc/scripts/mips32-nemu.mk",
+      "bytes": 248,
+      "sha256": "e426110102e2ab6ca8dcd540d3be9fcc243ee00cdd2e287b3af72668097ee6fc",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/mips32-nemu.mk"
+    },
+    {
+      "path": "am_soc/scripts/native.mk",
+      "bytes": 677,
+      "sha256": "30c150fa74a8ea3102b44064eb5f6e0e54d5af7cee6a678d92f765ad05303856",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/native.mk"
+    },
+    {
+      "path": "am_soc/scripts/platform/logisim.mk",
+      "bytes": 632,
+      "sha256": "57e8ca65604de3ae6c339625d66b3cef570e249efccfa2b715fe602a6268e05e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/platform/logisim.mk"
+    },
+    {
+      "path": "am_soc/scripts/platform/nemu.mk",
+      "bytes": 1374,
+      "sha256": "2da8b168ad6d7df83888ae7d00cde25ebd9cc00a784dc216a651b527c7c20a76",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/platform/nemu.mk"
+    },
+    {
+      "path": "am_soc/scripts/platform/npc.mk",
+      "bytes": 1135,
+      "sha256": "5cede96ac473046d4ddb2469796bea7d317fae206bc2dc1995cc34a7fdca23d3",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/platform/npc.mk"
+    },
+    {
+      "path": "am_soc/scripts/platform/qemu.mk",
+      "bytes": 562,
+      "sha256": "7701e0686cd971011163493c5815321bff6c82b0143408e96b433966b1316ac4",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/platform/qemu.mk"
+    },
+    {
+      "path": "am_soc/scripts/riscv32-nemu.mk",
+      "bytes": 379,
+      "sha256": "f45326f72cccce470201f70afe40ab0296acce93c874d1e4660c4bfe39fa1c8f",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/riscv32-nemu.mk"
+    },
+    {
+      "path": "am_soc/scripts/riscv32e-nemu.mk",
+      "bytes": 379,
+      "sha256": "90ae40e70c861081e5993794a2fadee58e1ba2c21e81ebe93a16da2f7ccd4b06",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/riscv32e-nemu.mk"
+    },
+    {
+      "path": "am_soc/scripts/riscv32e-npc.mk",
+      "bytes": 409,
+      "sha256": "75b26ce365efae7fbfbe0c697b2ab244406bde4e6f248a4c1071d61bcb37b7d8",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/riscv32e-npc.mk"
+    },
+    {
+      "path": "am_soc/scripts/riscv64-nemu.mk",
+      "bytes": 251,
+      "sha256": "96ef460b1fe2102037194c180bc975cb1457c8fb92885b524fffcf913fe1ff2f",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/riscv64-nemu.mk"
+    },
+    {
+      "path": "am_soc/scripts/spike.mk",
+      "bytes": 562,
+      "sha256": "75276f8ea8d2071cea4e5d5f3b80b078df57050d31114d7bbe27607889bb3983",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/spike.mk"
+    },
+    {
+      "path": "am_soc/scripts/x86-nemu.mk",
+      "bytes": 393,
+      "sha256": "1966a241e1b67eff195e7a8b884cc6e6d87d316fc89737d30815d85db7c5e19a",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/x86-nemu.mk"
+    },
+    {
+      "path": "am_soc/scripts/x86-qemu.mk",
+      "bytes": 346,
+      "sha256": "568c7885a54e42a9268341d96b18823f0f7e6bf87a70d69a900451991b275664",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/x86-qemu.mk"
+    },
+    {
+      "path": "am_soc/scripts/x86_64-qemu.mk",
+      "bytes": 351,
+      "sha256": "2fa8fb33c6d149644baed48424d9a9aab42a53245dc9dadfd52461f23a5aae32",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/scripts/x86_64-qemu.mk"
+    },
+    {
+      "path": "am_soc/tools/gen-ramdisk.py",
+      "bytes": 1429,
+      "sha256": "505a8809ca59ead7f29efa74f41bae3361e273713a23a75919df61c0c9e68d07",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/gen-ramdisk.py"
+    },
+    {
+      "path": "am_soc/tools/insert-arg.py",
+      "bytes": 695,
+      "sha256": "3077a894aac01d6003826d9fc11703a6d6e64d304a84a99e17c33bf073be642d",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/insert-arg.py"
+    },
+    {
+      "path": "am_soc/tools/logisim-img.py",
+      "bytes": 798,
+      "sha256": "357a7c925b02fc573a73e6a7814da7d09db0f53afa2f379bcd9b094b40260afe",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/logisim-img.py"
+    },
+    {
+      "path": "am_soc/tools/logisim-ysyx-img.py",
+      "bytes": 443,
+      "sha256": "2616eaba5f3852ada7ea9e22f15948291870e48cd2aac3bc5b5bc0f0949c73a8",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/logisim-ysyx-img.py"
+    },
+    {
+      "path": "am_soc/tools/minirv/.gitignore",
+      "bytes": 26,
+      "sha256": "8aa8cdc414933b1e6178a1307c58f9e50a9c0f21e91673c93d9ede83b1f68f2c",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/minirv/.gitignore"
+    },
+    {
+      "path": "am_soc/tools/minirv/.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/minirv/.lock"
+    },
+    {
+      "path": "am_soc/tools/minirv/gen-lut.c",
+      "bytes": 757,
+      "sha256": "dc256d103e0fdaa196b9be152213c2ff38b2517392f8f39ef8686ca791a547fc",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/minirv/gen-lut.c"
+    },
+    {
+      "path": "am_soc/tools/minirv/inst-replace.h",
+      "bytes": 15245,
+      "sha256": "308a046a40d14810330e2361e1f5e0f435df3416a88083923073938cc8a915f8",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/minirv/inst-replace.h"
+    },
+    {
+      "path": "am_soc/tools/minirv/lut.bin",
+      "bytes": 294912,
+      "sha256": "951081152ca2dc54a26528b87f03f73faa349f0c823ba23c858bcd7b19e5c1ea",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/minirv/lut.bin"
+    },
+    {
+      "path": "am_soc/tools/minirv/minirv-common.sh",
+      "bytes": 1574,
+      "sha256": "03b3a17b483192d8d228c5bc92790244454a805f15559799885ad5260a046b0e",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/minirv/minirv-common.sh"
+    },
+    {
+      "path": "am_soc/tools/minirv/minirv-g++",
+      "bytes": 42,
+      "sha256": "01e7beef9b2e8f0f5eeeb7fb246fbc0dcb7f01ef3f4e99711aabdf23ad26cc32",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/minirv/minirv-g++"
+    },
+    {
+      "path": "am_soc/tools/minirv/minirv-gcc",
+      "bytes": 42,
+      "sha256": "953de7a8552db2314fe8f5438bfdf0f4fce4971e4f0d76a73f09dcd8b2eb427a",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/tools/minirv/minirv-gcc"
+    },
+    {
+      "path": "am_timer/.gitignore",
+      "bytes": 131,
+      "sha256": "0983ccfcdf30b995cccf02b95bd62d85fa981c103dc501a8c484f475a70182e7",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/.gitignore"
+    },
+    {
+      "path": "am_timer/.ysyx-source.json",
+      "bytes": 657,
+      "sha256": "1d4c4180740ce3cafe17dabed8b230c3f470ba39a9f5b403f5006633317cfab6",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/.ysyx-source.json"
+    },
+    {
+      "path": "am_timer/LICENSE",
+      "bytes": 1130,
+      "sha256": "a0c58b2790520c558bdc41e843d98da66015c2f00e9eac8da33c2ba0853a2b72",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/LICENSE"
+    },
+    {
+      "path": "am_timer/Makefile",
+      "bytes": 6086,
+      "sha256": "eef4e353f2a3b3b573331c109f933c7fa04a10cd9e2ea2369b0f73cdd48f035e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/Makefile"
+    },
+    {
+      "path": "am_timer/README",
+      "bytes": 542,
+      "sha256": "4bdf06e80e7cb366f3986f6c15e49134ffa645b6e6c428e396d970788e5d1b2f",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/README"
+    },
+    {
+      "path": "am_timer/am/Makefile",
+      "bytes": 121,
+      "sha256": "06aefd18946007499b9f19d3ec342febab91169a26aaee07f3e7cea802c2b860",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/Makefile"
+    },
+    {
+      "path": "am_timer/am/include/am.h",
+      "bytes": 2374,
+      "sha256": "fbfe84a8a0317352f2cc2774fbccaed527f4aec4b9552f8d6c4319edb3cb404f",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/include/am.h"
+    },
+    {
+      "path": "am_timer/am/include/amdev.h",
+      "bytes": 2756,
+      "sha256": "4b814182f059682cffa04f0bf1214e73aecdb6f77e3ee8c09e56c2fc2ec8ede5",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/include/amdev.h"
+    },
+    {
+      "path": "am_timer/am/include/arch/loongarch32r-nemu.h",
+      "bytes": 302,
+      "sha256": "c312ec6a5c8f72fb5ff4d493d141736b2f6aab8c5fd3cc86bfd6cef272a94157",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/include/arch/loongarch32r-nemu.h"
+    },
+    {
+      "path": "am_timer/am/include/arch/mips32-nemu.h",
+      "bytes": 311,
+      "sha256": "f1991e12cdd488fbfb05c25dd9f4da09cd8fc5b6d9ace8760b9f6882efc70d23",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/include/arch/mips32-nemu.h"
+    },
+    {
+      "path": "am_timer/am/include/arch/native.h",
+      "bytes": 1134,
+      "sha256": "d06a54add2fdeae5fb8b55ecdfc352fb3af716e43669a6c89785cd82bb05d4d4",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/include/arch/native.h"
+    },
+    {
+      "path": "am_timer/am/include/arch/riscv.h",
+      "bytes": 446,
+      "sha256": "33c49ebf45b970392e14430ff39d9db37035237628b2026663ebd88b6a6a7d4e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/include/arch/riscv.h"
+    },
+    {
+      "path": "am_timer/am/include/arch/x86-nemu.h",
+      "bytes": 317,
+      "sha256": "dddfd9575c61b20b674aadfb1ce8e38b7a499beaa5da0df627eb7fdb15b36f12",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/include/arch/x86-nemu.h"
+    },
+    {
+      "path": "am_timer/am/include/arch/x86-qemu.h",
+      "bytes": 287,
+      "sha256": "7be0945eeba33cabcf9797ce5e76fcae2bacf4c793d6f6a619f4e3dc49a9cac9",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/include/arch/x86-qemu.h"
+    },
+    {
+      "path": "am_timer/am/include/arch/x86_64-qemu.h",
+      "bytes": 358,
+      "sha256": "f01e3ac020992068011a2bb1c69262b83ad0cbcd3cbf0be03feadcf04c12faec",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/include/arch/x86_64-qemu.h"
+    },
+    {
+      "path": "am_timer/am/src/loongarch/loongarch32r.h",
+      "bytes": 957,
+      "sha256": "1dd5c48f9764449ab3e5138132e0243a2ac4b28bd5a551105d65a5ad40f2919f",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/loongarch/loongarch32r.h"
+    },
+    {
+      "path": "am_timer/am/src/loongarch/nemu/cte.c",
+      "bytes": 904,
+      "sha256": "9372b3093b318f5a4681760f326ed0eb621f17fe6e1290ba1aa8993af90eb9b9",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/loongarch/nemu/cte.c"
+    },
+    {
+      "path": "am_timer/am/src/loongarch/nemu/start.S",
+      "bytes": 140,
+      "sha256": "efdf23a0618a9855bac5679ec2b4f4fdd487a15e4d0148acbeed5b13a93fe2eb",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/loongarch/nemu/start.S"
+    },
+    {
+      "path": "am_timer/am/src/loongarch/nemu/trap.S",
+      "bytes": 1144,
+      "sha256": "48efea3b100be6fa2e5bbc213ed7950fcb26f7c0e89b08bd805acc3b2f4656c2",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/loongarch/nemu/trap.S"
+    },
+    {
+      "path": "am_timer/am/src/loongarch/nemu/vme.c",
+      "bytes": 897,
+      "sha256": "73efb7404ff54a8247e4edf4ce3630f5667b94d99bf9ae00ab21a6b45933b580",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/loongarch/nemu/vme.c"
+    },
+    {
+      "path": "am_timer/am/src/mips/mips32.h",
+      "bytes": 945,
+      "sha256": "106467cf7643da6a2bea59bff8b64e2ac3490d2d9388ee3d4f5bdd21d9a6b789",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/mips/mips32.h"
+    },
+    {
+      "path": "am_timer/am/src/mips/nemu/cte.c",
+      "bytes": 1156,
+      "sha256": "5a3d421f0e60e3d5dfb47c2a7b9590bc61470792d12607f1e43a581a71601dcb",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/mips/nemu/cte.c"
+    },
+    {
+      "path": "am_timer/am/src/mips/nemu/start.S",
+      "bytes": 150,
+      "sha256": "99b23ba9179a1a52fcc39de7d0a114404a311840864e3303276cfd2afcf6e80f",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/mips/nemu/start.S"
+    },
+    {
+      "path": "am_timer/am/src/mips/nemu/trap.S",
+      "bytes": 1473,
+      "sha256": "657f9ceec50e6354b51034826dca35be01d4d74022d4f6e91169fd22ce9202b3",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/mips/nemu/trap.S"
+    },
+    {
+      "path": "am_timer/am/src/mips/nemu/vme.c",
+      "bytes": 897,
+      "sha256": "73efb7404ff54a8247e4edf4ce3630f5667b94d99bf9ae00ab21a6b45933b580",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/mips/nemu/vme.c"
+    },
+    {
+      "path": "am_timer/am/src/native/cte.c",
+      "bytes": 6213,
+      "sha256": "40f1a39357c222b9672603d667e17fdeec00f34146d6f19a63c3e55c02bcd7ae",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/cte.c"
+    },
+    {
+      "path": "am_timer/am/src/native/ioe/audio.c",
+      "bytes": 1547,
+      "sha256": "48ba3d3338ca377b0a28dccdbe14b445513f866b5a9907da78955efc77c96ee4",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/ioe/audio.c"
+    },
+    {
+      "path": "am_timer/am/src/native/ioe/disk.c",
+      "bytes": 888,
+      "sha256": "d025516206640bd210a1b07759d125cf0a90732b413e0d2d9ebe9951e581da4a",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/ioe/disk.c"
+    },
+    {
+      "path": "am_timer/am/src/native/ioe/gpu.c",
+      "bytes": 1678,
+      "sha256": "7dcd5b7215b7a3c72854230cbe7188f26b399a0a430166fdf8f14961971827b1",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/ioe/gpu.c"
+    },
+    {
+      "path": "am_timer/am/src/native/ioe/input.c",
+      "bytes": 1611,
+      "sha256": "05a8bf89722b076ccaa27c6ec39d9bcc9a6a90e367fffd5e8d6830024c60b529",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/ioe/input.c"
+    },
+    {
+      "path": "am_timer/am/src/native/ioe/timer.c",
+      "bytes": 822,
+      "sha256": "f8d1381563ce457789099242e4e763eff754cbd3b62a58f5d81dd00b4bc49d09",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/ioe/timer.c"
+    },
+    {
+      "path": "am_timer/am/src/native/ioe/uart.c",
+      "bytes": 995,
+      "sha256": "9f4ee8c06319c276f44f7f2e7d4b2a9221ea746520ba9f9ea4ce2e51addf1cf1",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/ioe/uart.c"
+    },
+    {
+      "path": "am_timer/am/src/native/ioe.c",
+      "bytes": 2713,
+      "sha256": "11a83759269da0b88ee871b5d820974df16ed8ef9fd78cad3fc62eacc8dea412",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/ioe.c"
+    },
+    {
+      "path": "am_timer/am/src/native/mpe.c",
+      "bytes": 1004,
+      "sha256": "37e47e8adaba930b8a9b75a6b5a6e5ba1ffed2ba5c4e6f6c8f805268b992d7cf",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/mpe.c"
+    },
+    {
+      "path": "am_timer/am/src/native/platform.c",
+      "bytes": 7693,
+      "sha256": "47c07e8541306e4d5d52b41879f09bd7991f773c30f1738b1183bca746132907",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/platform.c"
+    },
+    {
+      "path": "am_timer/am/src/native/platform.h",
+      "bytes": 1297,
+      "sha256": "9a94b066c57eea81cb6e5b7533cd3468dc05c779f390320d0a4f392be2c85186",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/platform.h"
+    },
+    {
+      "path": "am_timer/am/src/native/trap.S",
+      "bytes": 856,
+      "sha256": "5f44e9f6cab303b0ab6276bcbac07e2b5f9c1bab8beda62e4aefbad6eb7c48d3",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/trap.S"
+    },
+    {
+      "path": "am_timer/am/src/native/trm.c",
+      "bytes": 577,
+      "sha256": "2c50d5ade777e427c17957436ecd33d670fc6d9b84588d733a9c9e1917a18921",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/trm.c"
+    },
+    {
+      "path": "am_timer/am/src/native/vme.c",
+      "bytes": 3429,
+      "sha256": "a9e0e083495cde8a2d4fe90fc2a36ca04d55b2b689e42b4b1965156a3e1d9afc",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/native/vme.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/dummy/cte.c",
+      "bytes": 275,
+      "sha256": "de7b3ffa3be6297a1b01149fd2391297c02ec8cc71f54217804fb7b7be2107a8",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/dummy/cte.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/dummy/ioe.c",
+      "bytes": 258,
+      "sha256": "c0e9917f045b5fea0f371a98115af664f494a90990f24e2c624ec9a253fb78fa",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/dummy/ioe.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/dummy/mpe.c",
+      "bytes": 209,
+      "sha256": "6a32ffe9d4b1f4300a183ec6d2c824ed6784d49e389a6f76bc141a2df9b988a3",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/dummy/mpe.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/dummy/trm.c",
+      "bytes": 121,
+      "sha256": "c1b43483cce167d7f5ecbc4cbb84555bcf4313e079212aad26c88a240d0ff660",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/dummy/trm.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/dummy/vme.c",
+      "bytes": 325,
+      "sha256": "fbec26d5d14012156f4d29025b11c644a357a133008b87ebefb74a5e8ba056bc",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/dummy/vme.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/logisim/ioe.c",
+      "bytes": 2766,
+      "sha256": "4e2f91f8573abf3435682e91d7125cbb7b190478a375aff78a0b0c0da2ed014c",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/logisim/ioe.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/logisim/trm.c",
+      "bytes": 323,
+      "sha256": "dff1873dddd58843440013397ea098bed0bf2409d62cd761ca9bc7162d3007e3",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/logisim/trm.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/nemu/include/nemu.h",
+      "bytes": 1570,
+      "sha256": "75b553dcca086d14c77ab6b5b24cccdd146088ac4a196ec984c0bfc8574f19e7",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/nemu/include/nemu.h"
+    },
+    {
+      "path": "am_timer/am/src/platform/nemu/ioe/audio.c",
+      "bytes": 628,
+      "sha256": "e968e08feb538cf67f28031f663c167a84595a7f8ae06a2382d03dceefd57c95",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/nemu/ioe/audio.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/nemu/ioe/disk.c",
+      "bytes": 218,
+      "sha256": "83668c9edc82280f9058ca7aff81a25c55ff024c5bbf9e5c59054b675641ff5f",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/nemu/ioe/disk.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/nemu/ioe/gpu.c",
+      "bytes": 460,
+      "sha256": "a2eb287ba0c79e5210c1657a7b9be0ee35add4f1ea951ebc9e7d549707dd75d6",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/nemu/ioe/gpu.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/nemu/ioe/input.c",
+      "bytes": 174,
+      "sha256": "4ec06becd6520a620be83b07f77e8ff6e384c2039fa03ef611affa02dcec6c9e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/nemu/ioe/input.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/nemu/ioe/ioe.c",
+      "bytes": 2189,
+      "sha256": "2f406311598d72e448094043c1f1b53296cfbf496a9800871e4b23d1b6370c76",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/nemu/ioe/ioe.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/nemu/ioe/timer.c",
+      "bytes": 316,
+      "sha256": "001fbbca73dec09074d713a8d4f7986b0a93648d8ecc096b963d873358aa70cc",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/nemu/ioe/timer.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/nemu/mpe.c",
+      "bytes": 313,
+      "sha256": "3c168509a18d68e94dc51d6998f8fdc92408b9ed06b4a82320734a40b19a9e47",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/nemu/mpe.c"
+    },
+    {
+      "path": "am_timer/am/src/platform/nemu/trm.c",
+      "bytes": 454,
+      "sha256": "878821355cb5f31800fd3a08d34c090e77decea86284e64bc9b8986702e9b366",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/platform/nemu/trm.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/nemu/cte.c",
+      "bytes": 918,
+      "sha256": "2bff60f0c93b0856515de413fdc67cc0bf9caf798942bf5e891a06b1cadbe28c",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/nemu/cte.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/nemu/start.S",
+      "bytes": 159,
+      "sha256": "2852310b02b796af860427988a960893bf5dd89e69001f529fa80f0d050eab8c",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/nemu/start.S"
+    },
+    {
+      "path": "am_timer/am/src/riscv/nemu/trap.S",
+      "bytes": 1546,
+      "sha256": "b8c3a16844588327ca1452c665f27da092606596c99960f7c4753d0dcd4e4d03",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/nemu/trap.S"
+    },
+    {
+      "path": "am_timer/am/src/riscv/nemu/vme.c",
+      "bytes": 1632,
+      "sha256": "2e5c2ade8b969f0b69fe9d67ae6f2eb175c26848df060c34d8b1049d752722d7",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/nemu/vme.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/cte.c",
+      "bytes": 918,
+      "sha256": "2bff60f0c93b0856515de413fdc67cc0bf9caf798942bf5e891a06b1cadbe28c",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/cte.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/e7_config.h",
+      "bytes": 129,
+      "sha256": "567e78e59c42294c02be17ae55a3415434c1b558ec7b97b4a20c981577a6deb6",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/e7_config.h"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/input.c",
+      "bytes": 124,
+      "sha256": "1c21bbedd10a3e5d01f3eb71270dbb6292c8570d82c3608b25ec9f775acbc157",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/input.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/ioe.c",
+      "bytes": 1255,
+      "sha256": "0896426bb39c2629623635b6b15030875a11d81c4f9952a8f8809b637e300b72",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/ioe.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/libgcc/ashldi3.c",
+      "bytes": 546,
+      "sha256": "becc84a87d7a9038ceba9c7d7abc40fa41173de116152bddb09512168b80d2fd",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/libgcc/ashldi3.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/libgcc/div.S",
+      "bytes": 3862,
+      "sha256": "4b860ed895cc71378d36966d7c7550a467f15b6e7b5e6c04426e05dcb5c9d90e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/libgcc/div.S"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/libgcc/libgcc2.h",
+      "bytes": 17337,
+      "sha256": "04c7938597cf8c1789bf0f26d6fe366c451f7cdefd99a8de0e738febf64e3081",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/libgcc/libgcc2.h"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/libgcc/longlong.h",
+      "bytes": 62919,
+      "sha256": "d4c657718821033e038eec26cb617d4d3353998294e64343236c2083ae4a904e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/libgcc/longlong.h"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/libgcc/muldi3.S",
+      "bytes": 1427,
+      "sha256": "d37549240aebdef963369a504e69f345711ffbe186bcc1606cd6b544a30724ba",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/libgcc/muldi3.S"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/libgcc/multi3.c",
+      "bytes": 2425,
+      "sha256": "3a01788c94105b7558006508fba374f8c12b07c85a72732d051b246f5119ba95",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/libgcc/multi3.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/libgcc/riscv-asm.h",
+      "bytes": 1421,
+      "sha256": "2fdf000cfe81f015b013c4a61d79d385aed91fa5921b80965374e8faf752349b",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/libgcc/riscv-asm.h"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/libgcc/unused.c",
+      "bytes": 166,
+      "sha256": "c74bf9d32f407f4148daf553707f2bd30919fb731be9c33c620b7e0888bfc09e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/libgcc/unused.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/mpe.c",
+      "bytes": 209,
+      "sha256": "6a32ffe9d4b1f4300a183ec6d2c824ed6784d49e389a6f76bc141a2df9b988a3",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/mpe.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/start.S",
+      "bytes": 159,
+      "sha256": "2852310b02b796af860427988a960893bf5dd89e69001f529fa80f0d050eab8c",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/start.S"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/timer.c",
+      "bytes": 769,
+      "sha256": "09cae6e392dcf295d3cf2071f1392fe74c08d04789359934e4ec819905b8ffbf",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/timer.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/trap.S",
+      "bytes": 1448,
+      "sha256": "886d6ebb392fe1f1760418254fdb640c1814b7360eba8410ee94b015e17a962e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/trap.S"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/trm.c",
+      "bytes": 1033,
+      "sha256": "c61c459a813c484cc38cc517a65f4e57a813b85f391673eae2c4dd8dd825f63a",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/trm.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/npc/vme.c",
+      "bytes": 325,
+      "sha256": "fbec26d5d14012156f4d29025b11c644a357a133008b87ebefb74a5e8ba056bc",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/npc/vme.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/riscv.h",
+      "bytes": 1014,
+      "sha256": "60a3bc44cc7e94394c45d1e06ecd18a81e6069b7ced8e61e5bf81a6d868f57b4",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/riscv.h"
+    },
+    {
+      "path": "am_timer/am/src/riscv/spike/atomic.h",
+      "bytes": 2152,
+      "sha256": "7e6002327b2f369b0e4c0e10b729f74bb77cd243ae0ed9b31cb249736afc2ff7",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/spike/atomic.h"
+    },
+    {
+      "path": "am_timer/am/src/riscv/spike/htif.c",
+      "bytes": 2514,
+      "sha256": "b2c31d11e90c955e5d04f051cc137caacae349c486d6c0a2f94353bafdc6a5fe",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/spike/htif.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/spike/htif.h",
+      "bytes": 731,
+      "sha256": "234d765b19cb2a2ee046c71147328f2a6100a90807d1ebfb700d71386bb5a53b",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/spike/htif.h"
+    },
+    {
+      "path": "am_timer/am/src/riscv/spike/ioe.c",
+      "bytes": 798,
+      "sha256": "e3d9bff6344e79a561fea1d90efd1b7d1617e6549077933b094e17de3c86100b",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/spike/ioe.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/spike/linker.ld",
+      "bytes": 508,
+      "sha256": "a79b5124ad18a8af66edfd734db3a6f8a5b1e25d157de3553c557ae37f7795d0",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/spike/linker.ld"
+    },
+    {
+      "path": "am_timer/am/src/riscv/spike/start.S",
+      "bytes": 158,
+      "sha256": "6a77830b41b55660740cd771ace94bafae1b985e095e75ce0b0d389a76b213d2",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/spike/start.S"
+    },
+    {
+      "path": "am_timer/am/src/riscv/spike/timer.c",
+      "bytes": 682,
+      "sha256": "e3a158ad74a84d035dcc0edaaeca2464756fa5c0d855dd0a84440ef66cda210a",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/spike/timer.c"
+    },
+    {
+      "path": "am_timer/am/src/riscv/spike/trm.c",
+      "bytes": 653,
+      "sha256": "28a325b2901b826e6a6748d2bf7f8bee019e764dde9ea62126cdfbccae417b89",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/riscv/spike/trm.c"
+    },
+    {
+      "path": "am_timer/am/src/x86/nemu/cte.c",
+      "bytes": 1467,
+      "sha256": "154c53708eea2ee1d278f5ac023c75a373f605dab73a042e7fb6eb6341f7272b",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/nemu/cte.c"
+    },
+    {
+      "path": "am_timer/am/src/x86/nemu/start.S",
+      "bytes": 167,
+      "sha256": "04d5ab4be964628cceb7d6f9164a111c0e743bcade436fe5824fdefb93e5f2b4",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/nemu/start.S"
+    },
+    {
+      "path": "am_timer/am/src/x86/nemu/trap.S",
+      "bytes": 499,
+      "sha256": "d404f891af70c96a9fb0688ebb91494363735da55a89bce4d09a670d4e4b9955",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/nemu/trap.S"
+    },
+    {
+      "path": "am_timer/am/src/x86/nemu/vme.c",
+      "bytes": 1358,
+      "sha256": "0f6efaf448829ff31b56b9778fecbae31efdce7e2efb71346c9d4fe6a71adca5",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/nemu/vme.c"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/boot/Makefile",
+      "bytes": 249,
+      "sha256": "04784b0cce0d5f38185f511f3e56b239d9bae824179c168c69674f25549265f6",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/boot/Makefile"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/boot/genboot.py",
+      "bytes": 417,
+      "sha256": "2c4f5c4f703b4f6f0468a29ccf506bfa422ff1ba5bbcbb1a266e9643b6884d0c",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/boot/genboot.py"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/boot/main.c",
+      "bytes": 2418,
+      "sha256": "d5003d786806ab28776913bf2b41f6d2a911585d14ac9c3b2496fef7b306245d",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/boot/main.c"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/boot/start.S",
+      "bytes": 1154,
+      "sha256": "5ed96da2aa8d739f263e353675ad08ec005ed3c4b395689fc451a3f5a434cfc9",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/boot/start.S"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/cte.c",
+      "bytes": 4594,
+      "sha256": "92bde4b2d56435e1e6efbad83eb37c24f09676d4e7ec99456f14693c094ce650",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/cte.c"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/ioe.c",
+      "bytes": 14197,
+      "sha256": "5d1ec3e9c2b938309f0a8ce0d86decacfe32b2887fa29e78f68b7126791e0cf9",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/ioe.c"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/mpe.c",
+      "bytes": 1229,
+      "sha256": "d76d7c67be030bf80087f8355998d7a9956f1ec45847a1414e97f23145e1806c",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/mpe.c"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/start32.S",
+      "bytes": 100,
+      "sha256": "2614496ea7ee845e9e2c520ba041f9cfd85293f007d02b0df1cbc68aba3b63d9",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/start32.S"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/start64.S",
+      "bytes": 1631,
+      "sha256": "054b93267e92c312d7c577a25ef127f957260ddd035d8f17ec378b627071c631",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/start64.S"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/trap32.S",
+      "bytes": 1816,
+      "sha256": "a54a7b1e1855afd20837b51c6c1d283ee8d4b422583cd7189df04cc7e90394a8",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/trap32.S"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/trap64.S",
+      "bytes": 1068,
+      "sha256": "e0f89fc457ec3106ed46a39f4b1b88434ea03c288cf3c9bfce01e4a0650184b0",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/trap64.S"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/trm.c",
+      "bytes": 3124,
+      "sha256": "46bfbc1427ca006b44d40d4027f385582ca88a20acf2ddffc1cbc3864e131932",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/trm.c"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/vme.c",
+      "bytes": 5178,
+      "sha256": "18578a12bbbc98539d39e46cb961239849f7b99e39525f06970544c444941f95",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/vme.c"
+    },
+    {
+      "path": "am_timer/am/src/x86/qemu/x86-qemu.h",
+      "bytes": 2107,
+      "sha256": "ef2e3b218c903eb7208e8330c8bf51fd3d5b8b22ea4ac36d956786dbd7305a14",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/qemu/x86-qemu.h"
+    },
+    {
+      "path": "am_timer/am/src/x86/x86.h",
+      "bytes": 10463,
+      "sha256": "bedb63e62378f7d828431d4daed331a4f41bb5ae8a46e4a02329c766643dd4b2",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/am/src/x86/x86.h"
+    },
+    {
+      "path": "am_timer/klib/Makefile",
+      "bytes": 81,
+      "sha256": "d9b77f532a798523f54d741587ccc87e873e90cf227f8237115266dbc2f15f24",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/Makefile"
+    },
+    {
+      "path": "am_timer/klib/include/klib-macros.h",
+      "bytes": 1237,
+      "sha256": "9b4c6c0474ece1d06faf951e91e41a0cc640dd77b091123252b55f2176f7a37f",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/include/klib-macros.h"
+    },
+    {
+      "path": "am_timer/klib/include/klib.h",
+      "bytes": 2524,
+      "sha256": "122f192a06a5f766f0676daa33752c7c5d019e491e2b84d2ded0063c35553075",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/include/klib.h"
+    },
+    {
+      "path": "am_timer/klib/src/cpp.c",
+      "bytes": 195,
+      "sha256": "6aec8b1607eefe779fb8c8f6669bee6df8d866da344c31898d99f1525af3deed",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/src/cpp.c"
+    },
+    {
+      "path": "am_timer/klib/src/ctypes.c",
+      "bytes": 958,
+      "sha256": "581f755434e733c029cb6edfe7f6bcf56df62637b58b675431b1cb8337294c79",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/src/ctypes.c"
+    },
+    {
+      "path": "am_timer/klib/src/int64.c",
+      "bytes": 21008,
+      "sha256": "0afbc095ad9c1bd4233d69eda98c7132efff15200bbdb49137d6506534acd5fc",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/src/int64.c"
+    },
+    {
+      "path": "am_timer/klib/src/stdio.c",
+      "bytes": 2177,
+      "sha256": "c3d6bc25137b0650702d381163782ac442587cb96e98e3128560a9b3b31e55b5",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/src/stdio.c"
+    },
+    {
+      "path": "am_timer/klib/src/stdlib.c",
+      "bytes": 2180,
+      "sha256": "4810c222124942b41e13545c2d41139a194c879b8e4391c87ae96ed67c05f2a4",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/src/stdlib.c"
+    },
+    {
+      "path": "am_timer/klib/src/string.c",
+      "bytes": 1264,
+      "sha256": "f7114cda9bcca27fedf84456ec79502ab09a20b4380b8cc336c42d2b3c480690",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/src/string.c"
+    },
+    {
+      "path": "am_timer/scripts/isa/loongarch32r.mk",
+      "bytes": 151,
+      "sha256": "487eb64c8fd6a7bfae78deac0184b40f297330e9a4f63aa36c2125e8b9f0ec10",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/isa/loongarch32r.mk"
+    },
+    {
+      "path": "am_timer/scripts/isa/mips32.mk",
+      "bytes": 270,
+      "sha256": "da0b07ad8cfe9406ebf650b4ff8a8c860ad2469cd20ba4243e12854ebe63f9d7",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/isa/mips32.mk"
+    },
+    {
+      "path": "am_timer/scripts/isa/riscv.mk",
+      "bytes": 357,
+      "sha256": "96f9c26da2795f107bcc3716f6c6a1548bad57340c369dc63971fe1439f51265",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/isa/riscv.mk"
+    },
+    {
+      "path": "am_timer/scripts/isa/x86.mk",
+      "bytes": 352,
+      "sha256": "a71ab76e0913c03ecb5a70398d54d2ae9ac95b86f84dbe3b218202d8f5d05e48",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/isa/x86.mk"
+    },
+    {
+      "path": "am_timer/scripts/isa/x86_64.mk",
+      "bytes": 222,
+      "sha256": "95c0c8e2be0995faffea85ffe924e4385e60a90062e476ec33ad9b9ba9b5f913",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/isa/x86_64.mk"
+    },
+    {
+      "path": "am_timer/scripts/linker.ld",
+      "bytes": 577,
+      "sha256": "8e882c8b160137fed58bcfa021e67c8d634d98fdede6b659b2ac541a2e6c0c4e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/linker.ld"
+    },
+    {
+      "path": "am_timer/scripts/loongarch32r-nemu.mk",
+      "bytes": 285,
+      "sha256": "5009631f462885d3ebc22731b2d1863ca98574dfa2a516a1b4fc8f9eea9d16ae",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/loongarch32r-nemu.mk"
+    },
+    {
+      "path": "am_timer/scripts/minirv-logisim.mk",
+      "bytes": 692,
+      "sha256": "2e3ebc54297a39671046c890317955be21803058a57b123ff1105f16e53e7273",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/minirv-logisim.mk"
+    },
+    {
+      "path": "am_timer/scripts/minirv-npc.mk",
+      "bytes": 524,
+      "sha256": "bc36bc2c10518bb665a153d97e31c244b23769c5baebce4ed90c938883c9db3b",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/minirv-npc.mk"
+    },
+    {
+      "path": "am_timer/scripts/minirv-ysyxsoc.mk",
+      "bytes": 145,
+      "sha256": "53170069e8bb0d0e94eb81eaccf5053b04cb9c4d6adc295d6384c36da6275227",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/minirv-ysyxsoc.mk"
+    },
+    {
+      "path": "am_timer/scripts/mips32-nemu.mk",
+      "bytes": 248,
+      "sha256": "e426110102e2ab6ca8dcd540d3be9fcc243ee00cdd2e287b3af72668097ee6fc",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/mips32-nemu.mk"
+    },
+    {
+      "path": "am_timer/scripts/native.mk",
+      "bytes": 677,
+      "sha256": "30c150fa74a8ea3102b44064eb5f6e0e54d5af7cee6a678d92f765ad05303856",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/native.mk"
+    },
+    {
+      "path": "am_timer/scripts/platform/logisim.mk",
+      "bytes": 632,
+      "sha256": "57e8ca65604de3ae6c339625d66b3cef570e249efccfa2b715fe602a6268e05e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/platform/logisim.mk"
+    },
+    {
+      "path": "am_timer/scripts/platform/nemu.mk",
+      "bytes": 1374,
+      "sha256": "2da8b168ad6d7df83888ae7d00cde25ebd9cc00a784dc216a651b527c7c20a76",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/platform/nemu.mk"
+    },
+    {
+      "path": "am_timer/scripts/platform/npc.mk",
+      "bytes": 1135,
+      "sha256": "5cede96ac473046d4ddb2469796bea7d317fae206bc2dc1995cc34a7fdca23d3",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/platform/npc.mk"
+    },
+    {
+      "path": "am_timer/scripts/platform/qemu.mk",
+      "bytes": 562,
+      "sha256": "7701e0686cd971011163493c5815321bff6c82b0143408e96b433966b1316ac4",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/platform/qemu.mk"
+    },
+    {
+      "path": "am_timer/scripts/riscv32-nemu.mk",
+      "bytes": 379,
+      "sha256": "f45326f72cccce470201f70afe40ab0296acce93c874d1e4660c4bfe39fa1c8f",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/riscv32-nemu.mk"
+    },
+    {
+      "path": "am_timer/scripts/riscv32e-nemu.mk",
+      "bytes": 379,
+      "sha256": "90ae40e70c861081e5993794a2fadee58e1ba2c21e81ebe93a16da2f7ccd4b06",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/riscv32e-nemu.mk"
+    },
+    {
+      "path": "am_timer/scripts/riscv32e-npc.mk",
+      "bytes": 409,
+      "sha256": "75b26ce365efae7fbfbe0c697b2ab244406bde4e6f248a4c1071d61bcb37b7d8",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/riscv32e-npc.mk"
+    },
+    {
+      "path": "am_timer/scripts/riscv64-nemu.mk",
+      "bytes": 251,
+      "sha256": "96ef460b1fe2102037194c180bc975cb1457c8fb92885b524fffcf913fe1ff2f",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/riscv64-nemu.mk"
+    },
+    {
+      "path": "am_timer/scripts/spike.mk",
+      "bytes": 562,
+      "sha256": "75276f8ea8d2071cea4e5d5f3b80b078df57050d31114d7bbe27607889bb3983",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/spike.mk"
+    },
+    {
+      "path": "am_timer/scripts/x86-nemu.mk",
+      "bytes": 393,
+      "sha256": "1966a241e1b67eff195e7a8b884cc6e6d87d316fc89737d30815d85db7c5e19a",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/x86-nemu.mk"
+    },
+    {
+      "path": "am_timer/scripts/x86-qemu.mk",
+      "bytes": 346,
+      "sha256": "568c7885a54e42a9268341d96b18823f0f7e6bf87a70d69a900451991b275664",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/x86-qemu.mk"
+    },
+    {
+      "path": "am_timer/scripts/x86_64-qemu.mk",
+      "bytes": 351,
+      "sha256": "2fa8fb33c6d149644baed48424d9a9aab42a53245dc9dadfd52461f23a5aae32",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/scripts/x86_64-qemu.mk"
+    },
+    {
+      "path": "am_timer/tools/gen-ramdisk.py",
+      "bytes": 1429,
+      "sha256": "505a8809ca59ead7f29efa74f41bae3361e273713a23a75919df61c0c9e68d07",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/gen-ramdisk.py"
+    },
+    {
+      "path": "am_timer/tools/insert-arg.py",
+      "bytes": 695,
+      "sha256": "3077a894aac01d6003826d9fc11703a6d6e64d304a84a99e17c33bf073be642d",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/insert-arg.py"
+    },
+    {
+      "path": "am_timer/tools/logisim-img.py",
+      "bytes": 798,
+      "sha256": "357a7c925b02fc573a73e6a7814da7d09db0f53afa2f379bcd9b094b40260afe",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/logisim-img.py"
+    },
+    {
+      "path": "am_timer/tools/logisim-ysyx-img.py",
+      "bytes": 443,
+      "sha256": "2616eaba5f3852ada7ea9e22f15948291870e48cd2aac3bc5b5bc0f0949c73a8",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/logisim-ysyx-img.py"
+    },
+    {
+      "path": "am_timer/tools/minirv/.gitignore",
+      "bytes": 26,
+      "sha256": "8aa8cdc414933b1e6178a1307c58f9e50a9c0f21e91673c93d9ede83b1f68f2c",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/minirv/.gitignore"
+    },
+    {
+      "path": "am_timer/tools/minirv/.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/minirv/.lock"
+    },
+    {
+      "path": "am_timer/tools/minirv/gen-lut.c",
+      "bytes": 757,
+      "sha256": "dc256d103e0fdaa196b9be152213c2ff38b2517392f8f39ef8686ca791a547fc",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/minirv/gen-lut.c"
+    },
+    {
+      "path": "am_timer/tools/minirv/inst-replace.h",
+      "bytes": 15245,
+      "sha256": "308a046a40d14810330e2361e1f5e0f435df3416a88083923073938cc8a915f8",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/minirv/inst-replace.h"
+    },
+    {
+      "path": "am_timer/tools/minirv/lut.bin",
+      "bytes": 294912,
+      "sha256": "951081152ca2dc54a26528b87f03f73faa349f0c823ba23c858bcd7b19e5c1ea",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/minirv/lut.bin"
+    },
+    {
+      "path": "am_timer/tools/minirv/minirv-common.sh",
+      "bytes": 1574,
+      "sha256": "03b3a17b483192d8d228c5bc92790244454a805f15559799885ad5260a046b0e",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/minirv/minirv-common.sh"
+    },
+    {
+      "path": "am_timer/tools/minirv/minirv-g++",
+      "bytes": 42,
+      "sha256": "01e7beef9b2e8f0f5eeeb7fb246fbc0dcb7f01ef3f4e99711aabdf23ad26cc32",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/minirv/minirv-g++"
+    },
+    {
+      "path": "am_timer/tools/minirv/minirv-gcc",
+      "bytes": 42,
+      "sha256": "953de7a8552db2314fe8f5438bfdf0f4fce4971e4f0d76a73f09dcd8b2eb427a",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/tools/minirv/minirv-gcc"
+    },
+    {
+      "path": "am_gate/.gitignore",
+      "bytes": 131,
+      "sha256": "0983ccfcdf30b995cccf02b95bd62d85fa981c103dc501a8c484f475a70182e7",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/.gitignore"
+    },
+    {
+      "path": "am_gate/.ysyx-source.json",
+      "bytes": 657,
+      "sha256": "1d4c4180740ce3cafe17dabed8b230c3f470ba39a9f5b403f5006633317cfab6",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/.ysyx-source.json"
+    },
+    {
+      "path": "am_gate/LICENSE",
+      "bytes": 1130,
+      "sha256": "a0c58b2790520c558bdc41e843d98da66015c2f00e9eac8da33c2ba0853a2b72",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/LICENSE"
+    },
+    {
+      "path": "am_gate/Makefile",
+      "bytes": 6086,
+      "sha256": "eef4e353f2a3b3b573331c109f933c7fa04a10cd9e2ea2369b0f73cdd48f035e",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/Makefile"
+    },
+    {
+      "path": "am_gate/README",
+      "bytes": 542,
+      "sha256": "4bdf06e80e7cb366f3986f6c15e49134ffa645b6e6c428e396d970788e5d1b2f",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/README"
+    },
+    {
+      "path": "am_gate/am/Makefile",
+      "bytes": 121,
+      "sha256": "06aefd18946007499b9f19d3ec342febab91169a26aaee07f3e7cea802c2b860",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/Makefile"
+    },
+    {
+      "path": "am_gate/am/include/am.h",
+      "bytes": 2374,
+      "sha256": "fbfe84a8a0317352f2cc2774fbccaed527f4aec4b9552f8d6c4319edb3cb404f",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/include/am.h"
+    },
+    {
+      "path": "am_gate/am/include/amdev.h",
+      "bytes": 2756,
+      "sha256": "4b814182f059682cffa04f0bf1214e73aecdb6f77e3ee8c09e56c2fc2ec8ede5",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/include/amdev.h"
+    },
+    {
+      "path": "am_gate/am/include/arch/loongarch32r-nemu.h",
+      "bytes": 302,
+      "sha256": "c312ec6a5c8f72fb5ff4d493d141736b2f6aab8c5fd3cc86bfd6cef272a94157",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/include/arch/loongarch32r-nemu.h"
+    },
+    {
+      "path": "am_gate/am/include/arch/mips32-nemu.h",
+      "bytes": 311,
+      "sha256": "f1991e12cdd488fbfb05c25dd9f4da09cd8fc5b6d9ace8760b9f6882efc70d23",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/include/arch/mips32-nemu.h"
+    },
+    {
+      "path": "am_gate/am/include/arch/native.h",
+      "bytes": 1134,
+      "sha256": "d06a54add2fdeae5fb8b55ecdfc352fb3af716e43669a6c89785cd82bb05d4d4",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/include/arch/native.h"
+    },
+    {
+      "path": "am_gate/am/include/arch/riscv.h",
+      "bytes": 446,
+      "sha256": "33c49ebf45b970392e14430ff39d9db37035237628b2026663ebd88b6a6a7d4e",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/include/arch/riscv.h"
+    },
+    {
+      "path": "am_gate/am/include/arch/x86-nemu.h",
+      "bytes": 317,
+      "sha256": "dddfd9575c61b20b674aadfb1ce8e38b7a499beaa5da0df627eb7fdb15b36f12",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/include/arch/x86-nemu.h"
+    },
+    {
+      "path": "am_gate/am/include/arch/x86-qemu.h",
+      "bytes": 287,
+      "sha256": "7be0945eeba33cabcf9797ce5e76fcae2bacf4c793d6f6a619f4e3dc49a9cac9",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/include/arch/x86-qemu.h"
+    },
+    {
+      "path": "am_gate/am/include/arch/x86_64-qemu.h",
+      "bytes": 358,
+      "sha256": "f01e3ac020992068011a2bb1c69262b83ad0cbcd3cbf0be03feadcf04c12faec",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/include/arch/x86_64-qemu.h"
+    },
+    {
+      "path": "am_gate/am/src/loongarch/loongarch32r.h",
+      "bytes": 957,
+      "sha256": "1dd5c48f9764449ab3e5138132e0243a2ac4b28bd5a551105d65a5ad40f2919f",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/loongarch/loongarch32r.h"
+    },
+    {
+      "path": "am_gate/am/src/loongarch/nemu/cte.c",
+      "bytes": 904,
+      "sha256": "9372b3093b318f5a4681760f326ed0eb621f17fe6e1290ba1aa8993af90eb9b9",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/loongarch/nemu/cte.c"
+    },
+    {
+      "path": "am_gate/am/src/loongarch/nemu/start.S",
+      "bytes": 140,
+      "sha256": "efdf23a0618a9855bac5679ec2b4f4fdd487a15e4d0148acbeed5b13a93fe2eb",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/loongarch/nemu/start.S"
+    },
+    {
+      "path": "am_gate/am/src/loongarch/nemu/trap.S",
+      "bytes": 1144,
+      "sha256": "48efea3b100be6fa2e5bbc213ed7950fcb26f7c0e89b08bd805acc3b2f4656c2",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/loongarch/nemu/trap.S"
+    },
+    {
+      "path": "am_gate/am/src/loongarch/nemu/vme.c",
+      "bytes": 897,
+      "sha256": "73efb7404ff54a8247e4edf4ce3630f5667b94d99bf9ae00ab21a6b45933b580",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/loongarch/nemu/vme.c"
+    },
+    {
+      "path": "am_gate/am/src/mips/mips32.h",
+      "bytes": 945,
+      "sha256": "106467cf7643da6a2bea59bff8b64e2ac3490d2d9388ee3d4f5bdd21d9a6b789",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/mips/mips32.h"
+    },
+    {
+      "path": "am_gate/am/src/mips/nemu/cte.c",
+      "bytes": 1156,
+      "sha256": "5a3d421f0e60e3d5dfb47c2a7b9590bc61470792d12607f1e43a581a71601dcb",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/mips/nemu/cte.c"
+    },
+    {
+      "path": "am_gate/am/src/mips/nemu/start.S",
+      "bytes": 150,
+      "sha256": "99b23ba9179a1a52fcc39de7d0a114404a311840864e3303276cfd2afcf6e80f",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/mips/nemu/start.S"
+    },
+    {
+      "path": "am_gate/am/src/mips/nemu/trap.S",
+      "bytes": 1473,
+      "sha256": "657f9ceec50e6354b51034826dca35be01d4d74022d4f6e91169fd22ce9202b3",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/mips/nemu/trap.S"
+    },
+    {
+      "path": "am_gate/am/src/mips/nemu/vme.c",
+      "bytes": 897,
+      "sha256": "73efb7404ff54a8247e4edf4ce3630f5667b94d99bf9ae00ab21a6b45933b580",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/mips/nemu/vme.c"
+    },
+    {
+      "path": "am_gate/am/src/native/cte.c",
+      "bytes": 6213,
+      "sha256": "40f1a39357c222b9672603d667e17fdeec00f34146d6f19a63c3e55c02bcd7ae",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/cte.c"
+    },
+    {
+      "path": "am_gate/am/src/native/ioe/audio.c",
+      "bytes": 1547,
+      "sha256": "48ba3d3338ca377b0a28dccdbe14b445513f866b5a9907da78955efc77c96ee4",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/ioe/audio.c"
+    },
+    {
+      "path": "am_gate/am/src/native/ioe/disk.c",
+      "bytes": 888,
+      "sha256": "d025516206640bd210a1b07759d125cf0a90732b413e0d2d9ebe9951e581da4a",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/ioe/disk.c"
+    },
+    {
+      "path": "am_gate/am/src/native/ioe/gpu.c",
+      "bytes": 1678,
+      "sha256": "7dcd5b7215b7a3c72854230cbe7188f26b399a0a430166fdf8f14961971827b1",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/ioe/gpu.c"
+    },
+    {
+      "path": "am_gate/am/src/native/ioe/input.c",
+      "bytes": 1611,
+      "sha256": "05a8bf89722b076ccaa27c6ec39d9bcc9a6a90e367fffd5e8d6830024c60b529",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/ioe/input.c"
+    },
+    {
+      "path": "am_gate/am/src/native/ioe/timer.c",
+      "bytes": 822,
+      "sha256": "f8d1381563ce457789099242e4e763eff754cbd3b62a58f5d81dd00b4bc49d09",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/ioe/timer.c"
+    },
+    {
+      "path": "am_gate/am/src/native/ioe/uart.c",
+      "bytes": 995,
+      "sha256": "9f4ee8c06319c276f44f7f2e7d4b2a9221ea746520ba9f9ea4ce2e51addf1cf1",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/ioe/uart.c"
+    },
+    {
+      "path": "am_gate/am/src/native/ioe.c",
+      "bytes": 2713,
+      "sha256": "11a83759269da0b88ee871b5d820974df16ed8ef9fd78cad3fc62eacc8dea412",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/ioe.c"
+    },
+    {
+      "path": "am_gate/am/src/native/mpe.c",
+      "bytes": 1004,
+      "sha256": "37e47e8adaba930b8a9b75a6b5a6e5ba1ffed2ba5c4e6f6c8f805268b992d7cf",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/mpe.c"
+    },
+    {
+      "path": "am_gate/am/src/native/platform.c",
+      "bytes": 7693,
+      "sha256": "47c07e8541306e4d5d52b41879f09bd7991f773c30f1738b1183bca746132907",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/platform.c"
+    },
+    {
+      "path": "am_gate/am/src/native/platform.h",
+      "bytes": 1297,
+      "sha256": "9a94b066c57eea81cb6e5b7533cd3468dc05c779f390320d0a4f392be2c85186",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/platform.h"
+    },
+    {
+      "path": "am_gate/am/src/native/trap.S",
+      "bytes": 856,
+      "sha256": "5f44e9f6cab303b0ab6276bcbac07e2b5f9c1bab8beda62e4aefbad6eb7c48d3",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/trap.S"
+    },
+    {
+      "path": "am_gate/am/src/native/trm.c",
+      "bytes": 577,
+      "sha256": "2c50d5ade777e427c17957436ecd33d670fc6d9b84588d733a9c9e1917a18921",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/trm.c"
+    },
+    {
+      "path": "am_gate/am/src/native/vme.c",
+      "bytes": 3429,
+      "sha256": "a9e0e083495cde8a2d4fe90fc2a36ca04d55b2b689e42b4b1965156a3e1d9afc",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/native/vme.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/dummy/cte.c",
+      "bytes": 275,
+      "sha256": "de7b3ffa3be6297a1b01149fd2391297c02ec8cc71f54217804fb7b7be2107a8",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/dummy/cte.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/dummy/ioe.c",
+      "bytes": 258,
+      "sha256": "c0e9917f045b5fea0f371a98115af664f494a90990f24e2c624ec9a253fb78fa",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/dummy/ioe.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/dummy/mpe.c",
+      "bytes": 209,
+      "sha256": "6a32ffe9d4b1f4300a183ec6d2c824ed6784d49e389a6f76bc141a2df9b988a3",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/dummy/mpe.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/dummy/trm.c",
+      "bytes": 121,
+      "sha256": "c1b43483cce167d7f5ecbc4cbb84555bcf4313e079212aad26c88a240d0ff660",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/dummy/trm.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/dummy/vme.c",
+      "bytes": 325,
+      "sha256": "fbec26d5d14012156f4d29025b11c644a357a133008b87ebefb74a5e8ba056bc",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/dummy/vme.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/logisim/ioe.c",
+      "bytes": 2766,
+      "sha256": "4e2f91f8573abf3435682e91d7125cbb7b190478a375aff78a0b0c0da2ed014c",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/logisim/ioe.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/logisim/trm.c",
+      "bytes": 323,
+      "sha256": "dff1873dddd58843440013397ea098bed0bf2409d62cd761ca9bc7162d3007e3",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/logisim/trm.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/nemu/include/nemu.h",
+      "bytes": 1570,
+      "sha256": "75b553dcca086d14c77ab6b5b24cccdd146088ac4a196ec984c0bfc8574f19e7",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/nemu/include/nemu.h"
+    },
+    {
+      "path": "am_gate/am/src/platform/nemu/ioe/audio.c",
+      "bytes": 628,
+      "sha256": "e968e08feb538cf67f28031f663c167a84595a7f8ae06a2382d03dceefd57c95",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/nemu/ioe/audio.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/nemu/ioe/disk.c",
+      "bytes": 218,
+      "sha256": "83668c9edc82280f9058ca7aff81a25c55ff024c5bbf9e5c59054b675641ff5f",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/nemu/ioe/disk.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/nemu/ioe/gpu.c",
+      "bytes": 460,
+      "sha256": "a2eb287ba0c79e5210c1657a7b9be0ee35add4f1ea951ebc9e7d549707dd75d6",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/nemu/ioe/gpu.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/nemu/ioe/input.c",
+      "bytes": 174,
+      "sha256": "4ec06becd6520a620be83b07f77e8ff6e384c2039fa03ef611affa02dcec6c9e",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/nemu/ioe/input.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/nemu/ioe/ioe.c",
+      "bytes": 2189,
+      "sha256": "2f406311598d72e448094043c1f1b53296cfbf496a9800871e4b23d1b6370c76",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/nemu/ioe/ioe.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/nemu/ioe/timer.c",
+      "bytes": 316,
+      "sha256": "001fbbca73dec09074d713a8d4f7986b0a93648d8ecc096b963d873358aa70cc",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/nemu/ioe/timer.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/nemu/mpe.c",
+      "bytes": 313,
+      "sha256": "3c168509a18d68e94dc51d6998f8fdc92408b9ed06b4a82320734a40b19a9e47",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/nemu/mpe.c"
+    },
+    {
+      "path": "am_gate/am/src/platform/nemu/trm.c",
+      "bytes": 454,
+      "sha256": "878821355cb5f31800fd3a08d34c090e77decea86284e64bc9b8986702e9b366",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/platform/nemu/trm.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/nemu/cte.c",
+      "bytes": 918,
+      "sha256": "2bff60f0c93b0856515de413fdc67cc0bf9caf798942bf5e891a06b1cadbe28c",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/nemu/cte.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/nemu/start.S",
+      "bytes": 159,
+      "sha256": "2852310b02b796af860427988a960893bf5dd89e69001f529fa80f0d050eab8c",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/nemu/start.S"
+    },
+    {
+      "path": "am_gate/am/src/riscv/nemu/trap.S",
+      "bytes": 1546,
+      "sha256": "b8c3a16844588327ca1452c665f27da092606596c99960f7c4753d0dcd4e4d03",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/nemu/trap.S"
+    },
+    {
+      "path": "am_gate/am/src/riscv/nemu/vme.c",
+      "bytes": 1632,
+      "sha256": "2e5c2ade8b969f0b69fe9d67ae6f2eb175c26848df060c34d8b1049d752722d7",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/nemu/vme.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/cte.c",
+      "bytes": 918,
+      "sha256": "2bff60f0c93b0856515de413fdc67cc0bf9caf798942bf5e891a06b1cadbe28c",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/cte.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/e7_config.h",
+      "bytes": 131,
+      "sha256": "71acfc7d6071f554b06d71ec4d413764952abcfb8b1d9d6bfd5e0e050d547aae",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/e7_config.h"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/input.c",
+      "bytes": 124,
+      "sha256": "1c21bbedd10a3e5d01f3eb71270dbb6292c8570d82c3608b25ec9f775acbc157",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/input.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/ioe.c",
+      "bytes": 1255,
+      "sha256": "0896426bb39c2629623635b6b15030875a11d81c4f9952a8f8809b637e300b72",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/ioe.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/libgcc/ashldi3.c",
+      "bytes": 546,
+      "sha256": "becc84a87d7a9038ceba9c7d7abc40fa41173de116152bddb09512168b80d2fd",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/libgcc/ashldi3.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/libgcc/div.S",
+      "bytes": 3862,
+      "sha256": "4b860ed895cc71378d36966d7c7550a467f15b6e7b5e6c04426e05dcb5c9d90e",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/libgcc/div.S"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/libgcc/libgcc2.h",
+      "bytes": 17337,
+      "sha256": "04c7938597cf8c1789bf0f26d6fe366c451f7cdefd99a8de0e738febf64e3081",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/libgcc/libgcc2.h"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/libgcc/longlong.h",
+      "bytes": 62919,
+      "sha256": "d4c657718821033e038eec26cb617d4d3353998294e64343236c2083ae4a904e",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/libgcc/longlong.h"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/libgcc/muldi3.S",
+      "bytes": 1427,
+      "sha256": "d37549240aebdef963369a504e69f345711ffbe186bcc1606cd6b544a30724ba",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/libgcc/muldi3.S"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/libgcc/multi3.c",
+      "bytes": 2425,
+      "sha256": "3a01788c94105b7558006508fba374f8c12b07c85a72732d051b246f5119ba95",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/libgcc/multi3.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/libgcc/riscv-asm.h",
+      "bytes": 1421,
+      "sha256": "2fdf000cfe81f015b013c4a61d79d385aed91fa5921b80965374e8faf752349b",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/libgcc/riscv-asm.h"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/libgcc/unused.c",
+      "bytes": 166,
+      "sha256": "c74bf9d32f407f4148daf553707f2bd30919fb731be9c33c620b7e0888bfc09e",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/libgcc/unused.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/mpe.c",
+      "bytes": 209,
+      "sha256": "6a32ffe9d4b1f4300a183ec6d2c824ed6784d49e389a6f76bc141a2df9b988a3",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/mpe.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/start.S",
+      "bytes": 159,
+      "sha256": "2852310b02b796af860427988a960893bf5dd89e69001f529fa80f0d050eab8c",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/start.S"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/timer.c",
+      "bytes": 771,
+      "sha256": "a9d7b37918d53b32843c5fdeaf4105bac3e3b98043a583815598ce823475d5c1",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/timer.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/trap.S",
+      "bytes": 1448,
+      "sha256": "886d6ebb392fe1f1760418254fdb640c1814b7360eba8410ee94b015e17a962e",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/trap.S"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/trm.c",
+      "bytes": 1171,
+      "sha256": "75a391cbf334380cce62df034102d0b2763963b40bb2160727829a39e6eb1850",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/trm.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/npc/vme.c",
+      "bytes": 325,
+      "sha256": "fbec26d5d14012156f4d29025b11c644a357a133008b87ebefb74a5e8ba056bc",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/npc/vme.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/riscv.h",
+      "bytes": 1014,
+      "sha256": "60a3bc44cc7e94394c45d1e06ecd18a81e6069b7ced8e61e5bf81a6d868f57b4",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/riscv.h"
+    },
+    {
+      "path": "am_gate/am/src/riscv/spike/atomic.h",
+      "bytes": 2152,
+      "sha256": "7e6002327b2f369b0e4c0e10b729f74bb77cd243ae0ed9b31cb249736afc2ff7",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/spike/atomic.h"
+    },
+    {
+      "path": "am_gate/am/src/riscv/spike/htif.c",
+      "bytes": 2514,
+      "sha256": "b2c31d11e90c955e5d04f051cc137caacae349c486d6c0a2f94353bafdc6a5fe",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/spike/htif.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/spike/htif.h",
+      "bytes": 731,
+      "sha256": "234d765b19cb2a2ee046c71147328f2a6100a90807d1ebfb700d71386bb5a53b",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/spike/htif.h"
+    },
+    {
+      "path": "am_gate/am/src/riscv/spike/ioe.c",
+      "bytes": 798,
+      "sha256": "e3d9bff6344e79a561fea1d90efd1b7d1617e6549077933b094e17de3c86100b",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/spike/ioe.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/spike/linker.ld",
+      "bytes": 508,
+      "sha256": "a79b5124ad18a8af66edfd734db3a6f8a5b1e25d157de3553c557ae37f7795d0",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/spike/linker.ld"
+    },
+    {
+      "path": "am_gate/am/src/riscv/spike/start.S",
+      "bytes": 158,
+      "sha256": "6a77830b41b55660740cd771ace94bafae1b985e095e75ce0b0d389a76b213d2",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/spike/start.S"
+    },
+    {
+      "path": "am_gate/am/src/riscv/spike/timer.c",
+      "bytes": 682,
+      "sha256": "e3a158ad74a84d035dcc0edaaeca2464756fa5c0d855dd0a84440ef66cda210a",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/spike/timer.c"
+    },
+    {
+      "path": "am_gate/am/src/riscv/spike/trm.c",
+      "bytes": 653,
+      "sha256": "28a325b2901b826e6a6748d2bf7f8bee019e764dde9ea62126cdfbccae417b89",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/riscv/spike/trm.c"
+    },
+    {
+      "path": "am_gate/am/src/x86/nemu/cte.c",
+      "bytes": 1467,
+      "sha256": "154c53708eea2ee1d278f5ac023c75a373f605dab73a042e7fb6eb6341f7272b",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/nemu/cte.c"
+    },
+    {
+      "path": "am_gate/am/src/x86/nemu/start.S",
+      "bytes": 167,
+      "sha256": "04d5ab4be964628cceb7d6f9164a111c0e743bcade436fe5824fdefb93e5f2b4",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/nemu/start.S"
+    },
+    {
+      "path": "am_gate/am/src/x86/nemu/trap.S",
+      "bytes": 499,
+      "sha256": "d404f891af70c96a9fb0688ebb91494363735da55a89bce4d09a670d4e4b9955",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/nemu/trap.S"
+    },
+    {
+      "path": "am_gate/am/src/x86/nemu/vme.c",
+      "bytes": 1358,
+      "sha256": "0f6efaf448829ff31b56b9778fecbae31efdce7e2efb71346c9d4fe6a71adca5",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/nemu/vme.c"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/boot/Makefile",
+      "bytes": 249,
+      "sha256": "04784b0cce0d5f38185f511f3e56b239d9bae824179c168c69674f25549265f6",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/boot/Makefile"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/boot/genboot.py",
+      "bytes": 417,
+      "sha256": "2c4f5c4f703b4f6f0468a29ccf506bfa422ff1ba5bbcbb1a266e9643b6884d0c",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/boot/genboot.py"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/boot/main.c",
+      "bytes": 2418,
+      "sha256": "d5003d786806ab28776913bf2b41f6d2a911585d14ac9c3b2496fef7b306245d",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/boot/main.c"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/boot/start.S",
+      "bytes": 1154,
+      "sha256": "5ed96da2aa8d739f263e353675ad08ec005ed3c4b395689fc451a3f5a434cfc9",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/boot/start.S"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/cte.c",
+      "bytes": 4594,
+      "sha256": "92bde4b2d56435e1e6efbad83eb37c24f09676d4e7ec99456f14693c094ce650",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/cte.c"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/ioe.c",
+      "bytes": 14197,
+      "sha256": "5d1ec3e9c2b938309f0a8ce0d86decacfe32b2887fa29e78f68b7126791e0cf9",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/ioe.c"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/mpe.c",
+      "bytes": 1229,
+      "sha256": "d76d7c67be030bf80087f8355998d7a9956f1ec45847a1414e97f23145e1806c",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/mpe.c"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/start32.S",
+      "bytes": 100,
+      "sha256": "2614496ea7ee845e9e2c520ba041f9cfd85293f007d02b0df1cbc68aba3b63d9",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/start32.S"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/start64.S",
+      "bytes": 1631,
+      "sha256": "054b93267e92c312d7c577a25ef127f957260ddd035d8f17ec378b627071c631",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/start64.S"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/trap32.S",
+      "bytes": 1816,
+      "sha256": "a54a7b1e1855afd20837b51c6c1d283ee8d4b422583cd7189df04cc7e90394a8",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/trap32.S"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/trap64.S",
+      "bytes": 1068,
+      "sha256": "e0f89fc457ec3106ed46a39f4b1b88434ea03c288cf3c9bfce01e4a0650184b0",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/trap64.S"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/trm.c",
+      "bytes": 3124,
+      "sha256": "46bfbc1427ca006b44d40d4027f385582ca88a20acf2ddffc1cbc3864e131932",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/trm.c"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/vme.c",
+      "bytes": 5178,
+      "sha256": "18578a12bbbc98539d39e46cb961239849f7b99e39525f06970544c444941f95",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/vme.c"
+    },
+    {
+      "path": "am_gate/am/src/x86/qemu/x86-qemu.h",
+      "bytes": 2107,
+      "sha256": "ef2e3b218c903eb7208e8330c8bf51fd3d5b8b22ea4ac36d956786dbd7305a14",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/qemu/x86-qemu.h"
+    },
+    {
+      "path": "am_gate/am/src/x86/x86.h",
+      "bytes": 10463,
+      "sha256": "bedb63e62378f7d828431d4daed331a4f41bb5ae8a46e4a02329c766643dd4b2",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/am/src/x86/x86.h"
+    },
+    {
+      "path": "am_gate/klib/Makefile",
+      "bytes": 81,
+      "sha256": "d9b77f532a798523f54d741587ccc87e873e90cf227f8237115266dbc2f15f24",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/Makefile"
+    },
+    {
+      "path": "am_gate/klib/include/klib-macros.h",
+      "bytes": 1237,
+      "sha256": "9b4c6c0474ece1d06faf951e91e41a0cc640dd77b091123252b55f2176f7a37f",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/include/klib-macros.h"
+    },
+    {
+      "path": "am_gate/klib/include/klib.h",
+      "bytes": 2524,
+      "sha256": "122f192a06a5f766f0676daa33752c7c5d019e491e2b84d2ded0063c35553075",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/include/klib.h"
+    },
+    {
+      "path": "am_gate/klib/src/cpp.c",
+      "bytes": 195,
+      "sha256": "6aec8b1607eefe779fb8c8f6669bee6df8d866da344c31898d99f1525af3deed",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/src/cpp.c"
+    },
+    {
+      "path": "am_gate/klib/src/ctypes.c",
+      "bytes": 958,
+      "sha256": "581f755434e733c029cb6edfe7f6bcf56df62637b58b675431b1cb8337294c79",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/src/ctypes.c"
+    },
+    {
+      "path": "am_gate/klib/src/int64.c",
+      "bytes": 21008,
+      "sha256": "0afbc095ad9c1bd4233d69eda98c7132efff15200bbdb49137d6506534acd5fc",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/src/int64.c"
+    },
+    {
+      "path": "am_gate/klib/src/stdio.c",
+      "bytes": 2177,
+      "sha256": "c3d6bc25137b0650702d381163782ac442587cb96e98e3128560a9b3b31e55b5",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/src/stdio.c"
+    },
+    {
+      "path": "am_gate/klib/src/stdlib.c",
+      "bytes": 2180,
+      "sha256": "4810c222124942b41e13545c2d41139a194c879b8e4391c87ae96ed67c05f2a4",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/src/stdlib.c"
+    },
+    {
+      "path": "am_gate/klib/src/string.c",
+      "bytes": 1264,
+      "sha256": "f7114cda9bcca27fedf84456ec79502ab09a20b4380b8cc336c42d2b3c480690",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/src/string.c"
+    },
+    {
+      "path": "am_gate/scripts/isa/loongarch32r.mk",
+      "bytes": 151,
+      "sha256": "487eb64c8fd6a7bfae78deac0184b40f297330e9a4f63aa36c2125e8b9f0ec10",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/isa/loongarch32r.mk"
+    },
+    {
+      "path": "am_gate/scripts/isa/mips32.mk",
+      "bytes": 270,
+      "sha256": "da0b07ad8cfe9406ebf650b4ff8a8c860ad2469cd20ba4243e12854ebe63f9d7",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/isa/mips32.mk"
+    },
+    {
+      "path": "am_gate/scripts/isa/riscv.mk",
+      "bytes": 357,
+      "sha256": "96f9c26da2795f107bcc3716f6c6a1548bad57340c369dc63971fe1439f51265",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/isa/riscv.mk"
+    },
+    {
+      "path": "am_gate/scripts/isa/x86.mk",
+      "bytes": 352,
+      "sha256": "a71ab76e0913c03ecb5a70398d54d2ae9ac95b86f84dbe3b218202d8f5d05e48",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/isa/x86.mk"
+    },
+    {
+      "path": "am_gate/scripts/isa/x86_64.mk",
+      "bytes": 222,
+      "sha256": "95c0c8e2be0995faffea85ffe924e4385e60a90062e476ec33ad9b9ba9b5f913",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/isa/x86_64.mk"
+    },
+    {
+      "path": "am_gate/scripts/linker.ld",
+      "bytes": 577,
+      "sha256": "8e882c8b160137fed58bcfa021e67c8d634d98fdede6b659b2ac541a2e6c0c4e",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/linker.ld"
+    },
+    {
+      "path": "am_gate/scripts/loongarch32r-nemu.mk",
+      "bytes": 285,
+      "sha256": "5009631f462885d3ebc22731b2d1863ca98574dfa2a516a1b4fc8f9eea9d16ae",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/loongarch32r-nemu.mk"
+    },
+    {
+      "path": "am_gate/scripts/minirv-logisim.mk",
+      "bytes": 692,
+      "sha256": "2e3ebc54297a39671046c890317955be21803058a57b123ff1105f16e53e7273",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/minirv-logisim.mk"
+    },
+    {
+      "path": "am_gate/scripts/minirv-npc.mk",
+      "bytes": 524,
+      "sha256": "bc36bc2c10518bb665a153d97e31c244b23769c5baebce4ed90c938883c9db3b",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/minirv-npc.mk"
+    },
+    {
+      "path": "am_gate/scripts/minirv-ysyxsoc.mk",
+      "bytes": 145,
+      "sha256": "53170069e8bb0d0e94eb81eaccf5053b04cb9c4d6adc295d6384c36da6275227",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/minirv-ysyxsoc.mk"
+    },
+    {
+      "path": "am_gate/scripts/mips32-nemu.mk",
+      "bytes": 248,
+      "sha256": "e426110102e2ab6ca8dcd540d3be9fcc243ee00cdd2e287b3af72668097ee6fc",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/mips32-nemu.mk"
+    },
+    {
+      "path": "am_gate/scripts/native.mk",
+      "bytes": 677,
+      "sha256": "30c150fa74a8ea3102b44064eb5f6e0e54d5af7cee6a678d92f765ad05303856",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/native.mk"
+    },
+    {
+      "path": "am_gate/scripts/platform/logisim.mk",
+      "bytes": 632,
+      "sha256": "57e8ca65604de3ae6c339625d66b3cef570e249efccfa2b715fe602a6268e05e",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/platform/logisim.mk"
+    },
+    {
+      "path": "am_gate/scripts/platform/nemu.mk",
+      "bytes": 1374,
+      "sha256": "2da8b168ad6d7df83888ae7d00cde25ebd9cc00a784dc216a651b527c7c20a76",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/platform/nemu.mk"
+    },
+    {
+      "path": "am_gate/scripts/platform/npc.mk",
+      "bytes": 1135,
+      "sha256": "5cede96ac473046d4ddb2469796bea7d317fae206bc2dc1995cc34a7fdca23d3",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/platform/npc.mk"
+    },
+    {
+      "path": "am_gate/scripts/platform/qemu.mk",
+      "bytes": 562,
+      "sha256": "7701e0686cd971011163493c5815321bff6c82b0143408e96b433966b1316ac4",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/platform/qemu.mk"
+    },
+    {
+      "path": "am_gate/scripts/riscv32-nemu.mk",
+      "bytes": 379,
+      "sha256": "f45326f72cccce470201f70afe40ab0296acce93c874d1e4660c4bfe39fa1c8f",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/riscv32-nemu.mk"
+    },
+    {
+      "path": "am_gate/scripts/riscv32e-nemu.mk",
+      "bytes": 379,
+      "sha256": "90ae40e70c861081e5993794a2fadee58e1ba2c21e81ebe93a16da2f7ccd4b06",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/riscv32e-nemu.mk"
+    },
+    {
+      "path": "am_gate/scripts/riscv32e-npc.mk",
+      "bytes": 409,
+      "sha256": "75b26ce365efae7fbfbe0c697b2ab244406bde4e6f248a4c1071d61bcb37b7d8",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/riscv32e-npc.mk"
+    },
+    {
+      "path": "am_gate/scripts/riscv64-nemu.mk",
+      "bytes": 251,
+      "sha256": "96ef460b1fe2102037194c180bc975cb1457c8fb92885b524fffcf913fe1ff2f",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/riscv64-nemu.mk"
+    },
+    {
+      "path": "am_gate/scripts/spike.mk",
+      "bytes": 562,
+      "sha256": "75276f8ea8d2071cea4e5d5f3b80b078df57050d31114d7bbe27607889bb3983",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/spike.mk"
+    },
+    {
+      "path": "am_gate/scripts/x86-nemu.mk",
+      "bytes": 393,
+      "sha256": "1966a241e1b67eff195e7a8b884cc6e6d87d316fc89737d30815d85db7c5e19a",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/x86-nemu.mk"
+    },
+    {
+      "path": "am_gate/scripts/x86-qemu.mk",
+      "bytes": 346,
+      "sha256": "568c7885a54e42a9268341d96b18823f0f7e6bf87a70d69a900451991b275664",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/x86-qemu.mk"
+    },
+    {
+      "path": "am_gate/scripts/x86_64-qemu.mk",
+      "bytes": 351,
+      "sha256": "2fa8fb33c6d149644baed48424d9a9aab42a53245dc9dadfd52461f23a5aae32",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/scripts/x86_64-qemu.mk"
+    },
+    {
+      "path": "am_gate/tools/gen-ramdisk.py",
+      "bytes": 1429,
+      "sha256": "505a8809ca59ead7f29efa74f41bae3361e273713a23a75919df61c0c9e68d07",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/gen-ramdisk.py"
+    },
+    {
+      "path": "am_gate/tools/insert-arg.py",
+      "bytes": 695,
+      "sha256": "3077a894aac01d6003826d9fc11703a6d6e64d304a84a99e17c33bf073be642d",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/insert-arg.py"
+    },
+    {
+      "path": "am_gate/tools/logisim-img.py",
+      "bytes": 798,
+      "sha256": "357a7c925b02fc573a73e6a7814da7d09db0f53afa2f379bcd9b094b40260afe",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/logisim-img.py"
+    },
+    {
+      "path": "am_gate/tools/logisim-ysyx-img.py",
+      "bytes": 443,
+      "sha256": "2616eaba5f3852ada7ea9e22f15948291870e48cd2aac3bc5b5bc0f0949c73a8",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/logisim-ysyx-img.py"
+    },
+    {
+      "path": "am_gate/tools/minirv/.gitignore",
+      "bytes": 26,
+      "sha256": "8aa8cdc414933b1e6178a1307c58f9e50a9c0f21e91673c93d9ede83b1f68f2c",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/minirv/.gitignore"
+    },
+    {
+      "path": "am_gate/tools/minirv/.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/minirv/.lock"
+    },
+    {
+      "path": "am_gate/tools/minirv/gen-lut.c",
+      "bytes": 757,
+      "sha256": "dc256d103e0fdaa196b9be152213c2ff38b2517392f8f39ef8686ca791a547fc",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/minirv/gen-lut.c"
+    },
+    {
+      "path": "am_gate/tools/minirv/inst-replace.h",
+      "bytes": 15245,
+      "sha256": "308a046a40d14810330e2361e1f5e0f435df3416a88083923073938cc8a915f8",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/minirv/inst-replace.h"
+    },
+    {
+      "path": "am_gate/tools/minirv/lut.bin",
+      "bytes": 294912,
+      "sha256": "951081152ca2dc54a26528b87f03f73faa349f0c823ba23c858bcd7b19e5c1ea",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/minirv/lut.bin"
+    },
+    {
+      "path": "am_gate/tools/minirv/minirv-common.sh",
+      "bytes": 1181,
+      "sha256": "8cfffed58a11cfb5d1cd030ff3512d1a5fefc2d22ac53a58ce036c904a71f535",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/minirv/minirv-common.sh"
+    },
+    {
+      "path": "am_gate/tools/minirv/minirv-g++",
+      "bytes": 42,
+      "sha256": "01e7beef9b2e8f0f5eeeb7fb246fbc0dcb7f01ef3f4e99711aabdf23ad26cc32",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/minirv/minirv-g++"
+    },
+    {
+      "path": "am_gate/tools/minirv/minirv-gcc",
+      "bytes": 42,
+      "sha256": "953de7a8552db2314fe8f5438bfdf0f4fce4971e4f0d76a73f09dcd8b2eb427a",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/tools/minirv/minirv-gcc"
+    },
+    {
+      "path": "nvboard/.gitignore",
+      "bytes": 104,
+      "sha256": "d7df42b15b70dc49169ffd5fb7623692a066f5357c26222002ea509537125e75",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/.gitignore"
+    },
+    {
+      "path": "nvboard/LICENSE",
+      "bytes": 9592,
+      "sha256": "d0b16a3cb603569486834cb55fa8a539832063864793339386f5e1f646928987",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/LICENSE"
+    },
+    {
+      "path": "nvboard/NVBoard.jpg",
+      "bytes": 146670,
+      "sha256": "dccceb10a01bcc7176597a185bb1f77ca86189a61bfb53e3d8a6945aaa76184b",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/NVBoard.jpg"
+    },
+    {
+      "path": "nvboard/README.md",
+      "bytes": 5525,
+      "sha256": "a2a534b1ca9cf99ffa5d82926b3b63892e701df43aa5aa2a953de311a2809ee7",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/README.md"
+    },
+    {
+      "path": "nvboard/board/N4",
+      "bytes": 1762,
+      "sha256": "4392f1409e9e5a169e4ae715f65f0cbb10a99fcd7a15de03b4c91d66855f4953",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/board/N4"
+    },
+    {
+      "path": "nvboard/example/.gitignore",
+      "bytes": 31,
+      "sha256": "260e84f110430f15dd217508bb1109cf4de34efedc3cbb256c197013cc26f3ef",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/.gitignore"
+    },
+    {
+      "path": "nvboard/example/Makefile",
+      "bytes": 1171,
+      "sha256": "bbb8d32f51d3d1450ce831579d650d8d176436cb0e693eebd60b40c3a417d43e",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/Makefile"
+    },
+    {
+      "path": "nvboard/example/README.md",
+      "bytes": 803,
+      "sha256": "eb9d19f0a78b20c40c3eeb92f2b06d6053dcdbb817c326a412c96cb7ff7aedef",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/README.md"
+    },
+    {
+      "path": "nvboard/example/constr/top.nxdc",
+      "bytes": 1061,
+      "sha256": "1b6572267aa5a85677419477fe6b1fbd6f4dd63b3ee30a5b7476fd095624a256",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/constr/top.nxdc"
+    },
+    {
+      "path": "nvboard/example/csrc/main.cpp",
+      "bytes": 425,
+      "sha256": "9951f127059701fb4bcbc4149ed132f5362a9c0d9d6ffdc2c04cea9ee7482380",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/csrc/main.cpp"
+    },
+    {
+      "path": "nvboard/example/resource/picture.hex",
+      "bytes": 2293768,
+      "sha256": "9fc5ed9ea23271a2124a85caf424e1b1ac8b7f99c24bc905bf2c012615e9e5f4",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/resource/picture.hex"
+    },
+    {
+      "path": "nvboard/example/vsrc/led.v",
+      "bytes": 403,
+      "sha256": "308fd3d089b9f7183d53dd51b393d35a77cf2b16f6fb4880df14484ce6ea9ab1",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/vsrc/led.v"
+    },
+    {
+      "path": "nvboard/example/vsrc/ps2_keyboard.v",
+      "bytes": 1045,
+      "sha256": "ec4502b423096367df3dc2b327b1100ed354d8e0eb394146a0038e41744c97d9",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/vsrc/ps2_keyboard.v"
+    },
+    {
+      "path": "nvboard/example/vsrc/seg.v",
+      "bytes": 1074,
+      "sha256": "304399f69dec2a9e9aeb4d3f949813ba35657d629387ac3d44a5da6717efedd7",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/vsrc/seg.v"
+    },
+    {
+      "path": "nvboard/example/vsrc/top.v",
+      "bytes": 1663,
+      "sha256": "0aae291557b460363d65892115cdae504e9f517a0ed1355a2d70c35d3b777eca",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/vsrc/top.v"
+    },
+    {
+      "path": "nvboard/example/vsrc/uart.v",
+      "bytes": 69,
+      "sha256": "d59e6addff1ee6fe0a336b42ed90eab94ea0146825e20572ce8cc1b6fa3211e5",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/vsrc/uart.v"
+    },
+    {
+      "path": "nvboard/example/vsrc/vga_ctrl.v",
+      "bytes": 1355,
+      "sha256": "cdb6736f8c0709088cf9392fdf6c4f4a9196c2b67bcbfd756eb255d1e5867a2b",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/example/vsrc/vga_ctrl.v"
+    },
+    {
+      "path": "nvboard/include/.gitignore",
+      "bytes": 11,
+      "sha256": "313a6c6365465514926858a5cef36fb3ffa7d1d4bd454cff890fe4f83c6a4198",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/.gitignore"
+    },
+    {
+      "path": "nvboard/include/component.h",
+      "bytes": 1626,
+      "sha256": "b7c9d06cc30b0466a935e3e23be1a07432775aba2e1b85857b9281b66f8babc0",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/component.h"
+    },
+    {
+      "path": "nvboard/include/configs.h",
+      "bytes": 465,
+      "sha256": "51c4cf43640a3cfcfa4f34804d77a2ce1c9a43b4be4bb008cddc74f7ca8aacbb",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/configs.h"
+    },
+    {
+      "path": "nvboard/include/font.h",
+      "bytes": 722,
+      "sha256": "c659360da465c1552269b3fbadd276e7581cf19f27eaab09e42a5bea797dcd2f",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/font.h"
+    },
+    {
+      "path": "nvboard/include/keyboard.h",
+      "bytes": 725,
+      "sha256": "9bbed5cdfd01431c6922cb089650ae6cca1c2b9919dd74b394b7e1ebf4b11087",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/keyboard.h"
+    },
+    {
+      "path": "nvboard/include/macro.h",
+      "bytes": 417,
+      "sha256": "e545d6f5d866959fb3e5ec64d1eb314b162664735a57804605877c333c219c9a",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/macro.h"
+    },
+    {
+      "path": "nvboard/include/nvboard.h",
+      "bytes": 502,
+      "sha256": "3f2e0b7cc26a14c29250ca50596d87fab6da4f1bdc2acda33428f9fdf7a3c47e",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/nvboard.h"
+    },
+    {
+      "path": "nvboard/include/pins.h",
+      "bytes": 795,
+      "sha256": "0e6c18263f1e66da5a0635deacd631a23b2fb3b0814834a73fa86b6a4106f4e4",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/pins.h"
+    },
+    {
+      "path": "nvboard/include/render.h",
+      "bytes": 1252,
+      "sha256": "9b4cadcb26e436e9cf34299a9834a5034e5b41854c617edf9a5894e9ae75e75d",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/render.h"
+    },
+    {
+      "path": "nvboard/include/term.h",
+      "bytes": 927,
+      "sha256": "241500e04f57cd9603d0c0f3e0cd7b5c6f10d538d5ca131051dcfef32e00e332",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/term.h"
+    },
+    {
+      "path": "nvboard/include/uart.h",
+      "bytes": 605,
+      "sha256": "0c68743074690342630da965f0c3597ef43b4fc1708d49c252b346921bbb9efb",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/uart.h"
+    },
+    {
+      "path": "nvboard/include/vga.h",
+      "bytes": 799,
+      "sha256": "5a04019f697a3d84381eefe07833a8e1a3fc9b78d4476ae77f101c3eb758118c",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/include/vga.h"
+    },
+    {
+      "path": "nvboard/resources/font/FreeMono.ttf",
+      "bytes": 184480,
+      "sha256": "30b4b98748839431a366123f859871549b57e461a8b8ec2d3d65b55b2fb9f22d",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/resources/font/FreeMono.ttf"
+    },
+    {
+      "path": "nvboard/resources/pic/.gitignore",
+      "bytes": 29,
+      "sha256": "2b72909ccbeb034a7c74d4817cb9e3d388b5c17c961c6b05d932c37b4ab99d60",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/resources/pic/.gitignore"
+    },
+    {
+      "path": "nvboard/resources/pic/vbtn_off.png",
+      "bytes": 240,
+      "sha256": "a03d92c776e1f8a7b5527b5332a00b152e5cef203e97755073fd2411ca95486b",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/resources/pic/vbtn_off.png"
+    },
+    {
+      "path": "nvboard/resources/pic/vbtn_on.png",
+      "bytes": 245,
+      "sha256": "a29a4449403ac8e76dca401ff5455daf96acf21612ab508252e984ad40fee088",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/resources/pic/vbtn_on.png"
+    },
+    {
+      "path": "nvboard/resources/pic/vsw_off.png",
+      "bytes": 157,
+      "sha256": "e1703cf0f504a4a4b6bfa199f0faa4bbfd900e52f9c199943d7356d568d2f2c0",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/resources/pic/vsw_off.png"
+    },
+    {
+      "path": "nvboard/resources/pic/vsw_on.png",
+      "bytes": 168,
+      "sha256": "3573086f11966df9a84ebdf9ce21e69ab359d16892281281e6dede6b6562cad5",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/resources/pic/vsw_on.png"
+    },
+    {
+      "path": "nvboard/scripts/.gitignore",
+      "bytes": 11,
+      "sha256": "1dc06088afe4f5ef37defe47f3ca081d2281089d47eb2f320247e98c52818e48",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/scripts/.gitignore"
+    },
+    {
+      "path": "nvboard/scripts/auto_pin_bind.py",
+      "bytes": 6416,
+      "sha256": "072608ac81924079d18d4dad5821cc7f359fc4b9e125f1db01189422143886c5",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/scripts/auto_pin_bind.py"
+    },
+    {
+      "path": "nvboard/scripts/nvboard.mk",
+      "bytes": 1208,
+      "sha256": "87e7fb4a76d695fbea1823f903fe41672ab9cb052b7f70efdedbaf5ba58172e8",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/scripts/nvboard.mk"
+    },
+    {
+      "path": "nvboard/src/.gitignore",
+      "bytes": 18,
+      "sha256": "8e5d2a4752b1234b23ac26e57378c9d58a8b035ed9136cd04add114f7833aef7",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/.gitignore"
+    },
+    {
+      "path": "nvboard/src/at_scancode.h",
+      "bytes": 4927,
+      "sha256": "bc6f9de0ea2043d9303394acb1cd4f73c6b04e2a5c4088fa044dad7e46fd1746",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/at_scancode.h"
+    },
+    {
+      "path": "nvboard/src/button.cpp",
+      "bytes": 2402,
+      "sha256": "321357c4cc1cdd0547effdebcdb30cca8294fddf06469148563cc1b4caca174d",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/button.cpp"
+    },
+    {
+      "path": "nvboard/src/component.cpp",
+      "bytes": 2735,
+      "sha256": "c420fa92a7d471373ec98aa60f86304e426194b53663eab17ec81e59292c2b87",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/component.cpp"
+    },
+    {
+      "path": "nvboard/src/event.cpp",
+      "bytes": 2117,
+      "sha256": "478a8afc061d3765f211b3c8f5168104d0f735573adf2192dcc901ca98501c50",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/event.cpp"
+    },
+    {
+      "path": "nvboard/src/font.cpp",
+      "bytes": 2985,
+      "sha256": "8605529c01377b1aaea9b9396449b1ceac9f7b718cc7ef34f41faae5c6a43e3f",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/font.cpp"
+    },
+    {
+      "path": "nvboard/src/keyboard.cpp",
+      "bytes": 9779,
+      "sha256": "462a95e55875e861f82572b4deb766c8da94263a6b736bdb46418c3b3db79073",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/keyboard.cpp"
+    },
+    {
+      "path": "nvboard/src/led.cpp",
+      "bytes": 3093,
+      "sha256": "752edc7e2825b4be18466327061414744737e9361b52b1fffeedd9dc848801fd",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/led.cpp"
+    },
+    {
+      "path": "nvboard/src/nvboard.cpp",
+      "bytes": 3811,
+      "sha256": "cbdb3f24aa10148c3a5cccd30cd34956edeb1c0f38b1ad444a36f38222ff4107",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/nvboard.cpp"
+    },
+    {
+      "path": "nvboard/src/render.cpp",
+      "bytes": 3317,
+      "sha256": "263fa258f330f6fe529786c5735a91d82a65bc8e2aa7289570f87d7502221d5c",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/render.cpp"
+    },
+    {
+      "path": "nvboard/src/segs7.cpp",
+      "bytes": 5411,
+      "sha256": "37d0ca78608752c5d47b322781730586cd391764af5ce4e2dcaf3723d4b943ba",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/segs7.cpp"
+    },
+    {
+      "path": "nvboard/src/switch.cpp",
+      "bytes": 2024,
+      "sha256": "ebbc121cf9e901e41345d1a18fd45b9b5ebdde96592b3c08ac5da50acf2eb966",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/switch.cpp"
+    },
+    {
+      "path": "nvboard/src/term.cpp",
+      "bytes": 4361,
+      "sha256": "66190070f23db5db0be0b76a7cc45421f086ef6303455610bf48d937a59c427c",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/term.cpp"
+    },
+    {
+      "path": "nvboard/src/timer.cpp",
+      "bytes": 394,
+      "sha256": "e23c37b18f64c9ef980c66dfcd412f85a81d8ff756fdde186ef6810733077b0e",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/timer.cpp"
+    },
+    {
+      "path": "nvboard/src/uart.cpp",
+      "bytes": 3602,
+      "sha256": "13a95c299a1f1dfcf8467cae3dc06143d8fd2d6ac79d76a8b26eb464c58c9f11",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/uart.cpp"
+    },
+    {
+      "path": "nvboard/src/vga.cpp",
+      "bytes": 4319,
+      "sha256": "60b8d3ad62ffd7b34ce0a24b99e5fc5063669129857bbbb6e495097d8f9ca80e",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/src/vga.cpp"
+    },
+    {
+      "path": "nvboard/usr/include/nvboard.h",
+      "bytes": 209,
+      "sha256": "f977bd7ab613ff4695513e95122e1e90aa7ff0d394bb67ed10e6ef99a1b28916",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/usr/include/nvboard.h"
+    },
+    {
+      "path": "nvboard/usr/include/pins.h",
+      "bytes": 2128,
+      "sha256": "ba5bab6fb8f810d0f03f5d6c2ec5a06ed9c2703a91e1e1d6a6c0f0978cd0b205",
+      "source": "/home/USER/e-stage/workbench-e7/nvboard/usr/include/pins.h"
+    },
+    {
+      "path": "soc/perip/.gitignore",
+      "bytes": 6,
+      "sha256": "4be1cf584a4cef024639f2e0826c06b5c1c7af4a98aae62eaa1d67fc8e7e2c70",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/.gitignore"
+    },
+    {
+      "path": "soc/perip/bitrev/bitrev.v",
+      "bytes": 115,
+      "sha256": "33b3211aa1ed8af25629264d3d2fc4fb717875b809d7c656fdf2ba9b94027a46",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/bitrev/bitrev.v"
+    },
+    {
+      "path": "soc/perip/flash/flash.v",
+      "bytes": 2846,
+      "sha256": "67185fbd8bf7b25e434c87187e59003aad7b3b66a458e7221924899fee062e71",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/flash/flash.v"
+    },
+    {
+      "path": "soc/perip/gpio/mygpio_top_apb.v",
+      "bytes": 2269,
+      "sha256": "96316561961e4df75db0113ebf3f58093b088fbbeb75fe255b3497b469a1e312",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/gpio/mygpio_top_apb.v"
+    },
+    {
+      "path": "soc/perip/kbd/mykbd_top_apb.v",
+      "bytes": 419,
+      "sha256": "a7b22b414db0a20eef6925589ae5b3a13075d6a309fe62ca27ce7a8431978cb0",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/kbd/mykbd_top_apb.v"
+    },
+    {
+      "path": "soc/perip/psram/ESP_PSRAM64H.sv",
+      "bytes": 11100,
+      "sha256": "3f9ef0648c2ce75fab3f34d98c0989855b2668e3a33a09ab03e0cd490067ccca",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/psram/ESP_PSRAM64H.sv"
+    },
+    {
+      "path": "soc/perip/psram/LICENSE",
+      "bytes": 9674,
+      "sha256": "2d1f849bcfa2dcaafccfa9113bf4e6e53b124e52025a6c619475459d015931f9",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/psram/LICENSE"
+    },
+    {
+      "path": "soc/perip/psram/psram.sv",
+      "bytes": 10190,
+      "sha256": "984d014fab9603b937666390b7b8cd1dfcb7e3d91d01b2c3aa9100fe9019f619",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/psram/psram.sv"
+    },
+    {
+      "path": "soc/perip/psram/psram_core.sv",
+      "bytes": 12784,
+      "sha256": "860a2d8c74e7228e95db8d72125de8441c5d731d2a3a2b404d1b39fe5749e59d",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/psram/psram_core.sv"
+    },
+    {
+      "path": "soc/perip/spi/doc/spi.pdf",
+      "bytes": 78741,
+      "sha256": "f4bca505bead405ef3c3f9b2fb62c98cf0055bc9a69597b4d660f673d4b56ac8",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/spi/doc/spi.pdf"
+    },
+    {
+      "path": "soc/perip/spi/rtl/spi_clgen.v",
+      "bytes": 5123,
+      "sha256": "b439755d700adf8b6acfbb781ba0fe4f03e09d7873ddca8aac7828d1be05e9cb",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/spi/rtl/spi_clgen.v"
+    },
+    {
+      "path": "soc/perip/spi/rtl/spi_defines.v",
+      "bytes": 6196,
+      "sha256": "e5d20ddf339c153605c1464efdc52c33f3856ea8dc876eb04f2e17a71c6a0008",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/spi/rtl/spi_defines.v"
+    },
+    {
+      "path": "soc/perip/spi/rtl/spi_shift.v",
+      "bytes": 9548,
+      "sha256": "3479f62b377a449a29dcee3dda523c5315cdb58e2a127f5d15e8dc11e67b6005",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/spi/rtl/spi_shift.v"
+    },
+    {
+      "path": "soc/perip/spi/rtl/spi_top.v",
+      "bytes": 12546,
+      "sha256": "865bfa084cc60a82a9a6ef837afc2a0230b8d43a26a98a157f30f006b2685eb9",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/spi/rtl/spi_top.v"
+    },
+    {
+      "path": "soc/perip/spi/rtl/spi_top_apb.v",
+      "bytes": 1738,
+      "sha256": "54d6281f6cd62c406f7bc27a9a8bde1334cbef8af5dd77a9df9874b5cbfc0036",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/spi/rtl/spi_top_apb.v"
+    },
+    {
+      "path": "soc/perip/tc_io.v",
+      "bytes": 3302,
+      "sha256": "ddedde87fa32f96ad002b35baa290435a3c7978693518a195d04d1774bd81101",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/tc_io.v"
+    },
+    {
+      "path": "soc/perip/uart16550/doc/UART_spec.pdf",
+      "bytes": 163447,
+      "sha256": "be7687fff45395458ac7b4d5519c3a7b7cc4fa6acf799ee4da580bcb1d2bf035",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/doc/UART_spec.pdf"
+    },
+    {
+      "path": "soc/perip/uart16550/rtl/raminfr.v",
+      "bytes": 6037,
+      "sha256": "5ff711fd94fc46637b2bc921686910eaa40c09a1e41df6dd49a56a33e7adcb86",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/rtl/raminfr.v"
+    },
+    {
+      "path": "soc/perip/uart16550/rtl/uart_defines.v",
+      "bytes": 11122,
+      "sha256": "6abadf36ed7caea3e2d9099da5401cc3814d18b14376edfe5ce2a3845766d6be",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/rtl/uart_defines.v"
+    },
+    {
+      "path": "soc/perip/uart16550/rtl/uart_receiver.v",
+      "bytes": 18222,
+      "sha256": "bcc222ecad9cd2064d21926fecba766545618b541ec742eb35a2fbb1818953c4",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/rtl/uart_receiver.v"
+    },
+    {
+      "path": "soc/perip/uart16550/rtl/uart_regs.v",
+      "bytes": 32169,
+      "sha256": "3243cc894974710b4bb704473ba0b8cca68120de77171436716343ecccb36201",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/rtl/uart_regs.v"
+    },
+    {
+      "path": "soc/perip/uart16550/rtl/uart_rfifo.v",
+      "bytes": 11611,
+      "sha256": "ef58e395f03b97b84cbe2408cf448306856e34c0b7436bb574e1069b831f58d8",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/rtl/uart_rfifo.v"
+    },
+    {
+      "path": "soc/perip/uart16550/rtl/uart_sync_flops.v",
+      "bytes": 5918,
+      "sha256": "c3b842f3c041603bdc47376f65767db7db19e1f585cc3054bd83834b0b990d60",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/rtl/uart_sync_flops.v"
+    },
+    {
+      "path": "soc/perip/uart16550/rtl/uart_tfifo.v",
+      "bytes": 9937,
+      "sha256": "1cc21fbacb35cd3f0be63c32ed304ea2aef13af4d4784693ff745bc0a26c727b",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/rtl/uart_tfifo.v"
+    },
+    {
+      "path": "soc/perip/uart16550/rtl/uart_top_apb.v",
+      "bytes": 3735,
+      "sha256": "da2987fddf824d81b7e5e574ed967aa2746d005c0f66a4e25366b3b524e7858b",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/rtl/uart_top_apb.v"
+    },
+    {
+      "path": "soc/perip/uart16550/rtl/uart_transmitter.v",
+      "bytes": 15185,
+      "sha256": "5276b2419dc9a520758d29eb9ae10afd6077e722907efc0ce8b342f3aff4665f",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/uart16550/rtl/uart_transmitter.v"
+    },
+    {
+      "path": "soc/perip/vga/myvga_top_apb.v",
+      "bytes": 522,
+      "sha256": "ea52f5511fe1478a2a32da05a60aec1cac65850cec6fe5d7037f781120943dca",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/perip/vga/myvga_top_apb.v"
+    },
+    {
+      "path": "soc/ready-to-run/minirv/.gitignore",
+      "bytes": 9,
+      "sha256": "28a17814166a4660e589ba0eca2ddf843f4b0f606cf40814af22fac52910744a",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/ready-to-run/minirv/.gitignore"
+    },
+    {
+      "path": "soc/ready-to-run/minirv/ElaborateTop.v",
+      "bytes": 132806,
+      "sha256": "23e263e7d91175ce5a7a51d3b136d06a07d6500fd3673baead7e834f917e0dfb",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/ready-to-run/minirv/ElaborateTop.v"
+    },
+    {
+      "path": "soc/ready-to-run/minirv/cpu-interface.md",
+      "bytes": 1013,
+      "sha256": "9a88c3594d3ba4c2aa2d1d3743d226be757db967b80026e236327bedd2ecf079",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/ready-to-run/minirv/cpu-interface.md"
+    },
+    {
+      "path": "soc/ready-to-run/minirv/gen.sh",
+      "bytes": 275,
+      "sha256": "5844a580f56d4f349d9c5d887d29c378fd827e79ac5e399387a1349319833c87",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/ready-to-run/minirv/gen.sh"
+    },
+    {
+      "path": "soc/ready-to-run/minirv/hello-minirv-ysyxsoc.bin",
+      "bytes": 673008,
+      "sha256": "d19b507a3c7f782078a0fe7fcb204c89edfbd6d666141ef3a5cb7e094f8f542a",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/ready-to-run/minirv/hello-minirv-ysyxsoc.bin"
+    },
+    {
+      "path": "soc/spec/cpu-interface.md",
+      "bytes": 3140,
+      "sha256": "1f98dff29b7689f67b94094d75af2d7694e0095b17f1015a2650a8de91f7b8d6",
+      "source": "/home/USER/e-stage/workbench-e7/ysyxSoC/spec/cpu-interface.md"
+    },
+    {
+      "path": "timer_program/Makefile",
+      "bytes": 86,
+      "sha256": "c6514bf626f0f5acaa7036c675d7fed907565c919b2ad261f1fe224df592ff33",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/Makefile"
+    },
+    {
+      "path": "timer_program/include/amtest.h",
+      "bytes": 509,
+      "sha256": "459075e210888cbebd12b2589fb29a6fe96937c0906a8ccc200d4e52b8a9e1c1",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/include/amtest.h"
+    },
+    {
+      "path": "timer_program/src/main.c",
+      "bytes": 1042,
+      "sha256": "fded619f73bb073ad1e97ec55fd1e2c799fd7dfa3bf04dc11b5979953a44dd32",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/main.c"
+    },
+    {
+      "path": "timer_program/src/tests/audio/.gitignore",
+      "bytes": 8,
+      "sha256": "4862a1bbfa77819efc33716580a03ded9b93f26e7fc11bd50b530f6b11b98a91",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/audio/.gitignore"
+    },
+    {
+      "path": "timer_program/src/tests/audio/audio-data.S",
+      "bytes": 149,
+      "sha256": "db73dc9aa7a576dc7556903e4c480406b50f56efd9b53404cf71a0fa256c15ad",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/audio/audio-data.S"
+    },
+    {
+      "path": "timer_program/src/tests/audio/little-star.pcm",
+      "bytes": 56844,
+      "sha256": "846cbbfaab6707174d26b7a014153fb885bdcdd56686b476f865fa1e165cce35",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/audio/little-star.pcm"
+    },
+    {
+      "path": "timer_program/src/tests/audio.c",
+      "bytes": 779,
+      "sha256": "de31cdbf2537ef35795ac4737fa4bf5c94344bf842496f09b9aff1c73babc6a1",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/audio.c"
+    },
+    {
+      "path": "timer_program/src/tests/devscan.c",
+      "bytes": 1860,
+      "sha256": "17199b06f7f92c87c1d17dc4da3367e968b84efb4795078332eff33e24c16f44",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/devscan.c"
+    },
+    {
+      "path": "timer_program/src/tests/hello.c",
+      "bytes": 130,
+      "sha256": "d4fa14e3a313ef7db45c511a6fef79884f8fa0f692872e039cd997ef1d6a863b",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/hello.c"
+    },
+    {
+      "path": "timer_program/src/tests/intr.c",
+      "bytes": 574,
+      "sha256": "2ab4a750b84ed9ec5007ce2bef170029cc0080d1efd93b0bb2d340da14eca1f8",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/intr.c"
+    },
+    {
+      "path": "timer_program/src/tests/keyboard.c",
+      "bytes": 850,
+      "sha256": "a6dfbc76a8a477cff25a724bd29c8ced44c591a84a8e3774faae30870f7263be",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/keyboard.c"
+    },
+    {
+      "path": "timer_program/src/tests/mp.c",
+      "bytes": 99,
+      "sha256": "2b218182c8e0584402b78bf61f8d720234cde4afff66d1c79c04256d787701f5",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/mp.c"
+    },
+    {
+      "path": "timer_program/src/tests/rtc.c",
+      "bytes": 436,
+      "sha256": "dba1210990a82f9a491f547ad18fee29fb5ebb15eb4fd19d163759ac61c63f4d",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/rtc.c"
+    },
+    {
+      "path": "timer_program/src/tests/video.c",
+      "bytes": 2138,
+      "sha256": "1e4eff168e605ed3eb997b3106a00b3c60ad83a7ff01f2a9db9b800463fd2e2a",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/video.c"
+    },
+    {
+      "path": "timer_program/src/tests/vm.c",
+      "bytes": 2324,
+      "sha256": "3a5f72cf320686b033d848602b0f1f0dd2470746b63c291b2a5d86749c106454",
+      "source": "/home/USER/e-stage/software-timer-npc/timer/src/tests/vm.c"
+    },
+    {
+      "path": "am_npc/klib/build/klib-minirv-npc.a",
+      "bytes": 2438898,
+      "sha256": "fa3380ecca1b3e5fa4c129617b0a6d07102e1966e9c77e49d21947572ef218ec",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/build/klib-minirv-npc.a"
+    },
+    {
+      "path": "am_npc/klib/build/klib-minirv-ysyxsoc.a",
+      "bytes": 2438898,
+      "sha256": "fa3380ecca1b3e5fa4c129617b0a6d07102e1966e9c77e49d21947572ef218ec",
+      "source": "/home/USER/e-stage/workbench-e7/abstract-machine/klib/build/klib-minirv-ysyxsoc.a"
+    },
+    {
+      "path": "am_soc/klib/build/klib-minirv-npc.a",
+      "bytes": 2438898,
+      "sha256": "fa3380ecca1b3e5fa4c129617b0a6d07102e1966e9c77e49d21947572ef218ec",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/build/klib-minirv-npc.a"
+    },
+    {
+      "path": "am_soc/klib/build/klib-minirv-ysyxsoc.a",
+      "bytes": 2438898,
+      "sha256": "fa3380ecca1b3e5fa4c129617b0a6d07102e1966e9c77e49d21947572ef218ec",
+      "source": "/home/USER/e-stage/software-soc/abstract-machine/klib/build/klib-minirv-ysyxsoc.a"
+    },
+    {
+      "path": "am_timer/klib/build/klib-minirv-npc.a",
+      "bytes": 2438898,
+      "sha256": "fa3380ecca1b3e5fa4c129617b0a6d07102e1966e9c77e49d21947572ef218ec",
+      "source": "/home/USER/e-stage/software-timer-npc/abstract-machine/klib/build/klib-minirv-npc.a"
+    },
+    {
+      "path": "am_gate/klib/build/klib-minirv-npc.a",
+      "bytes": 2438898,
+      "sha256": "fa3380ecca1b3e5fa4c129617b0a6d07102e1966e9c77e49d21947572ef218ec",
+      "source": "/home/USER/e-stage/workbench-e8/abstract-machine/klib/build/klib-minirv-npc.a"
+    },
+    {
+      "path": "gate/netlist-verilator-linux",
+      "bytes": 574296,
+      "sha256": "2eb01419ec35535a3669ace7f4242835ab3b9a43c4656f4437b1883a8859b005",
+      "source": "/home/USER/e-stage/build/E8/mapped_baseline/sim"
+    },
+    {
+      "path": "gate/netlist-icarus14.vvp",
+      "bytes": 4110184,
+      "sha256": "59136df09c99df6ffacfced052d4a9fdf41f34a116201913d0721abf9996382f",
+      "source": "/home/USER/e-stage/build/E8/profile/14/udp.vvp"
+    },
+    {
+      "path": "gate/vpi_memory.vpi",
+      "bytes": 391960,
+      "sha256": "2131ebbc29339be8bb3b77923cb0db6b966bd83afc01d1e5fe90004b67efd8b4",
+      "source": "/home/USER/e-stage/build/E8/profile/14/vpi_memory.vpi"
+    },
+    {
+      "path": "fceux/fceux-minirv-npc.bin",
+      "bytes": 2932256,
+      "sha256": "10c2c7de75cab9c9f7678ba9e33b361431fee1f13748cd478ae1130e6912bc82",
+      "source": "/home/USER/e-stage/workbench/fceux-am/build/fceux-minirv-npc.bin"
+    }
+  ],
+  "all_members_verified": true,
+  "scope": "PatchedAM/NPC/SoCinterface/peripheral/NVBoardresourcesandselectedexecutables. Sourcesretainupstreamlicensefiles. Existinginstalledtoolruntimes/PDKreleaseassetsremainseparatelylocked; thisisnotanOSinstaller."
+}

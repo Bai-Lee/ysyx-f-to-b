@@ -1,0 +1,2386 @@
+{
+  "status": "PASS_34_ORIGINAL_CPU_TESTS",
+  "runs": [
+    {
+      "name": "add-longlong",
+      "status": "PASS",
+      "source_sha256": "b020e7ac3f1b7399116916b39c6bfbf7e3bb0357e5f67f4a0054607c3b9c65ce",
+      "image_sha256": "b85f802872ab009b491a22e05304a3e00883f25752dd6d0a2790b1cf0081cda1",
+      "elf_sha256": "fdc89fe79b3fd0502743f9d3c109f738bde5c86436273f3a6977cab8eadeb8f0",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871340,
+        "next_pc": 536871344,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 11441,
+        "instructions": 2851,
+        "wall_seconds": 0.106624,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 2995,
+        "flash_dpi_calls": 0,
+        "memory_operations": 956,
+        "diff_enabled": true,
+        "diff_checked": 2846,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          3462,
+          3462,
+          345,
+          345,
+          345
+        ],
+        "gpr": [
+          0,
+          536871332,
+          251666420,
+          251660288,
+          0,
+          251658744,
+          4294967295,
+          251658816,
+          0,
+          0,
+          0,
+          4294967295,
+          251658752,
+          4294967295,
+          251658688,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/add-longlong"
+    },
+    {
+      "name": "add",
+      "status": "PASS",
+      "source_sha256": "15ab745eb7e9dfb836ad94762227c49269595827891612856ba5f1aa5fc95bed",
+      "image_sha256": "1d127f732ee1e5243bd66896d06363347b92e225b000fe8f99e52371243b1197",
+      "elf_sha256": "830c2983daf090a0f620d875df5ac3e415011041f384729b4eb01fde855297d7",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871336,
+        "next_pc": 536871340,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 8096,
+        "instructions": 2016,
+        "wall_seconds": 0.0682103,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 2088,
+        "flash_dpi_calls": 0,
+        "memory_operations": 676,
+        "diff_enabled": true,
+        "diff_checked": 2011,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          2419,
+          2419,
+          273,
+          273,
+          273
+        ],
+        "gpr": [
+          0,
+          536871328,
+          251666420,
+          251660288,
+          0,
+          251658528,
+          4294967294,
+          251658528,
+          0,
+          0,
+          0,
+          4294967295,
+          251658464,
+          0,
+          251658496,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/add"
+    },
+    {
+      "name": "bit",
+      "status": "PASS",
+      "source_sha256": "e9217eef30b8acc713533567371cf31952891763016507102d6c5d85af0d54d3",
+      "image_sha256": "70113fb61bae433be36545eed045a1eaba2faba1a7aea36c77d2519958397989",
+      "elf_sha256": "76fcd53a54ca505d3f4f3520c208aa1754eaba79982cffc2703620ac253f4283",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871692,
+        "next_pc": 536871696,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 1301,
+        "instructions": 369,
+        "wall_seconds": 0.0147721,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 369,
+        "flash_dpi_calls": 0,
+        "memory_operations": 58,
+        "diff_enabled": true,
+        "diff_checked": 364,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          403,
+          403,
+          24,
+          24,
+          24
+        ],
+        "gpr": [
+          0,
+          536871684,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          251666405,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/bit"
+    },
+    {
+      "name": "bubble-sort",
+      "status": "PASS",
+      "source_sha256": "70968b92c3679b6ff972cbf2cbdba67b2ae7af4bc4f6f80cd95afe60fed6c19d",
+      "image_sha256": "f67c96bdfdc4b804b61c381d315b63322abcd9159b451eba340891c30c341b48",
+      "elf_sha256": "99d3b8662bf9853586d8978227fb3256d8af7547688619a3ea5113c191dcb383",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871384,
+        "next_pc": 536871388,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 13520,
+        "instructions": 3440,
+        "wall_seconds": 0.115226,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 3460,
+        "flash_dpi_calls": 0,
+        "memory_operations": 1060,
+        "diff_enabled": true,
+        "diff_checked": 3435,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          4263,
+          4263,
+          237,
+          237,
+          237
+        ],
+        "gpr": [
+          0,
+          536871376,
+          251666420,
+          251660288,
+          0,
+          251658320,
+          251658320,
+          251658320,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          4294967295,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/bubble-sort"
+    },
+    {
+      "name": "crc32",
+      "status": "PASS",
+      "source_sha256": "0983bd926015d3d1f1bc79e1e7453874195a8ae4087a6ce4a3cd38df816859ea",
+      "image_sha256": "c9d7b88cc6aec30331998a949ec6b046d5ff87ca3d306e2b8fa40aec2cda254b",
+      "elf_sha256": "e91d46cfa56abdfc90f257f0d1331005187aab9cab9f4d830003a15841e9ecc4",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871396,
+        "next_pc": 536871400,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 45023,
+        "instructions": 14387,
+        "wall_seconds": 0.393508,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 14430,
+        "flash_dpi_calls": 0,
+        "memory_operations": 614,
+        "diff_enabled": true,
+        "diff_checked": 14382,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          14477,
+          14477,
+          524,
+          524,
+          524
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          0,
+          3988292384,
+          251659264,
+          0,
+          0,
+          0,
+          536871451,
+          536871451,
+          103,
+          12274902,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/crc32"
+    },
+    {
+      "name": "div",
+      "status": "PASS",
+      "source_sha256": "e0e2d3a6da9917f53dcd792b83749a3d0686cc3441e91b42d5b89feeed5ad4e2",
+      "image_sha256": "5c3b204b7f6d2bb1dd09c94d34e288e279915059f60cb09dd37ab575c3d51e36",
+      "elf_sha256": "de94fe049f764638707a3a823d2f8b19bf6da5c0a2d4d831d20bec05d2bcedbf",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871388,
+        "next_pc": 536871392,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 53846,
+        "instructions": 17260,
+        "wall_seconds": 0.510061,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 17260,
+        "flash_dpi_calls": 0,
+        "memory_operations": 682,
+        "diff_enabled": true,
+        "diff_checked": 17255,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          17593,
+          17593,
+          349,
+          349,
+          349
+        ],
+        "gpr": [
+          0,
+          536871380,
+          251666420,
+          251660288,
+          0,
+          251658280,
+          251658280,
+          251658240,
+          0,
+          0,
+          0,
+          11,
+          5,
+          0,
+          251658240,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/div"
+    },
+    {
+      "name": "dummy",
+      "status": "PASS",
+      "source_sha256": "8bd20ac94646806aec6dadb9325218718d1ba8abc039da6abc9aa8159658671d",
+      "image_sha256": "99df0428c11c57c45cd3dd4938d16fcfbd79c54b6c9abe3fde9d9cb136c2becc",
+      "elf_sha256": "a2965c600b98339113be247f7d877ed881402fecc7f5a1d6c7c43a1e4f65bc45",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871104,
+        "next_pc": 536871108,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 158,
+        "instructions": 40,
+        "wall_seconds": 0.0043189,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 40,
+        "flash_dpi_calls": 0,
+        "memory_operations": 6,
+        "diff_enabled": true,
+        "diff_checked": 35,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          40,
+          40,
+          6,
+          6,
+          6
+        ],
+        "gpr": [
+          0,
+          536871096,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/dummy"
+    },
+    {
+      "name": "fact",
+      "status": "PASS",
+      "source_sha256": "5bc074a3bb8b805b17c8fa47b6b696abc2ff151b82705b9880bcd78d76674339",
+      "image_sha256": "81b07cf83134b60b5870a0cf0956fea30ab8f1b9e3df108df804fd224c5f7a12",
+      "elf_sha256": "810e02cbecb560327ecc7b010224e0744edcb69b4052db21696fe23888ea1e70",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871332,
+        "next_pc": 536871336,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 7352,
+        "instructions": 2284,
+        "wall_seconds": 0.0669865,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 2298,
+        "flash_dpi_calls": 0,
+        "memory_operations": 160,
+        "diff_enabled": true,
+        "diff_checked": 2279,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          2353,
+          2353,
+          91,
+          91,
+          91
+        ],
+        "gpr": [
+          0,
+          536871324,
+          251666420,
+          251660288,
+          0,
+          251658360,
+          251658360,
+          251658296,
+          0,
+          0,
+          0,
+          1,
+          958003200,
+          1,
+          48,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/fact"
+    },
+    {
+      "name": "fib",
+      "status": "PASS",
+      "source_sha256": "6d9ca6610dda73b9bbe82973c164e1ad2eb59d2d2862f7919175324895d9655d",
+      "image_sha256": "92d0aff5b89a72ffb428b555cacf68267f209eb4318f8b685f3f346b8dc41624",
+      "elf_sha256": "3774fbc8272ac8cca98eade65e9ddd630483e04924fc4d7450313b06aed78624",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871264,
+        "next_pc": 536871268,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 4427,
+        "instructions": 1145,
+        "wall_seconds": 0.0381373,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 1225,
+        "flash_dpi_calls": 0,
+        "memory_operations": 324,
+        "diff_enabled": true,
+        "diff_checked": 1140,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          1342,
+          1342,
+          127,
+          127,
+          127
+        ],
+        "gpr": [
+          0,
+          536871256,
+          251666420,
+          251660288,
+          0,
+          251658560,
+          251658560,
+          251658560,
+          0,
+          0,
+          0,
+          0,
+          0,
+          39088169,
+          251658552,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/fib"
+    },
+    {
+      "name": "goldbach",
+      "status": "PASS",
+      "source_sha256": "9ca742d5856ef23546f5f352289493e95d8c48be5c173d33e2a9c302abfd9bf8",
+      "image_sha256": "da4dc95c5d20f54b7dc64e39b19d60c142bd5a544f92f491da8d3d6c9ed8bcc7",
+      "elf_sha256": "f91801ef8eb94bf2862afcdd98054acccdae833e5f62a83c7d58d59f3d065d52",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871412,
+        "next_pc": 536871416,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 36533,
+        "instructions": 11645,
+        "wall_seconds": 0.305217,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 11645,
+        "flash_dpi_calls": 0,
+        "memory_operations": 526,
+        "diff_enabled": true,
+        "diff_checked": 11640,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          11905,
+          11905,
+          266,
+          266,
+          266
+        ],
+        "gpr": [
+          0,
+          536871404,
+          251666420,
+          251660288,
+          0,
+          536871128,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          11,
+          0,
+          7,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/goldbach"
+    },
+    {
+      "name": "if-else",
+      "status": "PASS",
+      "source_sha256": "3b9d0a0a8865e5e3d694383f30ba0c1a6b0c21c988652bf00bd08e39306301b9",
+      "image_sha256": "6da316e15e1742f4e8eccaeb711477d62f0ea7d6a393fb688523d1b996bc72a7",
+      "elf_sha256": "ba635de201752d97b08f3a341dffe8cfc3832ae3fc726914f976cba4261ff933",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871328,
+        "next_pc": 536871332,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 2147,
+        "instructions": 613,
+        "wall_seconds": 0.0315944,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 641,
+        "flash_dpi_calls": 0,
+        "memory_operations": 96,
+        "diff_enabled": true,
+        "diff_checked": 608,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          672,
+          672,
+          37,
+          37,
+          37
+        ],
+        "gpr": [
+          0,
+          536871320,
+          251666420,
+          251660288,
+          0,
+          251658352,
+          251658352,
+          251658352,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          500,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/if-else"
+    },
+    {
+      "name": "leap-year",
+      "status": "PASS",
+      "source_sha256": "14a0523a564b4b3673e44a7a9c9d0dfe4d7cd0bad478b2267299288273238061",
+      "image_sha256": "5c68538e5f3c2eec319f821dbc85789c8822e4ee2fb452cda71b71cd6ab0acd2",
+      "elf_sha256": "1cfcea4dc059a09c618739e794433229f5629e34cc5090b35ae367430579a306",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871324,
+        "next_pc": 536871328,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 35429,
+        "instructions": 10914,
+        "wall_seconds": 0.30578,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 11040,
+        "flash_dpi_calls": 0,
+        "memory_operations": 889,
+        "diff_enabled": true,
+        "diff_checked": 10909,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          11418,
+          11418,
+          385,
+          385,
+          385
+        ],
+        "gpr": [
+          0,
+          536871316,
+          251666420,
+          251660288,
+          0,
+          536871112,
+          251658744,
+          251658744,
+          0,
+          0,
+          0,
+          14,
+          200,
+          0,
+          7,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/leap-year"
+    },
+    {
+      "name": "load-store",
+      "status": "PASS",
+      "source_sha256": "12889c9d4fe817a0fedd640d98a74eb1d96911061f2a949ff0d4dcba9f963c3a",
+      "image_sha256": "88193b4bcdf904e0f9e82e2828a43bb398cda6c6170cd13654ec2324839ba6d0",
+      "elf_sha256": "c6d00c828bdf87d3edf775d6648e2925829989aeef2e25475e9db28e0843a3e3",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871604,
+        "next_pc": 536871608,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 2687,
+        "instructions": 750,
+        "wall_seconds": 0.0249933,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 782,
+        "flash_dpi_calls": 0,
+        "memory_operations": 139,
+        "diff_enabled": true,
+        "diff_checked": 745,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          840,
+          840,
+          49,
+          49,
+          49
+        ],
+        "gpr": [
+          0,
+          536871596,
+          251666420,
+          251660288,
+          0,
+          251658368,
+          251658368,
+          251658368,
+          0,
+          0,
+          0,
+          0,
+          0,
+          251658336,
+          251658364,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/load-store"
+    },
+    {
+      "name": "matrix-mul",
+      "status": "PASS",
+      "source_sha256": "706071f51f3dfa11e396ac96d0e76c36dd8c55f0b356282110c34081312afc37",
+      "image_sha256": "88f3d5972f62b25a2b52878e308fdfe66184b6134a7f22fe8b2722466b19efe2",
+      "elf_sha256": "c5ea3e156feb8d2c1a232ed002ec7d7dcbd0dd87884969916d5403d6a9dd246b",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871440,
+        "next_pc": 536871444,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 484718,
+        "instructions": 146254,
+        "wall_seconds": 4.11674,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 146554,
+        "flash_dpi_calls": 0,
+        "memory_operations": 15312,
+        "diff_enabled": true,
+        "diff_checked": 146249,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          154857,
+          154857,
+          6709,
+          6709,
+          6709
+        ],
+        "gpr": [
+          0,
+          536871432,
+          251666420,
+          251660288,
+          0,
+          251659836,
+          10,
+          10,
+          0,
+          0,
+          0,
+          0,
+          12114,
+          400,
+          40,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/matrix-mul"
+    },
+    {
+      "name": "max",
+      "status": "PASS",
+      "source_sha256": "71c35eaba19e2e35d6d22bd0bda6da22eb7dc54dce93da950a1e282607766ba4",
+      "image_sha256": "59b5b64a719c1ed852f827d4032044f64fa9fc4bf81ed7c69cd5f148bfdfb6d8",
+      "elf_sha256": "72bf39709e39f014b68c93814d09bd8d5fa42ea0e0e22f2bc2ae76e187e7d292",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871340,
+        "next_pc": 536871344,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 8180,
+        "instructions": 2044,
+        "wall_seconds": 0.0804915,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 2116,
+        "flash_dpi_calls": 0,
+        "memory_operations": 676,
+        "diff_enabled": true,
+        "diff_checked": 2039,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          2447,
+          2447,
+          273,
+          273,
+          273
+        ],
+        "gpr": [
+          0,
+          536871332,
+          251666420,
+          251660288,
+          0,
+          251658528,
+          4294967295,
+          251658528,
+          0,
+          0,
+          0,
+          4294967295,
+          251658464,
+          0,
+          251658496,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/max"
+    },
+    {
+      "name": "mersenne",
+      "status": "PASS",
+      "source_sha256": "31159f5dcc958eee0e74edb1e37d31866e48773b69d4d47bb37615c215c7802d",
+      "image_sha256": "2f046d422a6919a7bc355decfa91e236241aa339626a6ac98e1c5be8ae18194d",
+      "elf_sha256": "2c4b477696f2cf9a82ab2718854dae31d0a72aa8629898255c77be449db37e67",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871496,
+        "next_pc": 536871500,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 83897,
+        "instructions": 25771,
+        "wall_seconds": 0.711126,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 25771,
+        "flash_dpi_calls": 0,
+        "memory_operations": 2188,
+        "diff_enabled": true,
+        "diff_checked": 25766,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          26897,
+          26897,
+          1062,
+          1062,
+          1062
+        ],
+        "gpr": [
+          0,
+          536871488,
+          251666420,
+          251660288,
+          0,
+          1,
+          3896508416,
+          3093,
+          0,
+          0,
+          0,
+          0,
+          1,
+          14865,
+          4294954289,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/mersenne"
+    },
+    {
+      "name": "min3",
+      "status": "PASS",
+      "source_sha256": "95065eaad973d02d9f3f6af3e6d889aa8b8a0ca881d2a49c36c256383c3e6971",
+      "image_sha256": "d46c32672224075b67c6dfc2e4fb3f2e0fbe7652ecfe6145a151dabd1c6aba8d",
+      "elf_sha256": "507294cb022c56a9fc162a5fbc8fa2f971783828c1a9f9eb7814a691804cdbe2",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871444,
+        "next_pc": 536871448,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 11036,
+        "instructions": 2620,
+        "wall_seconds": 0.0940283,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 2688,
+        "flash_dpi_calls": 0,
+        "memory_operations": 1052,
+        "diff_enabled": true,
+        "diff_checked": 2615,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          3223,
+          3223,
+          449,
+          449,
+          449
+        ],
+        "gpr": [
+          0,
+          536871436,
+          251666420,
+          251660288,
+          0,
+          251658512,
+          4294967295,
+          251658512,
+          0,
+          0,
+          0,
+          251658480,
+          64,
+          4294967295,
+          16,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/min3"
+    },
+    {
+      "name": "mov-c",
+      "status": "PASS",
+      "source_sha256": "71adc5886e77677e3bb39b05d026f2d4cd8911c355c2d18ec299216efdefedd2",
+      "image_sha256": "c28af9ba4e165437f06e30fb6067db50c4bc070c610033a5c386b5f8b2c30e12",
+      "elf_sha256": "67708f0b1bf6085eb8e551438d2d56e0f302dfcce9ebffdefcd1b0a6fff9ef65",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871384,
+        "next_pc": 536871388,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 623,
+        "instructions": 161,
+        "wall_seconds": 0.00777377,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 161,
+        "flash_dpi_calls": 0,
+        "memory_operations": 40,
+        "diff_enabled": true,
+        "diff_checked": 156,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          173,
+          173,
+          28,
+          28,
+          28
+        ],
+        "gpr": [
+          0,
+          536871376,
+          251666420,
+          251660288,
+          0,
+          251658288,
+          251658288,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/mov-c"
+    },
+    {
+      "name": "movsx",
+      "status": "PASS",
+      "source_sha256": "fc460eefbde61488303cb57e5a54b1e34c75c3f5051e610146cbe1b5e4f9b04f",
+      "image_sha256": "44b6b4f0c2d5ab2d2968c762dccc2fde3b07993e435e8ada12db2e50376899e7",
+      "elf_sha256": "5de9bea7245b9e7f8bda805f0430b07c57959d200055e36186ac5f64e989fe52",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871572,
+        "next_pc": 536871576,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 854,
+        "instructions": 224,
+        "wall_seconds": 0.00934827,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 224,
+        "flash_dpi_calls": 0,
+        "memory_operations": 54,
+        "diff_enabled": true,
+        "diff_checked": 219,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          243,
+          243,
+          35,
+          35,
+          35
+        ],
+        "gpr": [
+          0,
+          536871564,
+          251666420,
+          251660288,
+          0,
+          251658296,
+          251658296,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967168,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/movsx"
+    },
+    {
+      "name": "mul-longlong",
+      "status": "PASS",
+      "source_sha256": "a1364ade0362cbde9dc696fe84d9fee9c60ed93d569a351ae0b1cea489c9f105",
+      "image_sha256": "e5ed0295268654bf5a3c5e85447199bc7e5d9891832a65c998c2f63844357434",
+      "elf_sha256": "9f3220da142f53f16c854e09cabaf2967b5a4f0e33957f3a2d770856178ff1c6",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871396,
+        "next_pc": 536871400,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 19004,
+        "instructions": 6076,
+        "wall_seconds": 0.163019,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 6100,
+        "flash_dpi_calls": 0,
+        "memory_operations": 252,
+        "diff_enabled": true,
+        "diff_checked": 6071,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          6221,
+          6221,
+          107,
+          107,
+          107
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          0,
+          10,
+          301212728,
+          0,
+          0,
+          0,
+          4,
+          301212728,
+          0,
+          37651591,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/mul-longlong"
+    },
+    {
+      "name": "narcissistic",
+      "status": "PASS",
+      "source_sha256": "04c629312d5d290dad1c1ab085a7ac5c18049eed75844234ce3ea00d4fdd5cb7",
+      "image_sha256": "6c3a6b86b3b3d98c63b6c82b996de0a2a6df40f07148eba5d10144c65ae48709",
+      "elf_sha256": "90001da29620138af5f2cd8b4303dbfe622e258412152bd474434a26d455afc4",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871476,
+        "next_pc": 536871480,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 442937,
+        "instructions": 141630,
+        "wall_seconds": 3.73286,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 141634,
+        "flash_dpi_calls": 0,
+        "memory_operations": 6009,
+        "diff_enabled": true,
+        "diff_checked": 141625,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          144833,
+          144833,
+          2806,
+          2806,
+          2806
+        ],
+        "gpr": [
+          0,
+          536871468,
+          251666420,
+          251660288,
+          0,
+          536871196,
+          251658256,
+          251658256,
+          0,
+          0,
+          0,
+          0,
+          1296,
+          1,
+          251658240,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/narcissistic"
+    },
+    {
+      "name": "pascal",
+      "status": "PASS",
+      "source_sha256": "83a94223659c18fb87a9fe4e7f1224964cfd490e7c641442024c0e4e1d25e791",
+      "image_sha256": "732ded698968fac3ef4da39ac1b60dcb2ba0b2349b8381a749a62f7f1fc47189",
+      "elf_sha256": "52827a80d02fd0ee4b5ed4b585384cae39e6f813a07095bd8df265be25aff666",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871348,
+        "next_pc": 536871352,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 15527,
+        "instructions": 4098,
+        "wall_seconds": 0.131962,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 4130,
+        "flash_dpi_calls": 0,
+        "memory_operations": 1071,
+        "diff_enabled": true,
+        "diff_checked": 4093,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          4630,
+          4630,
+          539,
+          539,
+          539
+        ],
+        "gpr": [
+          0,
+          536871340,
+          251666420,
+          251660288,
+          0,
+          1,
+          31,
+          251658368,
+          0,
+          0,
+          0,
+          251658484,
+          31,
+          251658240,
+          251658488,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/pascal"
+    },
+    {
+      "name": "prime",
+      "status": "PASS",
+      "source_sha256": "51c238106750c0f9323e5690de844f3360ea8b4c46391784fb4ef56da2904e0c",
+      "image_sha256": "39ab8e20648a513681a91d0f06049a592be3fa7b7f2b2787d87fbe3a01916dde",
+      "elf_sha256": "39f83804994c32927c48535732fa022f527aaa3a0f375d9d6a079071655bea30",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871292,
+        "next_pc": 536871296,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 184364,
+        "instructions": 58909,
+        "wall_seconds": 1.69004,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 58919,
+        "flash_dpi_calls": 0,
+        "memory_operations": 2539,
+        "diff_enabled": true,
+        "diff_checked": 58904,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          60173,
+          60173,
+          1275,
+          1275,
+          1275
+        ],
+        "gpr": [
+          0,
+          536871284,
+          251666420,
+          251660288,
+          0,
+          536871096,
+          251658280,
+          251658280,
+          0,
+          0,
+          0,
+          149,
+          74,
+          0,
+          251658240,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/prime"
+    },
+    {
+      "name": "quick-sort",
+      "status": "PASS",
+      "source_sha256": "306abc33d4296134b0bd0df1ffca5454385cc827db9df4f1d166a1545174522d",
+      "image_sha256": "649ddd0495788254e164bf2cf394943e482e4477feb1978cbe8bf10a4b43fbf7",
+      "elf_sha256": "ef2c8e1f95d5340116691daa32a306c4cd78d53a290579042a5dbe2cc6ebc217",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871580,
+        "next_pc": 536871584,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 15299,
+        "instructions": 4157,
+        "wall_seconds": 0.0824088,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 4177,
+        "flash_dpi_calls": 0,
+        "memory_operations": 936,
+        "diff_enabled": true,
+        "diff_checked": 4152,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          4784,
+          4784,
+          309,
+          309,
+          309
+        ],
+        "gpr": [
+          0,
+          536871572,
+          251666420,
+          251660288,
+          0,
+          251658320,
+          18,
+          251658320,
+          0,
+          0,
+          0,
+          19,
+          17,
+          18,
+          72,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/quick-sort"
+    },
+    {
+      "name": "recursion",
+      "status": "PASS",
+      "source_sha256": "0a0d88b9fb126ad0a1e12ee40c0504d215dcaf783e348b4ae1fc77a1edd0a81c",
+      "image_sha256": "fdacfe920a63db8e3586f056cd735ce51466c4f35bf0728780a8d7ee1efbe205",
+      "elf_sha256": "8790b2c745234d436caa282950aa42f82acbddc503c06b8e18874b162ecefc36",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871724,
+        "next_pc": 536871728,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 23822,
+        "instructions": 6513,
+        "wall_seconds": 0.230294,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 6521,
+        "flash_dpi_calls": 0,
+        "memory_operations": 1421,
+        "diff_enabled": true,
+        "diff_checked": 6508,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          7430,
+          7430,
+          504,
+          504,
+          504
+        ],
+        "gpr": [
+          0,
+          536871716,
+          251666420,
+          251660288,
+          0,
+          251658280,
+          251658280,
+          251658272,
+          0,
+          0,
+          0,
+          20,
+          1,
+          0,
+          251658276,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/recursion"
+    },
+    {
+      "name": "select-sort",
+      "status": "PASS",
+      "source_sha256": "097ddc20ece9f883c6c42fdabe8d5c640dc892e7c33ed1749ce59075a32d348c",
+      "image_sha256": "1a2c9677862e9d3f938b0e0b4ce8748c7d48f656c73470c3542a7ebe270c2c36",
+      "elf_sha256": "284575c1aac7c0dba034a2fd71598f41f1624ee34d743411e248524d9095778e",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871428,
+        "next_pc": 536871432,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 16709,
+        "instructions": 4559,
+        "wall_seconds": 0.140449,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 4579,
+        "flash_dpi_calls": 0,
+        "memory_operations": 1004,
+        "diff_enabled": true,
+        "diff_checked": 4554,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          5458,
+          5458,
+          105,
+          105,
+          105
+        ],
+        "gpr": [
+          0,
+          536871420,
+          251666420,
+          251660288,
+          0,
+          20,
+          19,
+          19,
+          0,
+          0,
+          0,
+          251658240,
+          18,
+          251658316,
+          19,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/select-sort"
+    },
+    {
+      "name": "shift",
+      "status": "PASS",
+      "source_sha256": "5a49fced5f683eb8cac9336e2217cc7110991a5ba057ea876c58f4ff1379cee8",
+      "image_sha256": "51b5ab63520c2d0da73b200234345a42a6f52386132e3a11d35fcccb54a9fe6e",
+      "elf_sha256": "fd29fe5266a96b619ca353fca9b19ac0d2242e834c7313c85e2fae22c41afa00",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871400,
+        "next_pc": 536871404,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 2387,
+        "instructions": 665,
+        "wall_seconds": 0.0240411,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 697,
+        "flash_dpi_calls": 0,
+        "memory_operations": 124,
+        "diff_enabled": true,
+        "diff_checked": 660,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          748,
+          748,
+          41,
+          41,
+          41
+        ],
+        "gpr": [
+          0,
+          536871392,
+          251666420,
+          251660288,
+          0,
+          251658368,
+          251658368,
+          251658368,
+          0,
+          0,
+          0,
+          0,
+          251658364,
+          11,
+          251658304,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/shift"
+    },
+    {
+      "name": "string",
+      "status": "PASS",
+      "source_sha256": "f5883be91d6d47a9d17a8383c7f79d04282ff67bf94e546ef24aeeb27b90b0ca",
+      "image_sha256": "e5526d87debad58dd52688b9c2db7969b54ea4255578bcda0d6c51e87f1449b7",
+      "elf_sha256": "db75c2320a05e9d8562e2afe57f1269190afb9adeb219db707ac64c8b8ac5731",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871464,
+        "next_pc": 536871468,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 6851,
+        "instructions": 1777,
+        "wall_seconds": 0.0661497,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 2185,
+        "flash_dpi_calls": 0,
+        "memory_operations": 500,
+        "diff_enabled": true,
+        "diff_checked": 1772,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          2233,
+          2233,
+          44,
+          44,
+          44
+        ],
+        "gpr": [
+          0,
+          536871456,
+          251666420,
+          251660288,
+          0,
+          251658296,
+          251658296,
+          251658272,
+          0,
+          0,
+          0,
+          536871772,
+          5,
+          35,
+          5,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/string"
+    },
+    {
+      "name": "sub-longlong",
+      "status": "PASS",
+      "source_sha256": "8b19b65de5348504a2036881737de89a928e36e8bfc5ea884b38b5aed9b5a94e",
+      "image_sha256": "49b3e3a531997bbc8dcb289018f5d78399cf61102b49d4a5eeb13cb305e88d6b",
+      "elf_sha256": "ca83f91c9b9188c59efc76a3ec0d571a2c69094062be62a10837cd90c99b38ce",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871340,
+        "next_pc": 536871344,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 11441,
+        "instructions": 2851,
+        "wall_seconds": 0.100529,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 2995,
+        "flash_dpi_calls": 0,
+        "memory_operations": 956,
+        "diff_enabled": true,
+        "diff_checked": 2846,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          3462,
+          3462,
+          345,
+          345,
+          345
+        ],
+        "gpr": [
+          0,
+          536871332,
+          251666420,
+          251660288,
+          0,
+          251658744,
+          0,
+          251658816,
+          0,
+          0,
+          0,
+          4294967295,
+          251658752,
+          4294967295,
+          251658688,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/sub-longlong"
+    },
+    {
+      "name": "sum",
+      "status": "PASS",
+      "source_sha256": "251ce88b50c08aacf2f5c7aadf165d9e9e7819800755947e675681aa2a2e0e5c",
+      "image_sha256": "437933355507d63bba8fcc97d550531db11adf80f52abb2f943dc14dd714bd71",
+      "elf_sha256": "396b4532e871fb894167f176c46f8e6e007b1f1fed54c2d2338280b2a8da68be",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871224,
+        "next_pc": 536871228,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 2318,
+        "instructions": 556,
+        "wall_seconds": 0.0229188,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 556,
+        "flash_dpi_calls": 0,
+        "memory_operations": 210,
+        "diff_enabled": true,
+        "diff_checked": 551,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          658,
+          658,
+          108,
+          108,
+          108
+        ],
+        "gpr": [
+          0,
+          536871216,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          0,
+          0,
+          101,
+          5050,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/sum"
+    },
+    {
+      "name": "switch",
+      "status": "PASS",
+      "source_sha256": "ed3914f851a51e7012c588bc1bcf20572b61605121e9687645ac589d22e61eae",
+      "image_sha256": "0bdc5374fb86a9957940027dd134c46acccc5a5d8ac7cf6f3a20894a6a94613f",
+      "elf_sha256": "a5cef04846533eb48a7a0c3e14e3055fa8c60d7d1f52fcebb3bd6919f3994fab",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871288,
+        "next_pc": 536871292,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 1619,
+        "instructions": 461,
+        "wall_seconds": 0.0143106,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 490,
+        "flash_dpi_calls": 0,
+        "memory_operations": 72,
+        "diff_enabled": true,
+        "diff_checked": 456,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          508,
+          508,
+          25,
+          25,
+          25
+        ],
+        "gpr": [
+          0,
+          536871280,
+          251666420,
+          251660288,
+          0,
+          251658304,
+          251658304,
+          251658304,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/switch"
+    },
+    {
+      "name": "to-lower-case",
+      "status": "PASS",
+      "source_sha256": "7ed53af9ca2ad4a60fdb61d8ca21fca40e8f975174002df3779b2d515cb07bdb",
+      "image_sha256": "070868259912f9fe973100165b0b2e19020f6c9e37e026b308aa682954238652",
+      "elf_sha256": "b47686711d48f5441086824b706eeaa598fba51f21e6fcaacc8336c72aa04d8b",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871268,
+        "next_pc": 536871272,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 8813,
+        "instructions": 2727,
+        "wall_seconds": 0.0762309,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 2759,
+        "flash_dpi_calls": 0,
+        "memory_operations": 204,
+        "diff_enabled": true,
+        "diff_checked": 2722,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          2890,
+          2890,
+          41,
+          41,
+          41
+        ],
+        "gpr": [
+          0,
+          536871260,
+          251666420,
+          251660288,
+          0,
+          251658368,
+          251658368,
+          251658368,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          25,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/to-lower-case"
+    },
+    {
+      "name": "unalign",
+      "status": "PASS",
+      "source_sha256": "5d79b666b68ca576934e2b8aff9e2a2b7ee5159a225d4f23b2827042849e39c7",
+      "image_sha256": "02bdd5120d0a306f84b02fbf1a0dcb3071c2257d5bd75a5d6c1fbd8efabed951",
+      "elf_sha256": "313fe24ff09302963ae38d896167f7a39cb4aab91fd60ffe0b7ac4250906cbe5",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871344,
+        "next_pc": 536871348,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 989,
+        "instructions": 239,
+        "wall_seconds": 0.01123,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 241,
+        "flash_dpi_calls": 0,
+        "memory_operations": 84,
+        "diff_enabled": true,
+        "diff_checked": 234,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          280,
+          280,
+          43,
+          43,
+          43
+        ],
+        "gpr": [
+          0,
+          536871336,
+          251666420,
+          251660288,
+          0,
+          251658264,
+          251658264,
+          251658248,
+          0,
+          0,
+          0,
+          0,
+          0,
+          52445,
+          251658240,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/unalign"
+    },
+    {
+      "name": "wanshu",
+      "status": "PASS",
+      "source_sha256": "af374c7cf9fced451fad678832a7a04efd341cf921e93917fc58d60d5dcf9286",
+      "image_sha256": "75dc7af99bd0fff19918fb948f5232cef2d741fecea7470b0f81ebe66754ed1c",
+      "elf_sha256": "eef94beeaef58231a625eb1454af795603191c55f69c13a186106396572a94d2",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871316,
+        "next_pc": 536871320,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 62594,
+        "instructions": 19216,
+        "wall_seconds": 0.534733,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 19218,
+        "flash_dpi_calls": 0,
+        "memory_operations": 1642,
+        "diff_enabled": true,
+        "diff_checked": 19211,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          20035,
+          20035,
+          823,
+          823,
+          823
+        ],
+        "gpr": [
+          0,
+          536871308,
+          251666420,
+          251660288,
+          0,
+          536871108,
+          251658248,
+          251658248,
+          0,
+          0,
+          0,
+          29,
+          14,
+          0,
+          30,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/wanshu"
+    },
+    {
+      "name": "wrong",
+      "status": "PASS_REJECTED",
+      "source_sha256": "48de9f93e04d0ec94140ee91c3519f7ee1534038c3d43e083284093efbf379d0",
+      "image_sha256": "d62c3cc188d7851034c1e6de408ecfa8aa6550a0bd3140c19d501bd15ce93f9e",
+      "elf_sha256": "f39a32cc334efee746725895ae57b80365012f6480618b1b38a83cab3fb26fd7",
+      "simulation": {
+        "result": "BAD_TRAP",
+        "exit_code": 1,
+        "pc": 536871104,
+        "next_pc": 536871108,
+        "instruction": 1048691,
+        "a0": 1,
+        "fault": 0,
+        "cycles": 158,
+        "instructions": 40,
+        "wall_seconds": 0.0053736,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 40,
+        "flash_dpi_calls": 0,
+        "memory_operations": 6,
+        "diff_enabled": true,
+        "diff_checked": 35,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          40,
+          40,
+          6,
+          6,
+          6
+        ],
+        "gpr": [
+          0,
+          536871096,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          7,
+          1
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": "artifacts/C5/cpu-tests/wrong"
+    }
+  ],
+  "scope": "All34 original positive cpu-tests required at this stage plus the original wrong.c negative; hello-str is explicitly deferred at this MROM/SRAM stage. Original checks retained; new AM bootloader uses real SRAM data/BSS/stack and MROM code. Each non-MMIO instruction checked by NEMU, MMIO effects independently validated and synchronized."
+}

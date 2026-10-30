@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "tool_hashes_verified": 13,
+  "memory_total_kib": 1964348,
+  "swap_total_kib": 2097152,
+  "processors": 4,
+  "remaining_live_GUI_processes": [],
+  "binding_sha256": "c1345011f3c3e247e48fa88f98aeda9c3c0ef9f3e2ad9ddfbc427e295d1d521c",
+  "budget": "One heavy task; source Verilator build-j1, model builds<=j2; no global PATH or .wslconfig changes in E4."
+}

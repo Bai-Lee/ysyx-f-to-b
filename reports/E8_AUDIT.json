@@ -1,0 +1,630 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "timestamp": "2026-10-25T17:43:07.019012+00:00",
+  "core_tasks_passed": 10,
+  "core_tasks_total": 10,
+  "all_scope_items": 16,
+  "top_module": "ysyx_00000000",
+  "candidate": "BALANCE3baseline",
+  "constraint_frequency_mhz": 50,
+  "die_area_um2": 34596,
+  "core_area_um2": 33124,
+  "minimum_setup_wns_ns": 2.707,
+  "minimum_hold_wns_ns": 0.085,
+  "timing_corners": [
+    {
+      "lib_corner": "MAX",
+      "temperature": 125,
+      "rcx_corner": "Cworst",
+      "report": "final/timing/sta/MAX_125/Cworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MAX_125/Cworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MAX_125/Cworst/feature/timing_paths.json",
+      "setup": {
+        "wns": 2.707,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 58
+      },
+      "hold": {
+        "wns": 0.259,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "MAX",
+      "temperature": 125,
+      "rcx_corner": "RCworst",
+      "report": "final/timing/sta/MAX_125/RCworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MAX_125/RCworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MAX_125/RCworst/feature/timing_paths.json",
+      "setup": {
+        "wns": 5.094,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 67
+      },
+      "hold": {
+        "wns": 0.255,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "MIN",
+      "temperature": -40,
+      "rcx_corner": "Cbest",
+      "report": "final/timing/sta/MIN_m40/Cbest/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MIN_m40/Cbest/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MIN_m40/Cbest/feature/timing_paths.json",
+      "setup": {
+        "wns": 16.236,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 266
+      },
+      "hold": {
+        "wns": 0.085,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "MIN",
+      "temperature": -40,
+      "rcx_corner": "Cworst",
+      "report": "final/timing/sta/MIN_m40/Cworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MIN_m40/Cworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MIN_m40/Cworst/feature/timing_paths.json",
+      "setup": {
+        "wns": 15.768,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 236
+      },
+      "hold": {
+        "wns": 0.086,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "MIN",
+      "temperature": -40,
+      "rcx_corner": "RCbest",
+      "report": "final/timing/sta/MIN_m40/RCbest/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MIN_m40/RCbest/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MIN_m40/RCbest/feature/timing_paths.json",
+      "setup": {
+        "wns": 15.992,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 249
+      },
+      "hold": {
+        "wns": 0.085,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "MIN",
+      "temperature": -40,
+      "rcx_corner": "RCworst",
+      "report": "final/timing/sta/MIN_m40/RCworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/MIN_m40/RCworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/MIN_m40/RCworst/feature/timing_paths.json",
+      "setup": {
+        "wns": 16.168,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 261
+      },
+      "hold": {
+        "wns": 0.085,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "ML",
+      "temperature": 125,
+      "rcx_corner": "Cbest",
+      "report": "final/timing/sta/ML_125/Cbest/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/ML_125/Cbest/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/ML_125/Cbest/feature/timing_paths.json",
+      "setup": {
+        "wns": 15.5,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 222
+      },
+      "hold": {
+        "wns": 0.095,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "ML",
+      "temperature": 125,
+      "rcx_corner": "Cworst",
+      "report": "final/timing/sta/ML_125/Cworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/ML_125/Cworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/ML_125/Cworst/feature/timing_paths.json",
+      "setup": {
+        "wns": 14.888,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 196
+      },
+      "hold": {
+        "wns": 0.096,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "ML",
+      "temperature": 125,
+      "rcx_corner": "RCbest",
+      "report": "final/timing/sta/ML_125/RCbest/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/ML_125/RCbest/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/ML_125/RCbest/feature/timing_paths.json",
+      "setup": {
+        "wns": 15.188,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 208
+      },
+      "hold": {
+        "wns": 0.096,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "ML",
+      "temperature": 125,
+      "rcx_corner": "RCworst",
+      "report": "final/timing/sta/ML_125/RCworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/ML_125/RCworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/ML_125/RCworst/feature/timing_paths.json",
+      "setup": {
+        "wns": 15.413,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 218
+      },
+      "hold": {
+        "wns": 0.095,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "TYP",
+      "temperature": 25,
+      "rcx_corner": "TYPICAL",
+      "report": "final/timing/sta/TYP_25/TYPICAL/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/TYP_25/TYPICAL/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/TYP_25/TYPICAL/feature/timing_paths.json",
+      "setup": {
+        "wns": 13.11,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 145
+      },
+      "hold": {
+        "wns": 0.137,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "WCL",
+      "temperature": -40,
+      "rcx_corner": "Cworst",
+      "report": "final/timing/sta/WCL_m40/Cworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/WCL_m40/Cworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/WCL_m40/Cworst/feature/timing_paths.json",
+      "setup": {
+        "wns": 3.57,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 61
+      },
+      "hold": {
+        "wns": 0.253,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    {
+      "lib_corner": "WCL",
+      "temperature": -40,
+      "rcx_corner": "RCworst",
+      "report": "final/timing/sta/WCL_m40/RCworst/report/qor_summary.rpt",
+      "qor_summary": "final/timing/sta/WCL_m40/RCworst/feature/qor_summary.json",
+      "timing_paths": "final/timing/sta/WCL_m40/RCworst/feature/timing_paths.json",
+      "setup": {
+        "wns": 5.687,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 70
+      },
+      "hold": {
+        "wns": 0.25,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    }
+  ],
+  "spef_files": 9,
+  "quality_gates": {
+    "qor.drc.clean": {
+      "id": "qor.drc.clean",
+      "title": "Final DRC clean",
+      "state": "pass",
+      "blocking": true,
+      "metrics": [
+        {
+          "id": "drc_count",
+          "actual": 0,
+          "operator": "==",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/drc.step.json",
+            "selector": "/drc/number"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "feature",
+          "path": "feature/drc.step.json",
+          "selector": "/drc/number"
+        }
+      ]
+    },
+    "qor.lvs.clean": {
+      "id": "qor.lvs.clean",
+      "title": "Final LVS clean",
+      "state": "pass",
+      "blocking": true,
+      "metrics": [
+        {
+          "id": "lvs_count",
+          "actual": 0,
+          "operator": "==",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/lvs.step.json",
+            "selector": "/violations"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "feature",
+          "path": "feature/lvs.step.json",
+          "selector": "/violations"
+        }
+      ]
+    },
+    "qor.rcx.corner_coverage": {
+      "id": "qor.rcx.corner_coverage",
+      "title": "RCX corner coverage",
+      "state": "pass",
+      "blocking": true,
+      "metrics": [
+        {
+          "id": "rcx_expected_corner_count",
+          "actual": 9,
+          "operator": ">",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/RCX.step.json",
+            "selector": "/rcx/expected_corner_count"
+          }
+        },
+        {
+          "id": "rcx_spef_file_count",
+          "actual": 9,
+          "operator": "==",
+          "expected": 9,
+          "source": {
+            "kind": "feature",
+            "path": "feature/RCX.step.json",
+            "selector": "/rcx/spef_file_count"
+          }
+        },
+        {
+          "id": "rcx_missing_corner_count",
+          "actual": 0,
+          "operator": "==",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/RCX.step.json",
+            "selector": "/rcx/signoff_metrics/coverage/missing_count"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "feature",
+          "path": "feature/RCX.step.json",
+          "selector": "/rcx/expected_corner_count"
+        },
+        {
+          "kind": "feature",
+          "path": "feature/RCX.step.json",
+          "selector": "/rcx/spef_file_count"
+        },
+        {
+          "kind": "feature",
+          "path": "feature/RCX.step.json",
+          "selector": "/rcx/signoff_metrics/coverage/missing_count"
+        }
+      ]
+    },
+    "qor.rcx.spef_parse_health": {
+      "id": "qor.rcx.spef_parse_health",
+      "title": "RCX SPEF integrity",
+      "state": "pass",
+      "blocking": true,
+      "metrics": [
+        {
+          "id": "rcx_spef_parse_failure_count",
+          "actual": 0,
+          "operator": "==",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/RCX.step.json",
+            "selector": "/rcx/signoff_metrics/coverage/unparseable_count"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "feature",
+          "path": "feature/RCX.step.json",
+          "selector": "/rcx/signoff_metrics/coverage/unparseable_count"
+        }
+      ]
+    },
+    "qor.sta.setup_closed": {
+      "id": "qor.sta.setup_closed",
+      "title": "STA setup closure",
+      "state": "pass",
+      "blocking": true,
+      "metrics": [
+        {
+          "id": "sta_setup_wns",
+          "actual": 2.707,
+          "operator": ">=",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/MAX_125/Cworst/qor_summary.json",
+            "selector": "/summary/setup/wns"
+          }
+        },
+        {
+          "id": "sta_setup_tns",
+          "actual": 0,
+          "operator": ">=",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/MAX_125/Cworst/qor_summary.json",
+            "selector": "/summary/setup/tns"
+          }
+        },
+        {
+          "id": "sta_setup_violation_count",
+          "actual": 0,
+          "operator": "==",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/sta.step.json",
+            "selector": "/sta/signoff_metrics/setup/violation_count"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "feature",
+          "path": "feature/MAX_125/Cworst/qor_summary.json",
+          "selector": "/summary/setup/wns"
+        },
+        {
+          "kind": "feature",
+          "path": "feature/MAX_125/Cworst/qor_summary.json",
+          "selector": "/summary/setup/tns"
+        },
+        {
+          "kind": "feature",
+          "path": "feature/sta.step.json",
+          "selector": "/sta/signoff_metrics/setup/violation_count"
+        }
+      ]
+    },
+    "qor.sta.hold_closed": {
+      "id": "qor.sta.hold_closed",
+      "title": "STA hold closure",
+      "state": "pass",
+      "blocking": true,
+      "metrics": [
+        {
+          "id": "sta_hold_wns",
+          "actual": 0.085,
+          "operator": ">=",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/MIN_m40/RCworst/qor_summary.json",
+            "selector": "/summary/hold/wns"
+          }
+        },
+        {
+          "id": "sta_hold_tns",
+          "actual": 0,
+          "operator": ">=",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/MAX_125/Cworst/qor_summary.json",
+            "selector": "/summary/hold/tns"
+          }
+        },
+        {
+          "id": "sta_hold_violation_count",
+          "actual": 0,
+          "operator": "==",
+          "expected": 0,
+          "source": {
+            "kind": "feature",
+            "path": "feature/sta.step.json",
+            "selector": "/sta/signoff_metrics/hold/violation_count"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "feature",
+          "path": "feature/MIN_m40/RCworst/qor_summary.json",
+          "selector": "/summary/hold/wns"
+        },
+        {
+          "kind": "feature",
+          "path": "feature/MAX_125/Cworst/qor_summary.json",
+          "selector": "/summary/hold/tns"
+        },
+        {
+          "kind": "feature",
+          "path": "feature/sta.step.json",
+          "selector": "/sta/signoff_metrics/hold/violation_count"
+        }
+      ]
+    }
+  },
+  "flow": {
+    "steps": [
+      {
+        "name": "Floorplan",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:1",
+        "peak memory (mb)": 180.977,
+        "info": {}
+      },
+      {
+        "name": "fixFanout",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:1",
+        "peak memory (mb)": 177.395,
+        "info": {}
+      },
+      {
+        "name": "place",
+        "tool": "dreamplace",
+        "state": "Success",
+        "runtime": "0:1:44",
+        "peak memory (mb)": 1789.523,
+        "info": {}
+      },
+      {
+        "name": "CTS",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:34",
+        "peak memory (mb)": 2373.035,
+        "info": {}
+      },
+      {
+        "name": "legalization",
+        "tool": "dreamplace",
+        "state": "Success",
+        "runtime": "0:0:4",
+        "peak memory (mb)": 373.191,
+        "info": {}
+      },
+      {
+        "name": "route",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:40",
+        "peak memory (mb)": 399.852,
+        "info": {}
+      },
+      {
+        "name": "drc",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:6",
+        "peak memory (mb)": 522.312,
+        "info": {}
+      },
+      {
+        "name": "lvs",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:4",
+        "peak memory (mb)": 389.254,
+        "info": {}
+      },
+      {
+        "name": "filler",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:5",
+        "peak memory (mb)": 452.891,
+        "info": {}
+      },
+      {
+        "name": "RCX",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:12",
+        "peak memory (mb)": 696.516,
+        "info": {}
+      },
+      {
+        "name": "sta",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:5:27",
+        "peak memory (mb)": 1365.191,
+        "info": {}
+      },
+      {
+        "name": "Harden",
+        "tool": "ecc",
+        "state": "Success",
+        "runtime": "0:0:21",
+        "peak memory (mb)": 1297.07,
+        "info": {}
+      }
+    ]
+  },
+  "signoff_archive": "E/E8/signoff/cpu-baseline-signoff.tar.gz",
+  "signoff_sha256": "3c02ffb8064aaa42b8f34ab00f8141dad820cd13e9a0f23c2f210febd86890de",
+  "verified_export_files": 210,
+  "gui": "PASS_NATIVE_2D_CPU_CANVAS",
+  "source_netlist_sha256": "cedd0e7e83b6422d0f2df0b511197448ccda6e08aada9d5587cdf46236cf0741",
+  "limits": [
+    "LocalchecksunderlockedICsprout55libraries,SDC,andRCXparasitics;notmeasuredsilicon",
+    "50MHzconstraintclosed;GUI58MHzisareportedestimate,notaseparatelyrerun58MHzconstraint",
+    "Functionalnetlistprogramtestsareno-SDF;timingqualificationcomesfromseparateSTA",
+    "Optionalmaximum-utilizationsearch,Chisel-specificnotes,embeddedAIagent,and3Dviewnotselected"
+  ]
+}

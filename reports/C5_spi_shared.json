@@ -1,0 +1,31 @@
+{
+  "status": "PASS_REPRODUCED_XIP_MANUAL_SPI_CONFLICT_AND_RELOCATION",
+  "runs": [
+    {
+      "name": "flash",
+      "status": "PASS",
+      "result": "FLASH_PROTOCOL_ASSERTION",
+      "model_command": "00h instead of03h",
+      "missing_host_simulation_report": "Expected: the Verilog model terminates beforehostreportfinalization; exactassertionandbus/PCtrace are checked.",
+      "instructions_traced": 58,
+      "last_observed_cycle": 9194,
+      "function_address": 805306480,
+      "flash_image_sha256": "1833f2ab53205996d770f556460173c393b90bf83051cdd2179cd1bba113aaa5",
+      "evidence": "artifacts/C5/spi-shared/flash"
+    },
+    {
+      "name": "sram",
+      "status": "PASS",
+      "result": "GOOD_TRAP",
+      "exit_a0": 0,
+      "observed_word": "51c0ffee",
+      "function_address": 251658240,
+      "uart": "C5_SHARED_SPI value=51c0ffee expected=51c0ffee\n",
+      "cycles": 1221660,
+      "instructions": 17639,
+      "flash_image_sha256": "e9502b122145e768d183e909ac75cff3a3b2d4ebb4566e2a7605976364b41b33",
+      "evidence": "artifacts/C5/spi-shared/sram"
+    }
+  ],
+  "scope": "Same manualSPIregisterroutine withknownflashdata. Flashinstructionfetch reuses/reconfiguresSPI anddestroyssoftwaretransaction state: thelockedmodelexplicitlyasserts on00h ratherthan03h (ordata-mismatch88). Exactdiagnostic andbus/PCtrace are required; nohosttimeoutisaccepted. SRAMexecution succeeds. NEMUchecks eachretirednon-MMIOinstruction untilmodeltermination."
+}

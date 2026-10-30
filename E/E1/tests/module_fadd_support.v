@@ -1,0 +1,1 @@
+module add16(input[15:0]a,b,input cin,output[15:0]sum,output cout);wire[16:0]c;assign c[0]=cin;assign cout=c[16];genvar n;generate for(n=0;n<16;n=n+1)begin add1 f(a[n],b[n],c[n],sum[n],c[n+1]);end endgenerate endmodule

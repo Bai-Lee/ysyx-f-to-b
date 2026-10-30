@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "unchanged_firmware_images": [
+    "f5_sum10",
+    "f5_odd10",
+    "f6_sum10",
+    "f6_output",
+    "f6_switch_sum",
+    "f6_button_wait",
+    "f6_output_hold",
+    "f6_step_level",
+    "f6_step_release"
+  ],
+  "invalid_operand_controls_rejected": 8,
+  "range": "F5 absolute branch0..15; F6 signed relative -8..7; GPR0..3; enhanced li only representable values",
+  "assembler_sha256": "92f996d2d4166b96f047577c37bd7035a50f0d58b1c938fc12838c1bdd7f3c66"
+}

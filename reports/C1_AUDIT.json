@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "core_tasks": 0,
+  "scope_records": 1,
+  "records": [
+    {
+      "id": "C1-O001",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "C/C1/NOTES.md",
+        "reports/C1_background.json",
+        "reports/C1_experiment.json",
+        "artifacts/C1"
+      ],
+      "details": "Source-bounded Chinese teaching notes and small real positive/negative experiment; original chapter has no mandatory programming task. Video completion and personal mastery are not claimed."
+    }
+  ],
+  "report": "C/C1/NOTES.md",
+  "limits": [
+    "Every linked video or external article viewed",
+    "Every slide code example rerun",
+    "Formal correctness of all programs or CPU states"
+  ]
+}

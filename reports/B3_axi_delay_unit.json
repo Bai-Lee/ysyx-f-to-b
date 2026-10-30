@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "ratio_q": 256,
+      "negative": false,
+      "status": "PASS",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/axi-delay-256-bad0/timing.vcd",
+      "wave_sha256": "b79f600bcffe51b71a8321327e787fb9fed76f62bc8579869b08e97120d61f1a",
+      "result": "AXI_DELAY_PASS ratio_q=256 paired_transactions=48 read_beats=208",
+      "evidence": "artifacts/B3/unit/axi-delay-256-bad0"
+    },
+    {
+      "ratio_q": 320,
+      "negative": false,
+      "status": "PASS",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/axi-delay-320-bad0/timing.vcd",
+      "wave_sha256": "286c6e02fb603c1982989d8d4e7ee1861a3ea042ef30fa9325d8b687a2aa4759",
+      "result": "AXI_DELAY_PASS ratio_q=320 paired_transactions=48 read_beats=208",
+      "evidence": "artifacts/B3/unit/axi-delay-320-bad0"
+    },
+    {
+      "ratio_q": 512,
+      "negative": false,
+      "status": "PASS",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/axi-delay-512-bad0/timing.vcd",
+      "wave_sha256": "0cedfc74b5fdd900c6ce2d727fd9287479d7f4ca7604144efa35bc961c71b11f",
+      "result": "AXI_DELAY_PASS ratio_q=512 paired_transactions=48 read_beats=208",
+      "evidence": "artifacts/B3/unit/axi-delay-512-bad0"
+    },
+    {
+      "ratio_q": 1408,
+      "negative": false,
+      "status": "PASS",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/axi-delay-1408-bad0/timing.vcd",
+      "wave_sha256": "f0b7feee5f78ed75e6ddcf35adaa18a54ad2bd6462c1ed363d925e23fd572eb6",
+      "result": "AXI_DELAY_PASS ratio_q=1408 paired_transactions=48 read_beats=208",
+      "evidence": "artifacts/B3/unit/axi-delay-1408-bad0"
+    },
+    {
+      "ratio_q": 512,
+      "negative": true,
+      "status": "PASS_BAD_CALIBRATION_REJECTED",
+      "wave": "/workspace/projects/ysyx_f_to_b/artifacts/B3/unit/axi-delay-512-bad1/timing.vcd",
+      "wave_sha256": "06def5b503d2f50a3946f48afd00438d2694305addad39b2b2db41d324e52fdb",
+      "result": "",
+      "evidence": "artifacts/B3/unit/axi-delay-512-bad1"
+    }
+  ],
+  "contract": "Read/write timers start at the first upstream VALID, including downstream address wait. Independent read and write lanes;1/4/8-beat reads buffered with per-beat due time ceil((device_response-start)*r), stable responses under upstream backpressure. AW/W accepted in either order, single writes calibrated. Burst writes excluded by an explicit assertion. Device response latency at least one edge; one outstanding transaction per lane."
+}

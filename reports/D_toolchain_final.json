@@ -1,0 +1,152 @@
+{
+  "status": "PASS_LOCKED_AFTER_RUNS",
+  "captured_utc": "2026-10-26T13:23:03.629188+00:00",
+  "inherited_tools": [
+    {
+      "name": "gcc",
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89",
+      "version": [
+        "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+        "Copyright (C) 2021 Free Software Foundation, Inc."
+      ],
+      "matches_E_final_lock": null,
+      "rechecked_final": true
+    },
+    {
+      "name": "gdb",
+      "path": "/usr/bin/gdb",
+      "sha256": "a6222ff0f450ca040e3479c04fdb7d0f1e0cabb099688270e720b7115d933c3d",
+      "version": [
+        "GNU gdb (Ubuntu 12.1-0ubuntu1~22.04.2) 12.1",
+        "Copyright (C) 2022 Free Software Foundation, Inc."
+      ],
+      "matches_E_final_lock": null,
+      "rechecked_final": true
+    },
+    {
+      "name": "riscv_gcc",
+      "path": "/usr/bin/riscv64-linux-gnu-gcc",
+      "sha256": "0c54895c55568be5b5fee49e2426abcc8fb05ca2c121ca5685dea2cbc24a1c13",
+      "version": [
+        "riscv64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0",
+        "Copyright (C) 2021 Free Software Foundation, Inc."
+      ],
+      "matches_E_final_lock": null,
+      "rechecked_final": true
+    },
+    {
+      "name": "verilator",
+      "path": "/home/USER/tools/verilator-stable-src/bin/verilator",
+      "sha256": "308c54eb0194bb5c95d7cc093e0491922d2455177d401b03a8224ad7efe5cf35",
+      "version": [
+        "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261024-983a06a"
+      ],
+      "matches_E_final_lock": true,
+      "rechecked_final": true
+    },
+    {
+      "name": "iverilog",
+      "path": "/home/USER/tools/e-stage/oss-20261022/oss-cad-suite/bin/iverilog",
+      "sha256": "6d84be4052a92cf7184c7149506f5db6ac251f99e438a96ae3ce33f326e2ff9d",
+      "version": [
+        "Icarus Verilog version 14.0 (devel) (s20260301-638-ge072b3334-dirty)",
+        ""
+      ],
+      "matches_E_final_lock": true,
+      "rechecked_final": true
+    },
+    {
+      "name": "yosys",
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/yosys",
+      "sha256": "7c3e3396b38c129dd7485be5a0a0f0da8e495a94c8fd486059e3bea043a588d6",
+      "version": [
+        "Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)"
+      ],
+      "matches_E_final_lock": true,
+      "rechecked_final": true
+    },
+    {
+      "name": "dot",
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/dot",
+      "sha256": "83f213b0d85e370a7ddad41eff9795791e1409d7f514c2b53e906216958bc8fb",
+      "version": [
+        "dot - graphviz version 2.43.20190912.0211 (20190912.0211)"
+      ],
+      "matches_E_final_lock": null,
+      "rechecked_final": true
+    }
+  ],
+  "additional_fingerprints": [
+    {
+      "path": "/home/USER/tools/d-stage/clang15/usr/bin/clang-15",
+      "sha256": "22f8651e4eba296325daed391a432b11c3db82d8166da127ccb43b4f6f229e18",
+      "bytes": 141096
+    },
+    {
+      "path": "/home/USER/tools/d-stage/support/usr/bin/dtc",
+      "sha256": "7dc0f6b40a991e029b54dea4f5cdae15adccfa246fc156eef96ec27b525f5ea2",
+      "bytes": 140536
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/npc/build/sim",
+      "sha256": "fe878c46a4f5841ab3dc55f35bf1a1ec5f6240de2ba547f589319494e4306f46",
+      "bytes": 5114448
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/build/riscv32-nemu-interpreter",
+      "sha256": "bec3e2e2f11ca215d7e07276a02a9703795f6574c6cd00b2a17c176a2b6c496b",
+      "bytes": 68920
+    },
+    {
+      "path": "/home/USER/d-stage/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "sha256": "5ab54d70c366a212f92e191cb23d6a61a4161a8cac06c0128eb4a7e81ea96e3a",
+      "bytes": 59112
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/build/riscv32-spike-so",
+      "sha256": "5ab7fa7909535008a57d2a9662a83700a3eeae40a72121ddf13925c0459e927d",
+      "bytes": 37884568
+    },
+    {
+      "path": "/home/USER/d-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+      "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350",
+      "bytes": 150680
+    }
+  ],
+  "pdk_inputs_rechecked": [
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib",
+      "sha256": "a5fb35bea1c7e8f06d2e93089d48986125731f8e744580adaa4d320283e23988"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/cdl/ics55_LLSC_H7CL.cdl",
+      "sha256": "80bddc3bf97dcea31d7d74339fd4cc3f260c5865f7c797eaef78973e3e338546"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/lef/ics55_LLSC_H7CL.lef",
+      "sha256": "bd565a026483452b54d0e828742f369527660e727b56b58fa08094ae4baa94d5"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/prtech/techLEF/N551P6M.lef",
+      "sha256": "dbc26034f24e7cc4e0b0d620a82fce9f3d9e7f2667cf9ac5f791a7bfd5839ef5"
+    },
+    {
+      "path": "/home/USER/tools/icsprout55-e-stage/IP/IO/ICsprout_55LLULP1233_IO_251013/lef/ICSIOA_N55_3P3_1P6M1TM.lef",
+      "sha256": "a8eace728706072db095c55b787ffe0d0b2c5dbfdad201423078778cf0ffd309"
+    }
+  ],
+  "memory_observation": {
+    "MemTotal_KiB": 4025660,
+    "MemAvailable_KiB": 3753384,
+    "SwapTotal_KiB": 0,
+    "SwapFree_KiB": 0
+  },
+  "dependency_acceptance": [
+    "reports/D_clang.json",
+    "reports/D_spike_support.json",
+    "reports/D_capstone.json",
+    "reports/D8_reference.json"
+  ],
+  "scope": "Actual paths/fingerprints verified after runs. This is not a new functional simulation; previous positive/negative acceptance remains attached. No global configuration changed."
+}

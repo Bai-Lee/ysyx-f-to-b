@@ -1,0 +1,7 @@
+{
+  "status": "PASS_SOURCE_SETUP",
+  "workbench": "/home/USER/c-stage/c4/workbench",
+  "timer_source": "C/C4/am_timer.c",
+  "timer_sha256": "5d56278a9170934b969c69c87e47e91e7f4b91dfd42cb09e65c96af0e6884c32",
+  "scope": "Private C4 AM/app tree. riscv32e-npc retains C++ microsecond model; riscv32e-c4 converts actual RTL cycle ticks using default100MHz or an explicit calibration hook. All source inputs and benchmark validators remain unchanged."
+}

@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "binary_sha256": "cd4bfd9fe0fc2d4857501e86f5d908b995e40a6cc2c491234a9a20d86d621cc2",
+  "exit_code": 0,
+  "elapsed_seconds": 1.1324725019999846,
+  "events": [
+    [
+      "J",
+      "49",
+      "DOWN"
+    ],
+    [
+      "J",
+      "49",
+      "UP"
+    ],
+    [
+      "LEFT",
+      "75",
+      "DOWN"
+    ],
+    [
+      "LEFT",
+      "75",
+      "UP"
+    ]
+  ],
+  "commands": [
+    {
+      "command": [
+        "xdotool",
+        "windowfocus",
+        "--sync",
+        "6291470"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keydown",
+        "j"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keyup",
+        "j"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keydown",
+        "Left"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xdotool",
+        "keyup",
+        "Left"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "stdout_sha256": "be3514f53bbe5f38456fb11f13bf22ea41524f1d8d88023f77d3e430a68e5e16",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Unmodified official native AM keyboard program; real X11 J and Left down/up events and normal SDL quit in isolated Xvfb. Not a test of every keyboard layout or physical device."
+}

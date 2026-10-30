@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "items": [
+    {
+      "name": "ysyxSoC-compatible-full",
+      "url": "https://codeload.github.com/OSCPU/ysyxSoC/tar.gz/bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e",
+      "file": "sources/ysyxSoC-bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e.tar.gz",
+      "commit": "bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e",
+      "repository": "https://github.com/OSCPU/ysyxSoC",
+      "reason": "Official ysyx6 full-SoC source matches C5 topology; original archived 2607 snapshot is preserved separately.",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\ysyxSoC-bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e.tar.gz",
+      "bytes": 365835,
+      "sha256": "1ede015007ade45c3ecf4ca3972f207ba8843aa49999e4888f503b3f79ba8e5d",
+      "headers": {
+        "note": "Existing complete local download reused; final hash is recorded below."
+      },
+      "elapsed_seconds": 0.0,
+      "provenance": "Official HTTPS source, fixed commit or document revision. Local SHA-256 recorded; no separate published digest claim.",
+      "download_evidence": [
+        "artifacts/C/sources/ysyxSoC-compatible-full/20261026T142816373429/result.json"
+      ]
+    },
+    {
+      "name": "AXI-IHI0022H",
+      "url": "https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/IHI0022H_amba_axi_protocol_spec.pdf",
+      "file": "specifications/IHI0022H_amba_axi_protocol_spec.pdf",
+      "revision": "Issue H, ID040120, 2020-03-31",
+      "reason": "Course-linked Issue K removed AXI4/AXI4-Lite; Issue H contains the required protocol.",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\specifications\\IHI0022H_amba_axi_protocol_spec.pdf",
+      "bytes": 2308667,
+      "sha256": "d70578d92bfcdc84b6d94c87d6a126614e26f89d1fdd8c77ac128e7063a9990e",
+      "headers": {
+        "note": "Existing complete local download reused; final hash is recorded below."
+      },
+      "elapsed_seconds": 0.016,
+      "provenance": "Official HTTPS source, fixed commit or document revision. Local SHA-256 recorded; no separate published digest claim.",
+      "download_evidence": [
+        "artifacts/C/sources/AXI-IHI0022H/20261026T142820623223/result.json",
+        "artifacts/C/sources/AXI-IHI0022H/20261026T142826751124/result.json",
+        "artifacts/C/sources/AXI-IHI0022H/20261026T142833651526/result.json",
+        "artifacts/C/sources/AXI-IHI0022H/20261026T143142385577/result.json",
+        "artifacts/C/sources/AXI-IHI0022H/20261026T143149135124/result.json",
+        "artifacts/C/sources/AXI-IHI0022H/20261026T143154495582/curl.json",
+        "artifacts/C/sources/AXI-IHI0022H/20261026T143154495582/result.json",
+        "artifacts/C/sources/AXI-IHI0022H/manual_curl_success.json"
+      ]
+    }
+  ],
+  "download_attempts": []
+}

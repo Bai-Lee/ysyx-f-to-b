@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "task": "E2 official independent-linked-list competence branch",
+  "course_source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\docs\\raw_html\\E\\E2.html",
+  "course_source_sha256": "493138ea6d09fc4b3cf97d0a339627a5466d6d7d83c5736df1115e9fa125f646",
+  "compiler": {
+    "path": "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+    "sha256": "b6aa727e46c8c7d494ed2e712fe40cb51e2360cc9ca0706979d698f1aabeb387",
+    "version": "gcc.exe (Rev13, Built by MSYS2 project) 15.2.0"
+  },
+  "reused_prior_positive_negative_evidence": "reports/F4_results.json; executable fingerprint unchanged",
+  "resource_budget": {
+    "parallel_jobs": 1,
+    "compile_timeout_seconds": 60,
+    "execute_timeout_seconds": 30,
+    "heavy_jobs": 0
+  },
+  "scope": "Native C17, recursion/pointers/list; public CE execution. No Linux host installation."
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "netlist_sha256": "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+  "exported_rtl_sha256": "0c56b8296b8d03f359cedc07028e2a40eaafd7785979714ebd74c7291f17aed8",
+  "area_um2": 24878.182,
+  "model_frequency_mhz": 325,
+  "programs": {
+    "rtl": {
+      "report_sha256": "1245d23d51eca8efadf863c005c95a523d3ab0d1da82e0dee3ad10cf4c24be02",
+      "programs": [
+        "fence-prefetch",
+        "hazards",
+        "hello",
+        "microbench",
+        "rtthread"
+      ]
+    },
+    "netlist": {
+      "report_sha256": "c15cf769788114a50da80bc26283a602eed7cb88a3814732d9e2bdfd214fe33a",
+      "programs": [
+        "fence-prefetch",
+        "hazards",
+        "hello",
+        "microbench",
+        "rtthread"
+      ]
+    }
+  },
+  "checks": {
+    "B5_final_timing": "c00192f34923ffdff99dba01ac769b7b51d62a7f7e288fc4f7c23ce64f5594ce",
+    "B5_structure": "07de3c2331683ecd0bd4c3e86181aa9130038161b5488cbca348ded3d94f1e92",
+    "B5_cell_models": "371bdefdf3774f8ca8c7a4784b7e52a3c7ef6a6a61f1df3227b57ec1baf48040",
+    "B5_export": "dc63a960847aded8d4e75505b5682d4c57ad6c18f37e135deb739b3fb4cb6ea9",
+    "B5_export_equivalence": "18d100fe515ad3a89fc8050edd964e7d153d079bc73974d1ce232319e870efdf",
+    "B5_public_entrypoints": "c2cada40def0c4bd878a722d96f9866843df4ebdfdf5ea8ca1a60c7ce3b70c78",
+    "B5_rtl-bad-reset": "f8be86e50df0031a57be35e06a8f285893cb058274e6a7a914b11e495296d711"
+  },
+  "scope": "Final configured DUT, four-state test programs, exact functionally mapped netlist and declared pre-layout timing model. No official CI, hidden tests, full CPU proof or physical signoff."
+}

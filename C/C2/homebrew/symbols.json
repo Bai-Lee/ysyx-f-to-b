@@ -1,0 +1,18 @@
+{
+  "labels": {
+    "reset": 32768,
+    "vblank1": 32783,
+    "vblank2": 32788,
+    "palette": 32807,
+    "fill": 32829,
+    "frame": 32872,
+    "released_sound": 32915,
+    "audio_done": 32925,
+    "released_color": 32934,
+    "color": 32936,
+    "irq": 32976
+  },
+  "code_bytes": 209,
+  "rom_sha256": "29ccb7d3b35f40a5c56f07f9cde787a55259eb6fbfd021c67006e731da494817",
+  "license": "CC0-1.0, authored for this project; contains no third-party ROM data"
+}

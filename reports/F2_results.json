@@ -1,0 +1,193 @@
+{
+  "status": "PASS_ADAPTED",
+  "authorization": "User explicitly waived Logisim and prohibited further computer-use Logisim operation",
+  "event_simulation": {
+    "status": "PASS",
+    "compile": {
+      "name": "F/rtl_tutorial_events_compile",
+      "timestamp": "2026-10-24T11:17:02.707511+00:00",
+      "command": [
+        "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb",
+        "-o",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\tutorial_events.vvp",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\scpu.sv",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\tutorial_events.sv"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.094,
+      "timeout_seconds": 40,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\scpu.sv",
+          "sha256": "2b1f3a78f74c3752c7599fb475bc7ef195a9db2b11a8aa5ccdfe58e36d63d064"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\tutorial_events.sv",
+          "sha256": "129309a433d47f9eca913838d8c9b5a65c157ad3a1e9aa9bb882ec7a4b0c068f"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\scpu.sv",
+          "sha256": "2b1f3a78f74c3752c7599fb475bc7ef195a9db2b11a8aa5ccdfe58e36d63d064"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\tutorial_events.sv",
+          "sha256": "129309a433d47f9eca913838d8c9b5a65c157ad3a1e9aa9bb882ec7a4b0c068f"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "5bc1296e6c6910529f1915d183bddb29705ff0c7e99eccccf9cc136fe17a2bbc"
+    },
+    "simulation": {
+      "name": "F/rtl_tutorial_events",
+      "timestamp": "2026-10-24T11:17:02.779964+00:00",
+      "command": [
+        "C:\\YSYX_WORKSPACE\\tools\\oss-cad-suite-20261022\\oss-cad-suite\\bin\\vvp.exe",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\tutorial_events.vvp"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.031,
+      "timeout_seconds": 90,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\scpu.sv",
+          "sha256": "2b1f3a78f74c3752c7599fb475bc7ef195a9db2b11a8aa5ccdfe58e36d63d064"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\tutorial_events.sv",
+          "sha256": "129309a433d47f9eca913838d8c9b5a65c157ad3a1e9aa9bb882ec7a4b0c068f"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\tutorial_events.vvp",
+          "sha256": "3dcd6e0fe6b234656ca08ebcaec72367d96455ef28ef9ed4be98400d635173bc"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\rtl\\scpu.sv",
+          "sha256": "2b1f3a78f74c3752c7599fb475bc7ef195a9db2b11a8aa5ccdfe58e36d63d064"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\testbenches\\tutorial_events.sv",
+          "sha256": "129309a433d47f9eca913838d8c9b5a65c157ad3a1e9aa9bb882ec7a4b0c068f"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\tutorial_events.vvp",
+          "sha256": "3dcd6e0fe6b234656ca08ebcaec72367d96455ef28ef9ed4be98400d635173bc"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "9525b7336d3e9e5648c4cd4690e32ee046821cc3615a10a5fd5ad4687e4d0782",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "native_complete_and_missing_wire_controls": [
+    {
+      "name": "F2/tutorial_reference_complete",
+      "timestamp": "2026-10-24T11:17:04.578051+00:00",
+      "command": [
+        "D:\\jdk-26\\bin\\java.exe",
+        "-Xmx256m",
+        "-Djava.awt.headless=true",
+        "-Duser.language=en",
+        "-Djava.util.prefs.PreferencesFactory=LocalPrefsFactory",
+        "-cp",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\java-classes;C:\\YSYX_WORKSPACE\\tools\\logisim-evolution-4.0.0\\logisim-evolution-4.0.0-all.jar",
+        "CircuitRunner",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+        "tutorial_gui",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\tutorial_wire_check.txt"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.75,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+          "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\tutorial_wire_check.txt",
+          "sha256": "f03440404e743ddd02ed4ff279de7b450104bea6cb00c8676f7284f56401fd19"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_reference_complete.circ",
+          "sha256": "36d99e1dfe4269bd3c74b815e8730cb1f03e9fba074985a1c5d140045aeae29b"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\tutorial_wire_check.txt",
+          "sha256": "f03440404e743ddd02ed4ff279de7b450104bea6cb00c8676f7284f56401fd19"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "34fed808023dfda56c438049f7b5caf056831f41e4a3ca4ff33fde7694e107d8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "F2/tutorial_missing_output_fault",
+      "timestamp": "2026-10-24T11:17:05.348971+00:00",
+      "command": [
+        "D:\\jdk-26\\bin\\java.exe",
+        "-Xmx256m",
+        "-Djava.awt.headless=true",
+        "-Duser.language=en",
+        "-Djava.util.prefs.PreferencesFactory=LocalPrefsFactory",
+        "-cp",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\java-classes;C:\\YSYX_WORKSPACE\\tools\\logisim-evolution-4.0.0\\logisim-evolution-4.0.0-all.jar",
+        "CircuitRunner",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_missing_output_fault.circ",
+        "tutorial_gui",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\tutorial_wire_check.txt"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "status": "PASS",
+      "elapsed_seconds": 0.735,
+      "timeout_seconds": 30,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_missing_output_fault.circ",
+          "sha256": "26fbc4e4f59b1516cffa992b301e6329d40b9083ac2b6cc592975b609feb9958"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\tutorial_wire_check.txt",
+          "sha256": "f03440404e743ddd02ed4ff279de7b450104bea6cb00c8676f7284f56401fd19"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\circuits\\tutorial_missing_output_fault.circ",
+          "sha256": "26fbc4e4f59b1516cffa992b301e6329d40b9083ac2b6cc592975b609feb9958"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\F\\vectors\\tutorial_wire_check.txt",
+          "sha256": "f03440404e743ddd02ed4ff279de7b450104bea6cb00c8676f7284f56401fd19"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "565237e30c27b33d25c30791bbbf75d8d12f8f81d8f4c46dbaa9c9fe9e8a3334",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "manual_documents": 27,
+  "gui_claim": "Opened and attempted wiring/text before stop instruction; unsaved GUI edits are not claimed as delivered files",
+  "delivered_method": "Programmatic .circ creation plus actual native engine tests; command-line RTL event stepping, source/manual review; no continued GUI automation"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "cases": 467,
+  "sanitizers": [
+    "ASAN",
+    "UBSAN"
+  ],
+  "tests": [
+    "160 clipped rectangle cases with independent per-pixel oracle, row stride and guards",
+    "300 forced RTC low-half boundary changes between reads",
+    "Actual NEMU RTC C callback: five high-low cases and four wrong old-low/new-high combinations exposed",
+    "7 key-up/down/none events",
+    "sync-only zero-size flush",
+    "negative dimension assertion",
+    "wrong-stride and low-first-reader mutants rejected"
+  ],
+  "sources": [
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C2/nemu_io/host_driver_test.c",
+      "sha256": "d08e381cb5097462751c2b1c8daae6e245b03273d127f6b9e80d0452ce9afefc"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C2/nemu_io/am/gpu.c",
+      "sha256": "d43cda2334d216ddc97afe0816c45d4bbf0883b4f89807892fc85e2b47d21fd3"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C2/nemu_io/am/timer.c",
+      "sha256": "fd6025519140a69040b4233d641a38d935470f06f4e20a5d9a1f70f2322c3bbb"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C2/nemu_io/am/input.c",
+      "sha256": "81c34344a517c539d71b20d64fd2eaf8dc547fb3f167103fdf3c18793969f07f"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/src/device/timer.c",
+      "sha256": "1176778deb709db7586ae009078afd58154ac8d638d044845866b46996443fea"
+    }
+  ],
+  "scope": "Real AM driver C and NEMU RTC C compiled against controlled host MMIO/clock shims; actual SDL/NEMU integration checked separately.",
+  "stdout": "C2_DRIVER_PASS cases=467 timer_reads=602 sync_writes=33\n",
+  "rtc_stdout": "C2_RTC_MODEL_PASS high_low=5 stale_low_high_detected=4\n"
+}

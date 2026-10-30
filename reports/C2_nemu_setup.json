@@ -1,0 +1,44 @@
+{
+  "status": "PASS_SOURCE_SETUP_NOT_EXECUTION",
+  "changed": [
+    {
+      "path": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/gpu.c",
+      "sha256": "6b0e4914dd51f26e00f4f47287707642e7a2b891b7707188b3d8da050e134d7f"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/input.c",
+      "sha256": "81c34344a517c539d71b20d64fd2eaf8dc547fb3f167103fdf3c18793969f07f"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/timer.c",
+      "sha256": "fd6025519140a69040b4233d641a38d935470f06f4e20a5d9a1f70f2322c3bbb"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/src/device/vga.c",
+      "sha256": "dd620a3f40c96dcb91b43d9749c5f7f877580864cf1c50b4e692ce843f651025"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/src/device/io/map.c",
+      "sha256": "442c39b6edc4d0230832385b4d093236b03f9ad70c52fa51bc983685cc9d2621"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/Kconfig",
+      "sha256": "06d8a63e4abee33be87a60349d364950e010694b79a9bcfcc9c4d1ede0e56ac5"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/include/dtrace.h",
+      "sha256": "60d585e3bc53586cdc6a0c8e044aa712e17a1ebad17cce34f7ff0c5b5d87cc43"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/src/utils/trace_adapter.c",
+      "sha256": "8632b5969270468f81df8004a4925baa4c67f7bdffa0ce69ef6b09a3884f79f6"
+    },
+    {
+      "path": "/home/USER/c-stage/workbench/nemu/tools/difftest.mk",
+      "sha256": "259940e10b8aa92523c8db54bebcc4a90dbee431780f416275fe3a4916d138df"
+    }
+  ],
+  "apps": "/home/USER/c-stage/c2-nemu-apps",
+  "timer_contract": "High read snapshots both RTC words; AM reads high then low and subtracts IOE initialization baseline.",
+  "performance_contract": "Separate output path and configuration; CONFIG_TRACE disables all inherited hooks, watchpoints/DiffTest/debug/DTRACE off."
+}

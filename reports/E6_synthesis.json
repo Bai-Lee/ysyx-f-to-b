@@ -1,0 +1,55 @@
+{
+  "status": "PASS_SYNTHESIS_STA",
+  "frequency_mhz": 830,
+  "frequency_hz": 830000000,
+  "cell_area_um2": 10214,
+  "qor": {
+    "path_groups": [
+      {
+        "name": "clock",
+        "setup": {
+          "wns": 8.795,
+          "tns": 0.0,
+          "nvp": 0,
+          "frequency_mhz": 830
+        },
+        "hold": {
+          "wns": 0.115,
+          "tns": 0.0,
+          "nvp": 0
+        }
+      }
+    ],
+    "summary": {
+      "setup": {
+        "wns": 8.795,
+        "tns": 0.0,
+        "nvp": 0,
+        "frequency_mhz": 830
+      },
+      "hold": {
+        "wns": 0.115,
+        "tns": 0.0,
+        "nvp": 0
+      }
+    },
+    "design_statistics": {
+      "cap": 0,
+      "fanout": 0,
+      "tran": 0,
+      "tdrc": 0,
+      "cella": 10214,
+      "bufs": null,
+      "leafs_k": 3,
+      "tnets_k": null,
+      "ctbuf": null,
+      "regs": null
+    }
+  },
+  "mapped_instances": 3583,
+  "netlist_sha256": "2427840848c599e85a84708becd640f6f0a465fa838519c79c9ef3ce2709e07d",
+  "project": "/home/USER/e-stage/backend/e6_minirv",
+  "pdk": "ICsprout55 v1.10.100 R+L TT 1.2V 25C",
+  "yosys": "Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)\n",
+  "limitations": "Pre-layout library/SDC estimate for standalone CPU without memory; not routed timing, silicon measurement or signoff."
+}

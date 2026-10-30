@@ -1,0 +1,7 @@
+.SUBCKT NAND2X4H7L A B VDD VSS Y
+*.PININFO A:I B:I Y:O VDD:B VSS:B
+MMN0 Y B net6 VSS nm1p2_lvt_lp W=600n L=60n m=1
+MMN1 net6 A VSS VSS nm1p2_lvt_lp W=600n L=60n m=1
+MMP1 Y B VDD VDD pm1p2_lvt_lp W=760n L=60n m=1
+MMP0 Y A VDD VDD pm1p2_lvt_lp W=760n L=60n m=1
+.ENDS

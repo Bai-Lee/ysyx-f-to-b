@@ -1,0 +1,16 @@
+{
+  "status": "BUILT",
+  "programs": [
+    {
+      "name": "hello",
+      "image": "/workspace/projects/ysyx_f_to_b/E/E8/software/hello-minirv-npc.bin",
+      "sha256": "24cfe6f0c3ccac9694c28f39510fcb112cd18f7b34f4f1f9bd6f945570ab8a9f"
+    },
+    {
+      "name": "microbench",
+      "image": "/workspace/projects/ysyx_f_to_b/E/E8/software/microbench-minirv-npc.bin",
+      "sha256": "9d492500b1679ef9ef8a7dd1a2acf885175f3e747c7d7e78939c0202ac000edd"
+    }
+  ],
+  "instrumentation": "Only halt gains a testbench MMIO status store before the unchanged a0/ebreak sequence. Upstream application algorithms, input sizes and validation predicates unchanged. Memory model provides an 8-byte flash trampoline to the AM image at80000000; no SoC/controllers are included in these CPU-only netlist tests."
+}

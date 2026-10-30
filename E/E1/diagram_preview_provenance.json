@@ -1,0 +1,26 @@
+[
+  {
+    "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\7\\70\\Fsm1.png",
+    "source_sha256": "e58f6e68864a42b97acebb8f855bb2e3aa3269315f237c3a9cc86d03974704f7",
+    "preview": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\diagrams\\fsm1_0.png",
+    "operation": "alpha composite onto white; no resize or geometry/text alteration"
+  },
+  {
+    "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\b\\b8\\Fsmjk.png",
+    "source_sha256": "42f54ba3548058139b753167bc0cd308ef6da542c5f398b0edb3cd2bb6a4bbc8",
+    "preview": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\diagrams\\fsm2_0.png",
+    "operation": "alpha composite onto white; no resize or geometry/text alteration"
+  },
+  {
+    "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.57acd2bcb5b7457a.57acd2bcb5b7457a.png",
+    "source_sha256": "fae97062f4bf4ef3e8bc0d47786be3cf4ab30abba07dfbfed5020cdeaeadac95",
+    "preview": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\diagrams\\ece241_2013_q4_0.png",
+    "operation": "alpha composite onto white; no resize or geometry/text alteration"
+  },
+  {
+    "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\a\\a7\\Fsmonehot.png",
+    "source_sha256": "b32551ff5260781347fb52a31decd330c19aff63bb393c30e26d058cb5837ff8",
+    "preview": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\temp\\E1\\diagrams\\fsm_onehot_0.png",
+    "operation": "alpha composite onto white; no resize or geometry/text alteration"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "status": "PASS_EXPECTED_BUSY",
+  "exit_code": 2,
+  "observation": {
+    "status": "BUSY",
+    "unexpected_processes": [
+      {
+        "pid": 10205,
+        "command": "python3"
+      },
+      {
+        "pid": 11750,
+        "command": "make"
+      },
+      {
+        "pid": 11896,
+        "command": "sh"
+      },
+      {
+        "pid": 11897,
+        "command": "make"
+      },
+      {
+        "pid": 11943,
+        "command": "sh"
+      },
+      {
+        "pid": 11944,
+        "command": "sim"
+      }
+    ]
+  },
+  "timestamp": "2026-10-25T15:54:49.376995+00:00",
+  "policy": "Read-only guard rejects restart while the active SoC performance job remains. No shutdown command was run."
+}

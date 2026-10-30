@@ -1,0 +1,3 @@
+alias dc='cd'
+alias ll='ls -alh'
+PS1='[ysyx-lab] \w $ '

@@ -1,0 +1,295 @@
+{
+  "status": "BUILT_NOT_ACCEPTED",
+  "assembly_sha256": "39e77b0201f8a5197cbfc709898084d2222eb6c78f31b39e63436075b782759a",
+  "driver_sha256": "a0ba5581d4c450f5948fb8fa9ecd6146a02987eab6693c0fdec2b440ef67cbcd",
+  "builds": [
+    {
+      "phase": 0,
+      "bytes": 4096,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-0/build/sdram-phase-4096-0-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-0/build/sdram-phase-4096-0-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "fa05bbb34d8e54b945b949371284267717f4328e975ebb8421b458cc91e623dc",
+      "elf_sha256": "2f4a4b58ae9bb83d2b32245ed3215958b844a932673df2c96968855935614ccd"
+    },
+    {
+      "phase": 1,
+      "bytes": 4096,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-1/build/sdram-phase-4096-1-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-1/build/sdram-phase-4096-1-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "89626c94c8c8e7a45cd2c3b30466dd0accab13f40566a6707d50a9799d0d2027",
+      "elf_sha256": "96004bbcb04522e385d53137c8f0a7c3fd092394638323b5c4daa1efb81c4378"
+    },
+    {
+      "phase": 2,
+      "bytes": 4096,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-2/build/sdram-phase-4096-2-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-2/build/sdram-phase-4096-2-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "e336f7ba28e5ea34bc6cd0ac986132c8f5f34b12a47633242d0a47f56d60c81e",
+      "elf_sha256": "68dcd4e136cf4b08bc8b49207b82642e984c23b8cb84575cf3b49f5db59299a6"
+    },
+    {
+      "phase": 3,
+      "bytes": 4096,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-3/build/sdram-phase-4096-3-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-3/build/sdram-phase-4096-3-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "738563627b716cbc07f3c8f3e41ce2c6d193999e2ae1499501af6c5b86474052",
+      "elf_sha256": "695b572520614843b57484f9055245e7fa229114a9ba7e32d6ab47d54fcb3eda"
+    },
+    {
+      "phase": 4,
+      "bytes": 4096,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-4/build/sdram-phase-4096-4-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-4/build/sdram-phase-4096-4-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "7b2b6c9fa1d1361b95979be7d894d242fe0e95ed19f6468a12a990df1077d1eb",
+      "elf_sha256": "ef1988f7560959a94c056661d12a633ef6acf4ac087354370ae2b7115ce54ff7"
+    },
+    {
+      "phase": 5,
+      "bytes": 4096,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-5/build/sdram-phase-4096-5-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-5/build/sdram-phase-4096-5-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "5525af991d1f86f9555befb64ee0d21bf933fc2c36aea5070bc2347ed1175397",
+      "elf_sha256": "e64633891390d0e229e289f6420961d47d1f644650fc55f6b1790dd215ec9e9f"
+    },
+    {
+      "phase": 6,
+      "bytes": 4096,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-6/build/sdram-phase-4096-6-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-6/build/sdram-phase-4096-6-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "c11c18ab5c9146b86b3485f15ad4c34991d4ec291e025316bc9c89fc82ea387c",
+      "elf_sha256": "7a9f37b796f73290488d50cdbb59a57d3be5570c2dfd0dcbf6823f733574a67e"
+    },
+    {
+      "phase": 7,
+      "bytes": 4096,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-7/build/sdram-phase-4096-7-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-7/build/sdram-phase-4096-7-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "cac3f2a16232c802d5d754f87871387ee3e08180944169102ba3f8faf4496e2b",
+      "elf_sha256": "138b574fd117151f6d84b653032c428250edb3d07756bed4e885266d7faa034c"
+    },
+    {
+      "phase": 0,
+      "bytes": 4096,
+      "corrupt": true,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-0-bad/build/sdram-phase-4096-0-bad-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-0-bad/build/sdram-phase-4096-0-bad-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "92012dddfb4960f34b98b47c55b7e2966b471ca359b778bc8d4840c794c901c6",
+      "elf_sha256": "2f4a4b58ae9bb83d2b32245ed3215958b844a932673df2c96968855935614ccd"
+    },
+    {
+      "phase": 1,
+      "bytes": 4096,
+      "corrupt": true,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-1-bad/build/sdram-phase-4096-1-bad-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-1-bad/build/sdram-phase-4096-1-bad-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "6d68b575cdb91433c373e1ef7294f609c63eb2b77747db5f9b51f9c50c32c834",
+      "elf_sha256": "96004bbcb04522e385d53137c8f0a7c3fd092394638323b5c4daa1efb81c4378"
+    },
+    {
+      "phase": 2,
+      "bytes": 4096,
+      "corrupt": true,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-2-bad/build/sdram-phase-4096-2-bad-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-2-bad/build/sdram-phase-4096-2-bad-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "9bf774a8af54acf80b7a77f68c0e9593a19fd63bf8b2acda4402a953403e1e89",
+      "elf_sha256": "68dcd4e136cf4b08bc8b49207b82642e984c23b8cb84575cf3b49f5db59299a6"
+    },
+    {
+      "phase": 3,
+      "bytes": 4096,
+      "corrupt": true,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-3-bad/build/sdram-phase-4096-3-bad-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-3-bad/build/sdram-phase-4096-3-bad-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "2f5dc9fce5291047f34d3d8bd5dfb31523adecf2ec498196bd4ab6d2f86f0a0e",
+      "elf_sha256": "695b572520614843b57484f9055245e7fa229114a9ba7e32d6ab47d54fcb3eda"
+    },
+    {
+      "phase": 4,
+      "bytes": 4096,
+      "corrupt": true,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-4-bad/build/sdram-phase-4096-4-bad-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-4-bad/build/sdram-phase-4096-4-bad-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "0ee74a32d425f078a0b956122439a81a0d1bec9f55b6668d1fa0b41d610bab3c",
+      "elf_sha256": "ef1988f7560959a94c056661d12a633ef6acf4ac087354370ae2b7115ce54ff7"
+    },
+    {
+      "phase": 5,
+      "bytes": 4096,
+      "corrupt": true,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-5-bad/build/sdram-phase-4096-5-bad-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-5-bad/build/sdram-phase-4096-5-bad-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "e3b3e41d53c373892220db24ef41f1f0593ea68ca8c8f076d6c432748a585722",
+      "elf_sha256": "e64633891390d0e229e289f6420961d47d1f644650fc55f6b1790dd215ec9e9f"
+    },
+    {
+      "phase": 6,
+      "bytes": 4096,
+      "corrupt": true,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-6-bad/build/sdram-phase-4096-6-bad-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-6-bad/build/sdram-phase-4096-6-bad-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "75fe9178b82b6c22b624914f3db4f191eccf3d8d490841bd86c4f1346ff4c942",
+      "elf_sha256": "7a9f37b796f73290488d50cdbb59a57d3be5570c2dfd0dcbf6823f733574a67e"
+    },
+    {
+      "phase": 7,
+      "bytes": 4096,
+      "corrupt": true,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-7-bad/build/sdram-phase-4096-7-bad-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-4096-7-bad/build/sdram-phase-4096-7-bad-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "64dc5da416c13cc022c6ce4f8937b0447eb6caeeff5f6abbcd44c49fdc243118",
+      "elf_sha256": "138b574fd117151f6d84b653032c428250edb3d07756bed4e885266d7faa034c"
+    },
+    {
+      "phase": 0,
+      "bytes": 65536,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-0/build/sdram-phase-65536-0-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-0/build/sdram-phase-65536-0-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "7a000f8cf79e888e80038fbbf6e97c1d11e5ef4b91bcb176ac4cae7cd332cf4d",
+      "elf_sha256": "627c2aa41efbde64e868cd9ffe165fb333cbeda8bf26be75a96f01a0616b0745"
+    },
+    {
+      "phase": 1,
+      "bytes": 65536,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-1/build/sdram-phase-65536-1-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-1/build/sdram-phase-65536-1-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "b83abdcc7536997e44a4cc2652b83c8431112b4474eeefefc982a9ca84afb1d2",
+      "elf_sha256": "48d81b06d091637248e4f0e7c726e3030261bc1cf010b7837ee234950a32591a"
+    },
+    {
+      "phase": 2,
+      "bytes": 65536,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-2/build/sdram-phase-65536-2-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-2/build/sdram-phase-65536-2-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "c6d4959a0cba8a1cfd36154c51467fe221c0f86c39979ddf08a0591a48aadab1",
+      "elf_sha256": "6f3b093bf94830d31948d6383fb2c48eabfe693014f53f95ae7bdcd9d802e918"
+    },
+    {
+      "phase": 3,
+      "bytes": 65536,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-3/build/sdram-phase-65536-3-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-3/build/sdram-phase-65536-3-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "2da4d0fbb28afcc2de9e1c50ebb1a7bd24defd792aa8b6d90241056118a354f9",
+      "elf_sha256": "d6f233480a531cff29e4a3497bc3751cac8671eb0cdaf9376a40507bbc92056e"
+    },
+    {
+      "phase": 4,
+      "bytes": 65536,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-4/build/sdram-phase-65536-4-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-4/build/sdram-phase-65536-4-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "f0d8db7a5f6dad2db88e6d7ab024da991235469a9bf6d19f69131e21bf2ae6ff",
+      "elf_sha256": "b57c4db2539188305079add64a3f098df8abf0d4ba3916c6ad96fc1a952ec35c"
+    },
+    {
+      "phase": 5,
+      "bytes": 65536,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-5/build/sdram-phase-65536-5-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-5/build/sdram-phase-65536-5-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "a262962094aa1efe3a99f4e20d5f38a195f2eee2a50f1b4188d98f2276d1c135",
+      "elf_sha256": "5e45090d6e47f61c2d344c861d6a10b9d5717cf9ed3740bb40919f65567b5f39"
+    },
+    {
+      "phase": 6,
+      "bytes": 65536,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-6/build/sdram-phase-65536-6-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-6/build/sdram-phase-65536-6-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "dc361bf7170946273a866320a2ebfa224b1d6cad913867f004dd64264e6b4e1f",
+      "elf_sha256": "5616b487858e2c4c8375494f1015249ea21c4b6c2ca69439fcf9902b260c3ef0"
+    },
+    {
+      "phase": 7,
+      "bytes": 65536,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-7/build/sdram-phase-65536-7-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-65536-7/build/sdram-phase-65536-7-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "bfd92827b53a6fbd26f4fe3fbf3d695aff5f4d06719d32a3923c7edba373d7d3",
+      "elf_sha256": "79838624b702dee166d6e4f2ccbecbb74b3be2e5cf5019f75e257f1270fa4f43"
+    },
+    {
+      "phase": 0,
+      "bytes": 134217728,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-0/build/sdram-phase-134217728-0-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-0/build/sdram-phase-134217728-0-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "f71791ed8d1bf2656207a1900018ab3e06ab69d8a7a6434b3ca8668fd84e6057",
+      "elf_sha256": "5a07de3d428d2d6b8003828e48849579da78d0d57f114491df02204f99b73f6c"
+    },
+    {
+      "phase": 1,
+      "bytes": 134217728,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-1/build/sdram-phase-134217728-1-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-1/build/sdram-phase-134217728-1-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "c3a24280c9bddbe4226b8bc9ec52ff93d4b508c51295a29c85f4f4ae25e150ff",
+      "elf_sha256": "143c2bdc80290eaa48e65db72afaa5a34c0838be94f8c505a3fbd5369051a824"
+    },
+    {
+      "phase": 2,
+      "bytes": 134217728,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-2/build/sdram-phase-134217728-2-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-2/build/sdram-phase-134217728-2-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "e0d3698dc19764580e810061f9dd188055cbc0826db28b18ae190c693c3b4b11",
+      "elf_sha256": "13942f0f1349864aeceb92b19d0431cc9c73da1891274fb49255aec6b795899c"
+    },
+    {
+      "phase": 3,
+      "bytes": 134217728,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-3/build/sdram-phase-134217728-3-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-3/build/sdram-phase-134217728-3-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "8bca446c57beb9025577c1212e569f83b47a79d5cf72968c65c7683c7ba19c77",
+      "elf_sha256": "14c49b5b788d2d3180aca510210d0a7da40013b0fced2184d3d9c34068c94852"
+    },
+    {
+      "phase": 4,
+      "bytes": 134217728,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-4/build/sdram-phase-134217728-4-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-4/build/sdram-phase-134217728-4-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "afa64b416b11b6a181cedc1d2c74765fd6ced792032c41be4c1b79322265b497",
+      "elf_sha256": "0b3159efb7fbf8b8179aa90700b946beb68fbb4b6c6d19af8e902443bc44a856"
+    },
+    {
+      "phase": 5,
+      "bytes": 134217728,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-5/build/sdram-phase-134217728-5-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-5/build/sdram-phase-134217728-5-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "57d180ad31449b81a7c419873595a55f9e5847165a19026251f1d82d5cd4d03d",
+      "elf_sha256": "e2af8b35b41318b26f6cb401b060d58e9facb3372a4bf2f6593a2eb3f9d75498"
+    },
+    {
+      "phase": 6,
+      "bytes": 134217728,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-6/build/sdram-phase-134217728-6-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-6/build/sdram-phase-134217728-6-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "c825201582cc0ef4b9510cbc3f5a684db7a7bbd28cacc3b0a8ba71fc6f4afdc1",
+      "elf_sha256": "29410d82b2b82653a1307c2ac36cf233e77a8fe3f425ea512f327981a9353681"
+    },
+    {
+      "phase": 7,
+      "bytes": 134217728,
+      "corrupt": false,
+      "image": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-7/build/sdram-phase-134217728-7-riscv32e-ysyxsoc-sram-code.bin",
+      "elf": "/home/USER/c-stage/c5/workbench/sdram-phase-134217728-7/build/sdram-phase-134217728-7-riscv32e-ysyxsoc-sram-code.elf",
+      "image_sha256": "e1db5f3095bf8a36e765b4e74db3d108402df5a71ac3e594e6cff7f00d180988",
+      "elf_sha256": "72c2c2615e3032c0d42d434061bbe1076b603289474dec067585598633c8a788"
+    }
+  ]
+}

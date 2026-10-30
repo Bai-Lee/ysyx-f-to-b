@@ -1,0 +1,122 @@
+{
+  "status": "PASS_SOURCE_DEV_INIT",
+  "repository": "https://github.com/OSCPU/ysyxSoC",
+  "ref": "ysyx6",
+  "commit": "bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e",
+  "tree": "67f34962b526b458bdda3ce49b8b4a45f0ae3be9",
+  "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\ysyxSoC-bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e.tar.gz",
+  "sha256": "1ede015007ade45c3ecf4ca3972f207ba8843aa49999e4888f503b3f79ba8e5d",
+  "upstream_commit_metadata": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\ysyxSoC-bcdcbc-commit.json",
+  "commit_metadata_sha256": "f8b619301db241b24da9054befd83bc0e7295c4afa15f9b9e8a64fa803e76a89",
+  "submodules": [
+    {
+      "path": "rocket-chip",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip",
+      "gitdir": "/workspace/YSYX_F_B_Archive/repos/OSCPU__ysyxSoC__2607/.git/modules/rocket-chip",
+      "commit": "d0c6b50fdefcdbe121e9788433ea51f7efaf1d32",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\rocket-chip-d0c6b50fdefcdbe121e9788433ea51f7efaf1d32.tar.gz",
+      "sha256": "8392178266660c27d7001f7f8f0060befaec1a53112ca1babd8dea187780415b",
+      "bytes": 625974
+    },
+    {
+      "path": "rocket-chip/dependencies/cde",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\cde",
+      "gitdir": "/workspace/YSYX_F_B_Archive/repos/OSCPU__ysyxSoC__2607/.git/modules/rocket-chip/modules/dependencies/cde",
+      "commit": "52768c97a27b254c0cc0ac9401feb55b29e18c28",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\rocket-chip__dependencies__cde-52768c97a27b254c0cc0ac9401feb55b29e18c28.tar.gz",
+      "sha256": "3c59d1f1d59ed2fa6cd6d8b2fa43c37b3c047152f7f83c681410dc04a148f0c5",
+      "bytes": 17211
+    },
+    {
+      "path": "rocket-chip/dependencies/chisel",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\chisel",
+      "gitdir": "/workspace/YSYX_F_B_Archive/repos/OSCPU__ysyxSoC__2607/.git/modules/rocket-chip/modules/dependencies/chisel",
+      "commit": "e3bcc90db37f1aec9f8048813f4f0666098d9bee",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\rocket-chip__dependencies__chisel-e3bcc90db37f1aec9f8048813f4f0666098d9bee.tar.gz",
+      "sha256": "50aa67a796fcfb2a2d8902f5e82ff840114b149548dbd9c6670201e0395307a5",
+      "bytes": 1804389
+    },
+    {
+      "path": "rocket-chip/dependencies/diplomacy",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\diplomacy",
+      "gitdir": "/workspace/YSYX_F_B_Archive/repos/OSCPU__ysyxSoC__2607/.git/modules/rocket-chip/modules/dependencies/diplomacy",
+      "commit": "edf375300d99a4c260a214d7c1553de0040771d7",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\rocket-chip__dependencies__diplomacy-edf375300d99a4c260a214d7c1553de0040771d7.tar.gz",
+      "sha256": "4ae761f63c9cd22e5f1cfb1137dea729e0430e8e1dea79cabdea5b8e0bc2b2b3",
+      "bytes": 40578
+    },
+    {
+      "path": "rocket-chip/dependencies/hardfloat",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\hardfloat",
+      "gitdir": "/workspace/YSYX_F_B_Archive/repos/OSCPU__ysyxSoC__2607/.git/modules/rocket-chip/modules/dependencies/hardfloat",
+      "commit": "d93aa570806013dea479a92ba9bb33d1f2d4f69f",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\rocket-chip__dependencies__hardfloat-d93aa570806013dea479a92ba9bb33d1f2d4f69f.tar.gz",
+      "sha256": "145cad3d70a8380b74a4a7d211997220d389c6325b4d9791dd71edf900cc1b1d",
+      "bytes": 1026994
+    },
+    {
+      "path": "rocket-chip/dependencies/hardfloat/berkeley-softfloat-3",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\hardfloat\\berkeley-softfloat-3",
+      "gitdir": "/workspace/YSYX_F_B_Archive/repos/OSCPU__ysyxSoC__2607/.git/modules/rocket-chip/modules/dependencies/hardfloat/modules/berkeley-softfloat-3",
+      "commit": "5c06db33fc1e2130f67c045327b0ec949032df1d",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\rocket-chip__dependencies__hardfloat__berkeley-softfloat-3-5c06db33fc1e2130f67c045327b0ec949032df1d.tar.gz",
+      "sha256": "032138880a8d8d36bb6b76bfb1a94e0f009f9222bca13c2c937ddc3a731c0822",
+      "bytes": 148161
+    },
+    {
+      "path": "rocket-chip/dependencies/hardfloat/berkeley-testfloat-3",
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\hardfloat\\berkeley-testfloat-3",
+      "gitdir": "/workspace/YSYX_F_B_Archive/repos/OSCPU__ysyxSoC__2607/.git/modules/rocket-chip/modules/dependencies/hardfloat/modules/berkeley-testfloat-3",
+      "commit": "06b20075dd3c1a5d0dd007a93643282832221612",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\sources\\rocket-chip__dependencies__hardfloat__berkeley-testfloat-3-06b20075dd3c1a5d0dd007a93643282832221612.tar.gz",
+      "sha256": "09dc3e654dcce59625d64b11bb98dd17e08ec255eba6b3d9f6d44be36c6fa993",
+      "bytes": 138134
+    }
+  ],
+  "scope": "Top source acquired from official fixed-commit codeload; recursive exact Git commits exported canonically from existing read-only originals. Git metadata will be copied independently for actual dev-init.",
+  "runtime": "/home/USER/c-stage/soc-generation/ysyxSoC",
+  "local_bootstrap_commit": "0136da7189a20f9073c91cb6125ce445b412de62",
+  "verified_upstream_tree": "67f34962b526b458bdda3ce49b8b4a45f0ae3be9",
+  "bootstrap_git_note": "Top local commit is intentionally distinct; its tree exactly matches the official fixed commit tree. Recursive module HEADs are the actual upstream commits.",
+  "recursive_runtime": [
+    {
+      "path": "/home/USER/c-stage/soc-generation/ysyxSoC/rocket-chip",
+      "commit": "d0c6b50fdefcdbe121e9788433ea51f7efaf1d32",
+      "canonical_files_compared": 402
+    },
+    {
+      "path": "/home/USER/c-stage/soc-generation/ysyxSoC/rocket-chip/dependencies/cde",
+      "commit": "52768c97a27b254c0cc0ac9401feb55b29e18c28",
+      "canonical_files_compared": 15
+    },
+    {
+      "path": "/home/USER/c-stage/soc-generation/ysyxSoC/rocket-chip/dependencies/chisel",
+      "commit": "e3bcc90db37f1aec9f8048813f4f0666098d9bee",
+      "canonical_files_compared": 683
+    },
+    {
+      "path": "/home/USER/c-stage/soc-generation/ysyxSoC/rocket-chip/dependencies/diplomacy",
+      "commit": "edf375300d99a4c260a214d7c1553de0040771d7",
+      "canonical_files_compared": 52
+    },
+    {
+      "path": "/home/USER/c-stage/soc-generation/ysyxSoC/rocket-chip/dependencies/hardfloat",
+      "commit": "d93aa570806013dea479a92ba9bb33d1f2d4f69f",
+      "canonical_files_compared": 127
+    },
+    {
+      "path": "/home/USER/c-stage/soc-generation/ysyxSoC/rocket-chip/dependencies/hardfloat/berkeley-softfloat-3",
+      "commit": "5c06db33fc1e2130f67c045327b0ec949032df1d",
+      "canonical_files_compared": 478
+    },
+    {
+      "path": "/home/USER/c-stage/soc-generation/ysyxSoC/rocket-chip/dependencies/hardfloat/berkeley-testfloat-3",
+      "commit": "06b20075dd3c1a5d0dd007a93643282832221612",
+      "canonical_files_compared": 206
+    }
+  ],
+  "patch_sha256": "70c12199d6e548edb73bd809f6fe59c34c9041dc7d4410b66f50c64ec55dfc51",
+  "rocket_patch_diff_stat": " src/main/scala/amba/axi4/Parameters.scala | 8 ++++----\n 1 file changed, 4 insertions(+), 4 deletions(-)\n",
+  "AXI_bundles_before": "ff8fa993e2c73f5a1c099a35c77a38ddec0b29127260b683d08faa819e513b67",
+  "AXI_bundles_after": "ff8fa993e2c73f5a1c099a35c77a38ddec0b29127260b683d08faa819e513b67"
+}

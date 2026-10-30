@@ -1,0 +1,193 @@
+`ifndef C5_RESET_PC
+`define C5_RESET_PC 32'h20000000
+`endif
+`ifndef C5_FAULT_ADDI
+`define C5_FAULT_ADDI 0
+`endif
+`ifndef C5_CORE_DELAYS
+`define C5_CORE_DELAYS 0
+`endif
+module ysyx_00000000(
+input wire clock,reset,io_interrupt,
+input wire io_master_awready,
+output logic io_master_awvalid,
+output logic [31:0] io_master_awaddr,
+output logic [3:0] io_master_awid,
+output logic [7:0] io_master_awlen,
+output logic [2:0] io_master_awsize,
+output logic [1:0] io_master_awburst,
+input wire io_master_wready,
+output logic io_master_wvalid,
+output logic [31:0] io_master_wdata,
+output logic [3:0] io_master_wstrb,
+output logic io_master_wlast,
+output logic io_master_bready,
+input wire io_master_bvalid,
+input wire [1:0] io_master_bresp,
+input wire [3:0] io_master_bid,
+input wire io_master_arready,
+output logic io_master_arvalid,
+output logic [31:0] io_master_araddr,
+output logic [3:0] io_master_arid,
+output logic [7:0] io_master_arlen,
+output logic [2:0] io_master_arsize,
+output logic [1:0] io_master_arburst,
+output logic io_master_rready,
+input wire io_master_rvalid,
+input wire [1:0] io_master_rresp,
+input wire [31:0] io_master_rdata,
+input wire io_master_rlast,
+input wire [3:0] io_master_rid,
+output logic io_slave_awready,
+input wire io_slave_awvalid,
+input wire [31:0] io_slave_awaddr,
+input wire [3:0] io_slave_awid,
+input wire [7:0] io_slave_awlen,
+input wire [2:0] io_slave_awsize,
+input wire [1:0] io_slave_awburst,
+output logic io_slave_wready,
+input wire io_slave_wvalid,
+input wire [31:0] io_slave_wdata,
+input wire [3:0] io_slave_wstrb,
+input wire io_slave_wlast,
+input wire io_slave_bready,
+output logic io_slave_bvalid,
+output logic [1:0] io_slave_bresp,
+output logic [3:0] io_slave_bid,
+output logic io_slave_arready,
+input wire io_slave_arvalid,
+input wire [31:0] io_slave_araddr,
+input wire [3:0] io_slave_arid,
+input wire [7:0] io_slave_arlen,
+input wire [2:0] io_slave_arsize,
+input wire [1:0] io_slave_arburst,
+input wire io_slave_rready,
+output logic io_slave_rvalid,
+output logic [1:0] io_slave_rresp,
+output logic [31:0] io_slave_rdata,
+output logic io_slave_rlast,
+output logic [3:0] io_slave_rid
+);
+  wire unused_inputs=^{io_interrupt,io_slave_awvalid,io_slave_awaddr,io_slave_awid,io_slave_awlen,io_slave_awsize,io_slave_awburst,io_slave_wvalid,io_slave_wdata,io_slave_wstrb,io_slave_wlast,io_slave_bready,io_slave_arvalid,io_slave_araddr,io_slave_arid,io_slave_arlen,io_slave_arsize,io_slave_arburst,io_slave_rready};
+  assign io_slave_awready='0;
+  assign io_slave_wready='0;
+  assign io_slave_bvalid='0;
+  assign io_slave_bresp='0;
+  assign io_slave_bid='0;
+  assign io_slave_arready='0;
+  assign io_slave_rvalid='0;
+  assign io_slave_rresp='0;
+  assign io_slave_rdata='0;
+  assign io_slave_rlast='0;
+  assign io_slave_rid='0;
+
+  wire i_req_valid,i_req_ready,i_resp_valid,i_resp_ready;
+  wire [31:0] i_req_addr,i_resp_data;wire [1:0] i_resp_error;
+  wire d_req_valid,d_req_ready,d_req_write,d_resp_valid,d_resp_ready;
+  wire [31:0] d_req_addr,d_req_wdata,d_resp_data;wire [3:0] d_req_wstrb;
+  wire [2:0] d_req_size;wire [1:0] d_resp_error;
+  wire [31:0] pc;wire halted;wire [2:0] fault,debug_state;
+  wire commit_valid;wire [31:0] commit_pc,commit_inst,commit_next_pc;wire [511:0] debug_gpr;
+  wire exec_fire,exec_ebreak,exec_mem_valid,exec_mem_write;
+  wire [31:0] exec_pc,exec_inst,exec_mem_addr,exec_mem_wdata,exec_mem_rdata;wire [2:0] exec_mem_size;
+  wire [2:0] delay_enable=`C5_CORE_DELAYS;wire [31:0] lfsr_seed=32'h2607c501;
+  ysyx_00000000_core #(.STAGE(4),.RESET_PC(`C5_RESET_PC),.FAULT_ADDI(`C5_FAULT_ADDI)) core(.*);
+  localparam logic [2:0] IDLE=0,READ_ADDRESS=1,READ_RESPONSE=2,WRITE_CHANNELS=3,WRITE_RESPONSE=4,LOCAL_RESPONSE=5;
+  logic [2:0] state;
+  logic owner_data,turn,aw_done,w_done;
+  logic [31:0] address,data,local_data;
+  logic [3:0] strobe;
+  logic [2:0] size;
+  logic [1:0] local_error;
+  logic [63:0] mtime;
+  logic [31:0] latched_high;
+  logic high_valid;
+  wire choose_data=d_req_valid&&(!i_req_valid||turn);
+  wire request=(i_req_valid||d_req_valid)&&state==IDLE&&!reset;
+  wire [31:0] chosen_address=choose_data?d_req_addr:i_req_addr;
+  wire [2:0] chosen_size=choose_data?d_req_size:3'd2;
+  wire chosen_write=choose_data&&d_req_write;
+  wire internal_clint=chosen_address[31:16]==16'h0200;
+  wire executable=(chosen_address>=32'h0f000000&&chosen_address<32'h0f002000)||
+                  (chosen_address>=32'h20000000&&chosen_address<32'h20001000)||
+                  chosen_address[31:28]==4'h3||chosen_address[31:29]==3'b100||
+                  chosen_address[31:29]==3'b101||chosen_address[31:30]==2'b11;
+  wire response_ready=owner_data?d_resp_ready:i_resp_ready;
+  logic response_valid;logic [31:0] response_data;logic [1:0] response_error;
+  assign i_req_ready=!reset&&state==IDLE&&!choose_data;
+  assign d_req_ready=!reset&&state==IDLE&&choose_data;
+  assign i_resp_valid=!owner_data&&response_valid;
+  assign d_resp_valid=owner_data&&response_valid;
+  assign i_resp_data=response_data;assign d_resp_data=response_data;
+  assign i_resp_error=response_error;assign d_resp_error=response_error;
+  always_comb begin
+    io_master_awvalid=0;io_master_awaddr=address;io_master_awid=0;io_master_awlen=0;io_master_awsize=size;io_master_awburst=1;
+    io_master_wvalid=0;io_master_wdata=data;io_master_wstrb=strobe;io_master_wlast=0;io_master_bready=0;
+    io_master_arvalid=0;io_master_araddr=address;io_master_arid=0;io_master_arlen=0;io_master_arsize=size;io_master_arburst=1;
+    io_master_rready=0;response_valid=0;response_data=0;response_error=0;
+    if(!reset)case(state)
+      READ_ADDRESS:io_master_arvalid=1;
+      READ_RESPONSE:begin
+        response_valid=io_master_rvalid;response_data=io_master_rdata;
+        response_error=(io_master_rid!=0||!io_master_rlast)?2'b10:io_master_rresp;
+        io_master_rready=response_ready;
+      end
+      WRITE_CHANNELS:begin io_master_awvalid=!aw_done;io_master_wvalid=!w_done;io_master_wlast=!w_done;end
+      WRITE_RESPONSE:begin
+        response_valid=io_master_bvalid;response_error=io_master_bid!=0?2'b10:io_master_bresp;io_master_bready=response_ready;
+      end
+      LOCAL_RESPONSE:begin response_valid=1;response_data=local_data;response_error=local_error;end
+      default:begin end
+    endcase
+  end
+  always_ff @(posedge clock)begin
+    if(reset)begin
+      state<=IDLE;owner_data<=0;turn<=0;aw_done<=0;w_done<=0;address<=0;data<=0;strobe<=0;size<=0;
+      local_data<=0;local_error<=0;mtime<=0;latched_high<=0;high_valid<=0;
+    end else begin
+      mtime<=mtime+1;
+      case(state)
+        IDLE:if(request)begin
+          owner_data<=choose_data;address<=chosen_address;data<=d_req_wdata;strobe<=d_req_wstrb;size<=chosen_size;
+          aw_done<=0;w_done<=0;local_data<=0;local_error<=0;
+          if((!choose_data&&!executable)||internal_clint)begin
+            state<=LOCAL_RESPONSE;
+            if(!choose_data) local_error<=2'b11;
+            else if(chosen_write||chosen_size!=2) local_error<=2'b10;
+            else if(chosen_address[15:0]==0)begin local_data<=mtime[31:0];latched_high<=mtime[63:32];high_valid<=1;end
+            else if(chosen_address[15:0]==4)begin local_data<=high_valid?latched_high:mtime[63:32];high_valid<=0;end
+            else local_error<=2'b10;
+          end else state<=chosen_write?WRITE_CHANNELS:READ_ADDRESS;
+        end
+        READ_ADDRESS:if(io_master_arvalid&&io_master_arready)state<=READ_RESPONSE;
+        READ_RESPONSE:if(response_valid&&response_ready)begin state<=IDLE;turn<=!owner_data;end
+        WRITE_CHANNELS:begin
+          if(io_master_awvalid&&io_master_awready)aw_done<=1;
+          if(io_master_wvalid&&io_master_wready)w_done<=1;
+          if((aw_done||(io_master_awvalid&&io_master_awready))&&(w_done||(io_master_wvalid&&io_master_wready)))state<=WRITE_RESPONSE;
+        end
+        WRITE_RESPONSE:if(response_valid&&response_ready)begin state<=IDLE;turn<=!owner_data;end
+        LOCAL_RESPONSE:if(response_ready)begin state<=IDLE;turn<=!owner_data;end
+        default:state<=IDLE;
+      endcase
+    end
+  end
+`ifndef SYNTHESIS
+  import "DPI-C" function void c5_retire(input int unsigned at_pc,input int unsigned inst,input int unsigned next_pc,input bit [511:0] registers);
+  import "DPI-C" function void c5_fault(input int unsigned at_pc,input int unsigned code);
+  import "DPI-C" function void c5_memory(input int unsigned at_pc,input int unsigned addr,input int unsigned bytes,input int unsigned value,input bit write_op);
+  import "DPI-C" function void c5_bus(input int unsigned channel,input int unsigned addr,input int unsigned value,input int unsigned attr);
+  always @(negedge clock)if(!reset)begin
+    if(commit_valid)c5_retire(commit_pc,commit_inst,commit_next_pc,debug_gpr);
+    if(fault!=0)c5_fault(pc,{29'b0,fault});
+  end
+  always @(posedge clock)if(!reset)begin
+    if(exec_fire&&exec_mem_valid)c5_memory(exec_pc,exec_mem_addr,{29'b0,exec_mem_size},exec_mem_write?exec_mem_wdata:exec_mem_rdata,exec_mem_write);
+    if(io_master_arvalid&&io_master_arready)c5_bus(0,io_master_araddr,0,{13'b0,io_master_arid,io_master_arlen,io_master_arsize,io_master_arburst,2'b0});
+    if(io_master_rvalid&&io_master_rready)c5_bus(1,0,io_master_rdata,{25'b0,io_master_rid,io_master_rlast,io_master_rresp});
+    if(io_master_awvalid&&io_master_awready)c5_bus(2,io_master_awaddr,0,{13'b0,io_master_awid,io_master_awlen,io_master_awsize,io_master_awburst,2'b0});
+    if(io_master_wvalid&&io_master_wready)c5_bus(3,0,io_master_wdata,{27'b0,io_master_wlast,io_master_wstrb});
+    if(io_master_bvalid&&io_master_bready)c5_bus(4,0,0,{26'b0,io_master_bid,io_master_bresp});
+  end
+`endif
+endmodule

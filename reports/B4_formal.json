@@ -1,0 +1,7 @@
+{
+  "status": "TIMEOUT",
+  "bound": 26,
+  "evidence": "artifacts/B4/formal/interlock/run",
+  "timeout_seconds": 600,
+  "claim": "No proof or counterexample conclusion. The bounded three-instruction arithmetic miter reached the600s limit. The assertions and full specification are retained for a different solver; mandatory functional tests remain separately recorded."
+}

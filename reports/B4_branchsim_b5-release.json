@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "results": {
+    "instructions": 898047,
+    "conditional_branches": 188658,
+    "jal": 35858,
+    "jalr": 24891,
+    "returns": 8325,
+    "correct_next_pc": {
+      "always_not_taken": 68054,
+      "always_taken": 120604,
+      "backward_taken": 110538
+    },
+    "same_target_as_fallthrough": 0,
+    "branch_fraction": 0.210075864626,
+    "ideal_scenarios": [
+      {
+        "accuracy": 1.0,
+        "five_stage_single_ipc": 1.0,
+        "fifteen_stage_single_ipc": 1.0,
+        "fifteen_stage_four_issue_ipc": 4.0
+      },
+      {
+        "accuracy": 0.995,
+        "five_stage_single_ipc": 0.997903645,
+        "fifteen_stage_single_ipc": 0.987552345,
+        "fifteen_stage_four_issue_ipc": 3.808007107
+      },
+      {
+        "accuracy": 0.99,
+        "five_stage_single_ipc": 0.995816062,
+        "fifteen_stage_single_ipc": 0.975410769,
+        "fifteen_stage_four_issue_ipc": 3.633600729
+      },
+      {
+        "accuracy": 0.95,
+        "five_stage_single_ipc": 0.979424652,
+        "fifteen_stage_single_ipc": 0.888063567,
+        "fifteen_stage_four_issue_ipc": 2.659252537
+      },
+      {
+        "accuracy": 0.9,
+        "five_stage_single_ipc": 0.959678924,
+        "fifteen_stage_single_ipc": 0.798663971,
+        "fifteen_stage_four_issue_ipc": 1.991670684
+      },
+      {
+        "accuracy": 0.8,
+        "five_stage_single_ipc": 0.922483401,
+        "fifteen_stage_single_ipc": 0.664813134,
+        "fifteen_stage_four_issue_ipc": 1.32593976
+      }
+    ]
+  },
+  "trace_sha256": "a58407a525b382505930ba4206d1cd721cc23c34085bddbcec3bb1e27c71a5f7",
+  "source_variant": "b5-release",
+  "controls": {
+    "instructions": 4,
+    "conditional_branches": 4,
+    "jal": 0,
+    "jalr": 0,
+    "returns": 0,
+    "correct_next_pc": {
+      "always_not_taken": 2,
+      "always_taken": 2,
+      "backward_taken": 2
+    },
+    "same_target_as_fallthrough": 0,
+    "branch_fraction": 1.0,
+    "ideal_scenarios": [
+      {
+        "accuracy": 1.0,
+        "five_stage_single_ipc": 1.0,
+        "fifteen_stage_single_ipc": 1.0,
+        "fifteen_stage_four_issue_ipc": 4.0
+      },
+      {
+        "accuracy": 0.995,
+        "five_stage_single_ipc": 0.99009901,
+        "fifteen_stage_single_ipc": 0.943396226,
+        "fifteen_stage_four_issue_ipc": 3.225806452
+      },
+      {
+        "accuracy": 0.99,
+        "five_stage_single_ipc": 0.980392157,
+        "fifteen_stage_single_ipc": 0.892857143,
+        "fifteen_stage_four_issue_ipc": 2.702702703
+      },
+      {
+        "accuracy": 0.95,
+        "five_stage_single_ipc": 0.909090909,
+        "fifteen_stage_single_ipc": 0.625,
+        "fifteen_stage_four_issue_ipc": 1.176470588
+      },
+      {
+        "accuracy": 0.9,
+        "five_stage_single_ipc": 0.833333333,
+        "fifteen_stage_single_ipc": 0.454545455,
+        "fifteen_stage_four_issue_ipc": 0.689655172
+      },
+      {
+        "accuracy": 0.8,
+        "five_stage_single_ipc": 0.714285714,
+        "fifteen_stage_single_ipc": 0.294117647,
+        "fifteen_stage_four_issue_ipc": 0.377358491
+      }
+    ]
+  },
+  "scope": "Full retired trace. Accuracies are predicted next-PC accuracy; branch-to-fallthrough degeneracies are counted explicitly. Hypothetical5-stage/15-stage/four-issue formulas are1/(1+2x(1-a)),1/(1+12x(1-a)),1/(1/4+12x(1-a)); no memory/RAW/structural stalls and perfect jumps, as specified by the exercise. They are not predictions of the implemented CPU IPC."
+}

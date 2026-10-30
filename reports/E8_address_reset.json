@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "addresses_hex": [
+    "00000000",
+    "00000001",
+    "00000002",
+    "00000003",
+    "0fffffff",
+    "10000000",
+    "20001000",
+    "30000000",
+    "7fffffff",
+    "80000000",
+    "807fffff",
+    "88000000",
+    "a0000048",
+    "deadbeef",
+    "f0000000",
+    "ffffffff"
+  ],
+  "cases": [
+    {
+      "case": "full",
+      "stdout": "FULL_ADDRESS_AND_WARM_RESET_PASS 16 addresses x read/write x 2 runs\n",
+      "exit_code": 0
+    },
+    {
+      "case": "clipped",
+      "stdout": "FATAL: /workspace/projects/ysyx_f_to_b/E/E8/address_tb.sv:32: ADDRESS_FORWARDING_ERROR index=10 addr=00000000 expected=10000000\n       Time: 117 Scope: address_tb\n",
+      "exit_code": 1
+    }
+  ],
+  "scope": "Actual core byte loads/stores across full32-bit addresses, lane masks, cold and repeated reset. Negative interface clipping rejected. RAM contents are not assumed to be reset by hardware."
+}

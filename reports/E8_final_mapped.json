@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "candidate": "baseline",
+  "rows": [
+    {
+      "name": "correct",
+      "status": "PASS",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      },
+      "elapsed_seconds": 0.301,
+      "image_sha256": "fd3ea0086ac5236a285ffe480e1ba2779e31b988d364b85fad1931dc5c2fd12f",
+      "vvp_sha256": "59136df09c99df6ffacfced052d4a9fdf41f34a116201913d0721abf9996382f",
+      "stdout_sha256": "84ce8158f9872e859b4e1011c10b4d29967579a82a0481f4475f5e233fd2f40c",
+      "evidence": "artifacts/E8/final_mapped/icarus14/correct"
+    },
+    {
+      "name": "bad_exit",
+      "status": "PASS_EXPECTED_REJECTION",
+      "result": {
+        "result": "FAIL",
+        "exit_code": 1,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 1,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      },
+      "elapsed_seconds": 0.292,
+      "image_sha256": "c62d6114f16ac90d9865815365663dfcf05a24eb8fa2f7d364ab7a7e5142daa5",
+      "vvp_sha256": "59136df09c99df6ffacfced052d4a9fdf41f34a116201913d0721abf9996382f",
+      "stdout_sha256": "58f4d86eac8f4d4a849676a4349882b9c95e29ea46f273283ccf6479d3ea238a",
+      "evidence": "artifacts/E8/final_mapped/icarus14/bad_exit"
+    },
+    {
+      "name": "hello",
+      "status": "PASS",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "elapsed_seconds": 12.387,
+      "image_sha256": "24cfe6f0c3ccac9694c28f39510fcb112cd18f7b34f4f1f9bd6f945570ab8a9f",
+      "vvp_sha256": "59136df09c99df6ffacfced052d4a9fdf41f34a116201913d0721abf9996382f",
+      "stdout_sha256": "0cf16924cdbaf57b2ee64150cadb07547187f5f66b5978530a80cc3a990eae44",
+      "evidence": "artifacts/E8/final_mapped/icarus14/hello"
+    },
+    {
+      "name": "microbench",
+      "status": "PASS",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 22129163,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 515,
+        "uart_polls": 4240,
+        "uart_not_ready": 3725,
+        "memory_writes": 1984000
+      },
+      "elapsed_seconds": 7319.532,
+      "image_sha256": "9d492500b1679ef9ef8a7dd1a2acf885175f3e747c7d7e78939c0202ac000edd",
+      "vvp_sha256": "59136df09c99df6ffacfced052d4a9fdf41f34a116201913d0721abf9996382f",
+      "stdout_sha256": "20a7a5c4d09ae4dba761bac5a47b6ea14de46c6b7b2e56650dade277fdb1065a",
+      "evidence": "artifacts/E8/final_mapped/icarus14/microbench"
+    }
+  ],
+  "verilator_evidence": [
+    {
+      "variant": "baseline",
+      "engine": "verilator",
+      "program": "hello",
+      "status": "PASS",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 39760,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 43,
+        "uart_polls": 331,
+        "uart_not_ready": 288,
+        "memory_writes": 2112
+      },
+      "executable_sha256": "2eb01419ec35535a3669ace7f4242835ab3b9a43c4656f4437b1883a8859b005",
+      "image_sha256": "24cfe6f0c3ccac9694c28f39510fcb112cd18f7b34f4f1f9bd6f945570ab8a9f",
+      "stdout_sha256": "5bd2fda841bc70d0f12b65679010d41cff032bb029bec8b69284e4a36a16601f",
+      "elapsed_seconds": 0.182,
+      "evidence": "artifacts/E8/mapped_programs/baseline/verilator/hello"
+    },
+    {
+      "variant": "baseline",
+      "engine": "verilator",
+      "program": "microbench",
+      "status": "PASS",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 22129163,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 515,
+        "uart_polls": 4240,
+        "uart_not_ready": 3725,
+        "memory_writes": 1984000
+      },
+      "executable_sha256": "2eb01419ec35535a3669ace7f4242835ab3b9a43c4656f4437b1883a8859b005",
+      "image_sha256": "9d492500b1679ef9ef8a7dd1a2acf885175f3e747c7d7e78939c0202ac000edd",
+      "stdout_sha256": "6f718640d322b1490eb9b377c46f537f09dfc9c3ff6c9486349660ff67f12e2f",
+      "elapsed_seconds": 34.652,
+      "evidence": "artifacts/E8/mapped_programs/baseline/verilator/microbench"
+    }
+  ],
+  "scope": "Finalbaselinecandidate: fullhelloandmicrobench inVerilatorandIcarus14. IcarususesofficialoriginalUDPstandardcellmodelswithfunctionaldefineonly; noforcedinitialization, noXcoercion, noSDFtimingclaim. EarlierIcarus11CPUlimitpreservedasseparateRESOURCE_LIMIT."
+}

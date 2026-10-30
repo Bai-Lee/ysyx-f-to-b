@@ -1,0 +1,1 @@
+module parity(input clk,reset,in,output reg odd);always @(posedge clk)if(reset)odd<=0;else if(in)odd<=~odd;endmodule

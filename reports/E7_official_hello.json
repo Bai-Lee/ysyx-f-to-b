@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "simulation": {
+    "result": "GOOD_TRAP",
+    "exit_code": 0,
+    "cycles": 155917875,
+    "instructions": 749895,
+    "ipc": 0.00480955118199,
+    "application_cycles": 1180493,
+    "application_instructions": 10592,
+    "application_ipc": 0.00897252249696,
+    "cpu_soc_ratio": 1,
+    "assumed_cpu_frequency_hz": 25000000,
+    "flash_reads": 826038,
+    "lsu_requests": 451367,
+    "lsu_responses": 451367,
+    "uart_bytes": 167,
+    "serial_bytes": 167,
+    "serial_matches": true,
+    "serial_framing_errors": 0,
+    "wall_seconds": 59.823767916,
+    "uart_divisors": [
+      13,
+      13
+    ],
+    "led_sequence": [],
+    "segments": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "source_image_sha256": "d19b507a3c7f782078a0fe7fcb204c89edfbd6d666141ef3a5cb7e094f8f542a",
+  "scope": "Unmodified provided loader+hello image booted from16MBflash through realSPI/PSRAM/UART controllers; every commit compared to independent reference, full hello output matched TX pin decoding and GOOD_TRAP.",
+  "source_erratum": "The frozen lesson text says the provided hello loops, but the actual pinned binary contains ebreak at80000668 (verified by extracting its ELF atoffset369152 and objdump). Loader and application both initialize divisor13. The binary is not modified."
+}

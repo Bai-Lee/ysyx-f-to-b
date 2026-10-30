@@ -1,0 +1,3 @@
+module tb;reg[3:0]d;wire[6:0]s;reg[6:0]ref_data[0:15];integer i;hex7 dut(d,s);initial begin ref_data[0]=7'h3f;ref_data[1]=7'h06;ref_data[2]=7'h5b;ref_data[3]=7'h4f;ref_data[4]=7'h66;ref_data[5]=7'h6d;ref_data[6]=7'h7d;ref_data[7]=7'h07;ref_data[8]=7'h7f;ref_data[9]=7'h6f;ref_data[10]=7'h77;ref_data[11]=7'h7c;ref_data[12]=7'h39;ref_data[13]=7'h5e;ref_data[14]=7'h79;ref_data[15]=7'h71;
+for(i=0;i<16;i=i+1)begin d=i;#1;if(s!==ref_data[i])$fatal(1,"hex mismatch");end
+$display("PASS HEX values=16");$finish;end endmodule

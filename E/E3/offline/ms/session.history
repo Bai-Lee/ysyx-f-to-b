@@ -1,0 +1,62 @@
+sleep 10000
+bg
+printf '\nMSDONE1\n'
+pgrep -af -P $$ '^sleep 10000$'
+printf '\nMSDONE2\n'
+pkill -P $$ -f '^sleep 10000$'
+printf '\nMSDONE3\n'
+jobs -l
+printf '\nMSDONE4\n'
+pwd
+printf '\nMSDONE5\n'
+ls
+printf '\nMSDONE6\n'
+pwd
+printf '\nMSDONE7\n'
+git --version
+printf '\nMSDONE8\n'
+make --version
+printf '\nMSDONE9\n'
+ls
+printf '\nMSDONE10\n'
+date
+printf '\nMSDONE11\n'
+printf test
+printf '\nMSDONE12\n'
+true
+printf '\nMSDONE13\n'
+pwd
+printf '\nMSDONE14\n'
+history -w
+sleep 10000
+bg
+printf '\nMSDONE1\n'
+pgrep -af -P $$ '^sleep 10000$'
+printf '\nMSDONE2\n'
+pkill -P $$ -f '^sleep 10000$'
+printf '\nMSDONE3\n'
+jobs -l
+printf '\nMSDONE4\n'
+pwd
+printf '\nMSDONE5\n'
+ls
+printf '\nMSDONE6\n'
+pwd
+printf '\nMSDONE7\n'
+git --version
+printf '\nMSDONE8\n'
+make --version
+printf '\nMSDONE9\n'
+ls
+printf '\nMSDONE10\n'
+date
+printf '\nMSDONE11\n'
+printf test
+printf '\nMSDONE12\n'
+true
+printf '\nMSDONE13\n'
+pwd
+printf '\nMSDONE14\n'
+history -w
+printf '\nMSDONE20\n'
+exit

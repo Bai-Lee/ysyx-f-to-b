@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "negative_exit_codes": [
+    125,
+    125
+  ],
+  "negative_reports": [
+    {
+      "status": "RESOURCE_LIMIT",
+      "reason": "AGGREGATE_B_PROCESS_GROUP_MEMORY",
+      "error": null,
+      "exit_code": -15,
+      "elapsed_seconds": 1.5339211859999997,
+      "peak_group_rss_bytes": 134565888,
+      "peak_group_pss_bytes": 130379776,
+      "peak_aggregate_B_group_pss_bytes": 260652032,
+      "job_kind": "simulation",
+      "simulation_slots": 1,
+      "guard_sha256": "c25efc8e2adb4dfc9522c328f2a670ce292e0560ac55e0e96b52e0d6522589cd",
+      "lease_module_sha256": "3e44bfa2f0f8b9342fa4ff08566f0b11f473cf0aafd11eeb1fa27b83bd56af9b",
+      "metric": "pss",
+      "memory_limit_bytes": 201326592,
+      "minimum_system_available_bytes": 6474121216,
+      "minimum_windows_available_bytes": 4370620416,
+      "policy": {
+        "source": "/workspace/config/toolchain.lock.json",
+        "revision": "2026-10-29-user-throughput",
+        "heavy_jobs": 1,
+        "compile_jobs": 4,
+        "process_group_limit_mib": 6144,
+        "windows_start_available_mib": 2048,
+        "windows_running_available_mib": 1024,
+        "linux_running_available_mib": 512,
+        "jvm_heap_mib": 4096
+      },
+      "policy_sha256": "a330b526ee6ef55d8bdb06534f333a2c83dd0a794c44e31e214f8143e3ba9ff7",
+      "timeline": [
+        {
+          "elapsed_seconds": 0.023113051000000162,
+          "rss_bytes": 2174976,
+          "pss_bytes": 1222656,
+          "available_bytes": 6732021760,
+          "windows_available_bytes": 4370620416,
+          "aggregate_B_group_pss_bytes": 3397632,
+          "active_B_groups": 2
+        }
+      ],
+      "command": [
+        "python3",
+        "-c",
+        "import time; x=bytearray(120*1024*1024); time.sleep(5)"
+      ],
+      "sampling": "Owned group and all active B job groups every0.5s, Windows every5s. At most one heavy job; up to8 verified simulator slots. All share the6GiB PSS budget. Sampled soft limit, no OS hard cap; no unrelated process is terminated."
+    },
+    {
+      "status": "RESOURCE_LIMIT",
+      "reason": "AGGREGATE_B_PROCESS_GROUP_MEMORY",
+      "error": null,
+      "exit_code": -15,
+      "elapsed_seconds": 1.5326058710000003,
+      "peak_group_rss_bytes": 134455296,
+      "peak_group_pss_bytes": 130272256,
+      "peak_aggregate_B_group_pss_bytes": 260652032,
+      "job_kind": "simulation",
+      "simulation_slots": 1,
+      "guard_sha256": "c25efc8e2adb4dfc9522c328f2a670ce292e0560ac55e0e96b52e0d6522589cd",
+      "lease_module_sha256": "3e44bfa2f0f8b9342fa4ff08566f0b11f473cf0aafd11eeb1fa27b83bd56af9b",
+      "metric": "pss",
+      "memory_limit_bytes": 201326592,
+      "minimum_system_available_bytes": 6474121216,
+      "minimum_windows_available_bytes": 4370620416,
+      "policy": {
+        "source": "/workspace/config/toolchain.lock.json",
+        "revision": "2026-10-29-user-throughput",
+        "heavy_jobs": 1,
+        "compile_jobs": 4,
+        "process_group_limit_mib": 6144,
+        "windows_start_available_mib": 2048,
+        "windows_running_available_mib": 1024,
+        "linux_running_available_mib": 512,
+        "jvm_heap_mib": 4096
+      },
+      "policy_sha256": "a330b526ee6ef55d8bdb06534f333a2c83dd0a794c44e31e214f8143e3ba9ff7",
+      "timeline": [
+        {
+          "elapsed_seconds": 0.02188213600000033,
+          "rss_bytes": 3772416,
+          "pss_bytes": 1551360,
+          "available_bytes": 6732021760,
+          "windows_available_bytes": 4370620416,
+          "aggregate_B_group_pss_bytes": 3319808,
+          "active_B_groups": 2
+        }
+      ],
+      "command": [
+        "python3",
+        "-c",
+        "import time; x=bytearray(120*1024*1024); time.sleep(5)"
+      ],
+      "sampling": "Owned group and all active B job groups every0.5s, Windows every5s. At most one heavy job; up to8 verified simulator slots. All share the6GiB PSS budget. Sampled soft limit, no OS hard cap; no unrelated process is terminated."
+    }
+  ],
+  "positive": {
+    "status": "PASS",
+    "reason": null,
+    "error": null,
+    "exit_code": 0,
+    "elapsed_seconds": 1.575062377,
+    "peak_group_rss_bytes": 33640448,
+    "peak_group_pss_bytes": 30398464,
+    "peak_aggregate_B_group_pss_bytes": 30398464,
+    "job_kind": "simulation",
+    "simulation_slots": 1,
+    "guard_sha256": "c25efc8e2adb4dfc9522c328f2a670ce292e0560ac55e0e96b52e0d6522589cd",
+    "lease_module_sha256": "3e44bfa2f0f8b9342fa4ff08566f0b11f473cf0aafd11eeb1fa27b83bd56af9b",
+    "metric": "pss",
+    "memory_limit_bytes": 536870912,
+    "minimum_system_available_bytes": 6575562752,
+    "minimum_windows_available_bytes": 4008124416,
+    "policy": {
+      "source": "/workspace/config/toolchain.lock.json",
+      "revision": "2026-10-29-user-throughput",
+      "heavy_jobs": 1,
+      "compile_jobs": 4,
+      "process_group_limit_mib": 6144,
+      "windows_start_available_mib": 2048,
+      "windows_running_available_mib": 1024,
+      "linux_running_available_mib": 512,
+      "jvm_heap_mib": 4096
+    },
+    "policy_sha256": "a330b526ee6ef55d8bdb06534f333a2c83dd0a794c44e31e214f8143e3ba9ff7",
+    "timeline": [
+      {
+        "elapsed_seconds": 0.06868369199999957,
+        "rss_bytes": 2187264,
+        "pss_bytes": 1757184,
+        "available_bytes": 6737395712,
+        "windows_available_bytes": 4008124416,
+        "aggregate_B_group_pss_bytes": 2035712,
+        "active_B_groups": 1
+      }
+    ],
+    "command": [
+      "python3",
+      "-c",
+      "import time; x=bytearray(24*1024*1024); time.sleep(1)"
+    ],
+    "sampling": "Owned group and all active B job groups every0.5s, Windows every5s. At most one heavy job; up to8 verified simulator slots. All share the6GiB PSS budget. Sampled soft limit, no OS hard cap; no unrelated process is terminated."
+  },
+  "scope": "Two120MiB processes are each below192MiB but their combined PSS exceeds it; aggregate guard rejects the overlap. Separate24MiB control passes. Test uses an isolated task-local lease directory; production budget remains6GiB."
+}

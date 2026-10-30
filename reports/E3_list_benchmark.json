@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "method": 0,
+      "n": 32,
+      "iterations": 1309075,
+      "timed_seconds": 3.000000092,
+      "mean_build_sort_us": 2.292,
+      "mean_comparisons": 806.0
+    },
+    {
+      "method": 1,
+      "n": 32,
+      "iterations": 304871,
+      "timed_seconds": 3.000009096,
+      "mean_build_sort_us": 9.84,
+      "mean_comparisons": 124.0
+    },
+    {
+      "method": 2,
+      "n": 32,
+      "iterations": 3954733,
+      "timed_seconds": 3.000000075,
+      "mean_build_sort_us": 0.759,
+      "mean_comparisons": 124.0
+    },
+    {
+      "method": 3,
+      "n": 32,
+      "iterations": 3705887,
+      "timed_seconds": 3.000000172,
+      "mean_build_sort_us": 0.81,
+      "mean_comparisons": 255.0
+    },
+    {
+      "method": 0,
+      "n": 128,
+      "iterations": 87914,
+      "timed_seconds": 3.000033019,
+      "mean_build_sort_us": 34.125,
+      "mean_comparisons": 14351.0
+    },
+    {
+      "method": 1,
+      "n": 128,
+      "iterations": 58224,
+      "timed_seconds": 3.000048512,
+      "mean_build_sort_us": 51.526,
+      "mean_comparisons": 740.0
+    },
+    {
+      "method": 2,
+      "n": 128,
+      "iterations": 842024,
+      "timed_seconds": 3.000000834,
+      "mean_build_sort_us": 3.563,
+      "mean_comparisons": 740.0
+    },
+    {
+      "method": 3,
+      "n": 128,
+      "iterations": 283349,
+      "timed_seconds": 3.000009148,
+      "mean_build_sort_us": 10.588,
+      "mean_comparisons": 4351.0
+    },
+    {
+      "method": 0,
+      "n": 512,
+      "iterations": 4748,
+      "timed_seconds": 3.000032454,
+      "mean_build_sort_us": 631.852,
+      "mean_comparisons": 253967.0
+    },
+    {
+      "method": 1,
+      "n": 512,
+      "iterations": 11776,
+      "timed_seconds": 3.000246584,
+      "mean_build_sort_us": 254.776,
+      "mean_comparisons": 3983.0
+    },
+    {
+      "method": 2,
+      "n": 512,
+      "iterations": 127355,
+      "timed_seconds": 3.00001686,
+      "mean_build_sort_us": 23.556,
+      "mean_comparisons": 3983.0
+    },
+    {
+      "method": 3,
+      "n": 512,
+      "iterations": 20350,
+      "timed_seconds": 3.000094503,
+      "mean_build_sort_us": 147.425,
+      "mean_comparisons": 63761.0
+    },
+    {
+      "method": 0,
+      "n": 2048,
+      "iterations": 275,
+      "timed_seconds": 3.00498858,
+      "mean_build_sort_us": 10927.231,
+      "mean_comparisons": 4118564.0
+    },
+    {
+      "method": 1,
+      "n": 2048,
+      "iterations": 2414,
+      "timed_seconds": 3.0010702,
+      "mean_build_sort_us": 1243.194,
+      "mean_comparisons": 19915.0
+    },
+    {
+      "method": 2,
+      "n": 2048,
+      "iterations": 14202,
+      "timed_seconds": 3.000179009,
+      "mean_build_sort_us": 211.25,
+      "mean_comparisons": 19915.0
+    },
+    {
+      "method": 3,
+      "n": 2048,
+      "iterations": 943,
+      "timed_seconds": 3.002689911,
+      "mean_build_sort_us": 3184.189,
+      "mean_comparisons": 1040499.0
+    }
+  ],
+  "seed_rule": "260733+n; identical input at each n for all methods",
+  "methods": [
+    "bubble",
+    "copying_merge",
+    "bottom_up_merge",
+    "sorted_insertion"
+  ],
+  "timing_scope": "Wall time of constructing one sorted list, including required allocation/copy and discarded-input cleanup; output validation/final destruction outside timing. Each sample accumulates>=3seconds. One batch per point, no confidence intervals; WSL guest is not isolated.",
+  "compiler_flags": "GNU17 GCC11 -O2 -g; AMD64 WSL2,2GB/4vCPU; sequential benchmark"
+}

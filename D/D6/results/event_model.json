@@ -1,0 +1,52 @@
+{
+  "scope": "Independent finite interleaving model, initialized a=0. Actual simulator demonstrates one permitted schedule only.",
+  "interleavings": [
+    {
+      "order": [
+        "a=0",
+        "a=1",
+        "b=a"
+      ],
+      "result": {
+        "a": 1,
+        "b": 1
+      }
+    },
+    {
+      "order": [
+        "a=0",
+        "b=a",
+        "a=1"
+      ],
+      "result": {
+        "a": 1,
+        "b": 0
+      }
+    },
+    {
+      "order": [
+        "b=a",
+        "a=0",
+        "a=1"
+      ],
+      "result": {
+        "a": 1,
+        "b": 0
+      }
+    }
+  ],
+  "blocking_swap_allowed": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "nba_swap_required": [
+    1,
+    0
+  ]
+}

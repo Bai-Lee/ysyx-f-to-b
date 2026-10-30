@@ -1,0 +1,1 @@
+module bcd_fadd(input[3:0]a,b,input cin,output cout,output[3:0]sum);wire[4:0]t;assign t={1'b0,a}+{1'b0,b}+cin;assign cout=t>5'd9;assign sum=cout?t-5'd10:t;endmodule

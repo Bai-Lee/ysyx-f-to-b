@@ -1,0 +1,28 @@
+{
+  "status": "BOUNDED_CONCURRENCY_ADJUSTMENT",
+  "timestamp": "2026-10-25T13:35:03.194544+00:00",
+  "host_available_KiB": 6188268,
+  "wsl_memory_MiB": 1918,
+  "actual_swap_MiB": 0,
+  "baseline_mapped_observed_maxrss_KiB": 153752,
+  "mapped_simulation_address_space_MiB": 512,
+  "compile_jobs": 1,
+  "condition": "Before each new secondary heavy job, require Windows free>=3GiB and Linux MemAvailable>=768MiB. Stop dispatch if below. No global PATH or .wslconfig edits.",
+  "reason": "Measured simulations fit well inside existing2GiB WSL cap; long originalUDP fourstate microbench runs serially alongside atmostone bounded SoC/backend task.",
+  "secondary_backend_pss_limit_MiB": 3000,
+  "linux_available_floor_MiB": 192,
+  "shared_page_accounting": "Backend group PSS avoids counting fork-shared library pages twice; aggregateRSS is also recorded. First512MiB and1100MiB RSS-limited attempts were preserved asRESOURCE_LIMIT. No change to timing/DRC/LVS rules.",
+  "host_available_KiB_after_user_release": 5820056,
+  "max_concurrent_heavy_jobs": 2,
+  "max_concurrent_short_light_checks": 2,
+  "backend_configured_algorithm_threads": 2,
+  "backend_cpu_affinity": [
+    0,
+    1
+  ],
+  "internal_thread_note": "The tool may use additional internal plot/check threads; taskset limits effective backend CPU use to2logicalcores. No claimthatallinternalpools have2threads.",
+  "actual_wsl_memory_MiB": 3931,
+  "approved_wsl_limit_GiB": 4,
+  "backend_activation": "reports/E_backend_memory_update.json",
+  "host_resource_snapshot": "artifacts/E8/memory/windows_resource_snapshot.json"
+}

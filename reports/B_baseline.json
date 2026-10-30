@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "timestamp": "20261029T141730897482",
+  "C_zip_sha256": "1baeed212b22f6e9c07616ac03393c6b345e73e587bb1b2c6a2f170bb1ee1d3a",
+  "C_zip_bytes": 11652980262,
+  "C_audit_sha256": "b606c5cc2598ac5078c2a2d860b3ecfe022ceaa4cd05f906e87845c73cb0db4b",
+  "C_runtime_sha256": "21de1aa68b460ae54701f88dc56b2720d7cb35ce66c440cd914bebe173c4b741",
+  "C_manifest_sha256": "260665882f6158102f0a56891ba9b20f9f72fe46cdfaceb3729917f0d9dcf143",
+  "git_head": "6224ea291b698cbca14139637f0dd7c6240800c5",
+  "scope_records": 110,
+  "core_tasks": 56,
+  "adapted_tasks": 2,
+  "classification_counts": {
+    "原选做/扩展或背景阅读": 32,
+    "个人流程/图例排除": 2,
+    "技术约束/方法提醒": 16,
+    "PUBLIC_CORE_TASK": 56,
+    "USER_ADAPTED": 2,
+    "OFFICIAL_PROCESS_EXCLUDED": 1,
+    "OFFICIAL_PROCESS_ADAPTED": 1
+  },
+  "backup": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\history\\before_B_20261029T141730897482",
+  "preservation": "F/E/D/C sources, reports, accepted binaries and delivery ZIPs remain unchanged. B uses independent source/runtime copies."
+}

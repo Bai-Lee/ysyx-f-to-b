@@ -1,0 +1,468 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "name": "hazards",
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 27583,
+        "instructions": 4197,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147492560,
+        "instruction": 1048691,
+        "diff_enabled": true,
+        "diff_checked": 4189,
+        "device_sync_checked": 8,
+        "wall_seconds": 0.0314771,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "",
+        "performance": {
+          "core_cycles": 27583,
+          "ifu_requests": 4197,
+          "ifu_responses": 4197,
+          "lsu_requests": 1274,
+          "lsu_responses": 1274,
+          "exu_completions": 2923,
+          "ifu_latency_sum": 23688,
+          "lsu_latency_sum": 4950,
+          "class_counts": [
+            1582,
+            492,
+            782,
+            823,
+            513,
+            4,
+            1,
+            0
+          ],
+          "class_cycles": [
+            8795,
+            9319,
+            6651,
+            2299,
+            513,
+            4,
+            2,
+            0
+          ],
+          "state_cycles": [
+            1,
+            15276,
+            3641,
+            7007,
+            0,
+            1654,
+            4,
+            0
+          ],
+          "ifu_absence": [
+            1,
+            13200,
+            0,
+            10185
+          ],
+          "cache_events": [
+            4197,
+            3914,
+            283,
+            0,
+            283,
+            0
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            6545,
+            17143,
+            0
+          ],
+          "data_counts": [
+            488,
+            771,
+            4,
+            11
+          ],
+          "data_latency": [
+            2896,
+            2014,
+            16,
+            24
+          ],
+          "pipeline_events": [
+            0,
+            380,
+            7007,
+            3063,
+            49,
+            143,
+            329,
+            4197,
+            4196,
+            4196,
+            1,
+            16352,
+            48,
+            1340,
+            823,
+            44
+          ]
+        }
+      },
+      "evidence": "artifacts/B4/functional/pipeline-valid-reset-hazards",
+      "image_sha256": "70f2529d0c9a2dec91a4a609bb8fe2bc4c58d777846aaff0f540d39e83bf108e"
+    },
+    {
+      "name": "fence-prefetch",
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 911,
+        "instructions": 60,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147483876,
+        "instruction": 1048691,
+        "diff_enabled": true,
+        "diff_checked": 52,
+        "device_sync_checked": 8,
+        "wall_seconds": 0.00130355,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "",
+        "performance": {
+          "core_cycles": 911,
+          "ifu_requests": 60,
+          "ifu_responses": 60,
+          "lsu_requests": 12,
+          "lsu_responses": 12,
+          "exu_completions": 48,
+          "ifu_latency_sum": 855,
+          "lsu_latency_sum": 39,
+          "class_counts": [
+            36,
+            2,
+            10,
+            3,
+            1,
+            6,
+            1,
+            1
+          ],
+          "class_cycles": [
+            615,
+            68,
+            153,
+            64,
+            1,
+            6,
+            2,
+            2
+          ],
+          "state_cycles": [
+            2,
+            776,
+            53,
+            54,
+            0,
+            18,
+            8,
+            0
+          ],
+          "ifu_absence": [
+            2,
+            745,
+            0,
+            104
+          ],
+          "cache_events": [
+            60,
+            46,
+            14,
+            0,
+            14,
+            1
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            64,
+            791,
+            0
+          ],
+          "data_counts": [
+            0,
+            1,
+            2,
+            9
+          ],
+          "data_latency": [
+            0,
+            2,
+            12,
+            25
+          ],
+          "pipeline_events": [
+            0,
+            10,
+            54,
+            35,
+            9,
+            15,
+            7,
+            60,
+            58,
+            58,
+            2,
+            786,
+            7,
+            10,
+            3,
+            1
+          ]
+        }
+      },
+      "evidence": "artifacts/B4/functional/pipeline-valid-reset-fence-prefetch",
+      "image_sha256": "5beb234e703b9c029b5b7493fded1381e2eec46aa27a1066c464a074d054a21e"
+    },
+    {
+      "name": "context",
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 214428,
+        "instructions": 27847,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147485668,
+        "instruction": 1048691,
+        "diff_enabled": true,
+        "diff_checked": 27795,
+        "device_sync_checked": 52,
+        "wall_seconds": 0.147562,
+        "ecalls": 52,
+        "mrets": 52,
+        "uart_hex": "42315f4354455f5041535320613d313220623d31320a",
+        "performance": {
+          "core_cycles": 214428,
+          "ifu_requests": 27847,
+          "ifu_responses": 27847,
+          "lsu_requests": 8103,
+          "lsu_responses": 8103,
+          "exu_completions": 19744,
+          "ifu_latency_sum": 187310,
+          "lsu_latency_sum": 33196,
+          "class_counts": [
+            11860,
+            3660,
+            4443,
+            4710,
+            2119,
+            684,
+            371,
+            0
+          ],
+          "class_cycles": [
+            80938,
+            63605,
+            39598,
+            14402,
+            4910,
+            5932,
+            5043,
+            0
+          ],
+          "state_cycles": [
+            371,
+            131515,
+            23817,
+            46671,
+            0,
+            10788,
+            1266,
+            0
+          ],
+          "ifu_absence": [
+            371,
+            118382,
+            0,
+            67828
+          ],
+          "cache_events": [
+            27847,
+            25448,
+            2399,
+            0,
+            2399,
+            0
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            46180,
+            141130,
+            0
+          ],
+          "data_counts": [
+            2141,
+            2890,
+            1519,
+            1553
+          ],
+          "data_latency": [
+            12778,
+            7513,
+            8902,
+            4003
+          ],
+          "pipeline_events": [
+            0,
+            3903,
+            46671,
+            19322,
+            3871,
+            4585,
+            1130,
+            27847,
+            27476,
+            27476,
+            371,
+            138851,
+            3500,
+            7513,
+            4710,
+            2816
+          ]
+        }
+      },
+      "evidence": "artifacts/B4/functional/pipeline-valid-reset-context",
+      "image_sha256": "a14120e138af5972a5002b0c6434b1f907cb3b38619d921e8ba08cc215793d49"
+    },
+    {
+      "name": "cycle",
+      "status": "PASS",
+      "simulation": {
+        "result": "GOOD_TRAP",
+        "cycles": 139391,
+        "instructions": 23407,
+        "a0": 0,
+        "fault": 0,
+        "pc": 2147484048,
+        "instruction": 1048691,
+        "diff_enabled": true,
+        "diff_checked": 23303,
+        "device_sync_checked": 104,
+        "wall_seconds": 0.100802,
+        "ecalls": 0,
+        "mrets": 0,
+        "uart_hex": "42315f4d4359434c455f504153532076656e646f723d37393733373937382070726f6a6563743d32363037303030310a",
+        "performance": {
+          "core_cycles": 139391,
+          "ifu_requests": 23407,
+          "ifu_responses": 23407,
+          "lsu_requests": 2833,
+          "lsu_responses": 2833,
+          "exu_completions": 20574,
+          "ifu_latency_sum": 128381,
+          "lsu_latency_sum": 13722,
+          "class_counts": [
+            17550,
+            1930,
+            903,
+            2173,
+            96,
+            642,
+            113,
+            0
+          ],
+          "class_cycles": [
+            80101,
+            35945,
+            8356,
+            8814,
+            1651,
+            4106,
+            418,
+            0
+          ],
+          "state_cycles": [
+            113,
+            92987,
+            21777,
+            18588,
+            0,
+            5630,
+            296,
+            0
+          ],
+          "ifu_absence": [
+            113,
+            85879,
+            0,
+            29992
+          ],
+          "cache_events": [
+            23407,
+            21745,
+            1662,
+            0,
+            1662,
+            0
+          ],
+          "fetch_latency_hit_miss_bypass": [
+            32731,
+            95650,
+            0
+          ],
+          "data_counts": [
+            65,
+            0,
+            1865,
+            903
+          ],
+          "data_latency": [
+            383,
+            0,
+            10936,
+            2403
+          ],
+          "pipeline_events": [
+            0,
+            957,
+            18588,
+            7784,
+            2333,
+            3914,
+            2334,
+            23407,
+            23294,
+            23294,
+            113,
+            96630,
+            2220,
+            2911,
+            2173,
+            1578
+          ]
+        }
+      },
+      "evidence": "artifacts/B4/functional/pipeline-valid-reset-cycle",
+      "image_sha256": "7177113b512bc24b0a4aae4323a75772af5dad5d11c6459079bf530171cb3220"
+    }
+  ],
+  "configuration": {
+    "label": "pipeline-valid-reset",
+    "executable": "/home/USER/b-stage/standalone/build/pipeline-valid-reset/sim",
+    "sha256": "f6fa50f8694a87225d4838d4843d8a3a417c07dccaab83bae7093bef4f6d5654",
+    "cache_lines": 4,
+    "cache_words": 8,
+    "cache_ways": 2,
+    "mutant": false,
+    "fault_fence": false,
+    "pipeline": true,
+    "forward": true,
+    "predict": false,
+    "predict_jal": true,
+    "predict_mode": 2,
+    "stream_fetch": true,
+    "fault_fence_flush": false,
+    "fault_raw": false
+  },
+  "scope": "Complete GPR/PC/instruction/memory comparisons to NEMU on randomized ready/valid stalls, independently generated arithmetic/memory checks, precise control redirects, real CTE/CSR tests and an explicit stale-prefetch FENCE.I fixture. Finite instruction streams, not a universal proof."
+}

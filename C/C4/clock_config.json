@@ -1,0 +1,5 @@
+{
+  "ticks_hz": 1710417,
+  "source": "reports/C4_clock_calibration.json",
+  "mode": "calibrated host simulation with NEMU DiffTest; override for frequency-model benchmarks"
+}

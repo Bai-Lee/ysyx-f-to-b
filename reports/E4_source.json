@@ -1,0 +1,26 @@
+{
+  "name": "E4/environment/source",
+  "timestamp": "2026-10-24T20:18:17.295699+00:00",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "YSYX-Linux",
+    "-u",
+    "ysyx",
+    "--exec",
+    "bash",
+    "-lc",
+    "set -eu\nmkdir -p /home/USER/tools\nif [ ! -d /home/USER/tools/verilator-stable-src/.git ]; then\n git -c http.version=HTTP/1.1 clone --depth 1 --branch stable https://github.com/verilator/verilator.git /home/USER/tools/verilator-stable-src\nfi\ngit -C /home/USER/tools/verilator-stable-src rev-parse HEAD\ngit -C /home/USER/tools/verilator-stable-src describe --tags --always\ngit -C /home/USER/tools/verilator-stable-src fsck --full\nhead -35 /home/USER/tools/verilator-stable-src/Changes\n"
+  ],
+  "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+  "exit_code": 0,
+  "expected_exit": 0,
+  "status": "PASS",
+  "elapsed_seconds": 8.156,
+  "timeout_seconds": 300,
+  "inputs": [],
+  "inputs_after": [],
+  "inputs_unchanged": true,
+  "stdout_sha256": "20cf8815f25d6626b0918fd92d03a78432bf0e574e8c99f053d10cc5c61afb74",
+  "stderr_sha256": "b508a135c10c8b364c5af2a5f5f94ad33411c27930524f9b3c21695968e81362"
+}

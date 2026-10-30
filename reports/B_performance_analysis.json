@@ -1,0 +1,352 @@
+{
+  "status": "PASS",
+  "pending": [],
+  "test_frequency_mhz": 325,
+  "test_padding": 24,
+  "classified_cache": {
+    "class_counts": [
+      499108,
+      81650,
+      68404,
+      188683,
+      35859,
+      24919,
+      1,
+      1
+    ],
+    "hit_miss_bypass_by_class": [
+      [
+        440869,
+        45062,
+        13177
+      ],
+      [
+        58791,
+        16307,
+        6552
+      ],
+      [
+        58753,
+        3049,
+        6602
+      ],
+      [
+        179137,
+        2940,
+        6606
+      ],
+      [
+        28659,
+        598,
+        6602
+      ],
+      [
+        24193,
+        725,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "adjacent_control_pairs": {
+      "4->3": 19448,
+      "3->3": 10942,
+      "5->3": 548,
+      "3->4": 848,
+      "3->5": 3114,
+      "5->5": 1,
+      "4->5": 32,
+      "5->4": 12
+    },
+    "trace_sha256": "33b305717c1e9524cda8ae61277dd300c92ba312a3c0f4be1a3a9fffa2420e36"
+  },
+  "final_classified_cache": {
+    "class_counts": [
+      498656,
+      81607,
+      68375,
+      188658,
+      35858,
+      24891,
+      1,
+      1
+    ],
+    "hit_miss_bypass_by_class": [
+      [
+        440471,
+        45008,
+        13177
+      ],
+      [
+        58764,
+        16291,
+        6552
+      ],
+      [
+        58731,
+        3042,
+        6602
+      ],
+      [
+        179114,
+        2938,
+        6606
+      ],
+      [
+        28658,
+        598,
+        6602
+      ],
+      [
+        24167,
+        723,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "adjacent_control_pairs": {
+      "4->3": 19448,
+      "3->3": 10940,
+      "5->3": 544,
+      "3->4": 848,
+      "3->5": 3114,
+      "5->5": 1,
+      "4->5": 32,
+      "5->4": 12
+    },
+    "trace_sha256": "a58407a525b382505930ba4206d1cd721cc23c34085bddbcec3bb1e27c71a5f7"
+  },
+  "ideal_pipeline": {
+    "nonmemory_instructions": 748571,
+    "nonmemory_misses": 49325,
+    "nonmemory_bypasses": 26387,
+    "estimated_cycles": 9042571.73059507,
+    "speedup": 1.0890306754969972,
+    "assumptions": "Load/store retirement intervals retained; each nonmemory hit costs1 cycle; actual miss/bypass counts retained with measured aggregate mean service penalties. No all-wait-removal assumption; aggregate-to-class latency allocation is approximate."
+  },
+  "finite_dcache": [
+    {
+      "lines": 4,
+      "words": 4,
+      "ways": 2,
+      "padding": 0,
+      "capacity_bytes": 64,
+      "accesses": 150054,
+      "misses": 25951,
+      "bypasses": 69948,
+      "reads": 81650,
+      "writes": 68404,
+      "writebacks": 10924,
+      "invalidations": 0,
+      "modeled_data_cycles": 3664942.502503472,
+      "modeled_program_cycles": 8577037.502503471,
+      "estimated_speedup": 1.1481397856923985
+    },
+    {
+      "lines": 8,
+      "words": 4,
+      "ways": 2,
+      "padding": 0,
+      "capacity_bytes": 128,
+      "accesses": 150054,
+      "misses": 16541,
+      "bypasses": 69948,
+      "reads": 81650,
+      "writes": 68404,
+      "writebacks": 9237,
+      "invalidations": 0,
+      "modeled_data_cycles": 2568733.645916704,
+      "modeled_program_cycles": 7480828.645916704,
+      "estimated_speedup": 1.3163833134147755
+    },
+    {
+      "lines": 16,
+      "words": 4,
+      "ways": 2,
+      "padding": 0,
+      "capacity_bytes": 256,
+      "accesses": 150054,
+      "misses": 12114,
+      "bypasses": 69948,
+      "reads": 81650,
+      "writes": 68404,
+      "writebacks": 8123,
+      "invalidations": 0,
+      "modeled_data_cycles": 2031732.0194870871,
+      "modeled_program_cycles": 6943827.019487087,
+      "estimated_speedup": 1.4181859617706039
+    }
+  ],
+  "dcache_assumptions": {
+    "read_first_cycle_cost": 94.83328811720021,
+    "extra_read_beat_cost": 3.25,
+    "write_word_cost": 16.60938283993979,
+    "policy": "WB/WA LRU;1-cycle access plus miss fill and dirty line writeback; uncached latency unchanged; frozen instruction sequence, no RTL dcache or measured gain"
+  },
+  "storage_area_lower_bound": {
+    "DFF_X1_area_um2": 4.522,
+    "64B_data_only_um2": 2315.264,
+    "release_remaining_um2": 121.8179999999993
+  },
+  "forwarding": {
+    "nonload_raw_cycles_upper_proxy": 392339,
+    "upper_proxy_speedup": 1.039136442431058,
+    "actual_same_frequency_speedup": 1.0235533665057697
+  },
+  "stream_fetch": {
+    "single_hit_cycle_saved_upper_proxy": 790646,
+    "upper_proxy_speedup": 1.0842288385491239,
+    "actual_same_frequency_speedup": 1.0439652092494824
+  },
+  "control": {
+    "all_control_stall_cycles": 1421112,
+    "all_control_proxy_speedup": 1.1706467289504157,
+    "uniform_average_wait_per_control_instruction": 5.696159303528054,
+    "jump_estimates": {
+      "jal": {
+        "instructions": 35858,
+        "fraction_all_instructions": 0.039891643536158684,
+        "uniform_control_stall_estimated_saved_cycles": 204252.88030590897,
+        "estimated_speedup": 1.0213997017960295
+      },
+      "jalr": {
+        "instructions": 24927,
+        "fraction_all_instructions": 0.027731022322099046,
+        "uniform_control_stall_estimated_saved_cycles": 141988.1629590438,
+        "estimated_speedup": 1.0147797724420187
+      },
+      "returns": {
+        "instructions": 8343,
+        "fraction_all_instructions": 0.009281498745668245,
+        "uniform_control_stall_estimated_saved_cycles": 47523.05706933456,
+        "estimated_speedup": 1.0048985823009788
+      }
+    },
+    "assumption": "Removing counted wait events is an optimistic proxy, not a disjoint causal partition. Per-jump weighting assumes uniform mean control wait; older memory dependencies can remain."
+  },
+  "blocks": [
+    {
+      "variant": "b5-block1-325",
+      "words": 1,
+      "misses": 172404,
+      "TMT": 2909456,
+      "miss_service_cycles": 3081860,
+      "mean_miss_cycles": 16.875803345630032,
+      "AMAT": 4.385777309188576,
+      "port_AMAT": 4.368806863820537,
+      "core_cycles": 9694911
+    },
+    {
+      "variant": "b5-block4-325",
+      "words": 4,
+      "misses": 78629,
+      "TMT": 2250250,
+      "miss_service_cycles": 2328879,
+      "mean_miss_cycles": 28.618575843518293,
+      "AMAT": 3.620265560610489,
+      "port_AMAT": 3.636980034018755,
+      "core_cycles": 9021714
+    },
+    {
+      "variant": "b5-multicycle-325",
+      "words": 8,
+      "misses": 68681,
+      "TMT": 2996222,
+      "miss_service_cycles": 3064903,
+      "mean_miss_cycles": 43.625194740903595,
+      "AMAT": 4.487693869284028,
+      "port_AMAT": 4.466234524968702,
+      "core_cycles": 9847638
+    }
+  ],
+  "block_prediction": {
+    "calibration_words": [
+      1,
+      4
+    ],
+    "validation_words": 8,
+    "intercept": 16.875803345630032,
+    "increment_per_word": 3.914257499296087,
+    "predicted_TMT_8": 3040892.884745298,
+    "actual_TMT_8": 2996222,
+    "relative_error": 0.014909070404428628
+  },
+  "same_trace_serial_estimates": [
+    {
+      "lines": 32,
+      "words": 1,
+      "ways": 2,
+      "padding": 0,
+      "capacity_bytes": 128,
+      "accesses": 898625,
+      "misses": 172252,
+      "bypasses": 39541,
+      "reads": 898625,
+      "writes": 0,
+      "writebacks": 0,
+      "invalidations": 1,
+      "serial_word_TMT_estimate": 2906890.877891464
+    },
+    {
+      "lines": 8,
+      "words": 4,
+      "ways": 2,
+      "padding": 0,
+      "capacity_bytes": 128,
+      "accesses": 898625,
+      "misses": 78629,
+      "bypasses": 39541,
+      "reads": 898625,
+      "writes": 0,
+      "writebacks": 0,
+      "invalidations": 1,
+      "serial_word_TMT_estimate": 5307710.165054175
+    },
+    {
+      "lines": 4,
+      "words": 8,
+      "ways": 2,
+      "padding": 0,
+      "capacity_bytes": 128,
+      "accesses": 898625,
+      "misses": 68681,
+      "bypasses": 39541,
+      "reads": 898625,
+      "writes": 0,
+      "writebacks": 0,
+      "invalidations": 1,
+      "serial_word_TMT_estimate": 9272376.39664973
+    }
+  ],
+  "bindings": {
+    "B3_performance": "94fdd1f4159e25acdbf052791cd3f9c194382319fb0fd3391051bff7a5f95da7",
+    "B3_synthesis": "fdfe8d1bcce234d2bfe0ffa5c55bc60f48c48ea092d338b91d89d60a6991f37a",
+    "B3_cache_analysis_b5-multicycle-325": "18749b8165d546e58bb86c52432358487217330b6252272f17ed071898cf6cf7",
+    "B4_branchsim_b5-stream-325": "66f5585be9b216aabf0a1d9cb687c970ad2cb5ff22f5e11b8de0eef848e4f94e",
+    "B5_final_timing": "c00192f34923ffdff99dba01ac769b7b51d62a7f7e288fc4f7c23ce64f5594ce"
+  },
+  "cache_area_tradeoff": {
+    "multicycle_8word_area_um2": 22806.308,
+    "multicycle_4word_area_um2": 23842.112,
+    "measured_forward_pipeline_increment_um2": 1776.0819999999985,
+    "estimated_4word_forward_pipeline_area_um2": 25618.194,
+    "scope": "Additive screening estimate from measured standalone changes; the4-word pipeline combination was not synthesized. No claim that this estimate proves an impossibility or global optimality."
+  }
+}

@@ -1,0 +1,90 @@
+PDF physical page 173
+    N1570                          Committee Draft — April 12, 2011                 ISO/IEC 9899:201x
+
+
+    6.9 External definitions
+    Syntax
+1            translation-unit:
+                     external-declaration
+                     translation-unit external-declaration
+             external-declaration:
+                    function-definition
+                    declaration
+    Constraints
+2   The storage-class specifiers auto and register shall not appear in the declaration
+    specifiers in an external declaration.
+3   There shall be no more than one external definition for each identifier declared with
+    internal linkage in a translation unit. Moreover, if an identifier declared with internal
+    linkage is used in an expression (other than as a part of the operand of a sizeof or
+    _Alignof operator whose result is an integer constant), there shall be exactly one
+    external definition for the identifier in the translation unit.
+    Semantics
+4   As discussed in 5.1.1.1, the unit of program text after preprocessing is a translation unit,
+    which consists of a sequence of external declarations. These are described as ‘‘external’’
+    because they appear outside any function (and hence have file scope). As discussed in
+    6.7, a declaration that also causes storage to be reserved for an object or a function named
+    by the identifier is a definition.
+5   An external definition is an external declaration that is also a definition of a function
+    (other than an inline definition) or an object. If an identifier declared with external
+    linkage is used in an expression (other than as part of the operand of a sizeof or
+    _Alignof operator whose result is an integer constant), somewhere in the entire
+    program there shall be exactly one external definition for the identifier; otherwise, there
+    shall be no more than one.161)
+
+
+
+
+    161) Thus, if an identifier declared with external linkage is not used in an expression, there need be no
+         external definition for it.
+
+    §6.9                                          Language                                              155
+
+
+PDF physical page 176
+     ISO/IEC 9899:201x                   Committee Draft — April 12, 2011                                  N1570
+
+
+              extern int max(a, b)
+              int a, b;
+              {
+                    return a > b ? a : b;
+              }
+     Here int a, b; is the declaration list for the parameters. The difference between these two definitions is
+     that the first form acts as a prototype declaration that forces conversion of the arguments of subsequent calls
+     to the function, whereas the second form does not.
+
+14   EXAMPLE 2           To pass one function to another, one might say
+                          int f(void);
+                          /* ... */
+                          g(f);
+     Then the definition of g might read
+              void g(int (*funcp)(void))
+              {
+                    /* ... */
+                    (*funcp)(); /* or funcp(); ...                    */
+              }
+     or, equivalently,
+              void g(int func(void))
+              {
+                    /* ... */
+                    func(); /* or (*func)(); ...                   */
+              }
+
+     6.9.2 External object definitions
+     Semantics
+1    If the declaration of an identifier for an object has file scope and an initializer, the
+     declaration is an external definition for the identifier.
+2    A declaration of an identifier for an object that has file scope without an initializer, and
+     without a storage-class specifier or with the storage-class specifier static, constitutes a
+     tentative definition. If a translation unit contains one or more tentative definitions for an
+     identifier, and the translation unit contains no external definition for that identifier, then
+     the behavior is exactly as if the translation unit contains a file scope declaration of that
+     identifier, with the composite type as of the end of the translation unit, with an initializer
+     equal to 0.
+3    If the declaration of an identifier for an object is a tentative definition and has internal
+     linkage, the declared type shall not be an incomplete type.
+
+
+
+
+     158                                                Language                                            §6.9.2

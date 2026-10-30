@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "changes": [
+    {
+      "path": "/home/USER/e-stage/workbench/init.sh",
+      "before_sha256": "65a105f0c4769642bfa487425ebb3b38d18aa2fd267e212489c113b6e1e14fc0",
+      "after_sha256": "a31c11f0277faef0b2f0fe978d8bb3bd162a8b31777051f0f6f90b76e893bde0",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/riscv-tests/configure",
+      "before_sha256": "ec70d8f2957ebbac9df748a86dd0a6e852f008dafc46a8aa86f80c241691f8b6",
+      "after_sha256": "d0bdcfbe8ac28adfca4fa4d0720b6f899296fa092623c36606ff1d8c2961d948",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/archbench/scripts/select-input.sh",
+      "before_sha256": "7651ba4238d57d5dea8c5b7045e6912cbcd26ff217b678578cba0dad082b5b73",
+      "after_sha256": "a4b5a167a38a0bb804144edbda8462e222a12aa7aa98783819eb9975137d2b65",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/archbench/scripts/format.sh",
+      "before_sha256": "95eb2a125b1ab19929d0a7c0f1c5ac7767702b454a11ea1fd14a0b2a2408d13e",
+      "after_sha256": "0904ba46f56402c58eb11411cabe779c3f25d4f20b1480e669d60c291119aa5e",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/archbench/scripts/run.sh",
+      "before_sha256": "8fe63a835e27a635733f2804c3b0411a1354cf79ea53d01c0479c2a1252c7559",
+      "after_sha256": "380543ededbc410d32b3f96f8ac111e1df88e04d8efc6f69210fa3e310e032ad",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/archbench/scripts/benchlist/all.sh",
+      "before_sha256": "dc2e065b2e74419dcf0c8aeaac61f1e51d87c4230b422462a377fc254a4fcac7",
+      "after_sha256": "3d87c02e42f7be23b63bc77589082e2c9dc99902367ecaa3ef2286730f226489",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/abstract-machine/tools/minirv/minirv-gcc",
+      "before_sha256": "8836443788bcd3bb8760e26c29a69fa5973be5e1f8764c7fe02d4e626d0626db",
+      "after_sha256": "953de7a8552db2314fe8f5438bfdf0f4fce4971e4f0d76a73f09dcd8b2eb427a",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/abstract-machine/tools/minirv/minirv-common.sh",
+      "before_sha256": "93be6ee934a6c7dde3e684425738af1559d119b65d4bd919d1ee5d4d1a690f4e",
+      "after_sha256": "8cfffed58a11cfb5d1cd030ff3512d1a5fefc2d22ac53a58ce036c904a71f535",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/abstract-machine/tools/minirv/minirv-g++",
+      "before_sha256": "696ce243a0b96584f4f685f65c590ff574e42784cb21e6c12b7613d33cdc7189",
+      "after_sha256": "01e7beef9b2e8f0f5eeeb7fb246fbc0dcb7f01ef3f4e99711aabdf23ad26cc32",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/ysyxSoC/ready-to-run/minirv/gen.sh",
+      "before_sha256": "cd338a0905f9a4f2d56d66668f68da853f6dd5dd38105dae9998c7e526e15bdd",
+      "after_sha256": "5844a580f56d4f349d9c5d887d29c378fd827e79ac5e399387a1349319833c87",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    },
+    {
+      "path": "/home/USER/e-stage/workbench/ysyxSoC/patch/update-firtool.sh",
+      "before_sha256": "03393af083dafaf8ba913d1beb2da306200a409e543c63491613b979f1041f7c",
+      "after_sha256": "55baedc4ae1138a4be7a88ad1eb539ff58986bf68535f43d3867e7a5715b4389",
+      "scope": "CRLF-to-LF only in extracted Linux working copy; original archive and original export preserved."
+    }
+  ],
+  "reason": "Windows Git export carried CRLF into executable shebangs, making /bin/bash\r unavailable in Linux."
+}

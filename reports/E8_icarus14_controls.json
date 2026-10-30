@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "positive",
+      "result": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "cycles": 30,
+        "exit_writes": 1,
+        "tohost_value": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      },
+      "exit_code": 0
+    },
+    {
+      "case": "unreset",
+      "result": {
+        "result": "FAIL",
+        "exit_code": 1,
+        "cycles": 1,
+        "exit_writes": 0,
+        "tohost_value": 0,
+        "uart_bytes": 0,
+        "uart_polls": 0,
+        "uart_not_ready": 0,
+        "memory_writes": 0
+      },
+      "exit_code": 1
+    }
+  ],
+  "unknown_argument": "PASS_EXPECTED_REJECTION",
+  "tools": [
+    {
+      "path": "/home/USER/tools/e-stage/oss-20261022/oss-cad-suite/bin/iverilog",
+      "sha256": "6d84be4052a92cf7184c7149506f5db6ac251f99e438a96ae3ce33f326e2ff9d"
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20261022/oss-cad-suite/bin/vvp",
+      "sha256": "9f6d770762b5e77d81216e5f21a634028a9ee062a724eeb116980bdb6cb110cc"
+    },
+    {
+      "path": "/home/USER/e-stage/build/E8/profile/14/vpi_memory.vpi",
+      "sha256": "2131ebbc29339be8bb3b77923cb0db6b966bd83afc01d1e5fe90004b67efd8b4"
+    }
+  ],
+  "scope": "Version14recheckedwithpositiveactualRTL,missingresetnegative,andX/ZVPIargumentrejection. FinalmappedrunusesunchangedoriginalUDPmodels."
+}

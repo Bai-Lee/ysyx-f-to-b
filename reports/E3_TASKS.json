@@ -1,0 +1,4374 @@
+{
+  "status": "AUDITED_WITH_DECLARED_EXCEPTIONS",
+  "timestamp": "2026-10-24T20:06:17.209083+00:00",
+  "records": [
+    {
+      "id": "LCT-00-BASE",
+      "status": "PASS",
+      "requirement": "阅读并理解“练习0：准备”，在 Linux 编译运行原例，核对“你会看到什么”，解释代码及所用工具。没有代码的章节完成对应环境/方法操作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-01-BASE",
+      "status": "PASS",
+      "requirement": "阅读并理解“练习1：启用编译器”，在 Linux 编译运行原例，核对“你会看到什么”，解释代码及所用工具。没有代码的章节完成对应环境/方法操作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-01-BREAK",
+      "status": "PASS",
+      "requirement": "在这本书中我会添加一个小节，关于如何使程序崩溃。我会让你对程序做一些奇怪的事情，以奇怪的方式运行，或者修改代码，以便让你看到崩溃和编译器错误。\n\n对于这个程序，打开所有编译警告重新构建它：\n\n```sh\n$ rm ex1\n$ CFLAGS=\"-Wall\" make ex1\ncc -Wall    ex1.c   -o ex1\nex1.c: In function 'main':\nex1.c:3: warning: implicit declaration of function 'puts'\n$ ./ex1\nHello world.\n$\n```\n\n现在你会得到一个警告，说`puts`函数是隐式声明的。C语言的编译器很智能，它能够理解你想要什么。但是如果可以的话，你应该去除所有编译器警告。把下面一行添加到`ex1.c`文件的最上面，之后重新编译来去除它：\n\n```c\n#include <stdio.h>\n```\n\n现在像刚才一样重新执行make命令，你会看到所有警告都消失了。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-01-X01",
+      "status": "PASS",
+      "requirement": "- 在你的文本编辑器中打开`ex1`文件，随机修改或删除一部分，之后运行它看看发生了什么。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-01-X02",
+      "status": "PASS",
+      "requirement": "- 再多打印5行文本或者其它比`\"Hello world.\"`更复杂的东西。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-01-X03",
+      "status": "PASS",
+      "requirement": "- 执行`man 3 puts`来阅读这个函数和其它函数的文档。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-02-BASE",
+      "status": "PASS",
+      "requirement": "阅读并理解“练习2：用Make来代替Python”，在 Linux 编译运行原例，核对“你会看到什么”，解释代码及所用工具。没有代码的章节完成对应环境/方法操作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-02-BREAK",
+      "status": "PASS",
+      "requirement": "上面那些已经足够让你起步了，但是让我们以一种特定的方式来破坏make文件，以便你可以看到发生了什么。找到`rm -f ex1`的那一行并去掉缩进（让它左移），之后你可以看到发生了什么。再次运行`make clean`，你就会得到下面的信息：\n\n```sh\n$ make clean\nMakefile:4: *** missing separator.  Stop.\n```\n\n永远记住要缩进，以及如果你得到了像这种奇奇怪怪的错误，应该复查你是否都使用了 TAB 字符，由于一些make的变种十分挑剔。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-02-X01",
+      "status": "PASS",
+      "requirement": "- 创建目标`all:ex1`，可以以单个命令`make`构建`ex1`。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-02-X02",
+      "status": "PASS",
+      "requirement": "- 阅读`man make`来了解关于如何执行它的更多信息。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-02-X03",
+      "status": "PASS",
+      "requirement": "- 阅读`man cc`来了解关于`-Wall`和`-g`行为的更多信息。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-02-X04",
+      "status": "PASS",
+      "requirement": "- 在互联网上搜索Makefile文件，看看你是否能改进你的文件。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-02-X05",
+      "status": "PASS",
+      "requirement": "- 在另一个C语言项目中找到`Makefile`文件，并且尝试理解它做了什么。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-03-BASE",
+      "status": "PASS",
+      "requirement": "阅读并理解“练习3：格式化输出”，在 Linux 编译运行原例，核对“你会看到什么”，解释代码及所用工具。没有代码的章节完成对应环境/方法操作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-03-BREAK",
+      "status": "PASS",
+      "requirement": "尝试下面的一些东西来使你的程序崩溃，在你的电脑上它们可能会崩溃，也可能不会。\n\n+ 从第一个`printf`中去掉`age`并重新编译，你应该会得到一大串的警告。\n+ 运行新的程序，它会崩溃，或者打印出奇怪的年龄。\n+ 将`printf`恢复原样，并且去掉`age`的初值，将那一行改为`int age;`，之后重新构建并运行。\n\n```sh\n# edit ex3.c to break printf\n$ make ex3\ncc -Wall -g    ex3.c   -o ex3\nex3.c: In function 'main':\nex3.c:8: warning: too few arguments for format\nex3.c:5: warning: unused variable 'age'\n$ ./ex3\nI am -919092456 years old.\nI am 72 inches tall.\n# edit ex3.c again to fix printf, but don't init age\n$ make ex3\ncc -Wall -g    ex3.c   -o ex3\nex3.c: In function 'main':\nex3.c:8: warning: 'age' is used uninitialized in this function\n$ ./ex3\nI am 0 years old.\nI am 72 inches tall.\n$\n```",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-03-X01",
+      "status": "PASS",
+      "requirement": "- 找到尽可能多的方法使`ex3`崩溃。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-03-X02",
+      "status": "PASS",
+      "requirement": "- 执行`man 3 printf`来阅读其它可用的'%'格式化占位符。如果你在其它语言中使用过它们，应该看着非常熟悉（它们来源于`printf`）。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-03-X03",
+      "status": "PASS",
+      "requirement": "- 将`ex3`添加到你的`Makefile`的`all`列表中。到目前为止，可以使用`make clean all`来构建你所有的练习。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-03-X04",
+      "status": "PASS",
+      "requirement": "- 将`ex3`添加到你的`Makefile`的`clean`列表中。当你需要的时候使用`make clean`可以删除它。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-04-BASE",
+      "status": "PASS",
+      "evidence": [
+        "reports/E3_valgrind_build.json",
+        "E/E3/lcthw/notes/00-09.md"
+      ],
+      "details": "Verified Ubuntu source packages, real configure/make-j2/private installation and positive/negative checks using that exact AMD64 binary.",
+      "resolved_evidence": [
+        "reports/E3_valgrind_build.json",
+        "E/E3/lcthw/notes/00-09.md"
+      ]
+    },
+    {
+      "id": "LCT-04-X01",
+      "status": "PASS",
+      "requirement": "- 按照上面的指导，使用`Valgrind`和编译器修复这个程序。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-04-X02",
+      "status": "PASS",
+      "requirement": "- 在互联网上查询`Valgrind`相关的资料。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-04-X03",
+      "status": "PASS",
+      "requirement": "- 下载另一个程序并手动构建它。尝试一些你已经使用，但从来没有手动构建的程序。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-04-X04",
+      "status": "PASS",
+      "requirement": "- 看看`Valgrind`的源码是如何在目录下组织的，并且阅读它的Makefile文件。不要担心，这对我来说没有任何意义。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-05-BASE",
+      "status": "PASS",
+      "requirement": "阅读并理解“练习5：一个C程序的结构”，在 Linux 编译运行原例，核对“你会看到什么”，解释代码及所用工具。没有代码的章节完成对应环境/方法操作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-05-X01",
+      "status": "PASS_ADAPTED",
+      "requirement": "- 对于每一行，写出你不理解的符号，并且看看是否能猜出它们的意思。在纸上写下你的猜测，你可以在以后检查它，看看是否正确。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-05-X02",
+      "status": "PASS",
+      "requirement": "- 回头去看之前几个练习的源代码，并且像这样分解代码，来看看你是否了解它们。写下你不了解和不能自己解释的东西。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-06-BASE",
+      "status": "PASS_ADAPTED",
+      "requirement": "阅读并理解“练习6：变量类型”，在 Linux 编译运行原例，核对“你会看到什么”，解释代码及所用工具。没有代码的章节完成对应环境/方法操作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-06-BREAK",
+      "status": "PASS",
+      "requirement": "你可以通过向`printf`传递错误的参数来轻易使这个程序崩溃。例如，如果你找到打印我的名字的那行，把`initial`放到`first_name`前面，你就制造了一个bug。执行上述修改编译器就会向你报错，之后运行的时候你可能会得到一个“段错误”，就像这样：\n\n```sh\n$ make ex6\ncc -Wall -g    ex6.c   -o ex6\nex6.c: In function 'main':\nex6.c:19: warning: format '%s' expects type 'char *', but argument 2 has type 'int'\nex6.c:19: warning: format '%c' expects type 'int', but argument 3 has type 'char *'\n$ ./ex6\nYou are 100 miles away.\nYou have 2.345000 levels of power.\nYou have 56789.453125 awesome super powers.\nI have an initial A.\nI have a first name Zed.\nI have a last name Shaw.\nSegmentation fault\n$\n```\n\n在`Valgrind`下运行修改后的程序，来观察它会告诉你什么关于错误“Invalid read of size 1”的事情。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-06-X01",
+      "status": "PASS",
+      "requirement": "- 寻找其他通过修改`printf`使这段C代码崩溃的方法。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-06-X02",
+      "status": "PASS",
+      "requirement": "- 搜索“`printf`格式化”，试着使用一些高级的占位符。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-06-X03",
+      "status": "PASS",
+      "requirement": "- 研究可以用几种方法打印数字。尝试以八进制或十六进制打印，或者其它你找到的方法。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-06-X04",
+      "status": "PASS",
+      "requirement": "- 试着打印空字符串，即`\"\"`。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-07-BASE",
+      "status": "PASS_ADAPTED",
+      "requirement": "阅读并理解“练习7：更多变量和一些算术”，在 Linux 编译运行原例，核对“你会看到什么”，解释代码及所用工具。没有代码的章节完成对应环境/方法操作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-07-BREAK",
+      "status": "PASS",
+      "requirement": "像之前一样，向`printf`传入错误的参数来使它崩溃。对比`%c`，看看当你使用`%s`来打印`nul_byte`变量时会发生什么。做完这些之后，在`Valgrind`下运行它看看关于你的这次尝试会输出什么。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-07-X01",
+      "status": "PASS",
+      "requirement": "- 把为`universe_of_defects`赋值的数改为不同的大小，观察编译器的警告。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-07-X02",
+      "status": "PASS",
+      "requirement": "- 这些巨大的数字实际上打印成了什么？",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-07-X03",
+      "status": "PASS",
+      "requirement": "- 将`long`改为`unsigned long`，并试着找到对它来说太大的数字。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-07-X04",
+      "status": "PASS",
+      "requirement": "- 上网搜索`unsigned`做了什么。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-07-X05",
+      "status": "PASS",
+      "requirement": "- 试着自己解释（在下个练习之前）为什么`char`可以和`int`相乘。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-08-BASE",
+      "status": "PASS_ADAPTED",
+      "requirement": "阅读并理解“练习8：大小和数组”，在 Linux 编译运行原例，核对“你会看到什么”，解释代码及所用工具。没有代码的章节完成对应环境/方法操作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-08-BREAK",
+      "status": "PASS",
+      "requirement": "使这个程序崩溃非常容易，只需要尝试下面这些事情：\n\n+ 将`full_name`最后的`'\\0'`去掉，并重新运行它，在`valgrind`下再运行一遍。现在将`full_name`的定义从`main`函数中移到它的上面，尝试在`Valgrind`下运行它来看看是否能得到一些新的错误。有些情况下，你会足够幸运，不会得到任何错误。\n+ 将`areas[0]`改为`areas[10]`并打印，来看看`Valgrind`会输出什么。\n+ 尝试上述操作的不同变式，也对`name`和`full_name`执行一遍。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-08-X01",
+      "status": "PASS",
+      "requirement": "- 尝试使用`areas[0] = 100;`以及相似的操作对`areas`的元素赋值。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-08-X02",
+      "status": "PASS",
+      "requirement": "- 尝试对`name`和`full_name`的元素赋值。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-08-X03",
+      "status": "PASS",
+      "requirement": "- 尝试将`areas`的一个元素赋值为`name`中的字符。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-08-X04",
+      "status": "PASS",
+      "requirement": "- 上网搜索在不同的CPU上整数所占的不同大小。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-09-BASE",
+      "status": "PASS",
+      "requirement": "阅读并理解“练习9：数组和字符串”，在 Linux 编译运行原例，核对“你会看到什么”，解释代码及所用工具。没有代码的章节完成对应环境/方法操作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-09-BREAK",
+      "status": "PASS",
+      "requirement": "C中所有bug的大多数来源都是忘了预留出足够的空间，或者忘了在字符串末尾加上一个`'\\0'`。事实上，这些bug是非常普遍并且难以改正的，大部分优秀的C代码都不会使用C风格字符串。下一个练习中我们会学到如何彻底避免C风格字符串。\n\n使这个程序崩溃的的关键就是拿掉字符串结尾的`'\\0'`。下面是实现它的一些途径：\n\n+ 删掉`name`的初始化表达式。\n+ 无意中设置`name[3] = 'A'`，于是它就没有终止字符了。\n+ 将初始化表达式设置为`{'a','a','a','a'}`，于是就有过多的`'a'`字符，没有办法给`'\\0'`留出位置。\n\n试着想出一些其它的办法让它崩溃，并且在`Valgrind`下像往常一样运行这个程序，你可以看到具体发生了什么，以及错误叫什么名字。有时`Valgrind`并不能发现你犯的错误，则需要移动声明这些变量的地方看看是否能找出错误。这是C的黑魔法的一部分，有时变量的位置会改变bug。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-09-X01",
+      "status": "PASS",
+      "requirement": "- 将一些字符赋给`numbers`的元素，之后用`printf`一次打印一个字符，你会得到什么编译器警告？",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-09-X02",
+      "status": "PASS",
+      "requirement": "- 对`names`执行上述的相反操作，把`names`当成`int`数组，并一次打印一个`int`，`Valgrind`会提示什么？",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-09-X03",
+      "status": "PASS",
+      "requirement": "- 有多少种其它的方式可以用来打印它？",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-09-X04",
+      "status": "PASS",
+      "requirement": "- 如果一个字符数组占四个字节，一个整数也占4个字节，你可以像整数一样使用整个`name`吗？你如何用黑魔法实现它？",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-09-X05",
+      "status": "PASS_ADAPTED",
+      "requirement": "- 拿出一张纸，将每个数组画成一排方框，之后在纸上画出代码中的操作，看看是否正确。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-09-X06",
+      "status": "PASS",
+      "requirement": "- 将`name`转换成`another`的形式，看看代码是否能正常工作。",
+      "evidence": [
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\lcthw\\notes\\00-09.md",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_early_extra_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_literals.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_array_variants.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_LCT_editor_results.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_xxd_build.json",
+        "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_valgrind_source_layout.json"
+      ],
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/00-09.md",
+        "reports/E3_LCT_early_results.json",
+        "reports/E3_LCT_early_extra_results.json",
+        "reports/E3_LCT_literals.json",
+        "reports/E3_LCT_array_variants.json",
+        "reports/E3_LCT_editor_results.json",
+        "reports/E3_xxd_build.json",
+        "reports/E3_valgrind_source_layout.json"
+      ],
+      "details": "Original and derived examples, negative cases and chapter explanation verified; original source is preserved."
+    },
+    {
+      "id": "LCT-10-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex10_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex10_original"
+      ]
+    },
+    {
+      "id": "LCT-10-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex10_many",
+        "ex10_python",
+        "ex10_exec_limit.json",
+        "ex10_bad_count",
+        "ex11_uninitialized",
+        "ex11_bounded_nontermination",
+        "ex11_nontermination_note.json"
+      ],
+      "details": "Real failures/observations retained; oversized argv is OS E2BIG. Nontermination has static invariant explanation and separately labeled timeout.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex10_many",
+        "artifacts/E3/LCT/ex10_python",
+        "artifacts/E3/LCT/ex10_exec_limit.json",
+        "artifacts/E3/LCT/ex10_bad_count",
+        "artifacts/E3/LCT/ex11_uninitialized",
+        "artifacts/E3/LCT/ex11_bounded_nontermination",
+        "artifacts/E3/LCT/ex11_nontermination_note.json"
+      ]
+    },
+    {
+      "id": "LCT-10-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-10-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-10-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-10-X04",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-11-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex11_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex11_original"
+      ]
+    },
+    {
+      "id": "LCT-11-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex10_many",
+        "ex10_python",
+        "ex10_exec_limit.json",
+        "ex10_bad_count",
+        "ex11_uninitialized",
+        "ex11_bounded_nontermination",
+        "ex11_nontermination_note.json"
+      ],
+      "details": "Real failures/observations retained; oversized argv is OS E2BIG. Nontermination has static invariant explanation and separately labeled timeout.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex10_many",
+        "artifacts/E3/LCT/ex10_python",
+        "artifacts/E3/LCT/ex10_exec_limit.json",
+        "artifacts/E3/LCT/ex10_bad_count",
+        "artifacts/E3/LCT/ex11_uninitialized",
+        "artifacts/E3/LCT/ex11_bounded_nontermination",
+        "artifacts/E3/LCT/ex11_nontermination_note.json"
+      ]
+    },
+    {
+      "id": "LCT-11-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-11-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-11-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-11-X04",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-12-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex12_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex12_original"
+      ]
+    },
+    {
+      "id": "LCT-12-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex12_or_fault",
+        "ex12_missing_else",
+        "ex12_correct_message"
+      ],
+      "details": "Argument-count boundaries tested; wrong branch coverage is a logic error even without a crash; corrected argv0 wording.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex12_or_fault",
+        "artifacts/E3/LCT/ex12_missing_else",
+        "artifacts/E3/LCT/ex12_correct_message"
+      ]
+    },
+    {
+      "id": "LCT-12-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-12-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex12_or_fault",
+        "ex12_missing_else",
+        "ex12_correct_message"
+      ],
+      "details": "Argument-count boundaries tested; wrong branch coverage is a logic error even without a crash; corrected argv0 wording.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex12_or_fault",
+        "artifacts/E3/LCT/ex12_missing_else",
+        "artifacts/E3/LCT/ex12_correct_message"
+      ]
+    },
+    {
+      "id": "LCT-12-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-12-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex12_or_fault",
+        "ex12_missing_else",
+        "ex12_correct_message"
+      ],
+      "details": "Argument-count boundaries tested; wrong branch coverage is a logic error even without a crash; corrected argv0 wording.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex12_or_fault",
+        "artifacts/E3/LCT/ex12_missing_else",
+        "artifacts/E3/LCT/ex12_correct_message"
+      ]
+    },
+    {
+      "id": "LCT-13-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex13_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex13_original"
+      ]
+    },
+    {
+      "id": "LCT-13-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex13_no_break",
+        "ex13_y_original",
+        "ex13_y_changed"
+      ],
+      "details": "Actual fall-through experiments including Y with break inside/outside if.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex13_no_break",
+        "artifacts/E3/LCT/ex13_y_original",
+        "artifacts/E3/LCT/ex13_y_changed"
+      ]
+    },
+    {
+      "id": "LCT-13-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-13-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-13-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-13-X04",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-13-X05",
+      "status": "PASS",
+      "evidence": [
+        "ex13_no_break",
+        "ex13_y_original",
+        "ex13_y_changed"
+      ],
+      "details": "Actual fall-through experiments including Y with break inside/outside if.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex13_no_break",
+        "artifacts/E3/LCT/ex13_y_original",
+        "artifacts/E3/LCT/ex13_y_changed"
+      ]
+    },
+    {
+      "id": "LCT-14-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex14_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex14_original"
+      ]
+    },
+    {
+      "id": "LCT-14-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex14_no_declarations",
+        "ex14_overrun_argv"
+      ],
+      "details": "Removed prototypes diagnosed by compiler; argv[argc] is NULL and argc+1 eventually dereferences it.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex14_no_declarations",
+        "artifacts/E3/LCT/ex14_overrun_argv"
+      ]
+    },
+    {
+      "id": "LCT-14-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-14-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-14-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json",
+        "manual/isalpha",
+        "manual/isblank",
+        "manual/isdigit"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json",
+        "artifacts/E3/LCT/manual/isalpha",
+        "artifacts/E3/LCT/manual/isblank",
+        "artifacts/E3/LCT/manual/isdigit"
+      ]
+    },
+    {
+      "id": "LCT-14-X04",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md"
+      ],
+      "details": "Compared primary GNU/Linux style documentation; distinguishes old K&R parameter definitions from brace style.",
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/10-33.md"
+      ]
+    },
+    {
+      "id": "LCT-15-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex15_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex15_original"
+      ]
+    },
+    {
+      "id": "LCT-15-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex15_wrong_type",
+        "ex15_wrong_bounds"
+      ],
+      "details": "Wrong object type changes values; one-past-end dereference caught by ASan. Reverse traversal is separately implemented without forming before-begin pointers.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex15_wrong_type",
+        "artifacts/E3/LCT/ex15_wrong_bounds"
+      ]
+    },
+    {
+      "id": "LCT-15-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-15-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-15-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-15-X04",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-15-X05",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-15-X06",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-15-X07",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-15-X08",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-16-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex16_original"
+      ],
+      "details": "Original code compiled and run in Linux; output checked independently, Memcheck0 errors. POSIX strdup is compiled in GNU17 mode.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex16_original"
+      ]
+    },
+    {
+      "id": "LCT-16-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex16_null_destroy",
+        "ex16_no_destroy",
+        "ex16_name_leak",
+        "ex16_null_print"
+      ],
+      "details": "Real assert failure, whole-object leaks, name-only leaks and invalid read. -g is not the assertion-enable switch; NDEBUG controls assertions.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex16_null_destroy",
+        "artifacts/E3/LCT/ex16_no_destroy",
+        "artifacts/E3/LCT/ex16_name_leak",
+        "artifacts/E3/LCT/ex16_null_print"
+      ]
+    },
+    {
+      "id": "LCT-16-X01",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-16-X02",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-16-X03",
+      "status": "PASS",
+      "evidence": [
+        "middle_extensions_0",
+        "middle_extensions_1",
+        "middle_extensions_4",
+        "middle_extensions_12",
+        "ex10_null_observation.json"
+      ],
+      "details": "Native assertions and independent output/stride oracle cover comma-loop sequencing, short circuit, bounded shallow copies, reverse traversal, switch/if equivalents, fixed-length functions including embedded NUL, all four pointer/index forms, and by-value stack structs. Notes explain applicable scope.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/middle_extensions_0",
+        "artifacts/E3/LCT/middle_extensions_1",
+        "artifacts/E3/LCT/middle_extensions_4",
+        "artifacts/E3/LCT/middle_extensions_12",
+        "artifacts/E3/LCT/ex10_null_observation.json"
+      ]
+    },
+    {
+      "id": "LCT-17-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex17_create",
+        "ex17_get",
+        "ex17_long_get",
+        "ex17_classic_get",
+        "ex17_negative_id",
+        "ex17_corrupt_short"
+      ],
+      "details": "Original CRUD/size verified; long strncpy fields reproduce concatenation defect; copied correction terminates; negative IDs and corrupted file tested. Allocation limit has a separate bounded probe.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex17_create",
+        "artifacts/E3/LCT/ex17_get",
+        "artifacts/E3/LCT/ex17_long_get",
+        "artifacts/E3/LCT/ex17_classic_get",
+        "artifacts/E3/LCT/ex17_negative_id",
+        "artifacts/E3/LCT/ex17_corrupt_short"
+      ]
+    },
+    {
+      "id": "LCT-17-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex17_create",
+        "ex17_get",
+        "ex17_long_get",
+        "ex17_classic_get",
+        "ex17_negative_id",
+        "ex17_corrupt_short"
+      ],
+      "details": "Original CRUD/size verified; long strncpy fields reproduce concatenation defect; copied correction terminates; negative IDs and corrupted file tested. Allocation limit has a separate bounded probe.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex17_create",
+        "artifacts/E3/LCT/ex17_get",
+        "artifacts/E3/LCT/ex17_long_get",
+        "artifacts/E3/LCT/ex17_classic_get",
+        "artifacts/E3/LCT/ex17_negative_id",
+        "artifacts/E3/LCT/ex17_corrupt_short"
+      ]
+    },
+    {
+      "id": "LCT-17-X01",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/database_model_list35",
+        "artifacts/E3/LCT/database_checksum",
+        "artifacts/E3/LCT/database_global_get",
+        "artifacts/E3/LCT/database_size_probe.json"
+      ]
+    },
+    {
+      "id": "LCT-17-X02",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/database_model_list35",
+        "artifacts/E3/LCT/database_checksum",
+        "artifacts/E3/LCT/database_global_get",
+        "artifacts/E3/LCT/database_size_probe.json"
+      ]
+    },
+    {
+      "id": "LCT-17-X03",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/database_model_list35",
+        "artifacts/E3/LCT/database_checksum",
+        "artifacts/E3/LCT/database_global_get",
+        "artifacts/E3/LCT/database_size_probe.json"
+      ]
+    },
+    {
+      "id": "LCT-17-X04",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/database_model_list35",
+        "artifacts/E3/LCT/database_checksum",
+        "artifacts/E3/LCT/database_global_get",
+        "artifacts/E3/LCT/database_size_probe.json"
+      ]
+    },
+    {
+      "id": "LCT-17-X05",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/database_model_list35",
+        "artifacts/E3/LCT/database_checksum",
+        "artifacts/E3/LCT/database_global_get",
+        "artifacts/E3/LCT/database_size_probe.json"
+      ]
+    },
+    {
+      "id": "LCT-17-X06",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/database_model_list35",
+        "artifacts/E3/LCT/database_checksum",
+        "artifacts/E3/LCT/database_global_get",
+        "artifacts/E3/LCT/database_size_probe.json"
+      ]
+    },
+    {
+      "id": "LCT-17-X07",
+      "status": "PASS",
+      "evidence": [
+        "database_model_list35",
+        "database_checksum",
+        "database_global_get",
+        "database_size_probe.json"
+      ],
+      "details": "Parameterized persistent format and searchable city/age, checked cleanup on failures, independent dict/binary-layout/checksum oracle, automation, and global-context refactor. Original struct1032 bytes; portable new file32+rows*(5+3*width), without native padding.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/database_model_list35",
+        "artifacts/E3/LCT/database_checksum",
+        "artifacts/E3/LCT/database_global_get",
+        "artifacts/E3/LCT/database_size_probe.json"
+      ]
+    },
+    {
+      "id": "LCT-17-X08",
+      "status": "PASS",
+      "evidence": [
+        "stack"
+      ],
+      "details": "Independent Python and C capacity8 stacks agree on2000 operations including full and empty; data-structure stack is distinct from call-stack memory.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/stack"
+      ]
+    },
+    {
+      "id": "LCT-18-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex18_original"
+      ],
+      "details": "All three printed rows match the archived worked example. strange_order is not a general strict ordering; it is not described as a valid universal comparator.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex18_original"
+      ]
+    },
+    {
+      "id": "LCT-18-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex18_symbol_map.json",
+        "artifacts/E3/LCT/ex18_hex_edit",
+        "artifacts/E3/LCT/ex18_modified",
+        "artifacts/E3/LCT/ex18_wrong_callback",
+        "artifacts/E3/LCT/ex18_null_callback",
+        "artifacts/E3/LCT/sort_callbacks"
+      ]
+    },
+    {
+      "id": "LCT-18-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex18_symbol_map.json",
+        "artifacts/E3/LCT/ex18_hex_edit",
+        "artifacts/E3/LCT/ex18_modified",
+        "artifacts/E3/LCT/ex18_wrong_callback",
+        "artifacts/E3/LCT/ex18_null_callback",
+        "artifacts/E3/LCT/sort_callbacks"
+      ]
+    },
+    {
+      "id": "LCT-18-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex18_symbol_map.json",
+        "artifacts/E3/LCT/ex18_hex_edit",
+        "artifacts/E3/LCT/ex18_modified",
+        "artifacts/E3/LCT/ex18_wrong_callback",
+        "artifacts/E3/LCT/ex18_null_callback",
+        "artifacts/E3/LCT/sort_callbacks"
+      ]
+    },
+    {
+      "id": "LCT-18-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex18_symbol_map.json",
+        "artifacts/E3/LCT/ex18_hex_edit",
+        "artifacts/E3/LCT/ex18_modified",
+        "artifacts/E3/LCT/ex18_wrong_callback",
+        "artifacts/E3/LCT/ex18_null_callback",
+        "artifacts/E3/LCT/sort_callbacks"
+      ]
+    },
+    {
+      "id": "LCT-18-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex18_symbol_map.json",
+        "artifacts/E3/LCT/ex18_hex_edit",
+        "artifacts/E3/LCT/ex18_modified",
+        "artifacts/E3/LCT/ex18_wrong_callback",
+        "artifacts/E3/LCT/ex18_null_callback",
+        "artifacts/E3/LCT/sort_callbacks"
+      ]
+    },
+    {
+      "id": "LCT-18-X05",
+      "status": "PASS",
+      "evidence": [
+        "ex18_symbol_map.json",
+        "ex18_hex_edit",
+        "ex18_modified",
+        "ex18_wrong_callback",
+        "ex18_null_callback",
+        "sort_callbacks"
+      ],
+      "details": "Actual code-byte inspection and binary-string edit; signature error/NULL call; bubble/insertion through sort and comparator callbacks checked against qsort for0..64 elements and both directions, including integer extrema without subtraction overflow.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex18_symbol_map.json",
+        "artifacts/E3/LCT/ex18_hex_edit",
+        "artifacts/E3/LCT/ex18_modified",
+        "artifacts/E3/LCT/ex18_wrong_callback",
+        "artifacts/E3/LCT/ex18_null_callback",
+        "artifacts/E3/LCT/sort_callbacks"
+      ]
+    },
+    {
+      "id": "LCT-19-BASE",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "game_original"
+      ],
+      "details": "Original program truly ran; its graph is never destroyed and Memcheck reports leaks. Derived versions add explicit ownership and cleanup rather than reporting original as memory-clean.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/game_original"
+      ]
+    },
+    {
+      "id": "LCT-19-X01",
+      "status": "PASS",
+      "evidence": [
+        "games/build",
+        "games/test",
+        "games/clean",
+        "games/rebuild"
+      ],
+      "details": "Expanded to6 rooms/3 monsters; shared object.o/actors.o reused by second Map/main. make test drives five scenarios under Memcheck; make clean includes object.o. Graph owns rooms once; directional edges are borrowed, preventing recursive double-free.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/games/build",
+        "artifacts/E3/LCT/games/test",
+        "artifacts/E3/LCT/games/clean",
+        "artifacts/E3/LCT/games/rebuild"
+      ]
+    },
+    {
+      "id": "LCT-19-X02",
+      "status": "PASS",
+      "evidence": [
+        "games/build",
+        "games/test",
+        "games/clean",
+        "games/rebuild"
+      ],
+      "details": "Expanded to6 rooms/3 monsters; shared object.o/actors.o reused by second Map/main. make test drives five scenarios under Memcheck; make clean includes object.o. Graph owns rooms once; directional edges are borrowed, preventing recursive double-free.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/games/build",
+        "artifacts/E3/LCT/games/test",
+        "artifacts/E3/LCT/games/clean",
+        "artifacts/E3/LCT/games/rebuild"
+      ]
+    },
+    {
+      "id": "LCT-19-X03",
+      "status": "PASS",
+      "evidence": [
+        "games/build",
+        "games/test",
+        "games/clean",
+        "games/rebuild"
+      ],
+      "details": "Expanded to6 rooms/3 monsters; shared object.o/actors.o reused by second Map/main. make test drives five scenarios under Memcheck; make clean includes object.o. Graph owns rooms once; directional edges are borrowed, preventing recursive double-free.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/games/build",
+        "artifacts/E3/LCT/games/test",
+        "artifacts/E3/LCT/games/clean",
+        "artifacts/E3/LCT/games/rebuild"
+      ]
+    },
+    {
+      "id": "LCT-19-X04",
+      "status": "PASS",
+      "evidence": [
+        "games/build",
+        "games/test",
+        "games/clean",
+        "games/rebuild"
+      ],
+      "details": "Expanded to6 rooms/3 monsters; shared object.o/actors.o reused by second Map/main. make test drives five scenarios under Memcheck; make clean includes object.o. Graph owns rooms once; directional edges are borrowed, preventing recursive double-free.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/games/build",
+        "artifacts/E3/LCT/games/test",
+        "artifacts/E3/LCT/games/clean",
+        "artifacts/E3/LCT/games/rebuild"
+      ]
+    },
+    {
+      "id": "LCT-20-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex20/run",
+        "ex20_top_ndebug/run",
+        "ex20_flag_ndebug/run",
+        "ex20_functions/run"
+      ],
+      "details": "Original macro error paths and cleanup tested; NDEBUG removes debug output but does not remove check/goto behavior; function/file/line included in derived macros.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex20/run",
+        "artifacts/E3/LCT/ex20_top_ndebug/run",
+        "artifacts/E3/LCT/ex20_flag_ndebug/run",
+        "artifacts/E3/LCT/ex20_functions/run"
+      ]
+    },
+    {
+      "id": "LCT-20-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex20/run",
+        "ex20_top_ndebug/run",
+        "ex20_flag_ndebug/run",
+        "ex20_functions/run"
+      ],
+      "details": "Original macro error paths and cleanup tested; NDEBUG removes debug output but does not remove check/goto behavior; function/file/line included in derived macros.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex20/run",
+        "artifacts/E3/LCT/ex20_top_ndebug/run",
+        "artifacts/E3/LCT/ex20_flag_ndebug/run",
+        "artifacts/E3/LCT/ex20_functions/run"
+      ]
+    },
+    {
+      "id": "LCT-20-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex20/run",
+        "ex20_top_ndebug/run",
+        "ex20_flag_ndebug/run",
+        "ex20_functions/run"
+      ],
+      "details": "Original macro error paths and cleanup tested; NDEBUG removes debug output but does not remove check/goto behavior; function/file/line included in derived macros.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex20/run",
+        "artifacts/E3/LCT/ex20_top_ndebug/run",
+        "artifacts/E3/LCT/ex20_flag_ndebug/run",
+        "artifacts/E3/LCT/ex20_functions/run"
+      ]
+    },
+    {
+      "id": "LCT-20-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex20/run",
+        "ex20_top_ndebug/run",
+        "ex20_flag_ndebug/run",
+        "ex20_functions/run"
+      ],
+      "details": "Original macro error paths and cleanup tested; NDEBUG removes debug output but does not remove check/goto behavior; function/file/line included in derived macros.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex20/run",
+        "artifacts/E3/LCT/ex20_top_ndebug/run",
+        "artifacts/E3/LCT/ex20_flag_ndebug/run",
+        "artifacts/E3/LCT/ex20_functions/run"
+      ]
+    },
+    {
+      "id": "LCT-21-BASE",
+      "status": "PASS",
+      "evidence": [
+        "types",
+        "stdint_macros",
+        "types_table.json"
+      ],
+      "details": "All listed type families/limits measured, representative qualifiers/operators/control verified. Volatile does not disable all optimization or provide synchronization; register is not a physical allocation guarantee.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/types",
+        "artifacts/E3/LCT/stdint_macros",
+        "artifacts/E3/LCT/types_table.json"
+      ]
+    },
+    {
+      "id": "LCT-21-X01",
+      "status": "PASS",
+      "evidence": [
+        "types",
+        "stdint_macros",
+        "types_table.json"
+      ],
+      "details": "All listed type families/limits measured, representative qualifiers/operators/control verified. Volatile does not disable all optimization or provide synchronization; register is not a physical allocation guarantee.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/types",
+        "artifacts/E3/LCT/stdint_macros",
+        "artifacts/E3/LCT/types_table.json"
+      ]
+    },
+    {
+      "id": "LCT-21-X02",
+      "status": "PASS",
+      "evidence": [
+        "types",
+        "stdint_macros",
+        "types_table.json"
+      ],
+      "details": "All listed type families/limits measured, representative qualifiers/operators/control verified. Volatile does not disable all optimization or provide synchronization; register is not a physical allocation guarantee.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/types",
+        "artifacts/E3/LCT/stdint_macros",
+        "artifacts/E3/LCT/types_table.json"
+      ]
+    },
+    {
+      "id": "LCT-21-X03",
+      "status": "MATERIAL_PREPARED_HUMAN_DURATION",
+      "evidence": [
+        "E/E3/lcthw/notes/21-flashcards.md",
+        "types"
+      ],
+      "details": "Actual flashcards provided; no claim of elapsed daily human practice.",
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/21-flashcards.md",
+        "artifacts/E3/LCT/types"
+      ]
+    },
+    {
+      "id": "LCT-21-X04",
+      "status": "PASS",
+      "evidence": [
+        "types",
+        "stdint_macros",
+        "types_table.json"
+      ],
+      "details": "All listed type families/limits measured, representative qualifiers/operators/control verified. Volatile does not disable all optimization or provide synchronization; register is not a physical allocation guarantee.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/types",
+        "artifacts/E3/LCT/stdint_macros",
+        "artifacts/E3/LCT/types_table.json"
+      ]
+    },
+    {
+      "id": "LCT-22-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex22_make",
+        "ex22/run"
+      ],
+      "details": "Real separate object compilation/linking; static lifetime retains ratio, file-static age exposed only by accessors, local shadowing leaves caller count4.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex22_make",
+        "artifacts/E3/LCT/ex22/run"
+      ]
+    },
+    {
+      "id": "LCT-22-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex22_hidden",
+        "artifacts/E3/LCT/ex22_multiple_definition",
+        "artifacts/E3/LCT/const_write",
+        "artifacts/E3/LCT/scope_pointer",
+        "artifacts/E3/LCT/scope_invalid",
+        "artifacts/E3/LCT/stack_overflow/gdb"
+      ]
+    },
+    {
+      "id": "LCT-22-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex22_hidden",
+        "artifacts/E3/LCT/ex22_multiple_definition",
+        "artifacts/E3/LCT/const_write",
+        "artifacts/E3/LCT/scope_pointer",
+        "artifacts/E3/LCT/scope_invalid",
+        "artifacts/E3/LCT/stack_overflow/gdb"
+      ]
+    },
+    {
+      "id": "LCT-22-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex22_hidden",
+        "artifacts/E3/LCT/ex22_multiple_definition",
+        "artifacts/E3/LCT/const_write",
+        "artifacts/E3/LCT/scope_pointer",
+        "artifacts/E3/LCT/scope_invalid",
+        "artifacts/E3/LCT/stack_overflow/gdb"
+      ]
+    },
+    {
+      "id": "LCT-22-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex22_hidden",
+        "artifacts/E3/LCT/ex22_multiple_definition",
+        "artifacts/E3/LCT/const_write",
+        "artifacts/E3/LCT/scope_pointer",
+        "artifacts/E3/LCT/scope_invalid",
+        "artifacts/E3/LCT/stack_overflow/gdb"
+      ]
+    },
+    {
+      "id": "LCT-22-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex22_hidden",
+        "ex22_multiple_definition",
+        "const_write",
+        "scope_pointer",
+        "scope_invalid",
+        "stack_overflow/gdb"
+      ],
+      "details": "Compiler/linker enforcement, real pointer escape to live static object, by-value vs pointer update, bad write diagnostics and bounded128KiB stack exhaustion with GDB backtrace. No global stack limit or ptrace policy changed.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex22_hidden",
+        "artifacts/E3/LCT/ex22_multiple_definition",
+        "artifacts/E3/LCT/const_write",
+        "artifacts/E3/LCT/scope_pointer",
+        "artifacts/E3/LCT/scope_invalid",
+        "artifacts/E3/LCT/stack_overflow/gdb"
+      ]
+    },
+    {
+      "id": "LCT-22-X05",
+      "status": "PASS",
+      "evidence": [
+        "ex22_make",
+        "ex22/run"
+      ],
+      "details": "Real separate object compilation/linking; static lifetime retains ratio, file-static age exposed only by accessors, local shadowing leaves caller count4.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex22_make",
+        "artifacts/E3/LCT/ex22/run"
+      ]
+    },
+    {
+      "id": "LCT-24-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex24",
+        "artifacts/E3/LCT/io_safe_valid",
+        "artifacts/E3/LCT/io_safe_bad0",
+        "artifacts/E3/LCT/ex24_scanf",
+        "artifacts/E3/LCT/scanf_delimiter",
+        "artifacts/E3/LCT/gets_fuzz0",
+        "artifacts/E3/LCT/ex24_bad_eyes",
+        "artifacts/E3/LCT/reader_100"
+      ]
+    },
+    {
+      "id": "LCT-24-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex24",
+        "artifacts/E3/LCT/io_safe_valid",
+        "artifacts/E3/LCT/io_safe_bad0",
+        "artifacts/E3/LCT/ex24_scanf",
+        "artifacts/E3/LCT/scanf_delimiter",
+        "artifacts/E3/LCT/gets_fuzz0",
+        "artifacts/E3/LCT/ex24_bad_eyes",
+        "artifacts/E3/LCT/reader_100"
+      ]
+    },
+    {
+      "id": "LCT-24-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex24",
+        "artifacts/E3/LCT/io_safe_valid",
+        "artifacts/E3/LCT/io_safe_bad0",
+        "artifacts/E3/LCT/ex24_scanf",
+        "artifacts/E3/LCT/scanf_delimiter",
+        "artifacts/E3/LCT/gets_fuzz0",
+        "artifacts/E3/LCT/ex24_bad_eyes",
+        "artifacts/E3/LCT/reader_100"
+      ]
+    },
+    {
+      "id": "LCT-24-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex24",
+        "artifacts/E3/LCT/io_safe_valid",
+        "artifacts/E3/LCT/io_safe_bad0",
+        "artifacts/E3/LCT/ex24_scanf",
+        "artifacts/E3/LCT/scanf_delimiter",
+        "artifacts/E3/LCT/gets_fuzz0",
+        "artifacts/E3/LCT/ex24_bad_eyes",
+        "artifacts/E3/LCT/reader_100"
+      ]
+    },
+    {
+      "id": "LCT-24-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex24",
+        "artifacts/E3/LCT/io_safe_valid",
+        "artifacts/E3/LCT/io_safe_bad0",
+        "artifacts/E3/LCT/ex24_scanf",
+        "artifacts/E3/LCT/scanf_delimiter",
+        "artifacts/E3/LCT/gets_fuzz0",
+        "artifacts/E3/LCT/ex24_bad_eyes",
+        "artifacts/E3/LCT/reader_100"
+      ]
+    },
+    {
+      "id": "LCT-24-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex24",
+        "io_safe_valid",
+        "io_safe_bad0",
+        "ex24_scanf",
+        "scanf_delimiter",
+        "gets_fuzz0",
+        "ex24_bad_eyes",
+        "reader_100"
+      ],
+      "details": "Original input, strict line/strto conversion, whitespace removal and length-bounded file reading tested; original width50 is not an overflow and leaves newline. Unsafe gets is isolated with recorded urandom bytes; removed eye bounds triggers sanitizer.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex24",
+        "artifacts/E3/LCT/io_safe_valid",
+        "artifacts/E3/LCT/io_safe_bad0",
+        "artifacts/E3/LCT/ex24_scanf",
+        "artifacts/E3/LCT/scanf_delimiter",
+        "artifacts/E3/LCT/gets_fuzz0",
+        "artifacts/E3/LCT/ex24_bad_eyes",
+        "artifacts/E3/LCT/reader_100"
+      ]
+    },
+    {
+      "id": "LCT-25-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex25_original",
+        "artifacts/E3/LCT/ex25_wrong_args",
+        "artifacts/E3/LCT/ex25_fixed",
+        "artifacts/E3/LCT/ex25_fixed_bad0",
+        "artifacts/E3/LCT/ex25_man"
+      ]
+    },
+    {
+      "id": "LCT-25-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex25_original",
+        "artifacts/E3/LCT/ex25_wrong_args",
+        "artifacts/E3/LCT/ex25_fixed",
+        "artifacts/E3/LCT/ex25_fixed_bad0",
+        "artifacts/E3/LCT/ex25_man"
+      ]
+    },
+    {
+      "id": "LCT-25-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex25_original",
+        "artifacts/E3/LCT/ex25_wrong_args",
+        "artifacts/E3/LCT/ex25_fixed",
+        "artifacts/E3/LCT/ex25_fixed_bad0",
+        "artifacts/E3/LCT/ex25_man"
+      ]
+    },
+    {
+      "id": "LCT-25-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex25_original",
+        "artifacts/E3/LCT/ex25_wrong_args",
+        "artifacts/E3/LCT/ex25_fixed",
+        "artifacts/E3/LCT/ex25_fixed_bad0",
+        "artifacts/E3/LCT/ex25_man"
+      ]
+    },
+    {
+      "id": "LCT-25-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex25_original",
+        "ex25_wrong_args",
+        "ex25_fixed",
+        "ex25_fixed_bad0",
+        "ex25_man"
+      ],
+      "details": "Actual varargs example and violated-contract observation; derived malloc/fgetc line reader bounds and drains input, rejects numeric junk/overflow, checks EOF and literal separators, and cleans previous allocations. Own%d/%c/%s/%% formatter used by main; not claimed to implement all printf syntax.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex25_original",
+        "artifacts/E3/LCT/ex25_wrong_args",
+        "artifacts/E3/LCT/ex25_fixed",
+        "artifacts/E3/LCT/ex25_fixed_bad0",
+        "artifacts/E3/LCT/ex25_man"
+      ]
+    },
+    {
+      "id": "LCT-27-BASE",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ex27_verbatim",
+        "ex27_book",
+        "ex27_overflow",
+        "ex27_gap",
+        "defensive_copy"
+      ],
+      "details": "Original missing# repaired in copy; reviewed numeric overflow before validation and uninitialized output gap. Defined preconditions, overlap behavior, immediate terminator and automated boundary/negative tests. Raw original remains unchanged.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex27_verbatim",
+        "artifacts/E3/LCT/ex27_book",
+        "artifacts/E3/LCT/ex27_overflow",
+        "artifacts/E3/LCT/ex27_gap",
+        "artifacts/E3/LCT/defensive_copy"
+      ]
+    },
+    {
+      "id": "LCT-27-X01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ex27_verbatim",
+        "ex27_book",
+        "ex27_overflow",
+        "ex27_gap",
+        "defensive_copy"
+      ],
+      "details": "Original missing# repaired in copy; reviewed numeric overflow before validation and uninitialized output gap. Defined preconditions, overlap behavior, immediate terminator and automated boundary/negative tests. Raw original remains unchanged.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex27_verbatim",
+        "artifacts/E3/LCT/ex27_book",
+        "artifacts/E3/LCT/ex27_overflow",
+        "artifacts/E3/LCT/ex27_gap",
+        "artifacts/E3/LCT/defensive_copy"
+      ]
+    },
+    {
+      "id": "LCT-27-X02",
+      "status": "PASS_REVIEW_NO_CONFIRMED_BUG",
+      "evidence": [
+        "review/xxd_bound",
+        "review/xxd_slice",
+        "review/xxd_missing",
+        "reports/E3_xxd_build.json"
+      ],
+      "details": "Reviewed pinned official xxd argument-size checks, input/output error paths and Makefile; exercised invalid columns, bounded slice and missing file. No confirmed new upstream bug in reviewed scope, so conditional patch-submission requirement did not arise.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/review/xxd_bound",
+        "artifacts/E3/LCT/review/xxd_slice",
+        "artifacts/E3/LCT/review/xxd_missing",
+        "reports/E3_xxd_build.json"
+      ]
+    },
+    {
+      "id": "LCT-28-BASE",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "library/build",
+        "library/badfuncs",
+        "library/negative_harness"
+      ],
+      "details": "Real static/shared libraries and nonempty positive/negative tests. Book recipe spaces restored to TAB; link libraries moved after source/object arguments for modern linker ordering. BADFUNCS is a textual warning heuristic, not a proof of vulnerability or safety.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/library/build",
+        "artifacts/E3/LCT/library/badfuncs",
+        "artifacts/E3/LCT/library/negative_harness"
+      ]
+    },
+    {
+      "id": "LCT-28-X01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "library/build",
+        "library/badfuncs",
+        "library/negative_harness"
+      ],
+      "details": "Real static/shared libraries and nonempty positive/negative tests. Book recipe spaces restored to TAB; link libraries moved after source/object arguments for modern linker ordering. BADFUNCS is a textual warning heuristic, not a proof of vulnerability or safety.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/library/build",
+        "artifacts/E3/LCT/library/badfuncs",
+        "artifacts/E3/LCT/library/negative_harness"
+      ]
+    },
+    {
+      "id": "LCT-28-X02",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "library/build",
+        "library/badfuncs",
+        "library/negative_harness"
+      ],
+      "details": "Real static/shared libraries and nonempty positive/negative tests. Book recipe spaces restored to TAB; link libraries moved after source/object arguments for modern linker ordering. BADFUNCS is a textual warning heuristic, not a proof of vulnerability or safety.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/library/build",
+        "artifacts/E3/LCT/library/badfuncs",
+        "artifacts/E3/LCT/library/negative_harness"
+      ]
+    },
+    {
+      "id": "LCT-28-X03",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "library/build",
+        "library/badfuncs",
+        "library/negative_harness"
+      ],
+      "details": "Real static/shared libraries and nonempty positive/negative tests. Book recipe spaces restored to TAB; link libraries moved after source/object arguments for modern linker ordering. BADFUNCS is a textual warning heuristic, not a proof of vulnerability or safety.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/library/build",
+        "artifacts/E3/LCT/library/badfuncs",
+        "artifacts/E3/LCT/library/negative_harness"
+      ]
+    },
+    {
+      "id": "LCT-29-BASE",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex29/library",
+        "artifacts/E3/LCT/ex29_corrupt",
+        "artifacts/E3/LCT/ex29_RTLD_NOW",
+        "artifacts/E3/LCT/ex29_RTLD_LAZY",
+        "artifacts/E3/LCT/length_loader",
+        "artifacts/E3/LCT/library/tests",
+        "artifacts/E3/LCT/ex29_man"
+      ]
+    },
+    {
+      "id": "LCT-29-BREAK",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex29/library",
+        "artifacts/E3/LCT/ex29_corrupt",
+        "artifacts/E3/LCT/ex29_RTLD_NOW",
+        "artifacts/E3/LCT/ex29_RTLD_LAZY",
+        "artifacts/E3/LCT/length_loader",
+        "artifacts/E3/LCT/library/tests",
+        "artifacts/E3/LCT/ex29_man"
+      ]
+    },
+    {
+      "id": "LCT-29-X01",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex29/library",
+        "artifacts/E3/LCT/ex29_corrupt",
+        "artifacts/E3/LCT/ex29_RTLD_NOW",
+        "artifacts/E3/LCT/ex29_RTLD_LAZY",
+        "artifacts/E3/LCT/length_loader",
+        "artifacts/E3/LCT/library/tests",
+        "artifacts/E3/LCT/ex29_man"
+      ]
+    },
+    {
+      "id": "LCT-29-X02",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex29/library",
+        "artifacts/E3/LCT/ex29_corrupt",
+        "artifacts/E3/LCT/ex29_RTLD_NOW",
+        "artifacts/E3/LCT/ex29_RTLD_LAZY",
+        "artifacts/E3/LCT/length_loader",
+        "artifacts/E3/LCT/library/tests",
+        "artifacts/E3/LCT/ex29_man"
+      ]
+    },
+    {
+      "id": "LCT-29-X03",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex29/library",
+        "artifacts/E3/LCT/ex29_corrupt",
+        "artifacts/E3/LCT/ex29_RTLD_NOW",
+        "artifacts/E3/LCT/ex29_RTLD_LAZY",
+        "artifacts/E3/LCT/length_loader",
+        "artifacts/E3/LCT/library/tests",
+        "artifacts/E3/LCT/ex29_man"
+      ]
+    },
+    {
+      "id": "LCT-29-X04",
+      "status": "PASS",
+      "evidence": [
+        "ex29/library",
+        "ex29_corrupt",
+        "ex29_RTLD_NOW",
+        "ex29_RTLD_LAZY",
+        "length_loader",
+        "library/tests",
+        "ex29_man"
+      ],
+      "details": "Actual shared object/loader, all normal/error cases, corrupted ELF rejection, explicit-length interface handles embeddedNUL and0xff, real unit-test target, RTLD_NOW/LAZY and manuals.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/ex29/library",
+        "artifacts/E3/LCT/ex29_corrupt",
+        "artifacts/E3/LCT/ex29_RTLD_NOW",
+        "artifacts/E3/LCT/ex29_RTLD_LAZY",
+        "artifacts/E3/LCT/length_loader",
+        "artifacts/E3/LCT/library/tests",
+        "artifacts/E3/LCT/ex29_man"
+      ]
+    },
+    {
+      "id": "LCT-30-BASE",
+      "status": "PASS",
+      "evidence": [
+        "library/tests",
+        "library/negative_harness",
+        "skeleton/build",
+        "c_runner/fail"
+      ],
+      "details": "Original minunit actual four tests populated and executed; clean skeleton copied/built without ex29; C fork/exec runner tested with success and failure, not just an empty suite.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/library/tests",
+        "artifacts/E3/LCT/library/negative_harness",
+        "artifacts/E3/LCT/skeleton/build",
+        "artifacts/E3/LCT/c_runner/fail"
+      ]
+    },
+    {
+      "id": "LCT-30-X01",
+      "status": "PASS",
+      "evidence": [
+        "library/tests",
+        "library/negative_harness",
+        "skeleton/build",
+        "c_runner/fail"
+      ],
+      "details": "Original minunit actual four tests populated and executed; clean skeleton copied/built without ex29; C fork/exec runner tested with success and failure, not just an empty suite.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/library/tests",
+        "artifacts/E3/LCT/library/negative_harness",
+        "artifacts/E3/LCT/skeleton/build",
+        "artifacts/E3/LCT/c_runner/fail"
+      ]
+    },
+    {
+      "id": "LCT-30-X02",
+      "status": "PASS",
+      "evidence": [
+        "library/tests",
+        "library/negative_harness",
+        "skeleton/build",
+        "c_runner/fail"
+      ],
+      "details": "Original minunit actual four tests populated and executed; clean skeleton copied/built without ex29; C fork/exec runner tested with success and failure, not just an empty suite.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/library/tests",
+        "artifacts/E3/LCT/library/negative_harness",
+        "artifacts/E3/LCT/skeleton/build",
+        "artifacts/E3/LCT/c_runner/fail"
+      ]
+    },
+    {
+      "id": "LCT-31-BASE",
+      "status": "PASS",
+      "evidence": [
+        "debugger/launched"
+      ],
+      "details": "Original nonprogress loop observed twice in actual GDB; setting i200 causes normal exit. Source is not incorrectly called a normally terminating program.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/debugger/launched"
+      ]
+    },
+    {
+      "id": "LCT-31-X01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "debugger/attached"
+      ],
+      "details": "Actual attach to an already-running target; no global ptrace changes. Current kernel lacks Yama, so ordinary same-user permission applies; portable test supports per-debugger opt-in when present.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/debugger/attached"
+      ]
+    },
+    {
+      "id": "LCT-31-X02",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "debugger"
+      ],
+      "details": "Official VS Code C/C++ documentation comparison, CLI GDB executed; GUI not runtime-tested.",
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "artifacts/E3/LCT/debugger"
+      ]
+    },
+    {
+      "id": "LCT-31-X03",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "debugger/core_generate",
+        "debugger/core_analyze"
+      ],
+      "details": "Actual crash at iteration5, real ELF core generated from stopped inferior and analyzed separately. Debugger-generated core avoids changing global core_pattern; inferior environment cleared of unrelated credentials.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/debugger/core_generate",
+        "artifacts/E3/LCT/debugger/core_analyze"
+      ]
+    },
+    {
+      "id": "LCT-32-BASE",
+      "status": "PASS",
+      "evidence": [
+        "list_original",
+        "list_properties"
+      ],
+      "details": "Original six tests plus3000 model-backed operations; node-copy/transfer-concat/split ownership is explicit; head/tail/prev/next/count checked in both directions.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/list_original",
+        "artifacts/E3/LCT/list_properties"
+      ]
+    },
+    {
+      "id": "LCT-32-X01",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "list_properties"
+      ],
+      "details": "Explained singly/doubly linked list time/space/cache tradeoffs, required predecessor, ownership and sorting constraints; connected to actual invariant and model tests.",
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "artifacts/E3/LCT/list_properties"
+      ]
+    },
+    {
+      "id": "LCT-32-X02",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "list_properties"
+      ],
+      "details": "Explained singly/doubly linked list time/space/cache tradeoffs, required predecessor, ownership and sorting constraints; connected to actual invariant and model tests.",
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "artifacts/E3/LCT/list_properties"
+      ]
+    },
+    {
+      "id": "LCT-32-X03",
+      "status": "PASS",
+      "evidence": [
+        "list_original",
+        "list_properties"
+      ],
+      "details": "Original six tests plus3000 model-backed operations; node-copy/transfer-concat/split ownership is explicit; head/tail/prev/next/count checked in both directions.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/list_original",
+        "artifacts/E3/LCT/list_properties"
+      ]
+    },
+    {
+      "id": "LCT-33-BASE",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "list_inline_original",
+        "list_merge_leak",
+        "list_algos_fixed",
+        "list_properties"
+      ],
+      "details": "Original inline linkage error reproduced; linkable original passes weak sortedness tests but leaks. Corrected copy-returning merge and iterative in-place bottom-up merge satisfy260 stable-sort cases including0/1 and duplicates. Sorted insertion preserves equal-key order.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/list_inline_original",
+        "artifacts/E3/LCT/list_merge_leak",
+        "artifacts/E3/LCT/list_algos_fixed",
+        "artifacts/E3/LCT/list_properties"
+      ]
+    },
+    {
+      "id": "LCT-33-X01",
+      "status": "PASS",
+      "evidence": [
+        "list_man_time",
+        "reports/E3_list_benchmark.json"
+      ],
+      "details": "16 actual timed batches, four input lengths and four methods, at least3seconds each. No physical-chip performance inference.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/list_man_time",
+        "reports/E3_list_benchmark.json"
+      ]
+    },
+    {
+      "id": "LCT-33-X02",
+      "status": "PASS",
+      "evidence": [
+        "list_man_time",
+        "reports/E3_list_benchmark.json"
+      ],
+      "details": "16 actual timed batches, four input lengths and four methods, at least3seconds each. No physical-chip performance inference.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/list_man_time",
+        "reports/E3_list_benchmark.json"
+      ]
+    },
+    {
+      "id": "LCT-33-X03",
+      "status": "PASS",
+      "evidence": [
+        "reports/E3_list_benchmark.json",
+        "E/E3/lcthw/figures/list_benchmark.png",
+        "E/E3/lcthw/figures/list_benchmark.svg",
+        "E/E3/lcthw/figures/list_benchmark.csv"
+      ],
+      "details": "Measured fixed-seed random lists at four lengths; generated and visually inspected plot, explained asymptotics and allocation costs, no confidence interval or global optimum claim.",
+      "resolved_evidence": [
+        "reports/E3_list_benchmark.json",
+        "E/E3/lcthw/figures/list_benchmark.png",
+        "E/E3/lcthw/figures/list_benchmark.svg",
+        "E/E3/lcthw/figures/list_benchmark.csv"
+      ]
+    },
+    {
+      "id": "LCT-33-X04",
+      "status": "PASS_DOCUMENTED",
+      "evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "list_properties"
+      ],
+      "details": "Explained singly/doubly linked list time/space/cache tradeoffs, required predecessor, ownership and sorting constraints; connected to actual invariant and model tests.",
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/10-33.md",
+        "artifacts/E3/LCT/list_properties"
+      ]
+    },
+    {
+      "id": "LCT-33-X05",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "list_inline_original",
+        "list_merge_leak",
+        "list_algos_fixed",
+        "list_properties"
+      ],
+      "details": "Original inline linkage error reproduced; linkable original passes weak sortedness tests but leaks. Corrected copy-returning merge and iterative in-place bottom-up merge satisfy260 stable-sort cases including0/1 and duplicates. Sorted insertion preserves equal-key order.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/list_inline_original",
+        "artifacts/E3/LCT/list_merge_leak",
+        "artifacts/E3/LCT/list_algos_fixed",
+        "artifacts/E3/LCT/list_properties"
+      ]
+    },
+    {
+      "id": "LCT-33-X06",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "list_inline_original",
+        "list_merge_leak",
+        "list_algos_fixed",
+        "list_properties"
+      ],
+      "details": "Original inline linkage error reproduced; linkable original passes weak sortedness tests but leaks. Corrected copy-returning merge and iterative in-place bottom-up merge satisfy260 stable-sort cases including0/1 and duplicates. Sorted insertion preserves equal-key order.",
+      "resolved_evidence": [
+        "artifacts/E3/LCT/list_inline_original",
+        "artifacts/E3/LCT/list_merge_leak",
+        "artifacts/E3/LCT/list_algos_fixed",
+        "artifacts/E3/LCT/list_properties"
+      ]
+    },
+    {
+      "id": "MS-01-01",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/setup",
+        "artifacts/E3/MS/shell/no_execute",
+        "artifacts/E3/MS/shell/execute_header"
+      ]
+    },
+    {
+      "id": "MS-01-02",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/setup",
+        "artifacts/E3/MS/shell/no_execute",
+        "artifacts/E3/MS/shell/execute_header"
+      ]
+    },
+    {
+      "id": "MS-01-03",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/setup",
+        "artifacts/E3/MS/shell/no_execute",
+        "artifacts/E3/MS/shell/execute_header"
+      ]
+    },
+    {
+      "id": "MS-01-04",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/setup",
+        "artifacts/E3/MS/shell/no_execute",
+        "artifacts/E3/MS/shell/execute_header"
+      ]
+    },
+    {
+      "id": "MS-01-05",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/setup",
+        "artifacts/E3/MS/shell/no_execute",
+        "artifacts/E3/MS/shell/execute_header"
+      ]
+    },
+    {
+      "id": "MS-01-06",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/setup",
+        "artifacts/E3/MS/shell/no_execute",
+        "artifacts/E3/MS/shell/execute_header"
+      ]
+    },
+    {
+      "id": "MS-01-07",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/setup",
+        "artifacts/E3/MS/shell/no_execute",
+        "artifacts/E3/MS/shell/execute_header"
+      ]
+    },
+    {
+      "id": "MS-01-08",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/setup",
+        "artifacts/E3/MS/shell/no_execute",
+        "artifacts/E3/MS/shell/execute_header"
+      ]
+    },
+    {
+      "id": "MS-01-09",
+      "status": "PASS",
+      "evidence": [
+        "shell/setup",
+        "shell/no_execute",
+        "shell/execute_header"
+      ],
+      "details": "Real Bash, permission rejection, executable shebang script and actual HTTP Last-Modified header.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/setup",
+        "artifacts/E3/MS/shell/no_execute",
+        "artifacts/E3/MS/shell/execute_header"
+      ]
+    },
+    {
+      "id": "MS-01-10",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "shell/sysfs_probe.json",
+        "data/host_probe.json"
+      ],
+      "details": "WSL sysfs lacks battery sensor; actual host Win32_Battery charge/status obtained read-only, explicitly Windows interface rather than fabricated Linux sysfs.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/shell/sysfs_probe.json",
+        "artifacts/E3/MS/data/host_probe.json"
+      ]
+    },
+    {
+      "id": "MS-02-01",
+      "status": "PASS",
+      "evidence": [
+        "scripts/ls",
+        "scripts/man_ls"
+      ],
+      "details": "Actual hidden file, colors, mtime order and human-readable size.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/scripts/ls",
+        "artifacts/E3/MS/scripts/man_ls"
+      ]
+    },
+    {
+      "id": "MS-02-02",
+      "status": "PASS",
+      "evidence": [
+        "scripts/marco",
+        "/home/USER/e3-lab/missing-semester/marco.sh"
+      ],
+      "details": "Returned to exact saved path including spaces.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/scripts/marco",
+        "E/E3/offline/ms/marco.sh"
+      ]
+    },
+    {
+      "id": "MS-02-03",
+      "status": "PASS",
+      "evidence": [
+        "scripts/until_failure",
+        "/home/USER/e3-lab/missing-semester/rare.sh"
+      ],
+      "details": "Original RANDOM script really failed; both streams and attempt count retained. Reaching the resource cap is not success.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/scripts/until_failure",
+        "E/E3/offline/ms/rare.sh"
+      ]
+    },
+    {
+      "id": "MS-02-04",
+      "status": "PASS",
+      "evidence": [
+        "scripts/html_zip",
+        "/home/USER/e3-lab/missing-semester/html-files.zip"
+      ],
+      "details": "NUL-safe pipeline independently checked on spaces, newline and leading hyphen filenames.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/scripts/html_zip",
+        "E/E3/offline/ms/html-files.zip"
+      ]
+    },
+    {
+      "id": "MS-02-05",
+      "status": "PASS",
+      "evidence": [
+        "scripts/newest"
+      ],
+      "details": "NUL-delimited sorting checked against independent stat.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/scripts/newest"
+      ]
+    },
+    {
+      "id": "MS-03-01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "editors/tutor_commands",
+        "/home/USER/e3-lab/missing-semester/vim-lab/vimtutor-source.txt"
+      ],
+      "details": "Native Vim assertions for all7 tutor command families: movement, operators/counts, insert/change, undo/redo, put, search/substitution, file/help/options. Automated practice, not a human time-based completion claim.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/editors/tutor_commands",
+        "E/E3/offline/ms/vim-lab/vimtutor-source.txt"
+      ]
+    },
+    {
+      "id": "MS-03-02",
+      "status": "PASS",
+      "evidence": [
+        "editors/settings",
+        "editors/plugin_docs"
+      ],
+      "details": "Course vimrc loaded, options inspected, CtrlP and commentary installed at pinned source commits in dedicated Linux user.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/editors/settings",
+        "artifacts/E3/MS/editors/plugin_docs"
+      ]
+    },
+    {
+      "id": "MS-03-03",
+      "status": "PASS",
+      "evidence": [
+        "editors/ctrlp.pty",
+        "editors/settings",
+        "/home/USER/e3-lab/missing-semester/vim-lab/picked.txt"
+      ],
+      "details": "Actual Ctrl-P typed into80x24 Vim PTY; picker opened the expected file.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/editors/ctrlp.pty",
+        "artifacts/E3/MS/editors/settings",
+        "E/E3/offline/ms/vim-lab/picked.txt"
+      ]
+    },
+    {
+      "id": "MS-03-04",
+      "status": "PASS",
+      "evidence": [
+        "editors/fizz_edit",
+        "editors/fizz_30"
+      ],
+      "details": "Actual Vim repair of all five demo defects, independently checked for1/3/5/15/30.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/editors/fizz_edit",
+        "artifacts/E3/MS/editors/fizz_30"
+      ]
+    },
+    {
+      "id": "MS-03-05",
+      "status": "NOT_APPLICABLE_HUMAN_DURATION",
+      "evidence": [
+        "E/E3/ms/NOTES.md"
+      ],
+      "details": "A month of personal editor habit cannot be truthfully compressed into this agent run; no future month claimed.",
+      "resolved_evidence": [
+        "E/E3/ms/NOTES.md"
+      ]
+    },
+    {
+      "id": "MS-03-06",
+      "status": "PASS",
+      "evidence": [
+        "editors/bash_vi"
+      ],
+      "details": "Actual Bash Readline vi mode; no Windows application settings changed.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/editors/bash_vi"
+      ]
+    },
+    {
+      "id": "MS-03-07",
+      "status": "PASS",
+      "evidence": [
+        "editors/settings",
+        "editors/plugin_docs"
+      ],
+      "details": "Course vimrc loaded, options inspected, CtrlP and commentary installed at pinned source commits in dedicated Linux user.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/editors/settings",
+        "artifacts/E3/MS/editors/plugin_docs"
+      ]
+    },
+    {
+      "id": "MS-03-08",
+      "status": "PASS",
+      "evidence": [
+        "editors/xml_macro",
+        "editors/xml_result.json"
+      ],
+      "details": "Actual Vim register macro; independent XML/JSON parsers compare every object. Read lecture macro guidance; not claimed to be solved without seeing hints.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/editors/xml_macro",
+        "artifacts/E3/MS/editors/xml_result.json"
+      ]
+    },
+    {
+      "id": "MS-04-01",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "editors/regex_tests.json"
+      ],
+      "details": "Tutorial concepts learned and executed as local ASCII-compatible regex/capture tests, rather than claiming website UI progress.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/editors/regex_tests.json"
+      ]
+    },
+    {
+      "id": "MS-04-02",
+      "status": "PASS",
+      "evidence": [
+        "data/words",
+        "data/words_analysis.json"
+      ],
+      "details": "Actual dictionary, independent substring/count oracle, all absent ASCII pairs.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/data/words",
+        "artifacts/E3/MS/data/words_analysis.json"
+      ]
+    },
+    {
+      "id": "MS-04-03",
+      "status": "PASS",
+      "evidence": [
+        "data/truncation"
+      ],
+      "details": "Actual shell redirection truncation and corrected sed -i, only within an isolated fixture.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/data/truncation"
+      ]
+    },
+    {
+      "id": "MS-04-04",
+      "status": "UNAVAILABLE_HISTORY_METHOD_TESTED",
+      "evidence": [
+        "data/journal_inventory",
+        "data/boot_scope.json",
+        "data/boot_method_fixture.json"
+      ],
+      "details": "Real history absent; fixture is labeled synthetic, never claimed as measured boots.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/data/journal_inventory",
+        "artifacts/E3/MS/data/boot_scope.json",
+        "artifacts/E3/MS/data/boot_method_fixture.json"
+      ]
+    },
+    {
+      "id": "MS-04-05",
+      "status": "UNAVAILABLE_HISTORY_METHOD_TESTED",
+      "evidence": [
+        "data/journal_inventory",
+        "data/boot_scope.json",
+        "data/boot_method_fixture.json"
+      ],
+      "details": "Real history absent; fixture is labeled synthetic, never claimed as measured boots.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/data/journal_inventory",
+        "artifacts/E3/MS/data/boot_scope.json",
+        "artifacts/E3/MS/data/boot_method_fixture.json"
+      ]
+    },
+    {
+      "id": "MS-04-06",
+      "status": "PASS",
+      "evidence": [
+        "data/iris_download",
+        "data/iris_minmax",
+        "data/iris_difference",
+        "data/iris_source.json"
+      ],
+      "details": "Real curl download; awk results checked against Decimal on identical source bytes.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/data/iris_download",
+        "artifacts/E3/MS/data/iris_minmax",
+        "artifacts/E3/MS/data/iris_difference",
+        "artifacts/E3/MS/data/iris_source.json"
+      ]
+    },
+    {
+      "id": "MS-05-01",
+      "status": "PASS",
+      "evidence": [
+        "terminal/pty.log"
+      ],
+      "details": "Real80x24 PTY, Ctrl-Z, bg, scoped pgrep/pkill on this shell child only.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/terminal/pty.log"
+      ]
+    },
+    {
+      "id": "MS-05-02",
+      "status": "PASS",
+      "evidence": [
+        "terminal/wait",
+        "terminal/pidwait"
+      ],
+      "details": "Actual60s wait and separate-shell non-child rejection; kill-0 polling tested.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/terminal/wait",
+        "artifacts/E3/MS/terminal/pidwait"
+      ]
+    },
+    {
+      "id": "MS-05-03",
+      "status": "PASS",
+      "evidence": [
+        "terminal/tmux_list",
+        "terminal/tmux_capture",
+        "terminal/tmux_option"
+      ],
+      "details": "Actual session, windows, split panes, key input/capture and custom prefix; isolated server socket.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/terminal/tmux_list",
+        "artifacts/E3/MS/terminal/tmux_capture",
+        "artifacts/E3/MS/terminal/tmux_option"
+      ]
+    },
+    {
+      "id": "MS-05-04",
+      "status": "PASS",
+      "evidence": [
+        "terminal/dc"
+      ],
+      "details": "dc alias actually changes directory.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/terminal/dc"
+      ]
+    },
+    {
+      "id": "MS-05-05",
+      "status": "PASS",
+      "evidence": [
+        "terminal/history",
+        "terminal/pty.log"
+      ],
+      "details": "Statistics use the actual recorded interactive session, not a fabricated long-term history.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/terminal/history",
+        "artifacts/E3/MS/terminal/pty.log"
+      ]
+    },
+    {
+      "id": "MS-05-06",
+      "status": "PASS",
+      "evidence": [
+        "dotfiles/install",
+        "dotfiles/use",
+        "dotfiles/fsck"
+      ],
+      "details": "Dedicated Linux lab-account plain-text settings backed up, versioned and symlinked; private SSH keys and Windows settings excluded.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/dotfiles/install",
+        "artifacts/E3/MS/dotfiles/use",
+        "artifacts/E3/MS/dotfiles/fsck"
+      ]
+    },
+    {
+      "id": "MS-05-07",
+      "status": "PASS",
+      "evidence": [
+        "dotfiles/install",
+        "dotfiles/use",
+        "dotfiles/fsck"
+      ],
+      "details": "Dedicated Linux lab-account plain-text settings backed up, versioned and symlinked; private SSH keys and Windows settings excluded.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/dotfiles/install",
+        "artifacts/E3/MS/dotfiles/use",
+        "artifacts/E3/MS/dotfiles/fsck"
+      ]
+    },
+    {
+      "id": "MS-05-08",
+      "status": "PASS",
+      "evidence": [
+        "dotfiles/install",
+        "dotfiles/use",
+        "dotfiles/fsck"
+      ],
+      "details": "Dedicated Linux lab-account plain-text settings backed up, versioned and symlinked; private SSH keys and Windows settings excluded.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/dotfiles/install",
+        "artifacts/E3/MS/dotfiles/use",
+        "artifacts/E3/MS/dotfiles/fsck"
+      ]
+    },
+    {
+      "id": "MS-05-09",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "dotfiles/clean_account"
+      ],
+      "details": "Fresh Linux account/home tested instead of importing a second VM. Default files backed up, installer rerun idempotently, aliases and per-user ignore path verified.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/dotfiles/clean_account"
+      ]
+    },
+    {
+      "id": "MS-05-10",
+      "status": "PASS",
+      "evidence": [
+        "dotfiles/install",
+        "dotfiles/use",
+        "dotfiles/fsck"
+      ],
+      "details": "Dedicated Linux lab-account plain-text settings backed up, versioned and symlinked; private SSH keys and Windows settings excluded.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/dotfiles/install",
+        "artifacts/E3/MS/dotfiles/use",
+        "artifacts/E3/MS/dotfiles/fsck"
+      ]
+    },
+    {
+      "id": "MS-05-11",
+      "status": "NOT_PUBLISHED_PERSONAL_ACTION",
+      "evidence": [
+        "dotfiles/fsck"
+      ],
+      "details": "Local dotfiles repository prepared; no unrequested publication to the user GitHub account.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/dotfiles/fsck"
+      ]
+    },
+    {
+      "id": "MS-05-12",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/ssh/key_login",
+        "artifacts/E3/MS/ssh/copy_id",
+        "artifacts/E3/MS/ssh/tunnel_get",
+        "artifacts/E3/MS/ssh/tunnel_check"
+      ]
+    },
+    {
+      "id": "MS-05-13",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/ssh/key_login",
+        "artifacts/E3/MS/ssh/copy_id",
+        "artifacts/E3/MS/ssh/tunnel_get",
+        "artifacts/E3/MS/ssh/tunnel_check"
+      ]
+    },
+    {
+      "id": "MS-05-14",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/ssh/key_login",
+        "artifacts/E3/MS/ssh/copy_id",
+        "artifacts/E3/MS/ssh/tunnel_get",
+        "artifacts/E3/MS/ssh/tunnel_check"
+      ]
+    },
+    {
+      "id": "MS-05-15",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/ssh/key_login",
+        "artifacts/E3/MS/ssh/copy_id",
+        "artifacts/E3/MS/ssh/tunnel_get",
+        "artifacts/E3/MS/ssh/tunnel_check"
+      ]
+    },
+    {
+      "id": "MS-05-16",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/harden_vim",
+        "ssh/after_hardening",
+        "ssh/no_password",
+        "ssh/effective_settings.txt"
+      ],
+      "details": "Actual Vim edit and server reload; effective PasswordAuthentication=no and PermitRootLogin=no, public-key login remains working. Isolated server config rather than global sshd service.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/ssh/harden_vim",
+        "artifacts/E3/MS/ssh/after_hardening",
+        "artifacts/E3/MS/ssh/no_password",
+        "artifacts/E3/MS/ssh/effective_settings.txt"
+      ]
+    },
+    {
+      "id": "MS-05-17",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "terminal/mosh_result.json",
+        "terminal/mosh.pty"
+      ],
+      "details": "Actual Mosh session survived3s bidirectional UDP packet drop. Test tokens encoded in shell input prevent input echo from being mistaken for server output.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/terminal/mosh_result.json",
+        "artifacts/E3/MS/terminal/mosh.pty"
+      ]
+    },
+    {
+      "id": "MS-05-18",
+      "status": "PASS_ADAPTED",
+      "evidence": [
+        "ssh/key_login",
+        "ssh/copy_id",
+        "ssh/tunnel_get",
+        "ssh/tunnel_check"
+      ],
+      "details": "Real ephemeral-key SSH and TCP forwarding on isolated loopback server in this VM, not an external account. -N executes no remote command; -f backgrounds after authentication. Private keys stay outside exported project.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/ssh/key_login",
+        "artifacts/E3/MS/ssh/copy_id",
+        "artifacts/E3/MS/ssh/tunnel_get",
+        "artifacts/E3/MS/ssh/tunnel_check"
+      ]
+    },
+    {
+      "id": "MS-06-01",
+      "status": "PASS",
+      "evidence": [
+        "git/data_model",
+        "git/tree",
+        "git/history"
+      ],
+      "details": "Commit/tree/blob relationships exercised; identity is synthetic local lab, no public author impersonation.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/git/data_model",
+        "artifacts/E3/MS/git/tree",
+        "artifacts/E3/MS/git/history"
+      ]
+    },
+    {
+      "id": "MS-06-02",
+      "status": "PASS",
+      "evidence": [
+        "git/history",
+        "git/readme_author",
+        "git/collections_blame",
+        "git/collections_commit"
+      ],
+      "details": "Actual full-history official-course clone; identity, commit and line provenance recorded at pinned HEAD.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/git/history",
+        "artifacts/E3/MS/git/readme_author",
+        "artifacts/E3/MS/git/collections_blame",
+        "artifacts/E3/MS/git/collections_commit"
+      ]
+    },
+    {
+      "id": "MS-06-03",
+      "status": "PASS",
+      "evidence": [
+        "git/filter",
+        "git/objects",
+        "git/old_blob_absent"
+      ],
+      "details": "Synthetic file removed from this isolated repository history, backups/reflogs expired, blob unreachable and pruned. No user history rewritten.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/git/filter",
+        "artifacts/E3/MS/git/objects",
+        "artifacts/E3/MS/git/old_blob_absent"
+      ]
+    },
+    {
+      "id": "MS-06-04",
+      "status": "PASS",
+      "evidence": [
+        "git/stash",
+        "git/stash_graph",
+        "git/stash_pop"
+      ],
+      "details": "Real clone, tracked edit, stash graph and exact pop restoration.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/git/stash",
+        "artifacts/E3/MS/git/stash_graph",
+        "artifacts/E3/MS/git/stash_pop"
+      ]
+    },
+    {
+      "id": "MS-06-05",
+      "status": "PASS",
+      "evidence": [
+        "git/graph",
+        "git/ignored"
+      ],
+      "details": "Settings apply only to the dedicated Linux ysyx account; Windows/user repositories untouched.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/git/graph",
+        "artifacts/E3/MS/git/ignored"
+      ]
+    },
+    {
+      "id": "MS-06-06",
+      "status": "PASS",
+      "evidence": [
+        "git/graph",
+        "git/ignored"
+      ],
+      "details": "Settings apply only to the dedicated Linux ysyx account; Windows/user repositories untouched.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/git/graph",
+        "artifacts/E3/MS/git/ignored"
+      ]
+    },
+    {
+      "id": "MS-06-07",
+      "status": "PREPARED_NOT_PUBLISHED",
+      "evidence": [
+        "git/proposed.patch"
+      ],
+      "details": "Local reviewable terminology correction prepared; GitHub fork/PR is a personal external-publication action, not falsely reported submitted.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/git/proposed.patch"
+      ]
+    }
+  ],
+  "counts": {
+    "lcthw": {
+      "PASS": 156,
+      "PASS_ADAPTED": 17,
+      "PASS_DOCUMENTED": 5,
+      "MATERIAL_PREPARED_HUMAN_DURATION": 1,
+      "PASS_REVIEW_NO_CONFIRMED_BUG": 1
+    },
+    "missing_semester": {
+      "PASS": 38,
+      "PASS_ADAPTED": 11,
+      "NOT_APPLICABLE_HUMAN_DURATION": 1,
+      "UNAVAILABLE_HISTORY_METHOD_TESTED": 2,
+      "NOT_PUBLISHED_PERSONAL_ACTION": 1,
+      "PREPARED_NOT_PUBLISHED": 1
+    }
+  }
+}

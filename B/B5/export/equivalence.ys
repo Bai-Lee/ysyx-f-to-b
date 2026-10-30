@@ -1,0 +1,19 @@
+read_verilog -sv /workspace/projects/ysyx_f_to_b/B/B5/export/unsanitized.sv
+prep -top ysyx_00000000 -flatten
+memory_map
+opt
+rename ysyx_00000000 gold
+design -stash gold
+read_verilog -sv /workspace/projects/ysyx_f_to_b/B/soc/build/ysyx_00000000.sv
+prep -top ysyx_00000000 -flatten
+memory_map
+opt
+rename ysyx_00000000 gate
+design -stash gate
+design -copy-from gold -as gold gold
+design -copy-from gate -as gate gate
+equiv_make gold gate equiv
+hierarchy -top equiv
+equiv_simple
+equiv_induct -seq 2
+equiv_status -assert

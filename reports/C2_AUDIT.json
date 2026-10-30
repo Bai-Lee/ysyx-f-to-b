@@ -1,0 +1,1565 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "core_tasks": 11,
+  "scope_records": 13,
+  "nested_required": 17,
+  "records": [
+    {
+      "id": "C2-M002",
+      "status": "PASS",
+      "details": "Official native RTC produced 1/2/3-second output; bounded SDL session.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M003",
+      "status": "PASS",
+      "details": "Official native keyboard received J/Left DOWN and UP.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M004",
+      "status": "PASS",
+      "details": "Official native video produced real changing 256-color SDL frames.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M005",
+      "status": "PASS",
+      "details": "Authored draw fills the complete 400x300 logical framebuffer; 800x600 scaled native capture is uniformly blue.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M006",
+      "status": "PASS",
+      "details": "7744 palette transitions/endpoint and monotonicity checks; real gradient capture; wrong interpolation rejected.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M007",
+      "status": "PASS",
+      "details": "Actual held/released key timing ratio 4.00012; multi-key handling and Escape exit verified.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M001",
+      "status": "PASS",
+      "details": "Real native FCEUX, CC0 ROM, pressed/released image and 440/220/440Hz SDL PCM capture; no physical speaker claim.",
+      "evidence": [
+        "reports/C2_fceux_native.json",
+        "C/C2/npc_devices.py",
+        "artifacts/C2/fceux"
+      ]
+    },
+    {
+      "id": "C2-M009",
+      "status": "PASS",
+      "details": "C-only RV32E NPC hello through UART at0x10000000; per-instruction REF coverage and explicit MMIO synchronization.",
+      "evidence": [
+        "reports/C2_npc_io.json",
+        "C/C2/npc_devices.py",
+        "artifacts/C2/fceux"
+      ]
+    },
+    {
+      "id": "C2-M010",
+      "status": "PASS",
+      "details": "Official NPC timer produced 1/2/3 seconds with host-time device; semantic stop, not timeout.",
+      "evidence": [
+        "reports/C2_npc_io.json",
+        "C/C2/npc_devices.py",
+        "artifacts/C2/fceux"
+      ]
+    },
+    {
+      "id": "C2-M011",
+      "status": "PASS",
+      "details": "NPC completed two ASCII FCEUX frames and stopped at third frame header.",
+      "evidence": [
+        "reports/C2_fceux_ascii.json",
+        "C/C2/npc_devices.py",
+        "artifacts/C2/fceux"
+      ]
+    },
+    {
+      "id": "C2-M008",
+      "status": "PASS",
+      "details": "All17 nested PA2.5 required items accepted, including real NEMU IOE, complete app families, ref performance and six report questions.",
+      "evidence": [
+        "reports/C2_pa2_results.json",
+        "C/C2/PA2_NOTES.md",
+        "C/C2/snapshot/manifest.json"
+      ]
+    },
+    {
+      "id": "C2-O001",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background scope retained. Screensaver is an IO exercise; no physical screen-protection claim or independently submitted new game.",
+      "evidence": [
+        "C/C2/NOTES.md",
+        "C/C2/sources/C2.md"
+      ]
+    },
+    {
+      "id": "C2-O002",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background scope retained. Screensaver is an IO exercise; no physical screen-protection claim or independently submitted new game.",
+      "evidence": [
+        "C/C2/NOTES.md",
+        "C/C2/sources/C2.md"
+      ]
+    }
+  ],
+  "checks": {
+    "C2_native_io": "d1fa89e813b6a9a1c1cbdfe7e947e782700483255623133e5c1887b22a769e20",
+    "C2_npc_io": "e7732db62f4634bb1482f160847d2d4e6cd88509dfb2e9ede4f4ea2c79737d68",
+    "C2_fceux_native": "2fa98805077e59417d970551a90f1abd5ea6cfc86e5dd046f51a761079c8a0ed",
+    "C2_fceux_ascii": "759e5e60fa2eb739ebf88fed87e761cd0f5ff93d87fb007e0d89311aef0b2772",
+    "C2_nemu_functional": "0d0a8769813a4d6ae5582587198d63ef639910f70ab7d98f3a7e53b2cfe21a09",
+    "C2_nemu_build": "90fc5e0856d730576828105c33b35e86d696ee371754b81417c4fec244b9e7fe",
+    "C2_nemu_driver_binding": "8662f1121693feeb65a08b0a8fe17d21279599c71bae33dfa2a67fe8ea781807",
+    "C2_nemu_host_drivers": "485c232ae445e1df46c0913d486c0a48d79096092e5bbf723a59999583b10e78",
+    "C2_nemu_mmio_boundary": "666af6d17f96974a95d036195487e8e3a99a35b99021db64fbe3093708c1e327",
+    "C2_nemu_gui": "5cd010e77904dbf5b2ff3d2f8ec54c9c461573d9866470c423bb6ed845bdb3c6",
+    "C2_nemu_benchmarks": "da030950b541193442af43536b83f4b2faacd0a1ce4548e72c811699190b63c9",
+    "C2_pa2_compiler": "d7e3f857e7d299ec798b864603c9706313b58261615ba628708e43b14a14b032",
+    "C2_pa2_yemu": "32f0c756f309398b9e562219f86d05dd4911a22a46f2e2c947f2a26313699e19"
+  },
+  "snapshot": {
+    "status": "PASS",
+    "archive": "C/C2/snapshot/nemu-io-final.tar.gz",
+    "sha256": "080cec80339483bcaadc29fa6b9ac2ac74003d965e6cecca547f777ea7f0403f",
+    "members": [
+      {
+        "path": "nemu/.config",
+        "source": "/home/USER/c-stage/workbench/nemu/.config",
+        "bytes": 1969,
+        "sha256": "dbbece396b68df3d6d668d1b1e22cf74705c953ac212b09d4bc4cdc04406f43e"
+      },
+      {
+        "path": "nemu/.config.old",
+        "source": "/home/USER/c-stage/workbench/nemu/.config.old",
+        "bytes": 1684,
+        "sha256": "a4b2e376b7ac2a6ab93623587a7e6ff52ae26afa2342747a3627fb994225759a"
+      },
+      {
+        "path": "nemu/.gitignore",
+        "source": "/home/USER/c-stage/workbench/nemu/.gitignore",
+        "bytes": 106,
+        "sha256": "96c4139c5493bcd02034ddf4b5f3ace74af2c1c3e057fb31185a67852652cadd"
+      },
+      {
+        "path": "nemu/Kconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/Kconfig",
+        "bytes": 4266,
+        "sha256": "06d8a63e4abee33be87a60349d364950e010694b79a9bcfcc9c4d1ede0e56ac5"
+      },
+      {
+        "path": "nemu/LICENSE",
+        "source": "/home/USER/c-stage/workbench/nemu/LICENSE",
+        "bytes": 9540,
+        "sha256": "8336c6e78ad4aa4bfa9c806629ff13e0bebd11ae5b529f72dcfdbb75b0bf5d41"
+      },
+      {
+        "path": "nemu/Makefile",
+        "source": "/home/USER/c-stage/workbench/nemu/Makefile",
+        "bytes": 2459,
+        "sha256": "1c26f60df9ccc8779c9a6cf84486f240ec971737788e1f5db6498ad6d1edd78f"
+      },
+      {
+        "path": "nemu/README.md",
+        "source": "/home/USER/c-stage/workbench/nemu/README.md",
+        "bytes": 1138,
+        "sha256": "6f008026b7a224edb34761bff627d3035470071c06d061401451c111085814cc"
+      },
+      {
+        "path": "nemu/configs/.gitignore",
+        "source": "/home/USER/c-stage/workbench/nemu/configs/.gitignore",
+        "bytes": 13,
+        "sha256": "aa380653d3681ac6de553b330a71a6706b48f9954144a7d25ed75ea6055e5461"
+      },
+      {
+        "path": "nemu/configs/c2_io_defconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/configs/c2_io_defconfig",
+        "bytes": 1842,
+        "sha256": "4aa30734d46f056c54074bb6ee1cf54b9afe8dc7e1a127224fe9c3a9833c11b9"
+      },
+      {
+        "path": "nemu/configs/c2_perf_defconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/configs/c2_perf_defconfig",
+        "bytes": 1919,
+        "sha256": "3024cb8c23f13f259ea4b5934a2c0b7a0df595918a062840fb42aef4e8b10cd4"
+      },
+      {
+        "path": "nemu/configs/dstage_am_defconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/configs/dstage_am_defconfig",
+        "bytes": 528,
+        "sha256": "3508601b284e2371a5256c04f062e57066931c70dd0fbad95619399989981ba6"
+      },
+      {
+        "path": "nemu/configs/dstage_pa1_defconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/configs/dstage_pa1_defconfig",
+        "bytes": 261,
+        "sha256": "18d1b897e52cb7b587f9444476cbffa6f14d637552491df5b8eb2f1c59be0bf4"
+      },
+      {
+        "path": "nemu/configs/dstage_rv32im_defconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/configs/dstage_rv32im_defconfig",
+        "bytes": 349,
+        "sha256": "5979535719cad0fc992206778585f9c801919aeddcf36670da690f7ba765c2af"
+      },
+      {
+        "path": "nemu/configs/mips32-am_defconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/configs/mips32-am_defconfig",
+        "bytes": 104,
+        "sha256": "b374b28d07f19ec22f568c0c30deb4eb8480e1f507675325377a10e4aa40735e"
+      },
+      {
+        "path": "nemu/configs/riscv32-am_defconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/configs/riscv32-am_defconfig",
+        "bytes": 84,
+        "sha256": "041b263ac7a2d527bcbac9a879a5dc61ad3e8757241feeaaec1c03d1685f20de"
+      },
+      {
+        "path": "nemu/configs/riscv64-am_defconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/configs/riscv64-am_defconfig",
+        "bytes": 98,
+        "sha256": "debfc38d0809157ec8cb4ab983cded450042134639d43d37ca9a011e6bcaa3a9"
+      },
+      {
+        "path": "nemu/include/common.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/common.h",
+        "bytes": 1439,
+        "sha256": "70d3c092b3196d786dc6936d58f06f7c6d470c7bb1e4af4373f9199084cb63d2"
+      },
+      {
+        "path": "nemu/include/config/auto.conf",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/auto.conf",
+        "bytes": 980,
+        "sha256": "68209cd9dd8985809b1477367b2e8bfdc7a7651e6b0659fe7619ae436eb32d1b"
+      },
+      {
+        "path": "nemu/include/config/auto.conf.cmd",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/auto.conf.cmd",
+        "bytes": 196,
+        "sha256": "610c75516e65339b5393c3c35c7cd43a8995987dffe9b3c61321ca12cbc057e3"
+      },
+      {
+        "path": "nemu/include/config/cc/asan.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/cc/asan.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/cc/debug.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/cc/debug.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/cc/gcc.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/cc/gcc.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/cc/o2.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/cc/o2.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/cc/opt.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/cc/opt.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/cc.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/cc.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/device.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/device.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/difftest/ref/name.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/difftest/ref/name.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/difftest/ref/path.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/difftest/ref/path.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/difftest/ref/spike.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/difftest/ref/spike.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/difftest.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/difftest.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/dtrace.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/dtrace.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/engine/interpreter.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/engine/interpreter.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/engine.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/engine.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/fb/addr.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/fb/addr.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/has/keyboard.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/has/keyboard.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/has/serial.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/has/serial.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/has/timer.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/has/timer.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/has/vga.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/has/vga.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/i8042/data/mmio.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/i8042/data/mmio.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/isa/riscv.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/isa/riscv.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/isa.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/isa.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/itrace/cond.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/itrace/cond.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/itrace.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/itrace.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/mbase.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/mbase.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/mem/random.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/mem/random.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/mode/system.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/mode/system.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/msize.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/msize.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/pc/reset/offset.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/pc/reset/offset.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/pmem/garray.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/pmem/garray.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/rt/check.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/rt/check.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/rtc/mmio.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/rtc/mmio.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/serial/mmio.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/serial/mmio.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/target/native/elf.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/target/native/elf.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/timer/clock/gettime.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/timer/clock/gettime.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/timer/gettimeofday.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/timer/gettimeofday.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/trace/end.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/trace/end.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/trace/start.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/trace/start.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/trace.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/trace.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/vga/ctl/mmio.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/vga/ctl/mmio.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/vga/show/screen.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/vga/show/screen.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/vga/size/400x300.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/vga/size/400x300.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/config/watchpoint.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/config/watchpoint.h",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "nemu/include/cpu/cpu.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/cpu/cpu.h",
+        "bytes": 1015,
+        "sha256": "099b787e7636882a2f93ca284244df25549d4e6ed44e363df8e52c071677a3ff"
+      },
+      {
+        "path": "nemu/include/cpu/decode.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/cpu/decode.h",
+        "bytes": 3295,
+        "sha256": "8621fd5ea1610981415cecc217ac2ba600d58156caa5bbcb998f9c6432efe7de"
+      },
+      {
+        "path": "nemu/include/cpu/difftest.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/cpu/difftest.h",
+        "bytes": 1992,
+        "sha256": "c8b036168373ffbaecc082473d5a71ce55197675dbd15bc0228394414fb526bb"
+      },
+      {
+        "path": "nemu/include/cpu/ifetch.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/cpu/ifetch.h",
+        "bytes": 902,
+        "sha256": "32a7eba8da91bdb59167ff97983d4c5c999f5339cbfd8ef1cdd820f828dbcba2"
+      },
+      {
+        "path": "nemu/include/debug.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/debug.h",
+        "bytes": 1506,
+        "sha256": "b8f59be7e4d17c05ada8a87bbaf2a00810dead83a39811dcf3f38ab9a3a46bdf"
+      },
+      {
+        "path": "nemu/include/debug_core.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/debug_core.h",
+        "bytes": 973,
+        "sha256": "4b4fc366635cdbe55fd21e19aab9ffd38a3a24f8cb80002c9f9fabf1713b18a8"
+      },
+      {
+        "path": "nemu/include/device/alarm.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/device/alarm.h",
+        "bytes": 870,
+        "sha256": "d0470e340127ca856e867645e498a391001a2e930d82675df9d896039e646ae4"
+      },
+      {
+        "path": "nemu/include/device/map.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/device/map.h",
+        "bytes": 1706,
+        "sha256": "8f48d8327d7741206174f332ce35f94d617c92f7bcd5be99e6cb1c6384cde74e"
+      },
+      {
+        "path": "nemu/include/device/mmio.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/device/mmio.h",
+        "bytes": 884,
+        "sha256": "9ab4322b228d1356ba4902ea1925fabb9284bb68692b4ff12299602bba6ac6d7"
+      },
+      {
+        "path": "nemu/include/difftest-def.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/difftest-def.h",
+        "bytes": 1539,
+        "sha256": "e3083bdc9d4b635219cb25331b8df98bd92d5c3930a6aec54cbb984172eb02c7"
+      },
+      {
+        "path": "nemu/include/dtrace.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/dtrace.h",
+        "bytes": 885,
+        "sha256": "60d585e3bc53586cdc6a0c8e044aa712e17a1ebad17cce34f7ff0c5b5d87cc43"
+      },
+      {
+        "path": "nemu/include/generated/autoconf.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/generated/autoconf.h",
+        "bytes": 1305,
+        "sha256": "fdec6791d40216f5f6e18d1136abf1ba73e9c6514ff938f6a5b228d7ded673d7"
+      },
+      {
+        "path": "nemu/include/isa.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/isa.h",
+        "bytes": 1819,
+        "sha256": "10bb90b6cbc378ceed981892550707fe2690414d11ee8c3283cded76d21c84ad"
+      },
+      {
+        "path": "nemu/include/macro.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/macro.h",
+        "bytes": 4298,
+        "sha256": "359bf1fb336228861e0376af41d8a14b74ca387b11dae1c32a2055debbd37569"
+      },
+      {
+        "path": "nemu/include/memory/host.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/memory/host.h",
+        "bytes": 1442,
+        "sha256": "26939250fc14611c65c845a88768d5417e9b429134a03b0a63b2ff885bc2a3eb"
+      },
+      {
+        "path": "nemu/include/memory/paddr.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/memory/paddr.h",
+        "bytes": 1410,
+        "sha256": "4ed6905a1ca1c782fea77c644f97b99ca24483a11f1feb2c74d5dac32599ee34"
+      },
+      {
+        "path": "nemu/include/memory/vaddr.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/memory/vaddr.h",
+        "bytes": 1050,
+        "sha256": "36ecf28e4ab52ca1931a6a2c4a1b205505e3711e3395495771b2b4d098657b69"
+      },
+      {
+        "path": "nemu/include/trace_core.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/trace_core.h",
+        "bytes": 874,
+        "sha256": "24af832c04d20f45de7543d22da6b6982af7ecd63d9b674f14e65af62d8ca163"
+      },
+      {
+        "path": "nemu/include/utils.h",
+        "source": "/home/USER/c-stage/workbench/nemu/include/utils.h",
+        "bytes": 2097,
+        "sha256": "9badd7bf81abc0a415333cbc8dcbc6e4ab6ddb435a926df79f286dfdecc4fe71"
+      },
+      {
+        "path": "nemu/resource/debian/README.md",
+        "source": "/home/USER/c-stage/workbench/nemu/resource/debian/README.md",
+        "bytes": 5375,
+        "sha256": "c45a0fb3c63c3a26c0524bac27871ca56cb9f71f8305be3cadcd4eb0bda1f5d5"
+      },
+      {
+        "path": "nemu/resource/mips-elf/README.md",
+        "source": "/home/USER/c-stage/workbench/nemu/resource/mips-elf/README.md",
+        "bytes": 62,
+        "sha256": "bab12c75bb74d3f1bfff77820df342650919e404617b5f7b7898363bd22ddf62"
+      },
+      {
+        "path": "nemu/resource/sdcard/README.md",
+        "source": "/home/USER/c-stage/workbench/nemu/resource/sdcard/README.md",
+        "bytes": 1738,
+        "sha256": "605727c74d9b650313e8b8d1e61db05415b3ad5692dc3ae400246e0bd63a26c9"
+      },
+      {
+        "path": "nemu/resource/sdcard/nemu.c",
+        "source": "/home/USER/c-stage/workbench/nemu/resource/sdcard/nemu.c",
+        "bytes": 12517,
+        "sha256": "15a5107cd47efdef0f1461bd55e44d7d7e8d68d64fd17e9897d91b1008929b45"
+      },
+      {
+        "path": "nemu/scripts/build.mk",
+        "source": "/home/USER/c-stage/workbench/nemu/scripts/build.mk",
+        "bytes": 1229,
+        "sha256": "3b6fb35541848c9320638de0778110077fde0b5d92b302f3886527fd1c3849fd"
+      },
+      {
+        "path": "nemu/scripts/config.mk",
+        "source": "/home/USER/c-stage/workbench/nemu/scripts/config.mk",
+        "bytes": 2205,
+        "sha256": "dc0c4950680b56e9b13fcbb570f719a177ee71c951b97ba2dd06ff3dcf5cde2b"
+      },
+      {
+        "path": "nemu/scripts/native.mk",
+        "source": "/home/USER/c-stage/workbench/nemu/scripts/native.mk",
+        "bytes": 1506,
+        "sha256": "a3eb054521b461c6fb705ece140fded9b6b8fef005fa799fb9513c3064d56b4b"
+      },
+      {
+        "path": "nemu/src/am-bin.S",
+        "source": "/home/USER/c-stage/workbench/nemu/src/am-bin.S",
+        "bytes": 811,
+        "sha256": "6b1f16470edf26718ba04e3e6fd50e4c838c2611e8865774634ad69195e217a5"
+      },
+      {
+        "path": "nemu/src/cpu/cpu-exec.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/cpu/cpu-exec.c",
+        "bytes": 4472,
+        "sha256": "ff6be540c2eb4774192bce21000377a653ef07a557442b2a8449adb5478d105c"
+      },
+      {
+        "path": "nemu/src/cpu/difftest/dut.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/cpu/difftest/dut.c",
+        "bytes": 4634,
+        "sha256": "0c317c917a8cb0bee3806783ebd45480413e2a413bb3d71d9c4663e60972e2ba"
+      },
+      {
+        "path": "nemu/src/cpu/difftest/ref.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/cpu/difftest/ref.c",
+        "bytes": 1229,
+        "sha256": "d47393f3ac254ad07aa54c01809abb3f570b6c0eeaca5dba4ee5c1e925cb3021"
+      },
+      {
+        "path": "nemu/src/device/Kconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/Kconfig",
+        "bytes": 2774,
+        "sha256": "4586565f7b2291d38fd3a20bfadf492abd726db4482d4a0b2ddbbd64f92ad002"
+      },
+      {
+        "path": "nemu/src/device/alarm.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/alarm.c",
+        "bytes": 1518,
+        "sha256": "4fe9e5cee05690ef4fbe3516f5ddefbbcbd3e5ddab6ec3bb7b3fb8cc91fba085"
+      },
+      {
+        "path": "nemu/src/device/audio.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/audio.c",
+        "bytes": 1485,
+        "sha256": "b2006cdf7472eaa39b6c663dedc16cf6614b66c9f45303b9105cecc3e052c1e5"
+      },
+      {
+        "path": "nemu/src/device/device.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/device.c",
+        "bytes": 2273,
+        "sha256": "39a30a130f2d544e8f49d1345d024abd2c0e99ef640d4976968fd5ea161112d0"
+      },
+      {
+        "path": "nemu/src/device/disk.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/disk.c",
+        "bytes": 754,
+        "sha256": "6e09afd54d23d8e1b44c239703d4c68164041e7c6b030f614cdd051feca9977d"
+      },
+      {
+        "path": "nemu/src/device/filelist.mk",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/filelist.mk",
+        "bytes": 1298,
+        "sha256": "7b4b30566c982a2f27525487186f1215661b40f3bb3d9920f754b33b6e3edba1"
+      },
+      {
+        "path": "nemu/src/device/intr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/intr.c",
+        "bytes": 752,
+        "sha256": "9bc973eb2453f454416db2e408ebe1f15a6f6a3f88337a4a1f90d387c4d50111"
+      },
+      {
+        "path": "nemu/src/device/io/map.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/io/map.c",
+        "bytes": 4384,
+        "sha256": "442c39b6edc4d0230832385b4d093236b03f9ad70c52fa51bc983685cc9d2621"
+      },
+      {
+        "path": "nemu/src/device/io/mmio.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/io/mmio.c",
+        "bytes": 2266,
+        "sha256": "18dbbf2c5386744c6bd99ad156b189560fe566752890ba993fd81a1ebe61ba53"
+      },
+      {
+        "path": "nemu/src/device/io/port-io.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/io/port-io.c",
+        "bytes": 1760,
+        "sha256": "3c992dc470c64b6af9f8fa234107a93c0dbdecabe13c60e7bc228ca60cee8527"
+      },
+      {
+        "path": "nemu/src/device/keyboard.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/keyboard.c",
+        "bytes": 3322,
+        "sha256": "2b527bdaa3a873cb32e037ce5ecc412ec8af7d0894aa500345b94ea5cc7dda98"
+      },
+      {
+        "path": "nemu/src/device/mmc.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/mmc.h",
+        "bytes": 17095,
+        "sha256": "74e709ebeef0750cd95355ac984cd995d98bd5ef9ff2d7f5c001265f4433bd32"
+      },
+      {
+        "path": "nemu/src/device/sdcard.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/sdcard.c",
+        "bytes": 4456,
+        "sha256": "4d36c1013e7f79bbcf4179b6aba93fc03f1f99e8b7ccceb0a2d31897f9929b17"
+      },
+      {
+        "path": "nemu/src/device/serial.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/serial.c",
+        "bytes": 1640,
+        "sha256": "5534e9a7937673dc7792b966f9b2b27f99b1fe76f5506106b22b7505cb95639e"
+      },
+      {
+        "path": "nemu/src/device/timer.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/timer.c",
+        "bytes": 1542,
+        "sha256": "1176778deb709db7586ae009078afd58154ac8d638d044845866b46996443fea"
+      },
+      {
+        "path": "nemu/src/device/vga.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/device/vga.c",
+        "bytes": 3038,
+        "sha256": "dd620a3f40c96dcb91b43d9749c5f7f877580864cf1c50b4e692ce843f651025"
+      },
+      {
+        "path": "nemu/src/engine/filelist.mk",
+        "source": "/home/USER/c-stage/workbench/nemu/src/engine/filelist.mk",
+        "bytes": 785,
+        "sha256": "e65555cf57294d2d919f6c94e927f08662ee2a47696e0195c30f491847b9f974"
+      },
+      {
+        "path": "nemu/src/engine/interpreter/hostcall.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/engine/interpreter/hostcall.c",
+        "bytes": 2005,
+        "sha256": "1e447640f5fafe662b8d1fbf479a2f6bfd11dc3574345f8d23fbbe7c8f930836"
+      },
+      {
+        "path": "nemu/src/engine/interpreter/init.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/engine/interpreter/init.c",
+        "bytes": 883,
+        "sha256": "96f9d7d39914389157160a3ce0f7fbea8a8d23f35707082ccacf3f55707773e1"
+      },
+      {
+        "path": "nemu/src/filelist.mk",
+        "source": "/home/USER/c-stage/workbench/nemu/src/filelist.mk",
+        "bytes": 1097,
+        "sha256": "56352ae07521b9d9c2812c01a699d91fe01498a24791e89705d85d8dd3f17a5e"
+      },
+      {
+        "path": "nemu/src/isa/filelist.mk",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/filelist.mk",
+        "bytes": 793,
+        "sha256": "b7d0ea1690647d060e31e657d68581a792fefe782d4a8b485c549ff4ecc4cd34"
+      },
+      {
+        "path": "nemu/src/isa/loongarch32r/difftest/dut.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/loongarch32r/difftest/dut.c",
+        "bytes": 896,
+        "sha256": "13a13f8e072654dba15998e888de128d3297e105c9b17bad57a445fbd277b507"
+      },
+      {
+        "path": "nemu/src/isa/loongarch32r/include/isa-def.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/loongarch32r/include/isa-def.h",
+        "bytes": 1004,
+        "sha256": "461f5241c5ce4bcf7bde4b49e95ad9283fc2a3aba5cbc5a113251628f2f5ce7f"
+      },
+      {
+        "path": "nemu/src/isa/loongarch32r/init.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/loongarch32r/init.c",
+        "bytes": 1384,
+        "sha256": "c8c27a87450eb171377f0c3d0a549e6931567e09e4003e7824f04fa28b93b0a9"
+      },
+      {
+        "path": "nemu/src/isa/loongarch32r/inst.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/loongarch32r/inst.c",
+        "bytes": 2471,
+        "sha256": "b87885969a7cc8c3debe93df1015fd0043e979ea79f24329b9749d298520430f"
+      },
+      {
+        "path": "nemu/src/isa/loongarch32r/local-include/reg.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/loongarch32r/local-include/reg.h",
+        "bytes": 1074,
+        "sha256": "5b75548e5991dc007dbbabacaaa9b02bcb4d2d3952eca693216327fae50d5d63"
+      },
+      {
+        "path": "nemu/src/isa/loongarch32r/logo.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/loongarch32r/logo.c",
+        "bytes": 758,
+        "sha256": "418991297f04c868801e89196934bc51a23ce5d1ca0891d23eded86ff99ce39b"
+      },
+      {
+        "path": "nemu/src/isa/loongarch32r/reg.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/loongarch32r/reg.c",
+        "bytes": 1080,
+        "sha256": "0ceb8dc73bad240c44013890fea13e804581043fd0dacdc38a530111682330b3"
+      },
+      {
+        "path": "nemu/src/isa/loongarch32r/system/intr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/loongarch32r/system/intr.c",
+        "bytes": 964,
+        "sha256": "6225fe680746ba71f7e167ec744f43d87306711d73ce9735e101026c5aeaeb67"
+      },
+      {
+        "path": "nemu/src/isa/loongarch32r/system/mmu.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/loongarch32r/system/mmu.c",
+        "bytes": 865,
+        "sha256": "74c510faf7b8afbfba4a45ef17f375a42e533d1986b9c8292d4b4331c97ed914"
+      },
+      {
+        "path": "nemu/src/isa/mips32/difftest/dut.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/mips32/difftest/dut.c",
+        "bytes": 896,
+        "sha256": "13a13f8e072654dba15998e888de128d3297e105c9b17bad57a445fbd277b507"
+      },
+      {
+        "path": "nemu/src/isa/mips32/include/isa-def.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/mips32/include/isa-def.h",
+        "bytes": 997,
+        "sha256": "ebff57f686a70dc88f5459a5ee4ca7228b754865a2c417c05c3c0dbb51e4e42f"
+      },
+      {
+        "path": "nemu/src/isa/mips32/init.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/mips32/init.c",
+        "bytes": 1348,
+        "sha256": "c9c8814798bbe94f393e8677fea123c65fe8210d60e0a8b97a6fe08bfa5ade32"
+      },
+      {
+        "path": "nemu/src/isa/mips32/inst.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/mips32/inst.c",
+        "bytes": 2508,
+        "sha256": "ec0307cce2dc68cbd9d5bc67f06668e8ea355044186a1cc6a70ae42154dade42"
+      },
+      {
+        "path": "nemu/src/isa/mips32/local-include/reg.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/mips32/local-include/reg.h",
+        "bytes": 1062,
+        "sha256": "4a38216f3aee61ea6ec5f9153a62682cfbddb3fab76ae7cd81088d163c1f8d55"
+      },
+      {
+        "path": "nemu/src/isa/mips32/logo.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/mips32/logo.c",
+        "bytes": 4856,
+        "sha256": "7d5e88f5aafe8b8a7bdd36b0a4594daa963f38da75cc42b41c81f999e14f20e2"
+      },
+      {
+        "path": "nemu/src/isa/mips32/reg.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/mips32/reg.c",
+        "bytes": 1080,
+        "sha256": "c3ec68b4adb0fd9a404f842a6830023a7b2a582ad2cff8f2408dc5e66282ef6e"
+      },
+      {
+        "path": "nemu/src/isa/mips32/system/intr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/mips32/system/intr.c",
+        "bytes": 964,
+        "sha256": "6225fe680746ba71f7e167ec744f43d87306711d73ce9735e101026c5aeaeb67"
+      },
+      {
+        "path": "nemu/src/isa/mips32/system/mmu.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/mips32/system/mmu.c",
+        "bytes": 865,
+        "sha256": "74c510faf7b8afbfba4a45ef17f375a42e533d1986b9c8292d4b4331c97ed914"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/Kconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/Kconfig",
+        "bytes": 157,
+        "sha256": "659e40d634e435e9792da0bfef8ecaf0d474d6e6aa984b1e8d09f43be4d8aeee"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/difftest/dut.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/difftest/dut.c",
+        "bytes": 1191,
+        "sha256": "9ff6c3a4ba53fa2cbb81da5e49d1df63ce79b7411d5e710eefbfc65400bebc60"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/include/isa-def.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/include/isa-def.h",
+        "bytes": 1088,
+        "sha256": "eb19c652837e66359e2079d87f68d7a9031279e87e6e314dbddae14a55d9ccfd"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/init.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/init.c",
+        "bytes": 1374,
+        "sha256": "bd9543a0882f8539a589f6d0c7f87f7f6b74c128bc2ccbdb8f764266de3b298a"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/inst.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/inst.c",
+        "bytes": 5703,
+        "sha256": "5e2f8be68611c16eed73fb4af863d91b84ff0bdc3bbff58c99998971ea96b9c3"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/local-include/reg.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/local-include/reg.h",
+        "bytes": 1086,
+        "sha256": "75d6eaf39e0a293feaf886e5116832b78ae0d3a6ade7ed6af34bbb619dd5a1ef"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/logo.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/logo.c",
+        "bytes": 3771,
+        "sha256": "e9c62cb61357ce8e4a5c0c6ca61b150cc2583f3421cf4df8b3876e159b4fb5a4"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/reg.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/reg.c",
+        "bytes": 1604,
+        "sha256": "562740cb439bfb6d14978cf4f8835551d0f0d6744b093e21a0c2e11f6531d66d"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/system/intr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/system/intr.c",
+        "bytes": 964,
+        "sha256": "6225fe680746ba71f7e167ec744f43d87306711d73ce9735e101026c5aeaeb67"
+      },
+      {
+        "path": "nemu/src/isa/riscv32/system/mmu.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/riscv32/system/mmu.c",
+        "bytes": 865,
+        "sha256": "8f8cc85f225bf6a67d68439426c8a84f9aff5ccdbd019bf35b783589b6299d5c"
+      },
+      {
+        "path": "nemu/src/isa/x86/difftest/dut.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/x86/difftest/dut.c",
+        "bytes": 896,
+        "sha256": "13a13f8e072654dba15998e888de128d3297e105c9b17bad57a445fbd277b507"
+      },
+      {
+        "path": "nemu/src/isa/x86/include/isa-def.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/x86/include/isa-def.h",
+        "bytes": 1695,
+        "sha256": "94b2d3538263f930d2a6b3994d301ab421e07c0dd3ec8ecc383e557564989295"
+      },
+      {
+        "path": "nemu/src/isa/x86/init.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/x86/init.c",
+        "bytes": 2041,
+        "sha256": "ba8ed19127199bdbdf7b747c8cc2950c0beb1cfe2ff1a7051ab6e1156b091cb1"
+      },
+      {
+        "path": "nemu/src/isa/x86/inst.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/x86/inst.c",
+        "bytes": 6650,
+        "sha256": "aad0abb8a3a99da0c4cfe7f6f2b15ea0b91caec87f3280d07ee588520d8b08b0"
+      },
+      {
+        "path": "nemu/src/isa/x86/local-include/reg.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/x86/local-include/reg.h",
+        "bytes": 1684,
+        "sha256": "2ae6b6705775eadb0f3d199984e4d052d8aa9c575df13ec6b343e91d900026ef"
+      },
+      {
+        "path": "nemu/src/isa/x86/logo.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/x86/logo.c",
+        "bytes": 3306,
+        "sha256": "fc0d2e2e6358a1122377b23b817b27fd533401c43394d303124e1b2df75ee351"
+      },
+      {
+        "path": "nemu/src/isa/x86/reg.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/x86/reg.c",
+        "bytes": 2061,
+        "sha256": "4bc43981a9ccee69ae97a3dcf134ed1dce803e84fa8eec93e961cf01bfd4e843"
+      },
+      {
+        "path": "nemu/src/isa/x86/system/intr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/x86/system/intr.c",
+        "bytes": 947,
+        "sha256": "5f6ea07cc20768c50abf29f9ec3afdb670367b1e314296e7820155816b9b0379"
+      },
+      {
+        "path": "nemu/src/isa/x86/system/mmu.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/isa/x86/system/mmu.c",
+        "bytes": 865,
+        "sha256": "74c510faf7b8afbfba4a45ef17f375a42e533d1986b9c8292d4b4331c97ed914"
+      },
+      {
+        "path": "nemu/src/memory/Kconfig",
+        "source": "/home/USER/c-stage/workbench/nemu/src/memory/Kconfig",
+        "bytes": 694,
+        "sha256": "8ed30c98c606cfc5d78795b25ea309bf00cb1b9c1982a3fe29c3ae573868cd7b"
+      },
+      {
+        "path": "nemu/src/memory/paddr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/memory/paddr.c",
+        "bytes": 2434,
+        "sha256": "7e4e117c4a48bf15faa6988497ba491b966e310fe1ce9ec244fce0775439168d"
+      },
+      {
+        "path": "nemu/src/memory/vaddr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/memory/vaddr.c",
+        "bytes": 999,
+        "sha256": "b67ebf83b4550c8e4f38ff6d84d9ebf786dfe6b0ac330ef202a9a9933fe650a0"
+      },
+      {
+        "path": "nemu/src/monitor/monitor.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/monitor/monitor.c",
+        "bytes": 5935,
+        "sha256": "43159511cf5c8b594b3c2ff31ef84f7bd6adaf4a43f6736cf43ab201dfaeb887"
+      },
+      {
+        "path": "nemu/src/monitor/sdb/debug_core.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/monitor/sdb/debug_core.c",
+        "bytes": 7087,
+        "sha256": "4e7b9d923a6631f3937352f71fea9626a1215d257206b17cd0ac341cc66d6551"
+      },
+      {
+        "path": "nemu/src/monitor/sdb/expr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/monitor/sdb/expr.c",
+        "bytes": 1614,
+        "sha256": "4d70a57c5f4a26aa1e56a46320233f16b4714ff2f17bb88b97fee08281204ad9"
+      },
+      {
+        "path": "nemu/src/monitor/sdb/sdb.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/monitor/sdb/sdb.c",
+        "bytes": 3359,
+        "sha256": "22ab97743c964ad67ee28fb52807d24530c154a8484e637961dd6fb4b3799adc"
+      },
+      {
+        "path": "nemu/src/monitor/sdb/sdb.h",
+        "source": "/home/USER/c-stage/workbench/nemu/src/monitor/sdb/sdb.h",
+        "bytes": 1031,
+        "sha256": "c727dd74a58670249e7e5e069ca8939946d23f8cc0e6ac198cecc54c1acf4f79"
+      },
+      {
+        "path": "nemu/src/monitor/sdb/watchpoint.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/monitor/sdb/watchpoint.c",
+        "bytes": 1408,
+        "sha256": "bf75275a7f0731b74dada887c4b4e8d37e5ac3e14488caca63fd2bc0e8e7dc16"
+      },
+      {
+        "path": "nemu/src/nemu-main.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/nemu-main.c",
+        "bytes": 1131,
+        "sha256": "3d7cddebdc4f77723bbb1812f9208cb3694e51c7cbf818239f99b6d15c49949c"
+      },
+      {
+        "path": "nemu/src/utils/disasm.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/utils/disasm.c",
+        "bytes": 3014,
+        "sha256": "54207395c2f183ce227cb9eae28214aefa292fcdaed822fd76cb205c1271312c"
+      },
+      {
+        "path": "nemu/src/utils/filelist.mk",
+        "source": "/home/USER/c-stage/workbench/nemu/src/utils/filelist.mk",
+        "bytes": 969,
+        "sha256": "af2e42ce28c5c557c895307e3aa852d81becfd6a1657550597ecd33646c552cb"
+      },
+      {
+        "path": "nemu/src/utils/log.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/utils/log.c",
+        "bytes": 1222,
+        "sha256": "12045f85eb9878b1ec8473ed7d9b83ecf716c9eaa844486c603f0e8d0d0e2c06"
+      },
+      {
+        "path": "nemu/src/utils/state.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/utils/state.c",
+        "bytes": 933,
+        "sha256": "63aae58db474f7c9637276e862344a78038dd0c3a52b651744fd60b0b77b4fc2"
+      },
+      {
+        "path": "nemu/src/utils/timer.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/utils/timer.c",
+        "bytes": 1648,
+        "sha256": "1d25a7ec9365b007f29abea40d98067a4adc4cf9c8ef1e5a0fcc9494247129a0"
+      },
+      {
+        "path": "nemu/src/utils/trace_adapter.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/utils/trace_adapter.c",
+        "bytes": 1861,
+        "sha256": "8632b5969270468f81df8004a4925baa4c67f7bdffa0ce69ef6b09a3884f79f6"
+      },
+      {
+        "path": "nemu/src/utils/trace_core.c",
+        "source": "/home/USER/c-stage/workbench/nemu/src/utils/trace_core.c",
+        "bytes": 7077,
+        "sha256": "be28723141c7312e1d7b7dfa9296ac0a8d375aade1eab9132c68ede7355a2452"
+      },
+      {
+        "path": "nemu/tools/capstone/.gitignore",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/capstone/.gitignore",
+        "bytes": 6,
+        "sha256": "f3aa3baec01055665300eb8dd4dfe1423fd24f5758e31aa999e8ba30e050b087"
+      },
+      {
+        "path": "nemu/tools/capstone/Makefile",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/capstone/Makefile",
+        "bytes": 1269,
+        "sha256": "344d53572f1788a40acf5d0b50f33a1501eb5cb49b6dde5b222c8132b1ea3642"
+      },
+      {
+        "path": "nemu/tools/difftest.mk",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/difftest.mk",
+        "bytes": 1191,
+        "sha256": "259940e10b8aa92523c8db54bebcc4a90dbee431780f416275fe3a4916d138df"
+      },
+      {
+        "path": "nemu/tools/fixdep/Makefile",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/fixdep/Makefile",
+        "bytes": 68,
+        "sha256": "f0cadd3f34b44df72925a1180b32b62729e90a187a45f49f3d1360314a50dbce"
+      },
+      {
+        "path": "nemu/tools/fixdep/fixdep.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/fixdep/fixdep.c",
+        "bytes": 9844,
+        "sha256": "b7138f39b82855a5014b25b0ab0d0291cc0196f32097082649f8207519c2273b"
+      },
+      {
+        "path": "nemu/tools/gen-expr/.gitignore",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/gen-expr/.gitignore",
+        "bytes": 8,
+        "sha256": "41bfa4e9b768a9dad090dbff6d085cce6e00ee41ea151ef3c180a2319b5dddda"
+      },
+      {
+        "path": "nemu/tools/gen-expr/Makefile",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/gen-expr/Makefile",
+        "bytes": 780,
+        "sha256": "0b5c83a57461510f419c4908d401c460a98cf0c5303f56ef1f6a9faa19f82c1d"
+      },
+      {
+        "path": "nemu/tools/gen-expr/gen-expr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/gen-expr/gen-expr.c",
+        "bytes": 2640,
+        "sha256": "fe37e13712ccafdc4ea761712703464a9fdef721df18549916b14162f8ce8f38"
+      },
+      {
+        "path": "nemu/tools/kconfig/.gitignore",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/.gitignore",
+        "bytes": 26,
+        "sha256": "377fae5beb15ad67ab848fdd6821722804881b2a5d1ce62bc94517e490fa38ba"
+      },
+      {
+        "path": "nemu/tools/kconfig/Makefile",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/Makefile",
+        "bytes": 845,
+        "sha256": "e210b1a519191f45a18d98a4b678035bbc3aae20d3b36b5b3e95737dae58baec"
+      },
+      {
+        "path": "nemu/tools/kconfig/conf.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/conf.c",
+        "bytes": 16112,
+        "sha256": "561b14fd17551926554c202ba0f9e38b0667190005455528b3978f07eaf0c585"
+      },
+      {
+        "path": "nemu/tools/kconfig/confdata.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/confdata.c",
+        "bytes": 27837,
+        "sha256": "bc141e8ec5b73298fd7bc78fa678703f1fefaeaa146fb6ad479f90c15e8a49b9"
+      },
+      {
+        "path": "nemu/tools/kconfig/expr.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/expr.c",
+        "bytes": 30726,
+        "sha256": "250da210808c8bee3698fb77402343e5fde4e35c43f09fe713a15001716555e8"
+      },
+      {
+        "path": "nemu/tools/kconfig/expr.h",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/expr.h",
+        "bytes": 9873,
+        "sha256": "c08024c21a18d64638762960d2af34d4e9eb0315a16516c1f9eb06949758b9a6"
+      },
+      {
+        "path": "nemu/tools/kconfig/lexer.l",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lexer.l",
+        "bytes": 9320,
+        "sha256": "e7d66611f24df6266beb9d1637abb2341f7c7d37e05a4c294f1123b2828536f5"
+      },
+      {
+        "path": "nemu/tools/kconfig/list.h",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/list.h",
+        "bytes": 3749,
+        "sha256": "fc686618be614e481ef6bfdce9d33f97dde4e94682ec57af1138122c48a2df3b"
+      },
+      {
+        "path": "nemu/tools/kconfig/lkc.h",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lkc.h",
+        "bytes": 4413,
+        "sha256": "01937064b98c3f7527b4b33435d353eeb93fc4eeb82dc94bb94ce5e9304bc830"
+      },
+      {
+        "path": "nemu/tools/kconfig/lkc_proto.h",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lkc_proto.h",
+        "bytes": 1929,
+        "sha256": "4dacca90bc95cedc9717c461027c85d85f41a3d26345132ec4eb0d24b903b9a9"
+      },
+      {
+        "path": "nemu/tools/kconfig/lxdialog/checklist.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lxdialog/checklist.c",
+        "bytes": 7746,
+        "sha256": "986fde26478c42117f9ae1b4d24c146eb050416745eaf9bc8e6ba6bd9b3d89a4"
+      },
+      {
+        "path": "nemu/tools/kconfig/lxdialog/dialog.h",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lxdialog/dialog.h",
+        "bytes": 6854,
+        "sha256": "818eb2d9621b5366506f76b32cfe84615b63a02f1977a104380b8ad1d6a4d696"
+      },
+      {
+        "path": "nemu/tools/kconfig/lxdialog/inputbox.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lxdialog/inputbox.c",
+        "bytes": 6507,
+        "sha256": "0a025a35e44e693852e98f1784d62b98b8ab99f9c15fe090e99c624984e40736"
+      },
+      {
+        "path": "nemu/tools/kconfig/lxdialog/menubox.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lxdialog/menubox.c",
+        "bytes": 10522,
+        "sha256": "f74cf92839ff656ae396be05aeeaa4a69088f2127694e520ad23d61cbf5520f2"
+      },
+      {
+        "path": "nemu/tools/kconfig/lxdialog/textbox.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lxdialog/textbox.c",
+        "bytes": 8523,
+        "sha256": "5511d33704a7f9a3b31eb158d7110592cdf9a1f2c26be9f03adc10701e93a638"
+      },
+      {
+        "path": "nemu/tools/kconfig/lxdialog/util.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lxdialog/util.c",
+        "bytes": 17647,
+        "sha256": "e3a736573bbec59bb71818d1958a550f8aac83a428f52818f61d61dc96b18fd2"
+      },
+      {
+        "path": "nemu/tools/kconfig/lxdialog/yesno.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/lxdialog/yesno.c",
+        "bytes": 2262,
+        "sha256": "e12cfa9f2c56a83771b38acd2914094dd62f1453e0362bea80d510abf0619984"
+      },
+      {
+        "path": "nemu/tools/kconfig/mconf.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/mconf.c",
+        "bytes": 28006,
+        "sha256": "f1d0e82725a64e64bab7abfc40c325a78f2d64e5594c38306b6c72b3e8bf71a2"
+      },
+      {
+        "path": "nemu/tools/kconfig/menu.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/menu.c",
+        "bytes": 22753,
+        "sha256": "b2f695b6546daba8641ec941cef3373d9d829a852aaef772cd4294f5d1798111"
+      },
+      {
+        "path": "nemu/tools/kconfig/parser.y",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/parser.y",
+        "bytes": 15694,
+        "sha256": "1d0dd3b905a05c628e1af09a98e2d7db44d6ff2c067bb1852a40350614ba54d5"
+      },
+      {
+        "path": "nemu/tools/kconfig/preprocess.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/preprocess.c",
+        "bytes": 11254,
+        "sha256": "bd3f6da09acd819130a977993a3c4d190febc314819bde14b79daf26c07d9279"
+      },
+      {
+        "path": "nemu/tools/kconfig/symbol.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/symbol.c",
+        "bytes": 29322,
+        "sha256": "3d1c4ca6cd4b9ed6ec2015adbd4ca1d1fab89383494e3eaf1bb8799f288ad01b"
+      },
+      {
+        "path": "nemu/tools/kconfig/util.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kconfig/util.c",
+        "bytes": 2210,
+        "sha256": "9b7bd15ea7ca395c4d23595a40b43e4544c7ae4fa5f04d817c9b5c78bb87147b"
+      },
+      {
+        "path": "nemu/tools/kvm-diff/Makefile",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kvm-diff/Makefile",
+        "bytes": 895,
+        "sha256": "83563db62065486fca8b586c359b45fa4e07184197ba22454c244f82f18cec2d"
+      },
+      {
+        "path": "nemu/tools/kvm-diff/include/paddr.h",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kvm-diff/include/paddr.h",
+        "bytes": 756,
+        "sha256": "ae06d833315681b44575e7722042637e33c417333f670c4f348aa3fed051dce9"
+      },
+      {
+        "path": "nemu/tools/kvm-diff/src/kvm.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/kvm-diff/src/kvm.c",
+        "bytes": 11672,
+        "sha256": "fa026a0de83064ebb02c1e29e8c6d2f1eae4de4d59e1bf562d2d15d52ebd95d9"
+      },
+      {
+        "path": "nemu/tools/qemu-diff/Makefile",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/qemu-diff/Makefile",
+        "bytes": 921,
+        "sha256": "d3b8c0b900f195b623fb8f7cac5ea2ec6a824eccb26e851e338a7b9b1d8da7ce"
+      },
+      {
+        "path": "nemu/tools/qemu-diff/include/common.h",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/qemu-diff/include/common.h",
+        "bytes": 966,
+        "sha256": "502c8127982e7037b6360bbad9207ffce7f8acffaf9c68b98c6e81d0de43f174"
+      },
+      {
+        "path": "nemu/tools/qemu-diff/include/isa.h",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/qemu-diff/include/isa.h",
+        "bytes": 2065,
+        "sha256": "ee6acd4a0454042dec91964d74059f047ca2c4c3ec2feccaeb610529dd1b5049"
+      },
+      {
+        "path": "nemu/tools/qemu-diff/include/protocol.h",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/qemu-diff/include/protocol.h",
+        "bytes": 1242,
+        "sha256": "a101a286479a3352a24bf3ee35e05d5ddb04b04fea3ce92c381fff5421ecb746"
+      },
+      {
+        "path": "nemu/tools/qemu-diff/src/diff-test.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/qemu-diff/src/diff-test.c",
+        "bytes": 2574,
+        "sha256": "5b54e86fc2d4a053b8bf357be3d53ccf09c2533ed5a865961fb38fef6b9ba7b8"
+      },
+      {
+        "path": "nemu/tools/qemu-diff/src/gdb-host.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/qemu-diff/src/gdb-host.c",
+        "bytes": 2952,
+        "sha256": "66e0ab813f39ba6b3676614b856aa9b3881acb36dca775ebb4db5a2a2e6f591c"
+      },
+      {
+        "path": "nemu/tools/qemu-diff/src/isa.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/qemu-diff/src/isa.c",
+        "bytes": 2468,
+        "sha256": "5dc84a9844384ccb0e93072d9103dc1adbe96f033a51490add9e00dc06cefa6f"
+      },
+      {
+        "path": "nemu/tools/qemu-diff/src/protocol.c",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/qemu-diff/src/protocol.c",
+        "bytes": 7491,
+        "sha256": "bca900422bc966c4ed40ba25c7d241d4ae844dbcba87a8877e31fc9258ea4d0a"
+      },
+      {
+        "path": "nemu/tools/spike-diff/.gitignore",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/spike-diff/.gitignore",
+        "bytes": 19,
+        "sha256": "15ff08c47642af01dee5cd0f76cd4b31f578a250c7bc9ce958e3838fca24f03a"
+      },
+      {
+        "path": "nemu/tools/spike-diff/Makefile",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/spike-diff/Makefile",
+        "bytes": 1893,
+        "sha256": "a4c5c5fa6c26b2d41a37530618ee0160aefd3af1fb7616b2bff2b0f9f15c985f"
+      },
+      {
+        "path": "nemu/tools/spike-diff/difftest.cc",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/spike-diff/difftest.cc",
+        "bytes": 3866,
+        "sha256": "f0ed5d53fed569b9de399ec20d330bce28657fce6ded98fe47db65a3cabf0415"
+      },
+      {
+        "path": "bin/nemu-feature",
+        "source": "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+        "bytes": 74496,
+        "sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827"
+      },
+      {
+        "path": "bin/nemu-performance",
+        "source": "/home/USER/c-stage/workbench/nemu/build/performance/riscv32-nemu-interpreter",
+        "bytes": 63728,
+        "sha256": "7b80c93cd0a4350af2ed9ddddca300ecf7da1355af769e15f7dbb46f070ec50b"
+      },
+      {
+        "path": "bin/libcapstone.so.5",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+        "bytes": 150680,
+        "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+      },
+      {
+        "path": "bin/spike-riscv32.so",
+        "source": "/home/USER/c-stage/workbench/nemu/tools/spike-diff/build/riscv32-spike-so",
+        "bytes": 37884568,
+        "sha256": "5ab7fa7909535008a57d2a9662a83700a3eeae40a72121ddf13925c0459e927d"
+      },
+      {
+        "path": "am/am/src/platform/nemu/include/nemu.h",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/include/nemu.h",
+        "bytes": 1520,
+        "sha256": "35a6f47b7483a22caabc98f97592602c2d0f36c8bf31ee1a31c7fa1e86132767"
+      },
+      {
+        "path": "am/am/src/platform/nemu/ioe/audio.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/audio.c",
+        "bytes": 602,
+        "sha256": "6aeb89f63ff93cefeb988d311c545985589180aa31cc023d65efdf9cec3bdabd"
+      },
+      {
+        "path": "am/am/src/platform/nemu/ioe/disk.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/disk.c",
+        "bytes": 206,
+        "sha256": "e01014f8193ab276bb6401224410b6b5f7449e198098ade3f36e5154e7bf1427"
+      },
+      {
+        "path": "am/am/src/platform/nemu/ioe/gpu.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/gpu.c",
+        "bytes": 1426,
+        "sha256": "d43cda2334d216ddc97afe0816c45d4bbf0883b4f89807892fc85e2b47d21fd3"
+      },
+      {
+        "path": "am/am/src/platform/nemu/ioe/input.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/input.c",
+        "bytes": 236,
+        "sha256": "81c34344a517c539d71b20d64fd2eaf8dc547fb3f167103fdf3c18793969f07f"
+      },
+      {
+        "path": "am/am/src/platform/nemu/ioe/ioe.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/ioe.c",
+        "bytes": 2130,
+        "sha256": "f49a802094bbc0540f3b27c9d8a2e7e53412d1baf3f7c2ca214872fa357af93f"
+      },
+      {
+        "path": "am/am/src/platform/nemu/ioe/timer.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/timer.c",
+        "bytes": 567,
+        "sha256": "fd6025519140a69040b4233d641a38d935470f06f4e20a5d9a1f70f2322c3bbb"
+      },
+      {
+        "path": "am/am/src/platform/nemu/mpe.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/mpe.c",
+        "bytes": 293,
+        "sha256": "ffed82a8be47822b5ef5f582608aa8fda0fb07bc17cb1181c6960e552df06dd5"
+      },
+      {
+        "path": "am/am/src/platform/nemu/trm.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/trm.c",
+        "bytes": 430,
+        "sha256": "a23a0bfd044ba87b2feff9c09d8a43b7c56cde7e6311f9f31d6e5f1ea7350502"
+      },
+      {
+        "path": "am/klib/src/alloc.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/klib/src/alloc.c",
+        "bytes": 5352,
+        "sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7"
+      },
+      {
+        "path": "am/klib/src/cpp.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/klib/src/cpp.c",
+        "bytes": 177,
+        "sha256": "95cf26c14c27befb198979127cd9753342bdc4961a9f221bb045ae38c8582c97"
+      },
+      {
+        "path": "am/klib/src/ctypes.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/klib/src/ctypes.c",
+        "bytes": 903,
+        "sha256": "2a42c9f66c71c2c02940b4122e7705f2f2762efabab51b651689105754218109"
+      },
+      {
+        "path": "am/klib/src/fileio.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/klib/src/fileio.c",
+        "bytes": 10778,
+        "sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41"
+      },
+      {
+        "path": "am/klib/src/int64.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/klib/src/int64.c",
+        "bytes": 20234,
+        "sha256": "0fe23b9c5528a4e9fc4f9eb304d6eadd319ad0c8da0d29577a91b05240cb20bd"
+      },
+      {
+        "path": "am/klib/src/stdio.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/klib/src/stdio.c",
+        "bytes": 6625,
+        "sha256": "9ce8b83c5a8521e3712a461fec213c5055a5934fd318d45d0a5896b4cb5732d8"
+      },
+      {
+        "path": "am/klib/src/stdlib.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/klib/src/stdlib.c",
+        "bytes": 1463,
+        "sha256": "2d0d15be294581efcbcc1c310a38881b12ce4947fb0456e6e4a9bbf879ef6f11"
+      },
+      {
+        "path": "am/klib/src/string.c",
+        "source": "/home/USER/c-stage/workbench/abstract-machine/klib/src/string.c",
+        "bytes": 1884,
+        "sha256": "7ab93d70e9fe3492b8710625d5a0c261f34c539b9cd12814948047e58a848c04"
+      }
+    ],
+    "scope": "C2 NEMU feature/performance source/binaries, actual device drivers and klib. Tests and frame captures stay in C2 artifacts. Not a whole C stage completion."
+  },
+  "limits": [
+    "GUI runs disable ISA DiffTest for speed; separate feature program checks compare against Spike.",
+    "NEMU sound optional and unimplemented; native PCM test is separate.",
+    "CoreMark run is not an official certified score; coarse timer and host/WSL scope.",
+    "CC0 ROMs selected through separate build manifests.",
+    "Some earliest failed GUI sessions kept outer traceback/input snapshots but partial screenshots were overwritten before session archival was fixed; final successful images are retained."
+  ]
+}

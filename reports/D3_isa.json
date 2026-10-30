@@ -1,0 +1,63 @@
+{
+  "status": "PASS_BOUNDED_TESTS",
+  "checks": 2392,
+  "seed": "0x2607d3",
+  "M_operations": [
+    "mul",
+    "mulh",
+    "mulhsu",
+    "mulhu",
+    "div",
+    "divu",
+    "rem",
+    "remu"
+  ],
+  "golden_values": "Independent Python integer arithmetic; actual assembled instructions and every committed register/PC transition also checked by Spike.",
+  "negative_controls": [
+    {
+      "name": "reserved",
+      "exit": 1,
+      "log": "artifacts/D3/isa/reject_reserved"
+    },
+    {
+      "name": "rv64_addiw",
+      "exit": 1,
+      "log": "artifacts/D3/isa/reject_rv64_addiw"
+    },
+    {
+      "name": "bad_shift",
+      "exit": 1,
+      "log": "artifacts/D3/isa/reject_bad_shift"
+    },
+    {
+      "name": "misaligned_jump",
+      "exit": 1,
+      "log": "artifacts/D3/isa/reject_misaligned_jump"
+    },
+    {
+      "name": "outside_memory",
+      "exit": 255,
+      "log": "artifacts/D3/isa/reject_outside_memory"
+    },
+    {
+      "name": "cross_ram_end",
+      "exit": 255,
+      "log": "artifacts/D3/isa/reject_cross_ram_end"
+    },
+    {
+      "name": "image_empty",
+      "exit": 2,
+      "log": "artifacts/D3/isa/image_empty"
+    },
+    {
+      "name": "image_too_large",
+      "exit": 2,
+      "log": "artifacts/D3/isa/image_too_large"
+    }
+  ],
+  "image_sha256": "ea704c304b0f148e5caa849feaf54a490a6d257140829c419c16c61f11b8f62c",
+  "nemu_sha256": "8def1030e86d7ff073b4cf5bd3796fbe8f8e6a24bdc77d2776b0a7b9597219a1",
+  "spike_sha256": "98e34e28bc605ef3d66e2ac5fe48e52664e71372c49464b927d049a35e2a8133",
+  "evidence": "artifacts/D3/isa",
+  "runtime_seconds": 4.26
+}

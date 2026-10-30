@@ -1,0 +1,379 @@
+{
+  "status": "PASS",
+  "case": "keyboard",
+  "variant": "30000000-cycle-psram4m-qpi-sdram32x2-opt-gui",
+  "image_sha256": "63da679087ca026056df7c9a58559082a530b25bdab78666aa01fb34b281ee2b",
+  "elf_sha256": "8aebdcb2d0acc908b87c440fe8b71ece343e0490396e174a3b17753527be99d6",
+  "executable_sha256": "ba44651fb9a640518f84a2f5e8ad8220ba143b936dcb55ca7a946b3b0f424463",
+  "reference_sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab",
+  "session": {
+    "status": "PASS",
+    "command": [
+      "stdbuf",
+      "-oL",
+      "python3",
+      "/workspace/projects/ysyx_f_to_b/C/runtime/budget_exec.py",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/keyboard/session/resources.json",
+      "--",
+      "/home/USER/c-stage/c5/build/30000000-cycle-psram4m-qpi-sdram32x2-opt-gui/sim",
+      "--gui",
+      "--flash",
+      "/home/USER/c-stage/c5/app-images/am-tests/sdram32/k/image.bin",
+      "--ref",
+      "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so",
+      "--report",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/keyboard/session/simulation.json",
+      "--vga-ppm",
+      "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/keyboard/session/last-frame.ppm",
+      "--uart-bit-cycles",
+      "16",
+      "--max-cycles",
+      "100000000000",
+      "--progress-cycles",
+      "100000000"
+    ],
+    "mainargs": "",
+    "display": ":99",
+    "exit_code": 0,
+    "elapsed_seconds": 13.399826315000002,
+    "commands": [
+      {
+        "command": [
+          "xdotool",
+          "windowfocus",
+          "--sync",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "getwindowgeometry",
+          "--shell",
+          "6291466"
+        ],
+        "exit_code": 0,
+        "stdout": "WINDOW=6291466\nX=224\nY=168\nWIDTH=1152\nHEIGHT=864\nSCREEN=0\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "1034",
+          "366"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "type",
+          "--clearmodifiers",
+          "--delay",
+          "120",
+          "Za0?"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "key",
+          "Return"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/keyboard/session/uart-input.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "mousemove",
+          "1196",
+          "978"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "click",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keydown",
+          "a"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keyup",
+          "a"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keydown",
+          "Escape"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keyup",
+          "Escape"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keydown",
+          "Prior"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xdotool",
+          "keyup",
+          "Prior"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "scrot",
+          "-u",
+          "-o",
+          "/workspace/projects/ysyx_f_to_b/artifacts/C5/gui/keyboard/session/ps2-input.png"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+  },
+  "observations": {
+    "keyboard_events": [
+      [
+        "A",
+        "43",
+        "DOWN"
+      ],
+      [
+        "A",
+        "43",
+        "UP"
+      ],
+      [
+        "ESCAPE",
+        "1",
+        "DOWN"
+      ],
+      [
+        "ESCAPE",
+        "1",
+        "UP"
+      ],
+      [
+        "PAGEUP",
+        "81",
+        "DOWN"
+      ],
+      [
+        "PAGEUP",
+        "81",
+        "UP"
+      ]
+    ]
+  },
+  "simulation_summary": {
+    "result": "GUI_OBSERVATION_STOP",
+    "cycles": 10309907,
+    "instructions": 1107142,
+    "wall_seconds": 10.9892,
+    "diff_checked": 1095954,
+    "device_sync_checked": 11188,
+    "minimum_nonzero_sp": 251666136,
+    "pins": {
+      "enabled": true,
+      "led_changes": [],
+      "segments": [
+        192,
+        192,
+        192,
+        192,
+        192,
+        192,
+        192,
+        192
+      ],
+      "switch_reads": [],
+      "ps2_scans": [
+        [
+          7320187,
+          28
+        ],
+        [
+          7591224,
+          240
+        ],
+        [
+          7591466,
+          28
+        ],
+        [
+          7883364,
+          118
+        ],
+        [
+          8182295,
+          240
+        ],
+        [
+          8182537,
+          118
+        ],
+        [
+          8476987,
+          224
+        ],
+        [
+          8477229,
+          125
+        ],
+        [
+          8794704,
+          224
+        ],
+        [
+          8794946,
+          240
+        ],
+        [
+          8795188,
+          125
+        ]
+      ],
+      "ps2_frame_errors": 0,
+      "vga_frames": 24,
+      "vga_changed_frames": 1,
+      "vga_last_hash": 13527433256064336771,
+      "vga_hashes": [
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771,
+        13527433256064336771
+      ]
+    },
+    "traps": {
+      "ecall": 0,
+      "mret": 0
+    }
+  },
+  "uart_tx_bytes": 294,
+  "uart_rx_bytes": 5,
+  "screenshots": [
+    {
+      "path": "artifacts/C5/gui/keyboard/session/uart-input.png",
+      "sha256": "346597d312646468906702d1dc3b83d81d964d056fe760ec4d429ec68aa8607d"
+    },
+    {
+      "path": "artifacts/C5/gui/keyboard/session/ps2-input.png",
+      "sha256": "ac2b4fe613d407acac78e44b2f359a20ddaa44860160f83d7c81d10faaa43c36"
+    }
+  ],
+  "evidence": "artifacts/C5/gui/keyboard",
+  "scope": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program.",
+  "visual_review": {
+    "reviewer": "Codex inspection of actual native-window captures",
+    "observed": "Native UART pane shows Z,a,0,?,newline and matching byte values; A,ESCAPE,PAGEUP each show DOWN and UP. Input was delivered through the UART and PS2 pins.",
+    "screenshots": [
+      {
+        "path": "artifacts/C5/gui/keyboard/session/uart-input.png",
+        "sha256": "346597d312646468906702d1dc3b83d81d964d056fe760ec4d429ec68aa8607d"
+      },
+      {
+        "path": "artifacts/C5/gui/keyboard/session/ps2-input.png",
+        "sha256": "ac2b4fe613d407acac78e44b2f359a20ddaa44860160f83d7c81d10faaa43c36"
+      }
+    ]
+  }
+}

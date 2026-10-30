@@ -1,0 +1,24 @@
+{
+  "status": "PASS_CALCULATED_AND_SIMULATED",
+  "soc_clock_hz": 25000000,
+  "oversampling": 16,
+  "settings": [
+    {
+      "target_baud": 115200,
+      "ideal_divisor": 13.563368055555555,
+      "selected_divisor": 13,
+      "actual_baud": 120192.30769230769,
+      "relative_error_percent": 4.333600427350426,
+      "nvboard_calls_per_bit": 208
+    },
+    {
+      "target_baud": 57600,
+      "ideal_divisor": 27.12673611111111,
+      "selected_divisor": 27,
+      "actual_baud": 57870.37037037037,
+      "relative_error_percent": 0.4693930041152372,
+      "nvboard_calls_per_bit": 432
+    }
+  ],
+  "note": "Default13matchessuppliedloaderandNVBoard208. For115200,14wouldgive111607.14baud(-3.1188%),closerthan13;13isnotclaimedoptimal. Both13and27actualTXstreamsdecodedinE7_soc_hello;physicalseriallinktoleranceunmeasured."
+}

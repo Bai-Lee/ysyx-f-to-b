@@ -1,0 +1,71 @@
+{
+  "status": "PASS_SOURCE_SETUP_NOT_FUNCTIONAL_VERDICT",
+  "repositories": [
+    {
+      "name": "NJU-ProjectN__abstract-machine__ics2026",
+      "commit": "9bc0a93c52c928a6de970f39a507be94cfb63a9f",
+      "archive_sha256": "b4c6e08615aa945185d163e5c1f298abb6cdf8678c32e126c50b316f6b663767",
+      "runtime": "/home/USER/d-stage/workbench/abstract-machine"
+    },
+    {
+      "name": "NJU-ProjectN__am-kernels__ics2026",
+      "commit": "9c433f7cf4b4e05d09543bf7e269b23502d1b2b6",
+      "archive_sha256": "d5a9a14719a40255c11e07580c0b4d1a27a8537394ed59bda53a2d5bb87d8183",
+      "runtime": "/home/USER/d-stage/workbench/am-kernels"
+    },
+    {
+      "name": "NJU-ProjectN__riscv-tests-am__master",
+      "commit": "676cbc7a4e520fca1c3d4dd1b586b2550769e02e",
+      "archive_sha256": "c761173b3a3509e279ff9d2f207cce3bba600007c937949987c8085310fdae1a",
+      "runtime": "/home/USER/d-stage/workbench/riscv-tests"
+    },
+    {
+      "name": "NJU-ProjectN__fceux-am__ics2021",
+      "commit": "d5524ba624300869d6c793f01e6632e4dc3066ef",
+      "archive_sha256": "ad810bf73c4bf5392b3e52867dc66433a72140561783f04872ba4668a7b19026",
+      "runtime": "/home/USER/d-stage/workbench/fceux-am"
+    },
+    {
+      "name": "OSCPU__archbench__main",
+      "commit": "52034e3c65e973cab0af7d2e6e614e6d4470cf86",
+      "archive_sha256": "e3412d334015ca977bf71bfe6c777673b6c6f605c74309fc3a92170597e62aaf",
+      "runtime": "/home/USER/d-stage/workbench/archbench"
+    },
+    {
+      "name": "NJU-ProjectN__nemu__ics2024",
+      "commit": "8e7a0fecc95b5b5d2c1f6be0ec1b703da93356c0",
+      "archive_sha256": "ac65080205b9bf54e49413ac5112e566c4da443d7d63d0cf16369e54e25b3fd5",
+      "runtime": "/home/USER/d-stage/workbench/nemu"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "capstone",
+      "repository": "https://github.com/capstone-engine/capstone.git",
+      "ref": "refs/tags/5.0.6",
+      "commit": "accf4df62f1fba6f92cae692985d27063552601c",
+      "download_url": "https://codeload.github.com/capstone-engine/capstone/tar.gz/accf4df62f1fba6f92cae692985d27063552601c",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_d_stage\\sources\\capstone-accf4df62f1fba6f92cae692985d27063552601c.tar.gz",
+      "bytes": 7661950,
+      "sha256": "ef6950c8276293a407fe374e99c95aa95faf25d022cc65974a52a01b79f5b4b3",
+      "elapsed_seconds": 7.3900000000001,
+      "provenance": "Official project HTTPS source archive at resolved commit; local SHA-256 is recorded. No separate published upstream digest was available.",
+      "runtime": "/home/USER/d-stage/workbench/nemu/tools/capstone/repo"
+    },
+    {
+      "name": "spike",
+      "repository": "https://github.com/NJU-ProjectN/riscv-isa-sim.git",
+      "ref": "HEAD",
+      "commit": "b3cb1ef52ba0cb1bce84135febef1c4941c5455b",
+      "download_url": "https://codeload.github.com/NJU-ProjectN/riscv-isa-sim/tar.gz/b3cb1ef52ba0cb1bce84135febef1c4941c5455b",
+      "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_d_stage\\sources\\spike-b3cb1ef52ba0cb1bce84135febef1c4941c5455b.tar.gz",
+      "bytes": 493615,
+      "sha256": "90a6b452dd559c74fcc355ea478ff3cf8334aea9bfa27251dd2d93444a70f5ba",
+      "elapsed_seconds": 4.061999999999898,
+      "provenance": "Official project HTTPS source archive at resolved commit; local SHA-256 is recorded. No separate published upstream digest was available.",
+      "runtime": "/home/USER/d-stage/workbench/nemu/tools/spike-diff/repo"
+    }
+  ],
+  "root": "/home/USER/d-stage/workbench",
+  "E_runtime_changed": false
+}

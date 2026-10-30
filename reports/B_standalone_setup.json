@@ -1,0 +1,9 @@
+{
+  "status": "BUILT_NOT_FUNCTIONALLY_ACCEPTED",
+  "reference": "/home/USER/b-stage/fast-nemu-ref/build/riscv32-nemu-interpreter-so",
+  "reference_sha256": "6acf1d670025fe50e02806d3a484b2e78741475e1672b489fefe14f58b310169",
+  "memory": "128MiB byte RAM at0x80000000; same independent NEMU instruction/CSR implementation, separate region table. SoC reference unchanged.",
+  "am": "/home/USER/b-stage/soc/workbench/abstract-machine",
+  "arch": "riscv32e-bnpc",
+  "exit_mailbox": "0x10001000 code;0x10001004 magic0xb00d600d, then EBREAK. Used by four-state and gate-level tests without DPI."
+}

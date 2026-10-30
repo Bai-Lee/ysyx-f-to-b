@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "archive_sha256": "bdbfe29cfc2a0f18442d1d465efcde6689c6d9193f2bf5c030c17ae6fbdc2789",
+  "extracted_members": 9,
+  "runs": [
+    {
+      "case": "context",
+      "status": "PASS",
+      "result": "GOOD_TRAP",
+      "evidence": "artifacts/B/offline-replay/context",
+      "inputs": [
+        {
+          "member": "soc/build/b5-release/sim",
+          "sha256": "5e4e95778a9c9f9c36716c53c6365a6c50b9cbe5c1c4089588914449d04b44fc"
+        },
+        {
+          "member": "b1/apps/release-context/build/release-context-riscv32e-ysyxsoc-sdram128-p325.bin",
+          "sha256": "b09995f5f83e6a831b9f86de21345fb708443bf0238df7b9b852d925169240b5"
+        },
+        {
+          "member": "nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "d90693e60e982420b6cc64a14d1f71fffc2f122d1ec44becb447b1869522d880"
+        }
+      ]
+    },
+    {
+      "case": "rtthread",
+      "status": "PASS",
+      "result": "GOOD_TRAP",
+      "evidence": "artifacts/B/offline-replay/rtthread",
+      "inputs": [
+        {
+          "member": "soc/build/b5-release/sim",
+          "sha256": "5e4e95778a9c9f9c36716c53c6365a6c50b9cbe5c1c4089588914449d04b44fc"
+        },
+        {
+          "member": "rt-thread-am/bsp/abstract-machine/build/rtthread-riscv32e-ysyxsoc-sdram128-p325.bin",
+          "sha256": "df0fe82d6241b79a53a3eb201d4a4c1c0bd572749f77cb060219ef766af17eff"
+        },
+        {
+          "member": "nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "d90693e60e982420b6cc64a14d1f71fffc2f122d1ec44becb447b1869522d880"
+        }
+      ]
+    },
+    {
+      "case": "microbench",
+      "status": "PASS",
+      "result": "GOOD_TRAP",
+      "evidence": "artifacts/B/offline-replay/microbench",
+      "inputs": [
+        {
+          "member": "soc/build/b5-release/sim",
+          "sha256": "5e4e95778a9c9f9c36716c53c6365a6c50b9cbe5c1c4089588914449d04b44fc"
+        },
+        {
+          "member": "b3/images/325/test-pad24/image.bin",
+          "sha256": "4c6f34d263d16f7d19e906db5f0f26c0c62a4c9f161d35a2d02d9945d5a012ad"
+        },
+        {
+          "member": "nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "d90693e60e982420b6cc64a14d1f71fffc2f122d1ec44becb447b1869522d880"
+        }
+      ]
+    },
+    {
+      "case": "wrong-original",
+      "status": "PASS_EXPECTED_NEGATIVE",
+      "result": "BAD_TRAP",
+      "evidence": "artifacts/B/offline-replay/wrong-original",
+      "inputs": [
+        {
+          "member": "soc/build/b5-release/sim",
+          "sha256": "5e4e95778a9c9f9c36716c53c6365a6c50b9cbe5c1c4089588914449d04b44fc"
+        },
+        {
+          "member": "soc/workbench/cpu-tests/build/wrong-riscv32e-ysyxsoc-sdram128-p325.bin",
+          "sha256": "7c981d5447ef5af6928d6c57e728c297344da435c04eca761a090b569f3a2f79"
+        },
+        {
+          "member": "nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "d90693e60e982420b6cc64a14d1f71fffc2f122d1ec44becb447b1869522d880"
+        }
+      ]
+    },
+    {
+      "case": "memory4k",
+      "status": "PASS",
+      "result": "GOOD_TRAP",
+      "evidence": "artifacts/B/offline-replay/memory4k",
+      "inputs": [
+        {
+          "member": "soc/build/b5-release/sim",
+          "sha256": "5e4e95778a9c9f9c36716c53c6365a6c50b9cbe5c1c4089588914449d04b44fc"
+        },
+        {
+          "member": "soc/workbench/sdram-phase-4096-6/build/sdram-phase-4096-6-riscv32e-ysyxsoc-sram-code.bin",
+          "sha256": "ed085918766047ecd4889fb9594258d300322ad57af6cc21e818cb570be16299"
+        },
+        {
+          "member": "nemu-ref/build/riscv32-nemu-interpreter-so",
+          "sha256": "d90693e60e982420b6cc64a14d1f71fffc2f122d1ec44becb447b1869522d880"
+        }
+      ]
+    },
+    {
+      "case": "four-state-gate-hello",
+      "status": "PASS",
+      "result": "B5_PROGRAM_PASS",
+      "evidence": "artifacts/B/offline-replay/four-state-gate-hello",
+      "inputs": [
+        {
+          "member": "b5/netlist/cpu.vvp",
+          "sha256": "c1712e1b69e9fb455b87739b97dfc526d6ffdaf6d831ee40a169a1e88b503c17"
+        },
+        {
+          "member": "b5/netlist/hello.hex",
+          "sha256": "465f54428bc8077a760f075e5dbb758b1bc404e2165e1fa8a6708eed01a9572e"
+        }
+      ]
+    }
+  ],
+  "scope": "All replayed simulator/reference/firmware or Icarus bytecode/image inputs came from the frozen runtime in a fresh directory. No build/download or original live workbench binary. Installed Linux loader/libraries, locked Icarus executable and project resource guard remain external runtime dependencies. Full128 evidence is hash-verified, not redundantly rerun by this short replay."
+}

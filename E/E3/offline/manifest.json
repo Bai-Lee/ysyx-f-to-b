@@ -1,0 +1,277 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-24T19:59:02.637117+00:00",
+  "files": [
+    {
+      "original": "/home/USER/e3-lab/missing-semester/iris.data",
+      "path": "E/E3/offline/ms/iris.data",
+      "bytes": 4551,
+      "sha256": "6f608b71a7317216319b4d27b4d9bc84e6abd734eda7872b71a458569e2656c0"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/tmux.conf",
+      "path": "E/E3/offline/ms/tmux.conf",
+      "bytes": 66,
+      "sha256": "f91fd66d358e330c4bf7f110380ddde98eba04ee9f0a28d18b0ed9a1e7542ee5"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/endings.txt",
+      "path": "E/E3/offline/ms/endings.txt",
+      "bytes": 1232,
+      "sha256": "dbb905bd82709712503c46eb164403b706e1d687bbf60c1287357bf04726b1f7"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/selected.words",
+      "path": "E/E3/offline/ms/selected.words",
+      "bytes": 9267,
+      "sha256": "5907250c97923c5fe14709046b74382923de8fb663821e9c2833195888d2bef6"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/marco.sh",
+      "path": "E/E3/offline/ms/marco.sh",
+      "bytes": 79,
+      "sha256": "5b44234c7ed55d15ef4e2f9f6bd8db828fa0e3ee2f6d202f770d12051332807a"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/rare.sh",
+      "path": "E/E3/offline/ms/rare.sh",
+      "bytes": 193,
+      "sha256": "7ba58ce185f562fccefb348242e2ee1b1b05abaffe1a358a1727830b54313704"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/rare.stderr",
+      "path": "E/E3/offline/ms/rare.stderr",
+      "bytes": 34,
+      "sha256": "eb7ddd57d19b50e56c1add384abf6c89360795cdb317f0275e313443b7aceb55"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/rare.stdout",
+      "path": "E/E3/offline/ms/rare.stdout",
+      "bytes": 633,
+      "sha256": "d7e469f2579e9be9deb4a7d87dace9039a0a18772e261c57feabf973b14aa77c"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/session.history",
+      "path": "E/E3/offline/ms/session.history",
+      "bytes": 957,
+      "sha256": "1d95fae4c6e34ebce7b458e8cefa4bf29b6f16df16af118c0a8d38b559cf75a8"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/html-files.zip",
+      "path": "E/E3/offline/ms/html-files.zip",
+      "bytes": 693,
+      "sha256": "a08a2ca53c0b59980b57cf5cc69a608a9a3392bf43751638135cb8150d503f17"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/dotfiles/bash_extra",
+      "path": "E/E3/offline/ms/dotfiles/bash_extra",
+      "bytes": 56,
+      "sha256": "bb5b9e4df502df811a0331c6ed44c28120c4dae27837f13ad1b5529180b9d654"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/dotfiles/bash_logout",
+      "path": "E/E3/offline/ms/dotfiles/bash_logout",
+      "bytes": 220,
+      "sha256": "26882b79471c25f945c970f8233d8ce29d54e9d5eedcd2884f88affa84a18f56"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/dotfiles/bashrc",
+      "path": "E/E3/offline/ms/dotfiles/bashrc",
+      "bytes": 3809,
+      "sha256": "d353b187160956bf95af82a063f09bfd7a3d9df5deb7651771343e10b6413b6a"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/dotfiles/gitconfig",
+      "path": "E/E3/offline/ms/dotfiles/gitconfig",
+      "bytes": 99,
+      "sha256": "9739bcbb5b4bee352698fce6ded0555832e6f1fc239b71038c2d38f633a055cd"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/dotfiles/gitignore_global",
+      "path": "E/E3/offline/ms/dotfiles/gitignore_global",
+      "bytes": 16,
+      "sha256": "7a14492ee00cc73c1b9253102df335fe6440c8ab1d62bc49974ebee06978c416"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/dotfiles/install.sh",
+      "path": "E/E3/offline/ms/dotfiles/install.sh",
+      "bytes": 567,
+      "sha256": "514f6324956af84bda6c5bd2a652f52c52f8eb86dfda51a12104500fe2febfef"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/dotfiles/profile",
+      "path": "E/E3/offline/ms/dotfiles/profile",
+      "bytes": 807,
+      "sha256": "28b4a453b68dde64f814e94bab14ee651f4f162e15dd9920490aa1d49f05d2a4"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/dotfiles/vimrc",
+      "path": "E/E3/offline/ms/dotfiles/vimrc",
+      "bytes": 3318,
+      "sha256": "2d743b772a4463c136e95d46e65b4a1581124e1c4c4ecb5052523f42df409a34"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/fizz.py",
+      "path": "E/E3/offline/ms/vim-lab/fizz.py",
+      "bytes": 347,
+      "sha256": "32f36f68d77c6602cddb09f3ff3297a9c4b6dde1b80be8806fae122acd56b80e"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/fizz.vim",
+      "path": "E/E3/offline/ms/vim-lab/fizz.vim",
+      "bytes": 329,
+      "sha256": "4d140112ed44965d3fb3f71eb5339a95c1356a35d80ad280dda9796981f1df4c"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/options.txt",
+      "path": "E/E3/offline/ms/vim-lab/options.txt",
+      "bytes": 22,
+      "sha256": "a94d6ba9b6706b0e6a0fe512644297fb0b19ee8538534fe8c7fbc221013b8bd4"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/options.vim",
+      "path": "E/E3/offline/ms/vim-lab/options.vim",
+      "bytes": 189,
+      "sha256": "cc55927cb519dd94d582ce1caf8ee5ce2df18a95282269f25ae083aaa06b16a7"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/people.json",
+      "path": "E/E3/offline/ms/vim-lab/people.json",
+      "bytes": 19040,
+      "sha256": "d310a0a88d416ce199a86e02fef037b61dfdb81379b69a65f9cccdebc1e750e7"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/picked.txt",
+      "path": "E/E3/offline/ms/vim-lab/picked.txt",
+      "bytes": 68,
+      "sha256": "e5a17185d8e965f73df4504f575b9ed2099fe07e08f10bbad25f4b2a50233378"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/search/needle_target.txt",
+      "path": "E/E3/offline/ms/vim-lab/search/needle_target.txt",
+      "bytes": 9,
+      "sha256": "8575b2c9683596d519df1c89545df6f65d4ddd2fe3387b9a6b3cadd0b4ba2c36"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/search/start.txt",
+      "path": "E/E3/offline/ms/vim-lab/search/start.txt",
+      "bytes": 6,
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/tutor-errors.json",
+      "path": "E/E3/offline/ms/vim-lab/tutor-errors.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/tutor.vim",
+      "path": "E/E3/offline/ms/vim-lab/tutor.vim",
+      "bytes": 3404,
+      "sha256": "7cd854529456c4c40c5eba7d5361b11573cf44a15cbf7a2a3f5f41b87642e325"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/vimtutor-source.txt",
+      "path": "E/E3/offline/ms/vim-lab/vimtutor-source.txt",
+      "bytes": 33583,
+      "sha256": "bb87d97b7488f7ede8b34273d0996d3f6e1766ccbb4843a6fd85bbfc32b968e1"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/vim-lab/xml_macro.vim",
+      "path": "E/E3/offline/ms/vim-lab/xml_macro.vim",
+      "bytes": 306,
+      "sha256": "35197e297cc03cd7ae3530e0cae9d20436d488bec7df1e1b714f91f73dda0388"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/resources/vimrc",
+      "path": "E/E3/offline/resources/vimrc",
+      "bytes": 3254,
+      "sha256": "1f6bd0ed78cb8b3e782e96fdb2a0b7a37ba0ea5d2e4d6c59fda3ab16356d4f8a"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/resources/example-data.xml",
+      "path": "E/E3/offline/resources/example-data.xml",
+      "bytes": 24056,
+      "sha256": "27655cb25fabdc323097da1df9e89085816ad206a1bb893c84d0e4662404dbec"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/resources/regexone.html",
+      "path": "E/E3/offline/resources/regexone.html",
+      "bytes": 25505,
+      "sha256": "5d0739f5692f5fda365fba32bdb66552dd613d435755f730c03ec1b6527c3914"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/resources/tmux.html",
+      "path": "E/E3/offline/resources/tmux.html",
+      "bytes": 33521,
+      "sha256": "97160b5abb5862cc5459fb423cc842ececb7aba57d003c14a121a1a0e653032f"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/resources/tmux-config.html",
+      "path": "E/E3/offline/resources/tmux-config.html",
+      "bytes": 30469,
+      "sha256": "ec183c7a6831e8fd001ecd615f8f6602c6a9177d4d4df4e66a93047099114833"
+    },
+    {
+      "original": "/tmp/missing/semester",
+      "path": "E/E3/offline/ms/semester",
+      "bytes": 61,
+      "sha256": "4f5fdfe14733d19b6580913af9c45ae34c1d8f34db7e5d83f8c217c6683b8192"
+    },
+    {
+      "original": "/tmp/missing/headers.txt",
+      "path": "E/E3/offline/ms/headers.txt",
+      "bytes": 651,
+      "sha256": "a66cae40428e748cc4929d66ed1a57bb52132cb04625e64881e3101dd160a82f"
+    },
+    {
+      "original": "/home/USER/last-modified.txt",
+      "path": "E/E3/offline/ms/last-modified.txt",
+      "bytes": 45,
+      "sha256": "7fee10bdb64b2c441707430fa9d590d39004376f97416905d3f840c83dbb6062"
+    },
+    {
+      "original": "/home/USER/e3-lab/missing-semester/ssh/harden.vim",
+      "path": "E/E3/offline/ms/harden.vim",
+      "bytes": 121,
+      "sha256": "b7a29343253c911fb48b436294cc3dbc9268ecf266afc3f0be22f2141f0a4815"
+    }
+  ],
+  "repos": [
+    {
+      "name": "ctrlp",
+      "url": "https://github.com/ctrlpvim/ctrlp.vim.git",
+      "path": "/home/USER/e3-lab/missing-semester/resources/ctrlp",
+      "commit": "0065942ef13ce28293e2b26cb622d035da050b44",
+      "shallow": true,
+      "archive": "E/E3/offline/resources/ctrlp.tar.gz",
+      "sha256": "583dd504584e8debe769e208ca5acf7fdc15fa2b1ce2e01fa0603a79798d53a1",
+      "bytes": 79793
+    },
+    {
+      "name": "commentary",
+      "url": "https://github.com/tpope/vim-commentary.git",
+      "path": "/home/USER/e3-lab/missing-semester/resources/commentary",
+      "commit": "64a654ef4a20db1727938338310209b6a63f60c9",
+      "shallow": true,
+      "archive": "E/E3/offline/resources/commentary.tar.gz",
+      "sha256": "0df4c5de0cb6402ff01bcaf224f4df2fbac083dfa89d3261539cad56dd85a189",
+      "bytes": 3274
+    },
+    {
+      "name": "course",
+      "url": "https://github.com/missing-semester-cn/missing-semester-cn.github.io.git",
+      "path": "/home/USER/e3-lab/missing-semester/resources/course",
+      "commit": "4f2fedde4f519c0466670b055efdd76af248574e",
+      "shallow": false,
+      "archive": "E/E3/offline/resources/course.bundle",
+      "sha256": "b9af5b94e57af04aae35155e02dbbc1b793f594d7462868eceee4b06a1bf4dc1",
+      "bytes": 23633783
+    }
+  ],
+  "dotfiles_bundle": {
+    "path": "E/E3/offline/ms/dotfiles.bundle",
+    "sha256": "c943d473ed4357c46e45aa1f532464059ba526f464206eaf7de7b06a07f62b80"
+  },
+  "excluded": "SSH private keys, mosh session keys, account secrets, unrelated home files; tools and WSL VHDX are external prerequisites."
+}

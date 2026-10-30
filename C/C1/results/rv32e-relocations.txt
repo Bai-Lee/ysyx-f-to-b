@@ -1,0 +1,103 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              REL (Relocatable file)
+  Machine:                           RISC-V
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          0 (bytes into file)
+  Start of section headers:          3400 (bytes into file)
+  Flags:                             0x8, RVE, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           0 (bytes)
+  Number of program headers:         0
+  Size of section headers:           40 (bytes)
+  Number of section headers:         25
+  Section header string table index: 24
+
+Relocation section '.rela.text' at offset 0x958 contains 16 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name + Addend
+00000010  0000081a R_RISCV_HI20      00000004   bias + 0
+00000010  00000033 R_RISCV_RELAX                0
+00000014  0000081b R_RISCV_LO12_I    00000004   bias + 0
+00000014  00000033 R_RISCV_RELAX                0
+00000020  0000361a R_RISCV_HI20      00000000   counter + 0
+00000020  00000033 R_RISCV_RELAX                0
+00000024  0000361b R_RISCV_LO12_I    00000000   counter + 0
+00000024  00000033 R_RISCV_RELAX                0
+0000002c  0000361a R_RISCV_HI20      00000000   counter + 0
+0000002c  00000033 R_RISCV_RELAX                0
+00000030  0000361c R_RISCV_LO12_S    00000000   counter + 0
+00000030  00000033 R_RISCV_RELAX                0
+00000034  0000361a R_RISCV_HI20      00000000   counter + 0
+00000034  00000033 R_RISCV_RELAX                0
+00000038  0000361b R_RISCV_LO12_I    00000000   counter + 0
+00000038  00000033 R_RISCV_RELAX                0
+
+Relocation section '.rela.debug_info' at offset 0xa18 contains 23 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name + Addend
+00000008  00002101 R_RISCV_32        00000000   .Ldebug_abbrev0 + 0
+0000000d  00002201 R_RISCV_32        00000015   .LASF7 + 0
+00000012  00002301 R_RISCV_32        00000000   .LASF0 + 0
+00000016  00002401 R_RISCV_32        0000003a   .LASF1 + 0
+0000001a  00002501 R_RISCV_32        00000000   .Ltext0 + 0
+0000001e  00002623 R_RISCV_ADD32     0000004c   .Letext0 + 0
+0000001e  00002527 R_RISCV_SUB32     00000000   .Ltext0 + 0
+00000022  00002701 R_RISCV_32        00000000   .Ldebug_line0 + 0
+00000027  00002801 R_RISCV_32        0000000d   .LASF2 + 0
+00000039  00002901 R_RISCV_32        0000008e   .LASF3 + 0
+00000056  00002a01 R_RISCV_32        000000af   .LASF4 + 0
+00000060  00002b01 R_RISCV_32        00000087   .LASF5 + 0
+00000072  00003601 R_RISCV_32        00000000   counter + 0
+0000007e  00003701 R_RISCV_32        00000000   zero_counter + 0
+0000009a  00002c01 R_RISCV_32        00000000   .LASF6 + 0
+000000ac  00003801 R_RISCV_32        00000000   banner + 0
+000000b1  00002d01 R_RISCV_32        000000aa   .LASF8 + 0
+000000be  00000801 R_RISCV_32        00000004   bias + 0
+000000c3  00002e01 R_RISCV_32        0000009b   .LASF9 + 0
+000000ce  00002f01 R_RISCV_32        00000000   .LFB0 + 0
+000000d2  00003023 R_RISCV_ADD32     0000004c   .LFE0 + 0
+000000d2  00002f27 R_RISCV_SUB32     00000000   .LFB0 + 0
+000000d9  00003101 R_RISCV_32        00000081   .LASF10 + 0
+
+Relocation section '.rela.debug_aranges' at offset 0xb2c contains 4 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name + Addend
+00000006  00003201 R_RISCV_32        00000000   .Ldebug_info0 + 0
+00000010  00002501 R_RISCV_32        00000000   .Ltext0 + 0
+00000014  00002623 R_RISCV_ADD32     0000004c   .Letext0 + 0
+00000014  00002527 R_RISCV_SUB32     00000000   .Ltext0 + 0
+
+Relocation section '.rela.debug_line' at offset 0xb5c contains 16 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name + Addend
+00000022  00001a01 R_RISCV_32        0000006d   .L0  + 0
+00000026  00001b01 R_RISCV_32        000000a0   .L0  + 0
+00000030  00001c01 R_RISCV_32        000000cf   .L0  + 0
+00000035  00001d01 R_RISCV_32        000000da   .L0  + 0
+0000003a  00001e01 R_RISCV_32        000000e5   .L0  + 0
+00000044  00000b01 R_RISCV_32        00000000   .L0  + 0
+0000004e  00000d22 R_RISCV_ADD16     00000010   .L0  + 0
+0000004e  00000b26 R_RISCV_SUB16     00000000   .L0  + 0
+00000056  00000e22 R_RISCV_ADD16     00000020   .L0  + 0
+00000056  00000d26 R_RISCV_SUB16     00000010   .L0  + 0
+0000005e  00000f22 R_RISCV_ADD16     00000034   .L0  + 0
+0000005e  00000e26 R_RISCV_SUB16     00000020   .L0  + 0
+00000066  00001022 R_RISCV_ADD16     0000003c   .L0  + 0
+00000066  00000f26 R_RISCV_SUB16     00000034   .L0  + 0
+0000006a  00001f22 R_RISCV_ADD16     0000004c   .L0  + 0
+0000006a  00001026 R_RISCV_SUB16     0000003c   .L0  + 0
+
+Relocation section '.rela.debug_frame' at offset 0xc1c contains 6 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name + Addend
+00000014  00002001 R_RISCV_32        00000000   .L0  + 0
+00000018  00000901 R_RISCV_32        00000000   .L0  + 0
+0000001c  00001223 R_RISCV_ADD32     0000004c   .L0  + 0
+0000001c  00000927 R_RISCV_SUB32     00000000   .L0  + 0
+0000002a  00001135 R_RISCV_SET6      00000044   .L0  + 0
+0000002a  00000c34 R_RISCV_SUB6      0000000c   .L0  + 0
+Attribute Section: riscv
+File Attributes
+  Tag_RISCV_arch: "rv32e1p9"

@@ -1,0 +1,7 @@
+si
+info r
+p $sp
+x 2 0x80000000
+si 1
+p $t0
+q

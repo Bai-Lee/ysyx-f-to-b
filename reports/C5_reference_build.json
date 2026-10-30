@@ -1,0 +1,46 @@
+{
+  "status": "PASS_MEMORY_REGIONS_AND_MROM_EXECUTION_CONTROLS",
+  "source_origin": "/home/USER/c-stage/nemu-ref",
+  "workspace": "/home/USER/c-stage/c5/nemu-ref",
+  "binary": "/home/USER/c-stage/c5/nemu-ref/build/riscv32-nemu-interpreter-so",
+  "sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab",
+  "inputs": [
+    {
+      "path": "/home/USER/c-stage/c5/nemu-ref/.config",
+      "sha256": "a49c23adb0afc230082b8165ae17194b123b140c7f09c691d47642efedd5efd0"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/ref/paddr.c",
+      "sha256": "306f11636e724ecc3c7eab285738ea5c8bac56742375b0113e91d9f87cfd7299"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/ref/ref.c",
+      "sha256": "b5511cc5476c8dd5f8eeee707dffa7e002e66e61d542832e2f7b2344c2182348"
+    },
+    {
+      "path": "/home/USER/c-stage/c5/nemu-ref/src/isa/riscv32/inst.c",
+      "sha256": "58bc65cdf13a4ca2bb473fe4bb105f7c895105ab44d4df7925c9ecacbe7c6823"
+    }
+  ],
+  "scope": "Independent RV32IM reference with strict SoC memory regions; GPR/PC ABI unchanged. CSR/ECALL/MRET acceptance is in reports/C5_csr.json; memory controls do not establish context-switch or RT-Thread correctness.",
+  "controls": [
+    {
+      "name": "positive",
+      "status": "PASS",
+      "expected_exit": 0,
+      "evidence": "artifacts/C5/reference/positive"
+    },
+    {
+      "name": "span",
+      "status": "PASS",
+      "expected_exit": -6,
+      "evidence": "artifacts/C5/reference/span"
+    },
+    {
+      "name": "rom-write",
+      "status": "PASS",
+      "expected_exit": -6,
+      "evidence": "artifacts/C5/reference/rom-write"
+    }
+  ]
+}

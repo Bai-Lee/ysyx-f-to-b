@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "archive_sha256": "21de1aa68b460ae54701f88dc56b2720d7cb35ce66c440cd914bebe173c4b741",
+  "extraction_directory": "/home/USER/c-stage/offline-replay/20261029T123510645324",
+  "extracted_members": [
+    "bin/C5/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink-bad-read/sim",
+    "bin/C5/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink/sim",
+    "bin/C5/30000000-cycle-psram4m-qpi-sdram16x1-opt/sim",
+    "bin/C5/30000000-cycle-psram4m-qpi-sdram32x1-opt/sim",
+    "bin/c5-nemu-ref.so",
+    "firmware/apps/microbench/sdram32/test/image.bin",
+    "firmware/memory/chiplink-test/chiplink-test-riscv32e-ysyxsoc-sram-code.bin",
+    "firmware/rtthread-boot/rtthread-riscv32e-ysyxsoc-sdram32.bin"
+  ],
+  "runs": [
+    {
+      "case": "microbench",
+      "status": "PASS",
+      "result": "GOOD_TRAP",
+      "cycles": 9262308,
+      "instructions": 900448,
+      "compared_fields": [
+        "result",
+        "exit_code",
+        "cycles",
+        "instructions",
+        "diff_checked",
+        "device_sync_checked",
+        "gpr",
+        "coverage",
+        "uart"
+      ],
+      "original_evidence": "artifacts/C5/sdram-apps/microbench-32x1",
+      "evidence": "artifacts/C/offline-replay/microbench",
+      "inputs": [
+        {
+          "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram32x1-opt/sim",
+          "sha256": "761446e16ad69e9c2f53c4b7f74e4cf71779dd608aae2b5de518f916ddc7e4e7"
+        },
+        {
+          "member": "firmware/apps/microbench/sdram32/test/image.bin",
+          "sha256": "e7c6bde00fe5cfebe80db60ec9f2adf145b2679f539eb0dfeee217f5dfd333b3"
+        },
+        {
+          "member": "bin/c5-nemu-ref.so",
+          "sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab"
+        }
+      ],
+      "run_sha256": "c7c94c461a71836237d57aedea64479209b09cd3fe60db4ac26b1570aaf43119"
+    },
+    {
+      "case": "rtthread",
+      "status": "PASS",
+      "result": "GOOD_TRAP",
+      "cycles": 16812265,
+      "instructions": 1035788,
+      "compared_fields": [
+        "result",
+        "exit_code",
+        "cycles",
+        "instructions",
+        "diff_checked",
+        "device_sync_checked",
+        "gpr",
+        "coverage",
+        "uart"
+      ],
+      "original_evidence": "artifacts/C5/rtthread/sdram32",
+      "evidence": "artifacts/C/offline-replay/rtthread",
+      "inputs": [
+        {
+          "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram16x1-opt/sim",
+          "sha256": "57dd2e678b48ff54a5d4215861a9b54231f0b22bc916d008e79337a59fa0dabe"
+        },
+        {
+          "member": "firmware/rtthread-boot/rtthread-riscv32e-ysyxsoc-sdram32.bin",
+          "sha256": "aab847d5bf6681dcb693909537c227c78ab8df8f8bd0d723647e5a4fa65dd37d"
+        },
+        {
+          "member": "bin/c5-nemu-ref.so",
+          "sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab"
+        }
+      ],
+      "run_sha256": "d6a11727c83d968a9043b23c5b393edb3c89912b61db803a897c7cb463089efe"
+    },
+    {
+      "case": "chiplink",
+      "status": "PASS",
+      "result": "GOOD_TRAP",
+      "cycles": 1800643,
+      "instructions": 92929,
+      "compared_fields": [
+        "result",
+        "exit_code",
+        "cycles",
+        "instructions",
+        "diff_checked",
+        "device_sync_checked",
+        "gpr",
+        "coverage",
+        "uart"
+      ],
+      "original_evidence": "artifacts/C5/chiplink/positive",
+      "evidence": "artifacts/C/offline-replay/chiplink",
+      "inputs": [
+        {
+          "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink/sim",
+          "sha256": "74e5352ca7a570b49d13a8f6506e000205fe3f613603423aed2f924a34b3f53b"
+        },
+        {
+          "member": "firmware/memory/chiplink-test/chiplink-test-riscv32e-ysyxsoc-sram-code.bin",
+          "sha256": "26855d83a46ae8e9ac0a83300cf1891494f4fe89b67a5532e9ffbee0845e2365"
+        },
+        {
+          "member": "bin/c5-nemu-ref.so",
+          "sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab"
+        }
+      ],
+      "run_sha256": "a2ca0d6ae00996ca9bfae6906b202dde9b2bdf7eddafde4ac0e54d5215f64461"
+    },
+    {
+      "case": "chiplink-bad-read",
+      "status": "PASS",
+      "result": "DIFF_FAIL",
+      "cycles": 627138,
+      "instructions": 11916,
+      "compared_fields": [
+        "result",
+        "exit_code",
+        "cycles",
+        "instructions",
+        "diff_checked",
+        "device_sync_checked",
+        "gpr",
+        "coverage",
+        "uart"
+      ],
+      "original_evidence": "artifacts/C5/chiplink/bad-read",
+      "evidence": "artifacts/C/offline-replay/chiplink-bad-read",
+      "inputs": [
+        {
+          "member": "bin/C5/30000000-cycle-psram4m-qpi-sdram16x1-opt-chiplink-bad-read/sim",
+          "sha256": "8de34cd757d2139cf1c43ad58cdc88e257b0105b34a3458244105ef60c2c2a56"
+        },
+        {
+          "member": "firmware/memory/chiplink-test/chiplink-test-riscv32e-ysyxsoc-sram-code.bin",
+          "sha256": "26855d83a46ae8e9ac0a83300cf1891494f4fe89b67a5532e9ffbee0845e2365"
+        },
+        {
+          "member": "bin/c5-nemu-ref.so",
+          "sha256": "cd3d7f0c68a2c36e040d0a1fd8fb60454afa683c9e3f476c96d69396de0f08ab"
+        }
+      ],
+      "run_sha256": "7a2f293216d00c4ec35c998c8dae18014888085bb01e5941f33c4759c0262413"
+    }
+  ],
+  "scope": "Actual execution of extracted C5 simulator/reference/firmware files. MicroBench test, scripted RT-Thread and ChipLink positive/negative reproduce their accepted results and deterministic counters. Installed Linux system libraries are reused. This is selected binary replay, not a clean-machine source rebuild or a repeat of the multi-hour memory sweeps."
+}

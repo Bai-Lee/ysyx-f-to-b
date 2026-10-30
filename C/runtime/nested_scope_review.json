@@ -1,0 +1,1917 @@
+{
+  "status": "SOURCE_SCOPE_REVIEW_COMPLETE_NOT_EXECUTION",
+  "review_kind": "Read-only source audit; only this new JSON is authored. No simulations, installations or changes to shared ledger.",
+  "sources": [
+    {
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\inventory\\assignment_matrix.json",
+      "sha256": "ee75d71d86d584f87ecc474c41fd76e04cca911de91e3019fe614a34d8286e40"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\markdown\\c513b8fe1d21123b.md",
+      "sha256": "e9e414c9a916a0ce2c21f26ef68746a017820ce6de1de71d836427ddd4effca0"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\markdown\\43b650b773c2bef7.md",
+      "sha256": "19a77a8daffe63dcf46cc7f37c20d54a5b5c848c030c7b900748307d9cb730f1"
+    },
+    {
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\docs\\markdown\\C\\C5.md",
+      "sha256": "98f8fdeb06cab221319ab22be732876fd31310651302a3cd220816e9f067dde5"
+    }
+  ],
+  "top_level_C_counts": {
+    "scope_records": 101,
+    "PUBLIC_CORE_TASK": 68,
+    "USER_ADAPTED": 2,
+    "optional_background": 22,
+    "method_reminders": 9,
+    "public_plus_adapted_engineering": 70,
+    "C6_tasks": 0
+  },
+  "counting_policy": "Keep 101 top-level C records separate from imported nested records; do not count C2-M008 and its 17 children as disjoint top-level requirements.",
+  "C2_M008": {
+    "parent": "C2-M008",
+    "source_task": {
+      "id": "C2-M008",
+      "classification": "PUBLIC_CORE_TASK",
+      "implementation_status": "NOT_RUN",
+      "requirement": "完成 PA2 阶段 3 IO 与必答题",
+      "deliverable": "本文 PA2.5 子项、NEMU IOE、报告",
+      "acceptance": "到 PA2 结束标记，时钟/键盘/显示/程序演示逐项有证据",
+      "document": "02_一生一芯_F至B_公开作业实现与验收清单.md",
+      "details_document": "assignments/00_核心逐项细则.md",
+      "source": {
+        "url": "https://ysyx.oscc.cc/docs/2607/c/2.html",
+        "raw": "docs/raw_html/C/C2.html",
+        "markdown": "docs/markdown/C/C2.md",
+        "offline": "docs/offline_html/C/C2.html",
+        "version": "v26.07",
+        "source_sha256": "a1d0c13691b4e1a565e60ba66bb7c77b43e25beb92ed497f92b0bfed51c9482a"
+      },
+      "source_line": 251,
+      "source_box_index": 9
+    },
+    "nested_record_count": 48,
+    "required_count": 17,
+    "optional_method_count": 31,
+    "required_record_ids": [
+      "PA-2.5-01",
+      "PA-2.5-02",
+      "PA-2.5-03",
+      "PA-2.5-04",
+      "PA-2.5-05",
+      "PA-2.5-06",
+      "PA-2.5-07",
+      "PA-2.5-08",
+      "PA-2.5-09",
+      "PA-2.5-10",
+      "PA-2.5-11",
+      "PA-2.5-12-Q01",
+      "PA-2.5-12-Q02",
+      "PA-2.5-12-Q03",
+      "PA-2.5-12-Q04",
+      "PA-2.5-12-Q05",
+      "PA-2.5-12-Q06"
+    ],
+    "optional_record_ids": [
+      "PA-2.5-AUX01",
+      "PA-2.5-AUX02",
+      "PA-2.5-AUX03",
+      "PA-2.5-AUX04",
+      "PA-2.5-AUX05",
+      "PA-2.5-AUX06",
+      "PA-2.5-AUX07",
+      "PA-2.5-AUX08",
+      "PA-2.5-AUX09",
+      "PA-2.5-AUX10",
+      "PA-2.5-AUX11",
+      "PA-2.5-AUX12",
+      "PA-2.5-AUX13",
+      "PA-2.5-AUX14",
+      "PA-2.5-AUX15",
+      "PA-2.5-AUX16",
+      "PA-2.5-AUX17",
+      "PA-2.5-AUX18",
+      "PA-2.5-AUX19",
+      "PA-2.5-AUX20",
+      "PA-2.5-AUX21",
+      "PA-2.5-AUX22",
+      "PA-2.5-AUX23",
+      "PA-2.5-AUX24",
+      "PA-2.5-AUX25",
+      "PA-2.5-AUX26",
+      "PA-2.5-AUX27",
+      "PA-2.5-AUX28",
+      "PA-2.5-AUX29",
+      "PA-2.5-AUX30",
+      "PA-2.5-AUX31"
+    ],
+    "records": [
+      {
+        "id": "PA-2.5-01",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "运行Hello World 如果你选择了x86, 你需要实现 in , out 指令. 具体地, 你需要RTFSC, 然后在 in 指令和 out 指令的实现中正确调用 pio_read() 和 pio_write() . 如果你选择的是mips32和riscv32, 你不需要实现额外的代码, 因为NEMU的框架代码已经支持MMIO了. 实现后, 在 am-kernels/kernels/hello/ 目录下键入 make ARCH = $ISA -nemu run 如果你的实现正确, 你将会看到程序往终端输出一些信息(请注意不要让输出淹没在调试信息中). 需要注意的是, 这个hello程序和我们在程序设计课上写的第一个hello程序所处的抽象层次是不一样的: 这个hello程序可以说是直接运行在裸机上, 可以在AM的抽象之上直接输出到设备(串口); 而我们在程序设计课上写的hello程序位于操作系统之上, 不能直接操作设备, 只能通过操作系统提供的服务进行输出, 输出的数据要经过很多层抽象才能到达设备层. 我们会在PA3中进一步体会操作系统的作用.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "riscv32-nemu 的 MMIO/hello 输出正确；不实现无关 x86 in/out",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "运行Hello World",
+          "line_start": 243,
+          "line_end": 259
+        }
+      },
+      {
+        "id": "PA-2.5-02",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "实现printf 有了 putch() , 我们就可以在klib中实现 printf() 了. 你之前已经实现了 sprintf() 了, 它和 printf() 的功能非常相似, 这意味着它们之间会有不少重复的代码. 你已经见识到Copy-Paste编程习惯的坏处了, 思考一下, 如何简洁地实现它们呢? 实现了 printf() 之后, 你就可以在AM程序中使用输出调试法了.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "printf 与 sprintf 共享格式化核心，输出/返回计数按已实现契约一致",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "实现printf",
+          "line_start": 287,
+          "line_end": 293
+        }
+      },
+      {
+        "id": "PA-2.5-03",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "运行alu-tests 我们在 am-kernels/tests/alu-tests/ 目录下移植了一个专门测试各种C语言运算的程序, 实现 printf() 后你就可以运行它了. 编译过程可能需要花费1分钟.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "alu-tests 所有公开用例实际运行通过，失败能传播状态码",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "运行alu-tests",
+          "line_start": 297,
+          "line_end": 299
+        }
+      },
+      {
+        "id": "PA-2.5-04",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "实现IOE 在 abstract-machine/am/src/platform/nemu/ioe/timer.c 中实现 AM_TIMER_UPTIME 的功能. 在 abstract-machine/am/src/platform/nemu/include/nemu.h 和 abstract-machine/am/src/$ISA/$ISA.h 中有一些输入输出相关的代码供你使用. 实现后, 在 $ISA-nemu 中运行 am-kernel/tests/am-tests 中的 real-time clock test 测试. 如果你的实现正确, 你将会看到程序每隔1秒往终端输出一行信息. 由于我们没有实现 AM_TIMER_RTC , 测试总是输出1900年0月0日0时0分0秒, 这属于正常行为, 可以忽略.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "AM_TIMER_UPTIME 单调微秒，t 测试约每秒输出；未实现 RTC 的 1900 日期可忽略",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "实现IOE",
+          "line_start": 330,
+          "line_end": 334
+        }
+      },
+      {
+        "id": "PA-2.5-05",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "看看NEMU跑多快 有了时钟之后, 我们就可以测试一个程序跑多快, 从而测试计算机的性能. 尝试在NEMU中依次运行以下benchmark(已经按照程序的复杂度排序, 均在 am-kernel/benchmarks/ 目录下; 另外跑分时请关闭NEMU的监视点, trace以及DiffTest, 同时取消menuconfig中的 Enable debug information 并重新编译NEMU, 以获得较为真实的跑分): dhrystone coremark microbench 成功运行后会输出跑分. 其中microbench跑分以 i9-9900K @ 3.60GHz 的处理器为参照, 100000 分表示与参照机器性能相当, 100 分表示性能为参照机器的千分之一. 除了和参照机器比较之外, 也可以和小伙伴进行比较. 如果把上述benchmark编译到 native , 还可以比较 native 的性能. 另外, microbench提供了四个不同规模的测试集, 包括 test , train , ref 和 huge . 你可以先运行 test 规模, 它可以较快地运行结束, 来检查NEMU实现的正确性, 然后再运行 ref 规模来测量性能. 具体的运行方法请阅读README. 此外, huge 规模一般用于真机的测试, 在NEMU中需要运行很长时间, 我们不要求你运行它.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "依次运行 dhrystone/coremark/microbench，小规模先验功能、ref 评性能；性能运行关闭 trace/watchpoint/DiffTest，huge 原文不要求",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "看看NEMU跑多快",
+          "line_start": 348,
+          "line_end": 360
+        }
+      },
+      {
+        "id": "PA-2.5-06",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "实现dtrace 这个功能非常简单, 你可以自行定义dtrace输出的格式. 注意你可以通过 map->name 来获取一段设备地址空间的名字, 这样可以帮助你输出可读性较好的信息. 同样地, 你也可以为dtrace实现条件控制功能, 提升dtrace使用的灵活性.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "dtrace 输出设备名字、地址、方向和值，可按条件开关",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "实现dtrace",
+          "line_start": 479,
+          "line_end": 481
+        }
+      },
+      {
+        "id": "PA-2.5-07",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "实现IOE(2) 在 abstract-machine/am/src/platform/nemu/ioe/input.c 中实现 AM_INPUT_KEYBRD 的功能. 实现后, 在 $ISA-nemu 中运行 am-tests 中的 readkey test 测试. 如果你的实现正确, 在程序运行时弹出的新窗口中按下按键, 你将会看到程序输出相应的按键信息, 包括按键名, 键盘码, 以及按键状态.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "AM_KEY 按下/释放/无事件正确，readkey 实际交互结果可核对",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "实现IOE(2)",
+          "line_start": 497,
+          "line_end": 499
+        }
+      },
+      {
+        "id": "PA-2.5-08",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "实现IOE(3) 事实上, VGA设备还有两个寄存器: 屏幕大小寄存器和同步寄存器. 我们在讲义中并未介绍它们, 我们把它们作为相应的练习留给大家. 具体地, 屏幕大小寄存器的硬件(NEMU)功能已经实现, 但软件(AM)还没有去使用它; 而对于同步寄存器则相反, 软件(AM)已经实现了同步屏幕的功能, 但硬件(NEMU)尚未添加相应的支持. 好了, 提示已经足够啦, 至于要在什么地方添加什么样的代码, 就由你来RTFSC吧. 这也是明白软硬件如何协同工作的很好的练习. 实现后, 向 __am_gpu_init() 中添加如下测试代码: --- abstract-machine/am/src/platform/nemu/ioe/gpu.c +++ abstract-machine/am/src/platform/nemu/ioe/gpu.c @@ -6,2 +6,8 @@ void __am_gpu_init() { + int i; + int w = 0; // TODO: get the correct width + int h = 0; // TODO: get the correct height + uint32_t *fb = (uint32_t *)(uintptr_t)FB_ADDR; + for (i = 0; i < w * h; i ++) fb[i] = i; + outl(SYNC_ADDR, 1); } 其中上述代码中的 w 和 h 并未设置正确的值, 你需要阅读 am-tests 中的 display test 测试, 理解它如何获取正确的屏幕大小, 然后修改上述代码的 w 和 h . 你可能还需要对 gpu.c 中的代码进行一些修改. 修改后, 在 $ISA-nemu 中运行 am-tests 中的 display test 测试, 如果你的实现正确, 你会看到新窗口中输出了全屏的颜色信息.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "读屏幕宽高并正确实现同步寄存器；初始化画面覆盖实际全屏",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "实现IOE(3)",
+          "line_start": 538,
+          "line_end": 562
+        }
+      },
+      {
+        "id": "PA-2.5-09",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "实现IOE(4) 事实上, 刚才输出的颜色信息并不是 display test 期望输出的画面, 这是因为 AM_GPU_FBDRAW 的功能并未正确实现. 你需要正确地实现 AM_GPU_FBDRAW 的功能. 实现后, 重新运行 display test . 如果你的实现正确, 你将会看到新窗口中输出了相应的动画效果. 实现正确后, 你就可以去掉上文添加的测试代码了.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "矩形行优先拷贝、边界及 sync 正确，display test 动画符合源程序",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "实现IOE(4)",
+          "line_start": 566,
+          "line_end": 570
+        }
+      },
+      {
+        "id": "PA-2.5-10",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "展示你的计算机系统 完整实现IOE后, 我们还可以运行一些酷炫的程序: 幻灯片播放(在 am-kernels/kernels/slider/ 目录下). 程序将每隔5秒切换 images/ 目录下的图片. 打字小游戏(在 am-kernels/kernels/typing-game/ 目录下). 演示程序集合(在 am-kernels/kernels/demo/ 目录下). \"Bad Apple!!\" PV的播放(在 am-kernels/kernels/bad-apple/ 目录下). 贪吃蛇(在 am-kernels/kernels/snake/ 目录下). 简单的红白机模拟器LiteNES(在 am-kernels/kernels/litenes/ 目录下). 不过LiteNES的性能比较低, 在NEMU上只能跑十几FPS. 完整的红白机模拟器FCEUX. 没错, 我们在PA1中给大家介绍的红白机模拟器, 现在也已经可以在NEMU中运行起来了!",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "slider/typing/demo/Bad Apple/snake/LiteNES/FCEUX 逐程序演示，有终端/图像/按键证据；所用媒体权利另记",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "展示你的计算机系统",
+          "line_start": 724,
+          "line_end": 751
+        }
+      },
+      {
+        "id": "PA-2.5-11",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "游戏是如何运行的 请你以打字小游戏为例, 结合\"程序在计算机上运行\"的两个视角, 来剖析打字小游戏究竟是如何在计算机上运行的. 具体地, 当你按下一个字母并命中的时候, 整个计算机系统(NEMU, ISA, AM, 运行时环境, 程序) 是如何协同工作, 从而让打字小游戏实现出\"命中\"的游戏效果? 打字小游戏只有不到200行的简单代码, 非常适合大家RTFSC. 如果你发现自己难以理解打字小游戏的具体行为, 你需要给自己敲响警钟了: 你在做PA的时候很有可能只关注怎么把必做内容的代码写对, 而不去思考这些代码和计算机系统的关系. 从ICS和PA的角度来说, 这种做法是不及格的, 而且很快你就会吃苦头了.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "按键命中从设备→AM→程序逻辑→绘制/状态的完整软硬路径逐层解释",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "游戏是如何运行的",
+          "line_start": 755,
+          "line_end": 759
+        }
+      },
+      {
+        "id": "PA-2.5-12-Q01",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "程序是个状态机 理解YEMU的执行过程, 具体请参考 这里 .",
+        "deliverable": "逐问 Markdown 答案、所需状态图/计算/实验日志。",
+        "acceptance": "本题全部子问逐项回答，附手册位置/源码路径/推导或实际命令证据；编译链接问题保留所有变体及符号表/错误对照。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "必答题",
+          "question_number": 1,
+          "line_start": 860,
+          "line_end": 860
+        }
+      },
+      {
+        "id": "PA-2.5-12-Q02",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "RTFSC 请整理一条指令在NEMU中的执行过程, 具体请参考 这里 .",
+        "deliverable": "逐问 Markdown 答案、所需状态图/计算/实验日志。",
+        "acceptance": "本题全部子问逐项回答，附手册位置/源码路径/推导或实际命令证据；编译链接问题保留所有变体及符号表/错误对照。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "必答题",
+          "question_number": 2,
+          "line_start": 861,
+          "line_end": 861
+        }
+      },
+      {
+        "id": "PA-2.5-12-Q03",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "程序如何运行 理解打字小游戏如何运行, 具体请参考 这里 .",
+        "deliverable": "逐问 Markdown 答案、所需状态图/计算/实验日志。",
+        "acceptance": "本题全部子问逐项回答，附手册位置/源码路径/推导或实际命令证据；编译链接问题保留所有变体及符号表/错误对照。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "必答题",
+          "question_number": 3,
+          "line_start": 862,
+          "line_end": 862
+        }
+      },
+      {
+        "id": "PA-2.5-12-Q04",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "编译与链接 在 nemu/include/cpu/ifetch.h 中, 你会看到由 static inline 开头定义的 inst_fetch() 函数. 分别尝试去掉 static , 去掉 inline 或去掉两者, 然后重新进行编译, 你可能会看到发生错误. 请分别解释为什么这些错误会发生/不发生? 你有办法证明你的想法吗?",
+        "deliverable": "逐问 Markdown 答案、所需状态图/计算/实验日志。",
+        "acceptance": "本题全部子问逐项回答，附手册位置/源码路径/推导或实际命令证据；编译链接问题保留所有变体及符号表/错误对照。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "必答题",
+          "question_number": 4,
+          "line_start": 863,
+          "line_end": 863
+        }
+      },
+      {
+        "id": "PA-2.5-12-Q05",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "编译与链接 在 nemu/include/common.h 中添加一行 volatile static int dummy; 然后重新编译NEMU. 请问重新编译后的NEMU含有多少个 dummy 变量的实体? 你是如何得到这个结果的? 添加上题中的代码后, 再在 nemu/include/debug.h 中添加一行 volatile static int dummy; 然后重新编译NEMU. 请问此时的NEMU含有多少个 dummy 变量的实体? 与上题中 dummy 变量实体数目进行比较, 并解释本题的结果. 修改添加的代码, 为两处 dummy 变量进行初始化: volatile static int dummy = 0; 然后重新编译NEMU. 你发现了什么问题? 为什么之前没有出现这样的问题? (回答完本题后可以删除添加的代码.)",
+        "deliverable": "逐问 Markdown 答案、所需状态图/计算/实验日志。",
+        "acceptance": "本题全部子问逐项回答，附手册位置/源码路径/推导或实际命令证据；编译链接问题保留所有变体及符号表/错误对照。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "必答题",
+          "question_number": 5,
+          "line_start": 864,
+          "line_end": 867
+        }
+      },
+      {
+        "id": "PA-2.5-12-Q06",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "了解Makefile 请描述你在 am-kernels/kernels/hello/ 目录下敲入 make ARCH=$ISA-nemu 后, make 程序如何组织.c和.h文件, 最终生成可执行文件 am-kernels/kernels/hello/build/hello-$ISA-nemu.elf . (这个问题包括两个方面: Makefile 的工作方式和编译链接的过程.) 关于 Makefile 工作方式的提示: Makefile 中使用了变量, 包含文件等特性 Makefile 运用并重写了一些implicit rules 在 man make 中搜索 -n 选项, 也许会对你有帮助 RTFM",
+        "deliverable": "逐问 Markdown 答案、所需状态图/计算/实验日志。",
+        "acceptance": "本题全部子问逐项回答，附手册位置/源码路径/推导或实际命令证据；编译链接问题保留所有变体及符号表/错误对照。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "必答题",
+          "question_number": 6,
+          "line_start": 868,
+          "line_end": 873
+        }
+      },
+      {
+        "id": "PA-2.5-AUX01",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "有没有一种熟悉的感觉? API, 行为, RTFM... 没错, 我们又再次看到了计算机系统设计的一个例子: 设备向CPU暴露设备寄存器的接口, 把设备内部的复杂行为(甚至一些模拟电路的特性)进行抽象, CPU只需要使用这一接口访问设备, 就可以实现期望的功能. 计算机系统处处蕴含抽象的思想, 只要理解其中的原理, 再加上RTFM的技能, 你就能掌握计算机系统的全部!",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "有没有一种熟悉的感觉?",
+          "line_start": 53,
+          "line_end": 57
+        }
+      },
+      {
+        "id": "PA-2.5-AUX02",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "理解volatile关键字 也许你从来都没听说过C语言中有 volatile 这个关键字, 但它从C语言诞生开始就一直存在. volatile 关键字的作用十分特别, 它的作用是避免编译器对相应代码进行优化. 你应该动手体会一下 volatile 的作用, 在GNU/Linux下编写以下代码: void fun ( ) { extern unsigned char _end ; // _end是什么? volatile unsigned char * p = & _end ; * p = 0 ; while ( * p != 0xff ) ; * p = 0x33 ; * p = 0x34 ; * p = 0x86 ; } 然后使用 -O2 编译代码. 尝试去掉代码中的 volatile 关键字, 重新使用 -O2 编译, 并对比去掉 volatile 前后反汇编结果的不同. 你或许会感到疑惑, 代码优化不是一件好事情吗? 为什么会有 volatile 这种奇葩的存在? 思考一下, 如果代码中 p 指向的地址最终被映射到一个设备寄存器, 去掉 volatile 可能会带来什么问题?",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "理解volatile关键字",
+          "line_start": 83,
+          "line_end": 105
+        }
+      },
+      {
+        "id": "PA-2.5-AUX03",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "通过内存进行数据交互的输入输出 我们知道 S = <R, M> , 上文介绍的端口I/O和内存映射I/O都是通过寄存器 R 来进行数据交互的. 很自然地, 我们可以考虑, 有没有通过内存 M 来进行数据交互的输入输出方式呢? 其实是有的, 这种方式叫 DMA 在新窗口中打开 . 为了提高性能, 一些复杂的设备一般都会带有DMA的功能. 不过在NEMU中的设备都比较简单, 关于DMA的细节我们就不展开介绍了.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "通过内存进行数据交互的输入输出",
+          "line_start": 145,
+          "line_end": 149
+        }
+      },
+      {
+        "id": "PA-2.5-AUX04",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "设备和DiffTest 在状态机视角下, 执行一条输入指令会让状态机的状态转移变得不唯一, 新状态取决于设备的状态. 由于NEMU中设备的行为是我们自定义的, 与REF中的标准设备的行为不完全一样 (例如NEMU中的串口总是就绪的, 但QEMU中的串口也许并不是这样), 这导致在NEMU中执行输入指令的结果会和REF有所不同. 为了使得DiffTest可以正常工作, 框架代码在访问设备的过程中调用了 difftest_skip_ref() 函数 (见 nemu/include/device/map.h 中定义的 find_mapid_by_addr() 函数)来跳过与REF的检查.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "设备和DiffTest",
+          "line_start": 263,
+          "line_end": 277
+        }
+      },
+      {
+        "id": "PA-2.5-AUX05",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "理解mainargs 请你通过RTFSC理解这个参数是如何从 make 命令中传递到 hello 程序中的, $ISA-nemu 和 native 采用了不同的传递方法, 都值得你去了解一下.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "理解mainargs",
+          "line_start": 281,
+          "line_end": 283
+        }
+      },
+      {
+        "id": "PA-2.5-AUX06",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "为什么不设置一个64位的RTC寄存器? 我们希望设备的设计与CPU解耦, 无论设备接入到何种架构的CPU都能工作. 但32位的CPU无法一次访问64位的设备寄存器, 因此将一个64位的功能拆分成两个32位的设备寄存器, 可同时支持接入32位和64位CPU.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "为什么不设置一个64位的RTC寄存器?",
+          "line_start": 311,
+          "line_end": 318
+        }
+      },
+      {
+        "id": "PA-2.5-AUX07",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "RTC - 实时时钟 RTC泛指流逝速率与真实时间一致的时钟, 用户可根据RTC进行一段时间的测量. 按照这个定义, 上述两个AM抽象寄存器都属于RTC, 不过它们的侧重点有所不同: AM_TIMER_RTC 强调读出的时间与现实时间完全一致, AM_TIMER_UPTIME 则侧重系统启动后经过的时间, 即从0开始计数. 虽然NEMU中的设备寄存器的名称也叫RTC, 但为了支持 AM_TIMER_UPTIME 的功能, 它不必实现成 AM_TIMER_RTC .",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "RTC - 实时时钟",
+          "line_start": 322,
+          "line_end": 326
+        }
+      },
+      {
+        "id": "PA-2.5-AUX08",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "RTFSC尽可能了解一切细节 经常有同学反馈自己阅读代码的经验很少, 没见过好的代码怎么写. 但另一方面, 这些同学在做实验的时候却只关心究竟在什么地方填写代码, 写完就认为自己完成了实验, 从而觉得其它代码和实验内容无关, 不愿意花时间去阅读. 怀着这种心态的同学其实是主动放弃了锻炼能力的机会. 如果你是真心想学习, 你就不应该觉得\"这个文件好像不看也行, 关我P事\", 而是应该主动想\"这个程序跑出来的结果是这样, 我来读代码看看它究竟是怎么写的\". 事实上, 框架代码里面有非常多的宝藏, 即使是测试代码, 阅读它们除了能让你明白这些测试的具体行为之外, 你还会了解程序应该如何使用AM的API, 甚至是编码风格也有值得你学习的地方. 因此, 要如何运行 real-time clock test 这个测试, 就交给你来RTFSC吧.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "RTFSC尽可能了解一切细节",
+          "line_start": 338,
+          "line_end": 344
+        }
+      },
+      {
+        "id": "PA-2.5-AUX09",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "如何调试复杂程序 随着程序变得越来越复杂, 调试会变得越来越困难, bug也可能变得越来越奇怪. 这几乎是做PA的每位同学都必须经历的痛苦: 你在程序设计课上锻炼出的能力根本不足以让你编写正确的程序. 但你毕业之后还需要面对代码量上万行甚至几十万行的大项目, 相比之下PA简直就是一个小玩具. 我们在PA中让你面对这些痛苦, 最终还是希望你明白真正的调试方法, 从而将来可以面对更大的项目: RTFSC . 这是为了让你明白一切细节是如何发生的, 这些细节在调试的时候就会成为有用的线索, 这是因为: 只有当你明白什么是\"正确\", 你才会知道什么是\"错误\"; 对\"正确\"的认识越清晰, 对\"错误\"的了解也会越深刻. 因此当你碰到bug后感到束手无策, 完全无法理解这个bug大概是如何出现, 几乎都是因为你之前不愿意RTFSC, 觉得不看也无所谓, 导致你手上完全没有可用的线索帮助你进行bug的推敲. 使用正确的工具 . 你遇到的bug千奇百怪, 但总有方法可以帮你高效地解决. 我们在讲义中介绍了非常多的工具和方法, 它们总有各自适用的场合和局限性. 因此如果你对一个bug的原因有初步的猜测, 但完全不知道应该如何下手去调试它, 几乎都是因为你没有熟练地掌握这些工具和方法, 导致无法根据实际情况选择出合适的调试方案, 甚至是因为你完全不重视它们, 觉得不了解它们也无所谓. 比如我们已经在某道选做题里面提示了高效应对段错误的方法, 如果你不知道遇到段错误的时候应该怎么办, 而又忽略了上述提示, 相信你已经浪费了很多不必要的时间. 在PA中锻炼的技能是环环相扣的, 当你认为可以通过\"不仔细看代码/讲义/手册\"来节省时间时, 你将来必定会为此付出更多的代价: bug一来, 欠的债都是要还的.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "如何调试复杂程序",
+          "line_start": 381,
+          "line_end": 390
+        }
+      },
+      {
+        "id": "PA-2.5-AUX10",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "RTFSC了解一切细节 关于 AM_TIMER_UPTIME 的实现, 我们在框架代码中埋了一些小坑, 如果你没有修复相关的问题, 你可能会在运行benchmark的时候出现跑分不正确的现象. 这是为了强迫大家认真RTFSC了解程序运行过程中的一切细节: benchmark读取时钟信息的时候, 整个计算机系统究竟发生了什么? 只有这样你才能把时钟相关的bug调试正确.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "RTFSC了解一切细节",
+          "line_start": 394,
+          "line_end": 396
+        }
+      },
+      {
+        "id": "PA-2.5-AUX11",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "NEMU和语言解释器 microbench中有一个叫 bf 的测试项目, 它是 Brainf**k 在新窗口中打开 语言的一个解释器. Brainf**k语言非常简单, 它只有8种指令, 连变量的概念都没有, 因此非常接近机器语言. 有兴趣的同学可以阅读 bf.c 的代码, 你会发现这么简单的一个语言解释器和看上去很复杂的NEMU从原理上来看还是有相似之处的.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "NEMU和语言解释器",
+          "line_start": 400,
+          "line_end": 402
+        }
+      },
+      {
+        "id": "PA-2.5-AUX12",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "先完成, 后完美 - 抑制住优化代码的冲动 计算机系统的设计过程可以概括成两件事: 设计一个功能正确的完整系统 (先完成) 在第1点的基础上, 让程序运行得更快 (后完美) 看到跑分之后, 你也许会忍不住去思考如何优化你的NEMU. 上述原则告诉你, 时机还没到. 一个原因是, 在整个系统完成之前, 你很难判断系统的性能瓶颈会出现在哪一个模块中. 你一开始辛辛苦苦追求的完美, 最后对整个系统的性能提升也许只是九牛一毛, 根本不值得你花费这么多时间. 比如你可能在PA1中花时间去优化表达式求值的算法, 你可以以此作为一个编程练习, 但如果你的初衷是为了优化性能, 你的付出绝对是没有效果的: 你得输入多长的表达式才能让你明显感觉到新算法的性能优势? 此外, PA作为一个教学实验, 只要性能不是差得无法接受, 性能都不是你需要考虑的首要目标, 实现方案点到为止即可. 相比之下, 通过设计一个完整的系统来体会程序如何运行, 对你来说才是最重要的. 事实上, 除了计算机, \"先完成, 后完美\"的原则也适用于很多领域. 比如企业方案策划, 大家可以在一个完整但哪怕很简单的方案上迭代; 但如果一开始就想着把每一个点都做到完美, 最后很可能连一份完整的方案也拿不出手. 论文写作也一样, 哪怕是只有完整的小标题, 大家都可以去检查文章的整体框架有无逻辑漏洞; 相反, 就算文章配有再漂亮的实验数据, 在有漏洞的逻辑面前也无法自圆其说. 随着你参与越来越大的项目, 你会发现让完整的系统正确地跑起来, 会变得越来越难. 这时候, 遵循\"先完成, 后完美\"的原则就显得更重要了: 很多问题也许会等到项目趋于完整的时候才会暴露出来, 舍弃全局的完整而换来局部的完美, 大多时候只会南辕北辙.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "先完成, 后完美 - 抑制住优化代码的冲动",
+          "line_start": 406,
+          "line_end": 435
+        }
+      },
+      {
+        "id": "PA-2.5-AUX13",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "运行演示程序 修改 am-kernels/kernels/demo/include/io.h 中的代码, 把 HAS_GUI 宏注释掉, 演示程序就会将画图通过字符输出到终端. 这些演示程序都不需要键盘操作, 因此即使未实现键盘的功能, 也具备一定的观赏性.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "运行演示程序",
+          "line_start": 439,
+          "line_end": 441
+        }
+      },
+      {
+        "id": "PA-2.5-AUX14",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "观看\"Bad Apple!!\" PV 我们在 am-kernels/kernels/bad-apple/ 目录下移植了 Bad Apple!! PV 在新窗口中打开 的播放. 这是一个黑白影绘视频, 所有画面都只有黑白像素, 因此即使在较低端的设备上也能具备较好的观看效果. 也正是因为这个特性, 出现了\"有屏幕的地方就有Bad Apple!!\"的说法. 你可以尝试先在native上运行. 如果你RTFSC, 你会发现播放视频的本质: 每过一定时间就更新画面. 因此, 为了观看这段视频, 我们只需要实现串口和时钟即可. native的运行效果还带音频, 你可以在后续任务中选择实现声卡, 来在NEMU中播放带音频的 Bad Apple!! . 此外, 你可以调整Makefile中的参数, 包括画面分辨率, 音频参数等, 但需要清除编译结果后重新编译才能生效.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "观看\"Bad Apple!!\" PV",
+          "line_start": 445,
+          "line_end": 451
+        }
+      },
+      {
+        "id": "PA-2.5-AUX15",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "运行红白机模拟器 你还可以在NEMU上运行字符版本的FCEUX. 修改 fceux-am/src/config.h 中的代码, 把 HAS_GUI 宏注释掉, FCEUX就会通过 putch() 来输出画面. 然后你可以参考PA1中运行FCEUX的方式, 来将红白机游戏运行在你的NEMU上. 为了获得比较好的显示效果, 你需要在一个不少于60行的终端中运行. 由于此时还没有实现键盘, 你将不能对游戏进行操作.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "运行红白机模拟器",
+          "line_start": 455,
+          "line_end": 459
+        }
+      },
+      {
+        "id": "PA-2.5-AUX16",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "native和klib native 的IOE是基于SDL库实现的, 这些库很有可能会调用glibc的库函数, 例如 malloc() 和 free() . 但我们自己实现的klib通常不能完美地符合glibc的标准, 因此直觉上看, 如果定义了 __NATIVE_USE_KLIB__ , 很可能会导致SDL库产生不正确的行为. 不过你会发现, 即使定义了 __NATIVE_USE_KLIB__ , 也可以正确地在 native 上执行IOE相关的功能. 实际上, 我们使用了一个小技巧, 使得在定义了 __NATIVE_USE_KLIB__ 的情况下, 避免SDL库调用klib中的函数, 而是调用glibc中的相应函数. 如果屏蔽这个小技巧, 在定义 __NATIVE_USE_KLIB__ 的情况下, native 将无法正确运行依赖IOE的程序. 你知道这个小技巧是如何做到的吗?",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "native和klib",
+          "line_start": 463,
+          "line_end": 467
+        }
+      },
+      {
+        "id": "PA-2.5-AUX17",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "如何检测多个键同时被按下? 在游戏中, 很多时候需要判断玩家是否同时按下了多个键, 例如RPG游戏中的八方向行走, 格斗游戏中的组合招式等等. 根据键盘码的特性, 你知道这些功能是如何实现的吗?",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "如何检测多个键同时被按下?",
+          "line_start": 503,
+          "line_end": 505
+        }
+      },
+      {
+        "id": "PA-2.5-AUX18",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "运行红白机模拟器(2) 正确实现键盘后, 你就可以在NEMU上运行字符版本的红白机模拟器, 并在里面玩红白机游戏了.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "运行红白机模拟器(2)",
+          "line_start": 509,
+          "line_end": 511
+        }
+      },
+      {
+        "id": "PA-2.5-AUX19",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "神奇的调色板 现代的显示器一般都支持24位的颜色(R, G, B各占8个bit, 共有 2^8*2^8*2^8 约1600万种颜色), 为了让屏幕显示不同的颜色成为可能, 在8位颜色深度时会使用调色板的概念. 调色板是一个颜色信息的数组, 每一个元素占4个字节, 分别代表R(red), G(green), B(blue), A(alpha)的值. 引入了调色板的概念之后, 一个像素存储的就不再是颜色的信息, 而是一个调色板的索引: 具体来说, 要得到一个像素的颜色信息, 就要把它的值当作下标, 在调色板这个数组中做下标运算, 取出相应的颜色信息. 因此, 只要使用不同的调色板, 就可以在不同的时刻使用不同的256种颜色了. 在一些90年代的游戏中(比如仙剑奇侠传), 很多渐出渐入效果都是通过调色板实现的, 聪明的你知道其中的玄机吗?",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "神奇的调色板",
+          "line_start": 523,
+          "line_end": 534
+        }
+      },
+      {
+        "id": "PA-2.5-AUX20",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "运行演示程序(2) 正确实现VGA后, 重新定义 am-kernels/kernels/demo/include/io.h 中 HAS_GUI , 你就可以在NEMU上运行图形版本的演示程序了. 运行结束后, 你还可以按 Q 键退出演示程序.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "运行演示程序(2)",
+          "line_start": 574,
+          "line_end": 576
+        }
+      },
+      {
+        "id": "PA-2.5-AUX21",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "运行红白机模拟器(3) 正确实现VGA后, 重新定义 fceux-am/src/config.h 中的 HAS_GUI , 你就可以在NEMU上运行图形版本的FCEUX了.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "运行红白机模拟器(3)",
+          "line_start": 580,
+          "line_end": 582
+        }
+      },
+      {
+        "id": "PA-2.5-AUX22",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "实现声卡 作为一个选做任务, 声卡的硬件实现 nemu/src/device/audio.c 和相应的IOE抽象 abstract-machine/am/src/platform/nemu/ioe/audio.c 都未提供, 不过 am-tests 里面的 audio test 给出了声卡IOE抽象的使用方式, 你需要先RTFSC理解它是如何播放音频的(你也可以在native上感受一下), 然后来实现NEMU和AM的相关代码. 如果你的实现正确, 运行 audio test 将会听到一段\"小星星\"的旋律.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "实现声卡",
+          "line_start": 621,
+          "line_end": 623
+        }
+      },
+      {
+        "id": "PA-2.5-AUX23",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "注意音量, 保护耳朵 如果你的实现不正确, 程序有可能输出白噪声. 请你务必在低音量的情况下进行测试, 避免误伤耳朵.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "注意音量, 保护耳朵",
+          "line_start": 652,
+          "line_end": 654
+        }
+      },
+      {
+        "id": "PA-2.5-AUX24",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "播放自己的音乐 由于声卡是一个底层的硬件设备, 它只能直接播放音频的离散采样数据, 也即PCM格式. 框架代码提供的\"小星星\"片段就是PCM格式的. 但PCM格式的存储容量比较大, 假设有一段时长为3分钟, 双通道44100Hz的音频, 每个通道的采样用16位整数表示, 那么用PCM格式来存储这段音频将需要花费 44100 * 2 * 16 / 8 * 3 * 60 = 31752000B = 30.28MB 的存储空间. 因此我们会对PCM格式的音频进行编码压缩, 来节省存储空间, 于是有了MP3, OGG等音频编码格式. 但这些格式的音频, 声卡设备是无法直接识别的. 要播放这些格式的音频, 还需要对它们进行解码, 将PCM格式的采样数据还原出来, 然后才能交给声卡设备进行播放. Linux中有一款非常强大的音频编解码工具叫 ffmpeg , 例如我们可以通过以下命令来对一段MP3音频进行解码: ffmpeg -i MyMusic.mp3 -acodec pcm_s16le -f s16le -ac 1 -ar 44100 44k.pcm 其中各个参数的含义就交给你RTFM吧. ffmpeg 可以智能地识别输入文件的格式, 还支持视频的编解码, 包括音频和视频的裁剪和拼接等, 非常适合业余场合使用. 有了 ffmpeg , 你就可以在NEMU上播放你喜欢的音乐了.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "播放自己的音乐",
+          "line_start": 664,
+          "line_end": 688
+        }
+      },
+      {
+        "id": "PA-2.5-AUX25",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "观看\"Bad Apple!!\" PV(2) 正确实现声卡后, 你就可以在NEMU上播放完整的PV了. 我们已经通过 ffmpeg 帮助我们完成视频和音频的解码工作, 运行在AM上的播放程序只需要对解码后的结果进行数据传输即可, 因此即使你的NEMU性能不高, 但还是能获得较好的观赏效果.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "观看\"Bad Apple!!\" PV(2)",
+          "line_start": 692,
+          "line_end": 696
+        }
+      },
+      {
+        "id": "PA-2.5-AUX26",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "消除播放音频时的杂音 如果你在NEMU上多次播放完整的 Bad Apple!! PV, 可能会在播放期间听到音频开始夹杂噪声. 这是因为SDL的音频回调函数和NEMU上的客户程序可能会同时访问一些双方共享的设备寄存器, 导致这些寄存器的值出现异常. 解决这个问题需要了解一些 并发 在新窗口中打开 相关的知识, 但这已经超出了ICS的课程范围. 此外, 这个问题的解决方案较为复杂, 可能需要对PA中的多个抽象层进行修改. 最后, 这个问题也并不会使得NEMU的运行彻底崩溃, 因此我们也不要求大家必须解决它. 喜欢挑战的同学可以搜索 SDL_LockAudio 这个API的含义, 并从此处入手思考解决方案.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "消除播放音频时的杂音",
+          "line_start": 700,
+          "line_end": 706
+        }
+      },
+      {
+        "id": "PA-2.5-AUX27",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "运行红白机模拟器(4) 正确实现声卡后, 你就可以在NEMU上运行带音效的FCEUX了. 不过由于FCEUX需要额外进行音频解码的工作, 这会使得FCEUX在NEMU中运行的帧率有所下降. 为了避免大幅影响游戏体验, 我们在 fceux-am/src/config.h 中提供了一些配置选项, 其中音效有三种配置, 分别是高质量(SOUND_HQ), 低质量(SOUND_LQ)以及无音效(SOUND_NONE). NEMU平台默认选择低质量, 以节省FCEUX的音效解码时间. 你可以根据实际的运行效果对此处的配置进行调整, 例如增加跳帧的数量来节省FCEUX的渲染时间, 但代价是降低画面的连贯度.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "运行红白机模拟器(4)",
+          "line_start": 710,
+          "line_end": 714
+        }
+      },
+      {
+        "id": "PA-2.5-AUX28",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "RTFSC指南 我们在这里列出目前大家应该读过并理解的代码, 供大家进行自我检讨: NEMU中除了 fixdep , kconfig , 以及没有选择的ISA之外的全部已有代码(包括Makefile) abstract-machine/am/ 下与$ISA-nemu相关的, 除去CTE和VME之外的代码 abstract-machine/klib/ 中的所有代码 abstract-machine/Makefile 和 abstract-machine/scripts/ 中的所有代码 am-kernels/tests/cpu-tests/ 中的所有代码 am-kernels/tests/am-tests/ 中运行过的测试代码 am-kernels/benchmarks/microbench/bench.c am-kernels/kernels/ 中的 hello , slider 和 typing-game 的所有代码 如果你发现自己不能理解这些代码的行为, 就赶紧看看吧. 多看一个文件, bug少调几天, 到了PA3你就会领教到了.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "RTFSC指南",
+          "line_start": 779,
+          "line_end": 792
+        }
+      },
+      {
+        "id": "PA-2.5-AUX29",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "LiteNES如何工作? 另一个值得RTFSC的项目是LiteNES, 除了内置rom之外, 代码总数大约1500行. 关键是这个小巧玲珑的项目里面已经包含了一个完整的计算机系统: CPU, 内存, MMIO, 以及手柄(psg), 卡带(mmc)和图形处理器(ppu)这三个外设. 除了ppu的内部实现细节之外, 其余的部分你都已经有能力去理解了. 有趣的是, LiteNES可以看成是NEMU和AM程序的融合. 尝试阅读LiteNES的代码, 理解LiteNES作为一个完整的计算机系统, 上述部件如何交互, 以及LiteNES作为一个AM程序, 如何通过AM提供的API来实现游戏效果. 我们提供 6502处理器(NES的CPU) 在新窗口中打开 以及 NES PPU(图形处理器) 在新窗口中打开 的资料供大家参考.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "LiteNES如何工作?",
+          "line_start": 796,
+          "line_end": 800
+        }
+      },
+      {
+        "id": "PA-2.5-AUX30",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "优化LiteNES 我们在LiteNES中默认开启了跳帧模式, 只渲染1/2的帧. 虽然在 native 上可以跑满60FPS, 但即使开启跳帧模式, 在NEMU中也只能跑十几FPS. NEMU的性能确实不高, 但LiteNES也是半斤八两, 代码还有非常多可以优化的空间. 我们手上有一个经过暴力优化的LiteNES, 它在microbench跑分为 236 分的 x86-nemu 上也可以跑满60 FPS, 在microbench跑分为 400 分的 riscv32-nemu 甚至可以跑到100 FPS! 为了尽可能屏蔽真机和NEMU实现带来的性能差异, 我们可以在记录FPS的同时, 把microbench的跑分也一同记录下来, 然后计算 FPS/跑分 这个指标, 来衡量单位计算能力贡献的FPS, 通过它可以大致反映出LiteNES本身的性能. 比如我们上手的暴力优化版本, 在 x86-nemu 上计算这个指标, 结果是 60/236 = 0.2542 ; 而在 riscv32-nemu 上计算则是 100/400 = 0.2500 , 结果还是比较一致的. 如果你已经完成了必做的内容而又闲来无事, 可以尝试来优化LiteNES的代码, 并和小伙伴PK优化后的性能吧! 不过, 你打算怎么来进行优化呢?",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "优化LiteNES",
+          "line_start": 804,
+          "line_end": 812
+        }
+      },
+      {
+        "id": "PA-2.5-AUX31",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "在NEMU上运行NEMU 这听上去有点疯狂, 但仔细想想也没什么不可以的, 毕竟NEMU本身也是一个程序. am-kernels/kernels/nemu/ 目录下已经准备了一个Makefile, 你可以在这一目录下运行如下命令: make ARCH = $ISA -nemu mainargs = /home/user/ics2025/am-kernels/kernels/hello/build/hello- $ISA -nemu.bin 它会进行如下的工作: 保存NEMU当前的配置选项 加载一个新的配置文件, 将NEMU编译到AM上, 并把 mainargs 指示bin文件作为这个NEMU的镜像文件 恢复第1步中保存的配置选项 重新编译NEMU, 并把第2步中的NEMU作为镜像文件来运行 第2步把NEMU编译到AM时, 配置系统会定义宏 CONFIG_TARGET_AM , 此时NEMU的行为和之前相比有所变化: sdb, DiffTest等调试功能不再开启, 因为AM无法提供它所需要的库函数(如文件读写, 动态链接, 正则表达式等) 通过AM IOE来实现NEMU的设备 思考一下, 如果在内层NEMU(即编译到AM的NEMU)上运行打字游戏: make ARCH = $ISA -nemu mainargs = 打字游戏的路径 此时的打字游戏又是经历了怎么样的过程才能读取按键/刷新屏幕的呢?",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/2.5.html",
+          "raw": "references/raw/ysyx.oscc.cc/c513b8fe1d21123b.html",
+          "markdown": "references/markdown/c513b8fe1d21123b.md",
+          "offline": "references/offline/c513b8fe1d21123b.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "9c67fb66d97c9d92757e418678144ac8644a2ac68cd190ce32cabecff4ac3eb5"
+        },
+        "parent_course_task": "C2-M008",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\c513b8fe1d21123b.md",
+          "heading": "在NEMU上运行NEMU",
+          "line_start": 816,
+          "line_end": 852
+        }
+      }
+    ]
+  },
+  "C5_RTTHREAD_AMAPP": {
+    "course_mappings": [
+      {
+        "course_task": "C5-M029",
+        "source_task": {
+          "id": "C5-M029",
+          "classification": "PUBLIC_CORE_TASK",
+          "implementation_status": "NOT_RUN",
+          "requirement": "从 PSRAM 启动 RT-Thread",
+          "deliverable": "镜像、启动/命令输出",
+          "acceptance": "B1 异常/上下文就绪后验收，shell/线程切换正常",
+          "document": "02_一生一芯_F至B_公开作业实现与验收清单.md",
+          "details_document": "assignments/00_核心逐项细则.md",
+          "source": {
+            "url": "https://ysyx.oscc.cc/docs/2607/c/5.html",
+            "raw": "docs/raw_html/C/C5.html",
+            "markdown": "docs/markdown/C/C5.md",
+            "offline": "docs/offline_html/C/C5.html",
+            "version": "v26.07",
+            "source_sha256": "2fc700898dcdad84835e6796aa95d1d1a93e3117ecbe1cc43fbd8e10e3e0e90c"
+          },
+          "source_line": 925,
+          "source_box_index": 39
+        },
+        "source_span": {
+          "markdown": "docs\\markdown\\C\\C5.md",
+          "heading": "在PSRAM上执行RT-Thread",
+          "line_start": 925,
+          "line_end": 929
+        },
+        "dependencies": [
+          "C5-M028",
+          "PA-4.1-01",
+          "PA-4.1-02",
+          "PA-4.1-RTTHREAD"
+        ],
+        "linked_sections": [
+          {
+            "markdown": "references/markdown/43b650b773c2bef7.md",
+            "anchor": "rt-thread-选做",
+            "line_start": 269,
+            "line_end": 443,
+            "relation": "technical prerequisite, not an explicit hyperlink in the short C5-M029 box"
+          }
+        ]
+      },
+      {
+        "course_task": "C5-M041",
+        "source_task": {
+          "id": "C5-M041",
+          "classification": "PUBLIC_CORE_TASK",
+          "implementation_status": "NOT_RUN",
+          "requirement": "RT-Thread shell 通过 UART 接命令",
+          "deliverable": "BSP 适配与交互记录",
+          "acceptance": "内置命令后仍能手工输入并执行不同命令",
+          "document": "02_一生一芯_F至B_公开作业实现与验收清单.md",
+          "details_document": "assignments/00_核心逐项细则.md",
+          "source": {
+            "url": "https://ysyx.oscc.cc/docs/2607/c/5.html",
+            "raw": "docs/raw_html/C/C5.html",
+            "markdown": "docs/markdown/C/C5.md",
+            "offline": "docs/offline_html/C/C5.html",
+            "version": "v26.07",
+            "source_sha256": "2fc700898dcdad84835e6796aa95d1d1a93e3117ecbe1cc43fbd8e10e3e0e90c"
+          },
+          "source_line": 1258,
+          "source_box_index": 55
+        },
+        "source_span": {
+          "markdown": "docs\\markdown\\C\\C5.md",
+          "heading": "通过串口在RT-Thread中键入命令",
+          "line_start": 1258,
+          "line_end": 1260
+        },
+        "dependencies": [
+          "C5-M029",
+          "C5-M040"
+        ],
+        "linked_sections": [
+          {
+            "markdown": "docs/markdown/C/C5.md",
+            "anchor": "uart",
+            "line_start": 1177,
+            "line_end": 1261,
+            "relation": "local UART RX/IOE/BSP input dependency; change BSP from built-in script to live UART after script exhaustion"
+          }
+        ]
+      },
+      {
+        "course_task": "C5-M046",
+        "source_task": {
+          "id": "C5-M046",
+          "classification": "PUBLIC_CORE_TASK",
+          "implementation_status": "NOT_RUN",
+          "requirement": "RT-Thread 启动其他 AM 程序",
+          "deliverable": "PA4 被本课提升为必做的集成代码与日志",
+          "acceptance": "启动 FCEUX 等，退出回 shell，再运行另一程序",
+          "document": "02_一生一芯_F至B_公开作业实现与验收清单.md",
+          "details_document": "assignments/00_核心逐项细则.md",
+          "source": {
+            "url": "https://ysyx.oscc.cc/docs/2607/c/5.html",
+            "raw": "docs/raw_html/C/C5.html",
+            "markdown": "docs/markdown/C/C5.md",
+            "offline": "docs/offline_html/C/C5.html",
+            "version": "v26.07",
+            "source_sha256": "2fc700898dcdad84835e6796aa95d1d1a93e3117ecbe1cc43fbd8e10e3e0e90c"
+          },
+          "source_line": 1368,
+          "source_box_index": 62
+        },
+        "source_span": {
+          "markdown": "docs\\markdown\\C\\C5.md",
+          "heading": "通过RT-Thread运行其他AM程序",
+          "line_start": 1368,
+          "line_end": 1370
+        },
+        "dependencies": [
+          "C5-M029",
+          "C5-M041",
+          "C5-M044",
+          "C5-M045",
+          "PA-4.1-AMAPPS"
+        ],
+        "linked_sections": [
+          {
+            "markdown": "references/markdown/43b650b773c2bef7.md",
+            "anchor": "rt-thread-选做",
+            "heading": "在RT-Thread上运行AM程序",
+            "line_start": 443,
+            "line_end": 478,
+            "relation": "explicit section reference in C5-M046; includes following optional symbol/data-isolation question, ends before Nanos-lite"
+          }
+        ]
+      }
+    ],
+    "nested_records": [
+      {
+        "id": "PA-4.1-01",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "实现上下文切换 根据讲义的上述内容, 实现以下功能: CTE的 kcontext() 函数 修改CTE中 __am_asm_trap() 的实现, 使得从 __am_irq_handle() 返回后, 先将栈顶指针切换到新进程的上下文结构, 然后才恢复上下文, 从而完成上下文切换的本质操作 正确实现后, 你将看到 yield-os 不断输出 ? , 这是因为我们还没有为 kcontext() 实现参数功能, 不过这些输出的 ? 至少说明了CTE目前可以正确地从 yield-os 的 main() 函数切换到其中一个内核线程.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "kcontext 与切换栈指针能从 main 切到内核线程，初版 ? 输出仅是阶段性现象",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "required_context_prerequisite_for_C5_RTTHREAD",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "实现上下文切换",
+          "line_start": 195,
+          "line_end": 202
+        }
+      },
+      {
+        "id": "PA-4.1-02",
+        "classification": "公开任务",
+        "implementation_status": "NOT_RUN",
+        "requirement": "实现上下文切换(2) 根据讲义的上述内容, 修改CTE的 kcontext() 函数, 使其支持参数 arg 的传递. 因为 f() 中每次输出完信息都会调用 yield() , 因此只要我们正确实现内核线程的参数传递, 就可以观察到 yield-os 在两个内核线程之间来回切换的现象.",
+        "deliverable": "本项 NEMU/AM/测试源码（若为分析题则给答案）、可复验构建与正反例/日志。",
+        "acceptance": "arg 通过 ABI 正确传入，yield-os 两线程交替且各自参数/栈状态不串扰",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "required_context_prerequisite_for_C5_RTTHREAD",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "实现上下文切换(2)",
+          "line_start": 238,
+          "line_end": 244
+        }
+      },
+      {
+        "id": "PA-4.1-RTTHREAD",
+        "classification": "由一生一芯阶段要求纳入的 PA 蓝框",
+        "implementation_status": "NOT_RUN",
+        "requirement": "通过CTE实现RT-Thread的上下文创建和切换 根据上述内容实现相关代码. 对于 rt_hw_stack_init() 的实现, 我们已经给出了解决问题的正确方向, 但我们并没有指出所有实现相关的细节问题, 剩下的就交给你来分析解决吧, 这也是考察你是否已经了解这个过程中的每一处细节. 实现后, 尝试在NEMU中运行RT-Thread. 我们已经在移植后的RT-Thread中内置了一些Shell命令, 如果你的代码实现正确, 将能看到RT-Thread启动后依次执行这些命令, 最后输出命令提示符 msh /> : am-apps.data.size = 0, am-apps.bss.size = 0 heap: [0x01000000 - 0x09000000] \\ | / - RT - Thread Operating System / | \\ 5.0.1 build Oct 2 2023 20:51:10 2006 - 2022 Copyright by RT-Thread team [I/utest] utest is initialize success. [I/utest] total utest testcase num: (0) Hello RISC-V! msh />help RT-Thread shell commands: date - get date and time or set (local timezone) [year month day hour min sec] ...... msh />utest_list [I/utest] Commands list : msh /> 由于NEMU目前还不支持通过串口进行交互, 因此我们无法将终端上的输入传送到RT-Thread, 所有内置命令运行结束后, RT-Thread将进入空闲状态, 此时退出NEMU即可.",
+        "deliverable": "对应实现、测试、故障注入与解释日志。",
+        "acceptance": "rt_hw_stack_init/context_switch 与 CTE 适配；内置 help/utest_list 等命令及最终 msh 提示符正确",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "required_context_prerequisite_for_C5_RTTHREAD",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "通过CTE实现RT-Thread的上下文创建和切换",
+          "line_start": 389,
+          "line_end": 421
+        }
+      },
+      {
+        "id": "PA-4.1-AMAPPS",
+        "classification": "由一生一芯阶段要求纳入的 PA 蓝框",
+        "implementation_status": "NOT_RUN",
+        "requirement": "在RT-Thread上运行AM程序 我们移植的RT-Thread已经提供了相关功能, 你首先需要检查一些路径的配置是否正确: 用文本编辑器打开 rt-thread-am/bsp/abstract-machine/integrate-am-apps.py 检查文件中的 AM_KERNELS_HOME 是否已正确指向 am-kernels 的路径, 若否, 你需要将其修改成正确的路径 检查文件中的 app_dir_list 数组中的最后一项是否已正确指向 fceux-am 的路径, 若否, 你需要将其修改成正确的路径 确认路径配置正确后, 你只需要执行以下命令: cd rt-thread-am/bsp/abstract-machine make ARCH = native update make ARCH = native 即可将 integrate-am-apps.py 中的 app_dir_list 数组中列出的AM程序编译到RT-Thread中. 在这之后, 你可以在内置的Shell命令中添加用于启动这些AM程序的命令, 如果AM支持UART的输入, 亦可通过UART键入命令来启动AM程序. 具体的命令可通过 help 查阅. 退出AM程序后, 将返回RT-Thread的命令行, 此时可通过Shell命令再次运行其他AM程序.",
+        "deliverable": "对应实现、测试、故障注入与解释日志。",
+        "acceptance": "集成路径/符号/数据段隔离正确，shell 启动 AM 程序退出后回 shell，再运行其他程序",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "explicit_C5_M046_import",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "在RT-Thread上运行AM程序",
+          "line_start": 445,
+          "line_end": 469
+        }
+      },
+      {
+        "id": "PA-4.1-AUX03",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "为什么需要使用不同的栈空间? 如果不同的进程共享同一个栈空间, 会发生什么呢?",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "为什么需要使用不同的栈空间?",
+          "line_start": 44,
+          "line_end": 48
+        }
+      },
+      {
+        "id": "PA-4.1-AUX04",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "为什么不叫\"内核进程\"? 这个问题其实等价于\"进程和线程有什么区别\", 是个不错的问题. 而且这还属于考研八股的内容呢, 于是你肯定可以通过STFW找到很多五花八门的答案, 比如\"线程更加轻量级\", \"线程没有独立的资源\"等等. 如果要进一步解释\"什么是轻量级\", \"独立的资源是什么意思\", 在PA中可能比较困难. 不过在PA中也不必深究这个问题, 目前你只需要把它们都看成执行流就可以了, 更重要的是, 这两者你都将会实现, 在代码中亲自去感受它们的区别不是一个更好的选择吗? 另外, 带着这个问题去修读下学期的操作系统课也不错.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "为什么不叫\"内核进程\"?",
+          "line_start": 117,
+          "line_end": 154
+        }
+      },
+      {
+        "id": "PA-4.1-AUX05",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "机制和策略解耦 这其实体现了系统设计中的一种重要原则: 机制和策略解耦. 机制解决的是\"能不能做\"的问题, 而策略解决的则是\"怎么做好\"的问题. 显然, 策略需要机制的支撑, 机制需要策略来发挥最大的效果. 解耦的好处就很明显了: 代码重用率高, 而且容易理解. 在Project-N中, 这一解耦几乎做到了极致: 机制和策略被分离到两个子项目中. 比如, \"上下文切换\"这一机制是在AM的CTE中实现的, 它让系统可以做到\"执行流的切换\"这件事; 而具体要切换到哪一个执行流, 则是在操作系统中实现的. AM的另外一个好处是将底层硬件的行为抽象成系统级机制, AM上的应用(包括OS)只需要调用这些系统级机制, 并实现相应的策略即可. 当然目前 schedule() 中的策略非常简单, 下学期的操作系统实验, 甚至是现实中更复杂的进程调度策略, 都可以在AM提供的同一个机制之上实现.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "机制和策略解耦",
+          "line_start": 185,
+          "line_end": 191
+        }
+      },
+      {
+        "id": "PA-4.1-AUX06",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "mips32和riscv32的调用约定 我们没有给出mips32和riscv32的调用约定, 你需要查阅相应的ABI手册. 当然, 你也可以自己动手实践来总结传参的规则.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "mips32和riscv32的调用约定",
+          "line_start": 232,
+          "line_end": 234
+        }
+      },
+      {
+        "id": "PA-4.1-AUX07",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "保持kcontext()的特性 AM在定义 kcontext() 的行为时, 还要求 kcontext() 只能在栈上放置一个上下文结构, 而不能放置更多的内容. 这样的要求有两点好处: kcontext() 对栈的写入只有一个上下文结构的内容, 而不会产生其它的副作用 OS可以预测调用 kcontext() 之后的返回值, 并且利用这一确定的特性进行一些检查或者简化某些实现 我们知道x86是通过栈来传递参数的, 如果 kcontext() 需要支持 arg 的传递, 它就需要往栈上放置更多的内容, 这样就违反了上述确定性了. 但在PA中, 这并不会导致致命的问题, 因此我们并不要求你的 kcontext() 实现严格遵守这一确定性. 但你还是可以思考如何在遵守确定性的情况下实现参数的传递. 一个解决方案是通过引入一个辅助函数来将真正的参数传递从 kcontext() 推迟到内核线程的运行时刻. 具体地, 我们可以在 kcontext() 中先把内核线程的入口设置为辅助函数, 并把参数设置到某个可用的寄存器中. 这样以后, 内核线程就会从辅助函数开始执行, 此时让辅助函数来把之前设置的参数从寄存器中放置到栈上, 再调用真正的线程入口函数( f() ). 这一方案和Linux中加载用户程序还是有一些相似之处的: 用户程序在运行的时候也并不是直接把 main() 函数作为入口, 而是先从CRT定义的 _start() 开始运行, 进行包括设置参数在内的一系列初始化操作, 最后才调用 main() 函数. 如果你选择的ISA是x86, 你可以尝试在CTE中实现上述辅助函数. 考虑到要直接操作寄存器和栈, 这个辅助函数还是通过汇编代码来编写比较合适. 不过由于这个辅助函数的功能比较简单, 你只需要编写几条指令就可以实现它了.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "保持kcontext()的特性",
+          "line_start": 248,
+          "line_end": 259
+        }
+      },
+      {
+        "id": "PA-4.1-AUX08",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "危险的全局变量 全局变量在整个系统中只有一个副本, 如果整个系统中只有一个线程, 这通常是安全的. 我们在C语言课上编写的程序都属于这种情况, 所以使用全局变量并不会造成明显的正确性问题. 但如果系统中存在多个线程, 并且它们使用同一个全局变量的时间段有重叠, 就可能会造成问题. 不过目前我们的硬件既未实现中断, 也不支持多处理器, 从编程模型来看和C语言课差不多, 因此使用全局变量解决这个问题还是可以的.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "危险的全局变量",
+          "line_start": 360,
+          "line_end": 364
+        }
+      },
+      {
+        "id": "PA-4.1-AUX09",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "危险的全局变量(2) 如果使用全局变量来传递信息, 考虑以下场景, 可能会出现什么问题? 在多处理器系统中, 两个处理器同时调用 rt_hw_context_switch() 一个线程调用 rt_hw_context_switch() 后写入了全局变量, 但马上到来了时钟中断, 使得系统切换到另一个线程, 但这个线程也调用了 rt_hw_context_switch()",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "危险的全局变量(2)",
+          "line_start": 368,
+          "line_end": 375
+        }
+      },
+      {
+        "id": "PA-4.1-AUX10",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "危险的全局变量(3) 如果使用全局变量来传递信息, 而代码连续调用了两次 rt_hw_stack_init() , 会造成什么问题?",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "危险的全局变量(3)",
+          "line_start": 379,
+          "line_end": 385
+        }
+      },
+      {
+        "id": "PA-4.1-AUX12",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "危险的全局变量(4) 能否不使用全局变量来实现上下文的切换呢? 同样地, 我们需要寻找一种不会被多个线程共享的存储空间. 不过对于调用 rt_hw_context_switch() 的线程来说, 它的栈正在被使用, 往其中写入数据可能会被覆盖, 甚至可能会覆盖已有数据, 使当前线程崩溃. to 的栈虽然当前不使用, 也不会被其他线程共享, 但需要考虑如何让 ev_handler() 访问到 to 的栈, 这又回到了我们一开始想要解决的问题. 除了栈之外, 还有没有其他不会被多个线程共享的存储空间呢? 嘿嘿, 其实前文也已经提到过它了, 那就是PCB! 因为每个线程对应一个PCB, 而一个线程不会被同时调度多次, 所以通过PCB来传递信息也是一个可行的方案. 要获取当前线程的PCB, 自然是用 current 指针了. 在RT-Thread中, 可以通过调用 rt_thread_self() 返回当前线程的PCB. 阅读RT-Thread中PCB结构体的定义, 我们发现其中有一个成员 user_data , 它用于存放线程的私有数据, 这意味着RT-Thread中调度相关的代码必定不会使用这个成员, 因此它很适合我们用来传递信息. 不过为了避免覆盖 user_data 中的已有数据, 我们可以先把它保存在一个临时变量中, 在下次切换回当前线程并从 rt_hw_context_switch() 返回之前再恢复它. 至于这个临时变量, 当然是使用局部变量了, 毕竟局部变量是在栈上分配的, 完美!",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "危险的全局变量(4)",
+          "line_start": 431,
+          "line_end": 441
+        }
+      },
+      {
+        "id": "PA-4.1-AUX14",
+        "classification": "PA 扩展/规则，原可选属性保留",
+        "implementation_status": "NOT_RUN",
+        "requirement": "这是如何实现的? 如果直接将多个AM程序链接到RT-Thread中, 可能会遇到什么问题? integrate-am-apps.py 脚本是如何解决这些问题的? 尝试RTFSC寻找答案.",
+        "deliverable": "按原框性质提交解释笔记、最小复现或扩展实现与测试记录。",
+        "acceptance": "阅读/思考项给逐问解释和源码或手册依据；若原框提出实现/实验则交本项代码、输入/输出、失败/修复对照。个人流程和其他 ISA 实现按上述边界排除。",
+        "document": "assignments/05_PA逐项.md",
+        "source": {
+          "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+          "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+          "markdown": "references/markdown/43b650b773c2bef7.md",
+          "offline": "references/offline/43b650b773c2bef7.html",
+          "version": "ics-pa official unversioned mirror",
+          "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+        },
+        "mapping_role": "optional_contextual_explanation_retains_original_optional_status",
+        "execution_status": "NOT_RUN_BY_THIS_REVIEW",
+        "source_span": {
+          "markdown": "references\\markdown\\43b650b773c2bef7.md",
+          "heading": "这是如何实现的?",
+          "line_start": 473,
+          "line_end": 477
+        }
+      }
+    ],
+    "boundary": {
+      "last_included_PA41_line": 478,
+      "excluded_section_anchor": "nanos-lite",
+      "excluded_section_line": 479,
+      "not_imported_record_ids": [
+        "PA-4.1-AUX01",
+        "PA-4.1-AUX02"
+      ],
+      "original_matrix_exclusions": [
+        {
+          "id": "PA-4.1-03",
+          "reason": "超过 RT-Thread 停止范围的后续 PA4/Nanos-lite",
+          "source": {
+            "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+            "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+            "markdown": "references/markdown/43b650b773c2bef7.md",
+            "offline": "references/offline/43b650b773c2bef7.html",
+            "version": "ics-pa official unversioned mirror",
+            "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+          }
+        },
+        {
+          "id": "PA-4.1-04",
+          "reason": "超过 RT-Thread 停止范围的后续 PA4/Nanos-lite",
+          "source": {
+            "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+            "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+            "markdown": "references/markdown/43b650b773c2bef7.md",
+            "offline": "references/offline/43b650b773c2bef7.html",
+            "version": "ics-pa official unversioned mirror",
+            "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+          }
+        },
+        {
+          "id": "PA-4.1-05",
+          "reason": "超过 RT-Thread 停止范围的后续 PA4/Nanos-lite",
+          "source": {
+            "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+            "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+            "markdown": "references/markdown/43b650b773c2bef7.md",
+            "offline": "references/offline/43b650b773c2bef7.html",
+            "version": "ics-pa official unversioned mirror",
+            "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+          }
+        },
+        {
+          "id": "PA-4.1-06",
+          "reason": "超过 RT-Thread 停止范围的后续 PA4/Nanos-lite",
+          "source": {
+            "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+            "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+            "markdown": "references/markdown/43b650b773c2bef7.md",
+            "offline": "references/offline/43b650b773c2bef7.html",
+            "version": "ics-pa official unversioned mirror",
+            "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+          }
+        },
+        {
+          "id": "PA-4.1-07",
+          "reason": "超过 RT-Thread 停止范围的后续 PA4/Nanos-lite",
+          "source": {
+            "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+            "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+            "markdown": "references/markdown/43b650b773c2bef7.md",
+            "offline": "references/offline/43b650b773c2bef7.html",
+            "version": "ics-pa official unversioned mirror",
+            "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+          }
+        },
+        {
+          "id": "PA-4.1-08",
+          "reason": "超过 RT-Thread 停止范围的后续 PA4/Nanos-lite",
+          "source": {
+            "url": "https://ysyx.oscc.cc/docs/ics-pa/4.1.html",
+            "raw": "references/raw/ysyx.oscc.cc/43b650b773c2bef7.html",
+            "markdown": "references/markdown/43b650b773c2bef7.md",
+            "offline": "references/offline/43b650b773c2bef7.html",
+            "version": "ics-pa official unversioned mirror",
+            "source_sha256": "0e2e2db5245a2bfa472004a32fb0c1af6f875f3b81dc9501e7b1ac05c3ae6549"
+          }
+        }
+      ],
+      "reason": "Only prerequisites needed for actual C5 RT-Thread execution and the explicitly referenced AM-app integration section; no Nanos-lite/user-process/BusyBox expansion."
+    }
+  },
+  "personal_exclusions": [
+    {
+      "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\references\\markdown\\c513b8fe1d21123b.md",
+      "line_start": 874,
+      "line_end": 878,
+      "text": "学号.pdf / make submit / submission website",
+      "handling": "Engineering report required; personal identity naming and external formal submission remain excluded."
+    },
+    {
+      "course_tasks": [
+        "C5-M023",
+        "C5-M038"
+      ],
+      "handling": "Preserve original USER_ADAPTED contract: mvendorid=0x79737978, marchid=PROJECT_ID; show eight hexadecimal digits, never invent personal student identity."
+    }
+  ],
+  "critical_acceptance_details": [
+    "PA-2.5-03 requires actual alu-tests, not just cpu-tests or D8 instruction vectors.",
+    "PA-2.5-05 requires NEMU dhrystone/coremark/microbench, small correctness runs then ref performance; disable trace/watchpoint/DiffTest/debug information for performance candidate only. huge is explicitly not required.",
+    "PA-2.5-06 adds device-name dtrace, distinct from existing itrace/mtrace/ftrace.",
+    "PA-2.5-07/08/09 require NEMU keyboard events, actual display geometry/sync-register behavior and real FBDRAW animation; native/NPC-only evidence is insufficient.",
+    "PA-2.5-10 lists slider, typing-game, demo, Bad Apple, snake, LiteNES and FCEUX demonstrations, with media source/rights tracked separately.",
+    "PA-2.5-12-Q04 requires static/inline compilation variants; Q05 requires actual static dummy entity counts and initialized redeclaration failure; Q06 requires make/link command tracing.",
+    "NEMU audio is explicitly optional (PA-2.5-AUX22); native FCEUX audio check in C2-M001 remains part of that core task.",
+    "RT-Thread prerequisites require real CTE context creation/switching; D's deliberate NO_CTE stubs cannot be reused as successful C behavior.",
+    "C5-M046 acceptance includes returning from an AM app to shell and running another app, not just printing a shell banner."
+  ]
+}

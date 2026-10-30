@@ -1,0 +1,21 @@
+{
+  "status": "PASS_PRESERVED_AND_RELOCATED",
+  "scope": "Three one-off exploratory sources moved byte-identically into retained evidence. Main reproducible address test remains B/B5/verify_address.py and address-checks.",
+  "files": [
+    {
+      "target": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\B5\\debug-history\\address_control.sv",
+      "source": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\B\\B5\\address_control.sv",
+      "sha256": "3b3611e610c53f505b59dcaf23365e3474f9f7ca2f6e411f1225a258dc27ad03"
+    },
+    {
+      "target": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\B5\\debug-history\\address_control.ys",
+      "source": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\B\\B5\\address_control.ys",
+      "sha256": "96c2117c57da0ee7455c37b7247352350748b8127c7f84d1f813bbce48c98d30"
+    },
+    {
+      "target": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\artifacts\\B5\\debug-history\\debug_gate_tb.sv",
+      "source": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\B\\B5\\debug_gate_tb.sv",
+      "sha256": "f5c71de5439b27c527cffa873b8d625a0aafa40e99ffe2a3f88040716008ca75"
+    }
+  ]
+}

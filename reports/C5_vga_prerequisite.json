@@ -1,0 +1,72 @@
+{
+  "status": "PASS_REUSED_E4_AND_CURRENT_C5",
+  "source": {
+    "path": "/workspace/YSYX_F_B_Archive/references/markdown/8eb56251b0d9d092.md",
+    "sha256": "d06bfbedaf6271d3a30eaf8714d10eb34c007a845fc933479186eba2075f18ec"
+  },
+  "evidence": [
+    {
+      "path": "reports/E4_units.json",
+      "sha256": "33a01457bb71110c30436ffb20fcf2eb94e8db5ac33fd82f3017b518685744c7"
+    },
+    {
+      "path": "reports/E4_gui.json",
+      "sha256": "453d0e8977aa9d1626102333d8d101fb750d491220d5f4fd307f74a929d5e7e0"
+    },
+    {
+      "path": "reports/E4_visual_check.json",
+      "sha256": "45d304c3952a8c593f1a74dd5193c9de6af4010b9ce7fa5ce57c9d7a0dc245e7"
+    },
+    {
+      "path": "reports/E4_REPORT.md",
+      "sha256": "13cb3b530ce8cc787d06cb0c01226ec928f0146d0c28b0cff7d0aff3ad87d6b3"
+    },
+    {
+      "path": "reports/E4_TASKS.md",
+      "sha256": "cfbd924d7c8d993371b6d90bda9d4b2063f12d17c4a7732b88675f3a7293f6b9"
+    },
+    {
+      "path": "reports/C5_io_units.json",
+      "sha256": "6153d1801216e0f7d76fa2c1a1bbbc2ec4f8e272445f700d041b1fbf929df445"
+    },
+    {
+      "path": "reports/C5_gpu_driver.json",
+      "sha256": "8aa010bbd3c7382696b01161f5b7a5361ccb2f6294ac6ff471d8f9dcb711b470"
+    }
+  ],
+  "historical_screens": [
+    {
+      "name": "vga_static",
+      "path": "artifacts/E4/gui/vga_static.png",
+      "sha256": "f1f55c217ff93304baafcb850b5097b83c952ca71b8164f52e5d62c7f2424265"
+    },
+    {
+      "name": "vga_moving_1",
+      "path": "artifacts/E4/gui/vga_moving_1.png",
+      "sha256": "72b9c8072465a8c34e87bf8c242ded128665f051f5659a3ebb0191008ea3a2be"
+    },
+    {
+      "name": "vga_moving_2",
+      "path": "artifacts/E4/gui/vga_moving_2.png",
+      "sha256": "b976622470c05e6b11f3e240e8b839ec2ca47dd17e3daa59ff4adebcda776208"
+    }
+  ],
+  "timing": {
+    "horizontal": [
+      96,
+      48,
+      640,
+      16
+    ],
+    "vertical": [
+      2,
+      33,
+      480,
+      10
+    ],
+    "pixel_clocks_per_frame": 420000,
+    "E4_ideal_pixel_clock_hz": 25000000,
+    "E4_ideal_refresh_hz": 59.523809523809526
+  },
+  "scope": "NJU08 prerequisite already completedinE4: staticimage/MIF andmovingbouncingimage plusindependentpixel checks. Historicalresultsare reused, not claimedrerun. C5 newlycheckscompleteRGBpinframes andsoftwareclipping. C5NVBoardtakesonesamplepersimclock, soits100MHzclockdoesnotassertphysical60Hzdisplaytiming orADV7123/FPGAboardacceptance."
+}

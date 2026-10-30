@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FOUR_STATE_ALL_INPUTS_AND_MUTANT",
+  "runs": [
+    {
+      "name": "good",
+      "status": "PASS",
+      "expected_exit": 0,
+      "evidence": "C5/bitrev-unit/good/run"
+    },
+    {
+      "name": "echo-mutant",
+      "status": "PASS",
+      "expected_exit": 1,
+      "evidence": "C5/bitrev-unit/echo-mutant/run"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/perip/bitrev/bitrev.v",
+      "sha256": "1f2f63e7444e52d55716a846370ca931509901c49d702bb3d31798b5b698c824"
+    },
+    {
+      "path": "/workspace/projects/ysyx_f_to_b/C/C5/rtl_tests/bitrev_tb.sv",
+      "sha256": "b56bded66d477919f6876db2f99f7e086437005d464ee1e1a651449e489bef47"
+    }
+  ]
+}

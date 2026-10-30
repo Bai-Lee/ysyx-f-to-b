@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "timestamp": "20261026T141940619177",
+  "D_zip_sha256": "f849038746551a4de729c138f52bbff7a5699ccd8ba773fc70d54ef027df97a5",
+  "D_audit_sha256": "a39612c97bd468302922dd7c5fdf40364100e7f98f967289b6844a11d85f2509",
+  "D_runtime_sha256": "cf8ffd43dce321971521153d5d0cc2d1381d3c5098c431e811229b2616a5dc09",
+  "git_head": "86fdfa59fc396fe9e4347fc622998f36c4f6945c",
+  "scope_records": 101,
+  "classification_counts": {
+    "原选做/扩展或背景阅读": 22,
+    "技术约束/方法提醒": 9,
+    "PUBLIC_CORE_TASK": 68,
+    "USER_ADAPTED": 2
+  },
+  "preservation": "F/E/D frozen sources, runtime trees and ZIPs remain unchanged; C uses independent files."
+}

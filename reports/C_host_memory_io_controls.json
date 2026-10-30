@@ -1,0 +1,31 @@
+{
+  "status": "PASS_WINDOWS_SHARING_AND_FRAMING",
+  "replace_rejected_under_read_handle": true,
+  "append_while_read_handle": true,
+  "live_stream_advanced_while_held": true,
+  "partial_tail_uses_previous_complete_record": true,
+  "malformed_complete_record_rejected": true,
+  "first_sample": {
+    "schema": 1,
+    "source": "GlobalMemoryStatusEx.ullAvailPhys",
+    "pid": 388,
+    "session": "20261029T111259621",
+    "timestamp": 1793272614.1367023,
+    "available_bytes": 7175557120,
+    "total_bytes": 14710988800,
+    "load_percent": 51
+  },
+  "second_sample": {
+    "schema": 1,
+    "source": "GlobalMemoryStatusEx.ullAvailPhys",
+    "pid": 388,
+    "session": "20261029T111259621",
+    "timestamp": 1793272620.140743,
+    "available_bytes": 7065026560,
+    "total_bytes": 14710988800,
+    "load_percent": 51
+  },
+  "reader_sha256": "11bbc077555ec409e769a6d35e642a66dacdb66ef5368d0d9d39a4b254d30759",
+  "sampler_sha256": "9b003bea67ec0228a8ef8bd031a9f4302d691d706733027e0439b44fafebb769",
+  "scope": "Actual Windows read handle permits reading/writing but denies deletion. Replacement is rejected, appending succeeds, and the actual sampler keeps appending. A partial trailing record is not parsed; a malformed complete record is rejected."
+}

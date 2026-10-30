@@ -1,0 +1,45 @@
+{
+  "status": "CONFIGURED_NOT_RUN",
+  "workspaces": [
+    {
+      "name": "light_preflight",
+      "directory": "/home/USER/e-stage/physical/light_preflight",
+      "netlist": "/home/USER/e-stage/backend/light/runs/yosys_august/Synthesis_yosys/output/light_Synthesis.v.gz",
+      "netlist_sha256": "f2e7364b0bab9eab6d934ea45d6453b8e05fc29b5ec3a7a1ebb604d8324061bd",
+      "target_frequency_mhz": 100,
+      "core_utilization": 0.3,
+      "status": "CONFIGURED_NOT_RUN",
+      "workspace": {
+        "workspaceId": "workspace-1",
+        "directory": "/home/USER/e-stage/physical/light_preflight"
+      }
+    },
+    {
+      "name": "cpu_area",
+      "directory": "/home/USER/e-stage/physical/cpu_area",
+      "netlist": "/workspace/projects/ysyx_f_to_b/E/E7/synthesis/area/e7_minirv_Synthesis.v.gz",
+      "netlist_sha256": "5f07ea43923e0ec7b47dcf24e2834fac54872931d07a3d760ef9ffe9cdc6866e",
+      "target_frequency_mhz": 50,
+      "core_utilization": 0.3,
+      "status": "CONFIGURED_NOT_RUN",
+      "workspace": {
+        "workspaceId": "workspace-2",
+        "directory": "/home/USER/e-stage/physical/cpu_area"
+      }
+    },
+    {
+      "name": "cpu_baseline",
+      "directory": "/home/USER/e-stage/physical/cpu_baseline",
+      "netlist": "/workspace/projects/ysyx_f_to_b/E/E7/synthesis/baseline/e7_minirv_Synthesis.v.gz",
+      "netlist_sha256": "cedd0e7e83b6422d0f2df0b511197448ccda6e08aada9d5587cdf46236cf0741",
+      "target_frequency_mhz": 50,
+      "core_utilization": 0.3,
+      "status": "CONFIGURED_NOT_RUN",
+      "workspace": {
+        "workspaceId": "workspace-3",
+        "directory": "/home/USER/e-stage/physical/cpu_baseline"
+      }
+    }
+  ],
+  "policy": "SameofficialECOS/ECCbackendworkspace API; startsfromalreadyverifiedmappednetlist. Noqualitygateoverrides. MainCPUphysicalflowwillrunafterbackendpreflight; targets/utilizationmayberevisedbasedonrealSTA/DRC/LVS results withseparatehistory."
+}

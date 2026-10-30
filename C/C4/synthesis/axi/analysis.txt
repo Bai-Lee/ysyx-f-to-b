@@ -1,0 +1,134 @@
+OpenSTA 2.0.17 GITDIR-NOT Copyright (c) 2019, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: There are 40 unconstrained endpoints.
+  debug_gpr_0
+  debug_gpr_1
+  debug_gpr_10
+  debug_gpr_11
+  debug_gpr_12
+  debug_gpr_13
+  debug_gpr_14
+  debug_gpr_15
+  debug_gpr_16
+  debug_gpr_17
+  debug_gpr_18
+  debug_gpr_19
+  debug_gpr_2
+  debug_gpr_20
+  debug_gpr_21
+  debug_gpr_22
+  debug_gpr_23
+  debug_gpr_24
+  debug_gpr_25
+  debug_gpr_26
+  debug_gpr_27
+  debug_gpr_28
+  debug_gpr_29
+  debug_gpr_3
+  debug_gpr_30
+  debug_gpr_31
+  debug_gpr_4
+  debug_gpr_5
+  debug_gpr_6
+  debug_gpr_7
+  debug_gpr_8
+  debug_gpr_9
+  debug_state_2
+  m_arprot_0
+  m_arprot_1
+  m_awaddr_0
+  m_awaddr_1
+  m_awprot_0
+  m_awprot_1
+  m_awprot_2
+C4_SETUP_BEGIN
+Startpoint: reset (input port clocked by clk)
+Endpoint: exec_ebreak (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   1.000000    1.000000 v input external delay
+   0.000000    1.000000 v reset (in)
+   0.068511    1.068511 v reset_BUFX3P5H7L_A/Y (BUFX3P5H7L)
+   0.067986    1.136497 v reset_BUFX3P5H7L_A_Y_NAND4BBX2H7L_BN/Y (NAND4BBX2H7L)
+   0.057379    1.193876 v reset_BUFX3P5H7L_A_Y_NAND4BBX2H7L_BN_Y_BUFX7H7L_A/Y (BUFX7H7L)
+   0.086520    1.280396 v exec_mem_rdata_NOR2X0P5H7R_Y_7_B_AOAI211X0P5H7R_Y_B0_NOR2X0P5H7R_Y_A_OA31X4H7L_A0/Y (OA31X4H7L)
+   0.052331    1.332727 v exec_mem_rdata_NOR2X0P5H7R_Y_7_B_AOAI211X0P5H7R_Y_B0_NOR2X0P5H7R_Y_A_OA31X4H7L_A0_Y_BUFX8H7L_A/Y (BUFX8H7L)
+   0.017424    1.350151 ^ exec_inst_BUFX5H7L_Y_A_NOR3X3H7R_B_C_AOI221X0P5H7R_C0_A1_MUX2X0P5H7R_Y_S0_INVX20H7L_Y/Y (INVX20H7L)
+   0.044357    1.394508 ^ exec_inst_BUFX5H7L_Y_A_NOR3X3H7R_B_C_AOI221X0P5H7R_C0_A1_MUX2X0P5H7R_Y_S0_BUFX20H7L_A/Y (BUFX20H7L)
+   0.052210    1.446718 ^ exec_inst_BUFX5H7L_Y_A_NOR3X3H7R_B_C_AOI221X0P5H7R_C0_A1_MUX2X0P5H7R_Y_S0_BUFX20H7L_A_Y_BUFX20H7L_A/Y (BUFX20H7L)
+   0.049846    1.496563 ^ exec_inst_BUFX5H7L_Y_A_NOR3X3H7R_B_C_AOI221X0P5H7R_C0_A1_MUX2X0P5H7R_Y_S0_BUFX20H7L_A_Y_BUFX20H7L_A_Y_BUFX20H7L_A/Y (BUFX20H7L)
+   0.116523    1.613087 v exec_mem_wdata_AOAI211X3H7L_Y_C0_AOI22X1P4H7L_Y_A1_MUX4X1P4H7L_Y/Y (MUX4X1P4H7L)
+   0.055019    1.668105 ^ exec_mem_wdata_AOAI211X3H7L_Y_C0_AOI22X1P4H7L_Y/Y (AOI22X1P4H7L)
+   0.085464    1.753569 v exec_mem_wdata_AOAI211X3H7L_Y/Y (AOAI211X3H7L)
+   0.066764    1.820333 ^ exec_mem_addr_NOR2X0P5H7R_Y_7_B_XOR2X0P5H7R_Y_B_XNOR2X0P5H7R_A_Y_AOI21X0P5H7R_A1_Y_AOI21X0P5H7R_A1_Y_AOI211X1P4H7L_C0_A1_XOR2X0P5H7R_Y_A_AND4X1P4H7L_B_Y_NAND2X0P7H7L_B_A_AND3X1P4H7R_Y_C_AND3X0P5H7R_B_C_NAND2BX0P5H7R_Y/Y (NAND2BX0P5H7R)
+   0.060272    1.880605 v exec_mem_addr_NOR2X0P5H7R_Y_7_B_XOR2X0P5H7R_Y_B_XNOR2X0P5H7R_A_Y_AOI21X0P5H7R_A1_Y_AOI21X0P5H7R_A1_Y_AOI211X1P4H7L_C0_A1_XOR2X0P5H7R_Y_A_AND4X1P4H7L_B_Y_NAND2X0P7H7L_B_Y_OR4X1P4H7L_B_D_NAND4X0P5H7R_Y_A_NOR3X0P5H7R_Y_B_NAND2X0P5H7R_Y/Y (NAND2X0P5H7R)
+   0.067264    1.947869 ^ exec_mem_addr_NOR2X0P5H7R_Y_7_B_XOR2X0P5H7R_Y_B_XNOR2X0P5H7R_A_Y_AOI21X0P5H7R_A1_Y_AOI21X0P5H7R_A1_Y_AOI211X1P4H7L_C0_A1_XOR2X0P5H7R_Y_A_AND4X1P4H7L_B_Y_NAND2X0P7H7L_B_Y_OR4X1P4H7L_B_D_NAND4X0P5H7R_Y_A_NOR3X0P5H7R_Y/Y (NOR3X0P5H7R)
+   0.071678    2.019547 v exec_mem_addr_NOR2X0P5H7R_Y_7_B_XOR2X0P5H7R_Y_B_XNOR2X0P5H7R_A_Y_AOI21X0P5H7R_A1_Y_AOI21X0P5H7R_A1_Y_AOI211X1P4H7L_C0_A1_XOR2X0P5H7R_Y_A_AND4X1P4H7L_B_Y_NAND2X0P7H7L_B_Y_OR4X1P4H7L_B_D_NAND4X0P5H7R_Y/Y (NAND4X0P5H7R)
+   0.108846    2.128394 v exec_mem_addr_NOR2X0P5H7R_Y_7_B_XOR2X0P5H7R_Y_B_XNOR2X0P5H7R_A_Y_AOI21X0P5H7R_A1_Y_AOI21X0P5H7R_A1_Y_AOI211X1P4H7L_C0_A1_XOR2X0P5H7R_Y_A_AND4X1P4H7L_B_Y_NAND2X0P7H7L_B_Y_OR4X1P4H7L_B/Y (OR4X1P4H7L)
+   0.063264    2.191658 ^ exec_mem_addr_NOR2X0P5H7R_Y_7_B_XOR2X0P5H7R_Y_B_XNOR2X0P5H7R_A_Y_AOI21X0P5H7R_A1_Y_AOI21X0P5H7R_A1_Y_AOI211X1P4H7L_C0_A1_XOR2X0P5H7R_Y_A_AND4X1P4H7L_B_Y_NAND2X0P7H7L_B_Y_OR4X1P4H7L_B_Y_MUX2X3H7L_S0/Y (MUX2X3H7L)
+   0.075502    2.267160 ^ exec_mem_addr_NOR2X0P5H7R_Y_7_B_XOR2X0P5H7R_Y_B_XNOR2X0P5H7R_A_Y_AOI21X0P5H7R_A1_Y_AOI21X0P5H7R_A1_Y_AOI211X1P4H7L_C0_A1_XOR2X0P5H7R_Y_A_AND4X1P4H7L_B_Y_NAND2X0P7H7L_B_Y_OR4X1P4H7L_B_Y_MUX2X3H7L_S0_Y_AND4X1P4H7L_A/Y (AND4X1P4H7L)
+   0.048567    2.315727 ^ exec_mem_addr_NOR2X0P5H7R_Y_7_B_XOR2X0P5H7R_Y_B_XNOR2X0P5H7R_A_Y_AOI21X0P5H7R_A1_Y_AOI21X0P5H7R_A1_Y_AOI211X1P4H7L_C0_A1_XOR2X0P5H7R_Y_A_AND4X1P4H7L_B_Y_NAND2X0P7H7L_B_Y_OR4X1P4H7L_B_Y_MUX2X3H7L_S0_Y_AND4X1P4H7L_A_Y_BUFX7H7L_A/Y (BUFX7H7L)
+   0.037413    2.353140 v commit_next_pc[28]_reg_p_D_AOAI211X0P5H7R_Y_A1_OA31X1H7R_Y_B0_OAI31X0P5H7R_Y_A0_AOI31X1P4H7L_Y/Y (AOI31X1P4H7L)
+   0.079281    2.432421 v commit_next_pc[28]_reg_p_D_AOAI211X0P5H7R_Y_A1_OA31X1H7R_Y_B0_OAI31X0P5H7R_Y_A0_NAND2BX1P4H7L_AN/Y (NAND2BX1P4H7L)
+   0.068119    2.500540 v commit_next_pc[28]_reg_p_D_AOAI211X0P5H7R_Y_A1_OA31X1H7R_Y_B0_OAI31X0P5H7R_Y_A0_NAND2BX1P4H7L_AN_Y_BUFX5H7L_A/Y (BUFX5H7L)
+   0.116842    2.617382 ^ exec_ebreak_NOR2X0P5H7R_Y/Y (NOR2X0P5H7R)
+   0.000000    2.617382 ^ exec_ebreak (out)
+               2.617382   data arrival time
+
+  10.000000   10.000000   clock clk (rise edge)
+   0.000000   10.000000   clock network delay (ideal)
+   0.000000   10.000000   clock reconvergence pessimism
+  -1.000000    9.000000   output external delay
+               9.000000   data required time
+-----------------------------------------------------------------
+               9.000000   data required time
+              -2.617382   data arrival time
+-----------------------------------------------------------------
+               6.382618   slack (MET)
+
+
+worst slack 6.382618
+C4_SETUP_END
+C4_HOLD_BEGIN
+Startpoint: arbiter.s1_wdata_13__reg_p
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: arbiter.s1_wdata_13__reg_p
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ arbiter.s1_wdata_13__reg_p/CK (DFFQX0P5H7R)
+   0.105503    0.105503 v arbiter.s1_wdata_13__reg_p/Q (DFFQX0P5H7R)
+   0.026888    0.132392 ^ arbiter.s1_wdata_13__reg_p_D_INVX0P5H7R_Y_A_AOI32X0P5H7R_Y/Y (AOI32X0P5H7R)
+   0.018203    0.150595 v arbiter.s1_wdata_13__reg_p_D_INVX0P5H7R_Y/Y (INVX0P5H7R)
+   0.000000    0.150595 v arbiter.s1_wdata_13__reg_p/D (DFFQX0P5H7R)
+               0.150595   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ arbiter.s1_wdata_13__reg_p/CK (DFFQX0P5H7R)
+   0.025315    0.025315   library hold time
+               0.025315   data required time
+-----------------------------------------------------------------
+               0.025315   data required time
+              -0.150595   data arrival time
+-----------------------------------------------------------------
+               0.125279   slack (MET)
+
+
+C4_HOLD_END
+C4_STA_COMPLETE

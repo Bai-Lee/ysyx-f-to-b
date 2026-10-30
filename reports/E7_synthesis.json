@@ -1,0 +1,124 @@
+{
+  "status": "PASS_SYNTHESIS_ANALYSIS",
+  "variants": [
+    {
+      "variant": "baseline",
+      "strategy": "BALANCE 3",
+      "frequency_mhz": 130,
+      "max_pll_multiplier": 5,
+      "cell_area_um2": 9915,
+      "modeled_die_area_mm2": 0.016525,
+      "modeled_fabrication_cost_cny": 495.75000000000006,
+      "mapped_instances": 3750,
+      "latches": 0,
+      "qor": {
+        "path_groups": [
+          {
+            "name": "clock",
+            "setup": {
+              "wns": 2.291,
+              "tns": 0.0,
+              "nvp": 0,
+              "frequency_mhz": 130
+            },
+            "hold": {
+              "wns": 0.12,
+              "tns": 0.0,
+              "nvp": 0
+            }
+          }
+        ],
+        "summary": {
+          "setup": {
+            "wns": 2.291,
+            "tns": 0.0,
+            "nvp": 0,
+            "frequency_mhz": 130
+          },
+          "hold": {
+            "wns": 0.12,
+            "tns": 0.0,
+            "nvp": 0
+          }
+        },
+        "design_statistics": {
+          "cap": 0,
+          "fanout": 0,
+          "tran": 0,
+          "tdrc": 0,
+          "cella": 9915,
+          "bufs": null,
+          "leafs_k": 3,
+          "tnets_k": null,
+          "ctbuf": null,
+          "regs": null
+        }
+      },
+      "netlist_sha256": "cedd0e7e83b6422d0f2df0b511197448ccda6e08aada9d5587cdf46236cf0741",
+      "rtl_sha256": "33582bddbfa4c6f36e3f3533e74e8f428c50f2f2a4885d10540ce510a4a3abcb",
+      "run": "/home/USER/e-stage/backend/e7_minirv/runs/baseline",
+      "constraint_frequency_mhz": 100,
+      "timing_constraint_met": true
+    },
+    {
+      "variant": "area",
+      "strategy": "AREA 0",
+      "frequency_mhz": 89,
+      "max_pll_multiplier": 3,
+      "cell_area_um2": 9306,
+      "modeled_die_area_mm2": 0.01551,
+      "modeled_fabrication_cost_cny": 465.3,
+      "mapped_instances": 4581,
+      "latches": 0,
+      "qor": {
+        "path_groups": [
+          {
+            "name": "clock",
+            "setup": {
+              "wns": -1.235,
+              "tns": -53.9,
+              "nvp": 122,
+              "frequency_mhz": 89
+            },
+            "hold": {
+              "wns": 0.122,
+              "tns": 0.0,
+              "nvp": 0
+            }
+          }
+        ],
+        "summary": {
+          "setup": {
+            "wns": -1.235,
+            "tns": -53.9,
+            "nvp": 122,
+            "frequency_mhz": 89
+          },
+          "hold": {
+            "wns": 0.122,
+            "tns": 0.0,
+            "nvp": 0
+          }
+        },
+        "design_statistics": {
+          "cap": 0,
+          "fanout": 0,
+          "tran": 0,
+          "tdrc": 0,
+          "cella": 9306,
+          "bufs": null,
+          "leafs_k": 4,
+          "tnets_k": null,
+          "ctbuf": null,
+          "regs": null
+        }
+      },
+      "netlist_sha256": "5f07ea43923e0ec7b47dcf24e2834fac54872931d07a3d760ef9ffe9cdc6866e",
+      "rtl_sha256": "33582bddbfa4c6f36e3f3533e74e8f428c50f2f2a4885d10540ce510a4a3abcb",
+      "run": "/home/USER/e-stage/backend/e7_minirv/runs/area",
+      "constraint_frequency_mhz": 100,
+      "timing_constraint_met": false
+    }
+  ],
+  "limits": "TT1.2V25C, pre-layout CPU only, no SoC or physical signoff. 60% utilization and CNY30000/mm2 are course hypothetical costing, not a quotation."
+}

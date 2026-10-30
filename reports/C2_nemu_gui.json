@@ -1,0 +1,3744 @@
+{
+  "status": "PASS_BOUNDED_GUI",
+  "runs": [
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "timer",
+      "observations": {
+        "seconds": [
+          1,
+          2,
+          3
+        ]
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147493448,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 3815446,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147486164,
+          2148130656,
+          0,
+          0,
+          51,
+          0,
+          0,
+          0,
+          3130000,
+          1000000,
+          0,
+          1000000,
+          0,
+          3130000,
+          1000000,
+          0,
+          2,
+          1000000,
+          0,
+          0,
+          1,
+          2147496060,
+          2147496108,
+          0,
+          0,
+          0,
+          0,
+          4294967295,
+          0,
+          3,
+          52
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/timer/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 4.477404641999996,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "61f0052b905d7c4db47f937856fed8358c73fa54751fbeec446aa7a8c49261b1",
+      "elf_sha256": "63b3d895b0d3e9a2b4b6542407456c5aa69bfca9763d67fc085e89d4debaf430",
+      "device_trace_sha256": "95c14aa4376de1be5b8346a10308e747364d1b1ec600fa6a23b8ef146b91d033",
+      "images": [],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "keyboard",
+      "observations": {
+        "events": [
+          [
+            "J",
+            "49",
+            "DOWN"
+          ],
+          [
+            "J",
+            "49",
+            "UP"
+          ],
+          [
+            "LEFT",
+            "75",
+            "DOWN"
+          ],
+          [
+            "LEFT",
+            "75",
+            "UP"
+          ]
+        ]
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147488680,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 1828492,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147483844,
+          2148130704,
+          0,
+          0,
+          55,
+          35,
+          0,
+          2147494652,
+          255,
+          2148130712,
+          2148130712,
+          0,
+          4294934527,
+          0,
+          2684354560,
+          2147494697,
+          6,
+          2147495136,
+          2147495128,
+          2147495120,
+          2148097432,
+          2148097433,
+          2147494676,
+          0,
+          0,
+          0,
+          0,
+          4294967295,
+          0,
+          9,
+          67
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/keyboard/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 3.247904383000005,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keydown",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keyup",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keydown",
+              "Left"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keyup",
+              "Left"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "9b748a2a8db19c1bfc78a0d2ce4f7bde697c60771cd505929007093c64fe0dd3",
+      "elf_sha256": "63b3d895b0d3e9a2b4b6542407456c5aa69bfca9763d67fc085e89d4debaf430",
+      "device_trace_sha256": "675cba1df95ab7d39140f82994558c7d48a142428f3dcdea3afd89f23d6d1118",
+      "images": [],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "video",
+      "observations": {
+        "changed_pixels": 442368,
+        "distinct_colors": 256
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147484480,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 4865472,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147484528,
+          2148130640,
+          0,
+          0,
+          0,
+          2147560312,
+          264,
+          2147560744,
+          2147557460,
+          2148130648,
+          12,
+          264,
+          2701275280,
+          9842585,
+          2147560736,
+          90,
+          276,
+          276,
+          12,
+          2147560312,
+          9,
+          2147557496,
+          108,
+          2147560440,
+          81,
+          0,
+          0,
+          36000,
+          0,
+          90,
+          400
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/video/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/am-kernels/tests/am-tests/build/amtest-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 5.1142393309999985,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/video/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/video/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/video/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/video/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/video/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/video/session/second.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/video/session/second.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "42ff98b1914b5fde570db85276473c83d3a5d5d568b442580a4b7d52b52b6510",
+      "elf_sha256": "63b3d895b0d3e9a2b4b6542407456c5aa69bfca9763d67fc085e89d4debaf430",
+      "device_trace_sha256": "6e6df5e19a76ffb52d874e5922088302be09490ceaca4f62c60fdba2a3d6371a",
+      "images": [
+        {
+          "path": "artifacts/C2/pa2/gui/video/session/first.png",
+          "sha256": "775c42188f5238d4f7e67756098995d3abc42729c0c7ca3c01ff08a42839f273"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/video/session/probe.png",
+          "sha256": "775c42188f5238d4f7e67756098995d3abc42729c0c7ca3c01ff08a42839f273"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/video/session/second.png",
+          "sha256": "6f2c616cf706e470411d403a0a8c8cd3461e7c14baa68048b196bdd16b351808"
+        }
+      ],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "slider",
+      "observations": {
+        "changed_pixels": 266128,
+        "distinct_colors": 22905
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147485488,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 10526346,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147483916,
+          2148482944,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          999,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4165,
+          1000,
+          0,
+          0,
+          2147486408,
+          1,
+          300,
+          400,
+          0,
+          0,
+          0,
+          0,
+          0,
+          300,
+          400
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/slider/build/slider-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/slider/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/slider/build/slider-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 9.739909747000002,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/slider/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/slider/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/slider/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/slider/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/slider/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/slider/session/second.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "0c88dd26835b821d8d7b5925bfd309ffca073a9b681fb9200fc84093727703d8",
+      "elf_sha256": "ef0f8e4000a44a08f7c9cf41e84693a8adcc6339c005495bd614d38693309961",
+      "device_trace_sha256": "3c7f70a43b3ccfe93a75610c24ba355700d9760b2d3ea0886a59172b5db83f09",
+      "images": [
+        {
+          "path": "artifacts/C2/pa2/gui/slider/session/first.png",
+          "sha256": "c2406c415bbfe556f0451911d120be852a97b9aac4ba42bceff38ce1ec3124eb"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/slider/session/probe.png",
+          "sha256": "c2406c415bbfe556f0451911d120be852a97b9aac4ba42bceff38ce1ec3124eb"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/slider/session/second.png",
+          "sha256": "41abcbd6ece7c0ef1b6740b7390c992c00c98d25a15836f120dc7458e55bc108"
+        }
+      ],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "typing-game",
+      "observations": {
+        "changed_pixels": 2076,
+        "distinct_colors": 3
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147483960,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 2906713,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147485744,
+          2147573664,
+          0,
+          0,
+          51,
+          284,
+          256,
+          77,
+          1,
+          3,
+          300,
+          2147496888,
+          46,
+          0,
+          2147494728,
+          0,
+          30,
+          33333,
+          0,
+          2147492624,
+          0,
+          1390000,
+          75,
+          77,
+          0,
+          0,
+          0,
+          2147537852,
+          0,
+          0,
+          52
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/typing-game/build/typing-game-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/typing-game/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/typing-game/build/typing-game-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 5.055396133000002,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/typing-game/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/typing-game/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/typing-game/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/typing-game/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/typing-game/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "key",
+              "a"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/typing-game/session/second.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "0b68f789c01fec73bbffdbc4a6d77764f44a444a1c3d28548f7bbbb55e89d444",
+      "elf_sha256": "f50f39793e2e05a20a7493924c327a50c85c86e69689558a48fa933c0c144e1e",
+      "device_trace_sha256": "dc1d0d70f5057c3113b6b746975f468142a2ca5c7757917d36dfd9a26590f931",
+      "images": [
+        {
+          "path": "artifacts/C2/pa2/gui/typing-game/session/first.png",
+          "sha256": "0793ad78667f2ded94b058607d6de17d069e1099f2beef3528f5e1f49a48edc3"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/typing-game/session/probe.png",
+          "sha256": "ff3f61324130098b737c7b2846e741b5b8c89d7aa99f52f1a11a2f72d26579a7"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/typing-game/session/second.png",
+          "sha256": "49c8b19036836f83b2636bc57147c27d7d04dc23b441ad0b72b5a68fe4bfb3dc"
+        }
+      ],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "demo",
+      "observations": {
+        "changed_pixels": 1920,
+        "distinct_colors": 3
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147493304,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 3010819,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147493296,
+          2147573568,
+          0,
+          0,
+          0,
+          2147536388,
+          212,
+          2147524342,
+          2147536452,
+          2147573624,
+          2147573624,
+          0,
+          0,
+          2450000,
+          0,
+          156,
+          216,
+          2147536452,
+          2147524352,
+          0,
+          2147539108,
+          2147536388,
+          2460000,
+          100,
+          0,
+          3366912,
+          0,
+          62400,
+          0,
+          26214700,
+          400
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/demo/build/demo-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/demo/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/demo/build/demo-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 3.8564400329999984,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/demo/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/demo/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/demo/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/demo/session/second.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "9759ec0b2c48c265ffae01b2eed57e8656d27f6a5495b6fbb2d90658e51b9c6b",
+      "elf_sha256": "eb8e424e93579136807c4c433a924f9a137569329c3235252ad2b1bd48461d7c",
+      "device_trace_sha256": "2acca13f07f81d161600ae8479e818916d8ea5f339125f9b04869d832a639a60",
+      "images": [
+        {
+          "path": "artifacts/C2/pa2/gui/demo/session/first.png",
+          "sha256": "36cfb773bd67263a457d4f1366a998556ad2cf0660b22c59b60582dba9a5642e"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/demo/session/probe.png",
+          "sha256": "0c3479956bfcfae993f870a4f2529cea46fc0cac6aa7bac7f6d177dada32d6f5"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/demo/session/second.png",
+          "sha256": "b2f70d52ef25ea987fee2bbcdc28bb923018178d2e798808d4612ff0c5157755"
+        }
+      ],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "bad-apple",
+      "observations": {
+        "complete_ascii_frames": 3,
+        "frame_dimensions": [
+          80,
+          25
+        ],
+        "audio_present": false,
+        "scope": "Visual/character playback in NEMU; NEMU audio is optional and not enabled."
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147483916,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 103760,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147483916,
+          2168500112,
+          0,
+          0,
+          0,
+          2168500084,
+          0,
+          2147491470,
+          2080,
+          88,
+          2147490096,
+          2168500084,
+          6,
+          1,
+          2684354560,
+          0,
+          0,
+          0,
+          400,
+          109999,
+          4294964356,
+          2149134224,
+          339,
+          0,
+          0,
+          2149134220,
+          2939,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/bad-apple/build/bad-apple-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/bad-apple/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/bad-apple/build/bad-apple-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 4.597408152999989,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "c45b896b12d7571e0146d47608058fe50f029053f46cf4d9a21a0290b4a876c0",
+      "elf_sha256": "c33abf9ba7460df77419a58697c39c4459c9c0ee89f44c139c1637cd984757b9",
+      "device_trace_sha256": "c372097e0599687e54f4a47257fd532f656a94f943e62a9f0e0d8f454f0cbb15",
+      "images": [],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "snake",
+      "observations": {
+        "changed_pixels": 1792,
+        "distinct_colors": 4
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147486836,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 2826919,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147487000,
+          2147527488,
+          0,
+          0,
+          0,
+          2147527716,
+          360,
+          0,
+          25,
+          10,
+          2147491352,
+          2147527716,
+          26,
+          10,
+          2684354560,
+          160,
+          368,
+          48,
+          3,
+          18,
+          2385000,
+          2147491378,
+          2147492768,
+          0,
+          4,
+          1,
+          2147527680,
+          64000,
+          0,
+          26214700,
+          400
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/snake/build/snake-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/snake/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/snake/build/snake-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 3.689759631000001,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/snake/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/snake/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "key",
+              "Right"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/snake/session/second.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "10ef46b26e19bc9a09ef01ad4301e3bf98dd06aa6a7d08bd6049c0b21438bf31",
+      "elf_sha256": "8769729ceeac5b3d42f66153c1d4795e867e285d28789084ff59d2f30ff5aec7",
+      "device_trace_sha256": "8ffc17eb5e27562009395af40f8fab7ad0d2ad0a78869d885519b78503ab8fd3",
+      "images": [
+        {
+          "path": "artifacts/C2/pa2/gui/snake/session/first.png",
+          "sha256": "414e93410c4421c540846cb35dbf63a2bbf75843ad6dd7d4deffcd8d9a0f3f14"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/snake/session/probe.png",
+          "sha256": "3b463d04e0f44579977283f837a2bf22ca31b263f7972893d5a60116d7f228cf"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/snake/session/second.png",
+          "sha256": "56b00bd66b7b33dd78aa0c8c59557056ac3d26b5ae5dc74c981ef9ab8aa685a5"
+        }
+      ],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "litenes",
+      "observations": {
+        "changed_on_J": 89856,
+        "changed_after_release": 89856,
+        "ROM_sha256": "29ccb7d3b35f40a5c56f07f9cde787a55259eb6fbfd021c67006e731da494817"
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147499780,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 77668575,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147499760,
+          2149056352,
+          0,
+          0,
+          0,
+          2148775300,
+          72,
+          2148775300,
+          328965,
+          2149056360,
+          256,
+          72,
+          2701563488,
+          2149021060,
+          2148958012,
+          270,
+          328,
+          15,
+          0,
+          1000,
+          2147507612,
+          65569,
+          65569,
+          65569,
+          0,
+          0,
+          0,
+          108000,
+          0,
+          270,
+          400
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/litenes/build/litenes-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/am-kernels/kernels/litenes/build/litenes-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 67.83395458,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keydown",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keyup",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/litenes/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "b4c1fa201ecfc1858a2410a625db883c93257d4b58ccebcb432df6ddd44afbf6",
+      "elf_sha256": "3ce18fc51073bfaba02865387d9c7d006b2fcc737215ecd0e3a35914292a2db8",
+      "device_trace_sha256": "bdc712f236786b9f46f349b934d603b5ae3815231b44aa8d16f1551486cb9fea",
+      "images": [
+        {
+          "path": "artifacts/C2/pa2/gui/litenes/session/first.png",
+          "sha256": "97286902226b9fe35eddf795c4f5d12c20e128d072373b5723164cf3f04f1fcc"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/litenes/session/pressed.png",
+          "sha256": "3a8192e927c36615d18550c4386014b4ad15451d527db4ee0449ba76b8b3435e"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/litenes/session/probe.png",
+          "sha256": "97286902226b9fe35eddf795c4f5d12c20e128d072373b5723164cf3f04f1fcc"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/litenes/session/released.png",
+          "sha256": "97286902226b9fe35eddf795c4f5d12c20e128d072373b5723164cf3f04f1fcc"
+        }
+      ],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "fceux",
+      "observations": {
+        "changed_on_J": 90112,
+        "changed_after_release": 90112,
+        "ROM_sha256": "29ccb7d3b35f40a5c56f07f9cde787a55259eb6fbfd021c67006e731da494817"
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147694864,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 31257974,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147694844,
+          2148200176,
+          0,
+          0,
+          8,
+          2148165700,
+          1,
+          2148156932,
+          2,
+          8194,
+          0,
+          2148165700,
+          5970,
+          32875,
+          32,
+          5969,
+          1142928,
+          2148165704,
+          2148163749,
+          4294965247,
+          65536,
+          4294955056,
+          65280,
+          32872,
+          0,
+          0,
+          0,
+          2147811892,
+          2148163628,
+          170,
+          2147804428
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/fceux-am/build/fceux-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/fceux-am/build/fceux-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 27.185903026999995,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/probe.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/first.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keydown",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/pressed.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "xdotool",
+              "keyup",
+              "j"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/fceux/session/released.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "19bded9f04d221669703968b02b2ec675de3a12add378a02a877a11f84f8eb79",
+      "elf_sha256": "0e58bab87d7764c6d67db98dd45f4262e9b83591f22ca39192b76d967c980ad4",
+      "device_trace_sha256": "cca8cd914b32c534dda9130a93f4057a597f5f503bc8248de0d225d55697cfa5",
+      "images": [
+        {
+          "path": "artifacts/C2/pa2/gui/fceux/session/first.png",
+          "sha256": "953b455dffef329b3843fc8a3b1af40b6dbd1d44a935cbb7a753b388b7ce6d0e"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/fceux/session/pressed.png",
+          "sha256": "09804992db4248865b77a7ade2363caec22a0414d2bc6c70898b9a378ddebbd3"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/fceux/session/probe.png",
+          "sha256": "cbd52949d65e839000a8cb595e4fd4f17cccb023fc65a3a44106bbe335fa270f"
+        },
+        {
+          "path": "artifacts/C2/pa2/gui/fceux/session/released.png",
+          "sha256": "953b455dffef329b3843fc8a3b1af40b6dbd1d44a935cbb7a753b388b7ce6d0e"
+        }
+      ],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    },
+    {
+      "status": "PASS_BOUNDED_OBSERVATION",
+      "name": "initial-canvas",
+      "observations": {
+        "logical_size": [
+          400,
+          300
+        ],
+        "all_480000_captured_pixels_match": true,
+        "formula": "framebuffer[i]=i, exact nearest-neighbor SDL x2 scaling"
+      },
+      "simulation": {
+        "result": "QUIT",
+        "pc": 2147484220,
+        "halt_pc": 0,
+        "halt_ret": 0,
+        "instructions": 1183954,
+        "diff_enabled": false,
+        "diff_checked": 0,
+        "diff_skipped": 0,
+        "gpr": [
+          0,
+          2147483904,
+          2147524560,
+          0,
+          0,
+          51,
+          0,
+          0,
+          0,
+          0,
+          24,
+          2147524568,
+          0,
+          0,
+          520000,
+          2147490524,
+          4294967295,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295,
+          0,
+          0,
+          69
+        ]
+      },
+      "session": {
+        "status": "PASS",
+        "command": [
+          "stdbuf",
+          "-oL",
+          "/home/USER/c-stage/workbench/nemu/build/feature/riscv32-nemu-interpreter",
+          "-b",
+          "--diff=none",
+          "--elf=/home/USER/c-stage/c2-nemu-apps/initial-canvas/build/initial-canvas-riscv32-nemu.elf",
+          "--report=/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/initial-canvas/session/nemu.json",
+          "/home/USER/c-stage/c2-nemu-apps/initial-canvas/build/initial-canvas-riscv32-nemu.bin"
+        ],
+        "mainargs": "",
+        "display": ":99",
+        "exit_code": 0,
+        "elapsed_seconds": 2.538811047000003,
+        "commands": [
+          {
+            "command": [
+              "xdotool",
+              "windowfocus",
+              "--sync",
+              "6291466"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "command": [
+              "scrot",
+              "-u",
+              "-o",
+              "/workspace/projects/ysyx_f_to_b/artifacts/C2/pa2/gui/initial-canvas/session/initialized.png"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "termination": "ordinary SDL WM_DELETE_WINDOW, bounded observation"
+      },
+      "executable_sha256": "fd8c36d24ceccd662457e709328dfcb1672db2dc262462870c89dd36ef1e0827",
+      "image_sha256": "701a31aa32e1675a43af348fe3434f0d64713e99d00eeeadf8353493779f1b88",
+      "elf_sha256": "dc2e1a252d83d19ddeedc903c405517d6e9c9e2f863f04555b6d824795de9824",
+      "device_trace_sha256": "1453dd9b0645e5a6e039dc852b8d44561ad2f2a7ea955aa839a48567548f8ead",
+      "images": [
+        {
+          "path": "artifacts/C2/pa2/gui/initial-canvas/session/initialized.png",
+          "sha256": "bb14c3e90ceb9747b65f3a1ebea46fe1dd7a7c3c16f99373ee57189b3a778bfd"
+        }
+      ],
+      "scope": "Actual NEMU device integration and guest program, terminated by SDL close after semantic observations. Independent ISA DiffTest is disabled here for GUI speed; command-line correctness suite separately uses Spike."
+    }
+  ],
+  "required": [
+    "bad-apple",
+    "demo",
+    "fceux",
+    "initial-canvas",
+    "keyboard",
+    "litenes",
+    "slider",
+    "snake",
+    "timer",
+    "typing-game",
+    "video"
+  ],
+  "scope": "Eleven real NEMU sessions including exact full-screen initialization; demonstration suite includes seven required application families, with one selected demo (Langton ant). CC0 ROM substituted via separate build manifests, original commercial-ROM source retained. No physical audio claim."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS_OFFICIAL_GIT_BLOB_MATCH",
+  "repository": "https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts",
+  "commit": "6c6fc7e21b2d0b5b88b1a52d0a5860ea4d88e9e5",
+  "path": "flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib",
+  "download_url": "https://raw.githubusercontent.com/The-OpenROAD-Project/OpenROAD-flow-scripts/6c6fc7e21b2d0b5b88b1a52d0a5860ea4d88e9e5/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib",
+  "git_blob_sha1": "90e4afb274cfc6514c587c434c77903d554117d1",
+  "local_sha256": "8d540a4d4cf6d09d27c87ad067857a9c0c2eeb023ab7a56e058cd3113db4e9b1",
+  "bytes": 6692032,
+  "local_file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\nangate45\\NangateOpenCellLibrary_typical.lib",
+  "scope": "Library-only Nangate45 baseline from fixed OpenROAD-flow-scripts commit. Not claimed byte-identical to course archive; course archive fetch timed out at212666/4810358 bytes and retained as incomplete. No full PDK/toolchain installed.",
+  "license": {
+    "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\nangate45\\OpenCellLibraryLicenseSi2.txt",
+    "sha256": "ceee811023a06fe8ed9ba3369fc7e8b9d8035a0b2a7d7b321384c4e2051de3c8",
+    "git_blob_sha1": "6a06794577beacd96e355af32b7f53cc09220311",
+    "scope": "Educational architecture evaluation within this library; no standard-cell-library benchmarking."
+  }
+}

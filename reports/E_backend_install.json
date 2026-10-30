@@ -1,0 +1,57 @@
+{
+  "status": "EXTRACTED_REQUIRES_CAPABILITY_TEST",
+  "items": [
+    {
+      "asset": "ecc-cli-linux-x86_64.tar.gz",
+      "root": "/home/USER/tools/e-stage/ecc-alpha10",
+      "archive_sha256": "fc3daaca24dddb04ba3490329042f52da05190da03c3831042293dd0cbffdca6"
+    },
+    {
+      "asset": "ics55_LLSC_H7CH_gds.tar.bz2",
+      "root": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CH",
+      "archive_sha256": "c1138641deb9683422bdc4da7828af0aedeae1b4424c78c288722f5fdb7fc273"
+    },
+    {
+      "asset": "ics55_LLSC_H7CH_liberty.tar.bz2",
+      "root": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CH",
+      "archive_sha256": "bd8327c9694b625275bebf63743d49e9e019f23be76152d2edbd530e150ecbba"
+    },
+    {
+      "asset": "ics55_LLSC_H7CL_gds.tar.bz2",
+      "root": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL",
+      "archive_sha256": "10adbc3edb4618639544227f6bbc78208848929f6a2e3468b3064ab1ede79942"
+    },
+    {
+      "asset": "ics55_LLSC_H7CL_liberty.tar.bz2",
+      "root": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL",
+      "archive_sha256": "8312dd3f2e4fed8a63fd26c51deb8c79a75becfdfe544e44cce164e87f7875f4"
+    },
+    {
+      "asset": "ics55_LLSC_H7CR_gds.tar.bz2",
+      "root": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR",
+      "archive_sha256": "279a6775b84270de84761a08a1c4b523eca478747273178bf252816be585fd9d"
+    },
+    {
+      "asset": "ics55_LLSC_H7CR_liberty.tar.bz2",
+      "root": "/home/USER/tools/icsprout55-e-stage/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR",
+      "archive_sha256": "faa3fc2f3ef8560c2d7cafc7800ecee39b69b8d177b14d098ed94062ba3f6e5c"
+    },
+    {
+      "asset": "ICsprout_55LLULP1233_IO_251013_gds.tar.bz2",
+      "root": "/home/USER/tools/icsprout55-e-stage/IP/IO/ICsprout_55LLULP1233_IO_251013",
+      "archive_sha256": "c775a0078316f29de5545f5c39f79563c3ae10dd6fe4d90df619b72f6d29db54"
+    },
+    {
+      "asset": "oss-cad-suite-linux-x64-20261022.tgz",
+      "root": "/home/USER/tools/e-stage/oss-20261022",
+      "archive_sha256": "45b7401d677f1e6cffb19dcaafb8e92c95a49dfc05b332ae4d00b84c94f62f6e"
+    },
+    {
+      "tool": "ecos",
+      "root": "/home/USER/tools/e-stage/ecos-alpha9/squashfs-root",
+      "archive_sha256": "09e4c698966d4212ff950cf1a4061ec86821096263fad083454444fece39d179"
+    }
+  ],
+  "pdk_root": "/home/USER/tools/icsprout55-e-stage",
+  "scope": "Official course-pinned ECC/ECOS andPDK release1.10.100; no global PATH modification; no CUDA installation."
+}

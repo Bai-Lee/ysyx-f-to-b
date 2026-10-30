@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "label": "E4",
+  "archive": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\YSYX_E4_DELIVERY.zip",
+  "bytes": 130424113,
+  "sha256": "d158ea4c8ca85341f7f712a2491c32e97c7659beaf7579a31aeeb5f17df71f6d",
+  "verified_entries": 12257,
+  "all_member_sha256_verified": true,
+  "manifest_sha256": "8d7aad67551583ffa62222cec7a0ed79092f026f026c3f7dd92a844777e6af11",
+  "crc_verified": true,
+  "timestamp": "2026-10-24T21:35:04.479791+00:00"
+}

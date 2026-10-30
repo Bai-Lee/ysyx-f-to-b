@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "mutants": [
+    {
+      "name": "priority",
+      "reason": "FAIL priority a=3 b=1 op=0 actual=0 expected=1",
+      "run": {
+        "status": "PASS",
+        "name": "negative/priority",
+        "command": [
+          "/home/USER/e4-lab/build/fault_priority/fault_priority"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T20:57:44.561218+00:00",
+        "elapsed_seconds": 0.013,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_priority/fault_priority",
+            "sha256": "2bc98278067fc7f7709dbbd5a79dadf46e7de38d3e317a10a1c14f2ad39dcc2b"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_priority/fault_priority",
+            "sha256": "2bc98278067fc7f7709dbbd5a79dadf46e7de38d3e317a10a1c14f2ad39dcc2b"
+          }
+        ],
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "cde7e04ac94206b7847ef38e583eae49e806daedeaedd51b02e134e897ffd690",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    },
+    {
+      "name": "overflow",
+      "reason": "FAIL overflow a=0 b=8 op=1 actual=0 expected=1",
+      "run": {
+        "status": "PASS",
+        "name": "negative/overflow",
+        "command": [
+          "/home/USER/e4-lab/build/fault_overflow/fault_overflow"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T20:57:48.692831+00:00",
+        "elapsed_seconds": 0.038,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_overflow/fault_overflow",
+            "sha256": "518d77acf551d4a798d90828c9876775b70fe02bf33925864f2acb598a1f6a64"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_overflow/fault_overflow",
+            "sha256": "518d77acf551d4a798d90828c9876775b70fe02bf33925864f2acb598a1f6a64"
+          }
+        ],
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "6bf14d5c7dd4763eb2311f262ddcd017d44c6c406a60167b1e2ef34a532c38bb",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    },
+    {
+      "name": "lfsr",
+      "reason": "FAIL LFSR actual=98 expected=226",
+      "run": {
+        "status": "PASS",
+        "name": "negative/lfsr",
+        "command": [
+          "/home/USER/e4-lab/build/fault_lfsr/fault_lfsr"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T20:57:52.850742+00:00",
+        "elapsed_seconds": 0.022,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_lfsr/fault_lfsr",
+            "sha256": "04cec4079312cd85388650a91cbcd2106345c7a87e5ea2199d564e3c18143460"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_lfsr/fault_lfsr",
+            "sha256": "04cec4079312cd85388650a91cbcd2106345c7a87e5ea2199d564e3c18143460"
+          }
+        ],
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "cc117c8d9b31ff5c15be81691d082e73813eff0b29aa2f2c07b417fa2a2ab37b",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    },
+    {
+      "name": "parity",
+      "reason": "FAIL bad parity rejected actual=217 expected=216",
+      "run": {
+        "status": "PASS",
+        "name": "negative/parity",
+        "command": [
+          "/home/USER/e4-lab/build/fault_parity/fault_parity"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T20:57:56.983534+00:00",
+        "elapsed_seconds": 0.036,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_parity/fault_parity",
+            "sha256": "1bedf1cea100d90ce738e1f562896a0078715a16015b0a25756a441aa9b0bc39"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_parity/fault_parity",
+            "sha256": "1bedf1cea100d90ce738e1f562896a0078715a16015b0a25756a441aa9b0bc39"
+          }
+        ],
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "306fdea5eba37ce23c0f92652a48aba157cc3ca1b2cef416f0dea2c7f5465d43",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    },
+    {
+      "name": "vga_total",
+      "reason": "FAIL horizontal coordinate h=799 v=0 actual=0 expected=799",
+      "run": {
+        "status": "PASS",
+        "name": "negative/vga_total",
+        "command": [
+          "/home/USER/e4-lab/build/fault_vga_total/fault_vga_total"
+        ],
+        "cwd": "/home/USER/e4-lab",
+        "timestamp": "2026-10-24T20:58:01.067624+00:00",
+        "elapsed_seconds": 0.063,
+        "exit_code": 1,
+        "expected_exit": [
+          1
+        ],
+        "timeout_seconds": 60,
+        "inputs": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_vga_total/fault_vga_total",
+            "sha256": "4b14becb1b144f5d07e12153ecaba61c451d187f83927fdb28395730871d69a8"
+          }
+        ],
+        "inputs_after": [
+          {
+            "path": "/home/USER/e4-lab/build/fault_vga_total/fault_vga_total",
+            "sha256": "4b14becb1b144f5d07e12153ecaba61c451d187f83927fdb28395730871d69a8"
+          }
+        ],
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "3185be40ee8b6b3e7b12e0fdbe18980b2a1dc16080afc4deb6d8f9212cc347ff",
+        "budget": "WSL2 2GiB RAM/2GiB swap; make<=j2; one heavy task"
+      }
+    }
+  ],
+  "style_waiver": "DECLFILENAME only: deliberately grouped reusable modules. No logical warning class suppressed.",
+  "known_runtime_controls": [
+    "XOR->OR",
+    "R0 write disabled",
+    "unsigned negative branch offset"
+  ],
+  "lint_negative": "deliberate truncation and inferred latch rejected"
+}

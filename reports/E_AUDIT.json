@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "timestamp": "2026-10-25T18:18:02.522518+00:00",
+  "stage_status": "COMPLETE_ENGINEERING_WITH_DECLARED_ADAPTATIONS",
+  "engineering_scope_complete": true,
+  "literal_course_completion": false,
+  "official_admission": false,
+  "E5_E8_core_counts": {
+    "E5": 17,
+    "E6": 22,
+    "E7": 30,
+    "E8": 10
+  },
+  "E9_excluded": [
+    "E9-M001",
+    "E9-M002",
+    "E9-O001"
+  ],
+  "E3_declared_exceptions": [
+    {
+      "id": "LCT-21-X03",
+      "status": "MATERIAL_PREPARED_HUMAN_DURATION",
+      "evidence": [
+        "E/E3/lcthw/notes/21-flashcards.md",
+        "types"
+      ],
+      "details": "Actual flashcards provided; no claim of elapsed daily human practice.",
+      "resolved_evidence": [
+        "E/E3/lcthw/notes/21-flashcards.md",
+        "artifacts/E3/LCT/types"
+      ]
+    },
+    {
+      "id": "MS-03-05",
+      "status": "NOT_APPLICABLE_HUMAN_DURATION",
+      "evidence": [
+        "E/E3/ms/NOTES.md"
+      ],
+      "details": "A month of personal editor habit cannot be truthfully compressed into this agent run; no future month claimed.",
+      "resolved_evidence": [
+        "E/E3/ms/NOTES.md"
+      ]
+    },
+    {
+      "id": "MS-04-04",
+      "status": "UNAVAILABLE_HISTORY_METHOD_TESTED",
+      "evidence": [
+        "data/journal_inventory",
+        "data/boot_scope.json",
+        "data/boot_method_fixture.json"
+      ],
+      "details": "Real history absent; fixture is labeled synthetic, never claimed as measured boots.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/data/journal_inventory",
+        "artifacts/E3/MS/data/boot_scope.json",
+        "artifacts/E3/MS/data/boot_method_fixture.json"
+      ]
+    },
+    {
+      "id": "MS-04-05",
+      "status": "UNAVAILABLE_HISTORY_METHOD_TESTED",
+      "evidence": [
+        "data/journal_inventory",
+        "data/boot_scope.json",
+        "data/boot_method_fixture.json"
+      ],
+      "details": "Real history absent; fixture is labeled synthetic, never claimed as measured boots.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/data/journal_inventory",
+        "artifacts/E3/MS/data/boot_scope.json",
+        "artifacts/E3/MS/data/boot_method_fixture.json"
+      ]
+    },
+    {
+      "id": "MS-05-11",
+      "status": "NOT_PUBLISHED_PERSONAL_ACTION",
+      "evidence": [
+        "dotfiles/fsck"
+      ],
+      "details": "Local dotfiles repository prepared; no unrequested publication to the user GitHub account.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/dotfiles/fsck"
+      ]
+    },
+    {
+      "id": "MS-06-07",
+      "status": "PREPARED_NOT_PUBLISHED",
+      "evidence": [
+        "git/proposed.patch"
+      ],
+      "details": "Local reviewable terminology correction prepared; GitHub fork/PR is a personal external-publication action, not falsely reported submitted.",
+      "resolved_evidence": [
+        "artifacts/E3/MS/git/proposed.patch"
+      ]
+    }
+  ],
+  "earlier_routes": {
+    "E1": "Command-line schematic export adaptation; no official OJ submission",
+    "E2": "Official independent linked-list competence branch, not all CEX exercises",
+    "E3": "Engineering scope with six declared exceptions",
+    "E4": "Local real NVBoard/GTKWave acceptance"
+  },
+  "physical_result": {
+    "constraint_frequency_mhz": 50,
+    "die_area_um2": 34596,
+    "minimum_setup_wns_ns": 2.707,
+    "minimum_hold_wns_ns": 0.085,
+    "verified_export_files": 210,
+    "signoff_sha256": "3c02ffb8064aaa42b8f34ab00f8141dad820cd13e9a0f23c2f210febd86890de"
+  },
+  "final_report": "reports/E_REPORT.md",
+  "read_only_verifier": "scripts/Verify-E.ps1",
+  "verification": {
+    "status": "PASS",
+    "verification_kind": "read-only retained-evidence integrity",
+    "checker_controls": {
+      "valid_archive_accepted": true,
+      "corrupt_digest_rejected": true,
+      "traversal_name_rejected": true
+    },
+    "stage_audits": {
+      "E1": {
+        "path": "reports/E1_AUDIT.json",
+        "sha256": "79b403180e48316a487fa6bc9b0c197bb40dfb24481a92690ea4e8deb0eb8b1a"
+      },
+      "E2": {
+        "path": "reports/E2_AUDIT.json",
+        "sha256": "cddade228272e252ef40a4a60fbe97cb828aa7e2f37588b80a108c5086a47fbe"
+      },
+      "E3": {
+        "path": "reports/E3_AUDIT.json",
+        "sha256": "bbeb6af48638f9cf748bd4bee4eef41c30c3cec09177d6fc2ff9827ecba8c61f"
+      },
+      "E4": {
+        "path": "reports/E4_AUDIT.json",
+        "sha256": "9053a1bed1f07768e63d5a60054f333348ed54ec922452a8bbc6b615e861d1a5"
+      },
+      "E5": {
+        "path": "reports/E5_AUDIT.json",
+        "sha256": "8a23bd31f544700e38ba3e18a6f02baf239e45eaa9a70a81be9c7014ff41a655"
+      },
+      "E6": {
+        "path": "reports/E6_AUDIT.json",
+        "sha256": "7f7478c5472e5bf32805f3318ac6d63ed1de8de4c20cc3790b2aa7ce52f9fab0"
+      },
+      "E7": {
+        "path": "reports/E7_AUDIT.json",
+        "sha256": "57d55d6615c3b4fdda178fa6d3912f2ef190dc911afd287e5712f98d9f910110"
+      },
+      "E8": {
+        "path": "reports/E8_AUDIT.json",
+        "sha256": "9fabbf3251fe372230b7d9965a393d639d24e535d02a531441debb643dbba2d7"
+      }
+    },
+    "scope": {
+      "E5_E8_core_passed": 79,
+      "E5_E9_records": 96,
+      "evidence_paths": 98,
+      "status_counts": {
+        "PASS_DOCUMENTED": 10,
+        "PASS": 77,
+        "NOT_SELECTED_OPTIONAL": 2,
+        "NOT_APPLICABLE": 4,
+        "EXCLUDED_SCOPE": 3
+      }
+    },
+    "frozen_snapshot_files": 38,
+    "current_physical_candidate_rtl_files": 4,
+    "external_original_sources_verified": 15,
+    "frozen_requirement_copies_verified": 5,
+    "offline_source_archives": 9,
+    "verified_tar_members": {
+      "E_runtime_export": 726,
+      "E7_batch_export": 156,
+      "E8_native_evidence_export": 120,
+      "E8_signoff_export": 210
+    },
+    "retained_visual_image_hashes": 10,
+    "markdown": {
+      "documents": 15,
+      "resolved_local_links": 385,
+      "external_reference_paths": [
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\docs\\markdown\\E\\E7.md",
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\docs\\markdown\\E\\E8.md",
+        "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\docs\\markdown\\E\\E9.md"
+      ],
+      "scope": "File-target resolution only; not a full Markdown/math renderer test"
+    },
+    "limits": [
+      "Prior functional and visual results are retained acceptance, not rerun here.",
+      "No SDF transient timing, manufactured silicon, formal all-input proof, or official admission claim."
+    ]
+  }
+}

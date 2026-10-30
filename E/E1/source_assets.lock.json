@@ -1,0 +1,316 @@
+{
+  "measured_at": "2026-10-24T13:36:57.257671+00:00",
+  "meaning": "Local archived asset hashes; no claim of upstream cryptographic authentication.",
+  "records": [
+    {
+      "slug": "wire",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\7\\77\\Wire.png",
+      "sha256": "0b369de717ebb563ae134ffeef656261871c388035b714fb0a5afb9cc71093d6"
+    },
+    {
+      "slug": "wire4",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\1\\15\\Wire4.png",
+      "sha256": "d8590ddc02087241d137b763e3b3bac954c17453a9b8527982e6b0160c846ce7"
+    },
+    {
+      "slug": "notgate",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\9\\9e\\Notgate.png",
+      "sha256": "725ac3ee8d284a3a3618d881b0f2ee5fefa38b904ebdbfe899ee97f91c055786"
+    },
+    {
+      "slug": "andgate",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\7\\78\\Andgate.png",
+      "sha256": "663367ccd52f895a8b061fa78aafdbaec733259e5a77bbf26670985312ff3593"
+    },
+    {
+      "slug": "norgate",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\5\\5b\\Norgate.png",
+      "sha256": "ffe37925a5750523c230949f69b7b25fd68173ffd36790307d3512d9002dc3eb"
+    },
+    {
+      "slug": "xnorgate",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\6\\6d\\Xnorgate.png",
+      "sha256": "04cfba0de70a580ad3fd5fc5cfbf669799635537267ba7fd12467e7675e03721"
+    },
+    {
+      "slug": "wire_decl",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\6\\6a\\Wiredecl1.png",
+      "sha256": "28236a47fa33b43b3307ac5867fd786a640bcb805e1f61deb708679afc62d412"
+    },
+    {
+      "slug": "wire_decl",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\3\\3a\\Wiredecl2.png",
+      "sha256": "43a75580c17e9facf3904ff56fc89d630b81f3ee969397dd844782f6009fe85b"
+    },
+    {
+      "slug": "7458",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\e\\e1\\7458.png",
+      "sha256": "45b5dbaf22d148bcb10452ff2292a4f5fe5858b99ecdac8a853acc92c3b53405"
+    },
+    {
+      "slug": "vector0",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\a\\ae\\Vector0.png",
+      "sha256": "0e76d6ae9deb414cee2376660103bb4c85e13901bc22a2368ed1b8c3bff81538"
+    },
+    {
+      "slug": "vectorgates",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\1\\1b\\Vectorgates.png",
+      "sha256": "9def1daee939f978c18e8fff2ff6904409580649300ddafae77e17d67bc54c48"
+    },
+    {
+      "slug": "vector3",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\0\\0c\\Vector3.png",
+      "sha256": "0e61bd313441027404c8b5c94cc1aab7941cb5bcbe2307ce8dde32c7393aeef0"
+    },
+    {
+      "slug": "vector5",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\a\\ac\\Vector5.png",
+      "sha256": "4125bfc6dab0542411cf3c5968b6903466670e6db65f795a9cb3eb89e1ac6ad1"
+    },
+    {
+      "slug": "module",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.b0ce402142f2fadd.b0ce402142f2fadd.png",
+      "sha256": "a57ecf9062ad3c5484a544fac9b5f37d075077006600ab64beed09670f8d6333"
+    },
+    {
+      "slug": "module",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\c\\c0\\Module.png",
+      "sha256": "632f9af03d5a65325d31fc4b6dccf9ac0d2ca3603af68f1257dae71b9ad8d394"
+    },
+    {
+      "slug": "module_pos",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\b\\b7\\Module_pos.png",
+      "sha256": "45440ff42bff66504c61ffc5c08baba9e228458c30122eef3ccc0dac83a017c8"
+    },
+    {
+      "slug": "module_name",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\d\\dd\\Module_name.png",
+      "sha256": "b8286b4ee0334d5ae6d3ea5d88aeef6f99a0ed2d9710c2f2d4c88a8d8261c608"
+    },
+    {
+      "slug": "module_shift",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\6\\60\\Module_shift.png",
+      "sha256": "36aaa61ec1af9c43e4cdad25ca74c8b13acc59d7d085a9282073d947e0f23df6"
+    },
+    {
+      "slug": "module_shift8",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\7\\76\\Module_shift8.png",
+      "sha256": "1654e6fb7ee2bb74d39e02d3d4d37bf0acbe3d7699c8471db163f43b54a6855d"
+    },
+    {
+      "slug": "module_add",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\a\\a3\\Module_add.png",
+      "sha256": "53060838fee42daa600a282834e45c04520d2b0fc2d93dfc615a359a4161f257"
+    },
+    {
+      "slug": "module_fadd",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\f\\f3\\Module_fadd.png",
+      "sha256": "ec6badc070ccbea982876552cfba13dfa8df76cbad0f55c08dc22d3563ecab19"
+    },
+    {
+      "slug": "module_cseladd",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\3\\3e\\Module_cseladd.png",
+      "sha256": "7c8d16106ef91128e4917f4a12f4efde6cb7fed68ab2f410409b72173a05121c"
+    },
+    {
+      "slug": "module_addsub",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\a\\ae\\Module_addsub.png",
+      "sha256": "748eed5a2b468088bec953298d1d03317a87a037a100ed7c28bf607b4ef9ff18"
+    },
+    {
+      "slug": "module_addsub",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\7\\74\\Module_addsub_xor.png",
+      "sha256": "436556ad7c32a953f1c219ff6ab478044c62e4290c0f9aa79cbb9a5b45e3bc79"
+    },
+    {
+      "slug": "alwaysblock1",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\2\\2b\\Alwayscomb.png",
+      "sha256": "0b1ed962c65b68e0da43ec7cb8aa3a942584ce9819ac399bcab0a545a8c24284"
+    },
+    {
+      "slug": "alwaysblock2",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\4\\40\\Alwaysff.png",
+      "sha256": "acc943bb5868f78c4977bf85800266e809a43e8ef84d80dd1327994ac57d3573"
+    },
+    {
+      "slug": "always_if",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\9\\9d\\Always_if_mux.png",
+      "sha256": "77609994e11e28b375aad039f5fa314906419b091ce021302b3b3ed98b2d7572"
+    },
+    {
+      "slug": "always_if2",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\d\\d1\\Always_if2.png",
+      "sha256": "e6fcf64659b26eb4d4cf816eee10dc559da1469ee2242a178491ac2f0a2ef3dc"
+    },
+    {
+      "slug": "truthtable1",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\f\\f6\\Truthtable1.png",
+      "sha256": "295ee1d2f0fee54c4e328480b1f1e29cb444d1aade1ec68c4b077d4a903e3a63"
+    },
+    {
+      "slug": "mt2015_q4b",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.1574b9d23d7fff1b.1574b9d23d7fff1b.png",
+      "sha256": "df462a17015d256b86d97b317410ef4848f0071e8cc1280151ac5ddbdfb4b2c6"
+    },
+    {
+      "slug": "dff",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\6\\6c\\Dff.png",
+      "sha256": "57bf7b9757d983aaf0d4bc1aafd007ea25780701211ad98a62d6a5bcb7e5bd6b"
+    },
+    {
+      "slug": "mt2015_muxdff",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.eca55e8acfbf4bbf.eca55e8acfbf4bbf.png",
+      "sha256": "eedd855b6daac3d5d534eaccdb2bf7fbbc59ce1662f4ae837cc28a218adbbb55"
+    },
+    {
+      "slug": "2014_q4a",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.e674472e9a7d5482.e674472e9a7d5482.png",
+      "sha256": "48d0d40544fcee98032f60c4134878374f7e99eeaea80bd885835c1fdf574e13"
+    },
+    {
+      "slug": "lfsr5",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\9\\9a\\Lfsr5.png",
+      "sha256": "65083181c969534d163c6fdfdd9f3af13e7e2d5edc191cecb053690e7c3d7157"
+    },
+    {
+      "slug": "m2014_q4k",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\1\\15\\Exams_m2014q4k.png",
+      "sha256": "0ffb71a762dcb1d126e8648c820984866e73c34ee75592243541c84fdba152f5"
+    },
+    {
+      "slug": "2014_q4b",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.e674472e9a7d5482.e674472e9a7d5482.png",
+      "sha256": "48d0d40544fcee98032f60c4134878374f7e99eeaea80bd885835c1fdf574e13"
+    },
+    {
+      "slug": "fsm1",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\7\\70\\Fsm1.png",
+      "sha256": "e58f6e68864a42b97acebb8f855bb2e3aa3269315f237c3a9cc86d03974704f7"
+    },
+    {
+      "slug": "fsm1s",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\8\\82\\Fsm1s.png",
+      "sha256": "7184f2ed7ec38515e43cb11d4fa773f7bb3759969f8950001b2cfbd1a82d128e"
+    },
+    {
+      "slug": "fsm2",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\b\\b8\\Fsmjk.png",
+      "sha256": "42f54ba3548058139b753167bc0cd308ef6da542c5f398b0edb3cd2bb6a4bbc8"
+    },
+    {
+      "slug": "fsm2s",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\5\\5d\\Fsmjks.png",
+      "sha256": "e23eb7b81546eaf099d35f61fc58c1c797274547c41243b637937a2562454e38"
+    },
+    {
+      "slug": "fsm3",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\8\\89\\Fsm3.png",
+      "sha256": "6aedaa34ad84c17bc13dcd4e15f5ce07b0358a18407c64a2cfc7d272ddabaaa1"
+    },
+    {
+      "slug": "fsm3s",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\8\\89\\Fsm3.png",
+      "sha256": "6aedaa34ad84c17bc13dcd4e15f5ce07b0358a18407c64a2cfc7d272ddabaaa1"
+    },
+    {
+      "slug": "ece241_2013_q4",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.57acd2bcb5b7457a.57acd2bcb5b7457a.png",
+      "sha256": "fae97062f4bf4ef3e8bc0d47786be3cf4ab30abba07dfbfed5020cdeaeadac95"
+    },
+    {
+      "slug": "lemmings1",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\d\\de\\Lemmings.gif",
+      "sha256": "18c0d8bd1e7f8eaa22c491bd99da04f57a192dd6af6943d800e1cad67dea40b9"
+    },
+    {
+      "slug": "lemmings1",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\b\\b2\\Lemmings1.png",
+      "sha256": "001e7c4d580a934339afeeb64723bffded88293cd4ce996bc425955ebedc8198"
+    },
+    {
+      "slug": "lemmings2",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\7\\70\\Lemmings2.gif",
+      "sha256": "29df574986cfd227cce4231a0426e3fb68d91d3e29896b2b2a57ca7413792447"
+    },
+    {
+      "slug": "lemmings2",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\2\\27\\Lemmings2.png",
+      "sha256": "abd338fd6df6f112b4aef383e04a31fb3a4f66f27617ce30c6d241867019cd31"
+    },
+    {
+      "slug": "lemmings3",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\a\\a2\\Lemmings3.gif",
+      "sha256": "74092bb3bebaad9313787b66c01183d9a2d392ede2f195288cf13b0fa46e226a"
+    },
+    {
+      "slug": "lemmings3",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\8\\86\\Lemmings3.png",
+      "sha256": "dc1f6977610f1f3e0ac29e346395ba998691cb66fb408bdd2cf2abe2431db3c9"
+    },
+    {
+      "slug": "lemmings4",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\e\\e8\\Lemmings4.gif",
+      "sha256": "e3e95e62967e3db1441d9248898fb4f78636945917f0b392ce9084fc64e5a512"
+    },
+    {
+      "slug": "lemmings4",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\1\\1a\\Lemmings4.png",
+      "sha256": "4adb4296f4ea507437b09cdcfe904a44c1b378261439aaf2b4c4ee9b8c460042"
+    },
+    {
+      "slug": "fsm_onehot",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\a\\a7\\Fsmonehot.png",
+      "sha256": "b32551ff5260781347fb52a31decd330c19aff63bb393c30e26d058cb5837ff8"
+    },
+    {
+      "slug": "fsm_ps2",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\4\\41\\Fsm_ps2.png",
+      "sha256": "f99ae49d7b39c2d14faab08ebd11af2d16b679c2e5087a26fb28b9fc21023688"
+    },
+    {
+      "slug": "fsm_hdlc",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\4\\47\\Fsm_hdlc.png",
+      "sha256": "3b28fe1f7ab4373265db1c1300aeb18ccee35d8fc07303a80e808bff6d16ecee"
+    },
+    {
+      "slug": "ece241_2014_q5b",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\0\\05\\Ece241_2014_q5b.png",
+      "sha256": "7fdc6879d7c02c88676cf81ab74b770bdfd9ec26bf81df7af9d419f1fd90acdf"
+    },
+    {
+      "slug": "2014_q3fsm",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\d\\d6\\Exams_2014q3fsm.png",
+      "sha256": "b369051613bb6c2d7cb1d72354d194809cd8c7fabdd1b49e6d18fbb7f1e6c990"
+    },
+    {
+      "slug": "m2014_q6b",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\e\\e1\\Exams_m2014q6.png",
+      "sha256": "7d36d631505b8191689c982f5d852cd81cb161808f045cd94f789202dcafa886"
+    },
+    {
+      "slug": "m2014_q6c",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\e\\e1\\Exams_m2014q6.png",
+      "sha256": "7d36d631505b8191689c982f5d852cd81cb161808f045cd94f789202dcafa886"
+    },
+    {
+      "slug": "m2014_q6",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\images\\e\\e1\\Exams_m2014q6.png",
+      "sha256": "7d36d631505b8191689c982f5d852cd81cb161808f045cd94f789202dcafa886"
+    },
+    {
+      "slug": "2012_q2fsm",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.85f24157a04c6df5.85f24157a04c6df5.png",
+      "sha256": "ad2ac5fe20fbacf02f7102798986a5e30546d4a9448618f3dd7aef9a28c8d61a"
+    },
+    {
+      "slug": "2012_q2b",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.85f24157a04c6df5.85f24157a04c6df5.png",
+      "sha256": "ad2ac5fe20fbacf02f7102798986a5e30546d4a9448618f3dd7aef9a28c8d61a"
+    },
+    {
+      "slug": "2013_q2afsm",
+      "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\assets\\offline\\hdlbits.01xz.net\\mw\\thumb.91a382d26c5260e2.91a382d26c5260e2.png",
+      "sha256": "ca0cb3b08bfaaabaf6b36a86c234d95f2acffa92188926d20373d2fa38d0b618"
+    }
+  ]
+}

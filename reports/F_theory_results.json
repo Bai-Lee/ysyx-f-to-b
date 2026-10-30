@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "ideal_switch_cases": 4,
+  "negative_counterexamples": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "area_identities_checked": true,
+  "nand_formula_samples": 31,
+  "graph_sha256": "c25b8ba6a88866e92025d134b6ea92bbe3f0e5fa0a6a39bef656a26ad337eed1",
+  "svg_sha256": "a6d4dab675c9c4a5683265960b25d8137f03d39afbd1cc4f0149160caaa6dc87",
+  "notes_sha256": "eaaf560846244d26c695ed621e35fa9006158b7edb619c12e37c42f679d29949",
+  "scope": "Declared Boolean switch/area models plus source-image topology and native functional simulation evidence. No real PDK or physical PPA."
+}

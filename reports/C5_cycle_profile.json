@@ -1,0 +1,5730 @@
+{
+  "status": "PASS_FUNCTIONAL_CYCLE_PROFILE",
+  "runs": [
+    {
+      "name": "ebreak",
+      "status": "PASS_EQUIVALENT_OBSERVATIONS",
+      "timed": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536870912,
+        "next_pc": 536870916,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 13,
+        "instructions": 1,
+        "wall_seconds": 0.00414359,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 1,
+        "flash_dpi_calls": 0,
+        "memory_operations": 0,
+        "diff_enabled": true,
+        "diff_checked": 1,
+        "device_sync_checked": 0,
+        "axi_channels": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "gpr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 0,
+          "sampled_bits": 0,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": []
+        }
+      },
+      "cycle": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536870912,
+        "next_pc": 536870916,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 13,
+        "instructions": 1,
+        "wall_seconds": 0.00257524,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 1,
+        "flash_dpi_calls": 0,
+        "memory_operations": 0,
+        "diff_enabled": true,
+        "diff_checked": 1,
+        "device_sync_checked": 0,
+        "axi_channels": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "gpr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 0,
+          "sampled_bits": 0,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": []
+        }
+      },
+      "wall_speed_ratio": 1.609011198956214,
+      "image_sha256": "9d9ae84a025ec9f0d2988357af45b1241eed7ae0333caee70ab6df5b3db0c36d"
+    },
+    {
+      "name": "sram-patterns",
+      "status": "PASS_EQUIVALENT_OBSERVATIONS",
+      "timed": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871660,
+        "next_pc": 536871664,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 1364428,
+        "instructions": 385659,
+        "wall_seconds": 12.2111,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 397958,
+        "flash_dpi_calls": 0,
+        "memory_operations": 69147,
+        "diff_enabled": true,
+        "diff_checked": 385659,
+        "device_sync_checked": 0,
+        "axi_channels": [
+          425617,
+          425617,
+          29189,
+          29189,
+          29189
+        ],
+        "gpr": [
+          0,
+          536871652,
+          251666420,
+          536873784,
+          0,
+          1,
+          1,
+          120,
+          0,
+          0,
+          0,
+          4294967295,
+          251664384,
+          251664384,
+          1,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          385659,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 0,
+          "sampled_bits": 0,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": []
+        }
+      },
+      "cycle": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871660,
+        "next_pc": 536871664,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 1364428,
+        "instructions": 385659,
+        "wall_seconds": 1.13306,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 397958,
+        "flash_dpi_calls": 0,
+        "memory_operations": 69147,
+        "diff_enabled": true,
+        "diff_checked": 385659,
+        "device_sync_checked": 0,
+        "axi_channels": [
+          425617,
+          425617,
+          29189,
+          29189,
+          29189
+        ],
+        "gpr": [
+          0,
+          536871652,
+          251666420,
+          536873784,
+          0,
+          1,
+          1,
+          120,
+          0,
+          0,
+          0,
+          4294967295,
+          251664384,
+          251664384,
+          1,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          385659,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 0,
+          "sampled_bits": 0,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": []
+        }
+      },
+      "wall_speed_ratio": 10.777099182744074,
+      "image_sha256": "75dff5595263675b4987e6b7db5093c3c023ac726628708ee7b5239bd1a78514"
+    },
+    {
+      "name": "boot-poison",
+      "status": "PASS_EQUIVALENT_OBSERVATIONS",
+      "timed": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871584,
+        "next_pc": 536871588,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 24866,
+        "instructions": 6459,
+        "wall_seconds": 0.217149,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 6463,
+        "flash_dpi_calls": 0,
+        "memory_operations": 1823,
+        "diff_enabled": true,
+        "diff_checked": 6454,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          6603,
+          6603,
+          1679,
+          1679,
+          1679
+        ],
+        "gpr": [
+          0,
+          536871576,
+          251666420,
+          251660288,
+          0,
+          251658320,
+          251658320,
+          251658256,
+          0,
+          0,
+          0,
+          16,
+          287440916,
+          16,
+          287440916,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          6459,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 0,
+          "sampled_bits": 0,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": []
+        }
+      },
+      "cycle": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871584,
+        "next_pc": 536871588,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 24866,
+        "instructions": 6459,
+        "wall_seconds": 0.0216486,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 6463,
+        "flash_dpi_calls": 0,
+        "memory_operations": 1823,
+        "diff_enabled": true,
+        "diff_checked": 6454,
+        "device_sync_checked": 5,
+        "axi_channels": [
+          6603,
+          6603,
+          1679,
+          1679,
+          1679
+        ],
+        "gpr": [
+          0,
+          536871576,
+          251666420,
+          251660288,
+          0,
+          251658320,
+          251658320,
+          251658256,
+          0,
+          0,
+          0,
+          16,
+          287440916,
+          16,
+          287440916,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          6459,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 0,
+          "sampled_bits": 0,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": []
+        }
+      },
+      "wall_speed_ratio": 10.030625536986225,
+      "image_sha256": "c4043c8a84d1a2fd00cc2db26d59033e86c0520c2f6b877cc79f6e8b7d2291fc"
+    },
+    {
+      "name": "uart512",
+      "status": "PASS_EQUIVALENT_OBSERVATIONS",
+      "timed": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871308,
+        "next_pc": 536871312,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 82400,
+        "instructions": 18774,
+        "wall_seconds": 1.0922,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 18778,
+        "flash_dpi_calls": 0,
+        "memory_operations": 5218,
+        "diff_enabled": true,
+        "diff_checked": 13567,
+        "device_sync_checked": 5207,
+        "axi_channels": [
+          23469,
+          23469,
+          523,
+          523,
+          523
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          1,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 512,
+          "accepted": 512,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 512,
+          "framing_errors": 0,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        "retired_by_region": [
+          18774,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 0,
+          "sampled_bits": 0,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": []
+        }
+      },
+      "cycle": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871308,
+        "next_pc": 536871312,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 82400,
+        "instructions": 18774,
+        "wall_seconds": 0.331538,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 18778,
+        "flash_dpi_calls": 0,
+        "memory_operations": 5218,
+        "diff_enabled": true,
+        "diff_checked": 13567,
+        "device_sync_checked": 5207,
+        "axi_channels": [
+          23469,
+          23469,
+          523,
+          523,
+          523
+        ],
+        "gpr": [
+          0,
+          536871388,
+          251666420,
+          251660288,
+          0,
+          251658240,
+          251658240,
+          251658240,
+          0,
+          0,
+          0,
+          1,
+          1,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 512,
+          "accepted": 512,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        "uart_pin": {
+          "cycles_per_bit": 16,
+          "frames": 512,
+          "framing_errors": 0,
+          "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        "retired_by_region": [
+          18774,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 0,
+          "sampled_bits": 0,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": []
+        }
+      },
+      "wall_speed_ratio": 3.2943433331925753,
+      "image_sha256": "17bc32251bd69c182c1a8595ccf2790798ff09ec63c8ba3c771ade47322f63ef"
+    },
+    {
+      "name": "spi-bitrev",
+      "status": "PASS_EQUIVALENT_OBSERVATIONS",
+      "timed": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871228,
+        "next_pc": 536871232,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 74728,
+        "instructions": 19259,
+        "wall_seconds": 0.734922,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 19259,
+        "flash_dpi_calls": 0,
+        "memory_operations": 2827,
+        "diff_enabled": true,
+        "diff_checked": 16437,
+        "device_sync_checked": 2822,
+        "axi_channels": [
+          20542,
+          20542,
+          1544,
+          1544,
+          1544
+        ],
+        "gpr": [
+          0,
+          536871308,
+          251666420,
+          251660288,
+          0,
+          128,
+          9232,
+          1,
+          0,
+          0,
+          0,
+          9488,
+          255,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          19259,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 256,
+          "sampled_bits": 4096,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": [
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 0,
+              "rx_low64": 65280,
+              "start_cycle": 401,
+              "end_cycle": 433
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 256,
+              "rx_low64": 65408,
+              "start_cycle": 692,
+              "end_cycle": 724
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 512,
+              "rx_low64": 65344,
+              "start_cycle": 983,
+              "end_cycle": 1015
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 768,
+              "rx_low64": 65472,
+              "start_cycle": 1274,
+              "end_cycle": 1306
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 1024,
+              "rx_low64": 65312,
+              "start_cycle": 1565,
+              "end_cycle": 1597
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 1280,
+              "rx_low64": 65440,
+              "start_cycle": 1856,
+              "end_cycle": 1888
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 1536,
+              "rx_low64": 65376,
+              "start_cycle": 2147,
+              "end_cycle": 2179
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 1792,
+              "rx_low64": 65504,
+              "start_cycle": 2438,
+              "end_cycle": 2470
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 2048,
+              "rx_low64": 65296,
+              "start_cycle": 2729,
+              "end_cycle": 2761
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 2304,
+              "rx_low64": 65424,
+              "start_cycle": 3020,
+              "end_cycle": 3052
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 2560,
+              "rx_low64": 65360,
+              "start_cycle": 3311,
+              "end_cycle": 3343
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 2816,
+              "rx_low64": 65488,
+              "start_cycle": 3602,
+              "end_cycle": 3634
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 3072,
+              "rx_low64": 65328,
+              "start_cycle": 3893,
+              "end_cycle": 3925
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 3328,
+              "rx_low64": 65456,
+              "start_cycle": 4184,
+              "end_cycle": 4216
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 3584,
+              "rx_low64": 65392,
+              "start_cycle": 4475,
+              "end_cycle": 4507
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 3840,
+              "rx_low64": 65520,
+              "start_cycle": 4766,
+              "end_cycle": 4798
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 4096,
+              "rx_low64": 65288,
+              "start_cycle": 5057,
+              "end_cycle": 5089
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 4352,
+              "rx_low64": 65416,
+              "start_cycle": 5348,
+              "end_cycle": 5380
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 4608,
+              "rx_low64": 65352,
+              "start_cycle": 5639,
+              "end_cycle": 5671
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 4864,
+              "rx_low64": 65480,
+              "start_cycle": 5930,
+              "end_cycle": 5962
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 5120,
+              "rx_low64": 65320,
+              "start_cycle": 6221,
+              "end_cycle": 6253
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 5376,
+              "rx_low64": 65448,
+              "start_cycle": 6512,
+              "end_cycle": 6544
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 5632,
+              "rx_low64": 65384,
+              "start_cycle": 6803,
+              "end_cycle": 6835
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 5888,
+              "rx_low64": 65512,
+              "start_cycle": 7094,
+              "end_cycle": 7126
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 6144,
+              "rx_low64": 65304,
+              "start_cycle": 7385,
+              "end_cycle": 7417
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 6400,
+              "rx_low64": 65432,
+              "start_cycle": 7676,
+              "end_cycle": 7708
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 6656,
+              "rx_low64": 65368,
+              "start_cycle": 7967,
+              "end_cycle": 7999
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 6912,
+              "rx_low64": 65496,
+              "start_cycle": 8258,
+              "end_cycle": 8290
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 7168,
+              "rx_low64": 65336,
+              "start_cycle": 8549,
+              "end_cycle": 8581
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 7424,
+              "rx_low64": 65464,
+              "start_cycle": 8840,
+              "end_cycle": 8872
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 7680,
+              "rx_low64": 65400,
+              "start_cycle": 9131,
+              "end_cycle": 9163
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 7936,
+              "rx_low64": 65528,
+              "start_cycle": 9422,
+              "end_cycle": 9454
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 8192,
+              "rx_low64": 65284,
+              "start_cycle": 9713,
+              "end_cycle": 9745
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 8448,
+              "rx_low64": 65412,
+              "start_cycle": 10004,
+              "end_cycle": 10036
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 8704,
+              "rx_low64": 65348,
+              "start_cycle": 10295,
+              "end_cycle": 10327
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 8960,
+              "rx_low64": 65476,
+              "start_cycle": 10586,
+              "end_cycle": 10618
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 9216,
+              "rx_low64": 65316,
+              "start_cycle": 10877,
+              "end_cycle": 10909
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 9472,
+              "rx_low64": 65444,
+              "start_cycle": 11168,
+              "end_cycle": 11200
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 9728,
+              "rx_low64": 65380,
+              "start_cycle": 11459,
+              "end_cycle": 11491
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 9984,
+              "rx_low64": 65508,
+              "start_cycle": 11750,
+              "end_cycle": 11782
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 10240,
+              "rx_low64": 65300,
+              "start_cycle": 12041,
+              "end_cycle": 12073
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 10496,
+              "rx_low64": 65428,
+              "start_cycle": 12332,
+              "end_cycle": 12364
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 10752,
+              "rx_low64": 65364,
+              "start_cycle": 12623,
+              "end_cycle": 12655
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 11008,
+              "rx_low64": 65492,
+              "start_cycle": 12914,
+              "end_cycle": 12946
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 11264,
+              "rx_low64": 65332,
+              "start_cycle": 13205,
+              "end_cycle": 13237
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 11520,
+              "rx_low64": 65460,
+              "start_cycle": 13496,
+              "end_cycle": 13528
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 11776,
+              "rx_low64": 65396,
+              "start_cycle": 13787,
+              "end_cycle": 13819
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 12032,
+              "rx_low64": 65524,
+              "start_cycle": 14078,
+              "end_cycle": 14110
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 12288,
+              "rx_low64": 65292,
+              "start_cycle": 14369,
+              "end_cycle": 14401
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 12544,
+              "rx_low64": 65420,
+              "start_cycle": 14660,
+              "end_cycle": 14692
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 12800,
+              "rx_low64": 65356,
+              "start_cycle": 14951,
+              "end_cycle": 14983
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 13056,
+              "rx_low64": 65484,
+              "start_cycle": 15242,
+              "end_cycle": 15274
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 13312,
+              "rx_low64": 65324,
+              "start_cycle": 15533,
+              "end_cycle": 15565
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 13568,
+              "rx_low64": 65452,
+              "start_cycle": 15824,
+              "end_cycle": 15856
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 13824,
+              "rx_low64": 65388,
+              "start_cycle": 16115,
+              "end_cycle": 16147
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 14080,
+              "rx_low64": 65516,
+              "start_cycle": 16406,
+              "end_cycle": 16438
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 14336,
+              "rx_low64": 65308,
+              "start_cycle": 16697,
+              "end_cycle": 16729
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 14592,
+              "rx_low64": 65436,
+              "start_cycle": 16988,
+              "end_cycle": 17020
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 14848,
+              "rx_low64": 65372,
+              "start_cycle": 17279,
+              "end_cycle": 17311
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 15104,
+              "rx_low64": 65500,
+              "start_cycle": 17570,
+              "end_cycle": 17602
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 15360,
+              "rx_low64": 65340,
+              "start_cycle": 17861,
+              "end_cycle": 17893
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 15616,
+              "rx_low64": 65468,
+              "start_cycle": 18152,
+              "end_cycle": 18184
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 15872,
+              "rx_low64": 65404,
+              "start_cycle": 18443,
+              "end_cycle": 18475
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 16128,
+              "rx_low64": 65532,
+              "start_cycle": 18734,
+              "end_cycle": 18766
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 16384,
+              "rx_low64": 65282,
+              "start_cycle": 19025,
+              "end_cycle": 19057
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 16640,
+              "rx_low64": 65410,
+              "start_cycle": 19316,
+              "end_cycle": 19348
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 16896,
+              "rx_low64": 65346,
+              "start_cycle": 19607,
+              "end_cycle": 19639
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 17152,
+              "rx_low64": 65474,
+              "start_cycle": 19898,
+              "end_cycle": 19930
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 17408,
+              "rx_low64": 65314,
+              "start_cycle": 20189,
+              "end_cycle": 20221
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 17664,
+              "rx_low64": 65442,
+              "start_cycle": 20480,
+              "end_cycle": 20512
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 17920,
+              "rx_low64": 65378,
+              "start_cycle": 20771,
+              "end_cycle": 20803
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 18176,
+              "rx_low64": 65506,
+              "start_cycle": 21062,
+              "end_cycle": 21094
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 18432,
+              "rx_low64": 65298,
+              "start_cycle": 21353,
+              "end_cycle": 21385
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 18688,
+              "rx_low64": 65426,
+              "start_cycle": 21644,
+              "end_cycle": 21676
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 18944,
+              "rx_low64": 65362,
+              "start_cycle": 21935,
+              "end_cycle": 21967
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 19200,
+              "rx_low64": 65490,
+              "start_cycle": 22226,
+              "end_cycle": 22258
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 19456,
+              "rx_low64": 65330,
+              "start_cycle": 22517,
+              "end_cycle": 22549
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 19712,
+              "rx_low64": 65458,
+              "start_cycle": 22808,
+              "end_cycle": 22840
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 19968,
+              "rx_low64": 65394,
+              "start_cycle": 23099,
+              "end_cycle": 23131
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 20224,
+              "rx_low64": 65522,
+              "start_cycle": 23390,
+              "end_cycle": 23422
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 20480,
+              "rx_low64": 65290,
+              "start_cycle": 23681,
+              "end_cycle": 23713
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 20736,
+              "rx_low64": 65418,
+              "start_cycle": 23972,
+              "end_cycle": 24004
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 20992,
+              "rx_low64": 65354,
+              "start_cycle": 24263,
+              "end_cycle": 24295
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 21248,
+              "rx_low64": 65482,
+              "start_cycle": 24554,
+              "end_cycle": 24586
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 21504,
+              "rx_low64": 65322,
+              "start_cycle": 24845,
+              "end_cycle": 24877
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 21760,
+              "rx_low64": 65450,
+              "start_cycle": 25136,
+              "end_cycle": 25168
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 22016,
+              "rx_low64": 65386,
+              "start_cycle": 25427,
+              "end_cycle": 25459
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 22272,
+              "rx_low64": 65514,
+              "start_cycle": 25718,
+              "end_cycle": 25750
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 22528,
+              "rx_low64": 65306,
+              "start_cycle": 26009,
+              "end_cycle": 26041
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 22784,
+              "rx_low64": 65434,
+              "start_cycle": 26300,
+              "end_cycle": 26332
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 23040,
+              "rx_low64": 65370,
+              "start_cycle": 26591,
+              "end_cycle": 26623
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 23296,
+              "rx_low64": 65498,
+              "start_cycle": 26882,
+              "end_cycle": 26914
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 23552,
+              "rx_low64": 65338,
+              "start_cycle": 27173,
+              "end_cycle": 27205
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 23808,
+              "rx_low64": 65466,
+              "start_cycle": 27464,
+              "end_cycle": 27496
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 24064,
+              "rx_low64": 65402,
+              "start_cycle": 27755,
+              "end_cycle": 27787
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 24320,
+              "rx_low64": 65530,
+              "start_cycle": 28046,
+              "end_cycle": 28078
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 24576,
+              "rx_low64": 65286,
+              "start_cycle": 28337,
+              "end_cycle": 28369
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 24832,
+              "rx_low64": 65414,
+              "start_cycle": 28628,
+              "end_cycle": 28660
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 25088,
+              "rx_low64": 65350,
+              "start_cycle": 28919,
+              "end_cycle": 28951
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 25344,
+              "rx_low64": 65478,
+              "start_cycle": 29210,
+              "end_cycle": 29242
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 25600,
+              "rx_low64": 65318,
+              "start_cycle": 29501,
+              "end_cycle": 29533
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 25856,
+              "rx_low64": 65446,
+              "start_cycle": 29792,
+              "end_cycle": 29824
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 26112,
+              "rx_low64": 65382,
+              "start_cycle": 30083,
+              "end_cycle": 30115
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 26368,
+              "rx_low64": 65510,
+              "start_cycle": 30374,
+              "end_cycle": 30406
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 26624,
+              "rx_low64": 65302,
+              "start_cycle": 30665,
+              "end_cycle": 30697
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 26880,
+              "rx_low64": 65430,
+              "start_cycle": 30956,
+              "end_cycle": 30988
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 27136,
+              "rx_low64": 65366,
+              "start_cycle": 31247,
+              "end_cycle": 31279
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 27392,
+              "rx_low64": 65494,
+              "start_cycle": 31538,
+              "end_cycle": 31570
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 27648,
+              "rx_low64": 65334,
+              "start_cycle": 31829,
+              "end_cycle": 31861
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 27904,
+              "rx_low64": 65462,
+              "start_cycle": 32120,
+              "end_cycle": 32152
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 28160,
+              "rx_low64": 65398,
+              "start_cycle": 32411,
+              "end_cycle": 32443
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 28416,
+              "rx_low64": 65526,
+              "start_cycle": 32702,
+              "end_cycle": 32734
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 28672,
+              "rx_low64": 65294,
+              "start_cycle": 32993,
+              "end_cycle": 33025
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 28928,
+              "rx_low64": 65422,
+              "start_cycle": 33284,
+              "end_cycle": 33316
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 29184,
+              "rx_low64": 65358,
+              "start_cycle": 33575,
+              "end_cycle": 33607
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 29440,
+              "rx_low64": 65486,
+              "start_cycle": 33866,
+              "end_cycle": 33898
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 29696,
+              "rx_low64": 65326,
+              "start_cycle": 34157,
+              "end_cycle": 34189
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 29952,
+              "rx_low64": 65454,
+              "start_cycle": 34448,
+              "end_cycle": 34480
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 30208,
+              "rx_low64": 65390,
+              "start_cycle": 34739,
+              "end_cycle": 34771
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 30464,
+              "rx_low64": 65518,
+              "start_cycle": 35030,
+              "end_cycle": 35062
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 30720,
+              "rx_low64": 65310,
+              "start_cycle": 35321,
+              "end_cycle": 35353
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 30976,
+              "rx_low64": 65438,
+              "start_cycle": 35612,
+              "end_cycle": 35644
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 31232,
+              "rx_low64": 65374,
+              "start_cycle": 35903,
+              "end_cycle": 35935
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 31488,
+              "rx_low64": 65502,
+              "start_cycle": 36194,
+              "end_cycle": 36226
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 31744,
+              "rx_low64": 65342,
+              "start_cycle": 36485,
+              "end_cycle": 36517
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 32000,
+              "rx_low64": 65470,
+              "start_cycle": 36776,
+              "end_cycle": 36808
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 32256,
+              "rx_low64": 65406,
+              "start_cycle": 37067,
+              "end_cycle": 37099
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 32512,
+              "rx_low64": 65534,
+              "start_cycle": 37358,
+              "end_cycle": 37390
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 32768,
+              "rx_low64": 65281,
+              "start_cycle": 37649,
+              "end_cycle": 37681
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 33024,
+              "rx_low64": 65409,
+              "start_cycle": 37940,
+              "end_cycle": 37972
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 33280,
+              "rx_low64": 65345,
+              "start_cycle": 38231,
+              "end_cycle": 38263
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 33536,
+              "rx_low64": 65473,
+              "start_cycle": 38522,
+              "end_cycle": 38554
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 33792,
+              "rx_low64": 65313,
+              "start_cycle": 38813,
+              "end_cycle": 38845
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 34048,
+              "rx_low64": 65441,
+              "start_cycle": 39104,
+              "end_cycle": 39136
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 34304,
+              "rx_low64": 65377,
+              "start_cycle": 39395,
+              "end_cycle": 39427
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 34560,
+              "rx_low64": 65505,
+              "start_cycle": 39686,
+              "end_cycle": 39718
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 34816,
+              "rx_low64": 65297,
+              "start_cycle": 39977,
+              "end_cycle": 40009
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 35072,
+              "rx_low64": 65425,
+              "start_cycle": 40268,
+              "end_cycle": 40300
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 35328,
+              "rx_low64": 65361,
+              "start_cycle": 40559,
+              "end_cycle": 40591
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 35584,
+              "rx_low64": 65489,
+              "start_cycle": 40850,
+              "end_cycle": 40882
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 35840,
+              "rx_low64": 65329,
+              "start_cycle": 41141,
+              "end_cycle": 41173
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 36096,
+              "rx_low64": 65457,
+              "start_cycle": 41432,
+              "end_cycle": 41464
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 36352,
+              "rx_low64": 65393,
+              "start_cycle": 41723,
+              "end_cycle": 41755
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 36608,
+              "rx_low64": 65521,
+              "start_cycle": 42014,
+              "end_cycle": 42046
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 36864,
+              "rx_low64": 65289,
+              "start_cycle": 42305,
+              "end_cycle": 42337
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 37120,
+              "rx_low64": 65417,
+              "start_cycle": 42596,
+              "end_cycle": 42628
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 37376,
+              "rx_low64": 65353,
+              "start_cycle": 42887,
+              "end_cycle": 42919
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 37632,
+              "rx_low64": 65481,
+              "start_cycle": 43178,
+              "end_cycle": 43210
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 37888,
+              "rx_low64": 65321,
+              "start_cycle": 43469,
+              "end_cycle": 43501
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 38144,
+              "rx_low64": 65449,
+              "start_cycle": 43760,
+              "end_cycle": 43792
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 38400,
+              "rx_low64": 65385,
+              "start_cycle": 44051,
+              "end_cycle": 44083
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 38656,
+              "rx_low64": 65513,
+              "start_cycle": 44342,
+              "end_cycle": 44374
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 38912,
+              "rx_low64": 65305,
+              "start_cycle": 44633,
+              "end_cycle": 44665
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 39168,
+              "rx_low64": 65433,
+              "start_cycle": 44924,
+              "end_cycle": 44956
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 39424,
+              "rx_low64": 65369,
+              "start_cycle": 45215,
+              "end_cycle": 45247
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 39680,
+              "rx_low64": 65497,
+              "start_cycle": 45506,
+              "end_cycle": 45538
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 39936,
+              "rx_low64": 65337,
+              "start_cycle": 45797,
+              "end_cycle": 45829
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 40192,
+              "rx_low64": 65465,
+              "start_cycle": 46088,
+              "end_cycle": 46120
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 40448,
+              "rx_low64": 65401,
+              "start_cycle": 46379,
+              "end_cycle": 46411
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 40704,
+              "rx_low64": 65529,
+              "start_cycle": 46670,
+              "end_cycle": 46702
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 40960,
+              "rx_low64": 65285,
+              "start_cycle": 46961,
+              "end_cycle": 46993
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 41216,
+              "rx_low64": 65413,
+              "start_cycle": 47252,
+              "end_cycle": 47284
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 41472,
+              "rx_low64": 65349,
+              "start_cycle": 47543,
+              "end_cycle": 47575
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 41728,
+              "rx_low64": 65477,
+              "start_cycle": 47834,
+              "end_cycle": 47866
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 41984,
+              "rx_low64": 65317,
+              "start_cycle": 48125,
+              "end_cycle": 48157
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 42240,
+              "rx_low64": 65445,
+              "start_cycle": 48416,
+              "end_cycle": 48448
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 42496,
+              "rx_low64": 65381,
+              "start_cycle": 48707,
+              "end_cycle": 48739
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 42752,
+              "rx_low64": 65509,
+              "start_cycle": 48998,
+              "end_cycle": 49030
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 43008,
+              "rx_low64": 65301,
+              "start_cycle": 49289,
+              "end_cycle": 49321
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 43264,
+              "rx_low64": 65429,
+              "start_cycle": 49580,
+              "end_cycle": 49612
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 43520,
+              "rx_low64": 65365,
+              "start_cycle": 49871,
+              "end_cycle": 49903
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 43776,
+              "rx_low64": 65493,
+              "start_cycle": 50162,
+              "end_cycle": 50194
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 44032,
+              "rx_low64": 65333,
+              "start_cycle": 50453,
+              "end_cycle": 50485
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 44288,
+              "rx_low64": 65461,
+              "start_cycle": 50744,
+              "end_cycle": 50776
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 44544,
+              "rx_low64": 65397,
+              "start_cycle": 51035,
+              "end_cycle": 51067
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 44800,
+              "rx_low64": 65525,
+              "start_cycle": 51326,
+              "end_cycle": 51358
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 45056,
+              "rx_low64": 65293,
+              "start_cycle": 51617,
+              "end_cycle": 51649
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 45312,
+              "rx_low64": 65421,
+              "start_cycle": 51908,
+              "end_cycle": 51940
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 45568,
+              "rx_low64": 65357,
+              "start_cycle": 52199,
+              "end_cycle": 52231
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 45824,
+              "rx_low64": 65485,
+              "start_cycle": 52490,
+              "end_cycle": 52522
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 46080,
+              "rx_low64": 65325,
+              "start_cycle": 52781,
+              "end_cycle": 52813
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 46336,
+              "rx_low64": 65453,
+              "start_cycle": 53072,
+              "end_cycle": 53104
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 46592,
+              "rx_low64": 65389,
+              "start_cycle": 53363,
+              "end_cycle": 53395
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 46848,
+              "rx_low64": 65517,
+              "start_cycle": 53654,
+              "end_cycle": 53686
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 47104,
+              "rx_low64": 65309,
+              "start_cycle": 53945,
+              "end_cycle": 53977
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 47360,
+              "rx_low64": 65437,
+              "start_cycle": 54236,
+              "end_cycle": 54268
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 47616,
+              "rx_low64": 65373,
+              "start_cycle": 54527,
+              "end_cycle": 54559
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 47872,
+              "rx_low64": 65501,
+              "start_cycle": 54818,
+              "end_cycle": 54850
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 48128,
+              "rx_low64": 65341,
+              "start_cycle": 55109,
+              "end_cycle": 55141
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 48384,
+              "rx_low64": 65469,
+              "start_cycle": 55400,
+              "end_cycle": 55432
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 48640,
+              "rx_low64": 65405,
+              "start_cycle": 55691,
+              "end_cycle": 55723
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 48896,
+              "rx_low64": 65533,
+              "start_cycle": 55982,
+              "end_cycle": 56014
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 49152,
+              "rx_low64": 65283,
+              "start_cycle": 56273,
+              "end_cycle": 56305
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 49408,
+              "rx_low64": 65411,
+              "start_cycle": 56564,
+              "end_cycle": 56596
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 49664,
+              "rx_low64": 65347,
+              "start_cycle": 56855,
+              "end_cycle": 56887
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 49920,
+              "rx_low64": 65475,
+              "start_cycle": 57146,
+              "end_cycle": 57178
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 50176,
+              "rx_low64": 65315,
+              "start_cycle": 57437,
+              "end_cycle": 57469
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 50432,
+              "rx_low64": 65443,
+              "start_cycle": 57728,
+              "end_cycle": 57760
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 50688,
+              "rx_low64": 65379,
+              "start_cycle": 58019,
+              "end_cycle": 58051
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 50944,
+              "rx_low64": 65507,
+              "start_cycle": 58310,
+              "end_cycle": 58342
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 51200,
+              "rx_low64": 65299,
+              "start_cycle": 58601,
+              "end_cycle": 58633
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 51456,
+              "rx_low64": 65427,
+              "start_cycle": 58892,
+              "end_cycle": 58924
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 51712,
+              "rx_low64": 65363,
+              "start_cycle": 59183,
+              "end_cycle": 59215
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 51968,
+              "rx_low64": 65491,
+              "start_cycle": 59474,
+              "end_cycle": 59506
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 52224,
+              "rx_low64": 65331,
+              "start_cycle": 59765,
+              "end_cycle": 59797
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 52480,
+              "rx_low64": 65459,
+              "start_cycle": 60056,
+              "end_cycle": 60088
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 52736,
+              "rx_low64": 65395,
+              "start_cycle": 60347,
+              "end_cycle": 60379
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 52992,
+              "rx_low64": 65523,
+              "start_cycle": 60638,
+              "end_cycle": 60670
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 53248,
+              "rx_low64": 65291,
+              "start_cycle": 60929,
+              "end_cycle": 60961
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 53504,
+              "rx_low64": 65419,
+              "start_cycle": 61220,
+              "end_cycle": 61252
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 53760,
+              "rx_low64": 65355,
+              "start_cycle": 61511,
+              "end_cycle": 61543
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 54016,
+              "rx_low64": 65483,
+              "start_cycle": 61802,
+              "end_cycle": 61834
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 54272,
+              "rx_low64": 65323,
+              "start_cycle": 62093,
+              "end_cycle": 62125
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 54528,
+              "rx_low64": 65451,
+              "start_cycle": 62384,
+              "end_cycle": 62416
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 54784,
+              "rx_low64": 65387,
+              "start_cycle": 62675,
+              "end_cycle": 62707
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 55040,
+              "rx_low64": 65515,
+              "start_cycle": 62966,
+              "end_cycle": 62998
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 55296,
+              "rx_low64": 65307,
+              "start_cycle": 63257,
+              "end_cycle": 63289
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 55552,
+              "rx_low64": 65435,
+              "start_cycle": 63548,
+              "end_cycle": 63580
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 55808,
+              "rx_low64": 65371,
+              "start_cycle": 63839,
+              "end_cycle": 63871
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 56064,
+              "rx_low64": 65499,
+              "start_cycle": 64130,
+              "end_cycle": 64162
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 56320,
+              "rx_low64": 65339,
+              "start_cycle": 64421,
+              "end_cycle": 64453
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 56576,
+              "rx_low64": 65467,
+              "start_cycle": 64712,
+              "end_cycle": 64744
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 56832,
+              "rx_low64": 65403,
+              "start_cycle": 65003,
+              "end_cycle": 65035
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 57088,
+              "rx_low64": 65531,
+              "start_cycle": 65294,
+              "end_cycle": 65326
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 57344,
+              "rx_low64": 65287,
+              "start_cycle": 65585,
+              "end_cycle": 65617
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 57600,
+              "rx_low64": 65415,
+              "start_cycle": 65876,
+              "end_cycle": 65908
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 57856,
+              "rx_low64": 65351,
+              "start_cycle": 66167,
+              "end_cycle": 66199
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 58112,
+              "rx_low64": 65479,
+              "start_cycle": 66458,
+              "end_cycle": 66490
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 58368,
+              "rx_low64": 65319,
+              "start_cycle": 66749,
+              "end_cycle": 66781
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 58624,
+              "rx_low64": 65447,
+              "start_cycle": 67040,
+              "end_cycle": 67072
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 58880,
+              "rx_low64": 65383,
+              "start_cycle": 67331,
+              "end_cycle": 67363
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 59136,
+              "rx_low64": 65511,
+              "start_cycle": 67622,
+              "end_cycle": 67654
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 59392,
+              "rx_low64": 65303,
+              "start_cycle": 67913,
+              "end_cycle": 67945
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 59648,
+              "rx_low64": 65431,
+              "start_cycle": 68204,
+              "end_cycle": 68236
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 59904,
+              "rx_low64": 65367,
+              "start_cycle": 68495,
+              "end_cycle": 68527
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 60160,
+              "rx_low64": 65495,
+              "start_cycle": 68786,
+              "end_cycle": 68818
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 60416,
+              "rx_low64": 65335,
+              "start_cycle": 69077,
+              "end_cycle": 69109
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 60672,
+              "rx_low64": 65463,
+              "start_cycle": 69368,
+              "end_cycle": 69400
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 60928,
+              "rx_low64": 65399,
+              "start_cycle": 69659,
+              "end_cycle": 69691
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 61184,
+              "rx_low64": 65527,
+              "start_cycle": 69950,
+              "end_cycle": 69982
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 61440,
+              "rx_low64": 65295,
+              "start_cycle": 70241,
+              "end_cycle": 70273
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 61696,
+              "rx_low64": 65423,
+              "start_cycle": 70532,
+              "end_cycle": 70564
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 61952,
+              "rx_low64": 65359,
+              "start_cycle": 70823,
+              "end_cycle": 70855
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 62208,
+              "rx_low64": 65487,
+              "start_cycle": 71114,
+              "end_cycle": 71146
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 62464,
+              "rx_low64": 65327,
+              "start_cycle": 71405,
+              "end_cycle": 71437
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 62720,
+              "rx_low64": 65455,
+              "start_cycle": 71696,
+              "end_cycle": 71728
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 62976,
+              "rx_low64": 65391,
+              "start_cycle": 71987,
+              "end_cycle": 72019
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 63232,
+              "rx_low64": 65519,
+              "start_cycle": 72278,
+              "end_cycle": 72310
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 63488,
+              "rx_low64": 65311,
+              "start_cycle": 72569,
+              "end_cycle": 72601
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 63744,
+              "rx_low64": 65439,
+              "start_cycle": 72860,
+              "end_cycle": 72892
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 64000,
+              "rx_low64": 65375,
+              "start_cycle": 73151,
+              "end_cycle": 73183
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 64256,
+              "rx_low64": 65503,
+              "start_cycle": 73442,
+              "end_cycle": 73474
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 64512,
+              "rx_low64": 65343,
+              "start_cycle": 73733,
+              "end_cycle": 73765
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 64768,
+              "rx_low64": 65471,
+              "start_cycle": 74024,
+              "end_cycle": 74056
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 65024,
+              "rx_low64": 65407,
+              "start_cycle": 74315,
+              "end_cycle": 74347
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 65280,
+              "rx_low64": 65535,
+              "start_cycle": 74606,
+              "end_cycle": 74638
+            }
+          ]
+        }
+      },
+      "cycle": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871228,
+        "next_pc": 536871232,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 74728,
+        "instructions": 19259,
+        "wall_seconds": 0.059531,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 19259,
+        "flash_dpi_calls": 0,
+        "memory_operations": 2827,
+        "diff_enabled": true,
+        "diff_checked": 16437,
+        "device_sync_checked": 2822,
+        "axi_channels": [
+          20542,
+          20542,
+          1544,
+          1544,
+          1544
+        ],
+        "gpr": [
+          0,
+          536871308,
+          251666420,
+          251660288,
+          0,
+          128,
+          9232,
+          1,
+          0,
+          0,
+          0,
+          9488,
+          255,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          19259,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 256,
+          "sampled_bits": 4096,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": [
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 0,
+              "rx_low64": 65280,
+              "start_cycle": 401,
+              "end_cycle": 433
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 256,
+              "rx_low64": 65408,
+              "start_cycle": 692,
+              "end_cycle": 724
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 512,
+              "rx_low64": 65344,
+              "start_cycle": 983,
+              "end_cycle": 1015
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 768,
+              "rx_low64": 65472,
+              "start_cycle": 1274,
+              "end_cycle": 1306
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 1024,
+              "rx_low64": 65312,
+              "start_cycle": 1565,
+              "end_cycle": 1597
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 1280,
+              "rx_low64": 65440,
+              "start_cycle": 1856,
+              "end_cycle": 1888
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 1536,
+              "rx_low64": 65376,
+              "start_cycle": 2147,
+              "end_cycle": 2179
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 1792,
+              "rx_low64": 65504,
+              "start_cycle": 2438,
+              "end_cycle": 2470
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 2048,
+              "rx_low64": 65296,
+              "start_cycle": 2729,
+              "end_cycle": 2761
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 2304,
+              "rx_low64": 65424,
+              "start_cycle": 3020,
+              "end_cycle": 3052
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 2560,
+              "rx_low64": 65360,
+              "start_cycle": 3311,
+              "end_cycle": 3343
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 2816,
+              "rx_low64": 65488,
+              "start_cycle": 3602,
+              "end_cycle": 3634
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 3072,
+              "rx_low64": 65328,
+              "start_cycle": 3893,
+              "end_cycle": 3925
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 3328,
+              "rx_low64": 65456,
+              "start_cycle": 4184,
+              "end_cycle": 4216
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 3584,
+              "rx_low64": 65392,
+              "start_cycle": 4475,
+              "end_cycle": 4507
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 3840,
+              "rx_low64": 65520,
+              "start_cycle": 4766,
+              "end_cycle": 4798
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 4096,
+              "rx_low64": 65288,
+              "start_cycle": 5057,
+              "end_cycle": 5089
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 4352,
+              "rx_low64": 65416,
+              "start_cycle": 5348,
+              "end_cycle": 5380
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 4608,
+              "rx_low64": 65352,
+              "start_cycle": 5639,
+              "end_cycle": 5671
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 4864,
+              "rx_low64": 65480,
+              "start_cycle": 5930,
+              "end_cycle": 5962
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 5120,
+              "rx_low64": 65320,
+              "start_cycle": 6221,
+              "end_cycle": 6253
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 5376,
+              "rx_low64": 65448,
+              "start_cycle": 6512,
+              "end_cycle": 6544
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 5632,
+              "rx_low64": 65384,
+              "start_cycle": 6803,
+              "end_cycle": 6835
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 5888,
+              "rx_low64": 65512,
+              "start_cycle": 7094,
+              "end_cycle": 7126
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 6144,
+              "rx_low64": 65304,
+              "start_cycle": 7385,
+              "end_cycle": 7417
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 6400,
+              "rx_low64": 65432,
+              "start_cycle": 7676,
+              "end_cycle": 7708
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 6656,
+              "rx_low64": 65368,
+              "start_cycle": 7967,
+              "end_cycle": 7999
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 6912,
+              "rx_low64": 65496,
+              "start_cycle": 8258,
+              "end_cycle": 8290
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 7168,
+              "rx_low64": 65336,
+              "start_cycle": 8549,
+              "end_cycle": 8581
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 7424,
+              "rx_low64": 65464,
+              "start_cycle": 8840,
+              "end_cycle": 8872
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 7680,
+              "rx_low64": 65400,
+              "start_cycle": 9131,
+              "end_cycle": 9163
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 7936,
+              "rx_low64": 65528,
+              "start_cycle": 9422,
+              "end_cycle": 9454
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 8192,
+              "rx_low64": 65284,
+              "start_cycle": 9713,
+              "end_cycle": 9745
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 8448,
+              "rx_low64": 65412,
+              "start_cycle": 10004,
+              "end_cycle": 10036
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 8704,
+              "rx_low64": 65348,
+              "start_cycle": 10295,
+              "end_cycle": 10327
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 8960,
+              "rx_low64": 65476,
+              "start_cycle": 10586,
+              "end_cycle": 10618
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 9216,
+              "rx_low64": 65316,
+              "start_cycle": 10877,
+              "end_cycle": 10909
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 9472,
+              "rx_low64": 65444,
+              "start_cycle": 11168,
+              "end_cycle": 11200
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 9728,
+              "rx_low64": 65380,
+              "start_cycle": 11459,
+              "end_cycle": 11491
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 9984,
+              "rx_low64": 65508,
+              "start_cycle": 11750,
+              "end_cycle": 11782
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 10240,
+              "rx_low64": 65300,
+              "start_cycle": 12041,
+              "end_cycle": 12073
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 10496,
+              "rx_low64": 65428,
+              "start_cycle": 12332,
+              "end_cycle": 12364
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 10752,
+              "rx_low64": 65364,
+              "start_cycle": 12623,
+              "end_cycle": 12655
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 11008,
+              "rx_low64": 65492,
+              "start_cycle": 12914,
+              "end_cycle": 12946
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 11264,
+              "rx_low64": 65332,
+              "start_cycle": 13205,
+              "end_cycle": 13237
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 11520,
+              "rx_low64": 65460,
+              "start_cycle": 13496,
+              "end_cycle": 13528
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 11776,
+              "rx_low64": 65396,
+              "start_cycle": 13787,
+              "end_cycle": 13819
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 12032,
+              "rx_low64": 65524,
+              "start_cycle": 14078,
+              "end_cycle": 14110
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 12288,
+              "rx_low64": 65292,
+              "start_cycle": 14369,
+              "end_cycle": 14401
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 12544,
+              "rx_low64": 65420,
+              "start_cycle": 14660,
+              "end_cycle": 14692
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 12800,
+              "rx_low64": 65356,
+              "start_cycle": 14951,
+              "end_cycle": 14983
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 13056,
+              "rx_low64": 65484,
+              "start_cycle": 15242,
+              "end_cycle": 15274
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 13312,
+              "rx_low64": 65324,
+              "start_cycle": 15533,
+              "end_cycle": 15565
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 13568,
+              "rx_low64": 65452,
+              "start_cycle": 15824,
+              "end_cycle": 15856
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 13824,
+              "rx_low64": 65388,
+              "start_cycle": 16115,
+              "end_cycle": 16147
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 14080,
+              "rx_low64": 65516,
+              "start_cycle": 16406,
+              "end_cycle": 16438
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 14336,
+              "rx_low64": 65308,
+              "start_cycle": 16697,
+              "end_cycle": 16729
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 14592,
+              "rx_low64": 65436,
+              "start_cycle": 16988,
+              "end_cycle": 17020
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 14848,
+              "rx_low64": 65372,
+              "start_cycle": 17279,
+              "end_cycle": 17311
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 15104,
+              "rx_low64": 65500,
+              "start_cycle": 17570,
+              "end_cycle": 17602
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 15360,
+              "rx_low64": 65340,
+              "start_cycle": 17861,
+              "end_cycle": 17893
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 15616,
+              "rx_low64": 65468,
+              "start_cycle": 18152,
+              "end_cycle": 18184
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 15872,
+              "rx_low64": 65404,
+              "start_cycle": 18443,
+              "end_cycle": 18475
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 16128,
+              "rx_low64": 65532,
+              "start_cycle": 18734,
+              "end_cycle": 18766
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 16384,
+              "rx_low64": 65282,
+              "start_cycle": 19025,
+              "end_cycle": 19057
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 16640,
+              "rx_low64": 65410,
+              "start_cycle": 19316,
+              "end_cycle": 19348
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 16896,
+              "rx_low64": 65346,
+              "start_cycle": 19607,
+              "end_cycle": 19639
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 17152,
+              "rx_low64": 65474,
+              "start_cycle": 19898,
+              "end_cycle": 19930
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 17408,
+              "rx_low64": 65314,
+              "start_cycle": 20189,
+              "end_cycle": 20221
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 17664,
+              "rx_low64": 65442,
+              "start_cycle": 20480,
+              "end_cycle": 20512
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 17920,
+              "rx_low64": 65378,
+              "start_cycle": 20771,
+              "end_cycle": 20803
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 18176,
+              "rx_low64": 65506,
+              "start_cycle": 21062,
+              "end_cycle": 21094
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 18432,
+              "rx_low64": 65298,
+              "start_cycle": 21353,
+              "end_cycle": 21385
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 18688,
+              "rx_low64": 65426,
+              "start_cycle": 21644,
+              "end_cycle": 21676
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 18944,
+              "rx_low64": 65362,
+              "start_cycle": 21935,
+              "end_cycle": 21967
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 19200,
+              "rx_low64": 65490,
+              "start_cycle": 22226,
+              "end_cycle": 22258
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 19456,
+              "rx_low64": 65330,
+              "start_cycle": 22517,
+              "end_cycle": 22549
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 19712,
+              "rx_low64": 65458,
+              "start_cycle": 22808,
+              "end_cycle": 22840
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 19968,
+              "rx_low64": 65394,
+              "start_cycle": 23099,
+              "end_cycle": 23131
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 20224,
+              "rx_low64": 65522,
+              "start_cycle": 23390,
+              "end_cycle": 23422
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 20480,
+              "rx_low64": 65290,
+              "start_cycle": 23681,
+              "end_cycle": 23713
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 20736,
+              "rx_low64": 65418,
+              "start_cycle": 23972,
+              "end_cycle": 24004
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 20992,
+              "rx_low64": 65354,
+              "start_cycle": 24263,
+              "end_cycle": 24295
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 21248,
+              "rx_low64": 65482,
+              "start_cycle": 24554,
+              "end_cycle": 24586
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 21504,
+              "rx_low64": 65322,
+              "start_cycle": 24845,
+              "end_cycle": 24877
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 21760,
+              "rx_low64": 65450,
+              "start_cycle": 25136,
+              "end_cycle": 25168
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 22016,
+              "rx_low64": 65386,
+              "start_cycle": 25427,
+              "end_cycle": 25459
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 22272,
+              "rx_low64": 65514,
+              "start_cycle": 25718,
+              "end_cycle": 25750
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 22528,
+              "rx_low64": 65306,
+              "start_cycle": 26009,
+              "end_cycle": 26041
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 22784,
+              "rx_low64": 65434,
+              "start_cycle": 26300,
+              "end_cycle": 26332
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 23040,
+              "rx_low64": 65370,
+              "start_cycle": 26591,
+              "end_cycle": 26623
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 23296,
+              "rx_low64": 65498,
+              "start_cycle": 26882,
+              "end_cycle": 26914
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 23552,
+              "rx_low64": 65338,
+              "start_cycle": 27173,
+              "end_cycle": 27205
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 23808,
+              "rx_low64": 65466,
+              "start_cycle": 27464,
+              "end_cycle": 27496
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 24064,
+              "rx_low64": 65402,
+              "start_cycle": 27755,
+              "end_cycle": 27787
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 24320,
+              "rx_low64": 65530,
+              "start_cycle": 28046,
+              "end_cycle": 28078
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 24576,
+              "rx_low64": 65286,
+              "start_cycle": 28337,
+              "end_cycle": 28369
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 24832,
+              "rx_low64": 65414,
+              "start_cycle": 28628,
+              "end_cycle": 28660
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 25088,
+              "rx_low64": 65350,
+              "start_cycle": 28919,
+              "end_cycle": 28951
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 25344,
+              "rx_low64": 65478,
+              "start_cycle": 29210,
+              "end_cycle": 29242
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 25600,
+              "rx_low64": 65318,
+              "start_cycle": 29501,
+              "end_cycle": 29533
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 25856,
+              "rx_low64": 65446,
+              "start_cycle": 29792,
+              "end_cycle": 29824
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 26112,
+              "rx_low64": 65382,
+              "start_cycle": 30083,
+              "end_cycle": 30115
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 26368,
+              "rx_low64": 65510,
+              "start_cycle": 30374,
+              "end_cycle": 30406
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 26624,
+              "rx_low64": 65302,
+              "start_cycle": 30665,
+              "end_cycle": 30697
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 26880,
+              "rx_low64": 65430,
+              "start_cycle": 30956,
+              "end_cycle": 30988
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 27136,
+              "rx_low64": 65366,
+              "start_cycle": 31247,
+              "end_cycle": 31279
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 27392,
+              "rx_low64": 65494,
+              "start_cycle": 31538,
+              "end_cycle": 31570
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 27648,
+              "rx_low64": 65334,
+              "start_cycle": 31829,
+              "end_cycle": 31861
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 27904,
+              "rx_low64": 65462,
+              "start_cycle": 32120,
+              "end_cycle": 32152
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 28160,
+              "rx_low64": 65398,
+              "start_cycle": 32411,
+              "end_cycle": 32443
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 28416,
+              "rx_low64": 65526,
+              "start_cycle": 32702,
+              "end_cycle": 32734
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 28672,
+              "rx_low64": 65294,
+              "start_cycle": 32993,
+              "end_cycle": 33025
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 28928,
+              "rx_low64": 65422,
+              "start_cycle": 33284,
+              "end_cycle": 33316
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 29184,
+              "rx_low64": 65358,
+              "start_cycle": 33575,
+              "end_cycle": 33607
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 29440,
+              "rx_low64": 65486,
+              "start_cycle": 33866,
+              "end_cycle": 33898
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 29696,
+              "rx_low64": 65326,
+              "start_cycle": 34157,
+              "end_cycle": 34189
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 29952,
+              "rx_low64": 65454,
+              "start_cycle": 34448,
+              "end_cycle": 34480
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 30208,
+              "rx_low64": 65390,
+              "start_cycle": 34739,
+              "end_cycle": 34771
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 30464,
+              "rx_low64": 65518,
+              "start_cycle": 35030,
+              "end_cycle": 35062
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 30720,
+              "rx_low64": 65310,
+              "start_cycle": 35321,
+              "end_cycle": 35353
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 30976,
+              "rx_low64": 65438,
+              "start_cycle": 35612,
+              "end_cycle": 35644
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 31232,
+              "rx_low64": 65374,
+              "start_cycle": 35903,
+              "end_cycle": 35935
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 31488,
+              "rx_low64": 65502,
+              "start_cycle": 36194,
+              "end_cycle": 36226
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 31744,
+              "rx_low64": 65342,
+              "start_cycle": 36485,
+              "end_cycle": 36517
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 32000,
+              "rx_low64": 65470,
+              "start_cycle": 36776,
+              "end_cycle": 36808
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 32256,
+              "rx_low64": 65406,
+              "start_cycle": 37067,
+              "end_cycle": 37099
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 32512,
+              "rx_low64": 65534,
+              "start_cycle": 37358,
+              "end_cycle": 37390
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 32768,
+              "rx_low64": 65281,
+              "start_cycle": 37649,
+              "end_cycle": 37681
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 33024,
+              "rx_low64": 65409,
+              "start_cycle": 37940,
+              "end_cycle": 37972
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 33280,
+              "rx_low64": 65345,
+              "start_cycle": 38231,
+              "end_cycle": 38263
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 33536,
+              "rx_low64": 65473,
+              "start_cycle": 38522,
+              "end_cycle": 38554
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 33792,
+              "rx_low64": 65313,
+              "start_cycle": 38813,
+              "end_cycle": 38845
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 34048,
+              "rx_low64": 65441,
+              "start_cycle": 39104,
+              "end_cycle": 39136
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 34304,
+              "rx_low64": 65377,
+              "start_cycle": 39395,
+              "end_cycle": 39427
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 34560,
+              "rx_low64": 65505,
+              "start_cycle": 39686,
+              "end_cycle": 39718
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 34816,
+              "rx_low64": 65297,
+              "start_cycle": 39977,
+              "end_cycle": 40009
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 35072,
+              "rx_low64": 65425,
+              "start_cycle": 40268,
+              "end_cycle": 40300
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 35328,
+              "rx_low64": 65361,
+              "start_cycle": 40559,
+              "end_cycle": 40591
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 35584,
+              "rx_low64": 65489,
+              "start_cycle": 40850,
+              "end_cycle": 40882
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 35840,
+              "rx_low64": 65329,
+              "start_cycle": 41141,
+              "end_cycle": 41173
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 36096,
+              "rx_low64": 65457,
+              "start_cycle": 41432,
+              "end_cycle": 41464
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 36352,
+              "rx_low64": 65393,
+              "start_cycle": 41723,
+              "end_cycle": 41755
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 36608,
+              "rx_low64": 65521,
+              "start_cycle": 42014,
+              "end_cycle": 42046
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 36864,
+              "rx_low64": 65289,
+              "start_cycle": 42305,
+              "end_cycle": 42337
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 37120,
+              "rx_low64": 65417,
+              "start_cycle": 42596,
+              "end_cycle": 42628
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 37376,
+              "rx_low64": 65353,
+              "start_cycle": 42887,
+              "end_cycle": 42919
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 37632,
+              "rx_low64": 65481,
+              "start_cycle": 43178,
+              "end_cycle": 43210
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 37888,
+              "rx_low64": 65321,
+              "start_cycle": 43469,
+              "end_cycle": 43501
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 38144,
+              "rx_low64": 65449,
+              "start_cycle": 43760,
+              "end_cycle": 43792
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 38400,
+              "rx_low64": 65385,
+              "start_cycle": 44051,
+              "end_cycle": 44083
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 38656,
+              "rx_low64": 65513,
+              "start_cycle": 44342,
+              "end_cycle": 44374
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 38912,
+              "rx_low64": 65305,
+              "start_cycle": 44633,
+              "end_cycle": 44665
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 39168,
+              "rx_low64": 65433,
+              "start_cycle": 44924,
+              "end_cycle": 44956
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 39424,
+              "rx_low64": 65369,
+              "start_cycle": 45215,
+              "end_cycle": 45247
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 39680,
+              "rx_low64": 65497,
+              "start_cycle": 45506,
+              "end_cycle": 45538
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 39936,
+              "rx_low64": 65337,
+              "start_cycle": 45797,
+              "end_cycle": 45829
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 40192,
+              "rx_low64": 65465,
+              "start_cycle": 46088,
+              "end_cycle": 46120
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 40448,
+              "rx_low64": 65401,
+              "start_cycle": 46379,
+              "end_cycle": 46411
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 40704,
+              "rx_low64": 65529,
+              "start_cycle": 46670,
+              "end_cycle": 46702
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 40960,
+              "rx_low64": 65285,
+              "start_cycle": 46961,
+              "end_cycle": 46993
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 41216,
+              "rx_low64": 65413,
+              "start_cycle": 47252,
+              "end_cycle": 47284
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 41472,
+              "rx_low64": 65349,
+              "start_cycle": 47543,
+              "end_cycle": 47575
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 41728,
+              "rx_low64": 65477,
+              "start_cycle": 47834,
+              "end_cycle": 47866
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 41984,
+              "rx_low64": 65317,
+              "start_cycle": 48125,
+              "end_cycle": 48157
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 42240,
+              "rx_low64": 65445,
+              "start_cycle": 48416,
+              "end_cycle": 48448
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 42496,
+              "rx_low64": 65381,
+              "start_cycle": 48707,
+              "end_cycle": 48739
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 42752,
+              "rx_low64": 65509,
+              "start_cycle": 48998,
+              "end_cycle": 49030
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 43008,
+              "rx_low64": 65301,
+              "start_cycle": 49289,
+              "end_cycle": 49321
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 43264,
+              "rx_low64": 65429,
+              "start_cycle": 49580,
+              "end_cycle": 49612
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 43520,
+              "rx_low64": 65365,
+              "start_cycle": 49871,
+              "end_cycle": 49903
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 43776,
+              "rx_low64": 65493,
+              "start_cycle": 50162,
+              "end_cycle": 50194
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 44032,
+              "rx_low64": 65333,
+              "start_cycle": 50453,
+              "end_cycle": 50485
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 44288,
+              "rx_low64": 65461,
+              "start_cycle": 50744,
+              "end_cycle": 50776
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 44544,
+              "rx_low64": 65397,
+              "start_cycle": 51035,
+              "end_cycle": 51067
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 44800,
+              "rx_low64": 65525,
+              "start_cycle": 51326,
+              "end_cycle": 51358
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 45056,
+              "rx_low64": 65293,
+              "start_cycle": 51617,
+              "end_cycle": 51649
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 45312,
+              "rx_low64": 65421,
+              "start_cycle": 51908,
+              "end_cycle": 51940
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 45568,
+              "rx_low64": 65357,
+              "start_cycle": 52199,
+              "end_cycle": 52231
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 45824,
+              "rx_low64": 65485,
+              "start_cycle": 52490,
+              "end_cycle": 52522
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 46080,
+              "rx_low64": 65325,
+              "start_cycle": 52781,
+              "end_cycle": 52813
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 46336,
+              "rx_low64": 65453,
+              "start_cycle": 53072,
+              "end_cycle": 53104
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 46592,
+              "rx_low64": 65389,
+              "start_cycle": 53363,
+              "end_cycle": 53395
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 46848,
+              "rx_low64": 65517,
+              "start_cycle": 53654,
+              "end_cycle": 53686
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 47104,
+              "rx_low64": 65309,
+              "start_cycle": 53945,
+              "end_cycle": 53977
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 47360,
+              "rx_low64": 65437,
+              "start_cycle": 54236,
+              "end_cycle": 54268
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 47616,
+              "rx_low64": 65373,
+              "start_cycle": 54527,
+              "end_cycle": 54559
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 47872,
+              "rx_low64": 65501,
+              "start_cycle": 54818,
+              "end_cycle": 54850
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 48128,
+              "rx_low64": 65341,
+              "start_cycle": 55109,
+              "end_cycle": 55141
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 48384,
+              "rx_low64": 65469,
+              "start_cycle": 55400,
+              "end_cycle": 55432
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 48640,
+              "rx_low64": 65405,
+              "start_cycle": 55691,
+              "end_cycle": 55723
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 48896,
+              "rx_low64": 65533,
+              "start_cycle": 55982,
+              "end_cycle": 56014
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 49152,
+              "rx_low64": 65283,
+              "start_cycle": 56273,
+              "end_cycle": 56305
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 49408,
+              "rx_low64": 65411,
+              "start_cycle": 56564,
+              "end_cycle": 56596
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 49664,
+              "rx_low64": 65347,
+              "start_cycle": 56855,
+              "end_cycle": 56887
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 49920,
+              "rx_low64": 65475,
+              "start_cycle": 57146,
+              "end_cycle": 57178
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 50176,
+              "rx_low64": 65315,
+              "start_cycle": 57437,
+              "end_cycle": 57469
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 50432,
+              "rx_low64": 65443,
+              "start_cycle": 57728,
+              "end_cycle": 57760
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 50688,
+              "rx_low64": 65379,
+              "start_cycle": 58019,
+              "end_cycle": 58051
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 50944,
+              "rx_low64": 65507,
+              "start_cycle": 58310,
+              "end_cycle": 58342
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 51200,
+              "rx_low64": 65299,
+              "start_cycle": 58601,
+              "end_cycle": 58633
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 51456,
+              "rx_low64": 65427,
+              "start_cycle": 58892,
+              "end_cycle": 58924
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 51712,
+              "rx_low64": 65363,
+              "start_cycle": 59183,
+              "end_cycle": 59215
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 51968,
+              "rx_low64": 65491,
+              "start_cycle": 59474,
+              "end_cycle": 59506
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 52224,
+              "rx_low64": 65331,
+              "start_cycle": 59765,
+              "end_cycle": 59797
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 52480,
+              "rx_low64": 65459,
+              "start_cycle": 60056,
+              "end_cycle": 60088
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 52736,
+              "rx_low64": 65395,
+              "start_cycle": 60347,
+              "end_cycle": 60379
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 52992,
+              "rx_low64": 65523,
+              "start_cycle": 60638,
+              "end_cycle": 60670
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 53248,
+              "rx_low64": 65291,
+              "start_cycle": 60929,
+              "end_cycle": 60961
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 53504,
+              "rx_low64": 65419,
+              "start_cycle": 61220,
+              "end_cycle": 61252
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 53760,
+              "rx_low64": 65355,
+              "start_cycle": 61511,
+              "end_cycle": 61543
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 54016,
+              "rx_low64": 65483,
+              "start_cycle": 61802,
+              "end_cycle": 61834
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 54272,
+              "rx_low64": 65323,
+              "start_cycle": 62093,
+              "end_cycle": 62125
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 54528,
+              "rx_low64": 65451,
+              "start_cycle": 62384,
+              "end_cycle": 62416
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 54784,
+              "rx_low64": 65387,
+              "start_cycle": 62675,
+              "end_cycle": 62707
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 55040,
+              "rx_low64": 65515,
+              "start_cycle": 62966,
+              "end_cycle": 62998
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 55296,
+              "rx_low64": 65307,
+              "start_cycle": 63257,
+              "end_cycle": 63289
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 55552,
+              "rx_low64": 65435,
+              "start_cycle": 63548,
+              "end_cycle": 63580
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 55808,
+              "rx_low64": 65371,
+              "start_cycle": 63839,
+              "end_cycle": 63871
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 56064,
+              "rx_low64": 65499,
+              "start_cycle": 64130,
+              "end_cycle": 64162
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 56320,
+              "rx_low64": 65339,
+              "start_cycle": 64421,
+              "end_cycle": 64453
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 56576,
+              "rx_low64": 65467,
+              "start_cycle": 64712,
+              "end_cycle": 64744
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 56832,
+              "rx_low64": 65403,
+              "start_cycle": 65003,
+              "end_cycle": 65035
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 57088,
+              "rx_low64": 65531,
+              "start_cycle": 65294,
+              "end_cycle": 65326
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 57344,
+              "rx_low64": 65287,
+              "start_cycle": 65585,
+              "end_cycle": 65617
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 57600,
+              "rx_low64": 65415,
+              "start_cycle": 65876,
+              "end_cycle": 65908
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 57856,
+              "rx_low64": 65351,
+              "start_cycle": 66167,
+              "end_cycle": 66199
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 58112,
+              "rx_low64": 65479,
+              "start_cycle": 66458,
+              "end_cycle": 66490
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 58368,
+              "rx_low64": 65319,
+              "start_cycle": 66749,
+              "end_cycle": 66781
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 58624,
+              "rx_low64": 65447,
+              "start_cycle": 67040,
+              "end_cycle": 67072
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 58880,
+              "rx_low64": 65383,
+              "start_cycle": 67331,
+              "end_cycle": 67363
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 59136,
+              "rx_low64": 65511,
+              "start_cycle": 67622,
+              "end_cycle": 67654
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 59392,
+              "rx_low64": 65303,
+              "start_cycle": 67913,
+              "end_cycle": 67945
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 59648,
+              "rx_low64": 65431,
+              "start_cycle": 68204,
+              "end_cycle": 68236
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 59904,
+              "rx_low64": 65367,
+              "start_cycle": 68495,
+              "end_cycle": 68527
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 60160,
+              "rx_low64": 65495,
+              "start_cycle": 68786,
+              "end_cycle": 68818
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 60416,
+              "rx_low64": 65335,
+              "start_cycle": 69077,
+              "end_cycle": 69109
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 60672,
+              "rx_low64": 65463,
+              "start_cycle": 69368,
+              "end_cycle": 69400
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 60928,
+              "rx_low64": 65399,
+              "start_cycle": 69659,
+              "end_cycle": 69691
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 61184,
+              "rx_low64": 65527,
+              "start_cycle": 69950,
+              "end_cycle": 69982
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 61440,
+              "rx_low64": 65295,
+              "start_cycle": 70241,
+              "end_cycle": 70273
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 61696,
+              "rx_low64": 65423,
+              "start_cycle": 70532,
+              "end_cycle": 70564
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 61952,
+              "rx_low64": 65359,
+              "start_cycle": 70823,
+              "end_cycle": 70855
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 62208,
+              "rx_low64": 65487,
+              "start_cycle": 71114,
+              "end_cycle": 71146
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 62464,
+              "rx_low64": 65327,
+              "start_cycle": 71405,
+              "end_cycle": 71437
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 62720,
+              "rx_low64": 65455,
+              "start_cycle": 71696,
+              "end_cycle": 71728
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 62976,
+              "rx_low64": 65391,
+              "start_cycle": 71987,
+              "end_cycle": 72019
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 63232,
+              "rx_low64": 65519,
+              "start_cycle": 72278,
+              "end_cycle": 72310
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 63488,
+              "rx_low64": 65311,
+              "start_cycle": 72569,
+              "end_cycle": 72601
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 63744,
+              "rx_low64": 65439,
+              "start_cycle": 72860,
+              "end_cycle": 72892
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 64000,
+              "rx_low64": 65375,
+              "start_cycle": 73151,
+              "end_cycle": 73183
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 64256,
+              "rx_low64": 65503,
+              "start_cycle": 73442,
+              "end_cycle": 73474
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 64512,
+              "rx_low64": 65343,
+              "start_cycle": 73733,
+              "end_cycle": 73765
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 64768,
+              "rx_low64": 65471,
+              "start_cycle": 74024,
+              "end_cycle": 74056
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 65024,
+              "rx_low64": 65407,
+              "start_cycle": 74315,
+              "end_cycle": 74347
+            },
+            {
+              "select": 128,
+              "bits": 16,
+              "tx_low64": 65280,
+              "rx_low64": 65535,
+              "start_cycle": 74606,
+              "end_cycle": 74638
+            }
+          ]
+        }
+      },
+      "wall_speed_ratio": 12.345198300045354,
+      "image_sha256": "cf471d12795becfa20d095262e906cfce11a52e1a6a835340e0c005985966e18"
+    },
+    {
+      "name": "serial-flash",
+      "status": "PASS_EQUIVALENT_OBSERVATIONS",
+      "timed": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871352,
+        "next_pc": 536871356,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 4102,
+        "instructions": 1024,
+        "wall_seconds": 0.0697914,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 1052,
+        "flash_dpi_calls": 7,
+        "memory_operations": 210,
+        "diff_enabled": true,
+        "diff_checked": 892,
+        "device_sync_checked": 132,
+        "axi_channels": [
+          1154,
+          1154,
+          80,
+          80,
+          80
+        ],
+        "gpr": [
+          0,
+          536871432,
+          251666420,
+          251660288,
+          0,
+          32,
+          9536,
+          65280,
+          0,
+          0,
+          0,
+          1482250843,
+          1482250843,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          1024,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 7,
+          "sampled_bits": 448,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": [
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 1076,
+              "end_cycle": 1204
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172799293652992,
+              "rx_low64": 2745344416,
+              "start_cycle": 1514,
+              "end_cycle": 1642
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216174963957170176,
+              "rx_low64": 1515935833,
+              "start_cycle": 1952,
+              "end_cycle": 2080
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216190374299828224,
+              "rx_low64": 3082204596,
+              "start_cycle": 2390,
+              "end_cycle": 2518
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216493032055242752,
+              "rx_low64": 3250635714,
+              "start_cycle": 2828,
+              "end_cycle": 2956
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 252201561952878592,
+              "rx_low64": 3688552920,
+              "start_cycle": 3266,
+              "end_cycle": 3394
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 288230358971842560,
+              "rx_low64": 1532647768,
+              "start_cycle": 3704,
+              "end_cycle": 3832
+            }
+          ]
+        }
+      },
+      "cycle": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871352,
+        "next_pc": 536871356,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 4102,
+        "instructions": 1024,
+        "wall_seconds": 0.00654724,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 1052,
+        "flash_dpi_calls": 7,
+        "memory_operations": 210,
+        "diff_enabled": true,
+        "diff_checked": 892,
+        "device_sync_checked": 132,
+        "axi_channels": [
+          1154,
+          1154,
+          80,
+          80,
+          80
+        ],
+        "gpr": [
+          0,
+          536871432,
+          251666420,
+          251660288,
+          0,
+          32,
+          9536,
+          65280,
+          0,
+          0,
+          0,
+          1482250843,
+          1482250843,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          1024,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 7,
+          "sampled_bits": 448,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": [
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 1076,
+              "end_cycle": 1204
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172799293652992,
+              "rx_low64": 2745344416,
+              "start_cycle": 1514,
+              "end_cycle": 1642
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216174963957170176,
+              "rx_low64": 1515935833,
+              "start_cycle": 1952,
+              "end_cycle": 2080
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216190374299828224,
+              "rx_low64": 3082204596,
+              "start_cycle": 2390,
+              "end_cycle": 2518
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216493032055242752,
+              "rx_low64": 3250635714,
+              "start_cycle": 2828,
+              "end_cycle": 2956
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 252201561952878592,
+              "rx_low64": 3688552920,
+              "start_cycle": 3266,
+              "end_cycle": 3394
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 288230358971842560,
+              "rx_low64": 1532647768,
+              "start_cycle": 3704,
+              "end_cycle": 3832
+            }
+          ]
+        }
+      },
+      "wall_speed_ratio": 10.659667279647607,
+      "image_sha256": "7b1473a477433d595549c7739308f1c9a248477549c4986b54878aeb21fb7de1"
+    },
+    {
+      "name": "xip-data",
+      "status": "PASS_EQUIVALENT_OBSERVATIONS",
+      "timed": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871324,
+        "next_pc": 536871328,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 4967,
+        "instructions": 849,
+        "wall_seconds": 0.045389,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 897,
+        "flash_dpi_calls": 13,
+        "memory_operations": 132,
+        "diff_enabled": true,
+        "diff_checked": 843,
+        "device_sync_checked": 6,
+        "axi_channels": [
+          925,
+          925,
+          56,
+          56,
+          56
+        ],
+        "gpr": [
+          0,
+          536871404,
+          251666420,
+          251660288,
+          0,
+          1482250843,
+          32,
+          255,
+          0,
+          0,
+          0,
+          88,
+          805306368,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          849,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 13,
+          "sampled_bits": 832,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": [
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 992,
+              "end_cycle": 1120
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172799293652992,
+              "rx_low64": 2745344416,
+              "start_cycle": 1311,
+              "end_cycle": 1439
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216174963957170176,
+              "rx_low64": 1515935833,
+              "start_cycle": 1630,
+              "end_cycle": 1758
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216190374299828224,
+              "rx_low64": 3082204596,
+              "start_cycle": 1949,
+              "end_cycle": 2077
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216493032055242752,
+              "rx_low64": 3250635714,
+              "start_cycle": 2268,
+              "end_cycle": 2396
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 252201561952878592,
+              "rx_low64": 3688552920,
+              "start_cycle": 2587,
+              "end_cycle": 2715
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 288230358971842560,
+              "rx_low64": 1532647768,
+              "start_cycle": 2906,
+              "end_cycle": 3034
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 3792,
+              "end_cycle": 3920
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 3988,
+              "end_cycle": 4116
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 4184,
+              "end_cycle": 4312
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 252201561952878592,
+              "rx_low64": 3688552920,
+              "start_cycle": 4380,
+              "end_cycle": 4508
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 288230358971842560,
+              "rx_low64": 1532647768,
+              "start_cycle": 4576,
+              "end_cycle": 4704
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 288230358971842560,
+              "rx_low64": 1532647768,
+              "start_cycle": 4766,
+              "end_cycle": 4894
+            }
+          ]
+        }
+      },
+      "cycle": {
+        "result": "GOOD_TRAP",
+        "exit_code": 0,
+        "pc": 536871324,
+        "next_pc": 536871328,
+        "instruction": 1048691,
+        "a0": 0,
+        "fault": 0,
+        "cycles": 4967,
+        "instructions": 849,
+        "wall_seconds": 0.00700184,
+        "reset_cycles": 16,
+        "mrom_dpi_calls": 897,
+        "flash_dpi_calls": 13,
+        "memory_operations": 132,
+        "diff_enabled": true,
+        "diff_checked": 843,
+        "device_sync_checked": 6,
+        "axi_channels": [
+          925,
+          925,
+          56,
+          56,
+          56
+        ],
+        "gpr": [
+          0,
+          536871404,
+          251666420,
+          251660288,
+          0,
+          1482250843,
+          32,
+          255,
+          0,
+          0,
+          0,
+          88,
+          805306368,
+          268435456,
+          64,
+          0
+        ],
+        "coverage": {
+          "base": 0,
+          "size": 0,
+          "unique_read_bytes": 0,
+          "unique_written_bytes": 0,
+          "read_ops_by_width": [
+            0,
+            0,
+            0
+          ],
+          "write_ops_by_width": [
+            0,
+            0,
+            0
+          ]
+        },
+        "uart": {
+          "attempted": 0,
+          "accepted": 0,
+          "dropped": 0,
+          "maximum_fifo_occupancy": 0,
+          "capture_truncated": false,
+          "hex": ""
+        },
+        "uart_pin": {
+          "cycles_per_bit": 0,
+          "frames": 0,
+          "framing_errors": 0,
+          "hex": ""
+        },
+        "retired_by_region": [
+          849,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spi": {
+          "transfers": 13,
+          "sampled_bits": 832,
+          "incomplete_bits": 0,
+          "capture_truncated": false,
+          "packets": [
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 992,
+              "end_cycle": 1120
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172799293652992,
+              "rx_low64": 2745344416,
+              "start_cycle": 1311,
+              "end_cycle": 1439
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216174963957170176,
+              "rx_low64": 1515935833,
+              "start_cycle": 1630,
+              "end_cycle": 1758
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216190374299828224,
+              "rx_low64": 3082204596,
+              "start_cycle": 1949,
+              "end_cycle": 2077
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216493032055242752,
+              "rx_low64": 3250635714,
+              "start_cycle": 2268,
+              "end_cycle": 2396
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 252201561952878592,
+              "rx_low64": 3688552920,
+              "start_cycle": 2587,
+              "end_cycle": 2715
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 288230358971842560,
+              "rx_low64": 1532647768,
+              "start_cycle": 2906,
+              "end_cycle": 3034
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 3792,
+              "end_cycle": 3920
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 3988,
+              "end_cycle": 4116
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 216172782113783808,
+              "rx_low64": 2812716452,
+              "start_cycle": 4184,
+              "end_cycle": 4312
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 252201561952878592,
+              "rx_low64": 3688552920,
+              "start_cycle": 4380,
+              "end_cycle": 4508
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 288230358971842560,
+              "rx_low64": 1532647768,
+              "start_cycle": 4576,
+              "end_cycle": 4704
+            },
+            {
+              "select": 1,
+              "bits": 64,
+              "tx_low64": 288230358971842560,
+              "rx_low64": 1532647768,
+              "start_cycle": 4766,
+              "end_cycle": 4894
+            }
+          ]
+        }
+      },
+      "wall_speed_ratio": 6.482438901774391,
+      "image_sha256": "672463b1763bd318b0c094d99c549bc8f80e644e2dba0c9e3d04dade85516fbb"
+    }
+  ],
+  "scope": "Same RTL and program bytes under timed simulation and cycle simulation that omits vendor #1 delays. Actual architecture, memory operations, UART TX-pin bytes and SPI sampled streams compared. This profile does not establish analog setup/hold timing; the timed baseline remains preserved."
+}

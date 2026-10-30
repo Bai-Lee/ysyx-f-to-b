@@ -1,0 +1,40 @@
+{
+  "status": "PASS_BOUNDED_OBSERVATION",
+  "simulation": {
+    "result": "BOUNDED_OUTPUT_OBSERVATION",
+    "exit_code": 0,
+    "pc": 2149291784,
+    "a0": 72,
+    "cycles": 273831708,
+    "instructions": 273831708,
+    "frequency_hz": 100000000,
+    "wall_seconds": 71.973676069,
+    "ebreak_calls": 0,
+    "memory_writes": 68599957,
+    "load_commits": 96385620,
+    "uart_bytes": 16397,
+    "uart_polls": 130677,
+    "uart_not_ready": 114280,
+    "gpr": [
+      0,
+      2149335620,
+      2150448888,
+      2149291780,
+      2149291780,
+      999,
+      2150449044,
+      0,
+      2149658928,
+      2150449044,
+      72,
+      0,
+      2149658928,
+      2150449044,
+      268435456,
+      1
+    ]
+  },
+  "completed_frame_rows": 118,
+  "rom_sha256": "29ccb7d3b35f40a5c56f07f9cde787a55259eb6fbfd021c67006e731da494817",
+  "scope": "Two complete 128-column character frames observed, stopped at third frame header; no claim of indefinite gameplay."
+}

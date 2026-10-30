@@ -1,0 +1,1 @@
+{"result":"BAD_TRAP","exit_code":1,"pc":2147483664,"a0":30,"cycles":10,"instructions":6,"diff_enabled":true,"diff_checked":6,"device_sync_checked":0,"ebreak_calls":1,"memory_writes":0,"load_commits":0,"uart_bytes":0,"uart_polls":0,"uart_not_ready":0,"frequency_hz":100000000,"wall_seconds":0.006144688,"bounded_output":false,"gpr":[0,2147483660,0,0,0,0,0,0,0,0,30,0,0,0,0,0]}

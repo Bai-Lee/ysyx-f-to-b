@@ -1,0 +1,501 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "core_tasks": 28,
+  "scope_records": 54,
+  "records": [
+    {
+      "id": "D6-R001",
+      "status": "PASS_METHOD_REVIEW",
+      "details": "Method reminder reviewed against the implementation and limitations documented in this chapter.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-R002",
+      "status": "PASS_METHOD_REVIEW",
+      "details": "Method reminder reviewed against the implementation and limitations documented in this chapter.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-R003",
+      "status": "PASS_METHOD_REVIEW",
+      "details": "Method reminder reviewed against the implementation and limitations documented in this chapter.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-R004",
+      "status": "PASS_METHOD_REVIEW",
+      "details": "Method reminder reviewed against the implementation and limitations documented in this chapter.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O001",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-R005",
+      "status": "PASS_METHOD_REVIEW",
+      "details": "Method reminder reviewed against the implementation and limitations documented in this chapter.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O002",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O003",
+      "status": "PASS_ANALYSIS",
+      "details": "Area/fanout tradeoff explained without assuming shared logic always improves timing.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-O004",
+      "status": "PASS_ANALYSIS",
+      "details": "Word-to-gate and gate-to-library mapping terminology distinguished.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-O005",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O006",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O007",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O008",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O009",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O010",
+      "status": "PASS_ANALYSIS",
+      "details": "OAI22 naming and truth function independently checked.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-O011",
+      "status": "PASS_ANALYSIS",
+      "details": "AOI221 expression, LIB and MOS network checked.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-O012",
+      "status": "PASS_ANALYSIS",
+      "details": "Actual NAND2X2 widths compared with X1.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-O013",
+      "status": "PASS_ANALYSIS",
+      "details": "DFF CDL graph and 28-MOS count; two-latch phase explanation and model check. Extra raw ideal-MOS transient did not qualify; not SPICE/LVS.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-O014",
+      "status": "PASS_ANALYSIS",
+      "details": "Actual ADDF network and selected basic-gate area/transistor comparison.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-O015",
+      "status": "PASS_ANALYSIS",
+      "details": "TT versus SS/FF/SF/FS conceptual locations explained.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pvt.json"
+      ]
+    },
+    {
+      "id": "D6-O016",
+      "status": "SOURCE_CLAIM_NOT_ADOPTED",
+      "details": "Source marketing anecdote lacks verified evidence tying i3/i5/i7 to exact process corners; it is not adopted as a factual premise.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O017",
+      "status": "PASS_ANALYSIS",
+      "details": "Cooling/PVT reasoning conditional on characterized models; no universal monotonic-temperature claim.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pvt.json"
+      ]
+    },
+    {
+      "id": "D6-O018",
+      "status": "PASS_ANALYSIS",
+      "details": "Operating environment and qualification corners distinguished; no unsupported vendor claim adopted.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pvt.json"
+      ]
+    },
+    {
+      "id": "D6-O019",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-O020",
+      "status": "REFERENCE_ONLY",
+      "details": "Source background retained and scoped; no claim of completing every linked video, manual or article.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-M001",
+      "status": "PASS",
+      "details": "Independent event ordering and Icarus mixed-assignment result (5,1,1,3,3); NBA settles in the same time slot.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M002",
+      "status": "PASS",
+      "details": "Actual generated Verilator light C++ retained; trigger/evaluation/state-update explained.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M003",
+      "status": "PASS",
+      "details": "NBA samples old values and swaps deterministically; blocking race alternatives explained with explicit initial state.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M004",
+      "status": "PASS",
+      "details": "Actual display/strobe observations separated by event region; no claim one simulator enumerates all legal interleavings.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M005",
+      "status": "PASS",
+      "details": "All six coding claims evaluated against event semantics, including #0 before NBA, last same-block NBA and multi-writer limits.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M006",
+      "status": "PASS",
+      "details": "Actual Yosys read-stage RTLIL and DOT/SVG/PNG retained.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M007",
+      "status": "PASS",
+      "details": "Actual proc-stage processes lowered and graph retained.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M008",
+      "status": "PASS",
+      "details": "Actual opt-stage simplification and graph retained.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M009",
+      "status": "PASS",
+      "details": "Actual techmap-stage bit gates and graph retained.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M010",
+      "status": "PASS",
+      "details": "Actual dfflibmap mapped DFF cells and graph retained.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M011",
+      "status": "PASS",
+      "details": "Actual abc mapped netlist; 4096-cycle comparison and inverted-DFF negative control.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M012",
+      "status": "PASS",
+      "details": "Actual ECC synthesis logs/TCL preserved for three corners; flow and constraints inspected.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pvt.json"
+      ]
+    },
+    {
+      "id": "D6-M013",
+      "status": "PASS",
+      "details": "IEEE 1364.1-2002 section 5 read with explicit synthesis restrictions and simulation distinctions.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M014",
+      "status": "PASS",
+      "details": "Race example analyzed by permitted event interleavings, including initial-state qualification.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M015",
+      "status": "PASS",
+      "details": "All 12 Annex B mismatch categories reviewed; five concrete executable categories and B.9 ambiguity qualified.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_logic.json"
+      ]
+    },
+    {
+      "id": "D6-M016",
+      "status": "PASS",
+      "details": "Real ECC light synthesis/STA at 100 MHz, TT/SS/FF; pre-layout, no full external IO constraints.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pvt.json"
+      ]
+    },
+    {
+      "id": "D6-M017",
+      "status": "PASS",
+      "details": "Actual power.rpt units/internal/switching/leakage inspected; vectorless/default activity limits stated.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pvt.json"
+      ]
+    },
+    {
+      "id": "D6-M018",
+      "status": "PASS",
+      "details": "LEF seven routing entries parsed; six main metal layers distinguished from RDL.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-M019",
+      "status": "PASS",
+      "details": "NAND2 CDL D/G/S/B topology rendered and switch-network truth checked.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-M020",
+      "status": "PASS",
+      "details": "OAI22 LIB function parsed and compared against binary truth table.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-M021",
+      "status": "PASS",
+      "details": "OAI22 eight-MOS topology matched to complementary network and LIB.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-M022",
+      "status": "PASS",
+      "details": "NAND X1/X2/X4 transistor widths, area/capacitance and same-point timing interpolation compared.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-M023",
+      "status": "PASS",
+      "details": "NAND 0.8x1.4 um versus data IO P65_1233_PBMUX 65x130 um, explicit selected cell.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-M024",
+      "status": "PASS",
+      "details": "ADDF 28 MOS/6.72 um2 versus selected XOR/AND/OR implementation 42 MOS/10.64 um2; logic checked.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-M025",
+      "status": "PASS",
+      "details": "747 LVT library entries indexed with CDL/LEF presence and authored categories.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-M026",
+      "status": "PASS",
+      "details": "Same RTL/clock/strategy resynthesized at TT/SS/FF, actual area/timing/power and source hashes retained.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pvt.json"
+      ]
+    },
+    {
+      "id": "D6-M027",
+      "status": "EXCLUDED_SCOPE",
+      "details": "Original entry contains only todo; excluded by agreed source scope.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "D/D6/sources/D6.md"
+      ]
+    },
+    {
+      "id": "D6-M028",
+      "status": "PASS",
+      "details": "1.4 um cell height / 0.2 um pitch = seven tracks, model assumptions explicit.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    },
+    {
+      "id": "D6-M029",
+      "status": "PASS",
+      "details": "FILLER1H7L 0.2x1.4 um exactly one core7 SITE.",
+      "evidence": [
+        "D/D6/NOTES.md",
+        "reports/D6_pdk.json"
+      ]
+    }
+  ],
+  "report": "D/D6/NOTES.md",
+  "qualification": "Public local engineering requirements only; reference-only background is not claimed completed learning.",
+  "declared_extra_failure": {
+    "status": "FAIL_UNQUALIFIED_MODEL",
+    "reason": "Ideal zero-delay/equal-strength/delayed MOS approximations lost state or produced X; transistor models/capacitances are not present in this PDK export. Failed expectations were not relaxed; preserved in artifacts/D6/pdk/switch-run/attempts and raw_dff_probe_tb.v. Main DFF check explicitly uses the documented phase abstraction.",
+    "required_task": "D6-O013 asks for drawing, transistor count and functional explanation; it does not require analog transient qualification."
+  }
+}

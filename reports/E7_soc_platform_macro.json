@@ -1,0 +1,16 @@
+{
+  "status": "FIXED_REBUILD_REQUIRED",
+  "files": [
+    {
+      "file": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/trm.c",
+      "before_sha256": "81bbfca857ebe7d364c8ffea517ea25723a0eb6a06a78585d7295f8c4c0ee84b",
+      "after_sha256": "c61c459a813c484cc38cc517a65f4e57a813b85f391673eae2c4dd8dd825f63a"
+    },
+    {
+      "file": "/home/USER/e-stage/software-soc/abstract-machine/am/src/riscv/npc/timer.c",
+      "before_sha256": "a9d7b37918d53b32843c5fdeaf4105bac3e3b98043a583815598ce823475d5c1",
+      "after_sha256": "09cae6e392dcf295d3cf2071f1392fe74c08d04789359934e4ec819905b8ffbf"
+    }
+  ],
+  "reason": "AM Makefile appendsdoubleunderscore to ISA macros but not PLATFORM macros. Authored conditional incorrectly used a trailingdoubleunderscore. Correcting it enables actualUART16550initialization,8MiBheapandSoCfrequencybranch. Active standaloneworkbench untouched."
+}

@@ -1,0 +1,27 @@
+{
+  "runs": [
+    {
+      "mode": "rtl",
+      "status": "PASS",
+      "image_sha256": "467e043f4faf04e05c84afce29c1c7a05a9c288fe47626afa4e351ae963ff7f9",
+      "source_sha256": [
+        "0c56b8296b8d03f359cedc07028e2a40eaafd7785979714ebd74c7291f17aed8"
+      ],
+      "evidence": "artifacts/B5/public/rtl/20261030T025309217762",
+      "elapsed_seconds": 0.884
+    },
+    {
+      "mode": "netlist",
+      "status": "PASS",
+      "image_sha256": "467e043f4faf04e05c84afce29c1c7a05a9c288fe47626afa4e351ae963ff7f9",
+      "source_sha256": [
+        "32faa6b344dec8b76911e04cc657ff75f868c17d79d00fbb08bf40c6394648ec",
+        "9430fe45ddf1d60b3c74851c7df759bf4c0f5a78fbff80b65e6cd619cdfd6b69"
+      ],
+      "evidence": "artifacts/B5/public/netlist/20261030T025311103537",
+      "elapsed_seconds": 6.925
+    }
+  ],
+  "status": "PASS_COMPLETED_RUNS",
+  "scope": "Local public make contract, not official CI. Programs use the documented standalone AM ABI at0x80000000, reached from the fixed Flash reset using a two-instruction trampoline."
+}

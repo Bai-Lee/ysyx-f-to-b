@@ -1,0 +1,28 @@
+Design : light
+Operating Conditions: ICS_N55_H7BR_tt_mos_TYP_1.2_25
+Analysis Effort : low
+Wire Load Model : ZeroWireload
+Global Operating Voltage = 1.2
+
+Dynamic Power Units = 1mW
+Leakage Power Units = 1nW
+
+Cell Internal Power  =   54.2602 uW
+Net Switching Power  =  507.9149 nW
+Total Dynamic Power  =   54.7681 uW
+Cell Leakage Power   =   78.0479 nW
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register       5.3943e-02        8.1844e-05           17.7200        5.4043e-02  (  98.53%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  3.1722e-04        4.2607e-04           60.3279        8.0362e-04  (   1.47%)
+--------------------------------------------------------------------------------------------------
+Total          5.4260e-02 mW     5.0791e-04 mW        78.0479 nW     5.4846e-02 mW
+
+i - Including register clock pin internal power

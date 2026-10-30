@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "source": "/workspace/projects/ysyx_f_to_b/D/runtime/sources/pa/e1e078e85812b41f.md",
+  "source_sha256": "395b6de563b86cb9a7fce4c96a4906ab7f78c626182edc903cfda81cc5328b29",
+  "state_columns": [
+    "pc",
+    "r0",
+    "r1",
+    "M[7]",
+    "halt"
+  ],
+  "states": [
+    [
+      1,
+      33,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      33,
+      33,
+      0,
+      0
+    ],
+    [
+      3,
+      16,
+      33,
+      0,
+      0
+    ],
+    [
+      4,
+      49,
+      33,
+      0,
+      0
+    ],
+    [
+      5,
+      49,
+      33,
+      49,
+      0
+    ],
+    [
+      6,
+      98,
+      33,
+      49,
+      0
+    ],
+    [
+      7,
+      98,
+      33,
+      49,
+      1
+    ]
+  ],
+  "scope": "Original teaching YEMU plus observation-only printf, actual GCC build. After storing49 the source continues into data: x=0x10 doublesr0; y=0x21 is invalid and halts. Host bit-field layout verified only for this compiler; original course code is not altered."
+}

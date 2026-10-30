@@ -1,0 +1,11 @@
+help
+p 1+2*3
+p $pc
+x 5 0x80000000
+si
+p $pc
+info r
+si 2
+p $pc
+c
+q

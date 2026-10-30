@@ -1,0 +1,14 @@
+****************************************
+Design : c4_axi_core
+DelayType : max
+StartEndType : all
+SlackLesserThan : 0.0000000000
+SlackGreaterThan : -infinity
+Nworst : 1
+MaxPaths : 1000
+SortBy : slack
+****************************************
+
+No constrained paths.
+
+1

@@ -1,0 +1,77 @@
+{
+  "status": "PASS_BOUNDED_BACKGROUND_EXPERIMENT",
+  "course_record": "C1-O001",
+  "core_tasks": 0,
+  "checks": {
+    "unresolved_object_symbol_and_relocation": true,
+    "archive_member_selected_on_demand": true,
+    "correct_link_and_execution": true,
+    "wrong_library_order_rejected": true,
+    "duplicate_definition_rejected": true,
+    "static_archive_with_dynamic_libc": true,
+    "section_name_table_index": 36,
+    "RV32E_object_relocations": true
+  },
+  "sources": [
+    {
+      "path": "/workspace/YSYX_F_B_Archive/slides/markdown/2306/580e82b43f0b9820.md",
+      "sha256": "4b865c8c37595e40425ca0e57b6d424dfe4209bace271ec02f1ca257217cf8d7"
+    },
+    {
+      "path": "/workspace/YSYX_F_B_Archive/assets/offline/www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "sha256": "208969fec021e4f4ce87a1873765298c73e7bbb5209b1c5868967c7adfc8492e"
+    }
+  ],
+  "standard_physical_pages": [
+    173,
+    176
+  ],
+  "tools": [
+    {
+      "name": "gcc",
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89",
+      "version": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0"
+    },
+    {
+      "name": "ar",
+      "path": "/usr/bin/ar",
+      "sha256": "5b394f8752fde1776992d405d76034d5017b24b9b922bedaeeaff8cc344ef044",
+      "version": "GNU ar (GNU Binutils for Ubuntu) 2.38"
+    },
+    {
+      "name": "nm",
+      "path": "/usr/bin/nm",
+      "sha256": "ed6565c132d6f20019ff3f050043dc1b2b8bc2e8b3b94c1ffe3f34436431a5a4",
+      "version": "GNU nm (GNU Binutils for Ubuntu) 2.38"
+    },
+    {
+      "name": "readelf",
+      "path": "/usr/bin/readelf",
+      "sha256": "04db0000749aff89e4af21429340b00b536fc6f80e811c872c006507881a5560",
+      "version": "GNU readelf (GNU Binutils for Ubuntu) 2.38"
+    },
+    {
+      "name": "objdump",
+      "path": "/usr/bin/objdump",
+      "sha256": "1eaaef2e7f57c4c7f69115c495e2466f5a8c8e5f3bc42221d092382f30f9d4cd",
+      "version": "GNU objdump (GNU Binutils for Ubuntu) 2.38"
+    },
+    {
+      "name": "riscv64-linux-gnu-gcc",
+      "path": "/usr/bin/riscv64-linux-gnu-gcc",
+      "sha256": "0c54895c55568be5b5fee49e2426abcc8fb05ca2c121ca5685dea2cbc24a1c13",
+      "version": "riscv64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
+    }
+  ],
+  "evidence": [
+    "artifacts/C1/elf",
+    "artifacts/C1/standard",
+    "C/C1/results"
+  ],
+  "limits": [
+    "Authored small example; not all slide examples replayed.",
+    "No static libc executable, dynamic-loader implementation or ELF certification claim.",
+    "RV32E object generated and inspected, not run here."
+  ]
+}

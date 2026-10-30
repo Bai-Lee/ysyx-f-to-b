@@ -1,0 +1,931 @@
+{
+  "status": "COMPLETE_ENGINEERING_WITH_DECLARED_LIMITS",
+  "records": [
+    {
+      "id": "C1-O001",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "C/C1/NOTES.md",
+        "reports/C1_background.json",
+        "reports/C1_experiment.json",
+        "artifacts/C1"
+      ],
+      "details": "Source-bounded Chinese teaching notes and small real positive/negative experiment; original chapter has no mandatory programming task. Video completion and personal mastery are not claimed."
+    },
+    {
+      "id": "C3-O001",
+      "status": "PASS_BACKGROUND_REVIEW",
+      "evidence": [
+        "C/C3/NOTES.md",
+        "reports/C3_background.json",
+        "reports/C3_experiment.json",
+        "artifacts/C3"
+      ],
+      "details": "Source-bounded Chinese teaching notes and small real positive/negative experiment; original chapter has no mandatory programming task. Video completion and personal mastery are not claimed."
+    },
+    {
+      "id": "C2-M002",
+      "status": "PASS",
+      "details": "Official native RTC produced 1/2/3-second output; bounded SDL session.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M003",
+      "status": "PASS",
+      "details": "Official native keyboard received J/Left DOWN and UP.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M004",
+      "status": "PASS",
+      "details": "Official native video produced real changing 256-color SDL frames.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M005",
+      "status": "PASS",
+      "details": "Authored draw fills the complete 400x300 logical framebuffer; 800x600 scaled native capture is uniformly blue.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M006",
+      "status": "PASS",
+      "details": "7744 palette transitions/endpoint and monotonicity checks; real gradient capture; wrong interpolation rejected.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M007",
+      "status": "PASS",
+      "details": "Actual held/released key timing ratio 4.00012; multi-key handling and Escape exit verified.",
+      "evidence": [
+        "reports/C2_native_io.json",
+        "C/C2/screensaver/screensaver.c",
+        "artifacts/C2/native"
+      ]
+    },
+    {
+      "id": "C2-M001",
+      "status": "PASS",
+      "details": "Real native FCEUX, CC0 ROM, pressed/released image and 440/220/440Hz SDL PCM capture; no physical speaker claim.",
+      "evidence": [
+        "reports/C2_fceux_native.json",
+        "C/C2/npc_devices.py",
+        "artifacts/C2/fceux"
+      ]
+    },
+    {
+      "id": "C2-M009",
+      "status": "PASS",
+      "details": "C-only RV32E NPC hello through UART at0x10000000; per-instruction REF coverage and explicit MMIO synchronization.",
+      "evidence": [
+        "reports/C2_npc_io.json",
+        "C/C2/npc_devices.py",
+        "artifacts/C2/fceux"
+      ]
+    },
+    {
+      "id": "C2-M010",
+      "status": "PASS",
+      "details": "Official NPC timer produced 1/2/3 seconds with host-time device; semantic stop, not timeout.",
+      "evidence": [
+        "reports/C2_npc_io.json",
+        "C/C2/npc_devices.py",
+        "artifacts/C2/fceux"
+      ]
+    },
+    {
+      "id": "C2-M011",
+      "status": "PASS",
+      "details": "NPC completed two ASCII FCEUX frames and stopped at third frame header.",
+      "evidence": [
+        "reports/C2_fceux_ascii.json",
+        "C/C2/npc_devices.py",
+        "artifacts/C2/fceux"
+      ]
+    },
+    {
+      "id": "C2-M008",
+      "status": "PASS",
+      "details": "All17 nested PA2.5 required items accepted, including real NEMU IOE, complete app families, ref performance and six report questions.",
+      "evidence": [
+        "reports/C2_pa2_results.json",
+        "C/C2/PA2_NOTES.md",
+        "C/C2/snapshot/manifest.json"
+      ]
+    },
+    {
+      "id": "C2-O001",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background scope retained. Screensaver is an IO exercise; no physical screen-protection claim or independently submitted new game.",
+      "evidence": [
+        "C/C2/NOTES.md",
+        "C/C2/sources/C2.md"
+      ]
+    },
+    {
+      "id": "C2-O002",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background scope retained. Screensaver is an IO exercise; no physical screen-protection claim or independently submitted new game.",
+      "evidence": [
+        "C/C2/NOTES.md",
+        "C/C2/sources/C2.md"
+      ]
+    },
+    {
+      "id": "C5-M001",
+      "status": "PASS",
+      "details": "Compatible official full SoC pinned at bcdcbc3e8d97a11c07d3007e14f33c6147c02a8e; archived incompatible2607 retained.",
+      "evidence": [
+        "reports/C5_source_lock.json"
+      ]
+    },
+    {
+      "id": "C5-M002",
+      "status": "PASS",
+      "details": "Actual make dev-init and Mill/Chisel/firtool make verilog,39 modules, real invalid-Scala negative and source restoration.",
+      "evidence": [
+        "reports/C5_generation.json"
+      ]
+    },
+    {
+      "id": "C4-O001",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O002",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O003",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O004",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O005",
+      "status": "PASS",
+      "details": "Commit-only DiffTest or executable-region protection implemented and independently exercised; finite scope documented.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_regression.json",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-O006",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O007",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-R001",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-R002",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-R003",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-R004",
+      "status": "REFERENCE_ONLY",
+      "details": "Original optional/background/method status retained; notes explain design choices, no claim of separate optional IDU or physical SRAM collision experiment.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "C/C4/sources/C4.md"
+      ]
+    },
+    {
+      "id": "C4-O008",
+      "status": "PASS",
+      "details": "Commit-only DiffTest or executable-region protection implemented and independently exercised; finite scope documented.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_regression.json",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-M001",
+      "status": "PASS_EVALUATION_WITH_DECLARED_LIMITS",
+      "details": "Real train cycles and two256x32 flop-memory synthesis. Separate fixed Nangate45 mapping/STA analyzed; transition violations explicitly prevent a qualified frequency claim.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_performance.json",
+        "reports/C4_nangate.json"
+      ]
+    },
+    {
+      "id": "C4-M002",
+      "status": "PASS",
+      "details": "One-cycle IFU backend, two clocks per instruction, four-state cycle controls and full program regressions.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_cpu_cycles.json",
+        "reports/C4_front.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M003",
+      "status": "PASS",
+      "details": "Synchronous LSU, two ordinary/three memory cycles, stable state while waiting and independent memory/ISA checks.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_cpu_cycles.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M004",
+      "status": "PASS",
+      "details": "VALID request/response ownership and independent transaction counts; no retirement before completion.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_front.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M005",
+      "status": "PASS",
+      "details": "Fixed5/10/20 latency plus recorded LFSR seeds and independent request delay controls.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_front.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M006",
+      "status": "PASS",
+      "details": "READY/VALID payload stability under request and response backpressure; waveform and actual failure controls.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_front.json",
+        "reports/C4_fabric.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M007",
+      "status": "PASS",
+      "details": "Arm IHI0022H A3 handshake/dependency rules checked; Xbar READY dependency fixed with registered AR buffering and dedicated rejecting mutant.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-M008",
+      "status": "PASS",
+      "details": "Five-channel Lite adapters, independent AW/W, stalled responses, read-only IFU; RT-Thread is a separate prerequisite-dependent C5 integration.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_regression.json",
+        "reports/C4_rtl_units.json",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-M009",
+      "status": "PASS",
+      "details": "Owner locked to response completion;64 contended grants in sustained two-master demand, wrong-route/data/fixed-priority mutants rejected.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_fabric.json"
+      ]
+    },
+    {
+      "id": "C4-M010",
+      "status": "PASS_EVALUATION_WITH_DECLARED_LIMITS",
+      "details": "CPU+adapters+arbiter synthesis and complete train cycles; external DPI RAM excluded from area. Explicit IO STA and unqualified Nangate transition results retained.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_performance.json",
+        "reports/C4_nangate.json",
+        "reports/C4_mapped_timing.json"
+      ]
+    },
+    {
+      "id": "C4-M011",
+      "status": "PASS",
+      "details": "RTL UART prints exactly once per accepted strobed write; Xbar boundaries, errors, reset and concurrent AR/AW/W tested.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_rtl_units.json",
+        "reports/C4_fabric.json",
+        "reports/C4_regression.json"
+      ]
+    },
+    {
+      "id": "C4-M012",
+      "status": "PASS",
+      "details": "RTL64-bit mtime low-read high-latch rollover tested; actual AM conversion, measured calibration and default-driver1/2/3-second output.",
+      "evidence": [
+        "C/C4/NOTES.md",
+        "reports/C4_rtl_units.json",
+        "reports/C4_clock_calibration.json"
+      ]
+    },
+    {
+      "id": "C5-M004",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_boot.json"
+      ],
+      "details": "Actual first MROM instruction, compiled char-test and newline-free real UART FIFO output with buffering controls; initial scoped DiffTest disable declared."
+    },
+    {
+      "id": "C5-M005",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_boot.json"
+      ],
+      "details": "Actual first MROM instruction, compiled char-test and newline-free real UART FIFO output with buffering controls; initial scoped DiffTest disable declared."
+    },
+    {
+      "id": "C5-M006",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_boot.json"
+      ],
+      "details": "Actual first MROM instruction, compiled char-test and newline-free real UART FIFO output with buffering controls; initial scoped DiffTest disable declared."
+    },
+    {
+      "id": "C5-M007",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_ram.json",
+        "reports/C5_diff.json"
+      ],
+      "details": "New AM, real MROM/SRAM DiffTest without range skipping, complete bounded heap memory test and data/bootstrap controls."
+    },
+    {
+      "id": "C5-M008",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_ram.json",
+        "reports/C5_diff.json"
+      ],
+      "details": "New AM, real MROM/SRAM DiffTest without range skipping, complete bounded heap memory test and data/bootstrap controls."
+    },
+    {
+      "id": "C5-M009",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_ram.json",
+        "reports/C5_diff.json"
+      ],
+      "details": "New AM, real MROM/SRAM DiffTest without range skipping, complete bounded heap memory test and data/bootstrap controls."
+    },
+    {
+      "id": "C5-M003",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_axi_interface.json",
+        "reports/C5_boot.json",
+        "reports/C5_diff.json"
+      ],
+      "details": "Exact public CPU interface, full AXI4 single-beat master, internal CLINT and real SoC path; malformed-response and wrong-master controls."
+    },
+    {
+      "id": "C5-M010",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_cpu_tests.json",
+        "reports/C5_ram.json"
+      ],
+      "details": "Data LMA/VMA, poisoned .data/.bss omission controls and all34 required original CPU programs passed on actual MROM/SRAM SoC."
+    },
+    {
+      "id": "C5-M011",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_uart.json"
+      ],
+      "details": "Actual original hello length experiments, FIFO saturation evidence, manual-based divisor/readback and complete polled output including binary bytes."
+    },
+    {
+      "id": "C5-M012",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_uart.json"
+      ],
+      "details": "Actual original hello length experiments, FIFO saturation evidence, manual-based divisor/readback and complete polled output including binary bytes."
+    },
+    {
+      "id": "C5-M013",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_uart.json"
+      ],
+      "details": "Actual original hello length experiments, FIFO saturation evidence, manual-based divisor/readback and complete polled output including binary bytes."
+    },
+    {
+      "id": "C5-M014",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_uart.json"
+      ],
+      "details": "Actual original hello length experiments, FIFO saturation evidence, manual-based divisor/readback and complete polled output including binary bytes."
+    },
+    {
+      "id": "C5-M016",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_spi.json"
+      ],
+      "details": "Actual separately scoped fast lookup, exhaustive bitrev over SPI slave7, and serial flash reads through slave0 with captured command/address/data bits."
+    },
+    {
+      "id": "C5-M017",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_spi.json"
+      ],
+      "details": "Actual separately scoped fast lookup, exhaustive bitrev over SPI slave7, and serial flash reads through slave0 with captured command/address/data bits."
+    },
+    {
+      "id": "C5-M018",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_spi.json"
+      ],
+      "details": "Actual separately scoped fast lookup, exhaustive bitrev over SPI slave7, and serial flash reads through slave0 with captured command/address/data bits."
+    },
+    {
+      "id": "C5-M019",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_xip.json"
+      ],
+      "details": "Actual serial loader, verified SRAM execution, real XIP FSM and direct flash execution; errors and corrupted data rejected."
+    },
+    {
+      "id": "C5-M020",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_xip.json"
+      ],
+      "details": "Actual serial loader, verified SRAM execution, real XIP FSM and direct flash execution; errors and corrupted data rejected."
+    },
+    {
+      "id": "C5-M021",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_xip.json"
+      ],
+      "details": "Actual serial loader, verified SRAM execution, real XIP FSM and direct flash execution; errors and corrupted data rejected."
+    },
+    {
+      "id": "C5-M022",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_flash_boot.json"
+      ],
+      "details": "Real Flash reset/XIP boot, original hello, larger printf/CoreMark and MicroBench with explicit SRAM heap exclusions."
+    },
+    {
+      "id": "C5-M015",
+      "status": "PASS",
+      "details": "Source-grounded Flash array/window mapping, SPI03h sequence and explicit FAST_FLASH versus serial path explanation; real validated profiles linked.",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_spi.json",
+        "reports/C5_xip.json"
+      ]
+    },
+    {
+      "id": "C5-M023",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_csr.json",
+        "C/C5/project_config.json"
+      ],
+      "details": "Actual project-only IDs read and printed before main; CSR operations and real ECALL/MRET prerequisites verified against independent NEMU and program checks."
+    },
+    {
+      "id": "C5-M024",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_psram_model.json",
+        "reports/C5_psram_controller.json",
+        "reports/C5_psram_small.json"
+      ],
+      "details": "Pin-level IS66 model and preserved/adapted Efabless SPI/QPI controllers, exhaustive4KiB CPU memory patterns, warm-reset/mask controls and fasterQPI using identical software."
+    },
+    {
+      "id": "C5-M025",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_psram_model.json",
+        "reports/C5_psram_controller.json",
+        "reports/C5_psram_small.json"
+      ],
+      "details": "Pin-level IS66 model and preserved/adapted Efabless SPI/QPI controllers, exhaustive4KiB CPU memory patterns, warm-reset/mask controls and fasterQPI using identical software."
+    },
+    {
+      "id": "C5-M026",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_psram_apps.json"
+      ],
+      "details": "All10 original microbench test cases run on full-capacity PSRAM data/heap; no insufficient-memory exclusions."
+    },
+    {
+      "id": "C5-M027",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_psram_sweep.json"
+      ],
+      "details": "Real SRAM code/rodata, actual entire4MiB PSRAM read/write at every requested width/pattern, exact unique-byte and operation counts with NEMU."
+    },
+    {
+      "id": "C5-M029",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_rtthread.json",
+        "reports/C5_context.json"
+      ],
+      "details": "Real PSRAM RT-Thread with CTE context switches, original10 scripted shell commands, distinct per-thread stacks/args and return-to-exit checks. Independent NEMU checks every non-MMIO instruction."
+    },
+    {
+      "id": "C5-M030",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_loader.json"
+      ],
+      "details": "Real FlashFSBL toSRAMSSBL toPSRAM execution, complete data/rodata/BSS initialization, faster measured loading, and missing-SSBL copy negative."
+    },
+    {
+      "id": "C5-M028",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_psram_apps.json"
+      ],
+      "details": "Flash bootloader copies MicroBench text/rodata/data intoPSRAM, SRAM stack retained. All10 test cases pass; measured fewer cycles than Flash-XIP execution."
+    },
+    {
+      "id": "C5-M031",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_sdram_model.json",
+        "reports/C5_sdram_controller.json",
+        "reports/C5_sdram_sweep.json"
+      ],
+      "details": "Original16-bit controller and model pass4KiB actualCPU allwidth/address/inverse tests with NEMU; independent four-state CL/burst/mask controls."
+    },
+    {
+      "id": "C5-M032",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_sdram_sweep.json"
+      ],
+      "details": "Entire32MiB actualSDRAM chip read/write, allrequested widths/patterns, unique-byte and operation counts checked, actualhighestchipaddress observed."
+    },
+    {
+      "id": "C5-M034",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_sdram_apps.json",
+        "reports/C5_sdram_controller.json",
+        "reports/C5_sdram_sweep.json",
+        "C/C5/sdram_wiring.py"
+      ],
+      "details": "Actualtwo-chip32-bit controller, byte masks andbothlanes validated; width edits are generated reproducibly. Same-firmware MicroBench cycle comparison recorded."
+    },
+    {
+      "id": "C5-M033",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_sdram_apps.json",
+        "reports/C5_rtthread_sdram32.json"
+      ],
+      "details": "MicroBench all10originaltestcases andrealRT-Thread runfromSDRAM afteractualFSBL/SSBL, withfullnon-MMIONEMUchecking; RTshellcommands andthreadcreation/yield/return checks pass."
+    },
+    {
+      "id": "C5-M036",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_gpio.json"
+      ],
+      "details": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program. Visual review: Four native captures show 26070001, FFFF switches remaining locked, A55A unlocking, a walking LED and final A55A LEDs; UART text agrees with the program."
+    },
+    {
+      "id": "C5-M037",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_gpio.json"
+      ],
+      "details": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program. Visual review: Four native captures show 26070001, FFFF switches remaining locked, A55A unlocking, a walking LED and final A55A LEDs; UART text agrees with the program."
+    },
+    {
+      "id": "C5-M038",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_gpio.json"
+      ],
+      "details": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program. Visual review: Four native captures show 26070001, FFFF switches remaining locked, A55A unlocking, a walking LED and final A55A LEDs; UART text agrees with the program."
+    },
+    {
+      "id": "C5-M039",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_gpio.json"
+      ],
+      "details": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program. Visual review: Four native captures show 26070001, FFFF switches remaining locked, A55A unlocking, a walking LED and final A55A LEDs; UART text agrees with the program."
+    },
+    {
+      "id": "C5-M040",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_keyboard.json"
+      ],
+      "details": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program. Visual review: Native UART pane shows Z,a,0,?,newline and matching byte values; A,ESCAPE,PAGEUP each show DOWN and UP. Input was delivered through the UART and PS2 pins."
+    },
+    {
+      "id": "C5-M042",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_keyboard.json"
+      ],
+      "details": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program. Visual review: Native UART pane shows Z,a,0,?,newline and matching byte values; A,ESCAPE,PAGEUP each show DOWN and UP. Input was delivered through the UART and PS2 pins."
+    },
+    {
+      "id": "C5-M044",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_video.json"
+      ],
+      "details": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program. Visual review: Two native VGA captures show a complete colored spiral pattern with changed colors; UART reports1384ms/FPS4 then2710ms/FPS3, establishing repeated application redraws."
+    },
+    {
+      "id": "C5-M043",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_vga_prerequisite.json",
+        "reports/E4_units.json",
+        "reports/E4_gui.json",
+        "reports/E4_visual_check.json",
+        "reports/C5_io_units.json"
+      ],
+      "details": "ReusedcompletedNJU08 static/MIF/elastic-motion engineeringwithrecordedhashes; C5 timing/blanking explanation andnewwhole-framepin/driverchecks. No physicalFPGAclaim."
+    },
+    {
+      "id": "C5-M045",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_typing.json",
+        "reports/C5_gui_fceux.json"
+      ],
+      "details": "RealNVBoard typing-game hit andFCEUX CC0ROM controller changes through actualPS2/VGA pins; nativecaptures inspected and bothgames exit through their Escape paths."
+    },
+    {
+      "id": "C5-M041",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_rtthread.json"
+      ],
+      "details": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program. Visual review: Nativecaptures showbootcommands, typedinvalidcommand recoveryandcontexttest, blueNEScheckerboardchangingorangeonJ, thenreturnedShellwithHelloandall10MicroBenchcases; allapplicationexits0."
+    },
+    {
+      "id": "C5-M046",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_gui_rtthread.json"
+      ],
+      "details": "Real upstream NVBoard on a privateXvfb display, X11mouse/key events, actual fullSoC pins, independentUARTdecoders, per-instructionNEMU. ControlledGUIclose is explicitly a bounded observation, not completion of an infinite program. Visual review: Nativecaptures showbootcommands, typedinvalidcommand recoveryandcontexttest, blueNEScheckerboardchangingorangeonJ, thenreturnedShellwithHelloandall10MicroBenchcases; allapplicationexits0."
+    },
+    {
+      "id": "C5-M047",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_chiplink.json",
+        "reports/C5_chiplink_generation.json"
+      ],
+      "details": "RealupstreamChipLink enabledandgenerated, bidirectionalpinwords andfar-endRAMactivity observed; all4KiBwidth/patternchecks plusfarRAMread-bitmutation detected. Reset16cycles."
+    },
+    {
+      "id": "C5-O007",
+      "status": "PASS",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_spi_shared.json"
+      ],
+      "details": "ActualXIP/manualSPIsharing conflict reproducedaswrongSPIcommand00h withmodelassertion; SRAMrelocationpasses."
+    },
+    {
+      "id": "C5-O001",
+      "status": "PASS",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C4_AUDIT.json"
+      ],
+      "details": "Actual C4 UART/CLINT runtime evidence reused for the C5 bus prerequisite."
+    },
+    {
+      "id": "C5-R001",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_source_lock.json"
+      ],
+      "details": "Devicewindows andphysicalcapacities scoped to the pinnedcompleteSoC; futuretapeoutallocation not asserted."
+    },
+    {
+      "id": "C5-O002",
+      "status": "PASS",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_ram.json"
+      ],
+      "details": "Originalfib writesROM andfails; SRAMdata/BSSplacement andpoisonedcopy/zero controls retained."
+    },
+    {
+      "id": "C5-O003",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_xip.json"
+      ],
+      "details": "ReturnedAXIerrors causeexplicitNPCfaultstop. Fullarchitecturalaccess-fault traps/allunmappedresponses are not implemented or asserted."
+    },
+    {
+      "id": "C5-O004",
+      "status": "PASS",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_psram_sweep.json",
+        "reports/C5_loader.json",
+        "C/C5/am/ysyxsoc.mk"
+      ],
+      "details": "ActualELFsymbols:printfabsentfromfullPSRAMmemtest,presentinloaderpayload; archiveextraction/sectionGC/KEEP explained."
+    },
+    {
+      "id": "C5-O005",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "C/C5/NOTES.md"
+      ],
+      "details": "Eightwidth/patternpasses do not establish allfaultmodels,retention,electricalrefreshorMBISTcoverage. Noextra memorytesttoolclaim."
+    },
+    {
+      "id": "C5-O006",
+      "status": "PASS",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_flash_boot.json",
+        "reports/C5_psram_apps.json"
+      ],
+      "details": "OnefunctionalCoreMarkiteration retainsalgorithms/CRC; not aqualifiedCoreMarkscore. Memoryplacementimprovementmeasuredseparately."
+    },
+    {
+      "id": "C5-O008",
+      "status": "OPTIONAL_NOT_IMPLEMENTED",
+      "evidence": [
+        "C/C5/NOTES.md"
+      ],
+      "details": "SPIinterruptcompletion-queryvariant is optional andnot implemented. CurrentXIPusespolling; noenergysavingclaim."
+    },
+    {
+      "id": "C5-O009",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "C/C5/NOTES.md"
+      ],
+      "details": "Logicalbank/row/column modeling; internalDRAMsubarraysandpaperperformance notmodeled."
+    },
+    {
+      "id": "C5-R002",
+      "status": "PASS",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_nvboard_setup.json",
+        "reports/C5_gui_gpio.json",
+        "reports/C5_gui_keyboard.json"
+      ],
+      "details": "LockedNVBoard1.0code actuallytransmits/receivesUART; nofloatinggitpull duringacceptance."
+    },
+    {
+      "id": "C5-R003",
+      "status": "PASS",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_gui_keyboard.json"
+      ],
+      "details": "Updatedam-tests uses(char)-1 sentinel; actualUARTandPS2input includingEscape/PageUp passed."
+    },
+    {
+      "id": "C5-R004",
+      "status": "PASS",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_rtthread_interactive_setup.json",
+        "reports/C5_gui_rtthread.json"
+      ],
+      "details": "PrivateRTconfiguration regenerated; pollingUARTinput, invalidcommand recovery andsubsequentcommands actuallyverified."
+    },
+    {
+      "id": "C5-O010",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "C/C5/NOTES.md"
+      ],
+      "details": "Frame1,228,800B;60Hz73.728MB/s;50MHzquadPSRAMraw25MB/s. VGAneedsDMA/arbiter/FIFOandbandwidthbudget to useexternalmemory; notimplemented."
+    },
+    {
+      "id": "C5-R005",
+      "status": "PASS",
+      "evidence": [
+        "C/C5/NOTES.md",
+        "reports/C5_gui_rtthread.json",
+        "reports/C5_gui_rtbench.json",
+        "reports/C5_gui_rtguard.json"
+      ],
+      "details": "ActualRTAMapp integration andreturn-to-shell/relaunch; typedFCEUX,Helloandall10MicroBenchsubtests withheapownership/guardcontrols."
+    },
+    {
+      "id": "C5-M035",
+      "status": "PASS",
+      "evidence": [
+        "reports/C5_sdram_full_parallel.json",
+        "reports/C5_parallel_sdram_pilot.json",
+        "reports/C5_sdram_controller.json"
+      ],
+      "details": "Eight independently reset full128MiB address/inverse patterns, all8/16/32/64-bit widths. Each pattern writes and reads the entire address range with NEMU, all4chip highest addresses and exact pin byte counts. Original assembly bodies reused; serial/parallel equivalence and corruption controls accepted."
+    }
+  ]
+}

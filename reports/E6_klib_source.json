@@ -1,0 +1,6 @@
+{
+  "source": "/workspace/YSYX_F_B_Archive/assets/offline/ysyx.oscc.cc/slides/resources/archive/klib-minirv-npc.tar.bz2",
+  "sha256": "969ad86132bf075267555e94630f1f96a9cd257921aeb6f7e7c9eea40cd75135",
+  "library_sha256": "fa3380ecca1b3e5fa4c129617b0a6d07102e1966e9c77e49d21947572ef218ec",
+  "policy": "Official precompiled library explicitly supplied by E6; original source archive preserved."
+}

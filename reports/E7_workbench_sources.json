@@ -1,0 +1,105 @@
+{
+  "status": "COPIED_NOT_YET_VALIDATED",
+  "repositories": [
+    {
+      "repository": "abstract-machine",
+      "source": "/home/USER/e-stage/workbench/abstract-machine",
+      "destination": "/home/USER/e-stage/workbench-e7/abstract-machine",
+      "source_marker": {
+        "name": "NJU-ProjectN__abstract-machine__ics2026",
+        "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\NJU-ProjectN__abstract-machine__ics2026",
+        "commit": "9bc0a93c52c928a6de970f39a507be94cfb63a9f",
+        "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\NJU-ProjectN__abstract-machine__ics2026.tar.gz",
+        "sha256": "327bef8046f75a0788c2e576bd5ba9d6d80d5d449b6fcc8f5c76c9dfcb7f30bb",
+        "submodules_verified_in_original_archive": [],
+        "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+      }
+    },
+    {
+      "repository": "am-kernels",
+      "source": "/home/USER/e-stage/workbench/am-kernels",
+      "destination": "/home/USER/e-stage/workbench-e7/am-kernels",
+      "source_marker": {
+        "name": "NJU-ProjectN__am-kernels__ics2026",
+        "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\NJU-ProjectN__am-kernels__ics2026",
+        "commit": "9c433f7cf4b4e05d09543bf7e269b23502d1b2b6",
+        "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\NJU-ProjectN__am-kernels__ics2026.tar.gz",
+        "sha256": "3da7cc23e8b39329feb3540f5bb43e542dbbdb78a74722fc6df5f8ddb1e8cc89",
+        "submodules_verified_in_original_archive": [],
+        "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+      }
+    },
+    {
+      "repository": "riscv-tests",
+      "source": "/home/USER/e-stage/workbench/riscv-tests",
+      "destination": "/home/USER/e-stage/workbench-e7/riscv-tests",
+      "source_marker": {
+        "name": "NJU-ProjectN__riscv-tests-am__master",
+        "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\NJU-ProjectN__riscv-tests-am__master",
+        "commit": "676cbc7a4e520fca1c3d4dd1b586b2550769e02e",
+        "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\NJU-ProjectN__riscv-tests-am__master.tar.gz",
+        "sha256": "9398fc2a15603a39f1d788735fb2196cb5271b511c1d921401028483e3da7f27",
+        "submodules_verified_in_original_archive": [],
+        "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+      }
+    },
+    {
+      "repository": "archbench",
+      "source": "/home/USER/e-stage/workbench/archbench",
+      "destination": "/home/USER/e-stage/workbench-e7/archbench",
+      "source_marker": {
+        "name": "OSCPU__archbench__main",
+        "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__archbench__main",
+        "commit": "52034e3c65e973cab0af7d2e6e614e6d4470cf86",
+        "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\OSCPU__archbench__main.tar.gz",
+        "sha256": "26f86c119c74a77484b561026e81f6400738f45beae7e65612527130c7cb0b94",
+        "submodules_verified_in_original_archive": [],
+        "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+      }
+    },
+    {
+      "repository": "ysyxSoC",
+      "source": "/home/USER/e-stage/workbench/ysyxSoC",
+      "destination": "/home/USER/e-stage/workbench-e7/ysyxSoC",
+      "source_marker": {
+        "name": "OSCPU__ysyxSoC__2607",
+        "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607",
+        "commit": "1ab27ff3c1fd72776249d51631285a5ad72d9fe4",
+        "archive": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e_stage\\sources\\OSCPU__ysyxSoC__2607.tar.gz",
+        "sha256": "c7e3b474f0e163415a42babb46fe696c9351f924c6004738b6489ca880378f0f",
+        "submodules_verified_in_original_archive": [
+          {
+            "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip",
+            "commit": "d0c6b50fdefcdbe121e9788433ea51f7efaf1d32"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\cde",
+            "commit": "52768c97a27b254c0cc0ac9401feb55b29e18c28"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\chisel",
+            "commit": "e3bcc90db37f1aec9f8048813f4f0666098d9bee"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\diplomacy",
+            "commit": "edf375300d99a4c260a214d7c1553de0040771d7"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\hardfloat",
+            "commit": "d93aa570806013dea479a92ba9bb33d1f2d4f69f"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\hardfloat\\berkeley-softfloat-3",
+            "commit": "5c06db33fc1e2130f67c045327b0ec949032df1d"
+          },
+          {
+            "path": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\repos\\OSCPU__ysyxSoC__2607\\rocket-chip\\dependencies\\hardfloat\\berkeley-testfloat-3",
+            "commit": "06b20075dd3c1a5d0dd007a93643282832221612"
+          }
+        ],
+        "runtime_copy_scope": "Git top-level source snapshot; complete original source including listed submodules remains immutable in the archive. Supplied generated SoC RTL does not require regenerating Chisel."
+      }
+    }
+  ],
+  "policy": "Separate E7 workbench prevents its UART/CSR/SoC patches from changing E6 performance runs. Original downloaded archives and E6 workbench remain intact."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_FREESTANDING_ONLY",
+  "overlay": "/workspace/projects/ysyx_f_to_b/D/D5/toolchain/gnu/stubs-ilp32.h",
+  "sha256": "5348ee12541421d8b6e096af8078d40464726668f9a57ffdfe608af3ed3b052f",
+  "flags": [
+    "-ffreestanding",
+    "-march=rv32im",
+    "-mabi=ilp32"
+  ],
+  "system_headers_changed": false,
+  "not_provided": "Hosted 32-bit RISC-V glibc ABI; these images are statically linked against AM/owned klib with the bare-metal linker."
+}

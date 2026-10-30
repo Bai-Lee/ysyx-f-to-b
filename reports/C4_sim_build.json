@@ -1,0 +1,621 @@
+{
+  "status": "BUILT_NOT_YET_QUALIFIED",
+  "variants": [
+    {
+      "tag": "mode1",
+      "mode": 1,
+      "mutant": false,
+      "executable": "/home/USER/c-stage/c4/build/mode1/sim",
+      "sha256": "11a0e66d61506895deb5fa814cd81cefd3b57f60bf12cddadd397d904ca7fe3b",
+      "inputs": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_xbar3.sv",
+          "sha256": "ec0dddc7f11c7153bd87dfade0d078fcb36253c62a2245789ba7792b50233784"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/bus_backend.hpp",
+          "sha256": "95aebc4be89c98898d7e65a9b15ae1b02a4f1bc0a9cb11071e85a7f0c23e0909"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/c4_sim.sv",
+          "sha256": "55c9576b2aecd9d8ee8c35c3f11aa55daca5f73a35422c4b5e56c899579ed312"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/memory.hpp",
+          "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/runner.cpp",
+          "sha256": "dd256dddbcd18e0ea1123e69864721576ea4abc97bf54a5600a3503244bbf7c9"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/debug_core.o",
+          "sha256": "455008d591c73af0134bc7291f131cfed3b16c054eef613a820aa7f4db25b6ec"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/trace_core.o",
+          "sha256": "d49857e4e069b1f8f96d2ed30767c4afffc66189d54afa9562b187e01f07a923"
+        },
+        {
+          "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+          "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+        }
+      ]
+    },
+    {
+      "tag": "mode2",
+      "mode": 2,
+      "mutant": false,
+      "executable": "/home/USER/c-stage/c4/build/mode2/sim",
+      "sha256": "f93c7c9ed1bc31f3f3b903f760267202f541ca73acefd11a9e96168ede0a55b6",
+      "inputs": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_xbar3.sv",
+          "sha256": "ec0dddc7f11c7153bd87dfade0d078fcb36253c62a2245789ba7792b50233784"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/bus_backend.hpp",
+          "sha256": "95aebc4be89c98898d7e65a9b15ae1b02a4f1bc0a9cb11071e85a7f0c23e0909"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/c4_sim.sv",
+          "sha256": "55c9576b2aecd9d8ee8c35c3f11aa55daca5f73a35422c4b5e56c899579ed312"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/memory.hpp",
+          "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/runner.cpp",
+          "sha256": "dd256dddbcd18e0ea1123e69864721576ea4abc97bf54a5600a3503244bbf7c9"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/debug_core.o",
+          "sha256": "455008d591c73af0134bc7291f131cfed3b16c054eef613a820aa7f4db25b6ec"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/trace_core.o",
+          "sha256": "d49857e4e069b1f8f96d2ed30767c4afffc66189d54afa9562b187e01f07a923"
+        },
+        {
+          "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+          "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+        }
+      ]
+    },
+    {
+      "tag": "mode3",
+      "mode": 3,
+      "mutant": false,
+      "executable": "/home/USER/c-stage/c4/build/mode3/sim",
+      "sha256": "77cc91f396e8ed222655c5870f5e87f411fcacf83cb8ea4267f2f8698cf79dcc",
+      "inputs": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_xbar3.sv",
+          "sha256": "ec0dddc7f11c7153bd87dfade0d078fcb36253c62a2245789ba7792b50233784"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/bus_backend.hpp",
+          "sha256": "95aebc4be89c98898d7e65a9b15ae1b02a4f1bc0a9cb11071e85a7f0c23e0909"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/c4_sim.sv",
+          "sha256": "55c9576b2aecd9d8ee8c35c3f11aa55daca5f73a35422c4b5e56c899579ed312"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/memory.hpp",
+          "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/runner.cpp",
+          "sha256": "dd256dddbcd18e0ea1123e69864721576ea4abc97bf54a5600a3503244bbf7c9"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/debug_core.o",
+          "sha256": "455008d591c73af0134bc7291f131cfed3b16c054eef613a820aa7f4db25b6ec"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/trace_core.o",
+          "sha256": "d49857e4e069b1f8f96d2ed30767c4afffc66189d54afa9562b187e01f07a923"
+        },
+        {
+          "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+          "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+        }
+      ]
+    },
+    {
+      "tag": "mode4",
+      "mode": 4,
+      "mutant": false,
+      "executable": "/home/USER/c-stage/c4/build/mode4/sim",
+      "sha256": "42cd5bbc102cdfa1c5edc6562054871c94f65b8cc6e1a4e617b558e01e54142e",
+      "inputs": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_xbar3.sv",
+          "sha256": "ec0dddc7f11c7153bd87dfade0d078fcb36253c62a2245789ba7792b50233784"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/bus_backend.hpp",
+          "sha256": "95aebc4be89c98898d7e65a9b15ae1b02a4f1bc0a9cb11071e85a7f0c23e0909"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/c4_sim.sv",
+          "sha256": "55c9576b2aecd9d8ee8c35c3f11aa55daca5f73a35422c4b5e56c899579ed312"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/memory.hpp",
+          "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/runner.cpp",
+          "sha256": "dd256dddbcd18e0ea1123e69864721576ea4abc97bf54a5600a3503244bbf7c9"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/debug_core.o",
+          "sha256": "455008d591c73af0134bc7291f131cfed3b16c054eef613a820aa7f4db25b6ec"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/trace_core.o",
+          "sha256": "d49857e4e069b1f8f96d2ed30767c4afffc66189d54afa9562b187e01f07a923"
+        },
+        {
+          "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+          "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+        }
+      ]
+    },
+    {
+      "tag": "mode5",
+      "mode": 5,
+      "mutant": false,
+      "executable": "/home/USER/c-stage/c4/build/mode5/sim",
+      "sha256": "cbe8612831dfdb73e07c1a1830075c87b0355daba8f0a11b6c9f8a9a9c54103c",
+      "inputs": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_xbar3.sv",
+          "sha256": "ec0dddc7f11c7153bd87dfade0d078fcb36253c62a2245789ba7792b50233784"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/bus_backend.hpp",
+          "sha256": "95aebc4be89c98898d7e65a9b15ae1b02a4f1bc0a9cb11071e85a7f0c23e0909"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/c4_sim.sv",
+          "sha256": "55c9576b2aecd9d8ee8c35c3f11aa55daca5f73a35422c4b5e56c899579ed312"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/memory.hpp",
+          "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/runner.cpp",
+          "sha256": "dd256dddbcd18e0ea1123e69864721576ea4abc97bf54a5600a3503244bbf7c9"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/debug_core.o",
+          "sha256": "455008d591c73af0134bc7291f131cfed3b16c054eef613a820aa7f4db25b6ec"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/trace_core.o",
+          "sha256": "d49857e4e069b1f8f96d2ed30767c4afffc66189d54afa9562b187e01f07a923"
+        },
+        {
+          "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+          "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+        }
+      ]
+    },
+    {
+      "tag": "mode4-mutant",
+      "mode": 4,
+      "mutant": true,
+      "executable": "/home/USER/c-stage/c4/build/mode4-mutant/sim",
+      "sha256": "92979adf43c596e82ca5b9b0e7772575e17b0c853201aede03d2b15b1c286d68",
+      "inputs": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_xbar3.sv",
+          "sha256": "ec0dddc7f11c7153bd87dfade0d078fcb36253c62a2245789ba7792b50233784"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/bus_backend.hpp",
+          "sha256": "95aebc4be89c98898d7e65a9b15ae1b02a4f1bc0a9cb11071e85a7f0c23e0909"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/c4_sim.sv",
+          "sha256": "55c9576b2aecd9d8ee8c35c3f11aa55daca5f73a35422c4b5e56c899579ed312"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/memory.hpp",
+          "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/runner.cpp",
+          "sha256": "dd256dddbcd18e0ea1123e69864721576ea4abc97bf54a5600a3503244bbf7c9"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/debug_core.o",
+          "sha256": "455008d591c73af0134bc7291f131cfed3b16c054eef613a820aa7f4db25b6ec"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/trace_core.o",
+          "sha256": "d49857e4e069b1f8f96d2ed30767c4afffc66189d54afa9562b187e01f07a923"
+        },
+        {
+          "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+          "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+        }
+      ]
+    },
+    {
+      "tag": "mode6",
+      "mode": 6,
+      "mutant": false,
+      "executable": "/home/USER/c-stage/c4/build/mode6/sim",
+      "sha256": "43e798957e67dfa11e659ff4da6da130084f098de30564d9546c9353731dc42a",
+      "inputs": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_xbar3.sv",
+          "sha256": "5f4c7a6fdefa836c53263a6aec8c52e5beeb8ba9f0658736df8fa2b726920769"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/bus_backend.hpp",
+          "sha256": "95aebc4be89c98898d7e65a9b15ae1b02a4f1bc0a9cb11071e85a7f0c23e0909"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/c4_sim.sv",
+          "sha256": "55c9576b2aecd9d8ee8c35c3f11aa55daca5f73a35422c4b5e56c899579ed312"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/memory.hpp",
+          "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/runner.cpp",
+          "sha256": "dd256dddbcd18e0ea1123e69864721576ea4abc97bf54a5600a3503244bbf7c9"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/debug_core.o",
+          "sha256": "455008d591c73af0134bc7291f131cfed3b16c054eef613a820aa7f4db25b6ec"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/trace_core.o",
+          "sha256": "d49857e4e069b1f8f96d2ed30767c4afffc66189d54afa9562b187e01f07a923"
+        },
+        {
+          "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+          "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+        }
+      ]
+    },
+    {
+      "tag": "mode6-mutant",
+      "mode": 6,
+      "mutant": true,
+      "executable": "/home/USER/c-stage/c4/build/mode6-mutant/sim",
+      "sha256": "8f2f694e66b118f8c87dfb08f6ecd95ac632f13a7d51f8d3ffafce2bcf350622",
+      "inputs": [
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_arbiter2.sv",
+          "sha256": "6b03796ce9945080fd28111e58d4a14bbbdf6737fc88ecb3366e529999f1673e"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_clint.sv",
+          "sha256": "454a3411304adc4d7fa20237957730463bf7df3710e94cb21093b262c0c74efc"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_reg_frontend.sv",
+          "sha256": "979b354ea1f8bebb5834fd2095d61ff781eb81d28885354a65a44a401ad3613f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_uart.sv",
+          "sha256": "9ff78f2b05eaaacbe818329d2f07f487872bb1ec5df0e934dd3ba3cb9a80678a"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/axil_xbar3.sv",
+          "sha256": "5f4c7a6fdefa836c53263a6aec8c52e5beeb8ba9f0658736df8fa2b726920769"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_core.sv",
+          "sha256": "d22c9455ab7cdc4621648ca01edeada1d8f296b059281050432f3abcfd95bcf9"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_axi_soc.sv",
+          "sha256": "e7235b5d135f8a42493f140d1e7cef6026290c41ab442641728f2bcc02e877a6"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/c4_simple_core.sv",
+          "sha256": "fcc82795a4ff944c65a8a1c7373afedb89a0c56a62bdb26760fcf549332c551f"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/rv32e_execute.sv",
+          "sha256": "1da6514e265a2c56a4458cc455991ef351ede6eb3ef68b25991cc87f4acd4b01"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/rtl/simple_to_axil.sv",
+          "sha256": "40e273a38d0f3e4d078e85f18ae82f7db80966fbc9c4c4fd4b97f4e3769756f0"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/bus_backend.hpp",
+          "sha256": "95aebc4be89c98898d7e65a9b15ae1b02a4f1bc0a9cb11071e85a7f0c23e0909"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/c4_sim.sv",
+          "sha256": "55c9576b2aecd9d8ee8c35c3f11aa55daca5f73a35422c4b5e56c899579ed312"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/memory.hpp",
+          "sha256": "5d7bb76dbbfde8470aa665afb8c598cf50a91ac0babe73c185133d6b3065eb36"
+        },
+        {
+          "path": "/workspace/projects/ysyx_f_to_b/C/C4/sim/runner.cpp",
+          "sha256": "dd256dddbcd18e0ea1123e69864721576ea4abc97bf54a5600a3503244bbf7c9"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/debug_core.o",
+          "sha256": "455008d591c73af0134bc7291f131cfed3b16c054eef613a820aa7f4db25b6ec"
+        },
+        {
+          "path": "/home/USER/c-stage/c4/build/common/trace_core.o",
+          "sha256": "d49857e4e069b1f8f96d2ed30767c4afffc66189d54afa9562b187e01f07a923"
+        },
+        {
+          "path": "/home/USER/c-stage/workbench/nemu/tools/capstone/repo/libcapstone.so.5",
+          "sha256": "6599efff8b72f1ec33ec580c6769c752225fc5515ac9d18a7cc8ede0eca1c350"
+        }
+      ]
+    }
+  ]
+}

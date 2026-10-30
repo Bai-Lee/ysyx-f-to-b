@@ -1,0 +1,10 @@
+{
+  "status": "PASS_SOURCE_SCOPE_RECONCILED",
+  "stage_complete": true,
+  "core_tasks": 0,
+  "scope_records": 0,
+  "source_status": "UNDER_CONSTRUCTION",
+  "source": "C/C6/sources/C6.md",
+  "sha256": "5d159cecb3ddc62810a4bfffe8ad59684b6e0c72ffe75c3066d9573174bbd1ef",
+  "scope": "Frozen v26.07 C6 contains only the title and under-construction notice. No invented tapeout task; old E physical results do not qualify the current C CPU/SoC."
+}

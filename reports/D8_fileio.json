@@ -1,0 +1,11 @@
+{
+  "status": "PASS_HOST_TESTS_INSTALLED_FOR_TARGET",
+  "source_sha256": "5eb37b6e538f1d81da3a0fe8e9d33f41141d2aec7c4e4edcf65dc96546f28d41",
+  "stdout": "FILEIO_PASS comparisons=531 plus boundaries stream-limit seek write append scanner console\n",
+  "reference": "glibc fmemopen/fread/ftell/feof/fscanf plus independently constructed output bytes",
+  "sanitizers": [
+    "ASAN",
+    "UBSAN"
+  ],
+  "scope": "AM embedded RAM files; 64 named files, 29 nonstandard open streams, 64MiB per writable file, one-MiB formatted output bound. Opaque FILE API only; no POSIX/filesystem/stdio-internals compatibility claim."
+}

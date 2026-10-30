@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "exe": "/home/USER/e4-lab/build/lab_board/lab_board",
+  "sha256": "76acc531844f5b9bf8c51203a1c63f6bb2534e74305bbfda0ed259bd4ec724a2",
+  "nvboard_commit": "b5f49b68a85f4a1a185086cbd6532fff3ecda454",
+  "official_example": "/home/USER/ysyx-workbench/nvboard/example/build/top",
+  "gui_status": "PASS",
+  "gui_evidence": "reports/E4_gui.json"
+}

@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-24T20:00:02.935265+00:00",
+  "fresh_directory": "/home/USER/e3-lab/offline-check-vg327jez",
+  "network_requests": 0,
+  "scope": "Local bundle clone/fsck, plugin source extraction, dotfiles idempotence, fresh Make/C builds, DB positive/corruption controls, linked-list model/Valgrind checks. Installed tools are prerequisites; this is not a full OS image.",
+  "environment": {
+    "user": "ysyx",
+    "uid": 1000,
+    "kernel": "5.10.16.3-microsoft-standard-WSL2",
+    "processors": 4,
+    "mem_total_kib": 1964348,
+    "swap_total_kib": 2097152,
+    "workbench_commit": "a839def3f3b046f730537ea420d3075e725d27ce",
+    "workbench_dirty": false,
+    "lab_ssh_and_http_ports_closed": true
+  },
+  "tools": {
+    "gcc": {
+      "path": "/usr/bin/gcc",
+      "resolved": "/usr/bin/x86_64-linux-gnu-gcc-11",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89"
+    },
+    "make": {
+      "path": "/usr/bin/make",
+      "resolved": "/usr/bin/make",
+      "sha256": "92f646030615cd98490a68a94c0aefd87b552be3158b941c02e43b0bfdb576db"
+    },
+    "gdb": {
+      "path": "/usr/bin/gdb",
+      "resolved": "/usr/bin/gdb",
+      "sha256": "a6222ff0f450ca040e3479c04fdb7d0f1e0cabb099688270e720b7115d933c3d"
+    },
+    "git": {
+      "path": "/usr/bin/git",
+      "resolved": "/usr/bin/git",
+      "sha256": "fd7c9389e200d626b46551835e5233bbde49a6a2326f9ebb85c70ed235861001"
+    },
+    "valgrind": {
+      "path": "/usr/bin/valgrind",
+      "resolved": "/usr/bin/valgrind",
+      "sha256": "4652774bd116cb49951ef74115ad4237cad5021b2bd4d80002f09d986ec438b9"
+    },
+    "vim": {
+      "path": "/usr/bin/vim",
+      "resolved": "/usr/bin/vim.basic",
+      "sha256": "10d5b926e2de43ed026d7c94633cf19bf3cb4c7c56e8af296538645482a0db37"
+    },
+    "tmux": {
+      "path": "/usr/bin/tmux",
+      "resolved": "/usr/bin/tmux",
+      "sha256": "6684c9b0bd4af08461f9e476e0abee9c3f08daa5d55ed6fb7c663c000e09f83d"
+    },
+    "mosh-client": {
+      "path": "/usr/bin/mosh-client",
+      "resolved": "/usr/bin/mosh-client",
+      "sha256": "020e624e97cdcdfcf627555d764cbfc1a27a0844eeb20a29cb54509c60edfda6"
+    },
+    "sshd": {
+      "path": "/usr/sbin/sshd",
+      "resolved": "/usr/sbin/sshd",
+      "sha256": "3551d74a16938504e4199c75ec05a1633700e2bd2dbde9e257cefe31df7c648a"
+    },
+    "curl": {
+      "path": "/usr/bin/curl",
+      "resolved": "/usr/bin/curl",
+      "sha256": "a840b283b477e60986aa576b3eb5aff7a9864787dfc6401961d155cba63ce9d2"
+    },
+    "python3": {
+      "path": "/usr/bin/python3",
+      "resolved": "/usr/bin/python3.10",
+      "sha256": "11dde438e1a636073e79c81d4c2543708cc0a2922e7c42c38b1b588e17545f96"
+    },
+    "xxd": {
+      "path": "/usr/bin/xxd",
+      "resolved": "/usr/bin/xxd",
+      "sha256": "1e1a3e1d14bb2bad7badb3af8f2313b0d85272a1e4483bb6c92373614dc44dd1"
+    },
+    "source_built_valgrind": {
+      "path": "/home/USER/tools/valgrind-3.18.1-source/bin/valgrind",
+      "sha256": "9bbd353ecac5d2168898af32cee52c3c074e27826170bc6a731b8bb46c67e049"
+    }
+  },
+  "packages": [
+    {
+      "package": "curl",
+      "version": "7.81.0-1ubuntu1.20",
+      "architecture": "amd64"
+    },
+    {
+      "package": "gcc",
+      "version": "4:11.2.0-1ubuntu1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "gdb",
+      "version": "12.1-0ubuntu1~22.04.2",
+      "architecture": "amd64"
+    },
+    {
+      "package": "git",
+      "version": "1:2.34.1-1ubuntu1.12",
+      "architecture": "amd64"
+    },
+    {
+      "package": "make",
+      "version": "4.3-4.1build1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "man-db",
+      "version": "2.10.2-1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "manpages-dev",
+      "version": "5.10-1ubuntu1",
+      "architecture": "all"
+    },
+    {
+      "package": "mosh",
+      "version": "1.3.2-2.1ubuntu1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "openssh-server",
+      "version": "1:8.9p1-3ubuntu0.18",
+      "architecture": "amd64"
+    },
+    {
+      "package": "python3",
+      "version": "3.10.6-1~22.04.1",
+      "architecture": "amd64"
+    },
+    {
+      "package": "tmux",
+      "version": "3.2a-4ubuntu0.2",
+      "architecture": "amd64"
+    },
+    {
+      "package": "unzip",
+      "version": "6.0-26ubuntu3.2",
+      "architecture": "amd64"
+    },
+    {
+      "package": "valgrind",
+      "version": "1:3.18.1-1ubuntu2",
+      "architecture": "amd64"
+    },
+    {
+      "package": "vim",
+      "version": "2:8.2.3995-1ubuntu2.23",
+      "architecture": "amd64"
+    },
+    {
+      "package": "wamerican",
+      "version": "2020.12.07-2",
+      "architecture": "all"
+    },
+    {
+      "package": "zip",
+      "version": "3.0-12build2",
+      "architecture": "amd64"
+    }
+  ],
+  "offline_manifest_sha256": "fc5e65fc6b12c6f4844c4a7129ab943eb1c39bb7e6b0f3e89aaa67966cd25e7b"
+}

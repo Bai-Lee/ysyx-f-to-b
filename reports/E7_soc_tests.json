@@ -1,0 +1,374 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "id": "cpu:add",
+      "status": "PASS",
+      "cycles_including_bridge": 1196645
+    },
+    {
+      "id": "cpu:add-longlong",
+      "status": "PASS",
+      "cycles_including_bridge": 2392928
+    },
+    {
+      "id": "cpu:bit",
+      "status": "PASS",
+      "cycles_including_bridge": 560687
+    },
+    {
+      "id": "cpu:bubble-sort",
+      "status": "PASS",
+      "cycles_including_bridge": 6543413
+    },
+    {
+      "id": "cpu:crc32",
+      "status": "PASS",
+      "cycles_including_bridge": 43787905
+    },
+    {
+      "id": "cpu:div",
+      "status": "PASS",
+      "cycles_including_bridge": 57681216
+    },
+    {
+      "id": "cpu:dummy",
+      "status": "PASS",
+      "cycles_including_bridge": 11545
+    },
+    {
+      "id": "cpu:fact",
+      "status": "PASS",
+      "cycles_including_bridge": 4149903
+    },
+    {
+      "id": "cpu:fib",
+      "status": "PASS",
+      "cycles_including_bridge": 663406
+    },
+    {
+      "id": "cpu:goldbach",
+      "status": "PASS",
+      "cycles_including_bridge": 19973803
+    },
+    {
+      "id": "cpu:hello-str",
+      "status": "PASS",
+      "cycles_including_bridge": 2607566
+    },
+    {
+      "id": "cpu:if-else",
+      "status": "PASS",
+      "cycles_including_bridge": 693461
+    },
+    {
+      "id": "cpu:leap-year",
+      "status": "PASS",
+      "cycles_including_bridge": 23777492
+    },
+    {
+      "id": "cpu:load-store",
+      "status": "PASS",
+      "cycles_including_bridge": 673896
+    },
+    {
+      "id": "cpu:matrix-mul",
+      "status": "PASS",
+      "cycles_including_bridge": 356384723
+    },
+    {
+      "id": "cpu:max",
+      "status": "PASS",
+      "cycles_including_bridge": 1676341
+    },
+    {
+      "id": "cpu:mersenne",
+      "status": "PASS",
+      "cycles_including_bridge": 69625068
+    },
+    {
+      "id": "cpu:min3",
+      "status": "PASS",
+      "cycles_including_bridge": 1950222
+    },
+    {
+      "id": "cpu:mov-c",
+      "status": "PASS",
+      "cycles_including_bridge": 63150
+    },
+    {
+      "id": "cpu:movsx",
+      "status": "PASS",
+      "cycles_including_bridge": 100094
+    },
+    {
+      "id": "cpu:mul-longlong",
+      "status": "PASS",
+      "cycles_including_bridge": 16880453
+    },
+    {
+      "id": "cpu:narcissistic",
+      "status": "PASS",
+      "cycles_including_bridge": 376187085
+    },
+    {
+      "id": "cpu:pascal",
+      "status": "PASS",
+      "cycles_including_bridge": 3753912
+    },
+    {
+      "id": "cpu:prime",
+      "status": "PASS",
+      "cycles_including_bridge": 156953567
+    },
+    {
+      "id": "cpu:quick-sort",
+      "status": "PASS",
+      "cycles_including_bridge": 5900548
+    },
+    {
+      "id": "cpu:recursion",
+      "status": "PASS",
+      "cycles_including_bridge": 9017732
+    },
+    {
+      "id": "cpu:select-sort",
+      "status": "PASS",
+      "cycles_including_bridge": 6387635
+    },
+    {
+      "id": "cpu:shift",
+      "status": "PASS",
+      "cycles_including_bridge": 561899
+    },
+    {
+      "id": "cpu:string",
+      "status": "PASS",
+      "cycles_including_bridge": 2435796
+    },
+    {
+      "id": "cpu:sub-longlong",
+      "status": "PASS",
+      "cycles_including_bridge": 2935904
+    },
+    {
+      "id": "cpu:sum",
+      "status": "PASS",
+      "cycles_including_bridge": 702998
+    },
+    {
+      "id": "cpu:switch",
+      "status": "PASS",
+      "cycles_including_bridge": 365757
+    },
+    {
+      "id": "cpu:to-lower-case",
+      "status": "PASS",
+      "cycles_including_bridge": 4528093
+    },
+    {
+      "id": "cpu:unalign",
+      "status": "PASS",
+      "cycles_including_bridge": 135998
+    },
+    {
+      "id": "cpu:wanshu",
+      "status": "PASS",
+      "cycles_including_bridge": 47505251
+    },
+    {
+      "id": "isa:add",
+      "status": "PASS",
+      "cycles_including_bridge": 470807
+    },
+    {
+      "id": "isa:addi",
+      "status": "PASS",
+      "cycles_including_bridge": 258001
+    },
+    {
+      "id": "isa:and",
+      "status": "PASS",
+      "cycles_including_bridge": 598273
+    },
+    {
+      "id": "isa:andi",
+      "status": "PASS",
+      "cycles_including_bridge": 274511
+    },
+    {
+      "id": "isa:auipc",
+      "status": "PASS",
+      "cycles_including_bridge": 37898
+    },
+    {
+      "id": "isa:beq",
+      "status": "PASS",
+      "cycles_including_bridge": 464256
+    },
+    {
+      "id": "isa:bge",
+      "status": "PASS",
+      "cycles_including_bridge": 568652
+    },
+    {
+      "id": "isa:bgeu",
+      "status": "PASS",
+      "cycles_including_bridge": 570552
+    },
+    {
+      "id": "isa:blt",
+      "status": "PASS",
+      "cycles_including_bridge": 506871
+    },
+    {
+      "id": "isa:bltu",
+      "status": "PASS",
+      "cycles_including_bridge": 513429
+    },
+    {
+      "id": "isa:bne",
+      "status": "PASS",
+      "cycles_including_bridge": 464256
+    },
+    {
+      "id": "isa:jal",
+      "status": "PASS",
+      "cycles_including_bridge": 31938
+    },
+    {
+      "id": "isa:jalr",
+      "status": "PASS",
+      "cycles_including_bridge": 80420
+    },
+    {
+      "id": "isa:lb",
+      "status": "PASS",
+      "cycles_including_bridge": 293006
+    },
+    {
+      "id": "isa:lbu",
+      "status": "PASS",
+      "cycles_including_bridge": 263294
+    },
+    {
+      "id": "isa:lh",
+      "status": "PASS",
+      "cycles_including_bridge": 402366
+    },
+    {
+      "id": "isa:lhu",
+      "status": "PASS",
+      "cycles_including_bridge": 280650
+    },
+    {
+      "id": "isa:lui",
+      "status": "PASS",
+      "cycles_including_bridge": 63763
+    },
+    {
+      "id": "isa:lw",
+      "status": "PASS",
+      "cycles_including_bridge": 265574
+    },
+    {
+      "id": "isa:or",
+      "status": "PASS",
+      "cycles_including_bridge": 598501
+    },
+    {
+      "id": "isa:ori",
+      "status": "PASS",
+      "cycles_including_bridge": 275043
+    },
+    {
+      "id": "isa:sb",
+      "status": "PASS",
+      "cycles_including_bridge": 467915
+    },
+    {
+      "id": "isa:sh",
+      "status": "PASS",
+      "cycles_including_bridge": 629492
+    },
+    {
+      "id": "isa:simple",
+      "status": "PASS",
+      "cycles_including_bridge": 14273
+    },
+    {
+      "id": "isa:sll",
+      "status": "PASS",
+      "cycles_including_bridge": 827207
+    },
+    {
+      "id": "isa:slli",
+      "status": "PASS",
+      "cycles_including_bridge": 276535
+    },
+    {
+      "id": "isa:slt",
+      "status": "PASS",
+      "cycles_including_bridge": 804451
+    },
+    {
+      "id": "isa:slti",
+      "status": "PASS",
+      "cycles_including_bridge": 452651
+    },
+    {
+      "id": "isa:sltiu",
+      "status": "PASS",
+      "cycles_including_bridge": 452651
+    },
+    {
+      "id": "isa:sltu",
+      "status": "PASS",
+      "cycles_including_bridge": 804451
+    },
+    {
+      "id": "isa:sra",
+      "status": "PASS",
+      "cycles_including_bridge": 866551
+    },
+    {
+      "id": "isa:srai",
+      "status": "PASS",
+      "cycles_including_bridge": 409785
+    },
+    {
+      "id": "isa:srl",
+      "status": "PASS",
+      "cycles_including_bridge": 853099
+    },
+    {
+      "id": "isa:srli",
+      "status": "PASS",
+      "cycles_including_bridge": 402489
+    },
+    {
+      "id": "isa:sub",
+      "status": "PASS",
+      "cycles_including_bridge": 608109
+    },
+    {
+      "id": "isa:sw",
+      "status": "PASS",
+      "cycles_including_bridge": 426234
+    },
+    {
+      "id": "isa:xor",
+      "status": "PASS",
+      "cycles_including_bridge": 598425
+    },
+    {
+      "id": "isa:xori",
+      "status": "PASS",
+      "cycles_including_bridge": 275195
+    }
+  ],
+  "riscv_count": 38,
+  "cpu_count": 35,
+  "negative": "Wrong-onlybatch producedBAD_TRAPandtop-levelmakenonzero",
+  "batching": "OnefullrealSoCbootexecutesall73originaltestbodies. Onlysymbolnamesandassemblyhaltdispatchareadapted; allallocatedobjectcode/dataunchanged, alltestconditionsretained. Not73separatecoldboots. Everyinstructionstillcomparedagainstindependentreference."
+}

@@ -1,0 +1,1 @@
+module tb;reg [31:0] address=32'h30000000;wire [31:0] y;address_control dut(.address(address),.beat(4'b0),.cached(1'b1),.burst(1'b0),.y(y));initial begin #1;if(y!==32'h30000000)$fatal(1,"RTL_ADDRESS_MISMATCH");$display("RTL_ADDRESS_PASS %h",y);$finish;end endmodule

@@ -1,0 +1,322 @@
+{
+  "status": "PASS",
+  "task": "E3-M001 tool capability portion",
+  "scope": "Real installed WSL2 Ubuntu Linux, dedicated local ysyx user; Make/GCC compilation, 20000-op C selftest, GDB real break/argument inspection, Valgrind positive/negative, local Git fsck/commit. No external publishing.",
+  "resource_budget": "User-authorized temporary1GB; one tiny compilation at a time; make-j1; no heavy builds.",
+  "runs": [
+    {
+      "name": "E3/tools/make_and_execute",
+      "timestamp": "2026-10-24T16:51:14.563381+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "set -eu\nmkdir -p /home/USER/e3-lab/tool-probe\ncd /home/USER/e3-lab/tool-probe\nmake -j1 -f /workspace/projects/ysyx_f_to_b/E/E3/tool_probe/Makefile all\n./good\n"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 2.718,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "8c6696fa9a87470fe83bb2236cc8feb0e5bf1c4c48272ca1bf854cc54ad55665",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/tools/valgrind_positive",
+      "timestamp": "2026-10-24T16:51:15.206408+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "cd /home/USER/e3-lab/tool-probe\nvalgrind --error-exitcode=99 --leak-check=full --show-leak-kinds=all ./good"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.594,
+      "timeout_seconds": 60,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "90ebf6a4dd9e18a30a57b32d19f486e9aefe544a4ebb60da0c2fbc3934674f95",
+      "stderr_sha256": "1bfd1c57ae6d0a4bcfd326858dc88d1fc09d637c8b7ed56214facdf11153cc8d"
+    },
+    {
+      "name": "E3/tools/valgrind_negative",
+      "timestamp": "2026-10-24T16:51:15.746865+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "cd /home/USER/e3-lab/tool-probe\nvalgrind --error-exitcode=99 --leak-check=full --show-leak-kinds=all ./bad_memory"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 99,
+      "expected_exit": 99,
+      "status": "PASS",
+      "elapsed_seconds": 0.484,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "0dbc691578341c5383d45316c82da378826f0c5f319995b2d133d28bae489f99"
+    },
+    {
+      "name": "E3/tools/gdb",
+      "timestamp": "2026-10-24T16:51:18.396335+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "cd /home/USER/e3-lab/tool-probe\ngdb --batch -q -ex 'set pagination off' -ex 'break list_insert' -ex run -ex 'print value' -ex 'print index' -ex bt -ex 'delete breakpoints' -ex continue ./good"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 2.594,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "33826df6fd6c5cf0cb62804db922bba82d4260c8772713635ba6d1dc79704db3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/tools/git",
+      "timestamp": "2026-10-24T16:51:18.567028+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "set -eu\nrepo=/home/USER/e3-lab/git-tool-probe\nif [ ! -d \"$repo/.git\" ]; then\n    git init -b main \"$repo\"\n    git -C \"$repo\" config user.name 'YSYX Local Tool Probe'\n    git -C \"$repo\" config user.email 'ysyx-tool-probe@example.invalid'\n    printf 'local tool probe\\n' > \"$repo/probe.txt\"\n    git -C \"$repo\" add probe.txt\n    git -C \"$repo\" commit -m 'Record isolated Linux Git tool probe'\nfi\ngit -C \"$repo\" fsck --full\ntest -z \"$(git -C \"$repo\" status --porcelain)\"\ngit -C \"$repo\" show --format=fuller --stat HEAD\ngit -C \"$repo\" show HEAD:probe.txt\n"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.125,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "22df6c23551d69a81c0569738f8b4924ada0cb4df9107d6b908ea71eaef13562",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "E3/tools/versions",
+      "timestamp": "2026-10-24T16:51:18.841478+00:00",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "YSYX-Linux",
+        "-u",
+        "ysyx",
+        "--exec",
+        "bash",
+        "-lc",
+        "set -eu\ngcc --version\ngdb --version\nmake --version\ngit --version\nvalgrind --version\nsha256sum /usr/bin/x86_64-linux-gnu-gcc-11 /usr/bin/gdb /usr/bin/make /usr/bin/git /usr/bin/valgrind\nuname -a\nid\n"
+      ],
+      "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.235,
+      "timeout_seconds": 45,
+      "inputs": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_after": [
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\Makefile",
+          "sha256": "57c746894b6e7f69474b865a1b998a96010ef809d52c8289c3b0cdd2cee4ab1c"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E3\\tool_probe\\bad_memory.c",
+          "sha256": "bf4e9f4d78c33dcb1da4acdc2db9e2d52c19084408947ed3ad4162cbba288355"
+        },
+        {
+          "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E2\\linked_list.c",
+          "sha256": "52af05ef63d6a924ce964c96223e39e08dc3b7e2ecf9cc26c6512f0e72cd3aff"
+        }
+      ],
+      "inputs_unchanged": true,
+      "stdout_sha256": "90a0d2e0adc4170fe56b1d72ce34b19021aa6e973b5f6ce378d96c1643e0d327",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "versions_and_fingerprints": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\nGNU gdb (Ubuntu 12.1-0ubuntu1~22.04.2) 12.1\nCopyright (C) 2022 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\nGNU Make 4.3\nBuilt for x86_64-pc-linux-gnu\nCopyright (C) 1988-2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\ngit version 2.34.1\nvalgrind-3.18.1\n821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89  /usr/bin/x86_64-linux-gnu-gcc-11\na6222ff0f450ca040e3479c04fdb7d0f1e0cabb099688270e720b7115d933c3d  /usr/bin/gdb\n92f646030615cd98490a68a94c0aefd87b552be3158b941c02e43b0bfdb576db  /usr/bin/make\nfd7c9389e200d626b46551835e5233bbde49a6a2326f9ebb85c70ed235861001  /usr/bin/git\n4652774bd116cb49951ef74115ad4237cad5021b2bd4d80002f09d986ec438b9  /usr/bin/valgrind\nLinux HOST 5.10.16.3-microsoft-standard-WSL2 #1 SMP Fri Apr 2 22:23:49 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux\nuid=1000(ysyx) gid=1000(ysyx) groups=1000(ysyx)\n",
+  "timestamp": "2026-10-24T16:51:18.843854+00:00"
+}

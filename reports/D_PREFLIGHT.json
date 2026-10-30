@@ -1,0 +1,99 @@
+{
+  "status": "PASS_CORE_TOOLS_PENDING_SMALL_DEPENDENCIES",
+  "capabilities": [
+    "C/C++ and RV32 cross compilation",
+    "Verilator RTL simulation",
+    "Icarus four-state simulation",
+    "Yosys synthesis",
+    "Graphviz diagrams",
+    "existing locked ECC and ICsprout55 libraries"
+  ],
+  "tools": [
+    {
+      "name": "gcc",
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89",
+      "version": [
+        "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+        "Copyright (C) 2021 Free Software Foundation, Inc."
+      ],
+      "matches_E_final_lock": null
+    },
+    {
+      "name": "gdb",
+      "path": "/usr/bin/gdb",
+      "sha256": "a6222ff0f450ca040e3479c04fdb7d0f1e0cabb099688270e720b7115d933c3d",
+      "version": [
+        "GNU gdb (Ubuntu 12.1-0ubuntu1~22.04.2) 12.1",
+        "Copyright (C) 2022 Free Software Foundation, Inc."
+      ],
+      "matches_E_final_lock": null
+    },
+    {
+      "name": "riscv_gcc",
+      "path": "/usr/bin/riscv64-linux-gnu-gcc",
+      "sha256": "0c54895c55568be5b5fee49e2426abcc8fb05ca2c121ca5685dea2cbc24a1c13",
+      "version": [
+        "riscv64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0",
+        "Copyright (C) 2021 Free Software Foundation, Inc."
+      ],
+      "matches_E_final_lock": null
+    },
+    {
+      "name": "verilator",
+      "path": "/home/USER/tools/verilator-stable-src/bin/verilator",
+      "sha256": "308c54eb0194bb5c95d7cc093e0491922d2455177d401b03a8224ad7efe5cf35",
+      "version": [
+        "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261024-983a06a"
+      ],
+      "matches_E_final_lock": true
+    },
+    {
+      "name": "iverilog",
+      "path": "/home/USER/tools/e-stage/oss-20261022/oss-cad-suite/bin/iverilog",
+      "sha256": "6d84be4052a92cf7184c7149506f5db6ac251f99e438a96ae3ce33f326e2ff9d",
+      "version": [
+        "Icarus Verilog version 14.0 (devel) (s20260301-638-ge072b3334-dirty)",
+        ""
+      ],
+      "matches_E_final_lock": true
+    },
+    {
+      "name": "yosys",
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/yosys",
+      "sha256": "7c3e3396b38c129dd7485be5a0a0f0da8e495a94c8fd486059e3bea043a588d6",
+      "version": [
+        "Yosys 0.68+118 (git sha1 144c707b7-dirty, Release, Clang /usr/bin/clang++ 21.1.8)"
+      ],
+      "matches_E_final_lock": true
+    },
+    {
+      "name": "dot",
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/dot",
+      "sha256": "83f213b0d85e370a7ddad41eff9795791e1409d7f514c2b53e906216958bc8fb",
+      "version": [
+        "dot - graphviz version 2.43.20190912.0211 (20190912.0211)"
+      ],
+      "matches_E_final_lock": null
+    }
+  ],
+  "new_dependencies": [
+    "portable Clang 15 for required LLVM IR observations",
+    "Capstone 5.0.6 for NEMU/NPC disassembly",
+    "Spike reference if PA2 independent DiffTest requires it"
+  ],
+  "runtime_root": "/home/USER/d-stage",
+  "resource_policy": {
+    "heavy_jobs": 1,
+    "compile_jobs": 1,
+    "light_jobs_max": 2,
+    "wsl_memory_gib": 4,
+    "no_global_configuration_changes": true
+  },
+  "limits": [
+    "Only the listed controls have been run in D.",
+    "Course source, official admission and actual learner mastery remain separate.",
+    "E physical qualification is not a D CPU physical qualification."
+  ],
+  "evidence": "artifacts/D/preflight"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "seed": "0x2607d5",
+  "random_operations": 10000,
+  "fragmentation_stress_blocks": 512,
+  "negative_control": "calloc writes 0x11 instead of zero; unchanged unit assertions reject it",
+  "properties": [
+    "16-byte alignment",
+    "physical block bounds, contiguity and previous/next links",
+    "free-list exact membership and absence of cycles",
+    "no adjacent uncoalesced free blocks",
+    "no overlap of live allocations",
+    "preserve data through realloc and neighbor growth",
+    "calloc zero",
+    "multiplication/alignment overflow rejected",
+    "failure preserves original pointer",
+    "coalescing permits large allocation after release"
+  ],
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "implementation_sha256": "d999afa734e7c311aec819ffa230d87241d7b0ec4c5026d19d73d4e049e15fd7",
+  "scope": "Bare-metal allocator tested in a controlled host arena. D8 improved free-list search and local coalescing after profiling; old source and failed slow run preserved. Native AM uses glibc allocation for host startup, explicitly separate.",
+  "evidence": "artifacts/D5/allocator"
+}

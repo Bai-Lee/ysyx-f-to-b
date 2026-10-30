@@ -1,0 +1,74 @@
+{
+  "status": "PASS_FINGERPRINTS",
+  "timestamp": "2026-10-28T13:30:33.749092+00:00",
+  "tools": [
+    {
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89"
+    },
+    {
+      "path": "/usr/bin/gdb",
+      "sha256": "a6222ff0f450ca040e3479c04fdb7d0f1e0cabb099688270e720b7115d933c3d"
+    },
+    {
+      "path": "/usr/bin/riscv64-linux-gnu-gcc",
+      "sha256": "0c54895c55568be5b5fee49e2426abcc8fb05ca2c121ca5685dea2cbc24a1c13"
+    },
+    {
+      "path": "/home/USER/tools/verilator-stable-src/bin/verilator",
+      "sha256": "308c54eb0194bb5c95d7cc093e0491922d2455177d401b03a8224ad7efe5cf35"
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20261022/oss-cad-suite/bin/iverilog",
+      "sha256": "6d84be4052a92cf7184c7149506f5db6ac251f99e438a96ae3ce33f326e2ff9d"
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/yosys",
+      "sha256": "7c3e3396b38c129dd7485be5a0a0f0da8e495a94c8fd486059e3bea043a588d6"
+    },
+    {
+      "path": "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/dot",
+      "sha256": "83f213b0d85e370a7ddad41eff9795791e1409d7f514c2b53e906216958bc8fb"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/bin/java",
+      "sha256": "ac1d3bbe5301caaa1b86966802a4f8ec9f9f4f065c04dec45cc4a9f7dc24d075"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/jdk17/usr/lib/jvm/java-17-openjdk-amd64/bin/javac",
+      "sha256": "bafd67b6b902abb284b24c168ac90eb1490dac6448054a71ccb26c4918577b22"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/bin/mill",
+      "sha256": "04cac56046f5f9a16be65720b4134152cd01272fdf420f54f99796db58c9b423"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/cache/mill/download/0.12.4",
+      "sha256": "5a5ca4c8dc97522b51e851db8595ce7892ad302aefa092b582bba1f86fe191bf"
+    },
+    {
+      "path": "/home/USER/tools/c-stage/firtool/firtool-1.105.0/bin/firtool",
+      "sha256": "1621ab876eb78ac60c938d60d5cafd36652673fe6454f0fb036125298ee2a181"
+    }
+  ],
+  "windows_free_kib": 6976664,
+  "linux_memory": {
+    "MemTotal_KiB": 6953452,
+    "MemAvailable_KiB": 6529392,
+    "SwapTotal_KiB": 2097152,
+    "SwapFree_KiB": 2097152
+  },
+  "generation_process_group_pss_limit_mib": 6144,
+  "resource_policy": {
+    "source": "/workspace/config/toolchain.lock.json",
+    "revision": "2026-10-28-user-expanded",
+    "heavy_jobs": 1,
+    "compile_jobs": 1,
+    "process_group_limit_mib": 6144,
+    "windows_start_available_mib": 2048,
+    "windows_running_available_mib": 1024,
+    "linux_running_available_mib": 512,
+    "jvm_heap_mib": 4096
+  },
+  "scope": "Actual VM capacity is observed, not assumed from the historical 4GiB setting. Existing positive/negative tool evidence remains applicable because binaries match. New functional C work still requires its own tests. No WSL/global settings changed."
+}

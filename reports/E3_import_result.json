@@ -1,0 +1,48 @@
+{
+  "execution": {
+    "name": "E3/ubuntu_import",
+    "timestamp": "2026-10-24T14:26:04.967463+00:00",
+    "command": [
+      "wsl.exe",
+      "--import",
+      "YSYX-Linux",
+      "C:\\YSYX_WORKSPACE\\tools\\wsl\\YSYX-Linux",
+      "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\ubuntu-jammy-wsl-amd64-ubuntu22.04lts.rootfs.tar.gz",
+      "--version",
+      "2"
+    ],
+    "cwd": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "status": "PASS",
+    "elapsed_seconds": 12.688,
+    "timeout_seconds": 240,
+    "inputs": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_authorization.json",
+        "sha256": "17eec23552cfadd9106635b611509aba6fc749f842ec0b028024954a5227b6e4"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_low_memory_budget.json",
+        "sha256": "9e6bbc852237d08216186064fcca45a18c176efe9a4d973989aa3b59d84b00db"
+      }
+    ],
+    "inputs_after": [
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\config\\E3_authorization.json",
+        "sha256": "17eec23552cfadd9106635b611509aba6fc749f842ec0b028024954a5227b6e4"
+      },
+      {
+        "path": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\reports\\E3_low_memory_budget.json",
+        "sha256": "9e6bbc852237d08216186064fcca45a18c176efe9a4d973989aa3b59d84b00db"
+      }
+    ],
+    "inputs_unchanged": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "image": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_e3\\ubuntu-jammy-wsl-amd64-ubuntu22.04lts.rootfs.tar.gz",
+  "image_sha256_after": "1483cc5c1dce13064f774834cbffdff226559fd522a67a381a8ea77d63fb4109",
+  "install_path": "C:\\YSYX_WORKSPACE\\tools\\wsl\\YSYX-Linux",
+  "resource_budget": "Temporary1GB per direct user authorization; light environment import only"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "stage_complete": true,
+  "timestamp": "2026-10-24T23:47:36.512662+00:00",
+  "core_tasks": 17,
+  "cases": 12,
+  "mutants_rejected": 6,
+  "random_commits": 6417,
+  "runtime_snapshot": [
+    {
+      "path": "E/E5/runtime_snapshot/ref.c",
+      "sha256": "ed9c1ec8f3539e53007567496f087e668047a0d6a392c615a0fb0a9c44ff76d0"
+    },
+    {
+      "path": "E/E5/runtime_snapshot/ref.h",
+      "sha256": "76b3f7d945b1c292e2c8bf559f8a5fe311a9f9231348f2283189aa927debccb1"
+    },
+    {
+      "path": "E/E5/runtime_snapshot/emu_main.c",
+      "sha256": "ca813979824d4f08ba591bb9528f8538422421ec5c81971d3a0b082ef508ee86"
+    },
+    {
+      "path": "E/E5/runtime_snapshot/runner.cpp",
+      "sha256": "eaaf6cb0ef63ecf7ba66f9dd3cb06f2e54aef66df528908eca043739960a4c72"
+    },
+    {
+      "path": "E/E5/runtime_snapshot/memory.hpp",
+      "sha256": "21c2c08b9c8e82e7653cf2c79e90227c19b13ef43aa744622b35d4a798350900"
+    }
+  ],
+  "source": {
+    "stage": "E5",
+    "source": "C:\\YSYX_WORKSPACE\\YSYX_F_B_Archive\\docs\\markdown\\E\\E5.md",
+    "copy": "C:\\YSYX_WORKSPACE\\projects\\ysyx_f_to_b\\E\\E5\\sources\\E5.md",
+    "sha256": "17e7c18ae506b42ffc368b009a133e1bcf38f13bd3106348b394d3f63ea41c91",
+    "raw_sha256": "e5009aa36e753d6f72c14e6316a9103e87be73868055b7c73092395d7c40a80d",
+    "url": "https://ysyx.oscc.cc/docs/2607/e/5.html",
+    "version": "v26.07"
+  },
+  "scope": "Exact8-instruction16GPR minirv plus simulation ebreak; no complete RV32I or physical-chip claim."
+}

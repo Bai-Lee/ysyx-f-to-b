@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "drivers": [
+    {
+      "source": "/workspace/projects/ysyx_f_to_b/C/C2/nemu_io/am/gpu.c",
+      "installed": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/gpu.c",
+      "sha256": "d43cda2334d216ddc97afe0816c45d4bbf0883b4f89807892fc85e2b47d21fd3",
+      "before_sha256": "6b0e4914dd51f26e00f4f47287707642e7a2b891b7707188b3d8da050e134d7f"
+    },
+    {
+      "source": "/workspace/projects/ysyx_f_to_b/C/C2/nemu_io/am/input.c",
+      "installed": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/input.c",
+      "sha256": "81c34344a517c539d71b20d64fd2eaf8dc547fb3f167103fdf3c18793969f07f",
+      "before_sha256": "81c34344a517c539d71b20d64fd2eaf8dc547fb3f167103fdf3c18793969f07f"
+    },
+    {
+      "source": "/workspace/projects/ysyx_f_to_b/C/C2/nemu_io/am/timer.c",
+      "installed": "/home/USER/c-stage/workbench/abstract-machine/am/src/platform/nemu/ioe/timer.c",
+      "sha256": "fd6025519140a69040b4233d641a38d935470f06f4e20a5d9a1f70f2322c3bbb",
+      "before_sha256": "fd6025519140a69040b4233d641a38d935470f06f4e20a5d9a1f70f2322c3bbb"
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "status": "PASS_COMPLETED_VARIANTS",
+  "library": {
+    "status": "PASS_OFFICIAL_GIT_BLOB_MATCH",
+    "repository": "https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts",
+    "commit": "6c6fc7e21b2d0b5b88b1a52d0a5860ea4d88e9e5",
+    "path": "flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib",
+    "download_url": "https://raw.githubusercontent.com/The-OpenROAD-Project/OpenROAD-flow-scripts/6c6fc7e21b2d0b5b88b1a52d0a5860ea4d88e9e5/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib",
+    "git_blob_sha1": "90e4afb274cfc6514c587c434c77903d554117d1",
+    "local_sha256": "8d540a4d4cf6d09d27c87ad067857a9c0c2eeb023ab7a56e058cd3113db4e9b1",
+    "bytes": 6692032,
+    "local_file": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\nangate45\\NangateOpenCellLibrary_typical.lib",
+    "scope": "Library-only Nangate45 baseline from fixed OpenROAD-flow-scripts commit. Not claimed byte-identical to course archive; course archive fetch timed out at212666/4810358 bytes and retained as incomplete. No full PDK/toolchain installed.",
+    "license": {
+      "path": "C:\\YSYX_WORKSPACE\\downloads\\ysyx_c_stage\\nangate45\\OpenCellLibraryLicenseSi2.txt",
+      "sha256": "ceee811023a06fe8ed9ba3369fc7e8b9d8035a0b2a7d7b321384c4e2051de3c8",
+      "git_blob_sha1": "6a06794577beacd96e355af32b7f53cc09220311",
+      "scope": "Educational architecture evaluation within this library; no standard-cell-library benchmarking."
+    }
+  },
+  "controls": [
+    {
+      "control": "positive",
+      "slack_ns": 8.909092,
+      "status": "PASS"
+    },
+    {
+      "control": "negative",
+      "slack_ns": -1.089909,
+      "status": "PASS_VIOLATION_DETECTED"
+    }
+  ],
+  "variants": [
+    {
+      "name": "single",
+      "status": "PASS_MAPPING_AND_TIMING_ANALYSIS",
+      "cell_area_um2": 135725.436,
+      "cell_count": 58483,
+      "nonfunctional_scope_metadata_cells": 1,
+      "DFF_count": 16908,
+      "memory_DFF_origins": {
+        "imem": 8192,
+        "dmem": 8192
+      },
+      "setup_wns_ns": -257.094452,
+      "hold_min_slack_ns": 0.095089,
+      "constraint_mhz": 100,
+      "timing_met_at_100MHz": false,
+      "max_transition_violations": 91050,
+      "frequency_estimate_qualified": false,
+      "setup_frequency_estimate_mhz": 3.743993903699655,
+      "netlist_sha256": "1bc63f00ad83748af236eacf66f7224c4a5589af847eb8cfe683dd33f4158ad4",
+      "mapped_json_sha256": "a78e04e346d33023e18ef7ae008c2d9dbd7a72d3038ab254e02dd13f8be0316d",
+      "sdc_sha256": "98fa623ced6f849cd741f511da99b38abe1a7c7e492b80d8679a8f1f84609f5e",
+      "evidence": "artifacts/C4/nangate/single",
+      "mapping_budget": {
+        "status": "PASS",
+        "reason": null,
+        "error": null,
+        "exit_code": 0,
+        "elapsed_seconds": 159.766730129,
+        "peak_group_rss_bytes": 357031936,
+        "peak_group_pss_bytes": 353050624,
+        "metric": "pss",
+        "memory_limit_bytes": 6442450944,
+        "minimum_system_available_bytes": 6359289856,
+        "minimum_windows_available_bytes": 4287107072,
+        "policy": {
+          "source": "/workspace/config/toolchain.lock.json",
+          "revision": "2026-10-28-user-expanded",
+          "heavy_jobs": 1,
+          "compile_jobs": 1,
+          "process_group_limit_mib": 6144,
+          "windows_start_available_mib": 2048,
+          "windows_running_available_mib": 1024,
+          "linux_running_available_mib": 512,
+          "jvm_heap_mib": 4096
+        },
+        "policy_sha256": "9dded49cf48d3e89c12746ea729984a94f189cc82f60bdb2429423131391f1bc",
+        "timeline": [
+          {
+            "elapsed_seconds": 0.6216212260000002,
+            "rss_bytes": 978944,
+            "pss_bytes": 552960,
+            "available_bytes": 6733529088,
+            "windows_available_bytes": 4695375872
+          },
+          {
+            "elapsed_seconds": 6.075863048,
+            "rss_bytes": 187731968,
+            "pss_bytes": 183787520,
+            "available_bytes": 6552961024,
+            "windows_available_bytes": 4516290560
+          },
+          {
+            "elapsed_seconds": 11.56656608,
+            "rss_bytes": 205135872,
+            "pss_bytes": 201003008,
+            "available_bytes": 6534500352,
+            "windows_available_bytes": 4502794240
+          },
+          {
+            "elapsed_seconds": 17.048824888,
+            "rss_bytes": 206757888,
+            "pss_bytes": 202641408,
+            "available_bytes": 6533492736,
+            "windows_available_bytes": 4489244672
+          },
+          {
+            "elapsed_seconds": 22.502156379,
+            "rss_bytes": 208920576,
+            "pss_bytes": 204918784,
+            "available_bytes": 6531170304,
+            "windows_available_bytes": 4519936000
+          },
+          {
+            "elapsed_seconds": 27.963800573,
+            "rss_bytes": 209461248,
+            "pss_bytes": 205271040,
+            "available_bytes": 6530646016,
+            "windows_available_bytes": 4514529280
+          },
+          {
+            "elapsed_seconds": 33.340721518,
+            "rss_bytes": 210272256,
+            "pss_bytes": 206311424,
+            "available_bytes": 6529884160,
+            "windows_available_bytes": 4513734656
+          },
+          {
+            "elapsed_seconds": 38.825150822000005,
+            "rss_bytes": 211230720,
+            "pss_bytes": 207040512,
+            "available_bytes": 6528655360,
+            "windows_available_bytes": 4491862016
+          },
+          {
+            "elapsed_seconds": 44.296950068,
+            "rss_bytes": 206884864,
+            "pss_bytes": 207106048,
+            "available_bytes": 6522118144,
+            "windows_available_bytes": 4468568064
+          },
+          {
+            "elapsed_seconds": 49.725349239,
+            "rss_bytes": 296636416,
+            "pss_bytes": 292814848,
+            "available_bytes": 6440460288,
+            "windows_available_bytes": 4459999232
+          },
+          {
+            "elapsed_seconds": 55.175458747,
+            "rss_bytes": 314101760,
+            "pss_bytes": 310218752,
+            "available_bytes": 6423592960,
+            "windows_available_bytes": 4439883776
+          },
+          {
+            "elapsed_seconds": 60.655236573,
+            "rss_bytes": 337563648,
+            "pss_bytes": 333750272,
+            "available_bytes": 6399983616,
+            "windows_available_bytes": 4416176128
+          },
+          {
+            "elapsed_seconds": 66.10995272999999,
+            "rss_bytes": 340938752,
+            "pss_bytes": 337096704,
+            "available_bytes": 6396362752,
+            "windows_available_bytes": 4408643584
+          },
+          {
+            "elapsed_seconds": 71.56249028699999,
+            "rss_bytes": 340938752,
+            "pss_bytes": 337121280,
+            "available_bytes": 6396637184,
+            "windows_available_bytes": 4408258560
+          },
+          {
+            "elapsed_seconds": 76.99539643499999,
+            "rss_bytes": 342474752,
+            "pss_bytes": 338685952,
+            "available_bytes": 6395092992,
+            "windows_available_bytes": 4400828416
+          },
+          {
+            "elapsed_seconds": 82.37850927199999,
+            "rss_bytes": 342745088,
+            "pss_bytes": 338706432,
+            "available_bytes": 6394834944,
+            "windows_available_bytes": 4404150272
+          },
+          {
+            "elapsed_seconds": 87.846084878,
+            "rss_bytes": 342814720,
+            "pss_bytes": 338800640,
+            "available_bytes": 6394613760,
+            "windows_available_bytes": 4384632832
+          },
+          {
+            "elapsed_seconds": 93.264096039,
+            "rss_bytes": 342814720,
+            "pss_bytes": 338829312,
+            "available_bytes": 6393573376,
+            "windows_available_bytes": 4369829888
+          },
+          {
+            "elapsed_seconds": 98.755850431,
+            "rss_bytes": 346157056,
+            "pss_bytes": 342192128,
+            "available_bytes": 6390976512,
+            "windows_available_bytes": 4293824512
+          },
+          {
+            "elapsed_seconds": 104.264244552,
+            "rss_bytes": 348319744,
+            "pss_bytes": 344346624,
+            "available_bytes": 6368395264,
+            "windows_available_bytes": 4337635328
+          },
+          {
+            "elapsed_seconds": 109.745989387,
+            "rss_bytes": 348319744,
+            "pss_bytes": 344502272,
+            "available_bytes": 6368620544,
+            "windows_available_bytes": 4341628928
+          },
+          {
+            "elapsed_seconds": 115.155440856,
+            "rss_bytes": 350212096,
+            "pss_bytes": 346439680,
+            "available_bytes": 6367080448,
+            "windows_available_bytes": 4338003968
+          },
+          {
+            "elapsed_seconds": 120.57422459799999,
+            "rss_bytes": 350482432,
+            "pss_bytes": 346521600,
+            "available_bytes": 6367023104,
+            "windows_available_bytes": 4336050176
+          },
+          {
+            "elapsed_seconds": 126.020434716,
+            "rss_bytes": 350482432,
+            "pss_bytes": 346615808,
+            "available_bytes": 6367023104,
+            "windows_available_bytes": 4332244992
+          },
+          {
+            "elapsed_seconds": 131.50454631600002,
+            "rss_bytes": 350822400,
+            "pss_bytes": 346791936,
+            "available_bytes": 6366609408,
+            "windows_available_bytes": 4306755584
+          },
+          {
+            "elapsed_seconds": 136.935719944,
+            "rss_bytes": 350822400,
+            "pss_bytes": 346845184,
+            "available_bytes": 6366085120,
+            "windows_available_bytes": 4315656192
+          },
+          {
+            "elapsed_seconds": 142.417907945,
+            "rss_bytes": 350822400,
+            "pss_bytes": 346890240,
+            "available_bytes": 6366609408,
+            "windows_available_bytes": 4302888960
+          },
+          {
+            "elapsed_seconds": 147.857388773,
+            "rss_bytes": 319283200,
+            "pss_bytes": 315297792,
+            "available_bytes": 6396964864,
+            "windows_available_bytes": 4287107072
+          },
+          {
+            "elapsed_seconds": 153.272237389,
+            "rss_bytes": 330457088,
+            "pss_bytes": 326660096,
+            "available_bytes": 6388293632,
+            "windows_available_bytes": 4296122368
+          },
+          {
+            "elapsed_seconds": 158.763963881,
+            "rss_bytes": 265433088,
+            "pss_bytes": 265474048,
+            "available_bytes": 6442700800,
+            "windows_available_bytes": 4345348096
+          }
+        ],
+        "command": [
+          "taskset",
+          "-c",
+          "0,1",
+          "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/yosys",
+          "-s",
+          "/workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/single/synthesis.ys"
+        ],
+        "sampling": "Group every 0.5s, Windows every 5s; sampled soft limit, no OS hard cap."
+      },
+      "sta_budget": {
+        "status": "PASS",
+        "reason": null,
+        "error": null,
+        "exit_code": 0,
+        "elapsed_seconds": 38.63479063,
+        "peak_group_rss_bytes": 181477376,
+        "peak_group_pss_bytes": 180000768,
+        "metric": "pss",
+        "memory_limit_bytes": 6442450944,
+        "minimum_system_available_bytes": 6397165568,
+        "minimum_windows_available_bytes": 3216998400,
+        "policy": {
+          "source": "/workspace/config/toolchain.lock.json",
+          "revision": "2026-10-28-user-expanded",
+          "heavy_jobs": 1,
+          "compile_jobs": 1,
+          "process_group_limit_mib": 6144,
+          "windows_start_available_mib": 2048,
+          "windows_running_available_mib": 1024,
+          "linux_running_available_mib": 512,
+          "jvm_heap_mib": 4096
+        },
+        "policy_sha256": "9dded49cf48d3e89c12746ea729984a94f189cc82f60bdb2429423131391f1bc",
+        "timeline": [
+          {
+            "elapsed_seconds": 0.588582042000013,
+            "rss_bytes": 1060864,
+            "pss_bytes": 1116160,
+            "available_bytes": 6570921984,
+            "windows_available_bytes": 3401076736
+          },
+          {
+            "elapsed_seconds": 5.995577166999993,
+            "rss_bytes": 133627904,
+            "pss_bytes": 132184064,
+            "available_bytes": 6447542272,
+            "windows_available_bytes": 3282333696
+          },
+          {
+            "elapsed_seconds": 11.499842309000002,
+            "rss_bytes": 181477376,
+            "pss_bytes": 180000768,
+            "available_bytes": 6397943808,
+            "windows_available_bytes": 3222151168
+          },
+          {
+            "elapsed_seconds": 17.03355966800001,
+            "rss_bytes": 181477376,
+            "pss_bytes": 180000768,
+            "available_bytes": 6397943808,
+            "windows_available_bytes": 3216998400
+          },
+          {
+            "elapsed_seconds": 22.557923689000006,
+            "rss_bytes": 181477376,
+            "pss_bytes": 180000768,
+            "available_bytes": 6397706240,
+            "windows_available_bytes": 3278114816
+          },
+          {
+            "elapsed_seconds": 28.067724819999995,
+            "rss_bytes": 181477376,
+            "pss_bytes": 180000768,
+            "available_bytes": 6397673472,
+            "windows_available_bytes": 3244781568
+          },
+          {
+            "elapsed_seconds": 33.613921973000004,
+            "rss_bytes": 181477376,
+            "pss_bytes": 180000768,
+            "available_bytes": 6397452288,
+            "windows_available_bytes": 3250241536
+          }
+        ],
+        "command": [
+          "/home/USER/tools/c-stage/opensta/usr/bin/sta",
+          "-exit",
+          "/workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/single/analysis.tcl"
+        ],
+        "sampling": "Group every 0.5s, Windows every 5s; sampled soft limit, no OS hard cap."
+      },
+      "setup_and_hold_met_at_100MHz": false
+    },
+    {
+      "name": "axi",
+      "status": "PASS_MAPPING_AND_TIMING_ANALYSIS",
+      "cell_area_um2": 9860.088,
+      "cell_count": 6489,
+      "nonfunctional_scope_metadata_cells": 5,
+      "DFF_count": 762,
+      "memory_DFF_origins": {},
+      "setup_wns_ns": 0.946957,
+      "hold_min_slack_ns": 0.095142,
+      "constraint_mhz": 100,
+      "timing_met_at_100MHz": false,
+      "max_transition_violations": 4176,
+      "frequency_estimate_qualified": false,
+      "setup_frequency_estimate_mhz": 110.46009612458484,
+      "netlist_sha256": "ccdeec749bfb17796cc3c12a770abd502c61b30d7fc51656def97169e66a623f",
+      "mapped_json_sha256": "ccb2205b3acd89ffcbf8324ae20386d0863bdc632bf1496eae5a549a992f1e27",
+      "sdc_sha256": "98fa623ced6f849cd741f511da99b38abe1a7c7e492b80d8679a8f1f84609f5e",
+      "evidence": "artifacts/C4/nangate/axi",
+      "mapping_budget": {
+        "status": "PASS",
+        "reason": null,
+        "error": null,
+        "exit_code": 0,
+        "elapsed_seconds": 7.502628188999999,
+        "peak_group_rss_bytes": 91779072,
+        "peak_group_pss_bytes": 87769088,
+        "metric": "pss",
+        "memory_limit_bytes": 6442450944,
+        "minimum_system_available_bytes": 6482534400,
+        "minimum_windows_available_bytes": 2353999872,
+        "policy": {
+          "source": "/workspace/config/toolchain.lock.json",
+          "revision": "2026-10-28-user-expanded",
+          "heavy_jobs": 1,
+          "compile_jobs": 1,
+          "process_group_limit_mib": 6144,
+          "windows_start_available_mib": 2048,
+          "windows_running_available_mib": 1024,
+          "linux_running_available_mib": 512,
+          "jvm_heap_mib": 4096
+        },
+        "policy_sha256": "9dded49cf48d3e89c12746ea729984a94f189cc82f60bdb2429423131391f1bc",
+        "timeline": [
+          {
+            "elapsed_seconds": 0.5688008019999984,
+            "rss_bytes": 4096,
+            "pss_bytes": 8192,
+            "available_bytes": 6555168768,
+            "windows_available_bytes": 2353999872
+          },
+          {
+            "elapsed_seconds": 5.9983435039999975,
+            "rss_bytes": 90804224,
+            "pss_bytes": 86654976,
+            "available_bytes": 6482976768,
+            "windows_available_bytes": 2411249664
+          }
+        ],
+        "command": [
+          "taskset",
+          "-c",
+          "0,1",
+          "/home/USER/tools/e-stage/oss-20260821/oss-cad-suite/bin/yosys",
+          "-s",
+          "/workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/axi/synthesis.ys"
+        ],
+        "sampling": "Group every 0.5s, Windows every 5s; sampled soft limit, no OS hard cap."
+      },
+      "sta_budget": {
+        "status": "PASS",
+        "reason": null,
+        "error": null,
+        "exit_code": 0,
+        "elapsed_seconds": 3.027566903999997,
+        "peak_group_rss_bytes": 39845888,
+        "peak_group_pss_bytes": 38551552,
+        "metric": "pss",
+        "memory_limit_bytes": 6442450944,
+        "minimum_system_available_bytes": 6608986112,
+        "minimum_windows_available_bytes": 3372384256,
+        "policy": {
+          "source": "/workspace/config/toolchain.lock.json",
+          "revision": "2026-10-28-user-expanded",
+          "heavy_jobs": 1,
+          "compile_jobs": 1,
+          "process_group_limit_mib": 6144,
+          "windows_start_available_mib": 2048,
+          "windows_running_available_mib": 1024,
+          "linux_running_available_mib": 512,
+          "jvm_heap_mib": 4096
+        },
+        "policy_sha256": "9dded49cf48d3e89c12746ea729984a94f189cc82f60bdb2429423131391f1bc",
+        "timeline": [
+          {
+            "elapsed_seconds": 0.5213802250000015,
+            "rss_bytes": 1081344,
+            "pss_bytes": 1343488,
+            "available_bytes": 6639624192,
+            "windows_available_bytes": 3372384256
+          }
+        ],
+        "command": [
+          "/home/USER/tools/c-stage/opensta/usr/bin/sta",
+          "-exit",
+          "/workspace/projects/ysyx_f_to_b/C/C4/synthesis/nangate/axi/analysis.tcl"
+        ],
+        "sampling": "Group every 0.5s, Windows every 5s; sampled soft limit, no OS hard cap."
+      },
+      "setup_and_hold_met_at_100MHz": true
+    }
+  ],
+  "scope": "Educational comparison of two DUT architectures within this fixed Nangate45 library; no benchmark against other standard-cell libraries. Yosys default ABC mapping at10ns, independent OpenSTA with explicit IO delays, ideal clock, no routed parasitics. Setup frequency is algebraic only; any max-transition violation indicates the unbuffered mapping is outside transition limits. It is not a qualified clock or physical signoff. Single includes two real256x32 flop memories; larger simulated RAM only used for program cycles."
+}
